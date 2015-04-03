@@ -1,0 +1,4357 @@
+
+#   Bodleian Manuscript 791
+#   Complete Text
+   
+#   Ordinale de Origine Mundi.
+#   Source: Edwin Norris (editor and translator)
+#   The Ancient Cornish Drama (2 volumes),
+#   Oxford: Oxford University Press. 1859
+   
+#   Electronic text prepared by Jon Mills
+#   Department of Linguistics
+#   University of Luton
+#   Vicarage Street
+#   Luton
+#   Bedfordshire
+#   LU1 3JU, UK
+   
+#   23rd November 2000
+   
+# --------------------------------------------
+#
+# Checked against a scanning by Keith Syed (?)
+# and the resulting discrepancies compared to
+# the first (1998) KDL edition (Ed. Ray Edwards)
+# and minor corrections made (List appended at
+# end of file).
+# Stage directions etc. marked as comments to
+# assist automatic text analysis.
+#
+# 30th June 2001
+#
+# --------------------------------------------
+
+#   HIC INCIPIT ORDINALE DE ORIGINE MUNDI
+#   _____________________________________
+   
+#   DEUS PATER
+   En tas a nef y'm gylwyr
+   formyer pup tra a vyth gvrys
+   Onan ha try on yn gvyr
+   en tas ha'n map ha'n spyrys
+   ha hethyv me a thesyr            [5]
+   dre ov grath dalleth an beys
+   y lauaraf nef ha tyr
+   bethens formyys orth ov brys
+   
+   lemmen pan yv nef thy'n gwrys
+   ha lenwys a eleth splan         [10]
+   ny a vyn formye an bys
+   par del on try hag onan
+   an tas ha'n mab ha'n spyrys
+   pur ryel yn sur certan
+   an re-ma yv oberys              [15]
+   del vynsyn agan honan
+   
+   yn secund dyth y fynna
+   gruthyl ebron nef hynwys
+   rag ythevel thy'm bos da
+   yn kynsa dyth myns vs gvrys     [20]
+   bethens ebron dreys pup tra
+   rak kvthe myns vs formyys
+   rak synsy glaw a wartha
+   the'n nor veys may fe dyllys
+   yn tresse dyth dybarth gvraf    [25]
+   yntre an mor ha'n tyryow
+   hag yn tyr gorhenmennaf
+   may tefo gveyth ha losow
+   pup gvethen tefyns a'y saf
+   ov ton hy frvt ha'y delyow      [30]
+   ha'n losowys erbyn haf
+   degyns has yn erberow
+   
+   yn peswere gvreys perfyth
+   the'n beys ol golowys glan
+   h'aga hynwyn y a vyth           [35]
+   an houl ha'n lor ha'n stergan
+   my a set ahugh a'n gveyth
+   yn creys a'n ebron avan
+   An lor yn nos houl yn geyth
+   may rollons y golow splan       [40]
+   
+   yn pympes dyth me a vyn
+   may fo formyys dre ov nel
+   bestes puskes hag ethyn
+   tyr ha mor the goullenwel
+   rag y whyrvyth an tyrmyn        [45]
+   drethe may fether the wel
+   thethe me a worhemmyn
+   encressyens ha bewens pel
+   
+#   [Hic descendit Deus de pulpito et dicit Deus hic
+#   ludit Lucifer de celo]
+   
+   hethyw yw an whefes dyth
+   aban dalletheys gonys           [50]
+   may rug nef mor tyr ha gveyth
+   bestes puskes golowys
+   gosteyth thy'mo y a vyth
+   kekemys vs ynne gvreys
+   map den a bry yn perfyth        [55]
+   me a vyn y vos formyys
+   
+#   [Hic faciat Adam et dicit Deus]
+   
+   Del ony onen ha try
+   tas ha map yn trynyte
+   ny a'd wra ty then a bry
+   haval d'agan face whare         [60]
+   ny a whyth in thy vody
+   sperys may hylly bewe
+   ha'n bewnans pan y'n kylly
+   the'n dor ty a dreyl arte
+   
+   Adam saf yn ban yn clor         [65]
+   ha treyl the gyk ha the woys
+   preder my the'th whul a dor
+   haval they'm a'n pen the'n troys
+   myns vs yn tyr hag yn mor
+   warnethe kemer galloys          [70]
+   yn bys-ma rak dry ascor
+   ty a vew bys may fy loys
+   
+   Adam del of dev a ras
+   bos gvythyas a wrontyaf thy's
+   War paradys my a'th as          [75]
+   saw gvra vn dra a'n govys
+   War bup frut losow ha has
+   a vo ynny hy tevys
+   saw a'n frut ny fyth kymmyas
+   yw pren a skeyens hynwys        [80]
+   
+   Mar a tybbryth a henna
+   yw hynwys pren a skyens
+   yn mes alemma ty a
+   hag a fyth marow vernens
+   
+#   ADAM
+   A das map ha spyrys sans        [85]
+   gorthyans the'th corf wek pup prys
+   ow formye tek ha dyblans
+   ty ru'm gruk pur havel thy's
+   
+   rag governye ow bewnans
+   yma loer orth both ow brys      [90]
+   pur luen yma thy'm ow whans
+   a'n ven cowethes ordnys
+#              [ient ad paradisum]
+   
+#   DEUS PATER.
+   Nynsyw da yn pur certan
+   bones vn den y honan
+   heb cowyth py cowethes          [95]
+   ke growet war an dor gvlan
+   ha cosk byth na saf yn ban
+   er na fo cowethes gvres
+   
+#   [Et Adam dormiet. hic facit deus euam et ducet
+#   eam ad Adam et accipiet per manus suas. et dicit
+#   deus pater:-]
+   
+   Scon a onan a'th asow
+   my a wra thy'so parow          [100]
+   pup vr ol rag the weres
+   Adam ottensy vmma
+   ry hanow thethy hy gvra
+   the'th par rak hy kymmeres
+   
+#   EVA
+   arloth dev a'n nef an tas      [105]
+   kepar del os luen a ras
+   venytha gorthyys re by
+   del russys moy a'n govys
+   worth ow formye haval thy's
+   vn dev os ha persons try       [110]
+
+#                         [eva exit]
+   
+#   ADAM
+#   a das ty r[e] thros thy'mmo
+   a das ty re thros thy'mmo
+   ascorn a'm kyk ha corf o
+   par may fo ow howethes
+   my a's henow vyrago
+   an tas dev gorthyys re bo      [115]
+   a's ordnes thy'm rag ov les
+   
+#   DEUS PATER
+   Adam otte an puskes
+   ythyn a'n nef ha'n bestes
+   kefrys yn tyr hag yn mor
+   ro thethe aga hynwyn           [120]
+   y a thue the'th worhemmyn
+   saw na byhgh y war nep cor
+   
+#   ADAM
+   yt'hanwaf bugh ha tarow
+   ha margh yw best hep parow
+   the vap den rag ymweres        [125]
+   gaver yweges karow
+   daves war ve[r] lavarow
+   hy hanow da kemeres
+   
+   lemyn hanwaf goyth ha yar
+   a sensaf ethyn hep par         [130]
+   the vygyens den war an beys
+   hos payon colom grvgyer
+   swan bargos bryny ha'n er
+   moy drethof a vyth hynwys
+   
+   y rof hynwyn the'n puskes      [135]
+   porpus sowmens syllyes
+   ol thy'm gustyth y a vyth
+   lenesow ha barfusy
+   pysk ragof ny wra skvsy
+   mar corthyaf dev yn perfyth    [140]
+   
+#   DEUS PATER
+   Rag bones ol tek ha da
+   in whed dyth myns yw formyys
+   Aga sona ny a wra
+   may fe seythves dyth hynwys
+   hen yw dyth a bowesva          [145]
+   the pup den a vo sylwys
+   yn dysquythyens a henna
+   ny a bowes desempys
+   
+#   [Tunc iet deus pater ad celum et postea
+#   diabolus tanquam serpens loquitur ad euam
+#   in arbore scientie et dicit male ad euam.]
+   
+#   SERPENS S. DEMON
+   Eua prag na thuete nes
+   rag cous orthyf ha talkye      [150]
+   vn dra a won a'n gothfes
+   a russe the thythane
+   beys vynytha y wharthes
+   rag ioy ha rag lowene
+   kepar yn beys ha dves          [155]
+   the'n nef grusses yskynne
+   
+#   EUA
+   pan dra yl henna bones
+   lauar thy'mmo vy wharre
+   
+#   DEMON
+   Eua ny allaf methes
+   rag ovn ty tho'm kuhuthe       [160]
+   
+#   EUA
+   Drefen ow bones benen
+   ty a yl thy'm daryvas
+   Awos travyth ny wrussen
+   venytha the gvhuthas
+   
+#   DEMON
+   A'n nef my a theth yn nans     [165]
+   eua wek gvella the cher
+   frut a'n wethen a skyans
+   dybbry byth na borth danger
+   
+#   EUA
+   ffystyn alemma duwhans
+   worthyf na gous na moy ger     [170]
+   a'y frut dybry n'ym bes whans
+   dres dyfen ov arloth ker
+   
+#   DEMON
+   A venen assos goky
+   na gresyth thu'm lauarow
+   attebres ty ha'th worty        [175]
+   a'n wethen ha'y avalow
+   y fyeugh yn surredy
+   yn vr-na avel dewow
+   eua dus nes kemer y
+   rag thy's ny lauaraf gow       [180]
+   
+#   EUA
+   Neb a'm gruk vy ha'm gorty
+   ef a ruk agan dyfen
+   Aual na wrellen dybbry
+   na mos oges the'n wethen
+   
+#   DEMON
+   My a wor prag o ganso          [185]
+   rag hy bos gvethen a ras
+   a'y frut hy nep a theppro
+   a wovyth cvsyl a'n tas
+   tra ny vyth yn pow adro
+   na wothfo the tharryvas        [190]
+   mvr a foly ew thotho
+   an keth frut-ne mar a'n gas
+   
+#   EUA
+   A meys of ow predyry
+   pandra allaf the wruthyl
+   An avel orth y dyrry           [195]
+   rag ovn genes bones gyl
+   
+#   DEMON
+   torr'e yn ow feryl vy
+   heb hokye fast haue ydo
+   hag inweth gvra the'th worty
+   may tebro ef annotho           [200]
+   
+#   EUA
+   Stop an wethen trogha'n dor
+   may hyllyf aga hethes
+   
+#   DEMON
+   my a ra saw dus yn clor
+   torr'e ha ke the gerthes
+   
+#   [Tunc eva accipiet pomum et deferet
+#   ad adam et dicit Eua]
+   
+#   EUA
+   Adam ystyn thy'm the thorn     [205]
+   tan henna theworthef vy
+   dyson hep whethe the gorn
+   dysempys gvra y thybry
+#               [adam iet ad paradisum]
+   
+#   ADAM
+   lauar thy'mmo ty venen
+   an frut ple russys tyrry       [210]
+   mara pe a'n keth eghen
+   o dyfynnys orthyn ny
+   
+#   EUA
+   My pan esen ov quandre
+   clewys a'n nyl tenewen
+   vn el ov talleth cane          [215]
+   a vghaf war an wethen
+   ef a wruk ow husullye
+   frut annethy may torren
+   moy es dev ny a vye
+   bys venytha na sorren          [220]
+   
+#   ADAM
+   A out warnes drok venen
+   worto pan wrussys cole
+   rag ef o tebel ethen
+   neb a glewsys ov cane
+   hag a'n doro the anken         [225]
+   mars ny a wra ymdenne
+   prederys peb a'y worfen
+   fettyl allo gorfenne
+   
+#   EUA
+   taw an el a bregewthy
+   a'n wethen hag a'y vertv       [230]
+   a'y frut a wrello dybry
+   y fethe kepar ha dev
+   
+#   ADAM
+   thy'so ny vennaf cresy
+   na the'th fykyl lauarow
+   pysyn may fyyn servysy         [230]
+   th'agan arluth hep parow
+   rag neb a'n gruk ny a bry
+   a ros thy'n defennadow
+   frut na wrellen the thybry
+   a'n wethen hep falladow        [240]
+   
+#   EUA
+#   Aba[n] na vynta cresy
+   Aban na vynta cresy
+   ty a kyl ow herense
+   vynytha hedre vywy
+   vmma ny'm gvelyth arte
+   
+#   ADAM
+   eua kyns del vy serrys         [245]
+   my a wra ol del vynny
+   drov e thy'mmo dysempys
+   ha my a ra y dybry
+   
+#   [Et tunc comedit ex poma et videt se nudum
+#   et dicit gemitu]
+   
+   ogh trv trv my re behas
+   ha re dorras an dyfen          [250]
+   a debel venyn hep ras
+   ty ru'm tullas sur hep ken
+   agan corfow noth gallas
+   gans deyl agan cuthe gvren
+   y won the wyr dev an tas       [255]
+   re sorras drewyth benen
+   
+#   [Adam abscondit se in paradiso]
+   
+#   [Tunc ueniet Deus pater ad Adam et dicit ei]
+   
+#   DEUS PATER
+   Adam adam pandra wreth
+   prag na theth thu'm wolcumme
+   
+#   ADAM
+   drefen ov bos noeth hep queth
+   ragos yth yth the gvthe        [260]
+   
+#   DEUS PATER
+   pyw a thysquethes thy'so
+   the vos noeth corf tros ha bregh
+   lemyn an frut grath na'th fo
+   mones th'y dybry hep pegh
+   
+#   ADAM
+   thy'mmo vy why a ros gvrek     [265]
+   honna yw ol the vlamye
+   a dorras an avel tek
+   hag a'n dug thy'm the dastye
+   
+#   DEUS PATER
+   Aban golste worty hy
+   ha gruthyl dres ov defen       [270]
+   mylyge a wraf defry
+   an nor y'th whythres hogen
+   y'th whys lavur the thybry
+   ty a wra bys y'th worfen
+   spern ha spethes ov tevy       [275]
+   hedre vy may fo anken
+   
+   Eua prag y whruste sy
+   tulle the bryes hep ken
+   An avel worth y derry
+   wose my thy's th'y thefen      [280]
+   ty re gam wruk eredy
+   ha re'n dros the vur anken
+   pan russys thotho dybry
+   ha tastye frut a'n wethen
+   
+#   [hic demon sit presens]
+   
+#   EUA
+   A das kuf y'th wholowys        [285]
+   an sarf re ruk ow tholle
+   th'y falsury y cresys
+   pythueth re rug ov syndye
+   mar derre hy leuerys
+   kepar ha dev y fethe           [290]
+   mar pue drok a oberys
+   trogh y hy gans the glethe
+   
+#   DEUS PATER
+   Rag ty the gola worty
+   ha tolle the bryes len
+   nefre gustyth th'y gorty       [295]
+   me a orden bos benen
+   may mohghaho hy huth hy
+   dre wul ow gorhemmyn trogh
+   na heb mur lavur defry
+   benytha ny's tevyth flogh      [300]
+   
+#   [lq. ad serpentem]
+   
+   ty dyowl gvra ov gorthyby
+   prag y tolste sy hep ken
+   worth hy thempte the dyrry
+   an frut erbyn ov dyfen
+   
+#   DEMON
+   My a leuer thy's an cas        [305]
+   rag bos thethe ioy mar vras
+   ha my pup vr ow lesky
+   rag henna my a's temptyas
+   the behe may fe ellas
+   aga han kepar ha my            [310]
+   
+#   DEUS PATER
+   ytho bethyth mylyges
+   pur wyr drys ol an bestes
+   a gertho war an nor veis
+   ha nefre y fyth avey
+   yntre the lynneth the sy       [315]
+   ha lynneth benen pup preys
+   Omma ny wreugh why tryge
+   eugh yn mes a thysympys
+   why a geyl of lowene
+   a rys thyugh yn parathys       [320]
+   ny dal thy's kauanscuse
+   dre the wrek y vos terrys
+   rag orty ty the gole
+   myl vap mam a veyth damneys
+   
+#   ADAM
+   A das dev y'th wolowys         [325]
+   grannt the'th whythres my a'd peys
+   nep peyth a oel a vercy
+   
+#   DEUS PATER
+   Adam yn dyweth a'n beys
+   my a wronnt oel mercy they's
+   ha the eua the wreghty         [330]
+   
+#   [Et tunc Deus ascendit ad celum et dicit ad
+#   cherubyn]
+   
+   Cherubyn kemmer clethe
+   fystyn trogha parathys
+   dew then a gefyth ene
+   gor y yn mes desempys
+   pur vysy a veyth thethe        [335]
+   ha the gymmys a ve gvrys
+   may whrussons cam dremene
+   sur y vyllyk an prys
+   
+#   CHERUBYN
+   the parathys scon y thaf
+   rag gruthyl ol both the vrys   [340]
+   ene tus mara kafaf
+   yn mes y fethons gorrys
+   
+#   [hic descendit che.]
+   
+   Adam ke yn mes a'n wlas
+   troha ken pow the vewe
+   ty the honyn the balas         [345]
+   the wrek genes the nethe
+   rag why re sorras an tas
+   m'agys byth luen edrege
+   fystynyugh troh an daras
+   rag vmma ny wreugh tryge       [350]
+   
+#   [cherubin restat in paradiso]
+#   [hic adam et eva recedunt de paradiso]
+   
+#   ADAM
+   Ellas gveles an termyn
+   ov arluth pan wruk serry
+   pan ruk drys y worhenmyn
+   ov ertech gruk the gylly
+   ny won vyth pethaf lemyn       [355]
+   nymbus gvest guskys na chy
+   ov holan ol the dymmyn
+   rag moreth a wra terry
+   
+   yn mes a'm ioy ha'm whekter
+   res ev keskar dre terros       [360]
+   rag fout gvest ha gostotter
+   namna vyrwyn rag anwos
+   
+   ny wothen rag ponvotter
+   pytheen yn gveel py yn cos
+   ow holen gvak dyvotter         [365]
+   ru'm kymmer ha gawel bos
+   
+   Eua kymmer the gygel
+   rag nethe thy'nny dyllas
+   ha my a gans ol ow nel
+   yn dor the thallath palas      [370]
+   
+#   [Et fodiet et terra clamat et iterum fodiet et
+#   clamat terra]
+   
+   Mur varth ambus dyogel
+   an beys th'y terry na'm gas
+   rag esow galsof ysel
+   na allaf kerthes yn fas
+   my a'd peys arluth vhel        [375]
+   the'n tyr ty a ry cummyas
+   ma'm gasso kyns ys myrwel
+   ynno bos thy'm the welas
+   
+#   [hic descendit deus pater]
+   
+#   DEUS PATER
+   Adam cummyas scon a fyth
+   hys the baal luen the drehy    [380]
+   thy's yth arghaf a dyreyth
+   gas adam the'th egery
+   
+#   ADAM
+   A syre arluth perfeth
+   bohes ev henna thy'nny
+   myns a defynno vn geyth         [385]
+   my ha'm gvrek a wra dybry
+   
+#   DEUS PATER
+   ytho kymmer hy dew hys
+   rag cafos thy's ha'th wrehgty
+   
+#   ADAM
+   arluth hen yw re nebes
+   mar quren flogh vyth denythy   [390]
+   
+#   DEUS PATER
+   Cafes moy thy's aban res
+   try heys the bal kemery
+   A drus musury tryl-les
+   ha gvet na wra falsury
+   
+#   ADAM
+   arluth cuf ol henna gvlan      [395]
+   try hes ov fal mar a'm be
+   my ha'm gurek ha'm flogh byhan
+   bysy vyth the sostene
+   mar tue moy nystevyth man
+   rag nown y wrons clamdere      [400]
+   yn vr-na rag pur thwan
+   daggrow tyn gvraf dyvere
+   
+#   DEUS PATER
+   kee kymmer myns a vynny
+   adam a'n beis ol adro
+   thy'so ef a veyth besy         [405]
+   hag ahanes a theffo
+   
+#   ADAM
+   A das a nef gromercy
+   the gorf ker gorthys re bo
+   eua war an beys meystry
+   luen gummyas yma thy'mmo       [410]
+   
+#   EVA
+   Gvyn agan beys ov fryes
+   bos granntyes thy'nny cummyes
+   dywort an tas dev gvella
+   the bales ha the wonys
+   gans kegel a thesempys         [415]
+   nethe dyllas my a wra
+   
+#   _____________________
+   
+#   DEUS PATER
+   drog yw genef gruthyl den
+   precyons ha haval thu'm fas
+   rag cola worth vn venen
+   gvlan ef re gollas an plas     [420]
+   a'm lef thyghyow a wrussen
+   th'y wythe a'n geffo graas
+   pan wruge dres ov dyfen
+   fest yn tyn ef ru'm sorras
+   
+   Adam a ol the drevas           [425]
+   an degves ran thy'mmo gas
+   wheth in atal the kesky
+   ha gans colen tha hep sor
+   gorre the'n meneth tabor
+   yn gorthyans thy'm th'y lesky
+   
+#   ADAM
+   arluth the voth a vyth gvrys
+   moy kyn fennas the gafys
+   pur wyr leskys ef a vyth
+   rag cowlenwel both the vrys
+   nynsus parow thy's yn beys     [435]
+   luen a grace os in perfyth
+   
+#   [His transiet deus pater ad celum.]
+   
+   Caym hag abel ov mebbyon
+   eugh sacryfyeugh in scon
+   yn meneth the'n tas a'n nef
+   hag ol agas gvyr thege         [440]
+   thotho gvetyeugh offrynne
+   ha'y lesky del yrghys ef
+   
+#   CAYM
+   A das cuf ker my a wra
+   arluth nef roy thy'm gul da
+   yn pup ober a wrellyn          [445]
+   Abel whek dun alemma
+   the worthye d'n arluth gvella
+   del yrghys agan tas thy'n
+   
+#   [recedit Caym.]
+   
+#   ABEL
+   Ov broder pur lowenek
+   my a genes the'n meneth        [450]
+   saw kyns ys mos ov thas whek
+   ro thy'm the vanneth perfeth
+   rag thy'm yma govenek
+   cafes the geus tregereth
+   the vanneth thy'm mur a blek   [455]
+   ha banneth ov mam inweth
+   
+#   ADAM
+   ov benneth prest ty a fyth
+   kefrys yn nos hag yn geyth
+   ha myns vs yn beys ry'th fo
+   
+#   EUA
+   banneth the vam kekyfrys       [460]
+   nefre thy'so my a beys
+   amen, yn della re bo
+   
+#   ABEL
+   ow banneth thyugh why kyfrys
+   ry thy'm agas bannethow
+   a thev lemyn gvyn ov beys      [465]
+   ov vos sonys hep whethlow
+   
+#   [Tunc cum istis quatuor ritis iat ad altare
+#   spaciando in platea et dicit Caym]
+   
+#   CAYM
+   Abel pe feste mar bel
+   ny gothe thy's bones hel
+   ov mones the'n sacrefys
+   
+#   ABEL
+   Caym ny lettys saw vn lam      [470]
+   ov kafus banneth ov mam
+   ha banneth ov thas kefrys
+   
+#   CAYM
+   Ru'm fey mur a wokyneth
+   yv mones the lesky peyth
+   a yl den orto bewe             [475]
+   pyth yw an gorthyans the dev
+   bos leskys the glow lusew
+   war an karrygy dege
+   
+#   ABEL
+   Caym whek preder a'd enef
+   awos an tas dev a'n nef        [480]
+   gvra y worhemmynnadow
+   thy'nny ny travyth ny gref
+   aban yw sur y voth ef
+   y lesky hep falladow
+   
+#   CAYM
+   Nans ye abel doway that        [485]
+   yn della byth ny vennaf
+   my re bredyrys gul prat
+   rag y wythe erbyn haf
+   
+#   ABEL
+   certan goky os ha mad
+   mar ny wreth del lauaraf       [490]
+   ty a fyth pur tormot sad
+   yn gulas yffarn del gresaf
+   
+   Dev a ros thy'n an naw ran
+   rag bewe orto certan
+   dre y luen grath ha'y versy    [495]
+   ytho prag na lenes ef
+   kafus y thege hep gref
+   hag aban vyn y lesky
+   
+#   [Hic venient omnes in platea]
+   
+#   [Et tunc caym offerat partem decimarum et
+#   custodiret alteram partem decimarum et dicit caym]
+   
+#   CAYM
+   rag leuerel yn preve
+   my ny vynnaf offrynne          [500]
+   ol ov dege yn certan
+   a das dew luen a byte
+   tan resyf theworthyf ve
+   ov dege ha'm offryn gvlan
+   hay dew myr orth ov offryn     [505]
+   ha ressef thy's ov dege
+   rag mar ny wreth my a vyn
+   y thon genef arte dre
+   
+#   ABEL
+   a das dew arluth huhel
+   my a'th worth gans ol ov nel   [510]
+   y'm colon pur trewysy
+   hag a offryn thy's whare
+   warbarth ol ov gvyr thege
+   yn gorthyans thy's y lesky
+   
+#   DEUS PATER
+   rag bos abel gvyr thege        [515]
+   ef a'n gefyth yn dyweth
+   an ioy na thyfyk nefre
+   yn ov gulas ha cosoleth
+   
+#   CAYM
+   Pan dra ny vyn dev gul vry
+   ahanaf na sowyny               [520]
+   an peyth a wrehaf ny wra
+   ha pup vr chatel abel
+   y a sowyn myl blek guel
+   Abel a'n pren rag henna
+   
+#   ABEL
+   Ow broder whek dun the dre     [525]
+   yma vn posygyon bras
+   War ov wholon ov cothe
+   pynag vone ren ov thas
+   an tas a wruk ov formye
+   a'm offryn re woffe gras       [530]
+   ha pan wryllyf tremene
+   a'n bys ru'm gorre th'y wlas
+   
+#   CAYM
+   abel whek ol na wra vry
+   rag pup tra ol a fyth da
+   dre weres agan dev ny          [535]
+   a nef an arluth guella
+   ke yn rak del y'm kyrry
+   yn hanow dev a-wartha
+   venytha na sowyny
+   tan hemma war an challa        [540]
+   
+#   [Tunc percuciet eum in capite et morietur et
+#   dicit lucifer]
+   
+#   LUCIFER
+   Belsebuk ha satanas
+   eugh alemma pur thoth bras
+   del y'm kyrreugh ages dew
+   ha kyrghough the dre an guas
+   may hallo cane ellas           [545]
+   nefre yn tewolgow tew
+   
+#   SATANAS
+   agan arluth lucifer
+   ny a'n kyrgh thy's hep danger
+   pur lowenek
+   yn drog-gras th'y das adam     [550]
+   venytha na'n geffo tam
+   a wolow tek
+   
+#   [ihent ad Abel]
+   
+#   BELSEBUC
+   Mal yv genen the gafus
+   the vos lemyn the derrus
+   ha the peyn kepar ha ny        [555]
+   abel ty a dryg nefre
+   awos ol the wyr thege
+   yn tewolgow bras hep ioy
+   
+#   SATANAS
+   Dun ganso the dre warnot
+   th'agan arluth lucifer         [560]
+   my a gan an conternot
+   ha ty dyscant ym-kener
+   
+#   BELSEBUC
+   heyl syr arluth lucifer
+   my re gyrhas thy's the dre
+   mab adam a fals huder          [565]
+   may hallo genen trege
+   
+#   LUCIFER
+   Abel rag the offryn ker
+   ty a vyth genen nefre
+   ha dewolow hep nyuer
+   pup vr orthys ov scrynkye      [570]
+   
+#   [Tunc veniet Deus pater ad terram loquitur cum
+#   caym et dicit Deus pater]
+   
+#   DEUS PATER
+   Caym lauar ple ma abel
+   the vroder ov servont lel
+   prag nagvsy ef genes
+   
+#   CAYM
+   nep ma'n ressys the wethe
+   theworth henna govynne         [575]
+   py vr fuf vy y wythes
+   
+#   [vox clamat]
+   
+#   DEUS PATER
+   Otte voys mernans abel
+   the vroder prest ov kelwel
+   a'n dor warnaf pup teller
+   mylleges nefre re by           [580]
+   hag ol an tyr a bywfy
+   yv mylleges y'th ober
+   ffrut da bynerre thokko
+   na glase bys gorfen beys
+   ov molleth a rof thy'so        [585]
+   molleth ov eleth kefrys
+   
+#   CAYM
+   the lef arluth a glewaf
+   saw the face my ny welaf
+   sur er ov gevw
+   ellas my a wor henna           [590]
+   bones ov fegh moy yn-ta
+   es mercy dew
+   lemyn dyfreth of ha gvak
+   pur wyr dres ol tus a'n beys
+   my ny won leuerel prak         [595]
+   gans pup na vethaf lethys
+   
+#   DEUS PATER
+   Caym ny vethyth yn della
+   rag the lathe den mar qura
+   ef a'n gevyth seyth kemmys
+   a paynys in nor bys-ma         [600]
+   mar pyth drok vythol gureys thy's
+   
+   Rag the verkye my a gura
+   yn bys den vyth na'th latho
+   pup vr-ol oberet[h?] da
+   guyn bys kymmys a'n gvrello    [605]
+   
+#   [Hic ds. ascendit ad celum.]
+   
+#   [Tunc veniet chaym ad adam patrem suum et
+#   dicit adam]
+   
+#   ADAM
+   Ow map py theth the vroder
+   prag na thethe genes dre
+   
+#   CAYM
+   Anotho mar thes preder
+   worth y wythyes govynne
+   
+#   ADAM
+   A myleges y'th ober            [610]
+   ty re'n lathes ru'm lowte
+   hag ef ahanan mar ger
+   ov molleth thy'so nefre
+   ellas vyth pan yu kyllys
+   Abel whek ov map kerra         [615]
+   na vythqueth pan vef formys
+   theworthaf drok a'n perna
+   
+   na caym pan yu dynythys
+   pan venyons ev a'n re-ma
+   dre vn venen wharvethys        [620]
+   govy pan welys eva
+   yma dev whath ov pewe
+   neb ev arluth drys pup tra
+   my ny vennaf growethe
+   vynytha gans corf eva          [625]
+   
+#   EUA
+   Ellas vyth pan ruk cole
+   mar hogul worth ov eskar
+   kemys druk vs ov cothe
+   ha dewethes hag avar
+   yma ken thy'm the ole          [630]
+   daggrow gois in gvyr hep mar
+   govy vyth ol ov pewe
+   ov cothaf lues galar
+   
+#   DEUS PATER
+   Serafyn the adam ke
+   hag argh thotho growethe       [635]
+   dre ov gorhemmynnadow
+   wheth gans eva y wreghty
+   hag ef a wra dynythy
+   vn map da hep falladow
+   
+#   SERAPHIN
+   Arluth the voth my a wra       [640]
+   del degoth thy'm yn pup le
+   ha bys thotho whare a
+   the'n bys rag y cusyllye
+   
+#   [Et tunc iet ad adam et dicit ei]
+   
+   Adam an tas dev guella
+   a yrghys thy's growethe        [645]
+   gans the bryes ker eva
+   rag cafus flogh the'th servye
+   
+#   ADAM
+   Pan vyn an tas yn della
+   reys yv y wruthyl porrys
+   mar myn dev rag an gvella      [650]
+   del fythyaf ef a vyth gurys
+   dues ov howethes eva
+   groweth yn gvyly a hys
+   gorhemmyn dev dres pup tra
+   res yv y vos coullenwys        [655]
+   
+   Nans yw lemmyn tremenes
+   nep dew-cans a vlethynnow
+   na'm buef the wruthyl genes
+   yn kyk nag in kues hep wow
+   
+#   EUA
+   Aban vyn an tas a'n nef        [660]
+   res yv sywe y voth ef
+   pe-penag vo
+   dre grath a'n arluth guella
+   ny a thynyth vn flogh da
+   thy'n a seruyo                 [665]
+   
+#   ADAM
+   in nomine dei patris
+   yn della thy'n re wharfo
+   war an tas dev ny a bys
+   y grath thy'n may tanvonno
+   
+#   [Et tunc recedat ab ea paucumper]
+   
+#   _________________________________
+   
+#   [et iterum veniet ad eam]
+   
+#   EUA
+   Adam ny yl vos kelys           [670]
+   an pyth a thue yn dyweth
+   yma flogh genaf genys
+   dre voth a'n tas dev in weth
+   bynyges re bo an prys
+   may fe gurys an gorholeth      [675]
+   py hanow y fyth gylwys
+   lauar thy'mmo er the feth
+   
+#   ADAM
+   Seth a vyt y evn hanow
+   an tas a'n nef caradow
+   roy thotho grath th'y seruye    [680]
+   mos the balas my a vyn
+   rag sustene veunans thy'n
+   rys yw porrys lafurrye
+   
+#   [Hic adam iet ad opus suum]
+   
+   A dev ker assoma squyth
+   uyn veys a quellen vn wyth     [685]
+   an termyn the thewethe
+   kref yv gvrythyow a'n spethes
+   may thyv ov dyv-vregh terrys
+   worte menough ov quethe
+   
+   seth ov map my a thanfon       [690]
+   the yet parathys in scon
+   the cherubyn an guythyas
+   govyn orto mar a'm byth
+   oyl a vercy in dyweyth
+   theworth an tas dev a ras      [695]
+   
+#   SETH
+   A das ker the'th worhemmyn
+   my a th'y a thysempys
+   saw pan-dra wra-ma govyn
+   ny won na forth thu'm nygys
+   
+#   ADAM
+   lauar an-nes ov vos vy         [700]
+   a'm bewnens my th'y bysy
+   A leuerel guyroneth
+   thy'so a'n oyl a versy
+   O dythywys thy'mmo vy
+   gans an tas a'y dregereth      [705]
+   pan vef chacys
+   gans an el yn pur thefry
+   my ha'm gvrek rag gul foly
+   helhys warbarth a fuen ny
+   in mes scon a paradys          [710]
+   
+   sew olow ov thryys lyskys
+   ny dyf guels na flour yn bys
+   yn keth forth-na may kyrthys
+   ha ny ov tos a le-na
+   my ha'th vam sur kekyfrys      [715]
+   ty a wylfyth an toknys
+   kyn wylly mur wolowys
+   na thout ny fyth ken ys da
+   
+#   SETH
+   my a wra fest yn lowen
+   the nygys bys yn gorfen        [720]
+   A das colon caradow
+   ny vynnaf lettya pella
+   my a'd pys ov sona gura
+   kyns ys mos hep falladow
+   
+#   ADAM
+   ke yn kerth ov map evy         [725]
+   ha nefra ov bannat thy's
+   gura the nygys eredy
+   kyns dewheles my a'd pys
+   
+#   SETH
+   A das dovt na bertheugh why
+   whare my a vyn mones           [730]
+   dev a'n nef dre y versy
+   me a bys d'agan gueres
+   
+#   [Et tunc iet ad paradisum et dt
+#   cherubin]
+   
+#   CHERUBIN
+   seth pan-dra yv the nygys
+   mar hyr forth dos may fynsys
+   lauar dy'mmo vy whare          [735]
+   
+#   SETH
+   A el me a leuer thy's
+   ov thas ev coth ha squytheys
+   ny garse pelle bewe
+   ha genef ef a'd pygys
+   a leuerel guyroneth            [740]
+   a'n oyl dotho dythywys
+   a versy yn deyth dyweth
+
+#   CHERUBIN
+   Agy the'n yet gor the ben
+   Ha y syl vyth ol na gen
+   pe-penag-ol a wylly            [745]
+   ha myr a pup tenewen
+   aspy yn-ta pup eghen
+   whythyr pup tra ol bysy
+   
+#   SETH
+   fest yn lowen me a wra
+   guyn ov bys kafus cummyas      [750]
+   the wothfos pyth vo ena
+   rag y leuerel thu'm tas
+   
+#   [et respicit et vertit se dicens]
+   
+   dev tek a wel yw homma
+   goef a gollas an wlas
+   sav an wethen thy'm yma        [755]
+   hy bos syghys marthys vras
+   Saw my a greys hy bos segh
+   ha gurys noth ol rag an pegh
+   a pehas ov thas ha'm mam
+   avel olow aga threys           [760]
+   sygh yns ol kepar ha leys
+   ellas pan thybrys an tam
+   
+#   CHERUBIN
+   A Seth osa dynythys
+   agy the yet paradys
+   lauar thy'm pan-dra wylsta     [765]
+   
+#   SETH
+   ol an tekter a wylys
+   ny yl taves den yn bys
+   y leuerel bynytha
+   A frut da ha floures tek
+   menestrouthy ha can whek       [770]
+   fenten bryght Avel arhans
+   ha pedyr streyth vras defry
+   ov resek a-dyworty
+   worte myres may tho whans
+   
+   warnethy yma gvethen           [775]
+   vhel gans lues scoren
+   saw noth ol yns hep dylyow
+   hag adro thethy rusken
+   nynsese a'n blyn the'n ben
+   noth yv ol hy scorennow        [780]
+   
+   ha war woles pan vyrys
+   my a welas hy gurythyow
+   bys yn yffarn dywenys
+   yn mysk mur a tewolgow
+   ha'y branchys yn van tyvys     [785]
+   bys yn nef vhel golow
+   ha hy warbarth dyruskys
+   kefrys ben ha barennow
+   
+#   CHERUBIN
+   wheth myr arte aberveth
+   hag ol ken ty a welfyeth       [790]
+   kyns ys dones a le-na
+   
+#   SETH
+   bos cummyas thy'm guyn ov bys
+   my a the'n yet desempys
+   may callaf gueles ken ta
+   
+#   [vadit et respicit et revertit]
+   
+#   CHERUBIN
+   A wylsta ken yn tor-ma         [795]
+   ys del ege agensow
+   
+#   SETH
+   vn sarf in guethen yma
+   best vthek hep falladow
+   
+#   CHERUBIN
+   ke weth tresse treveth th'y
+   ha myr gvel orth an wethen     [800]
+   myr pan-dra wylly ynny
+   kefrys gwrythyow ha scoren
+   
+#   [iterum vadit in sup(erum)]
+   
+#   SETH
+   Cherubyn el dew a ras
+   yn wethen me a welas
+   yn ban vhel worth scoren       [805]
+   flogh byen nowyth gynys
+   hag ef yn quethow maylys
+   ha kylmys fast gans lysten
+   
+#   CHERUBIN
+   
+   Mab dev o neb a wylsys
+   avel flogh byhan maylys        [810]
+   ef a bren adam the das
+   gans y gyk ha wos kefrys
+   pan vo termyn denythys
+   ha'th vam hag ol an dus vas
+   
+   ef yv an oyl a versy           [815]
+   a fue the'th tas dythywys
+   dre y vernans yredy
+   ol an bys a fyth sylwys
+   
+#   SETH
+   Benyges nefre re by
+   a dev lemyn guyn ov bys        [820]
+   gothfos guyr ol yredy
+   my a vyn mos thyworthy's
+   
+#   CHERUBIN
+   kemer tyyr spus a'n aval
+   a dybrys adam the das
+   pan varwo gorr'y hep fal       [825]
+   yntre y thyns ha'y davas
+   Anethe ty a wylfyth
+   tyr gvethen tevys whare
+   rag ny vew moy es tryddyth
+   war lyrgh the vones the dre    [830]
+   
+#   SETH
+   bynyges re by pup tyth
+   my a'd worth pur wyr nefre
+   ov das fest lowenek vyth
+   mar scon a'n bys tremene
+   
+#   ________________________
+   
+#   [Et tunc veniet ad patrem Adam et dicit
+#   ei]
+
+   A das ker my a welas           [835]
+   yn paradys fenten ras
+   ha warnythy vn wethen
+   hyr gans mur a scorennow
+   hag yn creys hy varennow
+   vn flogh maylys gans lysten    [840]
+   
+   hen ev an oel a versy
+   o dethywys dy'so sy
+   theworth an tas dev a'n nef
+   ha'n el thy'm a leuerys
+   pan vo tryddyth tremenys       [845]
+   ty a thascor the enef
+   
+#   ADAM
+   Arluth ker thy's mur worthyans
+   rag hyr lour ev ov bewnans
+   kymmer dy'so ov enef
+   guyn bys vones thy'm fethys    [850]
+   lafur ha duwon a'n bys
+   fest pel my re'n seruyas ef
+   A vap ny dal keles man
+   an pyth a thue gvelis veyth
+   galsof coyth ha marthys guan   [855]
+   dynythys ev ov deweyth
+   an tas dev arluth a van
+   re'm gorre the gosoleth
+   ov enef ha'm corf the'n gulan
+   Amen pysys pup pryueth         [860]
+   
+#   [et tunc morietur adam et dicit seth]
+   
+#   SETH
+   Tru govy ellas ellas
+   bos marow adam ov thas
+   gans y gorf a'm dynythys
+   kepar del fuve dremmas
+   yn dor my a vyn palas          [865]
+   tol may fo ynno cuthys
+   
+#   [seth facit sepulcrum et sepellitur adam]
+   
+#   [Hic ponet seth tria grana pomi in ore ade et
+#   dicit seth]
+   
+   ha'y wul hyr ha doun ragtho
+   droga galar ev thy'mmo
+   y anclethyas mar uskys
+   
+#   [hic ponet grana in ore ade]
+   
+   an try spus yn y anow          [870]
+   my a's gor hep falladow
+   kepar del ve thy'm yrghys
+   bolungeth dew yv hemma
+   bones gorrys an spus-ma
+   pan dremenna an bys-ma         [875]
+   yn y anow bos gorrys
+   an tas a nef sur hep fal
+   a'n gruk ef thotho haual
+   pan dorrasa an aval
+   an arluth a fue serrys         [880]
+   
+#   ______________________
+   
+#   LUCIFER
+   aha belsebuc aha
+   ov otte vn purvers da
+   lemyn wharfethys
+   awos ol roweth adam
+   bys thy'n vmma yn vn lam       [885]
+   ef a vyth kyrhys
+   
+#   SATANAS
+   my a kyrgh an guas wharre
+   bynytha rag growethe
+   genen ny yn tewolgow
+   belsebuc del y'm kyrry         [890]
+   fystyn duwhans gueres vy
+   ov ton a plos casadow
+   
+#   [hic descendunt]
+   
+#   BELSEBUC
+   My a'th wheres orth y thon
+   the yffarn kepar hag on
+   war geyn lowarn py brathky     [895]
+   awos ol the fath ha'th son
+   genen ny y fyth the thron
+   yn ponvotter venary
+   
+#   [hic accipiat animam et portabit ad
+#   infernum]
+   
+#   SATANAS
+   Adam ty a ve gothys
+   pan eses yn paradys            [900]
+   avel harlot ov lordye
+   ha rag henna desempys
+   ny a'th deg bys gorfen vys
+   yn ponow the wrowethe
+   
+#   BELSEBUC
+   Heyl ov arluth yn the se       [905]
+   otte kyrhys thy's the dre
+   genen ny an harlot bras
+   adam plos a thesefse
+   warnan conquerrye neffre
+   lemyn ef yv agan guas          [910]
+   
+#   LUCIFER
+   ov banneth theugwhy pup prys
+   mar tha y wreugh ov nygys
+   prest yn pup le
+   gorreugh an fals nygethys
+   gans abel a desempys           [915]
+   the yssethe
+   
+#   ____________________
+   
+#   [Hic incipit de noe et nave et dicit
+#   deus]
+   
+#   DEUS PATER
+   Drog yv genef gruthyl den
+   precins haual thy'm certen
+   rag cole orth vn venen
+   gulan ef re gollas an plas     [920]
+   a'm luf thyghyow a wrussen
+   pan wruge dres ov defen
+   mes a parathys lowen
+   an el whare a'n goras
+   
+   ow spyrys ny dryc nefre        [925]
+   yn corf map den vyth yn beys
+   ha reson yv ha prage
+   rag y vos kyc methel gurys
+   nynsus den ort ov seruye
+   len ha guyryon me a greys      [930]
+   yn ol an beys sav noe
+   ha'y wrek ha'y flehes kefrys
+   
+#   [Tunc veniet deus pater ad noe et dicit]
+   
+#   DEUS PATER
+   Sa ban noe ow seruont ker
+   dus gene pols the wandre
+   ha dy'so my a leuer            [935]
+   yntrethon taclow pryve
+   
+#   NOE
+   A das dev yn vhelder
+   bynyges re by nefre
+   rag genes yn pup teller
+   parys of the lafurye           [940]
+   
+#   DEUS PATER
+   Noe mar luen yv an beys
+   lemyn a scherewynsy
+   may thew theweth dynythys
+   ynno a gyk pup huny
+   gans pegh mar vr ev flerys     [945]
+   na allaf sparie na moy
+   hep gul dyel a ver speys
+   war pep ol sur marnas ty
+   Rag henna fystyn ke gura
+   gorhel a blankos playnyys      [950]
+   hag ynno lues trygva
+   romes y a vyth gylwys
+   aves hag agy yn-ta
+   gans pek bethens stanchvrys
+   ha tryhans keuelyn da          [955]
+   an lester a vyth a hys
+   
+   ha hanter cans keuelyn
+   yn-weth ty a wra y les
+   yn vhelder my a vyn
+   dek-warn-ugans y vos gures     [960]
+   war tu dylarg daras yn
+   ty a wra yv port hynwes
+   tresters dretho ty a pyn
+   a-drus rag na vo degees
+   
+#   NOE
+   Arluth kepar del vynny         [965]
+   an gorhel sur my a'n gura
+   pyth ev an othom dy'nny
+   cafus lafur an par-na
+   aban vynnyth pup huny
+   lathe ol an nor vys-ma         [970]
+   sav vnsel ov tus hammy
+   lath ny ganse mage ta
+   
+#   DEUS PATER
+   noe dre the thadder bras
+   ty a vew ov grath nefre
+   
+   kemer the wrek ha'th flehas    [975]
+   h'aga gvraget gor ganse
+   a bub eghen best yn wlas
+   gor genes dew annethe
+   a bup kynde ethen vas
+   y'th worhel guet dew gorre     [980]
+   
+   rag lyf bras my a thoro
+   a gutho ol an nor beys
+   myns den vs yn beys may fo
+   kyns bos due an lyf buthes
+   spyrys a vewnans ynno          [985]
+   vynytha na vo guylys
+   gor gura del dyscaf thy'so
+   pan vo gures my a thue thy's
+   A bub eghen a kunda
+   gorow ha benow yn weth         [990]
+   aga gora ty a wra
+   yn the worhel aberveth
+   pup maner bos yn bys-ma
+   vs the dybry may telet
+   rag den ha best magata         [995]
+   yn the lester ty a fet
+   
+#   [tunc transeat deus pater in celum et
+#   dicit noe]
+   
+#   NOE
+   Arluth cuf the arghadow
+   y wruthyl res ev thy'mmo
+   ythaf hep ynnyadow
+   the wonys a dro thotho        [1000]
+   
+#   [Tunc iet noe ad uxorem suam et dicit ei
+#   noe]
+   
+#   NOE
+   heeth ov bool thy'mmo tovth ta
+   ov thardar ha'm mortholow
+   my a vyn mos alema
+   the wruthyl ov nygyssow
+   
+#   UXOR NOE
+   mester yn scon my a wra       [1005]
+   the'n tas a nef caradow
+   pup ober ol yn bys-ma
+   a wren re bo plygadow
+   
+#   [Tunc iet ad operandam navem suam et dicit
+#   noe]
+   
+#   NOE
+   A dev ker assoma squyth
+   prynnyer derow ov trehy       [1010]
+   vytheth powes my ny'm byth
+   mar vrevv ew ov yssyly
+   guyn veys ha quellen an gyth
+   may fe yrhys thy'm hethy
+   arluth warnas tregeryth       [1015]
+   goef a ra the serry
+   
+#   [Et tunc veniet deus pater ad noe et dicit
+#   ei]
+   
+#   DEUS PATER
+   lemyn noy y'th worhel ke
+   ty hag ol meyny the gy
+   drefen luen ty thu'm seruye
+   ov cres a fet venary          [1020]
+   a pup best kemmyr whare
+   gorow ha benow defry
+   ol a'n ethyn ov nyge
+   guet copel may kemery
+   
+   Annethe the sawye has         [1025]
+   rag sythyn wose hemma
+   dew vgens dyth my a as
+   glaw the gothe awartha
+   kynyuer den vs yn wlas
+   na tra yn bys ov pewe         [1030]
+   sav vnsol ty ha'th flehas
+   gans lyf y wraf the lathe
+   
+#   NOE
+   a das benyges del os
+   the arhadow me a wra
+   my a vyn alemma mos           [1035]
+   tho'm gvrek ha'm flehes totta
+   
+#   [Noe dicit ad uxorem suam]
+   
+   a vryes hep falladow
+   mebyon ha myrhes kefrys
+   dre voth a'n tas caradow
+   ymma gorhyl cref ordnys       [1040]
+   ffystynnyn fast bys thotho
+   rag y tue lyf war an bys
+   may fo pup den ol ynno
+   ha pup best warbarth buthys
+   
+#   UXOR
+   A mester ker my a wra         [1045]
+   pup tra kepar del vynny
+   dun ol the'n gorhyl toth da
+   gans lyf na wrellen buthy
+   
+#   SEM
+   del yv gorhemmynnys thy'n
+   my a's gor bys yn gorhal      [1050]
+   kefrys bestes hag ethyn
+   ha cam degyns bos hep fal
+   
+#   CAM
+   Ota saw bos war ov kyn
+   Jafet degyns saw aral
+   awos an tas fystenyn          [1055]
+   rag ovn namnag of pur thal
+   
+#   JAFET
+   yma gene vn be da
+   agorre hag eys kemyskys
+   ol the'n bestes vs omma
+   a gef bos lour dewthek mys    [1060]
+   
+#   [Et tunc eant omnes intra homines et jumenta
+#   et dicit noe]
+   
+#   NOE
+   yn hanow a'n tas gvella
+   dun aberveth desempys
+   agan gorhyl a wartha
+   gans glaw ef a vyt cuthys
+   mergh guarthek mogh ha deves  [1065]
+   dreugh abervet desempys
+   sav an ethyn byneges
+   y a nyg quyc hag vskys
+   a das del on the wythres
+   a bol hag a lyys formys       [1070]
+   byth dy'nny nerth ha gveres
+   rag warnas prest ny a bys
+   
+#   SEM
+   my a vyn lemyn tyldye
+   guartha a'n gorhyl gans queth
+   ha henna a ra guythe          [1075]
+   na theffo glaw aberveth
+   
+#   CAM
+   yn hanow dev d'y lawe
+   tyy py ny agan beth meth
+   yma ov tegens ywe
+   hager gowes war ov feth       [1080]
+   
+#   JAFET
+   ota cowes pur ahas
+   ny's pyrth den mara peys pel
+   a wronnd an dor stremys bras
+   ov tewraga gans mur nel
+   
+#   NOE
+   dre grath a'n nef agan tas    [1085]
+   ny a's feeth kyn fo mur fel
+   agan gorhel re nygyas
+   re'n sawye arluth huhel
+   
+#   DEUS PATER
+   Marow yv pup tra ese
+   spyrys a vewnans ynno         [1090]
+   my a worhemmyn whare
+   the'n glaw na moy na wrello
+   an lyf woth gurens ymdenne
+   me a commonnd scon dotho
+   th'y teller kyns eus arte     [1095]
+   noe gonys may hallo
+   
+#   NOE
+   gallas an glaw the ves gvlan
+   ha'n dour my a gres basseys
+   da yv yn mes dyllo bran
+   mar ses dor segh war an beys  [1100]
+   
+#   SEM
+   My a's dyllo ahanan
+   ny thue arte my a greys
+   mar kyf carynnyas certan
+   warnethe y tryg pup preys
+   
+#   [Et tunc mittet corvum extra et ultra non est
+#   reversa]
+   
+#   NOE
+   Guyr thy'm ty a tharyvas      [1105]
+   an vargh-vran-na th'y whele
+   yma war garynnyas bras
+   ov tybry fest dybyte
+   an golom glas hy lagas
+   yn mes gura hy delyfre        [1110]
+   lelle ethen ren-ov-thas
+   leuerel ny won ple fe
+   
+#   SEM
+   my a wra hy delyfre
+   whare a das caradow
+   ha hy a wra aspye             [1115]
+   mar sus dor segh yn nep pow
+   
+#   [Et tunc mittet columbam extra quae statim
+#   reuertetur ad navem et capietur intra]
+   
+#   CAM
+   hy delyfre my a wra
+   yn mes yn hanow a'n tas
+   lemyn ke aspy in-ta
+   mar sus tyr segh in neb gulas [1120]
+   
+#   [hic venit columba portans ramum olive in ore suo]
+   
+#   JAFET
+   dynythys yv hag yma
+   yn hy myyn branch olyf glas
+   hy cemeres my a wra
+   agy the'n gorhyl toth bras
+   
+#   NOE
+   An tas dev re bo gorthyys     [1125]
+   synsys mur on th'y gare
+   nans yw an lyfow basseys
+   pan vs gveyth ov tesehe
+   ov mebyon my a gy peys
+   yn mes wheth dylleugh trysse  [1130]
+   mar kyf tyr sygh my a greys
+   dy'nny ny thewhel arte
+   
+#   JAFET
+   kepar del vynny a das
+   my a wra the arhadow
+   colom whek glas hy lagas      [1135]
+   ke nyg a-vgh lues pow
+   tyr segh yn guel nag yn pras
+   mar kefyth yn gvyr hep gow
+   ynno gueet in-ta whelas
+   bos the'th ly ha the'th kynyow[1140]
+   
+#   [Et mittet aliam columbam que revertetur
+#   portans ramum olive in ore suo]
+   
+#   SEM
+   Na nyl oges nag yn pel
+   ny's guelaf ov trenyge
+   hy re gafes dyhogel
+   dor dyseghys yn nep le
+   
+#   NOE
+   yn hanow a'n tas vhel         [1145]
+   an gorhel guren dyscuthe
+   Bos segh ha tek an awel
+   the dev y coth thy'n grasse
+   
+#   [Et tunc discooperiant nauem et dicit Noe]
+   
+   gorthyans ha gras thy's a das
+   dyseghys yv an nor veys       [1150]
+   nynsus yn guel nag yn pras
+   tus vev saw ny my a greys
+   
+#   UXOR
+   gurens dev y voth ha'y vynnas
+   py-penag vo yn y vreys
+   pur wyr y gallos yv bras      [1155]
+   yn nef hag yn tyr kefrys
+   
+#   [Et tunc veniet Deus pater ad Noe et stans in
+#   platea et dicit]
+   
+#   DEUS PATER
+   Noe my a worhemmyn thy's
+   ke yn mes a'th worhel scon
+   the wrek ha'th flehas kefrys
+   ethyn bestes ha prevyon       [1160]
+   cresseugh coullenweugh an beys
+   avel kyns ketep map pron
+   rag may fewgwhy sostoneys
+   eugh the wonys guel ha ton
+
+#   NOE
+   the volungeth yn pup le       [1165]
+   arluth vhel my a wra
+   yn mes a'n gorhel wharre
+   my ha'm gurek ha'm flehas A
+   yn onour dev th'y lawe
+   guren vn alter tek ha da      [1170]
+   may hyllyn sacryfye
+   thotho war an keth honna
+   
+#   CAM
+   yn dewellens pecadow
+   gul alter sur da vye
+   ha thotho agan lothnow        [1175]
+   warnethy sacryfye
+   
+#   JAFET
+   tekke alter yn neppow
+   ny alse den aspye
+   es del vs genen hep wow
+   dres an mount calvarye        [1180]
+   
+#   [hic paratur altare et deus pater stet
+#   iuxta]
+   
+#   NOE
+   dege ol agan ethyn
+   bestes yn weth maga tA
+   warnythy my a offryn
+   yn gorthyans the'n tas guella
+   
+#   UXOR EJUS
+   bugh offrynne my a vyn        [1185]
+   whare war an alter-na
+   y gras re thanvonno thy'n
+   an tas dev a wruk pup tra
+   
+#   SEM
+   Colom genef vy yma
+   yn onour dev my a wra         [1190]
+   war an alter hy gorre
+   
+#   UXOR EJUS
+   ffesont onan fat ha da
+   the'n tas dev a'n nef guella
+   my a offryn hep lettye
+   
+#   CAM
+   goth dek scon my a offryn     [1195]
+   the dev war ben ov dewlyn
+   hag a's gor war y alter
+   
+#   UXOR EJUS
+   dev a dal theugh ol henna
+   my a offryn mallart da
+   yn gorthyans the tas dev ker  [1200]
+   
+#   JAFET
+   The'n tas dev yn mur enor
+   war y alter my a wor
+   grugyer tek hag awhesyth
+   
+#   UXOR EJUS
+   yn enour thotho hep fal
+   my a offryn scon aral         [1205]
+   ha chappon da war ov fyth
+   
+#   [Et tunc veniet deus pater ad noe et dicit
+#   ei]
+   
+#   DEUS PATER
+   Noe rag kerenge orthy's
+   my ny gemere neffre
+   trom dyal war ol an veys
+   na dre thyal pup lathe        [1210]
+   cresseugh collenweugh kefrys
+   an nor veys a dus arte
+   war ethyn bestes pop prys
+   gallos a fyth warnethe
+   
+   kynyver best vs yn tyr        [1215]
+   ythyn ha puskes kefreys
+   yv gosteth theugh yn pur wyr
+   hag y bos theugh ordenys
+   na dybreugh my a yrvyr
+   kyc gans gos bys worfen veys  [1220]
+   eug gonetheugh termyn hyr
+   powes ny 'gys byth nep preys
+   
+#   NOE
+   pandra amount thy'n gonys
+   mar serryth orth den hep wow
+   pan vo ol thy'n lafurryys     [1225]
+   agan wheyl a vyt mothow
+   dre trom dyhal war an veys
+   ty a wra pep ol marow
+   mar tha yv genef a vrys
+   merwel kyns dos drok ancow    [1230]
+   
+#   DEUS PATER
+   Noy rak kerenge orthy's
+   my a wra thy's ambos da
+   luen dyal war ol an veys
+   ny gemeraf vynytha
+   
+#   NOE
+   ambosow orth tryher gureys    [1235]
+   annethe nynses laha
+   dre sor kyn fens y terrys
+   the sconya my ny alla
+   
+#   DEUS PATER
+   my ny dorraf bys vycken
+   an acord vs lemyn gureys      [1240]
+   yntre my ha lynneth den
+   bys vynytha ef a veys
+   yn record yu tokyn len
+   ov guarak a fyth settyys
+   yn ban yn creys a'n ebren     [1245]
+   na allo bones terreys
+   
+   honna a vyth tokyn da
+   a'n acord vs gureys hep fal
+   kyn fynnyf war an bys-ma
+   tevlel vyngeanns na dyal      [1250]
+   my a vyr scon orth honna
+   hag a'n acord a vyth cof
+   gans lyf ny wraf bynytha
+   lathe an dus guyls na dof
+   
+#   [Et tunc recedit ab eo et dicit noe]
+   
+#   NOE
+   Arluth del os dres pup tra    [1255]
+   the worhenmyn a vyt gureys
+   mos the wonys my a wra
+   ha'm gurek ha'm flehes kefrys
+   
+#   _____________________________
+   
+#   [hic pompabit abraham et postea dicit]
+   
+#   ABRAHAM
+   me a vyn mos the'n temple
+   ha dev ena y worthye          [1260]
+   kepar del goth thy'mmo vy
+   ef yv arluth nef ha'n beys
+   ha henna sur my a greys
+   a luen colon pur theffry
+   
+#   [hic descendit]
+   
+#   DEUS PATER
+   abram abram fystyne           [1265]
+   gura ha dus thy'mmo wharre
+   rak collenwel both ov breys
+   reys yv thy'so lafurrya
+   vn pols byhan alemma
+   del lauaraf pur wyr they's    [1270]
+   
+#   ABRAHAM
+   dynythys of . the'th volungeth
+   arluth porth cof . yn deyth dyweth
+   am enef vy
+   lauar thy'mmo . pandra wrama
+   y'n guraf ytho . scon yn tor-ma[1275]
+   yn pur deffry
+   
+#   DEUS PATER
+   ov bolungeth mar mynnyth
+   y collenwel hep let vyth
+   the vap ysac a geryth
+   y offrynne reys yv thy's      [1280]
+   war veneth a thysquethaf
+   thy'so gy del lauaraf
+   an couath byth ny hassaf
+   mar qureth thy'm a'n sacryfys
+   
+#   [hic ascendit deus ad celum]
+   
+#   ABRAHAM
+   arluth ker an sacryfys        [1285]
+   a vyth gurys orth both the vreys
+   ow map ysac offrynnys
+   ef a vyth war an meneth
+   me a'n gor war an alter
+   hag a'n lesk gans tan prynner [1290]
+   ny sconnyaf yn nep maner
+   a wul ol the voluneth.
+   
+#   [hic veniet ad filium suum]
+   
+   ow map ysac thy'm y reys
+   the dev gruthyl sacryfys
+   del yv arluth beys ha nef     [1295]
+   kymer thy'mmo ve kunys
+   gans louan bethens strothys
+   ha war the keyn doga ef
+   
+#   YSAC
+   otte omma ve kunys
+   ha fast ef gynef kelmys       [1300]
+   pur wyr a das
+   dun alemma desempys
+   bys yn meneth yv ordnys
+   gans dev a ras
+   
+#   ABRAHAM
+   tan ha clethe . yma gene      [1305]
+   lemmyn parys
+   dun alemma . rag offrynna
+   an sacryfys
+   
+#   YSAC
+   ow tas a vy . marth yn teffry
+   vs thy'm lemmyn               [1310]
+   
+#   ABRAHAM
+   ow map kerra . pen-dra vynta
+   orthyf govyn
+   
+#   YSAC
+   otte omma yn certan
+   prynner genef the wul taan
+   degys a dre                   [1315]
+   ple ma an offryn a das
+   a vyth leskys the thev ras
+   rag y worthye
+   
+#   ABRAHAM
+   Dev a thanfon thy'n a'n nef
+   herwyth y volungeth ef        [1320]
+   ov map certan y fyth gurys
+   my a vyn war an alter
+   gorre lemmyn an prynner
+   rag lesky an sacryfys
+   
+#   [hic ponit lignum super altare]
+   
+   me a leuer ov map thy's       [1325]
+   dev thy'mmo vy a erghys
+   may fythe gy offrynnys
+   thotho ef war an alter
+   
+#   YSAC
+   y volungeth mar sywa
+   y offendye ny vynna           [1330]
+   kyn fen marow yn tor-ma
+   an mernans me a'n kymmer
+   
+#   ABRAHAM
+   ke yn ban war an kunys
+   hag ena groweth a heys
+   may hylly bones leskys        [1335]
+   a vap whek ythof cuthys
+   ow colon yv marthys claf
+   thy'so gy del lauaraf
+   offendye dev ny vynnaf
+   Awos den fyth war an beys     [1340]
+   
+#   YSAC
+   byth lemmyn a confort da
+   pan yv both dev yn della
+   y kemeres me a wra
+   an mernans certan warnaf
+   a tas whek ol caradow         [1345]
+   ov dyw-luef colm ha'm garrow
+   gans louan fast colmennow
+   na allan seuel am saf
+   
+   mar pethaf kelmys lemmyn
+   offens vythol er-the-byn      [1350]
+   pan clewfyf vy an tan tyn
+   parhap y wrussen fye
+   a tas ker ol caradow
+   ov paynys a vyth garow
+   kyn vos leskys the lusow      [1355]
+   A thev gorwyth am ene
+   
+#   ABRAHAM
+   a ow map ker . na porth a wher
+   dev a'th weres
+   ef dev a ras . a'n cova'th ny has
+   termyn byth nes               [1360]
+   lemyn yn hast . me a'th kelm fast
+   a ver termyn
+   gans ov clethe . sur the lathe
+   scon me a vyn
+   
+#   [hic descendit gabriel et veniet ad abraham et
+#   tenet gladium ejus]
+   
+#   GABRIEL
+   abram abram scon goslow       [1365]
+   lemyn orth ov lauarow
+   a fynnaf dyryvas thy's
+   
+#   ABRAHAM
+   pyw os a gevs mar huhel
+   lauar thy'mmo dyowgel
+   del y'm kerry me a'd peys     [1370]
+   
+#   GABRIEL
+   abram me a leuer thy's
+   el a'n nef of danfenys
+   rag guythe na ve lethys
+   the vap ysac yw the ioy
+   yn pur wyr dev a aswon        [1375]
+   volungeth ol the colon
+   rag henna ymden yn scon
+   a thyworto ef deffry
+   
+#   ABRAHAM
+   A thev ker re by gorthys
+   bos ov map thy'mmo sawyys     [1380]
+   ow colon yv sur yaghys
+   nynsus arluth vyth saw ty
+   yn gorthyans thotho omma
+   offrynnye an keth mols-ma
+   yn le ysac y settya           [1385]
+   war an alter the lesky
+   
+#   YSAC
+   tan yn kunys . gorraf vskys
+   whythe a wraf
+   a thev a'n nef . clew agan lef
+   del y'th pysaf                [1390]
+   
+#   ABRAHAM
+   an sacryfys . the thev yv gurys
+   dun ny the dre
+   ow map ysac . scon dus yn rac
+   gura ov sywe
+   
+#   _____________________________
+   
+#   [Hic venit moyses et dicit et deus pater stet
+#   ante ipsum]
+   
+#   MOYSES
+   yma marth thy'm a vn dra      [1395]
+   an pyth lemmyn a wela
+   an bosnos dywy a wra
+   saw nynsugy ov lesky
+   
+   me a vyn mos the vyras
+   hag a wothfyth kyns denas     [1400]
+   a thyworto ol an cas
+   tra astrang yv thy'mmo vy
+   
+#   DEUS PATER
+   moyses moyses saf ena
+   na nes na thus na fella
+   rag ny vynnaf theworthy's     [1405]
+   dysk the skyggyow quyk the ves
+   seuel war tyr veneges
+   a wreth del lauaraf thy's
+   
+   ha my yv dev the tassow
+   abram ysac sur hep wow        [1410]
+   ha iacob yn weth keffrys
+   
+#   MOYSES
+   ny allaf myres y'th fath
+   rak golowder ny'mbus grath
+   a whythre warnas vn prys
+   
+#   DEUS PATER
+   yn egip whyrfys yv cas        [1415]
+   ov popel vy greuyys bras
+   gans pharow yv mylyges
+   ymons thy'mo ov crye
+   rag an lafur vs thethe
+   vyth ny yllons ymweres        [1420]
+   reys yv thy's mones ytho
+   bys yn egip the pharo
+   ha lauar my th'y warnye
+   vyth na wrella compressa
+   ow tus vs trygys ena          [1425]
+   rag dout mysshyf the gothe
+   
+   ty a wra woge hemma
+   gorre an tus a le na
+   bys yn tyreth a thynwa
+   lanwes leyth ha mel kefrys    [1430]
+   ny vynnaf orta bones
+   na pel ena yn dyses
+   del lauaraf thy's moyses
+   war the lergh vethens revlys
+   
+#   MOYSES
+   arluth ny vynnons crysy       [1435]
+   na clewas ov voys a vy
+   awos me the gous thethe
+   ha tus vyan ha tus vras
+   ny wruk dev thy'm dysquethas
+   vyth ny'n cresons ef neffre   [1440]
+   
+#   DEUS PATER
+   cous er the fyth . a ver termyn
+   pandra synsyth . y'th luef lemyn
+   lauer moyses
+   
+#   MOYSES
+   guelen a pren . a wraf synsy
+   ty yv chyften . ha dev thy'nny [1445]
+   luen me a greys
+   
+#   DEUS PATER
+   toul an welen . ol yn tyen
+   the'n dor vskys
+   ty a wylfyth . sur yn pyrfyth
+   merkyl tek gurys              [1450]
+   
+#   MOYSES
+   a thev a ras . serponnt yv hy
+   evth hy guelas . ovn a'm bus vy
+   crenne a wraf
+   
+#   DEUS PATER
+   a'n lost kymmer . thethy yn ban
+   y'th torn hep ger . sens the honan [1455]
+   thy's lauaraf
+   
+#   MOYSES
+   A arluth ker . my a'n kymer
+   yn ban wharre
+   an welen-ma . yn hy kunda
+   treylys arte                  [1460]
+   
+#   DEUS PATER
+   guyth an welen-ma yn ta
+   ha den vyth drog thy's ny wra
+   ha'm grath a rof lemyn thy's
+   hedre vo yn the herwyth
+   fythys nefre ny vethyth       [1465]
+   gans tebeles war an beys
+   na porth ovn vyth na veth trest
+   rag me a vyth genes prest
+   orth the weres yn pup le
+   ke alemma dyssempys           [1470]
+   ha gura ol del leuerys
+   ha grath thy'so my a re
+   
+#   MOYSES
+   the egipt ythaf vskys
+   rak colenwel both the vrys
+   arluth a ras                  [1475]
+   guyn y vys pan ve gynys
+   a allo gul thy's servys
+   a'y cof ny'n gas
+   
+#   [Hic deus ascendit ad celum]
+   
+#   ____________________________
+   
+#   [Hic pompabit rex pharo et postea dicit
+#   moyses]
+   
+#   MOYSES
+   A ty then myghtern pharo
+   dev a'm danfonas thy'so       [1480]
+   the wofyn prak yv genes
+   punscie y tus mar calas
+   vs trygys agy the'th wlas
+   ahanas marth a'n gefes
+   
+#   PHARO
+   a pyth yv an keth dev-na      [1485]
+   may reys thy'mmo yn tor-ma
+   a clewas ol y voys ef
+   y aswon certan ny wraf
+   popel ysral ny assaf
+   na's gorren y thy whyl cref   [1490]
+   
+#   ARON
+   ha thy'so dev a yrghys
+   may fe y tus ol gesys
+   the wul thotho sacryfys
+   del yv ef gallosek bras
+   mara qureth aga lettya        [1495]
+   na allons len y servya
+   me a leuer yn tor-ma
+   vynions cref a goth warnas
+   
+#   PHARO
+   out warnaugh a thevv adla
+   pen-dra wreugh ov repryfa     [1500]
+   ha my omma yn ov hel
+   y a vyth guythys calas
+   hedre vyns y yn ov gulas
+   rag nynsough mas dev lorel
+   
+#   MOYSES
+   a ny vynta obeye              [1505]
+   the thev a wruk the formye
+   hag a formyas nef ha'n veys
+   reys yv thy's ynno crysy
+   ha luen fythye yn teffry
+   bo ken ny fythyth sylwys      [1510]
+   
+#   PHARO
+   ty a heuel muskegys
+   hag yn gokyneth gyllys
+   awos an dev a geusyth
+   y popel ny vyth sparyys
+   yssel y fethons guythys       [1515]
+   keffrys yn nos hag yn geyth
+   
+   ha me a wyth harth na fe
+   den fyth ol sur anethe
+   the wul the thev sacrifyth
+   mar qura gothvethys mar pyth  [1520]
+   yn scon dyswreys ef a vyth
+   ha the'n mernans cot gorrys
+   
+#   ARON
+   ny vynnyth clewas dev ker
+   lemyn mos the'n caletter
+   the colon yw cales bras       [1525]
+   mar ny wreth ym-amendye
+   ef a wra tyn the punssye
+   may leuerry ogh ellas
+   
+#   PHARO
+   out warnas harlot pen cok
+   scon yn mes quyk a'm golok    [1530]
+   na tryk y'm cur
+   mar a'th caffaf re iovyn
+   y'th lathaf kyns ys vyttyn
+   a'm dew luef sur
+   
+#   [Moyses ambulat in platea]
+   
+#   MOYSES
+   vyth ny vyn an keth den-ma    [1530]
+   treyle the dev awartha
+   awos lauar leuerys
+   
+#   ARON
+   ny yllen travyth thotho
+   myshyf a goth warnotho
+   yn certan hag a ver spys      [1540]
+   
+#   ________________________
+   
+#   I NUNCIUS
+   lowene the flour an beys
+   yma cas bras wharfethys
+   ha cothys war the pobel
+   ny yllons bos nyfyrys
+   an tus yv marow yn wys        [1545]
+   nynsyw pleysys dev isrel
+   
+#   PHARO
+   out out out ellas ellas
+   bos wharfethys yn ov gulas
+   myshyf an par-ma cothys
+   lauar thy'mmo kyns mones      [1550]
+   py tyller yma moyses
+   ha py cost yma trygys
+   
+#   I NUNCIUS
+   yn mesk fleghys ysrael
+   dysky laha dev huhel
+   a wra thethe deyth ha nos     [1555]
+   yma ov cul sacryfys
+   ha'y pobel ef kekeffrys
+   the'n keth dev-na gans mur tros
+   
+   an dour ha'n eys yv posnys
+   maythens mur a tus dyswreys   [1560]
+   ha bestes certan y'th wlas
+   nynsyw aga dev pleysys
+   genes gy pan os punsys
+   ty ha'th pobel mar calas
+   
+#   PHARO
+   ellas lemyn pan-dra wraf      [1565]
+   conseler gentyl y'th pysaf
+   a ry thy'mmo cvsyl tha
+   ov colon yv claf marthys
+   bos drog an par-ma cothys
+   yn ov glascor yn tor-ma       [1570]
+   
+#   CONSULTOR
+   mar mynnyth bones yn eys
+   reys yv thy's gorre moyses
+   aron a'th wlascor yn meys
+   ha'ga pobel ol ganse
+   an venenes ha'n fleghys       [1575]
+   vethens yn mes exilyys
+   na theffo onan yn beys
+   the tryge omma neffre
+   
+#   PHARO
+   ov vanneth thy's conseler
+   gul war the lergh hep danger  [1580]
+   mennaf yn scon
+   pur wyr my a vyn mones
+   the geusel sur orth moyses
+   yn weth aron
+   
+#   [hic descendit pharo]
+   
+   moyses me a commond thy's     [1585]
+   ha the aron kekyfrys
+   may thylleugh yn mes a'm glas
+   tus venenes ha fleghys
+   omma ny vethons gesys
+   del lauaraf theugh an cas     [1590]
+   pup den ol degyns ganso
+   y pyth an mens a allo
+   war aga keyn fardellow
+   mesk ov pobel ny vynnaf
+   na fella agas gothaf          [1595]
+   eugh alemma the ken pow
+   
+#   MOYSES
+   ny vynnyth the pobel dev
+   gase cres thy'n yn nep tv
+   awos tryga yn pov-ma
+   ty a vyth punsys pur tyn      [1600]
+   rag the throg a ver dermyn
+   gans arluth nef awartha
+   
+#   ARON
+   reys yw mos mes an wlas-ma
+   nynsus tryga na fella
+   del heuel thy'nny omma        [1605]
+   ny fythyn gesys yn cres
+   
+#   MOYSES
+   a thev a nef the pysy
+   a luen colon gueres ny
+   nag y'n veny vylyny
+   gans pharow yw myleges        [1610]
+   
+#   _______________________
+   
+#   I HOMO GALEFF
+   tus venenes ha fleghys
+   ymons omma dynythys
+   ha'ga pyth degys ganse
+   moy ys cans vyl yn nomber
+   y a tremyn hep thanger        [1615]
+   vgy dev ker ov corthye
+   
+#   II HOMO JOSUE
+   gynef yma . farthel pur tha
+   war ov keyn sur
+   a thev a nef . clew agan lef
+   guyth ny y'th cur             [1620]
+   
+#   MOYSES
+   the arluth nef ythough druyth
+   dun alemma the'n mor ruyth
+   tus venenes ha flehys
+   the'n tyreth a thy'th wadow
+   yw reys gans dev caradow      [1625]
+   thy'n ena rag vos trygys
+   
+#   [ascendit super equum]
+   
+#   PHARO
+   gallas moyses ha'y pobel
+   mes a'm glas hy yv thewel
+   yn pur wyr war ov ene
+   me a vyn aga sywe             [1630]
+   ha warbarth age lathe
+   kyns me the treyle the tre
+   
+#   I MILES
+   bysy yv theugh fystyne
+   kyns ys y the tremene
+   an mor ruyth sur              [1635]
+   
+#   [hic descendit Gabriell]
+   
+   ymons a rag pel gyllys
+   del leuaraf an guyr thy's
+   lemyn byth fur
+   
+#   PHARO
+   dun alemma marrouggyon
+   kefrys yn weth squyerryon     [1640]
+   war aga lergh fystynyn
+   me a vyn aga lathe
+   ny vennaf onan sparye
+   marow vethons kyns vyttyn
+   
+#   I HOMO [GALEFF]
+   moyses thy'so lauara          [1645]
+   ty a gam wruk yn tor-ma
+   mes a egip agan dry
+   vyth ny yllyn tremene
+   an mor-ma war ov ene
+   nynsus trumeth vyth thy'nny   [1650]
+   
+#   II HOMO [JOSUE]
+   ov tos yma syr pharo
+   hag ost bras pur wyr ganso
+   del leuaraf thyughwhy why
+   ellas lemyn pen-dra wren
+   marow vethyn kettep pen       [1655]
+   nynsus scapya thy'nny ny
+   
+#   MOYSES
+   na thyscryssough dev a nef
+   rag ef a glew agas lef
+   gureugh why trestye in y gras
+   del leuaraf vy thywhy         [1660]
+   ef a embloth rago'n ny
+   gesough the ves croffolas
+   
+#   GABRIEL
+   dev a erghys thy's moyses
+   the welen ay kemeres
+   ha guyskel an mor gynsy       [1665]
+   an dour a vger a les
+   may hylly yn ta kerthes
+   ty ha'th pobel ol drythy
+   
+#   MOYSES
+   gorthyans thy's a thev a ras
+   pan danfensys the cannas      [1670]
+   rag pharo th'agan guythe
+   lauaraf theugh a btus vas
+   kekyfrys byan ha bras
+   lemmyn gureugh ol ov sywe
+   
+#   [percutit mare]
+   
+   yn hanow dev ty mor glan      [1675]
+   me a'th wysk gans ov guelan
+   vger a les forth thy'nny
+   may hyllyn mos the'n tyreth
+   yv ordnys thy'n yn pyrfeth
+   gans arluth nef yn teffry     [1680]
+   
+#   _________________________
+   
+#   II MILES
+   del leuaraf arluth thy's
+   yma moyses pel gyllys
+   yn mor del heuel thy'mmo
+   a rag dywhans ov kerthes
+   an dour ov fysky a les        [1685]
+   pup vr ol a thyragtho
+   
+#   ARMIGER
+   ol y pobel ymons y
+   orth y sywe pup huny
+   ha'n mor a pup tu thethe
+   ov seuel avel dyw fos         [1690]
+   guythys yns agy the clos
+   ny's buth dour certan neffre
+   
+#   PHARO
+   me a vyn aga sywa
+   the'n mernans aga gorra
+   kekyffrys byan ha bras        [1695]
+   ny fynnaf certan gase
+   onan vyth-ol the vewe
+   pynag a wharfo an cas
+   out govy ellas ellas
+   cothys warnan an mor bras     [1700]
+   ny a vyth cowal vuthys
+   dev moyses a wruk hemma
+   nynsus bewe na fella
+   ython warbarth myshevyys
+   
+#   ARMIGER
+   ellas govy . buthys on ny     [1705]
+   ny wren scapye
+   mysshyf lemmyn . cothys worthy'n
+   nynsus bewe
+   
+#   [Et veniet moyses et aaron et facit eis
+#   hallelujah et dicet moyses]
+   
+#   MOYSES
+   my a vyn gruthyl castel
+   ha drehevel thy'm ostel       [1710]
+   ynno jammes rag trege
+   Aban yv myghtern faro
+   buthys ha'y ost ol ganso
+   ny am byth cres the vewe
+   
+#   CALEF [IS HOMO]
+   moyses whek ny a dreha        [1715]
+   ragon chy pols the wonys
+   rag ny a yl gul scovva
+   ov cortes vos goskesys
+   
+#   JOSUE [IIS HOMO]
+   Awot omma onan da
+   ragon ordenys parys           [1720]
+   lemyn agan sone gura
+   kyns ys bones anhethys
+   
+#   MOYSES
+   banneth a'n tas ragas bo
+   hag ef prest ragas gvytho
+   venytha in cosoleth           [1725]
+   ha'y gras theugwhy re wronntyo
+   nefre the blygye thotho
+   yn dalleth hag yn dyweth
+   
+#   [ascendit super montem]
+   
+   my a wel tyyr guelen gay
+   ny welys tekke ru'm fay       [1730]
+   bythqueth aban vef genys
+   yn guyrder an thyr guelen
+   yv dysquythyans ha token
+   a'n try person yn drynsys
+   my a vyn aga threhy           [1735]
+   pepynag ol a wharfo
+   ha'ga don genef yn chy
+   gorthyans the'n tas dev may fo
+   
+#   [scindit virgas]
+   
+#   ARON
+   byneges yv an guel-ma
+   pan vs sawor sur mur da       [1740]
+   ov tevos annethe y
+   A losowys ol a'n bys
+   mar whek smyllyng my a grys
+   ny thothe bys venary
+   
+#   MOYSES
+   beneges re bo an tas          [1745]
+   a vynnas dysquethes thy'n
+   gvel ynny a gemmys ras
+   luen a vertu pup termyn
+   thyworthe magan bo gras
+   aga malye my a vyn            [1750]
+   gans mur a reonte bras
+   yn cendel hag yn ourlyn
+   
+#   II HOMO [JOSUE]
+   govy vyth pan vef genys
+   a dor ov mam dynythys
+   na vythqueth pan denys bron   [1755]
+   gans nader ythof guanheys
+   hag ol warbarth vynymmeys
+   afyne trois the'n golon
+   
+#   MOYSES
+   mar mynnyth cresy certan
+   nag vs dev lemyn onan         [1760]
+   a gotho ynno cresy
+   ty a saw a'n tros the'n pen
+   dre vertu a'n thyr guelen
+   may scon thethe delymmy
+   
+#   II HOMO [JOSUE]
+   My a greys yn dev an tas      [1765]
+   hag a'd pys yn cherite
+   moyses del oge den mas
+   ov sawye dre the pyte
+   
+#   MOYSES
+   Am thethe a thesempys
+   yn hanow a'n tas a'n nef      [1770]
+   try person vn dev henwys
+   ha sur y lyha the gref
+   
+#   II HOMO [JOSUE]
+   A dev lemyn guyn ov beys
+   sur aban y'm sawyas ef
+   y worthye y teleth they's     [1775]
+   mar vskys pan glew the lef
+   
+#   __________________________
+   
+#   I HOMO [CALEFF]
+   Ellas moyses ogh tru tru
+   shyndyys of gans cronek dv
+   ha whethys gans y venym
+   ov coske yn haus yn hal       [1780]
+   lyskys of a'n kyl the'n tal
+   yn cheryte gueres thy'm
+   
+#   MOYSES
+   dev a nef a glew the lef
+   saw guet may wrylly cresy
+   lemyn yn tas a wruk nef       [1785]
+   tyr ha mor ha den a bry
+   
+#   I HOMO [CALEFF]
+   Pur wyr mar lyha ov gref
+   my a'n a fyth dysosy
+   ken arluth agesso ef
+   ny'n gorthyaf bys vynary      [1790]
+   
+#   MOYSES
+   Am lemyn the'n gvellynny
+   a barth a'n tas veneges
+   hag y a wra eredy
+   a pup cleves thy's jehes
+   
+#   I HOMO [CALEFF]
+   Arluth veneges re by          [1795]
+   del ose dev hep pehes
+   sawyys yv ov ysyly
+   ol a'n venym ha'm cleves
+   
+#   [hic descendit deus pater]
+   
+#   IIS HOMO [JOSUE]
+   moyses mar sos profus lel
+   rys yv thy'so dyogel          [1800]
+   ry dour thy'nny the eve
+   mar ny wref hep falladow
+   mur a'n bobyl a verow
+   ha henna dyeth vye
+   
+#   MOYSES
+   An tas a'n nef dre y gras     [1805]
+   a donvon theugh agas whans
+   rag y seruonnth yn nep plas
+   nystefyth font a gyffyans
+   
+#   II HOMO [JOSUE]
+   the thev ploste gey ny re
+   na'n nyl thy'n bos na dewes   [1810]
+   rag henna thy's my a de
+   gorthye iovyn veneges
+   
+#   MOYSES
+   Aron whek pyth a cusyl
+   a reth thy'm orth am vresyl
+   a son a'n debel bobel         [1815]
+   rag dewes mar nystevyth
+   yn certan y a dreyl fyth
+   hag a worth dewow tebel
+   
+#   ARON
+   my a leuer ow broder
+   ny a vyn mos the besy         [1820]
+   whare war an arluth ker
+   del ywe luen a versy
+   may rollo yn nep teller
+   dour the eve thethe y
+   na allons yn nep maner        [1825]
+   kafus ken the thyscrysy
+   
+#   MOYSES
+   A vroder ov banneth thy's
+   rag the gusyl yv pur tha
+   gueres dywhans my a'd pys
+   ov fysadow dres pup tra       [1830]
+   a das dev y'th wolowys
+   clew galow a'n bobyl-mA
+   dour may fens y dysehys
+   a vevnans ry dethe gurA
+   
+#   [hic orat in monte]
+   
+#   ARON
+   na allons caffus cheson       [1835]
+   the wruthyl crothval na son
+   warnas a das veneges
+   mes pan vons dysehys gulan
+   y a dynagh yn certan
+   age dvow myleges              [1840]
+   
+#   DEUS PATER
+   moyses kemer the welen
+   ha ty ha'th vroder aren
+   a rag a'n debel bobal
+   guask gynsy dywyth an men
+   hag y res gover fenten        [1845]
+   mar therhyth thotho hep fal
+   
+   may hallo tus ha bestes
+   ha myns a vynno eve
+   may whello an debeles
+   ov gueres menough thethe      [1850]
+   
+#   MOYSES
+   a das dew ker veneges
+   ny yllyr re the worthe
+   rag pup vr ol the wythres
+   yv da ha mur the byte
+   a bur fals dyscryggygyon      [1855]
+   tebel agas manerow
+   na gresough a luen golon
+   bos an tas dev hep parow
+   
+   pan yllyn ny yntrethon
+   drey dour a'n meen flynt garow[1860]
+   dre grace a'n tas a vghon
+   guyr dev yn y oberow
+   
+#   [Et percuciet cum virga petram et exveniat
+#   aqua hic percutit bis silicem et fluit aqua]
+   
+#   CALEF
+   moyses sur my re beghas
+   hag a henna a elow
+   mersy war dev agan tas        [1865]
+   may affo an peghosow
+   
+#   DEUS PATER
+   Rag na worsys ov hanow
+   ha rag an flehysygow
+   a Israel dyscryggyon
+   ny's goryth hep falladow      [1870]
+   the'n tyr a th'y the wadow
+   ty na the vroder aaron
+   
+#   MOYSES
+   ov arluth ker cuf colon
+   pyv ytho a's hembronk th'y
+   mar ny wraf vy nag aron       [1875]
+   aga ledya venary
+   
+#   DEUS PATER
+   wheth ol bywe y a wra
+   nyns a den vyth vynytha
+   a'n keth re-na the'n tyr sans
+   marnas calef ha iosue         [1880]
+   rag y the vynnas gorthye
+   fals duwow erbyn cregyans
+   
+#   [hic deus ascendit ad celum]
+   
+#   MOYSES
+   my a wor yn ta lemyn
+   na'm bes bewe na fella
+   dynythys yv ov thermyn        [1885]
+   a'm bevnans sur yn bys-ma
+   mos the blanse my a vyn
+   yn dor an dyr guelen-ma
+   goef nep a worth jovyn
+   ha serry dev awartha          [1890]
+   
+#   [hic moyses plantat virgas in montem
+#   thabor]
+   
+   In gorthyans the'n tas a nef
+   my a wra agas planse
+   ha tregough th'y ordenanns ef
+   gurythyoug ha tyvoug arte
+   arluth dev ker klew ov lef    [1895]
+   ha gor vy the lowene
+   ha'm spyrys thy'so ressef
+   in manus tuuas dumine
+   
+#   [Et tunc morietur moyses]
+   
+#   _________________________
+   
+#   [et ludet rex dauid et ipse pompabit]
+   
+#   REX DD.
+   Wose cous ha lafurye
+   an vaner a vye da             [1900]
+   kemeres croust hag eve
+   ha powes wose henna
+   botler fystyn hep lettye
+   doro thy'm a'n guyn guella
+   rys yv thy'm porrys coske     [1905]
+   possygyon yn pen yma
+   
+#   PINCERNA
+   ov arluth ker . na vyth serrys
+   kettoth an ger . my a thue thy's
+   yn pup teller . thy'm may fo res
+   prest hep danger . vethaf parys[1910]
+   
+   parles vous et synour myn
+   rag gvel dewes vytteth vyn
+   nyns a yn agas ganow
+   yn pov-ma nynsus guel guyn
+   rag hemma yv pyment fyn       [1915]
+   yyf ov arluth hep parow
+   
+#   REX DD.
+   banneth sewes boteler
+   an dewes yv da ha cler
+   re dev an tas
+   my a vyn lemyn coske          [1920]
+   yma hun orth ov gryvye
+   marthys yn uras
+   
+#   CONSULTOR
+   eugh growetheugh ov arlut
+   may haller agas cuthe
+   gans dylles rych del deguth   [1925]
+   the vyghtern a dynyte
+   
+#   _____________________
+   
+#   DEUS PATER
+   gabryel fystyn whare
+   bys yn ierusalem ke
+   the vyghtern dauid lauar
+   ef a gyf yn araby [1930]
+   yn mount tabor guelynny
+   a plansas moyses hep mar
+   
+   a's drens the ierusalem
+   rag y feth map yn bethlem
+   genys a thyspreen an bys      [1935]
+   hag annethe crous y wrer
+   rag crouse cryst ov map ker
+   nep a'n gorthye guyn y veys
+   
+#   GABRIEL
+   A das del os luen a ras
+   my a wra ol del vynny         [1940]
+   the worhemmyn yn pup plas
+   del degoth thy'm hep ynny
+   
+#   [Et tunc veniet ad regem Dd. ipse solus et
+#   dicit Gabriel]
+   
+   David the araby ke
+   the veneth tabor whare
+   dog a le-ne tyr guelen        [1945]
+   a wruk moyses the planse
+   ha dro y genes the dre
+   the ierusalem yn fen
+   y feth othom annethe
+   the gvnde mab den defry       [1950]
+   may fo rys vn deyth a due
+   guthyl crous annethe y
+   
+#   [Tunc rex vigilando dicit admirando]
+   
+#   REX DD
+   bene dicite dominus
+   my re weles y'm hunrvs
+   a-thyragof el dyblans         [1955]
+   ef a yrhys thy'm kyrhas
+   a mount tabor gueel a ras
+   ma'm vethen drethe sylwans
+   
+   ov messyger . kyrgh ov courser
+   the varogeth                  [1960]
+   ol tus ov chy . deugh genef vy
+   bryntyn ha keth
+   
+#   NUNCIUS
+   ov arluth by godys day
+   parys yv an stede gay
+   yn weth an courser melyn      [1965]
+   kefrys hakney ha palfray
+   ynmons yn nobyl aray
+   arluth pan vynny yskyn
+   
+#   REX DD
+   messyger ov banneth dy's
+   my a vyn a thysempys          [1970]
+   marogeth ware bys t'y
+   yn evn forth th'y may thyllyn
+   may feen hembrynkys pesyn
+   en tas dev luen a vercy
+   
+#   [hic decendat Rex davit]
+   
+   In nomine dei patris          [1975]
+   a nef mennaf yskynne
+   ejus atque spiritus
+   re worro wyth am ene
+   
+#   [tunc equitabit]
+   
+   bynygys re bo an prys
+   may wrug an el ov guarnye     [1980]
+   ov otte ny denythys
+   bys yn meneth hep lettye
+   dyskynnough ketep map pron
+   ote an gvel theragon
+   glas ov tevy                  [1985]
+   yn enour bras . d'agan dev mur
+   an guel a ras . thyworth an lur
+   guraf the drehy
+   
+#   CONSULTOR
+   an re-me ev guel a ras
+   rag ny glewsyug yn nep plas   [1990]
+   sawor an par-ma vythqueth
+   yma dev yn tyller-ma
+   my a wor lemyn yn ta
+   pan yv mar whek aga eth
+   
+#   REX DD.
+   whethoug menstrels ha tabours [1995]
+   trey-hans harpes ha trompours
+   cythol crowd fylh ha savtry
+   psalmus gyttrens ha nakrys
+   organs in weth cymbalys
+   recordys ha symphony          [2000]
+   
+#   [ad equestres]
+
+   lemyn pep ol yskynnens
+   yn hanow a'n tas dev ker
+   ha war tv tre fystenens
+   kefrys marrek ha squyer
+   
+#   CECUS
+   arluth ker thy'mmo gueres     [2005]
+   gans the weel yn nep maner
+   dal of ny allaf gueles
+   son vy ganse hep danger
+   
+#   CLAUDUS
+   thy'mmo evrethek yn wet
+   ro nerth the gerthes yn fas   [2010]
+   ha my a grys yn pyrfet
+   aga vos gueel a vur ras
+   
+#   SURDUS
+   the den bothar na glew veth
+   myghtern ker dre gras a'n tas
+   an gueel gueres mar a'm veth  [2015]
+   the dev the voy y whon gras
+   
+#   REX DD
+   my a's gueres pup huny
+   mar mynnyugh perfyth cresy
+   dre grath a'n gueel vos sawys
+   in nomine patris et filii     [2020]
+   atque spiritus sancti
+   salui modo eritis
+   
+#   CECUS
+   a das veneges re by
+   lemyn saw ol on ny ny
+   agan dysses sur hep mar       [2025]
+   gorthyans the tas dev a'n nef
+   lemyn clewas agan lef
+   an re-ma yv guel hep par
+   
+#   [hic descendat de equo]
+
+#   REX DD
+   lemyn pup dyyskynnes
+   sav kyns ys yn tour mones     [2030]
+   leuereugh thy'm company
+   py le vyth an guel plynsys
+   may fons mogha onovrys
+   ha'n guella may wrons tevy
+   
+#   CONSULTOR
+   hedre vyyn ov predery         [2035]
+   yn glassygyon gesough y
+   Aga thyr the wrowethe
+   hag ordeyneugh guythysy
+   th'aga aspye vysy
+   war peyn bras d'age gvythe    [2040]
+   
+#   REX DD
+   ru'm fey hon yv cusyl fyn
+   botler my a worhemnyn
+   ha'th cowyth guytheugh why y
+   ma na vons yn nep maner
+   remmvys the gen tyller        [2045]
+   war beyn tenne ha cregy
+   Rag my a vyn pols cuske
+   venytha kyns ys dybry
+   squyth of dre ver lafurye
+   powes my a vyn defry          [2050]
+   
+#   NUNCIUS
+   my a's guyth gans mur enour
+   na vo harth den yn bys-ma
+   kyn fe myghtern py emprour
+   aga gorra alemma
+   
+#   PINCERNA
+   Emperour na myghtern glas     [2055]
+   na sodon kyn fo mar vras
+   a fyl aga remmvve
+   yn dyspyt th'y thew-lagas
+   my a wyth an gueel a ras
+   yn ierusalem nefre            [2060]
+   
+#   NUNCIUS
+   Cowyth groweth an nyl tv
+   hag aspy ahas ha glv
+   A rag hag a denewen
+   mar tue nep guas ha laddre
+   en gueel theworthyn pryve     [2065]
+   meth vyth ol d'agen ehen
+   
+#   PINCERNA.
+   Na lader by my vallok
+   kyn fe vyth mar vras quallok
+   na mar hovtyn a'y vody
+   cosk war the tor ha powes     [2070]
+   mar mynnyth cafus mowes
+   my a'd wor scon bys thethy
+   
+#   __________________________
+   
+#   [Tunc rex evigilando a sompno ibit ad virgulas
+#   et dicit]
+   
+#   REX DD
+   Cosel my re bowesas
+   assyw whek an hun myttyn
+   gorthyys re bo dev an tas     [2075]
+   yn y ober pup termyn
+   dyworto ma'm boma gras
+   mos the blanse my a vyn
+   en gueel gans reonte vras
+   yn nep plath tek hag ylyn     [2080]
+   
+#   II NUNCIUS
+   Arluth ker guella the vreys
+   yma tra varth wharvethys
+   haneth sur an keth guel-ma
+   yn dor ymons ol gurythyys
+   ha'n thyr the onan yvunyys    [2085]
+   aban etheugh a le-ma
+   
+#   REX DD
+   gorthyans the'n tas arluth nef
+   a'm luen golon my a bys
+   rag luen gallosek yw ef
+   hag yn pup ober marthys       [2090]
+   
+#   [ibit ad virgulas]
+   
+   yn plath may mons y a sef
+   dretho ef pan yns plynsys
+   na wrello y voth goef
+   y'n gefyth mur a trystyys
+   yn enour the'n pren may fe    [2095]
+   my a vyn vos garlont gureys
+   a arhans adre thethe
+   rag gothvos pyt vo y hys
+   
+#   PINCERNA
+   yma onen theugh parys
+   a arans pur ha fyn gurys      [2100]
+   my a's gor adro thotho
+   may haller govos the wyr
+   ha gueles yn blethen hyr
+   py gymmys hys may teffo
+   
+#   ________________________
+   
+#   [Et dicit rex David ad bersabee abluendo
+#   vestem in rivilo]
+   
+#   REX DD
+   Damsel er the gentylys        [2105]
+   dysque thy'm a'd kerense
+   rag bytqueth my ny welys
+   benen thy'm a wel plekye
+   wheth yn nep le
+   rof thy's ov thour . hel ha chammbour [2110]
+   vethaf the wour
+   warbarth ny a dryg nefre
+   
+#   BERSABEE
+   ov arluth ker caradow
+   myghtern os war ol an bys
+   assevye plygadow              [2115]
+   genef gruthyl both the vrys
+   a callen hep kelladow
+   ha dout ov vos hellyrghys
+   mar cothfo an casadow
+   dystough y fyen lethys        [2120]
+   
+#   [bersabe transeat domum cum rege dd]
+   
+#   REX DD
+   Bersabe flour ol an bys
+   certus rag the gerense
+   syr vrry a fyth lethys
+   my a'n te thy's ru'm leute
+   rag ol ov yeues pup prys      [2125]
+   ty a vyth pur wyr nefre
+   growet yn guely a hys
+   may hyllyf genes coske
+   
+#   BERSABE
+   my ny allaf the nahe
+   lemyn pup tra ol gronntye     [2130]
+   theworthyf a wovynny
+   ov arluth whek ol lathe
+   ken ef a wra ow shyndye
+   mar clew vyth agan guary
+   
+#   REX DD
+   ov holon ger caradow          [2135]
+   dew rvth ros flour hy hynse
+   ef a vyth hep falladow
+   marow rag the gerense
+   
+#   REX DD
+   vrry ov marrek guella
+   my a vynsa the pysy           [2140]
+   gor ost genes yrvys da
+   the omlath del y'm kerry
+   vn eskar bras thy'm yma
+   war ov thyr ov gul mestry
+   marogeth my ny alla           [2145]
+   yma cleves y'm body
+   
+#   HURIAS
+   Syr arluth ker del vynny
+   my a wra prest hep ynny
+   ol thu'm gallus vynytha
+   ha del oma marrek len         [2150]
+   venythe ny thof a'n plen
+   er na'n prenne an guas-na
+   
+#   REX DD
+   A vrry assos gentyl
+   my a'd car mur ru'm peryl
+   rag the worthebow ev tek      [2155]
+   gueyt bos a rag yn voward
+   ma na vy synsys coward
+   nag awos den vyt ovnek
+   
+#   HURIAS
+   ov arluth my a'n te thy's
+   re'n ordyr a recevys          [2160]
+   ny'm pref den mar gowardy
+   rag my a vyth an kynso
+   bom yn vyag a rollo
+   hag a perfo ov meystry
+   farwel ov arluth guella       [2165]
+   ny vynna streche pella
+   son vy kyns mos my a'd pys
+   
+#   REX DD
+   ov banneth thy's vynytha
+   ov messyger genes a
+   ha'm botler kefrys yrvys      [2170]
+   
+#   HURIAS
+   rys ev thy'm kevsel defry
+   orth ow gurek kyns mos a dre
+   marsellen hep cous orty
+   hy holon hy a torse
+   
+#   [dicit ad barsabe]
+   
+   bersabe ov whek e vy          [2175]
+   rys yv dy'mmo lafurye
+   the vn vatel yredy
+   sav dystogh hy a vyth due
+   
+#   [hic paratur et armatur hurias]
+   
+#   BERSABE
+   Na wreugh why war ov ene
+   theworthef vy vynythe         [2180]
+   ma ov wolon ov ranne
+   pan glewaf cous an par-ne
+   ov arluth by my leute
+   my a der crak ov conne
+   marsevgh lemyn mes a dre      [2185]
+   nefre ny thebraf vare
+   
+#   VRIAS
+   bersabe ov fryes lel
+   rys yv gruthyl dyogel
+   voth agan arluth sefryn
+   ny allaf pella trega          [2190]
+   my a vyn dy'so amma
+   ha pys genef fest yn tyn
+   
+#   [ascendit ea et vadit]
+   
+#   [hic descendit vryas]
+   
+#   BERSABE
+   ogh govy pan vef genys
+   gans moreth ythof lynwys
+   war the lergh ov arluth whek  [2195]
+   sav vynerre thewhylly
+   genes my a wra pysy
+   ha henna a vye tek
+   
+#   [hic descendit gabriel]
+   
+#   VRIAS
+   My a'd pys now messyger
+   dog manerlich ov baner        [2200]
+   del vynny bos rewardyys
+   ha ty in weth botteler
+   my a'd pys may fy asper
+   avel marrek fyn yrvys
+   
+#   [hic ascendit super equum]
+   
+#   II NUNCIUS
+   my a leuer thy's vrry         [2205]
+   na borth dout ahanaf vy
+   certan nefre
+   rag ny fyth ken the perth y
+   my a leuer theugwhy why
+   war ov ene                    [2210]
+   
+#   [Et tunc equitabunt extra ludum]
+   
+#   ________________________________
+   
+#   [et postea venit nuncius et dicit ad Dd
+#   regem]
+
+   ov arluth lowene thy's
+   ov ote vy devethys
+   arte the dre
+   sav syr vrry ev lethys
+   ha the votteler kekyfrys      [2215]
+   govy ragthe
+   
+#   REX DD
+   dar marow yv syr vrry
+   lauar thy'm del y'm kerry
+   pan vernans a'n geve ef
+   ha fetel vefe lethys          [2220]
+   rag ef o stout ha gothys
+   hag a ym-sensy den cref
+   
+#   II NUNCIUS
+   marow yv by godys day
+   ef a vynse gul deray
+   hag a ros strokosow tyn       [2225]
+   saw vn marrek a'n lathas
+   ha the'n dor scon a'n goras
+   hag a'n hakyas the dymmyn
+   
+#   [Tunc veniet angelus ad regem dauid et
+#   querat questionem et dicit]
+   
+#   GABRIEL
+   gortheb thy'm ty myghtern bras
+   den an geffe cans dauas       [2230]
+   ha'y kentrevek saw onan
+   mar a's ladtre theworto
+   pan pyn a gotho thotho
+   lauar en guyr thy'm certan
+   
+#   REX DD
+   my a wortheb thy's whare      [2235]
+   yn certan na vy lettyys
+   dre guyr vrus sur y cothe
+   dotho gothaf bos lethys
+   yn pur defry
+   nep a rella                   [2240]
+   yn ketella
+   mernans yv gvyw th'y vody
+   
+#   GABRIEL
+   yn ketella ty re wruk
+   ha theworth vrry re thuk
+   y vn wrek dauid certan        [2245]
+   ha thy'so gy ythese
+   benenes lour ha plente
+   gothaf the vrus the honan
+   
+#   REX DD
+   arluth gevyans thu'm ene
+   govy pan wruge pehe           [2250]
+   gans corf a'n debel venen
+   deus mei miserere
+   herweth the grath ha'th pyte
+   na'm byma peyn yn gorfen
+   
+#   [Et tunc sub arbore sca? Incipit
+#   psalterium]
+   
+#   REX DD
+   ov conselar whek y'th pesaf   [2255]
+   dysk thy'mmo vn ankenek
+   rag ov fehas pan-dra wraf
+   may te sorre a tas whek
+   
+#   CONSULTOR
+   yn amendys . a'd pehosow
+   orden bos gureys . temple golow [2260]
+   bras ha ledan
+   bethens kyrhys . masons plente
+   yn weth guarnys . tus a'n cyte
+   ketep onan
+   
+#   REX DD
+   benneth a'n tas dev re'th fo  [2265]
+   rag sur del hevel thy'mmo
+   pur wyr hon yv cusyl da
+   rag henna hep falladow
+   ol war-lergh the gussullyow
+   bys venytha my a wra          [2270]
+   
+#   [ascendit rex dd.]
+
+   messyger my bel aber
+   dus thy'mmo ketoth ha'n ger
+   rag colenwel voth ov brys
+   
+#   NUNCIUS
+   re dev tas ov arluth ker
+   venytha yn pup teller         [2275]
+   my a vyth pur parys thy's
+   
+#   REX DD
+   messyger ke gorhenmyn
+   ol the'n masons yn cyte
+   may tyffons vmma myttyn
+   war beyn cregy ha tenne       [2280]
+   the wul fos a vyyn bryntyn
+   hag a lym yn creys a'n dre
+   yn enour dev my a vyn
+   yn dre-mme gruthyl temple
+   
+#   NUNCIUS
+   arluth the voth my a wra      [2285]
+   del degoth thy'm dres pup tra
+   ol thu'm gallus yn pup le
+   ny vynna streccha pella
+   farwel ov arluth guella
+   rag my a vyn fystene          [2290]
+   
+#   REX DD
+   Wel thov fare messyger
+   rag cannas os hep danger
+   nynsus fout ynnos guelys
+   kens mos eyf ten guyn pymeth
+   ha the scafe sur ytheth       [2295]
+   yn ov nygys my a grys
+   
+#   [hic deus pater descendit]
+   
+#   NUNCIUS
+   oyeth sy glewyugh thy'm ol
+   masons a'n dre ketep pol
+   guetyeugh bones avorow
+   ov conys yn crys a'n dre      [2300]
+   War beyn cregy ha tenne
+   adro the'n temple hep gow
+   
+#   [Et iterum veniet ad regem et dicit ei]
+   
+   ov arluth lowene thy's
+   an masons ol yv guarnyys
+   bras ha vyhen                 [2305]
+   ha thy'm y a worthebys
+   y fethons myttyn parys
+   ketep onen
+   
+#   REX DD
+   messyger rag the seruys
+   the rewardye my a ra          [2310]
+   carn suyow ha trehembys
+   chatur annethe thy's gura
+   
+#   NUNCIUS
+   gromersy arluth a brys
+   rag the roow prest yv da
+   cortes os drys tus a'n bys    [2315]
+   ov ry thy'm ro an par-ma
+   
+#   _________________________
+   
+#   IS CIMITERIUS
+   Ty vaow darbar lym ha pry
+   meyn wheyl slodyys ha genov
+   ha my a fystyn agy
+   ov trehevel an fosow          [2320]
+   
+#   IIS CIMITERIUS
+   Nansyw groundyys genef vy
+   sol a brys gans horvenow
+   mar ny fystyn pup huny
+   why as byth drog vommennow
+   
+#   REX DD
+   conseler dun ny the veras     [2325]
+   scon war an wonesugy
+   mar ny wonethons yn fas
+   y a's tevyt anfugy
+   
+#   [hic descendit]
+   
+#   CONSULTOR
+   syr arluth whek mur y ras
+   yma ov conys thyuwhy          [2330]
+   chyf guythoryon ol a'n gulas
+   a wother the dysmegy
+   
+#   ____________________
+   
+#   [deus sit in platea]
+   
+#   DEUS PATER
+   Dauid ny wreth thy'mo chy
+   yn certen bys venary
+   the vos den lath yv anken     [2335]
+   ty re thyswrug eredy
+   hevelep tho'm face vy
+   vrry nep o marrek len
+   
+#   REX DD
+   arluth ytho pyw a wra
+   coul dreheuel ol the chy      [2340]
+   
+#   DEUS PATER
+   Salamon the vap kerra
+   a'n coul threha eredy
+   
+#   [hic deus ascendit]
+   
+#   REX DD
+   lemyn my a wor the wyr
+   bos ov thermyn devethys
+   my re vewas termyn hyr        [2345]
+   
+#   [davit ibit ad lectos]
+   
+   arlythy my agas pys
+   salmon ov map koroneugh
+   h'agas myghtern ef synseugh
+   hedre vyugh byv yn bys-ma
+   kepar ha my ef gorthyeugh     [2350]
+   rag dev a'n dysquethas theugh
+   ha'y volnogeth yv henna
+   
+#   NUNCIUS
+   arluth the voth my a wra
+   del degoyth thy'm yn pup tra
+   awos tra vyth a warfo         [2355]
+   a pe voth dev yn della
+   ken agesough venytha
+   ny zensen somot y go
+   
+#   REX DD
+   ny vyn dev ker th'y lawe
+   na fella my the vewe          [2360]
+   omma genough yn certan
+   a das yntre the thewle
+   my a gymmyn ov ene
+   guythe ef rag tarofvan
+   
+#   [Et tunc morietur rex Dauid]
+   
+#   CONSULTOR
+   ogh govy vones marow          [2365]
+   agan arluth hep parow
+   dun goryn y gorf yn veth
+   ha pesyn rag y ene
+   may fo dev luen a byte
+   re'n kyrho thotho th'y wleth  [2370]
+   
+#   [Et ipse sepelliret ipsum et portabit corpus sub
+#   aliquo tento et ibit ad salamonem et dicit nuncius]
+   
+#   NUNCIUS
+   dun the gyrhas salamon
+   ha goryn ef yn y dron
+   avel myghtern yn y se
+   may hallo vos kerenys
+   kepar del fue thy'n yrhys     [2375]
+   gans y das kyns tremene
+   
+#   [hic pompabit salamon]
+   
+#   CONSULTOR
+   lowene thy's salamon
+   dus genen ny quyc the tron
+   the das dauid
+   rag dewesys . os myghtern thy'n [2380]
+   ha kerenys . a ver dermyn
+   sur ty a vyth
+   
+#   [hic pompabit rex salamon si voluerit]
+   
+#   REX SAL.
+   ffest yn lowhen arlythy
+   agas enour gromersy
+   a vynnough the wul thy'mo     [2385]
+   mara pethaf bev vlethen
+   my a'n taluyth thyugh ru'm pen
+   pypenagol a sconyo
+   
+#   [hic descendit salamon]
+   
+#   NUNCIUS
+   Salmon lemen ke y'th tour
+   rag ty a vyth governour       [2390]
+   whare myghtern kervnys
+   ysse yn the see yn weth
+   a bewe the tas daveth
+   rag ef a'n kemynnys thy's
+   
+#   [hic intrabit]
+   
+#   REX SALAMON
+   serys gromersy yn weth        [2395]
+   mara pewaf why a veth
+   ov chyf prive guyth-thysy
+   ha rag why thu'm kerune
+   my a re thyugh bosuene
+   lostuthyel ha lanerchy        [2400]
+   
+#   [Rex salamon pompabit hic et postea dicit salamon]
+   
+   messyger cannas gentyl
+   del os ov seruont hep gyl
+   dus yn rag del y'm kyrry
+   
+#   NUNCIUS
+   ov arluth ker salamon
+   awos lavur na dewon           [2405]
+   nefre ny fallaf theughwhy
+   
+#   REX SALA.
+   ke gorhenmyn the'n cyte
+   may teffons omma whare
+   war beyn aga bos dyswrys
+   masons ha karpentorryon       [2410]
+   trehesy-meyn tyorryon
+   an temple may fe coul wreys
+   
+#   NUNCIUS
+   syr arluth re synt gylmyn
+   my a wra the worhenmyn
+   ol yn tyen                    [2415]
+   hag a warn the vysterdens
+   avorow thy's may teffens
+   yn ketep pen
+   
+#   [hic intrabit]
+   
+   oyeth or oyeth yn weth
+   sy glewyugh bryntyn ha keth   [2420]
+   an myghtern a worhenmyn
+   the ol an karpentoryon
+   masons yn weth tyorryon
+   may fons y ganso myttyn
+   onma the wul an temple        [2425]
+   a ruk y das the astel
+   rag ef a vyn hep lettye
+   wheyl y das y golenwel
+   
+#   [revertat domum]
+   
+#   ______________________
+
+   ov arluth ker my re bue
+   yn cyte fast ow kelwel        [2430]
+   the vysterndens thy's a the
+   avorow pur dyogel
+   
+#   REX SAL.
+   ov bannath thy'so gryffyn
+   ty a lefes yn thefe
+   mar ny gevyth meth py gvyyn   [2435]
+   ke the fenten the eve
+   mos the vyres my a vyn
+   ov gonesugy whare
+   ha thethe prest gorhenmyn
+   gruthyl wheyl dek ha prive    [2440]
+   
+#   IS CARPENTARIUS
+   dev tek a bren rag styllyow
+   ha compos y denwennow
+   bras ha crom y ben goles
+   ha'y veen mon ha'y scorennow
+   my a vyn trehy tennow         [2445]
+   ha lathys tek ha corbles
+   
+#   REX SAL.
+   god spede gonesugy
+   gonys a wreugh pur vysy
+   thy'm del hevel
+   fossow da gans lym ha pry     [2450]
+   ha pen cref warnethe y
+   gureugh drehevel
+   
+#   IS CIMITERIUS
+   syre my a leuer thy's
+   nannsyv an fossow coul wrys
+   the ras compys by my fay      [2455]
+   pur wyr my a vyth ragthe
+   na gef den vyth fout ynne
+   yn nep fos vyth be thys day
+   
+#   REX SAL.
+   Ryght wel yseyd cowyth whek
+   the wheyl yn ta thy'm a blek  [2460]
+   dew vody tha ough yn guyr
+   ha rag bos agas wheyl tek
+   my a re thyugh plu vuthek
+   ha'n garrak ruen gans hy thyr
+   
+#   IIS CIMITERIUS
+   ha largys ha gromersy         [2465]
+   ny a yl bos fest mery
+   rag cafus ro an par-na
+   lemyn nynses mestrysy
+   yn wlas-ma pur wyr saw ny
+   ow masones yn pow-ma          [2470]
+   
+#   IIS CARPENTARIUS
+   kowyth profyyn an styllyow
+   marsens compes the'n fosow
+   may haller age lathye
+   gans corbles lasys tennow
+   hag a's ty gans plynkennow    [2475]
+   may fo ioy myres worte
+   
+#   IS CARPENTARIUS
+   ny vern tra vyth assaye
+   h'ow guereseugh cowethe
+   ov corre tvmbyr yn ban
+   may haller aga lathye         [2480]
+   yn cres a'n chy res vye
+   kafus gyst cref na vo guan
+   
+#   IIS CARPENTARIUS
+   by godys fast wel y set
+   thys tumbyr ys even y met
+   ha compos rag an fossow       [2485]
+   tyorryon yn ketep chet
+   tyeugh an temple hep let
+   na theffo glaw the'n styllyow
+   
+#   REX SAL.
+   yn certan gonesugy
+   ken agesough why ny's ty      [2490]
+   rag sotel ough yn pup creft
+   saw leuereugh thy'm defry
+   pren the gyst ple kefyn ny
+   a vo compes avel sheft
+   
+#   [salamon abit domum]
+   
+#   IS CARPENTARIUS
+   ru'm fey yn ol the gosow      [2495]
+   nynsus gyst vyth ol hep wow
+   vas the dra vyth sur ragtho
+   nag yn wlas-ma yn nep pow
+   saw vn pren gans garlontow
+   a arhans adro thotho [2500]
+   
+#   REX SAL.
+   Mur a gas vye gene
+   trehy henna ru'm laute
+   saw aban na gefyr ken
+   yn enour dev th'y lawe
+   eugh th'y drehy hep lettye    [2505]
+   ha musurough ef yn len
+   
+#   IIS CARPENTARIUS
+   my a'n musur lour yn ta
+   na bertheugh ovn a henna
+   ov arluth whek dev a wor
+   gans squyr compes ha scannt lyn[2510]
+   na vo hyrre esumsyn
+   na vyth cotta war nep cor
+   
+#   IS CARPENTARIUS
+   otteve musurys da
+   den yn bys ny'n musyr guel
+   harlyth my a'n trehy omma     [2515]
+   hag evnne gans ol the nel
+   
+#   IIS CARPENTARIUS
+   an combrynsy war the ben
+   mar lel y synsys the lyn
+   kyns ys trehy war an pren
+   re got o a gevelyn            [2520]
+   
+#   IS CARPENTARIUS
+   hethe the'n dor my a'd pys
+   scon ef a vyth amendyys
+   my a'n scarf yn ta whare
+   serry orthyf ny res thy's
+   lemyn sur ythyv evn hys       [2525]
+   evnyn ef yn scon th'y le
+   
+#   IIS CARP.
+   an jawl re'th ewno th'y glas
+   ny yl an gyst yn y blas
+   re hyr ew a gevelyn
+   yn evn greys an scarf trohe   [2530]
+   ha compys mar ny vethe
+   ny won pan-dra leueryn
+   
+#   IS CARP.
+   ny a'n tregh del leuereth
+   hen yv an crys tan ov feth
+   dre pup merk ol yn bys-ma     [2535]
+   omma compys yntre dew
+   my a'n tregh re'n arluth dev
+   ha na moy sur venytha
+   
+#   IIS CARP.
+   drehevyn ef abarth dev
+   yn ban lemyn re got ev        [2540]
+   a gevelyn da yn guyr
+   an combrynsy yv hemma
+   then the'n myghtern the thysta
+   an gyst na vyn dos the squyr
+   
+#   IS CARPENTARIUS
+   ov arluth myghtern salmon     [2545]
+   yma mur a varthogyon
+   a'n keth gyst-ma warvethys
+   an nyl torn y fyth re hyr
+   tres aral re got in guyr
+   ken fo mar len musurys        [2550]
+   
+#   REX SAL.
+   yn della aban ywe
+   my a comonnd y wore
+   gans enour bras desympys
+   yn temple the wrowethe
+   ha guetyeugh pup y worthye    [2555]
+   war beyn agas bos lethys
+   
+#   REX SAL.
+   ha why carpenters gentyl
+   aspyeugh yn ov cossow
+   pren the gyst hep tol na gyl
+   vethens gurys thyugh hep whethlow [2560]
+   
+#   IIS CARPENT
+   my a wor ple ma onan
+   trehys hag ol schapys glan
+   mar asyw thy'nny evn hys
+   
+#   IS CARP
+   awos dev dun ahanan
+   th'y gerhas the dre certan    [2565]
+   may hallo bos musurys
+   
+#   IIS CARPENT
+   otteve ov crowethe
+   my re wruk y vusure
+   rag an keth wheil-ma dewyth
+   
+#   IS CARPENT
+   war agan keyn ef a thue       [2570]
+   the dre th'y settye th'y le
+   rag pur tha ew rag an wyth
+   
+#   IIS CARPENT
+   Syttyyn an pren yn y plas
+   dev ker danvon thy'm an gras
+   may hallo henna sevel         [2575]
+   
+#   IS CARPENT
+   ny gaffen war ov loute
+   composse pren yn nep le
+   na rag an plas-ma vyth wel
+   
+#   IIS CARPENT
+   dun the leuerel yn scon
+   d'agan arluth salamon         [2580]
+   bones an temple coul wrys
+   
+#   [ad regem salamon]
+   
+   heyl ov arluth yn the thron
+   gurys yv the temple hep son
+   agan gobyr ny a'th pys
+   
+#   REX SAL
+   banneth a'n tas re ges bo     [2585]
+   why as-byth by godys fo
+   agas gobyr eredy
+   warbarth ol gueel behethlen
+   ha coys penryn yn tyen
+   my a's re lemyn theugh why    [2590]
+   hag ol guer-thour
+   an enys hag arwennek
+   tregenver ha kegyllek
+   annethe gureugh theugh chartour
+   
+#   IS CARPENT
+   gromersy arloth hep par       [2595]
+   ny a yl lour bones prout
+   ny's teve tus vyth hep mar
+   roow mar tha by myn hout
+   
+#   REX SAL
+   my a vyn lemyn ordne
+   mab-lyen ov sel pryve         [2600]
+   the vos epscop yn temple
+   an lahe the venteyne
+   servys the dev the gane
+   y sacra scon my a wra
+   
+#   [Consultor erit epc. et dicit]
+   
+#   CONSULTOR
+   syr arluth dev tal thy'so     [2605]
+   ov mones the ry thy'mo
+   dygnyte bras an par-na
+   guyw yv yn len the servye
+   the servonnth ov thafonsye
+   nynsus par thy's yn bys-ma    [2610]
+
+#   [hic consultor induit vestimentum clic]
+   
+#   REX SAL.
+   yrverys eu ru'm levte
+   sol-a-thyth the avonsye
+   an kynse benfys a'm been
+   the epscop guraf the sacre
+   kymmer the vytour whare       [2615]
+   ha byth yn the servys len
+   
+#   [hic dat metram episcopo]
+   
+#   EPISCOPUS
+   aban vynnyth yn della
+   y resseve my a wra
+   yn gorthyans the'n tas a'n nef
+   mar man dev rag an guella     [2620]
+   my a leuer yn templa
+   whare seruys thotho ef
+   
+#   [hic descendit episcopus et transiet ad templum]
+   
+   yn enour the dev an tas
+   leuyrys pup gollohas
+   my a worhenmyn yn scon        [2625]
+   ha wose henna evyn
+   pep ol adro draght a wyn
+   rag comfortye y golon
+   
+#   [Et tunc orent et murmurabunt quasi dicendo
+#   orationes et veniet maximilla in templo et sedet
+#   super stuppam et vestes ejus concremantur a stuppa
+#   et ipsa clamat dicens]
+   
+#   MAXIMILLA
+   a das dev dre the versy
+   danfon jehes thy'mmo vy       [2630]
+   a'm cleves may thof grevyys
+   out out out ellas govy
+   ma ov dyllas ov tewy
+   theworth pren cryst my a grys
+   
+   ov arluth ker cryst jhesu     [2635]
+   dev a'n nef dre the vertu
+   dufyth nerth a'n flam ha'n tan
+   del vyth gans the gorf prennys
+   adam hag eva kefrys
+   ha gorrys the nef gans can    [2640]
+   
+#   EPISCOPUS
+   What vyngeans thy's a pen pyst
+   ple clevsta gelwel dev cryst
+   gans den yn bys-ma genys
+   laha moyses thy'm yma
+   hag yn ol an keth henna       [2645]
+   nynsus y hanow scryffys
+   
+   na ny leuer bos dev ken
+   sav an tas a nef a ban
+   ha ty voren myrgh hy ben
+   a wra dev thy's the honan     [2650]
+   crog ro'm bo er an thewen
+   neffre marseth ahanan
+   er na'n prenny yn felen
+   ha nagha ol the gous gulan
+   
+#   MAXIMILLA
+   na nahaf epscop goky [2655]
+   rag an thyyr guelen defry
+   a ve gans dauyd plynsys
+   hag a ivnnyas the onan
+   yn token da yn certan
+   a'n try person yn drynsys     [2660]
+   
+#   [hic ascendit episcopus in tentum suum]
+   
+   onan yw an tas a neff
+   arall crist y vn vaaw eff
+   a vyth a wyrghas genys
+   ha'n sperys sans yw tressa
+   try hag onan ow trega         [2665]
+   yn vn dewsys me a grys
+   
+#   EPISCOPUS
+   out warnas a pur vyl scout
+   hep thout pestryores stout
+   kyn fy mar prout ty a'n pren
+   nygh for sorw y am ful woud   [2670]
+   thow harlot for goddys bloud
+   ro thy'm cusyl avel den
+   
+#   CROCIARIUS
+   my a'th cusyl hep cabel
+   my tellyng ys no fabel
+   mar mynnyth hy dystrewy       [2675]
+   orden the'th tus hy knoukye
+   gans meyn na hethens nefre
+   er na varwa eredy
+   
+#   EPISCOPUS
+   by godys fast wel y seyd
+   vos eet bon se dev ma eyd     [2680]
+   ha den fur a'd cusullyow
+   tormentors bras ha byan
+   deugh yn rag ketep onan
+   lemyn yn ov othommow
+   
+#   IS TORTOR
+   heyl ov arloth stout ha gay   [2685]
+   wheys yv ov thal by thys day
+   thy'so gy ov fystene
+   tel my annon y the pray
+   what shal y do yf y may
+   my a'n gura war ov ene        [2690]
+   
+#   EPISCOPUS
+   Eugh tynneugh an gasadow
+   vsy ov cul fals dewow
+   yn mes agan temple ny
+   ha gans myyn gureugh hy knoukye
+   er na wrello tremene          [2695]
+   venytha na wreugh hethy
+   
+#   IIS TORTOR
+   na hethyn by goddys soul
+   rag yma war agan toul
+   knoukye fast bys may feyn squeyth
+   dus yn mes abarth an ioul     [2700]
+   vynytha ny efyth coul
+   marrow cowal ty a vyth
+   
+#   IIIS TORTOR
+   war gas vy the thehesy
+   gans morben bom trewysy
+   the'n vyl hora war an taal    [2705]
+   neffre na wrello dybry
+   lemyn flerye ha peddry
+   kepar ha seym py lyys haal
+   
+#   IVS TORTOR
+   my a's guysk gans vn blogon
+   vythqueth na ve bom a won     [2710]
+   a rollo whaf mar gales
+   del y's brewaf yn dan gen
+   kekyfrys kyc ha crohen
+   del veth luen a bodrethes
+   
+#   IS TORTOR
+   my a re gans mur a ras        [2715]
+   whare lemyn strokyas vras
+   pur evn war an brest a rag
+   bys may cothe hy the'n dor
+   ha'y brewy guyls yn dar clor
+   mar venys avel skyl brag      [2720]
+   
+#   MAXIMILLA
+   Arluth jhesu cryst a nef
+   kymmer mercy a'm enef
+   del of ragos tormontyys
+   drefen vn wyth the henwel
+   lythys of pur thyogel         [2725]
+   gaf the'm ov fegh my a'd pys
+   
+#   IIS TORTOR
+   a glewsyugh why cowethe
+   del vgy an vyl hore
+   ov thenwel an pyth na vyth
+   hy a thesefse scorne          [2730]
+   gans an epscop ha'y dolle
+   the worthye dewow nowyth
+   
+#   IIIS TORTOR
+   ha rag henna war an chal
+   hy gueskel genef yv mal
+   ha brewy hy esely             [2735]
+   a pur voren plos myrgh gal
+   ty a verow sur cowal
+   awos the thev nay vestry
+   
+#   IVS TORTOR
+   a'y vestry ef ny re'n bram
+#   yn dyspyt th'y das ha[']y vam
+   yn dyspyt th'y das hay vam   [2740]
+   an voren a vyth lethys
+   ty a fyth whare drog lam
+   the escarn ol ketep tam
+   gans ov bom a fyth brewys
+   
+#   [hic moritur maximilla]
+   
+#   IS TORTOR
+   powesough aflythygyon         [2745]
+   rag marow yv an voron
+   gans ow whaffys sol a breys
+   ha resys gois hy holon
+   dun ny the thesta in scon
+   d'agan epscop del yv gureys   [2750]
+   
+#   IIS TORTOR
+   a taw cowyth my a'd pys
+   ny gresaf awos an beys
+   bos an hore whath marow
+   nefre kyns mos alemma
+   ry whaf thethy my a wra       [2755]
+   gans myyn grow yn bras garow
+   
+#   IIIS TORTOR
+   heyl syr epscop caradow
+   nans yv an voren marow
+   a hys yma a'y groweth
+   awos gotheuel ancow           [2760]
+   ny nahas hy lauarow
+   wos-talleth na wos-teweth
+   
+#   EPISCOPUS
+   awos henna nynsus vry
+   gallas hy gobyr gynsy
+   ha servyys yv del gothe       [2765]
+   rag a's lafur why as beth
+   behethlan ha bosaneth
+   eugh whare th'aga seysse
+   kyns hy bos nos
+   my a rea                      [2770]
+   thyugh an dremma
+   hag ol chennary an clos
+   
+#   IVS TORTOR
+   ha larges epscop cortes
+   ha larges pup ol gylwes
+   larges warbarth leuereugh     [2775]
+   guyw yv prest servye yn ta
+   pur wyr epscop an par-ma
+   rag gentel yv del weleugh
+   
+#   EPISCOPUS.
+   dus a le-na ty gebal
+   gor an pren yn mes gans mal   [2780]
+   ha'th wereses amalek
+   ha teuleugh e dral ha dral
+   yn bessede pur gowal
+   del ywe pyt cafalek
+   
+#   [hic portat lignum ad bethsayda]
+   
+#   GEBAL
+   whare ef a vyth deges         [2785]
+   amalac re by creges
+   yn fen kymmer a nyl pen
+   
+#   AMALAC
+   dun ganso a dysympys
+   ha poynyn gans mur a grys
+   ha yn dour goryn an pren      [2790]
+   
+#   [nuncius venit ad episcopum]
+   
+#   NUNCIUS
+   arluth whek ny amount man
+   an pyt a wrussyugh certan
+   lemyn moy dysenour thys
+   rag ov keusel y the der
+   aban ethe the'n teller        [2795]
+   bos clevyon dretho sawayys
+   may the der worth the vlamye
+   ha henna marthys yn fras
+   an temple ty th'y denne
+   ha bos thotho kymys ras       [2800]
+   
+#   EPISCOPUS
+   Nynsus fors awos henna
+   my a wor wheth cusyl tha
+   thy'm the wruthyl by thys day
+   nynsus pons war thour cedron
+   my a vyn ordene yn scon       [2805]
+   tus th'y denne ef bys d'y
+   
+   yn dan dryys may fo pottyys
+   ha'y vertu a vyth lyhys
+   dre an mostethes hep fal
+   degeugh an pren a thyhons     [2810]
+   war thour cedron may fo pons
+   ty amalac ha gebal
+   
+#   AMALAC
+   Gebal the conna a greg
+   a dystough mars ty a theg
+   a neyl pen the dour cedron    [2815]
+   cachaf yben pur anwhek
+   duwon yn y gorf a'n meek
+   ny vyth hutyk y golon
+   
+#   [hic reportat lignum a bethsaida super
+#   aquam Cedron]
+   
+#   GEBAL
+   nynsyw marth cuth ken y'm bo
+   ov toon an pren a the dro     [2820]
+   ha n'agan byth gobyr vyth
+   dro ve gode thous re'th fo
+   nans on lafuryys ganso
+   hag an yssyly pur squyth
+   
+#   [The Drama is written by one hand: the few remaining
+#   lines are in another hand-writing, which is continued to
+#   the end of the manuscript.]
+   
+#   REX SAL
+   a tus vas why re welas        [2825]
+   fetel formyas dev an tas
+   nef ha nor war lergh y vrys
+   wege henna y fynnas
+   adam eua dre y ras
+   y's gruk haual sur keffrys    [2830]
+   thotho deffry
+   
+   ol an beys a ros thetha
+   may hallons ynno bewa
+   h'agha fleghys vynytha
+   a theffo anethe y             [2835]
+   
+   y vennath theugh yn tyen
+   keffrys gorryth ha benen
+   flogholeth
+   an guary yv dve lymmyn
+   
+   ha the welas an passyon       [2840]
+   a jhesus hep gorholeth
+   a worthevys crys ragon
+   a-vorow devg a dermyn
+   hag eus pup dre
+   
+   a barth a'n tas . menstrels a ras [2845]
+   pebough whare
+   
+#   End of the First Play
+
+# ------------------------------------------------------------------------
+
+#  APPENDIX -- Corrections
+
+#  All doubtful lines have been checked against the first (1998) KDL
+#  edition of OM by Ray Edwards and the readings found there have 
+#  been adopted except for a couple of cases of <n> for <u> where 
+#  there's probably been a mis-scanning or mis-reading at some stage. 
+#  Some of these are an jowl y honan to spot even with the two lines 
+#  side by side. There are two or three more that look a bit doubtful, 
+#  but rather than introduce misguided "corrections" I've left them alone.
+
+#  Line 2194 possibly omitted :
+
+#  omms2194  gans moreth ythof lynwys -- "I am thoroughly depressed"
+#                              In KK  -- Gans moredh yth ov lenwys
+
+#2c2
+#< omms0002  formyer pup tra a vyth gvrys   The <h> is written as a thin
+#---                                        stroke "/" under the upright of                                            
+#> omms0002  formyer pup tra a vyt gvrys    the <t> which can be seen on the
+#18c18                                      photo of the first page at the
+#< omms0018  gruthyl ebron nef hynwys       start of Norris. Some other final
+#---                                        <t>'s may have a "/" <h> like this.
+#> omms0018  gruthyl ebron nef' hynwys 
+#39c39
+#< omms0039  an lor yn nos houl yn geyth 
+#---
+#> omms0039  an lor yn nos houl yn vgeyth 
+#91c91
+#< omms0091  pur luen yma thy'm ow whans 
+#---
+#> omms0091  pur luen yma thy'm ow bwhans 
+#127c127
+#< omms0127  daves war ve[r] lavarow        Completed according to the sense.
+#---
+#> omms0127  daves war ve ( ) lavarow 
+#146c146
+#< omms0146  the pup den a vo sylwys       
+#---
+#> omms0146  the pup den a ve sylwys 
+#161c161
+#< omms0161  drefen ow bones benen 
+#---
+#> omms0161  drefan ow bones benen 
+#169c169
+#< omms0169  ffystyn alemma duwhans 
+#---
+#> omms0169  ffstyn alemma duwhans 
+#285c285
+#< omms0285  a das kuf y'th wholowys 
+#---
+#> omms0285  a das kuf y'th whelowys 
+#287c287
+#< omms0287  th'y falsury y cresys 
+#---
+#> omms0287  th'y falsury y eresys 
+#305c305
+#< omms0305  my a leuer thy's an cas 
+#---
+#> omms0305  my a leuer thy's an eas 
+#385c385
+#< omms0385  myns a defynno vn geyth 
+#---
+#> omms0385  yns a defynno vn geyth 
+#433c433
+#< omms0433  pur wyr leskys ef a vyth 
+#---
+#> omms0433  par wyr leskys ef a vyth 
+#562c562
+#< omms0562  ha ty dyscant ym_kener 
+#---
+#> omms0562  ha ty dyseant ym_kener 
+#572c572
+#< omms0572  the vroder ov servont lel 
+#---
+#> omms0572  the vroder ev servont lel 
+#603,604c603,604
+#< omms0603  yn bys den vyth na'th latho 
+#< omms0604  pup vr_ol oberet da 
+#---
+#> omms0603  yn bys den vyth na'th lath     misplaced "o". <oberet> could well
+#> omms0604  pup o vr_ol oberet da          be <obereth> with the <h> missed,
+#676c676                                    however as the English have the
+#< omms0676  py hanow y fyth gylwys         ms ...
+#---
+#> omms0676  py hanew y fyth gylwys 
+#680c680
+#< omms0680  roy thotho grath th'y seruye 
+#---
+#> omms0680  roy thotho grath th'y seruy 
+#722c722
+#< omms0722  ny vynnaf lettya pella 
+#---
+#> omms0722  ny vym af lettya pella 
+#729c729
+#< omms0729  a das dovt na bertheugh why   Following the KDE Ed. but unstressed
+#---                                       /-ewgh/ is (almost?) always spelled
+#> omms0729  a das dovt na berthough why   <-ough> in the mss. This spelling
+#859c859                                      might be quite important if it's
+#< omms0859  ov enef ha'm corf the'n gulan    correct - needs checking with ms.
+#---
+#> omms0859  ov enef ha'm corf the'n gulanv 
+#925,926c925,926
+#< omms0925  ow spyrys ny dryc nefre 
+#< omms0926  yn corf map den vyth yn beys 
+#---
+#> omms0925  ow spyrys ny drye nefre 
+#> omms0926  yn corf map den vyth ya beys 
+#1007c1007
+#< omms1007  pup ober ol yn bys_ma 
+#---
+#> omms1007  pup ober ol yn bys_ma} 
+#1017c1017
+#< omms1017  lemyn noy y'th worhel ke 
+#---
+#> omms1017  lemyn ney y'th worhel ke 
+#1068c1068
+#< omms1068  y a nyg quyc hag vskys 
+#---
+#> omms1068  y a nyg quye hag vskys 
+#1083c1083
+#< omms1083  a wronnd an dor stremys bras 
+#---
+#> omms1083  a wronnd an dor stremys bra 
+#1094c1094
+#< omms1094  me a commonnd scon dotho 
+#---
+#> omms1094  hme a commonnd scon dotho 
+#1220c1220
+#< omms1220  kyc gans gos bys worfen veys 
+#---
+#> omms1220  kye gans gos bys worfen veys 
+#1350c1350
+#< omms1350  offens vythol er_the_byn 
+#---
+#> omms1350  offeus vythol er_the_byn 
+#1425c1425
+#< omms1425  ow tus vs trygys ena 
+#---
+#> omms1425  ow tus ys trygys ena 
+#1519c1519
+#< omms1519  the wul the thev sacrifyth 
+#---
+#> omms1519  the wul the thev sacrifythh 
+#1592c1592
+#< omms1592  y pyth an mens a allo 
+#---
+#> omms1592  pyth an mens a allo 
+#1713c1713
+#< omms1713  buthys ha'y ost ol ganso 
+#---
+#> omms1713  buthys ha'y ost el ganso 
+#1829c1829
+#< omms1829  gueres dywhans my a'd pys 
+#---
+#> omms1829  gueres_dywhans my a'd pys 
+#1840c1840
+#< omms1840  age dvow myleges             Prob. should be checked
+#---
+#> omms1840  aga dvow myleges 
+#1894c1894
+#< omms1894  gurythyoug ha tyvoug arte 
+#---
+#> omms1894  urythyoug ha tyvoug arte 
+#2102c2102
+#< omms2102  may haller govos the wyr 
+#---
+#> omms2102  haller govos the wyr 
+#2133c2133
+#< omms2133  ken ef a wra ow shyndye     <ow> and <ov> both mean /ow/ "my"
+#---                                     so either is possible here.
+#> omms2133  ken ef a wra ov shyndye     Again following the KDL Ed.
+#2161c2161
+#< omms2161  ny'm pref den mar gowardy 
+#---
+#> omms2161  ny'm pref den war gowardy 
+#2669c2669
+#< omms2669  kyn fy mar prout ty a'n pren    Ray has <n> here but I think
+#---                                         <u> is more likely correct.
+#> omms2669  kyn fy mar pront ty a'n pren 
+#2713c2713
+#< omms2713  kekyfrys kyc ha crohen 
+#---
+#> omms2713  kekyfrys kye ha crohen 
+#2740c2740
+#< omms2740  yn dyspyt th'y das hay vam    An editorial <'> wouldn't be
+#---                                       out of place here. Did Norris
+#> omms2740  yn dyspyt th'y das ha'y vam   put the <'>s in the text???
+#2791c2791
+#< omms2791  arluth whek ny amount man    Again Ray has <n> here, take
+#---                                      your pick, or better still check
+#> omms2791  arluth whek ny amonnt man    Norris or the ms.
+#2817c2817
+#< omms2817  duwon yn y gorf a'n meek 
+#---
+#> omms2817  duwon yn y gorf a'n meek' 
+
+#<End of file>

@@ -1,0 +1,3775 @@
+
+
+# ------------------------------------------------------------------------ #
+#  The text of _Gwreans an Bys_ (The Creation of the World) as converted   #
+#  to Kernewek Kemmyn by Keith Syed and further edited by Ray Edwards.     #
+#            Taken from the KDL edition (Augst 2000).                      #
+#                                                                          #
+#  N.b. The line numbers are those of Stokes, and differ very slightly in  #
+#  places from those of Hooper/Nance (Talek/Mordon) and Neuss.             #
+#                                                                          #
+#      Grasys yw aswonnys dhe Ray Edwards rag provia an devnydh-ma.        #
+# ------------------------------------------------------------------------ #
+
+### KDL page 1
+
+### [ms 01r]
+
+
+#### GWRIANS AN BYS
+
+
+## THE FATHER IN HEAVEN
+
+# [The father must be in a clowde and when he speakethe of heaven 
+# let ye levys open]
+
+cwkk0001  Ego sum Alpha et Omega.
+cwkk0002  Heb dalleth na diwedhva
+cwkk0003  pur wir my yw,
+cwkk0004  omma a-ji dhe'n kloudys,
+cwkk0005  war fas an dowr yn sertan,
+cwkk0006  tri ferson yn unn dywses
+cwkk0007  ow kesreynya bys vykken
+cwkk0008  yn meur enor ha vertu.
+cwkk0009  My ha'w Mab ha'n Spyrys Sans,
+cwkk0010  tri yth on yn unn substans,
+cwkk0011  komprehendys yn unn Dyw.
+
+# [Genesis capite primo]
+
+cwkk0012  My yw henwys Dyw an Tas,
+cwkk0013  ollgalloesek dres pub tra.
+cwkk0014  Skon y fydh gwrys der ow ras
+cwkk0015  nev, plas rial dhe'm trigva,
+cwkk0016  ha'w thron-sedha ow bodh yw
+cwkk0017  may fo henna.
+cwkk0018  Ha'n nor ynwedh a-woeles
+cwkk0019  skon orth kompas a vydh gwrys.
+cwkk0020  Honna a vydh ow skavell droes
+cwkk0021  rag ow plesour pup-prys,
+cwkk0022  ha dhe'm enor maga ta.
+cwkk0023  Nev omma yw gwrys genev,
+cwkk0024  orth ow dywses yn sertan.
+cwkk0025  Hag ynni y fydh gorrys
+cwkk0026  neb a'm gordh gans joy ha kan.
+cwkk0027  Naw ordyr eledh gloryus
+cwkk0028  i a vydh, rial ha splann,
+cwkk0029  kannasow dhymm dannvenys
+cwkk0030  rag ow servya bys vykken.
+cwkk0031  My a vynn may fons nevra.
+
+### KDL page 2
+
+cwkk0032  Lemmyn pub Ordyr dh'y se
+cwkk0033  my a vynn may fo gorrys,
+cwkk0034  ha pub onan dh'y dhegre
+cwkk0035  a vydh gorrys dhe'm servis
+cwkk0036  pan vynnav vy kommondya.
+cwkk0037  Omma nessa dhe'm tron vy
+cwkk0038  an kynsa tri a vydh gwrys.
+cwkk0039  Cherubyn, an ughella
+cwkk0040  ty a vydh. Deus a-rag uskis;
+cwkk0041  Serafyn, ynwedh Tronys.
+cwkk0042  Ow gordhya oll hwi a wra,
+cwkk0043  par dell yw ow bodh nevra,
+cwkk0044  omma pub prys.
+cwkk0045  Ha ty, Lusifer golow,
+cwkk0046  yndella yw dha hanow.
+cwkk0047  'Ugh pub el ty a ese'
+
+### [ms 01v] 
+
+cwkk0048  An kynsa Ordyr ty yw.
+cwkk0049  Gwayt ow gordhya war bub tu,
+cwkk0050  dhiso jy par dell goettha.
+cwkk0051  Y'n sekond degre y fydh gwrys
+cwkk0052  tri Ordyr moy, yn sertan.
+cwkk0053  Deus a-rag dhymm, Prynsipatys.
+cwkk0054  Ty a 'sedh omma poran,
+cwkk0055  Potestas y'n barth arall,
+cwkk0056  Domynashyon y'n tu ma,
+cwkk0057  ow praysya hag ow lawdya
+cwkk0058  dhe'm hanow nevra heb gil.
+cwkk0059  A'n tressa degre a-woeles
+cwkk0060  my a wra tri Ordyr moy.
+cwkk0061  Argheledh, Ordyr pur vras,
+cwkk0062  dewgh a-rag omma dhe vy,
+cwkk0063  ha Vertutys kekeffrys.
+cwkk0064  #				   # dummy line Stokes 64
+cwkk0065  Ha'n eledh, y'n barth dheghow
+cwkk0066  hwi a 'sedh omma heb gow.
+cwkk0067  Dhymm y fydhowgh kannasow,
+cwkk0068  hag a wrewgh ow arghadow
+cwkk0069  gans joy bras ha kan pub prys.
+cwkk0070  Lemmyn pan yw dhymmo gwrys
+cwkk0071  nev ha nor orth bodh ow brys,
+cwkk0072  ha'n naw ordyr kollenwys
+cwkk0073  ha'n kynsa jorna spedys,
+cwkk0074  my a's soen gans ow ganow,
+
+### KDL page 3
+
+cwkk0075  hag a vynn diyskynna
+cwkk0076  dhe'n nor yn-dann an kloudys,
+cwkk0077  hag ow bodh guthyl ena
+cwkk0078  my a vynn, may fo gwelys
+cwkk0079  ow bosa Dyw heb parow.
+cwkk0080  Lemmyn y'n sekond jorna
+cwkk0081  gwrav Braster a-dhesempis.
+cwkk0082  Y'n ebrenn eus a-wartha
+cwkk0083  my a vynn bos golow gwrys
+cwkk0084  hag ynwedh bos diberthva
+cwkk0085  sur ynter an jydh ha'n nos.
+cwkk0086  Ny fyll dhymm konduk a dra
+cwkk0087  war an bys der ow galloes.
+cwkk0088  An mor bras yn kott termyn
+cwkk0089  a-dro dhe'm tir a vydh dres,
+cwkk0090  rag y witha pur ylyn
+cwkk0091  orth harlotri prest pub prys.
+
+### [ms 02r] 
+
+cwkk0092  An tressa dydh my a wra
+cwkk0093  dhe'n gwydh sevel yn-ban,
+cwkk0094  ha doen delyow teg ha da
+cwkk0095  ha flourys hweg, yn sertan.
+cwkk0096  Ow bolonjedh yw henna,
+cwkk0097  may tokkons ynna pur splann
+cwkk0098  frutys dhe'm bodh, rag maga
+cwkk0099  seul a dheg bywnans hogen.
+cwkk0100  Y'n peswara dydh bydh gwrys
+cwkk0101  an howl ha'n loer yn tevri,
+cwkk0102  ha'n ster ynwedh kekeffrys,
+cwkk0103  rag gul golow vynari.
+cwkk0104  An re ma yw fin gonedhys.
+cwkk0105  Ow bennath y rov dhedha.
+cwkk0106  Y'n pympes dydh, orth ow brys,
+cwkk0107  an puskes, heb falladow,
+cwkk0108  hag oll an ydhyn keffrys,
+cwkk0109  my a's gwra dhe'm plegadow,
+cwkk0110  hag oll an bestes y'n bys,
+cwkk0111  gans pryves a bub sortow.
+cwkk0112  An re ma yw oll teg gwrys.
+cwkk0113  My a's soen warbarth, heb gow.
+
+## LUCIFER IN HEAVEN
+cwkk0114  Peace, I say, oll eledh nev!
+cwkk0115  Goslowewgh dhe vy lemmyn!
+cwkk0116  Krysewgh ow bosa pryns krev,
+cwkk0117  hag ynwedh dhy'hwi chyften,
+cwkk0118  byghan ha bras.
+
+### KDL page 4
+
+cwkk0119  Lusifer yw ow hanow,
+cwkk0120  pennsevik yn nev omma.
+cwkk0121  Ow howetha yw tanow.
+cwkk0122  hwi a woer yn ta henna,
+cwkk0123  ow bosav gwell es an Tas.
+cwkk0124  My yw lantern nev, ywis
+cwkk0125  avel tan ow kolowi,
+cwkk0126  moy splanna es an Drynses.
+cwkk0127  Henna degewgh hwi dustuni,
+cwkk0128  ow bosav pryns pur loryus.
+cwkk0129  Oll gans owr ow terlentri
+cwkk0130  yth esov, heb dout y'n kas.
+cwkk0131  Splanna es an howl devri,
+cwkk0132  hwi a yll warbarth gweles
+cwkk0133  ow bosav, sertan pub prys.
+cwkk0134  Ny vynnav orth el namoy
+
+### [ms 02v] 
+
+cwkk0135  dos dhe'm stat marnas my.
+cwkk0136  Henna yw ow thowl, devri.
+cwkk0137  Maga fras ov avel Dyw.
+cwkk0138  My a gommond war bub tu
+cwkk0139  myns eus yn nev dhe'm gordhya.
+cwkk0140  Eledh oll, hwi a glywas,
+cwkk0141  pandr'a gewsowgh dhymm lemmyn?
+cwkk0142  Dell nag o'ma polat bras?
+cwkk0143  Gorthybewgh hwi oll, pub onan.
+cwkk0144  Hwi a woer pyth o'ma.
+cwkk0145  An Tas gallas alemma.
+cwkk0146  My a dewl ny dheu omma
+cwkk0147  bys vykken mara kallav.
+
+## ANGEL OF LUCIFER
+cwkk0148  Lusifer, ty yw henna
+cwkk0149  sur a bass myns eus yn nev.
+cwkk0150  Kreatys nobyl omma
+cwkk0151  yth o'ta a natur krev,
+cwkk0152  ha my a'n krys.
+cwkk0153  Sur rakhenna dhe'th enora
+cwkk0154  my a vynn, 'ugh an Drynses.
+
+## ANGEL OF GOD in that degree
+cwkk0155  Ty greatur unkinda,
+cwkk0156  erbynn dha Vaker ow kows!
+cwkk0157  Prederi prag na wre'ta
+cwkk0158  y feusta gwrys, ty was lows,
+cwkk0159  gans Dyw omma?
+cwkk0160  Ganso pan wres komparya
+cwkk0161  meur dhe vlamya yth osta
+cwkk0162  ha paynys y'fydh ragdho.
+
+### KDL page 5
+
+
+## ANGEL OF LUCIFER in the second degree speaks kneeling.
+cwkk0163  P'yw henna a vydh mar vold
+cwkk0164  kows ger erbynn Lusifer?
+cwkk0165  Here he has unto you told
+cwkk0166  that in heaven is not his peer,
+cwkk0167  ha my a'n krys.
+cwkk0168  Hwi a'n gwel ow terlentri
+cwkk0169  splanna es an howl devri.
+cwkk0170  My a'th enor, dhymm dell res.
+
+## ANGEL OF GOD in that degree.
+cwkk0171  A taw, na gows a henna
+cwkk0172  my a'th pys; krys ow lavar.
+cwkk0173  Neb a'n formyas ev omma
+cwkk0174  a'n deform arta, preder,
+cwkk0175  y vodh pan vo.
+cwkk0176  Mar trIgowgh hwi y'n kryjyans na
+cwkk0177  moredh hwi a's bydh ragdho,
+cwkk0178  trestyewgh dhodho.
+
+## ANGEL OF LUCIFER in the 3rd degree speaks kneeling.
+cwkk0179  Pynagoll yw a lavarro
+cwkk0180  nag yw Lusifer wordhi
+cwkk0181  omma dh'agan governa
+cwkk0182  ha bos penn yn nev devri,
+cwkk0183  a lever gow:
+
+### [ms 03r] 
+
+cwkk0184  eya, ha wordhi pub prys
+cwkk0185  dhe vos yn tron esedhys
+cwkk0186  avel Dyw, sur heb parow.
+cwkk0187  My a'n gordh omma dell res,
+cwkk0188  war ow dewlin kekeffrys,
+cwkk0189  rag y vos mar garadow.
+
+## LUCIFER IN HEAVEN
+cwkk0190  Dell wrama reynya omma
+cwkk0191  yn tron 'wartha gans glori,
+cwkk0192  hwi a 'sedh warbarth genev,
+cwkk0193  myns a goello orthiv vy,
+cwkk0194  poran ryb ow thenewenn.
+
+# [Let hem offer to assend to ye  trone the Angell stayethe hem] 
+
+cwkk0195  I was mad-e of a thought.
+cwkk0196  You may be glad of such  wight,
+cwkk0197  and in heav'n so gay y-wrought.
+cwkk0198  Seemly am in every sight.
+cwkk0199  Come up to me, everyone,
+cwkk0200  hag y'n eur na gwrav assaya
+cwkk0201  dhe vos mester war an tron.
+
+### KDL page 6
+
+
+## ANGEL OF GOD in the 3rd degree
+cwkk0202  Ty, Lusifer, unkinda
+cwkk0203  meur yth os orth dha Vaker.
+cwkk0204  Dout yth yw dhis rakhenna
+cwkk0205  kavoes meur y dhisplesour,
+cwkk0206  dell os wordhi dhe henna.
+cwkk0207  Prag na wre'ta prederi
+cwkk0208  y feusta formys, devri,
+cwkk0209  der y wrians ev omma?
+cwkk0210  Der henna, preder yn ta.
+cwkk0211  Ev a yll der er arta
+cwkk0212  dhe'th dhistrui, 'skemunys.
+
+## LUCIFER IN HEAVEN
+cwkk0213  Ty, Mighal, re stout yth os
+cwkk0214  pan wres orthiv vy settya.
+cwkk0215  My a grys hag a'n soppos
+cwkk0216  y fynnses jy komparya
+cwkk0217  lemmyn genev.
+cwkk0218  Na wres, na wres, na borth dout,
+cwkk0219  ty, nag oll dha gowetha.
+cwkk0220  Mara kwredh, my a'gas klout.
+cwkk0221  Rakhenna gwrewgh ow gordhya
+cwkk0222  ha warbarth trestyewgh ynnov.
+cwkk0223  Hwi a'm gwel ow terlentri
+cwkk0224  splanna es an Tas devri.
+cwkk0225  Henna krysewgh ow bosav.
+
+## THE FATHER IN HEAVEN
+
+# [the father commeth before heven & speaketh to lucyfer]
+
+cwkk0226  A Lusifer. Lusifer,
+cwkk0227  ty a veu oll lantern nev,
+cwkk0228  ha dredhov sertan pub eur
+cwkk0229  ty a veu eksaltys brav,
+cwkk0230  hag a'th settyas pur ughel.
+
+### [ms 03v] 
+
+cwkk0231  Lemmyn meur os unkinda
+cwkk0232  orthiv vy pan wres settya.
+cwkk0233  Rag dha woeth, dhe bayn nevra
+cwkk0234  ty a wra diyskynna
+cwkk0235  mayth elles isel.
+cwkk0236  Determys ov dhe unn dra,
+cwkk0237  ha konkludys maga ta;
+cwkk0238  dhe wuthyl unn den omma
+cwkk0239  a dhor ha slim dhe'm servya,
+cwkk0240  ha'th plas jy dhe opya,
+
+### KDL page 7
+
+cwkk0241  rag kollenwel an roumys
+cwkk0242  a vydh voyd yn nev uskis
+cwkk0243  dredhos jy ha'th kowetha.
+# [lett hell gape when ye father nameth yt]
+
+cwkk0244  Ifarn ragos a vydh gwrys.
+cwkk0245  Uskis kommondyav henna.
+cwkk0246  Ena ty a vydh trigys,
+cwkk0247  ha myns assentyas genes
+cwkk0248  genes jy a'n naw ordyr.
+cwkk0249  Yn paynys bys vynari
+cwkk0250  heb ronson vydholl na fin,
+cwkk0251  ena pub eur ow mornya
+cwkk0252  rag galarow, bys worfenn,
+cwkk0253  hwi a vydh, my a lever.
+
+## LUCIFER IN HEAVEN
+cwkk0254  Ay! A vynn'ta jy orth mab-den
+cwkk0255  pan vo gwrys a slim hager
+cwkk0256  okkupya rag sertan
+cwkk0257  ow roum vy, na'n jeves peer
+cwkk0258  omma yn nev?
+cwkk0259  Henna 'via hager dra!
+cwkk0260  Den a vynn'ta gul a bri
+cwkk0261  dhe dhos omma dhe'n plas ma
+cwkk0262  neb yw lenwys a## glori?
+cwkk0263  Ragdho wordhi nyns yw ev!
+cwkk0264  Na, na, ny vydh yndella.
+cwkk0265  My a worthyp dhis henna.
+cwkk0266  An plas sur lowr dhiworto
+cwkk0267  my a with hwath, re'm lowta,
+cwkk0268  ha dhiworthis jy keffrys.
+cwkk0269  Ty a'm gwel vy krev omma
+cwkk0270  hwath pur brout ow trebuchya.
+cwkk0271  Hanter an eledh genev vy
+cwkk0272  assentys yth yns, syrra,
+cwkk0273  dhe'm mentena yn spit dhis,
+cwkk0274  dell wel'ta jy.
+cwkk0275  For well nor woe
+cwkk0276  I will not go.
+cwkk0277  I say you so.
+cwkk0278  This will not be,
+cwkk0279  dhymmo vy krys.
+cwkk0280  Rag my a omsyns
+cwkk0281  sertan 'ugh peub myns
+cwkk0282  a veu bythkweth hwath formys.
+
+### KDL page 8
+
+
+## THE FATHER
+
+### [ms 04r]
+
+cwkk0283  Taw, Lusifer milligys,
+cwkk0284  y'n golonn dell os goethus.
+cwkk0285  Rag skon ty a dhe baynys
+cwkk0286  heb redempshyon, dhymmo krys,
+cwkk0287  sur dhymmo krys.
+cwkk0288  Oll dha splannder ha'th tekter
+cwkk0289  y treyl skon dhis dhe hakter,
+cwkk0290  ha meur euthek bileni.
+cwkk0291  MIghal, pryns ow chevalri,
+cwkk0292  ha'n eledh a'n ordyr naw,
+cwkk0293  an rebellyans ma devri -
+cwkk0294  dhe'n dor ganso, mester ha maw,
+cwkk0295  dhe ifarn, hager drigva.
+cwkk0296  Ena trigens yn paynys,
+cwkk0297  ha galarow meur pub prys,
+cwkk0298  yn pur sertan rag nevra.
+
+## MICHAEL
+
+# [All the Angells must haue swords and staves & must come to 
+# the rome wher Lucyfer ys]
+
+cwkk0299  Deun warbarth, an naw ordyr!
+cwkk0300  Helghyn yn-mes Lusifer
+cwkk0301  a-dhesempis mes a'n nev.
+
+## LUCIFER
+cwkk0302  Ty jett, gwrav dha eksamnya.
+cwkk0303  Prag y fynn Dyw ow dampnya,
+cwkk0304  ha my mar wolow ha krev?
+
+## MICHAEL
+cwkk0305  Rag dha vosta milligys
+cwkk0306  hag y'n golonn re woethus.
+cwkk0307  Der reson dhis my a brev.
+cwkk0308  Ty fol, prag na bredersys
+cwkk0309  a dhorn Dyw y feusta gwrys,
+cwkk0310  ynwedh ganso eksaltys
+cwkk0311  dres myns el yn nev 'sedhys
+cwkk0312  omma yn y dron 'sedhys?
+
+## LUCIFER
+
+# [let lucyfer offer to go vpe to the trone]
+
+cwkk0313  Even y'n tron mynnav 'sedha,
+cwkk0314  ha'n keth plas mynnav gwitha
+cwkk0315  hwath, yn spita dhis.
+cwkk0316  Keffrys my ha'm kowetha
+cwkk0317  der gledha a vynn tria
+cwkk0318  ow bosav moy wordhi
+cwkk0319  ages an Tas, sur, pub prys.
+
+### KDL page 9
+
+
+## GABRIEL
+cwkk0320  Warnedha, myns eus yn nev!
+cwkk0321  Gwren yn kerdh y helghi eev
+cwkk0322  dhe ifarn, dhe dewolgow.
+
+### [ms 04v]
+
+cwkk0323  Ha hwi oll y gowetha,
+cwkk0324  kewgh yn kerdh ynwedh gansa!
+cwkk0325  Kronkyewgh i gans kledhedhyow!
+
+## LUCIFER IN HELL
+
+# [Let them fight wth swordis and in the end Lucyfer voydeth 
+# & goeth downe to hell apareled fowle wth fyre about hem turning 
+# to hell and every degre of devylls of lether & spirytis on 
+# cordis runing into ye playne and so remayne ther, 9 angells 
+# after Lucyfer goeth to hell] 					
+
+cwkk0326  Out, ellas, gallas fasow!
+cwkk0327  Yth esov yn tewolgow.
+cwkk0328  Ny allav dos anodho.
+cwkk0329  Yn pytt down yth ov tewlys,
+cwkk0330  a-berth yn ifarn kelmys
+cwkk0331  gans chayn, tan a-dro dhymmo.
+cwkk0332  Kyn na'm boma lowena,
+cwkk0333  yma lower 'skynnys genev
+cwkk0334  a'n eledh sur dhe driga.
+
+## GOD THE FATHER
+
+### [ms 05r] 
+
+cwkk0335  Gallas Lusifer, drog pryv,
+cwkk0336  mes a'n nev dhe dewolgow.
+cwkk0337  Ha lemmyn yn y le ev
+cwkk0338  my a vynn heb falladow
+cwkk0339  unn den formya
+cwkk0340  yn vali Ebron, devri
+cwkk0341  rag kollenwel yredi
+cwkk0342  an le may teuth anodho.
+
+# [Adam and Eva aparlet in whytt lether in a place apoynted by 
+# the conveyour & not to be sene tyll they be called & thei 
+# knell & ryse]	
+
+cwkk0343  Dell on ni onan ha tri
+cwkk0344  Tas ha Mab yn Trinity,
+cwkk0345  my a'th wra jy, den, a bri
+cwkk0346  haval dh'agan fas hware,
+
+### KDL page 10
+
+cwkk0347  hag a hwyth yn dha vodi
+cwkk0348  spyrys, may halles bywa,
+cwkk0349  ha'n bywnans pan y'n kelli
+cwkk0350  dhe'n dor ty a dreyl arta.
+cwkk0351  Adam, sav yn-bann yn klor,
+cwkk0352  ha treyl dhe gig ha dhe woes.
+cwkk0353  Preder my dhe'th wul a dhor,
+cwkk0354  haval dhymm dhe'n penn ha troes.
+cwkk0355  Myns eus yn tir hag yn mor,
+cwkk0356  warnedha kemmer galloes.
+cwkk0357  Yn sertan, rag dri askorr,
+cwkk0358  ty a vyw may fita loes.
+cwkk0359  Rag dha gerensa lemmyn
+cwkk0360  my a vynn gul paradhis,
+cwkk0361  plas delysyous dres eghenn.
+cwkk0362  Rag ow flesour otta gwrys!
+
+# [Let the father put Adam into paradise. Lett flowres apeare 
+# in paradice. Let Paradyce be fynelye made wyth iiv fayre trees 
+# in yt And an appell vpon the tree & som other frute one the 
+# other. A fowntaine in Paradice & fyne flowers in yt painted]*		
+
+cwkk0363  Lower flourys a bub eghenn,
+cwkk0364  y'n plas ma otta tevys
+cwkk0365  ha frutys war bub gwydhenn.
+cwkk0366  Y tyv gwav ha hav keffrys.
+cwkk0367  Ha lemmyn, war oll an plas
+cwkk0368  my a wront dhis bos gwithyas,
+cwkk0369  war bub frut, losow ha has
+cwkk0370  dhe'th plesour, dhis my a as.
+
+# [poynt to the tree]		
+
+cwkk0371  Saw bydh war dhymmo pub prys.
+cwkk0372  A'n keth gwydhenn ma omma
+cwkk0373  gwayt na vo gensi mellys;
+cwkk0374  my a'th charj a-ugh pub tra.
+cwkk0375  An wydhenn ma yw henwys
+cwkk0376  Gwydhenn Godhvos Drog ha Da.
+cwkk0377  Mar pydh hy frut hi tastyes
+cwkk0378  ty a vydh dampnyes ragdho,
+cwkk0379  ha sojet ankow dredho
+cwkk0380  ty a vydh; preder henna.
+
+### [ms 05v] 
+
+cwkk0381  Tra moredhek yw sertan
+cwkk0382  gweles Adam y honan
+cwkk0383  heb kowethas.
+
+### KDL page 11
+
+cwkk0384  Adam, kosk dhejy lemmyn.
+cwkk0385  Ahanas tenna asenn
+cwkk0386  my a vynn, a'th tenewenn,
+cwkk0387  hag a honna pur sertan
+cwkk0388  my a vynn gul dhis pries.
+
+# [Let adam laye downe & slepe wher eva ys & she by the conveyour 
+# must be taken from adam is syde. Let the father take a bone owt 
+# of adam is syde]
+
+cwkk0389  Skon a onan dha asow
+cwkk0390  my a wra dhiso parow
+cwkk0391  pub eur dhis rag dha weres.
+
+## ADAM
+
+# [At the Father is comandemt she [leg. they] eryseth]*		
+
+cwkk0392  A, A, A, ow Arloedh da!
+cwkk0393  Benyn hi a vydh henwys.
+cwkk0394  A'm korf vy gwrussys honna:
+cwkk0395  Eva a'm asenn yw gwrys.
+cwkk0396  Ragdho yth os bennigys!
+
+## FATHER
+
+# [Let fyshe of dyuers sortis apeare & serten beastis as oxen 
+# kyne shepe & such like]
+
+cwkk0397  Adam, otta an puskes,
+cwkk0398  ydhyn y'n ayr, ha bestes
+cwkk0399  kekeffrys yn tir ha mor:
+cwkk0400  Ro dhedha aga henwyn;
+cwkk0401  i a dheu dhe'th worhemmynn,
+cwkk0402  saw na vegh i war neb kor.
+
+## ADAM
+cwkk0403  Yth hanwav bugh ha tarow.
+cwkk0404  Oll an chatel dibarow
+cwkk0405  aga henwyn kemmerens,
+cwkk0406  margh ha kasek hag asyn,
+cwkk0407  ki ha kath ha logosenn,
+cwkk0408  dyffrans ydhyn ha serpons.
+
+### KDL page 12
+
+# [A fyne serpent made wth a virgyn face & yolowe heare vpon her head]
+
+cwkk0409  Y rov henwyn dhe'n puskes,
+cwkk0410  siwyon, penngarnes, syllies;
+cwkk0411  my a's reken oll diblans.
+
+## FATHER
+
+# [Let the serpent apeare & also gees & hennes]	
+
+cwkk0412  Rag bones oll teg ha da
+cwkk0413  yn hwegh dydh myns eus formys,
+cwkk0414  aga soena my a wra,
+cwkk0415  may fo'n seythves dydh henwys
+cwkk0416  an dydh sur a bowesva
+cwkk0417  a bub den a vo selwys.
+cwkk0418  Yn diskwedhyans a henna
+cwkk0419  my a bowes desempis.
+
+## LUCIFER
+
+# [After the father hath spoken lett hem departe to heaven in a clowde] 
+
+cwkk0420  Gallas genev hager dowl
+cwkk0421  dhe bytt ifarn mes a'n nev.
+cwkk0422  Ena my a dhug an rewl,
+cwkk0423  ha lemmyn yn payn pur grev
+cwkk0424  yth esov, a dhur nevra.
+cwkk0425  Nyns eus dhymmo remedi.
+cwkk0426  An trespass yth o mar vras.
+cwkk0427  Ny amont hwilas mersi.
+cwkk0428  My a woer na vynn an Tas
+cwkk0429  ow foli dhymmo gava.
+
+### [ms 06r]
+
+cwkk0430  Rakhenna, oll an venjans
+cwkk0431  a allav dhe brederi
+cwkk0432  my a vynn gonis dehwans
+cwkk0433  der neb for' a vras envi.
+cwkk0434  Ny wrav vri erbynn p'ywa.
+cwkk0435  My a woer yma formys
+cwkk0436  gans an Tas unn den a bri.
+cwkk0437  Haval dhodho yth yw gwrys,
+cwkk0438  oll y gorf yn pur semli.
+cwkk0439  Ny allav perthi henna.
+cwkk0440  Envius ov er y bynn.
+cwkk0441  My a vynn tewlel neb jynn
+cwkk0442  dh'y doella, mara kallav.
+
+### KDL page 13
+
+cwkk0443  Gans Dyw yth yw apoyntys
+cwkk0444  warden war oll paradhis.
+cwkk0445  Der henna yth ov grevys,
+cwkk0446  y weles ev eksaltys,
+cwkk0447  ha my dres dhe iselder.
+cwkk0448  Dhe henna yma gwre'ti,
+cwkk0449  benyn yw henwys Eva.
+cwkk0450  Gwrys a'y asenn y feu hi,
+cwkk0451  marthys teg a-ugh pub tra,
+cwkk0452  saw hy skians yw brottel.
+cwkk0453  My a vynn, mara kallav,
+cwkk0454  hwilas neb for' dh'y themptya,
+cwkk0455  par dell oma gwas sotel.
+cwkk0456  Now Adam 'ma ow lordya
+cwkk0457  avel dug yn paradhis,
+cwkk0458  ha my sevelyek omma
+cwkk0459  yn ifarn yn tan, pup-prys
+cwkk0460  yn poethvann bras ow leski.
+cwkk0461  Saw an keth Adam yw gwrys
+cwkk0462  my a woer heb dout y'n kas,
+cwkk0463  dhe gollenwel an roumys
+cwkk0464  eus yn nev der ow goeth bras
+cwkk0465  yw voyd dredhov ha'w meni.
+cwkk0466  Saw mar kallav, der dhevis,
+cwkk0467  gul dhe Adam dhymm koela,
+cwkk0468  my an drosa dhe baynys,
+cwkk0469  na dheffa dhe'n nev nevra,
+cwkk0470  mara mynna dhymm koela.
+cwkk0471  Saw Eva mynnav 'ssaya.
+cwkk0472  Hi yw esya dhe doella
+cwkk0473  es Adam, yn gwir yn ta,
+cwkk0474  ha moy sempel.
+cwkk0475  Ynwedh ny dal dhymm bos gwelys
+cwkk0476  ow honan y'n keth shap me.
+cwkk0477  Hager yth ov difashes,
+cwkk0478  ny yll tra bones hakkra.
+cwkk0479  Hwi oll a'm gwel.
+
+## BEELZEBUB
+
+### [ms 06v] 
+
+cwkk0480  Hager lowr os, my a'n 'vow.
+cwkk0481  Yn mysk oll an dhewolow
+cwkk0482  nyns eus hakkra.
+
+### KDL page 14
+
+cwkk0483  Rakhenna hwila neb jynn,
+cwkk0484  po an viaj ny dal oy.
+cwkk0485  Eva, dhiso a dhegren
+cwkk0486  mar euthek pan wello hi
+cwkk0487  dha figur y'n keth dell ma.
+cwkk0488  Ha mar kwreta bargen sur
+cwkk0489  ty a vydh lower enorys
+cwkk0490  awos Dyw, kynth ywa fur.
+cwkk0491  Yn for' ma mar pydh toellys
+cwkk0492  my a vydh kompes ganso.
+
+## LUCIFER
+cwkk0493  Na borth dout, my a'n prevent,
+cwkk0494  ha'ga dri lowr dhe baynys.
+cwkk0495  My a lever dhis fatla.
+
+# [Let the serpent wait in the plain]		
+
+cwkk0496  An Tas a wrug der entent,
+cwkk0497  yn mysk oll pryves y'n bys,
+cwkk0498  formya pryv henwys serpont;
+cwkk0499  hag yth yw wondrys fashes,
+cwkk0500  dhe virgin deg pur haval.
+cwkk0501  Sotel yth yw gans henna,
+cwkk0502  a-ugh best na pryv y'n bys.
+cwkk0503  Yn henna mynnav entra,
+cwkk0504  ha privedh dhe baradhis
+cwkk0505  my a vynn mos heb fyllel.
+cwkk0506  Kyn na woer hi kows banna
+cwkk0507  my a's rewl hi dell vynnav,
+cwkk0508  ha kyns es dos alena
+cwkk0509  dhe Adam ha dhe Eva
+cwkk0510  my a wra neb anfeusi.
+
+## TORPEN DEVIL
+cwkk0511  Gwra yndella, my a'th pys,
+cwkk0512  par dell osta jowl wili.
+cwkk0513  Mar kwredh henna, enorys
+cwkk0514  ty a vydh bys vynari,
+cwkk0515  ha penn rewler warnan ni
+cwkk0516  heb dout y'n kas.
+
+### KDL page 15
+
+
+## LUCIFER
+
+# [Let Lucyfer com to the serpent and offer to goe in to her] 
+
+cwkk0517  By and by thou shalt see that;
+cwkk0518  ha pur uskis gwrav an pratt
+cwkk0519  dhe'n serpont, yn spit dh'y fas.
+
+# [The serpent voydeth & stayeth and [Lucyfer agayn] ofereth to go in to her]
+
+cwkk0520  Ay! Re debel-diwetthi!
+cwkk0521  Gorta ha bydh dhymm rewlys!
+cwkk0522  Gas vy dhe entra a-ji,
+cwkk0523  rag ty ny vydhydh doutys
+cwkk0524  drefenn dha vosta mar deg.
+
+# [Lucyfer entreth into ye  serpent]
+
+cwkk0525  Ty a vydh yntertaynys
+cwkk0526  ha gans Eva sur krysys.
+cwkk0527  Dha fisment dhedhi a bleg.
+cwkk0528  A-ban oma klos entrys
+cwkk0529  ynnos jy a-barth a-ji,
+cwkk0530  ow voys oll otta chanjyes,
+cwkk0531  avel maghteth yn tevri.
+cwkk0532  My ny vydhav konvedhys
+cwkk0533  ow bos ynnov falsuri;
+cwkk0534  sotel lowr ov, my a grys
+
+### [ms 07r] 
+
+cwkk0535  hag a vynn mos, heb gul gik,
+cwkk0536  y'n wydhenn pur smodh, heb mik,
+cwkk0537  avel el hweg afinys.
+
+## EVA
+
+# [let eva walke in paradice]*		
+
+cwkk0538  My a vynn mos dhe wandra
+cwkk0539  omma yn mysk an flourys.
+cwkk0540  Oll pub plesour a'n bys ma
+cwkk0541  y'n plas ma otta tevys,
+cwkk0542  mayth yw konfort dhe weles.
+
+## SERPENT IN THE TREE
+
+# [the serpent singeth in the tree]
+
+cwkk0543  Eva, prag na dheu'ta nes,
+cwkk0544  rag kows orthiv ha talkya?
+cwkk0545  Unn dra a wonn a'm godhvos -
+cwkk0546  pur lowenek a'm gwressa
+cwkk0547  koela orthiv a mynnes.
+
+### KDL page 16
+
+
+## EVE
+
+# [Then eva wondreth of the Serpent when she speaketh. 
+# *Lett Eva looke strangelye on the Serpent when she speakethe*]
+
+cwkk0548  Piw osta jy eus y'n wydhenn
+cwkk0549  a-wartha gans tros ha kan?
+cwkk0550  Marth yw genev dhe'th klywes.
+cwkk0551  Orthis my ny'm beus negys,
+cwkk0552  h'a byle os devedhys.
+cwkk0553  Marth yw genev dha weles.
+
+## SERPENT
+cwkk0554  Na gemmer marth vydh, benyn 'vas.
+cwkk0555  My a dheuth a-dhiwedhes
+cwkk0556  mes a'n nev gans hast pur vras,
+cwkk0557  rag kewsel dhis a henna
+cwkk0558  omma lemmyn pur brivedh.
+cwkk0559  My a'th pys, awos neb tra
+cwkk0560  na gemmer marth anodho,
+cwkk0561  nag own vydh orth ow gweles.
+
+## EVE
+cwkk0562  Nyns eus own dhymm ahanas,
+cwkk0563  drefenn bos mar deg dha fas,
+cwkk0564  na hwath dout vydholl y'n bys,
+cwkk0565  rag der dha er yth 'valsa
+cwkk0566  ty dhe dhos a'n nev toeth-ta,
+cwkk0567  ha mara teudh alena
+cwkk0568  pur wolkomm yth os genev,
+cwkk0569  ha dhe well y'th fydh kresys.
+cwkk0570  Lavar dhymmo dha negys,
+cwkk0571  ha mar kallav dha weres,
+cwkk0572  na borth dout, ny vydh neghys.
+
+## SERPENT
+cwkk0573  Ow negys a dreyl dha les
+cwkk0574  mara mynn'ta ow krysi
+cwkk0575  saw yma dhymm ahanas
+cwkk0576  dout pur vras a anfeusi
+cwkk0577  mara kwres ow diskev'ra.
+
+### KDL page 17
+
+
+## EVE
+
+# [Eva talketh famylyarlye wth  the serpent and cometh neare hem]	
+
+cwkk0578  Na vynnav dha dhiskev'ra,
+cwkk0579  ow hothman, a dra y'n bys.
+cwkk0580  Rakhenna, meur dha volder,
+cwkk0581  ty a yll gul dha negys,
+cwkk0582  hag ow threst yw y vos da.
+
+## SERPENT
+
+### [ms 07v]
+
+cwkk0583  Da koedh, yw. Na dhout peryl
+cwkk0584  war ow honesty, benyn 'vas.
+cwkk0585  Poken y hwrussen fyllel,
+cwkk0586  hag y fia pegh pur vras
+cwkk0587  ha my gwiw dhe vos punshys.
+
+## EVE
+cwkk0588  Hwi a lever gwir, dremas.
+cwkk0589  Henna 'via hager dra.
+cwkk0590  Yma dhymmo hireth bras
+cwkk0591  rag godhvos pandr'a via!
+cwkk0592  Yn kott termyn agas negys
+cwkk0593  kewsewgh, y praydha.
+
+## SERPENT
+cwkk0594  My a lever dhis, Eva,
+cwkk0595  ha koel orthiv 'wos eghenn.
+cwkk0596  Maga fur ty a via,
+cwkk0597  avel Dyw eus a-wartha,
+cwkk0598  hag a wodhvia pub tra.
+
+## EVE
+cwkk0599  Mighal! Syrra, dhywgh gromersi!
+cwkk0600  A kallen dos dhe'n prykk na
+cwkk0601  y halsen bos pur veri.
+cwkk0602  Henna 'via rial dra,
+cwkk0603  bos koth dhe Dhyw a-wartha
+cwkk0604  hag yn pub poynt ekwal ganso,
+cwkk0605  ha maga fur akontys.
+cwkk0606  Y'n eur na, re Sen Devri,
+cwkk0607  y hallsen routya pur gay,
+cwkk0608  ha bos statly dhe'm devis.
+cwkk0609  Y praydha, lavar fatla.
+cwkk0610  Perthi ny allav pella!
+cwkk0611  My a vydh sur dhe lakka
+cwkk0612  mes ty dhymm a lavara
+cwkk0613  yn by and by.
+
+### KDL page 18
+
+cwkk0614  Skians benyn yw brottal,
+cwkk0615  ha my nyns ov over-sotel.
+cwkk0616  Lavar dhymm kyns es hedhi,
+cwkk0617  my a'th pys, an nowedhys!
+
+## SERPENT
+cwkk0618  My a lever dhis, Eva,
+cwkk0619  mar kwredh tastya an frut ma
+cwkk0620  eus omma war an wydhenn,
+cwkk0621  maga fur ty a via
+cwkk0622  avel Dyw eus a-wartha
+cwkk0623  yn nev ughel a-ughon.
+cwkk0624  Gow vydh ny lavarav.
+
+## EVE
+
+# [Let eva look angerly on the serpent and profer to depart.]
+
+cwkk0625  What! Yw henna dha dhevis!
+cwkk0626  Tamm vydh ny vydh kresys
+cwkk0627  henna, my a lever dhis.
+cwkk0628  Dhe'th kusulyow y'n poynt na,
+cwkk0629  my a lever dhis praga.
+cwkk0630  Dyw a or'nas kontrari
+cwkk0631  na dheffen tastya henna.
+cwkk0632  Ha'y gommondment pur dhevri
+cwkk0633  a ros straitly, dres pub tra
+cwkk0634  na wrellen mellya worti.
+cwkk0635  Prag y hwredh genev flattra?
+
+## SERPENT
+
+### [ms 08r] 
+
+cwkk0636  Goslow, goslow, Eva, ha deus nes;
+cwkk0637  sham yw genev dha glywes
+cwkk0638  ow krysi dhe'n geryow na.
+cwkk0639  Praga, my a lever dhis,
+cwkk0640  y hwrug Dyw ri an charj na?
+cwkk0641  Genes a peva tastyes,
+cwkk0642  maga fur ty a via
+cwkk0643  yn pub poynt sur avello.
+cwkk0644  An Tas, ev ny vynnsa sur
+cwkk0645  orth den vydholl bos mar fur
+cwkk0646  dhe wodhvos a dhrog ha da.
+cwkk0647  Rag henna, benyn 'vas Eva,
+cwkk0648  genes ny vynnav flattra
+cwkk0649  na ny vynnav usya gow.
+
+### KDL page 19
+
+cwkk0650  Koel jy dhymm, men dhe geski,
+cwkk0651  mar mynnta bos eksaltys,
+cwkk0652  poken sertan vynari
+cwkk0653  hwi a vydh avel fleghes.
+cwkk0654  Bo yn assentys ty a glyw,
+cwkk0655  Eva jentyl.
+
+## EVE
+cwkk0656  Eya, eya, my a glyw.
+cwkk0657  Hag y ros dhyn charj mar strait,
+cwkk0658  ma'n bydh payn ha galarow
+cwkk0659  mara kwren terri unn jet
+cwkk0660  y gommondement dhyn res.
+cwkk0661  Par happ yn ifarn nevra
+cwkk0662  ni a'n bydh agan trigva,
+cwkk0663  mar ny vydh y vodh sywyes.
+
+## SERPENT
+cwkk0664  Taw, taw, Eva, yth os fol;
+cwkk0665  ny vynnydh koela orth da.
+cwkk0666  My a ragdho; ty a'n oel
+cwkk0667  ow husul mar kwredh nagha.
+cwkk0668  Genes nyns ov kontentys.
+cwkk0669  Na vea my dhe'th kara,
+cwkk0670  ny vynnsen dhe'th kusulya
+cwkk0671  dhe vos bargen mar vras gwrys.
+
+## EVE
+
+# [She commeth anear the serpent agayne and geveth heed to his words]
+
+cwkk0672  A kothven y vosa gwir,
+cwkk0673  my a sywsa dha dhesir
+cwkk0674  drefenn ty dhe dhos a'n nev.
+
+## SERPENT
+cwkk0675  Hwi a lever gwir, benyn 'vas.
+cwkk0676  Ny res dhywgh ow mystrestya:
+cwkk0677  a'n nev ny dheu mes tus vas;
+cwkk0678  my yw onan a'n sort na.
+
+### KDL page 20
+
+cwkk0679  Rewgh hwi rann dh'agas dremas,
+cwkk0680  po an viaj ny dal tra,
+cwkk0681  ma's y bart ev a'n jeffa
+
+## EVE
+cwkk0682  Ny vynnav bos mar grefni
+cwkk0683  dhe witha oll ow honan.
+cwkk0684  Adam sur dres pub huni
+cwkk0685  my a'n kar, po Dyw difenn
+cwkk0686  dhe witha heb y shara.
+
+## SERPENT
+
+### [ms 08v] 
+
+cwkk0687  My a ystynn an skorrenn;
+cwkk0688  kemmer an frut anedhi.
+
+## EVE
+
+# [Lett ye serpent bow downe the appll to eva, & she takethe ye appell]
+
+cwkk0689  My a wra yn pur sertan.
+cwkk0690  Ny allav nep-pell perthi,
+cwkk0691  pan vo res tastya anedhi.
+
+## SERPENT
+cwkk0692  Nevra ny gemmer dout,
+cwkk0693  ty a yll bos pur veri.
+cwkk0694  Gans dha lagasow a-les
+cwkk0695  ty a wel pub tra omma,
+cwkk0696  ha pur fur ty a vydh gwrys,
+cwkk0697  avel Dyw; na dhout henna,
+cwkk0698  Eva, my a lever dhis.
+cwkk0699  Na vea my dhe'th kara,
+cwkk0700  ny vynnsen awos neb tra
+cwkk0701  yn-bann dha vos eksaltys.
+
+## EVE
+cwkk0702  Meur a ras dhy'hwi, syrra,
+cwkk0703  ow ri kusul dhymm mar stout.
+cwkk0704  Orthowgh my a vynn koela,
+cwkk0705  ha, by God, nyns eus dhymm dout
+cwkk0706  dhe dastya an keth aval.
+cwkk0707  Ha'w dremas a woer dhymm gras
+cwkk0708  dhe wul viaj mar nobyl,
+cwkk0709  ha, re Dhyw an Drynses Tas,
+cwkk0710  ev a'm sett yn-bann ughel,
+cwkk0711  hag a'm gormel meur, heb dout.
+
+## SERPENT
+cwkk0712  Ke yn kerdh, Eva benyn 'vas,
+cwkk0713  ty a yll godhvos dhymm gras
+cwkk0714  rag an vyaj.
+
+### KDL page 21
+
+cwkk0715  Hag Adam, dell yw dremas,
+cwkk0716  ahanas a wra pur vras.
+cwkk0717  A'n bargen ny vydh edrek.
+
+## EVE
+cwkk0718  Farwel, ow hothman a'n nev;
+cwkk0719  My a'th kar bys vynari.
+cwkk0720  Dhe Adam kerdhes pur grev
+cwkk0721  my a vynn, dh'y salusi,
+cwkk0722  ha'n aval y bresentya.
+
+## SERPENT
+cwkk0723  Gwra yndella, my a'th pys.    722/
+cwkk0724  Ty a glyw ken nowodhow
+cwkk0725  kyns ow gweles vy arta.
+
+## EVE
+
+# [Eva departeth to Adam & presenteth hem the appll]
+
+cwkk0726  Adam, Adam, pyth es'ta?
+cwkk0727  Goslow dhymmo ha deus nes.
+cwkk0728  Yma genev dhe'th plesya -
+cwkk0729  Na borth dout a bratt eus gwrys
+cwkk0730  may hwodhves dhymm grasow.
+
+## ADAM
+cwkk0731  Wolkomm, Eva, os, benyn 'vas.
+cwkk0732  Mars yw an nowodhow da
+cwkk0733  ty a vydh rewardys,
+cwkk0734  ha'm kolonn ynwedh ganso
+cwkk0735  ty a vydh prest dhe'th plegadow.
+
+### [ms 09r] 
+
+
+## EVE
+
+# [Shew the appell to Adam]
+
+cwkk0736  Mirewgh, mirewgh orth hemma!
+cwkk0737  'Tomma, gay a aval dhis!
+cwkk0738  Mar kwredh tastya anodho
+cwkk0739  ev a dreyl dhiso dhe les,
+cwkk0740  moy es milyow a beunsow.
+
+## ADAM
+cwkk0741  Deus nes. Gas vy dhe weles
+cwkk0742  maras ywa aval da.
+cwkk0743  Lavar ple feva kevys.
+
+## EVE
+
+# [Adam is afrayde[at] the sight of the apple]	
+
+cwkk0744  Praga, Adam ow fries,
+cwkk0745  dar, dout eus dhis y weles?
+cwkk0746  Lavar dhymmo, my a'th pys.
+
+## ADAM
+cwkk0747  Ny bleg dhymm syght anodho
+cwkk0748  dout pur vras yma dhymmo
+cwkk0749  nag ywa 'vas, my a grys.
+cwkk0750  Ty, mar pe hemma terrys
+cwkk0751  mes a'n wydhenn difennys
+cwkk0752  ragdho my a vydh grevys.
+
+### KDL page 22
+
+
+## EVE
+cwkk0753  Nevra na dhout a henna,
+cwkk0754  Adam hweg, ow herensa.
+cwkk0755  My a lever, dhis mar pleg,
+cwkk0756  yn pan vaner y'n beuma.
+cwkk0757  Syrra, ha my ow kwandra,
+cwkk0758  my a glywas a-wartha
+cwkk0759  war an wydhenn unn el hweg
+cwkk0760  sur ow kana.
+cwkk0761  My a'm beu wondrys fansi
+cwkk0762  orth y weles y'n wydhenn.
+cwkk0763  Ha dhe-vy yn kortesi
+cwkk0764  y profyas, avel kothman,
+cwkk0765  meur a daklow, re'm lowta,
+cwkk0766  ha pur wordhi.
+
+## ADAM
+cwkk0767  A Ev', Ev', ty a fyllis,
+cwkk0768  ow koela orth an el na.
+cwkk0769  Drog polat o, my a grys,
+cwkk0770  neb a glywsys ow kana,
+cwkk0771  ha'th kusulyas dhe derri
+cwkk0772  an aval na.
+
+## EVE
+cwkk0773  Syrra,
+cwkk0774  ev a gewsys dhymm mar deg,
+cwkk0775  ny wodhyen tamm y nagha,
+cwkk0776  ha'y bromys o mar hweg,
+cwkk0777  may hwrug ev dhymmo koela.
+cwkk0778  Ny dhoutis, war ow ena,
+cwkk0779  a falsuri.
+cwkk0780  Ha'y bromys yth o larjya!
+cwkk0781  mar kwren tastya an frut na
+cwkk0782  avel Dyw ny a via
+cwkk0783  ha maga fur.
+cwkk0784  My a fylli y'n eur na.
+cwkk0785  A kallen dos dhe'n prykk na
+cwkk0786  y fia bargen pur fur.
+
+## ADAM
+cwkk0787  A, out, out warnas Eva!
+cwkk0788  My a yll kussya henna!
+cwkk0789  Tewlys on ni dhe veshyf bras,
+cwkk0790  ha wordhi dhe gemmeres.
+
+### [ms 09v] 
+
+cwkk0791  Henna o hager vargen,
+cwkk0792  Eva, my a lever dhis.
+cwkk0793  Nebes lowr a vydh an gwayn
+cwkk0794  pan vo genes kowl komptys.
+cwkk0795  Soweth, ellas!
+
+### KDL page 23
+
+
+## EVE
+
+# [Profer the appell to Adam,  he refuseth yt]
+
+cwkk0796  Taw, Adam. Na vydh serrys.
+cwkk0797  Ny dheuth drog hwath anodho.
+cwkk0798  An keth peryll y toutis,
+cwkk0799  hag a leveris dhodho
+cwkk0800  oll an peryll yn pub poynt
+cwkk0801  saw ev dhymm a warrantyas
+cwkk0802  nag o dhymmo dout y'n kas,
+cwkk0803  war y beryll, wondrys koynt.
+
+## ADAM
+cwkk0804  A, molleth dhe'n horsen kamm,
+cwkk0805  ha dhe'jy ynwedh ganso!
+cwkk0806  Ni a'n jevydh sur droglamm
+cwkk0807  rag dha viaj y'n torn ma,
+cwkk0808  ha wordhi dhe gavoes blam.
+
+## EVE
+
+# [Lett her speak angerly to Adam]
+
+cwkk0809  Ye, ye, my a'n jevydh oll an blam
+cwkk0810  dhiworthis jy lemmyn Adam,
+cwkk0811  pynagoll fordh yth a an gam.
+cwkk0812  Saw a pen ni dywow gwrys
+cwkk0813  ny vies malbew serrys,
+cwkk0814  my a woer henna yn ta.
+
+## ADAM
+cwkk0815  Taw, taw, na vydh dhymmo mar wokki.
+cwkk0816  An serpont o re wili
+cwkk0817  ragos jy y'n keth torn ma.
+cwkk0818  Ev a brofyas lowr gow dhis,
+cwkk0819  ha genes ymons krysys.
+cwkk0820  Ow geryow a vydh prevys
+cwkk0821  may fydh lowr payn ragdho.
+
+## EVE
+cwkk0822  Ye, yth osta jy den fur,
+cwkk0823  ny vynnes orthiv koela.
+cwkk0824  Mar ny vydhav ow desir
+cwkk0825  nevra ny'm gwelydh omma,
+cwkk0826  medhav, unn spys.
+
+# [Lett her profer to depart]
+
+cwkk0827  An el esa y'n wydhenn
+cwkk0828  y kewsis geryow efan,
+cwkk0829  ha my a'n krys.
+cwkk0830  Syrr, war nebes lavarow,
+cwkk0831  tast jy part a'n avalow,
+cwkk0832  po ow herensa ty a gyll.
+
+### KDL page 24
+
+# [profer hem the appll]		
+
+cwkk0833  Mir, kemmer an aval teg
+cwkk0834  po sur ynter ty ha'th wreg
+cwkk0835  an gerensa kwit a fyll,
+cwkk0836  mar ny vynnydh y dhybri.
+
+## ADAM
+cwkk0837  Henna yth yw truedh dra,
+cwkk0838  a-ban res dhymmo koela
+cwkk0839  #                            # dummy line Stokes 839
+cwkk0840  po kelli an gerensa
+cwkk0841  eus ord'nys ynter-ranna.
+
+### [ms 10r] 
+
+cwkk0842  Eva jentyl, na vydh serrys.
+cwkk0843  My a wra oll dell vynni.
+cwkk0844  Dro-va dhymmo desempis,
+cwkk0845  ha my a wra y dhybri.
+
+## EVE
+
+# [Eva gevethe hem the appll]		
+
+cwkk0846  Eya, gwra dhymm yndella.
+cwkk0847  'Dra vyn byw ow herensa
+cwkk0848  ty a vydh bys vynari.
+cwkk0849  Mir an aval ma omma.
+cwkk0850  Kemmer ha deber toeth da,
+cwkk0851  dout my genes dhe serri.
+
+## ADAM
+
+# [Adam receveth the appll and doth tast yt and so repenteth 
+# and throweth yt away] 
+
+cwkk0852  Ogh, ogh, tru, my re beghas,
+cwkk0853  ha re dorras an difenn!
+cwkk0854  A, debel venyn heb gras,
+cwkk0855  ty re'm toellas vy heb ken!
+cwkk0856  Agan korfow noeth gallas.
+cwkk0857  Mir warnan pub tenewenn!
+cwkk0858  Omgwetthyn ni gans del glas
+cwkk0859  agan privyta pur glos.
+cwkk0860  Y hwonn gwir. Dyw agan Tas
+cwkk0861  y sorr dhyn y teg pur vras,
+cwkk0862  my a'n soppos.
+
+# [Eva loketh vpon Adam very strangly and speketh [not] eny thing]
+
+cwkk0863  Mir, mir, a'n gwel'ta, Eva?
+cwkk0864  Yma ev ow tos omma.
+cwkk0865  Rag meth, deun ni alemma
+cwkk0866  dhe gudha yn tyller klos.
+
+### KDL page 25
+
+
+## FATHER
+cwkk0867  Adam, Adam, pandr'a wredh?
+cwkk0868  Prag ny dheudh dhe'm wolkomma?
+
+## ADAM
+cwkk0869  Drefenn ow bos noeth heb kweth,
+cwkk0870  ragos yth yth dhe gudha
+cwkk0871  y'n tyller ma.
+
+## FATHER
+
+# [ffig leaves redy to cover ther members]
+
+cwkk0872  Piw a dhiskwedhas dhiso
+cwkk0873  dha vos noeth treys, korf ha bregh,
+cwkk0874  lemmyn an frut gras na'th fo
+cwkk0875  mones dhe dhybri heb pegh?
+cwkk0876  Prag y hwruss'ta yndella?
+
+## ADAM
+cwkk0877  Dhymmo vy hwi a ros gwreg.
+cwkk0878  Honna yw oll dhe vlamya.
+cwkk0879  Hi a dorras an aval teg
+cwkk0880  hag a'n dros dhymm dhe dastya.
+
+## FATHER
+cwkk0881  A-ban goels'ta orti hi,
+cwkk0882  ha guthyl dres ow difenn,
+cwkk0883  yn hwys lavur dhe dhybri
+cwkk0884  ty a wra bys y'th worfenn.
+cwkk0885  Eva, prag y hwruss'ta jy
+cwkk0886  toella dha bries heb ken?
+
+## EVE
+
+### [ms 10v] 
+
+cwkk0887  An serpont der falsuri
+cwkk0888  a'm temptyas dhe wuthyl henna,
+cwkk0889  hag a bromysyas dhe vy
+cwkk0890  y fedhen dhe well nevra.
+cwkk0891  Hemma yw gwir.
+
+## FATHER
+cwkk0892  Rag ty dhe goela orto,
+cwkk0893  ha toella dha bries lel,
+cwkk0894  nevra gostydh dh'y gorti
+cwkk0895  my a orden bos benyn.
+cwkk0896  Trest jy dhe'm ger.
+cwkk0897  May foghho y lavur hi
+cwkk0898  der wul ow gorhemmynn trogh,
+cwkk0899  na heb meur lavur devri
+cwkk0900  bynytha ny's tevydh flogh.
+
+# [the father speketh to the serpent]
+
+cwkk0901  Prag y hwruss'ta, milligys,
+cwkk0902  lavar, aga thoella i?
+
+### KDL page 26
+
+
+## SERPENT
+cwkk0903  My a lever dhis an kas:
+cwkk0904  rag bos dhedha joy mar vras,
+cwkk0905  ha my pub eur ow leski.
+
+## FATHER
+cwkk0906  Serpont, rag aga themptya,
+cwkk0907  meur a bayn eus dhis or'nys.
+cwkk0908  Milligys os dres pub tra,
+cwkk0909  ha dres pryv ha best y'n bys.
+cwkk0910  Own ahanas rag nevra
+cwkk0911  den a'n jevydh prest pub prys.
+cwkk0912  Ha ty, pryv, a wra kreupya,
+cwkk0913  ha slynkya war dor a-hys.
+cwkk0914  Ynter hy has hi ha ty
+cwkk0915  my a wra envi nevra,
+cwkk0916  ha henna dhe'th penn dhejy
+cwkk0917  dhe'n dor sur a wra kropya.
+
+## LUCIFER THE SERPENT
+cwkk0918  Ottomma hager viaj,
+cwkk0919  may hallav kyni "Ellas".
+cwkk0920  Yth ombrevis gwann diek,
+cwkk0921  mayth ov 'poyntys dhe bayn bras,
+cwkk0922  dhe bytt ifarn, ow chyf plas.
+
+# [Lett Lucyfer com owte of the serpent, the serpent remayneth 
+# in the tree.]
+
+cwkk0923  My a vynn dalleth kreupya,
+cwkk0924  ha slynkya war dor a-hys.
+cwkk0925  Dhe'm shap ow honan ottomma
+cwkk0926  hwi a wel, oma treylys,
+cwkk0927  drog polat ha bras.
+cwkk0928  Kyn na'm bo-ma lowena,
+cwkk0929  an chorl Adam, hag Eva,
+cwkk0930  dhe ifarn y tons dhymmo,
+cwkk0931  ha'ga yssew, rag nevra,
+cwkk0932  'poyntys der anow an Tas.
+
+### [ms 11r] 
+
+cwkk0933  Ha'n serpont triges ena.
+cwkk0934  Nevra ny dheu alena,
+cwkk0935  rag yth yw milligys bras.
+
+## ADAM
+
+# [And lett hem crepe on his belly to hell wth great noyse]
+
+cwkk0936  A Das, Dyw y'th wolowys,
+cwkk0937  a-ban ov dhe dhrog tewlys,
+cwkk0938  gront dhe'th kreatur, my a'th pys,
+cwkk0939  nep part a Oyl a Versi.
+
+### KDL page 27
+
+
+## FATHER
+cwkk0940  Adam, kyns es diwedh an bys
+cwkk0941  my a wront Oyl Mersi dhis,
+cwkk0942  ha dhe Eva dhe'th wre'ti.
+cwkk0943  Saw, pur wir, dhymmo vy krys,
+cwkk0944  orth dha wreg drefenn koela,
+cwkk0945  rag terri an keth frutys
+cwkk0946  a wrug difenn dhiworthis,
+cwkk0947  spern y teg dhymm ha spedhas,
+cwkk0948  ha'n erbys a'n keth dor na
+cwkk0949  ty a dheber yn dha hwys
+cwkk0950  dhe'th vara, pur wir nevra,
+cwkk0951  erna ves arta treylys.
+cwkk0952  An keth dor kyns a wruga.
+cwkk0953  A dhoust omma y feus gwrys,
+cwkk0954  ha dhe dhoust yth edh arta.
+
+## ADAM
+
+# [Let the father ascend to heaven]	
+
+cwkk0955  Dha vodh re bo kollenwys,
+cwkk0956  Arloedh Nev ha'n Bys keffrys.
+cwkk0957  My a yll bos lowenhes,
+cwkk0958  kyns es bos diwedh an bys,
+cwkk0959  kavoes an Oyl a Versi.
+cwkk0960  Kynth yw paynys ow kortos
+cwkk0961  yn ifarn yn neb plas,
+cwkk0962  ni yw neb a'n dendilas
+cwkk0963  drefenn an difenn terri.
+
+## FATHER IN HEAVEN
+cwkk0964  Mighal, yskynnewgh, el splann,
+cwkk0965  helghyewgh Adam gans kledha dan,
+cwkk0966  ha'y wreg, mes a baradhis.
+cwkk0967  Ha dew gweth dhedha gwra doen,
+cwkk0968  dh'aga hudha pub seson,
+cwkk0969  aga noetha na vo gwelys.
+
+## MICHAEL IN HEAVEN
+cwkk0970  Arloedh, my a wra henna.
+cwkk0971  Parys yw genev pub tra
+cwkk0972  dhe vos dhedha alemma.
+
+# [desend angell]
+
+cwkk0973  Adam, ke yn-mes a'n wlas,
+cwkk0974  dhe gres an bys dhe vywa;
+cwkk0975  ty dha honan dhe balas,
+cwkk0976  dha wreg genes dhe nedha.
+
+### KDL page 28
+
+# [The garmentis of skynnes to be geven to adam and eva by 
+# the angell. Receave the garmentis. Let them depart owt of 
+# paradice and adam and eva folowing them. Let them put on 
+# the garmentis and shewe a spyndell and a dystaf]
+
+cwkk0977  Adam, ottomma dillas,
+cwkk0978  hag Eva, dh'agas kwetha.
+cwkk0979  Fistenewgh, bedhens gwiskys.
+cwkk0980  Fistenewgh troha'n daras,
+cwkk0981  rag omma ny wrewgh triga.
+cwkk0982  Agas toulys dhe balas,
+cwkk0983  ha'gas pygans dhe nedha
+cwkk0984  ottens parys.
+
+## DEATH
+cwkk0985  My yw kannas Dyw, Ankow,
+cwkk0986  omma dredho apoyntys.
+cwkk0987  Rag terri gor'mynnadow
+cwkk0988  dhe Adam gans Dyw or'nys,
+cwkk0989  ev a verow, ha'y yssew.
+cwkk0990  Yndella yth yw 'poyntys
+cwkk0991  dhe vyns a vywo y'n bys
+cwkk0992  my dhe ladha gans ow gyw.
+cwkk0993  Adam na Eva peggha
+cwkk0994  ha difenn an Tas terri,
+cwkk0995  mernans ny wrussens tastya
+cwkk0996  mes yn plesour vynari
+cwkk0997  i a wrussa prest bywa.
+cwkk0998  Omma ev yth o 'poyntys
+cwkk0999  chyf warden war baradhis,
+cwkk1000  ha der begh ha kovaytys
+cwkk1001  oll y joy yth yw kellys,
+cwkk1002  may fedha paynys ragdho.
+cwkk1003  Gans an jowl y fons toellys
+cwkk1004  der an serpont milligys,
+cwkk1005  dell welsowgh warbarth omma.
+
+## ADAM
+
+# [Deathe departeth away]		
+
+cwkk1006  Henna yth yw truedh bras,
+cwkk1007  der  an serpont milligys
+cwkk1008  ni dhe vones mar wokki
+cwkk1009  mayth yw kellys dhyn an plas
+cwkk1010  o or'nys dhyn, leun a joy,
+cwkk1011  dhe vywa omma nevra.
+
+### KDL page 29
+
+cwkk1012  Lemmyn, Eva ow fries,
+cwkk1013  henna yth o dha foli jy.
+cwkk1014  Rakhenna paynys pur vras
+cwkk1015  yma or'nys ragon ni,
+cwkk1016  may hyllyn kyni dredha
+
+## EVE
+cwkk1017  My ny wodhyen gul dhodho.
+cwkk1018  Kemmys geryow teg a'm prev.
+cwkk1019  Der henna, war ow ena,
+cwkk1020  my a sopposyas el nev
+cwkk1021  yth ova dannvenys dhymm.
+cwkk1022  Syrra, kyn foma kregys,
+cwkk1023  y flattering o mar loryus
+cwkk1024  ny wodhyen guthyl nahen
+cwkk1025  re'm lel lowta.
+
+## ADAM
+cwkk1026  A, soweth, ty dhe grysi
+cwkk1027  dhe'n jowl bras ha'y anfeusi!
+cwkk1028  Rag yth o ev re wili
+cwkk1029  pan edh y'n serpont a-ji
+cwkk1030  rag dha doella.
+
+### [ms 12r] 
+
+cwkk1031  A-ban oma kowl diglos
+cwkk1032  hag a baradhis helghys,
+cwkk1033  my a vynn dalleth palas
+cwkk1034  rag kavoes sosten ha boes
+cwkk1035  dhymmo vy ha dhe'n fleghes,
+cwkk1036  hag aparel a dhillas.
+
+## EVE
+cwkk1037  Ynwedh my a vynn nedha,
+cwkk1038  rag gul dillas dhe'm kudha
+cwkk1039  ha dhe'm fleghes eus genys.
+
+## ADAM
+cwkk1040  Ellas, gwev pan ova genys,
+cwkk1041  ow terri gor'mynnadow Dyw!
+cwkk1042  Helghys on a baradhis
+cwkk1043  dhe'n norvys, er agan gew.
+cwkk1044  Tra vydholl a wrella les
+cwkk1045  ny gavav omma neb tu,
+cwkk1046  na sosten, moy es bestes.
+cwkk1047  Fatell wren omwitha byw?
+
+### KDL page 30
+
+
+## EVE
+cwkk1048  Nyns yw hemma paradhis,
+cwkk1049  a, nag yw, Adam, nag yw!
+cwkk1050  Ena yth esa flourys
+cwkk1051  ha frutys, teg aga liw,
+cwkk1052  dh'agan maga,
+cwkk1053  orta mires pan wrellen.
+cwkk1054  Chanjyes yw an rewl lemmyn;
+cwkk1055  ellas orth an pryv koela!
+
+
+# ------------------------------------------------- #
+#                  Cain and Abel                    #
+# ------------------------------------------------- #
+
+
+## ADAM
+
+# [shew her* ij sonnes]
+
+cwkk1056  Dew vab yma dhymm genys,
+cwkk1057  ha tevys yth yns dhe dus.
+cwkk1058  Hwi oll a's gwel.
+cwkk1059  Kaym yth yw ow mab kottha,
+cwkk1060  Abel yw ow mab yonka,
+cwkk1061  fleghes uvel ha jentyl.
+
+# [He speakethe to Cayne]
+
+cwkk1062  My a vynn dhy'hwi 'poyntya
+cwkk1063  servis dhe'n eyl ha'y gila,
+cwkk1064  rag rewlya ys ha chatel.
+cwkk1065  Kaym, dha jarj jy a vydh
+cwkk1066  war gergh, barlys ha gwaneth,
+cwkk1067  dhe wuthyl an dega lel
+
+# [He turnethe to Abell]
+
+cwkk1068  hag Abel, an oblashyon
+cwkk1069  war an bestes ha'n oghen,
+cwkk1070  ha'n devesyow oll y'n gwel.
+cwkk1071  Ha pan vo res degevi
+cwkk1072  gorrewgh i dhe'n Mont Tabor,
+cwkk1073  hag ena gwrewgh aga leski,
+cwkk1074  dout Dyw genowgh dhe serri
+cwkk1075  mar ny wren oblashyon lel.
+
+## CAIN
+cwkk1076  Adam, ow thas karadow,
+cwkk1077  my a wra heb falladow
+cwkk1078  dha worhemmynn yn tien.
+cwkk1079  Res yw, porres lavurya
+cwkk1080  ha gonis y'n bys omma
+cwkk1081  dhe gavoes dhyn ni sosten.
+
+## ABEL
+
+# [A lamb redy with fyre and insence]
+
+cwkk1082  Mos dhe'n menydh my a vynn
+cwkk1083  ha gul an dega lemmyn,
+cwkk1084  ha leski homma pur glan.
+
+### [ms 12v] 
+
+cwkk1085  Ha'n degves oll a bub tra,
+cwkk1086  oblashyon sur anodho,
+cwkk1087  my a'n dyllo oll gans tan.
+
+### KDL page 31
+
+
+## CAIN
+cwkk1088  Y leski ny vynnav vy,
+cwkk1089  an ys na'n frutys devri.
+cwkk1090  Taw, Abel, dhymmo, penn-koeg!
+cwkk1091  My a guntell dreyn ha spern
+cwkk1092  ha glos dhe leski heb bern,
+cwkk1093  hag a wra bush bras a vog.
+
+## ABEL
+cwkk1094  Kaym, nyns yw henna gwrys 'vas.
+cwkk1095  Yn gordhyans dhe Dhyw an Tas,
+cwkk1096  gwren agan sakrifis lel.
+cwkk1097  Dyw a dhervynn bos gordhys
+cwkk1098  gans an gwella frut pub prys.
+cwkk1099  My a'n gwra, awos merwel.
+cwkk1100  Kaym, ow broder,
+cwkk1101  mir ha preder.
+cwkk1102  Hemma yw mog hweg.
+
+## CAIN
+cwkk1103  Taw, dhe'th kregi!
+cwkk1104  Hemma yw gwell devri
+cwkk1105  ty fol krodhek.
+
+## ABEL
+cwkk1106  Ny yll bos,
+cwkk1107  pan wredh gans glos
+cwkk1108  dha sakrifis.
+
+## CAIN
+cwkk1109  Re Dhyw a'm ros,
+cwkk1110  mynnsen dha vos
+cwkk1111  ughel kregys!
+cwkk1112  Rag erya, sur er ow fynn,
+cwkk1113  my a'th wysk, harlot jowdyn,
+cwkk1114  mayth omhwelli dhe'th kilbenn!
+
+# [A chawbone readye]
+
+cwkk1115  Kemmer henna,
+cwkk1116  ty blos adla,
+cwkk1117a war an challa
+cwkk1117b gans eskern an challa!
+
+# [Abell ys strycken with a chawe bone and dyeth]
+
+## ABEL
+
+cwkk1118  A tru, ellas!
+cwkk1119  Ty re'm ladhas,
+cwkk1120  Kaym, ow broder.
+cwkk1121  Y'n bys ma rag dha wrians
+cwkk1122  ty a berth sur gessydhyans;
+cwkk1123  ken na breder.
+
+### KDL page 32
+
+
+## CAIN
+cwkk1124  Otta marow, horsen chorl!
+cwkk1125  Ny vynnav bos kontrolys.
+cwkk1126  He is now rid out of the world.
+cwkk1127  Y fynnsen y vos kudhys
+cwkk1128  yn neb toll ke.
+
+# [Cast Abell into a dyche]
+
+cwkk1129  An gwas a vynnsa leski
+cwkk1130  agan ysow, yn tevri.
+cwkk1131  Ni yllyn perthi henna.
+cwkk1132  Dhe Dhyw nyns eus edhomm vydh
+cwkk1133  awos kavoes agan pyth,
+cwkk1134  my a woer gwir.
+cwkk1135  Ow thas, kyn fo-va serrys
+cwkk1136  pan glywo an nowedhys
+cwkk1137  y vos ledhys, my, yw er,
+cwkk1138  ny synsav poynt.
+cwkk1139  Mirewgh py'mava tewlys,
+cwkk1140  yn kledh dhe vones pedrys!
+cwkk1141  Ny'm beus edrek vydh y'n bys,
+cwkk1142  a'w dorn kynth ywa ledhys
+cwkk1143  par dell oma gwikor koynt.
+
+## FATHER
+cwkk1144  Kaym, dhymmo, py'ma Abel?
+cwkk1145  Ow gorthybi uskis gwra.
+
+## CAIN
+
+### [ms 13r]
+
+# [when ye father speakethe to Cayme lett hem looke downe]
+
+cwkk1146  Ny wonn, Arloedh, diogel.
+cwkk1147  Henna ty a woer yn ta.
+cwkk1148  My nyns ov warden dhodho.
+cwkk1149  Perhaps, bleydh, so mote I go,
+cwkk1150  a'n ladhas pols alemma,
+cwkk1151  an harlot plos.
+cwkk1152  Koth yw ev hag avleythys.
+cwkk1153  Pan na yll e omweres,
+cwkk1154  y vaw ny vynnav bos.
+
+## FATHER
+cwkk1155  Otta, voys mernans Abel
+cwkk1156  dha vroder, prest ow kelwel
+cwkk1157  a'n dor warnas pub tyller.
+cwkk1158  Milligys nevra re bi;
+cwkk1159  hag oll an tir a biwvi
+cwkk1160  yw milligys y'th ober.
+cwkk1161  Frut da bynner re dhokko,
+cwkk1162  na dader arall neb prys.
+cwkk1163  Ow molleth y rov dhiso;
+cwkk1164  molleth ow Mab ha'w Spyrys
+cwkk1165  dhiso kemmer.
+
+### KDL page 33
+
+## CAIN
+
+# [Let not cayme looke in the father is face but look down & quake]
+
+cwkk1166  Dha voys, Arloedh a glywav,
+cwkk1167  saw dha fas my ny welav,
+cwkk1168  sur er ow gew.
+cwkk1169  Moy yw ow gwann oberow
+cwkk1170  hag ynwedh ow feghosow
+cwkk1171  es dell yw dha versi, Dyw,
+cwkk1172  dhymm dhe ava.
+cwkk1173  Lemmyn difreth ov ha gwag,
+cwkk1174  pur wir dres oll tus an bys.
+cwkk1175  My ny wonn leverel prag
+cwkk1176  gans peub na vydhav ledhys
+cwkk1177  ewn rag an keth ober ma.
+
+## FATHER
+cwkk1178  Kaym, na vydhydh yndella
+cwkk1179  rag dha ladha den mar kwra
+cwkk1180  ev a'n jevydh seyth kemmys.
+
+# [Let the father make a marcke in his forehedd this word omega]
+
+cwkk1181  Token warnas my a wra.
+cwkk1182  Henna gwelys pan vova
+cwkk1183  ny vydhydh gans den tochys.
+
+## CAIN
+
+# [Let the father depart to heaven]
+
+cwkk1184  My a vynn mos dhe'm syrra,
+cwkk1185  dhe weles pana fara
+cwkk1186  a wra ev a'n nowedhys.
+cwkk1187  Now God speda dhis, ow thas.
+cwkk1188  My a wrug oblashyon bras,
+cwkk1189  hag a loskas showr a ys.
+
+## ADAM
+cwkk1190  Henna yth o gwrys pur dha.
+cwkk1191  Py'ma Abel, kows henna:
+cwkk1192  dar, nag ywa devedhys?
+
+### KDL page 34
+
+
+## CAIN
+cwkk1193  Anodho mars eus preder,
+cwkk1194  orth y withyas govynn e.
+cwkk1195  A wrug kelli y vroder?
+cwkk1196  My a'n syns gweth es boekka;
+cwkk1197  Ny wonn pyth eth dhe wandra.
+
+### [ms 13v] 
+
+## ADAM
+
+cwkk1198  Hemma yth yw gorthyp skav.
+cwkk1199  Yma ow kul ow holonn klav
+cwkk1200  orth dha glywes y'n torn ma.
+cwkk1201  Ty re'n ladhas, re'm lowta!
+cwkk1202  Ow molleth dhis rakhenna,
+cwkk1203  ha molleth dha vamm ganso
+cwkk1204  ty a'fydh sur maga ta.
+cwkk1205  An nowodhow pan glywvo
+cwkk1206  hy holonn terri a wra.
+cwkk1207  Emskemunys dell o'ta,
+cwkk1208  kwykk yn kerdh ke alemma.
+cwkk1209  Ny borthav gwel ahanas,
+cwkk1210  rag kavow sevel a'm sav.
+cwkk1211  War dhor lemmyn omhwelav.
+cwkk1212  Ow holonn 'ter dew gallas.
+
+## CAIN
+cwkk1213  Emskemunys lowr yth ov,
+cwkk1214  nyns yw res 'skemunya moy.
+cwkk1215  Ny'th anniav, perth jy kov,
+cwkk1216  nag ow dama, yn tevri.
+cwkk1217  My a vynn kyns es hedhi
+cwkk1218  mos alemma
+cwkk1219  ha gwandra a-dro y'n pow.
+cwkk1220  Kemmys yw an mollothow
+cwkk1221  dout yw dhymm kavoes trigva.
+
+## EVE
+
+# [Eva commeth to adam wher he lyeth and she proffer to take hem vpe]
+
+cwkk1222  Adam, pandr'a hwer dhy'hwi,
+cwkk1223  yndellma bones serrys?
+cwkk1224  Yn ow holonn pur dhevri
+cwkk1225  yth oma pur dughanhes
+cwkk1226  orth dha weles y'n stat ma.
+
+### KDL page 35
+
+
+## ADAM
+cwkk1227  A Eva, ow fries ker,
+cwkk1228  ow holonn yw ogas trogh.
+cwkk1229  Oll ow joy yth yw pur wir
+cwkk1230  kellys, der mernans ow flogh
+cwkk1231  neb a geryn an moyha.
+
+## EVE
+cwkk1232  Syrra, ny wonn konvedhes
+cwkk1233  agas dughan yn neb for'.
+cwkk1234  Agan dew vab, dhe Dhyw gras,
+cwkk1235  yth ens pur vyw - bydh na sorr -
+cwkk1236  hwath nyns yw pell.
+cwkk1237  Kaym hag Abel, ty a woer,
+cwkk1238  or'nys yns dhe Mont Tabor
+cwkk1239  dhe wul offrynn, diogel.
+cwkk1240  Ha mir, Kaym otta ena,
+cwkk1241  devedhys dhe dre toeth ta.
+cwkk1242  Rag henna sav, y praydha,
+cwkk1243  ha gas kavow dhe wandra.
+cwkk1244  My ny brederav gwell for'.
+
+## ADAM
+cwkk1245  Eva, nyns yw dhe geles
+cwkk1246  an ober ma dhe weles.
+cwkk1247  Ledhys yw Abel. Na sorr!
+
+## EVE
+
+# [Eva is sorrowfulle tereth her haire & falleth downe 
+# vpon adam. he conforteth her]
+
+
+### [ms 14r] 
+
+cwkk1248  P'ywa? Abel yw ledhys!
+cwkk1249  Dyw difenn y vosa gwir!
+cwkk1250  Nyns eus den vydholl y'n bys
+cwkk1251  dhe wuthyl an keth murder,
+cwkk1252  mes ty ha'w mab kottha Kaym.
+
+## ADAM
+cwkk1253  A, gans Kaym emskemunys
+cwkk1254  ow mab Abel yw ledhys,
+cwkk1255  mayth ov genys dhe veur bayn.
+cwkk1256  Sorr Dyw ha trobel pub tu
+cwkk1257  yma pub eur ow kressya
+cwkk1258  y'n bys ma. Hedra vyn byw
+cwkk1259  ov sur y hwra paynya.
+cwkk1260  Ny'm beus joy a dra y'n bys.
+
+## EVE
+cwkk1261  Out, ellas, pandr'a vydh gwrys?
+cwkk1262  Hemma yw yeyn nowodhow.
+cwkk1263  Ow holonn yth yw terrys;
+cwkk1264  Fynnsen ow bosav marow.
+cwkk1265  Soweth bythkweth bos formys!
+
+### KDL page 36
+
+cwkk1266  A, ty Kaym, emskemunys,
+cwkk1267  ow molleth dhiso pub prys!
+cwkk1268  Henna o gwann-ober gwrys,
+cwkk1269  may ma Dyw ha'n nor keffrys
+cwkk1270  warnas pub eur ow kria.
+cwkk1271  Rakhenna, wosa hemma,
+cwkk1272  nevra ny wren rejoysya,
+cwkk1273  mes pub eur oll ow mornya
+cwkk1274  heb joy vydh na lowena
+cwkk1275  der dha wann-ober omma.
+cwkk1276  Rakhenna voyd alemma,
+cwkk1277  na hwila agan 'nia,
+cwkk1278  mab mollothow par dell os.
+cwkk1279  Ow molleth dhiso pub prys,
+cwkk1280  ha molleth dha das keffrys
+cwkk1281  ty a'fydh y'n jydh ha'n nos.
+
+## CAIN
+cwkk1282  My ny wrav vri a henna.
+cwkk1283  My a lever dhis, dama,
+cwkk1284  kemmys mollothow omma,
+cwkk1285  my a woer! Ny sewenav
+cwkk1286  nevra y'n bys.
+cwkk1287  Rakhenna mos alemma
+cwkk1288  my a vynn; ny wonn py le.
+cwkk1289  Malbew edrek eus dhymmo
+cwkk1290  an chorl Abel 'wos ladha,
+cwkk1291  rag bythkweth my ny'n kerys.
+cwkk1292  Avoydyama.
+
+# [Cayme speakethe to hys wiff]
+
+cwkk1293  Kuntell warbarth ow fygans:
+cwkk1294  my a vynn mos pur uskis
+cwkk1295  ha wosa hemma dihwans,
+cwkk1296  pell y'n difeyth dhe wandra.
+
+## CALMANA HIS WIFE
+cwkk1297  A Kaym, Kaym, ow fries ker,
+cwkk1298  ty a wrug pur dhrog ober
+cwkk1299  dhe ladha Abel, den da.
+
+### [ms 14v] 
+
+cwkk1300  Dha own vroder yth ova,
+cwkk1301  ha'w broder vy maga ta.
+cwkk1302  Rag henna erbynn kinda
+cwkk1303  yth o dhis mos dh'y ladha.
+cwkk1304  Sorr Dyw yma dhyn ragdho.
+
+## CAIN
+cwkk1305  Tetivali! Bramm an gath!
+cwkk1306  Nyns eus edrek dhymmo hwath
+cwkk1307  awos an keth ober na.
+
+### KDL page 37
+
+
+## ADAM
+cwkk1308  Ow fries, gwellha dha jer.
+cwkk1309  Gas dha oela ha'th usa.
+cwkk1310  Gwren grassa dh'agan maker
+cwkk1311  a'gan lavur y'n bys ma;
+cwkk1312  ni a'n dendilas, ha moy.
+cwkk1313  Rakhenna, wosa hemma,
+cwkk1314  yn chast gwren ni kesvywa;
+cwkk1315  ha carnal joy y'n bys ma
+cwkk1316  ni a vynn warbarth nagha,
+cwkk1317  der vodh an Tas a Versi.
+
+## FATHER
+cwkk1318  Adam, na wredh yndella
+cwkk1319  bywa y'n keth ordyr na.
+cwkk1320  Dha has a wra ynkressya
+cwkk1321  heb nomber dhe akontya.
+cwkk1322  Yndella yth yw apoyntys.
+cwkk1323  Ty a 'fydh mab dineythys
+cwkk1324  a'th korf sur, na wra doutya.
+cwkk1325  Henna a vydh haval dhis
+cwkk1326  na yll den bos havalla,
+cwkk1327  ha genev y fydh kerys.
+
+## ADAM
+
+# [Adam kneleth]
+
+cwkk1328  Arloedh, bennigys re bi,
+cwkk1329  orth ow gwarnya yndella.
+cwkk1330  Dha volonjedh pur dhevri
+cwkk1331  re bo kollenwys nevra.
+
+## CAIN
+cwkk1332  Kalmana ow hwoer, fisten,
+cwkk1333  gas ni dhe vos alemma,
+cwkk1334  rag nans yw hi prys yn tien
+cwkk1335  mayth yw res yn kerdh vyajya.
+cwkk1336  Degyn genen agan pygans,
+cwkk1337  par dell osta ow fries
+cwkk1338  ha'w hwoer a-barth mamm ha tas.
+cwkk1339  Gallas genev sorr an Tas
+cwkk1340  rag ladha Abel penn-bras,
+cwkk1341  ynwedh molleth mamm ha tas
+cwkk1342  res yw dhymmo, moy es kans.
+
+## CALMANA
+cwkk1343  A, Kaym, ty a fyllis meur
+cwkk1344  rag guthyl an keth ober;
+cwkk1345  ragdho yth os milligys.
+
+### [ms 15r] 
+
+cwkk1346  Agan tas ha mamm Eva
+cwkk1347  lowr ymons i ow mornya.
+cwkk1348  Gansa ny vydh ankevys
+cwkk1349  an murder bys vynari.
+
+### KDL page 38
+
+cwkk1350  Kemmys yw gansa mornys,
+cwkk1351  aga holonn yw terrys
+cwkk1352  rag kavow, bedhav y di.
+
+## CAIN
+cwkk1353  Awos henna ny wrav vri;
+cwkk1354  na anedha i bydh moy,
+cwkk1355  my ny settyav gwel-gala.
+cwkk1356  Genev lowr i a sorras
+cwkk1357  hag a'm mollethis mar vras
+cwkk1358  na sewenav, gonn yn ta,
+cwkk1359  nevra y'n bys.
+cwkk1360  Rakhenna deun alemma
+cwkk1361  yn pellder dhiworth ow thas.
+cwkk1362  Y'n koesow mynnav bywa,
+cwkk1363  po yn bushes ha brakes bras;
+cwkk1364  rag ny besyav bos gwelys
+cwkk1365  awos mernans.
+cwkk1366  Rag an murder o mar vras
+cwkk1367  ny yll Dyw dhymmo gava,
+cwkk1368  na ny vedhav yn neb kas
+cwkk1369  dhe'n Tas, awos diskudha,
+cwkk1370  unnweyth dhe hwilas gevyans.
+
+# [Let hem shew the marck]
+
+## CALMANA
+
+cwkk1371  Yn henna yth os dhe vlamya.
+cwkk1372  Dyw a settyas merk warnas,
+cwkk1373  ewn yn korn dha dal omma,
+cwkk1374  hag yndellma y leveris,
+cwkk1375  an geryow ma, dhevri:
+cwkk1376  Pynagoll den a wel henna
+cwkk1377  hag a wrello dha ladha,
+cwkk1378  ev a's tevydh seyth plag moy.
+
+# [Som fardell to carre with them]
+
+## CAIN
+
+cwkk1379  A'n promys my ny rov oy.
+cwkk1380  Y drestya ny vynnav vy
+cwkk1381  dout bos toellys.
+cwkk1382  A-ban yw pub tra parys,
+cwkk1383  deun ni yn kerdh kekeffrys,
+cwkk1384  pellder a-dro y'n bys.
+cwkk1385  Ha'gan fleghes kekeffrys,
+cwkk1386  hwath kynth yns i mar vunys.
+cwkk1387  My a dheg rann war ow heyn.
+cwkk1388  Uskis lemmyn!
+
+### KDL page 39
+
+
+## CALMANA
+cwkk1389  Gwra yndella, my a'th pys;
+cwkk1390  my a led an vow's a'm dorn.
+cwkk1391  Ow holonn yth yw terrys,
+cwkk1392  that since the time I that I was born
+cwkk1393  bythkweth my ny'm beus moy dughan.
+
+### [ms 15v] 
+
+## ADAM
+
+cwkk1394  Gordhys re bo Dyw an Tas!
+cwkk1395  Mab dhymmo yma genys,
+cwkk1396  ha tevys dhe baja bras.
+cwkk1397  Seth ow mab yth yw henwys.
+cwkk1398  Hwi a'n gwel: Otta omma.
+
+# [Show Seth]
+
+cwkk1399  My a bys dhe'n lel Drynses
+cwkk1400  hedra vo omma y'n bys
+cwkk1401  dhe vos lel servont dhodho.
+
+## FATHER
+cwkk1402  Adam, my a lever dhis,
+cwkk1403  dha vab Seth yw dewisys
+cwkk1404  genev prest dhe'm servya vy.
+cwkk1405  A skians y fydh lenwys,
+cwkk1406  hag a gonnyk maga ta.
+cwkk1407  Ny vydh skians vydh y'n bys
+cwkk1408  mes y aswonn ev a wra
+cwkk1409  dre'n an planetys, mes ha chi.
+cwkk1410  Der howl ha ster a-wartha
+cwkk1411  ev a wra oll dissernya
+cwkk1412  a'n pyth a vydh wosa hemma,
+cwkk1413  kekeffrys a dhrog ha da.
+
+## ADAM
+
+# [Adam kneleth & Seth also]
+
+cwkk1414  Meur wordhyans dhis, ow Formyer,
+cwkk1415  ha gwrier a oll an bys.
+cwkk1416  Yth os-ta Arloedh heb par.
+cwkk1417  Yn pub plas re bo gordhys.
+cwkk1418  Neb a'th enor ny dhrog-far.
+cwkk1419  Yn Seth re bo kollenwys
+cwkk1420  par dell vo dha vodh nevra
+cwkk1421  omma pur grev.
+
+## SETH
+cwkk1422  Ha my ynwedh, Arloedh nev,
+cwkk1423  a'th lel-wonis dell vo res,
+cwkk1424  par dell osta Arloedh krev.
+cwkk1425  Hedra vyn omma y'n bys,
+cwkk1426  klyw jy ow lev,
+
+### KDL page 40
+
+cwkk1427  ma'm boma gras wosa hemma
+cwkk1428  dhe'th weles yn lowender,
+cwkk1429  gans dha eledh a-wartha,
+cwkk1430  ughel yn nev.
+
+
+
+# ------------------------------------------------- #
+#          Lamech & Cain (The Death of Cain)        #
+# ------------------------------------------------- #
+
+
+## LAMECH in tent
+
+cwkk1431  Pes! Goslowewgh, a-derdro,
+cwkk1432  orthiv vy myns eus omma.
+cwkk1433  Lamek yth yw ow hanow;
+cwkk1434  mab yth ov, krysewgh dhymmo,
+cwkk1435  dhe Vantusale forsooth.
+cwkk1436  A Kaym, mab Adam yth ov
+cwkk1437  sevys a'n seythves degre.
+cwkk1438  Arloedh bras synsys, yn prof.
+cwkk1439  Ny'm beus par, sur, yw byw;
+cwkk1440  peub a'm enor par dell goedh.
+
+### [ms 16r] 
+
+cwkk1441  Drog polat ov, re'm lowta.
+cwkk1442  Nameur a dorn da ny wrav,
+cwkk1443  mes pub eur oll ow pylla
+cwkk1444  an dus wann mara kallav.
+cwkk1445  Ow fansi yw henna.
+cwkk1446  Hwath kynth yw ow hendas Kaym
+cwkk1447  pur bad den lowr akontys,
+cwkk1448  my a'n kemmer yn disdayn
+cwkk1449  mar ny vydhav vy prevys
+cwkk1450  hwath meur lakka.
+cwkk1451  Moy es unn wreg dhymm yma
+cwkk1452  dhe'm plesour rag gul gansa.
+cwkk1453  Ha sur my yw an kynsa
+cwkk1454  bythkweth a veu dew wreg.
+cwkk1455  Ha'n mowesi lowr plenti
+cwkk1456  yma dhymm. Nyns yns denti.
+cwkk1457  My a's kyv pan vynnav vy;
+cwkk1458  ny sparyav anedha i,
+cwkk1459  malbew onan a vo teg.
+cwkk1460  Saw yth ov wondrys troblys.
+cwkk1461  Skant ny welav unn banna.
+cwkk1462  P'yw an jowl! Pandra vydh gwrys?
+cwkk1463  My ny wonn, war ow ena,
+cwkk1464  na hwath ny gavav gweres.
+
+### KDL page 41
+
+cwkk1465  An plesour eus dhymm y'n bys
+cwkk1466  yth yw gans gwarak tenna.
+cwkk1467  My a vynn mos pur uskis
+cwkk1468  dhe'n forest kwykk alemma,
+cwkk1469  ha ladha an stranj bestes.
+cwkk1470  A'y us kig an bestes na,
+cwkk1471  na a vest na lo'n y'n bys
+cwkk1472  ny wrussen bythkweth tastya.
+cwkk1473  Na hwath kig genen dybrys,
+cwkk1474  na gwin ny usyen banna.
+cwkk1475  Vytel arall dhyn yma,
+cwkk1476  ha pygans lowr dhe vywa.
+cwkk1477  Gans kreghyn an bestes na
+cwkk1478  my a wra dillas dhymmo,
+cwkk1479  par dell wrug ow hendasow.
+cwkk1480  Ha'w hendas Kaym, hwath yw fyw
+cwkk1481  y'n difeyth; yn mysk bestes
+cwkk1482  yma ev prest ow pywa.
+cwkk1483  Drefenn serri an Tas Dyw
+cwkk1484  tewlys yw dhe veschyf bras,
+cwkk1485  rag drog polat par dell yw
+cwkk1486  ha lenwys a vollothow.
+
+# [Bow and arw redy with the Servant]	
+
+### [ms 16v] 
+
+cwkk1487  Ow servont, deus nes omma,
+cwkk1488  ha'w gwarak dro hi genes.
+cwkk1489  My a vynn mos dhe wandra
+cwkk1490  bestes wyls dhe aspia,
+cwkk1491  hag a vynn gans ow sethow
+cwkk1492  ladha part anedha i.
+
+## SERVANT
+cwkk1493  Agas gwarak ha sethow
+cwkk1494  genev ottensi parys.
+cwkk1495  My a's led bys y'n koesow,
+cwkk1496  hag ena y fydh kevys
+cwkk1497  plenti lowr, yn pur dhevri.
+
+## CAIN
+
+# [depart lameck. his servant leadethe hem to the Forest near the bushe]
+
+cwkk1498  Gans peub my yw ankevys.
+cwkk1499  Ny'm aswonn nameur a dus.
+cwkk1500  Kaym my a vydh henwys,
+cwkk1501  mab kottha Adam, tewlys,
+cwkk1502  hwi a wel, dhe veschyf bras.
+
+### KDL page 42
+
+cwkk1503  Hwath ow holonn yth yw stout
+cwkk1504  awos ladha Abel lout.
+cwkk1505  Na hwath, 'wos molleth an Tas,
+cwkk1506  ny'm beus edrek vydh y'n bys.
+cwkk1507  Hwi a'm gwel: overdevys
+cwkk1508  yth oma warbarth gans blew.
+cwkk1509  Ny besyav bones gwelys
+cwkk1510  gans mab-den y'n bys ma byw,
+cwkk1511  drefenn ow bos emskemunys.
+cwkk1512  Ha'w thas Adam y volleth
+cwkk1513  gallas genev, ha'y sorr bras.
+cwkk1514  Drefenn henna, yn neb plas
+cwkk1515  ny allav kavoes powes.
+cwkk1516  Mab mollothow yth ov gwrys.
+cwkk1517  Der henna my ny vedhav
+cwkk1518  dos yn mysk pobel neb prys,
+cwkk1519  mes pub eur owth omwitha
+cwkk1520  yn koesow hag y'n bushes,
+cwkk1521  avel best prest ow pywa.
+cwkk1522  Ow foli yth yw mar vras,
+cwkk1523  ha'w holonn ynwedh pur brout.
+cwkk1524  Ny vynnav dhiworth an Tas
+cwkk1525  hwilas mersi, sur heb dout,
+cwkk1526  kyn na'm boma lowena.
+cwkk1527  Own yma dhymm a bub den,
+cwkk1528  ganso dhe vones ledhys.
+cwkk1529  Saw an Tas Dyw y honan
+cwkk1530  y verk warnav a settyas,
+cwkk1531  poran gans y own diwla.
+cwkk1532  Hwi oll a'n gwel.
+
+# [Shew the marcke]
+
+cwkk1533  Hag y kewsis yndellma,
+cwkk1534  na wra den vydh ow ladha,
+cwkk1535  erbynn y dhisplesour lel.
+
+### [ms 17r] 
+
+cwkk1536  Hag ow ladha neb a wra,
+cwkk1537  seyth gweyth y hwra akwitya.
+cwkk1538  Y kewsis, gans charj pur grev.
+cwkk1539  Saw hwath, 'wos an promys na,
+cwkk1540  meur yth esov ow toutya
+cwkk1541  y vennath dhymm ny vynn ev.
+cwkk1542  Rakhenna, war ow ena,
+cwkk1543  my a vynn mos dhe gudha
+cwkk1544  yn neb bush, kynth yw dhymm grev.
+
+### KDL page 43
+
+
+## SERVANT
+
+# [Let hem hyde hem self in a bushe]
+
+cwkk1545  Mester da, der dha gummyas,
+cwkk1546  my a wel unn lo'n pur vras
+cwkk1547  yn-hons yn bush ow plattya.
+cwkk1548  Syrra, yn mysk an bestes
+cwkk1549  stranj yth yw ev dhe weles.
+cwkk1550  Mirewgh, mester, py 'ma-va.
+
+## LAMECH
+cwkk1551  Bydh war dhymm na vova den,
+cwkk1552  rag my ny allav medra.
+cwkk1553  Sett ow seth dhe denewenn,
+cwkk1554  may hallen tenna dhodho.
+cwkk1555  Na berth dout, y fydh e gwyskys.
+
+## SERVANT
+
+# [let his man levyll the arrowe; and then shote]
+
+cwkk1556  Nevra na wrewgh hwi doutya,
+cwkk1557  ken es best nag yw henna,
+cwkk1558  ha stranj yw dhe vos gwelys.
+cwkk1559  Now, otta an seth kompes.
+cwkk1560  Tenn hi yn-bann bys y'n pil,
+cwkk1561  par dell os archer prevys
+cwkk1562  hag a ladhas moy es mil
+cwkk1563  a vestes kyns es lemmyn.
+
+## LAMECH
+cwkk1564  Now otta an seth tennys,
+cwkk1565  ha'n best sur yma gwyskys!
+cwkk1566  Y vernans gallas ganso!
+
+# [when cayme is stryken lett bloud appeare & let hem tomble]
+
+cwkk1567  Led vy kwykk bys yn dhodho,
+cwkk1568  may hallen vy attendya
+cwkk1569  pan vaner lo'n yth ywa.
+
+## CAIN
+cwkk1570  Out, ellas, my yw marow!
+cwkk1571  Ny'm beus bywa na fella!
+cwkk1572  Gwenys ov der an asow,
+cwkk1573  ha'n seth gallas kwit dredhov.
+cwkk1574  Pur ogas marow yth ov!
+
+# [Lamec cometh to hem & fyleth hem]
+
+cwkk1575  Par dell veuma ongrassyes,
+cwkk1576  lemmyn yth oma plagyes,
+cwkk1577  dell welowgh hwi oll an prov.
+
+## LAMECH
+cwkk1578  Out, ty vilen, pandr' eus gwrys?
+cwkk1579  Sur hemma yw den ledhys.
+cwkk1580  My a'n klyw prest ow karma.
+
+### KDL page 44
+
+
+## SERVANT
+cwkk1581  Ow karma yma an best!
+cwkk1582  My a'n gwel ow trebuchya.
+cwkk1583  Gallas ganso hager fest!
+cwkk1584  Roy y groghen dhymm, I pray thee,
+cwkk1585  dhe wul kweth dhymm dhe wiska.
+
+### [ms 17v] 
+
+cwkk1586  Blewek koynt yw ha hager.
+cwkk1587  Ny wonn pan vest ylla bos.
+cwkk1588  Yth 'valsa orth y favour
+cwkk1589  y bosa neb boekka nos,
+cwkk1590  ha henna y fydh prevys.
+
+## LAMECH
+
+# [hear Lamec feleth hem]
+
+cwkk1591  Gorta, gas vy dh'y dava,
+cwkk1592  drefenn gweles mar nebes.
+cwkk1593  Pyw osta lavar dhymmo
+cwkk1594  mars os den po neb best bras.
+cwkk1595  Dout ahanas dhymm yma.
+
+## CAIN
+cwkk1596  A soweth, emskemunys,
+cwkk1597  my yw Kaym, mab dhe Adam.
+cwkk1598  Genes yth oma ledhys.
+cwkk1599  Molleth dhis dha das ha'th vamm,
+cwkk1600  ha'w molleth vy gans henna.
+
+## LAMECH
+cwkk1601  P'ywa! Ty yw Kaym, mab dhe Adam!
+cwkk1602  Ny allav krysi henna.
+cwkk1603  Di'velebys os ha kamm,
+cwkk1604  overdevys oll gans henna
+cwkk1605  yth os, gans blew.
+cwkk1606  Prag yth os'ta yndellma
+cwkk1607  y'n bushes ow krowedha?
+cwkk1608  Marth bras yth yw.
+cwkk1609  My ny allav konvedhes
+cwkk1610  dha vosta jy ow hendas,
+cwkk1611  na kar vydh dhymm, yn tevri.
+
+## CAIN
+cwkk1612  A'm korf yth os devedhys,
+cwkk1613  hag a Adam dha hendas.
+cwkk1614a Lemmyn yth os milligys,
+cwkk1614b ha seythplek ty ha'th fleghes
+cwkk1615  a vydh plagyes, krys dhe vy.
+cwkk1616  Merk Dyw warnav yw settys.
+cwkk1617  Ty a'n gwel yn korn ow thal.
+cwkk1618  Gans den pan vo konvedhys
+cwkk1619  orthiv vy sertan ny dal
+cwkk1620  bos mellys awos neptra.
+
+### KDL page 45
+
+
+## LAMECH
+cwkk1621  Ty a wel, veri nebes
+cwkk1622  banna ny allav gweles
+cwkk1623  dhe vos akontys, re'm lowta.
+cwkk1624  Prag y hwrug Dyw settya merk
+cwkk1625  yn korn dha dal, dhymm lavar?
+cwkk1626  Kyn firen warnas mar stark
+cwkk1627  ny welav meur a'th favour,
+cwkk1628  na merk vydholl y'th tal.
+
+### [ms 18r] 
+
+
+## CAIN
+cwkk1629  My a lever heb y di:
+cwkk1630  genev Dyw a wrug serri
+cwkk1631  ha'y volleth, yn pur dhevri,
+cwkk1632  dhymm a ros,
+cwkk1633  drefenn ladha ow broder.
+cwkk1634  Abel o henna. Preder,
+cwkk1635  mara mynnta, y wodhvos.
+cwkk1636  Der henna, my a dhoutyas
+cwkk1637  gans peub y fedhen ledhys.
+cwkk1638  Saw Dyw dhymmo a wrontyas -
+cwkk1639  war y dhisplesour ev res -
+cwkk1640  ny vedhen yn kettella;
+cwkk1641  ha pynagoll a wra henna,
+cwkk1642  plagyes y fedha ragdho.
+cwkk1643  Ha'y verk y settyas omma,
+cwkk1644  yn korn ow thal, rag tokyn.
+cwkk1645  Ha genes, emskemunys,
+cwkk1646  o my dhe vones ledhys,
+cwkk1647  ewn a'th tiwla jy lemmyn.
+
+## LAMECH
+cwkk1648  A, soweth gweles an prys
+cwkk1649  genev dha vosta ledhys,
+cwkk1650  mars yw ty Kaym ow hendas.
+cwkk1651  Ow boya o dhe vlamya:
+cwkk1652  ev a or'nas dhymm tenna,
+cwkk1653  ha my, ny welyn banna
+cwkk1654  mes nebes, pur wir yn fas.
+
+## CAIN
+cwkk1655  A Lamek, drogwas yth os,
+cwkk1656  ha my ynwedh, meur lakka.
+cwkk1657  Hemma o venjans pur vras,
+cwkk1658  ha just plag or'nys dhymmo;
+cwkk1659  soweth an prys!
+
+## LAMECH
+cwkk1660  Kaym, hwath kynth o'ta ow hendas,
+cwkk1661  dha aswonn my ny wodhyen
+cwkk1662  na ny wrugav dha weles
+cwkk1663  nans yw sur lies blydhen
+cwkk1664  drefenn bos di'velebys.
+
+### KDL page 46
+
+
+## CAIN
+cwkk1665  Di'velebys ov pur veur,
+cwkk1666  hag overdevys gans blew.
+cwkk1667  Ow pywa 'th esov pub eur
+cwkk1668  yn toemmder ha yeynder rew,
+cwkk1669  sur nos ha dydh.
+cwkk1670  Ny besyav gweles mab-den
+cwkk1671  gans ow bodh yn neb termyn,
+cwkk1672  mes kompani lieskweyth
+cwkk1673  a bub best.
+cwkk1674  Oll an trobel dhymm yma
+cwkk1675  an chorl Abel rag ladha.
+cwkk1676  Hemma yw gwir, dhymmo trest.
+
+## LAMECH
+cwkk1677  Prag y hwruss'ta y ladha,
+cwkk1678  hag ev dha vroder nessa?
+cwkk1679  Henna o gwann-ober gwrys.
+
+### [ms 18v] 
+
+
+## CAIN
+cwkk1680  Drefenn ev dhe'm kontrolya,
+cwkk1681  ha my y vroder kottha!
+cwkk1682  Ny wrug revrons dhymm y'n bys!
+cwkk1683  Der henna my a angras
+cwkk1684  ha pur uskis a'n ladhas.
+cwkk1685  Ny'm beus edrek a henna.
+cwkk1686  Molleth Dyw ha tas ha mamm
+cwkk1687  gallas genev vy droglamm
+cwkk1688  poran rag an ober na.
+cwkk1689  Ow holonn hwath yth yw prout,
+cwkk1690  kynth oma ogas marow.
+cwkk1691  Mersi hwilas yma dhymm dout
+cwkk1692  dhymmo rag an oberow.
+cwkk1693  My a woer y vos Dyw stout.
+cwkk1694  Dhymmo ny vynn ev gava,
+cwkk1695  na gevyans my ny hwilav.
+cwkk1696  Yth esov ow tremena;
+cwkk1697  dhiso ny vynnav gava.
+cwkk1698  Ow ena ny wonn pyth a:
+cwkk1699  dhe ifarn yw y drigva.
+cwkk1700  Ena triges, gwav ha hav.
+
+## LAMECH
+cwkk1701  A, soweth gweles an prys!
+cwkk1702  Kaym ow hengeugh yw marow!
+cwkk1703  Ragdho ty a vydh ledhys,
+cwkk1704  a fals lader kasadow!
+cwkk1705  Skwatyes yw dha ympynnyon!
+
+### KDL page 47
+
+
+## SERVANT
+
+# [kill hem with a staf]
+
+cwkk1706  Out, ellas, my yw marow,
+cwkk1707  ha'w fenn skwatyes pur arow -
+cwkk1708  hwi a'n gwel - ynter diw rann!
+
+## LAMECH
+cwkk1709  Rakhenna mos alemma
+cwkk1710  my a vynn, gwella gallav.
+cwkk1711  Ny amont guthyl dughan
+cwkk1712  lemmyn ragdho.
+
+# [depart away]
+
+
+## FIRST DEVIL
+
+cwkk1713  Yma Kaym adla marow.
+cwkk1714  Deun dh'y hedhes dhe baynow,
+cwkk1715  ha'n paja Lamek ganso.
+
+## SECOND DEVIL
+cwkk1716  Deus, a ena milligys,
+cwkk1717  dha vroder ty a ladhas,
+cwkk1718  Abel, neb o den gwiryon.
+cwkk1719  Yn tan ty a wra leski,
+cwkk1720  ha'n keth paja ma, devri,
+cwkk1721  yn ifarn, hwi drog lawen
+
+## FIRST DEVIL
+
+# [the devills car[i]eth them wth great noyes to hell]
+
+cwkk1722  Y'n pytt ma y hwredh triga
+cwkk1723  genev vy, a-barth a-woeles,
+cwkk1724  hag a lesk yn toemmder tan.
+cwkk1725  Nevra ny dhewgh alena,
+cwkk1726  myns na wra bodh an Tas.
+
+
+# ------------------------------------------------- #
+#                The Death of Adam                  #
+# ------------------------------------------------- #
+
+### [ms 19r] 
+
+
+## ADAM
+cwkk1727  Seth, ow mab, dhymm deus omma,
+cwkk1728  ha goslow ow derivas.
+cwkk1729  Hirneth byw ov y'n bys ma,
+cwkk1730  mayth ov skwith a'n lavur bras
+cwkk1731  eus dhymmo pub nos ha dydh.
+cwkk1732  Rakhenna ke alemma
+cwkk1733  dhe baradhis heb lettya,
+cwkk1734  ha'n Oyl a Versi hwila
+cwkk1735  mar kyllydh, awos neb tra.
+cwkk1736  Na dhout, gorthyp ty a vydh
+cwkk1737  oll a'th negys.
+
+## SETH
+cwkk1738  A das ker, ny wonn for' dhi,
+cwkk1739  na ny veuv bythkweth ena.
+cwkk1740  My ny allav prederi
+cwkk1741  pana gwartron yth a-ma,
+cwkk1742  syrr, dhe hwilas paradhis.
+
+### KDL page 48
+
+
+## ADAM
+cwkk1743  Gwith yn hons kompes dhe est.
+cwkk1744  Na gemmer dout na mystrest
+cwkk1745  mes an for' a vydh kevys
+cwkk1746  y'n vaner ma.
+cwkk1747  Ty a wel olow ow threys
+cwkk1748  pan dheudh vy a baradhis
+cwkk1749  ewn y'n veri prynt leskys
+cwkk1750  pan veu an nor milligys
+cwkk1751  der ow oberow ena.
+
+# [An angell in the gate of paradice, a bright sworde in his hand]
+
+cwkk1752  Ha pan dheffesta dhe'n plas,
+cwkk1753  ty a gyv y'n yet unn el
+cwkk1754  a ro gorthyp dhis y'n kas,
+cwkk1755  ha'w desir ny wredh fyllel.
+cwkk1756  Bydh avysyes a bub tra
+cwkk1757  a welydh, ow mab, ena.
+
+## SETH
+cwkk1758  Ow thas ker, mos alemma
+cwkk1759  my a vynn, y'n by-and-by,
+cwkk1760  hag y tov dhy'hwi arta
+cwkk1761  gans gorthyp, kyns es hedhi,
+cwkk1762  der bodh an Tas a-wartha.
+
+# [Let seythe depart and folow the prynt of adam is feet to paradice]
+
+cwkk1763  My a wel ol treys ow thas,
+cwkk1764  a'm led vy dhe baradhis.
+cwkk1765  Hemma yw marthusyon bras.
+cwkk1766  An nor sur ny sewenas
+cwkk1767  y'n for' may hwrug ev kerdhes.
+cwkk1768  Der temptashyon bras an jowl,
+cwkk1769  chassyes on a baradhis,
+cwkk1770  mayth eth genen hager dowl,
+cwkk1771  ha dhe veschyf bras koedhys
+cwkk1772  yth en der ordyr an Tas.
+cwkk1773  Tru, go-vy.
+
+### KDL page 49
+
+# [A tree in paradice with a meyd in the topp & reching in her 
+# armes the serpent]
+
+cwkk1774a My a wel an plas gloryus
+cwkk1774b ha'n el y'n yet ow sevel,
+cwkk1775  splann dhe weles ha preshyous.
+cwkk1776  My a vynn mos pur uvel
+cwkk1777  ewn dhodho, dh'y salusi.
+
+### [ms 19v] 
+
+cwkk1778  El Dyw an nev a-wartha,
+cwkk1779  dhis lowena ha meur joy!
+cwkk1780  Devedhys yth ov omma
+cwkk1781  gans Adam ow thas dhy'hwi,
+cwkk1782  yndella mar pewgh plesys.
+
+## CHERUBIM ANGEL
+cwkk1783  Seth, deus nes, ha dhymm lavar
+cwkk1784  dha negysyow heb danjer
+cwkk1785  ha na gemmer own y'n bys.
+
+## SETH
+cwkk1786  Ow negys yth yw hemma:
+cwkk1787  dhe hwilas Oyl a Versi.
+cwkk1788  Charjyes yth ov yndella
+cwkk1789  gans ow thas omma dhy'hwi,
+cwkk1790  agas bodh mars yw henna,
+cwkk1791  rag yth yw ev koth gyllys,
+cwkk1792  hag y'n bys ma nans yw skwith.
+cwkk1793  Y drobel yth yw kemmys
+cwkk1794  hwansek nyns yw dhe dravydh,
+cwkk1795  mes pub eur ma ow kria
+cwkk1796  war-lergh an Oyl a Versi.
+
+## ANGEL
+cwkk1797  Deus nes dhe'n yet, Seth, ha mir.
+cwkk1798  Ty a wel oll paradhis.
+cwkk1799  Avis pub tra, ha lavar
+cwkk1800  pandr'a welydh a strangeness
+cwkk1801  y'n jardin a-barth a-ji.
+
+## SETH
+cwkk1802  Agas bodh mars yw henna,
+cwkk1803  my a vynn skon avisya
+cwkk1804  an marthusyon eus ena.
+
+### KDL page 50
+
+# [Let seyth look into paradice]
+# [Ther he vyseth all thingis. and seeth ij trees and in 
+# the one tree, sytteth mary the virgyn & in her lappe her 
+# son Jesus in the tope of the tree of lyf, and in the other 
+# tree ye serpent wch caused Eva to eat the appell]
+
+
+## ANGEL
+cwkk1805  Lemmyn, Seth, lavar dhymmo
+cwkk1806  a-bervedh pandra wel'ta.
+cwkk1807  Na wra keles unn dra.
+
+## SETH
+cwkk1808  My a wel sur unn wydhenn,
+cwkk1809  ha serpont ynni a-vann.
+cwkk1810  Marow sygh hi a 'valsa.
+
+## ANGEL
+cwkk1811  Honna yw an keth wydhenn
+cwkk1812  a wrug kyns dha vamm ha tas
+cwkk1813  dybri an aval a anken
+cwkk1814  o difennys gans charj bras
+cwkk1815  a anow an Tas Gwella.
+cwkk1816  Ha'n serpont na a wel'ta
+cwkk1817  yth yw an veri pryv na
+cwkk1818  a wrug an jowl dhe entra
+cwkk1819  ynni hi rag temptya
+cwkk1820  dhe'th vamm Eva.
+cwkk1821  Der henna, Dyw a sorras,
+cwkk1822  ha dhe vy ev a or'nas
+cwkk1823  alena aga chasya.
+cwkk1824  Lavar pandra wel'ta moy.
+
+## SETH
+cwkk1825  My a wel goodly wydhenn
+cwkk1826  ha'y thopp pur ughel yn-bann.
+cwkk1827  Bys yn nev 'ma ow tevi.
+cwkk1828  Ha'y gwreydhyow dhe'n dor isel
+cwkk1829  yma ow resek, pur lel,
+cwkk1830  bys yn ifarn, pytt pur grev.
+
+### [ms 20r] 
+
+cwkk1831  Hag ena ow broder Kaym
+cwkk1832  my a'n gwel ev yn meur bayn,
+cwkk1833  hag yn trobel mayth yw gwev.
+cwkk1834  Hag yn topp an keth wydhenn
+cwkk1835  my a wel unn maghteth hweg
+cwkk1836  ow 'sedha, yn pur sertan,
+cwkk1837  hag yn hy diwvronn flogh teg,
+cwkk1838  dell hevel dhymm yndella.
+
+### KDL page 51
+
+
+# [The Angell goeth to the Tree of Lyf and breaketh an appll 
+# and taketh iij coores and geveth yt to seyth]
+
+
+## ANGEL
+cwkk1839  My a lever dhis diblans:
+cwkk1840  honna (lel yth yw henwys)
+cwkk1841  yw an Wydhenn a Vywnans.
+cwkk1842  My a hedh rann a'n frutys,
+cwkk1843  hag a dhro part anedha,
+cwkk1844  aval pur vras.
+cwkk1845  Mir, ottomma teyr sprusenn
+cwkk1846  a dheuth mes a'n aval ma.
+cwkk1847  Kemmer i ha gorr yn-bann
+cwkk1848  yn neb tyller dhe govva,
+cwkk1849  ha dog i genes dhe'th tas.
+cwkk1850  Pan vo diwedh y dhydhyow,
+cwkk1851  hag y'n dor dhe vos ynkleudhys,
+cwkk1852  gorr sprusenn yn y anow,
+cwkk1853  ha'n dhiw arall kekeffrys,
+cwkk1854  bedhens gorrys yn y dhewfrik.
+cwkk1855  Hag y tyv a'n keth sprus na
+cwkk1856  unn wydhenn wosa hemma,
+cwkk1857  na berth dout, a vydh pur deg.
+cwkk1858  Ha pan vo hi kowl-devys,
+cwkk1859  hi a vydh pub eur parys
+cwkk1860  dhe dhoen an Oyl a Versi.
+cwkk1861  Pan vo pymp mil ha pymp kans
+cwkk1862  a vlydhynyow kler passyes,
+cwkk1863  y'n eur na gwaytyes dihwans
+cwkk1864  war-lergh Oyl Mersi pup-prys,
+cwkk1865  ha Salvador yn tevri
+cwkk1866  a'n doro mes a baynys.
+cwkk1867  Lavar dhe'th tas yndella,
+cwkk1868  ha dhodho yth yll trestya.
+cwkk1869  Yndellma yth yw 'poyntys.
+cwkk1870  Fisten dihwans alemma.
+cwkk1871  Ow bennath dhis.
+
+## SETH
+cwkk1872  Meur a ras dhy'hwi, el Dyw,
+cwkk1873  ow tiskwedhes dhymm pub tra.
+cwkk1874  Dh'ow thas ker oll par dell yw
+cwkk1875  my a vynn sur y dhyska;
+cwkk1876  an marthusyon dell yw bras.
+cwkk1877  My a vynn mos alemma
+cwkk1878  yn hanow Dyw a-wartha,
+cwkk1879  dhe dre dhe Adam ow thas.
+
+### KDL page 52
+
+# [Seyth goes to his father with the coores & gyveth yt hem]
+
+cwkk1880  Lowena dhy'hwi ow thas!
+cwkk1881  Devedhys a baradhis
+cwkk1882  yth ov lemmyn, dhe Dhyw gras.
+cwkk1883  Ow negysyow yth yw gwrys,
+cwkk1884  par dell wrussowgh dhymm or'na
+
+### [ms 20v] 
+
+## ADAM
+
+cwkk1885  Wolkomm os, Seth, genev vy.
+cwkk1886  Pana nowedhys eus genes?
+cwkk1887  Mars yw an Oyl a Versi
+cwkk1888  dres genes omma dhe'th tas
+cwkk1889  pur lowen my a via.
+
+## SETH
+cwkk1890  Nag yw hwath, ow thas, forsooth.
+cwkk1891  My a lever dhywgh, dell goedh,
+cwkk1892  an gwiryonedh a bub tra.
+cwkk1893  Pan dheffo an termyn playn
+cwkk1894  a bymp mil ha pymp kans vlydhen,
+cwkk1895  an Oyl a Versi nena
+cwkk1896  a vydh kevys.
+cwkk1897  Yn paradhis y hwelis
+cwkk1898  dyffrans marthusyon, heb dout;
+cwkk1899  speshyal unn wydhenn loryus
+cwkk1900  ow hedhes yn-bann pur stout
+cwkk1901  bys yn nev, sur my a grys,
+cwkk1902  ha'y gwreydhyow dhe'n dor isel
+cwkk1903  bys yn ifarn ow hedhes,
+cwkk1904  hag ena, pur wir heb fall,
+cwkk1905  yth esa yn trobel bras
+cwkk1906  ow broder Kaym, yn paynys.
+cwkk1907  Now yn topp an wydhenn deg
+cwkk1908  yth esa unn virgin hweg,
+cwkk1909  ha'y flogh, pur semli maylyes
+cwkk1910  yn hy diwvronn, wondrys hwans.
+
+## ADAM
+cwkk1911  Gordhys re bo Dyw an Tas,
+cwkk1912  ow ri dhymm an nowedhys!
+cwkk1913  Sur ny'm beus bys vydh mar vras
+cwkk1914  nans yw termyn tremenys
+cwkk1915  a vlydhynyow moy es kans.
+
+## SETH
+cwkk1916  My a welas gwydhenn moy
+cwkk1917  ha serpont yn-bann ynni.
+cwkk1918  Marow sygh hi a 'valsa.
+
+### KDL page 53
+
+
+## ADAM
+cwkk1919  Honna o drog bryv, heb namm,
+cwkk1920  a doellas Eva dha vamm.
+cwkk1921  Der henna y kellsyn jam
+cwkk1922  joys paradhis rag nevra.
+
+## SETH
+cwkk1923  Ottomma teyr sprusenn, dres
+cwkk1924  mes a baradhis dhy'hwi.
+cwkk1925  A aval y fons terrys
+cwkk1926  a dheuth a'n wydhenn, devri,
+cwkk1927  yw henwys Gwydhenn a Vywnans.
+cwkk1928  An el a or'nas dhymmo,
+cwkk1929  pan vo diwedh dhe'th tydhyow
+cwkk1930  ha'th vos gyllys alemma,
+cwkk1931  gorra sprusenn y'th hanow,
+cwkk1932  ha'n dhiw arall pur dhiblans
+cwkk1933  yn dha dhewfrik.
+
+### [ms 21r] 
+
+cwkk1934  Mes a'n sprus y fydh tevys
+cwkk1935  gwydhenn a vydh pur breshyous
+cwkk1936  wosa henna, marthys teg
+cwkk1937  yn pur dhevri.
+cwkk1938  Ha pan vo hi kowl devys,
+cwkk1939a hi a vydh pub eur parys
+cwkk1939b dhe dhoen an Oyl a Versi
+
+## ADAM
+cwkk1940  Meur wordhyans dhe'n Drynses Tas
+cwkk1941  ow krontya dhymmo selwyans,
+cwkk1942  wosa hemma kynth yw pell.
+cwkk1943  Seth ow mab, goslow dhymmo,
+cwkk1944  ha dha jarjya my a wra
+cwkk1945  yn-dann ow bennath, pur lel.
+cwkk1946  Gwayt an Tas a Nev gordhya,
+cwkk1947  ha pub eur orto koela
+cwkk1948  yn pub edhomm y fes-ta.
+cwkk1949  Ev a wra sur dha sokra,
+cwkk1950  hag a vynn dha ventena
+cwkk1951  y'n bys ma pell dhe vywa.
+cwkk1952  Ow mab, merk an geryow ma.
+
+## SETH
+cwkk1953  A das ker, meur ras dhy'hwi
+cwkk1954  a'gas dyskans da pub prys
+cwkk1955  My a goedh yn pur dhevri
+cwkk1956  gordhya Dyw an lel Drynses,
+cwkk1957  ha'n Mab gwella,
+
+### KDL page 54
+
+cwkk1958  ha'n Spyrys Sans, aga thri.
+cwkk1959  Dell yns onan, my a grys
+cwkk1960  tri ferson yns, pur wordhi,
+cwkk1961  ow kesreynya yn joyys
+cwkk1962  yn Gwlas Nev eus a-wartha.
+cwkk1963  ha rakhenna y koedh dhymmo
+cwkk1964  gans kolonn bur aga gordhya.
+
+# [Lett Death apeare to adam]
+
+
+## ADAM
+cwkk1965  Koth ha gwann yth ov gyllys.
+cwkk1966  Ny'm beus bywa na fella.
+cwkk1967  Ankow yth yw devedhys.
+cwkk1968  Ny vynn omma ow gasa
+cwkk1969  dhe vywa omma unn spys.
+cwkk1970  My a'n gwel prest gans gyw,
+cwkk1971  parys dhe'm gwana pub tu.
+cwkk1972  Nyns eus skapya dhe-vy.
+cwkk1973  A'n prys mall yw genev.
+cwkk1974  My a servyas pell an bys,
+cwkk1975  a-ban veuma kyns formys.
+cwkk1976  Naw kans bloedh ov, my a grys,
+cwkk1977  ha deg warn ugens, reknys,
+cwkk1978  mayth yw prys mos alemma.
+
+### [ms 21v] 
+
+cwkk1979  Fleghes a'm beus dineythys
+cwkk1980  a Eva ow fries, meur,
+cwkk1981  dewdhek warn ugens genys
+cwkk1982  a vebyon, hemma yw gwir,
+cwkk1983  heb ow mab Kaym, hag Abel.
+cwkk1984  Ynwedh dewdhek warn ugens
+cwkk1985  a vyrghes yn pur dhiblans
+cwkk1986  my a'm beu, heb toell na gil,
+cwkk1987  a dhallethvos an bys ma.
+cwkk1988  Ha'n bys yth yw ynkressys
+cwkk1989  dredhov vy hag ow fleghes
+cwkk1990  heb nomber dhe vos komptys.
+cwkk1991  Dhe Dhyw y hwonn gras ragdha.
+
+## DEATH
+cwkk1992  Adam, gwra dhymmo parys.
+cwkk1993  Ty a'm gwel vy devedhys
+cwkk1994  dha vywnans gans ow spera
+cwkk1995  dhe gemmeres alemma.
+cwkk1996  Nyns eus gortos na fella;
+cwkk1997  rakhenna gwrav dha wana,
+cwkk1998  der an golonn mayth ello.
+
+### KDL page 55
+
+
+## ADAM
+cwkk1999  Ankow, y hwonn dhis meur ras
+cwkk2000  ow bywnans dhe gemmeres
+cwkk2001  mes a'n bys ma,
+cwkk2002  rag pur skwith ov anodho.
+cwkk2003  Dhe Dhyw y hwonn gras ragdho.
+cwkk2004  Gwynn ow bys bos dhymm fethys
+cwkk2005  lavur ha dughan an bys.
+cwkk2006  Pell my re'n servyas omma.
+cwkk2007  Ha rakhenna gwrav kemmynna
+cwkk2008  dhe'n lel Drynses ow ena.
+
+## FIRST DEVIL
+cwkk2009  Kowetha, bedhewgh parys,
+cwkk2010  an dhewolow pub onan!
+cwkk2011  Ena Adam tremenys
+cwkk2012  deun dh'y hedhes dhe'n gegin,
+cwkk2013  dhe'n pytt down barth a-woeles.
+
+## LUCIFER
+cwkk2014  Na, na, ny wredh yndella!
+cwkk2015  Yma ken or'nys ragdho.
+cwkk2016  Yn lymbo barth a-wartha
+cwkk2017  ena ev a wra triga,
+cwkk2018  dell yw or'nys gans an Tas.
+cwkk2019  Ty a woer yn ifarnow
+cwkk2020  yma manshyons, heb gow,
+cwkk2021  neb yma an dhewolow
+cwkk2022  a dheuth mes a nev golow
+cwkk2023  genev vy ow toen rewl vras.
+
+### [ms 22r] 
+
+cwkk2024  An chorl Adam y drigva
+cwkk2025  a vydh a-barth a-wartha,
+cwkk2026  yn onan a'n kloysters na
+cwkk2027  neb na vydh tamm lowena,
+cwkk2028  mes yn tewolgow bras ena,
+cwkk2029  ow kelli presens an Tas,
+cwkk2030  ha'n moyha payn a vydha
+cwkk2031  y vab Kaym. Yn paynys bras
+cwkk2032  ev a drig bys vynytha.
+cwkk2033  Yma ev barth a-woeles
+cwkk2034  yn pytt down ow leskya.
+
+### KDL page 56
+
+
+## THIRD DEVIL
+cwkk2035  Praga na vydh an chorl Adam
+cwkk2036  yn kettella tormentys?
+cwkk2037  My a wra dhe'n horsen kamm
+cwkk2038  bos kalessa prisonys
+cwkk2039  mar kallav, kyns es hedhi,
+cwkk2040  drefenn terri gorhemmynn.
+
+## LUCIFER
+cwkk2041  My a lever dhis an kas.
+cwkk2042  Kyn hwrug Adam pegh mar vras,
+cwkk2043  ev a'n jeva edrek tynn,
+cwkk2044  ha Dyw dhodh' ev a avas
+cwkk2045  y dhisplesour ha'y sorr bras,
+cwkk2046  hag yndella ny wrug Kaym.
+cwkk2047  Ev a ladhas y vroder
+cwkk2048  ny gemmeras edrek vydh,
+cwkk2049  mes y rejoysyas pur veur,
+cwkk2050  hag a sorr an Tas travydh
+cwkk2051  yn sertan ev ny synsis.
+cwkk2052  Rakhenna bys vynari
+cwkk2053  ev a dryg ena devri
+cwkk2054  yn paynys bras, avel ki.
+cwkk2055  Joy nev yw dhodho kellys.
+cwkk2056  Eya, Kaym ha'y gowetha
+cwkk2057  y'n keth ordyr a vywa
+cwkk2058  an plas yw or'nys ragdha,
+cwkk2059  yn ifarn barth a-woeles.
+cwkk2060  Hag Adam, venjans dhodho,
+cwkk2061  lymbo yw or'nys dhodho.
+cwkk2062  Ya, ragdho ev ha'y gowetha
+cwkk2063  ny dastyons an payn bras.
+
+## FIRST DEVIL
+cwkk2064  Yth'oll agan viaj ni,
+cwkk2065  re'n jowl bras, ny dalvydh oy!
+cwkk2066  Triges an chorl neb yma.
+cwkk2067  Deun ni warbarth, a gowetha,
+cwkk2068  dhe ifarnow alemma,
+cwkk2069  dhe'n paynys a dhur nevra.
+
+### KDL page 57
+
+# [They go to hell wth great noyes]
+# [An Angell conveyeth adam's soole to lymbo]
+
+
+## ANGEL
+cwkk2070  A ena Adam dremas,
+cwkk2071  deus genev dhe ifarnow.
+cwkk2072  Ena or'nys dhis yw plas
+cwkk2073  gans an Tas, dhiso, heb gow,
+cwkk2074  dhe remaynya rag seson.
+
+### [ms 22v] 
+
+cwkk2075  Pan dheffo an Oyl a Versi,
+cwkk2076  ty a vydh kyrghys dhe'n joy
+cwkk2077  dhe'n nev ughel a-ughon.
+
+# [Lett adam be buried in a fayre tombe wth som churche 
+# songis at hys buryall]
+
+## SETH
+cwkk2078  Ow thas pan ywa marow
+cwkk2079  my a vynn y ynkleudhyas.
+cwkk2080  Deun alemma heb falladow;
+cwkk2081  gorryn an korf y'n gweres
+cwkk2082  gans solempnyta ha kan.
+cwkk2083  Mes a'n dor ev a veu gwrys,
+cwkk2084  hag arta dhe'n keth gweres
+cwkk2085  ev a vydh treylyes sertan.
+cwkk2086  Ha dell veu dhymm kyns or'nys,
+cwkk2087  an deyr sprusenn yw gorrys
+cwkk2088  yn y anow ha'y frigow.
+
+# [The 3 kernels put in his mowthe & nostrels]
+
+cwkk2089  Dell o ev an kynsa den
+cwkk2090  a veu gans an Tas formyes,
+cwkk2091  y'n bedh otta ev lemmyn.
+cwkk2092  Dhe'n Tas Dyw re bo grassyes
+cwkk2093  omma rag y oberow.
+
+
+# ------------------------------------------------- #
+#                      Enoch                        #
+# ------------------------------------------------- #
+
+
+## ENOCH
+cwkk2094  Enok yth yw ow hanow,
+cwkk2095  lel servont dhe'n Trynses Tas.
+cwkk2096  Mab Jared yth ov, heb gow.
+cwkk2097  Sevys a linyeth pur vras
+cwkk2098  heb dout yth ov.
+cwkk2099  Ha, pur lel, an seythves degre
+cwkk2100  dessendys a Adam ov.
+cwkk2101  Yn oes my yw y'n eur ma
+cwkk2102  tri hans tri ugens yn prov,
+cwkk2103  ha hwath pymp moy, pan eus dhymm 										kov,
+cwkk2104  y'n jydh hedhyw.
+cwkk2105  My a bys dhe wrier nev
+cwkk2106  may fen pub eur plegadow
+cwkk2107  dhe vones y servont ev
+cwkk2108  y'n bys ma heb falladow
+cwkk2109  hedra ven byw.
+
+### KDL page 58
+
+
+## FATHER IN HEAVEN
+
+# [Enoch kneleth when the father speketh]
+
+cwkk2110  Enok, my a lever dhis
+cwkk2111  ow bodh dhe vos yndellma:
+cwkk2112  may festa kwykk transformys.
+cwkk2113  Dhe baradhis alemma
+cwkk2114  my a vynn may fes uskis
+cwkk2115  hedhys yn korf hag ena.
+cwkk2116  Bydh parys y'n termyn ma.
+cwkk2117  Hag ena y hwres gortos
+cwkk2118  ogas dhe worfenn an bys.
+cwkk2119  An mysteri yth yw pur vras;
+cwkk2120  genev ny vydh disklosyes
+cwkk2121  dhe dhen vydholl y'n bys ma.
+
+# [Enoch is caried to paradice]
+
+### [ms 23r] 
+
+
+## ENOCH
+cwkk2122  Gordhyes re bo Dyw an Tas!
+cwkk2123  Dha volonjedh re bo gwrys!
+cwkk2124  Hemma yth yw marthusyon bras.
+cwkk2125  Yth esov ow pos gorrys
+cwkk2126  ny wonn py le!
+cwkk2127  My a woer hag a lel grys
+cwkk2128  gwrians Dyw y vos hemma.
+cwkk2129  Devedhys dhe baradhis
+cwkk2130  my a woer gwir yth oma.
+cwkk2131  Plas delysyous yw hemma.
+cwkk2132  Pellder ynno my a vyw.
+cwkk2133  Der demptashyon an tebel
+cwkk2134  ow hendas Adam, pur wir
+cwkk2135  ev re gollas, der aval,
+cwkk2136  an plas gloryus pur sur,
+cwkk2137  mayth yw gwev oll dh'y yssew.
+cwkk2138  Rakhenna, pobel an bys,
+cwkk2139  na wrewgh terri an difenn
+cwkk2140  a vydh gans Dyw dhywgh or'nys,
+cwkk2141  dout dhe gavoes drog worfenn
+cwkk2142  ha meschyf bras war bub tu.
+cwkk2143  Mara kwrewgh orthiv koela
+cwkk2144  hwi a's bydh wosa hemma
+cwkk2145  joyys nev yn unn rew.
+
+### KDL page 59
+
+
+# ------------------------------------------------- #
+#              Seth and the Pillars                 #
+# ------------------------------------------------- #
+
+
+## SETH
+cwkk2146  Kemmys peghes eus y'n bys
+cwkk2147  gwrys gans tus heb amendya,
+cwkk2148  mayth yw Dyw an Tas serrys
+cwkk2149  bythkweth gul mab-den omma.
+cwkk2150  Dystruksyon yma or'nys
+cwkk2151  pur sertan war oll an bys,
+cwkk2152  may fydh konsumys pub tra.
+cwkk2153  Henna yth yw konvedhys
+cwkk2154  der an dyskans eus dhymmo res
+cwkk2155  gans an Tas eus a-ughon.
+cwkk2156  An planetys eus a-wartha,
+cwkk2157  ha'n ster ynwedh maga ta,
+cwkk2158  ow poyntya 'mons pur efan.
+
+# [Let hem poynt to the sun the moone & the firmament]
+
+cwkk2159  An howl ha'n loer kekeffrys,
+cwkk2160  oll warbarth yw konvedhys,
+cwkk2161  dhe'n porpos na 'mons ow tos.
+cwkk2162  Ha'n dystruksyon a vydh bras,
+cwkk2163  may fydh an bys distruys
+cwkk2164  der livyow a dhowr pur vras,
+cwkk2165  po der dan y fydh leskys.
+cwkk2166  Krysewgh dhymm mars owgh hwi fur.
+cwkk2167  Rakhenna gwres tus doutya
+cwkk2168  an Tas Dyw dhe offendya
+cwkk2169  der neb maner for' y'n bys.
+
+### [ms 23v] 
+
+cwkk2170  Rag voydya an peryll na,
+cwkk2171  skrifys yma dhymm pub tra
+cwkk2172  a dhallethvos an bys ma,
+cwkk2173  may fova lel rekordys
+cwkk2174  a vyns tra eus ynno gwrys.
+
+# [Four bookes to be shewed]*
+
+cwkk2175  An lyvrow ottensi omma.
+cwkk2176  Hwi a's gwel, wondrys larjya,
+cwkk2177  ha pub tra oll y'n bys ma
+cwkk2178  skrifys yma yn re ma,
+cwkk2179  dout na vons i ankevys.
+
+### KDL page 60
+
+cwkk2180  Dew bilar mynnav 'poyntya
+cwkk2181  rag an porpos na hware.
+cwkk2182  Brykk a vydh onan anedha,
+cwkk2183  ha marbel a vydh y gila.
+cwkk2184  Rag sawment i a vydh gwrys
+cwkk2185  dhe'n lyvrow.
+
+# [Two pyllars made, the on brick and thother of marbell]*
+
+cwkk2186  A'n brykk rag na vons leskys
+cwkk2187  der dan vydh, henna yw gwrys,
+cwkk2188  ha'n marbel tamm konsumys
+cwkk2189  der dhowr ny vydh, hemm yw gwrys,
+cwkk2190  drefenn y vos men garow,
+cwkk2191  wondrys kales.
+
+## JARED
+cwkk2192  An pilars yth ons parys.
+cwkk2193  Gorrewgh ynna an lyvrow.
+cwkk2194  Nyns eus art vydh ankevys,
+cwkk2195  na tra arall, sur heb wow,
+cwkk2196  mes ynna ymons skrifys.
+cwkk2197  A bub sort oll a lyvrow
+cwkk2198  ekwal ynno yw gorrys.
+cwkk2199  Kepar yth yw an sortow
+cwkk2200  gorrys ynna der dhevis,
+cwkk2201  yn dyffrans ha kehaval.
+cwkk2202  Lemmyn my a's gorr yn-bann,
+cwkk2203  hag y'n eyl sur bys vykken
+cwkk2204  an rekord a vydh heb fall
+cwkk2205  pur wir kevys.
+
+# [Putt the pillers upright]
+
+
+## SETH
+cwkk2206  Rakhenna, pobel doutyens,
+cwkk2207  ha dhe'n Tas gwren oll pysi
+cwkk2208  na 'skynno an keth venjans
+cwkk2209  yn neb termyn warnan ni
+cwkk2210  na'gan fleghes.
+
+### KDL page 61
+
+
+# ------------------------------------------------- #
+#                   Noah's Flood                    #
+# ------------------------------------------------- #
+
+
+## FATHER IN HEAVEN
+cwkk2211  Drog yw genev guthyl den,
+cwkk2212  preshyous haval dhe'm honan.
+cwkk2213  Rag koela orth unn venyn
+cwkk2214  glan ev re gollas y blas
+cwkk2215  a'm leuv dheghow a wrussen.
+cwkk2216  Pan wruga dres ow difenn
+cwkk2217  mes a baradhis pur lan
+cwkk2218  hware an el a's gorras.
+
+### [ms 24r] 
+
+cwkk2219  An spyrys ny dryg nevra
+cwkk2220  yn korf mab-den vydh y'n bys,
+cwkk2221  ha reson yw ha praga,
+cwkk2222  rag y vos kig medhel gwrys
+cwkk2223  ha pur vrottel gans henna.
+cwkk2224  Nyns eus den orth ow servya
+cwkk2225  len ha gwiryon sur pub prys
+cwkk2226  saw Noy yn oll an bys ma,
+cwkk2227  ha'y wreg ha'y fleghes keffrys.
+cwkk2228  Ow bodh yth yw yndella:
+cwkk2229  gul dial war oll an bys
+cwkk2230  may fydh pub tra konsumys,
+cwkk2231  mes sertan mynnav sawya.
+
+## NOAH
+cwkk2232  Noy, mab Lamek, gelwys ov.
+cwkk2233  Arloedh bras, oll perthewgh kov,
+cwkk2234  yth ov, omma y'n bys ma.
+cwkk2235  Substans lowr a byth ha da
+cwkk2236  yma dhymmo dhe vywa,
+cwkk2237  mayth ov synsys rag nevra
+cwkk2238  dhe wordhya ow Arloedh da,
+cwkk2239  an Drynses eus a-wartha.
+
+# [Noy commeth before heven & kneleth]
+
+
+## FATHER IN HEAVEN
+cwkk2240  Noy, deus dhymmo vy lemmyn,
+cwkk2241  ha goslow dhymm a gowsav.
+
+## NOAH
+cwkk2242  Parys ov, Arloedh bryntin.
+cwkk2243  Dha volonjedh lavar e.
+
+### KDL page 62
+
+
+## FATHER IN HEAVEN
+cwkk2244  Noy, mar lenwys yw an bys
+cwkk2245  lemmyn a sherewynsi
+cwkk2246  mayth yw diwedh devedhys
+cwkk2247  ynno a gik pub huni.
+cwkk2248  Gans pegh pur wir yw flerys.
+cwkk2249  Ny allav sparya namoy
+cwkk2250  heb guthyl mernans a verr spys
+cwkk2251  war bobel oll marnas ty
+cwkk2252  ha dha wreg ha dha fleghes,
+cwkk2253  ha'n pyth a long dhiso jy.
+cwkk2254  Rakhenna fisten, ke, gwra
+cwkk2255  gorhel a blenkys playnys,
+cwkk2256  hag ynno lies trigva.
+cwkk2257  Roumys i a vydh henwys.
+cwkk2258  A-ves hag a-ji yn ta
+cwkk2259  gans pyg bedhes stancha gwrys,
+cwkk2260  ha tri hans kevelin da
+cwkk2261  an lester a vydh yn hys,
+cwkk2262  ha hanterkans kevelin
+cwkk2263  ynwedh ty a wra yn les,
+cwkk2264  ha'n ughelder my a vynn
+cwkk2265  deg warn ugens may fo gwrys.
+cwkk2266  War-tu a-dhelergh daras
+cwkk2267  ty a wra. Port ev a vydh henwys.
+cwkk2268  Jistys dredho ty a blas,
+cwkk2269  a-les rag na vo diges.
+cwkk2270  A bub eghenn a ginda
+cwkk2271  gorow ha benow ynwedh,
+cwkk2272  aga gorra ty a wra
+cwkk2273  yn dha lester a-bervedh.
+cwkk2274  Pub maner boes y'n bys ma
+cwkk2275  eus dhe dhybri gwayt may tredh;
+cwkk2276  rag den ha best maga ta.
+cwkk2277  Yn dha lester gwayt may fydh.
+
+### [ms 24v] 
+
+
+## NOAH
+cwkk2278  Arloedh krev, dha arghadow
+cwkk2279  my a wra, so mote I go!
+cwkk2280  Ow lithyow, heb falladow,
+cwkk2281  my a vynn dalleth strechya.
+
+### KDL page 63
+
+# [tooles and tymber redy. wth planckis to make the arcke, 
+# a beam a mallet a calkyn yre[n] ropes mass[t]es pyche and tarr]
+
+cwkk2282  Gans ow boel nowydh lymmys
+cwkk2283  my a skwat pub pis tymber,
+cwkk2284  hag a blayn oll an plenkys,
+cwkk2285  ha'ga sett pub plenkynn sur.
+
+## SHEM
+cwkk2286  My a galk dhywgh wondrys fin
+cwkk2287  nag ello dowr vydh ynno.
+cwkk2288  Kyn fo-va gwriys a o'erbyn
+cwkk2289  y fydh stanch, my a ragdho.
+
+## HAM
+cwkk2290  Yma pyg dhymm proviys,
+cwkk2291  ha lovanow pub eghenn.
+cwkk2292  Dyffrans sortow a wernow
+cwkk2293  yma parys pur efan.
+
+## TUBAL CAiN
+cwkk2294  Marth yw genev a unn dra,
+cwkk2295  y vos-ta mar wokki, Noy.
+cwkk2296  Praga yw genes jy omma
+cwkk2297  byldya lester mar wordhi
+cwkk2298  yn kres pow, dhiworth an mor?
+cwkk2299  My a syns dha skians hwath
+cwkk2300  dhe vos. Yn kost a'n par na
+cwkk2301  oll dha lavur ny dal kath,
+cwkk2302  my a'n te war ow ena!
+cwkk2303  Gokki yth os.
+
+# [Lett Tuball fall a laugh[i]ng]
+
+
+## NOAH
+cwkk2304  Ow hothman, na gemmer marth.
+cwkk2305  Ty a'n oel, ha lies mil.
+cwkk2306  Kynth o'ta 'skynnys yn hwarth,
+cwkk2307  y'n diwedh, heb toell na gil,
+cwkk2308  hwi a wel dial uskis.
+cwkk2309  Gwarnys ov gans Dyw an Tas
+cwkk2310  dhe wuthyl an lester ma,
+cwkk2311  rag ow sawya ha'w fleghes
+cwkk2312  dhiworth an keth dial na.
+cwkk2313  Hwi a wel a-ji dhe spas.
+cwkk2314  Der livyow a dhowr an brassa
+cwkk2315  oll an bys a vydh beudhys.
+
+### KDL page 64
+
+
+## TUBAL
+cwkk2316  Gwell via a ves-ta kregys,
+cwkk2317  ty hag oll a'n kryjyans na!
+cwkk2318  A jorl koth, ty benn-pilys,
+cwkk2319  fatla vynnta jy henna;
+cwkk2320  y fydh an bys konsumys?
+cwkk2321  Oll an dowrow y'n bys ma,
+cwkk2322  kyn fons warbarth kuntellys
+cwkk2323  ny wra diwedh a'n par na!
+cwkk2324  Saw yth o'ta jy gokki
+cwkk2325  oll an bys a yll godhvos.
+cwkk2326  Venjans war dha benn-kreghi!
+cwkk2327  Nyns eus omma den y'n wlas
+cwkk2328  a grys dhis malbew vanna.
+
+### [ms 25r] 
+
+cwkk2329  Praga, pandr'yw an mater?
+cwkk2330  A vynn Dyw beudhi an bys?
+cwkk2331  Mara ko'sta, dhymm lavar
+cwkk2332  an okkashyon, my a'th pys,
+cwkk2333  der vaner da.
+
+## NOAH
+cwkk2334  An okkashyon yw hemma.
+cwkk2335  Kemmys peghes eus y'n bys,
+cwkk2336  ha nyns eus tamm amendya,
+cwkk2337  mayth yw an Tas Dyw serrys
+cwkk2338  gans oll pobel a'n bys ma.
+cwkk2339  Hag edrek dhodh' ev yma
+cwkk2340  bythkweth mab-den dhe vos gwrys.
+cwkk2341  Rakhenna gwrewgh amendya;
+cwkk2342  a'gas foli bydh neghys.
+cwkk2343  Y'n eur na, der vaner da,
+cwkk2344  mara pydhowgh repentys,
+cwkk2345  an keth plag a wra voydya.
+
+## TUBAL
+cwkk2346  Piw a'th gwrug jy pregowther
+cwkk2347  dhe dhyski omma dhyn ni?
+cwkk2348  Y praydha dhymmo lavar,
+cwkk2349  a wrug Dyw kewsel dhe-jy
+cwkk2350  only, heb den arall vydh omma?
+cwkk2351  My a woer yma y'n pow
+cwkk2352  lies den a gews a'n Tas,
+cwkk2353  tus perfeyth, my a'n avow,
+cwkk2354  yth yns i, ha polatys bras,
+cwkk2355  a wayt bos yn favour Dyw.
+cwkk2356  Syrra, dhe rann a'n re na
+cwkk2357  ev a vynnsa disklosya
+cwkk2358  an dystruktyon bras ha'n liv.
+
+### KDL page 65
+
+cwkk2359  Rakhenna dhiso krysi
+cwkk2360  my ny vynnav moy es ki.
+cwkk2361  Na 'mendya ny vynnyn ni,
+cwkk2362  awos dha eryow wastyes.
+
+## NOAH
+cwkk2363  Da yw dhiso jy bos fur,
+cwkk2364  hag oll pobel a'n bys ma.
+cwkk2365  Ny vydh Dyw nevra pur wir
+cwkk2366  kevys gowek, trest dhymmo.
+cwkk2367  Ragdha bedhewgh avisyes.
+cwkk2368  Mar ny wrewgh, venjans pur vras
+cwkk2369  a 'skynn warnowgh kyns nep-pell,
+cwkk2370  rag Dyw a vynn, agan Tas,
+cwkk2371  dannvon liv a dhowr pur lel,
+cwkk2372  sertan dhe veudhi an bys.
+cwkk2373  Rag omsawya ow honan,
+cwkk2374  keffrys ow gwreg ha'w fleghes,
+cwkk2375  an lester a vydh genen
+cwkk2376  der weres Dyw uskis gwrys,
+cwkk2377  rag voydya an danjer ma.
+
+## TUBAL
+cwkk2378  Tetivali, bramm an gath!
+cwkk2379  My ny grysav dhiso hwath,
+cwkk2380  y fynn Dyw gul yndella.
+
+### [ms 25v] 
+
+cwkk2381  My a woer. Ny wrug an bys
+cwkk2382  ha'n bobel myns eus ynno
+cwkk2383  dhe vos mar gwykk distruys.
+cwkk2384  Anpossybyl yth ywa
+cwkk2385  an dowr na dhe vos kevys.
+
+## NOAH
+cwkk2386  Anpossybyl nyns yw tra
+cwkk2387  dhe Wrier oll an bys ma,
+cwkk2388  awos distrui an bys
+cwkk2389  a-ji dhe our.
+cwkk2390  Rag der er oll a veu gwrys,
+cwkk2391  nev ha nor, myns eus omma,
+cwkk2392  ha der er arta, dhymm krys,
+cwkk2393  ev a yll, mara mynna,
+cwkk2394  y dhistrui der an dowr.
+
+## TUBAL
+cwkk2395  Ny amont dhymmo resna
+cwkk2396  genes, Noy, my a hevel.
+cwkk2397  My a vynn mos alemma,
+cwkk2398  rag yth o'ta drog ebel
+cwkk2399  na vynn nevra bones 'vas.
+
+### KDL page 66
+
+cwkk2400  Purra fol ny veu gwelys.
+cwkk2401  My a lever dhis praga.
+cwkk2402  An lester yw dallethys,
+cwkk2403  hwi a woer, nans yw polta,
+cwkk2404  a vlydhynyow pur lies -
+cwkk2405  moy es ugens
+cwkk2406  rag mar vras yw dallethys
+cwkk2407  nevra ny vydh diwedhys.
+cwkk2408  My a'n te war ow honshyans.
+
+# [Let them both depart]
+
+
+## NOAH
+cwkk2409  Now an lester yth yw gwrys,
+cwkk2410  teg ha da dhe'm plegadow.
+cwkk2411  A bub eghenn a vestes
+cwkk2412  drewgh hwi kwykk dhymm orth koplow
+cwkk2413  chatel, ydhyn, kekeffrys,
+cwkk2414  dew ha dew, benow ha gorow.
+
+# [The arck redy and all maner of beastis and fowles to be putt in the arck]
+
+
+## SHEM
+cwkk2415  Nyns eus best na pryv y'n bys,
+cwkk2416  benow ha gorow omma,
+cwkk2417  genev dhy'hwi nag yw dres.
+cwkk2418  Y'n lester y tons ena.
+
+# [Let rayne appeare]
+
+
+## HAM
+cwkk2419  A das, lemmyn gwrewgh parys.
+cwkk2420  An liv nans yw devedhys!
+cwkk2421  Yma lower den y'n bys
+cwkk2422  kyns lemmyn sur gewsis
+cwkk2423  agas bos hwi gokki.
+cwkk2424  Pan wrussowgh gul an lester
+cwkk2425  omma prest yn kres an tir,
+cwkk2426  mor vydh nyns esa, devri,
+cwkk2427  dh'y doen yn kerdh.
+
+## JAPHET
+cwkk2428  Ges a wrussons anodho.
+cwkk2429  Dout sorr Dyw nyns esa
+cwkk2430  dhedha nena, my a woer gwir.
+
+### [ms 26r] 
+
+
+## NOAH
+cwkk2431  An liv nans yw devedhys,
+cwkk2432  mayth yw da dhyn fistena.
+cwkk2433  Pub best oll yma gyllys
+cwkk2434  y'n lester dh'aga hinda
+cwkk2435  dell yw or'nys dhymmo vy.
+
+### KDL page 67
+
+cwkk2436  Kewgh a-bervedh, ow fleghes,
+cwkk2437  ha'gas gwragedh maga ta.
+cwkk2438  Ogas an nor yw kudhys
+cwkk2439  der an glaw eus a-wartha.
+cwkk2440  Ty, benyn, a-bervedh deus.
+cwkk2441  Ow! dar! beudhi a vynn'ta?
+
+## NOAH'S WIFE
+cwkk2442  Res yw sawya an pyth eus.
+cwkk2443  Ny'n dal dhymm tewlel dhe ves.
+cwkk2444  Da yw dhyn aga sawya.
+cwkk2445  Y kostyons showr a vona,
+cwkk2446  an keth taklow eus omma.
+cwkk2447  Noy hweg, ty a woer henna.
+
+# [a raven & a culver ready]
+
+## NOAH
+cwkk2448  Nans yw meur a for', pur wir,
+cwkk2449  a-ban kellsyn syght a'n tir.
+cwkk2450  Rakhenna dhymm, ke bran vras,
+
+# [let the raven fle and the colver after]
+
+cwkk2451  nij yn kerdh lemmyn ha mir
+cwkk2452  tiredh mar kyll bos kevys,
+cwkk2453  hag an golomm yn pur sur
+cwkk2454  my a's dannvon pur uskis,
+cwkk2455  syght an nor mar kyll gweles.
+
+## FATHER IN HEAVEN
+cwkk2456  Marow yw pub tra esa
+cwkk2457  spyrys a vywnans ynno.
+cwkk2458  My a worhemmynn hware
+cwkk2459  dhe'n glaw namoy na wrello.
+
+# [The culver cometh wth a branche of olyf in her mouthe]
+
+
+## NOAH
+cwkk2460  Dhe'n Tas Dyw re bo grassyes!
+cwkk2461  An golomm yw devedhys,
+cwkk2462  ha gensi branch oliv glas.
+cwkk2463  Arall bedhes delivrys.
+cwkk2464  Dos ny vynnas an vran vras.
+cwkk2465  Neb karyn hi a gavas.
+cwkk2466  Nans yw ogas ha blydhen
+cwkk2467  a-ban dhallathas an liv.
+cwkk2468  Mars yw bodh Dyw y honan,
+cwkk2469  neb yw Gwrier nor ha nev,
+cwkk2470  dhe slakya an keth liv bras,
+cwkk2471  y vodh re bo kollenwys
+cwkk2472  omma genen ni pub prys,
+cwkk2473  kekeffrys ha mab ha tas.
+
+### KDL page 68
+
+
+## FATHER IN HEAVEN
+cwkk2474  Noy, my a worhemmynn dhis,
+cwkk2475  ke yn-mes a'n lester skon,
+cwkk2476  dhe'th wreg ha'th fleghes keffrys,
+cwkk2477  ydhyn, bestes, ha pub lo'n.
+
+### [ms 26v] 
+
+
+## NOAH
+cwkk2478  Meur wordhyans dhis, Arloedh Nev.
+cwkk2479  Ty a weres gwann ha krev
+cwkk2480  yn edhomm, sur, pan vo res.
+cwkk2481  Deun yn-mes, byghan ha bras,
+cwkk2482  chatel, ydhyn ha bestes;
+cwkk2483  myns a veu y'n lester dres.
+cwkk2484  Yn dehwelans peghosow
+cwkk2485  gwruthyl alter my a vynn.
+cwkk2486  My a vynn guthyl kanow,
+cwkk2487  ha sakrifis(a) lemmyn
+cwkk2488  rann eghenn a bub sortow,
+cwkk2489  keffrys bestes hag ydhyn,
+cwkk2490  gans henna dh'y enora.
+cwkk2491  Ha rag henna gwren ni kana
+cwkk2492  yn gordhyans dhe'n Tas omma.
+
+# [An alter redy veary fayre. Som good church songes to be 
+# songe at the alter and frankensens]
+
+
+## FATHER IN HEAVEN
+cwkk2493  Hemma yth yw sawer hweg,
+cwkk2494  hag ynwedh sakrifis da.
+cwkk2495  Pur wir Noy, ev dhymmo a bleg,
+cwkk2496  a leun golonn pan ywa
+cwkk2497  dhymmo vy gwrys.
+cwkk2498  Rakhenna sur my a wra
+cwkk2499  bynytha wosa hemma
+cwkk2500  y'n ebrenn y fydh gwelys
+cwkk2501  an gammneves yn dhevri.
+
+# [a Rayne bowe to appeare]
+
+cwkk2502  Peskweyth may's gwelav vy hi,
+cwkk2503  remembra ahanowgh hwi
+cwkk2504  my a wra bys vynari,
+cwkk2505  trest jy dhymmo.
+cwkk2506  Dystruksyon vydh a'n par na
+cwkk2507  bynytha der dhowr ny wrav,
+cwkk2508  'wos distrui an bys ma.
+cwkk2509  Ha rakhenna
+
+### KDL page 69
+
+cwkk2510  kressyewgh, kollenwewgh keffrys
+cwkk2511  an norvys a dus arta.
+cwkk2512  Pub edhen ha best y'n bys,
+cwkk2513  puskes y'n mor maga ta,
+cwkk2514  a vydh dhywgh sosten omma.
+cwkk2515  Nyns eus tra y'n bys ma gwrys
+cwkk2516  mes dhy'hwi a wra servis.
+cwkk2517  Bedhewgh war na vo ledhys
+cwkk2518  mab-den genowgh hwi neb prys.
+cwkk2519  Ha mar pydha yndella,
+cwkk2520  my a vynn y rekwirya
+cwkk2521  a dhiwla an keth den na
+cwkk2522  y woes a dheu ha skoellya.
+cwkk2523  Yn haval dhymmo omma
+cwkk2524  imaj den gwruga shapya.
+cwkk2525  Mara'm kerowgh dell goettha
+cwkk2526  hwi a wra orthiv koela.
+
+### [ms 27r] 
+
+
+## NOAH
+cwkk2527  Ni a vynn gul yndella,
+cwkk2528  dell ywa devar dhyn ni,
+cwkk2529  ha dha wordhya rag nevra,
+cwkk2530  par dell yw agan duty.
+
+
+# ------------------------------------------------- #
+#                     Epilogue                      #
+# ------------------------------------------------- #
+
+
+cwkk2531  An keth jorna ma yw de,
+cwkk2532  dhe'n Tas Dyw re bo grassyes.
+cwkk2533  Hwi a welas, pub degre,
+cwkk2534  lies maters gwariys,
+cwkk2535  ha kreashyon oll an bys.
+cwkk2536  Ynwedh oll hwi a welas
+cwkk2537  an keth bys ma konsumys
+cwkk2538  der livyow a dhowr pur vras.
+cwkk2539  Ny veu unn mab-den sperys,
+cwkk2540  marnas Noy, y wreg, ha'y fleghes.
+cwkk2541  Dewgh a-vorow a dermyn.
+cwkk2542  Hwi a wel maters pur vras,
+cwkk2543  ha redempshyon grontys
+cwkk2544  der versi a Dhyw an Tas,
+cwkk2545  dhe sawya neb eus kellys.
+cwkk2546  Mynstrals, gwrewgh dhyn ni piba,
+cwkk2547  may hallen warbarth donsya,
+cwkk2548  dell yw an vaner ha'n gis.
+
+#### Heare endeth the Creaconn of the worlde wth noyes flude
+#### wryten by William Jordan: the XIIth of August 1611.
+
+
+# ------------------------------------------------------------------------ #
+#                             End of File                                  #
+# ------------------------------------------------------------------------ #
+
+

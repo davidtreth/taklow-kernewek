@@ -1,0 +1,3897 @@
+
+####   Bodleian Manuscript 791
+####   Complete Text
+   
+####   Resurrexio Domini Nostri Jhesu Christi.
+####   Source: Edwin Norris (editor and translator)
+####   The Ancient Cornish Drama (2 volumes),
+####   Oxford: Oxford University Press. 1859
+   
+####   Electronic text prepared by Jon Mills
+####   Department of Linguistics
+####   University of Luton
+####   Vicarage Street
+####   Luton
+####   Bedfordshire
+####   LU1 3JU, UK
+   
+####   Updated 30th November 2000
+
+#### -----------------------------------------
+
+#### Mors Pilati section corrected against ms images
+#### Keith Bailey June 2006
+#### kam@howlsedhes.co.uk 
+
+#### -----------------------------------------
+
+### folio 57r
+   
+#   HIC INCIPIT ORDINALE DE RESURREXIONE DOMINI NOSTRI JHESU CHRISTI
+####   ______________________________________________
+   
+   PILATUS
+   ihesu a fue anclethyys
+   hag yn beth a ven gorrys
+     gans ioseph ha tus erel
+   y leuerys ef yn weth
+   datherghy an tressa deth         [5]
+     y wre pur wyr hep fyllel
+ 
+   mar tufe ha datherghy
+   mur a tus a wra crygy
+     ynno y vos dev a nef
+   dyswrys a vyth ol iudy          [10]
+   ha kellys an lagha ny
+     dre reson sur me an pref
+
+   consler thymmo lauara
+   pyth yv an cusyl wella
+     orth an dra-ma hep lettye       [15]
+   gyllys of yn pryderow
+   mur yv ow fyenasow
+     yn certan war ow ene
+   
+   CONSULTOR
+   arluth dout thymmo yma
+   ha preder mur a vn dra          [20]
+     an corf eth hythev yn pry
+   ioseph baramathia
+   the laddra map maria
+     ha cous ef the thasserhy
+   
+##   PILLATUS
+!! PILATUS
+   ytho pyth yv the cusyl          [25]
+   worth an dra-na the wruthyl
+     lauar lemmyn
+   ha ty a vyth rewarddys
+   may leuerry me a grys
+     kyns pen sythyn               [30]
+   
+   CONSULTOR
+   ioseph yn dan naw alweth
+   ha nichodemus yn weth
+     gureugh y pur fast
+   mana allons yn priveth
+   y laddra yn mes an beth        [35]
+     dre nep fals cast
+   
+   [hic veniet Josep et Nicodemus ad pilatum]
+   
+##   IOSEPH
+!! JOSEPH
+   syr pilat thys lowene
+   corf crist a gysseugh gyne
+     yn beth gallas
+   
+   NICHODEMUS
+   as wrussough cam tremene        [40]
+   cuth gueles y theweth fe
+     namnan dallas
+   
+   PILATUS
+   corf yn beth a worseugh why
+   a wre bost a thasserghy
+     yn certan the pen try deyth     [45]
+   pleme thymmo leuereugh
+   mas the wel ym gorthebeugh
+     fast prisonys why a vyth
+
+### folio 57v
+   
+##   IOSEPH
+!! JOSEPH
+   an corf a worsyn yn beth
+   dre henna ioy hep thyweth       [50]
+   sur yn y wlas
+   ef a sef the pen try deth
+   ha henna ny a'n guylvyth
+   gans dev lagas
+   
+   PILATUS
+   a fals harlot gowek pur         [55]
+   ty a yn pryson yn sur
+   na wylly deyth
+   ha me a wyth na'n lyttry
+   na cous ef the thasserghy
+   vn ger tuch vyth                [60]
+   
+   NICHODEMUS
+   dasserghy sur ef a wra
+   par del prennas an bys-ma
+   gans y gyk ha gans y wos
+   me a leuer an guyr thy's
+   kepar del ywe scryfys           [65]
+   pur wyr gans lyes profos
+   
+   PILATUS
+   ha ty a ganso yn weth
+   pur wyr yn dan naw alweth
+   scon yn certen
+   ha ty a veth prysonys           [70]
+   na wylly golow yn bys
+   bys pen vlythen
+   
+##   IOSEPH
+!! JOSEPH
+   yn pryson mos ny treynyn
+   agan bew kyn kentreynnyn
+   ol agan kyc                     [75]
+   rak ihesu luen a vercy
+   a'gan gor sur the'n keth ioy
+   byth na thyfyc
+   
+   PILATUS
+   how geyler plos re'th fo meavl
+   ygor scon abarth an iaul         [80]
+   the tharasow
+   gor an thew-ma yn pryson
+##                           # Lewis 'prison'
+   pan fons fast ro thym hep son
+   the alwethow
+
+### folio 00r
+   
+   CARCERATOR
+   a treytors anfesugyon           [85]
+   eugh aberueth lemmyn scon
+   a thev asowhy gocky
+   
+   [carcerarius ducit eos ad carcerem]
+   
+   syr iustis kymmer hep son
+   naw alwyth agas pryson
+##                        # Lewis 'prison'
+   na fo dout a treghury           [90]
+   
+   [hic tradet sibi claves]
+   
+   PILATUS
+   rak the vos geyler mar len
+   me a re thy'so lemyn
+   fekenel ol yn tyen
+   carvenow inwet merthyn
+   
+   CARCERATOR
+   grant merci syr iustis          [95]
+   vynytha syngys of thy's
+   
+   [hic spiritus uenit ad portas inferni]
+   
+##   SPIRITUS CHRISTI
+!! SPIRITUS IHC
+   why pryncys a'n dewolow
+   scon egereugh an porthow
+   py mar ny wreugh y fyth guow
+   yn certan kyns tremene         [100]
+   rak an porthow hep dyweth
+   a vyth ygerys yn weth
+   sur may thello aberueth
+   an myghtern a lowene
+   
+   LUCIFER
+   ny dal thy's scornye gyne      [105]
+   pyv myghtern a lowene
+   a thesempys thy'm lauar
+   
+##   SPIRITUS
+!! SPIRITUS IHC
+   arluth cref ha galosek
+   hag yn bateyl barthesek
+   rak henna ygor hep mar         [110]
+   why pryncis
+   
+   LUCIFER
+   ny dal thy's scornye gyne
+   pyv myghtern a lowene
+   thy'mmo lauar
+   byth ny thueth agy the'n yet   [115]
+   ke yn kergh dywhans hep let
+   na strech hep mar
+   
+##   SPIRITUS
+!! SPIRITUS IHC
+   arluth gallosek ha cref
+   worto an porthow ny sef
+   yn certan kyns tremene         [120]
+   drefen mar mur yv ow ras
+   ef yv gallosek yn cas
+   ha myghtern a lowene
+   why pryncis
+   
+   [franguntur portae inferni]
+   
+   [et sic tercio. tunc intrabit in
+   infernum et dicit lucifer]
+   
+   LUCIFER
+   a out guereseugh laddron       [125]
+   gallas an porthow brewyon
+   hag ol myns o
+   belsebuc ha lawethan
+   dylleugh luhes ha taran
+   quyt a'n losco                 [130]
+   
+   BELSEBUC
+   thy'nny gueres ny dal man
+   myl vyl dyaul a vye guan
+   er-y-byn ef
+   yn nep tol fyen the'n fo
+   alemma bys may thello          [135]
+   sul a the'n nef
+   
+   TULFRYC
+   ha my caugeon lawethan
+   merwel a wren ow cul tan
+   yn dan an chek
+   ene ythese gynef               [140]
+   moy ages myl vyl enef
+   yn bros pur dek
+   
+   [hic spiritus extendit manum]
+   
+   ADAM
+   an luef a'm gruk me a wel
+   ha'y odor whekke ys mel
+   ow tos warnaf                  [145]
+   dre ov fegh ty a'm collas
+   ha gans the wos a'm prennas
+   merci pysaf
+   
+##   EUA
+!! EVA
+   lemmyn cryst agan arluth
+   mur worthyans thy's del theguth [150]
+   worth agan dry alemma
+   bynyges re bo an prys
+   may fe a venen genys
+   an wyrhes ker maria
+   
+   [hic venit spiritus cum omnibus in platea]
+   
+##   SPIRITUS
+!! SPIRITUS IHC
+   a enefow ol warbarth           [155]
+   deugh gynef ol why a wharth
+   kemmys re wruk both ow thas
+   ha nep na'n gruk war nep tro
+   yn peynys trygens eno
+   hep ioy prest may's teffo cas  [160]
+   a a adam thy'so cres
+   yn weth the ol ow fleghes
+   myns yv guyryon
+   yn paradys deugh thu'm clos
+   th'agas prenne me a ros        [165]
+   gos ow holon
+   
+   [hic spiritus ducit eos]
+   
+   ADAM
+   a arluth mur gras re'th fo
+   rak lowene ny gen bo
+   yn le may fuen
+   lemmyn pocvan ha lesky         [170]
+   ow flerye ov movsegy
+   kepar ha kuen
+   
+##   EUA
+!! EVA
+   a ihesu myghtern a nef
+   ty re glewas agan lef
+   yr ascen thy's                 [175]
+   kemmys na greysa goef
+   yn peynys yfarn y sef
+   bys gorfen bys
+   
+##   SPIRITUS
+!! SPIRITUS IHC
+   eugh lemmyn yn paradis
+   kepar del y gys prynnys        [180]
+   marthys yn tyn
+   bys ma thyllyf vy the nef
+   yn vr-na cafus gynef
+   re me a vyn
+   myhal yn scon gorr'y th'y      [185]
+   yn tekter hag yn mur ioy
+   dre pegh a fue kellys kyns
+   rag pan yskynnyf the nef
+   me a fyn cafus gynef
+   kekeffrys eleth ha syns        [190]
+   
+   [spiritus vadit ad sepulcrum comitatu angelorum]
+   
+   [et tunc adam cum videbit ibi ennoc
+   etheliam quaerit admirando]
+   
+   ADAM
+   creator a brys benen
+   yn yfarn na feugh gynen
+   fatel thutheugh why omma
+   yma thy'mmo mur dysyr
+   a wothfes ortheugh an guyr     [195]
+   pyw ough leuereugh henna
+   
+   ENNOC
+   ennoc sur ythof hynwys
+   the'n plas-ma y fuf rafsys
+   yn kyc yn knevs
+   the nor vys ythaf arte         [200]
+   rak gothaf mernens mey fe
+   kyns ys deyth brus
+   
+   ADAM
+   ellas pendra wreth yn bys
+   ena anken ha trystys
+   prest ow bones                 [205]
+   woge bos yn lowene
+   ty the dos drok yv gyne
+   the vur ancres
+   me a leuer an guyr thy's
+   bewe pel a wruk yn beys        [210]
+   yn lafur hag yn anken
+   gorhemmyn dev a terrys
+   dre henna y fuf dampnys
+   the vos neffre yn yfern
+   ow arluth cryst dr'y vercy     [215]
+   a wruk ow dysprenne vy
+   mes a yfarn yn teffry
+   gans y kyc ha'y wos keffrys
+   an enefow a ponow
+   y's dros omma the'n golow      [220]
+   me a leuer thy's hep gow
+   na whyla gy mos the'n beys
+   
+   ENNOC
+   reys yv thy'm agy the lyst
+   emloth worth an antecryst
+   hag ef thu'm gruthyl marow     [225]
+   wose try deyth ha hanter
+   bos yn nef yn vhelder
+   gans cryst myghtern hep parow
+   
+   ADAM
+   [adam loquitur ad heliam]
+   ny won fatel yl wharfos
+   ty a then omma the vos         [230]
+   dyuythys yn kyc yn knevs
+   me a'th pys gans the ganow
+   lauar thy'mmo the hanow
+   rak wheth byth ny thueth deyth brues
+   HELIAS
+   helyas of yn certan            [235]
+   me a fue yn kert a tan
+   the'n keth plas-ma kymerys
+   yn plas-ma me a worto
+   antecryst bys may teffo
+   er-y-byn ythaf the'n beys      [240]
+   
+   ADAM
+   prag ytheta er-y-pyn
+   rak cryst a brennas yn tyn
+   omma a'th dros
+   an beys yv cales kylden
+   yn lafur whys hag anken        [245]
+   ha deyth ha nos
+   
+##   HELYAS
+!! HELIAS
+   antecryst yn lyes plu
+##                           # ms <an antecryst ...>
+   a treyl pobyl thyworth dev
+   yn pup le may kertho ef
+   the'n beys ny a er-y-byn       [250]
+   hag yn y cous y'n fethyn
+   dre grath a vap dev a'n nef
+   yth orden agan lathe
+   rak na yl agan fethe
+   dre lauarow                    [255]
+   ty a wor kyns dos the'n cres
+   reys yv thy'n gothaf mernes
+   ha bos marow
+   
+   [et tunc uertat ad latronem et dicit ei]
+   
+   ADAM
+   ty creator bynyges
+   fattel thuthte gy the'n cres   [260]
+   na fues gynen yn yfarn
+   lauar thy'mmo vy pyv os
+   rag omma awos the vos
+   gynef vy by nyn syw bern
+   
+##   DISMAS LATRO
+!! DISMAS
+   lader of a fue iuggys          [265]
+   ha ryp ihesu cryst gorrys
+   yn crous a pren
+   me a gryes warnotho
+   rak paynys pan na'n gefo
+   tyller th'y pen                [270]
+   y'n gylwys map dev yn prof
+   ahanaf may portho cof
+   pan deffe th'y wlascor ef
+   thy'm y leuerys perfeyth
+   agy the ewhe a'n geyth         [275]
+   yn paradys ty a sef
+   
+   ADAM
+   yn beys awos gothaf crok
+   ny brefsys anken na drok
+   dev guyn the vys
+   bos yn yfarn yw drok fok       [280]
+   ow lesky yn tan ha mok
+   anken pup prys
+   
+##   DISMAS LATRO
+!! DISMAS
+   cryst yw arluth a vercy
+   kemmys a fynno crygy
+   ha'y pygy ef                   [285]
+   hep dout ef a vyth sylwys
+   pan fo a'n beys tremenys
+   yth a the'n nef
+   
+   [tulfryk infernum dicit]
+   
+##   TULFRYK
+!! TULFRYC
+   ru'm fay lemmyn a'n caffen
+   er an ascal y'n toulsen        [290]
+   yn creys a'n tan
+   ellas na thelleys a'm gwen
+   th'y lesky vn luhesen
+   ha crak taran
+   
+   BELSEBUC
+   ellas thy'nny ny dal man       [295]
+   duello luhes na taran
+   th'y lesky ef
+   govy vyth drok yv gynef
+   bones mar lyes enef
+   ow mos the'n nef               [300]
+   
+##   SATHANAS
+!! SATANAS
+   gouy er bos dywolow
+   namn'agan dallas golow
+   pan thueth an guas
+   gallas mur a enefow
+   a peyn hagh a tewolgow         [305]
+   ellas ellas
+   
+   [tunc dicit joseph in carcere]
+   
+##   JOSEPH A.
+!! JOSEPH
+   ihesu map ras . agan sylwyas
+   dues gueres ny
+   ha drengys tas . a wruk pup gulas
+   ha den a pry                   [310]
+   
+   NICHODEMUS
+   amen yn weth . aberth yn beth
+   del re'th worsyn
+   pen vyghterneth . dre the eleth
+   byth socor thy'n
+   
+   DEUS PATER
+   eugh ow dew el . thu'm seruons lel
+   yn pryson evs
+   hep ygery . na fos terry
+   drew hy yn mes
+   
+   MICHAEL
+   a arluth ker . prest hep danger
+   y wren the voth                [320]
+   ol yn pup le . pur wyr neffre
+   kepar del goth
+   
+   [hic descendant angeli et transient ad ioseph et
+   Nichodemum in carcerem]
+   
+   GABRIEL
+   yn mes duegh why . hep terry chy
+   ha hep alwheth
+   gylwys o why . pen arlythy     [325]
+   gortheugh an beth
+   
+   JOSEPH
+   the ihesu gras . luen yv a ras
+   hag a vercy
+   fos ny torras . na war tharas
+   ny thue thy'nny                [330]
+   
+   NICHODEMUS
+   cres ys a hos . dev a allos
+   y vones thy'n
+   scullyas y wos . rak yonk ha los
+   sylwel mar myn
+   
+   [hic venient quatuor milites ad pilatum]
+   
+##   I MILES
+!! MILES I
+   [ad pilatum dicit]
+   syre me a'th cusulse           [335]
+   ordyne tus the wythe
+   beth a'n treytor yv marow
+   meneugh fest y wruk bostye
+   an trege deyth dasuewe
+   kyn fe lethys mar garow        [340]
+   
+##   II MILES
+!! MILES II
+   ha mar ny wrer y wythe
+   y thyskyblon yn pryve
+   a'n lader yn mes a'n beyth
+   hag a leuer yn pup le
+   yvos dasuewys arte             [345]
+   ha gyllys the ken tyreth
+   
+##   III MILES
+!! MILES III
+   yn della mar a whyrfeth
+   myl weth a uyth an dyweth
+   me a'n te re synt iouyn
+   ha hakere es an dalleth        [350]
+   rak henna tus ervys freth
+   gor th'y wythe a termyn
+   
+##   IV MILES
+!! MILES IV
+   mar ny fethe ef guythys
+   gans y tus y fyth laddrys
+   ha'n corf yn mes kymerys       [355]
+   ha gorrys ef the ken pow
+   y a leuer ol yn weth
+   y vos daserghys a'n beth
+   ha gyllys gans y eleth
+   yn pur wyr the nef golow       [360]
+   
+   PILATUS
+   eugh lemmyn ow marreggyon
+   bys yn beth alemma scon
+   del owgh tus ven
+   cryst myghtern a'n yethewon
+   na'n laddro an crystenyon      [365]
+   guytheugh war peyn
+   
+##   I MILES
+!! MILES I
+   syre pilat hep parow
+   guythe an corf yv marow
+   dy'nny yv reys
+   y laddre mar whyle den         [370]
+   war ow ene ef a'n pren
+   may fo dyswrys
+   
+   PILATUS
+   gueyteugh ol er agas fyth
+   pan bostyas the pen try deyth
+   y tasserghy the vewnans        [375]
+   gobar da why agas byth
+   gon dansotha ha cruk heyth
+   mar scap ytheugh the'n mernans
+   
+##   II MILES
+!! MILES II
+   me a'n guyth kyn tassorgho
+   thy-worthy'n den na'n laddro   [380]
+   by na porth dout
+   dalhen mar cafaf ynno
+   pur wyr ny scap kyn fynno
+   na'n geffo clout
+   
+##   III MILES
+!! MILES III
+   ny'm bues ovn vyth annotho     [385]
+   ha dreheuel kyn teffo
+   scon me a re clout thotho
+   may ro'n mayle war an dor
+   agy the'n beth men yv clos
+   me a'n guyth sur deth ha nos   [390]
+   awos y dysciplys plos
+   kyn teffons y vyth mar clor
+   
+##   IV MILES
+!! MILES IV
+   dun alemma cowethe
+   y weles me a garse
+   ow thastel ym-threheuel        [395]
+   yn certan mar remvfe
+   y pen crak me a torse
+   kyn couse vyth mar huhel
+   
+   [et tunc ibunt ad sepulcrum]
+   
+##   I MILES
+!! MILES I
+   an beth me re anysyas
+   warnotho yma men bras          [400]
+   dres ol an myn
+   coskyn ny gans dyaha
+   kyn dasvewo ny'n dregha
+   thywar y geyn
+   tau sy cowys renothas          [405]
+   vyth nynsyv yn della vas
+   thy's lauaraf guyryoneth
+   reys yw the onan golyas
+   war y torn pup y thyffras
+   y gowyth pyw a thalleth        [410]
+   
+##   III MILES
+!! MILES III
+   dallathans nep a fynno
+   rak coske reys yv thy'mmo
+   re synt iouyn
+   sur lour of vy annotho
+   den marow na threhavo          [415]
+   sur bys deyth fyn
+   
+##   IV MILES
+!! MILES IV
+   guythens pup y tenewen
+   ha me a gosk ryp y pen
+   rag y wythe
+   
+##   I MILES
+!! MILES I
+   nynsus gorryth na benen        [420]
+   byth wel cusyl bys vycken
+   a lauarre
+   
+   [hic dormiunt milites]
+   
+   [tunc surrexit Ihesus a mortuis et iet
+   ubicunque voluerit et cantant angeli
+   cristus resurgens et postea dicit maria]
+   
+   MARIA
+   a tas ker yn huhelder
+   ty a formyas nef ha beys
+   rak luen os a hunelder         [425]
+   hag a allus kekeffrys
+   ty a wor yn pup maner
+   fatel fue ow map lethys
+   yn grous yntre dev lader
+   y corf whek a fue gorrys       [430]
+   pan wylys vy y wane
+   dre an golon gans an guv
+   me a wruk scon clamdere
+   byth ny wylyn yn nep tu
+   y weles me a garse             [435]
+   ha cous orth ow map ihesu
+   mar ny thue thu'm confortye
+   ow mornyngh vyth ogh ha tru
+   me a wruk y anclethyes
+   hag a'n gorras yn beth men     [440]
+   the voth sur mar pe genes
+   guelas ow map y carsen
+   a tas dre the luen weres
+   the pygy certan mensen
+   tarye lemmyn na wrelles        [445]
+   rak yma thy'mmo vy ken
+   ow map whek me a vynse
+   a luen golon the pygy
+   a thos thy'm ha fystyne
+   del thethyvsys thy'mmo vy      [450]
+   y wres yn ban dasfewe
+   the'n tryge deth yredy
+   lemmyn gura ow kerenge
+   kepar yn beys del vynny
+   
+   IHC.
+   o salve sancta parens          [455]
+   the nep yv ioy ow colon
+   ha'm melder kepar ha kens
+   dre pur natur ha reson
+   pan wreth hepcor an bevnens
+   hep guthyl na moy cheyson      [460]
+   a hugh an eleth ha'n sens
+   ty a thue the nef thu'm tron
+   
+   MARIA
+   ota gy ow map ihesu
+   dynythys thu'm confortye
+   an tryge deth yv hythev        [465]
+   thy-worthyf aban ethe
+   whet ny ellys yn nep tu
+   gothfos ganso fatel fe
+   y carsen guelas an fvu
+   anotho y voth mar pe           [470]
+   
+   [genuflectit Maria]
+   
+   IHC.
+   ow mam whek ha'm kerenge
+   me yv ihesus the vab ker
+   me re thuth the'th confortye
+   nak na vy gy yn a wher
+   datherghys na wra doutye       [475]
+   of a vernans ow melder
+   ty a yl y atendye
+   bos guyr ow cous kettep ger
+   
+   [Maria amplexatur eum et osculatur]
+   
+   MARIA
+   a uap ker lowene thy's
+   ha sylwadur a'n bys-ma         [480]
+   a'n beth the vos datherghys
+   y luen crygy me a wra
+   ow colon yv mur huthys
+   nynsus peyn orth ow greffya
+   bynyges re bo an prys          [485]
+   may wruk the thon y'm nascra
+   vs whet the'th corf galarow
+   na torment orth the greffye
+   yw saw ol the wolyow
+   a wylys vy the squerdye        [490]
+   a wruk an gu ha'n kentrow
+   the kyc precius dafole
+   lauar thy'mmo caradow
+   lemmyn gorthyp fatel fue
+   
+   [genuflectit Jhs]
+   
+   IHC.
+   reuerons thy'so a vam ker      [495]
+   henor mur ha lowene
+   ny'm gref peyn yn nep maner
+   a wrello thy'm drok neffre
+   mernans trystyns hag anger
+   me a wruk aga fethe            [500]
+   may thyw lemmyn da ow cher
+   nynsus tra orth ow greffye
+   
+   MARIA
+   confortys yv ow colon
+   pan clewys ow teryfas
+   bones leghys the pascyon       [505]
+   a fus tyn garow ha bras
+   the'n tas huhel yn y tron
+   y grassaf lemmyn an cas
+   ty the vynnes thy'm danfon
+   thu'm confortye the vap ras    [510]
+   
+   [osculantur et separant]
+   
+##   I MILES
+!! MILES I
+   mey fe me re goskes pos
+   ha ru'm kemeres drok glos
+   dre ow hvn me a welas
+   neb ese aberth yn beth
+   gans can ha mur a eleth        [515]
+   the vewnans y tassorghas
+   
+##   II MILES
+!! MILES II
+   pur wyr me a henrosas
+   ha war ow kyn a'n clewas
+   yn mes a'n beth ow seuel
+   mar syv dyenkys ellas          [520]
+   rak me a wel an men bras
+   war glan a'n beth fest huhel
+   
+##   III MILES
+!! MILES III
+   pos re teulseugh agas clvn
+   rag me a'n guelas dufvn
+   dresof ef a tremenas           [525]
+   hag a wor yn pa vaner
+   ganso crous worth y baner
+   wharre ef a thyspleytyas
+   
+##   IV MILES
+!! MILES IV
+   yn sur gans ow dev lagas
+   ow syuel me a'n guelas         [530]
+   ha garow hag vthyk bras
+   yn kerth gallas mes a'n beth
+   ny yllyn syuel yn ban
+   rak ovn anotho certan
+   y wolow o mur a splan          [535]
+   del leuaraf theugh yn weth
+   
+##   I MILES
+!! MILES I
+   a thysempys whylewhe
+   mar a sethe the cuthe
+   yn nep bos tewl py yn sorn
+   mara kyllyn y gafus            [540]
+   vynytha na theppro bous
+   me a'n kelm auel pusorn
+   
+##   II MILES
+!! MILES II
+   me a'n kyf by god ys blod
+   kyn fo an harlot mar wod
+   ma mar houtyn y body           [545]
+   for y dred noth by my hod
+   hys red baner ne hys rod
+   the pilat nan dryllyn ny
+   
+##   III MILES
+!! MILES III
+   na gefyn war ow ene
+   kyn fen neffre ow ponye        [550]
+   yn pup tol worth y whylas
+   me a'n guelas ow nyge
+   ganso mur a gowethe
+   ha guyn o aga dyllas
+   
+##   IV MILES
+!! MILES IV
+   ha me yn weth a'n guelas       [555]
+   ha ganso company bras
+##                         # ms <ganso ev>
+   orth y sywe lyes guas
+   ny yllons bos nyfyrys
+   tra uyth ny amont thy'nny
+   sur y whylas ef na moy         [560]
+   ym-cusylle gureny ny
+   pyth yv guella the bos gurys
+   
+##   I MILES
+!! MILES I
+   pandra wren agan peswar
+   a rak pilat sur hep mar
+   pan theffyn ny yn teffry       [565]
+   ef the seuel a'n beth men
+   ha'y vos datherys certen
+   y gous ny dal thy'nny ny
+   
+##   II MILES
+!! MILES II
+   y cussylyaf yn certan
+   leuerel dos nerth warnan       [570]
+   ha'y thon the ves
+   yn vr-na y fyth clewys
+   del ony ganse brewys
+   hag elf at es
+   
+##   III MILES
+!! MILES III
+   yn della ny vynnyn ny          [575]
+   a'n beth ef the thasserhy
+   me a leuer
+   par del o dev luen a ras
+   ganso del fethas yu cas
+   worth crous baner              [580]
+   
+##   IV MILES
+!! MILES IV
+   del leuaraf yn tor-ma
+   honna yv an forth wella
+   assentye ol the henna
+   sur me a vyn
+   ny fynnaf leuerel gow          [585]
+   awos dout bones marow
+   gallas ef the nef wolow
+   gans eleth guyn
+   
+##   I MILES
+!! MILES I
+   saw pyw a vyn leuerel
+   the vewnans ef the seuel       [590]
+   hythew yn mes a'n beth pry
+   nag a feth mos the'n iustys
+   rag dout y vones lethys
+   my ny vynnaf ieuody
+   
+##   II MILES
+!! MILES II
+   na porth dout me a genes       [595]
+   mar pyth othom the'th weres
+   hag a leuer fattel fue
+   
+##   III MILES
+!! MILES III
+   mar a talleth pertheges
+   ny a wra y wowheles
+   rak pup ol a gar bewe          [600]
+   
+   [et tunc eant ad pilatum et dicit IIIIs miles]
+   
+##   IV MILES
+!! MILES IV
+   lowene thy's syr pilat
+   awos bos ny peswar smat
+   guythe an beth ny ylsyn
+   desefsen dotho ry what
+   thy'nny ef a wruk an prat      [605]
+   hag a fyes thyworthy'n
+   
+   PILATUS
+   out warnough fals marregion
+   pyth yw an whethlow ha'n son
+   a glewaf aberth yn pow
+   re vahun y tof yn weth         [610]
+   mar sywe lyddrys a'n beth
+   why a's byth ages ancow
+   
+##   I MILES
+!! MILES I
+   pilat the gous nynsyw vas
+   nep na'n synso y sylwyas       [615]
+   a thu goef
+   me a'n guelas dre mur ras
+   a'n beth gans ov dev lagas
+   ow mos the'n nef
+   
+   PILATUS
+   tau harlot out of my sygth
+   rag mar ny'n kefough a plygth  [620]
+   sur why a'n pren
+   the'n beth pan y ges gorrys
+   thy'mmo why a thethywys
+   na'n laddro den
+   
+##   II MILES
+!! MILES II
+   me a leuer thy's rak clem      [625]
+   dyswe thy'nny nychodem
+   ha ioseph baramathya
+   ha ny a thyswe yn weth
+   an corf a sytseugh yn beth
+   yw ihesu map maria             [630]
+   
+   PILATUS
+   ty was geyler kesadow
+   ygor scon an darasow
+   ha heth an prysnes yn mes
+   otte omma alwhethow
+   ha mar ny wreth the ancow      [635]
+   me a vyth by god ys pes
+   
+   CARCERATOR
+   drew hy thy'mmo hep lettye
+   ha me a's ygor wharre
+   an darasow agan naw
+   na greseugh bos treyson gures  [640]
+   guel yv thywhy why mones
+   ages honan the'n thev vaw
+   
+   [et tunc ipse eat ad carcerem et non
+   inueniet eos et dicit pilatus]
+   
+   PILATUS
+   ny geusyth mes a reson
+   ple thesos ioseph caugyon
+   ha'th cowyth nychodemus        [645]
+   
+   [descendit pilatus]
+   
+   a out ple ma an prysnes
+   mar ny's cafaf scon thu'm dues
+   ty a fyth drok oremus
+   
+   GARCON
+   a syre na blamyowg ny
+   a nyngese alwheow              [650]
+   warbarth yn ages guyth why
+   ha dyen an darasow
+   
+   PILATUS
+   guyr a geusyth ievody
+   hem yv marth hep falladow
+   rak an darasow deffry          [655]
+   dyen ol yns ha'n fosow
+   marregyon theugh ny won blam
+   rak thy'mmo y fye scham
+   gul drok thywhy
+   an prysners galsons yn weth    [660]
+   ese yn dan naw alweth
+   ny torsans chy
+   
+##   III MILES
+!! MILES III
+   henna ny a vyn notye
+   le may thyllyn yn pup le
+   certan y vos dasserhys         [665]
+   kepar del sevys a'n beth
+   the'n nef gans mur a eleth
+   ny th'y weles yskynnys
+   
+   PILATUS
+   teweugh awos lucyfer
+   a henna na geuseugh ger        [670]
+   pypenagol a wharfo
+   ha why a's byth gobar bras
+   penryn yn weth ha hellas
+   me a's re theugh yn luen ro
+   
+##   IV MILES
+!! MILES IV
+   aban osa mar gortes            [675]
+   ny a wra del leueryth
+   ha pup onan ol iammes
+   neffre parys thy's a vyth
+   
+   [et tunc ueniet maria magd. et maria
+   iacobe et salome et dicit maria]
+   
+##   MAR. MAGD.
+!! MARIA MAGD
+   pendra wra-ma vy ellas
+   ow arluth yn beth gallas       [680]
+   hythew yv an trege deyth
+   mones the vyras deffry
+   mar a tueth ha dasserhy
+   del leuerys thy'm perfyth
+   
+##   MARIA IACOBE
+!! MARIA JACOBI
+   mos the vyres me a vyn         [685]
+   an corf a'm prynnes yn tyn
+   mar tassorhas
+   mur a confort ef o thy'n
+   y vernans ef pan wylsyn
+   ellas ellas                    [690]
+   
+   MARIA SALOME
+   en trege deyth yv hythew
+   corf cryst dasserhys mar syw
+   mos the vyras
+   rak an torment a'n gefe
+   y'm colon yma neffre           [695]
+   cvth-ma na'm gas
+   
+   [hic obuiabit eis]
+   
+   MARIA MAGD
+   benenes theugh lowene
+   ha maria iacobe
+   ha salome kekeffrys
+   kueth vs y'm colon eyhan       [700]
+   mar seth corf dev y honan
+   py le y fythe keffys
+   
+##   MARIA IACOBE
+!! MARIA JACOBI
+   yn della yma thymmo
+   mur a torment bras ragtho
+   mar ny fyn dre y rasow         [705]
+   ow gueres a termyn ver
+   ow colon ynnof a ter
+   pur evn dre fyanasow
+   
+   MARIA SALOME
+   yn della thy'mmo y wher
+   arluth re wella ow cher        [710]
+   war y lergh ef
+   del ywe pen myghterneth
+   me a grys yn mes a beth
+   hythew a sef
+   
+##   MARIA MAG.
+!! MARIA MAGD
+   a fystynyn ny yn fen           [715]
+   rag dreheuys yv an men
+   thyworth an beth
+   arluth fattel byth haneth
+   mar ny wothefaf ple theth
+   pen vyghterneth                [720]
+   
+##   MARIA IACOBI
+!! MARIA JACOBI
+   ha re pel ny re strechyas
+   ow arluth yn kerth gallas
+   mes a'n beth sur
+   ellas ow colon yv claf
+   ny won vyth pur y'n guelaf     [725]
+   nep yv dev pur
+   
+   MARIA SALOME
+   me a wor guyr hag a'n crys
+   y vos yn ban dasserghys
+   yn geth hythev
+   fatel byth thy'nny lemyn       [730]
+   agan arluth na gefyn
+   ellas tru tru
+   
+   [cantant]
+   
+   ellas mornyngh y syngh mornyng y cal
+   our lord ys deyd that bogthe ovs al
+   
+   MARIA MAGD
+   ellas byth rak gallarow        [735]
+   ow arluth whek yv marow
+   a fue crousys
+   
+   [plerat mar. magd. ad monumentum]
+   
+   ef a porthas hep a wher
+   mur a peyn war y corf ker
+   rak tus a'n bys                [740]
+   
+##   MARIA IACOBI
+!! MARIA JACOBI
+   ny allaf guelas an fu
+   anotho ef yn nep tv
+   ellas gouy
+   cous ganso me a garse
+   y volungeth mar a pe           [745]
+   yn pur deffry
+   
+   MARIA SALOME
+   yma thy'mmo hyreth tyn
+   yn ow colon pup termyn
+   ha morethek
+   ellas ow arluth ihesu          [750]
+   rak ty yv luen a vertu
+   ol gallosek
+
+   ellas mornyngh y syngh mornyng y cal
+   our lord ys deyd that bogthe ovs al
+   
+   MARIA MAGD
+   ihesus cryst arluth a nef      [755]
+   a clew lemmyn agan lef
+   nep na grys ynnos goef
+   ny fyth sylwys
+   pan prydyryf a'y passon
+   nynsa ioy vyth y'm colon       [760]
+   ellas na allaf yn scon
+   keusel worthy's
+   
+##   MARIA IACOBI
+!! MARIA JACOBI
+   gallas ef the ken tyreth
+   ha ganso mur a eleth
+   ellas lemmyn rak moreth        [765]
+   ythof euthys
+   me a'th pys arluth a ras
+   a thanfon thy'nny cannas
+   may ben nepith aswonfas
+   fatel yw thy's                 [770]
+   
+##   MAR. SALOME
+!! MARIA SALOME
+   a ihesu luen a vercy
+   ahanan gura prydyry
+   theth wlascor pan deffyn ny
+   clew agan lef
+   rak hyreth galsof pur claf     [775]
+   ny allaf syuel a'm saf
+   ellas lemmyn pendra wraf
+   a arluth nef
+
+   ellas mornyngh y syngh mornyng y cal
+   our lord ys deyd that bogthe ovs al
+   
+##   I ANGELUS
+!! ANGELUS I
+   me a wor a wheleugh why
+   ihesu omma nynsugy
+   rak seuys yw
+   the veunans yn pur deffry
+   del leuaraf vy thywhy          [785]
+   par del yv gvyw
+   
+##   MA. MAG.
+!! MARIA MAGD
+   a el ytho thy'm lauar
+   an corf na'n gefes vyth par
+   py le re seth
+   kepar del yv mur y ras         [790]
+   ioy thy'm gans ow dew lagas
+   y weles wheth
+   
+##   II ANGELUS
+!! ANGELUS II
+   a maria eugh yn scon
+   leuereugh th'y thyskyblon
+   ha the pedar                   [795]
+   par del dythywys thethe
+   ef a thue the galile
+   pur wyr hep mar
+   
+##   MARIA IACOBI
+!! MARIA JACOBI
+   ytho dasserghys yv sur
+   ihesu agan sylwadur            [800]
+   gallas a'n beth
+   gorthyans thotho ef pup prys
+   ef yv arluth nef ha bys
+   pen vyghterneth
+   
+##   MAR. SALOME
+!! MARIA SALOME
+   alemma dun ny the tre          [805]
+   ha leueryn yn puple
+   del wylsyn ny
+   ihesu y vos dasserghys
+   hag a'n beth yn kergh gyllys
+   the'n nef deffry               [810]
+   
+##   MAR. MAGD.
+!! MARIA MAGD
+   neffre the dre my nynsaf
+   ow arluth mar ny gafaf
+   eth yn grous pren
+   a ihesu myghtern a ras
+   ioy thy'm vn weth the welas    [815]
+   amen amen
+   
+##   MARIA IACOBI
+!! MARIA JACOBI
+   maria re bo gynes
+   benneth ol a'n benenes
+   ha benneth ihesu map ras
+   a luen golon me a'n pys        [820]
+   ioy grath a wul da pup prys
+   thy'nny lemmyn a thu tas
+   
+##   MAR. MAG.
+!! MARIA MAGD
+   ow benneth geneugh yn weth
+   a cryst del ythys yn beth
+   ioy theugh guthyl da hethew    [825]
+   arluth ro thy'mo an gras
+   vn wyth the weles the fas
+   the voth genes mara syw
+
+### folio 65r
+   
+   MARIA SALOME
+   amen amen may whyllyn
+   cryst agan prennas yn tyn      [830]
+   gans y gyk ha gans y wos
+   mur a peyn a wothefys
+   rak kerenge tus a'n bys
+   del yw myghtern a gallos
+   
+   [hic mar. jacobi et salome recedunt a
+   sepulcro et sedent parumper abhinc]
+   
+##   MAR. MAG.
+!! MARIA MAGD
+   nep a wruk nef . del eth yn beth
+   war y lyrgh ef . mur ow hyreth
+   cryst clew ov lef . pesaf y weth
+   may fy gynef . orth ow dyweth
+   arluth ihesu . ro thy'm an gras
+   par may feyf gvyw . the gafos spas
+   gynes hythev . sur yn nep plas
+   may bome vu . ha guel a'th fas
+   
+   del os formyas . the'n nef ha'n lur
+   ha dysprynnyas . thy'nny pup vr
+   cryst ow sylwyas . clev mar a'th dur
+   thy's daryvas . del garsen mur
+   dre mur hyreth . ythof pur squyth
+   ha'm corf the weth . yscarn ha lyth
+   ple ma haneth . a wor den vyth
+   may caffen wheth . cryst len a wryth
+   
+   [vadit ad ortum]
+   
+##   ORTOLANUS S. JHC
+!! ORTOLANUS
+   a vynyn ryth . py le ytheth
+   rak kueth pygyth . garme a wreth
+   na ol na scryg . nep a whyleth
+   syghsys y treys . gans the thyv pleth
+   
+##   MAR. MAG.
+!! MARIA MAGD
+   arluth dremas . mar cothas myr [855]
+   cryst ow sylwyas . ple ma the wyr
+   er y whylas . rof thy's ow tyr
+   ihesu map ras . clew ow dysyr
+   
+   ORTOLANUS
+   a maria . del won the bos
+   berth yn bys-ma . onan a'y uos [860]
+   a'n guelesta . a thyragos
+   a alsesta . y aswonfos
+   
+##   MAR. MAG.
+!! MARIA MAGD
+   galsen y ta . the'n kense fu
+   map maria . henwys ihesu
+   rak na'n guela . thy'm a nep tu[865]
+   kueth a portha . ny gansen tru
+
+### folio 00r
+   
+   [et tunc demonstrabat latus ejus ad
+   mariam mag. et dicit:-]
+   
+   ORTOLANUS
+   maria myr . ov pym woly
+   crys my the wyr . the thasserghy
+   thy's y whon gras . rak the thesyr
+   ioy yn ow gulas . y fyth pur wyr[870]
+   
+##   MAR. MAGD.
+!! MARIA MAGD
+   a ker arluth . eth yn grous pren
+   thy'm ny thogouth . amme the'th pen
+   me a'th pysse . a lauasos
+   lemmyn amme . vn wyth the'th tros
+   
+   [mulier noli me tangere]
+   
+   ORTOLANUS
+   a vynyn ryth . na tuche vy nes [875]
+   na na wra gruyth . na fo the les
+   ny thueth an prys
+   er na gyllyf . the'n nef thu'm tas
+   may tewhyllyf . arte thu'm gulas
+   the gous worthy's              [880]
+   
+##   MAR. MAG.
+!! MARIA MAGD
+   cryst clew of lef . lauar an vr
+   may tuth a'n nef . arte the'n lur
+   the cous worthy'n
+   the thyskyblon . yv serrys mur
+   ha'n yethewon . gans nerth pup vr[885]
+   yge kerhyn
+   
+   ORTOLANUS
+   o maria . lauar thethe
+   pur wyr me a . the galile
+   del leuerys
+   ha dres henna . porth cof lauar[890]
+   confort yn ta . thy'mmo pedar
+   mur yu kyrys
+   
+   [hic venit maria ad apostolos et dicit
+   eis in Galilea]
+   
+##   M. MAGD.
+!! MARIA MAGD
+   lemmyn a abesteleth
+   lauaraf theugh newothow
+   ihesu dasserghys a'n beth      [895]
+   me a'n guelas agynsow
+   worto y keusys yn weth
+   y vyrys y wolyow
+   aga guelas o trueth
+   the'n bys kyns ens ylyow       [900]
+   
+   THOMAS
+   tav ty wrek gans the whethlow
+   ha cous guyr del y'th pysaf
+   cryst a fue lythys garow
+   y vos byw my ny gresaf
+   na wast na moy lauarow         [905]
+   rak gowegneth ny garaf
+   agan arluth yw marow
+   ellas guyr a lauaraf
+   
+##   M. MAG.
+!! MARIA MAGD
+   guyr a gousaf vy thomas
+   ha me a'n pref kyn kescar      [910]
+   agensow my a'n guelas
+   an arluth na'n gefes par
+   ha gynef y tanfonas
+   y te theugh pare veugh war
+   kepar ha del ambosas           [915]
+   ny hynwys thy'm saw pedar
+   
+   THOMAS
+   tav ha na gous ty venen
+   me a'th pys scornye gynen
+   lemyn na wra
+   stout awos castel maudlen      [920]
+   mar querth me a ter the pen
+   thy's awartha
+   
+##   M. MAGD.
+!! MARIA MAGD
+   awos ovn my ny tauwaf
+   me a'n pref guyr a gousaf
+   kyns ys dybarth                [925]
+   kepar del yv myghtern nef
+   gans a'n tas dev yma ef
+   a thyow barth
+   
+   PETRUS
+   a ihesu cryst guyn ow bys
+   clewas y vones sevys           [930]
+   yn mes a'n beth
+   rak me a wor fest yn ta
+   y vos map the varia
+   ha dev yn weth
+   
+   THOMAS
+   peder tav ha gas the flous     [935]
+   rak euereth yv the gous
+   ef the seuel
+   byth ny yl awos an bys
+   den vyth bones dasserhys
+   wose merwel                    [940]
+   
+   JACOBUS MAJOR
+   a gil thomas fest yn ta
+   map dev dasserhy a wra
+   pan y vynno
+   rak ihesu map maria
+   ef a wruk nef ha'n bys-ma      [945]
+   tra uyth nago
+   
+   THOMAS
+   a iamys thy's ny dal man
+   den a vo marow certan
+   ny thasvew nes
+   vfereth fol yv na'n gas        [950]
+   lemmyn mos the tharyuas
+   tra na wra les
+   
+   JOHANNES
+   a thomas assosa fol
+   hen yv agan crygyans ol
+   ihesu cryst woge merwel        [955]
+   y vones gorrys yn pry
+   woge henna dasserghy
+   the pen try dyth ha seuel
+   
+   THOMAS
+   a iowan na gous a drues
+   rak ahanas marth a'm bues      [960]
+   ty the leuerel folneth
+   cryst a fue dre galarow
+   yn grous pren gurys pur varow
+   war nep a'n gruk ow molleth
+   
+##   BARTHOL.
+!! BARTHOLOMEUS
+   thomas crys thy'm kyn of los   [965]
+   ny'n gyfye den gallos
+   the'n mernens y worre ef
+   ragon y fynnes merwel
+   ha mos yn beth ha seuel
+   rak dry pup crystyon the'n nef [970]
+   
+   THOMAS
+   a bertyl asoge mvs
+   ha goky dres ol an dus
+   py ytho fol
+   dev a alse hep merwel
+   gul the pup den ol sylwel      [975]
+   dres an beys ol
+   
+   MATHEUS
+   hen yv guyr ef a galse
+   pup tra y thyswul arte
+   moy ys na fe
+   saw bytegyns ragon ny          [980]
+   cryst a vynnas mos yn pry
+   ha dasuewe
+   
+   THOMAS
+   h'essoge goky mathew
+   mar asos fur ty a tew
+   hag a ymden                    [985]
+   ny vew dre ver lauarow
+   nep a wylys o marow
+   war an grous pren
+   
+   PHILIPPUS
+   ellas the vos mar wokky
+   cammen na vynnyth crygy        [990]
+   pen vyghterneth
+   hag ef ow cous thy'nny ny
+   woge merwel y syvy
+   yn mes a'n beth
+   
+   THOMAS
+   tav sethe vyn ty phelip        [995]
+   rak pur wyr ty a gam dip
+   warnotho ef
+   cryst o brew y esyly
+   ha war y corf myl woly
+   ellas ny sef                  [1000]
+   
+##   IACOBUS MAJOR
+!! JACOBUS MAJOR
+   a na lauar yn della
+   ihesu an arluth guella
+   na yl syuel
+   rak pur wyr dasserghys yw
+   bos y seruont nagos guyw      [1005]
+   da yth heuel
+   
+   THOMAS
+   a ty iacob bew a pe
+   y seruont me a vye
+   fest yn lowen
+   sav ef ny vew gas the son     [1010]
+   an dreyn bys yn ympynnyon
+   eth yn y pen
+   
+   SYMON
+   kynseth an dreyn yn y pen
+   dre'n golon yn tenewen
+   guylys an guv                 [1015]
+   bytegyns reys yv crygy
+   ihesu cryst the thasserghy
+   del yw guyr thyw
+   
+   THOMAS
+   a symon na gous vn ger
+   navyth navyth yn a wher       [1020]
+   ny seuys nes
+   saw yn della mara pe
+   warbarth ol ny a vye
+   marthys at es
+   
+##   IUDA
+!! JUDAS
+   syr thomas yn della yv        [1025]
+   ef re thassorghas hythyv
+   yn mes a'n beth
+   rak na wrello dasserghy
+   neffre nygen byen ny
+   ioy hep thyweth               [1030]
+   
+   THOMAS
+   iude iude gas the gres
+##                          # ms <a iude iude ...>
+   y golon squyrdys a les
+   me a welas
+   awos a gousa den vyth
+   an kerth corf-ne gorthewyth   [1035]
+   ny thassorghas
+   
+   ANDREAS
+   tav thomas ha na gous ger
+   pur wyr agan arluth ker
+   dasserghys yw
+   yn sur re re thyscryssys      [1040]
+   rak maria a geusys
+   worto hythyw
+   
+   THOMAS
+   asota gokky androw
+   an voran re geusys gow
+   na preder ken                 [1045]
+   neffre ef the thasserghy
+   me ny fynnaf y grygy
+   bew hedre ven
+   
+##   MAR. MAGD.
+!! MARIA MAGD
+   ny leuerys vn ger gow
+   rak thy'm ol y wolyow         [1050]
+   a thyswethas
+   ha the henna me a vyn
+   don dustuny pup termyn
+   bos guyr an cas
+   
+   [hic descendant thomas et maria magd.]
+   
+   THOMAS
+   awos lauarow trufyl           [1055]
+   ny grysaf thy's ty a fyl
+   gul thy'm crygy
+   kyn whrylly flattre mar mur
+   ahanas tra uyth ny'm dur
+   kyn thos bysy                 [1060]
+   
+   MARIA MAGD
+   me a leuer an guyr thy's
+   an el thy'n a leuerys
+   sur worth an beth
+   y vos yn ban dasserghys
+   ha the nef golow gyllys       [1065]
+   gans mur eleth
+   
+   THOMAS
+   tav flattores na gous moy
+   ny fynnaf thy'so crygy
+   y vos the'n nef
+   an corf a wylys marow         [1070]
+   mur yv ow fyenasow
+   war y lergh ef
+   
+##   MAR. MAGD.
+!! MARIA MAGD
+   sur maria iacobe
+   ha maria salome
+   thy'm dustyny                 [1075]
+   kepar ha me a welas
+   del leuaraf thy's an cas
+   gura y crygy
+   
+   THOMAS
+   byth ny yl mos y'm colon
+   an corf marow thyragon        [1080]
+   the thasserghy
+   pan predyryf a'y passyon
+   moreth a'm kymmer yn scon
+   ragtho govy
+   
+   MARIA MAGD
+   yma marth thy'm ahanas        [1085]
+   bos the golon mar calas
+   na'n crygyth ef
+   mar ny wreta y crygy
+   byth ny thueth neffre the'n ioy
+   sur vs yn nef                 [1090]
+   
+   THOMAS
+   tav the gy lemmyn rak meth
+   gans ihesu nyn sos pryveth
+   sur yn della me a grys
+   peghadores es hep gow
+   an brassa ege yn pow          [1095]
+   gans pup ol ty o gylwys
+   
+##   MA. MAGD.
+!! MARIA MAGD
+   me re bue peghadoras
+   a peghas marthys yn fras
+   war ihesu me a cryas
+   ow trespas thy'mmo gafe       [1100]
+   ha thy'm ef a leuerys
+   the pegh thy's a vyth gefys
+   dre the fay ythos sylwys
+   ha na moy na wra peghe
+   thomas ythos pur woky         [1105]
+   drefen na fynnyth crygy
+   an arluth the thasserghy
+   du pask vyttyn
+   nep na crys ny fyth sylwys
+   na gans dev ny vyth trygys    [1110]
+   ha rak henna me a'th pys
+   creys a termyn
+   
+   THOMAS
+   sens the clap na fyth bysy
+   rak ny fynnaf thy's crygy
+   an corf a wylys a vy          [1115]
+   tackys yn grous gans kentrow
+   gans gu lym y a'n guanas
+   dre an golon may resas
+   the'n dor an gos a cothas
+   hag a'n gruk ef scon marow    [1120]
+   
+   ny yl an corf-na bewe
+   na seuel yn ban arte
+   sur ty venen
+   nynsus den vyth a bys-ma
+   a wra gul thy'm yn tor-ma     [1125]
+   crygy nahen
+   
+##   MAR. MAGD.
+!! MARIA MAGD
+   thomas ty yv muskegys
+   hag yn muscokneth gyllys
+   drok yv gynef vy lemmyn
+   me a'th cusyl a grysy         [1130]
+   ha ma ny wreth yn teffry
+   ty a fyth sur edrek tyn
+   
+   THOMAS
+   genough aban na'm byth cres
+   thy wortheugh mennaf mones
+   adro yn pow                   [1135]
+   nynsough lemmyn gokyes
+   yn della dev thu'm gueres
+   ny garaf gow
+   
+   [tunc Ihc. venit ad apostolos et dicit
+   in Galilea januis clausis osculatur eos]
+   
+   IHC.
+   cres dev a abesteleth
+   my cryst the seuel a'n beth   [1140]
+   creseugh yn ta
+   rak certan kemmys a'n crys
+   ha a vo lel vygythys
+   sylwel a wra
+   
+   PETRUS
+   a arluth ker guyn ow bys      [1145]
+   the welas yn tasserghys
+   ihesu kyn wruk the naghe
+   luen tregereth me a pys
+   del vs yethewon pup prys
+   omma worth agan baghe         [1150]
+   
+   ihesu arluth nef ha beys
+   ha sylwadur thy'n keffrys
+   gaf thy'mmo vy ow trespys
+   rak mur yv ow govygyon
+   yma thy'm sur edrek tyn       [1155]
+   rak the naghe gy lemmyn
+   mercy pysaf pup termyn
+   yn certan a luen golon
+   
+   IHC.
+   pedar gyffyens ty a fyth
+   rak the eddrek yv perfyth     [1160]
+   dre'n spirys sans
+   par del y'th prynnys yn ker
+   ha fasta sy the vreder
+   yn luen grygyans
+   
+##   IOHANNES
+!! JOHANNES
+   a arluth ythof lowen          [1165]
+   ty the vynnes dos gynen
+   omma th'agan lowenhe
+   henna me a leuer wheth
+   ythesen dre pur hyreth
+   war the lergh ov th'ymwethe   [1170]
+   
+   IHC.
+   thywortheugh my a thu'm glas
+   a thyow barth the thu tas
+   yth ysethaf
+   thagas fastye yn crygyans
+   theugh confort a spyrys sans  [1175]
+   a thanfonaf
+   
+##   IACOBUS MAJOR
+!! JACOBUS MAJOR
+   arluth assyv varthusek
+   pan thueth ihesu gallosek
+   th'agan myras
+   ha leuerel thy'nny cres       [1180]
+   asso fast ytho dyges
+   agan daras
+   
+   [hic recedit ihc. ab apostolis]
+   
+   ef yv arluth a allos
+   hag a prynnas gans y wos
+   pobel a'n beys                [1185]
+   ihesu cryst the thasserghy
+   vn deyth vs ow tos go y
+   kemmys na'n crys
+   
+   MATHEUS
+   thy'n kyns ef a leuerys
+   ol annotho del whyrys         [1190]
+   yn nor bys-ma
+   rag a'n prenna y fyrwy
+   hag arte y tasserghy
+   woge henna
+   
+   JOHANNES
+   by ny geusy ken ys wyr        [1195]
+   nep a formyas mor ha tyr
+   hag ol pup tra
+   yn weth ol rag agan les
+   y fue gynys a wyrhes
+   ker maria                     [1200]
+   
+##   IACOBUS MINOR
+!! JACOBUS MINOR
+   ihesu asse yllyn ny
+   lemmyn kymeres mur ioy
+   gethfos the wyr
+   cryst agan prennas yn tyn
+   ef the thos the gous worthy'n [1205]
+   th'agan dysyr
+   
+   SYMON
+   lemmyn leuerys thomas
+   an arluth na thassorghas
+   prof ny ny wra
+##              # ms <ny wra>
+   warbarth ol del y'n guelsyn   [1210]
+   thyragon ow cous worthyn
+   map maria
+   
+##   IUDAS
+!! JUDAS
+   thu'm tybyans wheth ef ny grys
+   bos ihesu cryst dasserghys
+   dre y mur ras                 [1215]
+   yma dout thy'm pur theffry
+   mars ef a'n creys nagusy
+   aberth yn fas
+   
+   ANDREAS
+   the grygy thomas a thue
+   rag gans ov arluth y fue      [1220]
+   kyns lemmyn marthys kerys
+   ha kemmys an gorthyo ef
+   gans mur ioy y tue the'n nef
+   dre y thadder oberys
+   
+   PHILIPPUS
+   me a leuer thywhy why         [1225]
+   ol warbarth don dustuny
+   bos cryst a'n beth dasserghys
+   ny a'n gorthyp certan ef
+   y fue gynen arluth nef
+   ha worthy'n ol a geusys       [1230]
+   
+   [cleophas et socius ambulant in platea]
+   
+   CLEOPHAS
+   a cowyth me re clewas
+   tus ow cous mur a barth bras
+   yn geyth hythew
+   cryst a fue yn grous gorrys
+   yn mes a'n beth dasserghys    [1235]
+   certan ythyw
+   
+   SOCIUS
+   hep dout marsyw guyr henna
+   me a vyn mos alemma
+   pur thystough th'y
+   rak dev yv ha den yn weth     [1240]
+   don agan offryn the'n beth
+   yn fen guren ny
+   
+   CLEOPHAS
+   ru'm leaute dun a thystough
+   namna fue ow colon trogh
+   pan wylys gorre an gu         [1245]
+   yn golon dre'n tenewen
+   ha'n guryn spern war y pen
+   rag ef o pur wyr map du
+   
+   SOCIUS
+   whet yma mur a lostvan
+   yn ov colon ow honan          [1250]
+   ol ragtho ef
+   awos trauyth nynso reys
+   mos the worre the'n mernes
+   map dev a'n nef
+   
+   IHC.
+   bos trest thywhy pendra wher  [1255]
+   ha ponfosyk agas cher
+   may though serrys
+   nagues ioy y ges colon
+   lemyn dar nep marthegyon
+   vs wharfethys                 [1260]
+   
+   CLEOPHAS
+   [tu peregrinus es]
+   a nynsose pryeryn
+   vfereth yv thy's govyn
+   pyth yv an marth a wharfe
+   a vn profus bynyges
+   yn grous ha thyw vregh a les  [1265]
+   squerdys y treys ha'y thywle
+   
+   SOCIUS
+   ha ene dre gallarow
+   woge y vos gurys marow
+   tus yn beth a'n anclethyas
+   rak henna mos a wren th'y     [1270]
+   del yv leuerys thy'nny
+   lemmyn ef re thassorhas
+   
+   IHC.
+   ysough gokky ha fellyon
+   ha teul yn agas colon
+   rak fout crygy                [1275]
+   reys o the cryst mos yn beth
+   ha the pen try deyth yn weth
+   sur dasserghy
+   
+   CLEOPHAS
+   dasserhy sur ef a wruk
+   ha mur a paynys re thuk       [1280]
+   war y corf ker
+   y whylsyn y verthurye
+   hag yn grous pren y squerdye
+   drok agan cher
+   
+   IHC.
+   ragas bo cres ha mur ioy      [1285]
+   pyth yv teulys genouhgh why
+   bos erbyn nos
+   an corf a whyleugh deffry
+   ganso ytheugh yredy
+   sur yn y clos                 [1290]
+   
+   SOCIUS
+   kepar del eson yn weth
+   keffrys yn kueth yn moreth
+   ragtho hep fravs
+   ny iuggyn mones nep pel
+   lemmyn bys yn vn castel       [1295]
+   henwys emmavs
+   
+   IHC.
+   lemmyn me a grys yn ta
+   y fynnaf vy mos pella
+   es ough haneth
+   sav bytygyns cresough why     [1300]
+   an corf-na the thasserghy
+   kyns yv aneth
+   
+   CLEOPHAS
+   tryk gynen a gouwyth ker
+   rak namnag yw gorthuer
+   ha dewethas                   [1305]
+   yma thy'mmo cowyth da
+   mur a ioy sur yn ter-ma
+   a'th tyryvas
+   
+   [hic paratur panis]
+   
+   IHC.
+   ytho gyneugh me a tryk
+   y ges byth ioy na thyfyk      [1310]
+   theugh lauara
+   yssetheugh a termyn ver
+   a-thyrageugh me a ter
+   torth a vara
+   
+   [ostendit eis vulnera]
+   
+   SOCIUS
+   a arluth pen ylyow            [1315]
+   me a wel the wolyow
+   warbarth a les
+   
+   [hic transiet Jhc de cleophas et socius]
+   
+   kettel tersys an bara
+   aswonys cryst a gara
+   mar tha del reys              [1320]
+   
+   [nonne cor nostrum ardens erat nobis in uia]
+   
+   CLEOPHAS
+   a nynsese ynnon ny
+   agan colon ow lesky
+   a ihesu map maria
+   pan wruk an bara terry
+   ha'n scryptor y egyry         [1325]
+   literas nobis in via
+   
+   SOCIUS
+   ese dour ha ponvos bras
+   wharre y gen lowennas
+   kettel thueth er agan pyn
+   ny gen bo whans guariow       [1330]
+   a les ol y wolyow
+   a-thyragon pan guylsyn
+   
+   CLEOPHAS
+   ny a yl bos lowenek
+   guelas ihesu galosek
+   arluth a ras                  [1335]
+   ef yv sur luen a verci
+   nep a wrello y pygy
+   ny fyl a gras
+   
+   SOCIUS
+   ny a fyn leuerel ol
+   yn pow sur the pub den ol     [1340]
+   fatel wrussyn ny keusel
+   orth an arluth ker ihesu
+   ha mettye orto hythu
+   yn forth certan dyougel
+   
+   [cleophas et socius transeunt versus apostolos]
+   
+   [tunc thomas ueniet ad apostolos et dicit petrus]
+   
+   PETRUS
+   thomas lemmyn gueyt crygy     [1345]
+   an arluth the thasserghy
+   rak omma y fue gynen
+   ha kekemmys na'n cresso
+   goef termyn a theffo
+   deuones a brys benen          [1350]
+   
+   THOMAS
+   a pedar ty a'n nahas
+   rak bos y peyn mar ahas
+   thy's ny gressaf
+   ha me a'th peys gas the wov
+   na whyle plontye whethlow     [1355]
+   del y'th pesaf
+   
+##   IOHANNES
+!! JOHANNES
+   pur wyr gow ny leuer ef
+   ihesu cryst map dev a'n nef
+   a thueth yn chy
+   ha'n darasow ol deges         [1360]
+   whet y lauar a fue cres
+   ol thywhy why
+   
+   THOMAS
+   iohan nynsos lemmyn flogh
+   namnag yw ov colon trogh
+   rag agas cous                 [1365]
+   ihesu agan arluth ny
+   ellas ny yl dasserghy
+   sur war nep ovs
+   
+##   IACOBUS MAJOR
+!! JACOBUS MAJOR
+   thomas na vyth dyscrygyk
+   pys gans colon dywysyk        [1370]
+   war cryst a'n nef
+   a'n beth sur ef a syuys
+   rak hythew ny a geusys
+   ol orto ef
+   
+   THOMAS
+   iamys thy'm na wra duon       [1375]
+   rak kueth lour vs y'm colon
+   may thyw pur claf
+   ha whet mur ov galarow
+   bones ow arluth marow
+   ha na'n guelaf                [1380]
+   
+   MATHEUS
+   hythew a tryckes yn tre
+   thyragos ty a'n guelse
+   byw yn poynt da
+   an guyryoneth kyn clewyth
+   awos tra uyth ny'n cregyth    [1385]
+   marth yv henna
+   
+   THOMAS
+   a synte mari mathew
+   mar a colyth ty a tew
+   gans the whethlow
+   gul ges ahanaf a wreth        [1390]
+   marth yv gynef na thues meth
+   ow keusel gow
+   
+   PHILIPPUS
+   thomas gov ef ny geusys
+   saw thy'so y leuerys
+   kepar del yw                  [1395]
+   cryst yv pen gor ha benen
+   yn chem-ma y fue gynen
+   pur wyr hythyw
+   
+   THOMAS
+   a phylip geneugh ny fue
+   mar ny vyth an whethlow due   [1400]
+   yn ages mysk
+   dre pur anger ha duon
+   me a wor lour nep onon
+   sur me a wysk
+   
+##   IACOBUS MINOR
+!! JACOBUS MINOR
+   thomas serry thy's na dal     [1405]
+   cryst arluth merciabal
+   dassorghas sur
+   ahanas marth yv gyne
+   mar a kyllyth the ene
+   nynsos den fur                [1410]
+   
+   THOMAS
+   ov bos serrys nynsyw marth
+   ages bones ol warbarth
+   porrys worth ov duwenhe
+   duon agas lauarow
+   ha hyreth bos cryst marow     [1415]
+   pur wyr a yl ow guethe
+   
+##   BARTHOLO.
+!! BARTHOLOMEUS
+   warlergh cryst mar asos trest
+   lemmyn pur lowenek fest
+   bos ty a yl
+   crys ef the seuel a'n beth    [1420]
+   ha lowene hep thyweth
+   thy'so ny fyl
+   
+   THOMAS
+   fettel allaf vy crygy
+   corf ihesu the thasserghy
+   a wylys a vy marow            [1425]
+   an laddron a'n dyalas
+   dre lyes torment ahas
+   ha dre mur a galarow
+   
+   SYMON
+   aban na dal the gesky
+   dout tan yfarn the'th lesky   [1430]
+   bos dyscregyk
+   ha maga fuer drok deffry
+   mones the hepcor an ioy
+   byth na thyfyk
+   
+   THOMAS
+   a symon my ny'm bues dout     [1435]
+   the leuarow kyns yns stout
+   ny dalons man
+   ihesu the verwel mar scon
+   dre pur hyreth ow colon
+   mart yv na ran                [1440]
+   
+##   IUDA
+!! JUDAS
+   a creys the'n nep a'n guelas
+   yn few aban dassorghas
+   y fue gynen
+   mur fest y gen lowenhas
+   dotho ny thyalwhethas         [1445]
+   gour ha benen
+   
+   THOMAS
+   ken ys wyr a leueryth
+   iude mar a'm evn geryth
+   me a'th pys thymmo gas cres
+   tarosfan a thue deffry        [1450]
+   war tus vas pan vons yn chy
+   h'aga darasow degeys
+   
+   ANDREAS
+   thomas ty yv me a grys
+   an gokye den yn beys
+   ha henna yv drok              [1455]
+   dout mar ny vynnyth crygy
+   bos yn yfarn ow lesky
+   yn tan yn mok
+   
+   THOMAS
+   andrev mur yv the thysyr
+   an dra-na na yl bos guyr      [1460]
+   gul thy'm crygy
+   y vos yn ban dathserghys
+   ha the'n beys arte treylys
+   yssos goky
+   
+   [hic descendit thomas]
+   
+   CLEOPHAS
+   a thomas nynsyw goky          [1465]
+   y thesas ow muskegy
+   yn mes a forth
+   ty a alse sur crygy
+   the'n abesteleth deffry
+   galsos pur worth              [1470]
+   
+   SOCIUS
+   mos a wren ny the'n castel
+   emavs gylwys dyougel
+   leuaraf thy's
+   ha war forth ny a gafas
+   ihesu yv arluth a ras         [1475]
+   lemmyn thy'n crys
+   
+   THOMAS
+   adres pow sur palmoryon
+   y a fyth mur gowygyon
+   hag a leuer the tus gow
+   nynsa y'm colon hytheu        [1480]
+   why the geusel orth ihesu
+   ow arluth whek caradow
+   
+   CLEOPHAS
+   an scryptor thy'n agores
+   pur wyr a thalleth moyses
+   ha lyes profus aral           [1485]
+   me a wor y bones ef
+   arluth a'n bys-ma ha nef
+   cous ganso genen o mal
+   
+   SOCIUS
+   an arluth ihesu guella
+   a-thyragon torth vara         [1490]
+   ef a torras
+   a rak agan lagasow
+   a les ol y wolyow
+   ny a welas
+   
+   THOMAS
+   teweugh rak meth dew adla     [1495]
+   ym-thysquethas ny vynna
+   the plussyon a uelough why
+   a re'n arluth dev a ras
+   yma thy'mmo gorgys bras
+   ahanough yn pur deffry        [1500]
+   
+   CLEOPHAS
+   na gymer hemma gorgys
+   rak an arluth a geusys
+   hythew worthy'n yn geyth splan
+   crys y vones dasserghys
+   ha mar ny wreth ty sylwys     [1505]
+   neffre ny bythyth certan
+   
+   THOMAS
+   nynsyv crygy the beggars
+   hag a fo aga dyllas
+   cloutys gans dyuers pannow
+   nynsough lemmyn gowygyon      [1510]
+   ow mos dres pow flatturyon
+   ow leuerel an nethow
+   
+   SOCIUS
+   galsos lemmyn pur woky
+   rak na fynnyth thy'n crygy
+   a foul thomas                 [1515]
+   galsos mur yn dyscrygyans
+   ny'm bus a'th lauarow whans
+   aga clewas
+   
+   CLEOPHAS
+   thomas ty yv dyscrygyk
+   pur wyr ha mur anfusyk        [1520]
+   ty a yl bos cuthygyk
+   na grys y vos dasserghys
+   yma thy's colon galas
+   na le ys ty the vynnas
+   gase the ves an er bras       [1525]
+   ken ny yllyth both sylwys
+   
+   THOMAS
+   ellas ny won pendra wraf
+   ow arluth rak na'n guelaf
+   neffre ny fynnaf crygy
+   ken ben vyth mar mur duwon    [1530]
+   er na hyndlyf y golon
+   gans ov luef dre y woly
+   
+   [tunc ihesu veniet ad apostolos et dicit]
+   
+   IHC.
+   a abesteleth thyugh cres
+   lemmyn an daras dyges
+   fast warnough why sur kyn o   [1535]
+   me re thuth th'agas myres
+   
+   [januis clausis osculatur eos]
+   
+   y grygyans pup ol guythes
+   puppenagol a wharfo
+   a thomas doro the luef
+   yn woly guynys may fuef       [1540]
+   dre an golon
+   hag yn treys hag yn thyvle
+   crys yn tyn me the prenne
+   an grystonnyon
+   
+   THOMAS
+   a arluth kymer pyte           [1545]
+   dev merci yn cheryte
+   gon lour ty yw
+   me a'th pys thy'm a gafe
+   ny gresyn ty the vewe
+   wheth bys hythew              [1550]
+
+### folio 72r
+   
+   IHC.
+   thomas rak ty the weles
+   ol ow golyow a les
+   yn the golon ty a grys
+   the kekemmys na'm guello
+   hag yn perfyth a'n cresso     [1555]
+   ow len benneth me a pys
+   
+   THOMAS
+   arluth bynyges re by
+   kepar del os luen a gras
+   parys prest yv the vercy
+   the'th seruont sur yn pup plas[1560]
+   byt nyn gevyth fout a ioy
+   nep a yl guelas pe fas
+   pan ello ow corf yn pry
+   guyth vy rak an ioul drok was
+   
+   a thev ysse fuef goky         [1565]
+   pa na vynnan vy crygy
+   a'n beth y vos dasserghys
+   ha me guarnys gans lyes
+   yn cref bras me re peghes
+   arluth geffyans thyworthy's   [1570]
+   
+   IHC.
+   lemmyn ow abesteleth
+   seueugh yn agas crygyans
+   aban of seuys a'n beth
+   gothfetheugh y's byth sylwans
+   ha pup crystyon ol yn weth    [1575]
+   a vynno pygy gyfyans
+   y's kyrhaf gans ow eleth
+   dre vertu a'n spyrys sans
+   
+   ow bennath genogh re bo
+   me a vyn mones thu'm gulas    [1580]
+   ysethe del reys thy'mmo
+   yn nef a thyow thu'm tas
+   the'n crystynnyon ol adro
+   yntrethe gasaf ow ras
+   yn ow gulascor may teffo      [1585]
+   bewnans neffre ioy hep cas
+   
+   [et sic finiatur resurreccio domini]
+   
+   [hic ludit teberius Cesar]
+   
+   [et incipit morte pilati et dicit
+   tiberius cesar]
+   
+##   TYBERIUS CESAR
+!! IMPERATOR
+   hep par of dres tus a'n bys
+   sav bones mur ow thrystys
+##                               # ms <thrystyuys> for _thristuz_? Norris reads <thrystynys>.
+   ow bones claf
+   pyth yv guella the vos gurys  [1590]
+   mar ny allaf bos yagheys
+   ny won pyth wraf
+   
+   CONSULTOR
+   arluth ow cusyl yv sadt
+   dan veneugh why the pyladt
+   gans messeger                 [1595]
+   may tanfonno thyugh yn scon
+   cryst myghtern a'n yethewon
+   kettuth ha'n ger
+   ha henna saw agas gura
+   a pup cleues yn bys-ma        [1600]
+   del yv duv pur
+   
+   ef yv arluth nef ha bys
+   ganso ty afyth sauwyys
+   pur wyr yn sur
+   
+   IMPERATOR
+   ow bennath thy's conseler     [1605]
+   lygth of fout ow messyger
+   ow seruont da
+   reys yv thy's mones nygys
+   thy'mmo vy a thesempys
+   pols a lemma                  [1610]
+
+### folio 72v
+   
+   NUNCIUS
+   lord tibery by my hovd
+##                             # ms <houd>? corrected to <hovd>.
+   a wette vy lygth of foud
+   theugh dyuythys
+   a hanaf pendra vynny
+   lauar thy'mmo vy deffry       [1615]
+   a thesempys
+   
+   IMPERATOR
+   ke bys yn pilat yn scon
+   cryst myghtern a'n yethewon
+   yv dev hep par
+   pyse thy'm ma'n danfonno     [1620]
+   thy worthyf gras ma'n geffo
+   thotho lauar
+   
+   NUNCIUS
+   a arluth ker . sur hep danger
+   guraf the nygys
+   ny strechyaf pel . genes farwel[1625]
+   leuaraf thy's
+   
+   [ad pilatum dicit]
+   
+   syre pilat lowene thy's
+##                          # <syre> might be read <syr>, the <e> is a final flourish to the <r>.
+   genef yth os dynerghys
+   gans cesar an emperour
+   thotho gueyt may tanfenny     [1630]
+   cryst bys yn daras y chy
+   dres pup methek del yv flour
+   
+   PILATUS
+   messeger me a'th pys ke
+   a berth yn pow the wandre
+   vn pols byan                  [1635]
+   rak mar asugy yn wlas
+   me avyn mos the vyras
+   sur ow honan
+   
+   [et tunc nuncius et iet et spaciabit in
+   platea parumper et ei obuiabit uernona]
+   
+   VERNONA
+   den yonk whek guandre a wreth
+   me a'th pys pyv a whylyth     [1640]
+   thy'mmo lauar
+   
+   NUNCIUS
+   pandra yv henna thyso
+   guelhee ny yllyth thymmo
+##                        # The second <e> added later to ms.
+   pur wyr hep mar
+   an emp'rour ren danfonas      [1645]
+##                        # ms <emperour>; <ren> for <rem>?
+   a whylas yn pow gueras
+   thotho yma cleues bras
+   nygyf methek a'n sawya
+   plema ihesu the pygy
+   a leuerel thymmo vy          [1650]
+   ef a'n sawse yn teffry
+   a pup dysseys yn bys-ma
+   
+   VERNONA
+   ihesu a whylyth deffry
+   marow yw gallas yn pry
+   nep o agan arluth ny          [1655]
+   ha pylat a'n dyallas
+   saw an corf-na byw a pe
+   an emperour ef sawse
+   maga tek bythqueth del fue
+   kynfe y cleues mar vras      [1660]
+
+### folio 73r
+   
+   NUNCIUS
+   ellas vyth pan thueyth a dre
+   an keth corf-na byw a pe
+   ow arluth a vye saw
+   rak bos ow arluth mar claf
+   a thew ple tof na ple thaf   [1665]
+##                             # ms <pley thaf>
+   ny won ple toulaf ow paw
+   
+   VERNONA
+   my onan a'y vynynes
+   hag a the'n emp'rour gynes
+##                            # ms <emperour>
+   ha sur yn y hanow ef
+   mythygyeth a vyth gurys       [1670]
+   mayfo yagh a pup cleues
+   mar crys y vos dev a'n nef
+   
+   NUNCIUS
+   lowen henna me a vyn
+   ha thu'm arluth fystynyn
+   mar a kyl bones yagheys       [1675]
+   ty a fyth the lyfreson
+   hag an our the weryson
+   neffre the voth a vyth gurys
+   syre arluth bytheugh attes
+##                             # <syre> could also be read as <syr>
+   an keth profus a whylyes      [1680]
+   gurys yv marow
+   sav benen gynef yma
+   dretho the sawye a wra
+   a'th galarow
+   
+   IMPERATOR
+   messeger ny thebbraf bos      [1685]
+##                           # <-er> written as a final anti-clockwise flourish
+   bones marow an profos
+##                           # <pro-> The loop of the <p> is continued into a <c>-like curve to the left of the descender
+   a alse sur ow yaghe
+   a benen pendra keusyth
+   lauar thy'm mar a kyllyth
+   yn nep poynt ov lowenhe       [1690]
+   
+   VERNONA
+   crys yn cryst del y'th coscaf
+   form a'y fas a thysquethaf
+   thy'm del y'n ros yn lyen
+   ha mar scon del y'n guylly
+   ef a'th saw hep ken yly       [1695]
+   ol a'th cleues yn tyen
+   
+   IMPERATOR
+   py hanow os benen vas
+   ty a yl cafus mur gras
+   the lauarow mar syns guyr
+   ha ty afyth rewardys         [1700]
+   hag arluthes a vyth gurys
+   yn certan war mur a tyr
+   
+   VERNONA
+   ow hanow yv vernona
+   fas ihesu gynef yma
+   yn hyuelep gurys a'y whys     [1705]
+   ha kekemmys a'n guello
+   hag ynno ef a grysso
+   bos yaghes thotho yv reys
+   yn cryst reys yw thy's crygy
+   y vos ef arluth thy'nny       [1710]
+   ha sylwyans the tus a'n bys
+   ha sawys sur ty afyth
+   a'th cleues mar a mynnyth
+   a luen colon ty a'n pys
+
+### folio 73v
+   
+   IMPERATOR
+   me a'n pys a luen golon       [1715]
+   yeghes thy'mmo a thanfon
+   kepar del os dev guyryon
+   ha mur the ras
+   nynsus arluth war an beys
+   saw ty pur wyr me a greys     [1720]
+   gura gueres thy'm a ver spys
+   del os sylwyas
+   
+   IMPERATOR
+   dyswethe thy'm me a'th pys
+   bos tra an par-na guelys
+   yv thy'mmo vy mur a varth     [1725]
+   dus nes thy'm del y'm kerry
+   rag keusel moy yn teffry
+   worthy's gy kyngys dybarth
+   
+   VERNONA
+   myr worto hag a ver spys
+   a'th trok ty a vyth yagheys   [1730]
+   pur quyk ha schaf
+   crys y vones dev a'n nef
+   ha sylwadur pup enef
+   thy's lauaraf
+   
+   [tunc demonstrabit ei sudarium et ipse
+   genuflectit dicens]
+   
+   IMPERATOR
+   a ihesu luen a pyte           [1735]
+   the'th fath ker mennaf amme
+   
+   [osculatur sudarium]
+   
+   trest a'm bus ty thu'm sawye
+   ol a'm cleues
+   a arluth cryst nef ha bys
+   gorthyans thy'so gy pup prys  [1740]
+   
+   [sanatur a lepra]
+   
+   lemmyn yth of vy yaghys
+   a pup dyses
+   arluth bynyges reby
+   nep o agan arluth ny
+   gurys yw marow                [1745]
+   nynsus arluth dresto ef
+   na nyl yn nor nag yn nef
+   dev hep parow
+   
+   VERNONA
+   lemmyn yagheys a ban os
+   yn ta ty a yl gothfos         [1750]
+   nageus dev vyth lemmyn ef
+   pilat a'n lathas hep fal
+   warnotho telywgh dyal
+   rak ef o cryst myghtern nef
+##                               # <cry> the usual abbreviation
+   
+   IMPERATOR
+   vernona whek me a wra         [1755]
+   rag dretho ef yn poynt ta
+   a pup cleues ol my yw
+   mar a sugy yn bys-ma
+   pur wyr the'n mernans ef a
+   hag ef ha kemmys a'n syw      [1760]
+
+### folio 74r
+
+   tormentors thy'mmo vy deugh
+##                              # <vy> pt. erased in ms. <tormentores> could be read.
+   py yn sur vyngeans hag eugh
+   why agas byth kyns dos haf
+   yma thy'mmo mur duon
+   ha cothys war ow colon        [1765]
+   ny won vyth ol pendra wraf
+   
+##   I TORTOR
+!! TORTOR I
+   me lord anon her we buth
+   agas clewas o pur vth
+   crye mar vras
+   lemmyn worth agan gelwel      [1770]
+   rak ovn desefsen merwel
+   me a crennas
+   
+   IMPERATOR
+   eugh whyleugh thy'mmo pilat
+   gothfetheugh mana veugh bad
+   tus ogh a prys                [1775]
+   drewhe thy'mmo ma'n guyllyf
+   marow vyth pan y'n kyffyf
+   a thesempys
+   
+##   II TORTOR
+!! TORTOR II
+   dun ahanan ha touth da
+   the whyles an keth guas-na    [1780]
+   plos casadow
+   drok den afue sur bythqueth
+   a wul drok ny'n gefe meth
+   yn y thythow
+   
+##   III TORTOR
+!! TORTOR III
+   arluth ker hag a ver spys     [1785]
+   thywhy ef a vyth kerghys
+   kynfe mar cref
+   me ny sparyaf a wos tra
+   bys omma ny a'n dora
+   worthy'n ny sef               [1790]
+   
+##   IV TORTOR
+!! TORTOR IV
+   ty pilat thu'm arluth dues
+   kyn whrylly vyth cous a drues
+   thy'nny lemmyn
+   genen ny certan ty a
+   yn spyt the vap the thama      [1795]
+   a fals iaudyn
+   
+   PILATUS
+   geneugh why mos ny drynyaf
+   thu'm arluth lowen yth af
+   tyber cesar
+   gentyl yv the pup huny        [1800]
+   ioy ov colon yn teffry
+   mur me a'n car
+   
+##   I TORTOR
+!! TORTOR I
+   arluth ot omme an guas
+   del gleseugh a thy alhas
+##                            # ms corrected from <allas>.
+   an profus ihesus dampnyas     [1805]
+   the vos gorrys yn grous pren
+   hag ynhy ef a verwys
+   war y corf y who thefys
+   yn certan mur a peynys
+   rak sawye lynnyeth map den    [1810]
+   
+### folio 74v
+   
+   IMPERATOR
+   a pylat wolcom os fest
+   rak me a'th car dev yn test
+   pan y'th welaf
+   del leuaraf yn tor-ma
+   gul drok thy'so ny vynna      [1815]
+   byth ny garaf
+
+   [descendit Imperator]
+   
+   PILATUS
+   a arluth thywhy mur gras
+   wortheugh why sur daryuas
+   mur me a car
+   war an beys nythus perow      [1820]
+##                           # <nyth> something <3>? has been erased and a thorn written in. <perow> for <parow> with a crossed <p>.
+   gentyl os a'th lauarow
+   den os hep par
+   
+##   II TORTOR
+!! TORTOR II
+   yv the henna y fuen ny
+   ow kerghas an guas thywhy
+   sur mar vskys                 [1825]
+   ha'y vones gurys mar attes
+   ty was dvs gynen yn mes
+##                           # ms corrected from <dus>?
+   a the sempys
+   
+   [tenent eum]
+   
+##   III TORTOR
+!! TORTOR III
+   yn mes gynen ty a thue
+   rak thy'so gy marth ywe       [1830]
+   lauar thy'n marsos huder
+   drok na yl denvyth the wul
+   na nyl the weyth na the sul
+   gorthyp lemmyn hep a wher
+   
+   [dimittet eum et recedit non procul]
+   
+##   IV TORTOR
+!! TORTOR IV
+   me a grys a lauassen          [1835]
+   scon war ow brevth y'n latthen
+   rak by my huk
+   me a leuer theugh an cas
+   an corf hepar reno thas
+   ef re thuswruk                [1840]
+   
+   [hic tortores absentant se parumper]
+   
+   IMPERATOR
+   out out out harow harow
+   mar ny vyth pilat marow
+   the gyns ny won pyth a wraf
+   ef a'n pren an casadow
+   ow colon rak galarow          [1845]
+   yn certan gallas pur claf
+   pan thueth yn rak an plosek
+   ef a geusys lowenek
+   thy'm gruk plekgye
+   yn y worthyp ny gyfyn         [1850]
+   fout vyth ol yn nep termyn
+   ken th'y lathe
+   
+   me a grys bones an guas
+   pystryour ha hudor bras
+   ny'n gefes cowyth yn wlas     [1855]
+   war ow ene
+   lauar thy'mmo vernona
+   pyth yv an gusyl wella
+   del y'm kerry yn tor-ma
+   scon hep lettye               [1860]
+
+### folio 75r
+   
+   VERNONA
+   ken teffo y ges golok
+   thotho ny yllough gul drok
+   sur me a grys
+   hedre vo yn y gerghen
+   queth ihesu eth yn grous pren [1865]
+   nyfyth dyswrys
+   honna yv y bous nessa
+   ha wheth greugh y thry omma
+   arte thywhy
+   ha dyscowy the worto          [1870]
+   py ken ny wreugh drok thotho
+   bys vynary
+   
+   IMPERATOR
+   ow bennath thy's vernona
+   a ban ywe yn della
+   me a vyn caffus an queth      [1875]
+   tormentors deugh why yn scon
+##                          # ms <tormentors deugh yn scon>.
+   may huth thaho ow colon
+   agan guryans na'm bo meth
+   
+##   I TORTOR
+!! TORTOR I
+   arluth otte ny genough
+   del farsyn yn ta menough      [1880]
+   yn agas soth
+   lauar thy'nny both the vrys
+   ha ny a'n gura ef vskys
+   kepar del goth
+   
+   IMPERATOR
+   whet kerghough thy'mmo pilat  [1885]
+   yn y geuer del fuef badt
+   y fuf tollys
+   rak ef yv certan drok was
+   war ow fay mur me a'n cas
+   an plos fleryys               [1890]
+   
+##   II TORTOR
+!! TORTOR II
+   me a'n kerg theugh hep hokye
+   mar leuesyn y knoukye
+   ol the vrewyon
+   y wren thotho ef hep mar
+   sav nep a'n guello a'n car    [1895]
+   yn y colon
+   
+##   III TORTOR
+!! TORTOR III
+   kyn y'n carra vyth mar veur
+   a wos y lathe ny'm duer
+   neffre ny gan ef yn cur
+   gans y ganow                  [1900]
+   ottefe lemmyn keffys
+   dus thu'm arluth dyssempys
+   ha scon ty afyth iuggys
+   the peyn garow
+   
+   PILATUS
+   thotho ythaf lowenek          [1905]
+   del yv arluth gallosek
+   ha den ryal
+   yn pur wyr ha mur y ras
+   emperour war lyes gulas
+   ef yv hep fal                 [1910]
+
+### folio 75v
+   
+##   IV TORTOR
+!! TORTOR IV
+   arluth worth an guas myrough
+   me a grys pan y'n guyllough
+   thy ragogh why
+   thotho ny ylleugh gul drok
+   hedre ve y gys golok          [1915]
+   yn pur deffry
+   
+   IMPERATOR
+   tormentors ens pup the tre
+   hag aspyough yn pup le
+   mar keus denuyth er ow fyn
+   lemmyn pilat ievody           [1920]
+   cafus an bovs-na hep gvry
+   vs y'th kerghyn me a vyn
+   
+   PILATUS
+   arluth why yv a thy gre
+   an bous ha my thy guyske
+   yn sur ragough hy ny wra      [1925]
+   na'y dysyrye nynsyw thy's
+   nynsyv gulan lemmyn mostys
+   an guyryoneth lauara
+   nyfue golhys sola theth
+   byth nynsyw ragos ru'm feyth  [1930]
+   the arluth a velos gy
+   the pygy me a vynse
+   na wrylly y dysyrye
+   yn tor-ma thy worthyf vy
+   
+   IMPERATOR
+   pilat gynef nynsyw meth       [1935]
+   awos guyske sur an queth
+   afue yn kerghyn ihesu
+   rak thythy yma thy'm whans
+   y praythe dysky dywhans
+   hep na moy cous thy'm hythev  [1940]
+##                               # The final <-v> now hidden in the binding.
+   
+   PILATUS
+   arluth lemmyn a's dysken
+   dyragough noth y fyen
+   ny's bye worshyp yn cas
+   ha henna nynsyv onour
+   rak myghtern nag emperour     [1945]
+   onest nyvyth ow guelas
+##                          # <nyvt> with superscript <t> is a correction to the ms.
+   
+   VERNONA
+   arluth why a hergh thotho
+   an queth dysky thyworto
+   hep na moy ger
+   rak hedre vyugh ow pleghye    [1950]
+   thywhy byth ny's dysk neffre
+   yn nep maner
+   
+   IMPERATOR
+   dysk an queth a thy sempys
+   rag nafella nyfyth spys
+   a wos trauyth                 [1955]
+   na whyla thy'm na moy covs
+   me a vyn cawys an povs
+   kynfy mar pyth
+
+### folio 76r
+   
+   PILATUS
+   tru y disky a ban reys
+   a lemma rag ny'm byth creys    [1960]
+   gon the wyr lour
+   ny welaf vy yth hallan
+   sawye ow bewnans certan
+   mars dre mur our
+   
+   IMPERATOR
+   out warnas ty harlot was      [1965]
+   ihesu ty a thy allas
+   ow arluth ker
+   hetheugh thy'mmo ow klethe
+   rak may hyllyf y lathe
+   kettoth ha'n ger              [1970]
+   
+   VERNONA
+   arluth henna why ny wreugh
+   an hagkre mernans whyleugh
+   ma'n ieffo ef
+   rak an harlot a thyswruk
+   an keth map ol a gan gruk      [1975]
+   mor nor h'an nef
+   ty a wra y worre scon
+   a the sempys yn pryson
+   an casadow
+   bys may hallo bos iuggys      [1980]
+   ha dre lagha bos dampnys
+   the vos marow
+   
+   IMPERATOR
+   ytho yn pryson ef a
+##                      # <pry> abbreviation
+   hager vernans an par-na
+   ef a'n gefyth                 [1985]
+   me a ordyn sur ragtho
+   cales peynys may geffo
+   ny'n saw denvyth
+   how ty geyler dus yn rak
+   ha mar ny thueth me a'th tak  [1990]
+   hag a ver spys
+   ty ha'th vaw nastrech lemmyn
+   reys yv gul ow gorhemmyn
+   a the sempys
+   
+   CARCERATOR
+   arluth otte ny parys          [1995]
+   pendra vynnyth the vos gurys
+   lauar thy'mmo
+   ha ny a'n gura thy's wharre
+   a thyssempys hep lettye
+   pynag afo                    [2000]
+   
+   IMPERATOR
+   am keth guas-ma gorreugh why
+   yn drok pryson the peddry
+   golow na wella deffry
+   ef yv huder
+   an haccre mernans a vo        [2005]
+   me a vyn ordyne thotho
+   ihesu alathas nep o
+   thy'n sylwader
+
+### folio 76v
+   
+   GARCON
+   arluth henna me a wra
+   a'n gor yn pyt y sella         [2010]
+   yn mysk pryues
+##                      # <pry> abbreviation
+   par ma'n geffo mur a pyn
+   guas iolyf yv whyp an tyn
+   a th'y seves
+   
+   CARCERATOR
+   kymer toule yn pryson        [2015]
+##                        # <pry> abbreviation
+   na sparye kyn wrello son
+   ef yv pen cok
+   na brakgye rak ef a sur
+   ny skap kynfo vyth mar fur
+   na'n geffo drok               [2020]
+   
+   GARCON
+   lemmyn omma ty a dryk
+   bys pan pottro ol the gyk
+   juggys may fey
+##                           # <i> corrected to <j> in ms.
+   ty avyth mernans calas
+   yn ta ty a'n dyndylas         [2025]
+   gueth os ys ky
+   
+   PILATUS
+   leuereugh er agas fyth
+   thy'mmo pan vernans a'm-byth
+   vs thy'm ordnys
+   gon guyr y fethaf marow       [2030]
+   mur yv ow fyenasow
+   yth of cuthys
+   
+   CARCERATOR
+   an haccre mernans a vo
+   war ow fay ty a vetho
+   iuggys yv thy's               [2035]
+   yn bys-ma na tryst na moy
+   cot yv the thythyow the gy
+   nahen na grys
+   
+   PILATUS
+   worth henna whet me a wyth
+##                            # <worth> with the <th> as superscript
+   yn beys na allo den vyth      [2040]
+   gul hager vernans thy'mmo
+   rak ow colon ow honan
+   gans ov hollan me a wan
+   ogh ellas and welawo
+   
+   IMPERATOR
+   vernona del y'm kerry         [2045]
+   me a'th pys may leuery
+   pan vernans a vye guel
+   the wruthyl the'n harlot was
+   ma'n geffo peyn mar ahas
+   ha dre spyt ef the verwel     [2050]
+   
+   VERNONA
+   a saye ow arluth ker
+   govynneugh orth an geiler
+   kynsol pan pleyt y niefe
+   yn guyryoneth me a grys
+   kynyuer peyn vs yn beys       [2055]
+   thotho byny vye re
+   
+   IMPERATOR
+   geiler thow schalt be wel gladt
+##                          # <schalt> superscript <t> added as a correction.
+   pa han pleyt yma pilat
+   yn le may ma
+   ha pan semlant vs ganso       [2060]
+   lauar ol an guyr thy'mmo
+   fatel mefa
+
+### folio 77r
+   
+   CARCERATOR
+   arluth pylat yv marow
+   dre payn ha dre galarow
+   y honan yth ym wanas          [2065]
+   gans y gollan marthys scon
+   yth em-wyskys yn golon
+   hager vernans a whylas
+   
+   IMPERATOR
+   ihesu bynyges reby
+   the'n harlot panfynsys ry    [2070]
+   an hakcre mernans yn beys
+   rak hacre mernans certan
+   eys em-lathe y honan
+   ny gaffe den my a grys
+   ty geyler scon ty ha'th vaw   [2075]
+   kymereugh eran thyv baw
+   ha gorreugh ef yn dor dovn
+   rag me a grys fest yn ta
+##                           # <a> omitted in ms.
+   lyes map den yn bys-ma
+   rak y gorf an geuyth ovn      [2080]
+   
+   CARCERATOR
+   whyp an tyn kymer an pen
+   er an treys me a'n kylden
+   aberth yn beyth
+   
+   GARCON
+   mester my a wra ru'm guen
+   vyngens re'n geffo amen       [2085]
+   ha drok thyweyth
+   
+   [et tunc proicietur extra terram]
+   
+   a mester whek by my soul
+   war ow fay hemma yv deaul
+   ymskemunys
+   yn mes a'n dor y lammas       [2090]
+   rak pur ovn me re vrammas
+   lauaraf thy's
+   
+##   CARC.
+!! CARCERATOR
+   a'n beth pan thueth ha lamme
+   y fyys yn vn vramme
+   ovn kemerys                   [2095]
+   del leuaraf pen bronnen
+   rak ny alse sur ym guen
+   del o degys
+   
+   GARCON
+   pur harth dun thotho wharre
+   gorryn ef yn beth arte        [2100]
+   du yw y lyw
+   me a grys ynno y sef
+   mar syw a barth dev a nef
+   bo ken deaul yw
+   
+##   CARC.
+!! CARCERATOR
+   ha nynsyw ef aperth dev     [2105]
+##                           # <per> written with a crossed <p>, leg. <par>?
+   bysy vye ol an blu
+   rak y wythe
+   th'y worre a ber yn beth
+   yn dor gorryn ef yn weth
+   scon hep lettye               [2110]
+   
+   [et tunc ponent eum in terra et
+   proicietur iterato sursum]
+   
+   GARCON.
+   war ow fey ef yw deaul cref
+   yn dan dor vn tuch ny sef
+   tebel den yw
+   certan dev na syns ny'n car
+   dun the desta the cesar       [2115]
+   scon agan deuv
+
+### folio 77v
+   
+##   CARC.
+!! CARCERATOR
+   syre cesar arluth huhel
+##                          # <syre> could be read <syr>
+   an guas byth ny vyn seuel
+   yn dan en dor
+   
+   IMPERATOR
+   me a'n navow dyougel          [2120]
+   yth ofe deaul kyns merwel
+   a berth yn nor
+   
+   GARCON
+   yn beyth pan y'n gorsyn ny
+   wharre y tueth deulugy
+   warnan cothas                 [2125]
+   hag a'n teul ef scon yn ban
+   ha'n dor war notho a ran
+   euth y clewas
+   
+   IMPERATOR
+   a out out out pendra wraf
+   orth en ioul mar ny gaffaf    [2130]
+   toul war nep cor
+   mars cryst a weres deffry
+   ef a lath gans fleyryugy
+   ol ow glascor
+   
+   VERNONA
+   arluth yn trok a horn cref    [2135]
+   yn dour tyber ef a sef
+   er y anfevs
+   hag a le-na yn certan
+   vynytha nythue yn ban
+   bys yn deth brevs             [2140]
+   
+   IMPERATOR
+   a uernona war ow feyth
+   vn gusyl da ha perfeyth
+   thymm ty a ros
+##                  # ms <thymm> is <thym> with a macron (added later?) over the <y>.
+   tormontors com hyder snel
+   nam na gessof ow merwel        [2145]
+   orth as gortos
+##                    # ms <orth agas gortos> with an initial <lemyn> added as a later (mis)correction.
+   
+##   I TORTOR
+!! TORTOR I
+   arluth ow tevos aspayn
+   y thegen yn cres almayn
+   orth vn prys ly
+   yn pur wyr panfuf gylwys     [2150]
+   lauar the voth me a'th pys
+   yn scon thy'nny
+   
+##   II TORTOR
+!! TORTOR II
+   leuereugh thy'nny an ken
+   a gas bus the wul genen
+   nynson tus wast               [2155]
+   mar sus kuth war the colon
+   the voth a vyth gurys yn scon
+   genen yn hast
+   
+   IMPERATOR
+   kemereugh corf a'n drok was
+   vgy ow flerye gans blas       [2160]
+   yw myligys
+   teuleugh ef yn trok a horn
+   yn dour tyber yn nep corn
+   may fo buthys
+   
+##   III TORTOR
+!! TORTOR III
+   wharre an emscumunys          [2165]
+   yn trok horn y fyth teulys
+   yn tyber yn dour pur dovn
+   yn vr-na ny reys thy'nny
+   na den vyth ol yn teffry
+   caffus neffre na moy ovn      [2170]
+
+### folio 78r
+   
+##   IV TORTOR
+!! TORTOR IV
+   corf mylyges mur ywe
+   ny vyn an dour y gase
+   a berueth ynno hep wov
+   yma ganso devlugy
+   tan a'n ioul mur th'y lysky   [2175]
+   na theffo na moy yn pow
+   
+##   I TORTOR
+!! TORTOR I
+   ow ottomma an trok horn
+   teuleugh why a gas dyw dorn
+   war an logol
+##                   # leg. <logel>?
+   ynno an corf mylyges          [2180]
+   the'n dour ganso ny a reys
+   a vel tus fol
+##                  # leg. <fel>?
+   
+##   II TORTOR
+!! TORTOR II
+   ot en corf yn trok gorrys
+   degeugh e a thesempys
+   the corn a'n dour             [2185]
+   drok genygyk ef a fue
+##                         # _drog-genyzik_ 'ill-begotten'.
+   byth ny sparyaf y tenne
+   sur a wos our
+   
+##   III TORTOR
+!! TORTOR III
+   an ioul re'n dogo th'y plath
+##                               # In <thy> a <3>? corrected to a thorn.  
+   en corf emscumunys whath      [2190]
+   ef yw pur wyr
+   dun ganso dywhans touth bras
+   rak y worre yn dour glas
+   yv ow dysyr
+   
+##   IV TORTOR
+!! TORTOR IV
+   ke ty pilat mylyges           [2195]
+   ena yn dour the woles
+   certan ty a
+   ha genes mollat pup plu
+   drefen fals brugy map dev
+   map maria                     [2200]
+   
+   [et tunc proicietur corpus in aquam]
+   
+   VIATOR
+   guel yv thy'mmo vy mayfe
+   mos the wolhy ow dule
+   a thesempes
+   me a vyn omma yn dour
+   may fons y guyn ha glan lour  [2205]
+   a vostethes
+   [et lauabit manus et statim morietur]
+   
+   ellas pan fema gynys
+   ancow sur yw dyuythys
+   scon thy'mmo vy
+   ny'm bus bywe na fella        [2210]
+   an dour rewruk thy'm henna
+   yn pur deffry
+   
+   NUNCIUS
+   arlut whyleugh cusyl da
+   den dreys dour tyber nynsa
+   yn certan navo marow         [2215]
+   dyswul lyes corf a wra
+   gorreugh pilat a le-na
+   a wos ihesu the ken pow
+   
+   IMPERATOR
+   out out out pendra wrama
+   marnes drethos vernona        [2220]
+   ny'm byth gueres
+   an corf yv emscumunys
+   ro thy'm cusyl dysempys
+   may beu vy cres
+
+### folio 78v
+   
+   VERNONA
+   neffre yn dour hedre vo       [2225]
+   ny thue dresto na varwo
+   gour gruek na best
+   ef a fue drok corf yn bys
+   me a'th cusyl dysempys
+   byth na vy trest              [2230]
+   a wos cost arhans nag our
+   greugh y tenne mes a'n dour
+   gorreugh ef yn schath then mor
+##                               # The final <or> lost in binding, from Norris.
+   hy frenne byth nynsyw bern
+   an schath a'n dek the yfern   [2235]
+   my lord y schal be ther for
+   
+   IMPERATOR
+   ow bennath thy's uernona
+   ha bennath map maria
+   ow arluth ker
+   tormontors duegh thym yn scon  [2240]
+##                          # <yn> erased in ms leaving a gap.
+   par ma allo ow colon
+   guella ow cher
+   a pur harloth ple fugh why
+   pur vth o clewas an cry
+   genef orth agas gylwel        [2245]
+   yma thy'mmo vy duon
+   gyllys lemmyn y'm colon
+   yn della dev thu'm sylwel
+   
+##   I TORTOR
+!! TORTOR I
+   my ny garaf streche pel
+   na nyl the wyth na the sul    [2250]
+   fysteneugh ow leuerel
+   pendra reys thy'n the wuthul
+   
+   IMPERATOR
+   reys yw theugh mones certan
+   the tenne pilat yn ban
+   yn mes a'n dour               [2255]
+   gorreugh ef yn schath the'n mor
+   and y schal yf yow ther for
+   try mylyon our
+   
+##   II TORTOR
+!! TORTOR II
+   wharre ny a'n ten yn ban
+   mur venions ha calas ran      [2260]
+   ef a whylas
+   ihesu cryst myghtern a nef
+   ha falslych y'n iuggyas ef
+   gans cam pur vras
+   
+##   III TORTOR
+!! TORTOR III
+   yn ban tynnyn ef a'n dour     [2265]
+   ha dyn dylyn a gan our
+   a cowethe
+   teulyn grabel war notho
+   scherp ha dal genne ynno
+   byth na schapye               [2270]
+   
+##   IV TORTOR
+!! TORTOR IV
+   me re teulys dew grabel
+   yn mes a'n dour an tebel
+   corf a thue sur
+   kynfo mar pos a vel men
+   hallyens pup den ol yn fen    [2275]
+   betheugh why fur
+   
+##   I TORTOR
+!! TORTOR I
+   re'n kergho an dewolow
+   otte an corf casadow
+   ow tos y ban
+   me a leuer theugh yn scon     [2280]
+   tynnyn ef yn ban war ton
+   map a'n ievan
+
+### folio 79r
+   
+##   II TORTOR
+!! TORTOR II
+   vynytha hep na moy let
+   an corf yn schath ny a set
+   a thesempys                   [2285]
+   gureugh y herthye aperfeth
+   gans mollat dev ha'y eleth
+   ha syns keffrys
+   
+##   III TORTOR
+!! TORTOR III
+   otte aperfeth gorrys
+   eugh tenneugh a thysempys     [2290]
+   hy goyl yn ban
+##                     # Initial <h> squeezed into margin.
+   may hallo mos gans an guyns
+   ha ganso mollath a'n syns
+   ha dev a van
+   
+##   IV TORTOR
+!! TORTOR IV
+   lemmyn hertheugh hy the ves   [2295]
+   me a glew vn hager noyes
+   yn carn yn mor er y byn
+   yma dour ow mos garow
+   thu'm gothfos mur dewolow
+   rak y kerghes ef lemmyn       [2300]
+
+##   I TORTOR
+!! TORTOR I
+   fystynyn fast th'agan pow
+   rak deuones dewolow
+   the'n teroge
+   y mons ow crye huthyk
+   dun yn kergh rak dout pystyk  [2305]
+   scon hep lettye
+   
+   LUCIFER.
+   ow dewolow duegh gynef
+   war parth ol me agas peys
+   the kerghas gans y enef
+   corf pylat gans mur a greys   [2310]
+   yn tan whyflyn ef a sef
+   ha paynys neffre a pys
+   ha'y gan avyth ogh goef
+   the'n bys-ma panfue genys
+   
+##   BELSEBUK
+!! BELSEBUC
+   an corf-ma mylyges yw         [2315]
+   ytho ef a goth thy'nny
+   the vos yn dor nynsyw guyw
+   nag yn dour nag yn hyly
+   
+##   SATHANAS
+!! SATANAS
+   y dour tyber ef a fue
+##                          # leg. <yn>, <tyber> might be read as <tybere>.
+   yn geler horn gorrys dovn     [2320]
+   ha myl den ef a wruk due
+##                          # <a> missing in ms.
+   yn dour-na rak vth hag ovn
+   
+##   BELSEBUK
+!! BELSEBUC
+   gorhel vyth ny tremene
+   an for-na nafe buthys
+   ny thyndylas lowene           [2325]
+   lemmyn yn tan bos cuthys
+   
+   LUCIFER
+   a'n dour yfue drehevys
+   ha dreys arte the'n tyr mur
+   hag yn gorhel bras gorrys
+   gynen may teffo the'n lur     [2330]
+   
+##   SATHANAS
+!! SATANAS
+   gool ha gvern thotho ordnys
+##                            # <gool>? and <gvern(n)> written unclearly over erasures.
+   may thelle yn mes a'n wlas
+   the vn carn yfue teulys
+   par may cothas yn ow bras
+   
+##   BELSEBUK
+!! BELSEBUC
+   an carna a ygoras             [2335]
+##                    # ms <ay goras>
+   del o destnys thotho ef
+   rak pur wyr yth hep coras
+   dre y ober glascor nef
+   eno ny a'n receuas
+   vthyk yw clewas y lef         [2340]
+   tan ha mok ha pocvan bras
+   yn carna neffre y sef
+   
+   LUCIFER
+   pocvan pup vr ha rynny
+   skrynva vras a'n dewolow
+   ef a'n gevyth genen ny        [2345]
+   a pup drok maner ponow
+   
+##   SATHANAS
+!! SATANAS
+   ha ty corf bras mylyges
+   the yfarn gans the enef
+   gynen y fythyth tynnes
+   the cane avyth goef          [2350]
+
+### folio 79v
+   
+##   BELSEBUK
+!! BELSEBUC
+   lemmyn pup ol settyes dorn
+   yn keth schath ma th'y tenne
+   ha ty tulfryk pen pusorn
+   dalleth thy'nny ny cane
+   
+##   TULFRYK
+!! TULFRYC
+   ye regymmy tol ow guen       [2355]
+   rak yn mes yma y pen
+   sur pur hyr a ves thu'm tyn
+##                             # <hyr> might be read as <hyre>.
+   belsebuk ha sattanas
+   kenough why faborden bras
+   ha me a can trebyl fyn        [2360]
+   
+   [et sic finitur mors pilati]
+   
+   [et incipit ascencio Xti in celum et dicit petrus]
+   
+   PETRUS
+   arluth ker fattel vyth dy'n
+   marseth arte thyworthy'n
+   drok yw gyne
+   vynytha er na whyllyn
+   a trauyth ny gemeryn          [2365]
+   nep lowene
+   
+   IHC.
+   a pedar byth da the cher
+   faste the gy the vreder
+   yn lel grygyans
+   me a athyow thu'm tas         [2370]
+   yn confort thyugh my a as
+   an spyrys sans
+   
+   PHILIPPUS
+   arluth ker dre the vur ras
+   dyswe thy'nny ny an tas
+   ha henna yw lour thy'nny      [2375]
+   rak ty yw dev gallogek
+   the pup a vo othommek
+   warnos a pysse mercy
+   
+   IHC.
+   a phelyp lous os y'th fyth
+   ha ty gynef solla-thyth       [2380]
+   gothfythy grygy yn fas
+   me a leuer theugh deffry
+   pyv penagh a'm gwellha vy
+   sur ef a wylfyth ow thas
+   dev ha den kepar del of       [2385]
+   sur an tas yma ynnof
+   hagh yn weyth my ynno ef
+   may tyffough ol the sylwyans
+   seuough yn agys crygyans
+   rak thu'm tas me a the'n nef  [2390]
+   
+##   IACOBUS MAIOR
+!! JACOBUS MAJOR
+   arluth ple then alemma
+   thy'n the gemeres trygfa
+   na theffo den vyth gynen
+   ha pygyn dev gallosek
+   del esen agan vnnek           [2395]
+   ha na moy gor na benen
+   
+   IHC.
+   scon alemma why a spetd
+   bys yn meneth olyuetd
+   ha'n tas a glew agas lef
+   the'n keth plas-na thyugh yth af
+   a le-na yth yskynnaf
+   yn ban bys yn glascor nef
+   
+   [discipuli transeunt ad montem olivetum]
+
+### folio 00r
+   
+   ANDREAS
+   arluth ny a th'y wharre
+   rak ny yllyn yn nep tre
+   tryge dres nos                [2405]
+   del vs an yethewon wheth
+   pur vr worth agan arveth
+   hag ow koddres
+   
+##   IOHANNES
+!! JOHANNES
+   dun the'n meneth olyved
+   yn weth ena ny a red          [2410]
+   y gen lyfryow
+   gortos y thos ny a wra
+   ihesu cryst map maria
+   the'n beys golow
+   
+##   BARTHOLOMAEUS
+!! BARTHOLOMEUS
+   ha bethens fystenyn d'y       [2415]
+   ihesu cryst myghtern a ioy
+   re bo gynen
+   nep na grys y bos sylwyas
+   goef genys y vonas
+   a brys benen                  [2420]
+   
+   SYMON
+   a ihesu cryst myghtern nef
+   me a'th pys clew agan lef
+   gans drok tra na ven temptys
+   rak y fo the gras gynen
+   a torment gour na benen       [2425]
+   my ny thowtyaf tra yn beys
+   
+##   IUDA
+!! JUDAS
+   byth ny reys thy'n doutye tra
+   y fo cryst map maria
+   ha'y gras gynen
+   kens ol ef agan formyas       [2430]
+   ha gans y wos a prennas
+   gour ha benen
+   
+   IHC.
+   lemmyn ol cres yntrethough
+   omma kepar del esough
+   worth ow gortos               [2435]
+   
+   [osculatur eos omnes]
+   aban oma dasserghys
+   dev hugens deyth dyuythys
+   byth pan fo nos
+   
+##   IACOBUS MINOR
+!! JACOBUS MINOR
+   arluth mar calle wharfos
+   gynen ty the vynnes bos       [2440]
+   omma pup vr
+   rak pur wyr gynen mar pes
+   ny a vye pur attes
+   ha lowen mur
+   
+   IHC.
+   a ny wothough why vn dra      [2445]
+   pup den ol yn bewnans da
+   ow bose vy ganso ef
+   kevsyns den myns a vynno
+   ow kyc ha'm gos byth ynno
+   ha ken ny thothye the'n nef   [2450]
+   
+   THOMAS
+   arluth pandra wraf lemman
+   pan ylly gy ahanan
+   the'n nef the'n tas
+   gynen bythyth yn dovses
+   rak na yllyn the weles        [2455]
+   cuth ny gen gas
+   
+   IHC.
+   thomas ty a the cynda
+   hag ena pregoth a wra
+   yn ow hanow
+   ha gura thy's moy seruygy     [2460]
+   yn wlas-na ow len grysy
+   tus yv tanow
+   hag yn weth why dew ha dew
+   a pregoth yn aweyl grew
+   yn ol an beys                 [2465]
+   pyv penagh a len grysso
+   yn weth bysythyys a vo
+   a vyth sylwys
+   ha nep na vynno crygy
+   ny yl bos a'm seruysy         [2470]
+   yn certan awos an beys
+   me a leuer theugh an guyr
+   ma ny wrefa ow desyr
+   y fyth dampnys the peynys
+   
+   MATHEUS
+   arluth pregoth ny a wra       [2475]
+   kepar del wrussys pup tra
+   nag us ken dev ages os
+   den na gresso dyougel
+   an keth den-na the selwel
+   cammen vyth na yl wharfos     [2480]
+   
+   IHC.
+   ow bennath genough gasaf
+   
+   [hic Jhc osculatur eos omnes]
+   
+   aweyl theugh yth yskennaf
+   a thesempys
+   yn pur wyr yn ban the'n nef
+   athyow thu'm tas yth sef      [2485]
+   sylwadur beys
+   
+   [hic ascendit Jhc.]
+   
+##   I ANGELUS
+!! ANGELUS I
+   pyv henna gans deusys mas
+   re thueth mar vskys the'n wlas
+   guyskys yn ruth
+   mur ioy vs er y byn ef        [2490]
+   pur tha yth heuel yn nef
+   y bones druth
+   
+##   II ANGELUS
+!! ANGELUS II
+   my ny won p'ywe cammen
+   syth myl ha syth cans blythen
+   vn den kyn fo ow kerthes      [2495]
+   ow tos kyn spedye yn geyth
+   dev vgans myldyr perfeyth
+   omma ny alse bones
+   
+##   III ANGELUS
+!! ANGELUS III
+   pyw a thueth a'n beys yn ruth
+   avel gos pen ha duscouth      [2500]
+   garrow ha treys
+   marth thy'm a'n deusys yma
+   mar vskys del thueth omma
+   el byth ny neys
+   
+##   IV ANGELUS
+!! ANGELUS IV
+   henna a edom re thueth        [2505]
+   the vyl deaul mar ny wruk vth
+   marth yv gyne
+   rak me a dyp bos hemma
+   an keth map eth alemma
+   yw myghtern a lowene          [2510]
+   
+##   V ANGELUS
+!! ANGELUS V
+   pyv a ylta gy bones
+   pan yw mar ruth the thylles
+   yn gulascor nef
+   rak me a wor lour denses
+   marnes dre an luen dvses      [2515]
+   omma ny sef
+   
+   IHC.
+   me yv myghtern re wruk cas
+   ol rag dry adam ha'y has
+   a tebel stuth
+##               # Norris <scuth>
+   myghtern of a lowene          [2520]
+   ha'n victory eth gyne
+   yn arvow ruth
+   
+##   V ANGELUS
+!! ANGELUS V
+   myghtern nef re by gorthys
+   del os formyas nef ha'n beys
+   honor sit deo meo             [2525]
+   ioy del yl ov dythane
+   ny ny tywyn ow cane
+   Gloria in excelsis deo
+   
+   [tunc cantent omnes angeli Gloria in
+   excelsis deo]
+   
+##   VI ANGELUS
+!! ANGELUS VI
+   prag yth yw ruth the thyllas
+   omma aberth yn pen wlas       [2530]
+   le na fue denses byth queth
+   an eleth omma yv guyn
+   avel an houl pan thywhyn
+   yn ken lyw ny's guylys wheth
+   
+   IHC.
+   ruth y couth thy'mmo bones    [2535]
+   ow hobersen a fue gures
+   tevy dar bol
+   heys ol ow croghen scorgyys
+   dovn y'm kye maytho tellys
+   lyes myl tol                  [2540]
+   
+##   VI ANGELUS
+!! ANGELUS VI
+   arluth ny vyen lowen
+   mar fur torment a cothfen
+   y bones thy's
+   my ny wothyen a'th vernans
+   na vyth moy a'th daserghyans  [2545]
+   pan y'th whylsyn deuethys
+   
+##   VII ANGELUS
+!! ANGELUS VII
+   dre the voth lauar pyv os
+   dyllas ruth yn an cothfos
+   prak y's guyskyth
+   my ny wylys yn wlas-ma[2550]
+   bythqueth dyllas a sevt-na
+   sur nep den vyth
+   
+   IHC.
+   rag dry adam a yfarn
+   me a thuk curyn a spern
+   nep try our adro thu'm pen    [2555]
+   asso mur tyn ow passyon
+   pan eth dreyn yn empynnyon
+   a pup parth dre a grogen
+
+### folio 81v
+   
+##   VII ANGELUS
+!! ANGELUS VII
+   ellas my ny wothyen man
+   bones map dev y honan         [2560]
+   degenow yn mes an nef
+   ol pegh adam pan prennas
+   pur wyr mur a torment bras
+   hep dout a wothevys ef
+   
+##   VIII ANGELUS
+!! ANGELUS VIII
+   a hanas marth yw gene          [2565]
+   os myghtern a lowene
+   prag yth yv the thyllas ruth
+   ha fattel duthys yn ban
+   dre the gallos the honan
+   ha war the corf mar drok stuth  [2575]
+   
+   IHC.
+   myghtern of guyron ha cref
+   kyns pegh map den am sorras
+   er-ow-fyn trauyth ny sef
+   porth yfarn me a torras
+   hag a thros lyes enef         [2575]
+   a ver drok tervyns ha cas
+   the ioy y tethons gynef
+   kemmys a wruk both ow thas
+   
+   ow scons a fue crous a pren
+   kyns en myghtern den ha dev   [2580]
+   yn le basnet war ow fen
+   curyn a spern lym ha glev
+   ol ov ysyly yn ten
+   hag a wel the lyes plu
+   yn golon dren tenewen        [2585]
+   the restye syngys ow gu
+   
+   dre ow thrys y tuth vn smat
+   gans kentrow daga gorre
+   y fue ow manegow plat
+   spygys bras dre ow dywle      [2590]
+   ytho ov fous ham brustplat
+   purpur garow thum strothe
+   dre an gos a rak pilat
+   worto an kyc a glene
+   
+   pan fue an purpur war skwych  [2595]
+   kychys the ves gans dyw thorn
+   worto y glynes hardlych
+   ran a'n kyc bys yn ascorn
+   woge ow da oberow
+   dywes a yrhys dethe           [2600]
+   thym rosons bystyl wherow
+   byth ny fynnys y eve
+   
+   gans gu guenys ha marow
+   dre an golon me a fue
+   an tryge deth sur hep gow     [2605]
+   y wruk dasserghy arte
+   
+##   VIII ANGELUS
+!! ANGELUS VIII
+   arluth ker bynyges os
+   a syv ioy gynef gothfos
+   an denses the thos then nef
+   an tas dev dren spyrys sans  [2610]
+   then beys danvonas sylwyans
+   a huhon map dev a seyf
+   
+##   IX ANGELUS
+!! ANGELUS IX
+   a ihesu crist luen a ras
+   my ny wothyan the vonas
+   alemma gyllys then beys      [2615]
+   ioy yv gynef the clewas
+   mar tek yw the theryvas
+   drethos yth of lowenhys
+
+### folio 82r
+
+   IHC.
+   a tas bynyges yth se
+   lemmyn thys my re deve       [2620]
+   gans densys yn mes an beys
+   map den my re wruk prenne
+   gans gos ow colon na fe
+   nep a wrussyn ny kyllys
+   
+   DEUS PATER
+   wolcom ow map os yn nef       [2625]
+   wolcom fest osy gynef
+   yse thymmo a thyow
+   ty re fue fest lafur bras
+   dre conquest a thylyfras
+   mes a payn an enefow          [2630]
+   
+##   IMPERATER
+!! IMPERATOR
+   a tus vas why re welas
+   a thasserghyens crist del fue
+   porthow yfarn a torras
+   yn mes adam hag eue
+   kemmys a wruk both an tas     [2635]
+   ys gorras the lowene
+   the vap den y tysquethas
+   pur wyr mur a kerenge
+   
+   hag yn ban the nef then ioy
+   ihesu a wruk yskynne          [2640]
+   worth an iaul hay company
+   rak as guytho yn pup le
+   hay vennath theugh pup huny
+   lemmyn ens pup war tu tre
+   now menstrels pybygh bysy
+   may hyllyn mos the thonssye
+   
+   
+####   end of file ### 2646 lines
