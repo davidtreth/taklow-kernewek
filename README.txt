@@ -1,0 +1,26 @@
+Author: David Trethewey davidtreth@gmail.com
+
+Dynnargh dhe "taklow-kernewek"
+
+Welcome to taklow-kernewek
+
+A series of mainly python programs for language processing
+focused on the Cornish language. 
+I will be uploading some more as I develop things and tidy up old code.
+The code is open-source with a GNU GPL.
+
+Description:
+cornish_corpus.py: a little bit of code using the Python NLTK to analyse Cornish text statistically, find commonest words in particular texts (see kernewek-corpus folder) etc. There are other potential things that may be done with corpora in NLTK see http://www.nltk.org/ This will need Python NLTK and matplotlib to be available.
+
+mutatya.py: a python module to mutate a Cornish word where you give the word as a str and the desired mutation state as an integer between 1 and 6. Mutation is a phonetic feature of Cornish (similar to how it happens in Welsh) whereby the initial consonants of words can change in certain grammatical circumstances, e.g, kath = a cat, an gath = the cat.
+
+sylabellen_ranna.py: a module for splitting Cornish words into their consituent syllabels. A work in progress and a prelimary to a program to transliterate between different Cornish spelling systems such as Kemmyn and the Standard Written Form. It has also been suggested to me that in future I could also develop this in the area of rhyme, syllable length, and poetry etc.
+
+# Usage: python sylabelenn_ranna_kw.py --test <inputfile>
+# where <inputfile> is the path to an input file containing 
+# text in Kernewek Kemmyn
+
+testenn.txt and cw_strip.txt are files I have been using to feed sylabellen_ranna.py with material, either small sets of test words, or the Creation of the World in Kernewek Kemmyn with line numbers etc. stripped out
+
+
+espeak-text-to-speech/: This folder contains scripts that enable the use of the espeak text-to-speech software to make a basic attempt at reading Cornish text. This was achieved by using string replace functions to alter the spelling to conform the text to Welsh spelling conventions to the extent that the espeak Welsh voice will produce an approximately correct result. The espeak Welsh voice is fairly basic so it is not very realistic.
