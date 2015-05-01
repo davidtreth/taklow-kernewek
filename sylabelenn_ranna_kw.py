@@ -53,9 +53,9 @@ class RannaSyllabelenn:
     kynsaRegexp =  r'''(?x)
     (^((bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kw|Kw|ch|Ch|Dhr?|dhr?|dl|dr|Dl|Dr|fl|Fl|fr?|Fr?|vl|Vl|vr|Vr|vv?|Vv?|gwr?|gwl?|gl|gr|gn?|Gwr?|Gwl?|Gl|Gr|Gn?|hw?|Hw?|pr|pl?|Pr|Pl?|shr?|Shr?|str?|Str?|skr?|Skr?|sbr|Sbr|sp?l?|Sp?l?|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bkdjlmnrtwyBKDJLMNRTVWY]) # C. matching only at start of string 
     (ay|aw|eu|ey|ew|iw|oe|oy|ow|ou|uw|yw|[aeoiuy]) # Vowel
-    (lgh|bl|br|bb?|kl|kr|kn|kw|kk?|ch|dhr?|dl|dr|dd?|fl|fr?|ff?|vl|vv?|gg?h|gw|gl|gn?|ll?|mm?|nd|ns|nt|nn?|pr|pl?|pp?|rgh?|rdh?|rth?|rv|rn|rr?|sh|st|sk|sp|ss?|tt?h|tl|tt?|[jw])? # optional C.
+    (lgh|bb?|kk?|ch|dh|dd?|ff?|vv?|gg?h?|ll?|mm?|nd|ns|nt|nn?|pp?|rgh?|rdh?|rth?|rv|rn|rr?|sh|st|sk|sp|ss?|tt?h|tt?|[jw])? # optional C.
     ))| # or
-    (^((ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY]))(lgh|bl|bb?|kl|kr|kn|kw|kk?|ch|dhr?|dl|dr|dd?|fl|fr?|ff?|vl|vv?|gg?h|gw|gl|gn?|ll?|mm?|nd|ns|nt|nn?|pr|pl?|pp?|rgh?|rdh?|rth?|rv|rn|rr?|sh|st|sk|sp|ss?|tt?h|tl|tt?|[jw])? # VC?
+    (^((ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY]))(lgh|bb?|kk?|ch|dh|dd?|ff?|vv?|gg?h?|ll?|mm?|nd|ns|nt|nn?|pp?|rgh?|rdh?|rth?|rv|rn|rr?|sh|st|sk|sp|ss?|tt?h|tt?|[jw])? # VC?
 )|(\-)(.*?)'''	
     # rising dipthongs
     dewson_sevel_re = r'ya|ye|yo|yu|wa|we|wi|wo|wy'
@@ -241,7 +241,9 @@ class Ger:
         self.sls = []  # rol a sylabelennow yn furv tekst
         self.slsObjs = [] # rol a taklennow sylabelennow
         # go backwards from end 
-        sls = rannans.ranna_syl(self.graph,RannaSyllabelenn.diwetRegexp,fwd=False,bwd=True)
+        # sls = rannans.ranna_syl(self.graph,RannaSyllabelenn.diwetRegexp,fwd=False,bwd=True)
+        # go forwards
+        sls = rannans.ranna_syl(self.graph,RannaSyllabelenn.kynsaRegexp,fwd=True,bwd=False)
         # print(sls)
         self.sls = sls
         self.n_sls = len(sls)
