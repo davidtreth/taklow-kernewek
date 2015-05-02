@@ -26,3 +26,5 @@ testenn.txt and cw_strip.txt are files I have been using to feed sylabellen_rann
 
 
 espeak-text-to-speech/: This folder contains scripts that enable the use of the espeak text-to-speech software to make a basic attempt at reading Cornish text. This was achieved by using string replace functions to alter the spelling to conform the text to Welsh spelling conventions to the extent that the espeak Welsh voice will produce an approximately correct result. The espeak Welsh voice is fairly basic so it is not very realistic.
+
+sentence_generator/: This folder contains some horribly obsfucated Python code to generate random sentences following particular structures in Cornish from a small vocabulary. It can optionally give an English gloss on the sentences.
