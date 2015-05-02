@@ -182,6 +182,8 @@ def inflect(verb,person,tense,suffix_pro):
     if suffix_pro == True:
         if (verb[-1] in "aeiouy")and(verb[-2:]!="ya"):
             return verb[:-1] + endings[person-1]+" "+pronouns_suffixed[person-1]
+        if verb[-3:]=="aya":
+            return verb[:-1] + endings[person-1]+" "+pronouns_suffixed[person-1]
         if verb[-2:]=="ya":
             if ("y" in endings[person-1])or("i" in endings[person-1])or("s"in endings[person-1]):
                 return verb[:-2] + endings[person-1]+" "+pronouns_suffixed[person-1]
@@ -194,11 +196,13 @@ def inflect(verb,person,tense,suffix_pro):
     if suffix_pro ==False:
         if (verb[-1] in "aeiouy")and(verb[-2:]!="ya"):
             return verb[:-1] + endings[person-1]
+        if verb[-3:]=="aya":
+            return verb[:-1] + endings[person-1]
         if verb[-2:]=="ya":
             if ("y" in endings[person-1])or("i" in endings[person-1])or("s"in endings[person-1]):
-                return verb[:-2] + endings[person-1]+" "+pronouns_suffixed[person-1]
+                return verb[:-2] + endings[person-1]
             else:
-                return verb[:-1] + endings[person-1]+" "+pronouns_suffixed[person-1]
+                return verb[:-1] + endings[person-1]
         if (verb[-2] in "aeiouy")and(not(verb[-3] in "aeiouy")):
             return verb[:-2] + endings[person-1]
         if verb[-3] in "aeiouy":
