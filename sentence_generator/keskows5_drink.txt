@@ -1,0 +1,22 @@
+gwin,noun,m,drink,wine
+korev,noun,m,drink,beer
+prena,verb,0,drink,buy
+kara,verb,0,drink,like
+gweles,verb,0,drink,see
+gwertha,verb,0,drink,sell
+eva,verb,0,drink,drink
+gul,verb,0,drink,make
+bras,adj,0,drink,big
+byghan,adj,0,drink,small
+toemm,adj,0,drink,warm
+yeyn,adj,0,drink,cold
+da,adj,0,drink,good
+drog,adj,0,drink,bad
+koth,adj,0,drink,old
+yr,adj,0,drink,fresh
+krev,adj,0,drink,strong
+gwann,adj,0,drink,weak
+kasa,verb,0,drink,hate
+tava,verb,0,drink,touch
+erghi,verb,0,drink,order
+sugen-froeth,noun,m,drink,fruit juice

@@ -1,0 +1,25 @@
+lyver,noun,m,readable,book
+gerlyver,noun,m,readable,dictionary
+prena,verb,0,readable,buy
+kara,verb,0,readable,like
+gweles,verb,0,readable,see
+gwertha,verb,0,readable,sell
+redya,verb,0,readable,read
+lenna,verb,0,readable,read out
+gul,verb,0,readable,make
+bras,adj,0,readable,big
+byghan,adj,0,readable,small
+da,adj,0,readable,good
+drog,adj,0,readable,bad
+koth,adj,0,readable,old
+rudh,2,0,readable,red
+glas,adj,0,readable,green
+nowydh,adj,0,readable,new
+hir,adj,0,readable,long
+berr,adj,0,readable,short
+lyther,noun,m,readable,letter
+skrifa,verb,0,readable,write
+kasa,verb,0,readable,hate
+leski,verb,0,readable,burn
+tava,verb,0,readable,touch
+daskorr,verb,0,readable,return

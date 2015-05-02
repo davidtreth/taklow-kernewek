@@ -1,0 +1,19 @@
+bewin,noun,m,meat,beef
+kig mogh,noun,m,meat,pork
+kig yar,noun,m,meat,chicken
+oen,noun,m,meat,lamb
+dybri,verb,0,meat,eat
+prena,verb,0,meat,buy
+kara,verb,0,meat,like
+gweles,verb,0,meat,see
+gwertha,verb,0,meat,sell
+toemm,adj,0,meat,warm
+yeyn,adj,0,meat,cold
+da,adj,0,meat,good
+drog,adj,0,meat,bad
+koth,adj,0,meat,old
+yr,adj,0,meat,fresh
+kasa,verb,0,meat,hate
+leski,verb,0,meat,burn
+tava,verb,0,meat,touch
+erghi,verb,0,meat,order

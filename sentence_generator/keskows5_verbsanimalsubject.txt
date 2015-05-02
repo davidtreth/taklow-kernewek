@@ -1,0 +1,6 @@
+dybri,verb,0,animalsubject,eat
+kara,verb,0,animalsubject,like
+eva,verb,0,animalsubject,drink
+kasa,verb,0,animalsubject,hate
+gweles,verb,0,animalsubject,see
+ladha,verb,0,animalsubject,kill
