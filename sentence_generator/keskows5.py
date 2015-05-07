@@ -25,7 +25,7 @@ article = ["an"]
 article_e = ["the"]
 specifiers = ["ma","na"]
 specifiers_e = ["this","that"]
-numerals = ["onan","dew","tri","peswar","pymp","hwegh","seyth","eth","naw","deg","unnek","dewdhek","trydhek","peswardhek","pympthek","hwetek","seytek","etek","nownsek","ugens"]
+numerals = ["unn","dew","tri","peswar","pymp","hwegh","seyth","eth","naw","deg","unnek","dewdhek","trydhek","peswardhek","pympthek","hwetek","seytek","etek","nownsek","ugens"]
 numerals_e = ["one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen","twenty"]
 
 # load in the vocabulary
@@ -959,7 +959,7 @@ def gen_element(element,j,t,a,ep,per,j_e,t_e,a_e,ep_e,per_e):
     if element =="#":
         w = numerals[j]
         w_e = numerals_e[j]
-        if j==1:      
+        if (j==0)or(j==1):      
             mutationstate = 2
         if j==2:
             mutationstate = 3
