@@ -959,13 +959,13 @@ def gen_element(element,j,t,a,ep,per,j_e,t_e,a_e,ep_e,per_e):
     if element =="#":
         w = numerals[j]
         w_e = numerals_e[j]
-	if j==1:      
-	   mutationstate = 2
+        if j==1:      
+            mutationstate = 2
         if j==2:
-	   mutationstate = 3
+            mutationstate = 3
         if t in [1,2,3]: #if we are talking about veg, meat or drink
             w = ""
-	    w_e = ""
+            w_e = ""
         return w,w_e
     
 
