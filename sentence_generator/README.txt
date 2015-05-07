@@ -14,6 +14,7 @@ Python scripts:
 keskows5.py: the main program which creates the sentences and writes
 them to the command line. Using a predefined structure select words
 randomly from lists to make sentences.
+This is essentially a not very rigourously defined version of a context-free grammar.
 Verb inflections are done with a function inside the module. 
 TODO - reimplement with external modules inflektya + mutatya. and a lot of 
 tidying up.

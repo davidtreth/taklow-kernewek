@@ -998,7 +998,8 @@ def gen_element(element,j,t,a,ep,per,j_e,t_e,a_e,ep_e,per_e):
 #Y - Y particle
 
 #sentence structures
-
+# this is essentially a not very rigoursly defined 
+# context-free grammar.
 question_sentence_structures = ["QAvtn?","QAvtne?","qtna?","qtnc?","INqtna?","qtns?","IV#na?","INVns?","NXi#nc?","INXina?","IXins?","IV#nrtna?"]
 statement_sentence_structures = ["pAv#n","pAvna","pAxi#n","pAxina","NV#n","pAvnrtn","pAvnrns","pAxinrn","pAxinrna","NVnrn","NXin","pAvPn","pAvPna","pAxiPn","pAxiPna","NVPn","pAvPnrtn","pAvPnrns","pAxinrPn","pAxinrPna","NVnrPn","NXiPn","@tn!Av#n","@tn!Axinc","rnYVtn","rnYV#n","P@n!Avna","P@n!Axins","Nv@tn!na","@tnRAV","@tn-V"]
 sentence_structures = []
