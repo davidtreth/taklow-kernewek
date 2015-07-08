@@ -1,11 +1,15 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-# David Trethewey 01-05-2015 
+# David Trethewey 08-07-2015 
 # code is Open Source (GPL)
 #
 # A rough and ready hacked together segmentation of Cornish (Kernewek Kemmyn) text 
 # to the syllable level using regular expressions. 
 #
+# This version (as of 8th July) makes a calculation of syllable length
+# taking 1 unit as short vowel, 2 as a half-long, 3 as long
+# 1 a normal consonant and 2 as a gemminated double consonant
+# e.g. mm in kamm
 # 
 # In future I will try to make one for the Standard Written Form of Cornish
 # with an idea to use this to do transliteration between the orthographies.
@@ -16,59 +20,60 @@
 # --test is an optional flag to run the test routines in profya()
 import nltk
 import sys
-import string
 import re
-import copy
 import argparse
 
 class RannaSyllabelenn:
     """
     RannaSyllabelenn is a class containing methods for syllable segmentation
-    """
-    
+    """    
     # syllabelRegExp should match syllable anywhere in a word
-    # a syllable could be CV, CVC, VC, V	
+    # a syllable could have structure CV, CVC, VC, V	
     syllabelRegExp = r'''(?x)
-    ((bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kw|Kw|ch|Ch|Dhr?|dhr?|dl|dr|Dl|Dr|fl|Fl|fr?|Fr?|vl|Vl|vr|Vr|vv?|Vv?|gwr?|gwl?|gl|gr|gg?h|gn?|Gwr?|Gwl?|Gl|Gr|Gn?|hw?|Hw?|pr|pl?|Pr|Pl?|shr?|Shr?|str?|Str?|skr?|Skr?|sbr|Sbr|sp?l?|Sp?l?|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bkdjlmnrtwyBKDJLMNRTVWY]) # consonant
-    (ay|aw|eu|ey|ew|iw|oe|oy|ow|ou|uw|yw|[aeoiuy])
-(lgh|bl|br|bb?|kl|kr|kn|kw|kk?|ch|dhr?|dl|dr|dd?|fl|fr?|ff?|vl|vv?|gg?h|gw|gl|gn?|ll?|mm?|nd|ns|nt|nn?|pr|pl?|pp?|rgh?|rdh?|rth?|rv|rn|rr?|sh|st|sk|sp|ss?|tt?h|tt?|[jw])? # vowel (optional)
+    ((bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kw|Kw|ch|Ch|Dhr?|dhr?|dl|dr|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|Gwr?|Gwl?|Gl|Gr|Gn|hw|Hw|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|sbr|Sbr|sp?l?|Sp?l?|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bkdfjvlghmnprstwyBKDFJVLGHMNPRSTVWY]) # consonant
+    (ay|aw|eu|ey|ew|iw|oe|oy|ow|ou|uw|yw|[aeoiuy]) #vowel
+(lgh|bl|br|bb|kl|kr|kn|kw|kk|ch|dhr?|dl|dr|dd|fl|fr|ff|vl|vv|gg?h|gw|gl|gn|ll|mm|nd|ns|nt|nn|pr|pl|pp|rgh?|rdh?|rth?|rv|rn|rr|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgljmnpkrstvw])? #  optional const.
     )| # or
     ((ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY]) # vowel
-    (lgh|bl|bb?|kl|kr|kn|kw|kk?|ch|dhr?|dl|dr|dd?|fl|fr?|ff?|vl|vv?|gg?h|gw|gl|gn?|ll?|mm?|nd|ns|nt|nn?|pr|pl?|pp?|rgh?|rdh?|rth?|rv|rn|rr?|sh|st|sk|sp|ss?|tt?h|tt?|[jw])?) # consonant (optional)
+    (lgh|bl|bb|kl|kr|kn|kw|kk|ch|dhr?|dl|dr|dd|fl|fr|ff|vl|vv|gg?h|gw|gl|gn|ll|mm|nd|ns|nt|nn|pr|pl|pp|rgh?|rdh?|rth?|rv|rn|rr|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgljmnpkrstvw])?) # consonant (optional)
     '''
-
     # diwethRegExp matches a syllable at the end of the word
     diwetRegexp =  r'''(?x)
-    ((bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kw|Kw|ch|Ch|Dhr?|dhr?|dl|dr|Dl|Dr|fl|Fl|fr?|Fr?|vl|Vl|vr|Vr|vv?|Vv?|gwr?|gwl?|gl|gr|gg?h|gn?|Gwr?|Gwl?|Gl|Gr|Gn?|hw?|Hw?|pr|pl?|Pr|Pl?|shr?|Shr?|str?|Str?|skr?|Skr?|sbr|Sbr|sp?l?|Sp?l?|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bkdjlmnrtwyBKDJLMNRTVWY])? #consonant or c. cluster
+    ((bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kw|Kw|ch|Ch|Dhr?|dhr?|dl|dr|Dl|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|Gwr?|Gwl?|Gl|Gr|Gn|hw|Hw|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|sbr|Sbr|sp?l?|Sp?l?|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bkdfjlghpmnrstvwyBKDFJLGHPMNRSTVWY])? #consonant or c. cluster
     (ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY]) # vowel
-    (lgh|bl|br|bb?|kl|kr|kn|kw|kk?|ch|dhr?|dl|dr|dd?|fl|fr?|ff?|vl|vv?|gg?h|gw|gl|gn?|ll?|mm?|nd|ns|nt|nn?|pr|pl?|pp?|rgh?|rdh?|rth?|rv|rn|rr?|sh|st|sk|sp|ss?|tt?h|tt?|[jw])? # optionally a second consonant or cluster ie CVC?
+    (lgh|bl|br|bb|kl|kr|kn|kw|kk|ch|dhr?|dl|dr|dd|fl|fr|ff|vl|vv|gg?h|gw|gl|gn|ll|mm|nd|ns|nt|nn|pr|pl|pp|rgh?|rdh?|rth?|rv|rn|rr|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgjklmnprstvw])? # optionally a second consonant or cluster ie CVC?
     )$
     '''
-    #| # or
-    #((ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])#vowel
-    #(lgh|bl|bb?|kl|kr|kn|kw|kk?|ch|dhr?|dl|dr|dd?|fl|fr?|ff?|vl|vv?|gg?h|gw|gl|gn?|ll?|mm?|nd|ns|nt|nn?|pr|pl?|pp?|rgh?|rdh?|rth?|rv|rn|rr?|sh|st|sk|sp|ss?|tt?h|tt?|[jw])?)$ # C. same as before but only match at end of string
-    
     # kynsaRegexp matches syllable at beginning of a word
     # 1st syllable could be CV, CVC, VC, V
     kynsaRegexp =  r'''(?x)
-    (^((bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kw|Kw|ch|Ch|Dhr?|dhr?|dl|dr|Dl|Dr|fl|Fl|fr?|Fr?|vl|Vl|vr|Vr|vv?|Vv?|gwr?|gwl?|gl|gr|gn?|Gwr?|Gwl?|Gl|Gr|Gn?|hw?|Hw?|pr|pl?|Pr|Pl?|shr?|Shr?|str?|Str?|skr?|Skr?|sbr|Sbr|sp?l?|Sp?l?|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bkdjlmnrtwyBKDJLMNRTVWY]) # C. matching only at start of string 
+    (^((bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kw|Kw|ch|Ch|Dhr?|dhr?|dl|dr|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|gwr?|gwl?|gl|gr|gn|Gwr?|Gwl?|Gl|Gr|Gn|hw|Hw|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|sbr|Sbr|sp?l?|Sp?l?|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bkdfghjlmnprtvwyBKDFGHJLMNPRTVWY]) # C. matching only at start of string 
     (ay|aw|eu|ey|ew|iw|oe|oy|ow|ou|uw|yw|[aeoiuy]) # Vowel
     (lgh|bb?|kk?|ch|dh|dd?|ff?|vv?|gg?h?|ll?|mm?|nd|ns|nt|nn?|pp?|rgh?|rdh?|rth?|rv|rn|rr?|sh|st|sk|sp|ss?|tt?h|tt?|[jw])? # optional C.
     ))| # or
-    (^((ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY]))(lgh|bb?|kk?|ch|dh|dd?|ff?|vv?|gg?h?|ll?|mm?|nd|ns|nt|nn?|pp?|rgh?|rdh?|rth?|rv|rn|rr?|sh|st|sk|sp|ss?|tt?h|tt?|[jw])? # VC?
-)|(\-)(.*?)'''	
+    (^((ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY]))(lgh|bb|kk|ch|dh|dd|ff|vv|gg?h|ll|mm|nd|ns|nt|nn|pp|rgh?|rdh?|rth?|rv|rn|rr|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgkljmnprtvw])? # VC?
+)|(\-)(.*?)'''
+    # rising/falling dipthongs not used at present
     # rising dipthongs
     dewson_sevel_re = r'ya|ye|yo|yu|wa|we|wi|wo|wy'
     # falling dipthongs
     dewson_kodha_re = r'ay|oe|oy|ey|aw|ew|iw|ow|uw|yw'
+
     # word ending in vowels
     pennvog_re = r'^(.*?)(ay|aw|ey|eu|ew|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ou|Ow|Uw|Yw|[aeoiuyAEIOUY])$'
     # word ending in consonants
-    lostkess_re = r'^(.*?)(lgh|bl|bb?|kl|kr|kn|kw|kk?|ch|dhr?|dl|dr|dd?|fl|fr?|ff?|vl|vv?|gg?h|gw|gl|gn?|ll?|mm?|nd|ns|nt|nn?|pr|pl?|pp?|rgh?|rdh?|rth?|rv|rn|rr?|sh|st|sk|sp|ss?|tt?h|tt?|[jw])$'
+    lostkess_re = r'^(.*?)(lgh|bl|bb|kl|kr|kn|kw|kk|ch|dhr?|dl|dr|dd|fl|fr|ff|vl|vv|gg?h|gw|gl|gn|ll|mm|nd|ns|nt|nn|pr|pl|pp|rgh?|rdh?|rth?|rv|rn|rr|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgkljmnprtvw])$'
     # consonant-vowel sequence at the end
-    lostKB_re =  r'(.*?)(bl|br|Bl|Br|bb?|kl|Kl|kr|Kr|kn|Kn|kw|Kw|kk?|ch|Ch|Dhr?|dhr?|dl|dr|Dl|Dr|dd?|fl|Fl|fr?|Fr?|vl|Vl|vr|Vr|vv?|Vv?|gwr?|gwl?|gl|gr|gg?h|gn?|Gwr?|Gwl?|Gl|Gr|Gn?|ll?|mm?|nd|ns|nt|nn?|hw?|Hw?|pr|pl?|Pr|Pl?|pp?|rgh?|rdh?|rth?|rv|rn|rr?|shr?|Shr?|str?|Str?|skr?|Skr?|sbr|Sbr|sp?l?|Sp?l?|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|tt?|wr|Wr|wl|Wl|[jwyBKDLJMNRTVWY])(ay|aw|ey|eu|ew|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])$'
+    lostKB_re =  r'(.*?)(bl|br|Bl|Br|bb|kl|Kl|kr|Kr|kn|Kn|kw|Kw|kk|ch|Ch|Dhr?|dhr?|dl|dr|Dl|Dr|dd|fl|Fl|fr|Fr|vl|Vl|vr|Vr|vv|gwr?|gwl?|gl|gr|gg?h|gn|Gwr?|Gwl?|Gl|Gr|Gn|ll|mm|nd|ns|nt|nn|hw|Hw|pr|pl|Pr|Pl|pp|rgh?|rdh?|rth?|rv|rn|rr|shr?|Shr?|str?|Str?|skr?|Skr?|sbr|Sbr|sp?l?|Sp?l?|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|tt|wr|Wr|wl|Wl|[bdfgkljmnprtvwyBKDLJMNRTVWY])(ay|aw|ey|eu|ew|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])$'
     # vowel-consonant sequnce at the end
-    lostBK_re = r'(.*?)(ay|aw|ey|eu|ew|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])(lgh|bl|bb?|kl|kr|kn|kw|kk?|ch|dhr?|dl|dr|dd?|fl|fr?|ff?|vl|vv?|gg?h|gw|gl|gn?|ll?|mm?|nd|ns|nt|nn?|pr|pl?|pp?|rgh?|rdh?|rth?|rv|rn|rr?|sh|st|sk|sp|ss?|tt?h|tt?|[jw])$'
+    lostBK_re = r'(.*?)(ay|aw|ey|eu|ew|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])(lgh|bl|bb|kl|kr|kn|kw|kk|ch|dhr?|dl|dr|dd|fl|fr|ff|vl|vv|gg?h|gw|gl|gn|ll|mm|nd|ns|nt|nn|pr|pl|pp|rgh?|rdh?|rth?|rv|rn|rr|sh|st|sk|sp|ss?|tt?h|tt|[bdfgkljmnprtvw])$'
+    # TODO: may need some more debugging checking which consonant clusters should be
+    # considered 'single' and 'double' for the purposes of vowel length
+    # vowel and single consonant
+    pennK_singleB = r'^(|bl|br|Bl|Br|ch|Ch|dhr?|Dhr?|dr|Dr|fl|Fl|vl|Vl|vr|Vr|gwr?|gwl?|gl|gr|gn|Gwr?|Gwl?|Gl|Gr|Gn|hw|Hw|kl|Kl|kr|Kr|kn|Kn|kw|Kw|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|spl?|Spl?|thr?|Thr?|[bkdfjlmnprstvwyBKDFJLMNPRSTVWY])(ay|aw|ey|eu|ew|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])'
+    lostBK_single =  r'(.*?)(ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])(|bl|br|ch|dh|dl|gh|nd|ns|nt|rgh?|rdh?|rth?|rv|rn|sh|st|sk|sp|th|[bkdfjlmnprstvw])$'
+    # vowel and double consonant
+    lostBK_double = r'(.*?)(ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])(lgh|bl|br|bb|kl|kr|kn|kw|kk|cch|dl|dr|dd|ff|vv|ggh|ll|mm|nd|ns|nt|nn|pr|pl|pp|rgh?|rdh?|rth?|rr|ssh|ss?|tth|tt|jj)$'
 
     def __init__(self, inputtext):
         """
@@ -116,7 +121,7 @@ class RannaSyllabelenn:
                     ger = ''
         # this is currently returning
         # a list of plain text
-        # not Sylabellen objects
+        # not Syllabellen objects
         return syl_list
 
     def diwettha_syl(self,ger, regexp):
@@ -132,7 +137,7 @@ class RannaSyllabelenn:
             diwettha_syl=dsyl[0][1]+dsyl[0][2]+dsyl[0][3]
         # this is currently returning
         # plain text
-        # not Sylabellen objects
+        # not Syllabellen objects
         return diwettha_syl
 
     def kynsa_syl(self, ger, regexp):
@@ -220,7 +225,7 @@ class RannaSyllabelenn:
 
 class Ger:
     """
-    # class for a word of Cornish text
+    class for a word of Cornish text
     """
     def __init__(self,ger):
         """ initialize Ger object
@@ -258,24 +263,39 @@ class Ger:
             # self.n_sls = self.n_sls + 1
         for s in self.sls:
             self.slsObjs.append(Syllabelenn(s))
+        #print ("len(self.slsObjs) = {l}".format(l=len(self.slsObjs)))
         if len(self.slsObjs) == 1:
+            #print("setting stressed and monosyl")
             self.slsObjs[0].stressed = True
             self.slsObjs[0].monosyl = True
         elif len(self.slsObjs) > 1:
             # TODO - test for exceptions
             # penultimate stress
             self.slsObjs[-2].stressed = True
-
+        
+        # counter for total word length
+        self.hirderGer = 0
+        # update length arrays and total syllable length
+        # after monosyl and stressed are set
+        for syl in self.slsObjs:
+            syl.lengtharray = syl.lengthSylParts()
+            syl.syllableLength = sum(syl.lengtharray)
+            self.hirderGer += syl.syllableLength
+        
     def diskwedh(self):
-        # show output for each word
+        """ show output for each word """
         print("An ger yw: {g}".format(g=self.graph))
-        print("Niver a sylabelennow yw: {n}".format(n=self.n_sls))
+        print("Niver a syllabelennow yw: {n}".format(n=self.n_sls))
         print("Hag yns i:\n{sls}".format(sls=self.sls))
         for i in range(self.n_sls):
             gr = self.slsObjs[i].grapheme
+            struc = self.slsObjs[i].structure
             if self.slsObjs[i].stressed:
                 gr = gr.upper()
-            print("S{n}: {g}".format(n=i+1,g=gr))
+            lenArray = self.slsObjs[i].lengtharray
+            sylLength = self.slsObjs[i].syllableLength
+            print("S{n}: {g}, {s}, hirder = {L}, hirder kowal = {t}".format(n=i+1,g=gr,s=struc, L = lenArray, t=sylLength))
+        print("Hirder ger kowal = {H}".format(H=self.hirderGer))
             
 class Syllabelenn:           
     """
@@ -290,6 +310,7 @@ class Syllabelenn:
         self.monosyl = False
         self.structure = ''
         syl = re.findall(RannaSyllabelenn.syllabelRegExp,graph)
+        self.syl = syl
         # print(syl)
         # slice syl list to get the syllable parts
         # i.e. consonant clusters + vowels
@@ -314,22 +335,124 @@ class Syllabelenn:
                 else:
                     self.structure = 'VC'
             self.sylparts = sylparts
+            self.lengtharray = self.lengthSylParts()
+            self.syllableLength = sum(self.lengtharray)
 
     def lengthSylParts(self):
-        pass
+        """ find the lengths of each part of the syllable
+        and the syllable as a whole """
+        lengtharray = range(len(self.sylparts))
+        lengtharray = [i*0 + 1 for i in lengtharray]
+        #print("self.structure={s}".format(s=self.structure))
+        if self.structure == 'CVC':
+            lengtharray[0] = 1  # hirder an kynsa kessonenn
+            #print("self.monosyl={m}".format(m=self.monosyl))
+            if self.monosyl:
+            # mars yw unnsyllabelenn:
+                if re.search(rannans.lostBK_single,self.grapheme):
+                    lengtharray[1] = 3
+                    #    mars yw kessonenn unnplek: bogalenn hir 
+                    # ha kessonenn berr
+                    lengtharray[2] = 1
+                else:
+                    if re.search(rannans.lostBK_double,self.grapheme):
+                        lengtharray[1] = 1
+                        #    mars yw kessonenn dewblek: bogalenn berr
+                        # ha kessonenn hir
+                        lengtharray[2] = 2
+            else:
+                if self.stressed:
+                    # mars yw liessyllabelenn poesys:
+                    if re.search(rannans.lostBK_single,self.grapheme):
+                        # mars yw kessonenn unnplek: boglenn hanterhir
+                        lengtharray[1] = 2
+                        lengtharray[2] = 1
+                    else:
+                        if re.search(rannans.lostBK_double,self.grapheme):
+                            # mars yw kessonenn dewblek: bogalenn berr
+                            lengtharray[1] = 1
+                            lengtharray[2] = 2
+                        
+                else:
+                    # mars yw liessyllabelenn anpoesys:
+                    #    bogalenn verr
+                    lengtharray[1] = 1
+                    lengtharray[2] = 1
+
+        if self.structure == 'CV':
+            lengtharray[0] = 1  # hirder an kynsa kessonenn
+            if self.monosyl:
+                # mars yw unnsyllabelenn:
+                #   bogalenn hir
+                lengtharray[1] = 3
+            else:
+                if self.stressed:
+                    # mars yw liessyllabelenn poesys:
+                    #   bogalenn hanterhir
+                    lengtharray[1] = 2
+                else:
+                    # mars yw liessyllabelenn anpoesys:
+                    #   bogalenn verr 
+                    lengtharray[1] = 1
+
+        if self.structure == 'VC':
+            if self.monosyl:
+                # mars yw unnsyllabelenn:
+                if re.search(rannans.lostBK_single,self.grapheme):
+                    lengtharray[0] = 3
+                    #    mars yw kessonenn unnplek: bogalenn hir 
+                    # ha kessonenn berr
+                    lengtharray[1] = 1
+                else:
+                    if re.search(rannans.lostBK_double,self.grapheme):
+                        lengtharray[0] = 1
+                        #    mars yw kessonenn dewblek: bogalenn berr
+                        # ha kessonenn hir
+                        lengtharray[1] = 2
+            else:
+                if self.stressed:
+                    # mars yw liessyllabelenn poesys:
+                    if re.search(rannans.lostBK_single,self.grapheme):
+                        # mars yw kessonenn unnplek: boglenn hanterhir
+                        lengtharray[0] = 2
+                        lengtharray[1] = 1
+                    else:
+                        if re.search(rannans.lostBK_double,self.grapheme):
+                            # mars yw kessonenn dewblek: bogalenn berr
+                            lengtharray[0] = 1
+                            lengtharray[1] = 2
+
+
+                else:
+                    # mars yw liessyllabelenn anpoesys:
+                    #    bogalenn berr
+                    lengtharray[0] = 1
+                    lengtharray[1] = 1
+
+        if self.structure == 'V':            
+            if self.monosyl:
+            # mars yw unnsyllabelenn:
+            # bogalenn hir
+                lengtharray[0] = 3
+            else:
+                if self.stressed:
+                    # mars yw liessyllabelenn poesys:
+                    # bogalenn hanterhir
+                    lengtharray[0] = 2
+                else:
+                    # mars yw liessyllabelenn anpoesys:
+                    # bogalenn verr
+                    lengtharray[0] = 1
+
         # TO DO
-        # determine length of each part of syllable
-        # check structure
-        # find out whether consonants are doubled
-        # if a monosyllble...
-        # if stressed etc
-        # make array for length of each syllable part 
-        # 1 = short, 2 = halflong, 3 = long
-        # also give total syllable length
+        # probably needs a bit of debugging to make sure 
+        # regular expressions pick up single/double consts properly
+        # maybe some ambiguity in how words are segmented?
+        return lengtharray
 
 if __name__ == '__main__':
     """
-    If invoked at command-line
+    If invoked at the command-line
     """
     # Create the command line options parser.
     parser = argparse.ArgumentParser()

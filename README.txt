@@ -17,6 +17,7 @@ inflektya.py: a python module to inflect Cornish verbs by tense and person and p
 mutatya.py: a python module to mutate a Cornish word where you give the word as a str and the desired mutation state as an integer between 1 and 6. Mutation is a phonetic feature of Cornish (similar to how it happens in Welsh) whereby the initial consonants of words can change in certain grammatical circumstances, e.g, kath = a cat, an gath = the cat.
 
 sylabellen_ranna.py: a module for splitting Cornish words into their consituent syllabels. A work in progress and a prelimary to a program to transliterate between different Cornish spelling systems such as Kemmyn and the Standard Written Form. It has also been suggested to me that in future I could also develop this in the area of rhyme, syllable length, and poetry etc.
+Update (08-07-15): now this calculates syllable and word length on the basis of 1 unit for a short vowel or consonant, 2 for half-long vowel or gemminate 'double' consonant, or 3 for a long vowel.
 
 # Usage: python sylabelenn_ranna_kw.py --test <inputfile>
 # where <inputfile> is the path to an input file containing 
