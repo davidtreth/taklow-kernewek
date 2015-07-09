@@ -71,7 +71,7 @@ class RannaSyllabelenn:
     # considered 'single' and 'double' for the purposes of vowel length
     # vowel and single consonant
     pennK_singleB = r'^(|bl|br|Bl|Br|ch|Ch|dhr?|Dhr?|dr|Dr|fl|Fl|vl|Vl|vr|Vr|gwr?|gwl?|gl|gr|gn|Gwr?|Gwl?|Gl|Gr|Gn|hw|Hw|kl|Kl|kr|Kr|kn|Kn|kw|Kw|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|spl?|Spl?|thr?|Thr?|[bkdfjlmnprstvwyBKDFJLMNPRSTVWY])(ay|aw|ey|eu|ew|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])'
-    lostBK_single =  r'(.*?)(ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])(|bl|br|ch|dh|dl|gh|nd|ns|nt|rgh?|rdh?|rth?|rv|rn|sh|st|sk|sp|th|[bkdfjlmnprstvw])$'
+    lostBK_single =  r'(.*?)(ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])(|bl|br|ch|dh|dl|gh|nd|ns|nt|rgh?|rdh?|rth?|rv|rn|sh|st|sk|sp|th|[bkdfgjlmnprstvw])$'
     # vowel and double consonant
     lostBK_double = r'(.*?)(ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])(lgh|bl|br|bb|kl|kr|kn|kw|kk|cch|dl|dr|dd|ff|vv|ggh|ll|mm|nd|ns|nt|nn|pr|pl|pp|rgh?|rdh?|rth?|rr|ssh|ss?|tth|tt|jj)$'
 
@@ -227,7 +227,7 @@ class Ger:
     """
     class for a word of Cornish text
     """
-    def __init__(self,ger):
+    def __init__(self,ger,fwds=False):
         """ initialize Ger object
         """
         self.graph = ger # an ger kowal
@@ -245,10 +245,13 @@ class Ger:
         self.n_sls = 0 # niver sylabelennow
         self.sls = []  # rol a sylabelennow yn furv tekst
         self.slsObjs = [] # rol a taklennow sylabelennow
-        # go backwards from end 
-        # sls = rannans.ranna_syl(self.graph,RannaSyllabelenn.diwetRegexp,fwd=False,bwd=True)
-        # go forwards
-        sls = rannans.ranna_syl(self.graph,RannaSyllabelenn.kynsaRegexp,fwd=True,bwd=False)
+        if fwds:
+            # go forwards
+            sls = rannans.ranna_syl(self.graph,RannaSyllabelenn.kynsaRegexp,fwd=True,bwd=False)
+        else:
+            # go backwards from end 
+            sls = rannans.ranna_syl(self.graph,RannaSyllabelenn.diwetRegexp,fwd=False,bwd=True)
+
         # print(sls)
         self.sls = sls
         self.n_sls = len(sls)
@@ -462,6 +465,8 @@ if __name__ == '__main__':
                          help="Specify the input text file containing Cornish text.")
     parser.add_argument("--test",action="store_true",
                         help="Test mode. Run test code.")
+    parser.add_argument("--fwd",action="store_true",
+                        help="Use forward segmentation. Default is backward, starting from end of word.")
     args = parser.parse_args()
     # Check that the input parameter has been specified.
     if args.inputfile == None:
@@ -474,8 +479,13 @@ if __name__ == '__main__':
     # run test code if --test argument has been used
     if args.test:
         rannans.profya(rannans.geryow)
+    # segmentation direction
+    if args.fwd:
+        fwds=True
+    else:
+        fwds=False
     for i in rannans.geryow:
-        g = Ger(i)
+        g = Ger(i,fwds)
         if g.graph != '':
             g.diskwedh()
             print('\n')
