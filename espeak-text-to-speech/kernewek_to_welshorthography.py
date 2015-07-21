@@ -11,13 +11,8 @@ import string
 #
 # takes first argument as input text, second as output
 #
-inputfile = sys.argv[1]
-outputfile = sys.argv[2]
 
-#print inputtext_words
-inputtext = file(inputfile).readlines()
-
-def towelsh(inputtext):
+def towelsh(inputtext,newline=False):
     outputtext = ""    
     for w in inputtext:
         w = w.lower()
@@ -34,20 +29,27 @@ def towelsh(inputtext):
         w = w.replace("eu","w")
         w = w.replace("ou","ŵ")
         w = w.replace("oe","oo")
-#        w = w.replace("u","y")
-
-        outputtext += w + "\n"
+        w = w.replace("u","i")
+        if newline:
+            outputtext += w + "\n"
+        else:
+            outputtext += w
     return outputtext
 
-outputtext = towelsh(inputtext)
-outputtext = outputtext.replace(" .",".")
-outputtext = outputtext.replace(" - ","-")
-outputtext = outputtext.replace(" ' ","'")
-outputtext = outputtext.replace("' ","'")
-outputtext = outputtext.replace("'","")
-#print towelsh
-out = file(outputfile,"w")
-out.write(outputtext)
+if __name__ == "__main__":
+    inputfile = sys.argv[1]
+    outputfile = sys.argv[2]
+    #print inputtext_words
+    inputtext = file(inputfile).readlines()
+    outputtext = towelsh(inputtext,True)
+    outputtext = outputtext.replace(" .",".")
+    outputtext = outputtext.replace(" - ","-")
+    outputtext = outputtext.replace(" ' ","'")
+    outputtext = outputtext.replace("' ","'")
+    outputtext = outputtext.replace("'","")
+    # print towelsh
+    out = file(outputfile,"w")
+    out.write(outputtext)
 
 
 

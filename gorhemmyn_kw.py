@@ -3,6 +3,8 @@
 # 11-07-2015 
 # skrifys rag #speakcornish week 2015
 import time
+import os
+import kernewek_to_welshorthography
 class Gorhemmyn:
     # py termynyow a wra chanjya 
     # furv an gorhemmynadow
@@ -32,6 +34,14 @@ class Gorhemmyn:
     def pryntya(self):
         print(self.gorhemmyn)
 
+    def kewsel(self):
+        tekst_cy = kernewek_to_welshorthography.towelesh(self.gorhemmyn)
+        print(tekst_cy)
+        espeakcmd = 'espeak -vcy {t}'.format(t='"'+tekst_cy+'"')
+        print(espeakcmd)
+        os.system(espeakcmd)
+        
 if __name__ == "__main__":
     g = Gorhemmyn()
     g.pryntya()
+    g.kewsel()
