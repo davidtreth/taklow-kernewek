@@ -25,6 +25,7 @@ Update (08-07-15): now this calculates syllable and word length on the basis of 
 
 testenn.txt and cw_strip.txt are files I have been using to feed sylabellen_ranna.py with material, either small sets of test words, or the Creation of the World in Kernewek Kemmyn with line numbers etc. stripped out
 
+niverow.py: this contains functions to generate text numbers in Cornish, either from integers, or with the noun included. 
 
 espeak-text-to-speech/: This folder contains scripts that enable the use of the espeak text-to-speech software to make a basic attempt at reading Cornish text. This was achieved by using string replace functions to alter the spelling to conform the text to Welsh spelling conventions to the extent that the espeak Welsh voice will produce an approximately correct result. The espeak Welsh voice is fairly basic so it is not very realistic. 
 The gorhemmyn_kw.py file greets the user depending on the time of day according to the system clock (uses espeak).
