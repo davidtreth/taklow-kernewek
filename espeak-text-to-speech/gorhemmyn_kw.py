@@ -35,10 +35,10 @@ class Gorhemmyn:
         print(self.gorhemmyn)
 
     def kewsel(self):
-        tekst_cy = kernewek_to_welshorthography.towelesh(self.gorhemmyn)
-        print(tekst_cy)
-        espeakcmd = 'espeak -vcy {t}'.format(t='"'+tekst_cy+'"')
-        print(espeakcmd)
+        tekst_cy = kernewek_to_welshorthography.towelsh(self.gorhemmyn)
+        #print(tekst_cy)
+        espeakcmd = 'espeak -vcy \"{t}\"'.format(t=tekst_cy)
+        #print(espeakcmd)
         os.system(espeakcmd)
         
 if __name__ == "__main__":
