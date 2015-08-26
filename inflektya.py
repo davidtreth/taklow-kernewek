@@ -906,7 +906,7 @@ def inflektya_reyth(verb,stem,person,tense,suffix_pro):
                     stem = stem[:-3] + "ntl"
                 if stem[-3:] == "ldr":
                     stem = stem[:-3] + "ltr"
-                if sted[-3:] == "rdr":
+                if stem[-3:] == "rdr":
                     stem = stem[:-3] + "rtr"
 
     # LESTA
@@ -1137,50 +1137,53 @@ def runTestCode():
     q=0
     while q==0:
         q = rolPersonysPreposInteract()
-    
-if __name__ == '__main__':
-        # person: 0=imp,1=1s,2=2s,3=3sm,4=3sf,5=1p,6=2p,7=3p
-    personDict = {0:'anpersonek',
-                  1:'1s',
-                  2:'2s',
-                  3:'3sm',
-                  4:'3sf',
-                  5:'1pl',
-                  6:'2pl',
-                  7:'3pl'}
-    # tense: 0=present, 1=preterite, 2=imperfect, 3=pluperfect, 4=subjpres, 5=subjimp
-    # 6=imperative,7=past_participle,8=future,9=habitual imperfect
-    # 10=longform_present_indef,11=longform_imperfect,12=longform_present_defni
-    # 13=longform_present_aff,14=perfect
-    tensesDict = {0:"a-lemmyn",
-                  1:"tremenys",
-                  2:"anperfydh",
-                  3:"gorperfydh",
-                  4:"islavarek_a-lemmyn",
-                  5:"islavarek_anperfydh",
-                  6:"gorhemmyn",
-                  7:"ppl",
-                  8:"devedhek",
-                  9:"anperfydh_usadow",
-                  10:"a-lemmyn_hir_indef",
-                  11:"anperfydh_hir",
-                  12:"a-lemmyn_hir_def",
-                  13:"a-lemmyn_hir_aff",
-                  14:"perfydh"}
-    tensesDictEN = {0:"present",
-                  1:"preterite",
-                  2:"imperfect",
-                  3:"pluperfect",
-                  4:"present subjunctive",
-                  5:"imperfect subjunctive",
-                  6:"imperative",
-                  7:"past participle",
-                  8:"simple future",
-                  9:"habitual imperfect",
-                  10:"present (long form, indefinite)",
-                  11:"imperfect (long form)",
-                  12:"present (long form, definite)",
-                  13:"present (long form, affirmative)",
-                  14:"perfect"} 
+
+# person: 0=imp,1=1s,2=2s,3=3sm,4=3sf,5=1p,6=2p,7=3p
+
+personDict = {0:'anpersonek',
+              1:'1s',
+              2:'2s',
+              3:'3sm',
+              4:'3sf',
+              5:'1pl',
+              6:'2pl',
+              7:'3pl'}
+
+# tense: 0=present, 1=preterite, 2=imperfect, 3=pluperfect, 4=subjpres, 5=subjimp
+# 6=imperative,7=past_participle,8=future,9=habitual imperfect
+# 10=longform_present_indef,11=longform_imperfect,12=longform_present_defni
+# 13=longform_present_aff,14=perfect
+tensesDict = {0:"a-lemmyn",
+              1:"tremenys",
+              2:"anperfydh",
+              3:"gorperfydh",
+              4:"islavarek_a-lemmyn",
+              5:"islavarek_anperfydh",
+              6:"gorhemmyn",
+              7:"ppl",
+              8:"devedhek",
+              9:"anperfydh_usadow",
+             10:"a-lemmyn_hir_indef",
+             11:"anperfydh_hir",
+             12:"a-lemmyn_hir_def",
+             13:"a-lemmyn_hir_aff",
+             14:"perfydh"}
+tensesDictEN = {0:"present",
+                1:"preterite",
+                2:"imperfect",
+                3:"pluperfect",
+                4:"present subjunctive",
+                5:"imperfect subjunctive",
+                6:"imperative",
+                7:"past participle",
+                8:"simple future",
+                9:"habitual imperfect",
+                10:"present (long form, indefinite)",
+                11:"imperfect (long form)",
+                12:"present (long form, definite)",
+                13:"present (long form, affirmative)",
+                14:"perfect"}    
+
+if __name__ == '__main__':     
     runTestCode()
 
