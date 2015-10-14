@@ -112,11 +112,11 @@ class RannaSyllabelenn:
                 # add the syllable to the list
                 if d != '':
                     syl_list.insert(0,d)
-                if d != '' and len(ger.split(d,1))>1:
+                if d != '' and len(ger.rsplit(d,1))>1:
                 # if there is more of the word before the
                 # last syllable
                 # remove the last syllable
-                    ger = ger.split(d,1)[0]
+                    ger = ger.rsplit(d,1)[0]
                 else: 
                     ger = ''
         # this is currently returning
