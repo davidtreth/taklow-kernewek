@@ -5,7 +5,10 @@ import string
 
 import mutatya
 
-numarray = ["onan","dew","tri","peswar","pymp","hwegh","seyth","eth","naw","deg","unnek","dewdhek","trydhek","peswardhek","pymthek","hwetek","seytek","etek","nownsek","ugens"]
+numarray = ["onan","dew","tri","peswar","pymp",
+            "hwegh","seyth","eth","naw","deg",
+            "unnek","dewdhek","trydhek","peswardhek","pymthek",
+            "hwetek","seytek","etek","nownsek","ugens"]
 
 def unnnoun(noun, fem=False):
     if fem:
@@ -26,6 +29,34 @@ def trinoun(noun, fem=False):
     else:
         return "tri " + mutatya.mutate(noun, 3)
 
+def firstpartnoun(num, noun, fem=False):
+    # give number 1-19 or first part of compound
+    if num > 4:
+        # direct lookup for numbers up to 20
+        firstpart_k = numarray[num-1] + " " + noun
+        return firstpart_k
+    else:
+        # override for numbers 1-4 to handle mutation
+        # and feminine forms if 'fem' is True
+        # mutation should only happen for 1,3,4 for fem. nouns
+        # variable fem keeps track of gender
+        if num == 4:
+            if fem:
+                firstpart_k = "peder " + noun #feminine form
+            else:
+                firstpart_k = firstpart_k = numarray[num-1] + " " + noun
+            return firstpart_k
+        if num == 3:
+            firstpart_k = trinoun(noun,fem)
+            return firstpart_k
+        if num == 2:
+            firstpart_k = dewnoun(noun, fem)
+            return firstpart_k
+        if num == 1:
+            firstpart_k = unnnoun(noun,fem)
+            return firstpart_k
+            
+
 def numberkw_noun(num, noun, fem=False, npl = "ow"):
     if not(isinstance(num,int)):
         print("num is not an integer. attempting conversion...")
@@ -36,45 +67,25 @@ def numberkw_noun(num, noun, fem=False, npl = "ow"):
         print("num={n}".format(n=num))
         
     if num == 0:
+        # returns empty string
+        # could do '<noun> vyth' perhaps?
+        # but would need to handle recursive call
+        # differently from call from top-level 
         num_k = ""
-    if num >0 and num < 21:
-        num_k = numarray[num-1] +" "+ noun
-
-        if num == 1:
-            num_k = unnnoun(noun,fem) # mutation should only happen for fem. nouns
-        if num == 2:
-            num_k = dewnoun(noun,fem)
-        if num == 3:
-            num_k = trinoun(noun,fem)
-        if num == 4 and fem:
-            num_k = "peder " + noun # feminine form
+    if num >0 and num < 21:     
+        num_k = firstpartnoun(num, noun, fem)
         
     if num>20 and num<40:
-        num_k = numarray[num-21] + " "+ noun + " warn ugens"
-        if num == 21:
-            num_k = unnnoun(noun,fem) + " warn ugens"
-        if num == 22:
-            num_k = dewnoun(noun,fem) + " warn ugens" 
-        if num == 23:
-            num_k = trinoun(noun,fem) + " warn ugens"
-        if num == 24 and fem:
-            num_k = "peder " + noun + " warn ugens"
+        # numbers 21 to 39
+        num_k = firstpartnoun(num-20,noun,fem) + " warn ugens"
             
     if (num>39 and num<100)or(num>119 and num<200):
+        # numbers 40 to 199 excluding 100-119
         firstpart = num % 20
         secondpart = num / 20
-        num_k = numarray[firstpart-1] +" "+ noun + " ha " + numarray[secondpart-1] + " ugens"
-        if firstpart == 1:
-            num_k = unnnoun(noun,fem) + " ha " + numarray[secondpart-1] + " ugens"
-        if firstpart == 2:
-            num_k = dewnoun(noun,fem) + " ha " + numarray[secondpart-1] + " ugens"
-        if firstpart == 3:
-            num_k = trinoun(noun,fem) + " ha " + numarray[secondpart-1] + " ugens"
-        if firstpart == 4 and fem:
-            num_k = "peder " + noun + " ha " + numarray[secondpart-1] +" ugens"                
-        if firstpart == 0:
-            num_k = numarray[secondpart-1] + " ugens " + noun
+        num_k = firstpartnoun(firstpart,noun,fem) + " ha " + numarray[secondpart-1] + " ugens"
         if num == 50:
+            # override for num=50
             num_k = "hanterkans " + noun
             
     if num==100:
@@ -271,7 +282,7 @@ def interactiveTest():
     number_int = int(number)
     noun = raw_input("Enter noun:")        
     if noun == '':
-        print(numberkw(n))
+        print(numberkw(number_int))
     else:
         isfem = raw_input("type 'f' if the noun is feminine:")
         if isfem.lower() == 'f':
