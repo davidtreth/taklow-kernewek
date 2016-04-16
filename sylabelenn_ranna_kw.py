@@ -22,6 +22,9 @@ import nltk
 import sys
 import re
 import argparse
+import codecs
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class RannaSyllabelenn:
     """
@@ -289,7 +292,7 @@ class Ger:
         """ show output for each word """
         print("An ger yw: {g}".format(g=self.graph))
         print("Niver a syllabelennow yw: {n}".format(n=self.n_sls))
-        print("Hag yns i:\n{sls}".format(sls=self.sls))
+        print("Hag yns i:\n{sls}".format(sls=[s.encode("ascii") for s in self.sls]))
         for i in range(self.n_sls):
             gr = self.slsObjs[i].grapheme
             struc = self.slsObjs[i].structure
@@ -299,7 +302,11 @@ class Ger:
             sylLength = self.slsObjs[i].syllableLength
             print("S{n}: {g}, {s}, hirder = {L}, hirder kowal = {t}".format(n=i+1,g=gr,s=struc, L = lenArray, t=sylLength))
         print("Hirder ger kowal = {H}".format(H=self.hirderGer))
-            
+
+    def diskwedhshort(self):
+        """ show short output for each word """
+        print("{g} : {n} ".format(g=self.graph,n=self.n_sls))
+        
 class Syllabelenn:           
     """
     Class for syllable
@@ -467,6 +474,10 @@ if __name__ == '__main__':
                         help="Test mode. Run test code.")
     parser.add_argument("--fwd",action="store_true",
                         help="Use forward segmentation. Default is backward, starting from end of word.")
+    parser.add_argument("--line",action="store_true",
+                        help="Line by line mode. Counts syllables in each line, and uses shorter reporting of each word.")
+    parser.add_argument("--short",action="store_true",
+                        help="Short output for each word, i.e. only number of syllables, rather than details and syllable lengths")
     args = parser.parse_args()
     # Check that the input parameter has been specified.
     if args.inputfile == None:
@@ -474,18 +485,43 @@ if __name__ == '__main__':
         print("Error: No input file provided.")
         sys.exit()
     inputfile = args.inputfile
-    inputtext = file(inputfile).read()
-    rannans = RannaSyllabelenn(inputtext)
-    # run test code if --test argument has been used
-    if args.test:
-        rannans.profya(rannans.geryow)
     # segmentation direction
     if args.fwd:
         fwds=True
     else:
         fwds=False
-    for i in rannans.geryow:
-        g = Ger(i,fwds)
-        if g.graph != '':
-            g.diskwedh()
-            print('\n')
+            
+    if args.line:
+            f = codecs.open(inputfile,"r",encoding="utf-8",errors="replace")
+            inputtext = f.readlines()
+            for n,line in enumerate(inputtext):
+                #line = line.encode('utf-8')
+                print("Linenn {l}".format(l=n))
+                rannans = RannaSyllabelenn(line)
+            # run test code if --test argument has been used
+                if args.test:
+                    rannans.profya(rannans.geryow)
+                Nsls = 0
+                for i in rannans.geryow:
+                    g = Ger(i,fwds)
+                    if g.graph != '':
+                        g.diskwedhshort()
+                        Nsls += g.n_sls
+                print("Niver a sylabellenow yn linenn = {n}\n".format(n=Nsls))
+    else:
+        f = codecs.open(inputfile,"r",encoding='utf-8',errors="replace")
+        inputtext = f.read()
+        #inputtext = inputtext.encode('utf-8')
+        rannans = RannaSyllabelenn(inputtext)
+        # run test code if --test argument has been used
+        if args.test:
+            rannans.profya(rannans.geryow)
+
+        for i in rannans.geryow:
+            g = Ger(i,fwds)
+            if g.graph != '':
+                if args.short:
+                    g.diskwedhshort()
+                else:
+                    g.diskwedh()
+                    print('\n')

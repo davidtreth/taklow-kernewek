@@ -12,12 +12,13 @@ The code is open-source with a GNU GPL.
 Description:
 cornish_corpus.py: a little bit of code using the Python NLTK to analyse Cornish text statistically, find commonest words in particular texts (see kernewek-corpus folder) etc. There are other potential things that may be done with corpora in NLTK see http://www.nltk.org/ This will need Python NLTK and matplotlib to be available.
 
-inflektya.py: a python module to inflect Cornish verbs by tense and person and prepositions by person. Based on A Grammer of Modern Cornish, 3rd ed. W. Brown 2001, and Cornish Verbs, 3rd ed. Kesva an Taves Kernewek 2010. There are some classes of verbs which may be incompletely or incorrectly dealt with.
+inflektya.py: a python module to inflect Cornish verbs by tense and person and prepositions by person. Based on A Grammar of Modern Cornish, 3rd ed. W. Brown 2001, and Cornish Verbs, 3rd ed. Kesva an Taves Kernewek 2010. There are some classes of verbs which may be incompletely or incorrectly dealt with.
 
 mutatya.py: a python module to mutate a Cornish word where you give the word as a str and the desired mutation state as an integer between 1 and 6. Mutation is a phonetic feature of Cornish (similar to how it happens in Welsh) whereby the initial consonants of words can change in certain grammatical circumstances, e.g, kath = a cat, an gath = the cat.
 
 sylabellen_ranna.py: a module for splitting Cornish words into their consituent syllabels. A work in progress and a prelimary to a program to transliterate between different Cornish spelling systems such as Kemmyn and the Standard Written Form. It has also been suggested to me that in future I could also develop this in the area of rhyme, syllable length, and poetry etc.
 Update (08-07-15): now this calculates syllable and word length on the basis of 1 unit for a short vowel or consonant, 2 for half-long vowel or gemminate 'double' consonant, or 3 for a long vowel.
+Update (16-04-16): there is now an option to go through line-by-line counting the number of syllables in each line with the --line option. The --short option simply reports the number of syllables found in each word rather than giving details.
 
 # Usage: python sylabelenn_ranna_kw.py --test <inputfile>
 # where <inputfile> is the path to an input file containing 
