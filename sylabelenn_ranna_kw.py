@@ -18,6 +18,7 @@
 # where <inputfile> is the path to an input file containing 
 # text in Kernewek Kemmyn
 # --test is an optional flag to run the test routines in profya()
+from __future__ import print_function
 import nltk
 import sys
 import re
@@ -305,7 +306,7 @@ class Ger:
 
     def diskwedhshort(self):
         """ show short output for each word """
-        print("{g} : {n} ".format(g=self.graph,n=self.n_sls))
+        print("{g}:{n}  ".format(g=self.graph,n=self.n_sls), end="")
         
 class Syllabelenn:           
     """
@@ -496,7 +497,7 @@ if __name__ == '__main__':
             inputtext = f.readlines()
             for n,line in enumerate(inputtext):
                 #line = line.encode('utf-8')
-                print("Linenn {l}".format(l=n))
+                print("Linenn {l}".format(l=n+1))
                 rannans = RannaSyllabelenn(line)
             # run test code if --test argument has been used
                 if args.test:
@@ -507,7 +508,7 @@ if __name__ == '__main__':
                     if g.graph != '':
                         g.diskwedhshort()
                         Nsls += g.n_sls
-                print("Niver a sylabellenow yn linenn = {n}\n".format(n=Nsls))
+                print("\nNiver a sylabellenow yn linenn = {n}\n".format(n=Nsls))
     else:
         f = codecs.open(inputfile,"r",encoding='utf-8',errors="replace")
         inputtext = f.read()
