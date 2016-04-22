@@ -20,9 +20,19 @@ sylabellen_ranna.py: a module for splitting Cornish words into their consituent 
 Update (08-07-15): now this calculates syllable and word length on the basis of 1 unit for a short vowel or consonant, 2 for half-long vowel or gemminate 'double' consonant, or 3 for a long vowel.
 Update (16-04-16): there is now an option to go through line-by-line counting the number of syllables in each line with the --line option. The --short option simply reports the number of syllables found in each word rather than giving details.
 
-# Usage: python sylabelenn_ranna_kw.py --test <inputfile>
+# Usage: python sylabelenn_ranna_kw.py <inputfile>
 # where <inputfile> is the path to an input file containing 
 # text in Kernewek Kemmyn
+#
+# there are optional command line switches --test (runs some extra test code), --line (line by line processing of input),
+# --short (only reports number of syllables in each word rather than displaying details)
+
+treuslytherenna.py: a module for converting Kernewek Kemmyn text to the Standard Written Form of Cornish. It is currently incomplete since it does not implement all differences between Kemmyn and SWF yet, and requires some more testing.
+
+# Usage python treuslytherenna.py [--short] [--line] <inputfile>
+# where <inputfile> is the path to an input file containing text in Kernewek Kemmyn
+# and --short causes it to only output the SWF text, and --line processes the input line by line and outputs Kernewek Kemmyn
+# and SWF text interlinearlly
 
 testenn.txt and cw_strip.txt are files I have been using to feed sylabellen_ranna.py with material, either small sets of test words, or the Creation of the World in Kernewek Kemmyn with line numbers etc. stripped out
 

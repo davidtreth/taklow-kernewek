@@ -1,23 +1,31 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-# David Trethewey 08-07-2015 
+# David Trethewey 22-04-2016 
 # code is Open Source (GPL)
 #
 # A rough and ready hacked together segmentation of Cornish (Kernewek Kemmyn) text 
 # to the syllable level using regular expressions. 
 #
-# This version (as of 8th July) makes a calculation of syllable length
+# This version makes a calculation of syllable length
 # taking 1 unit as short vowel, 2 as a half-long, 3 as long
 # 1 a normal consonant and 2 as a gemminated double consonant
 # e.g. mm in kamm
 # 
-# In future I will try to make one for the Standard Written Form of Cornish
-# with an idea to use this to do transliteration between the orthographies.
+#
+# This module is used by the module treuslytherenna.py to convert Kernewek Kemmyn
+# text to the Standard Written Form
 #
 # Usage: python sylabelenn_ranna_kw.py --test <inputfile>
 # where <inputfile> is the path to an input file containing 
 # text in Kernewek Kemmyn
 # --test is an optional flag to run the test routines in profya()
+# --fwd uses segmentation starting from the beginning of each word, rather than
+# starting from the end and working backwards
+# --short causes it to do a shorter reporting method simply listing each
+# word and its number of syllables
+# --line causes it to step through the input file line by line, and count the number of syllables
+# in the whole line
+
 from __future__ import print_function
 import nltk
 import sys
@@ -27,55 +35,74 @@ import codecs
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
+# words that have unusual stress
+
+# words of more than one syllable stress on final syllable
+final_syl_stress_words = ['ages','ahwer','androw','ankoth','ankres','attal','avel','aweyl','boban','boken','bulhorn','bysmer','byttegyns','byttele','degoedh','dihwans','a-dhihwans','demmas','devis','devri','tevri','diank','dibarth','diberth','dohajydh','dolos','dremas','drog-atti','eghan','godhor','godramm','goeldheys','myghtern','nahen','nameur','nammnygen','namoy','naneyl','piwpynag','poken','pygans','pynag','pyseul','seulabrys','seuladhydh','soweth','toetta','war-barth','warbarth','yma','ymons','ynwedh','ytho','voban','vulhorn','vysmer','tegoedh','dhegoedh','dhemmas','dhevis','dhibarth','dhohajydh','dhremas','dhrog-atti','wodhor','wodramm','woeldheys','vyghtern','bygans','evy','tejy','eev','hyhi','nyni','hwyhwi','ynsi','yn-bann','yn-dann','ynbann','yndann','a-ji','a-dhann','dygoel','dygweyth','dhygoel','dhygweyth','a-rag','dherag','a-dherag','diworth','a-dhiworth','omri','omdowl']
+
+# words of 3 or more syls. stressed on first syl.
+first_syl_stress_words = ['arader','aradror','kenedhel','kelegel','kenderow','klabytter','lelduri','lenduri','tulyfant','hardigras','oratri','trayturi','genedhel','henedhel','gelegel','helegel','genderow','henderow','glabytter','dulyfant','thulyfant','drayturi','thrayturi']
+
+# words of 4 or more syls. stressed on 2nd syl.
+second_syl_stress_words = ['keniterow','dygynsete','geniterow','heniterow','dhygynsete']
+
+# particles and words that do not carry stress
+unstressed_monosyls = ['an','a','y','re','ny','yth','nyns','na','nag','ow','dha','hy','vy','jy','ma','ha','hag','pan','mar','mars','dhe','po','bo','mes','rag','may','mayth','kyn','kynth','dell']
+
 class RannaSyllabelenn:
     """
     RannaSyllabelenn is a class containing methods for syllable segmentation
-    """    
+    """
+    # perhaps replace these by using re.compile()?
+    
     # syllabelRegExp should match syllable anywhere in a word
-    # a syllable could have structure CV, CVC, VC, V	
+    # a syllable could have structure CV, CVC, VC, V
     syllabelRegExp = r'''(?x)
-    ((bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kw|Kw|ch|Ch|Dhr?|dhr?|dl|dr|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|Gwr?|Gwl?|Gl|Gr|Gn|hw|Hw|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|sbr|Sbr|sp?l?|Sp?l?|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bkdfjvlghmnprstwyBKDFJVLGHMNPRSTVWY]) # consonant
-    (ay|aw|eu|ey|ew|iw|oe|oy|ow|ou|uw|yw|[aeoiuy]) #vowel
-(lgh|bl|br|bb|kl|kr|kn|kw|kk|ch|dhr?|dl|dr|dd|fl|fr|ff|vl|vv|gg?h|gw|gl|gn|ll|mm|nd|ns|nt|nn|pr|pl|pp|rgh?|rdh?|rth?|rv|rn|rr|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgljmnpkrstvw])? #  optional const.
+    ((bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|ch|Ch|Dhr?\'?|dhr?\'?|dl|dr|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bkdfjvlghmnprstwyBKDFJVLGHMNPRSTVWY]) # consonant
+    \'?(ay|a\'?w|eu|ey|ew|iw|oe|oy|ow|ou|uw|yw|[aeoiuy])\'? #vowel
+(lgh|ls|lt|bl|br|bb|kl|kr|kn|kwr?|kk|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgljmnpkrstvw])? #  optional const.
     )| # or
-    ((ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY]) # vowel
-    (lgh|bl|bb|kl|kr|kn|kw|kk|ch|dhr?|dl|dr|dd|fl|fr|ff|vl|vv|gg?h|gw|gl|gn|ll|mm|nd|ns|nt|nn|pr|pl|pp|rgh?|rdh?|rth?|rv|rn|rr|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgljmnpkrstvw])?) # consonant (optional)
+    (\'?(ay|a\'?w|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])\'? # vowel
+    (lgh|ls|lt|bl|bb|kl|kr|kn|kwr?|kk|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgljmnpkrstvw]\'?)?) # consonant (optional)
     '''
     # diwethRegExp matches a syllable at the end of the word
     diwetRegexp =  r'''(?x)
-    ((bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kw|Kw|ch|Ch|Dhr?|dhr?|dl|dr|Dl|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|Gwr?|Gwl?|Gl|Gr|Gn|hw|Hw|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|sbr|Sbr|sp?l?|Sp?l?|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bkdfjlghpmnrstvwyBKDFJLGHPMNRSTVWY])? #consonant or c. cluster
-    (ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY]) # vowel
-    (lgh|bl|br|bb|kl|kr|kn|kw|kk|ch|dhr?|dl|dr|dd|fl|fr|ff|vl|vv|gg?h|gw|gl|gn|ll|mm|nd|ns|nt|nn|pr|pl|pp|rgh?|rdh?|rth?|rv|rn|rr|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgjklmnprstvw])? # optionally a second consonant or cluster ie CVC?
+    ((bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|ch|Ch|Dhr?\'?|dhr?\'?|dl|dr|Dl|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bkdfjlghpmnrstvwyBKDFJLGHPMNRSTVWY]\'?)? #consonant or c. cluster
+    \'?(ay|a\'?w|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|\'?[aeoiuyAEIOUY]\'?) # vowel
+    (lgh|ls|lt|bl|br|bb|kl|kr|kn|kwr?|kk|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgjklmnprstvw]\'?)? # optionally a second consonant or cluster ie CVC?
+    (\-|\.|\,|;|:|!|\?|\(|\))*
     )$
     '''
     # kynsaRegexp matches syllable at beginning of a word
     # 1st syllable could be CV, CVC, VC, V
     kynsaRegexp =  r'''(?x)
-    (^((bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kw|Kw|ch|Ch|Dhr?|dhr?|dl|dr|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|gwr?|gwl?|gl|gr|gn|Gwr?|Gwl?|Gl|Gr|Gn|hw|Hw|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|sbr|Sbr|sp?l?|Sp?l?|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bkdfghjlmnprtvwyBKDFGHJLMNPRTVWY]) # C. matching only at start of string 
-    (ay|aw|eu|ey|ew|iw|oe|oy|ow|ou|uw|yw|[aeoiuy]) # Vowel
-    (lgh|bb?|kk?|ch|dh|dd?|ff?|vv?|gg?h?|ll?|mm?|nd|ns|nt|nn?|pp?|rgh?|rdh?|rth?|rv|rn|rr?|sh|st|sk|sp|ss?|tt?h|tt?|[jw])? # optional C.
+    (^(\'?(bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|ch|Ch|Dhr?|dhr?|dl|dr|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|gwr?|gwl?|gl|gr|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bkdfghjlmnprtvwyBKDFGHJLMNPRTVWY])\'? # C. matching only at start of string 
+    (ay|a\'?w|eu|ey|ew|iw|oe|oy|ow|ou|uw|yw|[aeoiuy])\'? # Vowel
+    (lgh|ls|lk|ld|lf|lt|bb?|kk?|n?ch|n?dr|dh|dd?|ff?|vv?|ght|gg?h?|ll?|mp|mm?|nk|nd|nj|ns|nth?|nn?|pp?|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rj|rf|rs|rr?|sh|st|sk|sp|ss?|tt?h|tt?|[jw])? # optional C.
     ))| # or
-    (^((ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY]))(lgh|bb|kk|ch|dh|dd|ff|vv|gg?h|ll|mm|nd|ns|nt|nn|pp|rgh?|rdh?|rth?|rv|rn|rr|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgkljmnprtvw])? # VC?
-)|(\-)(.*?)'''
-    # rising/falling dipthongs not used at present
+    (^(\'?(ay|a\'?w|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])\'?)(lgh|ls|lk|bb|kk|n?ch|n?dr|dh|dd|ff|vv|ght|gg?h?|ll|ld|lf|lt|mp|mm|nk|nd|nj|ns|nth?|nn|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rs|rf|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgkljmnprtvw])? # VC?
+)|(\-|\.)(.*?)'''
+
+    # these regular expressions below are not really used elsewhere
+    # and may not be consistent with the above.
+    
     # rising dipthongs
     dewson_sevel_re = r'ya|ye|yo|yu|wa|we|wi|wo|wy'
     # falling dipthongs
-    dewson_kodha_re = r'ay|oe|oy|ey|aw|ew|iw|ow|uw|yw'
+    dewson_kodha_re = r'ay|oy|ey|aw|ew|iw|ow|uw|yw'
 
     # word ending in vowels
     pennvog_re = r'^(.*?)(ay|aw|ey|eu|ew|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ou|Ow|Uw|Yw|[aeoiuyAEIOUY])$'
     # word ending in consonants
-    lostkess_re = r'^(.*?)(lgh|bl|bb|kl|kr|kn|kw|kk|ch|dhr?|dl|dr|dd|fl|fr|ff|vl|vv|gg?h|gw|gl|gn|ll|mm|nd|ns|nt|nn|pr|pl|pp|rgh?|rdh?|rth?|rv|rn|rr|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgkljmnprtvw])$'
+    lostkess_re = r'^(.*?)(lgh|ls|lt|bl|br|bb|kl|kr|kn|kwr?|kk|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgjklmnprstvw])$'
     # consonant-vowel sequence at the end
-    lostKB_re =  r'(.*?)(bl|br|Bl|Br|bb|kl|Kl|kr|Kr|kn|Kn|kw|Kw|kk|ch|Ch|Dhr?|dhr?|dl|dr|Dl|Dr|dd|fl|Fl|fr|Fr|vl|Vl|vr|Vr|vv|gwr?|gwl?|gl|gr|gg?h|gn|Gwr?|Gwl?|Gl|Gr|Gn|ll|mm|nd|ns|nt|nn|hw|Hw|pr|pl|Pr|Pl|pp|rgh?|rdh?|rth?|rv|rn|rr|shr?|Shr?|str?|Str?|skr?|Skr?|sbr|Sbr|sp?l?|Sp?l?|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|tt|wr|Wr|wl|Wl|[bdfgkljmnprtvwyBKDLJMNRTVWY])(ay|aw|ey|eu|ew|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])$'
+    lostKB_re =  r'(.*?)(bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|ch|Ch|Dhr?\'?|dhr?\'?|dl|dr|Dl|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bkdfjlghpmnrstvwyBKDFJLGHPMNRSTVWY])(ay|aw|ey|eu|ew|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])$'
     # vowel-consonant sequnce at the end
-    lostBK_re = r'(.*?)(ay|aw|ey|eu|ew|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])(lgh|bl|bb|kl|kr|kn|kw|kk|ch|dhr?|dl|dr|dd|fl|fr|ff|vl|vv|gg?h|gw|gl|gn|ll|mm|nd|ns|nt|nn|pr|pl|pp|rgh?|rdh?|rth?|rv|rn|rr|sh|st|sk|sp|ss?|tt?h|tt|[bdfgkljmnprtvw])$'
+    lostBK_re = r'(.*?)(ay|aw|ey|eu|ew|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])(lgh|ls|lt|bl|br|bb|kl|kr|kn|kwr?|kk|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgjklmnprstvw])$'
     # TODO: may need some more debugging checking which consonant clusters should be
     # considered 'single' and 'double' for the purposes of vowel length
     # vowel and single consonant
-    pennK_singleB = r'^(|bl|br|Bl|Br|ch|Ch|dhr?|Dhr?|dr|Dr|fl|Fl|vl|Vl|vr|Vr|gwr?|gwl?|gl|gr|gn|Gwr?|Gwl?|Gl|Gr|Gn|hw|Hw|kl|Kl|kr|Kr|kn|Kn|kw|Kw|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|spl?|Spl?|thr?|Thr?|[bkdfjlmnprstvwyBKDFJLMNPRSTVWY])(ay|aw|ey|eu|ew|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])'
-    lostBK_single =  r'(.*?)(ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])(|bl|br|ch|dh|dl|gh|nd|ns|nt|rgh?|rdh?|rth?|rv|rn|sh|st|sk|sp|th|[bkdfgjlmnprstvw])$'
+    lostBK_single =  r'(.*?)(ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])(|bl|br|n?ch|dh|dl|gh|mp|nk|nj|nd|ns|nth?|ph|pr|rgh?|rdh?|rth?|rk|rl|rv|rn|rj|rf|rs|sh|st|sk|sp|th|[bkdfgjlmnprstvw])$'
     # vowel and double consonant
     lostBK_double = r'(.*?)(ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])(lgh|bl|br|bb|kl|kr|kn|kw|kk|cch|dl|dr|dd|ff|vv|ggh|ll|mm|nd|ns|nt|nn|pr|pl|pp|rgh?|rdh?|rth?|rr|ssh|ss?|tth|tt|jj)$'
 
@@ -84,8 +111,18 @@ class RannaSyllabelenn:
         initialize RannaSyllabelenn object
         """
         # print(inputtext)
-        self.geryow = nltk.word_tokenize(inputtext)
-        # print(geryow)
+        # nltk.word_tokenize puts these in separate words
+        apos_geryow = ["'m","'s","'th"]
+        geryow = nltk.word_tokenize(inputtext)
+        #print(self.geryow)
+        # go through and concatenate the 'words' beginning with apostrophes
+        # to the previous word
+        for i,g in enumerate(geryow[:-1]):
+            if geryow[i+1] in apos_geryow:
+                geryow[i] = geryow[i] + geryow[i+1]
+                geryow[i+1] = ''
+        self.geryow = geryow
+            
 	
     def ranna_syl(self,ger,regexp,fwd=True,bwd=False):
         """ divide a word into a list of its syllables
@@ -93,6 +130,7 @@ class RannaSyllabelenn:
         """
         syl_list = []
         if fwd:
+            # go forwards through the word
             while ger:
             # print(ger)
                 k = self.kynsa_syl(ger,regexp)
@@ -109,6 +147,7 @@ class RannaSyllabelenn:
                 else: 
                     ger = ''
         if bwd:
+            # go backwards from the end through the word
             while ger:
                 # print(ger)
                 d = self.diwettha_syl(ger,regexp)
@@ -123,7 +162,7 @@ class RannaSyllabelenn:
                     ger = ger.rsplit(d,1)[0]
                 else: 
                     ger = ''
-        # this is currently returning
+        # this is returning
         # a list of plain text
         # not Syllabellen objects
         return syl_list
@@ -133,13 +172,14 @@ class RannaSyllabelenn:
         """
         diwettha_syl = ''
         # take off a trailing hyphen 
-        if ger[-1] == '-':
-            ger = ger[:-1]
-        dsyl = re.findall(regexp,ger) 
+        #if ger[-1] == '-':
+        #    ger = ger[:-1]
+        dsyl = re.findall(regexp,ger)
+        #print("An diwettha sylabellen yw: {dsyl}".format(dsyl=dsyl)) 
         # print(dsyl)
         if not(dsyl == []):
-            diwettha_syl=dsyl[0][1]+dsyl[0][2]+dsyl[0][3]
-        # this is currently returning
+            diwettha_syl=dsyl[0][1]+dsyl[0][2]+dsyl[0][3]+dsyl[0][4]
+        # this is returning
         # plain text
         # not Syllabellen objects
         return diwettha_syl
@@ -154,9 +194,16 @@ class RannaSyllabelenn:
             ger = ger[1:]
         # print(ger)
         ksyl = re.findall(regexp,ger)
-        # print("An kynsa sylabellen yw: {ksyl}".format(ksyl=ksyl))
+        #print("An kynsa sylabellen yw: {ksyl}".format(ksyl=ksyl))
         if not(ksyl == []):
             kynsa_syl = ksyl[0][1]+ksyl[0][5]
+        # make sure we have reached the hyphen before we add it to the output
+        if '-' in ger:
+            n = ger.find('-')
+        if '.' in ger:
+            n = ger.find('.')            
+        if len(ksyl) > 1 and len(kynsa_syl) == n:
+            kynsa_syl += ksyl[1][9]
         return kynsa_syl
 
     def diwettha_lytherenn(self,ger):
@@ -169,40 +216,61 @@ class RannaSyllabelenn:
 
     def profya(self, geryow):
         """ test code
+        Mostly deprecated
         """
         # removya an dashow -
         # geryow = [g.replace("-","") for g in geryow]
 
-        # Kavos an diwettha bogalenn yn ger mars eus bogalenn orth penn an ger 
+        # Kavos an diwettha bogalenn yn pub ger yn rol mars eus bogalenn orth penn an ger 
         # i.e. match regular expression for vowel at the end of the word for a list of words
         pennvog =  [re.findall(RannaSyllabelenn.pennvog_re,g) for g in geryow if (not(re.findall(RannaSyllabelenn.pennvog_re,g)) ==[])]
-        # Kavos an diwettha kessonenn yn ger mars eus kessonenn orth penn an ger
+        # Kavos an diwettha kessonenn yn pub ger yn rol mars eus kessonenn orth penn an ger
         # i.e. match regular expression for consonant at the end of the word for a list of words
         lostkess = [re.findall(RannaSyllabelenn.lostkess_re,g) for g in geryow if (not(re.findall(RannaSyllabelenn.lostkess_re,g))==[])]
-        # Kavos an diwettha kessonenn ha bogalenn mars eus -KB orth penn an ger
-        # i.e. match regular expression for consonant+vowel at end of the word
+        # Kavos an diwettha kessonenn ha bogalenn mars eus -KB orth penn an ger rag pub ger yn rol
+        # i.e. match regular expression for consonant+vowel at end of the word for each word in a list
         lostKB = [re.findall(RannaSyllabelenn.lostKB_re,g) for g in geryow if not(re.findall(RannaSyllabelenn.lostKB_re,g)==[])]
-        # print(pennvog)
-        # print(lostkess)
+        
+        # this prints a list of lists of which each has one tuple as an element
+        # [[(stem,lastv)],[(stem,lastv)],[(stem,lastv)]]
+        # where lastv is the vowle/dipthong that ends a word
+        # and stem is the rest of the word
+        print("Last vowels: {p}".format(p=pennvog))
+        # similarly for words that end in a consonant
+        # or consonant cluster
+        print("\nLast consonants: {l}".format(l=lostkess))
+
+        # the format of lostKB is
+        # [[(stem,const,lastv)],[(stem,const,lastv)]]
+        # where const is a consonant cluster followed by vowel/dipthong lastv
+        # and stem is the rest of the word
+        print("\nLast consonant+vowel: {l}".format(l=lostKB))
+
+        # get the stems, and last syllables out of the
+        # list of lists containing tuples
         tuples = [d[0] for d in lostKB]
         stem = [t[0] for t in tuples]
         dsyl = [t[1]+t[2] for t in tuples]
-        # print(lostkessvog)
-        # print(zip(stem,dsyl))
+
+        print("\nList of (stem,last syllable): {l}".format(l=zip(stem,dsyl)))
+        
         # Kavos an diwettha bogalenn ha kessonenn mars eus -BK orth penn an ger
         # i.e. match regular expression for vowel+consonant at end of the word
         lostBK = [re.findall(RannaSyllabelenn.lostBK_re,g) for g in geryow if not(re.findall(RannaSyllabelenn.lostBK_re,g)==[])]
+        
+        # get the stems, and last syllables out of the
+        # list of lists containing tuples
         tuples = [d[0] for d in lostBK]
         stem = [t[0] for t in tuples]
         dsyl = [t[1]+t[2] for t in tuples]
-        # print(lostvogkess)
-        # print(zip(stem,dsyl))
+        print("\nLast vowel+consonant: {l}".format(l=lostBK))
+        print("\nList of (stem,last syllable): {l}".format(l=zip(stem,dsyl)))
 
         # create list of last syllables and first syllables of list of words 'geryow'
         dsls = [self.diwettha_syl(g,RannaSyllabelenn.diwetRegexp) for g in geryow if self.diwettha_syl(g,RannaSyllabelenn.diwetRegexp) != '']
-        # print(dsls)
+        print("\nLast syllables of words in list: {d}".format(d=dsls))
         ksls = [self.kynsa_syl(g,RannaSyllabelenn.kynsaRegexp) for g in geryow if self.kynsa_syl(g,RannaSyllabelenn.kynsaRegexp) != ''] 
-        # print(ksls)
+        print("\nFirst syllables of words in list: {k}\n".format(k=ksls))
         # make a list of all the remainders of the words after the 1st syllable
         slserell = []
         for k,g in zip(ksls,geryow):
@@ -217,21 +285,20 @@ class RannaSyllabelenn:
                 nessasls.append(self.kynsa_syl(g,RannaSyllabelenn.kynsaRegexp))
             else:
                 nessasls.append('')
-
-        # print(slserell)
-        # print(nessasls)
         geryowk = [g for g in geryow if self.kynsa_syl(g,RannaSyllabelenn.kynsaRegexp) != ''] 
         # print(zip(ksls,geryowk))
-        #for k,n,e,g in zip(ksls,nessasls,slserell,geryowk):
-            # print("Ger: {g}, an kynsa sylabellen yw: {k}, an sylabelennow erell yw: {e}, an nessa sylabelenn yw: {n}".format(g=g,k=k,e=e,n=n))
-
-        # print([(g, re.findall(dewson_sevel_re,g)) for g in geryow if re.findall(dewson_sevel_re,g) != []])
-
+        for k,n,e,g in zip(ksls,nessasls,slserell,geryowk):
+             print("Ger: {g}, an kynsa sylabellen yw: {k}, an sylabelennow erell yw: {e}, an nessa sylabelenn yw: {n}".format(g=g,k=k,e=e,n=n))
+        print("\nWords containing rising dipthongs:")
+        print([(g, re.findall(RannaSyllabelenn.dewson_sevel_re,g)) for g in geryow if re.findall(RannaSyllabelenn.dewson_sevel_re,g) != []])
+        print("\nWords containing falling dipthongs:")
+        print([(g, re.findall(RannaSyllabelenn.dewson_kodha_re,g)) for g in geryow if re.findall(RannaSyllabelenn.dewson_kodha_re,g) != []])
+        
 class Ger:
     """
     class for a word of Cornish text
     """
-    def __init__(self,ger,fwds=False):
+    def __init__(self,ger,rannans,fwds=False):
         """ initialize Ger object
         """
         self.graph = ger # an ger kowal
@@ -239,16 +306,18 @@ class Ger:
         # self.grapheme = self.grapheme.replace("-","")
         # dilea an . ; , ?
         # strip out punctuation characters
-        self.graph = self.graph.replace(".","")
-        self.graph = self.graph.replace(";","")
-        self.graph = self.graph.replace(",","")
-        self.graph = self.graph.replace("?","")
-        self.graph = self.graph.replace("'","")
-        self.graph = self.graph.replace(" ","")
+        #self.graph = self.graph.replace(".","")
+        #self.graph = self.graph.replace(";","")
+        #self.graph = self.graph.replace(",","")
+        #self.graph = self.graph.replace("?","")
+        #self.graph = self.graph.replace("'","")
+        #self.graph = self.graph.replace(" ","")
         # print(ger)
+        
         self.n_sls = 0 # niver sylabelennow
         self.sls = []  # rol a sylabelennow yn furv tekst
-        self.slsObjs = [] # rol a taklennow sylabelennow
+        self.slsObjs = [] # rol a daklennow sylabelennow
+        
         if fwds:
             # go forwards
             sls = rannans.ranna_syl(self.graph,RannaSyllabelenn.kynsaRegexp,fwd=True,bwd=False)
@@ -259,28 +328,45 @@ class Ger:
         # print(sls)
         self.sls = sls
         self.n_sls = len(sls)
-        # gergesys = self.graph # rann an ger yw gesys
-        # while gergesys != '':
-            # k = rannans.kynsa_syl(gergesys,rannans.kynsaRegexp)
-            # self.sls.append(copy.copy(k))
-            # if (len(k)>0) and (len(gergesys.split(k,1))>1):
-            #     gergesys = gergesys.split(k,1)[1]
-            # else:
-            #     gergesys = ''
-            # self.n_sls = self.n_sls + 1
         for s in self.sls:
-            self.slsObjs.append(Syllabelenn(s))
+            # create a Syllabelenn object and append it to a list
+            self.slsObjs.append(Syllabelenn(s,rannans))
         #print ("len(self.slsObjs) = {l}".format(l=len(self.slsObjs)))
+        for i,s in enumerate(self.slsObjs):
+            # store number of syllables in word, position in word
+            # and spelling of word in attributes of the Syllabelenn object
+            s.nSylsGer = self.n_sls
+            s.position = i+1
+            s.graphGer = self.graph
+            if i == self.n_sls -1:
+                # check if it is the last syllable of the word
+                # and flag it if it is
+                s.final = True
+                
+        # find out which syllable is stressed        
         if len(self.slsObjs) == 1:
-            #print("setting stressed and monosyl")
-            self.slsObjs[0].stressed = True
+            # monosyllables are stressed except for a few particles etc.
+            # which do not carry stress
+            # print("setting stressed and monosyl")
+            if self.graph in unstressed_monosyls:
+               self.slsObjs[0].stressed = False
+            else:
+                self.slsObjs[0].stressed = True
+            # flag monosyllables
             self.slsObjs[0].monosyl = True
         elif len(self.slsObjs) > 1:
-            # TODO - test for exceptions
-            # penultimate stress
-            self.slsObjs[-2].stressed = True
+            # test for exceptions
+            if self.graph in final_syl_stress_words:
+                self.slsObjs[-1].stressed = True
+            elif self.graph in first_syl_stress_words:
+                self.slsObjs[0].stressed = True
+            elif self.graph in second_syl_stress_words:
+                self.slsObjs[1].stressed = True
+            else:
+                # penultimate stress
+                self.slsObjs[-2].stressed = True
         
-        # counter for total word length
+        # counter for total syllable length in word
         self.hirderGer = 0
         # update length arrays and total syllable length
         # after monosyl and stressed are set
@@ -294,6 +380,10 @@ class Ger:
         print("An ger yw: {g}".format(g=self.graph))
         print("Niver a syllabelennow yw: {n}".format(n=self.n_sls))
         print("Hag yns i:\n{sls}".format(sls=[s.encode("ascii") for s in self.sls]))
+        # for each syllable, display its spelling - capitalized if stressed
+        # structure (CVC/CV/VC/V)
+        # list with length of syllable parts
+        # total length syllable
         for i in range(self.n_sls):
             gr = self.slsObjs[i].grapheme
             struc = self.slsObjs[i].structure
@@ -302,30 +392,42 @@ class Ger:
             lenArray = self.slsObjs[i].lengtharray
             sylLength = self.slsObjs[i].syllableLength
             print("S{n}: {g}, {s}, hirder = {L}, hirder kowal = {t}".format(n=i+1,g=gr,s=struc, L = lenArray, t=sylLength))
+        # total length of syllables in word
         print("Hirder ger kowal = {H}".format(H=self.hirderGer))
 
     def diskwedhshort(self):
         """ show short output for each word """
+        # spelling: number of syllables
         print("{g}:{n}  ".format(g=self.graph,n=self.n_sls), end="")
         
 class Syllabelenn:           
     """
     Class for syllable
     """
-    def __init__(self,graph):
+    def __init__(self,graph,rannans):
         """
         Initialize Syllabelenn object
         """
+        # spelling
         self.grapheme = graph
+        # stressed ?
         self.stressed = False
+        # monosyllable ?
         self.monosyl = False
+        # rannans is the RannaSyllabelenn object containing the reg exps and regexp methods
+        self.rannans = rannans
+        # structure of syllable (CVC/VC/CV/V)
         self.structure = ''
-        syl = re.findall(RannaSyllabelenn.syllabelRegExp,graph)
-        self.syl = syl
+        # match the regular expression syllabelRegExp
+        syl = re.findall(RannaSyllabelenn.syllabelRegExp,graph)        
+        self.syl = syl        
+        self.nSylsGer = 0
+        self.position = 0
+        self.final = False
+        self.graphGer = ''
         # print(syl)
         # slice syl list to get the syllable parts
         # i.e. consonant clusters + vowels
-        
         if len(syl) > 0:
             if syl[0][0] != '':
             # if there is a consonant at start
@@ -352,6 +454,7 @@ class Syllabelenn:
     def lengthSylParts(self):
         """ find the lengths of each part of the syllable
         and the syllable as a whole """
+        # initialist elements of lengtharray to 1
         lengtharray = range(len(self.sylparts))
         lengtharray = [i*0 + 1 for i in lengtharray]
         #print("self.structure={s}".format(s=self.structure))
@@ -360,33 +463,35 @@ class Syllabelenn:
             #print("self.monosyl={m}".format(m=self.monosyl))
             if self.monosyl:
             # mars yw unnsyllabelenn:
-                if re.search(rannans.lostBK_single,self.grapheme):
+                if re.search(self.rannans.lostBK_single,self.grapheme):
                     lengtharray[1] = 3
                     #    mars yw kessonenn unnplek: bogalenn hir 
-                    # ha kessonenn berr
+                    # ha kessonenn verr
                     lengtharray[2] = 1
                 else:
-                    if re.search(rannans.lostBK_double,self.grapheme):
+                    if re.search(self.rannans.lostBK_double,self.grapheme):
                         lengtharray[1] = 1
-                        #    mars yw kessonenn dewblek: bogalenn berr
+                        #    mars yw kessonenn dewblek: bogalenn verr
                         # ha kessonenn hir
                         lengtharray[2] = 2
             else:
                 if self.stressed:
                     # mars yw liessyllabelenn poesys:
-                    if re.search(rannans.lostBK_single,self.grapheme):
+                    if re.search(self.rannans.lostBK_single,self.grapheme):
                         # mars yw kessonenn unnplek: boglenn hanterhir
+                        # ha kessonenn verr
                         lengtharray[1] = 2
                         lengtharray[2] = 1
                     else:
-                        if re.search(rannans.lostBK_double,self.grapheme):
-                            # mars yw kessonenn dewblek: bogalenn berr
+                        if re.search(self.rannans.lostBK_double,self.grapheme):
+                            # mars yw kessonenn dewblek: bogalenn verr
+                            # ha kessonenn hir
                             lengtharray[1] = 1
                             lengtharray[2] = 2
                         
                 else:
                     # mars yw liessyllabelenn anpoesys:
-                    #    bogalenn verr
+                    #    bogalenn verr ha kessonenn verr
                     lengtharray[1] = 1
                     lengtharray[2] = 1
 
@@ -409,26 +514,26 @@ class Syllabelenn:
         if self.structure == 'VC':
             if self.monosyl:
                 # mars yw unnsyllabelenn:
-                if re.search(rannans.lostBK_single,self.grapheme):
+                if re.search(self.rannans.lostBK_single,self.grapheme):
                     lengtharray[0] = 3
                     #    mars yw kessonenn unnplek: bogalenn hir 
                     # ha kessonenn berr
                     lengtharray[1] = 1
                 else:
-                    if re.search(rannans.lostBK_double,self.grapheme):
+                    if re.search(self.rannans.lostBK_double,self.grapheme):
                         lengtharray[0] = 1
-                        #    mars yw kessonenn dewblek: bogalenn berr
+                        #    mars yw kessonenn dewblek: bogalenn verr
                         # ha kessonenn hir
                         lengtharray[1] = 2
             else:
                 if self.stressed:
                     # mars yw liessyllabelenn poesys:
-                    if re.search(rannans.lostBK_single,self.grapheme):
+                    if re.search(self.rannans.lostBK_single,self.grapheme):
                         # mars yw kessonenn unnplek: boglenn hanterhir
                         lengtharray[0] = 2
                         lengtharray[1] = 1
                     else:
-                        if re.search(rannans.lostBK_double,self.grapheme):
+                        if re.search(self.rannans.lostBK_double,self.grapheme):
                             # mars yw kessonenn dewblek: bogalenn berr
                             lengtharray[0] = 1
                             lengtharray[1] = 2
@@ -485,32 +590,27 @@ if __name__ == '__main__':
         # Print an error message if not and exit.
         print("Error: No input file provided.")
         sys.exit()
-    inputfile = args.inputfile
-    # segmentation direction
-    if args.fwd:
-        fwds=True
-    else:
-        fwds=False
-            
+        
+    f = codecs.open(args.inputfile,"r",encoding="utf-8",errors="replace")
     if args.line:
-            f = codecs.open(inputfile,"r",encoding="utf-8",errors="replace")
             inputtext = f.readlines()
             for n,line in enumerate(inputtext):
                 #line = line.encode('utf-8')
                 print("Linenn {l}".format(l=n+1))
                 rannans = RannaSyllabelenn(line)
-            # run test code if --test argument has been used
+                # run test code if --test argument has been used
                 if args.test:
                     rannans.profya(rannans.geryow)
+                # count the total syllables in each line
                 Nsls = 0
                 for i in rannans.geryow:
-                    g = Ger(i,fwds)
+                    g = Ger(i,rannans,args.fwd)
+                    # for each word, display it with number of syllables
                     if g.graph != '':
                         g.diskwedhshort()
                         Nsls += g.n_sls
                 print("\nNiver a sylabellenow yn linenn = {n}\n".format(n=Nsls))
     else:
-        f = codecs.open(inputfile,"r",encoding='utf-8',errors="replace")
         inputtext = f.read()
         #inputtext = inputtext.encode('utf-8')
         rannans = RannaSyllabelenn(inputtext)
@@ -518,11 +618,16 @@ if __name__ == '__main__':
         if args.test:
             rannans.profya(rannans.geryow)
 
+        punctchars = ".,;:!?()-"
         for i in rannans.geryow:
-            g = Ger(i,fwds)
-            if g.graph != '':
+            g = Ger(i,rannans,args.fwd)
+            # avoid printing 'words' that consist only of a
+            # punctuation character
+            if g.graph != '' and g.graph not in punctchars:
                 if args.short:
+                    # print short form word:nsyls
                     g.diskwedhshort()
                 else:
+                    # print long form with syllable details
                     g.diskwedh()
                     print('\n')

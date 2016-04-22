@@ -67,7 +67,7 @@
  Argheledh, Ordyr pur vras,
  dewgh a-rag omma dhe vy,
  ha Vertutys kekeffrys.
- #				   # dummy line Stokes 64
+ 
  Ha'n eledh, y'n barth dheghow
  hwi a 'sedh omma heb gow.
  Dhymm y fydhowgh kannasow,
@@ -299,7 +299,7 @@
  Henna 'via hager dra!
  Den a vynn'ta gul a bri
  dhe dhos omma dhe'n plas ma
- neb yw lenwys a## glori?
+ neb yw lenwys a glori?
  Ragdho wordhi nyns yw ev!
  Na, na, ny vydh yndella.
  My a worthyp dhis henna.
@@ -1051,7 +1051,7 @@
 
  Henna yth yw truedh dra,
  a-ban res dhymmo koela
- #                            # dummy line Stokes 839
+
  po kelli an gerensa
  eus ord'nys ynter-ranna.
 
