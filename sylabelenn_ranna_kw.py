@@ -32,23 +32,76 @@ import sys
 import re
 import argparse
 import codecs
+import mutatya
 reload(sys)
 sys.setdefaultencoding('utf-8')
+
+
+def addallmutatedforms(listwords):
+    """ add all possible mutated forms to a list of words """
+    mutatedwords = []
+    for w in listwords:
+        for i in [2,3,4,5,6]:
+            mutatedwords.append(mutatya.mutate(w,i))
+    for w in mutatedwords:
+        if w not in listwords:
+            listwords.append(w)
 
 # words that have unusual stress
 
 # words of more than one syllable stress on final syllable
-final_syl_stress_words = ['ages','ahwer','androw','ankoth','ankres','attal','avel','aweyl','boban','boken','bulhorn','bysmer','byttegyns','byttele','degoedh','dihwans','a-dhihwans','demmas','devis','devri','tevri','diank','dibarth','diberth','dohajydh','dolos','dremas','drog-atti','eghan','godhor','godramm','goeldheys','myghtern','nahen','nameur','nammnygen','namoy','naneyl','piwpynag','poken','pygans','pynag','pyseul','seulabrys','seuladhydh','soweth','toetta','war-barth','warbarth','yma','ymons','ynwedh','ytho','voban','vulhorn','vysmer','tegoedh','dhegoedh','dhemmas','dhevis','dhibarth','dhohajydh','dhremas','dhrog-atti','wodhor','wodramm','woeldheys','vyghtern','bygans','evy','tejy','eev','hyhi','nyni','hwyhwi','ynsi','yn-bann','yn-dann','ynbann','yndann','a-ji','a-dhann','dygoel','dygweyth','dhygoel','dhygweyth','a-rag','dherag','a-dherag','diworth','a-dhiworth','omri','omdowl']
+final_syl_stress_words = ['ages','ahwer','androw','ankoth','ankres','attal',
+                          'avel','aweyl','boban','boken','bulhorn','bysmer',
+                          'byttegyns','byttele','degoedh','dihwans',
+                          'a-dhihwans','demmas','devis','devri','tevri',
+                          'diank','dohajydh','dolos',
+                          'dremas','drog-atti','eghan','godhor','godramm',
+                          'goeldheys','myghtern','nahen','nameur','nammnygen',
+                          'namoy','naneyl','piwpynag','poken','pygans','pynag',
+                          'pyseul','seulabrys','seuladhydh','soweth','toetta',
+                          'war-barth','warbarth','yma','ymons','ynwedh','ytho',
+                          'voban','vulhorn','vysmer','tegoedh','dhegoedh',
+                          'dhemmas','dhevis','dhibarth','dhohajydh','dhremas',
+                          'dhrog-atti','wodhor','wodramm','woeldheys',
+                          'vyghtern','bygans','evy','tejy','eev','hyhi','nyni',
+                          'hwyhwi','ynsi','yn-bann','yn-dann','ynbann',
+                          'yndann','a-ji','a-dhann','dygoel','dygweyth',
+                          'dhygoel','dhygweyth','a-rag','dherag','a-dherag',
+                          'a-dhiworth','omri','omdowl', 'dibygans',
+                          'diber-dowr','diwvanek-plat', 'dhibygans',
+                          'dhiber-dowr', 'dhiwvanek-plat']
 
 # words of 3 or more syls. stressed on first syl.
-first_syl_stress_words = ['arader','aradror','kenedhel','kelegel','kenderow','klabytter','lelduri','lenduri','tulyfant','hardigras','oratri','trayturi','genedhel','henedhel','gelegel','helegel','genderow','henderow','glabytter','dulyfant','thulyfant','drayturi','thrayturi']
+first_syl_stress_words = ['arader','aradror','kenedhel','kelegel','kenderow',
+                          'klabytter','lelduri','lenduri','tulyfant',
+                          'hardigras','oratri','trayturi','genedhel',
+                          'henedhel','gelegel','helegel','genderow',
+                          'henderow','glabytter','dulyfant','thulyfant',
+                          'drayturi','thrayturi']
 
 # words of 4 or more syls. stressed on 2nd syl.
-second_syl_stress_words = ['keniterow','dygynsete','geniterow','heniterow','dhygynsete']
+second_syl_stress_words = ['keniterow','dygynsete','geniterow','heniterow',
+                           'dhygynsete']
 
 # particles and words that do not carry stress
-unstressed_monosyls = ['an','a','y','re','ny','yth','nyns','na','nag','ow','dha','hy','vy','jy','ma','ha','hag','pan','mar','mars','dhe','po','bo','mes','rag','may','mayth','kyn','kynth','dell']
+unstressed_monosyls = ['an','a','y','re','ny','yth','nyns','na','nag','ow',
+                       'dha','hy','vy','jy','ma','ha','hag','pan','mar','mars',
+                       'dhe','po','bo','mes','rag','may','mayth','kyn','kynth',
+                       'dell']
+    
+# 2 syllable words with di- that are stressed on the first syllable
+words_di_stress1 = ["dial", "dibegh", "dibenn", "dibra", "diek", "dien",
+                    "difenn", "dilesh", "dillas", "dinan", "dinas", "dinek",
+                    "diner", "disel", "diskan", "diskar", "diskeudh", "dismyk",
+                    "distowgh", "disya", "divers", "divyn", "diwarr",
+                    "diwbaw", "diwbleth", "diwdhorn", "diwedh", "diwen",
+                    "diwes", "diwfer", "diwfordh", "diwgell", "diwglun",
+                    "diwla", "diwlens", "diwroev", "diwros", "diwskeodh",
+                    "diwvogh", "diwvregh", "diwvronn", "diwweus", "diwweyth"]
 
+addallmutatedforms(words_di_stress1)
+
+                        
 class RannaSyllabelenn:
     """
     RannaSyllabelenn is a class containing methods for syllable segmentation
@@ -58,7 +111,7 @@ class RannaSyllabelenn:
     # syllabelRegExp should match syllable anywhere in a word
     # a syllable could have structure CV, CVC, VC, V
     syllabelRegExp = r'''(?x)
-    ((bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|ch|Ch|Dhr?\'?|dhr?\'?|dl|dr|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bkdfjvlghmnprstwyBKDFJVLGHMNPRSTVWY]) # consonant
+    ((bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|ch|Ch|Dhr?\'?|dhr?\'?|dl|dr|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bkdfjvlghmnprstwyzBKDFJVLGHMNPRSTVWZY]) # consonant
     \'?(ay|a\'?w|eu|ey|ew|iw|oe|oy|ow|ou|uw|yw|[aeoiuy])\'? #vowel
 (lgh|ls|lt|bl|br|bb|kl|kr|kn|kwr?|kk|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgljmnpkrstvw])? #  optional const.
     )| # or
@@ -67,7 +120,7 @@ class RannaSyllabelenn:
     '''
     # diwethRegExp matches a syllable at the end of the word
     diwetRegexp =  r'''(?x)
-    ((bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|ch|Ch|Dhr?\'?|dhr?\'?|dl|dr|Dl|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bkdfjlghpmnrstvwyBKDFJLGHPMNRSTVWY]\'?)? #consonant or c. cluster
+    ((bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|ch|Ch|Dhr?\'?|dhr?\'?|dl|dr|Dl|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bkdfjlghpmnrstvwyzBKDFJLGHPMNRSTVWYZ]\'?)? #consonant or c. cluster
     \'?(ay|a\'?w|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|\'?[aeoiuyAEIOUY]\'?) # vowel
     (lgh|ls|lt|bl|br|bb|kl|kr|kn|kwr?|kk|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgjklmnprstvw]\'?)? # optionally a second consonant or cluster ie CVC?
     (\-|\.|\,|;|:|!|\?|\(|\))*
@@ -76,7 +129,7 @@ class RannaSyllabelenn:
     # kynsaRegexp matches syllable at beginning of a word
     # 1st syllable could be CV, CVC, VC, V
     kynsaRegexp =  r'''(?x)
-    (^(\'?(bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|ch|Ch|Dhr?|dhr?|dl|dr|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|gwr?|gwl?|gl|gr|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bkdfghjlmnprtvwyBKDFGHJLMNPRTVWY])\'? # C. matching only at start of string 
+    (^(\'?(bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|ch|Ch|Dhr?|dhr?|dl|dr|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|gwr?|gwl?|gl|gr|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bkdfghjlmnprtvwyzBKDFGHJLMNPRTVWYZ])\'? # C. matching only at start of string 
     (ay|a\'?w|eu|ey|ew|iw|oe|oy|ow|ou|uw|yw|[aeoiuy])\'? # Vowel
     (lgh|ls|lk|ld|lf|lt|bb?|kk?|n?ch|n?dr|dh|dd?|ff?|vv?|ght|gg?h?|ll?|mp|mm?|nk|nd|nj|ns|nth?|nn?|pp?|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rj|rf|rs|rr?|sh|st|sk|sp|ss?|tt?h|tt?|[jw])? # optional C.
     ))| # or
@@ -96,15 +149,15 @@ class RannaSyllabelenn:
     # word ending in consonants
     lostkess_re = r'^(.*?)(lgh|ls|lt|bl|br|bb|kl|kr|kn|kwr?|kk|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgjklmnprstvw])$'
     # consonant-vowel sequence at the end
-    lostKB_re =  r'(.*?)(bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|ch|Ch|Dhr?\'?|dhr?\'?|dl|dr|Dl|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bkdfjlghpmnrstvwyBKDFJLGHPMNRSTVWY])(ay|aw|ey|eu|ew|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])$'
+    lostKB_re =  r'(.*?)(bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|ch|Ch|Dhr?\'?|dhr?\'?|dl|dr|Dl|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bkdfjlghpmnrstvwyzBKDFJLGHPMNRSTVWYZ])(ay|aw|ey|eu|ew|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])$'
     # vowel-consonant sequnce at the end
     lostBK_re = r'(.*?)(ay|aw|ey|eu|ew|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])(lgh|ls|lt|bl|br|bb|kl|kr|kn|kwr?|kk|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgjklmnprstvw])$'
     # TODO: may need some more debugging checking which consonant clusters should be
     # considered 'single' and 'double' for the purposes of vowel length
     # vowel and single consonant
-    lostBK_single =  r'(.*?)(ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])(|bl|br|n?ch|dh|dl|gh|mp|nk|nj|nd|ns|nth?|ph|pr|rgh?|rdh?|rth?|rk|rl|rv|rn|rj|rf|rs|sh|st|sk|sp|th|[bkdfgjlmnprstvw])$'
+    lostBK_single =  r'(.*?)(ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])(|bl|br|n?ch|dh|dl|gh|mp|nj|nd|ns|nth?|ph|pr|rgh?|rdh?|rth?|rk|rl|rv|rn|rj|rf|rs|sh|st|sk|sp|th|[bkdfgjlmnprstvw])$'
     # vowel and double consonant
-    lostBK_double = r'(.*?)(ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])(lgh|bl|br|bb|kl|kr|kn|kw|kk|cch|dl|dr|dd|ff|vv|ggh|ll|mm|nd|ns|nt|nn|pr|pl|pp|rgh?|rdh?|rth?|rr|ssh|ss?|tth|tt|jj)$'
+    lostBK_double = r'(.*?)(ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])(lgh|bl|br|bb|kl|kr|kn|kw|kk|cch|dl|dr|dd|ff|vv|ggh|ll|mm|nk|nd|ns|nt|nn|pr|pl|pp|rgh?|rdh?|rth?|rr|ssh|ss?|tth|tt|jj)$'
 
     def __init__(self, inputtext):
         """
@@ -348,7 +401,7 @@ class Ger:
             # monosyllables are stressed except for a few particles etc.
             # which do not carry stress
             # print("setting stressed and monosyl")
-            if self.graph in unstressed_monosyls:
+            if self.graph.lower() in unstressed_monosyls:
                self.slsObjs[0].stressed = False
             else:
                 self.slsObjs[0].stressed = True
@@ -356,11 +409,17 @@ class Ger:
             self.slsObjs[0].monosyl = True
         elif len(self.slsObjs) > 1:
             # test for exceptions
-            if self.graph in final_syl_stress_words:
-                self.slsObjs[-1].stressed = True
-            elif self.graph in first_syl_stress_words:
+            if self.graph[:2] == "di" and self.n_sls == 2:
+                # 2 syllable words starting with di- are stressed
+                # on second syllable except for a list of words
+                # which are stressed on di- which is penultimate
+                if not(self.graph.lower() in words_di_stress1):
+                    self.slsObjs[-1].stressed = True            
+            elif self.graph.lower() in final_syl_stress_words:
+                self.slsObjs[-1].stressed = True                
+            elif self.graph.lower() in first_syl_stress_words:
                 self.slsObjs[0].stressed = True
-            elif self.graph in second_syl_stress_words:
+            elif self.graph.lower() in second_syl_stress_words:
                 self.slsObjs[1].stressed = True
             else:
                 # penultimate stress

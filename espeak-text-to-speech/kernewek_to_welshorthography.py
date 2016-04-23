@@ -16,7 +16,6 @@ def towelsh(inputtext,newline=False):
     outputtext = ""    
     for w in inputtext:
         w = w.lower()
-        w = w.replace("dh","dd")
         w = w.replace("f","ff")
         w = w.replace("sya","sja")
         w = w.replace("y","i")
@@ -30,6 +29,7 @@ def towelsh(inputtext,newline=False):
         w = w.replace("ou","ŵ")
         w = w.replace("oe","oo")
         w = w.replace("u","i")
+        w = w.replace("dh","dd")
         if newline:
             outputtext += w + "\n"
         else:

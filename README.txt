@@ -29,10 +29,11 @@ Update (16-04-16): there is now an option to go through line-by-line counting th
 
 treuslytherenna.py: a module for converting Kernewek Kemmyn text to the Standard Written Form of Cornish. It is currently incomplete since it does not implement all differences between Kemmyn and SWF yet, and requires some more testing.
 
-# Usage python treuslytherenna.py [--short] [--line] <inputfile>
+# Usage python treuslytherenna.py [--short] [--line] [--verberr] <inputfile>
 # where <inputfile> is the path to an input file containing text in Kernewek Kemmyn
 # and --short causes it to only output the SWF text, and --line processes the input line by line and outputs Kernewek Kemmyn
 # and SWF text interlinearlly
+# --verberr flags up when the segmentation fails to use all of the word
 
 testenn.txt and cw_strip.txt are files I have been using to feed sylabellen_ranna.py with material, either small sets of test words, or the Creation of the World in Kernewek Kemmyn with line numbers etc. stripped out
 
