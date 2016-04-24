@@ -30,7 +30,8 @@ def addallinflectedforms(listwords,listverbs):
              13:"a-lemmyn_hir_aff",
              14:"perfydh"}
     inflectedverbparts = []
-    for verb in listverbs:        
+    for verb in listverbs:
+        inflectedverbparts.append(verb)        
         for per in range(8):
             for tense in range(8):
                 # inflect verb for the person per and tense. 0 is to not have the suffixed pron.
@@ -150,3 +151,41 @@ words_di_stress1 = ["dial", "dibegh", "dibenn", "dibra", "diek", "dien",
                     "diwvogh", "diwvregh", "diwvronn", "diwweus", "diwweyth"]
 
 addallmutatedforms(words_di_stress1)
+
+# words that use <c> in SWF in place of s in KK
+
+words_c = ["abesedari", "abesedaris", "assendyans", "dissernyans",
+           "dissernyansow", "prosess", "prosessys", "prosessyon", "prosessyons",
+           "pynsel", "pynsels", "pynser", "pynseryow", "resevans", "resevansow",
+           "gorsita", "gorsitys", "gromersi", "mersi", "nisita", "pennsita",
+           "pennsitys", "polisi", "polisis", "prinsipata", "prinsipatys",
+           "rekonsilyans", "rekonsilyansow", "sosyal", "sosyalieth",
+           "sosyalydh", "sosyalydhyon", "sosyalydhes", "sosyalydhesow",
+           "sosyalydhek", "sosyologieth", "sosyologiethek", "sosyologydh",
+           "sosyologydhyon", "sosyologydhes", "sosyologydhesow", "akusasyon",
+           "akusasyons", "deklarasyon", "deklarasyons", "fondasyon",
+           "fondasyons", "fysysyen", "fysysyens", "mensyon", "mensyons",
+           "menystrasyon", "menystrasyons", "nasyon", "nasyons", "nasyonal",
+           "optysyan", "optysyans", "optysyanes", "optysyanesow", "potensyal",
+           "potensyals", "presyous", "revelasyon", "revelasyons", "salvasyon",
+           "salvasyons", "spesyli", "stasyon", "stasyons", "tradisyon",
+           "tradisyons", "tradisyonal", "vokasyon", "selder", "selders",
+           "sellulos", "selluloyd", "sentimeter", "sentimetrow", "sertan",
+           "sider", "siders", "sidi", "sidis", "sigar", "sigarow", "sigarik",
+           "sigarigow", "sinema", "sinemas", "sirk", "sirkow", "sita", "sitys",
+           "sivil"]
+# words that have a SWF <c> in place of KK <s> but also retain <syon> elsewhere
+# in the word
+words_c_syon = ["prosessyon", "prosessyons"]
+           
+           
+verbs_c = ["assendya", "desessya", "desevya", "dissernya", "konsevya",
+           "prosedya", "prosessya", "reseva", "rekonsilya", "sertifia",
+           "sessya"]    
+verbs_infl = []
+ 
+addallinflectedforms(words_c, verbs_c)
+addallinflectedforms(verbs_infl, verbs_c)
+addallmutatedforms(words_c)
+addallmutatedforms(verbs_infl)
+addallmutatedforms(words_c_syon)            

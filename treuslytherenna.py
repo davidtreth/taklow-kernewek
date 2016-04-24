@@ -4,14 +4,21 @@ import datageryow
 import argparse
 import codecs
 
-# TODO - vocalic alternation e.g. byw but bewnans, bewnansow
+# TODO
+# vocalic alternation e.g. byw but bewnans, bewnansow
 # benyn, benenes
 # often KK half-long <y> --> SWF <e>
 # also some unstressed <y> in final syllable of root --> <e>
+# now implemented but needs more testing
 
 # use of c in place of s in some words e.g. cider, cita, polici
+# now implemented but needs more testing
+
+# not implemented yet:
 # use of z zebra, Zimbabwe
-# hyphenation
+# need to find which words use z in SWF
+# hyphenation - currently leaves as it is
+# changes of individual lexical items
 # dhyworth/dyworth
 # ynkleudhva --> ynkladhva
             
@@ -97,7 +104,31 @@ def convert_double_consts(inputsyl):
             outputgrapheme = outputgrapheme.replace("rr","r")
     inputsyl.grapheme = outputgrapheme
 
+
+def convert_s_c(inputword):
+    if inputword.graph in datageryow.words_c:
+        outputgraph = inputword.graph.replace("se","ce")
+        outputgraph = outputgraph.replace("si", "ci")
+        outputgraph = outputgraph.replace("syal", "cyal")
+        outputgraph = outputgraph.replace("syol", "cyol")
+        if inputword.graph not in datageryow.words_c_syon:
+            outputgraph = outputgraph.replace("syon", "cyon")
+        outputgraph = outputgraph.replace("sysy", "cycy")
+        outputgraph = outputgraph.replace("syan", "cyan")
+        # reverse some possible incorrect substitutions
+        # in the endings of inflected verbs
+        if inputword.graph in datageryow.verbs_infl:
+            if outputgraph[-5:] == "cewgh":
+                outputgraph = outputgraph[:-5]+"sewgh"
+            if outputgraph[-4:] == "cens":
+                outputgraph = outputgraph[:-4]+"sens"
+            if outputgraph[-3:] in ["cen","ces","cis"]:
+                outputgraph = outputgraph[:-3]+"s"+outputgraph[-2:]
+        
+        inputword.graph = outputgraph
+    
 def syl_KK2FSS(inputsyl, inputword):
+    inputgraph = inputword.graph.lower()
     # turn KK 'oe' to 'oo' or 'o'
     convert_oe(inputsyl, inputword.graph.lower() in datageryow.SWF_oowords)
     # vocalic alternation
@@ -109,7 +140,8 @@ def syl_KK2FSS(inputsyl, inputword):
     inputword.sls = [s.grapheme for s in inputword.slsObjs]
     # build spelling of word from spelling of syllables
     inputword.graph = ''.join(inputword.sls)
-
+    # substitute c for s where necessary
+    convert_s_c(inputword)
             
 if __name__ == '__main__':
     """
