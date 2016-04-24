@@ -1,7 +1,6 @@
 from __future__ import print_function
 import sylabelenn_ranna_kw
-import mutatya
-import inflektya
+import datageryow
 import argparse
 import codecs
 
@@ -15,99 +14,13 @@ import codecs
 # hyphenation
 # dhyworth/dyworth
 # ynkleudhva --> ynkladhva
-
-
-    
-def addallmutatedforms(listwords):
-    """ add all possible mutated forms to a list of words """
-    mutatedwords = []
-    for w in listwords:
-        for i in [2,3,4,5,6]:
-            mutatedwords.append(mutatya.mutate(w,i))
-    for w in mutatedwords:
-        if w not in listwords:
-            listwords.append(w)
-
-def addallinflectedforms(listwords,listverbs):
-    """ add the inflected forms of the verbs in listverbs to listwords """
-    # the tenses of the verb expected by inflektya.inflektya()
-    tensesDict = {0:"a-lemmyn",
-              1:"tremenys",
-              2:"anperfydh",
-              3:"gorperfydh",
-              4:"islavarek_a-lemmyn",
-              5:"islavarek_anperfydh",
-              6:"gorhemmyn",
-              7:"ppl",
-              8:"devedhek",
-              9:"anperfydh_usadow",
-             10:"a-lemmyn_hir_indef",
-             11:"anperfydh_hir",
-             12:"a-lemmyn_hir_def",
-             13:"a-lemmyn_hir_aff",
-             14:"perfydh"}
-    inflectedverbparts = []
-    for verb in listverbs:        
-        for per in range(8):
-            for tense in range(8):
-                # inflect verb for the person per and tense. 0 is to not have the suffixed pron.
-                inflectedverbparts.append(inflektya.inflektya(verb,per,tensesDict[tense],0)[0])
-    for v in inflectedverbparts:
-        if v not in listwords:
-            listwords.append(v)
-
-#polysyllables that nevertheless have 'oo' in SWF
-SWF_oowords = ['boesa','poesa','diboes','kettoeth','degoedh']
-
-# words which abnormally have o rather than oo for a monosyllable
-SWF_owords = ['koen','troen','oen','goer','hwoer','woer','koer','noeth']
-# but if koen gets mutated to goen, we don't know that it should be gon
-# rather than goon. goen is also a worn which is goon in SWF.
-
-# syllables that are <oo> in SWF in stressed syllables in polysyllabic words
-# but 'food' is boos in SWF, plural is bosow but verb 'to feed' is boosa.
-# similarly 'poos' weight, pl. posow, but poosa to weigh.
-# also diboos despite 2 syllables.
-# however 'soon' - blessing but 'sona' to bless.
-SWF_oosyls = ['skoedh']
-
-# prefixes with secondary stress - which keep their doubled consonants
-prefixes_2ndstress = ["kamm","penn","pell","korr"]
-
-# words which have -ll in KK but 1 final l in SWF 
-words_SWF_one_l = ["arall","erell","kastell","kanstell","kuntell"]
-
-# words that retain kk in SWF rather than ck.
-words_SWF_kk = ["bykken", "vykken", "lakka", "okkupya", "tykki", "tykkiow"]
-
-# words that had yw yn earlier Kernewek Kemmyn but uw in Gerlyver Meur and SWF
-words_uw = ["dyw", "dhyw", "dywses", "dhywses", "dywow", "dhywow","gyw","wyw",
-            "duwes", "duwesow", "dhuwes", "dhuwesow", "gywow", "wywow","gywa",
-            "didhyw", "didhywydh", "didhywydhyon", "didhywydhes", "didhywydhesow",
-            "dywonieth", "dywonydh", "dywonydhyon", "dywonydhes", "dywonydhesow",
-            "ryw", "rywyon", "rywek"]
-
-# words that have a KK half-long y which doesn't become e in SWF
-# likely not yet a complete list   
-words_y = ["spyrys", "kynsa", "ynter", "ylyn", "pympes", "ydhyn", "dhy'hwi", "chyften", "byghan",
-           "trynses", "kryjyans", "vydholl", "vytholl", "bythkweth", "krysi", "ystynn", "dybri",
-           "slynkya", "kyni", "kessydhya", "kessydhyans", "pygans", "bynytha", "bynitha", "ysow",
-           "dyskans", "myrghes", "kyrghes", "kyrghys", "lyver", "lyvrow", "bryntin", "possybyl",
-           "possybylta", "possybyltas","anpossybyl", "onpossybyl", "anpossybylta", "onpossybylta",
-           "anpossybylytas", "onpossybylytas", "dyski", "pysi"]
-
-verbs_y = ["krysi", "slynkya", "kyni", "kessydhya", "dybri", "dyski", "pysi"]    
-addallinflectedforms(words_y, verbs_y)
-addallmutatedforms(words_y)            
-
-# print(words_y)
             
 def convert_oe(inputsyl, SWF_ooword):
     ''' Take a syllable and change 'oe' to 'oo' or 'o' if appropriate '''
     outputgrapheme = inputsyl.grapheme
     
     if inputsyl.monosyl:
-        if inputsyl.grapheme.lower() in SWF_owords:
+        if inputsyl.grapheme.lower() in datageryow.SWF_owords:
             outputgrapheme =  inputsyl.grapheme.replace("oe","o")
         else:
             if inputsyl.structure == 'CVC' or inputsyl.structure == 'CV':
@@ -124,7 +37,7 @@ def convert_oe(inputsyl, SWF_ooword):
                     outputgrapheme = inputsyl.grapheme.replace("oe","o")
     else:
         # for polysyllables, only a few select words have 'oe' --> 'oo'        
-        if (inputsyl.grapheme.lower() in SWF_oosyls and inputsyl.stressed) or SWF_ooword:
+        if (inputsyl.grapheme.lower() in datageryow.SWF_oosyls and inputsyl.stressed) or SWF_ooword:
             outputgrapheme = inputsyl.grapheme.replace("oe","oo")
         else:
             # otherwise 'oe' --> 'o'
@@ -135,7 +48,7 @@ def convert_yw(inputsyl):
     """ vocalic alternation for words with <yw> in earlier Kemmyn and <ew> in current KK and SWF
         and words that had <yw> in earlier Kemmyn but <uw> in current KK and SWF """
     outputgrapheme = inputsyl.grapheme
-    if inputsyl.graphGer.lower() in words_uw:
+    if inputsyl.graphGer.lower() in datageryow.words_uw:
         outputgrapheme = outputgrapheme.replace("yw","uw")
     # this doesn't actually happen for all polysyllables
     if not(inputsyl.monosyl) and not(inputsyl.final) and inputsyl.structure[0] == 'C':
@@ -146,7 +59,7 @@ def convert_y(inputsyl):
     """ vocalic alternation for half-long KK y vowels that go to e in SWF """
     # e.g. benynes --> benenes
     # 1/2 long KK y becomes e
-    if inputsyl.graphGer.lower() not in words_y:
+    if inputsyl.graphGer.lower() not in datageryow.words_y:
         # if it isn't one of the exceptions that retain y
         # find length of vowel and quality
         if inputsyl.structure[0] == 'C':
@@ -168,10 +81,10 @@ def convert_y(inputsyl):
 def convert_double_consts(inputsyl):
     outputgrapheme = inputsyl.grapheme
     # kk -> ck except for a few words that retain kk
-    if inputsyl.graphGer.lower() not in words_SWF_kk:
+    if inputsyl.graphGer.lower() not in datageryow.words_SWF_kk:
         outputgrapheme = outputgrapheme.replace("kk","ck")
     # for unstressed syllables, excluding certain prefixes
-    if inputsyl.stressed == False and inputsyl.grapheme.lower() not in prefixes_2ndstress:
+    if inputsyl.stressed == False and inputsyl.grapheme.lower() not in datageryow.prefixes_2ndstress:
         outputgrapheme = outputgrapheme.replace("mm","m")
         outputgrapheme = outputgrapheme.replace("nn","n")
         # final syllables - ll and rr
@@ -179,14 +92,14 @@ def convert_double_consts(inputsyl):
             # the suffix for 'tool' or 'device' is now -ell in SWF
             # however there is KK kastell SWF kastel
             # KK arall/erell SWF aral/erel
-            if inputsyl.graphGer.lower() in words_SWF_one_l:
+            if inputsyl.graphGer.lower() in datageryow.words_SWF_one_l:
                 outputgrapheme = outputgrapheme.replace("ll","l")
             outputgrapheme = outputgrapheme.replace("rr","r")
     inputsyl.grapheme = outputgrapheme
 
 def syl_KK2FSS(inputsyl, inputword):
     # turn KK 'oe' to 'oo' or 'o'
-    convert_oe(inputsyl, inputword.graph in SWF_oowords)
+    convert_oe(inputsyl, inputword.graph.lower() in datageryow.SWF_oowords)
     # vocalic alternation
     convert_yw(inputsyl)
     convert_y(inputsyl)
@@ -221,14 +134,6 @@ if __name__ == '__main__':
         # Print an error message if not and exit.
         print("Error: No input file provided.")
         sys.exit()
-
-    addallmutatedforms(SWF_oowords)
-    addallmutatedforms(SWF_owords)
-    # remove 'goen' - this is interpreted as a word where it becomes goon
-    # rather than mutated 'koen' which is 'kon'-->'gon' in SWF
-    SWF_owords.remove("goen")
-    #print(SWF_oowords)
-    #print(SWF_owords)
 
     f = codecs.open(args.inputfile,"r",encoding='utf-8',errors='replace')
     fwds = True

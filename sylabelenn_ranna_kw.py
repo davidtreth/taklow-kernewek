@@ -32,74 +32,9 @@ import sys
 import re
 import argparse
 import codecs
-import mutatya
+import datageryow
 reload(sys)
 sys.setdefaultencoding('utf-8')
-
-
-def addallmutatedforms(listwords):
-    """ add all possible mutated forms to a list of words """
-    mutatedwords = []
-    for w in listwords:
-        for i in [2,3,4,5,6]:
-            mutatedwords.append(mutatya.mutate(w,i))
-    for w in mutatedwords:
-        if w not in listwords:
-            listwords.append(w)
-
-# words that have unusual stress
-
-# words of more than one syllable stress on final syllable
-final_syl_stress_words = ['ages','ahwer','androw','ankoth','ankres','attal',
-                          'avel','aweyl','boban','boken','bulhorn','bysmer',
-                          'byttegyns','byttele','degoedh','dihwans',
-                          'a-dhihwans','demmas','devis','devri','tevri',
-                          'diank','dohajydh','dolos',
-                          'dremas','drog-atti','eghan','godhor','godramm',
-                          'goeldheys','myghtern','nahen','nameur','nammnygen',
-                          'namoy','naneyl','piwpynag','poken','pygans','pynag',
-                          'pyseul','seulabrys','seuladhydh','soweth','toetta',
-                          'war-barth','warbarth','yma','ymons','ynwedh','ytho',
-                          'voban','vulhorn','vysmer','tegoedh','dhegoedh',
-                          'dhemmas','dhevis','dhibarth','dhohajydh','dhremas',
-                          'dhrog-atti','wodhor','wodramm','woeldheys',
-                          'vyghtern','bygans','evy','tejy','eev','hyhi','nyni',
-                          'hwyhwi','ynsi','yn-bann','yn-dann','ynbann',
-                          'yndann','a-ji','a-dhann','dygoel','dygweyth',
-                          'dhygoel','dhygweyth','a-rag','dherag','a-dherag',
-                          'a-dhiworth','omri','omdowl', 'dibygans',
-                          'diber-dowr','diwvanek-plat', 'dhibygans',
-                          'dhiber-dowr', 'dhiwvanek-plat']
-
-# words of 3 or more syls. stressed on first syl.
-first_syl_stress_words = ['arader','aradror','kenedhel','kelegel','kenderow',
-                          'klabytter','lelduri','lenduri','tulyfant',
-                          'hardigras','oratri','trayturi','genedhel',
-                          'henedhel','gelegel','helegel','genderow',
-                          'henderow','glabytter','dulyfant','thulyfant',
-                          'drayturi','thrayturi']
-
-# words of 4 or more syls. stressed on 2nd syl.
-second_syl_stress_words = ['keniterow','dygynsete','geniterow','heniterow',
-                           'dhygynsete']
-
-# particles and words that do not carry stress
-unstressed_monosyls = ['an','a','y','re','ny','yth','nyns','na','nag','ow',
-                       'dha','hy','vy','jy','ma','ha','hag','pan','mar','mars',
-                       'dhe','po','bo','mes','rag','may','mayth','kyn','kynth',
-                       'dell']
-    
-# 2 syllable words with di- that are stressed on the first syllable
-words_di_stress1 = ["dial", "dibegh", "dibenn", "dibra", "diek", "dien",
-                    "difenn", "dilesh", "dillas", "dinan", "dinas", "dinek",
-                    "diner", "disel", "diskan", "diskar", "diskeudh", "dismyk",
-                    "distowgh", "disya", "divers", "divyn", "diwarr",
-                    "diwbaw", "diwbleth", "diwdhorn", "diwedh", "diwen",
-                    "diwes", "diwfer", "diwfordh", "diwgell", "diwglun",
-                    "diwla", "diwlens", "diwroev", "diwros", "diwskeodh",
-                    "diwvogh", "diwvregh", "diwvronn", "diwweus", "diwweyth"]
-
-addallmutatedforms(words_di_stress1)
 
                         
 class RannaSyllabelenn:
@@ -401,7 +336,7 @@ class Ger:
             # monosyllables are stressed except for a few particles etc.
             # which do not carry stress
             # print("setting stressed and monosyl")
-            if self.graph.lower() in unstressed_monosyls:
+            if self.graph.lower() in datageryow.unstressed_monosyls:
                self.slsObjs[0].stressed = False
             else:
                 self.slsObjs[0].stressed = True
@@ -413,13 +348,13 @@ class Ger:
                 # 2 syllable words starting with di- are stressed
                 # on second syllable except for a list of words
                 # which are stressed on di- which is penultimate
-                if not(self.graph.lower() in words_di_stress1):
+                if not(self.graph.lower() in datageryow.words_di_stress1):
                     self.slsObjs[-1].stressed = True            
-            elif self.graph.lower() in final_syl_stress_words:
+            elif self.graph.lower() in datageryow.final_syl_stress_words:
                 self.slsObjs[-1].stressed = True                
-            elif self.graph.lower() in first_syl_stress_words:
+            elif self.graph.lower() in datageryow.first_syl_stress_words:
                 self.slsObjs[0].stressed = True
-            elif self.graph.lower() in second_syl_stress_words:
+            elif self.graph.lower() in datageryow.second_syl_stress_words:
                 self.slsObjs[1].stressed = True
             else:
                 # penultimate stress
