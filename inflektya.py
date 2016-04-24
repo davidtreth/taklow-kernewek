@@ -1,5 +1,5 @@
 # David Trethewey
-# vershyon 30-04-2015
+# vershyon 24-04-2016
 """
 An module ma a wra inflektya verbow Kernewek
 This module inflects Cornish verbs
@@ -194,9 +194,11 @@ verbs_erghi_a = ["densel","diank","drehevel","dynnerghi","fyllel","godhevel","gw
 three_s_presfut_y = ["eva","galloes","gedya","gweskel","kavoes","kelli","pobas","tevi"]
 verbs_lesta = ["bostya","diwiska","dyski","gweskel","gwiska","kestya","koska","leski","mostya","ostya","peski","raska","restya","rostya","tergoska","trestya"]
 verbs_gwystla = ["dampnya","entra","gustla","gwandra","handla","hwystra","kentra","moldra","restra","sklandra","sompna","tardra","tempra","terlentri"]
-verbs_hwithra = ["dybri","fagla","gwedhra","hwedhla","hwyrni","ladra","lymna","medra","meythrin","pedri","pobla","ravna","sotla","sugna","trobla","resna","sokra","fekla","takla"]
+verbs_hwithra = ["hwithra","dybri","fagla","gwedhra","hwedhla","hwyrni","ladra","lymna","medra","meythrin","pedri","pobla","ravna","sotla","sugna","trobla","resna","sokra","fekla","takla"]
 verbs_gelwel = ["gelwel","henwel","lenwel","merwel","selwel"]
 verbs_irregular = ["bos","y'm beus","darvos","dos","godhvos","hwarvos","klywes","omglywes","mos","piw","tyli","attyli","doen","omdhoen","dri","dyllo","gul","ri","ti","bryjyon"]
+# vowel affectation y--> e in stem in some persons e.g. deber
+verbs_dybri = ["dybri"]
 # chanjyow ben kalesheans po dewblekheans
 # hardening or doubling in ending of the stem
 stem_changes = {"b":"pp","bl":"ppl","br":"ppr","ch":"cch","d":"t","dh":"tth","dhl":"tthl","dhr":"tthr","dhw":"tthw","dr":"ttr","f":"ff","g":"kk","gh":"ggh","gl":"kkl","gn":"kkn","he":"hah","j":"cch","k":"kk","kl":"kkl","kn":"kkn","kr":"kkr","l":"ll","ld":"lt","ldr":"ltr","lv":"lf","m":"mm","mbl":"mpl","mbr":"mpr","n":"nn","nd":"nt","ndl":"ntl","ndr":"ntr","ng":"nk","ngr":"nkr","nj":"nch","p":"pp","r":"rr","rd":"rt","rdr":"rtr","rdh":"rth","rg":"rk","rj":"rch","rv":"rf","s":"ss","sh":"ssh","sl":"ssl","sn":"ssn","sw":"ssw","t":"tt","th":"tth","thl":"tthl","thr":"tthr","tl":"ttl","v":"ff","vn":"ffn","vr":"ffr"}
@@ -866,7 +868,10 @@ def inflektya_reyth(verb,stem,person,tense,suffix_pro):
     # delivra changes -vr- to -rv- 3s. pres/fut, 2s. imperative, + where ending starts with an s
     # NOT IMPLEMENTED 
     # in subjunctives consonant before lrmn undergoes hardening of doubling
+        # print(verb,stem, tense)
+        # print(verb in verbs_hwithra)
         if verb in verbs_hwithra:
+            # print(stem)
             if ((tense==0)and((person==3)or(person==4)))or((tense==6)and(person==2)):
                 # in 3s. pres/future and 2s. imperative
                 # a vowel is introduced usually -e-
@@ -925,8 +930,23 @@ def inflektya_reyth(verb,stem,person,tense,suffix_pro):
             stem = "gorta"
         if (verb == "hwilas")and(tense==0)and((person==3)or(person==4)):
             stem = "hwila"
+
+    # DYBRI
+    # vowel affectation in stem
+    # y --> e e.g. in dybri
+    # in pres pers 3,4,6,7
+    # pres subj pers 3,4
+    # imp subj all pers
+    # imperative pers 2
+        if verb in verbs_dybri:
+                if ((tense == 0) and (person in [1,3,4,6,7])) or ((tense == 4) and (person in [0,3,4,7])) or (tense == 5) or ((tense == 6) and (person == 2)):
+                    stem = stem.replace("y","e",1)
+
+    # return the result
         inflectedverb = stem+ending
         return inflectedverb,1
+
+        
     
 def inflektya(verb,person,tense,suffix_pro,longform=0,definite=0):
     # person: 0=imp,1=1s,2=2s,3=3sm,4=3sf,5=1p,6=2p,7=3p
