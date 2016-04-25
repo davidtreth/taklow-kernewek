@@ -25,9 +25,11 @@ import codecs
 def convert_oe(inputsyl, SWF_ooword):
     ''' Take a syllable and change 'oe' to 'oo' or 'o' if appropriate '''
     outputgrapheme = inputsyl.grapheme
-    
     if inputsyl.monosyl:
+        # for monosyllables...
         if inputsyl.grapheme.lower() in datageryow.SWF_owords:
+            # check if its one of those monosyls that go oe->o
+            # despite a long vowel
             outputgrapheme =  inputsyl.grapheme.replace("oe","o")
         else:
             if inputsyl.structure == 'CVC' or inputsyl.structure == 'CV':
@@ -63,7 +65,8 @@ def convert_yw(inputsyl):
     inputsyl.grapheme=outputgrapheme
 
 def convert_y(inputsyl):
-    """ vocalic alternation for half-long KK y vowels that go to e in SWF """
+    """ vocalic alternation for half-long KK y vowels that go to e in SWF 
+    there are likely a number of false positives e.g. mynysenn -> *mynesen """
     # e.g. benynes --> benenes
     # 1/2 long KK y becomes e
     if inputsyl.graphGer.lower() not in datageryow.words_y:
@@ -86,6 +89,7 @@ def convert_y(inputsyl):
             inputsyl.grapheme = outputgrapheme
 
 def convert_double_consts(inputsyl):
+    """ change certain double consonants to single """
     outputgrapheme = inputsyl.grapheme
     # kk -> ck except for a few words that retain kk
     if inputsyl.graphGer.lower() not in datageryow.words_SWF_kk:
@@ -106,6 +110,8 @@ def convert_double_consts(inputsyl):
 
 
 def convert_s_c(inputword):
+    """ in some words, change s to c. This is done by 
+    lookup basically """
     if inputword.graph in datageryow.words_c:
         outputgraph = inputword.graph.replace("se","ce")
         outputgraph = outputgraph.replace("si", "ci")
@@ -123,10 +129,43 @@ def convert_s_c(inputword):
             if outputgraph[-4:] == "cens":
                 outputgraph = outputgraph[:-4]+"sens"
             if outputgraph[-3:] in ["cen","ces","cis"]:
-                outputgraph = outputgraph[:-3]+"s"+outputgraph[-2:]
-        
+                outputgraph = outputgraph[:-3]+"s"+outputgraph[-2:]        
         inputword.graph = outputgraph
-    
+
+def convert_misc(inputword):
+    """ Various lexical level substitutions """
+    # diworth --> dhyworth, diwar --> dhywar
+    # subst diwor- --> dhywor-, diwar- --> dhywar-  but don't change diwarr
+    # a-dhiworth --> a-dhyworth subst a-dhiwo- --> a-dhywo-
+    # a-dhiwar --> a-dhywar subst a-dhiwa- --> a-dhywa
+    outputgraph = inputword.graph
+    if inputword.graph.lower() == "diwarr":
+        pass
+    elif inputword.graph.lower()[:5] == "diwar":
+        outputgraph = inputword.graph.replace("diwar","dhywar")
+    elif inputword.graph.lower()[:5] == "diwor":
+        outputgraph = inputword.graph.replace("diwor","dhywor")
+    elif inputword.graph.lower()[:7] == "a-dhiwo" or inputword.graph.lower()[:7] == "a-dhiwa":
+        outputgraph = inputword.graph.replace("dhiw","dhyw")
+    # seythun --> seythen
+    if inputword.graph.lower()[:7] == "seythun":
+        outputgraph = inputword.graph.replace("seythun","seythen")
+    # ynys --> enys
+    if inputword.graph.lower()[:4] in ["ynys", "ynes"]:
+        # second y of ynys may have been changed to e by vowel affectation method
+        outputgraph = inputword.graph.replace("yn","en",1)
+    # ynkleudhva --> ynkladhva
+    if inputword.graph.lower()[:10] == "ynkleudhva":
+        outputgraph = inputword.graph.replace("ynkleudhva","ynkladhva")
+    # chyf --> chif
+    if inputword.graph.lower()[:4] == "chyf" and not(inputword.graph.lower()[:5] in ["chyff","chyft"]):
+        # don't change chyffar or chyften
+        outputgraph = inputword.graph.replace("chyf","chif")
+    # okkupya
+    if inputword.graph.lower()[:4] == "okku":
+        outputgraph = inputword.graph.replace("okk","ok",1)
+    inputword.graph = outputgraph
+
 def syl_KK2FSS(inputsyl, inputword):
     inputgraph = inputword.graph.lower()
     # turn KK 'oe' to 'oo' or 'o'
@@ -142,6 +181,8 @@ def syl_KK2FSS(inputsyl, inputword):
     inputword.graph = ''.join(inputword.sls)
     # substitute c for s where necessary
     convert_s_c(inputword)
+    # miscellaneous lexical level substitutions
+    convert_misc(inputword)
             
 if __name__ == '__main__':
     """
@@ -212,7 +253,7 @@ if __name__ == '__main__':
                             outline = outline[:-1]
                         # where no syllables were found, don't change the input spelling
                         g.graph = inputgraph
-                    if inputgraph != inputgraphseg:
+                    if len(g.slsObjs) == 0 or inputgraph != inputgraphseg:
                         # if the segmentation failed, append the failed end
                         # though perhaps should simply return input
                         # becasue these are liable to be personal name

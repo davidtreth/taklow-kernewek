@@ -65,7 +65,8 @@ prefixes_2ndstress = ["kamm","penn","pell","korr"]
 words_SWF_one_l = ["arall","erell","kastell","kanstell","kuntell"]
 
 # words that retain kk in SWF rather than ck.
-words_SWF_kk = ["bykken", "vykken", "lakka", "okkupya", "tykki", "tykkiow"]
+words_SWF_kk = ["bykken", "lakka", "tykki", "tykkiow"]
+verbs_SWF_kk = ["okkupya"]
 
 # words that had yw yn earlier Kernewek Kemmyn but uw in Gerlyver Meur and SWF
 words_uw = ["dyw", "dhyw", "dywses", "dhywses", "dywow", "dhywow","gyw","wyw",
@@ -173,7 +174,7 @@ words_c = ["abesedari", "abesedaris", "assendyans", "dissernyans",
            "sellulos", "selluloyd", "sentimeter", "sentimetrow", "sertan",
            "sider", "siders", "sidi", "sidis", "sigar", "sigarow", "sigarik",
            "sigarigow", "sinema", "sinemas", "sirk", "sirkow", "sita", "sitys",
-           "sivil"]
+           "sivil","chyfsita","chyfsitys"]
 # words that have a SWF <c> in place of KK <s> but also retain <syon> elsewhere
 # in the word
 words_c_syon = ["prosessyon", "prosessyons"]
@@ -189,3 +190,5 @@ addallinflectedforms(verbs_infl, verbs_c)
 addallmutatedforms(words_c)
 addallmutatedforms(verbs_infl)
 addallmutatedforms(words_c_syon)            
+addallmutatedforms(words_SWF_kk)
+addallinflectedforms(words_SWF_kk, verbs_SWF_kk)
