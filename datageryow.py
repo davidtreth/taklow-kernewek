@@ -69,11 +69,12 @@ words_SWF_kk = ["bykken", "lakka", "tykki", "tykkiow"]
 verbs_SWF_kk = ["okkupya"]
 
 # words that had yw yn earlier Kernewek Kemmyn but uw in Gerlyver Meur and SWF
-words_uw = ["dyw", "dhyw", "dywses", "dhywses", "dywow", "dhywow","gyw","wyw",
-            "duwes", "duwesow", "dhuwes", "dhuwesow", "gywow", "wywow","gywa",
+words_uw = ["dyw", "dywses", "dywow","gyw", "dywes", "dywesow","gywow","gywa",
             "didhyw", "didhywydh", "didhywydhyon", "didhywydhes", "didhywydhesow",
             "dywonieth", "dywonydh", "dywonydhyon", "dywonydhes", "dywonydhesow",
-            "ryw", "rywyon", "rywek"]
+            "ryw", "rywyon", "rywek","plyw","plywow","plywek","plywogyon","plywoges", "plywogesow"]
+
+verbs_uw = ["gywa"]
 
 # words that have a KK half-long y which doesn't become e in SWF
 # likely not yet a complete list   
@@ -82,9 +83,13 @@ words_y = ["spyrys", "kynsa", "ynter", "ylyn", "pympes", "ydhyn", "dhy'hwi", "ch
            "slynkya", "kyni", "kessydhya", "kessydhyans", "pygans", "bynytha", "bynitha", "ysow",
            "dyskans", "myrghes", "kyrghes", "kyrghys", "lyver", "lyvrow", "bryntin", "possybyl",
            "possybylta", "possybyltas","anpossybyl", "onpossybyl", "anpossybylta", "onpossybylta",
-           "anpossybylytas", "onpossybylytas", "dyski", "pysi"]
+           "anpossybylytas", "onpossybylytas", "dyski", "pysi", "mynysenn"]
 
 verbs_y = ["krysi", "slynkya", "kyni", "kessydhya", "dybri", "dyski", "pysi"]    
+
+addallinflectedforms(words_uw,verbs_uw)
+addallmutatedforms(words_uw)
+
 addallinflectedforms(words_y, verbs_y)
 addallmutatedforms(words_y)            
 
@@ -112,16 +117,14 @@ final_syl_stress_words = ['ages','ahwer','androw','ankoth','ankres','attal',
                           'namoy','naneyl','piwpynag','poken','pygans','pynag',
                           'pyseul','seulabrys','seuladhydh','soweth','toetta',
                           'war-barth','warbarth','yma','ymons','ynwedh','ytho',
-                          'voban','vulhorn','vysmer','tegoedh','dhegoedh',
-                          'dhemmas','dhevis','dhibarth','dhohajydh','dhremas',
-                          'dhrog-atti','wodhor','wodramm','woeldheys',
-                          'vyghtern','bygans','evy','tejy','eev','hyhi','nyni',
+                          'evy','tejy','eev','hyhi','nyni',
                           'hwyhwi','ynsi','yn-bann','yn-dann','ynbann',
                           'yndann','a-ji','a-dhann','dygoel','dygweyth',
-                          'dhygoel','dhygweyth','a-rag','dherag','a-dherag',
+                          'a-rag','dherag','a-dherag',
                           'a-dhiworth','omri','omdowl', 'dibygans',
-                          'diber-dowr','diwvanek-plat', 'dhibygans',
-                          'dhiber-dowr', 'dhiwvanek-plat']
+                          'diber-dowr','diwvanek-plat']
+
+addallmutatedforms(final_syl_stress_words)    
 
 # words of 3 or more syls. stressed on first syl.
 first_syl_stress_words = ['arader','aradror','kenedhel','kelegel','kenderow',
