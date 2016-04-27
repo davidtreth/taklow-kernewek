@@ -62,7 +62,12 @@ SWF_oosyls = ['skoedh']
 prefixes_2ndstress = ["kamm","penn","pell","korr"]
 
 # words which have -ll in KK but 1 final l in SWF 
-words_SWF_one_l = ["arall","erell","kastell","kanstell","kuntell"]
+words_SWF_one_l = ["arall", "erell", "astell", "botell", "dorgell", "estyll",
+                   "fatell", "gevell", "graghell", "kanstell", "kastell",
+                   "kettell", "kuntell", "mantell", "omguntell", "oygell",
+                   "pabell", "padell", "pannell", "pastell", "porghell",
+                   "radell", "skavell", "skitell", "skudell", "stevell",
+                   "tagell", "talgell", "torthell", "towell"]
 
 # words that retain kk in SWF rather than ck.
 words_SWF_kk = ["bykken", "lakka", "tykki", "tykkiow"]
