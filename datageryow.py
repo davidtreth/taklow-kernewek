@@ -44,7 +44,7 @@ def addallinflectedforms(listwords,listverbs):
 ## data for treuslytherenna.py ##
             
 #polysyllables that nevertheless have 'oo' in SWF
-SWF_oowords = ['boesa','poesa','diboes','kettoeth','degoedh']
+SWF_oowords = ['boesa', 'poesa', 'diboes', 'kettoeth', 'degoedh', 'a-droes']
 
 # words which abnormally have o rather than oo for a monosyllable
 SWF_owords = ['koen','troen','oen','goer','hwoer','woer','koer','noeth']
@@ -127,7 +127,7 @@ final_syl_stress_words = ['ages','ahwer','androw','ankoth','ankres','attal',
                           'yndann','a-ji','a-dhann','dygoel','dygweyth',
                           'a-rag','dherag','a-dherag',
                           'a-dhiworth','omri','omdowl', 'dibygans',
-                          'diber-dowr','diwvanek-plat']
+                          'diber-dowr','diwvanek-plat', 'a-droes']
 
 addallmutatedforms(final_syl_stress_words)    
 
