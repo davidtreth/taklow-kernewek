@@ -88,7 +88,8 @@ def mutate(word,mutationstate):
         # breathed mutation
         newword = word
         if word[0] == "k":
-            newword = "h" + word[1:]
+            if word[0:2] not in ['kl', 'kr']:
+                newword = "h" + word[1:]
         if word[0] == "p":
             newword = "f" + word[1:]
         if word[0] == "t":
@@ -130,7 +131,11 @@ def mutate(word,mutationstate):
         if word[0] == "d":
             newword = "t" + word[1:]
         if word[0] == "m":
-            newword = "v" + word[1:]
+            newword = "v" + word[1:]        
+        # exception for Gorsedh -> An Orsedh
+        if (word[0:7] == "gorsedh") or (word[0:7] == "gorseth"):
+            newword = word[1:]
+            return caseFormat(newword,outputcase)
         if (word[0:2] == "go")or(word[0:2] == "gu")or(word[0:3] == "gro")or(word[0:3] == "gru"):
             newword = "w" + word[1:]
             return caseFormat(newword,outputcase)

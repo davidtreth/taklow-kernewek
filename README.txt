@@ -43,3 +43,7 @@ espeak-text-to-speech/: This folder contains scripts that enable the use of the 
 The gorhemmyn_kw.py file greets the user depending on the time of day according to the system clock (uses espeak).
 
 sentence_generator/: This folder contains some horribly obsfucated Python code to generate random sentences following particular structures in Cornish from a small vocabulary. It can optionally give an English gloss on the sentences.
+
+taklowGUI.py: defines some Tkinter GUI widgets imported by other GUI modules
+
+mutatyaGUI.py: A Tkinter GUI frontend for mutatya.py
