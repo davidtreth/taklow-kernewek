@@ -26,6 +26,22 @@ class Radiobar(Frame):
     def state(self):
         return self.var.get()
 
+class CheckButtonBar(Frame):
+    """ a row of check boxes """
+    def __init__(self,parent=None, labels = [], side=LEFT,anchor=W,
+                 font=('Arial', 14, 'normal')):
+        Frame.__init__(self,parent)
+        self.states = []
+        for l in labels:
+            var = IntVar()
+            chk = Checkbutton(self,text=l,variable=var)
+            chk.pack(side=TOP)
+            chk.config(font=font)
+            self.states.append(var)
+    def state(self):
+        return [v.get() for v in self.states]
+        
+
 class Entrybar(Frame):
     """ text entry bar """
     def __init__(self, parent=None, side=TOP, anchor=N,
