@@ -79,11 +79,7 @@ def numberkw_noun(num, noun, fem=False, npl = "ow"):
         print("num={n}".format(n=num))
         
     if num == 0:
-        # returns empty string
-        # could do '<noun> vyth' perhaps?
-        # but would need to handle recursive call
-        # differently from call from top-level 
-        num_k = ""
+        num_k = "zero a {n}".format(n=mutatya.mutate(npl,2))
         return num_k
         
     if num > 0 and num < 21:     
@@ -190,7 +186,7 @@ def numberkw(num):
     """ return the Cornish for the numeral <num> without a noun """
     
     if num == 0:
-        num_k = ""
+        num_k = "mann"
     if num > 0 and num < 21:
         num_k = numarray[num-1]
     if num > 20 and num < 40:
@@ -316,8 +312,33 @@ def numberkw(num):
 
     return num_k    
     
-
-
+def numberkw_float(num):
+    if num < 0.0:
+        return "minus " + numberkw_float(-1*num)
+    num_k = numberkw(int(num))
+    if num == int(num) or num == 0:
+        return num_k
+    else:
+        decdigits = str(num).split(".")[1]
+        num_k = num_k + " poynt "
+        for d in decdigits:
+            num_k = num_k + numberkw(int(d)) + ", "
+        if num_k[-2:] == ", ":
+            num_k = num_k[:-2]
+        return num_k
+        
+def numberkw_float_noun(num, noun, fem=False, npl = "ow"):
+    if num == int(abs(num)):
+        return numberkw_noun(num,noun,fem,npl)
+    else:
+        num_k = numberkw_float(num)
+        num_k += " a "
+        # default plural suffix -ow
+        if npl == "ow":
+            npl = noun+npl
+        num_k += mutatya.mutate(npl,2)
+        return num_k
+    
 def interactiveTest():
     number = raw_input("Enter number as integer:")
     number_int = int(number)
@@ -338,6 +359,9 @@ def interactiveTest():
             # this won't be used for num < 221
             npl = "ow"
         print numberkw_noun(number_int,noun,fem,npl)
+    num2 = raw_input("Enter floating point number:")
+    num2 = float(num2)
+    print(numberkw_float(num2))
     
 def basicTests():
     underline = "-"*50

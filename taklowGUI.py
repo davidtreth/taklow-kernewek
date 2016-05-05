@@ -48,12 +48,14 @@ class Entrybar(Frame):
                  font=('Arial', 13, 'normal')):
         Frame.__init__(self,parent)
         self.var = StringVar()
-        ent = Entry(self)
-        ent.config(textvariable = self.var, font=font)
-        ent.pack(side=side,anchor=anchor, fill=X)
+        self.ent = Entry(self)
+        self.ent.config(textvariable = self.var, font=font)
+        self.ent.pack(side=side,anchor=anchor, fill=X)
         
     def fetch(self):
         return self.var.get()
+    def clear(self):
+        self.ent.delete(0,END)
                          
 if __name__ == '__main__':
     root = Tk()
