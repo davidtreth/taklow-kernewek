@@ -9,7 +9,7 @@ if __name__ == '__main__':
     mhead.config(font=('Arial', 16, 'bold'))
     mhead.pack(side=TOP, anchor=NW)
 
-    options = CheckButtonBar(root, ['Usyewgh Hanow','Hanow Benow'], side=TOP, anchor=NW)
+    options = CheckButtonBar(root, ['Usya Hanow','Hanow Benow'], side=TOP, anchor=NW)
     options.pack(side=LEFT, fill=Y)
     options.config(relief=RIDGE, bd=2)
     def allstates(): print options.state(), ent.fetch(), ent2.fetch()
