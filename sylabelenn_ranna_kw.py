@@ -368,12 +368,13 @@ class Ger:
             syl.lengtharray = syl.lengthSylParts()
             syl.syllableLength = sum(syl.lengtharray)
             self.hirderGer += syl.syllableLength
-        
-    def diskwedh(self):
-        """ show output for each word """
-        print("An ger yw: {g}".format(g=self.graph))
-        print("Niver a syllabelennow yw: {n}".format(n=self.n_sls))
-        print("Hag yns i:\n{sls}".format(sls=[s.encode("ascii") for s in self.sls]))
+
+    def longoutput(self):
+        """ return long output for each word"""
+        line1 = "An ger yw: {g}".format(g=self.graph)
+        line2 = "Niver a syllabelennow yw: {n}".format(n=self.n_sls)
+        line3 = "Hag yns i: {sls}".format(sls=[s.encode("ascii") for s in self.sls])
+        outlines = [line1,line2,line3]
         # for each syllable, display its spelling - capitalized if stressed
         # structure (CVC/CV/VC/V)
         # list with length of syllable parts
@@ -385,14 +386,24 @@ class Ger:
                 gr = gr.upper()
             lenArray = self.slsObjs[i].lengtharray
             sylLength = self.slsObjs[i].syllableLength
-            print("S{n}: {g}, {s}, hirder = {L}, hirder kowal = {t}".format(n=i+1,g=gr,s=struc, L = lenArray, t=sylLength))
+            outlines.append("S{n}: {g}, {s}, hirder = {L}, hirder kowal = {t}".format(n=i+1,g=gr,s=struc, L = lenArray, t=sylLength))
         # total length of syllables in word
-        print("Hirder ger kowal = {H}".format(H=self.hirderGer))
+        outlines.append("Hirder ger kowal = {H}".format(H=self.hirderGer))
+        return outlines
+            
+    def diskwedh(self):
+        """ show output for each word """
+        for l in self.longoutput():
+            print(l)
 
+    def shortoutput(self):
+        """ return short output for each word 
+        spelling: number of syllables """
+        return "{g}:{n}  ".format(g=self.graph,n=self.n_sls)
+    
     def diskwedhshort(self):
-        """ show short output for each word """
-        # spelling: number of syllables
-        print("{g}:{n}  ".format(g=self.graph,n=self.n_sls), end="")
+        """ show short output for each word """    
+        print(self.shortoutput(),end="")
         
 class Syllabelenn:           
     """
@@ -559,6 +570,38 @@ class Syllabelenn:
         # regular expressions pick up single/double consts properly
         # maybe some ambiguity in how words are segmented?
         return lengtharray
+def countSylsLine(linetext,fwd=False):
+    rannans = RannaSyllabelenn(linetext)
+    # count the total syllables in each line
+    Nsls = 0
+    outtext = ""
+    for i in rannans.geryow:
+        g = Ger(i,rannans,fwd)
+        # for each word, display it with number of syllables
+        if g.graph != '':
+            outtext += g.shortoutput()
+            Nsls += g.n_sls
+    outtext += "\nNiver a sylabellenow yn linenn = {n}\n".format(n=Nsls)
+    return outtext
+
+def detailSylsText(intext,fwd=False,short=False):
+    outtext = ""
+    rannans = RannaSyllabelenn(intext)
+    punctchars = ".,;:!?()-"
+    for i in rannans.geryow:
+        g = Ger(i,rannans,fwd)
+        # avoid printing 'words' that consist only of a
+        # punctuation character
+        if g.graph != '' and g.graph not in punctchars:
+            if short:
+                outtext += g.shortoutput()
+            else:
+                # print long form with syllable details
+                outtext += "\n".join(g.longoutput())
+                outtext += "\n\n"
+    return outtext
+    
+    
 
 if __name__ == '__main__':
     """
