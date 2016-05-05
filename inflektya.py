@@ -946,9 +946,42 @@ def inflektya_reyth(verb,stem,person,tense,suffix_pro):
         inflectedverb = stem+ending
         return inflectedverb,1
 
-        
+def inflektyaValidatePerson(person):
+    # expect an integer from 0 to 7
+    try:
+        person = int(person)
+        if person not in range(8):
+            return False
+        else:
+            return True
+    except ValueError:
+        return False
+
+def inflektyaValidateTense(verb,person,tense):
+    if tense not in tensesDict.values():
+        # validate tense parameter
+        return False
+    if ((person==0)or(person==1))and(tense=="gorhemmyn"): 
+        # impersonal and 1s don't exist in imperative
+        # nyns eus anpersonek ha'n 1s y'n gorhemmyn
+        # print "invalid tense/person combination"
+        return False
+    if tense=="devedhek" and verb not in verbs_devedhek:
+        # only a few verbs have a simple future tense
+        # if not return invalid
+        return False
+    if tense=="anperfydh_usadow" and verb not in verbs_anperfydh_usadow:
+        # only a few verbs have a separate habitual imperfect
+        # if not return invalid
+        return False
+    if tense in ["a-lemmyn_hir_indef", "anperfydh_hir","a-lemmyn_hir_def","a-lemmyn_hir_aff"] and verb != 'bos':
+        # the long forms which are particular to bo
+        return False
+    if tense == "perfydh" and verb not in verbs_perfydh:
+        return False
+    return True
     
-def inflektya(verb,person,tense,suffix_pro,longform=0,definite=0):
+def inflektya(verb,person,tense,suffix_pro=0,longform=0,definite=0):
     # person: 0=imp,1=1s,2=2s,3=3sm,4=3sf,5=1p,6=2p,7=3p
     # tense: 0=present, 1=preterite, 2=imperfect, 3=pluperfect, 4=subjpres, 5=subjimp
     # 6=imperative,7=past_participle,8=future,9=habitual imperfect
@@ -978,12 +1011,19 @@ def inflektya(verb,person,tense,suffix_pro,longform=0,definite=0):
     # certain verbs are incomplete/defective
 
     # suffix_pro: flag to say whether to include suffixed pronoun
+    if suffix_pro not in [0,1,2]:
+        # if it is anything other than 0,1,2
+        # set to 0 i.e. no suffixed pronoun
+        suffix_pro = 0
     invalidinput ="NULL"
     # successflag = 1 if successful, 0 if error
-    if ((person==0)or(person==1))and(tense=="gorhemmyn"): 
-        # impersonal and 1s don't exist in imperative
-        # nyns eus anpersonek ha'n 1s y'n gorhemmyn
-        # print "invalid tense/person combination"
+    if not(inflektyaValidatePerson(person)):
+        return invalidinput,0
+    else:
+        person = int(person)
+        
+    if not(inflektyaValidateTense(verb,person,tense)):
+        # if the tense is invalid for the verb, return a NULL
         return invalidinput,0
     vowels = ['a','e','i','o','u']
     if (verb[-1] in vowels):
@@ -1064,7 +1104,7 @@ yn_ogas_stems = {1:"yn ow ogas",2:"yn dha ogas",3:"yn y ogas",4:"yn hy ogas",5:"
 prep_stems_all = {"a":a_stems,"a-govis":agovis_stems,"a-ugh":a_ugh_stems,"dhe":dhe_stems,"dre":dre_stems,"dres":dres_stems,"erbynn":erbynn_stems,"gans":gans_stems,"heb":heb_stems,"orth":orth_stems,"diworth":diworth_stems,"a-dhiworth":a_dhiworth_stems,"dhiworth":dhiworth_stems,"rag":rag_stems,"a-rag":a_rag_stems,"a-dherag":a_dherag_stems,"derag":derag_stems,"dherag":dherag_stems,"ryb":ryb_stems,"war":war_stems,"diwar":diwar_stems,"a-dhiwar":a_dhiwar_stems,"warlergh":warlergh_stems,"yn":yn_stems,"yn-dann":yn_dann_stems,"a-dhann":a_dhann_stems,"yntra":yntra_stems,"yn herwydh":yn_herwydh_stems,"yn kyrghynn":yn_kyrghynn_stems,"yn kever":yn_kever_stems,"yn le":yn_le_stems,"yn mysk":yn_mysk_stems,"yn ogas":yn_ogas_stems}
 prep_endings_all = {"a":endings_A,"a-govis":endings_D,"a-ugh":endings_B,"dhe":endings_D,"dre":endings_B,"dres":endings_B,"erbynn":endings_D,"gans":endings_D,"heb":endings_B,"orth":endings_C,"diworth":endings_C,"a-dhiworth":endings_C,"dhiworth":endings_C,"rag":endings_B,"a-rag":endings_B,"a-dherag":endings_B,"derag":endings_B,"dherag":endings_B,"ryb":endings_B,"war":endings_A,"diwar":endings_A,"a-dhiwar":endings_A,"warlergh":endings_D,"yn":endings_B,"yn-dann":endings_B,"a-dhann":endings_B,"yntra":endings_B,"yn herwydh":endings_D,"yn kyrghynn":endings_D,"yn kever":endings_D,"yn le":endings_D,"yn mysk":endings_D,"yn ogas":endings_D}
 
-def inflektya_prepos(prepos,person,suffix_pro):
+def inflektya_prepos(prepos,person,suffix_pro=0):
     """
     inflektya prepos rag person
     suffix_pro a wra determya mars eus raghenwyn a syw
@@ -1073,11 +1113,17 @@ def inflektya_prepos(prepos,person,suffix_pro):
     suffix_pro determines whether a suffixed pronoun follows
     0 = none, 1 = normal suff.pro., 2 = emphatic suff. pro.
     """
+    invalidinput = 'NULL'
+    if not(inflektyaValidatePerson(person)):
+        return invalidinput,0
+    else:
+        person = int(person)
+        
     if prep_stems_all.has_key(prepos) and prep_endings_all.has_key(prepos):
         inflectedprep = prep_stems_all[prepos][person] + prep_endings_all[prepos][person]
     else:
         print("Rager {prepos} yw anaswonnys.\nPreposition {prepos} is unknown".format(prepos=prepos))
-        return "NULL", 0
+        return invalidinput, 0
     ending = ""
     if (prepos == "dhe")and(suffix_pro>0)and((person==1)or(person==2)):
         ending += "o"
@@ -1203,6 +1249,10 @@ tensesDictEN = {0:"present",
                 12:"present (long form, definite)",
                 13:"present (long form, affirmative)",
                 14:"perfect"}    
+
+verbs_devedhek = ["bos", "y'm beus", "piw", "godhvos", "tyli", "attyli", "hwarvos"]
+verbs_anperfydh_usadow = ["bos", "y'm beus", "piw"]
+verbs_perfydh = ["mos","mones","dos","dones"]
 
 if __name__ == '__main__':     
     runTestCode()
