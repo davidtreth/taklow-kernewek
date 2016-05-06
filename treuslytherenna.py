@@ -183,6 +183,16 @@ def syl_KK2FSS(inputsyl, inputword):
     convert_s_c(inputword)
     # miscellaneous lexical level substitutions
     convert_misc(inputword)
+
+
+def word_KK2FSS():
+    pass
+
+def line_KK2FSS():
+    pass
+
+def text_KK2FSS():
+    pass
             
 if __name__ == '__main__':
     """

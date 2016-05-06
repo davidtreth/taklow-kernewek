@@ -94,6 +94,11 @@ verbs_y = ["krysi", "slynkya", "kyni", "kessydhya", "dybri", "dyski", "pysi"]
 
 addallinflectedforms(words_uw,verbs_uw)
 addallmutatedforms(words_uw)
+# avoid turning 'yw' etc. to uw
+wrong_mut_gyw = [w for w in words_uw if w[:2]=='yw']
+for w in wrong_mut_gyw:
+    words_uw.remove(w)
+
 
 addallinflectedforms(words_y, verbs_y)
 addallmutatedforms(words_y)            
