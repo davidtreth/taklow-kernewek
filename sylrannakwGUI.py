@@ -60,11 +60,12 @@ if __name__ == '__main__':
     
     # text entry bar for input
     ent = ScrolledText(root)
+    ent.text.config(width=40,height=11)
     ent.pack()
     
     # output
     msg3 = ScrolledText(root)
-    msg3.text.config(fg = 'dark red', bg='light yellow',font=('Arial', 16, 'bold'), state=tk.DISABLED)
+    msg3.text.config(fg = 'dark red', bg='light yellow', width=40, height=11,font=('Arial', 16, 'bold'), state=tk.DISABLED)
     msg3.pack()
 
     # buttons
