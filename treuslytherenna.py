@@ -185,14 +185,95 @@ def syl_KK2FSS(inputsyl, inputword):
     convert_misc(inputword)
 
 
-def word_KK2FSS():
-    pass
+def word_KK2FSS(ger,verberr=False):
+    """ expect Ger object and convert its spelling to SWF """
+    if ger.graph != '':
+        # record input spelling before KK-->SWF
+        inputgraph = ger.graph
+        if len(ger.slsObjs) > 0:
+            # if it is a word, loop through syllables
+            # and build up the spelling after segmentation
+            # but before the KK-->SWF conversion
+            inputsyls = [s.grapheme for s in ger.slsObjs]
+            inputgraphseg = ''.join(inputsyls)
+            if inputgraph != inputgraphseg:
+                # if the segmentation has not consumed all of the input
+                # the portion that failed is recorded and used later
+                failedend = inputgraph.split(inputgraphseg)[1]
+                if verberr:
+                    print("Segmentation failure: input {i}, output {o}".format(i=inputgraph,o=inputgraphseg))
+                    print("failed end: {f}".format(f=failedend))
+            for s in ger.slsObjs:
+                # loop through the syllables and change the spellings
+                # print("syllable {s}".format(s=s.grapheme))
+                syl_KK2FSS(s,ger)
+                # print("syllable {s}".format(s=s.grapheme))
+        else:
+            failedend = ''
+            # if there are no syllables found
+            # generally will be a punctuation character
+            if not(ger.graph[0].isalpha() or ger.graph[0].isdigit()) and ger.graph[0] not in '[{(-':
+                # if it isn't a letter or digit or open bracket or hyphen
+                # where no syllables were found, don't change the input spelling
+                ger.graph = inputgraph
+            if len(ger.slsObjs) == 0 or inputgraph != inputgraphseg:
+                # if the segmentation failed, append the failed end
+                # though perhaps should simply return input
+                # becasue these are liable to be personal name
+                # non-Cornish place names, or unassimilated loanwords
+                ger.graph += failedend
+                
 
-def line_KK2FSS():
-    pass
+def line_KK2FSS(line,fwds=False,verberr=False):
+    """ take line of text and convert to SWF """
+    rannans = syllabenn_ranna_kw.RannaSyllabenn(line)            
+    outputtext = "KK: {k}".format(k=line.strip())
+    # build up line in SWF
+    outline = ''
+    for i in rannans.geryow:
+        # go through word by word
+        g = syllabenn_ranna_kw.Ger(i,rannans,fwds)
+        if len(g.slsObjs) == 0 and g.graph:
+            if not(g.graph[0].isalpha() or g.graph[0].isdigit()) and g.graph[0] not in '[{(-':
+                # if it isn't a letter or digit or open bracket or hyphen
+                # take the last character of the line off
+                # (prevents spaces before commas and fullstops etc.)
+                outline = outline[:-1]
+        word_KK2FSS(g,verberr)    
+        # add word to the output line
+        # print(g.graph)
+        outline += g.graph                    
+        if g.graph not in '([{':
+            # add spaces between words except after an open bracket
+            outline += ' '
 
-def text_KK2FSS():
-    pass
+    outputtext += "\nFSS: {f}".format(f=outline)
+    return outputtext
+
+def text_KK2FSS(inputtext,fwds=False,longform=False,verberr=False):
+    """ take an input text and convert to SWF word by word """
+    rannans = syllabenn_ranna_kw.RannaSyllabenn(inputtext)
+    punctchars = ".,;:!?()-"
+    outputtext = ''
+    for i in rannans.geryow:
+        g = syllabenn_ranna_kw.Ger(i,rannans,fwds)
+        if len(g.slsObjs) == 0 and g.graph:
+            if not(g.graph[0].isalpha() or g.graph[0].isdigit()) and g.graph[0] not in '[{(-':
+                # if it isn't a letter or digit or ( or -
+                # take the last character of the line off
+                # (prevents spaces before commas and fullstops etc.)
+                outputtext = outputtext[:-1]
+        inputgraph = g.graph
+        if longform and g.graph != '' and g.graph not in punctchars:
+            # don't display words that are only punctuation characters
+            # long form syllable details
+            outputtext += "\n".join(g.longoutput())+"\n"
+        word_KK2FSS(g,verberr)
+        if longform:
+            outputtext += "FSS: {w}\n\n".format(w=g.graph)
+        else:
+            outputtext += "{w} ".format(w=g.graph)
+    return outputtext
             
 if __name__ == '__main__':
     """
@@ -210,6 +291,8 @@ if __name__ == '__main__':
                         help="Line by line mode. Uses shorter reporting of each word, in form of interlinear input and SWF text .")
     parser.add_argument("--verberr",action="store_true",
                         help="Verbose mode for errors, e.g. flagging up segmentation failures etc.")
+    parser.add_argument("--backwards",action="store_true",
+                        help="Backwards segmentation from end of each word. Default is to start at the beginning.")
 
     args = parser.parse_args()
     # Check that the input parameter has been specified.
@@ -219,107 +302,18 @@ if __name__ == '__main__':
         sys.exit()
 
     f = codecs.open(args.inputfile,"r",encoding='utf-8',errors='replace')
-    fwds = True
-    #fwds = False
+    
+    if args.backwards:
+        fwds = False
+    else:
+        fwds = True
+
     if args.line:
         # read file line by line
         inputtext = f.readlines()
         for line in inputtext:
-            rannans = syllabenn_ranna_kw.RannaSyllabenn(line)            
-            print("KK: {k}".format(k=line.lstrip()),end = "")
-            # build up line in SWF
-            outline = ''
-            for i in rannans.geryow:
-                # go through word by word
-                g = syllabenn_ranna_kw.Ger(i,rannans,fwds)
-                if g.graph != '':
-                    inputgraph = g.graph
-                    #if args.verberr:
-                    #    print("input: {i}".format(i=inputgraph))
-                    if len(g.slsObjs) > 0:
-                        # if it is a word, loop through syllables
-                        # and build up the spelling after segmentation
-                        # but before the KK-->SWF conversion
-                        inputsyls = [s.grapheme for s in g.slsObjs]
-                        inputgraphseg = ''.join(inputsyls)
-                        if inputgraph != inputgraphseg:
-                            # if the segmentation has not consumed all of the input
-                            # the portion that failed is recorded and used later
-                            failedend = inputgraph.split(inputgraphseg)[1]
-                            if args.verberr:
-                                print("Segmentation failure: input {i}, output {o}".format(i=inputgraph,o=inputgraphseg))
-                                print("failed end: {f}".format(f=failedend))
-                        for s in g.slsObjs:
-                            # print("syllable {s}".format(s=s.grapheme))
-                            syl_KK2FSS(s,g)
-
-                    else:
-                        failedend = ''
-                        # if there are no syllables found
-                        # generally will be a punctuation character
-                        if not(g.graph[0].isalpha() or g.graph[0].isdigit()) and g.graph[0] not in '(-':
-                            # if it isn't a letter or digit or ( or -
-                            # take the last character off (prevents spaces before commas and fullstops etc.)
-                            outline = outline[:-1]
-                        # where no syllables were found, don't change the input spelling
-                        g.graph = inputgraph
-                    if len(g.slsObjs) == 0 or inputgraph != inputgraphseg:
-                        # if the segmentation failed, append the failed end
-                        # though perhaps should simply return input
-                        # becasue these are liable to be personal name
-                        # non-Cornish place names, or unassimilated loanwords
-                        g.graph += failedend
-
-                    # add word to the output line
-                    outline += g.graph                    
-                    if g.graph != '(':
-                        # add spaces between words except before a bracket
-                        outline += ' '                        
-            print("FSS: {f}\n".format(f=outline))
+            outline = line_KK2FSS(line,fwds,args.verberr)
+            print(outline+"\n")
     else:
         inputtext = f.read()
-        rannans = syllabenn_ranna_kw.RannaSyllabenn(inputtext)
-        
-        punctchars = ".,;:!?()-"
-        for i in rannans.geryow:
-            g = syllabenn_ranna_kw.Ger(i,rannans,fwds)
-            inputgraph = g.graph
-            if g.graph != '' and g.graph not in punctchars:
-                # don't display words that are only punctuation characters
-                if not(args.short):
-                    # long form syllable details
-                    g.diskwedh()
-
-                # record input spelling before KK-->SWF
-                inputsyls = [s.grapheme for s in g.slsObjs]
-                inputgraphseg = ''.join(inputsyls)
-                if inputgraph != inputgraphseg:
-                    # if the segmentation has not consumed all of the input
-                    # the portion that failed is recorded and used later
-                    if inputgraphseg != '':
-                        failedend = inputgraph.replace("-","").split(inputgraphseg)[1]
-                    else:
-                        if inputgraph.isalpha() or inputgraph[0] == "'":
-                            failedend = inputgraph
-                        else:
-                            failedend = ''
-                    if args.verberr:
-                        print("Segmentation failure: input {i}, output {o}".format(i=inputgraph,o=inputgraphseg))
-                        print("failed end: {f}".format(f=failedend))
-
-                for s in g.slsObjs:
-                    # convert syllable
-                    syl_KK2FSS(s,g)
-                    
-                if inputgraph != inputgraphseg and inputgraphseg != '':
-                    # if the segmentation failed, append the failed end
-                    # though perhaps should simply return input
-                    # becasue these are liable to be personal name
-                    # non-Cornish place names, or unassimilated loanwords
-                    g.graph += failedend
-
-                # in short form, don't have a new line between words
-                if args.short:
-                    print("{w} ".format(w=g.graph), end="")
-                else:
-                    print("FSS: {w}\n".format(w=g.graph))
+        print (text_KK2FSS(inputtext,fwds,not(args.short),args.verberr))
