@@ -3,6 +3,7 @@ import syllabenn_ranna_kw
 import datageryow
 import argparse
 import codecs
+import string
 
 # TODO
 # vocalic alternation e.g. byw but bewnans, bewnansow
@@ -227,7 +228,7 @@ def word_KK2FSS(ger,verberr=False):
                 # non-Cornish place names, or unassimilated loanwords
                 ger.graph += failedend
         if capital:
-            ger.graph = ger.graph.title()
+            ger.graph = string.capwords(ger.graph)
         if allcaps:
             ger.graph = ger.graph.upper()
                 
