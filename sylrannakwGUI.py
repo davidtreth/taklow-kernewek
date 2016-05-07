@@ -1,32 +1,32 @@
-from Tkinter import *
-from taklowGUI import Kwitya, Entrybar, CheckButtonBar, Radiobar
+import Tkinter as tk
+from taklowGUI import Kwitya, Radiobar, ScrolledText
 import syllabenn_ranna_kw as syl
 
 if __name__ == '__main__':
-    root = Tk()
+    root = tk.Tk()
     root.title('Syllabenn Ranna Kernewek')
-    mhead = Label(root, text = "Dewisyow")
+    mhead = tk.Label(root, text = "Dewisyow")
     mhead.config(font=('Arial', 16, 'bold'))
-    mhead.pack(side=TOP, anchor=NW)
+    mhead.pack(side=tk.TOP, anchor=tk.NW)
 
-    options = Radiobar(root, ['Mode Hir', 'Mode Berr', 'Mode Linenn'], side=TOP, anchor=NW,default='Mode Berr')
-    options.pack(side=LEFT, fill=Y)
-    options.config(relief=RIDGE, bd=2)
+    options = Radiobar(root, ['Mode Hir', 'Mode Berr', 'Mode Linenn'], side=tk.TOP, anchor=tk.NW,default='Mode Berr')
+    options.pack(side=tk.LEFT, fill=tk.Y)
+    options.config(relief=tk.RIDGE, bd=2)
 
-    options2 = Radiobar(root, ['Rannans war-rag', 'Rannans war-dhelergh'], side=TOP, anchor=NW, default='Rannans war-dhelergh')
-    options2.pack(side=LEFT, fill=Y)
-    options2.config(relief=RIDGE, bd=2)
+    options2 = Radiobar(root, ['Rannans war-rag', 'Rannans war-dhelergh'], side=tk.TOP, anchor=tk.NW, default='Rannans war-dhelergh')
+    options2.pack(side=tk.LEFT, fill=tk.Y)
+    options2.config(relief=tk.RIDGE, bd=2)
     
-    def allstates(): print options.state(), options2.state(), ent.fetch()
+    def allstates(): print options.state(), options2.state(), ent.gettext()
 
     def printsylranna():
         """ show the output in Cornish, according to the options
          in the radiobar is selected """
         allstates()
-        inputtext = ent.fetch()
+        inputtext = ent.gettext()
         print("Input: {i}".format(i=inputtext))
         output = ''
-        msg3.config(fg = 'dark red', bg = 'light yellow', font=('Arial', 18, 'bold'))
+        msg3.text.config(fg = 'dark red', bg = 'light yellow', font=('Arial', 16, 'bold'), state=tk.NORMAL)
         if inputtext:
             if options2.state() == 'Rannans war-rag':
                 fwd = True
@@ -34,40 +34,45 @@ if __name__ == '__main__':
                 
             if options.state() == 'Mode Hir':
                 output = syl.detailSylsText(inputtext,fwd)
-                msg3.config(font=('Arial', 14, 'normal'))
+                msg3.text.config(font=('Arial', 14, 'normal'))
             elif options.state() == 'Mode Linenn':
-                output = syl.countSylsLine(inputtext,fwd)
+                lines = inputtext.split('\n')                
+                for l in lines:                    
+                    output += syl.countSylsLine(l,fwd)+'\n\n'
+                output = output[:-1]
             else:
                 # use short mode by default if nothing is selected
                 output = syl.detailSylsText(inputtext,fwd,short=True)
             print(output)
 
-        msg3.config(text = output)
-
+        msg3.settext(output)
+        msg3.text.config(state=tk.DISABLED)
     def clearboxes():
         ent.clear()
-        msg3.config(fg = 'dark red', bg='light yellow',font=('Arial', 18, 'bold'), text='')
+        msg3.text.config(fg = 'dark red', bg='light yellow',font=('Arial', 16, 'bold'),state=tk.NORMAL)
+        msg3.clear()
+        msg3.text.config(state=tk.DISABLED)
         
         
-    msg = Label(root, text="Gorrewgh tekst kernewek a-woeles mar pleg:")
+    msg = tk.Label(root, text="Gorrewgh tekst kernewek a-woeles mar pleg:")
     msg.config(font=('Arial', 16, 'bold'))
     msg.pack()
     
     # text entry bar for input
-    ent = Entrybar(root)
+    ent = ScrolledText(root)
     ent.pack()
     
     # output
-    msg3 = Label(root)
-    msg3.config(fg = 'dark red', bg='light yellow',font=('Arial', 18, 'bold'), text='')
-    msg3.pack(expand=YES,fill=BOTH, anchor=CENTER)
+    msg3 = ScrolledText(root)
+    msg3.text.config(fg = 'dark red', bg='light yellow',font=('Arial', 16, 'bold'), state=tk.DISABLED)
+    msg3.pack()
 
     # buttons
-    Kwitya(root).pack(side=RIGHT)
-    Button(root, text = 'Diskwedh Syllabennow', font=('Arial',14),
-           command = printsylranna).pack(side=RIGHT)
-    Button(root, text = 'Klerhe', font=('Arial', 14),
-           command = clearboxes).pack(side=LEFT)
+    Kwitya(root).pack(side=tk.RIGHT)
+    tk.Button(root, text = 'Diskwedh Syllabennow', font=('Arial',14),
+           command = printsylranna).pack(side=tk.RIGHT)
+    tk.Button(root, text = 'Klerhe', font=('Arial', 14),
+           command = clearboxes).pack(side=tk.LEFT)
     root.mainloop()
 
 

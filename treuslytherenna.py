@@ -82,9 +82,9 @@ def convert_y(inputsyl):
         # and not syllables ending in a vowel (often should have been a consonantal y
         # e.g. in -ya words)
         if vowellength == 2 and vowel == 'y' and inputsyl.structure[-1] != 'V':
-            if args.verberr and 'y' in inputsyl.grapheme:
-                print("convert_y")
-                print(inputsyl.sylparts)
+            #if args.verberr and 'y' in inputsyl.grapheme:
+            #    print("convert_y")
+            #    print(inputsyl.sylparts)
             outputgrapheme = inputsyl.grapheme.replace("y","e")
             inputsyl.grapheme = outputgrapheme
 
@@ -112,7 +112,7 @@ def convert_double_consts(inputsyl):
 def convert_s_c(inputword):
     """ in some words, change s to c. This is done by 
     lookup basically """
-    if inputword.graph in datageryow.words_c:
+    if inputword.graph.lower() in datageryow.words_c:
         outputgraph = inputword.graph.replace("se","ce")
         outputgraph = outputgraph.replace("si", "ci")
         outputgraph = outputgraph.replace("syal", "cyal")
@@ -123,7 +123,7 @@ def convert_s_c(inputword):
         outputgraph = outputgraph.replace("syan", "cyan")
         # reverse some possible incorrect substitutions
         # in the endings of inflected verbs
-        if inputword.graph in datageryow.verbs_infl:
+        if inputword.graph.lower() in datageryow.verbs_infl:
             if outputgraph[-5:] == "cewgh":
                 outputgraph = outputgraph[:-5]+"sewgh"
             if outputgraph[-4:] == "cens":
@@ -168,8 +168,9 @@ def convert_misc(inputword):
 
 def syl_KK2FSS(inputsyl, inputword):
     inputgraph = inputword.graph.lower()
+    inputsyl.grapheme = inputsyl.grapheme.lower()
     # turn KK 'oe' to 'oo' or 'o'
-    convert_oe(inputsyl, inputword.graph.lower() in datageryow.SWF_oowords)
+    convert_oe(inputsyl, inputgraph in datageryow.SWF_oowords)
     # vocalic alternation
     convert_yw(inputsyl)
     convert_y(inputsyl)
@@ -190,16 +191,19 @@ def word_KK2FSS(ger,verberr=False):
     if ger.graph != '':
         # record input spelling before KK-->SWF
         inputgraph = ger.graph
+        capital = inputgraph[0].isupper()
+        allcaps = inputgraph.isupper()
+        ger.graph = ger.graph.lower()
         if len(ger.slsObjs) > 0:
             # if it is a word, loop through syllables
             # and build up the spelling after segmentation
             # but before the KK-->SWF conversion
-            inputsyls = [s.grapheme for s in ger.slsObjs]
+            inputsyls = [s.grapheme.lower() for s in ger.slsObjs]
             inputgraphseg = ''.join(inputsyls)
-            if inputgraph != inputgraphseg:
+            if inputgraph.lower() != inputgraphseg:
                 # if the segmentation has not consumed all of the input
                 # the portion that failed is recorded and used later
-                failedend = inputgraph.split(inputgraphseg)[1]
+                failedend = inputgraph.lower().split(inputgraphseg)[1]
                 if verberr:
                     print("Segmentation failure: input {i}, output {o}".format(i=inputgraph,o=inputgraphseg))
                     print("failed end: {f}".format(f=failedend))
@@ -222,12 +226,17 @@ def word_KK2FSS(ger,verberr=False):
                 # becasue these are liable to be personal name
                 # non-Cornish place names, or unassimilated loanwords
                 ger.graph += failedend
+        if capital:
+            ger.graph = ger.graph.title()
+        if allcaps:
+            ger.graph = ger.graph.upper()
                 
 
-def line_KK2FSS(line,fwds=False,verberr=False):
+def line_KK2FSS(line,fwds=False,longform=True, verberr=False):
     """ take line of text and convert to SWF """
-    rannans = syllabenn_ranna_kw.RannaSyllabenn(line)            
-    outputtext = "KK: {k}".format(k=line.strip())
+    rannans = syllabenn_ranna_kw.RannaSyllabenn(line)
+    if longform:            
+        outputtext = "KK: {k}".format(k=line.strip())
     # build up line in SWF
     outline = ''
     for i in rannans.geryow:
@@ -246,8 +255,10 @@ def line_KK2FSS(line,fwds=False,verberr=False):
         if g.graph not in '([{':
             # add spaces between words except after an open bracket
             outline += ' '
-
-    outputtext += "\nFSS: {f}".format(f=outline)
+    if longform:
+        outputtext += "\nFSS: {f}".format(f=outline)
+    else:
+        outputtext = outline
     return outputtext
 
 def text_KK2FSS(inputtext,fwds=False,longform=False,verberr=False):
@@ -312,8 +323,8 @@ if __name__ == '__main__':
         # read file line by line
         inputtext = f.readlines()
         for line in inputtext:
-            outline = line_KK2FSS(line,fwds,args.verberr)
+            outline = line_KK2FSS(line, fwds, not(args.short), args.verberr)
             print(outline+"\n")
     else:
         inputtext = f.read()
-        print (text_KK2FSS(inputtext,fwds,not(args.short),args.verberr))
+        print (text_KK2FSS(inputtext, fwds, not(args.short), args.verberr))
