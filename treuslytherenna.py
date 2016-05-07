@@ -1,5 +1,5 @@
 from __future__ import print_function
-import sylabelenn_ranna_kw
+import syllabenn_ranna_kw
 import datageryow
 import argparse
 import codecs
@@ -225,13 +225,13 @@ if __name__ == '__main__':
         # read file line by line
         inputtext = f.readlines()
         for line in inputtext:
-            rannans = sylabelenn_ranna_kw.RannaSyllabelenn(line)            
+            rannans = syllabenn_ranna_kw.RannaSyllabenn(line)            
             print("KK: {k}".format(k=line.lstrip()),end = "")
             # build up line in SWF
             outline = ''
             for i in rannans.geryow:
                 # go through word by word
-                g = sylabelenn_ranna_kw.Ger(i,rannans,fwds)
+                g = syllabenn_ranna_kw.Ger(i,rannans,fwds)
                 if g.graph != '':
                     inputgraph = g.graph
                     #if args.verberr:
@@ -278,11 +278,11 @@ if __name__ == '__main__':
             print("FSS: {f}\n".format(f=outline))
     else:
         inputtext = f.read()
-        rannans = sylabelenn_ranna_kw.RannaSyllabelenn(inputtext)
+        rannans = syllabenn_ranna_kw.RannaSyllabenn(inputtext)
         
         punctchars = ".,;:!?()-"
         for i in rannans.geryow:
-            g = sylabelenn_ranna_kw.Ger(i,rannans,fwds)
+            g = syllabenn_ranna_kw.Ger(i,rannans,fwds)
             inputgraph = g.graph
             if g.graph != '' and g.graph not in punctchars:
                 # don't display words that are only punctuation characters

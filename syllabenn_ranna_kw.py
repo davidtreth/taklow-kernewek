@@ -15,7 +15,7 @@
 # This module is used by the module treuslytherenna.py to convert Kernewek Kemmyn
 # text to the Standard Written Form
 #
-# Usage: python sylabelenn_ranna_kw.py --test <inputfile>
+# Usage: python syllabenn_ranna_kw.py --test <inputfile>
 # where <inputfile> is the path to an input file containing 
 # text in Kernewek Kemmyn
 # --test is an optional flag to run the test routines in profya()
@@ -95,14 +95,14 @@ class kwKemmynRegExp:
     lostBK_double = r'(.*?)(ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])(lgh|bl|br|bb|kl|kr|kn|kw|kk|nch|cch|dl|dr|dd|ff|vv|ggh|ll|mp|nj|mm|nk|nd|ns|nth?|nn|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rr|rv|rn|rj|rf|rs|ssh|ss|tth|tt|jj)$'
 
                         
-class RannaSyllabelenn:
+class RannaSyllabenn:
     """
-    RannaSyllabelenn is a class containing methods for syllable segmentation
+    RannaSyllabenn is a class containing methods for syllable segmentation
     """
     
     def __init__(self, inputtext):
         """
-        initialize RannaSyllabelenn object
+        initialize RannaSyllabenn object
         """
         # print(inputtext)
         self.inputtext = inputtext
@@ -160,7 +160,7 @@ class RannaSyllabelenn:
                     ger = ''
         # this is returning
         # a list of plain text
-        # not Syllabellen objects
+        # not Syllabenn objects
         return syl_list
 
     def diwettha_syl(self,ger, regexp):
@@ -171,13 +171,13 @@ class RannaSyllabelenn:
         #if ger[-1] == '-':
         #    ger = ger[:-1]
         dsyl = re.findall(regexp,ger)
-        #print("An diwettha sylabellen yw: {dsyl}".format(dsyl=dsyl)) 
+        #print("An diwettha syllabenn yw: {dsyl}".format(dsyl=dsyl)) 
         # print(dsyl)
         if not(dsyl == []):
             diwettha_syl=dsyl[0][1]+dsyl[0][2]+dsyl[0][3]+dsyl[0][4]
         # this is returning
         # plain text
-        # not Syllabellen objects
+        # not Syllabenn objects
         return diwettha_syl
 
     def kynsa_syl(self, ger, regexp):
@@ -190,7 +190,7 @@ class RannaSyllabelenn:
             ger = ger[1:]
         # print(ger)
         ksyl = re.findall(regexp,ger)
-        #print("An kynsa sylabellen yw: {ksyl}".format(ksyl=ksyl))
+        #print("An kynsa syllabenn yw: {ksyl}".format(ksyl=ksyl))
         if not(ksyl == []):
             kynsa_syl = ksyl[0][1]+ksyl[0][5]
         # make sure we have reached the hyphen before we add it to the output
@@ -286,7 +286,7 @@ class RannaSyllabelenn:
         geryowk = [g for g in self.geryow if self.kynsa_syl(g,regexps.kynsaRegexp) != ''] 
         # print(zip(ksls,geryowk))
         for k,n,e,g in zip(ksls,nessasls,slserell,geryowk):
-             print("Ger: {g}, an kynsa sylabellen yw: {k}, an sylabelennow erell yw: {e}, an nessa sylabelenn yw: {n}".format(g=g,k=k,e=e,n=n))
+             print("Ger: {g}, an kynsa syllabenn yw: {k}, an syllabennow erell yw: {e}, an nessa syllabenn yw: {n}".format(g=g,k=k,e=e,n=n))
         print("\nWords containing rising dipthongs:")
         print([(g, re.findall(regexps.dewson_sevel_re,g)) for g in self.geryow if re.findall(regexps.dewson_sevel_re,g) != []])
         print("\nWords containing falling dipthongs:")
@@ -312,9 +312,9 @@ class Ger:
         #self.graph = self.graph.replace(" ","")
         # print(ger)
         
-        self.n_sls = 0 # niver sylabelennow
-        self.sls = []  # rol a sylabelennow yn furv tekst
-        self.slsObjs = [] # rol a daklennow sylabelennow
+        self.n_sls = 0 # niver syllabennow
+        self.sls = []  # rol a syllabennow yn furv tekst
+        self.slsObjs = [] # rol a daklennow syllabennow
         
         if fwds:
             # go forwards
@@ -327,12 +327,12 @@ class Ger:
         self.sls = sls
         self.n_sls = len(sls)
         for s in self.sls:
-            # create a Syllabelenn object and append it to a list
-            self.slsObjs.append(Syllabelenn(s,rannans))
+            # create a Syllabenn object and append it to a list
+            self.slsObjs.append(Syllabenn(s,rannans))
         #print ("len(self.slsObjs) = {l}".format(l=len(self.slsObjs)))
         for i,s in enumerate(self.slsObjs):
             # store number of syllables in word, position in word
-            # and spelling of word in attributes of the Syllabelenn object
+            # and spelling of word in attributes of the Syllabenn object
             s.nSylsGer = self.n_sls
             s.position = i+1
             s.graphGer = self.graph
@@ -382,7 +382,7 @@ class Ger:
     def longoutput(self):
         """ return long output for each word"""
         line1 = "An ger yw: {g}".format(g=self.graph)
-        line2 = "Niver a syllabelennow yw: {n}".format(n=self.n_sls)
+        line2 = "Niver a syllabennow yw: {n}".format(n=self.n_sls)
         line3 = "Hag yns i: {sls}".format(sls=[s.encode("ascii") for s in self.sls])
         outlines = [line1,line2,line3]
         # for each syllable, display its spelling - capitalized if stressed
@@ -415,13 +415,13 @@ class Ger:
         """ show short output for each word """    
         print(self.shortoutput(),end="")
         
-class Syllabelenn:           
+class Syllabenn:           
     """
     Class for syllable
     """
     def __init__(self,graph,rannans,regexps=kwKemmynRegExp):
         """
-        Initialize Syllabelenn object
+        Initialize Syllabenn object
         """
         # spelling
         self.grapheme = graph
@@ -429,7 +429,7 @@ class Syllabelenn:
         self.stressed = False
         # monosyllable ?
         self.monosyl = False
-        # rannans is the RannaSyllabelenn object containing the regexp methods
+        # rannans is the RannaSyllabenn object containing the regexp methods
         self.rannans = rannans
         # structure of syllable (CVC/VC/CV/V)
         self.structure = ''
@@ -481,7 +481,7 @@ class Syllabelenn:
             lengtharray[0] = 1  # hirder an kynsa kessonenn
             #print("self.monosyl={m}".format(m=self.monosyl))
             if self.monosyl:
-            # mars yw unnsyllabelenn:
+            # mars yw unnsyllabenn:
                 if re.search(regexps.lostBK_single,graph_nopunct):
                     lengtharray[1] = 3
                     #    mars yw kessonenn unnplek: bogalenn hir 
@@ -495,7 +495,7 @@ class Syllabelenn:
                         lengtharray[2] = 2
             else:
                 if self.stressed:
-                    # mars yw liessyllabelenn poesys:
+                    # mars yw liessyllabenn poesys:
                     if re.search(regexps.lostBK_single,graph_nopunct):
                         # mars yw kessonenn unnplek: boglenn hanterhir
                         # ha kessonenn verr
@@ -517,22 +517,22 @@ class Syllabelenn:
         if self.structure == 'CV':
             lengtharray[0] = 1  # hirder an kynsa kessonenn
             if self.monosyl:
-                # mars yw unnsyllabelenn:
+                # mars yw unnsyllabenn:
                 #   bogalenn hir
                 lengtharray[1] = 3
             else:
                 if self.stressed:
-                    # mars yw liessyllabelenn poesys:
+                    # mars yw liessyllabenn poesys:
                     #   bogalenn hanterhir
                     lengtharray[1] = 2
                 else:
-                    # mars yw liessyllabelenn anpoesys:
+                    # mars yw liessyllabenn anpoesys:
                     #   bogalenn verr 
                     lengtharray[1] = 1
 
         if self.structure == 'VC':
             if self.monosyl:
-                # mars yw unnsyllabelenn:
+                # mars yw unnsyllabenn:
                 if re.search(regexps.lostBK_single,graph_nopunct):
                     lengtharray[0] = 3
                     #    mars yw kessonenn unnplek: bogalenn hir 
@@ -546,7 +546,7 @@ class Syllabelenn:
                         lengtharray[1] = 2
             else:
                 if self.stressed:
-                    # mars yw liessyllabelenn poesys:
+                    # mars yw liessyllabenn poesys:
                     if re.search(regexps.lostBK_single,graph_nopunct):
                         # mars yw kessonenn unnplek: boglenn hanterhir
                         lengtharray[0] = 2
@@ -559,23 +559,23 @@ class Syllabelenn:
 
 
                 else:
-                    # mars yw liessyllabelenn anpoesys:
+                    # mars yw liessyllabenn anpoesys:
                     #    bogalenn berr
                     lengtharray[0] = 1
                     lengtharray[1] = 1
 
         if self.structure == 'V':            
             if self.monosyl:
-            # mars yw unnsyllabelenn:
+            # mars yw unnsyllabenn:
             # bogalenn hir
                 lengtharray[0] = 3
             else:
                 if self.stressed:
-                    # mars yw liessyllabelenn poesys:
+                    # mars yw liessyllabenn poesys:
                     # bogalenn hanterhir
                     lengtharray[0] = 2
                 else:
-                    # mars yw liessyllabelenn anpoesys:
+                    # mars yw liessyllabenn anpoesys:
                     # bogalenn verr
                     lengtharray[0] = 1
 
@@ -590,7 +590,7 @@ def countSylsLine(linetext,fwd=False,mode='text'):
     mode is either 'text', 'list' or 'nsyllist'
     to return either a string, list with words
     or just numbers of syllables """
-    rannans = RannaSyllabelenn(linetext)
+    rannans = RannaSyllabenn(linetext)
     Nsls = 0
     outtext = ""
     outlist = []
@@ -603,7 +603,7 @@ def countSylsLine(linetext,fwd=False,mode='text'):
             outlist.append((g.graph,g.n_sls))            
             Nsls += g.n_sls
             outnsyllist.append((g.n_sls))
-    outtext += "\nNiver a sylabellenow yn linenn = {n}\n".format(n=Nsls)
+    outtext += "\nNiver a sylabennow yn linenn = {n}\n".format(n=Nsls)
     total = ("Sommenn",Nsls)
     if mode == 'list':
         return outlist, total
@@ -615,7 +615,7 @@ def countSylsLine(linetext,fwd=False,mode='text'):
 
 def detailSylsText(intext,fwd=False,short=False):
     outtext = ""
-    rannans = RannaSyllabelenn(intext)
+    rannans = RannaSyllabenn(intext)
     punctchars = ".,;:!?()-"
     for i in rannans.geryow:
         g = Ger(i,rannans,fwd)
@@ -663,7 +663,7 @@ if __name__ == '__main__':
             for n,line in enumerate(inputtext):
                 #line = line.encode('utf-8')
                 print("Linenn {l}".format(l=n+1))
-                rannans = RannaSyllabelenn(line)
+                rannans = RannaSyllabenn(line)
                 # run test code if --test argument has been used
                 if args.test:
                     rannans.profya()
@@ -675,11 +675,11 @@ if __name__ == '__main__':
                     if g.graph != '':
                         g.diskwedhshort()
                         Nsls += g.n_sls
-                print("\nNiver a sylabellenow yn linenn = {n}\n".format(n=Nsls))
+                print("\nNiver a sylabennow yn linenn = {n}\n".format(n=Nsls))
     else:
         inputtext = f.read()
         #inputtext = inputtext.encode('utf-8')
-        rannans = RannaSyllabelenn(inputtext)
+        rannans = RannaSyllabenn(inputtext)
         # run test code if --test argument has been used
         if args.test:
             rannans.profya()
