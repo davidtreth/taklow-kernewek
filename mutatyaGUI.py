@@ -9,7 +9,7 @@ if __name__ == '__main__':
     mhead.config(font=('Arial', 16, 'bold'))
     mhead.pack(side=TOP, anchor=NW)
     # various mutation states
-    mstate = Radiobar(root, ['1 (heb treylyans)', '2 (medhel)', '3 (kales)', '4 (hwythys)', '5 (kemmyskys)', '6 (kemmyskys wosa \'th)'], side=TOP, anchor=NW)
+    mstate = Radiobar(root, ['1 (heb treylyans)', '2 (medhel)', '3 (kales)', '4 (hwythys)', '5 (kemmyskys)', '6 (kemmyskys wosa \'th)'], side=TOP, anchor=NW,default='1 (heb treylyans)')
     mstate.pack(side=LEFT, fill=Y)
     mstate.config(relief=RIDGE, bd=2)
     def allstates(): print mstate.state(), intmstate(), ent.fetch()
@@ -35,7 +35,7 @@ if __name__ == '__main__':
     ent.pack()
 
     msg2 = Label(root)
-    msg2.config(fg = 'dark red', font=('Arial', 18, 'bold'))
+    msg2.config(bg = 'light yellow', fg = 'dark red', font=('Arial', 18, 'bold'))
     msg2.pack(expand=YES,fill=BOTH, anchor=CENTER)
 
     # buttons

@@ -16,13 +16,15 @@ class Kwitya(Frame):
 class Radiobar(Frame):
     """ radio buttons to select one from a list """
     def __init__(self,parent=None, picks=[], side=LEFT, anchor=W,
-                 font=('Arial', 13, 'normal')):
+                 font=('Arial', 13, 'normal'), default = False):
         Frame.__init__(self, parent)
         self.var = StringVar()
+        if default in picks:
+            self.var.set(default)
         for pick in picks:
             rad = Radiobutton(self, text=pick, value = pick, variable=self.var)
             rad.config(font=font)
-            rad.pack(side=side, anchor=anchor, expand=YES)
+            rad.pack(side=side, anchor=anchor, expand=N)
     def state(self):
         return self.var.get()
 

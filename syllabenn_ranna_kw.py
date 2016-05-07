@@ -603,7 +603,7 @@ def countSylsLine(linetext,fwd=False,mode='text'):
             outlist.append((g.graph,g.n_sls))            
             Nsls += g.n_sls
             outnsyllist.append((g.n_sls))
-    outtext += "\nNiver a sylabennow yn linenn = {n}\n".format(n=Nsls)
+    outtext += "\nNiver a sylabennow y'n linenn = {n}".format(n=Nsls)
     total = ("Sommenn",Nsls)
     if mode == 'list':
         return outlist, total
@@ -675,7 +675,7 @@ if __name__ == '__main__':
                     if g.graph != '':
                         g.diskwedhshort()
                         Nsls += g.n_sls
-                print("\nNiver a sylabennow yn linenn = {n}\n".format(n=Nsls))
+                print("\nNiver a sylabennow y'n linenn = {n}\n".format(n=Nsls))
     else:
         inputtext = f.read()
         #inputtext = inputtext.encode('utf-8')
