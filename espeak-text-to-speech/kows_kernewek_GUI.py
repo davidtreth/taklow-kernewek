@@ -1,0 +1,76 @@
+# coding=utf-8
+import sys, os
+sys.path.append('..')
+import Tkinter as tk
+from taklowGUI import Kwitya, ScrolledText
+import gorhemmyn_kw as gor
+import kernewek_to_welshorthography as kw2cy
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
+
+if __name__ == '__main__':
+    root = tk.Tk()
+    root.title('Kewsel Kernewek gans espeak')
+
+    def allstates(): print ent.gettext()
+
+    def kewsel(kwtext):
+        """ speaks cornish text by Cymricising the spelling
+        and feeding to espeak at the command line """
+        tekst_cy = kw2cy.towelsh([kwtext])
+        print(tekst_cy)
+        espeakcmd = 'espeak -vcy \"{t}\"'.format(t=tekst_cy)
+        os.system(espeakcmd)
+        
+    def printentbar():
+        """ show whatever has been input in the
+        entry bar, and speak it """
+        print(ent.gettext())
+        msg2.config(text = ent.gettext())
+        root.update_idletasks()
+        kewsel(ent.gettext())
+        
+    def gorhemmyn():
+        """ choose a greeting appropriate to the time of day
+        using time on the system clock, and speak it """
+        g = gor.Gorhemmyn()
+        msg2.config(text = g.gorhemmyn)
+        root.update_idletasks()
+        # could use method inside gorhemmyn_kw instead
+        # g.kewsel()
+        kewsel(g.gorhemmyn)
+
+    def clearboxes():
+        """ clear input and output boxes """
+        msg2.config(text = '')
+        ent.clear()
+        
+    
+    msg = tk.Label(root, text="Gorrewgh geryow kernewek a-woles mar pleg")
+    msg.config(font=('Arial', 16, 'bold'))
+    msg.pack()
+    
+    # text entry bar
+    ent = ScrolledText(root)
+    ent.text.config(width=40,height=11)
+    ent.pack(expand=tk.YES, fill=tk.BOTH)
+
+    # output display
+    msg2 = tk.Label(root)
+    msg2.config(bg = 'light yellow', fg = 'dark red', font=('Arial', 18, 'bold'))
+    msg2.pack(expand=tk.YES,fill=tk.BOTH, anchor=tk.CENTER)
+
+    # buttons
+    Kwitya(root).pack(side=tk.RIGHT)
+    tk.Button(root, text = 'Kewsel', font=('Arial',14),           
+           command = printentbar).pack(side=tk.RIGHT)
+    tk.Button(root, text = 'Gorhemmyn', font=('Arial',14),
+           command = gorhemmyn).pack(side=tk.LEFT)
+    
+    tk.Button(root, text = 'Klerhe', font=('Arial',14),           
+           command = clearboxes).pack(side=tk.LEFT)
+    
+    root.mainloop()
+
+

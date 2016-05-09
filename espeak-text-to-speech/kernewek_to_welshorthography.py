@@ -13,6 +13,8 @@ import string
 #
 
 def towelsh(inputtext,newline=False):
+    """ inputtext should be an array of strings 
+    not a single string """
     outputtext = ""    
     for w in inputtext:
         w = w.lower()
