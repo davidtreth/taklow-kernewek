@@ -37,7 +37,7 @@ class CheckButtonBar(tk.Frame):
         for l in labels:
             var = tk.IntVar()
             chk = tk.Checkbutton(self,text=l,variable=var)
-            chk.pack(side=TOP)
+            chk.pack(side=tk.TOP)
             chk.config(font=font)
             self.states.append(var)
     def state(self):
