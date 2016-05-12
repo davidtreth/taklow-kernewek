@@ -49,6 +49,7 @@ class rannowVerbAnreyth:
     verb anreyth inflektys - unn amser
     inflected irregular verb of one tense
     """
+    # English translations of the tense names
     amserowEN = {"a-lemmyn":"present",
                  "tremenys":"preterite",
                  "anperfydh":"imperfect",
@@ -66,9 +67,22 @@ class rannowVerbAnreyth:
                  "perfydh":"perfect"}
 
     def __init__(self,verbnoun, anpersonek, my, ty, ev, hi, ni, hwi, i, amser):
+        """ verbnoun: dictionary form, verbal noun / infinitive
+        following arguments are the inflected forms:
+        anpersonek: impersonal
+        my: 1p sing
+        ty: 2p sing
+        ev, hi: 3p sing masc + fem 
+        ni: 1p plural
+        hwi: 2p plural
+        i: 3p plural
+        amser: the tense
+        """
         self.verbnoun = verbnoun
+        # store the inflected forms in a list, and in a dictionary
         self.rannow = [anpersonek, my, ty, ev, hi, ni, hwi, i]
         self.rannowDict = {0:anpersonek, 1:my, 2:ty, 3:ev, 4:hi, 5:ni, 6:hwi, 7:i}
+        # store the tense name and its English translation
         self.amser = amser
         self.amserEN = rannowVerbAnreyth.amserowEN[amser]
         
@@ -96,6 +110,7 @@ class rannowVerbAnreythOllAmser:
         self.tensesList = []
         self.tensesENList = []
         self.dictTenses = {}
+        
     def addTense(self, tense):
         """
         y telledh bos tense taklenn rannowVerbAnreyth
@@ -103,13 +118,16 @@ class rannowVerbAnreythOllAmser:
         """
         self.tensesList.append(tense.amser)
         self.tensesENList.append(tense.amserEN)
+        # a dictionary of dictionaries
         self.dictTenses[tense.amser] = tense.rannowDict
+        
     def addPPL(self, PPL):
         """
         keworra PPL dhe self.dictTenses
         add past participle to self.dictTenses
         """
         self.dictTenses["ppl"] = PPL
+        
     def addTenseList(self, tenseList, PPL = "NULL"):
         """
         keworra rol a amserow orth self.dictTenses
@@ -119,18 +137,23 @@ class rannowVerbAnreythOllAmser:
             self.addTense(t)
         if PPL != "NULL":
             self.addPPL(PPL)
+            
     def getPPL(self):
+        """ daskavoes an PPL 
+        return the past participle """
         return self.dictTenses["ppl"]
+        
     def getInfVerb(self,tense,person):
         """
         kavoes verb inflektys gans an amser ha'n person
-        get the inflected verb for the tense and person
+        return the inflected verb for the tense and person
         """
         if self.dictTenses.has_key(tense):
             return self.dictTenses[tense][person]
         else:
             print("Nyns eus amser {t} dhe verb {v}.\nVerb {v} doesn't have tense {t}".format(v=self.verbnoun, t=tense))
             return "NULL"
+            
 # lostow verbow reyth
 # regular verb endings
 endings_present = lostow_personek("ir","av","ydh","","","yn","owgh","ons","a-lemmyn")
@@ -146,6 +169,7 @@ endings_subj_imp = lostow_personek("ys","en","es","a","a","en","ewgh","ens","isl
 endings_imperative = lostow_personek("","","","es","es","yn","ewgh","ens","gorhemmyn")
 
 tensesDict = {0:"a-lemmyn",1:"tremenys",2:"anperfydh",3:"gorperfydh",4:"islavarek_a-lemmyn",5:"islavarek_anperfydh",6:"gorhemmyn",7:"ppl"}
+
 # notenn - nyns eus 1s ha anpersonek dhe'n amser gorhemmyn
 # note - 1s and impersonal do not exist for imperative
 ending_pastparticiple = "ys"
@@ -173,35 +197,54 @@ endings_alltenses_i = lostow_personek_2({endings_present.amser:endings_present.l
 
 # verbow ha'n ben an keth ha'n hanow verbek
 # verbs with stem same as verbal noun
-verbs_stemnoun = ["arvedh","arveth","astell","aswonn","daffar","dalleth","dannvon","daskorr","dendil","dervynn","dewis","diank","diberth","difenn","difres","dolos","dyerbynn","godhav","godros","gorhrmmynn","gormel","gromyal","gwari","gweres","hepkorr","hembronk","hunros","kanmel","kemmynn","kuntell","kynnik","meythrin","omdhal","omguntell","omwen","pe","powes","pregowth","sommys","tynkyal","yes"]
+verbs_stemnoun = ["arvedh","arveth","astell","aswonn","daffar","dalleth","dannvon","daskorr","dendil","dervynn",
+                  "dewis","diank","diberth","difenn","difres","dolos","dyerbynn","godhav","godros","gorhrmmynn",
+                  "gormel","gromyal","gwari","gweres","hepkorr","hembronk","hunros","kanmel","kemmynn","kuntell",
+                  "kynnik","meythrin","omdhal","omguntell","omwen","pe","powes","pregowth","sommys","tynkyal","yes"]
 
 # verbow gans bogalenn i yn 3s tremenys
 # verbs with i vowel in 3s preterite
-verbs_i_3sp = ["aswonn","attylli","brewi","dagrewi","dedhewi","dehweles","demmedhi","derivas","diank","dinewi","dineythi","diskrysi","distrui","domhwel","dybri","dynnerghi","erghi","godhav","gorhemmynn","gorthybi","hedhi","heveli","kemmynna","kentrewi","kreuni","krysi","mollethi","ombrederi","omhweles","prederi","pysi","synsi","tevi","tybi","yeuni"]
+verbs_i_3sp = ["aswonn","attylli","brewi","dagrewi","dedhewi","dehweles","demmedhi","derivas","diank","dinewi",
+               "dineythi","diskrysi","distrui","domhwel","dybri","dynnerghi","erghi","godhav","gorhemmynn",
+               "gorthybi","hedhi","heveli","kemmynna","kentrewi","kreuni","krysi","mollethi","ombrederi","omhweles",
+               "prederi","pysi","synsi","tevi","tybi","yeuni"]
 # ha'n verbow gans -el
 # plus all verbs in -el (not yet implemented)
 
 # verbow gans bogalenn i yn anperfydh
 # verbs with i vowel in imperfect
-verbs_i_imp = ["amma","aswonn","dalleth","dannvon","dervynn","dewis","diberth","difenn","doen","dyllo","folhwerthin","galloes","godhav","gonis","govynn","hembronk","hwerthin","lavasos","minhwerthin","omladh"]
+verbs_i_imp = ["amma","aswonn","dalleth","dannvon","dervynn","dewis","diberth","difenn","doen","dyllo","folhwerthin",
+               "galloes","godhav","gonis","govynn","hembronk","hwerthin","lavasos","minhwerthin","omladh"]
 
 #plus all verbs in -el, -es (except klywes and mynnes), -he and -i
 verbs_tava = ["tava","tardra","kachya","kampya","shakya","talkya"]
-verbs_igeri_o = ["ankevi","dasseni","dasserghi","dedhwi","goderri","kelli","kelmi","keski","kregi","lenki","leski","megi","pedri","perthi","previ","renki","seni","serri","telli","terri","treghi"]
+verbs_igeri_o = ["ankevi","dasseni","dasserghi","dedhwi","goderri","kelli","kelmi","keski","kregi","lenki","leski",
+                 "megi","pedri","perthi","previ","renki","seni","serri","telli","terri","treghi"]
 verbs_igeri_a = ["dalleth","diberth","hwerthin","minhwerthin","peski"]
 verbs_erghi_o = ["dagrewi","dedhewi","dinewi","kentrewi","kewsel","kynyewel","mollethi"]
-verbs_erghi_a = ["densel","diank","drehevel","dynnerghi","fyllel","godhevel","gweskel","heveli","lemmel","leverel","sevel","terlemmel","tewel","tyli","attyli"]
+verbs_erghi_a = ["densel","diank","drehevel","dynnerghi","fyllel","godhevel","gweskel","heveli","lemmel","leverel",
+                 "sevel","terlemmel","tewel","tyli","attyli"]
 three_s_presfut_y = ["eva","galloes","gedya","gweskel","kavoes","kelli","pobas","tevi"]
-verbs_lesta = ["bostya","diwiska","dyski","gweskel","gwiska","kestya","koska","leski","mostya","ostya","peski","raska","restya","rostya","tergoska","trestya"]
-verbs_gwystla = ["dampnya","entra","gustla","gwandra","handla","hwystra","kentra","moldra","restra","sklandra","sompna","tardra","tempra","terlentri"]
-verbs_hwithra = ["hwithra","dybri","fagla","gwedhra","hwedhla","hwyrni","ladra","lymna","medra","meythrin","pedri","pobla","ravna","sotla","sugna","trobla","resna","sokra","fekla","takla"]
+verbs_lesta = ["bostya","diwiska","dyski","gweskel","gwiska","kestya","koska","leski","mostya","ostya","peski","raska",
+               "restya","rostya","tergoska","trestya"]
+verbs_gwystla = ["dampnya","entra","gustla","gwandra","handla","hwystra","kentra","moldra","restra","sklandra","sompna",
+                 "tardra","tempra","terlentri"]
+verbs_hwithra = ["hwithra","dybri","fagla","gwedhra","hwedhla","hwyrni","ladra","lymna","medra","meythrin","pedri",
+                 "pobla","ravna","sotla","sugna","trobla","resna","sokra","fekla","takla"]
 verbs_gelwel = ["gelwel","henwel","lenwel","merwel","selwel"]
-verbs_irregular = ["bos","y'm beus","darvos","dos","godhvos","hwarvos","klywes","omglywes","mos","piw","tyli","attyli","doen","omdhoen","dri","dyllo","gul","ri","ti","bryjyon"]
+verbs_irregular = ["bos","y'm beus","darvos","dos","godhvos","hwarvos","klywes","omglywes","mos","piw","tyli","attyli",
+                   "doen","omdhoen","dri","dyllo","gul","ri","ti","bryjyon"]
+                   
 # vowel affectation y--> e in stem in some persons e.g. deber
 verbs_dybri = ["dybri"]
 # chanjyow ben kalesheans po dewblekheans
 # hardening or doubling in ending of the stem
-stem_changes = {"b":"pp","bl":"ppl","br":"ppr","ch":"cch","d":"t","dh":"tth","dhl":"tthl","dhr":"tthr","dhw":"tthw","dr":"ttr","f":"ff","g":"kk","gh":"ggh","gl":"kkl","gn":"kkn","he":"hah","j":"cch","k":"kk","kl":"kkl","kn":"kkn","kr":"kkr","l":"ll","ld":"lt","ldr":"ltr","lv":"lf","m":"mm","mbl":"mpl","mbr":"mpr","n":"nn","nd":"nt","ndl":"ntl","ndr":"ntr","ng":"nk","ngr":"nkr","nj":"nch","p":"pp","r":"rr","rd":"rt","rdr":"rtr","rdh":"rth","rg":"rk","rj":"rch","rv":"rf","s":"ss","sh":"ssh","sl":"ssl","sn":"ssn","sw":"ssw","t":"tt","th":"tth","thl":"tthl","thr":"tthr","tl":"ttl","v":"ff","vn":"ffn","vr":"ffr"}
+stem_changes = {"b":"pp","bl":"ppl","br":"ppr","ch":"cch","d":"tt","dh":"tth","dhl":"tthl","dhr":"tthr","dhw":"tthw",
+                "dr":"ttr","f":"ff","g":"kk","gh":"ggh","gl":"kkl","gn":"kkn","he":"hah","j":"cch","k":"kk","kl":"kkl",
+                "kn":"kkn","kr":"kkr","l":"ll","ld":"lt","ldr":"ltr","lv":"lf","m":"mm","mbl":"mpl","mbr":"mpr","n":"nn",
+                "nd":"nt","ndl":"ntl","ndr":"ntr","ng":"nk","ngr":"nkr","nj":"nch","p":"pp","r":"rr","rd":"rt","rdr":"rtr",
+                "rdh":"rth","rg":"rk","rj":"rch","rv":"rf","s":"ss","sh":"ssh","sl":"ssl","sn":"ssn","sw":"ssw","t":"tt",
+                "th":"tth","thl":"tthl","thr":"tthr","tl":"ttl","v":"ff","vn":"ffn","vr":"ffr"}
 vowels = ["a","e","i","o","u"]
 
 # Verbow Anreyth
@@ -231,7 +274,8 @@ bos_longpres_indef = rannowVerbAnreyth("bos","eder","esov","esos","eus","eus","e
 bos_longpres_defni = rannowVerbAnreyth("bos","eder","esov","esos","usi","usi","eson","esowgh","esons","a-lemmyn_hir_def")
 bos_longpres_aff = rannowVerbAnreyth("bos","eder","esov","esos","yma","yma","eson","esowgh","ymons","a-lemmyn_hir_aff")
 bos_longimpf = rannowVerbAnreyth("bos","eses","esen","eses","esa","esa","esen","esewgh","esens","anperfydh_hir")
-bos_tenses = [bos_shortpres,bos_preterite,bos_shortimperfect,bos_pluperfect,bos_pressubj,bos_impfsubj,bos_imperative,bos_future,bos_habitimperfect,bos_longpres_indef,bos_longimpf,bos_longpres_defni,bos_longpres_aff]
+bos_tenses = [bos_shortpres,bos_preterite,bos_shortimperfect,bos_pluperfect,bos_pressubj,bos_impfsubj,bos_imperative,
+              bos_future,bos_habitimperfect,bos_longpres_indef,bos_longimpf,bos_longpres_defni,bos_longpres_aff]
 bos_inflected = rannowVerbAnreythOllAmser("bos")
 bos_inflected.addTenseList(bos_tenses,bos_pastparticiple)
 
@@ -661,12 +705,21 @@ war_tenses = [war_imperative]
 war_inflected = rannowVerbAnreythOllAmser("war")
 war_inflected.addTenseList(war_tenses)
 
-irregverbs_all = {"bos":bos_inflected,"y'm beus":ymbeus_inflected,"piw":piw_inflected,"godhvos":godhvos_inflected,"tyli":tyli_inflected,"attyli":attyli_inflected,"hwarvos":hwarvos_inflected,"darvos":darvos_inflected,"klywes":klywes_inflected,"omglywes":omglywes_inflected,"mos":mos_inflected,"dos":dos_inflected,"doen":doen_inflected,"omdhoen":omdhoen_inflected,"ri":ri_inflected,"dri":dri_inflected,"ti":ti_inflected,"dyllo":dyllo_inflected,"gul":gul_inflected,"omwul":omwul_inflected,"mynnes":mynnes_inflected,"galloes":galloes_inflected,"bern":bern_inflected,"darwar":darwar_inflected,"degoedh":degoedh_inflected,"koedh":koedh_inflected,"delledh":delledh_inflected,"deur":deur_inflected,"medhes":medhes_inflected,"res":res_inflected,"skila":skila_inflected,"tann":tann_inflected,"war":war_inflected,"bryjyon":bryjyon_inflected}
+irregverbs_all = {"bos":bos_inflected,"y'm beus":ymbeus_inflected,"piw":piw_inflected,"godhvos":godhvos_inflected,
+                  "tyli":tyli_inflected,"attyli":attyli_inflected,"hwarvos":hwarvos_inflected,
+                  "darvos":darvos_inflected,"klywes":klywes_inflected,"omglywes":omglywes_inflected,
+                  "mos":mos_inflected,"dos":dos_inflected,"doen":doen_inflected,"omdhoen":omdhoen_inflected,
+                  "ri":ri_inflected,"dri":dri_inflected,"ti":ti_inflected,"dyllo":dyllo_inflected,"gul":gul_inflected,
+                  "omwul":omwul_inflected,"mynnes":mynnes_inflected,"galloes":galloes_inflected,"bern":bern_inflected,
+                  "darwar":darwar_inflected,"degoedh":degoedh_inflected,"koedh":koedh_inflected,
+                  "delledh":delledh_inflected,"deur":deur_inflected,"medhes":medhes_inflected,"res":res_inflected,
+                  "skila":skila_inflected,"tann":tann_inflected,"war":war_inflected,"bryjyon":bryjyon_inflected}
 
 def makeTenseDict(listTenses,pastPL = "NULL"):
     """ 
     y telledh bos listTenses rol taklennow rannowVerbAnreyth
     listTenses should be a list of rannowVerbAnreyth objects
+    assembles these into a dictionary of dictionaries and returns it
     """
     outDict= {}
     for t in listTenses:
@@ -676,6 +729,7 @@ def makeTenseDict(listTenses,pastPL = "NULL"):
     return outDict
 
 def lastvowel(verbstr):
+    """ return the last vowel of a string """
     if verbstr[-1] in vowels:
         finalvowel=verbstr[-1]
         pos = len(verbstr)-1
@@ -684,24 +738,38 @@ def lastvowel(verbstr):
         return lastvowel(verbstr[:-1])
         
 def lastconsonant(verbstr):
-    # kavoes an diwettha kessonenn
-    # returns last consonant cluster for hardening/doubling in subjunctive
+    """ kavoes an diwettha kessonenn
+    returns last consonant cluster for hardening/doubling in subjunctive """
     consonants = re.split(r'[aeiouy]',verbstr)
     lastconsonant = consonants[-1]
+    if lastconsonant == '':
+        lastconsonant = consonants[-2]
     lenlastconstclust = len(lastconsonant)
     pos = len(verbstr)-lenlastconstclust
     return lastconsonant,pos,lenlastconstclust
 
-def inflektya_reyth(verb,stem,person,tense,suffix_pro):        
+def inflektya_reyth(verb,stem,person,tense,suffix_pro):    
+        """ inflect a regular verb
+        verb is the verbal noun
+        stem is the stem
+        person is an integer 0-7 
+        tense is here an integer 0-7
+        suffix_pro is a flag to determine whether there are 
+        no suffixed pronouns, standard ones, or emphatic ones """    
         if tense<8:
+            # should always be an integer 0-7
             endings = endings_alltenses.tenseEndings(tensesDict[tense])
         if tense<7:
-            ending = endings.personEnding(person)
+            # for all tenses except past participle
+            ending = endings.personEnding(person)            
         if tense==7: # if past participle
             ending = endings
-        if (suffix_pro == 1)and(person>0):
+        origending = ending #before addition of suffixed pronoun 
+        if (suffix_pro == 1)and(person>0)and(tense!=7):
+            # if there should be suffixed pronouns, and it isn't impersonal or ppl
             ending = ending + " " + suffixed_pros[person]
-        if (suffix_pro == 2)and(person>0):
+        if (suffix_pro == 2)and(person>0)and(tense!=7):
+            # if there should be emphatic suffixed pronouns, and not impersonal or ppl
             ending = ending + " " + suffixed_pros_emph[person]
     # verbow a worfenn gans -he:        
     # verbs ending in -he:
@@ -710,7 +778,7 @@ def inflektya_reyth(verb,stem,person,tense,suffix_pro):
                 # 3s a-lemmyn a'th eus a wosa an ben
                 # 3s. pres has a not just stem alone
                 ending = "a"
-            if not(ending==""):     
+            if not(origending==""):     
                 if ending[0] == "s":
                     # mars eus -s- gorra a kyns an -s-
                     # where there is an -s- an a is added before the s 
@@ -729,10 +797,10 @@ def inflektya_reyth(verb,stem,person,tense,suffix_pro):
             # -y- yw gwithys heb y arall, i po s yn penn po nag eus penn
             # -y- retained except where another y, i or s occurs in the ending
             # or where there is no suffix (3s pres, 2s imperative)
-            if(not(ending=="")):
-                if (ending[0]=="y") or (ending[0]=="i") or (ending[0]=="s"):
+            if(not(origending=="")):
+                if (origending[0]=="y") or (origending[0]=="i") or (origending[0]=="s"):
                     stem = stem[:-1]
-            if(ending==""):
+            if(origending==""):
                 stem=stem[:-1]
     # verbow gans maneruster bogalenn    
     # verbs with vowel affectation
@@ -747,8 +815,8 @@ def inflektya_reyth(verb,stem,person,tense,suffix_pro):
             # a-->e when vowel of ending is -i-, -y-, or -owgh
             # hag yn 2pl gorhemmyn kyns -ewgh
             # also in 2pl imperative before -ewgh
-            if not(ending==""):
-                if (ending[0] in ["i","y"]) or (ending == "owgh") or ((ending=="ewgh")and(person==6)and(tense==6)):
+            if not(origending==""):
+                if (origending[0] in ["i","y"]) or (origending == "owgh") or ((origending=="ewgh")and(person==6)and(tense==6)):
                     laststemvowel,pos = lastvowel(stem)
                     if laststemvowel == "a":
                         if ((tense==4)or(tense==5)):
@@ -760,8 +828,8 @@ def inflektya_reyth(verb,stem,person,tense,suffix_pro):
 
         if (verb in ["amma","ranna"]):
             # AMMA, RANNA - a-->y
-            if not(ending==""):
-                if (ending[0] in ["i","y"]) or (ending == "owgh") or ((ending=="ewgh")and(person==2)and(tense==6)):
+            if not(origending==""):
+                if (origending[0] in ["i","y"]) or (origending == "owgh") or ((origending=="ewgh")and(person==2)and(tense==6)):
                     laststemvowel,pos = lastvowel(stem)
                     if laststemvowel == "a":
                         stem=stem[:pos]+"y"+stem[pos+1:]
@@ -769,16 +837,16 @@ def inflektya_reyth(verb,stem,person,tense,suffix_pro):
     
         if verb in ["pregowtha"]:
             # pregowtha ow-->ew
-            if not(ending==""):
-                if (ending[0] in ["i","y"]) or (ending == "owgh") or ((ending=="ewgh")and(person==2)and(tense==6)):
+            if not(origending==""):
+                if (origending[0] in ["i","y"]) or (origending == "owgh") or ((origending=="ewgh")and(person==2)and(tense==6)):
                     laststemvowel,pos = lastvowel(stem)
                     if laststemvowel == "o":
                         stem=stem[:pos]+"e"+stem[pos+1:]
 
         if (verb in ["dannvon","daskorr"]):
             # dannvon, daskorr o-->e
-            if not(ending==""):
-                if (ending[0] in ["i","y"]) or (ending == "owgh") or ((ending=="ewgh")and(person==2)and(tense==6)):
+            if not(origending==""):
+                if (origending[0] in ["i","y"]) or (origending == "owgh") or ((origending=="ewgh")and(person==2)and(tense==6)):
                     laststemvowel,pos = lastvowel(stem)
                     if laststemvowel == "o":
                         stem=stem[:pos]+"e"+stem[pos+1:]
@@ -884,8 +952,8 @@ def inflektya_reyth(verb,stem,person,tense,suffix_pro):
                     else:
                         vowel = "e"
                 stem = stem[:-1]+vowel+stem[-1]
-            if not(ending==""):
-                if ending[0]=="s":
+            if not(origending==""):
+                if origending[0]=="s":
                     # when verbal ending starts with an -s-
                     # the final consonant of the stem may drop out and be shortened
                     # and an apostrophe introduced
@@ -898,8 +966,8 @@ def inflektya_reyth(verb,stem,person,tense,suffix_pro):
             if ((tense==0)and((person==3)or(person==4)))or((tense==6)and(person==2)):
                 # in 3s. pres/fut and 2s. imperative, an -e- is put before the final consonant
                 stem = stem[:-1]+vowel+stem[-1]
-            if not(ending==""):
-                if ending[0]=="s":
+            if not(origending==""):
+                if origending[0]=="s":
                     # when verbal ending starts with an -s-
                     # -e- is put before the final consonant of the stem
                     # and verb remains uncontracted
@@ -918,8 +986,8 @@ def inflektya_reyth(verb,stem,person,tense,suffix_pro):
     # where stem ends in -s- followed by another consonant, this second consonant may be omitted
     # can be shown in writing by replacement with apostrophe 
         if verb in verbs_lesta:
-            if not(ending==""):
-                if ending[0]=="s":
+            if not(origending==""):
+                if origending[0]=="s":
                     stem = stem[:-1]+"'"
                     
         if (verb == "diskwedhes")and(tense==0)and((person==3)or(person==4)):
@@ -975,19 +1043,19 @@ def inflektyaValidateTense(verb,person,tense):
         # if not return invalid
         return False
     if tense in ["a-lemmyn_hir_indef", "anperfydh_hir","a-lemmyn_hir_def","a-lemmyn_hir_aff"] and verb != 'bos':
-        # the long forms which are particular to bo
+        # the long forms which are particular to bos
         return False
     if tense == "perfydh" and verb not in verbs_perfydh:
         return False
     return True
     
 def inflektya(verb,person,tense,suffix_pro=0,longform=0,definite=0):
-    # person: 0=imp,1=1s,2=2s,3=3sm,4=3sf,5=1p,6=2p,7=3p
-    # tense: 0=present, 1=preterite, 2=imperfect, 3=pluperfect, 4=subjpres, 5=subjimp
-    # 6=imperative,7=past_participle,8=future,9=habitual imperfect
-    # 10=longform_present_indef,11=longform_imperfect,12=longform_present_defni
-    # 13=longform_present_aff,14=perfect
-    # expect string for the tense
+    """ person: 0=imp,1=1s,2=2s,3=3sm,4=3sf,5=1p,6=2p,7=3p
+     tense: 0=present, 1=preterite, 2=imperfect, 3=pluperfect, 4=subjpres, 5=subjimp
+    6=imperative,7=past_participle,8=future,9=habitual imperfect
+    0=longform_present_indef,11=longform_imperfect,12=longform_present_defni
+    3=longform_present_aff,14=perfect
+    expect string for the tense """
     tensesDict = {0:"a-lemmyn",
                   1:"tremenys",
                   2:"anperfydh",
@@ -1037,12 +1105,18 @@ def inflektya(verb,person,tense,suffix_pro=0,longform=0,definite=0):
 
     if verb in verbs_stemnoun:
         stem = verb
-    if ("islavarek" in tense)and(not(verb in verbs_gwystla)): 
+    if ("islavarek" in tense)and(not(verb in verbs_gwystla)and(verb[-2:] != "ia")): 
         # kesson a wra dewblek po kaleshe y'n islavarek
         # double/harden consonants in subjunctive
+        # but not generally in verbs_gwystla
+        # and not in verbs ending -ia
         lastconststem,pos,length = lastconsonant(stem)
+        # print(lastconststem,pos,length)
         if lastconststem in stem_changes.keys():
-            stem = stem[:(0-length)]+stem_changes[lastconststem]
+            # do a string replace, but first reverse the stem, and the 
+            # arguments for replace, so that it is only done once
+            # for the last time lastconststem occurs in stem
+            stem = stem[::-1].replace(lastconststem[::-1], stem_changes[lastconststem][::-1], 1)[::-1]
     regular = not(verb in irregverbs_all.keys())
     if regular == True: 
         return inflektya_reyth(verb,stem,person,tensesCodeDict[tense],suffix_pro)
