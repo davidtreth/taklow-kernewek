@@ -238,7 +238,7 @@ verbs_klywes = ["klywes", "mynnes"]
 
 # verbow gans bogalenn i yn anperfydh
 # verbs with i vowel in imperfect
-verbs_i_imp = ["adhvesi", "amma", "aswonn", "dalleth", "dannvon", "dervynn", "dewis",
+verbs_i_imp = ["adhvesi", "amma", "annedhi", "ankevi", "aswonn", "dalleth", "dannvon", "dervynn", "dewis",
                "diberth", "difenn", "doen", "dyllo", "folhwerthin",
                "galloes", "godhav", "gonis", "govynn", "hembronk",
                "hwerthin", "lavasos", "minhwerthin", "omladh"]
@@ -246,7 +246,7 @@ verbs_i_imp = ["adhvesi", "amma", "aswonn", "dalleth", "dannvon", "dervynn", "de
 verbs_amaya = ["amaya"]
 
 #plus all verbs in -el, -es (except klywes and mynnes), -he and -i
-verbs_tava = ["tava", "tardra", "kachya", "kampya", "shakya", "talkya"]
+verbs_tava = ["tava", "tardra", "kachya", "kampya", "shakya", "talkya", "aras"]
 
 # a --> y in some persons and tenses (when there is a i or y in ending or -owgh)
 verbs_amma = ["amma", "ranna"]
@@ -278,10 +278,12 @@ verbs_lesta = ["bostya", "diwiska", "dyski", "gweskel", "gwiska", "kestya",
 verbs_gwystla = ["dampnya", "entra", "gustla", "gwandra", "handla", "hwystra",
                  "kentra", "moldra", "restra", "sklandra", "sompna",
                  "tardra", "tempra", "terlentri"]
-verbs_hwithra = ["hwithra", "dybri", "fagla", "gwedhra", "hwedhla", "hwyrni",
+verbs_hwithra = ["hwithra", "ankombra", "dybri", "fagla", "gwedhra", "hwedhla", "hwyrni",
                  "ladra", "lymna", "medra", "meythrin", "pedri", "pobla",
                  "ravna", "sotla", "sugna", "trobla", "resna", "sokra",
                  "fekla", "takla"]
+# when not to shorten stem and have an apostrophe
+verbs_ankombra = ["ankombra"]
 verbs_resna = ["resna", "sokra"]
 verbs_fekla = ["fekla", "takla"]
 # in 3rd person present tense stem change and 2ps imperative

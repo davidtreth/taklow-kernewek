@@ -56,7 +56,8 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
         # ha verbow in rol verbs_i_3sp
         # a'n jeves 3s. tremenys gans -is yn le -as
         
-        if verb[-2:] in dtinf.endings_ivowel and not verb in dtinf.verbs_kewsel:
+        if (verb[-2:] in dtinf.endings_ivowel or verb[-1:] in dtinf.endings_ivowel) and (
+                not verb in dtinf.verbs_klywes):
             endings = dtinf.endings_alltenses_i.tense_endings(tensesDict[tense])
         elif tense == 1 and verb in dtinf.verbs_i_3sp:
             endings = dtinf.endings_alltenses_i.tense_endings(tensesDict[tense])
@@ -125,7 +126,7 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
         # hag yn 2pl gorhemmyn kyns -ewgh
         # also in 2pl imperative before -ewgh
         if origending != "":
-            if (origending[0] in ["i", "y"]) or (origending == "owgh") or (
+            if ("i" in origending or "y" in origending) or (origending == "owgh") or (
                     (origending == "ewgh")and(person == 6)and(tense == 6)):
                 laststemvowel, pos = lastvowel(stem)
                 if laststemvowel == "a":
@@ -272,11 +273,14 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
                     vowel = "e"
             stem = stem[:-1]+vowel+stem[-1]
         if origending != "":
-            if origending[0] == "s":
+            if origending[0] == "s": 
                 # when verbal ending starts with an -s-
                 # the final consonant of the stem may drop out and be shortened
                 # and an apostrophe introduced
-                stem = stem[:-1]+"'"
+                if verb not in dtinf.verbs_ankombra:
+                    stem = stem[:-1]+"'"
+                else:
+                    stem = stem[:-1]+ "e" +stem[-1]
 
     # GWYSTLA type
     # final consonant is -l-, -m-, -n- or -r- preceded by two adjacent consonants.
