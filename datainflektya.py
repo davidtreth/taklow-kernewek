@@ -199,13 +199,13 @@ endings_alltenses = LostowPersonekOllAmser({endings_present.amser: endings_prese
                                             "ppl": ending_pastparticiple})
 # lostow rag verbow gans i
 # endings for verbs that use the i vowel
-endings_alltenses_i = LostowPersonekOllAmser({endings_present.amser:endings_present.lostow_dict,
-                                              endings_preterite_i.amser:endings_preterite_i.lostow_dict,
-                                              endings_imperfect_i.amser:endings_imperfect_i.lostow_dict,
-                                              endings_pluperfect.amser:endings_pluperfect.lostow_dict,
-                                              endings_subj_pres.amser:endings_subj_pres.lostow_dict,
-                                              endings_subj_imp.amser:endings_subj_imp.lostow_dict,
-                                              endings_imperative.amser:endings_imperative.lostow_dict,
+endings_alltenses_i = LostowPersonekOllAmser({endings_present.amser:endings_present,
+                                              endings_preterite_i.amser:endings_preterite_i,
+                                              endings_imperfect_i.amser:endings_imperfect_i,
+                                              endings_pluperfect.amser:endings_pluperfect,
+                                              endings_subj_pres.amser:endings_subj_pres,
+                                              endings_subj_imp.amser:endings_subj_imp,
+                                              endings_imperative.amser:endings_imperative,
                                               "ppl":ending_pastparticiple})
 
 # verbow ha'n ben an keth ha'n hanow verbek
@@ -221,22 +221,29 @@ verbs_stemnoun = ["arvedh", "arveth", "astell", "aswonn", "daffar", "dalleth",
 
 # verbow gans bogalenn i yn 3s tremenys
 # verbs with i vowel in 3s preterite
-verbs_i_3sp = ["aswonn", "attylli", "brewi", "dagrewi", "dedhewi", "dehweles",
+verbs_i_3sp = ["adhvesi", "aswonn", "attylli", "brewi", "dagrewi", "dedhewi", "dehweles",
                "demmedhi", "derivas", "diank", "dinewi", "dineythi",
                "diskrysi", "distrui", "domhwel", "dybri", "dynnerghi",
                "erghi", "godhav", "gorhemmynn", "gorthybi", "hedhi", "heveli",
                "kemmynna", "kentrewi", "kreuni", "krysi", "mollethi",
                "ombrederi", "omhweles", "prederi", "pysi", "synsi", "tevi",
                "tybi", "yeuni"]
+
 # ha'n verbow gans -el
-# plus all verbs in -el (not yet implemented)
+# plus all verbs in -el
+# all with -es, -he, and -i
+# except/marnas:
+endings_ivowel = ["el", "es", "he", "i"]
+verbs_klywes = ["klywes", "mynnes"]
 
 # verbow gans bogalenn i yn anperfydh
 # verbs with i vowel in imperfect
-verbs_i_imp = ["amma", "aswonn", "dalleth", "dannvon", "dervynn", "dewis",
+verbs_i_imp = ["adhvesi", "amma", "aswonn", "dalleth", "dannvon", "dervynn", "dewis",
                "diberth", "difenn", "doen", "dyllo", "folhwerthin",
                "galloes", "godhav", "gonis", "govynn", "hembronk",
                "hwerthin", "lavasos", "minhwerthin", "omladh"]
+# verbs in -ya where the -y is always retained even is y,i,s occur in endings
+verbs_amaya = ["amaya"]
 
 #plus all verbs in -el, -es (except klywes and mynnes), -he and -i
 verbs_tava = ["tava", "tardra", "kachya", "kampya", "shakya", "talkya"]
@@ -262,7 +269,6 @@ verbs_dinewi = ["dinewi"]
 verbs_erghi_a = ["densel", "diank", "drehevel", "dynnerghi", "fyllel",
                  "godhevel", "gweskel", "heveli", "lemmel", "leverel",
                  "sevel", "terlemmel", "tewel", "tyli", "attyli"]
-verbs_drehevel = ["drehevel"]
 verbs_gweskel = ["gweskel"]
 three_s_presfut_y = ["eva", "galloes", "gedya", "gweskel", "kavoes",
                      "kelli", "pobas", "tevi"]

@@ -51,19 +51,25 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
     no suffixed pronouns, standard ones, or emphatic ones """
     if tense < 8:
         # should always be an integer 0-7
-        endings = dtinf.endings_alltenses.tense_endings(tensesDict[tense])
+        # check whether should use the endings with i/y vowel
+        # verbow a worfenn gans -el, -es, -he, -i
+        # ha verbow in rol verbs_i_3sp
+        # a'n jeves 3s. tremenys gans -is yn le -as
+        
+        if verb[-2:] in dtinf.endings_ivowel and not verb in dtinf.verbs_kewsel:
+            endings = dtinf.endings_alltenses_i.tense_endings(tensesDict[tense])
+        elif tense == 1 and verb in dtinf.verbs_i_3sp:
+            endings = dtinf.endings_alltenses_i.tense_endings(tensesDict[tense])
+        elif tense == 2 and verb in dtinf.verbs_i_imp:
+            endings = dtinf.endings_alltenses_i.tense_endings(tensesDict[tense])
+        else:
+            endings = dtinf.endings_alltenses.tense_endings(tensesDict[tense])
     if tense < 7:
         # for all tenses except past participle
         ending = endings.person_ending(person)
     if tense == 7: # if past participle
         ending = endings
-    origending = ending #before addition of suffixed pronoun
-    if (suffix_pro == 1)and(person > 0)and(tense != 7):
-        # if there should be suffixed pronouns, and it isn't impersonal or ppl
-        ending = ending + " " + dtinf.suffixed_pros[person]
-    if (suffix_pro == 2)and(person > 0)and(tense != 7):
-        # if there should be emphatic suffixed pronouns, and not impersonal or ppl
-        ending = ending + " " + dtinf.suffixed_pros_emph[person]
+
     # verbow a worfenn gans -he:
     # verbs ending in -he:
     if verb[-2:] == "he":
@@ -71,7 +77,7 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
             # 3s a-lemmyn a'th eus a wosa an ben
             # 3s. pres has a not just stem alone
             ending = "a"
-        if origending != "":
+        if ending != "":
             if ending[0] == "s":
                 # mars eus -s- gorra a kyns an -s-
                 # where there is an -s- an a is added before the s
@@ -84,18 +90,28 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
             # yma -es dhe'n ben yn ppl
             # past participle adds -es to the stem.
             ending = "es"
+    origending = ending #before addition of suffixed pronoun
+    if (suffix_pro == 1)and(person > 0)and(tense != 7):
+        # if there should be suffixed pronouns, and it isn't impersonal or ppl
+        ending = ending + " " + dtinf.suffixed_pros[person]
+    if (suffix_pro == 2)and(person > 0)and(tense != 7):
+        # if there should be emphatic suffixed pronouns, and not impersonal or ppl
+        ending = ending + " " + dtinf.suffixed_pros_emph[person]
     # verbow a worfenn gans -ya
     # verbs ending in -ya
     if stem[-1] == "y":
         # -y- yw gwithys heb y arall, i po s yn penn po nag eus penn
         # -y- retained except where another y, i or s occurs in the ending
         # or where there is no suffix (3s pres, 2s imperative)
-        if origending != "":
-            if (origending[0] == "y") or (origending[0] == "i") or (
-                    origending[0] == "s"):
+        # yn verb amaya, an y yw gwithys pupprys
+        # in amaya, the y is always retained
+        if verb not in dtinf.verbs_amaya:
+            if origending == "":
                 stem = stem[:-1]
-        if origending == "":
-            stem = stem[:-1]
+            else:
+                if (origending[0] == "y") or (origending[0] == "i") or (
+                        origending[0] == "s"):
+                    stem = stem[:-1]
     # verbow gans maneruster bogalenn
     # verbs with vowel affectation
 
@@ -123,7 +139,7 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
     if verb in dtinf.verbs_amma:
         # AMMA, RANNA - a-->y
         if origending != "":
-            if (origending[0] in ["i", "y"]) or (origending == "owgh") or (
+            if (("i" in origending or "y" in origending) or (origending == "owgh")) or (
                     (origending == "ewgh")and(person == 2)and(tense == 6)):
                 laststemvowel, pos = lastvowel(stem)
                 if laststemvowel == "a":
@@ -132,7 +148,7 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
     if verb in dtinf.verbs_pregowtha:
         # pregowtha ow-->ew
         if origending != "":
-            if (origending[0] in ["i", "y"]) or (origending == "owgh") or (
+            if (("i" in origending or "y" in origending) or (origending == "owgh")) or (
                     (origending == "ewgh")and(person == 2)and(tense == 6)):
                 laststemvowel, pos = lastvowel(stem)
                 if laststemvowel == "o":
@@ -141,7 +157,7 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
     if verb in dtinf.verbs_dannvon:
         # dannvon, daskorr o-->e
         if origending != "":
-            if (origending[0] in ["i", "y"]) or (origending == "owgh") or (
+            if ("i" in origending or "y" in origending) or (origending == "owgh") or (
                     (origending == "ewgh")and(person == 2)and(tense == 6)):
                 laststemvowel, pos = lastvowel(stem)
                 if laststemvowel == "o":
@@ -461,10 +477,12 @@ def rol_personys_amserow(verb):
     print a list of persons for each tense of verb
     """
     print("Verb {verb}:".format(verb=verb.upper()))
-
+    # print imperfect before preterite
+    # to match order in "Cornish Verbs"
+    tensesorder = [0, 2, 1, 3, 4, 5, 6, 7]
     if verb not in dtinf.irregverbs_all.keys():
-        tlist = [tensesDict[t] for t in range(8)]
-        t_en_list = [tensesDictEN[t] for t in range(8)]
+        tlist = [tensesDict[t] for t in tensesorder]
+        t_en_list = [tensesDictEN[t] for t in tensesorder]
     else:
         tlist = dtinf.irregverbs_all[verb].tenses_list
         t_en_list = dtinf.irregverbs_all[verb].tenses_en_list
