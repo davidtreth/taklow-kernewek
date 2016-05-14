@@ -70,11 +70,14 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
         ending = endings.person_ending(person)
     if tense == 7: # if past participle
         ending = endings
-
+    # in verbs such as benniga change g-->k in 3ps and 2p imp.
+    if ending == "":
+        if stem[-1] == "g":
+            stem = stem[:-1] + "k"
     # verbow a worfenn gans -he:
     # verbs ending in -he:
     if verb[-2:] == "he":
-        if tense == 0 and (person == 3)or(person == 4):
+        if tense == 0 and ((person == 3)or(person == 4)):
             # 3s a-lemmyn a'th eus a wosa an ben
             # 3s. pres has a not just stem alone
             ending = "a"
@@ -271,7 +274,11 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
                     vowel = "y"
                 else:
                     vowel = "e"
-            stem = stem[:-1]+vowel+stem[-1]
+            if stem[-2:] == "sh":
+                stem = stem[:-2]+vowel+stem[-2:]
+            else:
+                stem = stem[:-1]+vowel+stem[-1]
+            
         if origending != "":
             if origending[0] == "s": 
                 # when verbal ending starts with an -s-

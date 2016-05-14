@@ -246,7 +246,7 @@ verbs_i_imp = ["adhvesi", "amma", "annedhi", "ankevi", "aswonn", "dalleth", "dan
 verbs_amaya = ["amaya"]
 
 #plus all verbs in -el, -es (except klywes and mynnes), -he and -i
-verbs_tava = ["tava", "tardra", "kachya", "kampya", "shakya", "talkya", "aras"]
+verbs_tava = ["tava", "tardra", "kachya", "kampya", "shakya", "talkya", "aras", "argya", "arva", "blasa"]
 
 # a --> y in some persons and tenses (when there is a i or y in ending or -owgh)
 verbs_amma = ["amma", "ranna"]
@@ -278,14 +278,15 @@ verbs_lesta = ["bostya", "diwiska", "dyski", "gweskel", "gwiska", "kestya",
 verbs_gwystla = ["dampnya", "entra", "gustla", "gwandra", "handla", "hwystra",
                  "kentra", "moldra", "restra", "sklandra", "sompna",
                  "tardra", "tempra", "terlentri"]
-verbs_hwithra = ["hwithra", "ankombra", "dybri", "fagla", "gwedhra", "hwedhla", "hwyrni",
-                 "ladra", "lymna", "medra", "meythrin", "pedri", "pobla",
+# vowel introduced to break up consonant cluster at end of stem in some persons
+verbs_hwithra = ["hwithra", "ankombra", "bedhygla", "bokla", "chershya", "dybri", "fagla", "gwedhra",
+                 "hwedhla", "hwyrni", "ladra", "lymna", "medra", "meythrin", "pedri", "pobla",
                  "ravna", "sotla", "sugna", "trobla", "resna", "sokra",
                  "fekla", "takla"]
 # when not to shorten stem and have an apostrophe
-verbs_ankombra = ["ankombra"]
+verbs_ankombra = ["ankombra", "chershya"]
 verbs_resna = ["resna", "sokra"]
-verbs_fekla = ["fekla", "takla"]
+verbs_fekla = ["fekla", "takla", "chershya"]
 # in 3rd person present tense stem change and 2ps imperative
 verbs_stemdict_diskwedhes = {"diskwedhes":"diskwa", "drehevel":"drehav", "gortos":"gorta",
                              "hwilas":"hwila"}
