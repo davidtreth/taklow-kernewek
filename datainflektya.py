@@ -211,7 +211,7 @@ endings_alltenses_i = LostowPersonekOllAmser({endings_present.amser:endings_pres
 # verbow ha'n ben an keth ha'n hanow verbek
 # verbs with stem same as verbal noun
 verbs_stemnoun = ["arvedh", "arveth", "astell", "aswonn", "daffar", "dalleth",
-                  "dannvon", "daskorr", "dendil", "dervynn", "dewis", "diank",
+                  "dannvon", "daromres", "daskorr", "dendil", "dervynn", "dewis", "diank",
                   "diberth", "difenn", "difres", "dolos", "dyerbynn", "godhav",
                   "godros", "gorhemmynn", "gormel", "gromyal", "gwari",
                   "gweres", "hepkorr", "hembronk", "hunros", "kanmel",
@@ -234,11 +234,13 @@ verbs_i_3sp = ["adhvesi", "aswonn", "attylli", "brewi", "dagrewi", "dedhewi", "d
 # all with -es, -he, and -i
 # except/marnas:
 endings_ivowel = ["el", "es", "he", "i"]
-verbs_klywes = ["klywes", "mynnes"]
+verbs_klywes = ["klywes", "mynnes", "daromres"]
+# these verbs have y/i vowel in imperfect but not preterite
+verbs_ankevi = ["ankevi", "debreni"]
 
 # verbow gans bogalenn i yn anperfydh
 # verbs with i vowel in imperfect
-verbs_i_imp = ["adhvesi", "amma", "annedhi", "ankevi", "aswonn", "dalleth", "dannvon", "dervynn", "dewis",
+verbs_i_imp = ["adhvesi", "amma", "annedhi", "ankevi", "aswonn", "dalleth", "debreni", "dervynn", "dewis",
                "diberth", "difenn", "doen", "dyllo", "folhwerthin",
                "galloes", "godhav", "gonis", "govynn", "hembronk",
                "hwerthin", "lavasos", "minhwerthin", "omladh"]
@@ -246,7 +248,8 @@ verbs_i_imp = ["adhvesi", "amma", "annedhi", "ankevi", "aswonn", "dalleth", "dan
 verbs_amaya = ["amaya"]
 
 #plus all verbs in -el, -es (except klywes and mynnes), -he and -i
-verbs_tava = ["tava", "tardra", "kachya", "kampya", "shakya", "talkya", "aras", "argya", "arva", "blasa"]
+verbs_tava = ["tava", "tardra", "kachya", "kampya", "shakya", "talkya", "aras", "argya", "arva", "blasa",
+              "dadhla", "dampnya", "dargana"]
 
 # a --> y in some persons and tenses (when there is a i or y in ending or -owgh)
 verbs_amma = ["amma", "ranna"]
@@ -257,7 +260,7 @@ verbs_pregowtha = ["pregowtha"]
 # dannvon, daskorr o-->e (when there is a i or y in ending or -owgh)
 verbs_dannvon = ["dannvon", "daskorr"]
 
-verbs_igeri_o = ["ankevi", "dasseni", "dasserghi", "dedhwi", "goderri",
+verbs_igeri_o = ["ankevi", "dasseni", "dasserghi", "debreni", "dedhwi", "goderri",
                  "kelli", "kelmi", "keski", "kregi", "lenki", "leski",
                  "megi", "pedri", "perthi", "previ", "renki", "seni",
                  "serri", "telli", "terri", "treghi"]
@@ -279,14 +282,15 @@ verbs_gwystla = ["dampnya", "entra", "gustla", "gwandra", "handla", "hwystra",
                  "kentra", "moldra", "restra", "sklandra", "sompna",
                  "tardra", "tempra", "terlentri"]
 # vowel introduced to break up consonant cluster at end of stem in some persons
-verbs_hwithra = ["hwithra", "ankombra", "bedhygla", "bokla", "chershya", "dybri", "fagla", "gwedhra",
-                 "hwedhla", "hwyrni", "ladra", "lymna", "medra", "meythrin", "pedri", "pobla",
-                 "ravna", "sotla", "sugna", "trobla", "resna", "sokra",
-                 "fekla", "takla"]
-# when not to shorten stem and have an apostrophe
-verbs_ankombra = ["ankombra", "chershya"]
+verbs_hwithra = ["hwithra", "ankombra", "bedhygla", "bokla", "chershya", "dadhla", "delivra",
+                 "dybri", "fagla", "gwedhra", "hwedhla", "hwyrni", "ladra", "lymna", "medra",
+                 "meythrin", "pedri", "pobla", "ravna", "sotla", "sugna", "trobla", "resna",
+                 "sokra", "fekla", "takla"]
 verbs_resna = ["resna", "sokra"]
 verbs_fekla = ["fekla", "takla", "chershya"]
+verbs_delivra = ["delivra"]
+# when not to shorten stem and have an apostrophe
+verbs_ankombra = ["ankombra", "chershya", "delivra"]
 # in 3rd person present tense stem change and 2ps imperative
 verbs_stemdict_diskwedhes = {"diskwedhes":"diskwa", "drehevel":"drehav", "gortos":"gorta",
                              "hwilas":"hwila"}

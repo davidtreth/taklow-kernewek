@@ -57,7 +57,7 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
         # a'n jeves 3s. tremenys gans -is yn le -as
         
         if (verb[-2:] in dtinf.endings_ivowel or verb[-1:] in dtinf.endings_ivowel) and (
-                not verb in dtinf.verbs_klywes):
+                (not verb in dtinf.verbs_klywes)and(not verb in dtinf.verbs_ankevi)):
             endings = dtinf.endings_alltenses_i.tense_endings(tensesDict[tense])
         elif tense == 1 and verb in dtinf.verbs_i_3sp:
             endings = dtinf.endings_alltenses_i.tense_endings(tensesDict[tense])
@@ -129,9 +129,11 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
         # hag yn 2pl gorhemmyn kyns -ewgh
         # also in 2pl imperative before -ewgh
         if origending != "":
-            if ("i" in origending or "y" in origending) or (origending == "owgh") or (
-                    (origending == "ewgh")and(person == 6)and(tense == 6)):
+            if (("i" in origending or "y" in origending) or ("owgh" in origending)) or (
+                    ("ewgh" in origending)and(person == 6)and(tense == 6)):
                 laststemvowel, pos = lastvowel(stem)
+                if stem[-1] == 'y':
+                    laststemvowel, pos = lastvowel(stem[:-1])
                 if laststemvowel == "a":
                     if (tense == 4)or(tense == 5):
                         # chanjys dhe -y- yn islavarek
@@ -143,27 +145,33 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
     if verb in dtinf.verbs_amma:
         # AMMA, RANNA - a-->y
         if origending != "":
-            if (("i" in origending or "y" in origending) or (origending == "owgh")) or (
-                    (origending == "ewgh")and(person == 2)and(tense == 6)):
+            if (("i" in origending or "y" in origending) or ("owgh" in origending)) or (
+                    ("ewgh" in origending)and(person == 2)and(tense == 6)):
                 laststemvowel, pos = lastvowel(stem)
+                if stem[-1] == 'y':
+                    laststemvowel, pos = lastvowel(stem[:-1])
                 if laststemvowel == "a":
                     stem = stem[:pos] + "y" + stem[pos+1:]
 
     if verb in dtinf.verbs_pregowtha:
         # pregowtha ow-->ew
         if origending != "":
-            if (("i" in origending or "y" in origending) or (origending == "owgh")) or (
-                    (origending == "ewgh")and(person == 2)and(tense == 6)):
+            if (("i" in origending or "y" in origending) or ("owgh" in origending)) or (
+                    ("ewgh" in origending)and(person == 2)and(tense == 6)):
                 laststemvowel, pos = lastvowel(stem)
+                if stem[-1] == 'y':
+                    laststemvowel, pos = lastvowel(stem[:-1])
                 if laststemvowel == "o":
                     stem = stem[:pos] + "e" + stem[pos+1:]
 
     if verb in dtinf.verbs_dannvon:
         # dannvon, daskorr o-->e
         if origending != "":
-            if ("i" in origending or "y" in origending) or (origending == "owgh") or (
-                    (origending == "ewgh")and(person == 2)and(tense == 6)):
+            if ("i" in origending or "y" in origending) or ("owgh" in origending) or (
+                    ("ewgh" in origending)and(person == 2)and(tense == 6)):
                 laststemvowel, pos = lastvowel(stem)
+                if stem[-1] == 'y':
+                    laststemvowel, pos = lastvowel(stem[:-1])
                 if laststemvowel == "o":
                     stem = stem[:pos] + "e" + stem[pos+1:]
     # type IGERI
@@ -180,16 +188,20 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
                 (person == 3)or(person == 4)or(person == 7)))or(tense == 3)or(
                     tense == 5)or((tense == 6)and(person == 2)):
             laststemvowel, pos = lastvowel(stem)
+            if stem[-1] == 'y':
+                    laststemvowel, pos = lastvowel(stem[:-1])
             if laststemvowel == "e":
                 stem = stem[:pos] + "o" + stem[pos+1:]
         if verb in dtinf.verbs_dedhwi:
-            if (tense == 1)and((person == 3)or(person == 4)):
+            if (tense == 0)and((person == 3)or(person == 4)):
                 stem = "dedhow"
     if verb in dtinf.verbs_igeri_a:
         if ((tense == 0)and(person == 1))or(((tense == 1)or(tense == 4))and(
                 (person == 3)or(person == 4)or(person == 7)))or(tense == 3)or(
                     tense == 5)or((tense == 6)and(person == 2)):
             laststemvowel, pos = lastvowel(stem)
+            if stem[-1] == 'y':
+                    laststemvowel, pos = lastvowel(stem[:-1])
             if laststemvowel == "e":
                 stem = stem[:pos] + "a" + stem[pos+1:]
 
@@ -209,6 +221,8 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
                 tense == 3)or((tense == 4)and((person == 3)or(person == 4)or(
                     person == 7)))or(tense == 5)or((tense == 6)and(person == 2)):
             laststemvowel, pos = lastvowel(stem)
+            if stem[-1] == 'y':
+                laststemvowel, pos = lastvowel(stem[:-1])
             if laststemvowel == "e":
                 stem = stem[:pos] + "a" + stem[pos+1:]
         if verb in dtinf.verbs_gweskel:
@@ -220,6 +234,8 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
                 tense == 3)or((tense == 4)and((person == 3)or(person == 4)or(
                     person == 7)))or(tense == 5)or((tense == 6)and(person == 2)):
             laststemvowel, pos = lastvowel(stem)
+            if stem[-1] == 'y':
+                laststemvowel, pos = lastvowel(stem[:-1])
             if laststemvowel == "e":
                 stem = stem[:pos] + "o" + stem[pos+1:]
         if verb in dtinf.verbs_dinewi and tense == 0 and ((person == 3)or(person == 4)):
@@ -229,6 +245,8 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
     if (verb in dtinf.three_s_presfut_y) and tense == 0 and ((person == 3)or(person == 4)):
         # group of verbs narrow vowel in 3s. pres/fut (sect 192 of Wella Brown 3rd ed.)
         laststemvowel, pos = lastvowel(stem)
+        if stem[-1] == 'y':
+            laststemvowel, pos = lastvowel(stem[:-1])
         if laststemvowel == "o":
             stem = stem[:pos] + "e" + stem[pos+1:]
         else:
@@ -246,6 +264,8 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
                 tense == 3)or((tense == 4)and((person == 3)or(person == 4)or(
                     person == 7)))or(tense == 5)or((tense == 6)and(person == 2)):
             laststemvowel, pos = lastvowel(stem)
+            if stem[-1] == 'y':
+                laststemvowel, pos = lastvowel(stem[:-1])
             if laststemvowel == "e":
                 stem = stem[:pos] + "a" + stem[pos+1:]
         if (tense == 0)and((person == 3)or(person == 4)):
@@ -277,7 +297,10 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
             if stem[-2:] == "sh":
                 stem = stem[:-2]+vowel+stem[-2:]
             else:
-                stem = stem[:-1]+vowel+stem[-1]
+                if verb in dtinf.verbs_delivra:
+                    stem = stem[:-2]+stem[-1]+stem[-2]
+                else:
+                    stem = stem[:-1]+vowel+stem[-1]
             
         if origending != "":
             if origending[0] == "s": 
@@ -286,6 +309,8 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
                 # and an apostrophe introduced
                 if verb not in dtinf.verbs_ankombra:
                     stem = stem[:-1]+"'"
+                elif verb in dtinf.verbs_delivra:
+                    stem = stem[:-2]+stem[-1]+stem[-2]
                 else:
                     stem = stem[:-1]+ "e" +stem[-1]
 
