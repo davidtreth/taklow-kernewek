@@ -212,7 +212,7 @@ endings_alltenses_i = LostowPersonekOllAmser({endings_present.amser:endings_pres
 # verbs with stem same as verbal noun
 verbs_stemnoun = ["arvedh", "arveth", "astell", "aswonn", "daffar", "dalleth",
                   "dannvon", "daromres", "daskorr", "dendil", "dervynn", "dewis", "diank",
-                  "diberth", "difenn", "difres", "dolos", "dyerbynn", "godhav",
+                  "diberth", "difenn", "difres", "dolos", "domhwel", "dyerbynn", "godhav",
                   "godros", "gorhemmynn", "gormel", "gromyal", "gwari",
                   "gweres", "hepkorr", "hembronk", "hunros", "kanmel",
                   "kemmynn", "kuntell", "kynnik", "meythrin", "omdhal",
@@ -234,23 +234,22 @@ verbs_i_3sp = ["adhvesi", "aswonn", "attylli", "brewi", "dagrewi", "dedhewi", "d
 # all with -es, -he, and -i
 # except/marnas:
 endings_ivowel = ["el", "es", "he", "i"]
-verbs_klywes = ["klywes", "mynnes", "daromres"]
+verbs_klywes = ["klywes", "mynnes", "daromres", "difres", "domhwel"]
 # these verbs have y/i vowel in imperfect but not preterite
-verbs_ankevi = ["ankevi", "debreni"]
+verbs_ankevi = ["ankevi", "debreni", "digevelsi", "kevelsi", "dyski", "adhyski"]
 
 # verbow gans bogalenn i yn anperfydh
 # verbs with i vowel in imperfect
-verbs_i_imp = ["adhvesi", "amma", "annedhi", "ankevi", "aswonn", "dalleth", "debreni", "dervynn", "dewis",
-               "diberth", "difenn", "doen", "dyllo", "folhwerthin",
+verbs_i_imp = ["adhvesi", "adhyski", "amma", "annedhi", "ankevi", "aswonn", "dalleth", "debreni", "dervynn", "dewis",
+               "diberth", "difenn", "digevelsi", "doen", "dyski", "folhwerthin",
                "galloes", "godhav", "gonis", "govynn", "hembronk",
-               "hwerthin", "lavasos", "minhwerthin", "omladh"]
+               "hwerthin", "kevelsi", "lavasos", "minhwerthin", "omladh"]
 # verbs in -ya where the -y is always retained even is y,i,s occur in endings
 verbs_amaya = ["amaya"]
 
 #plus all verbs in -el, -es (except klywes and mynnes), -he and -i
 verbs_tava = ["tava", "tardra", "kachya", "kampya", "shakya", "talkya", "aras", "argya", "arva", "blasa",
-              "dadhla", "dampnya", "dargana"]
-
+              "dadhla", "dampnya", "dargana", "dewraga", "didhana"]
 # a --> y in some persons and tenses (when there is a i or y in ending or -owgh)
 verbs_amma = ["amma", "ranna"]
 
@@ -258,7 +257,7 @@ verbs_amma = ["amma", "ranna"]
 verbs_pregowtha = ["pregowtha"]
 
 # dannvon, daskorr o-->e (when there is a i or y in ending or -owgh)
-verbs_dannvon = ["dannvon", "daskorr"]
+verbs_dannvon = ["dannvon", "daskorr", "diaskorna"]
 
 verbs_igeri_o = ["ankevi", "dasseni", "dasserghi", "debreni", "dedhwi", "goderri",
                  "kelli", "kelmi", "keski", "kregi", "lenki", "leski",
@@ -269,28 +268,32 @@ verbs_igeri_a = ["dalleth", "diberth", "hwerthin", "minhwerthin", "peski"]
 verbs_erghi_o = ["dagrewi", "dedhewi", "dinewi", "kentrewi", "kewsel",
                  "kynyewel", "mollethi"]
 verbs_dinewi = ["dinewi"]
-verbs_erghi_a = ["densel", "diank", "drehevel", "dynnerghi", "fyllel",
-                 "godhevel", "gweskel", "heveli", "lemmel", "leverel",
+verbs_erghi_a = ["densel", "diank", "dillasa", "drehevel", "dynnerghi", "digevelsi", "fyllel",
+                 "godhevel", "gweskel", "heveli", "kevelsi", "lemmel", "leverel",
                  "sevel", "terlemmel", "tewel", "tyli", "attyli"]
 verbs_gweskel = ["gweskel"]
 three_s_presfut_y = ["eva", "galloes", "gedya", "gweskel", "kavoes",
                      "kelli", "pobas", "tevi"]
-verbs_lesta = ["bostya", "diwiska", "dyski", "gweskel", "gwiska", "kestya",
-               "koska", "leski", "mostya", "ostya", "peski", "raska",
-               "restya", "rostya", "tergoska", "trestya"]
+
+verbs_lesta = ["bostya", "diwiska", "desta", "dyski", "gweskel", "gwiska",
+               "kestya", "koska", "leski", "mostya", "ostya", "peski",
+               "raska", "restya", "rostya", "tergoska", "trestya"]
+
 verbs_gwystla = ["dampnya", "entra", "gustla", "gwandra", "handla", "hwystra",
                  "kentra", "moldra", "restra", "sklandra", "sompna",
                  "tardra", "tempra", "terlentri"]
 # vowel introduced to break up consonant cluster at end of stem in some persons
 verbs_hwithra = ["hwithra", "ankombra", "bedhygla", "bokla", "chershya", "dadhla", "delivra",
-                 "dybri", "fagla", "gwedhra", "hwedhla", "hwyrni", "ladra", "lymna", "medra",
+                 "destna", "dybri", "fagla", "gwedhra", "hwedhla", "hwyrni", "ladra", "lymna", "medra",
                  "meythrin", "pedri", "pobla", "ravna", "sotla", "sugna", "trobla", "resna",
-                 "sokra", "fekla", "takla"]
+                 "sokra", "fekla", "takla", "dilestra", "lestra"]
 verbs_resna = ["resna", "sokra"]
-verbs_fekla = ["fekla", "takla", "chershya"]
+verbs_fekla = ["fekla", "takla", "chershya", "destna"]
 verbs_delivra = ["delivra"]
 # when not to shorten stem and have an apostrophe
-verbs_ankombra = ["ankombra", "chershya", "delivra"]
+verbs_ankombra = ["ankombra", "chershya", "delivra", "destna", "dilestra", "lestra"]
+
+
 # in 3rd person present tense stem change and 2ps imperative
 verbs_stemdict_diskwedhes = {"diskwedhes":"diskwa", "drehevel":"drehav", "gortos":"gorta",
                              "hwilas":"hwila"}
@@ -298,10 +301,11 @@ verbs_gelwel = ["gelwel", "henwel", "lenwel", "merwel", "selwel"]
 verbs_irregular = ["bos", "y'm beus", "darvos", "dos", "godhvos", "hwarvos",
                    "klywes", "omglywes", "mos", "piw", "tyli", "attyli",
                    "doen", "omdhoen", "dri", "dyllo", "gul", "ri", "ti",
-                   "bryjyon"]
+                   "bryjyon", "lesvryjyon", "divroa", "dastyllo", "gordhyllo"]
 
 # vowel affectation y--> e in stem in some persons e.g. deber
 verbs_dybri = ["dybri"]
+
 # chanjyow ben kalesheans po dewblekheans
 # hardening or doubling in ending of the stem
 stem_changes = {"b":"pp", "bl":"ppl", "br":"ppr", "ch":"cch", "d":"tt",
@@ -317,6 +321,8 @@ stem_changes = {"b":"pp", "bl":"ppl", "br":"ppr", "ch":"cch", "d":"tt",
                 "th":"tth", "thl":"tthl", "thr":"tthr", "tl":"ttl", "v":"ff",
                 "vn":"ffn", "vr":"ffr"}
 
+# alternate spellings of the same verb, e.g. doen/degi
+verbs_alternatesp = {"degi":"doen", "bones":"bos", "dones":"dos", "devones":"dos", "devos":"dos"}
 
 # Verbow Anreyth
 # Irregular verbs
@@ -907,6 +913,63 @@ dyllo_tenses = [dyllo_pres, dyllo_preterite, dyllo_imperfect, dyllo_pluperfect,
 dyllo_inflected = RannowVerbAnreythOllAmser("dyllo")
 dyllo_inflected.add_tense_list(dyllo_tenses, dyllo_pastparticiple)
 
+#DASTYLLO
+dastyllo_pres = RannowVerbAnreyth("dastyllo", "dastyllir", "dastyllav", "dastyllydh", "dastyllo",
+                               "dastyllo", "dastyllyn", "dastyllowgh", "dastyllons",
+                               "a-lemmyn")
+dastyllo_preterite = RannowVerbAnreyth("dastyllo", "dastellos", "dastelles", "dastellesys",
+                                    "dastellos", "dastellos", "dastellesyn",
+                                    "dastellesowgh", "dastellesons", "tremenys")
+dastyllo_imperfect = RannowVerbAnreyth("dastyllo", "dastyllys", "dastyllyn", "dastyllys",
+                                    "dastylli", "dastylli", "dastyllyn", "dastyllewgh",
+                                    "dastyllens", "anperfydh")
+dastyllo_pluperfect = RannowVerbAnreyth("dastyllo", "dastyllsys", "dastyllsen", "dastyllses",
+                                     "dastyllsa", "dastyllsa", "dastyllsen", "dastyllsewgh",
+                                     "dastyllsens", "gorperfydh")
+dastyllo_pressubj = RannowVerbAnreyth("dastyllo", "dastyller", "dastylliv", "dastylli",
+                                   "dastello", "dastello", "dastyllyn", "dastyllowgh",
+                                   "dastellons", "islavarek_a-lemmyn")
+dastyllo_impfsubj = RannowVerbAnreyth("dastyllo", "dastellys", "dastellen", "dastelles",
+                                   "dastella", "dastella", "dastellen", "dastellewgh",
+                                   "dastellens", "islavarek_anperfydh")
+dastyllo_imperative = RannowVerbAnreyth("dastyllo", "NULL", "NULL", "dastyllo",
+                                     "dastylles", "dastylles", "dastyllyn", "dastyllewgh",
+                                     "dastyllens", "gorhemmyn")
+dastyllo_pastparticiple = "dastyllys"
+dastyllo_tenses = [dastyllo_pres, dastyllo_preterite, dastyllo_imperfect, dastyllo_pluperfect,
+                dastyllo_pressubj, dastyllo_impfsubj, dastyllo_imperative]
+dastyllo_inflected = RannowVerbAnreythOllAmser("dastyllo")
+dastyllo_inflected.add_tense_list(dastyllo_tenses, dastyllo_pastparticiple)
+
+
+
+#GORDHYLLO
+gordhyllo_pres = RannowVerbAnreyth("gordhyllo", "gordhyllir", "gordhyllav", "gordhyllydh", "gordhyllo",
+                               "gordhyllo", "gordhyllyn", "gordhyllowgh", "gordhyllons",
+                               "a-lemmyn")
+gordhyllo_preterite = RannowVerbAnreyth("gordhyllo", "gordhellos", "gordhelles", "gordhellesys",
+                                    "gordhellos", "gordhellos", "gordhellesyn",
+                                    "gordhellesowgh", "gordhellesons", "tremenys")
+gordhyllo_imperfect = RannowVerbAnreyth("gordhyllo", "gordhyllys", "gordhyllyn", "gordhyllys",
+                                    "gordhylli", "gordhylli", "gordhyllyn", "gordhyllewgh",
+                                    "gordhyllens", "anperfydh")
+gordhyllo_pluperfect = RannowVerbAnreyth("gordhyllo", "gordhyllsys", "gordhyllsen", "gordhyllses",
+                                     "gordhyllsa", "gordhyllsa", "gordhyllsen", "gordhyllsewgh",
+                                     "gordhyllsens", "gorperfydh")
+gordhyllo_pressubj = RannowVerbAnreyth("gordhyllo", "gordhyller", "gordhylliv", "gordhylli",
+                                   "gordhello", "gordhello", "gordhyllyn", "gordhyllowgh",
+                                   "gordhellons", "islavarek_a-lemmyn")
+gordhyllo_impfsubj = RannowVerbAnreyth("gordhyllo", "gordhellys", "gordhellen", "gordhelles",
+                                   "gordhella", "gordhella", "gordhellen", "gordhellewgh",
+                                   "gordhellens", "islavarek_anperfydh")
+gordhyllo_imperative = RannowVerbAnreyth("gordhyllo", "NULL", "NULL", "gordhyllo",
+                                     "gordhylles", "gordhylles", "gordhyllyn", "gordhyllewgh",
+                                     "gordhyllens", "gorhemmyn")
+gordhyllo_pastparticiple = "gordhyllys"
+gordhyllo_tenses = [gordhyllo_pres, gordhyllo_preterite, gordhyllo_imperfect, gordhyllo_pluperfect,
+                gordhyllo_pressubj, gordhyllo_impfsubj, gordhyllo_imperative]
+gordhyllo_inflected = RannowVerbAnreythOllAmser("gordhyllo")
+gordhyllo_inflected.add_tense_list(gordhyllo_tenses, gordhyllo_pastparticiple)
 #GUL
 
 gul_pres = RannowVerbAnreyth("gul", "gwrer", "gwrav", "gwredh", "gwra", "gwra",
@@ -1054,6 +1117,61 @@ bryjyon_tenses = [bryjyon_pres, bryjyon_preterite, bryjyon_imperfect,
 bryjyon_inflected = RannowVerbAnreythOllAmser("bryjyon")
 bryjyon_inflected.add_tense_list(bryjyon_tenses)
 
+# LESVRYJYON
+lesvryjyon_pres = RannowVerbAnreyth("lesvryjyon", "lesvryjir", "lesvrojyav", "lesvryjydh",
+                                 "lesvros", "lesvros", "lesvryjyn", "lesvryjyowgh",
+                                 "lesvrojyons", "a-lemmyn")
+lesvryjyon_preterite = RannowVerbAnreyth("lesvryjyon", "lesvrojyas", "lesvryjis",
+                                      "lesvryjsys", "lesvrojyas", "lesvrojyas",
+                                      "lesvryjsyn", "lesvryjsowgh", "lesvrojsons",
+                                      "tremenys")
+lesvryjyon_imperfect = RannowVerbAnreyth("lesvryjyon", "lesvryjys", "lesvrojyen",
+                                      "lesvrojyes", "lesvrojya", "lesvrojya", "lesvrojyen",
+                                      "lesvrojyewgh", "lesvrojyens", "anperfydh")
+lesvryjyon_pluperfect = RannowVerbAnreyth("lesvryjyon", "lesvryjsys", "lesvrojsen",
+                                       "lesvrojses", "lesvrojsa", "lesvrojsa",
+                                       "lesvrojsen", "lesvrojsewgh", "lesvrojsens",
+                                       "gorperfydh")
+lesvryjyon_pressubj = RannowVerbAnreyth("lesvryjyon", "lesvrocchyer", "lesvrycchiv",
+                                     "lesvrycchi", "lesvrocchyo", "lesvrocchyo",
+                                     "lesvrycchyn", "lesvrycchyowgh", "lesvrocchyons",
+                                     "islavarek_a-lemmyn")
+lesvryjyon_impfsubj = RannowVerbAnreyth("lesvryjyon", "lesvrycchys", "lesvrocchyen",
+                                     "lesvrycchyes", "lesvrocchya", "lesvrocchya",
+                                     "lesvrocchyen", "lesvrocchyewgh", "lesvrocchyens",
+                                     "islavarek_anperfydh")
+lesvryjyon_imperative = RannowVerbAnreyth("lesvryjyon", "NULL", "NULL", "lesvros",
+                                       "lesvrojyes", "lesvrojyes", "lesvryjyn",
+                                       "lesvryjyewgh", "lesvrojyens", "gorhemmyn")
+lesvryjyon_tenses = [lesvryjyon_pres, lesvryjyon_preterite, lesvryjyon_imperfect,
+                  lesvryjyon_pluperfect, lesvryjyon_pressubj, lesvryjyon_impfsubj,
+                  lesvryjyon_imperative]
+lesvryjyon_inflected = RannowVerbAnreythOllAmser("lesvryjyon")
+lesvryjyon_inflected.add_tense_list(lesvryjyon_tenses)
+
+
+# DIVROA
+divroa_pres = RannowVerbAnreyth("divroa", "divroyir", "divroav", "divroyydh", "divro", "divro",
+                                "divroyyn", "divroyowgh", "divroyons", "a-lemmyn")
+divroa_preterite = RannowVerbAnreyth("divroa", "divroas", "divroyis", "divrosys", "divroas",
+                                      "divroas", "divrosyn", "divrosowgh", "divrosons", "tremenys")
+divroa_imperfect = RannowVerbAnreyth("divroa", "divroyys", "divroyen", "divroyes", "divroya", "divroya",
+                                     "divroyen", "divroyewgh", "divroyens", "anperfydh")
+divroa_pluperfect = RannowVerbAnreyth("divroa", "divrosys", "divrosen", "divroses", "divrosa", "divrosa",
+                                      "divrosen", "divrosewgh", "divrosens",
+                                       "gorperfydh")
+divroa_pressubj = RannowVerbAnreyth("divroa", "divroyer", "divroyiv", "divroyi", "divroyo", "divroyo",
+                                    "divroyyn", "divroyowgh", "divroyons", "islavarek_a-lemmyn")
+divroa_impfsubj = RannowVerbAnreyth("divroa", "divroyys", "divroyen", "divroyes", "divroya", "divroya",
+                                    "divroyen", "divroyewgh", "divroyens", "islavarek_anperfydh")
+divroa_imperative = RannowVerbAnreyth("divroa", "NULL", "NULL", "divro", "divroyes", "divroyes", "divroyyn",
+                                      "divroyewgh", "divroyens", "gorhemmyn")
+divroa_tenses = [divroa_pres, divroa_preterite, divroa_imperfect,
+                  divroa_pluperfect, divroa_pressubj, divroa_impfsubj,
+                  divroa_imperative]
+divroa_inflected = RannowVerbAnreythOllAmser("divroa")
+divroa_inflected.add_tense_list(divroa_tenses)
+
 # verbow defowtek
 # defective verbs
 verbs_defective = ["hwarvos", "darvos", "bern", "darwar", "degoedh", "koedh",
@@ -1189,10 +1307,13 @@ irregverbs_all = {"bos":bos_inflected, "y'm beus":ymbeus_inflected,
                   "galloes":galloes_inflected, "bern":bern_inflected,
                   "darwar":darwar_inflected, "degoedh":degoedh_inflected,
                   "koedh":koedh_inflected, "delledh":delledh_inflected,
+                  "delledhi":delledh_inflected,
                   "deur":deur_inflected, "medhes":medhes_inflected,
                   "res":res_inflected, "skila":skila_inflected,
                   "tann":tann_inflected, "war":war_inflected,
-                  "bryjyon":bryjyon_inflected}
+                  "bryjyon":bryjyon_inflected, "lesvryjyon":lesvryjyon_inflected,
+                  "divroa":divroa_inflected, "dastyllo":dastyllo_inflected,
+                  "gordhyllo":gordhyllo_inflected}
 
 # list of verbs with simple future, habitual impperfect and perfect tenses
 verbs_devedhek = ["bos", "y'm beus", "piw", "godhvos", "tyli", "attyli", "hwarvos"]

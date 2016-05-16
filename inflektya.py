@@ -74,6 +74,8 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
     if ending == "":
         if stem[-1] == "g":
             stem = stem[:-1] + "k"
+        if stem[-2:] == "gy":
+            stem = stem[:-2] + "ky"
     # verbow a worfenn gans -he:
     # verbs ending in -he:
     if verb[-2:] == "he":
@@ -217,6 +219,11 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
     # subjunctive imp. all persons
     # imperative 2s'
     if verb in dtinf.verbs_erghi_a:
+        # with most of these verbs, it is the 'e' in the verb noun
+        # except diank and maybe others
+        laststemvowel, pos = lastvowel(stem)
+        if laststemvowel == "a":
+            stem = stem[::-1].replace("a","e",1)[::-1]
         if ((tense == 0)and(person == 1))or((tense == 1)and(person == 7))or(
                 tense == 3)or((tense == 4)and((person == 3)or(person == 4)or(
                     person == 7)))or(tense == 5)or((tense == 6)and(person == 2)):
@@ -307,12 +314,21 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
                 # when verbal ending starts with an -s-
                 # the final consonant of the stem may drop out and be shortened
                 # and an apostrophe introduced
+                if stem[-2:] == "sh":
+                    stem1 = stem[:-2]
+                    stem2 = stem[-2:]
+                else:
+                    stem1 = stem[:-1]
+                    stem2 = stem[-1:]
+                    
                 if verb not in dtinf.verbs_ankombra:
-                    stem = stem[:-1]+"'"
+                    stem = stem1+"'"
                 elif verb in dtinf.verbs_delivra:
                     stem = stem[:-2]+stem[-1]+stem[-2]
+                elif verb in dtinf.verbs_fekla:
+                    stem = stem1+ "y" +stem2
                 else:
-                    stem = stem[:-1]+ "e" +stem[-1]
+                    stem = stem1+ "e" +stem2
 
     # GWYSTLA type
     # final consonant is -l-, -m-, -n- or -r- preceded by two adjacent consonants.
@@ -412,7 +428,11 @@ def inflektya(verb, person, tense, suffix_pro=0):
     0=longform_present_indef,11=longform_imperfect,12=longform_present_defni
     3=longform_present_aff,14=perfect
     expect string for the tense """
-
+    
+    # alternate spellings of the same verb, e.g. doen/degi
+    if verb in dtinf.verbs_alternatesp.keys():
+        verb = dtinf.verbs_alternatesp[verb]
+    
     tenses_code_dict = {v:k for k, v in tensesDict.items()}
 
     # yma amser devedhek, anperfydh usadow ha perfydh dhe nebes verbow
@@ -444,7 +464,7 @@ def inflektya(verb, person, tense, suffix_pro=0):
         stem = verb[:-2]
     if verb[-3:] == "oes":
         stem = verb[:-3]
-
+                
     if verb in dtinf.verbs_stemnoun:
         stem = verb
     if ("islavarek" in tense)and(verb not in dtinf.verbs_gwystla)and(verb[-2:] != "ia"):
