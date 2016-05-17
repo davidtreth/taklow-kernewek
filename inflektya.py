@@ -76,6 +76,10 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
             stem = stem[:-1] + "k"
         if stem[-2:] == "gy":
             stem = stem[:-2] + "ky"
+        if stem[-1] == "b":
+            stem = stem[:-1] + "p"
+        if stem[-2:] == "by":
+            stem = stem[:-2] + "py"
     # verbow a worfenn gans -he:
     # verbs ending in -he:
     if verb[-2:] == "he":
@@ -137,10 +141,11 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
                 if stem[-1] == 'y':
                     laststemvowel, pos = lastvowel(stem[:-1])
                 if laststemvowel == "a":
-                    if (tense == 4)or(tense == 5):
+                    if ((tense == 4)or(tense == 5)):
                         # chanjys dhe -y- yn islavarek
                         # in subjunctive further affected to -y-
-                        stem = stem[:pos] + "y" + stem[pos+1:]
+                        if verb not in dtinf.verbs_gwana:
+                            stem = stem[:pos] + "y" + stem[pos+1:]
                     else:
                         stem = stem[:pos] + "e" + stem[pos+1:]
 
@@ -287,7 +292,7 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
             if laststemvowel == "e":
                 stem = stem[:pos] + "a" + stem[pos+1:]
         if (tense == 0)and((person == 3)or(person == 4)):
-            stem = stem[:-2] + "ow"
+            stem = stem[:-1] + "ow"
         #optional
         if ((tense == 1)and(person == 7))or(tense == 3):
             stem = stem[:-2] + stem[-1] + stem[-2]
