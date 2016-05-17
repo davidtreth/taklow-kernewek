@@ -249,15 +249,18 @@ verbs_amaya = ["amaya"]
 
 #plus all verbs in -el, -es (except klywes and mynnes), -he and -i
 verbs_tava = ["tava", "tardra", "kachya", "kampya", "shakya", "talkya", "aras", "argya", "arva", "blasa",
-              "dadhla", "dampnya", "dargana", "dewraga", "didhana"]
+              "dadhla", "dampnya", "dargana", "dewraga", "didhana", "fagla", "fara", "tebelfara"]
 # a --> y in some persons and tenses (when there is a i or y in ending or -owgh)
-verbs_amma = ["amma", "ranna"]
+verbs_amma = ["amma", "ranna", "eva"]
+
+# y --> a in some persons and tenses
+verbs_fyllel = ["fyllel"]
 
 # ow --> ew in some persons and tenses (when there is a i or y in ending or -owgh)
 verbs_pregowtha = ["pregowtha"]
 
 # dannvon, daskorr o-->e (when there is a i or y in ending or -owgh)
-verbs_dannvon = ["dannvon", "daskorr", "diaskorna"]
+verbs_dannvon = ["dannvon", "daskorr", "diaskorna", "fronna"]
 
 verbs_igeri_o = ["ankevi", "dasseni", "dasserghi", "debreni", "dedhwi", "goderri",
                  "kelli", "kelmi", "keski", "kregi", "lenki", "leski",
@@ -268,14 +271,14 @@ verbs_igeri_a = ["dalleth", "diberth", "hwerthin", "minhwerthin", "peski"]
 verbs_erghi_o = ["dagrewi", "dedhewi", "dinewi", "kentrewi", "kewsel",
                  "kynyewel", "mollethi"]
 verbs_dinewi = ["dinewi"]
-verbs_erghi_a = ["densel", "diank", "dillasa", "drehevel", "dynnerghi", "digevelsi", "fyllel",
+verbs_erghi_a = ["densel", "diank", "dillasa", "drehevel", "dynnerghi", "digevelsi", "erghi", "ragerghi", "fyllel",
                  "godhevel", "gweskel", "heveli", "kevelsi", "lemmel", "leverel",
                  "sevel", "terlemmel", "tewel", "tyli", "attyli"]
 verbs_gweskel = ["gweskel"]
 three_s_presfut_y = ["eva", "galloes", "gedya", "gweskel", "kavoes",
                      "kelli", "pobas", "tevi"]
 
-verbs_lesta = ["bostya", "diwiska", "desta", "dyski", "gweskel", "gwiska",
+verbs_lesta = ["bostya", "diwiska", "desta", "dyski", "fastya", "fusta", "gweskel", "gwiska",
                "kestya", "koska", "leski", "mostya", "ostya", "peski",
                "raska", "restya", "rostya", "tergoska", "trestya"]
 

@@ -154,6 +154,9 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
                     laststemvowel, pos = lastvowel(stem[:-1])
                 if laststemvowel == "a":
                     stem = stem[:pos] + "y" + stem[pos+1:]
+                if laststemvowel == "e":
+                    # verbs such as eva
+                    stem = stem[:pos] + "y" + stem[pos+1:]
 
     if verb in dtinf.verbs_pregowtha:
         # pregowtha ow-->ew
@@ -176,6 +179,14 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
                     laststemvowel, pos = lastvowel(stem[:-1])
                 if laststemvowel == "o":
                     stem = stem[:pos] + "e" + stem[pos+1:]
+
+    if verb in dtinf.verbs_fyllel:
+        # FYLLEL y-->a
+        if ((tense == 0)and(person == 1))or((tense == 1)and(person == 7))or(((tense == 3)or(tense == 5))and(person > 0))or((tense == 4)and((person ==3)or(person == 4))):
+            laststemvowel, pos = lastvowel(stem)
+            if laststemvowel == "y":
+                stem = stem[:pos] + "a" + stem[pos+1:]
+            
     # type IGERI
     # gwitha bogalenn ben derowel -a- po -o- yn amserowa syw:
     # retain original stem vowel -a- or -o- in following tenses:
@@ -369,7 +380,7 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
     # DYBRI
     # vowel affectation in stem
     # y --> e e.g. in dybri
-    # in pres pers 3,4,6,7
+    # in pres pers 1,3,4,6,7
     # pres subj pers 3,4
     # imp subj all pers
     # imperative pers 2
