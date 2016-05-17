@@ -247,7 +247,10 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
             if stem[-1] == 'y':
                 laststemvowel, pos = lastvowel(stem[:-1])
             if laststemvowel == "e":
-                stem = stem[:pos] + "a" + stem[pos+1:]
+                if verb in dtinf.verbs_heveli:
+                    stem = stem[::-1].replace("e", "a", 2)[::-1]
+                else:
+                    stem = stem[:pos] + "a" + stem[pos+1:]
         if verb in dtinf.verbs_gweskel:
             # gweskel has 3s. pres/fut gwysk, past participle gwyskys, loses k in some parts of verb
             if ((tense == 0)and((person == 3)or(person == 4)))or(tense == 7):
@@ -476,7 +479,7 @@ def inflektya(verb, person, tense, suffix_pro=0):
         stem = verb[:-1]
     if verb[-1] not in vowels:
         stem = verb
-    if (verb[-2:] == "el")or(verb[-2:] == "es")or(verb[-2:] == "as")or(verb[-2:] == "os"):
+    if (verb[-2:] == "el")or(verb[-2:] == "es")or(verb[-2:] == "as")or(verb[-2:] == "os")or(verb[-2:] == "in"):
         stem = verb[:-2]
     if verb[-3:] == "oes":
         stem = verb[:-3]
