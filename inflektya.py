@@ -481,7 +481,7 @@ def inflektya(verb, person, tense, suffix_pro=0):
         stem = verb
     if (verb[-2:] == "el")or(verb[-2:] == "es")or(verb[-2:] == "as")or(verb[-2:] == "os")or(verb[-2:] == "in"):
         stem = verb[:-2]
-    if verb[-3:] == "oes":
+    if verb[-3:] == "oes" or verb[-3:] == "eth":
         stem = verb[:-3]
                 
     if verb in dtinf.verbs_stemnoun:
