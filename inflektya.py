@@ -153,7 +153,7 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
         # AMMA, RANNA - a-->y
         if origending != "":
             if (("i" in origending or "y" in origending) or ("owgh" in origending)) or (
-                    ("ewgh" in origending)and(person == 2)and(tense == 6)):
+                    ("ewgh" in origending)and(person == 6)and(tense == 6)):
                 laststemvowel, pos = lastvowel(stem)
                 if stem[-1] == 'y':
                     laststemvowel, pos = lastvowel(stem[:-1])
@@ -167,7 +167,7 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
         # pregowtha ow-->ew
         if origending != "":
             if (("i" in origending or "y" in origending) or ("owgh" in origending)) or (
-                    ("ewgh" in origending)and(person == 2)and(tense == 6)):
+                    ("ewgh" in origending)and(person == 6)and(tense == 6)):
                 laststemvowel, pos = lastvowel(stem)
                 if stem[-1] == 'y':
                     laststemvowel, pos = lastvowel(stem[:-1])
@@ -178,7 +178,7 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
         # dannvon, daskorr o-->e
         if origending != "":
             if ("i" in origending or "y" in origending) or ("owgh" in origending) or (
-                    ("ewgh" in origending)and(person == 2)and(tense == 6)):
+                    ("ewgh" in origending)and(person == 6)and(tense == 6)):
                 laststemvowel, pos = lastvowel(stem)
                 if stem[-1] == 'y':
                     laststemvowel, pos = lastvowel(stem[:-1])
@@ -202,6 +202,11 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
     # subjunctive imp. all persons
     # imperative 2s.
     if verb in dtinf.verbs_igeri_o:
+    # with most of these verbs, it is the 'e' in the verb noun
+        laststemvowel, pos = lastvowel(stem)
+        if laststemvowel == "o":
+            stem = stem[::-1].replace("o","e",1)[::-1]
+
         if ((tense == 0)and(person == 1))or(((tense == 1)or(tense == 4))and(
                 (person == 3)or(person == 4)or(person == 7)))or(tense == 3)or(
                     tense == 5)or((tense == 6)and(person == 2)):
@@ -256,6 +261,11 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
             if ((tense == 0)and((person == 3)or(person == 4)))or(tense == 7):
                 stem = "gwysk"
     if verb in dtinf.verbs_erghi_o:
+    # with most of these verbs, it is the 'e' in the verb noun
+        laststemvowel, pos = lastvowel(stem)
+        if laststemvowel == "o":
+            stem = stem[::-1].replace("o","e",1)[::-1]
+
         if ((tense == 0)and(person == 1))or((tense == 1)and(person == 7))or(
                 tense == 3)or((tense == 4)and((person == 3)or(person == 4)or(
                     person == 7)))or(tense == 5)or((tense == 6)and(person == 2)):
@@ -486,7 +496,7 @@ def inflektya(verb, person, tense, suffix_pro=0):
                 
     if verb in dtinf.verbs_stemnoun:
         stem = verb
-    if ("islavarek" in tense)and(verb not in dtinf.verbs_gwystla)and(verb[-2:] != "ia"):
+    if ("islavarek" in tense)and(verb not in dtinf.verbs_gwystla)and(verb not in dtinf.verbs_pe)and(verb[-2:] != "ia"):
         # kesson a wra dewblek po kaleshe y'n islavarek
         # double/harden consonants in subjunctive
         # but not generally in verbs_gwystla
