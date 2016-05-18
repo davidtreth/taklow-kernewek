@@ -236,18 +236,20 @@ verbs_i_3sp = ["adhvesi", "aswonn", "attylli", "brewi", "dagrewi", "dedhewi", "d
 # except/marnas:
 endings_ivowel = ["el", "es", "he", "i"]
 verbs_klywes = ["klywes", "mynnes", "daromres", "difres", "domhwel", "goslowes", "gwari", "happwari",
-                "rydhwari", "gweles", "gorweles", "gweres", "omweres", "hedhes", "drehedhes", "igeri"]
+                "rydhwari", "gweles", "gorweles", "gweres", "omweres", "hedhes", "drehedhes", "igeri",
+                "kavoes", "kemli", "eskelmi", "kerdhes", "konvedhes"]
 # these verbs have y/i vowel in imperfect but not preterite
 verbs_ankevi = ["ankevi", "debreni", "digevelsi", "kevelsi", "dyski", "adhyski", "gonedha", "kammwonedha",
-                "goslowes", "gweles", "gorweles", "hedhes", "drehedhes", "igeri"]
-
+                "goslowes", "gweles", "gorweles", "hedhes", "drehedhes", "igeri", "kavoes", "kelmi", "eskelmi",
+                "kemmeres", "degemmeres", "myskemmeres", "kerdhes", "konvedhes", "kyrghes", "kaskyrghes"]
+verbs_klywes.extend(verbs_ankevi)
 # verbow gans bogalenn i yn anperfydh
 # verbs with i vowel in imperfect
-verbs_i_imp = ["adhvesi", "adhyski", "amma", "annedhi", "ankevi", "aswonn", "dalleth", "debreni",
-               "dervynn", "dewis", "diberth", "difenn", "digevelsi", "doen", "dyski", "folhwerthin",
-               "galloes", "godhav", "gonedha", "goslowes", "kammwonedha", "gonis", "kammwonis", "govynn",
-               "hembronk", "hwerthin", "kevelsi", "lavasos", "minhwerthin", "omladh", "gweles", "gorweles",
-               "hedhes", "drehedhes", "igeri"]
+verbs_i_imp = ["adhvesi", "amma", "annedhi", "aswonn", "dalleth",
+               "dervynn", "dewis", "diberth", "difenn", "doen", "folhwerthin",
+               "galloes", "godhav", "gonis", "kammwonis", "govynn",
+               "hembronk", "hwerthin", "kevelsi", "lavasos", "minhwerthin", "omladh"]
+verbs_i_imp.extend(verbs_ankevi)
 # hembronk doesn't have y in imperfect in Cornish Verbs but says it does in Wella Brown GMC
 
 # verbs in -ya where the -y is always retained even is y,i,s occur in endings
@@ -256,7 +258,8 @@ verbs_amaya = ["amaya"]
 #plus all verbs in -el, -es (except klywes and mynnes), -he and -i
 verbs_tava = ["tava", "tardra", "kachya", "kampya", "shakya", "talkya", "aras", "argya", "arva", "blasa",
               "dadhla", "dampnya", "dargana", "dewraga", "didhana", "fagla", "fara", "tebelfara", "gasa",
-              "eskasa", "gava", "gwana", "gwaska", "arwaska", "handla", "hwibana"]
+              "eskasa", "gava", "gwana", "gwaska", "arwaska", "handla", "hwibana", "kabla", "kachya",
+              "kana", "kara", "kasa", "kavoes"]
 # like tava but no change to y in subjunctive
 verbs_gwana = ["gwana"]
 # a --> y in some persons and tenses (when there is a i or y in ending or -owgh)
@@ -274,10 +277,10 @@ verbs_dannvon = ["dannvon", "daskorr", "diaskorna", "fronna", "goslowes", "hembr
 verbs_igeri_o = ["ankevi", "dasseni", "dasserghi", "debreni", "dedhwi", "goderri", "igeri",
                  "kelli", "kelmi", "keski", "kregi", "lenki", "leski",
                  "megi", "pedri", "perthi", "previ", "renki", "seni",
-                 "serri", "telli", "terri", "treghi"]
+                 "serri", "telli", "terri", "treghi", "argelli", "eskelmi"]
 verbs_dedhwi = ["dedhwi"]
 verbs_igeri_a = ["dalleth", "diberth", "hwerthin", "minhwerthin", "folhwerthin", "peski"]
-verbs_erghi_o = ["dagrewi", "dedhewi", "dinewi", "kentrewi", "kewsel",
+verbs_erghi_o = ["dagrewi", "dedhewi", "dinewi", "kentrewi", "kewsel", "keskewsel", "pellgewsel",
                  "kynyewel", "mollethi"]
 verbs_dinewi = ["dinewi"]
 verbs_erghi_a = ["densel", "diank", "dillasa", "drehevel", "dynnerghi", "digevelsi", "erghi", "ragerghi", "fyllel",
@@ -286,11 +289,11 @@ verbs_erghi_a = ["densel", "diank", "dillasa", "drehevel", "dynnerghi", "digevel
 verbs_heveli = ["heveli", "keheveli"]
 verbs_gweskel = ["gweskel"]
 three_s_presfut_y = ["eva", "galloes", "gedya", "gweskel", "kavoes",
-                     "kelli", "pobas", "tevi"]
+                     "kelli", "pobas", "tevi", "argelli"]
 
 verbs_lesta = ["bostya", "diwiska", "desta", "dyski", "fastya", "fusta", "gweskel", "gwiska",
                "kestya", "koska", "leski", "mostya", "ostya", "peski",
-               "raska", "restya", "rostya", "tergoska", "trestya"]
+               "raska", "restya", "rostya", "tergoska", "trestya", "kemmyska", "gogoska", "gwavgoska"]
 
 verbs_gwystla = ["dampnya", "entra", "gustla", "gwandra", "handla", "hwystra",
                  "kentra", "moldra", "restra", "sklandra", "sompna",
@@ -299,7 +302,7 @@ verbs_gwystla = ["dampnya", "entra", "gustla", "gwandra", "handla", "hwystra",
 verbs_hwithra = ["hwithra", "ankombra", "bedhygla", "bokla", "chershya", "dadhla", "delivra",
                  "destna", "dybri", "fagla", "gwedhra", "hwedhla", "kyhwedhla", "hwyrni", "ladra", "lymna", "medra",
                  "meythrin", "pedri", "pobla", "ravna", "sotla", "sugna", "trobla", "resna",
-                 "sokra", "fekla", "takla", "dilestra", "lestra"]
+                 "sokra", "fekla", "takla", "dilestra", "lestra", "kabla"]
 verbs_resna = ["resna", "sokra"]
 verbs_fekla = ["fekla", "takla", "chershya", "destna"]
 verbs_delivra = ["delivra"]
@@ -332,7 +335,7 @@ stem_changes = {"b":"pp", "bl":"ppl", "br":"ppr", "ch":"cch", "d":"tt",
                 "rdh":"rth", "rg":"rk", "rj":"rch", "rv":"rf", "s":"ss",
                 "sh":"ssh", "sl":"ssl", "sn":"ssn", "sw":"ssw", "t":"tt",
                 "th":"tth", "thl":"tthl", "thr":"tthr", "tl":"ttl", "v":"ff",
-                "vn":"ffn", "vr":"ffr"}
+                "vn":"ffn", "vr":"ffr", "ws":"wss"}
 
 # alternate spellings of the same verb, e.g. doen/degi
 verbs_alternatesp = {"degi":"doen", "bones":"bos", "dones":"dos", "devones":"dos", "devos":"dos",
