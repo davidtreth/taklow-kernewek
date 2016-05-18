@@ -241,7 +241,8 @@ verbs_klywes = ["klywes", "mynnes", "daromres", "difres", "domhwel", "goslowes",
 # these verbs have y/i vowel in imperfect but not preterite
 verbs_ankevi = ["ankevi", "debreni", "digevelsi", "kevelsi", "dyski", "adhyski", "gonedha", "kammwonedha",
                 "goslowes", "gweles", "gorweles", "hedhes", "drehedhes", "igeri", "kavoes", "kelmi", "eskelmi",
-                "kemmeres", "degemmeres", "myskemmeres", "kerdhes", "konvedhes", "kyrghes", "kaskyrghes"]
+                "kemmeres", "degemmeres", "myskemmeres", "kerdhes", "konvedhes", "kyrghes", "kaskyrghes",
+                "lenki", "leski", "goleski", "gorleski", "howlleski"]
 verbs_klywes.extend(verbs_ankevi)
 # verbow gans bogalenn i yn anperfydh
 # verbs with i vowel in imperfect
@@ -259,7 +260,7 @@ verbs_amaya = ["amaya"]
 verbs_tava = ["tava", "tardra", "kachya", "kampya", "shakya", "talkya", "aras", "argya", "arva", "blasa",
               "dadhla", "dampnya", "dargana", "dewraga", "didhana", "fagla", "fara", "tebelfara", "gasa",
               "eskasa", "gava", "gwana", "gwaska", "arwaska", "handla", "hwibana", "kabla", "kachya",
-              "kana", "kara", "kasa", "kavoes"]
+              "kana", "kara", "kasa", "kavoes", "ladha", "omladha", "ladra", "lamma", "aslamma"]
 # like tava but no change to y in subjunctive
 verbs_gwana = ["gwana"]
 # a --> y in some persons and tenses (when there is a i or y in ending or -owgh)
@@ -275,7 +276,7 @@ verbs_pregowtha = ["pregowtha"]
 verbs_dannvon = ["dannvon", "daskorr", "diaskorna", "fronna", "goslowes", "hembronk"]
 
 verbs_igeri_o = ["ankevi", "dasseni", "dasserghi", "debreni", "dedhwi", "goderri", "igeri",
-                 "kelli", "kelmi", "keski", "kregi", "lenki", "leski",
+                 "kelli", "kelmi", "keski", "kregi", "lenki", "leski", "goleski", "gorleski", "howlleski",
                  "megi", "pedri", "perthi", "previ", "renki", "seni",
                  "serri", "telli", "terri", "treghi", "argelli", "eskelmi"]
 verbs_dedhwi = ["dedhwi"]
@@ -285,15 +286,17 @@ verbs_erghi_o = ["dagrewi", "dedhewi", "dinewi", "kentrewi", "kewsel", "keskewse
 verbs_dinewi = ["dinewi"]
 verbs_erghi_a = ["densel", "diank", "dillasa", "drehevel", "dynnerghi", "digevelsi", "erghi", "ragerghi", "fyllel",
                  "godhevel", "gweskel", "heveli", "keheveli", "kevelsi", "lemmel", "leverel",
-                 "sevel", "terlemmel", "tewel", "tyli", "attyli"]
-verbs_heveli = ["heveli", "keheveli"]
+                 "darleverel", "dasleverel", "gowleverel", "sevel", "terlemmel", "tewel",
+                 "tyli", "attyli"]
+verbs_heveli = ["heveli", "keheveli", "leverel", "darleverel", "dasleverel", "gowleverel"]
 verbs_gweskel = ["gweskel"]
 three_s_presfut_y = ["eva", "galloes", "gedya", "gweskel", "kavoes",
                      "kelli", "pobas", "tevi", "argelli"]
 
 verbs_lesta = ["bostya", "diwiska", "desta", "dyski", "fastya", "fusta", "gweskel", "gwiska",
-               "kestya", "koska", "leski", "mostya", "ostya", "peski",
-               "raska", "restya", "rostya", "tergoska", "trestya", "kemmyska", "gogoska", "gwavgoska"]
+               "kestya", "koska", "leski", "goleski", "gorleski", "howlleski", "mostya", "ostya", "peski",
+               "raska", "restya", "rostya", "tergoska", "trestya", "kemmyska", "gogoska", "gwavgoska",
+               "lesta"]
 
 verbs_gwystla = ["dampnya", "entra", "gustla", "gwandra", "handla", "hwystra",
                  "kentra", "moldra", "restra", "sklandra", "sompna",
@@ -313,7 +316,7 @@ verbs_ankombra = ["ankombra", "chershya", "delivra", "destna", "dilestra", "lest
 # in 3rd person present tense stem change and 2ps imperative
 verbs_stemdict_diskwedhes = {"diskwedhes":"diskwa", "drehevel":"drehav", "gortos":"gorta",
                              "hwilas":"hwila"}
-verbs_gelwel = ["gelwel", "henwel", "lenwel", "merwel", "selwel"]
+verbs_gelwel = ["gelwel", "henwel", "lenwel", "merwel", "selwel", "delenwel", "kollenwel", "morlenwel"]
 verbs_irregular = ["bos", "y'm beus", "darvos", "dos", "godhvos", "hwarvos",
                    "klywes", "omglywes", "mos", "piw", "tyli", "attyli",
                    "doen", "omdhoen", "dri", "dyllo", "gul", "omwul", "kowlwul", "diswul", "gorwul",
@@ -333,7 +336,7 @@ stem_changes = {"b":"pp", "bl":"ppl", "br":"ppr", "ch":"cch", "d":"tt",
                 "nd":"nt", "ndl":"ntl", "ndr":"ntr", "ng":"nk", "ngr":"nkr",
                 "nj":"nch", "p":"pp", "r":"rr", "rd":"rt", "rdr":"rtr",
                 "rdh":"rth", "rg":"rk", "rj":"rch", "rv":"rf", "s":"ss",
-                "sh":"ssh", "sl":"ssl", "sn":"ssn", "sw":"ssw", "t":"tt",
+                "sh":"ssh", "sl":"ssl", "sn":"ssn", "st":"stt", "sw":"ssw", "t":"tt",
                 "th":"tth", "thl":"tthl", "thr":"tthr", "tl":"ttl", "v":"ff",
                 "vn":"ffn", "vr":"ffr", "ws":"wss"}
 
