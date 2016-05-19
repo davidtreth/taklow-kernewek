@@ -227,7 +227,7 @@ verbs_i_3sp = ["adhvesi", "aswonn", "attylli", "brewi", "dagrewi", "dedhewi", "d
                "erghi", "godhav", "gorhemmynn", "gorthybi", "hedhi", "heveli",
                "kemmynna", "kentrewi", "kreuni", "krysi", "mollethi",
                "ombrederi", "omhweles", "pobas", "prederi" , "ombrederi", "pysi", "synsi", "tevi",
-               "tybi", "yeuni"]
+               "tybi", "yeuni", "terlentri"]
 # derivas has i vowel in GMC Wella Brown, but not Cornish Verbs
 
 # ha'n verbow gans -el
@@ -236,14 +236,14 @@ verbs_i_3sp = ["adhvesi", "aswonn", "attylli", "brewi", "dagrewi", "dedhewi", "d
 # except/marnas:
 endings_ivowel = ["el", "es", "he", "i"]
 verbs_klywes = ["klywes", "mynnes", "daromres", "difres", "domhwel", "goslowes", "gwari", "happwari",
-                "rydhwari", "gweres", "omweres", "powes"]
+                "rydhwari", "gweres", "omweres", "powes", "terlentri"]
 # these verbs have y/i vowel in imperfect but not preterite
 verbs_ankevi = ["ankevi", "debreni", "digevelsi", "kevelsi", "dyski", "adhyski", "gonedha", "kammwonedha",
                 "goslowes", "gweles", "gorweles", "hedhes", "drehedhes", "igeri", "kavoes", "kelmi", "eskelmi",
                 "kemmeres", "degemmeres", "myskemmeres", "kerdhes", "konvedhes", "kyrghes", "kaskyrghes",
                 "lenki", "leski", "goleski", "gorleski", "howlleski", "megi", "meneges", "mires",
                 "gorvires", "govires", "perthi", "omberthi", "ynperthi", "pobas", "previ",
-                "arbrevi", "seni", "dasseni", "kesseni"]
+                "arbrevi", "seni", "dasseni", "kesseni", "treghi"]
 verbs_klywes.extend(verbs_ankevi)
 # verbow gans bogalenn i yn anperfydh
 # verbs with i vowel in imperfect
@@ -258,11 +258,24 @@ verbs_i_imp.extend(verbs_ankevi)
 verbs_amaya = ["amaya"]
 
 #plus all verbs in -el, -es (except klywes and mynnes), -he and -i
-verbs_tava = ["tava", "tardra", "kachya", "kampya", "shakya", "talkya", "aras", "argya", "arva", "blasa",
-              "dadhla", "dampnya", "dargana", "dewraga", "didhana", "fagla", "fara", "tebelfara", "gasa",
-              "eskasa", "gava", "gwana", "gwaska", "arwaska", "handla", "hwibana", "kabla", "kachya",
-              "kana", "kara", "kasa", "kavoes", "ladha", "omladha", "ladra", "lamma", "aslamma",
-              "maga", "nagha", "omladh", "palas", "pedrevanas", "plansa", "sowdhanas", "splanna"]
+verbs_tava = ['amala', 'aras', 'argya', 'arva', 'arwaska', 'aslamma', 'bagha',
+              'basa', 'blasa', 'bodhara', 'braga', 'brasa', 'bratha', 'dadhla',
+              'dampnya', 'dargana', 'dasa', 'dewana', 'dewraga', 'didhana',
+              'diella', 'dihares', 'droga', 'eskasa', 'fagla', 'falsa', 'fara',
+              'flattra', 'gasa', 'gava', 'glasa', 'gorhana', 'grassa', 'gwana',
+              'gwandra', 'gwaska', 'hanasa', 'handla', 'hasa', 'hwansa',
+              'hwibana', 'kabla', 'kachya', 'kampya', 'kana', 'kanna', 'kara',
+              'karga', 'karghara', 'kartha', 'kasa', 'kavasa', 'kavoes',
+              'klattra', 'krasa', 'kravas', 'ladha', 'ladra', 'lagatta',
+              'lamma', 'lavasos', 'lawa', 'lyfansas', 'maga', 'mala', 'manala',
+              'marghasa', 'miowal', 'moga', 'nagha', 'omdhal', 'omladh',
+              'omladha', 'palas', 'palva', 'palvala', 'pasa', 'pawa',
+              'pedrevanas', 'plansa', 'rambla', 'raska', 'ratha', 'ravna',
+              'sagha', 'sakra', 'sampla', 'shakya', 'skattra', 'sklandra',
+              'sowdhanas', 'spala', 'splanna', 'spralla', 'staga', 'taga',
+              'takla', 'talkya', 'tardha', 'tardra', 'tava', 'tebelfara',
+              'terghya', 'tynkyal']
+
 # like tava but no change to y in subjunctive
 verbs_gwana = ["gwana"]
 # a --> y in some persons and tenses (when there is a i or y in ending or -owgh)
@@ -349,7 +362,7 @@ stem_changes = {"b":"pp", "bl":"ppl", "br":"ppr", "ch":"cch", "d":"tt",
 # alternate spellings of the same verb, e.g. doen/degi
 verbs_alternatesp = {"degi":"doen", "bones":"bos", "dones":"dos", "devones":"dos", "devos":"dos",
                      "godhav":"godhevel", "gruthyl":"gul", "guthyl":"gul", "gwruthyl":"gul",
-                     "mones":"mos", "pregowth":"pregowtha"}
+                     "mones":"mos", "pregowth":"pregowtha", "talvos":"tyli"}
 
 # Verbow Anreyth
 # Irregular verbs

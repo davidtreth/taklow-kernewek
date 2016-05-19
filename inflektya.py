@@ -489,7 +489,7 @@ def inflektya(verb, person, tense, suffix_pro=0):
         stem = verb[:-1]
     if verb[-1] not in vowels:
         stem = verb
-    if (verb[-2:] == "el")or(verb[-2:] == "es")or(verb[-2:] == "as")or(verb[-2:] == "os")or(verb[-2:] == "in"):
+    if (verb[-2:] in ["al", "as", "el", "es", "os", "in"]):
         stem = verb[:-2]
     if verb[-3:] == "oes" or verb[-3:] == "eth":
         stem = verb[:-3]
