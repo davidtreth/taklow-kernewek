@@ -1,5 +1,5 @@
 # David Trethewey
-# vershyon 14-05-2016
+# vershyon 19-05-2016
 """
 An module ma a'n jeves an data rag inflektya.py
 This module holds data for inflektya.py
@@ -221,65 +221,57 @@ verbs_stemnoun = ["arvedh", "arveth", "astell", "aswonn", "daffar", "dalleth",
 
 # verbow gans bogalenn i yn 3s tremenys
 # verbs with i vowel in 3s preterite
-verbs_i_3sp = ["adhvesi", "aswonn", "attylli", "brewi", "dagrewi", "dedhewi", "dehweles",
-               "demmedhi", "derivas", "diank", "dinewi", "dineythi",
-               "diskrysi", "distrui", "domhwel", "dybri", "dynnerghi",
-               "erghi", "godhav", "gorhemmynn", "gorthybi", "hedhi", "heveli",
-               "kemmynna", "kentrewi", "kreuni", "krysi", "mollethi",
-               "ombrederi", "omhweles", "pobas", "prederi" , "ombrederi", "pysi", "synsi", "tevi",
-               "tybi", "yeuni", "terlentri"]
+verbs_i_3sp = ["aswonn", "derivas", "diank", "godhav", "gorhemmynn", "kemmynna", "pobas"]
 # derivas has i vowel in GMC Wella Brown, but not Cornish Verbs
-
 # ha'n verbow gans -el
 # plus all verbs in -el
 # all with -es, -he, and -i
-# except/marnas:
 endings_ivowel = ["el", "es", "he", "i"]
-verbs_klywes = ["klywes", "mynnes", "daromres", "difres", "domhwel", "goslowes", "gwari", "happwari",
-                "rydhwari", "gweres", "omweres", "powes", "terlentri"]
+# except/marnas:
+verbs_klywes = ['daromres', 'difres', 'domhwel', 'goslowes', 'gwari', 'gweres', 'happwari', 'klywes', 'mynnes',
+                'omweres', 'powes', 'rydhwari', 'terlentri']
+
 # these verbs have y/i vowel in imperfect but not preterite
-verbs_ankevi = ["ankevi", "debreni", "digevelsi", "kevelsi", "dyski", "adhyski", "gonedha", "kammwonedha",
-                "goslowes", "gweles", "gorweles", "hedhes", "drehedhes", "igeri", "kavoes", "kelmi", "eskelmi",
-                "kemmeres", "degemmeres", "myskemmeres", "kerdhes", "konvedhes", "kyrghes", "kaskyrghes",
-                "lenki", "leski", "goleski", "gorleski", "howlleski", "megi", "meneges", "mires",
-                "gorvires", "govires", "perthi", "omberthi", "ynperthi", "pobas", "previ",
-                "arbrevi", "seni", "dasseni", "kesseni", "treghi"]
+verbs_ankevi = ['adhyski', 'ankevi', 'arbrevi', 'dasseni', 'debreni', 'degemmeres', 'digevelsi', 'drehedhes',
+                'dyski', 'eskelmi', 'goleski', 'gonedha', 'gorleski', 'gorvires', 'gorweles', 'goslowes', 'govires',
+                'gweles', 'hedhes', 'howlleski', 'igeri', 'kammwonedha', 'kaskyrghes', 'kavoes', 'kelmi', 'kemmeres',
+                'kerdhes', 'kesseni', 'kevelsi', 'konvedhes', 'kyrghes', 'lenki', 'leski', 'megi', 'meneges', 'mires',
+                'myskemmeres', 'omberthi', 'perthi', 'pobas', 'previ', 'seni', 'treghi', 'ynperthi']
 verbs_klywes.extend(verbs_ankevi)
 # verbow gans bogalenn i yn anperfydh
 # verbs with i vowel in imperfect
-verbs_i_imp = ["adhvesi", "amma", "annedhi", "aswonn", "dalleth",
-               "dervynn", "dewis", "diberth", "difenn", "doen", "folhwerthin",
-               "galloes", "godhav", "gonis", "kammwonis", "govynn",
-               "hembronk", "hwerthin", "kevelsi", "lavasos", "minhwerthin", "omladh", "pobas"]
+verbs_i_imp = ["amma", "aswonn", "dalleth", "dervynn", "dewis", "diberth", "difenn", "doen", "folhwerthin",
+               "galloes", "godhav", "gonis", "kammwonis", "govynn", "hembronk", "hwerthin", "lavasos",
+               "minhwerthin", "omladh", "pobas"]
 verbs_i_imp.extend(verbs_ankevi)
 # hembronk doesn't have y in imperfect in Cornish Verbs but says it does in Wella Brown GMC
 
-# verbs in -ya where the -y is always retained even is y,i,s occur in endings
-verbs_amaya = ["amaya"]
+# verbs in -ya where the -y is always retained even if y,i,s occur in endings
+verbs_amaya = ['amaya', 'araya', 'assaya', 'baya', 'obaya']
 
 #plus all verbs in -el, -es (except klywes and mynnes), -he and -i
-verbs_tava = ['amala', 'aras', 'argya', 'arva', 'arwaska', 'aslamma', 'bagha',
-              'basa', 'blasa', 'bodhara', 'braga', 'brasa', 'bratha', 'dadhla',
-              'dampnya', 'dargana', 'dasa', 'dewana', 'dewraga', 'didhana',
-              'diella', 'dihares', 'droga', 'eskasa', 'fagla', 'falsa', 'fara',
-              'flattra', 'gasa', 'gava', 'glasa', 'gorhana', 'grassa', 'gwana',
-              'gwandra', 'gwaska', 'hanasa', 'handla', 'hasa', 'hwansa',
-              'hwibana', 'kabla', 'kachya', 'kampya', 'kana', 'kanna', 'kara',
-              'karga', 'karghara', 'kartha', 'kasa', 'kavasa', 'kavoes',
-              'klattra', 'krasa', 'kravas', 'ladha', 'ladra', 'lagatta',
-              'lamma', 'lavasos', 'lawa', 'lyfansas', 'maga', 'mala', 'manala',
-              'marghasa', 'miowal', 'moga', 'nagha', 'omdhal', 'omladh',
-              'omladha', 'palas', 'palva', 'palvala', 'pasa', 'pawa',
-              'pedrevanas', 'plansa', 'rambla', 'raska', 'ratha', 'ravna',
-              'sagha', 'sakra', 'sampla', 'shakya', 'skattra', 'sklandra',
-              'sowdhanas', 'spala', 'splanna', 'spralla', 'staga', 'taga',
-              'takla', 'talkya', 'tardha', 'tardra', 'tava', 'tebelfara',
-              'terghya', 'tynkyal']
+verbs_tava = ['amala', 'aras', 'argya', 'arva', 'arwaska', 'aslamma', 'attamya', 'badhya', 'bagha', 'balya', 'bannya',
+              'basa', 'batalyas', 'batha', 'blamya', 'blasa', 'bodhara', 'braga', 'braggya', 'brallya', 'brasa',
+              'bratha', 'charjya', 'chasya', 'dadhla', 'dampnya', 'dargana', 'dasa', 'debatya', 'delatya',
+              'dewana', 'dewraga', 'didhana', 'diella', 'dihares', 'dralya', 'droga', 'eskasa', 'fagla', 'falsa',
+              'famya', 'fara', 'fasya', 'felghya', 'flattra', 'frappya', 'gasa', 'gava', 'glasa', 'gorhana',
+              'grassa', 'gravya', 'gwana', 'gwandra', 'gwarnya', 'gwaska', 'halya', 'hanasa', 'handla', 'hartha',
+              'hasa', 'hwansa', 'hwibana', 'iskarga', 'kabla', 'kachya', 'kalkya', 'kampya', 'kana',
+              'kanna', 'kara', 'karga', 'karghara', 'kartha', 'karya', 'kasa', 'kavasa',
+              'kavoes', 'klattra', 'krafa', 'kramya', 'krasa', 'kravas', 'ladha', 'ladra',
+              'lagatta', 'lagya', 'lamma', 'lappya', 'latthya', 'lavasos', 'lawa', 'lyfansas', 'maga',
+              'mala', 'manala', 'marghasa', 'miowal', 'moga', 'nagha', 'naska',
+              'omdhal', 'omladh', 'omladha', 'palas', 'palsya', 'palva', 'palvala', 'parkya', 'parya',
+              'pasa', 'pawa', 'pedrevanas', 'plagya', 'plansa', 'rambla', 'raska',
+              'ratha', 'ravna', 'ravshya', 'sagha', 'sakra', 'sampla', 'shakya',
+              'skattra', 'sklandra', 'skwardya', 'sowdhanas', 'spala', 'sparya', 'splanna',
+              'spralla', 'staga', 'stankya', 'statya', 'taga', 'takla', 'takya', 'talkya', 'tardha',
+              'tardra', 'tava', 'tebelfara', 'terghya', 'travalya', 'tynkyal', 'ughkarga']
 
 # like tava but no change to y in subjunctive
 verbs_gwana = ["gwana"]
 # a --> y in some persons and tenses (when there is a i or y in ending or -owgh)
-verbs_amma = ["amma", "ranna", "eva", "ewnranna"]
+verbs_amma = ['amma', 'dalla', 'eva', 'ewnranna', 'kamma', 'ranna', 'salla']
 
 # y --> a in some persons and tenses
 verbs_fyllel = ["fyllel"]
@@ -288,44 +280,54 @@ verbs_fyllel = ["fyllel"]
 verbs_pregowtha = ["pregowtha"]
 
 # dannvon, daskorr o-->e (when there is a i or y in ending or -owgh)
-verbs_dannvon = ["dannvon", "daskorr", "diaskorna", "fronna", "goslowes", "hembronk", "movya", "amovya", "pobas"]
+verbs_dannvon = ['amovya', 'dannvon', 'daskorr', 'diaskorna', 'fronna', 'goslowes', 'hembronk', 'movya', 'pobas']
 
-verbs_igeri_o = ["ankevi", "dasseni", "dasserghi", "debreni", "dedhwi", "goderri", "igeri",
-                 "kelli", "kelmi", "keski", "kregi", "lenki", "leski", "goleski", "gorleski", "howlleski",
-                 "megi", "pedri", "perthi", "previ", "renki", "seni",
-                 "serri", "telli", "terri", "treghi", "argelli", "eskelmi",
-                 "omperthi", "ynperthi"]
+verbs_igeri_o = ['ankevi', 'argelli', 'dasseni', 'dasserghi', 'debreni', 'dedhwi', 'deskerni', 'eskelmi', 'goderri',
+                 'goleski', 'gorleski', 'howlleski', 'igeri', 'kelli', 'kelmi', 'kentreni', 'keski', 'kregi',
+                 'lenki', 'leski', 'megi', 'omperthi', 'pedri', 'perthi', 'previ', 'renki', 'seni', 'serri', 'telli',
+                 'tenki', 'terri', 'treghi', 'ynperthi']
+
 verbs_dedhwi = ["dedhwi"]
-verbs_igeri_a = ["dalleth", "diberth", "hwerthin", "minhwerthin", "folhwerthin", "peski"]
-verbs_erghi_o = ["dagrewi", "dedhewi", "dinewi", "kentrewi", "kewsel", "keskewsel", "pellgewsel",
-                 "kynyewel", "mollethi", "pobas"]
+
+verbs_igeri_a = ['dalleth', 'darweri', 'diberth', 'diskevelsi', 'folhwerthin', 'hwerthin', 'minhwerthin', 'peski']
+
+verbs_erghi_o = ['dagrewi', 'dedhewi', 'dinewi', 'dyffransegi', 'kentrewi', 'keskewsel', 'kewsel', 'kinyewel',
+                 'kynyewel', 'lewsel', 'mollethi', 'muskegi', 'pellgewsel', 'pobas', 'tewlel', 'trihornegi']
+
 verbs_dinewi = ["dinewi"]
-verbs_erghi_a = ["densel", "diank", "dillasa", "drehevel", "dynnerghi", "digevelsi", "erghi", "ragerghi", "fyllel",
-                 "godhevel", "gweskel", "heveli", "keheveli", "kevelsi", "lemmel", "leverel",
-                 "darleverel", "dasleverel", "gowleverel", "sevel", "terlemmel", "tewel",
-                 "tyli", "attyli"]
-verbs_heveli = ["heveli", "keheveli", "leverel", "darleverel", "dasleverel", "gowleverel"]
+
+verbs_erghi_a = ['attyli', 'darleverel', 'dasleverel', 'densel', 'diank', 'digevelsi', 'dillasa', 'drehevel',
+                 'dynnerghi', 'erghi', 'fyllel', 'godhevel', 'gowleverel', 'gweskel', 'havi', 'heveli', 'keheveli',
+                 'kevelsi', 'kowesi', 'lemmel', 'leverel', 'ragerghi', 'sevel', 'terghi', 'terlemmel', 'tewel', 'tyli']
+
+verbs_heveli = ['darleverel', 'dasleverel', 'gowleverel', 'heveli', 'keheveli', 'leverel']
+
 verbs_gweskel = ["gweskel"]
-three_s_presfut_y = ["eva", "galloes", "gedya", "gweskel", "kavoes",
-                     "kelli", "tevi", "argelli"]
 
-verbs_lesta = ["bostya", "diwiska", "desta", "dyski", "fastya", "fusta", "gweskel", "gwiska",
-               "kestya", "koska", "leski", "goleski", "gorleski", "howlleski", "mostya", "ostya", "peski",
-               "raska", "restya", "rostya", "tergoska", "trestya", "kemmyska", "gogoska", "gwavgoska",
-               "lesta", "mygli"]
+three_s_presfut_y = ["argelli", "eva", "galloes", "gedya", "gweskel", "kavoes", "kelli", "tevi"]
 
-verbs_gwystla = ["dampnya", "entra", "gustla", "gwandra", "handla", "hwystra",
-                 "kentra", "moldra", "restra", "sklandra", "sompna",
-                 "tardra", "tempra", "terlentri", "goestla", "arwoestla", "kenwoestla", "marwoestla"]
+verbs_lesta = ['bostya', 'desta', 'diruska', 'diwiska', 'dyski', 'fastya', 'flattra', 'fusta', 'fyski', 'gogoska',
+               'goleski', 'gorleski', 'gwastya', 'gwavgoska', 'gweskel', 'gwiska', 'heski', 'howlleski', 'kemmyska',
+               'keski', 'kestya', 'koska', 'leska', 'leski', 'lesta', 'lostya', 'mostya', 'mygli', 'myska', 'ostya',
+               'peski', 'raska', 'restya', 'rostya', 'sakra', 'takla', 'tergoska', 'trestya']
+
+verbs_gwystla = ['arwoestla', 'dampnya', 'entra', 'flattra', 'fynngla', 'fysla', 'glyttra', 'goestla', 'gustla',
+                 'gwandra', 'handla', 'hwystra', 'kentra', 'kenwoestla', 'marwoestla', 'menystra', 'moldra',
+                 'plansa', 'rambla', 'restra', 'sakra', 'sampla', 'skattra', 'sklandra', 'skombla', 'skrambla',
+                 'solempnya', 'sompna', 'takla', 'tardra', 'tempra', 'tempra', 'terlentri']
+
 # don't do subjubctive consonant changes
 verbs_pe = ["pe"]
 # vowel introduced to break up consonant cluster at end of stem in some persons
-verbs_hwithra = ["hwithra", "ankombra", "bedhygla", "bokla", "chershya", "dadhla", "delivra",
-                 "destna", "dybri", "fagla", "gwedhra", "hwedhla", "kyhwedhla", "hwyrni", "ladra", "lymna", "medra",
-                 "meythrin", "pedri", "pobla", "ravna", "sotla", "sugna", "trobla", "resna",
-                 "sokra", "fekla", "takla", "dilestra", "lestra", "kabla", "mygli"]
+verbs_hwithra = ['ankombra', 'bedhygla', 'bokla', 'chershya', 'dadhla', 'delivra', 'destna', 'dibra', 'dilestra',
+                 'dybri', 'dyegri', 'fagla', 'fekla', 'godra', 'grysla', 'gwedhra', 'gwedra', 'hwedhla',
+                 'hwithra', 'hwyrni', 'kabla', 'klattra', 'kyhwedhla', 'ladra', 'ledra', 'legri', 'lestra',
+                 'livra', 'lymna', 'medra', 'meythrin', 'meythrin', 'mygli', 'offra', 'pedri', 'plastra',
+                 'pobla', 'poltra', 'posna', 'ravna', 'rekna', 'resna', 'ridra', 'sidhla', 'skethra', 'sodra',
+                 'sokra', 'sotla', 'sugna', 'sugra', 'takla', 'trobla', 'trufla']
+
 verbs_resna = ["resna", "sokra"]
-verbs_fekla = ["fekla", "takla", "chershya", "destna"]
+verbs_fekla = ["chershya", "destna", "fekla", "takla"]
 verbs_delivra = ["delivra"]
 # when not to shorten stem and have an apostrophe
 verbs_ankombra = ["ankombra", "chershya", "delivra", "destna", "dilestra", "lestra"]
@@ -334,12 +336,12 @@ verbs_ankombra = ["ankombra", "chershya", "delivra", "destna", "dilestra", "lest
 # in 3rd person present tense stem change and 2ps imperative
 verbs_stemdict_diskwedhes = {"diskwedhes":"diskwa", "drehevel":"drehav", "gortos":"gorta",
                              "hwilas":"hwila"}
-verbs_gelwel = ["gelwel", "henwel", "lenwel", "merwel", "selwel", "delenwel", "kollenwel", "morlenwel"]
-verbs_irregular = ["bos", "y'm beus", "darvos", "dos", "godhvos", "hwarvos",
-                   "klywes", "omglywes", "mos", "piwa", "tyli", "attyli",
-                   "doen", "omdhoen", "dri", "omri", "dyllo", "gul", "omwul", "kowlwul",
-                   "diswul", "gorwul", "ri", "ti", "bryjyon", "lesvryjyon", "divroa",
-                   "dastyllo", "gordhyllo"]
+
+verbs_gelwel = ['delenwel', 'gelwel', 'henwel', 'kollenwel', 'lenwel', 'merwel', 'morlenwel', 'selwel']
+
+verbs_irregular = ["attyli", "bos", "bryjyon", "darvos", "dastyllo", "diswul", "divroa", "doen", "dos", "dri",
+                   "dyllo", "godhvos", "gordhyllo", "gorwul", "gul", "hwarvos", "klywes", "kowlwul", "lesvryjyon",
+                   "mos", "omdhoen", "omglywes", "omri", "omwul", "piwa", "ri", "ti", "tyli", "y'm beus"]
 
 # vowel affectation y--> e in stem in some persons e.g. deber
 verbs_dybri = ["dybri"]
@@ -356,8 +358,8 @@ stem_changes = {"b":"pp", "bl":"ppl", "br":"ppr", "ch":"cch", "d":"tt",
                 "nj":"nch", "p":"pp", "r":"rr", "rd":"rt", "rdr":"rtr",
                 "rdh":"rth", "rg":"rk", "rj":"rch", "rv":"rf", "s":"ss",
                 "sh":"ssh", "sl":"ssl", "sn":"ssn", "st":"stt", "sw":"ssw", "t":"tt",
-                "th":"tth", "thl":"tthl", "thr":"tthr", "tl":"ttl", "v":"ff",
-                "vn":"ffn", "vr":"ffr", "ws":"wss", "wth":"wtth"}
+                "th":"tth", "thl":"tthl", "thr":"tthr", "thw":"tthw", "tl":"ttl",
+                "v":"ff", "vn":"ffn", "vr":"ffr", "ws":"wss", "wth":"wtth"}
 
 # alternate spellings of the same verb, e.g. doen/degi
 verbs_alternatesp = {"degi":"doen", "bones":"bos", "dones":"dos", "devones":"dos", "devos":"dos",
