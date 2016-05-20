@@ -267,6 +267,7 @@ verbs_tava = ['amala', 'aras', 'argya', 'arva', 'arwaska', 'aslamma', 'attamya',
               'skattra', 'sklandra', 'skwardya', 'sowdhanas', 'spala', 'sparya', 'splanna',
               'spralla', 'staga', 'stankya', 'statya', 'taga', 'takla', 'takya', 'talkya', 'tardha',
               'tardra', 'tava', 'tebelfara', 'terghya', 'travalya', 'tynkyal', 'ughkarga']
+# diella, droga, miowal, moga, terghya the last stem vowel is not a
 
 # like tava but no change to y in subjunctive
 verbs_gwana = ["gwana"]

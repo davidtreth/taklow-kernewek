@@ -140,14 +140,14 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
                 laststemvowel, pos = lastvowel(stem)
                 if stem[-1] == 'y':
                     laststemvowel, pos = lastvowel(stem[:-1])
-                if laststemvowel == "a":
-                    if ((tense == 4)or(tense == 5)):
-                        # chanjys dhe -y- yn islavarek
-                        # in subjunctive further affected to -y-
-                        if verb not in dtinf.verbs_gwana:
-                            stem = stem[:pos] + "y" + stem[pos+1:]
-                    else:
-                        stem = stem[:pos] + "e" + stem[pos+1:]
+                #if laststemvowel == "a":
+                if ((tense == 4)or(tense == 5)):
+                    # chanjys dhe -y- yn islavarek
+                    # in subjunctive further affected to -y-
+                    if verb not in dtinf.verbs_gwana:
+                        stem = stem[:pos] + "y" + stem[pos+1:]
+                else:
+                    stem = stem[:pos] + "e" + stem[pos+1:]
 
     if verb in dtinf.verbs_amma:
         # AMMA, RANNA - a-->y
