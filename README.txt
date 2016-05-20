@@ -47,3 +47,9 @@ sentence_generator/: This folder contains some horribly obsfucated Python code t
 taklowGUI.py: defines some Tkinter GUI widgets imported by other GUI modules
 
 mutatyaGUI.py: A Tkinter GUI frontend for mutatya.py
+
+sylrannaGUI.py: A Tkinter GUI frontend for syllabenn_ranna_kw.py
+
+treuslytherennaGUI.py: A Tkinter GUI frontend for treuslytherenna.py 
+
+inflektyaGUI.py: A Tkinter GUI frontend for inflektya.py
