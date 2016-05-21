@@ -159,6 +159,7 @@ class RannowVerbAnreythOllAmser(object):
 Verb {v} doesn't have tense {t}".format(v=self.verbnoun, t=tense))
             return "NULL"
 
+
 # lostow verbow reyth
 # regular verb endings
 endings_present = LostowPersonek(["ir", "av", "ydh", "", "", "yn", "owgh",
@@ -208,6 +209,8 @@ endings_alltenses_i = LostowPersonekOllAmser({endings_present.amser:endings_pres
                                               endings_imperative.amser:endings_imperative,
                                               "ppl":ending_pastparticiple})
 
+
+            
 # verbow ha'n ben an keth ha'n hanow verbek
 # verbs with stem same as verbal noun
 verbs_stemnoun = ["arvedh", "arveth", "astell", "aswonn", "daffar", "dalleth",
@@ -1489,6 +1492,7 @@ irregverbs_all = {"bos":bos_inflected, "y'm beus":ymbeus_inflected,
 verbs_devedhek = ["bos", "y'm beus", "piwa", "godhvos", "tyli", "attyli", "hwarvos"]
 verbs_anperfydh_usadow = ["bos", "y'm beus", "piwa"]
 verbs_perfydh = ["mos", "mones", "dos", "dones"]
+
 
 
 #prepositions

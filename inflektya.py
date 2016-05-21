@@ -518,10 +518,11 @@ def inflektya(verb, person, tense, suffix_pro=0):
             inflectedverb = dtinf.irregverbs_all[verb].getppl()
         else:
             inflectedverb = dtinf.irregverbs_all[verb].get_inf_verb(tense, person)
-            if (suffix_pro == 1)and(person > 0):
-                inflectedverb += " " + dtinf.suffixed_pros[person]
-            if (suffix_pro == 2)and(person > 0):
-                inflectedverb += " " + dtinf.suffixed_pros_emph[person]
+            if inflectedverb != "NULL":
+                if (suffix_pro == 1)and(person > 0):
+                    inflectedverb += " " + dtinf.suffixed_pros[person]
+                if (suffix_pro == 2)and(person > 0):
+                    inflectedverb += " " + dtinf.suffixed_pros_emph[person]
         return inflectedverb, 1
 
 
@@ -691,5 +692,9 @@ tensesDictEN = {0:"present",
                 14:"perfect"}
 vowels = ["a", "e", "i", "o", "u", "y"]
 
+def set_swfmode():
+    import datainflektya_swf as dtinf
+
 if __name__ == '__main__':
     run_testcode()
+    
