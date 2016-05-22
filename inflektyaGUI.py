@@ -1,5 +1,5 @@
 import Tkinter as tk
-from taklowGUI import Kwitya, Radiobar, ScrolledText, Entrybar
+from taklowGUI import Kwitya, Radiobar, ScrolledText, Entrybar, CheckButtonBar
 import inflektya
 
 tensesDict2 = {"A-lemmyn":"a-lemmyn",
@@ -25,6 +25,7 @@ suffixDict = {'Heb raghenwyn a syw':0, 'Raghenwyn a syw':1,
               'Raghenwyn a syw gans poeslev':2}
 
 if __name__ == '__main__':
+    
     root = tk.Tk()
     root.title('Inflektya Verbow Kernewek')
     mhead = tk.Label(root, text = "Dewisyow")
@@ -59,16 +60,35 @@ if __name__ == '__main__':
     options3 = Radiobar(root, ['Heb raghenwyn a syw', 'Raghenwyn a syw',
                                'Raghenwyn a syw gans poeslev'], side=tk.TOP,
                         anchor=tk.NW, default = 'Heb raghenwyn a syw')
-    options3.pack(side=tk.LEFT, fill=tk.Y)
+    
     options3.config(relief=tk.RIDGE, bd=2)
+
+    options4 = CheckButtonBar(root, ['Ynworrans + eskorrans FSS'],
+                              side=tk.BOTTOM,anchor=tk.SW)
+    options3.pack(side=tk.LEFT, fill=tk.Y)
+    options4.pack(side=tk.LEFT, fill=tk.Y)
+    options4.config(relief = tk.RIDGE, bd = 2)
+
+
     
     def allstates(): 
-        print options.state(), options2.state(), options3.state(), ent.fetch()
+        print options.state(), options2.state(), options3.state(), options4.state(), ent.fetch()
 
     def printinflektya():
         """ show the output in Cornish, according to the options
          in the radiobar is selected """
         allstates()
+        if options4.state() == [1]:
+            SWF = True
+            reload(inflektya)
+            inflektya.set_swfmode()
+            import inflektya_swf
+            
+        if options4.state() == [0]:
+            SWF = False
+            reload(inflektya)
+            inflektya.set_kemmyn()
+
         inputtext = ent.fetch()
         inputtext = inputtext.lower()
         print("Input: {i}".format(i=inputtext))
@@ -77,13 +97,19 @@ if __name__ == '__main__':
         if inputtext:
             if options2.state() == 'Pub Person':
                 if options.state() == 'ppl':
-                    output = inflektya.inflektya(inputtext, 1, tensesDict2[options.state()], suffixDict[options3.state()])[0]
+                    if SWF:
+                        output = inflektya_swf.inflektya_swf(inputtext, 1, tensesDict2[options.state()], suffixDict[options3.state()])[0]
+                    else:
+                        output = inflektya.inflektya(inputtext, 1, tensesDict2[options.state()], suffixDict[options3.state()])[0]
                 else:
                     # print all persons
                     output = ''
                     validoutputs = 0
                     for p in range(8):
-                        outperson, valid = inflektya.inflektya(inputtext, p, tensesDict2[options.state()],suffixDict[options3.state()])
+                        if SWF:
+                            outperson, valid = inflektya_swf.inflektya_swf(inputtext, p, tensesDict2[options.state()],suffixDict[options3.state()])
+                        else:
+                            outperson, valid = inflektya.inflektya(inputtext, p, tensesDict2[options.state()],suffixDict[options3.state()])
                         validoutputs += valid
                         output += '{pers}{s}:{s2}{outp}'.format(pers = personDictR[p], s=" "*(15-len(personDictR[p])), outp = outperson, s2 = " "*(20-len(outperson)))
                         if p < 7:
@@ -91,10 +117,16 @@ if __name__ == '__main__':
                     if validoutputs == 0:
                         output = "Nyns yw amser '{t}' ewn rag verb '{v}'".format(t=options.state(), v=inputtext)
             else:
-                output = inflektya.inflektya(inputtext,
-                                             personDict[options2.state()],
-                                             tensesDict2[options.state()],
-                                             suffixDict[options3.state()])[0]
+                if SWF:
+                    output = inflektya_swf.inflektya_swf(inputtext,
+                                                         personDict[options2.state()],
+                                                         tensesDict2[options.state()],
+                                                         suffixDict[options3.state()])[0]
+                else:
+                    output = inflektya.inflektya(inputtext,
+                                                 personDict[options2.state()],
+                                                 tensesDict2[options.state()],
+                                                 suffixDict[options3.state()])[0]
                 if output == 'NULL':
                     output = "Nyns yw amser '{t}', person '{p}' ewn rag verb '{v}'".format(t=options.state(), p=options2.state(), v=inputtext)
                 # msg3.text.config(font=('Arial', 14, 'normal'))

@@ -4,26 +4,32 @@ from datainflektya import *
 
 def convert_verb_SWF(verbAnreyth):
     """ convert the verb to SWF """
-    verbAnreyth.verbnoun = tr.text_KK2FSS(verbAnreyth.verbnoun, True, False, False).strip()
+    verbAnreyth.verbnoun = tr.wordstr_KK2FSS(verbAnreyth.verbnoun, True, False)
     for t in verbAnreyth.dict_tenses.keys():
         #print t
         #print verbAnreyth.dict_tenses[t]
         try:
             for r in verbAnreyth.dict_tenses[t].keys():
                 if verbAnreyth.dict_tenses[t][r] != "NULL":
-                    verbAnreyth.dict_tenses[t][r] = tr.text_KK2FSS(verbAnreyth.dict_tenses[t][r], True, False, False).strip()
+                    # print(verbAnreyth.dict_tenses[t][r])
+                    if " " in verbAnreyth.dict_tenses[t][r]:
+                        verbAnreyth.dict_tenses[t][r] = tr.text_KK2FSS(verbAnreyth.dict_tenses[t][r], True, False)
+                        verbAnreyth.dict_tenses[t][r] = verbAnreyth.dict_tenses[t][r].replace("  "," ")
+                    else:
+                        verbAnreyth.dict_tenses[t][r] = tr.wordstr_KK2FSS(verbAnreyth.dict_tenses[t][r], True, False)
+                    # print(verbAnreyth.dict_tenses[t][r])
         except:
             # for ppl
-            verbAnreyth.dict_tenses[t] = tr.text_KK2FSS(verbAnreyth.dict_tenses[t], True, False, False).strip()
+            # print(verbAnreyth.dict_tenses[t])
+            verbAnreyth.dict_tenses[t] = tr.wordstr_KK2FSS(verbAnreyth.dict_tenses[t], True, False)
 
 def conv_verblist_SWF(verblist):
     """ convert a list of words to SWF """
     for v in verblist:
-        swfv = tr.text_KK2FSS(v, True, False, False).strip()
+        swfv = tr.wordstr_KK2FSS(v, True, False)
         # remove excess spaces
-        # y'm beus comes out of text_KK2FSS with extra space
         if " " in swfv:
-            swfv = swfv.strip().split(" ")
+            swfv = swfv.split(" ")
             swfv = " ".join([s for s in swfv if s != ''])
         if swfv != v:
             # print(v, swfv)
@@ -45,7 +51,7 @@ for vlist in verblists_all:
 # convert irregular verbs
 for irreg in irregverbs_all.keys():
     convert_verb_SWF(irregverbs_all[irreg])
-    irrswf = tr.text_KK2FSS(irreg, True, False, False).strip()
+    irrswf = tr.text_KK2FSS(irreg, True, False).strip()
     if irrswf != irreg:
         irregverbs_all[irrswf] = irregverbs_all[irreg]
         irregverbs_all.pop(irreg)

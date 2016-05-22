@@ -286,6 +286,13 @@ def text_KK2FSS(inputtext,fwds=False,longform=False,verberr=False):
         else:
             outputtext += "{w} ".format(w=g.graph)
     return outputtext
+
+def wordstr_KK2FSS(inputword, fwds=False, verberr=False):
+    """ expect a single word to convert from KK to SWF """
+    rannans = syllabenn_ranna_kw.RannaSyllabenn(inputword)
+    g = syllabenn_ranna_kw.Ger(inputword, rannans, fwds)
+    word_KK2FSS(g, verberr)
+    return g.graph
             
 if __name__ == '__main__':
     """

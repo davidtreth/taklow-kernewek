@@ -1,6 +1,6 @@
 import inflektya
 import treuslytherenna as tr
-import datainflektya_swf as dtinf
+import datainflektya_swf as dtinf_swf
 
 # import the data with special case and irregular verbs converted to SWF
 inflektya.set_swfmode()
@@ -10,6 +10,7 @@ def inflektya_swf(verb, person, tense, suffix_pro=0):
     """ call inflektya.inflektya and transliterate its output into SWF """
     inflv, success = inflektya.inflektya(verb, person, tense, suffix_pro)
     if inflv != "NULL" and success == 1:
+        # print(inflv)
         return tr.text_KK2FSS(inflv, True, False, False).strip(), 1
     else:
         return "NULL", 0
@@ -23,12 +24,12 @@ def rol_personys_amserow(verb):
     # print imperfect before preterite
     # to match order in "Cornish Verbs"
     tensesorder = [0, 2, 1, 3, 4, 5, 6, 7]
-    if verb not in dtinf.irregverbs_all.keys():
+    if verb not in dtinf_swf.irregverbs_all.keys():
         tlist = [inflektya.tensesDict[t] for t in tensesorder]
         t_en_list = [inflektya.tensesDictEN[t] for t in tensesorder]
     else:
-        tlist = dtinf.irregverbs_all[verb].tenses_list
-        t_en_list = dtinf.irregverbs_all[verb].tenses_en_list
+        tlist = dtinf_swf.irregverbs_all[verb].tenses_list
+        t_en_list = dtinf_swf.irregverbs_all[verb].tenses_en_list
 
     for t, t_en in zip(tlist, t_en_list):
         print("\nAmser: {amser} {tenseEN}".format(amser=t.capitalize().ljust(20),
