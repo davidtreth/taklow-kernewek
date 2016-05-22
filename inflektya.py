@@ -484,33 +484,33 @@ def inflektya(verb, person, tense, suffix_pro=0):
     if not inflektya_validate_tense(verb, person, tense):
         # if the tense is invalid for the verb, return a NULL
         return invalidinput, 0
-    vowels = ['a', 'e', 'i', 'o', 'u']
-    if verb[-1] in vowels:
-        stem = verb[:-1]
-    if verb[-1] not in vowels:
-        stem = verb
-    if (verb[-2:] in ["al", "as", "el", "es", "os", "in"]):
-        stem = verb[:-2]
-    if verb[-3:] == "oes" or verb[-3:] == "eth":
-        stem = verb[:-3]
-                
-    if verb in dtinf.verbs_stemnoun:
-        stem = verb
-    if ("islavarek" in tense)and(verb not in dtinf.verbs_gwystla)and(verb not in dtinf.verbs_pe)and(verb[-2:] != "ia"):
-        # kesson a wra dewblek po kaleshe y'n islavarek
-        # double/harden consonants in subjunctive
-        # but not generally in verbs_gwystla
-        # and not in verbs ending -ia
-        lastconststem = lastconsonant(stem)
-        # print(lastconststem)
-        if lastconststem in dtinf.stem_changes.keys():
-            # do a string replace, but first reverse the stem, and the
-            # arguments for replace, so that it is only done once
-            # for the last time lastconststem occurs in stem
-            stem = stem[::-1].replace(lastconststem[::-1],
-                                      dtinf.stem_changes[lastconststem][::-1], 1)[::-1]
+
     regular = verb not in dtinf.irregverbs_all.keys()
     if regular:
+        vowels = ['a', 'e', 'i', 'o', 'u']
+        if verb[-1] in vowels:
+            stem = verb[:-1]
+        if verb[-1] not in vowels:
+            stem = verb
+        if (verb[-2:] in ["al", "as", "el", "es", "os", "in"]):
+            stem = verb[:-2]
+        if verb[-3:] == "oes" or verb[-3:] == "eth":
+            stem = verb[:-3]
+        if verb in dtinf.verbs_stemnoun:
+            stem = verb
+        if ("islavarek" in tense)and(verb not in dtinf.verbs_gwystla)and(verb not in dtinf.verbs_pe)and(verb[-2:] != "ia"):
+            # kesson a wra dewblek po kaleshe y'n islavarek
+            # double/harden consonants in subjunctive
+            # but not generally in verbs_gwystla
+            # and not in verbs ending -ia
+            lastconststem = lastconsonant(stem)
+            # print(lastconststem)
+            if lastconststem in dtinf.stem_changes.keys():
+                # do a string replace, but first reverse the stem, and the
+                # arguments for replace, so that it is only done once
+                # for the last time lastconststem occurs in stem
+                stem = stem[::-1].replace(lastconststem[::-1],
+                                          dtinf.stem_changes[lastconststem][::-1], 1)[::-1]
         return inflektya_reyth(verb, stem, person, tenses_code_dict[tense], suffix_pro)
 
     if not regular:
@@ -694,7 +694,7 @@ vowels = ["a", "e", "i", "o", "u", "y"]
 
 def set_swfmode():
     import datainflektya_swf as dtinf
-    reload(dtinf)
+    # reload(dtinf)
 
 def set_kemmyn():
     import datainflektya as dtinf

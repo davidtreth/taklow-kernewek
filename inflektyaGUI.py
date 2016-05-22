@@ -1,7 +1,6 @@
 import Tkinter as tk
 from taklowGUI import Kwitya, Radiobar, ScrolledText, Entrybar, CheckButtonBar
 import inflektya
-
 tensesDict2 = {"A-lemmyn":"a-lemmyn",
               "Tremenys":"tremenys",
               "Anperfydh":"anperfydh",
@@ -80,9 +79,9 @@ if __name__ == '__main__':
         allstates()
         if options4.state() == [1]:
             SWF = True
-            reload(inflektya)
             inflektya.set_swfmode()
             import inflektya_swf
+            reload(inflektya_swf)
             
         if options4.state() == [0]:
             SWF = False

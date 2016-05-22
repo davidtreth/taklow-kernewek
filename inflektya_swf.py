@@ -5,13 +5,17 @@ import datainflektya_swf as dtinf_swf
 # import the data with special case and irregular verbs converted to SWF
 inflektya.set_swfmode()
 
-
 def inflektya_swf(verb, person, tense, suffix_pro=0):
     """ call inflektya.inflektya and transliterate its output into SWF """
     inflv, success = inflektya.inflektya(verb, person, tense, suffix_pro)
     if inflv != "NULL" and success == 1:
         # print(inflv)
-        return tr.text_KK2FSS(inflv, True, False, False).strip(), 1
+        if verb in dtinf_swf.irregverbs_all.keys():
+            return inflv, 1
+        else:
+            return tr.wordstr_KK2FSS(inflv, True, False), 1
+        
+
     else:
         return "NULL", 0
 

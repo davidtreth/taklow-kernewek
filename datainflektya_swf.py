@@ -6,8 +6,8 @@ def convert_verb_SWF(verbAnreyth):
     """ convert the verb to SWF """
     verbAnreyth.verbnoun = tr.wordstr_KK2FSS(verbAnreyth.verbnoun, True, False)
     for t in verbAnreyth.dict_tenses.keys():
-        #print t
-        #print verbAnreyth.dict_tenses[t]
+        # print t
+        # print verbAnreyth.dict_tenses[t]
         try:
             for r in verbAnreyth.dict_tenses[t].keys():
                 if verbAnreyth.dict_tenses[t][r] != "NULL":
@@ -22,6 +22,7 @@ def convert_verb_SWF(verbAnreyth):
             # for ppl
             # print(verbAnreyth.dict_tenses[t])
             verbAnreyth.dict_tenses[t] = tr.wordstr_KK2FSS(verbAnreyth.dict_tenses[t], True, False)
+        # print verbAnreyth.dict_tenses[t]
 
 def conv_verblist_SWF(verblist):
     """ convert a list of words to SWF """
