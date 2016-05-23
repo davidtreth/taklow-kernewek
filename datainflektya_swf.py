@@ -1,10 +1,13 @@
 import treuslytherenna as tr
+import datainflektya
+reload(datainflektya)
 from datainflektya import *
 """ turn the data in datainflektya into SWF """
 
 def convert_verb_SWF(verbAnreyth):
     """ convert the verb to SWF """
-    verbAnreyth.verbnoun = tr.wordstr_KK2FSS(verbAnreyth.verbnoun, True, False)
+    if " " not in verbAnreyth.verbnoun:
+        verbAnreyth.verbnoun = tr.wordstr_KK2FSS(verbAnreyth.verbnoun, True, False)
     for t in verbAnreyth.dict_tenses.keys():
         # print t
         # print verbAnreyth.dict_tenses[t]
@@ -27,11 +30,10 @@ def convert_verb_SWF(verbAnreyth):
 def conv_verblist_SWF(verblist):
     """ convert a list of words to SWF """
     for v in verblist:
-        swfv = tr.wordstr_KK2FSS(v, True, False)
-        # remove excess spaces
-        if " " in swfv:
-            swfv = swfv.split(" ")
-            swfv = " ".join([s for s in swfv if s != ''])
+        if " " in v:
+            swfv = v
+        else:
+            swfv = tr.wordstr_KK2FSS(v, True, False)
         if swfv != v:
             # print(v, swfv)
             verblist.remove(v)
@@ -52,7 +54,10 @@ for vlist in verblists_all:
 # convert irregular verbs
 for irreg in irregverbs_all.keys():
     convert_verb_SWF(irregverbs_all[irreg])
-    irrswf = tr.text_KK2FSS(irreg, True, False).strip()
+    if " " not in irreg:
+        irrswf = tr.text_KK2FSS(irreg, True, False).strip()
+    else:
+        irrswf = irreg
     if irrswf != irreg:
         irregverbs_all[irrswf] = irregverbs_all[irreg]
         irregverbs_all.pop(irreg)

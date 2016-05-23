@@ -1281,11 +1281,12 @@ bryjyon_impfsubj = RannowVerbAnreyth("bryjyon", "brycchys", "brocchyen",
 bryjyon_imperative = RannowVerbAnreyth("bryjyon", "NULL", "NULL", "bros",
                                        "brojyes", "brojyes", "bryjyn",
                                        "bryjyewgh", "brojyens", "gorhemmyn")
+bryjyon_pastparticiple = "bryjys"
 bryjyon_tenses = [bryjyon_pres, bryjyon_preterite, bryjyon_imperfect,
                   bryjyon_pluperfect, bryjyon_pressubj, bryjyon_impfsubj,
                   bryjyon_imperative]
 bryjyon_inflected = RannowVerbAnreythOllAmser("bryjyon")
-bryjyon_inflected.add_tense_list(bryjyon_tenses)
+bryjyon_inflected.add_tense_list(bryjyon_tenses, bryjyon_pastparticiple)
 
 # LESVRYJYON
 lesvryjyon_pres = RannowVerbAnreyth("lesvryjyon", "lesvryjir", "lesvrojyav", "lesvryjydh",
@@ -1313,11 +1314,12 @@ lesvryjyon_impfsubj = RannowVerbAnreyth("lesvryjyon", "lesvrycchys", "lesvrocchy
 lesvryjyon_imperative = RannowVerbAnreyth("lesvryjyon", "NULL", "NULL", "lesvros",
                                        "lesvrojyes", "lesvrojyes", "lesvryjyn",
                                        "lesvryjyewgh", "lesvrojyens", "gorhemmyn")
+lesvryjyon_pastparticiple = "lesvryjys"
 lesvryjyon_tenses = [lesvryjyon_pres, lesvryjyon_preterite, lesvryjyon_imperfect,
                   lesvryjyon_pluperfect, lesvryjyon_pressubj, lesvryjyon_impfsubj,
                   lesvryjyon_imperative]
 lesvryjyon_inflected = RannowVerbAnreythOllAmser("lesvryjyon")
-lesvryjyon_inflected.add_tense_list(lesvryjyon_tenses)
+lesvryjyon_inflected.add_tense_list(lesvryjyon_tenses, lesvryjyon_pastparticiple)
 
 
 # DIVROA
@@ -1336,11 +1338,12 @@ divroa_impfsubj = RannowVerbAnreyth("divroa", "divroyys", "divroyen", "divroyes"
                                     "divroyen", "divroyewgh", "divroyens", "islavarek_anperfydh")
 divroa_imperative = RannowVerbAnreyth("divroa", "NULL", "NULL", "divro", "divroyes", "divroyes", "divroyyn",
                                       "divroyewgh", "divroyens", "gorhemmyn")
+divroa_pastparticiple = "divres"
 divroa_tenses = [divroa_pres, divroa_preterite, divroa_imperfect,
                   divroa_pluperfect, divroa_pressubj, divroa_impfsubj,
                   divroa_imperative]
 divroa_inflected = RannowVerbAnreythOllAmser("divroa")
-divroa_inflected.add_tense_list(divroa_tenses)
+divroa_inflected.add_tense_list(divroa_tenses, divroa_pastparticiple)
 
 # verbow defowtek
 # defective verbs

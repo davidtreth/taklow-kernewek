@@ -90,7 +90,7 @@ words_y = ["spyrys", "kynsa", "ynter", "ylyn", "pympes", "ydhyn", "dhy'hwi", "ch
            "possybylta", "possybyltas","anpossybyl", "onpossybyl", "anpossybylta", "onpossybylta",
            "anpossybylytas", "onpossybylytas", "dyski", "pysi", "mynysenn"]
 
-verbs_y = ["krysi", "slynkya", "kyni", "kessydhya", "dybri", "dyski", "pysi"]    
+verbs_y = ["krysi", "slynkya", "kyni", "kessydhya", "dybri", "dyski", "pysi", "tyli", "attyli", "bryjyon", "lesvryjyon"]    
 
 addallinflectedforms(words_uw,verbs_uw)
 addallmutatedforms(words_uw)

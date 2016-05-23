@@ -694,7 +694,7 @@ vowels = ["a", "e", "i", "o", "u", "y"]
 
 def set_swfmode():
     import datainflektya_swf as dtinf
-    # reload(dtinf)
+    reload(dtinf)
 
 def set_kemmyn():
     import datainflektya as dtinf
