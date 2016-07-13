@@ -53,3 +53,9 @@ sylrannaGUI.py: A Tkinter GUI frontend for syllabenn_ranna_kw.py
 treuslytherennaGUI.py: A Tkinter GUI frontend for treuslytherenna.py 
 
 inflektyaGUI.py: A Tkinter GUI frontend for inflektya.py
+
+espeak-text-to-speech/kows_kernewek_GUI.py: A Tkinter GUI for Cornish text to speech.
+
+TaklowKernewekLonchyer.pyw: A launcher bar which launches the other Python scripts. It may be necessary to copy the taklowGUI.py script or create a symbolic link in the espeak-text-to-speech directory since otherwise its import fails when launcher in this way. The launcher bar uses TaklowKernewekLonch.py which is adaptation of PyGadgets.py from the Programming Python 3rd edition examples. This uses the further programs launchmodes.py and Launcher.py taken from the Programming Python 3rd edition examples.
+
+

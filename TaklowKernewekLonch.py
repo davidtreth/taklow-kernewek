@@ -1,0 +1,44 @@
+# based on PyGadgets.py from Programming Python 3rd edition examples
+import sys, time, os
+from Tkinter import *
+from launchmodes import PortableLauncher    # reuse program start class
+
+def runImmediate(mytools):
+    # launch programs immediately
+    print('Yma ow talleth Python/Tk GUI rag taklowkernewek') # msgs to temp stdout screen
+    for (name, commandLine) in mytools:
+        PortableLauncher(name, commandLine)()           # call now to start now
+    print('Unn pols mar pleg...')                       # \b means a backspace
+    if sys.platform[:3] == 'win':
+        # on Windows keep stdio console window up for 5 seconds
+        for i in range(5): time.sleep(1); print('\b' + '.'*10),
+
+def runLauncher(mytools):
+    # put up a simple launcher bar for later use
+    root = Tk()
+    root.title('TaklowKernewek GUI')
+    for (name, commandLine) in mytools:
+        b = Button(root, text=name, fg='black', bg='beige', border=2,
+                   command=PortableLauncher(name, commandLine))
+        b.pack(side=LEFT, expand=YES, fill=BOTH)
+    root.mainloop()
+
+mytools = [
+    ('Niverow', 'niverowGUI.py'),
+    ('Mutatya', 'mutatyaGUI.py'),
+    ('Inflektya', 'inflektyaGUI.py'),
+    ('Ranna Syllabennow', 'sylrannakwGUI.py'),
+    ('Treuslytherenna KK->FSS', 'treuslytherennaGUI.py'),
+    ('Statistegow Korpus', 'cornish_corpus.py'),
+    ('Tekst --> Kows (dre espeak)', 'espeak-text-to-speech/kows_kernewek_GUI.py')
+    ]
+
+if __name__ == '__main__':
+    prestart, toolbar = 1, 0
+    if prestart:
+        runImmediate(mytools)
+    if toolbar:
+        runLauncher(mytools)
+        
+    
+    
