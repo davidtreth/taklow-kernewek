@@ -145,6 +145,97 @@ def mutate(word,mutationstate):
             newword = word[1:]
         return caseFormat(newword,outputcase)
 
+def rev_mutate(word, listmode = False):
+    """ takes a word and outputs all possible words that could mutate to it """
+    outputcase = 'lower' # default
+    if word.islower():
+        outputcase = 'lower'
+    if word.istitle():
+        word = word.lower()
+        outputcase = 'title'
+    if word.isupper():
+        word = word.lower()
+        outputcase = 'upper'
+
+    unmutated = {1:[word], 2:[], 3:[], 4:[], 5:[], 6:[]}
+    if (word[0:2] == "wo")or(word[0:2] == "wu")or(word[0:3] == "wro")or(word[0:3] == "wru"):
+        # g->w
+        unmutated[2].append("g"+word[1:])
+    if (word[0] in "aeilnuwy" or word[0:2] in ["ra", "re", "ri", "ry"] or word[0:6] in ["orsedh", "orseth"]):
+        unmutated[2].append("g"+word)
+    if (word[0] == "v"):
+        unmutated[2].append("b" + word[1:])
+        unmutated[2].append("m" + word[1:])
+    if word[0] == "g":
+        unmutated[2].append("k" + word[1:])
+    if word[0] == "j":
+        unmutated[2].append("ch" + word[1:])
+    if word[0:2] == "dh":
+        unmutated[2].append("d" + word[2:])
+    if word[0] == "b":
+        unmutated[2].append("p" + word[1:])
+    if word[0] == "d":
+        unmutated[2].append("d" + word[1:])
+
+    if word[0] == "h":
+        unmutated[3].append("k" + word[1:])
+    if word[0] == "f":
+        unmutated[3].append("p" + word[1:])
+    if word[0:2] == "th":
+        unmutated[3].append("t" + word[2:])
+
+    if word[0] == "p":
+        unmutated[4].append("b" + word[1:])
+    if word[0] == "t":
+        unmutated[4].append( "d" + word[1:])
+    if word[0] == "k":
+        unmutated[4].append( "g" + word[1:])
+
+    if word[0] == "f":
+        unmutated[5].append("b" + word[1:])
+        unmutated[5].append("m" + word[1:])
+    if word[0] == "t":
+        unmutated[5].append("d" + word[1:])
+    if (word[0:3] == "hwo")or(word[0:3] == "hwu")or(word[0:4] == "hwro")or(word[0:4] == "hwru"):
+        unmutated[5].append("g" + word[2:])
+                            
+    if word[0] == "h":
+        unmutated[5].append("g"+ word[1:])
+    
+
+    if word[0] == "v":
+        unmutated[6].append("b" + word[1:])
+    if word[0] == "t":
+        unmutated[6].append("d" + word[1:])
+    if word[0] == "v":
+        unmutated[6].append("m" + word[1:])        
+        # exception for Gorsedh -> An Orsedh
+    if (word[0:6] in ["orsedh", "orseth"] or word[0] == "w"):
+        unmutated[6].append("g" + word)
+    if (word[0:2] == "wo")or(word[0:2] == "wu")or(word[0:3] == "wro")or(word[0:3] == "wru"):
+        unmutated[6].append("g" + word[1:])
+    if word[0] == "h":
+        unmutated[6].append("g" + word[1:])
+
+    unmutatedcasef = {}
+    for k in unmutated.keys():
+        unmutatedcasef[k] = []
+        for w in unmutated[k]:
+            outw = caseFormat(w, outputcase)
+            unmutatedcasef[k].append(outw)
+
+    if listmode:
+        unmutlist = []
+        for v in unmutatedcasef.values():
+            unmutlist.extend(v)
+        unmutlist = list(set(unmutlist))
+        unmutlist.sort()
+        return unmutlist
+    else:
+        return unmutatedcasef
+    
+
+
 def basicTests():
     """test code - doesn't do all cases"""
     
