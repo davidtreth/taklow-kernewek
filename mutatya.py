@@ -146,7 +146,11 @@ def mutate(word,mutationstate):
         return caseFormat(newword,outputcase)
 
 def rev_mutate(word, listmode = False):
-    """ takes a word and outputs all possible words that could mutate to it """
+    """ takes a word and outputs all possible words that could mutate to it 
+
+    By default it will output a dictionary indexed by number 1 to 6, if listmode
+    is set to True, it will be a flat list with duplicates removed
+    """
     outputcase = 'lower' # default
     if word.islower():
         outputcase = 'lower'
@@ -174,8 +178,8 @@ def rev_mutate(word, listmode = False):
         unmutated[2].append("d" + word[2:])
     if word[0] == "b":
         unmutated[2].append("p" + word[1:])
-    if word[0] == "d":
-        unmutated[2].append("d" + word[1:])
+    if word[0] == "d" and word[0:2] != "dh":
+        unmutated[2].append("t" + word[1:])
 
     if word[0] == "h":
         unmutated[3].append("k" + word[1:])
@@ -186,7 +190,7 @@ def rev_mutate(word, listmode = False):
 
     if word[0] == "p":
         unmutated[4].append("b" + word[1:])
-    if word[0] == "t":
+    if word[0] == "t" and word[0:2] != "th":
         unmutated[4].append( "d" + word[1:])
     if word[0] == "k":
         unmutated[4].append( "g" + word[1:])
@@ -194,7 +198,7 @@ def rev_mutate(word, listmode = False):
     if word[0] == "f":
         unmutated[5].append("b" + word[1:])
         unmutated[5].append("m" + word[1:])
-    if word[0] == "t":
+    if word[0] == "t" and word[0:2] != "th":
         unmutated[5].append("d" + word[1:])
     if (word[0:3] == "hwo")or(word[0:3] == "hwu")or(word[0:4] == "hwro")or(word[0:4] == "hwru"):
         unmutated[5].append("g" + word[2:])
@@ -205,7 +209,7 @@ def rev_mutate(word, listmode = False):
 
     if word[0] == "v":
         unmutated[6].append("b" + word[1:])
-    if word[0] == "t":
+    if word[0] == "t" and word[0:2] != "th":
         unmutated[6].append("d" + word[1:])
     if word[0] == "v":
         unmutated[6].append("m" + word[1:])        
@@ -234,7 +238,41 @@ def rev_mutate(word, listmode = False):
     else:
         return unmutatedcasef
     
+def format_rev_mutate(revmdict, kw=False):
+    """ return a formatted output of the reversed mutation dictionary 
 
+    If kw is True, the explanation is in Cornish
+    """
+    if kw:
+        mdesc = {1:"Furv didreylys: ",
+                 2:"Treylyans medhel (studh 2) diworth: ",
+                 3:"Treylyans hwythsonek (studh 3) diworth: ",
+                 4:"Treylyans kales (studh 4) diworth: ",
+                 5:"Treylyans kemmyskys (studh 5) diworth: ",
+                 6:"Treylyans kemmyskys (wosa raghanow stegys a-ji 'th) diworth: "}
+        output = "Y halsa bos an ger:\n\n"
+    else:
+        mdesc = {1:"Unmutated form: ",
+                 2:"Soft mutation (2nd state) of: ",
+                 3:"Breathed mutation (3rd state) of: ",
+                 4:"Hard mutation (4th state) of: ",
+                 5:"Mixed mutation (5th state) of: ",
+                 6:"Mixed mutation (after infixed pronoun 'th) of: "}
+        output = "The word could be:\n\n"
+    # find length of longest explanation string
+    # so that the output can be made to line up
+    hirder = max(len(v) for k,v in mdesc.items() if len(revmdict[k])>0)
+    hirder_r = max(len(" ".join(v)) for v in revmdict.values())
+    for k in mdesc.keys():
+        if len(revmdict[k]) > 0:
+            output += mdesc[k]
+            spasow = " "*(hirder-len(mdesc[k])+hirder_r-len(" ".join(revmdict[k])))
+            output += spasow
+            for r in revmdict[k]:
+                output += r 
+                output += " "
+            output += "\n"
+    return output
 
 def basicTests():
     """test code - doesn't do all cases"""

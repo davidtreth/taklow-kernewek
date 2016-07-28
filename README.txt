@@ -15,6 +15,7 @@ cornish_corpus.py: a little bit of code using the Python NLTK to analyse Cornish
 inflektya.py: a python module to inflect Cornish verbs by tense and person and prepositions by person. Based on A Grammar of Modern Cornish, 3rd ed. W. Brown 2001, and Cornish Verbs, 3rd ed. Kesva an Taves Kernewek 2010. There are some classes of verbs which may be incompletely or incorrectly dealt with.
 
 mutatya.py: a python module to mutate a Cornish word where you give the word as a str and the desired mutation state as an integer between 1 and 6. Mutation is a phonetic feature of Cornish (similar to how it happens in Welsh) whereby the initial consonants of words can change in certain grammatical circumstances, e.g, kath = a cat, an gath = the cat.
+update 28.07.16: this now provides a facility to generate possible reverse mutations of a given word, e.g. "garr" could be original "garr" or "karr". These are not checked as to whether they actually exist in Cornish or whether the mutation is grammatically possible for that word.
 
 sylabellen_ranna.py: a module for splitting Cornish words into their consituent syllabels. A work in progress and a prelimary to a program to transliterate between different Cornish spelling systems such as Kemmyn and the Standard Written Form. It has also been suggested to me that in future I could also develop this in the area of rhyme, syllable length, and poetry etc.
 Update (08-07-15): now this calculates syllable and word length on the basis of 1 unit for a short vowel or consonant, 2 for half-long vowel or gemminate 'double' consonant, or 3 for a long vowel.
@@ -46,7 +47,7 @@ sentence_generator/: This folder contains some horribly obsfucated Python code t
 
 taklowGUI.py: defines some Tkinter GUI widgets imported by other GUI modules
 
-mutatyaGUI.py: A Tkinter GUI frontend for mutatya.py
+mutatyaGUI.py: A Tkinter GUI frontend for mutatya.py. Now includes reverse mutation.
 
 sylrannaGUI.py: A Tkinter GUI frontend for syllabenn_ranna_kw.py
 
