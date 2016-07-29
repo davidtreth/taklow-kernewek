@@ -78,13 +78,16 @@ def mutate(word,mutationstate, trad=False):
             newword = "v" + word[1:]
         if word[0] == "k":
             newword = "g" + word[1:]
-        if trad and word[0] == "c" and word[0:2] != "ch":
+        if trad and ((word[0] == "c" and word[0:2] != "ch")or(word[0:2] == "qw")):
             # if using traditional spelling recognise initial c
             newword = "g" + word[1:]
         if word[0:2] == "ch":
             newword = "j" + word[2:]
         if word[0] == "d":
-            newword = "dh" + word[1:]
+            if word[0:4] == "dydh":
+                newword = "j"+word[1:]
+            else:
+                newword = "dh" + word[1:]
         if word[0] == "p":
             newword = "b" + word[1:]
         if word[0] == "t":
@@ -100,6 +103,8 @@ def mutate(word,mutationstate, trad=False):
         if trad and word[0] == "c":
             if word[0:2] not in ['cl', 'cr']:
                 newword = "h" + word[1:]
+        if trad and word[0:2] == "qw":
+            newword = "wh" + word[2:]
         if word[0] == "p":
             newword = "f" + word[1:]
         if word[0] == "t":
@@ -166,7 +171,7 @@ def mutate(word,mutationstate, trad=False):
             newword = word[1:]
         return caseFormat(newword,outputcase)
 
-def rev_mutate(word, listmode = False):
+def rev_mutate(word, listmode = False, trad = False):
     """ takes a word and outputs all possible words that could mutate to it 
 
     By default it will output a dictionary indexed by number 1 to 6, if listmode
@@ -186,15 +191,23 @@ def rev_mutate(word, listmode = False):
     if (word[0:2] == "wo")or(word[0:2] == "wu")or(word[0:3] == "wro")or(word[0:3] == "wru"):
         # g->w
         unmutated[2].append("g"+word[1:])
-    if (word[0] in "aeilnuwy" or word[0:2] in ["ra", "re", "ri", "ry"] or word[0:6] in ["orsedh", "orseth"]):
+    if (word[0] in "aeilnuwy" or word[0:2] in ["ra", "re", "ri", "ry"] or word[0:6] in ["orsedh", "orseth"])and not(word[0:2] == "wh" and trad):
         unmutated[2].append("g"+word)
     if (word[0] == "v"):
         unmutated[2].append("b" + word[1:])
         unmutated[2].append("m" + word[1:])
     if word[0] == "g":
-        unmutated[2].append("k" + word[1:])
+        if trad and word[1] not in 'einyw':
+            unmutated[2].append("c" + word[1:])
+        elif trad and word[1] == "w":
+            unmutated[2].append("q" + word[1:])
+        else:
+            unmutated[2].append("k" + word[1:])
     if word[0] == "j":
-        unmutated[2].append("ch" + word[1:])
+        if word[0:4] == "jydh":
+            unmutated[2].append("d" + word[1:])
+        else:
+            unmutated[2].append("ch" + word[1:])
     if word[0:2] == "dh":
         unmutated[2].append("d" + word[2:])
     if word[0] == "b":
@@ -203,7 +216,12 @@ def rev_mutate(word, listmode = False):
         unmutated[2].append("t" + word[1:])
 
     if word[0] == "h":
-        unmutated[3].append("k" + word[1:])
+        if trad and word[1] not in 'einyw':
+            unmutated[3].append("c" + word[1:])
+        else:
+            unmutated[3].append("k" + word[1:])
+    if trad and word[0:2] == "wh":
+        unmutated[3].append("qw" + word[2:])
     if word[0] == "f":
         unmutated[3].append("p" + word[1:])
     if word[0:2] == "th":
@@ -212,9 +230,13 @@ def rev_mutate(word, listmode = False):
     if word[0] == "p":
         unmutated[4].append("b" + word[1:])
     if word[0] == "t" and word[0:2] != "th":
-        unmutated[4].append( "d" + word[1:])
+        unmutated[4].append("d" + word[1:])
     if word[0] == "k":
-        unmutated[4].append( "g" + word[1:])
+        unmutated[4].append("g" + word[1:])
+    if trad and word[0] == "c" and word[1] not in 'einyw':
+        unmutated[4].append("g" + word[1:])
+    if trad and word[0:2] == "qw":
+        unmutated[4].append("g" + word[1:])
 
     if word[0] == "f":
         unmutated[5].append("b" + word[1:])
@@ -223,20 +245,24 @@ def rev_mutate(word, listmode = False):
         unmutated[5].append("d" + word[1:])
     if (word[0:3] == "hwo")or(word[0:3] == "hwu")or(word[0:4] == "hwro")or(word[0:4] == "hwru"):
         unmutated[5].append("g" + word[2:])
-                            
+    if trad and (word[0:3] == "who")or(word[0:3] == "whu")or(word[0:4] == "whro")or(word[0:4] == "whru"):
+        unmutated[5].append("g" + word[2:])
     if word[0] == "h":
         unmutated[5].append("g"+ word[1:])
     
 
     if word[0] == "v":
         unmutated[6].append("b" + word[1:])
+        unmutated[6].append("m" + word[1:])        
     if word[0] == "t" and word[0:2] != "th":
         unmutated[6].append("d" + word[1:])
-    if word[0] == "v":
-        unmutated[6].append("m" + word[1:])        
-        # exception for Gorsedh -> An Orsedh
-    if (word[0:6] in ["orsedh", "orseth"] or word[0] == "w"):
-        unmutated[6].append("g" + word)
+    # exception for Gorsedh -> An Orsedh
+    if trad:
+        if (word[0:6] in ["orsedh", "orseth"] or (word[0] == "w" and word[1] != "h")):
+            unmutated[6].append("g" + word)
+    else:
+        if (word[0:6] in ["orsedh", "orseth"] or word[0] == "w"):
+            unmutated[6].append("g" + word)
     if (word[0:2] == "wo")or(word[0:2] == "wu")or(word[0:3] == "wro")or(word[0:3] == "wru"):
         unmutated[6].append("g" + word[1:])
     if word[0] == "h":
@@ -317,9 +343,48 @@ def basicTests():
                
     print("note - doesn't preserve capitalisation of non-standard capiTALISed input")
 
+def reverseTests():
+    """ test reverse mutation """
+    print("main form")
+    print(rev_mutate("gath"))
+    print(rev_mutate("hath"))
+    print(rev_mutate("voes"))
+    print(rev_mutate("fos"))
+    print(rev_mutate("den"))
+    print(rev_mutate("dhen"))
+    print(rev_mutate("tas"))
+    print(rev_mutate("thas"))
+    print(rev_mutate("weli"))
+    print(rev_mutate("kwari"))
+    print(rev_mutate("hwari"))
+    print(rev_mutate("whari"))
+    print(rev_mutate("gweth"))
+    print(rev_mutate("jydh"))
+    print(rev_mutate("japel"))
+    print(rev_mutate("kara"))
+    print(rev_mutate("cara"))
+    print("trad form")
+    print(rev_mutate("gath", False, True))
+    print(rev_mutate("hath", False, True))
+    print(rev_mutate("voes", False, True))
+    print(rev_mutate("fos", False, True))
+    print(rev_mutate("den", False, True))
+    print(rev_mutate("dhen", False, True))
+    print(rev_mutate("tas", False, True))
+    print(rev_mutate("thas", False, True))
+    print(rev_mutate("weli", False, True))
+    print(rev_mutate("kwari", False, True))
+    print(rev_mutate("hwari", False, True))
+    print(rev_mutate("whari", False, True))
+    print(rev_mutate("gweth", False, True))
+    print(rev_mutate("jydh", False, True)) 
+    print(rev_mutate("japel", False, True))
+    print(rev_mutate("kara", False, True))
+    print(rev_mutate("cara", False, True))
     
 if __name__ == "__main__":
     basicTests()
+    reverseTests()
 
 
     
