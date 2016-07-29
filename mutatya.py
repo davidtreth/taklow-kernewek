@@ -27,14 +27,18 @@ def caseFormat(word,outputcase):
         return word.title()
     return word
 
-def mutate(word,mutationstate):
-    # take word as a str 
-    # and mutationstate as integer from 1-6
-    # use variable outputcase
-    # to return word in same capitalisation
-    # as it went in
-    # note that non-standard capITALization
-    # will be turned lower case
+def mutate(word,mutationstate, trad=False):
+    """ 
+    take word as a str 
+    and mutationstate as integer from 1-6
+    use variable outputcase
+    to return word in same capitalisation
+    as it went in
+    note that non-standard capITALization
+    will be turned lower case
+    variable trad set to True will expect and return
+    traditional graphs as in SWF/T
+    """
     outputcase = 'lower' # default
     if word.islower():
         outputcase = 'lower'
@@ -74,6 +78,9 @@ def mutate(word,mutationstate):
             newword = "v" + word[1:]
         if word[0] == "k":
             newword = "g" + word[1:]
+        if trad and word[0] == "c" and word[0:2] != "ch":
+            # if using traditional spelling recognise initial c
+            newword = "g" + word[1:]
         if word[0:2] == "ch":
             newword = "j" + word[2:]
         if word[0] == "d":
@@ -90,6 +97,9 @@ def mutate(word,mutationstate):
         if word[0] == "k":
             if word[0:2] not in ['kl', 'kr']:
                 newword = "h" + word[1:]
+        if trad and word[0] == "c":
+            if word[0:2] not in ['cl', 'cr']:
+                newword = "h" + word[1:]
         if word[0] == "p":
             newword = "f" + word[1:]
         if word[0] == "t":
@@ -104,7 +114,12 @@ def mutate(word,mutationstate):
         if word[0] == "d":
             newword = "t" + word[1:]
         if word[0] == "g":
-            newword = "k" + word[1:]
+            if trad and word[1] not in 'einyw':
+                newword = "c" + word[1:]
+            elif trad and word[1] == "w":
+                newword = "q" + word[1:]
+            else:
+                newword = "k" + word[1:]
         return caseFormat(newword,outputcase)
 
     if mutationstate == 5:
@@ -117,10 +132,16 @@ def mutate(word,mutationstate):
         if word[0] == "m":
             newword = "f" + word[1:]
         if (word[0:2] == "go")or(word[0:2] == "gu")or(word[0:3] == "gro")or(word[0:3] == "gru"):
-            newword = "hw" + word[1:]
+            if trad:
+                newword = "wh" + word[1:]
+            else:
+                newword = "hw" + word[1:]
             return caseFormat(newword,outputcase)
-        if word[0] == "g":
-            newword = "h"+ word[1:]
+        if word[0:2] == "gw" and trad:
+            newword = "wh"+ word[2:]
+        else:
+            if word[0] == "g":
+                newword = "h"+ word[1:]
         return caseFormat(newword,outputcase)
 
     if mutationstate == 6:
@@ -141,7 +162,7 @@ def mutate(word,mutationstate):
             return caseFormat(newword,outputcase)
         if word[0] == "g":
             newword = "h" + word[1:]
-        if (word[0:2] == "gw"):
+        if word[0:2] == "gw":
             newword = word[1:]
         return caseFormat(newword,outputcase)
 
