@@ -249,7 +249,8 @@ def rev_mutate(word, listmode = False, trad = False):
         unmutated[5].append("g" + word[2:])
     if word[0] == "h":
         unmutated[5].append("g"+ word[1:])
-    
+    if trad and word[0:2] == "wh":
+        unmutated[5].append("gw"+ word[2:])
 
     if word[0] == "v":
         unmutated[6].append("b" + word[1:])
@@ -265,8 +266,9 @@ def rev_mutate(word, listmode = False, trad = False):
             unmutated[6].append("g" + word)
     if (word[0:2] == "wo")or(word[0:2] == "wu")or(word[0:3] == "wro")or(word[0:3] == "wru"):
         unmutated[6].append("g" + word[1:])
-    if word[0] == "h":
+    if word[0] == "h" and word[1] != "w":
         unmutated[6].append("g" + word[1:])
+
 
     unmutatedcasef = {}
     for k in unmutated.keys():

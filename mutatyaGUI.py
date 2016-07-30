@@ -1,5 +1,5 @@
 from Tkinter import *
-from taklowGUI import Kwitya, Radiobar, Entrybar
+from taklowGUI import Kwitya, Radiobar, Entrybar, CheckButtonBar
 import mutatya
 
 if __name__ == '__main__':
@@ -12,7 +12,12 @@ if __name__ == '__main__':
     mstate = Radiobar(root, ['1 (heb treylyans)', '2 (medhel)', '3 (kales)', '4 (hwythys)', '5 (kemmyskys)', '6 (kemmyskys wosa \'th)', '7 (kildreylyans)'], side=TOP, anchor=NW,default='1 (heb treylyans)')
     mstate.pack(side=LEFT, fill=Y)
     mstate.config(relief=RIDGE, bd=2)
-    def allstates(): print mstate.state(), intmstate(), ent.fetch()
+
+    tradgraph = CheckButtonBar(root, ['Lytherennans hengovek'], side=TOP, anchor=NW)
+    tradgraph.pack(side=LEFT, fill=Y)
+    tradgraph.config(relief=RIDGE, bd=2)
+
+    def allstates(): print mstate.state(), tradgraph.state(), intmstate(), ent.fetch()
     def intmstate():
         """ extract integer mutation state to call mutatya.mutate() with
         if nothing has been clicked, assume no mutation (state 1) """
@@ -25,12 +30,12 @@ if __name__ == '__main__':
         entry bar """
         if intmstate() < 7:
             print(mutatya.mutate(ent.fetch(),intmstate()))
-            msg2.config(text = mutatya.mutate(ent.fetch(),intmstate()),
+            msg2.config(text = mutatya.mutate(ent.fetch(),intmstate(), tradgraph.state()[0]),
                         font=('Monospace', 18, 'bold'))
         else:
-            print(mutatya.format_rev_mutate(mutatya.rev_mutate(ent.fetch()), True))
-            msg2.config(text = mutatya.format_rev_mutate(mutatya.rev_mutate(ent.fetch()), True),
-                        font=('Monospace', 14, 'bold'))
+            print(mutatya.format_rev_mutate(mutatya.rev_mutate(ent.fetch(), False, tradgraph.state()[0]), True))
+            msg2.config(text = mutatya.format_rev_mutate(mutatya.rev_mutate(ent.fetch(), False, tradgraph.state()[0]), True),
+            font=('Monospace', 14, 'bold'))
     
     msg = Label(root, text="Gorrewgh ger kernewek a-woles mar pleg")
     msg.config(font=('Arial', 16, 'bold'))
