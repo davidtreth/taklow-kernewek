@@ -12,44 +12,50 @@
 # 
 # 21-12-2015 - edits to start to make this more modular
 #
+from __future__ import print_function
 import nltk
 # import the matplotlib library to make the output graphs
 import matplotlib
 import pylab
 
 def basicReport(text):
-    print("Text: ",text.name)
+    print(("Text: {n}".format(n=text.name)))
     print("\n")
-    print("Collocations: {c}\n".format(c=text.collocations()))
+    print(("Collocations: {c}\n".format(c=text.collocations())))
     # frequency distribution
     fdist_len = nltk.FreqDist([len(w) for w in text])
     # print fdist_len.keys()
     # this should already be alphabetic
     text_alpha = [w for w in text if w.isalpha()]
-    print("number of words = {nw}\n".format(nw=len(text_alpha)))
-    print("number of different words = {ndw}\n".format(ndw = len(set([w.lower() for w in text_alpha]))))
+    print(("number of words = {nw}\n".format(nw=len(text_alpha))))
+    print(("number of different words = {ndw}\n".format(ndw = len(set([w.lower() for w in text_alpha])))))
     # frequency distribution (alphabetic)
     fdist_len2 = nltk.FreqDist([len(w) for w in text_alpha])
-    print("Lengths of words in descending order of frequency {lw}\n".format(lw = [(length,freq) for length,freq in fdist_len2.items()]))
+    print(("Lengths of words in descending order of frequency {lw}\n".format(lw = [(length,freq) for length,freq in fdist_len2.items()])))
     # frequency distribution (alphabetic, lowercase)
     fdist_alpha = nltk.FreqDist([w.lower() for w in text_alpha])
-    vocab = fdist_alpha.keys()
-    print("Top 50 words: {w50}\n".format(w50=vocab[:50]))
+    
+    vocabkeyvaltup = [(k,v) for (k,v) in fdist_alpha.items()]
+    vocab = sorted(vocabkeyvaltup, key=lambda keyvaltup: keyvaltup[1], reverse=True)
+    vocab = [v[0] for v in vocab]
+    print(("Top 50 words: {w50}\n".format(w50=vocab[:50])))
     # frequency distribution (alphabetic, lowercase, more than 4 letters)
-    fdist_alpha_fourormore = nltk.FreqDist([w.lower() for w in text_alpha if len(w)>=4]) 
-    vocab4 = fdist_alpha_fourormore.keys()
-    print("Top 50 words of 4 or more letters: {w50_4}\n".format(w50_4=vocab4[:50]))
+    fdist_alpha_fourormore = nltk.FreqDist([w.lower() for w in text_alpha if len(w)>=4])
+    vocabkeyvaltup = [(k,v) for (k,v) in fdist_alpha_fourormore.items()]
+    vocab4 = sorted(vocabkeyvaltup, key=lambda keyvaltup: keyvaltup[1], reverse=True)
+    vocab4 = [v[0] for v in vocab4]
+    print(("Top 50 words of 4 or more letters: {w50_4}\n".format(w50_4=vocab4[:50])))
 
 def listPercentsN(text,cfd,dictlist):
-    print "\nText: ",text.name,"\n"
+    print("\nText: {n}\n".format(n=text.name))
     fdist = cfd[text.name]
     # dictionary indexed by length of word
     lenwordsdict = {}
     for s in fdist:
-        print s," letters : ",str(100*(float(fdist[s])/len(text)))[:5],"% "
+        print(s," letters : ",str(100*(float(fdist[s])/len(text)))[:5],"% ")
         lenwordsdict[s] = 100*(float(fdist[s])/len(text))
     dictlist.append(lenwordsdict)
-    print "\n"
+    print("\n")
     #cfd.tabulate(cumulative=True)
 
         
@@ -67,16 +73,16 @@ def nLettersFDist(kk_texts_Texts,names):
         listPercentsN(t,cfd,dictlist)
     #print dictlist
     for d in range(len(dictlist)):
-        keyslist = [0]+[i[0] for i in dictlist[d].items()]
-        valueslist = [0]+[i[1] for i in dictlist[d].items()]
+        keyslist = [0]+[i[0] for i in list(dictlist[d].items())]
+        valueslist = [0]+[i[1] for i in list(dictlist[d].items())]
         valueslist_cumulative = [sum(valueslist[0:i+1]) for i in keyslist]
-        print keyslist
+        print(keyslist)
         #pylab.plot(keyslist,valueslist,label = nameslist[d],linewidth=2)
         if d == 7:
             st = "--"
         else:
             st = "-"
-        print "d=",d
+        print("d=",d)
         pylab.plot(keyslist,valueslist_cumulative,label = nameslist[d],linewidth=2,linestyle=st)
     pylab.title("Cumulative % frequency of lengths of words in various Cornish texts.")
     pylab.legend()
@@ -94,11 +100,13 @@ def compareSamples(kk_texts_Texts,names):
         for word in text if word.isalpha())
 
     for t in kk_texts_Texts:
-        print "\nText: ",t.name,"\n"
+        print("\nText: {n}\n".format(n=t.name))
         fdist = cfd2[t.name]
-        for s in fdist.keys()[:20]:
-            print s," : ",str(100*(float(fdist[s])/len(t)))[:5],"% "
-        print "\n"
+        keyvaltup = [(k,v) for (k,v) in fdist.items()]
+        keyvaltupsort = sorted(keyvaltup, key=lambda keyvaltup: keyvaltup[1], reverse=True)
+        for kv in keyvaltupsort[:20]:
+            print(kv[0]," : ",str(100*(float(kv[1])/len(t)))[:5],"% ")
+        print("\n")
     #cfd2.tabulate(cumulative=True)
     #cfd.plot(cumulative=True)
 
@@ -108,7 +116,7 @@ def compareSamples(kk_texts_Texts,names):
     for t in kk_texts_Texts:
         f = cfd2[t.name]
         freqs_list = [100.0*float(f[s])/len(t) for s in samples]
-        print freqs_list
+        print(freqs_list)
         freqs_lists.append(freqs_list)
     
     ind = pylab.arange(len(samples))

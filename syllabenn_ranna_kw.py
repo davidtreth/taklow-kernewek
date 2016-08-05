@@ -27,8 +27,8 @@
 # in the whole line
 
 from __future__ import print_function
-import nltk
 import sys
+import nltk
 import re
 import argparse
 import codecs
@@ -223,7 +223,7 @@ class RannaSyllabenn:
         stem = [t[0] for t in tuples]
         dsyl = [t[1]+t[2] for t in tuples]
 
-        print("\nList of (stem,last syllable): {l}".format(l=zip(stem,dsyl)))
+        print("\nList of (stem,last syllable): {l}".format(l=list(zip(stem,dsyl))))
         
         # Kavos an diwettha bogalenn ha kessonenn mars eus -BK orth penn an ger
         # i.e. match regular expression for vowel+consonant at end of the word
@@ -235,7 +235,7 @@ class RannaSyllabenn:
         stem = [t[0] for t in tuples]
         dsyl = [t[1]+t[2] for t in tuples]
         print("\nLast vowel+consonant: {l}".format(l=lostBK))
-        print("\nList of (stem,last syllable): {l}".format(l=zip(stem,dsyl)))
+        print("\nList of (stem,last syllable): {l}".format(l=list(zip(stem,dsyl))))
 
         # create list of last syllables and first syllables of list of words 'geryow'
         dsls = [self.match_syl(g,regexps.diwetRegexp) for g in self.geryow if self.match_syl(g,regexps.diwetRegexp) != '']
@@ -443,7 +443,7 @@ class Syllabenn:
         """ find the lengths of each part of the syllable
         and the syllable as a whole """
         # initialise elements of lengtharray to 1
-        lengtharray = range(len(self.sylparts))
+        lengtharray = list(range(len(self.sylparts)))
         lengtharray = [i*0 + 1 for i in lengtharray]
         punctchars = "'.,;:!?()-"
         graph_nopunct = self.grapheme

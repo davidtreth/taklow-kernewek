@@ -6,7 +6,7 @@ def getKKtexts(filepattern=r".*kk.*\.txt",corpus_root = "kernewek_corpus/"):
     kk_texts = PlaintextCorpusReader(corpus_root,filepattern,encoding="latin-1")
     # print names of files to the console
     # to make sure we're selecting the right files
-    print kk_texts.fileids(),"\n"
+    print(kk_texts.fileids(),"\n")
     # names are hardcoded atm    
     kknames = ["Bewnans Meryasek","Gwreans an Bys","Origo Mundi","Passio Christ","Resurrectio Domini","Solemptnyta","LoTR chapter","Tregear Homilies"]
     return kk_texts, kknames

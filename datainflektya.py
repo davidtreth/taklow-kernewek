@@ -156,8 +156,8 @@ class RannowVerbAnreythOllAmser(object):
         if tense in self.dict_tenses:
             return self.dict_tenses[tense][person]
         else:
-            print("Nyns eus amser {t} dhe verb {v}.\n\
-Verb {v} doesn't have tense {t}".format(v=self.verbnoun, t=tense))
+            print(("Nyns eus amser {t} dhe verb {v}.\n\
+Verb {v} doesn't have tense {t}".format(v=self.verbnoun, t=tense)))
             return "NULL"
 
 
