@@ -152,7 +152,8 @@ class RannowVerbAnreythOllAmser(object):
         kavoes verb inflektys gans an amser ha'n person
         return the inflected verb for the tense and person
         """
-        if self.dict_tenses.has_key(tense):
+        #if self.dict_tenses.has_key(tense):
+        if tense in self.dict_tenses:
             return self.dict_tenses[tense][person]
         else:
             print("Nyns eus amser {t} dhe verb {v}.\n\

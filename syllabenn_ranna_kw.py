@@ -33,8 +33,10 @@ import re
 import argparse
 import codecs
 import datageryow
-reload(sys)
-sys.setdefaultencoding('utf-8')
+import imp
+imp.reload(sys)
+if sys.version_info[0] < 3:
+    sys.setdefaultencoding('utf-8')
 
 class kwKemmynRegExp:
     """
@@ -354,7 +356,7 @@ class Ger:
         """ return long output for each word"""
         line1 = "An ger yw: {g}".format(g=self.graph)
         line2 = "Niver a syllabennow yw: {n}".format(n=self.n_sls)
-        line3 = "Hag yns i: {sls}".format(sls=[s.encode("ascii") for s in self.sls])
+        line3 = "Hag yns i: {sls}".format(sls=[s.encode("utf-8") for s in self.sls])
         outlines = [line1,line2,line3]
         # for each syllable, display its spelling - capitalized if stressed
         # structure (CVC/CV/VC/V)
