@@ -1,7 +1,7 @@
 # coding=utf-8
 # David Trethewey
-# updated 11-11-2015
-
+# updated 06-08-2016
+import sys
 import mutatya
 
 numarray = ["onan","dew","tri","peswar","pymp",
@@ -92,7 +92,7 @@ def numberkw_noun(num, noun, fem=False, npl = "ow"):
     if (num > 39 and num < 100)or(num > 119 and num < 200):
         # numbers 40 to 199 excluding 100-119
         firstpart = num % 20
-        secondpart = num / 20
+        secondpart = num // 20
         if firstpart == 0:
             num_k = numarray[secondpart-1] + " ugens " + noun
         else:
@@ -109,7 +109,7 @@ def numberkw_noun(num, noun, fem=False, npl = "ow"):
 
     if num > 199 and num < 1000:
         ha = " ha "
-        kansow = num / 100
+        kansow = num // 100
         if num % 100 == 0:
             num_k = numarray[kansow-1] + " kans " + noun
         else: 
@@ -123,10 +123,10 @@ def numberkw_noun(num, noun, fem=False, npl = "ow"):
             num_k = "mil "+ mutatya.mutate(noun,2)
         else:
             if num % 1000 == 0:
-                num_k = numberkw(1000 * num/1000) + " " + mutatya.mutate(noun,2)
+                num_k = numberkw(1000 * num//1000) + " " + mutatya.mutate(noun,2)
             else:
                 if num % 1000 < 21 or (num % 1000 < 200 and num % 20 == 0) or num % 100 == 0:
-                    num_k = numberkw(1000*(num/1000)) + " " + mutatya.mutate(noun,2) + " ha " + numberkw(num % 1000)
+                    num_k = numberkw(1000*(num//1000)) + " " + mutatya.mutate(noun,2) + " ha " + numberkw(num % 1000)
                 else:
                     num_k = numberkw(num) + " a " + mutatya.mutate(npl,2)
 
@@ -136,12 +136,12 @@ def numberkw_noun(num, noun, fem=False, npl = "ow"):
     if num > 39999 and num < 100000:
         num_k = numberkw(num) + " a " + mutatya.mutate(npl,2)
         if num % 20000 == 0:
-            num_k = numberkw(num/20000) + " ugens mil " + mutatya.mutate(noun,2)
+            num_k = numberkw(num//20000) + " ugens mil " + mutatya.mutate(noun,2)
 
     if num > 99999 and num < 1000000:
         num_k = numberkw(num) +" a " + mutatya.mutate(npl,2)
         if num % 100000 == 0:
-            num_k = numberkw(num/100000) + " kans mil " + mutatya.mutate(noun,2)
+            num_k = numberkw(num//100000) + " kans mil " + mutatya.mutate(noun,2)
         if num == 100000:
             num_k = "kans mil "+ mutatya.mutate(noun,2)
     if num > 999999 and num < 2000000:
@@ -152,14 +152,14 @@ def numberkw_noun(num, noun, fem=False, npl = "ow"):
             
     if num > 1999999 and num < 20000001:
         if num % 1000000 == 0:
-            num_k = numberkw(num / 1000000) + " milvil " + mutatya.mutate(noun,2)
+            num_k = numberkw(num // 1000000) + " milvil " + mutatya.mutate(noun,2)
             return num_k
         else:
             num_k = numberkw(num) +  " a " + mutatya.mutate(npl,2)
 
     if num > 20000000 and num < 1000000000:
         if num % 20000000 == 0 and num < 200000000:
-            num_k = numberkw(num/1000000) + " milvil " + mutatya.mutate(noun,2)
+            num_k = numberkw(num//1000000) + " milvil " + mutatya.mutate(noun,2)
         else:
             num_k = numberkw(num) +  " a " + mutatya.mutate(npl,2)
 
@@ -194,7 +194,7 @@ def numberkw(num):
 
     if (num > 39 and num < 100)or(num > 119 and num < 200):
         firstpart = num % 20
-        secondpart = num / 20
+        secondpart = num // 20
 
         num_k = numarray[firstpart-1] +" ha " + numarray[secondpart-1] + " ugens"
         if firstpart == 0:
@@ -207,7 +207,7 @@ def numberkw(num):
     if num > 100 and num < 120:
         num_k = "kans ha "+ numberkw(num-100)
     if num > 199 and num < 1000:
-        kansow = num / 100
+        kansow = num // 100
         if num % 100 < 21 or num % 20 == 0 or num % 100 == 50:
             if num % 100 == 0:
                 num_k = numarray[kansow-1] + " kans"
@@ -227,32 +227,32 @@ def numberkw(num):
 
     if num > 1999 and num < 21000:
         if num % 1000 == 0:
-            num_k = numberkw(num/1000) + " mil"
+            num_k = numberkw(num//1000) + " mil"
         else:
-            num_k = numberkw(num/1000) + " mil"+ha + numberkw(num % 1000)
+            num_k = numberkw(num//1000) + " mil"+ha + numberkw(num % 1000)
     if num > 20999 and num < 40000:
         if num % 1000  == 0:
-            num_k = numberkw((num % 20000)/1000) + " mil warn ugens"
+            num_k = numberkw((num % 20000)//1000) + " mil warn ugens"
         else:            
-            num_k = numberkw((num % 20000)/1000) + " mil warn ugens"+ha+ numberkw(num % 1000)
+            num_k = numberkw((num % 20000)//1000) + " mil warn ugens"+ha+ numberkw(num % 1000)
     if num >39999 and num<100000:
         if num % 1000 == 0:
-            num_k = numberkw((num % 20000)/1000) + " mil ha "+ numberkw(num/20000) + " ugens"
+            num_k = numberkw((num % 20000)//1000) + " mil ha "+ numberkw(num//20000) + " ugens"
         else:
-            num_k = numberkw((num % 20000)/1000) + " mil ha "+ numberkw(num/20000) + " ugens" +ha+ numberkw(num % 1000)
+            num_k = numberkw((num % 20000)//1000) + " mil ha "+ numberkw(num//20000) + " ugens" +ha+ numberkw(num % 1000)
     if num > 99999 and num < 1000000:
-        num_k = numberkw(num/1000) + " a vilyow" + ha + numberkw(num % 1000)
+        num_k = numberkw(num//1000) + " a vilyow" + ha + numberkw(num % 1000)
         if num % 1000 == 0:
-            num_k = numberkw(num/1000) + " a vilyow"
+            num_k = numberkw(num//1000) + " a vilyow"
         if num < 200000:
-            num_k = "kans ha "+ numberkw((num-100000)/1000) + " a vilyow" +ha + numberkw(num % 1000)
+            num_k = "kans ha "+ numberkw((num-100000)//1000) + " a vilyow" +ha + numberkw(num % 1000)
             if num % 1000 == 0:
-                num_k = "kans ha "+ numberkw((num-100000)/1000) + " a vilyow"
+                num_k = "kans ha "+ numberkw((num-100000)//1000) + " a vilyow"
         if num % 100000 == 0:
-            num_k = numberkw(num/100000) + " kans mil"
+            num_k = numberkw(num//100000) + " kans mil"
         else:
             if num % 20000 == 0 and num < 200000:
-                num_k = numberkw(num/20000) + " ugens mil"
+                num_k = numberkw(num//20000) + " ugens mil"
         if num == 100000:
             num_k = "kans mil"
     if num > 999999 and num < 2000000:
@@ -265,23 +265,23 @@ def numberkw(num):
                 num_k = "milvil, " + numberkw(num-1000000)
     if num > 1999999 and num < 20000001:
         if num % 1000000 == 0:
-            num_k = numberkw(num/1000000) + " milvil"
+            num_k = numberkw(num//1000000) + " milvil"
         else:
             if ((num % 1000000 < 100)and(num % 20 == 0))or(num % 1000000 < 20):
-                num_k = numberkw(num/1000000) + " milvil ha " + numberkw(num % 1000000)
+                num_k = numberkw(num//1000000) + " milvil ha " + numberkw(num % 1000000)
             else:
-                num_k = numberkw(num/1000000) + " milvil, " + numberkw(num % 1000000)
+                num_k = numberkw(num//1000000) + " milvil, " + numberkw(num % 1000000)
     if num > 20000000 and num < 1000000000:
         if num % 20000000 == 0 and num < 200000000:
-            num_k = numberkw(num / 1000000) + " milvil"
+            num_k = numberkw(num // 1000000) + " milvil"
         else:
             if num % 1000000 == 0:
-                num_k = numberkw(num/1000000) + " a vilvilyow"
+                num_k = numberkw(num//1000000) + " a vilvilyow"
             else:
                 if (num % 1000000 < 100)and((num % 20 == 0)or(num % 1000000 < 20)):
-                    num_k = numberkw(num/1000000) + " a vilvilyow ha " + numberkw(num % 1000000)
+                    num_k = numberkw(num//1000000) + " a vilvilyow ha " + numberkw(num % 1000000)
                 else:
-                    num_k = numberkw(num/1000000) + " a vilvilyow, " + numberkw(num % 1000000)
+                    num_k = numberkw(num//1000000) + " a vilvilyow, " + numberkw(num % 1000000)
     if num > 999999999 and num < 2000000000:
         if num == 1000000000:
             num_k = "bilvil"
@@ -292,15 +292,15 @@ def numberkw(num):
                 num_k = "bilvil, " + numberkw(num-1000000000)
     if num > 1999999999 and num < 20000000001:
         if num % 1000000000 == 0:
-            num_k = numberkw(num / 1000000000) + " bilvil"
+            num_k = numberkw(num // 1000000000) + " bilvil"
         else:
             if (num % 1000000000 < 100)and((num % 20 == 0)or(num % 1000000000 < 20)):
-                num_k = numberkw(num/1000000000) + " bilvil ha " + numberkw(num % 1000000000)
+                num_k = numberkw(num//1000000000) + " bilvil ha " + numberkw(num % 1000000000)
             else:
-                num_k = numberkw(num/1000000000) + " bilvil, " + numberkw(num % 1000000000)
+                num_k = numberkw(num//1000000000) + " bilvil, " + numberkw(num % 1000000000)
 
     if num > 2e10:
-        num_k = numberkw(num/1000000000) + " a bilvilyow, " + numberkw(num % 1000000000)
+        num_k = numberkw(num//1000000000) + " a bilvilyow, " + numberkw(num % 1000000000)
     
     num_k = num_k.replace("  "," ")
     num_k = num_k.replace("ha u","hag u")
@@ -340,26 +340,41 @@ def numberkw_float_noun(num, noun, fem=False, npl = "ow"):
         return num_k
     
 def interactiveTest():
-    number = raw_input("Enter number as integer:")
+    if sys.version_info[0] < 3:
+        number = raw_input("Enter number as integer:")
+    else:
+        number = input("Enter number as integer:")
     number_int = int(number)
-    noun = raw_input("Enter noun:")        
+    if sys.version_info[0] < 3:
+        noun = raw_input("Enter noun:")
+    else:
+        noun = input("Enter noun:")
     if noun == '':
         print(numberkw(number_int))
     else:
-        isfem = raw_input("type 'f' if the noun is feminine:")
+        if sys.version_info[0] < 3:
+            isfem = raw_input("type 'f' if the noun is feminine:")
+        else:
+            isfem = input("type 'f' if the noun is feminine:")
         if isfem.lower() == 'f':
             fem = True
         else:
             fem = False
         if number_int > 220:
-            npl = raw_input("What is the plural of the noun?")
+            if sys.version_info[0] < 3:
+                npl = raw_input("What is the plural of the noun?")
+            else:
+                npl = input("What is the plural of the noun?")
             if npl == "":
                 npl = "ow"
         else:
             # this won't be used for num < 221
             npl = "ow"
-        print numberkw_noun(number_int,noun,fem,npl)
-    num2 = raw_input("Enter floating point number:")
+        print(numberkw_noun(number_int,noun,fem,npl))
+    if sys.version_info[0] < 3:
+        num2 = raw_input("Enter floating point number:")
+    else:
+        num2 = input("Enter floating point number:")
     num2 = float(num2)
     print(numberkw_float(num2))
     
@@ -394,5 +409,5 @@ def basicTests():
     print(underline)
 if __name__ == "__main__":
     basicTests()
-    print
+    print()
     interactiveTest()

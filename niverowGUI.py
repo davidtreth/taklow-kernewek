@@ -1,4 +1,10 @@
-from Tkinter import *
+from __future__ import print_function
+import sys
+if sys.version_info[0] < 3:
+    from Tkinter import *
+else:
+    from tkinter import *
+
 from taklowGUI import Kwitya, Entrybar, CheckButtonBar
 import niverow
 
@@ -12,7 +18,7 @@ if __name__ == '__main__':
     options = CheckButtonBar(root, ['Usya Hanow','Hanow Benow'], side=TOP, anchor=NW)
     options.pack(side=LEFT, fill=Y)
     options.config(relief=RIDGE, bd=2)
-    def allstates(): print options.state(), ent.fetch(), ent2.fetch()
+    def allstates(): print(options.state(), ent.fetch(), ent2.fetch())
 
     def printniver():
         """ show the number in Cornish, with the noun if the checkbox
