@@ -1,4 +1,9 @@
-from Tkinter import *
+from __future__ import print_function
+import sys
+if sys.version_info[0] < 3:
+    from Tkinter import *
+else:
+    from tkinter import *
 from taklowGUI import Kwitya, Radiobar, Entrybar, CheckButtonBar
 import mutatya
 
@@ -17,7 +22,7 @@ if __name__ == '__main__':
     tradgraph.pack(side=LEFT, fill=Y)
     tradgraph.config(relief=RIDGE, bd=2)
 
-    def allstates(): print mstate.state(), tradgraph.state(), intmstate(), ent.fetch()
+    def allstates(): print(mstate.state(), tradgraph.state(), intmstate(), ent.fetch())
     def intmstate():
         """ extract integer mutation state to call mutatya.mutate() with
         if nothing has been clicked, assume no mutation (state 1) """

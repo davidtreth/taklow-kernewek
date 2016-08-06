@@ -3,7 +3,7 @@
 # launch Python programs with reusable launcher scheme classes;
 # assumes 'python' is on your system path (but see Launcher.py)
 ###############################################################
-
+from __future__ import print_function
 import sys, os
 pyfile = (sys.platform[:3] == 'win' and 'python.exe') or 'python'
 
@@ -27,7 +27,7 @@ class LaunchMode:
         self.announce(self.what)
         self.run(self.where)               # subclasses must define run()
     def announce(self, text):              # subclasses may redefine announce()
-        print text                         # methods instead of if/elif logic
+        print(text)                        # methods instead of if/elif logic
     def run(self, cmdline):
         assert 0, 'run must be defined'
 
@@ -79,18 +79,28 @@ class QuietPortableLauncher(PortableLauncher):
 
 def selftest():
     program = 'niverowGUI.py '   # assume in cwd
-    raw_input('default mode...')
+    if sys.version_info[0] < 3:
+        raw_input('default mode...')
+    else:
+        input('default mode...')
     launcher = PortableLauncher('Niverow GUI', program)
     launcher()                                           # no block
-
-    raw_input('system mode...')
+    if sys.version_info[0] < 3:
+        raw_input('system mode...')
+    else:
+        input('system mode...')
     System('Niverow GUI', program)()                          # blocks
-
-    raw_input('popen mode...')
+    if sys.version_info[0] < 3:
+        raw_input('popen mode...')
+    else:
+        input('popen mode...')
     Popen('Niverow GUI', program)()                           # blocks
 
     if sys.platform[:3] == 'win':
-        raw_input('DOS start mode...')
+        if sys.version_info[0] < 3:
+            raw_input('DOS start mode...')
+        else:
+            input('DOS start mode...')
         StartArgs('Niverow GUI', os.path.normpath(program))()
 
 if __name__ == '__main__': selftest()

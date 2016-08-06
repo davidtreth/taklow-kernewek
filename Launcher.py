@@ -22,7 +22,7 @@ Python programs can always be started under the Windows port by clicking
 module search path too for cross-directory package imports.
 ==========================================================================
 """
-
+from __future__ import print_function
 import sys, os
 try:
     PyInstallDir = os.path.dirname(sys.executable)
@@ -46,16 +46,16 @@ def which(program, trace=True):
     except:
         ospath = '' # okay if not set
     systempath = ospath.split(os.pathsep)
-    if trace: print 'Looking for', program, 'on', systempath
+    if trace: print('Looking for', program, 'on', systempath)
 
     for sysdir in systempath:
         filename = os.path.join(sysdir, program)      # adds os.sep between
         if os.path.isfile(filename):                  # exists and is a file?
-            if trace: print 'Found', filename
+            if trace: print('Found', filename)
             return filename
         else:
-            if trace: print 'Not at', filename
-    if trace: print program, 'not on system path'
+            if trace: print('Not at', filename)
+    if trace: print(program, 'not on system path')
     return None
 
 
@@ -68,7 +68,7 @@ def findFirst(thisDir, targetFile, trace=False):
     targetFile must be a simple base name, not dir path.
     could also use os.walk or os.path.walk to do this.
     """
-    if trace: print 'Scanning', thisDir
+    if trace: print('Scanning', thisDir)
     for filename in os.listdir(thisDir):                    # skip . and ..
         if filename in [os.curdir, os.pardir]:              # just in case
             continue
@@ -104,14 +104,14 @@ def guessLocation(file, isOnWindows=(sys.platform[:3]=='win'), trace=True):
         tries = [cwd, os.environ['HOME'], '/usr/bin', '/usr/local/bin']
 
     for dir in tries:
-        if trace: print 'Searching for %s in %s' % (file, dir)
+        if trace: print('Searching for %s in %s' % (file, dir))
         try:
             match = findFirst(dir, file)
         except OSError: 
-            if trace: print 'Error while searching', dir     # skip bad drives
+            if trace: print('Error while searching', dir)     # skip bad drives
         else:
             if match: return match
-    if trace: print file, 'not found! - configure your environment manually'
+    if trace: print(file, 'not found! - configure your environment manually')
     return None
 
 
@@ -139,24 +139,24 @@ def configPythonPath(examplesDir, packageRoots=PP3EpackageRoots, trace=True):
         ospythonpath = os.environ['PYTHONPATH']
     except:
         ospythonpath = '' # okay if not set 
-    if trace: print 'PYTHONPATH start:\n', ospythonpath
+    if trace: print('PYTHONPATH start:\n', ospythonpath)
 
     addList = []
     for root in packageRoots:
         importDir = examplesDir + root
         if importDir in sys.path:
-            if trace: print 'Exists', importDir
+            if trace: print('Exists', importDir)
         else:
-            if trace: print 'Adding', importDir
+            if trace: print('Adding', importDir)
             sys.path.append(importDir)
             addList.append(importDir)
 
     if addList:
         addString = os.pathsep.join(addList) + os.pathsep
         os.environ['PYTHONPATH'] = addString + ospythonpath
-        if trace: print 'PYTHONPATH updated:\n', os.environ['PYTHONPATH']
+        if trace: print('PYTHONPATH updated:\n', os.environ['PYTHONPATH'])
     else:
-        if trace: print 'PYTHONPATH unchanged'
+        if trace: print('PYTHONPATH unchanged')
 
 
 def configSystemPath(pythonDir, trace=True):
@@ -167,13 +167,13 @@ def configSystemPath(pythonDir, trace=True):
         ospath = os.environ['PATH']
     except:
         ospath = '' # okay if not set  
-    if trace: print 'PATH start:\n', ospath
+    if trace: print('PATH start:\n', ospath)
 
     if ospath.lower().find(pythonDir.lower()) == -1:            # not found?
         os.environ['PATH'] = ospath + os.pathsep + pythonDir    # not case diff
-        if trace: print 'PATH updated:\n', os.environ['PATH']
+        if trace: print('PATH updated:\n', os.environ['PATH'])
     else:
-        if trace: print 'PATH unchanged'
+        if trace: print('PATH unchanged')
 
 
 def runCommandLine(pypath, exdir, command, isOnWindows=0, trace=True):
@@ -192,7 +192,7 @@ def runCommandLine(pypath, exdir, command, isOnWindows=0, trace=True):
     os.environ['PP3E_PYTHON_FILE'] = pypath     # export directories for
     os.environ['PP3E_EXAMPLE_DIR'] = exdir      # use in spawned programs
 
-    if trace: print 'Spawning:', command
+    if trace: print('Spawning:', command)
     if isOnWindows:
         os.spawnv(os.P_DETACH, pypath, ('python', command))
     else:
@@ -210,8 +210,8 @@ def launchBookExamples(commandsToStart, trace=True):
     isOnWindows  = (sys.platform[:3] == 'win')
     pythonFile   = (isOnWindows and 'python.exe') or 'python'
     if trace: 
-        print os.getcwd(), os.curdir, os.sep, os.pathsep
-        print 'starting on %s...' % sys.platform
+        print(os.getcwd(), os.curdir, os.sep, os.pathsep)
+        print('starting on %s...' % sys.platform)
 
     # find python executable: check system path, then guess
     try:
@@ -222,8 +222,11 @@ def launchBookExamples(commandsToStart, trace=True):
     assert pypath
     pydir, pyfile = os.path.split(pypath)               # up 1 from file
     if trace:
-        print 'Using this Python executable:', pypath
-        raw_input('Press <enter> key')
+        print('Using this Python executable:', pypath)
+        if sys.version_info[0] < 3:
+            raw_input('Press <enter> key')
+        else:
+            input('Press <enter> key')
  
     # find examples root dir: check cwd and others
     expath = guessLocation(BookExamplesFile, isOnWindows)
@@ -231,15 +234,21 @@ def launchBookExamples(commandsToStart, trace=True):
     updir  = expath.split(os.sep)[:-2]                  # up 2 from file
     exdir  = os.sep.join(updir)                         # to PP3E pkg parent
     if trace:
-        print 'Using this examples root directory:', exdir
-        raw_input('Press <enter> key')
+        print('Using this examples root directory:', exdir)
+        if sys.version_info[0] < 3:
+            raw_input('Press <enter> key')
+        else:
+            input('Press <enter> key')
  
     # export python and system paths if needed
     configSystemPath(pydir)
     configPythonPath(exdir)
     if trace:
-        print 'Environment configured'
-        raw_input('Press <enter> key')
+        print('Environment configured')
+        if sys.version_info[0] < 3:
+            raw_input('Press <enter> key')
+        else:
+            input('Press <enter> key')
 
     # spawn programs: inherit configs
     for command in commandsToStart:
@@ -263,4 +272,7 @@ if __name__ == '__main__':
         commandsToStart = [ ' '.join(sys.argv[1:]) ]
     launchBookExamples(commandsToStart)
     if sys.platform[:3] == 'win':
-        raw_input('Press Enter') # to read msgs if clicked
+        if sys.version_info[0] < 3:
+            raw_input('Press Enter') # to read msgs if clicked
+        else:
+            input('Press Enter') # to read msgs if clicked

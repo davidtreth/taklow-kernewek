@@ -1,19 +1,24 @@
 # coding=utf-8
+from __future__ import print_function
 import sys, os
 sys.path.append('..')
-import Tkinter as tk
+if sys.version_info[0] < 3:
+    import Tkinter as tk
+    reload(sys)
+    sys.setdefaultencoding('utf-8')
+else:
+    import tkinter as tk
 from taklowGUI import Kwitya, ScrolledText
 import gorhemmyn_kw as gor
 import kernewek_to_welshorthography as kw2cy
-reload(sys)
-sys.setdefaultencoding('utf-8')
+
 
 
 if __name__ == '__main__':
     root = tk.Tk()
     root.title('Kewsel Kernewek gans espeak')
 
-    def allstates(): print ent.gettext()
+    def allstates(): print(ent.gettext())
 
     def kewsel(kwtext):
         """ speaks cornish text by Cymricising the spelling
