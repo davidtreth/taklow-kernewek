@@ -1,6 +1,7 @@
 import treuslytherenna as tr
 import datainflektya
-reload(datainflektya)
+import imp
+imp.reload(datainflektya)
 from datainflektya import *
 """ turn the data in datainflektya into SWF """
 

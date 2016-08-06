@@ -1,4 +1,10 @@
-import Tkinter as tk
+from __future__ import print_function
+import sys
+if sys.version_info[0] < 3:
+    import Tkinter as tk
+else:
+    import tkinter as tk
+import imp
 from taklowGUI import Kwitya, Radiobar, ScrolledText, Entrybar, CheckButtonBar
 import inflektya
 tensesDict2 = {"A-lemmyn":"a-lemmyn",
@@ -19,7 +25,7 @@ tensesDict2 = {"A-lemmyn":"a-lemmyn",
 
 personDict = {'My':1, 'Ty':2, 'Ev':3, 'Hi':4, 'Ni':5,
               'Hwi':6, 'I':7, 'Anpersonek':0, 'Pub Person':-1}
-personDictR = {v:k for k,v in personDict.items()}
+personDictR = {v:k for k,v in list(personDict.items())}
 suffixDict = {'Heb raghenwyn a syw':0, 'Raghenwyn a syw':1,
               'Raghenwyn a syw gans poeslev':2}
 
@@ -71,7 +77,7 @@ if __name__ == '__main__':
 
     
     def allstates(): 
-        print options.state(), options2.state(), options3.state(), options4.state(), ent.fetch()
+        print(options.state(), options2.state(), options3.state(), options4.state(), ent.fetch())
 
     def printinflektya():
         """ show the output in Cornish, according to the options
@@ -81,16 +87,16 @@ if __name__ == '__main__':
             SWF = True
             inflektya.set_swfmode()
             import inflektya_swf
-            reload(inflektya_swf)
+            imp.reload(inflektya_swf)
             
         if options4.state() == [0]:
             SWF = False
-            reload(inflektya)
+            imp.reload(inflektya)
             inflektya.set_kemmyn()
 
         inputtext = ent.fetch()
         inputtext = inputtext.lower()
-        print("Input: {i}".format(i=inputtext))
+        print(("Input: {i}".format(i=inputtext)))
         output = ''
         msg3.text.config(fg = 'dark red', bg = 'light yellow', font=('Monospace', 16, 'bold'), state=tk.NORMAL)
         if inputtext:

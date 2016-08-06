@@ -1,6 +1,12 @@
 # base module for GUI
-import Tkinter as tk
-from tkMessageBox import askokcancel
+import sys
+if sys.version_info[0] < 3:
+    import Tkinter as tk
+    import tkMessageBox as messagebox
+else:
+    import tkinter as tk
+    from tkinter import messagebox
+
 
 class Kwitya(tk.Frame):
     """ define quit button """
@@ -10,7 +16,7 @@ class Kwitya(tk.Frame):
         widget = tk.Button(self, text='Kwitya', font=font,command=self.kwitya)
         widget.pack(side=tk.LEFT)
     def kwitya(self):
-        ans = askokcancel('Verifya kwityans', "Kwitya yn hwir?")
+        ans = messagebox.askokcancel('Verifya kwityans', "Kwitya yn hwir?")
         if ans: tk.Frame.quit(self)
 
 class Radiobar(tk.Frame):

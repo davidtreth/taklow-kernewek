@@ -4,6 +4,8 @@
 An module ma a wra inflektya verbow Kernewek
 This module inflects Cornish verbs
 """
+import sys
+import imp
 import re
 import datainflektya as dtinf
 
@@ -391,7 +393,7 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
                 stem = stem[:-1]+"'"
 
     # diskwedhes, drehevel, gortos, hwilas. stem change in 3rd person present and 2p sing imperative
-    if (verb in dtinf.verbs_stemdict_diskwedhes.keys())and(((tense == 0)and(
+    if (verb in list(dtinf.verbs_stemdict_diskwedhes.keys()))and(((tense == 0)and(
             (person == 3)or(person == 4))or(tense == 6 and person == 2))):
         stem = dtinf.verbs_stemdict_diskwedhes[verb]
 
@@ -416,7 +418,7 @@ def inflektya_validate_person(person):
     # expect an integer from 0 to 7
     try:
         person = int(person)
-        if person not in range(8):
+        if person not in list(range(8)):
             return False
         else:
             return True
@@ -426,7 +428,7 @@ def inflektya_validate_person(person):
 def inflektya_validate_tense(verb, person, tense):
     """ check tense is one of the strings in the 
     tenses dictionary """
-    if tense not in tensesDict.values():
+    if tense not in list(tensesDict.values()):
         # validate tense parameter
         return False
     if ((person == 0)or(person == 1))and(tense == "gorhemmyn"):
@@ -459,10 +461,10 @@ def inflektya(verb, person, tense, suffix_pro=0):
     expect string for the tense """
     
     # alternate spellings of the same verb, e.g. doen/degi
-    if verb in dtinf.verbs_alternatesp.keys():
+    if verb in list(dtinf.verbs_alternatesp.keys()):
         verb = dtinf.verbs_alternatesp[verb]
     
-    tenses_code_dict = {v:k for k, v in tensesDict.items()}
+    tenses_code_dict = {v:k for k, v in list(tensesDict.items())}
 
     # yma amser devedhek, anperfydh usadow ha perfydh dhe nebes verbow
     # certain verbs have simple future, habitual imperfect, perfect
@@ -485,7 +487,7 @@ def inflektya(verb, person, tense, suffix_pro=0):
         # if the tense is invalid for the verb, return a NULL
         return invalidinput, 0
 
-    regular = verb not in dtinf.irregverbs_all.keys()
+    regular = verb not in list(dtinf.irregverbs_all.keys())
     if regular:
         vowels = ['a', 'e', 'i', 'o', 'u']
         if verb[-1] in vowels:
@@ -505,7 +507,7 @@ def inflektya(verb, person, tense, suffix_pro=0):
             # and not in verbs ending -ia
             lastconststem = lastconsonant(stem)
             # print(lastconststem)
-            if lastconststem in dtinf.stem_changes.keys():
+            if lastconststem in list(dtinf.stem_changes.keys()):
                 # do a string replace, but first reverse the stem, and the
                 # arguments for replace, so that it is only done once
                 # for the last time lastconststem occurs in stem
@@ -541,11 +543,11 @@ def inflektya_prepos(prepos, person, suffix_pro=0):
     else:
         person = int(person)
 
-    if dtinf.prep_stems_all.has_key(prepos) and dtinf.prep_endings_all.has_key(prepos):
+    if prepos in dtinf.prep_stems_all and prepos in dtinf.prep_endings_all:
         inflectedprep = dtinf.prep_stems_all[prepos][person] + dtinf.prep_endings_all[prepos][person]
     else:
-        print("Rager {prepos} yw anaswonnys.\n\
-Preposition {prepos} is unknown".format(prepos=prepos))
+        print(("Rager {prepos} yw anaswonnys.\n\
+Preposition {prepos} is unknown".format(prepos=prepos)))
         return invalidinput, 0
     ending = ""
     if (prepos == "dhe")and(suffix_pro > 0)and((person == 1)or(person == 2)):
@@ -562,11 +564,11 @@ def rol_personys_amserow(verb):
     pryntya rol a personys ha'n amserow rag verb
     print a list of persons for each tense of verb
     """
-    print("Verb {verb}:".format(verb=verb.upper()))
+    print(("Verb {verb}:".format(verb=verb.upper())))
     # print imperfect before preterite
     # to match order in "Cornish Verbs"
     tensesorder = [0, 2, 1, 3, 4, 5, 6, 7]
-    if verb not in dtinf.irregverbs_all.keys():
+    if verb not in list(dtinf.irregverbs_all.keys()):
         tlist = [tensesDict[t] for t in tensesorder]
         t_en_list = [tensesDictEN[t] for t in tensesorder]
     else:
@@ -574,18 +576,18 @@ def rol_personys_amserow(verb):
         t_en_list = dtinf.irregverbs_all[verb].tenses_en_list
 
     for t, t_en in zip(tlist, t_en_list):
-        print("\nAmser: {amser} {tenseEN}".format(amser=t.capitalize().ljust(20),
-                                                  tenseEN=t_en.capitalize().rjust(20)))
+        print(("\nAmser: {amser} {tenseEN}".format(amser=t.capitalize().ljust(20),
+                                                  tenseEN=t_en.capitalize().rjust(20))))
         if t == "ppl":
-            print("{person}: {inflVerb}".format(person="PPL".ljust(14),
-                                                inflVerb=inflektya(verb, 1, t, 1)[0]).rjust(12))
+            print(("{person}: {inflVerb}".format(person="PPL".ljust(14),
+                                                inflVerb=inflektya(verb, 1, t, 1)[0]).rjust(12)))
         else:
             # print impersonal at the end instead so it matches "Cornish Verbs" book
-            persons = range(1, 8)
+            persons = list(range(1, 8))
             persons.append(0)
             for p in persons:
-                print("{person}: {inflVerb}".format(person=personDict[p].ljust(14),
-                                                    inflVerb=inflektya(verb, p, t, 1)[0]).rjust(12))
+                print(("{person}: {inflVerb}".format(person=personDict[p].ljust(14),
+                                                    inflVerb=inflektya(verb, p, t, 1)[0]).rjust(12)))
     print("\n")
 
 def rol_personys_prepos(prepos):
@@ -593,19 +595,23 @@ def rol_personys_prepos(prepos):
     pryntya rol a personys rag prepos
     print a list of persons for a preposition
     """
-    print("Preposition {p}:".format(p=prepos.upper()))
+    print(("Preposition {p}:".format(p=prepos.upper())))
     for p in range(7):
         if inflektya_prepos(prepos, p+1, 1)[1] == 0:
             # if prepos is not known as a preposition
             break
-        print("{person}: {inflPrep}".format(person=personDict[p+1].ljust(14),
-                                            inflPrep=inflektya_prepos(prepos, p+1, 1)[0].rjust(12)))
+        print(("{person}: {inflPrep}".format(person=personDict[p+1].ljust(14),
+                                            inflPrep=inflektya_prepos(prepos, p+1, 1)[0].rjust(12))))
     print("\n")
 
 def rol_personys_amser_interact():
     """ Interactively get a verb from keyboard input and repeat until 'q' is entered """
-    verb = raw_input("Ro an verb dhe inflektya mar pleg. Ro 'q' dhe kwittya. \n\
-Enter the verb to inflect please. Enter 'q' to quit.\n\n")
+    if sys.version_info[0] < 3:
+        verb = raw_input("Ro an verb dhe inflektya mar pleg. Ro 'q' dhe kwittya. \n\
+        Enter the verb to inflect please. Enter 'q' to quit.\n\n")
+    else:
+        verb = input("Ro an verb dhe inflektya mar pleg. Ro 'q' dhe kwittya. \n\
+        Enter the verb to inflect please. Enter 'q' to quit.\n\n")
     if verb.lower() != 'q':
         rol_personys_amserow(verb)
         return 0
@@ -613,8 +619,12 @@ Enter the verb to inflect please. Enter 'q' to quit.\n\n")
         return 1
 def rol_personys_prepos_interact():
     """ Interactively get a preposition from keyboard input and repeat until 'q' is entered """
-    prepos = raw_input("Ro an rager dhe inflektya mar pleg. Ro 'q' dhe kwittya. \n\
-Enter the preposition to inflect please. Enter 'q' to quit.\n\n")
+    if sys.version_info[0] < 3:
+        prepos = raw_input("Ro an rager dhe inflektya mar pleg. Ro 'q' dhe kwittya. \n\
+        Enter the preposition to inflect please. Enter 'q' to quit.\n\n")
+    else:
+        prepos = raw_input("Ro an rager dhe inflektya mar pleg. Ro 'q' dhe kwittya. \n\
+        Enter the preposition to inflect please. Enter 'q' to quit.\n\n")
     if prepos.lower() != 'q':
         rol_personys_prepos(prepos)
         return 0
@@ -694,11 +704,11 @@ vowels = ["a", "e", "i", "o", "u", "y"]
 
 def set_swfmode():
     import datainflektya_swf as dtinf
-    reload(dtinf)
+    imp.reload(dtinf)
 
 def set_kemmyn():
     import datainflektya as dtinf
-    reload(dtinf)
+    imp.reload(dtinf)
 
 if __name__ == '__main__':
     run_testcode()
