@@ -1,4 +1,13 @@
+from __future__ import print_function
+import sys
 import keskows5_word
+
+def get_input(question):
+    if sys.version_info[0] < 3:
+        a = raw_input(question)
+    else:
+        a = input(question)
+    return a
 
 # files storing wordlists
 # 1 food - keskows5_food.txt
@@ -18,24 +27,24 @@ w = ""
 m =0
 while w != "0":
     m = m + 1
-    w = raw_input("Enter word - ")
+    w = get_input("Enter word - ")
     if w == "0":
         break
-    POS = raw_input("Part of speech (noun/verb/adj) - ")
+    POS = get_input("Part of speech (noun/verb/adj) - ")
     n = 1
     if POS == "noun":
-        gender = raw_input("Gender (m/f/c). c=collective noun Enter 0 for non-nouns - ")
+        gender = get_input("Gender (m/f/c). c=collective noun Enter 0 for non-nouns - ")
     else:
         gender = str(0)
-    english = raw_input("Enter word's English translation - ")
+    english = get_input("Enter word's English translation - ")
     if POS == "verb":
-        a = raw_input("Can an animal perform this action? (y/n)")
+        a = get_input("Can an animal perform this action? (y/n)")
 	if a == "y":
 	   vars()[str(m)] = keskows5_word.word(w,POS,cats[10],gender,english)   
 	   vars()[str(m)].appendtofile(wordlist_files[10])
 
     while n != 0:
-        category = raw_input("Category to add it into (1=food, 2=vegetables,3=meat,4=drink,5=buildings,6=animals,7=people,8=transport(drive),9=transport(ride),10=readable. Enter 0 to stop adding categories -")
+        category = get_input("Category to add it into (1=food, 2=vegetables,3=meat,4=drink,5=buildings,6=animals,7=people,8=transport(drive),9=transport(ride),10=readable. Enter 0 to stop adding categories -")
         n = int(category)
         if n != 0:
             cat = n -1

@@ -1,6 +1,11 @@
 # based on PyGadgets.py from Programming Python 3rd edition examples
+from __future__ import print_function
 import sys, time, os
-from Tkinter import *
+if sys.version_info[0] < 3:
+    from Tkinter import *
+else:
+    from tkinter import *
+
 from launchmodes import PortableLauncher    # reuse program start class
 
 def runImmediate(mytools):
@@ -11,7 +16,7 @@ def runImmediate(mytools):
     print('Unn pols mar pleg...')                       # \b means a backspace
     if sys.platform[:3] == 'win':
         # on Windows keep stdio console window up for 5 seconds
-        for i in range(5): time.sleep(1); print('\b' + '.'*10),
+        for i in range(5): time.sleep(1); print(('\b' + '.'*10), end = ' ')
 
 def runLauncher(mytools):
     # put up a simple launcher bar for later use

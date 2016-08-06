@@ -2,6 +2,7 @@ import random
 import string
 import keskows5_word
 import keskows5_readwords
+from keskows5_createword import get_input
 import argparse
 
 #questionwords = ["py", "piw"]
@@ -394,7 +395,7 @@ def make_comparative(adj):
         return comp
     if comp == "": 
         print("adjective {a} fails to make comparative".format(a=adj)) 
-        pause = raw_input("pause")
+        pause = get_input("pause")
 
 def make_comparative_e(adj):
     comp = ""

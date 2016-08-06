@@ -1,4 +1,9 @@
-import Tkinter as tk
+from __future__ import print_function
+import sys
+if sys.version_info[0] < 3:
+    from Tkinter import *
+else:
+    from tkinter import *
 from taklowGUI import Kwitya, Radiobar, ScrolledText
 import treuslytherenna as tr
 
@@ -17,7 +22,7 @@ if __name__ == '__main__':
     options2.pack(side=tk.LEFT, fill=tk.Y)
     options2.config(relief=tk.RIDGE, bd=2)
     
-    def allstates(): print options.state(), options2.state(), ent.gettext()
+    def allstates(): print(options.state(), options2.state(), ent.gettext())
 
     def printtreus():
         """ show the output in Cornish, according to the options

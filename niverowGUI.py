@@ -4,7 +4,6 @@ if sys.version_info[0] < 3:
     from Tkinter import *
 else:
     from tkinter import *
-
 from taklowGUI import Kwitya, Entrybar, CheckButtonBar
 import niverow
 
