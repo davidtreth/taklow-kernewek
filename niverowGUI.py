@@ -1,22 +1,22 @@
 from __future__ import print_function
 import sys
 if sys.version_info[0] < 3:
-    from Tkinter import *
+    import Tkinter as tk
 else:
-    from tkinter import *
+    import tkinter as tk
 from taklowGUI import Kwitya, Entrybar, CheckButtonBar
 import niverow
 
 if __name__ == '__main__':
-    root = Tk()
+    root = tk.Tk()
     root.title('Niverow')
-    mhead = Label(root, text = "Dewisyow")
+    mhead = tk.Label(root, text = "Dewisyow")
     mhead.config(font=('Arial', 16, 'bold'))
-    mhead.pack(side=TOP, anchor=NW)
+    mhead.pack(side=tk.TOP, anchor=tk.NW)
 
-    options = CheckButtonBar(root, ['Usya Hanow','Hanow Benow'], side=TOP, anchor=NW)
-    options.pack(side=LEFT, fill=Y)
-    options.config(relief=RIDGE, bd=2)
+    options = CheckButtonBar(root, ['Usya Hanow','Hanow Benow'], side=tk.TOP, anchor=tk.NW)
+    options.pack(side=tk.LEFT, fill=tk.Y)
+    options.config(relief=tk.RIDGE, bd=2)
     def allstates(): print(options.state(), ent.fetch(), ent2.fetch())
 
     def printniver():
@@ -52,7 +52,7 @@ if __name__ == '__main__':
         msg3.config(fg = 'dark red', bg='light yellow',font=('Arial', 18, 'bold'), text='')
         
         
-    msg = Label(root, text="Gorrewgh niver a-woles mar pleg")
+    msg = tk.Label(root, text="Gorrewgh niver a-woles mar pleg")
     msg.config(font=('Arial', 16, 'bold'))
     msg.pack()
     
@@ -60,30 +60,30 @@ if __name__ == '__main__':
     ent = Entrybar(root)
     ent.pack()
     
-    msg2 = Label(root, text="Gorrewgh hanow kernewek a-woles mar pleg")
+    msg2 = tk.Label(root, text="Gorrewgh hanow kernewek a-woles mar pleg")
     msg2.config(font=('Arial', 16, 'bold'))
     msg2.pack()
     # text entry bar for noun
     ent2 = Entrybar(root)
     ent2.pack()
     # irregular plural?
-    msg4 = Label(root, text="Gorrewgh hanow liesplek a-woles mar nag yw -ow")
+    msg4 = tk.Label(root, text="Gorrewgh hanow liesplek a-woles mar nag yw -ow")
     msg4.config(font=('Arial', 16, 'bold'))
     msg4.pack()
     # text entry bar for plural noun
     ent3 = Entrybar(root)
     ent3.pack()
     # output
-    msg3 = Label(root)
+    msg3 = tk.Label(root)
     msg3.config(fg = 'dark red', bg='light yellow',font=('Arial', 18, 'bold'), text='')
-    msg3.pack(expand=YES,fill=BOTH, anchor=CENTER)
+    msg3.pack(expand=tk.YES,fill=tk.BOTH, anchor=tk.CENTER)
 
     # buttons
-    Kwitya(root).pack(side=RIGHT)
-    Button(root, text = 'Diskwedh Niver', font=('Arial',14),
-           command = printniver).pack(side=RIGHT)
-    Button(root, text = 'Klerhe', font=('Arial', 14),
-           command = clearboxes).pack(side=LEFT)
+    Kwitya(root).pack(side=tk.RIGHT)
+    tk.Button(root, text = 'Diskwedh Niver', font=('Arial',14),
+           command = printniver).pack(side=tk.RIGHT)
+    tk.Button(root, text = 'Klerhe', font=('Arial', 14),
+           command = clearboxes).pack(side=tk.LEFT)
     root.mainloop()
 
 

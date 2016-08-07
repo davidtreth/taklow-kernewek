@@ -1,6 +1,5 @@
 # coding=utf-8
 import sys
-import string
 #
 # Author: David Trethewey
 # This program does not pretend to produce an orthographically

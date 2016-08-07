@@ -1,6 +1,5 @@
 import random
 import string
-import keskows5_word
 import keskows5_readwords
 from keskows5_createword import get_input
 import argparse

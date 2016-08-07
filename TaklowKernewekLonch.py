@@ -1,10 +1,10 @@
 # based on PyGadgets.py from Programming Python 3rd edition examples
 from __future__ import print_function
-import sys, time, os
+import sys, time
 if sys.version_info[0] < 3:
-    from Tkinter import *
+    import Tkinter as tk
 else:
-    from tkinter import *
+    import tkinter as tk
 
 from launchmodes import PortableLauncher    # reuse program start class
 
@@ -20,12 +20,12 @@ def runImmediate(mytools):
 
 def runLauncher(mytools):
     # put up a simple launcher bar for later use
-    root = Tk()
+    root = tk.Tk()
     root.title('TaklowKernewek GUI')
     for (name, commandLine) in mytools:
-        b = Button(root, text=name, fg='black', bg='beige', border=2,
+        b = tk.Button(root, text=name, fg='black', bg='beige', border=2,
                    command=PortableLauncher(name, commandLine))
-        b.pack(side=LEFT, expand=YES, fill=BOTH)
+        b.pack(side=tk.LEFT, expand=tk.YES, fill=tk.BOTH)
     root.mainloop()
 
 mytools = [

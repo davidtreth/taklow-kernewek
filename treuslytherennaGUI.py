@@ -1,9 +1,9 @@
 from __future__ import print_function
 import sys
 if sys.version_info[0] < 3:
-    from Tkinter import *
+    import Tkinter as tk
 else:
-    from tkinter import *
+    import tkinter as tk
 from taklowGUI import Kwitya, Radiobar, ScrolledText
 import treuslytherenna as tr
 

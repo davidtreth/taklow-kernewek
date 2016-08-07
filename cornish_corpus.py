@@ -23,7 +23,7 @@ def basicReport(text):
     print("\n")
     print(("Collocations: {c}\n".format(c=text.collocations())))
     # frequency distribution
-    fdist_len = nltk.FreqDist([len(w) for w in text])
+    # fdist_len = nltk.FreqDist([len(w) for w in text])
     # print fdist_len.keys()
     # this should already be alphabetic
     text_alpha = [w for w in text if w.isalpha()]
@@ -73,8 +73,8 @@ def nLettersFDist(kk_texts_Texts,names):
         listPercentsN(t,cfd,dictlist)
     #print dictlist
     for d in range(len(dictlist)):
-        keyslist = [0]+[i[0] for i in list(dictlist[d].items())]
-        valueslist = [0]+[i[1] for i in list(dictlist[d].items())]
+        keyslist = [0]+[i[0] for i in dictlist[d].items()]
+        valueslist = [0]+[i[1] for i in dictlist[d].items()]
         valueslist_cumulative = [sum(valueslist[0:i+1]) for i in keyslist]
         print(keyslist)
         #pylab.plot(keyslist,valueslist,label = nameslist[d],linewidth=2)

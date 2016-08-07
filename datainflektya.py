@@ -1,5 +1,5 @@
 # David Trethewey
-# vershyon 19-05-2016
+# vershyon 07-08-2016
 """
 An module ma a'n jeves an data rag inflektya.py
 This module holds data for inflektya.py

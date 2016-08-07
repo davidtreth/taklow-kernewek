@@ -25,7 +25,7 @@ tensesDict2 = {"A-lemmyn":"a-lemmyn",
 
 personDict = {'My':1, 'Ty':2, 'Ev':3, 'Hi':4, 'Ni':5,
               'Hwi':6, 'I':7, 'Anpersonek':0, 'Pub Person':-1}
-personDictR = {v:k for k,v in list(personDict.items())}
+personDictR = {v:k for k,v in personDict.items()}
 suffixDict = {'Heb raghenwyn a syw':0, 'Raghenwyn a syw':1,
               'Raghenwyn a syw gans poeslev':2}
 

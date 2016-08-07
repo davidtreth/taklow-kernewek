@@ -393,7 +393,7 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
                 stem = stem[:-1]+"'"
 
     # diskwedhes, drehevel, gortos, hwilas. stem change in 3rd person present and 2p sing imperative
-    if (verb in list(dtinf.verbs_stemdict_diskwedhes.keys()))and(((tense == 0)and(
+    if (verb in dtinf.verbs_stemdict_diskwedhes)and(((tense == 0)and(
             (person == 3)or(person == 4))or(tense == 6 and person == 2))):
         stem = dtinf.verbs_stemdict_diskwedhes[verb]
 
@@ -428,7 +428,7 @@ def inflektya_validate_person(person):
 def inflektya_validate_tense(verb, person, tense):
     """ check tense is one of the strings in the 
     tenses dictionary """
-    if tense not in list(tensesDict.values()):
+    if tense not in tensesDict.values():
         # validate tense parameter
         return False
     if ((person == 0)or(person == 1))and(tense == "gorhemmyn"):
@@ -461,10 +461,10 @@ def inflektya(verb, person, tense, suffix_pro=0):
     expect string for the tense """
     
     # alternate spellings of the same verb, e.g. doen/degi
-    if verb in list(dtinf.verbs_alternatesp.keys()):
+    if verb in dtinf.verbs_alternatesp:
         verb = dtinf.verbs_alternatesp[verb]
     
-    tenses_code_dict = {v:k for k, v in list(tensesDict.items())}
+    tenses_code_dict = {v:k for k, v in tensesDict.items()}
 
     # yma amser devedhek, anperfydh usadow ha perfydh dhe nebes verbow
     # certain verbs have simple future, habitual imperfect, perfect
@@ -487,7 +487,7 @@ def inflektya(verb, person, tense, suffix_pro=0):
         # if the tense is invalid for the verb, return a NULL
         return invalidinput, 0
 
-    regular = verb not in list(dtinf.irregverbs_all.keys())
+    regular = verb not in dtinf.irregverbs_all
     if regular:
         vowels = ['a', 'e', 'i', 'o', 'u']
         if verb[-1] in vowels:
@@ -507,7 +507,7 @@ def inflektya(verb, person, tense, suffix_pro=0):
             # and not in verbs ending -ia
             lastconststem = lastconsonant(stem)
             # print(lastconststem)
-            if lastconststem in list(dtinf.stem_changes.keys()):
+            if lastconststem in dtinf.stem_changes:
                 # do a string replace, but first reverse the stem, and the
                 # arguments for replace, so that it is only done once
                 # for the last time lastconststem occurs in stem
@@ -568,7 +568,7 @@ def rol_personys_amserow(verb):
     # print imperfect before preterite
     # to match order in "Cornish Verbs"
     tensesorder = [0, 2, 1, 3, 4, 5, 6, 7]
-    if verb not in list(dtinf.irregverbs_all.keys()):
+    if verb not in dtinf.irregverbs_all:
         tlist = [tensesDict[t] for t in tensesorder]
         t_en_list = [tensesDictEN[t] for t in tensesorder]
     else:

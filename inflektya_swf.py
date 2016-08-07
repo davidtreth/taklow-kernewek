@@ -11,7 +11,7 @@ def inflektya_swf(verb, person, tense, suffix_pro=0):
     inflv, success = inflektya.inflektya(verb, person, tense, suffix_pro)
     if inflv != "NULL" and success == 1:
         # print(inflv)
-        if verb in list(dtinf_swf.irregverbs_all.keys()):
+        if verb in dtinf_swf.irregverbs_all:
             return inflv, 1
         else:
             return tr.wordstr_KK2FSS(inflv, True, False), 1
@@ -29,7 +29,7 @@ def rol_personys_amserow(verb):
     # print imperfect before preterite
     # to match order in "Cornish Verbs"
     tensesorder = [0, 2, 1, 3, 4, 5, 6, 7]
-    if verb not in list(dtinf_swf.irregverbs_all.keys()):
+    if verb not in dtinf_swf.irregverbs_all:
         tlist = [inflektya.tensesDict[t] for t in tensesorder]
         t_en_list = [inflektya.tensesDictEN[t] for t in tensesorder]
     else:

@@ -1,26 +1,26 @@
 from __future__ import print_function
 import sys
 if sys.version_info[0] < 3:
-    from Tkinter import *
+    import Tkinter as tk
 else:
-    from tkinter import *
+    import tkinter as tk
 from taklowGUI import Kwitya, Radiobar, Entrybar, CheckButtonBar
 import mutatya
 
 if __name__ == '__main__':
-    root = Tk()
+    root = tk.Tk()
     root.title('Mutatya')
-    mhead = Label(root, text = "Studh Treylyans")
+    mhead = tk.Label(root, text = "Studh Treylyans")
     mhead.config(font=('Arial', 16, 'bold'))
-    mhead.pack(side=TOP, anchor=NW)
+    mhead.pack(side=tk.TOP, anchor=tk.NW)
     # various mutation states
-    mstate = Radiobar(root, ['1 (heb treylyans)', '2 (medhel)', '3 (kales)', '4 (hwythys)', '5 (kemmyskys)', '6 (kemmyskys wosa \'th)', '7 (kildreylyans)'], side=TOP, anchor=NW,default='1 (heb treylyans)')
-    mstate.pack(side=LEFT, fill=Y)
-    mstate.config(relief=RIDGE, bd=2)
+    mstate = Radiobar(root, ['1 (heb treylyans)', '2 (medhel)', '3 (kales)', '4 (hwythys)', '5 (kemmyskys)', '6 (kemmyskys wosa \'th)', '7 (kildreylyans)'], side=tk.TOP, anchor=tk.NW,default='1 (heb treylyans)')
+    mstate.pack(side=tk.LEFT, fill=tk.Y)
+    mstate.config(relief=tk.RIDGE, bd=2)
 
-    tradgraph = CheckButtonBar(root, ['Lytherennans hengovek'], side=TOP, anchor=NW)
-    tradgraph.pack(side=LEFT, fill=Y)
-    tradgraph.config(relief=RIDGE, bd=2)
+    tradgraph = CheckButtonBar(root, ['Lytherennans hengovek'], side=tk.TOP, anchor=tk.NW)
+    tradgraph.pack(side=tk.LEFT, fill=tk.Y)
+    tradgraph.config(relief=tk.RIDGE, bd=2)
 
     def allstates(): print(mstate.state(), tradgraph.state(), intmstate(), ent.fetch())
     def intmstate():
@@ -42,7 +42,7 @@ if __name__ == '__main__':
             msg2.config(text = mutatya.format_rev_mutate(mutatya.rev_mutate(ent.fetch(), False, tradgraph.state()[0]), True),
             font=('Monospace', 14, 'bold'))
     
-    msg = Label(root, text="Gorrewgh ger kernewek a-woles mar pleg")
+    msg = tk.Label(root, text="Gorrewgh ger kernewek a-woles mar pleg")
     msg.config(font=('Arial', 16, 'bold'))
     msg.pack()
     
@@ -50,14 +50,14 @@ if __name__ == '__main__':
     ent = Entrybar(root)
     ent.pack()
 
-    msg2 = Label(root)
+    msg2 = tk.Label(root)
     msg2.config(bg = 'light yellow', fg = 'dark red', font=('Monospace', 18, 'bold'))
-    msg2.pack(expand=YES,fill=BOTH, anchor=CENTER)
+    msg2.pack(expand=tk.YES,fill=tk.BOTH, anchor=tk.CENTER)
 
     # buttons
-    Kwitya(root).pack(side=RIGHT)
-    Button(root, text = 'Mutatya', font=('Arial',14),
-           command = printmform).pack(side=RIGHT)
+    Kwitya(root).pack(side=tk.RIGHT)
+    tk.Button(root, text = 'Mutatya', font=('Arial',14),
+           command = printmform).pack(side=tk.RIGHT)
     root.mainloop()
 
 
