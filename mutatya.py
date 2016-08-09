@@ -1,4 +1,5 @@
-# David Trethewey revised 26-08-2015
+# coding=utf-8
+# David Trethewey revised 09-08-2016
 # This doesn't actually determine whether
 # a word should mutate
 #
@@ -15,7 +16,11 @@
 #
 # it will try to return it in the same case
 # i.e. lower, UPPER, or Title
-
+import sys, imp
+imp.reload(sys)
+if sys.version_info[0] < 3:
+    sys.setdefaultencoding('utf-8')
+    
 def caseFormat(word,outputcase):
     # outputcase determines 
     # capitalisation of output
@@ -26,6 +31,17 @@ def caseFormat(word,outputcase):
     if outputcase == 'title':
         return word.title()
     return word
+
+def findOutputCase(word):
+    outputcase = 'lower' # default
+    if word.islower():
+        outputcase = 'lower'
+    if word.istitle():
+        outputcase = 'title'
+    if word.isupper():
+        outputcase = 'upper'
+    return outputcase
+ 
 
 def mutate(word,mutationstate, trad=False):
     """ 
@@ -39,16 +55,9 @@ def mutate(word,mutationstate, trad=False):
     variable trad set to True will expect and return
     traditional graphs as in SWF/T
     """
-    outputcase = 'lower' # default
-    if word.islower():
-        outputcase = 'lower'
-    if word.istitle():
-        word = word.lower()
-        outputcase = 'title'
-    if word.isupper():
-        word = word.lower()
-        outputcase = 'upper'
 
+    outputcase = findOutputCase(word)
+    word = word.lower()
     # default to no mutation if mutationstate isn't what is
     # expected (int from 1-6)
     if not(isinstance(mutationstate,int)):
@@ -171,6 +180,93 @@ def mutate(word,mutationstate, trad=False):
             newword = word[1:]
         return caseFormat(newword,outputcase)
 
+def mutate_cy(word, mutationstate):
+    """
+    take Welsh word as a str
+    and mutationstate as integer 1-3 or 7, 8
+    use variable outputcase
+    to return word in same capitalisation
+    as it went in
+    note that non-standard capITALization
+    will be turned lower case
+    1 = unmutated
+    2 = soft mutation
+    3 = aspirate mutation
+    7 = nasal mutation
+    8 = mixed mutation (after negative particle
+    Ni - may by written or not, where 
+    those letters that undergo aspirate mutation
+    do so, and other letters undergo soft mutation)
+    """
+    outputcase = findOutputCase(word)
+    word = word.lower()
+    
+    if not(isinstance(mutationstate, int)):
+        mutationstate = 1
+    if mutationstate not in [1, 2, 3, 7, 8]:
+        mutationstate = 1
+
+    if mutationstate == 1:
+        # unmutated
+        return caseFormat(word, outputcase)
+    if mutationstate == 2:
+        # lentition
+        newword = word
+        if word[0] == "g":
+            newword = word[1:]
+        if (word[0] == "b")or(word[0] == "m"):
+            newword = "f" + word[1:]
+        if word[0] == "c" and word[0:2] != "ch":
+            newword = "g" + word[1:]
+        if word[0] == "d" and word[0:2] != "dd":
+            newword = "d" + word
+        if word[0] == "p" and word[0:2] != "ph":
+            newword = "b" + word[1:]
+        if word[0] == "t" and word[0:2] != "th":
+            newword = "d" + word[1:]
+        if word[0:2] == "ll":
+            newword = word[1:]
+        if word[0:2] == "rh":
+            newword = "r" + word[2:]
+        return caseFormat(newword, outputcase)
+    
+    if mutationstate == 3:
+        # breathed mutation
+        newword = word
+        if word[0] == "c" and word[0:2] != "ch":
+            newword = "ch" + word[1:]
+        if word[0] == "p" and word[0:2] != "ph":
+            newword = "ph" + word[1:]
+        if word[0] == "t" and word[0:2] != "th":
+            newword = "th" + word[1:]
+        return caseFormat(newword,outputcase)
+        
+    if mutationstate == 7:
+        # nasal mutation
+        newword = word
+        if word[0] == "c" and word[0:2] != "ch":
+            newword = "ngh" + word[1:]
+        if word[0] == "p" and word[0:2] != "ph":
+            newword = "mh" + word[1:]
+        if word[0] == "t":
+            newword = "nh" + word[1:]
+        if word[0] == "b":
+            newword = "m" + word[1:]
+        if word[0] == "d" and word[0:2] != "dd":
+            newword = "n" + word[1:]
+        if word[0] == "g":
+            newword = "ng" + word[1:]
+            
+        return caseFormat(newword,outputcase)
+    
+    if mutationstate == 8:
+        # mixed mutation
+        if word[0] in "cpt":
+            newword = mutate_cy(word, 3)
+        else:
+            newword = mutate_cy(word, 2)
+        return caseFormat(newword, outputcase)
+        
 def rev_mutate(word, listmode = False, trad = False):
     """ takes a word and outputs all possible words that could mutate to it 
 
@@ -331,7 +427,7 @@ def basicTests():
     kath3 = "KATH"
     kath4 = "kaTH"
     gwari = "gwari"
-    expl = {1:"No Mutation", 2:"Soft Mutation\nvarious causes e.g. fem. sing. nuns after article, A verbal particle", 3:"Breathed Mutation\ne.g. after 'ow' possessive pronoun = E. 'my'",4:"Hard Mutation\ne.g. after present participle 'ow'", 5:"Mixed Mutation\ne.g. after Y verbal particle", 6:"Mixed mutation after 'th (infixed pronoun 2p sing.)"}
+    expl = {1:"No Mutation", 2:"Soft Mutation\nvarious causes e.g. fem. sing. nouns after article, A verbal particle", 3:"Breathed Mutation\ne.g. after 'ow' possessive pronoun = E. 'my'",4:"Hard Mutation\ne.g. after present participle 'ow'", 5:"Mixed Mutation\ne.g. after Y verbal particle", 6:"Mixed mutation after 'th (infixed pronoun 2p sing.)"}
     underline = "-"*30
     print(underline+"\n")
     for s in range(6):
@@ -345,6 +441,50 @@ def basicTests():
                
     print("note - doesn't preserve capitalisation of non-standard capiTALISed input")
 
+def basicTests_cy():
+    """test code - doesn't do all cases"""
+    
+    kath = "cath"
+    kath2 = "Cath"
+    kath3 = "CATH"
+    kath4 = "caTH"
+    gwari = "gwari"
+    pen = "pen"
+    tad = "tad"
+    beic = "beic"
+    draig = "draig"
+    llan = "llan50goch"
+    mor = "môr"
+    rhwyfo = "rhwyfo"
+    prynu = "prynais"
+    gwerthu = "gwerthais"
+    
+    expl = {1:"No Mutation", 2:"Soft Mutation\nvarious causes e.g. fem. sing. nouns after article, dy 'you' sg. poss. pron.", 3:"Breathed Mutation\ne.g. after 'a' and",7:"Nasal mutation\ne.g. after fy 'my' or yn 'in'"}
+    underline = "-"*30
+    print(underline+"\n")
+    for s in [1,2,3,7]:
+        print(expl[s]+'\n')
+        print("mutate('{w}',{m}) = {r}".format(w=kath,m=s, r=mutate_cy(kath,s)))
+        print("mutate('{w}',{m}) = {r}".format(w=kath2,m=s, r=mutate_cy(kath2,s)))
+        print("mutate('{w}',{m}) = {r}".format(w=kath3,m=s, r=mutate_cy(kath3,s)))
+        print("mutate('{w}',{m}) = {r}".format(w=kath4,m=s, r=mutate_cy(kath4,s)))
+        print("\nmutate('{w}',{m}) = {r}".format(w=gwari,m=s, r=mutate_cy(gwari,s)))
+        print("\nmutate('{w}',{m}) = {r}".format(w=pen,m=s, r=mutate_cy(pen,s)))
+        print("\nmutate('{w}',{m}) = {r}".format(w=tad,m=s, r=mutate_cy(tad,s)))
+        print("\nmutate('{w}',{m}) = {r}".format(w=beic,m=s, r=mutate_cy(beic,s)))
+        print("\nmutate('{w}',{m}) = {r}".format(w=draig,m=s, r=mutate_cy(draig,s)))
+        print("\nmutate('{w}',{m}) = {r}".format(w=llan,m=s, r=mutate_cy(llan,s)))
+        print("\nmutate('{w}',{m}) = {r}".format(w=mor,m=s, r=mutate_cy(mor,s)))
+        print("\nmutate('{w}',{m}) = {r}\n".format(w=rhwyfo,m=s, r=mutate_cy(rhwyfo,s)))
+        
+        print(underline+"\n")
+    print("Mixed mutation\nafter Ni negative particle, which is not always actually written/spoken but mutation remains.")
+    print("mutate('{w}', {m}) = {r}\n".format(w=gwerthu, m=8, r = mutate_cy(gwerthu, 8)))
+    print("mutate('{w}', {m}) = {r}\n".format(w=prynu, m=8, r = mutate_cy(prynu, 8)))
+    
+    print("note - doesn't preserve capitalisation of non-standard capiTALISed input")
+
+    
 def reverseTests():
     """ test reverse mutation """
     print("main form")
