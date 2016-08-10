@@ -19,6 +19,17 @@ class Kwitya(tk.Frame):
         ans = messagebox.askokcancel('Verifya kwityans', "Kwitya yn hwir?")
         if ans: tk.Frame.quit(self)
 
+class Gadael(tk.Frame):
+    """ quit button in Welsh """
+    def __init__(self, parent = None,font=('Arial',14)):
+        tk.Frame.__init__(self,parent)
+        self.pack()
+        widget = tk.Button(self, text='Gadael', font=font,command=self.gadael)
+        widget.pack(side=tk.LEFT)
+    def gadael(self):
+        ans = messagebox.askokcancel('Byddwch siwr am gadael?', "Gadael yn gwir?")
+        if ans: tk.Frame.quit(self)
+        
 class Radiobar(tk.Frame):
     """ radio buttons to select one from a list """
     def __init__(self,parent=None, picks=[], side=tk.LEFT, anchor=tk.W,

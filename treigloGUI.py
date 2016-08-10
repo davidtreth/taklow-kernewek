@@ -4,7 +4,7 @@ if sys.version_info[0] < 3:
     import Tkinter as tk
 else:
     import tkinter as tk
-from taklowGUI import Kwitya, Radiobar, Entrybar, CheckButtonBar
+from taklowGUI import Gadael, Radiobar, Entrybar, CheckButtonBar
 import mutatya
 
 if __name__ == '__main__':
@@ -51,7 +51,7 @@ if __name__ == '__main__':
     msg2.pack(expand=tk.YES,fill=tk.BOTH, anchor=tk.CENTER)
 
     # buttons
-    Kwitya(root).pack(side=tk.RIGHT)
+    Gadael(root).pack(side=tk.RIGHT)
     tk.Button(root, text = 'Treiglo', font=('Arial',14),
            command = printmform).pack(side=tk.RIGHT)
     root.mainloop()
