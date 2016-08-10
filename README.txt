@@ -18,6 +18,7 @@ mutatya.py: a python module to mutate a Cornish word where you give the word as 
 update 28.07.16: this now provides a facility to generate possible reverse mutations of a given word, e.g. "garr" could be original "garr" or "karr". These are not checked as to whether they actually exist in Cornish or whether the mutation is grammatically possible for that word. 
 This is now added to the GUI.
 The option to use 'traditional' graphs of the form used in SWF/T is now available.
+update 10.08.16: now includes functions mutate_cy() and rev_mutate_cy() to do Welsh mutations
 
 sylabellen_ranna.py: a module for splitting Cornish words into their consituent syllabels. A work in progress and a prelimary to a program to transliterate between different Cornish spelling systems such as Kemmyn and the Standard Written Form. It has also been suggested to me that in future I could also develop this in the area of rhyme, syllable length, and poetry etc.
 Update (08-07-15): now this calculates syllable and word length on the basis of 1 unit for a short vowel or consonant, 2 for half-long vowel or gemminate 'double' consonant, or 3 for a long vowel.
@@ -50,6 +51,8 @@ sentence_generator/: This folder contains some horribly obsfucated Python code t
 taklowGUI.py: defines some Tkinter GUI widgets imported by other GUI modules
 
 mutatyaGUI.py: A Tkinter GUI frontend for mutatya.py. Now includes reverse mutation, and option for 'traditional' graphs as used in SWF/T.
+
+treigloGUI.py: A Tkinter GUI for the Welsh mutation functions of mutatya.py. Not included in the launch bar of TaklowKernewekLonchyer.pyw, so should be separately launched.
 
 sylrannaGUI.py: A Tkinter GUI frontend for syllabenn_ranna_kw.py
 
