@@ -5,6 +5,7 @@
 #
 # all it does is take a word and mutation state 
 # from 1 to 6
+# in function mutate(word, mutationstate)
 # and return the mutated form
 #
 # 1 = no mutation
@@ -13,6 +14,13 @@
 # 4 = hard mutation g->k d->t b->p
 # 5 = mixed I
 # 6 = mixed II after 'th
+#
+# or for Welsh in fuction mutate_cy(word, mutationstate)
+# mutation state can be one of 1, 2, 7, 8
+# where 7 = nasal mutation
+#       8 = mixed mutation after neg. part. ni
+#           either soft or breathed depending on
+#           initial letter
 #
 # it will try to return it in the same case
 # i.e. lower, UPPER, or Title
@@ -273,16 +281,11 @@ def rev_mutate(word, listmode = False, trad = False):
     By default it will output a dictionary indexed by number 1 to 6, if listmode
     is set to True, it will be a flat list with duplicates removed
     """
-    outputcase = 'lower' # default
-    if word.islower():
-        outputcase = 'lower'
-    if word.istitle():
-        word = word.lower()
-        outputcase = 'title'
-    if word.isupper():
-        word = word.lower()
-        outputcase = 'upper'
-
+    outputcase = findOutputCase(word)
+    word = word.lower()
+    # we assume the word can be unmutated.
+    # generally true, though initial dh- before mutation
+    # is rare and limited mainly to compounds of preposition dhe
     unmutated = {1:[word], 2:[], 3:[], 4:[], 5:[], 6:[]}
     if (word[0:2] == "wo")or(word[0:2] == "wu")or(word[0:3] == "wro")or(word[0:3] == "wru"):
         # g->w
@@ -383,11 +386,13 @@ def rev_mutate(word, listmode = False, trad = False):
     else:
         return unmutatedcasef
     
-def format_rev_mutate(revmdict, kw=False):
+def format_rev_mutate(revmdict, kw=False, cy=False):
     """ return a formatted output of the reversed mutation dictionary 
 
     If kw is True, the explanation is in Cornish
     """
+    if 7 in revmdict:
+        cy = True
     if kw:
         mdesc = {1:"Furv didreylys: ",
                  2:"Treylyans medhel (studh 2) diworth: ",
@@ -396,6 +401,12 @@ def format_rev_mutate(revmdict, kw=False):
                  5:"Treylyans kemmyskys (studh 5) diworth: ",
                  6:"Treylyans kemmyskys (wosa raghanow stegys a-ji 'th) diworth: "}
         output = "Y halsa bos an ger:\n\n"
+    elif cy:
+        mdesc = {1:"Ffurf heb treiglad: ",
+                 2:"Treiglad meddal oddi wrth: ",
+                 3:"Treiglad llais oddi wrth: ",
+                 7:"Treiglad trwynol oddi wrth: "}
+        output = "Gall bod y gair:\n\n"
     else:
         mdesc = {1:"Unmutated form: ",
                  2:"Soft mutation (2nd state) of: ",
@@ -418,6 +429,76 @@ def format_rev_mutate(revmdict, kw=False):
                 output += " "
             output += "\n"
     return output
+
+def rev_mutate_cy(word, listmode = False):
+    """ Takes a word and outputs all possible words that could mutate to it
+    By default it will output a dictionary indexed by numbers [1, 2, 3, 7],
+    if listmode is set to True, it will be a flat list with duplicates
+    removed
+    """
+    outputcase = findOutputCase(word)
+    word = word.lower()
+
+    # assume initial mh- nh- ngh- dd- only occur in mutated forms
+    # initial ph- th- are rare but do exist
+    unmutated = {1:[], 2:[], 3:[], 7:[]}
+    if word[0:3] != "ngh" and word[0:2] not in ["dd", "mh", "nh", "ng"]:
+        unmutated[1].append(word)
+    # g->0
+    if word[0] in "aâeêëiîïloöôruûwŵyŷ" and word[0:2] not in ["rh", "ll"]:
+        unmutated[2].append("g"+word)
+    if word[0] == "f" and word[0:2] != "ff":
+        unmutated[2].append("b" + word[1:])
+        unmutated[2].append("m" + word[1:])
+    if word[0] == "g":
+        unmutated[2].append("c" + word[1:])
+    if word[0:2] == "dd":
+        unmutated[2].append("d" + word[2:])
+    if word[0] == "b":
+        unmutated[2].append("p" + word[1:])
+    if word[0] == "d" and word[0:2] != "dd":
+        unmutated[2].append("t" + word[1:])
+    if word[0] == "l" and word[0:2] != "ll":
+        unmutated[2].append("ll" + word[1:])
+    if word[0] == "r" and word[0:2] != "rh":
+        unmutated[2].append("rh" + word[1:])
+    
+    if word[0:2] == "ch":
+        unmutated[3].append("c"+word[2:])
+    if word[0:2] == "ph":
+        unmutated[3].append("p"+word[2:])
+    if word[0:2] == "th":
+        unmutated[3].append("t"+word[2:])
+    
+    if word[0:3] == "ngh":
+        unmutated[7].append("c"+word[3:])
+    if word[0:2] == "mh":
+        unmutated[7].append("p"+word[2:])
+    if word[0:2] == "ng" and word[0:3] != "ngh":
+        unmutated[7].append("g"+word[2:])
+    if word[0:2] == "nh":
+        unmutated[7].append("t"+word[2:])
+    if word[0] == "m" and word[0:2] != "mh":
+        unmutated[7].append("b"+word[1:])
+    if word[0] == "n" and word[0:2] not in ["ng", "nh"]:
+        unmutated[7].append("d"+word[1:])
+    
+    unmutatedcasef = {}
+    for k in unmutated.keys():
+        unmutatedcasef[k] = []
+        for w in unmutated[k]:
+            outw = caseFormat(w, outputcase)
+            unmutatedcasef[k].append(outw)
+
+    if listmode:
+        unmutlist = []
+        for v in unmutatedcasef.values():
+            unmutlist.extend(v)
+        unmutlist = list(set(unmutlist))
+        unmutlist.sort()
+        return unmutlist
+    else:
+        return unmutatedcasef
 
 def basicTests():
     """test code - doesn't do all cases"""
@@ -523,7 +604,44 @@ def reverseTests():
     print(rev_mutate("japel", False, True))
     print(rev_mutate("kara", False, True))
     print(rev_mutate("cara", False, True))
-    
+
+def reverseTests_cy():
+    p = rev_mutate_cy("bren")
+    t = rev_mutate_cy("dad")
+    g = rev_mutate_cy("gam")
+    f = rev_mutate_cy("faich")
+    dd = rev_mutate_cy("ddyn")
+    g2 = rev_mutate_cy("air")
+    ll = rev_mutate_cy("lais")
+    rh = rev_mutate_cy("res")
+    mh = rev_mutate_cy("mhren")
+    nh = rev_mutate_cy("nhad")
+    ngh= rev_mutate_cy("ngham")
+    m = rev_mutate_cy("maich")
+    n = rev_mutate_cy("nyn")
+    ng = rev_mutate_cy("ngŵr")
+    ph = rev_mutate_cy("phren")
+    th = rev_mutate_cy("thad")
+    ch = rev_mutate_cy("cham")
+    print(format_rev_mutate(p))
+    print(format_rev_mutate(t))
+    print(format_rev_mutate(g))
+    print(format_rev_mutate(f))
+    print(format_rev_mutate(dd))
+    print(format_rev_mutate(g2))
+    print(format_rev_mutate(ll))
+    print(format_rev_mutate(rh))
+    print(format_rev_mutate(mh))
+    print(format_rev_mutate(nh))
+    print(format_rev_mutate(ngh))
+    print(format_rev_mutate(m))
+    print(format_rev_mutate(n))
+    print(format_rev_mutate(ng))
+    print(format_rev_mutate(ph))
+    print(format_rev_mutate(th))
+    print(format_rev_mutate(ch))
+
+
 if __name__ == "__main__":
     basicTests()
     reverseTests()
