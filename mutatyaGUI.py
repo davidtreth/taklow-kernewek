@@ -14,7 +14,7 @@ if __name__ == '__main__':
     mhead.config(font=('Arial', 16, 'bold'))
     mhead.pack(side=tk.TOP, anchor=tk.NW)
     # various mutation states
-    mstate = Radiobar(root, ['1 (heb treylyans)', '2 (medhel)', '3 (kales)', '4 (hwythys)', '5 (kemmyskys)', '6 (kemmyskys wosa \'th)', '7 (kildreylyans)'], side=tk.TOP, anchor=tk.NW,default='1 (heb treylyans)')
+    mstate = Radiobar(root, ['1 (heb treylyans)', '2 (medhel)', '3 (hwythys)', '4 (kales)', '5 (kemmyskys)', '6 (kemmyskys wosa \'th)', '7 (kildreylyans)'], side=tk.TOP, anchor=tk.NW,default='1 (heb treylyans)')
     mstate.pack(side=tk.LEFT, fill=tk.Y)
     mstate.config(relief=tk.RIDGE, bd=2)
 
