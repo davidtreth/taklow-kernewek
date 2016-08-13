@@ -56,16 +56,16 @@ class kwKemmynRegExp:
     (lgh|ls|lt|bl|bb|kl|kr|kn|kwr?|kk|cch|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgljmnpkrstvw]\'?)?) # consonant (optional)
     '''
     # diwethRegExp matches a syllable at the end of the word
-    diwetRegexp =  r'''(?x)
+    diwetRegExp =  r'''(?x)
     ((bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|qwr?|Qwr?|ch|Ch|Dhr?\'?|dhr?\'?|dl|dr|Dl|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bckdfjlghpmnrstvwyzBCKDFJLGHPMNRSTVWYZ]\'?)? #consonant or c. cluster
     \'?(ay|a\'?w|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|\'?[aeoiuyAEIOUY]\'?) # vowel
     (lgh|ls|lt|bl|br|bb|kl|kr|kn|kwr?|kk|cch|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgjklmnprstvw]\'?)? # optionally a second consonant or cluster ie CVC?
     (\-|\.|\,|;|:|!|\?|\(|\))*
     )$
     '''
-    # kynsaRegexp matches syllable at beginning of a word
+    # kynsaRegExp matches syllable at beginning of a word
     # 1st syllable could be CV, CVC, VC, V
-    kynsaRegexp =  r'''(?x)
+    kynsaRegExp =  r'''(?x)
     ^((\'?(bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|qwr?|Qwr?|ch|Ch|Dhr?|dhr?|dl|dr|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|gwr?|gwl?|gl|gr|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bckdfghjlmnprtvwyzBCKDFGHJLMNPRTVWYZ])\'?)? # optional C. 
     \'?(ay|a\'?w|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])\'? # Vowel
     (lgh|ls|lk|ld|lf|lt|bb?|kk?|cch|n?ch|n?dr|dh|dd?|ff?|vv?|ght|gg?h?|ll?|mp|mm?|nk|nd|nj|ns|nth?|nn?|pp?|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rj|rf|rs|rr?|sh|st|sk|sp|ss?|tt?h|tt?|[jw]\'?)? # optional C.
@@ -167,8 +167,8 @@ class RannaSyllabenn:
     def match_syl(self, ger, regexp):
         """ find a syllable of word
         with regexp
-        use kynsaRegexp for 1st
-        diwetRegexp for last
+        use kynsaRegExp for 1st
+        diwetRegExp for last
         """
         match_syl = ''
         msyl = re.search(regexp,ger)
@@ -238,9 +238,9 @@ class RannaSyllabenn:
         print("\nList of (stem,last syllable): {l}".format(l=list(zip(stem,dsyl))))
 
         # create list of last syllables and first syllables of list of words 'geryow'
-        dsls = [self.match_syl(g,regexps.diwetRegexp) for g in self.geryow if self.match_syl(g,regexps.diwetRegexp) != '']
+        dsls = [self.match_syl(g,regexps.diwetRegExp) for g in self.geryow if self.match_syl(g,regexps.diwetRegExp) != '']
         print("\nLast syllables of words in list: {d}".format(d=dsls))
-        ksls = [self.match_syl(g,regexps.kynsaRegexp) for g in self.geryow if self.match_syl(g,regexps.kynsaRegexp) != ''] 
+        ksls = [self.match_syl(g,regexps.kynsaRegExp) for g in self.geryow if self.match_syl(g,regexps.kynsaRegExp) != ''] 
         print("\nFirst syllables of words in list: {k}\n".format(k=ksls))
         # make a list of all the remainders of the words after the 1st syllable
         slserell = []
@@ -252,11 +252,11 @@ class RannaSyllabenn:
         # make a list of the second syllables of each word in list of words geryow
         nessasls = []
         for g in slserell:
-            if self.match_syl(g,regexps.kynsaRegexp) != '':
-                nessasls.append(self.match_syl(g,regexps.kynsaRegexp))
+            if self.match_syl(g,regexps.kynsaRegExp) != '':
+                nessasls.append(self.match_syl(g,regexps.kynsaRegExp))
             else:
                 nessasls.append('')
-        geryowk = [g for g in self.geryow if self.match_syl(g,regexps.kynsaRegexp) != ''] 
+        geryowk = [g for g in self.geryow if self.match_syl(g,regexps.kynsaRegExp) != ''] 
         # print(zip(ksls,geryowk))
         for k,n,e,g in zip(ksls,nessasls,slserell,geryowk):
              print("Ger: {g}, an kynsa syllabenn yw: {k}, an syllabennow erell yw: {e}, an nessa syllabenn yw: {n}".format(g=g,k=k,e=e,n=n))
@@ -291,10 +291,10 @@ class Ger:
         
         if fwds:
             # go forwards
-            sls = rannans.ranna_syl(self.graph,regexps.kynsaRegexp,fwd=True,bwd=False)
+            sls = rannans.ranna_syl(self.graph,regexps.kynsaRegExp,fwd=True,bwd=False)
         else:
             # go backwards from end 
-            sls = rannans.ranna_syl(self.graph,regexps.diwetRegexp,fwd=False,bwd=True)
+            sls = rannans.ranna_syl(self.graph,regexps.diwetRegExp,fwd=False,bwd=True)
 
         # print(sls)
         self.sls = sls
