@@ -14,7 +14,7 @@ def inflektya_swf(verb, person, tense, suffix_pro=0):
         if verb in dtinf_swf.irregverbs_all:
             return inflv, 1
         else:
-            if suffix_pro > 0:
+            if suffix_pro > 0 and person > 0:
                 suffix = " "+inflv.split(" ")[-1]
             else:
                 suffix = ""
