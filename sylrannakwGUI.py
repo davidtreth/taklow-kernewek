@@ -66,7 +66,7 @@ if __name__ == '__main__':
     # text entry bar for input
     ent = ScrolledText(root)
     ent.text.config(width=40,height=11)
-    ent.pack()
+    ent.pack(expand=0)
     
     # output
     msg3 = ScrolledText(root)
