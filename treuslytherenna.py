@@ -168,6 +168,7 @@ def convert_misc(inputword):
     inputword.graph = outputgraph
 
 def syl_KK2FSS(inputsyl, inputword):
+    """ do syllable level substitutions """
     inputgraph = inputword.graph.lower()
     inputsyl.grapheme = inputsyl.grapheme.lower()
     # turn KK 'oe' to 'oo' or 'o'
@@ -177,6 +178,12 @@ def syl_KK2FSS(inputsyl, inputword):
     convert_y(inputsyl)
     # turn some double consts into single
     convert_double_consts(inputsyl)
+    
+
+def wordlevelsubs_KK2FSS(inputword):
+    """ concatenate the processed syllable spellings
+    into a new word spelling and make any necessary word
+    level substitutions """
     # replace the plaintext syllable list
     inputword.sls = [s.grapheme for s in inputword.slsObjs]
     # build spelling of word from spelling of syllables
@@ -185,8 +192,7 @@ def syl_KK2FSS(inputsyl, inputword):
     convert_s_c(inputword)
     # miscellaneous lexical level substitutions
     convert_misc(inputword)
-
-
+    
 def word_KK2FSS(ger,verberr=False):
     """ expect Ger object and convert its spelling to SWF """
     if ger.graph != '':
@@ -213,6 +219,7 @@ def word_KK2FSS(ger,verberr=False):
                 # print("syllable {s}".format(s=s.grapheme))
                 syl_KK2FSS(s,ger)
                 # print("syllable {s}".format(s=s.grapheme))
+            wordlevelsubs_KK2FSS(ger)
         else:
             failedend = ''
             # if there are no syllables found
