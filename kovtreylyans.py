@@ -168,10 +168,10 @@ def outputSent(insentwords):
     sentNsT = [i[0] for i in sentNs_tri]
     print("\nCommon trigrams:")
     for n in sentNsT:    
-        print("{kw}  --  {en} {t}".format(kw=kw_sents[n].ljust(60), en=en_sents[n].ljust(60), t = unpacklisttuples(trigrs[n]).ljust(30)))
+        print("{kw}  --  {en} {t}\n".format(kw=kw_sents[n].ljust(60), en=en_sents[n].ljust(60), t = unpacklisttuples(trigrs[n])))
     print("\nCommon bigrams:")
     for n in sentNs:    
-        print("{kw}  --  {en} {b}".format(kw=kw_sents[n].ljust(60), en=en_sents[n].ljust(60), b = unpacklisttuples(bigrs[n]).ljust(30)))
+        print("{kw}  --  {en} {b}\n".format(kw=kw_sents[n].ljust(60), en=en_sents[n].ljust(60), b = unpacklisttuples(bigrs[n])))
 
     
     
