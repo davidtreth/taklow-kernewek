@@ -1,0 +1,1541 @@
+SentenceNumber,Chapter,Section,Kernewek,English
+1,1,Review,"Dydh da, Ken. Fatla genes?","Hullo, Ken. How are you?"
+2,1,Review,"Dydh da, Charles.","Hullo, Charles."
+3,1,Review,"Yn poynt da, meur ras, ha ty?","Fine, thanks, and you?"
+4,1,Review,"Myttin da, Maria. Fatla genes?","Good morning, Mary. How are you?"
+5,1,Review,"Da lowr, Maureen - ha ty, - fatla genes?","Fairly well, Maureen - and you, how are you?"
+6,1,Review,"Yn poynt da, meur ras.","Very well, thanks."
+7,1,Review,"Gorthugher da, Loveday.","Good evening, Loveday."
+8,1,Review,"Gorthugher da, Jane.","Good evening, Jane."
+9,1,Review,Ottomma Jori.,Here's George.
+10,1,Review,"Gorthugher da, Jori - fatla genes?","Good evening, George - how are you?"
+11,1,Review,"Yn poynt da, meur ras.","Fine, thanks."
+12,1,Review,"Nos dha, oll!","Good night, all."
+13,1,Review,"Nos dha, Wella!","Good night, Wella."
+14,1,Review,"Dohajydh da, Ann.","Good afternoon, Ann."
+15,1,Review,"Dohajydh da, Malcolm - fatla genes?","Good afternoon, Malcolm - how are you?"
+16,1,Review,"Da lowr, meur ras - ha ty?","Well enough, thanks - and you?"
+17,1,Review,"Da lowr, meur ras.","Quite well, thanks."
+18,1,Review,"Dydh da, Maria.","Hullo, Mary."
+19,1,Review,"Dydh da, Wella - ottomma Stefan.","Hullo, Wella - here's Stephen."
+20,1,Review,"Dydh da, Stefan.","Hullo, Stephen."
+21,2,Review,Ottena eglos!,"Look, a church there!"
+22,2,Review,Yma chi ryb an eglos.,There's a house beside the church.
+23,2,Review,Eus karrji ena ryb an chi?,Is there a garage there beside the house?
+24,2,Review,Nag eus! Nyns eus karrji ena.,No! There isn't a garage there.
+25,2,Review,Mes yma karr a-rag an chi.,But there is a car in front of the house.
+26,2,Review,Ottomma lyver!,"Look, here's a book!"
+27,2,Review,Yma pluvenn a-ji dhe'n lyver.,There's a pen inside the book.
+28,2,Review,Eus pluvennow genes? Nag eus!,Are there pens with you? No!
+29,2,Review,"Gorthugher da! Eus le gesys, mar pleg?","Good evening! Is there a place left,please?"
+30,2,Review,Eus! Yma leow gesys.,Yes! There are places left.
+31,2,Review,Eus kador ena?,Is there a chair there?
+32,2,Review,"Eus, sur!","There is, certainly!"
+33,2,Review,Eus kador ha pluvek ena?,Is there a chair and a cushion there?
+34,2,Review,Nag eus!,There isn't!
+35,2,Review,Eus jynn-skrifa war an desk?,Is there a typewriter on the desk?
+36,2,Review,Eus avalow gesys?,Are there any apples left?
+37,2,Review,Eus! Ottena! Yma avalow ena.,There are! Look! There are apples there!
+38,4,Examples,Yma nebonan a-ji dhe'n eglos na.,There is someone inside that church.
+39,4,Examples,Yma neppyth a-ragh an chi ma.,There is something in front of this house.
+40,4,Review,An brithel ma yw bryntin.,This mackerel is excellent.
+41,4,Review,Yma an gador-vregh ena.,The armchair is there.
+42,4,Review,Eus sinema ryb hel an dre?,Is there a cinema by the town hall?
+43,4,Review,"Nyns eus kenter omma, dell hevel.","There is no nail here, it seems."
+44,4,Review,Ottena - yma an genter war an eurlenn.,Look there - there's the nail on the carpet.
+45,4,Review,Eus stamp gesys? Nag eus!,Is there a stamp left? No!
+46,4,Review,"Yma mebyl gesys ena y'n chi: kador-vregh, kador, gweder ha lestrier mes nyns eus moes ena.","There is furniture left in the house: an arm-chair, chair, mirror and dresser but there isn't a table there."
+47,4,Review,Eus nebonan ena a-ji dhe'n pras?,Is there anyone there in the field?
+48,4,Review,Eus stamp genes?,Have you a stamp?
+49,4,Review,Yma pras war an woen hag yma chi ryb an pras na.,There's a field on the down and there's a house by that field.
+50,4,Review,"Sur, yma lyver war an voes.",Certainly there is a book on the table.
+51,4,Review,Eus neppyth gesys ena? Eus!,Is there anything left? Yes!
+52,4,Review,"Yma avalow gesys, dell hevel.","There are apples left, it seems."
+53,4,Review,Yma an dhavas ena y'n pras na.,The sheep is in that field.
+54,5,Examples,An diwes ma yw gwin frynkek.,That drink is French wine.
+55,5,Examples,An chi na yw ostel.,That house is an hotel.
+56,5,Examples,Hemm yw an gegin.,This is the kitchen.
+57,5,Examples,Henn yw Frank.,That is Frank.
+58,5,Examples,Frank yw henna.,Frank is that man.
+59,5,Examples,An losow yw eythin.,The plants are gorse.
+60,5,Examples,An traow ma yw prenn.,Those things are wood.
+61,5,Examples,Nyns yw an diwes ma gwin frynkek.,That drink is not French wine.
+62,5,Examples,Nyns yw an chi na ostel.,That house is not an hotel.
+63,5,Examples,Nyns yw hemma an gegin.,This is not the kitchen.
+64,5,Examples,Nyns yw Frank henna.,Frank is not that man
+65,5,Examples,Nyns yw an losow eythin.,The plants are not gorse.
+66,5,Examples,Yw an diwes ma gwin frynkek?,Is this drink French wine?
+67,5,Examples,Yw an chi na ostel?,Is that house an hotel?
+68,5,Examples,Yw hemma an gegin?,Is this the kitchen?
+69,5,Examples,Yw henna Frank?,Is that Frank?
+70,5,Examples,Yw an losow eythin?,Are the plants gorse?
+71,5,Examples,Yw an traow ma prenn?,Are these things wood?
+72,5,Examples,Yw an drehevyans na hel an dre?,Is that building the town hall?
+73,5,Examples,Yw an gwydh ma derow? Yns.,Are these trees oaks? Yes.
+74,5,Examples,Yw an chiow na ostelyow? Nag yns.,Are those houses hotels? No.
+75,5,Examples,Pyth yw hemma?,What is that?
+76,5,Examples,Maylyer gwag yw.,It's an empty envelope.
+77,5,Examples,Pyth yw an re na?,What are those?
+78,5,Examples,Skeusennow koth yns.,They are old photographs.
+79,5,Review,Hemm yw pluvenn.,This is a pen.
+80,5,Review,An re ma yw pluvennow.,These are pens.
+81,5,Review,Henn yw chi.,That is a house.
+82,5,Review,An re na yw chiow.,Those are houses.
+83,5,Review,An drehevyans na yw eglos.,That building is a church.
+84,5,Review,An eglos yw an drehevyans na.,The church is that buuilding.
+85,5,Review,An dre ma yw Logh.,This town is Looe.
+86,5,Review,Homm yw Myrna ha honn yw Pat.,This is Myrna and that is Pat.
+87,5,Review,An diwes ma yw gwin.,This drink is wine.
+88,5,Review,Pyth yw an dra ma?,What is this object?
+89,5,Review,Henn yw kenter.,That is a nail.
+90,5,Review,Nyns yw an dra ma prenn.,This object is not wood.
+91,5,Review,Nyns yw hemma an gegin.,This is not the kitchen.
+92,5,Review,Nyns yw an drehevyans ma ostel.,This building is not an hotel.
+93,5,Review,Pyth yw an mebyl omma?,What is the furniture here?
+94,5,Review,"An re ma yw an mebyl, an voes ma, an gador-vregh ma ha'n lestrier na.","These (things) are the furniture, this table, this armchair and that dresser."
+95,5,Review,Yw henna brithel? Yw!,Is that a mackerel? It is!
+96,5,Review,Yw an re ma losow? Yns!,Are these plants? They are!
+97,5,MiscReview,Eus eglos y'n dre ma?,Is there a church in this town?
+98,5,MiscReview,Eus! Yma an eglos ryb hel an dre,There is! The church is beside the town hall.
+99,5,MiscReview,Yw an gwin ma bretonek?,Is this wine Breton?
+100,5,MiscReview,Hemma. Hemm yw bretonek.,This.This is Breton.
+101,5,MiscReview,Eus pluvek war an gador-vregh na?,Is there a cushion on that arm-chair?
+102,5,MiscReview,"Eus, dell hevel.","There is, it seems."
+103,5,MiscReview,Eus diwes gesys?,Is there (any) drink left?
+104,5,MiscReview,Nag eus! Nyns eus tra omma.,There isn't. There's nothing here.
+105,6,Review,"An den na yw feusik, dell hevel.","That man is lucky, it seems."
+106,6,Review,An fordh ma yw kul.,This road is narrow.
+107,6,Review,James ha Lowena yw parow.,James and Lowena are equals.
+108,6,Review,Yw an mebyl parys? Nag yns.,Is the furniture ready? No.
+109,6,Review,"An lyver ma yw dhe les, dell dybav.","This book is useful, I think."
+110,6,Review,Ottomma kenter war an gador ma.,"Look, here's a nail on this chair."
+111,6,Review,"Homm yw fol, sur.","This is silly, surely."
+112,6,Review,Hel an dre yw nowydh mes an eglos yw koth.,The town hall is new but the church is old.
+113,6,Review,An gwin ma yw hweg. Bryntin!,This wine is sweet. Fine!
+114,6,Review,An chi yw gwerthys lemmyn.,The house is sold now.
+115,6,Review,An voes ma yw derow.,This table is oak.
+116,6,Review,An gweder ma yw dhe les.,This mirror is useful.
+117,6,Review,Yw an maw salow ena?,Is the boy safe there?
+118,6,Review,Hemm yw brav!,This is grand!
+119,6,Review,Nyns yw an losow byw.,The plants are not alive.
+120,6,Review,A nyns yw an maw ma skav?,Isn't this boy quick?
+121,6,Review,"Yw, sur.","He is, certainly."
+122,6,Review,A nyns yw an re ma parow?,Aren't these equal?
+123,6,Review,"Yns, dell hevel.","They are, it seems."
+124,6,MiscReview,"Dydh da, Maureen. Brav yw lemmyn.","Hello, Maureen. It's grand now."
+125,6,MiscReview,Eus gwin gesys? Eus! Yma gwin y'n gegin.,Is there (any) wine left? There is! There's wine in the kitchen.
+126,6,MiscReview,Fatla genowgh hwi oll?,How are you all?
+127,6,MiscReview,Eus fordh ryb an pras na?,Is there a road beside that field?
+128,6,MiscReview,Ottena pluvek war an gador na.,Look there's a cushion on that chair.
+129,6,MiscReview,Yma nebonan y'n gegin lemmyn.,There is someone in the kitchen now.
+130,6,MiscReview,An ostel na yw bryntin.,That hotel is fine.
+131,6,MiscReview,"Duw genes, Peder!","Goodbye, Peter!"
+132,6,MiscReview,An drehevyans a-rag an chi yw karrji.,The building in front of the house is a garage.
+133,6,MiscReview,Eus traow gesys war an lestrier?,Are there things left on the dresser?
+134,6,MiscReview,Eus! Yma traow gesys ena,There are. There are things left there.
+135,6,MiscReview,Eus leow gesys y'n sinema lemmyn?,Are there places left in the cinema now?
+136,6,MiscReview,"An re ma yw nowydh, dell dybav.","These are new, I think."
+137,6,MiscReview,Pyth yw hemma?,What's this?
+138,6,MiscReview,An dra na yw pluvenn.,That object is a pen.
+139,6,MiscReview,Pyth yw hweg?,What is sweet?
+140,6,MiscReview,"An aval ma yw hweg, sur.","This apple is sweet, for sure."
+141,6,MiscReview,A nyns eus davas y'n pras na?,Isn't there a sheep in that field?
+142,6,MiscReview,Py tus yw kernewek omma?,Which people are Cornish here?
+143,6,MiscReview,"Oll an re na, dell dybav.","All of those, I think."
+144,7,Review,"Pyth yw hemma, Pol?","What's this, Paul?"
+145,7,Review,"Arta, mar pleg.","Again, please"
+146,7,Review,An gwin ma yw Almaynek.,This wine is German.
+147,7,Review,A wodhesta konvedhes Kernewek.,Do you understand Cornish?
+148,7,Review,"Gonn, dell dybav.","I do, I think."
+149,7,Review,Py lyver yw Kembrek?,Which book is Welsh?
+150,7,Review,Hemm yw kembrek.,This is Welsh.
+151,7,Review,Py lyver yw dhe les?,Which book is useful?
+152,7,Review,"Hemm yw dhe les, sur.","This one is useful, certainly."
+153,7,Review,An pow na yw Pow Sows.,That country is England.
+154,7,Review,An stamp ma yw Iwedhonek.,This stamp is Irish
+155,7,Review,Fatell yw an gewer lemmyn?,What is the weather like now?
+156,7,Review,Yma awel.,There's a wind.
+157,7,Review,Poeth yw an gewer lemmyn.,The weather is now very hot.
+158,7,Review,"An gewer yw splann ha kosel, dell hevel.","The weather is fine and calm, it seems."
+159,7,Review,Brav! Hi yw teg.,Splendid! It's fine.
+160,7,Review,Ergh a wra hi yn Alban lemmyn.,It's snowing in Scotland now.
+161,7,Review,Ott! An pras yw niwlek.,Look! The field is misty.
+162,7,MiscReview,"Fatal genes, Mighal?","How are you, Michael?"
+163,7,MiscReview,"Yn poynt da, Les, meur ras. Ha ty?","Well, Les, thanks. And you?"
+164,7,MiscReview,Ogh! Da lowr. Mes yma anwoes warnav.,Oh! Well enough. But I have a cold.
+165,7,MiscReview,Gwynsek yw hi an dohajydh ma.,It's windy this afternoon.
+166,7,MiscReview,"Yw, sur.","It is, certainly."
+167,7,MiscReview,Eus glaw?,Is there rain?
+168,7,MiscReview,Eus. Hi a wra glaw lemmyn.,There is. It's raining now.
+169,7,MiscReview,An karr ma yw gwerthys.,This car is sold.
+170,7,MiscReview,An voes ma yw nowydh.,This table is new.
+171,7,MiscReview,A nyns yw an maw ma lowen?,Isn't this boy happy?
+172,7,MiscReview,"Yw, dell dybav.","He is, I think."
+173,7,MiscReview,Homm yw feusik. Yma aval gesys.,This is lucky. There's an apple left.
+174,7,MiscReview,Yma ostel yn unn dre yn Breten Vyghan. Ostel dha yw.,There's an hotel in a certain town in Brittany. It's a good hotel.
+175,7,MiscReview,Pyth yw an drehevyans ma?,What is this building?
+176,7,MiscReview,Henn yw hel an dre.,That's the town hall.
+177,7,MiscReview,An brithek ma yw brav!,This mackerel is fine!
+178,7,MiscReview,Duw genes lemmyn - ha meur ras!,Goodbye now - and thank you.
+179,7,MiscReview,Py re yw parys lemmyn?,Which ones are ready now?
+180,7,MiscReview,Honn yw Kernewes.,That is a Cornish woman.
+181,7,MiscReview,Ottomma Karl! Almaynek yw.,This is Karl. He is German.
+182,7,MiscReview,"Kernow ha Breten Vyghan yw parow. Sur, parow yns.","Cornwall and Brittany are equals. Certainly, equals they are."
+183,7,MiscReview,"An gwyns yw skav lemmyn, dell hevel.","The wind is light now, it seems."
+184,7,MiscReview,"An gador ma yw kembrek, dell dybav.","This chair is Welsh, I think."
+185,7,MiscReview,A wodhowgh hwi oll konvedhes Kernewek?,Do you all understand Cornish?
+186,7,MiscReview,Gonn! Gonn!,I do! I do!
+187,7,MiscReview,"Sur, an eglos ma yw oer.",Certainly this church is very cold.
+188,8,Review,An broder ha'n hwoer yw parow.,The brother and sister are equals.
+189,8,Review,Nyns yw an vamm ha'n vyrgh parow.,The mother and daughter are not equals.
+190,8,Review,An vodrep yw koth.,The aunt is old.
+191,8,Review,Yma anwoes war an vamm-wynn.,The grandmother has a cold.
+192,8,Review,"An tas, an ewnter ha'n mab oll yw gorow.","Father, uncle and son are all male."
+193,8,Review,"An vamm, an vyrgh ha'n vodrep oll yw benow.","Mother, daughter and aunt are all female."
+194,8,Review,A nyns yw an hweger lowen namoy?,Isn't mother-in-law happy any more?
+195,8,Review,An vowes yw yowynk.,The girl is young.
+196,8,Review,An byskadoryon yw parys lemmyn.,The fishermen are ready now.
+197,8,Review,"An diogyon na yw feusik, dell dybav.","Those farmers are lucky, I think."
+198,8,Review,Yma an dioges yn le'ti lemmyn.,The farmwife is in the dairy now.
+199,8,Review,A nyns eus ke ryb an koes? Nag eus!,Isn't there a hedge by the wood? No!
+200,8,MiscReview,An jynn-skrifa na yw koth mes da.,That typewriter is old but good.
+201,8,MiscReview,Yma neppyth nowydh y'n dre lemmyn. Henn yw bryntin!,There's something new in the town now. That's splendid!
+202,8,MiscReview,Nyns eus pluvennow gesys namoy.,There are no pens left any more.
+203,8,MiscReview,A wodhesta konvedhes hemma?,Do you understand this?
+204,8,MiscReview,Na wonn.,I do not understand.
+205,8,MiscReview,Fatell yw an gewer lemmyn?,What's the weather like now?
+206,8,MiscReview,"Glyb ha kommolek, dell hevel.","Wet and cloudy, it seems."
+207,8,MiscReview,Py mowes yw Karol?,Which girl is Carol?
+208,8,MiscReview,Honna y'n gador-vregh.,That (one) in the armchair.
+209,8,MiscReview,Py lyver yw gesys?,What book is left?
+210,8,MiscReview,"Pyth yw hemma, an dra ma, yn Kernewek?","What is this, this object, in Cornish?"
+211,8,MiscReview,'Gweder' yw. A wodhesta konvedhes?,It's 'gweder'. Do you understand?
+212,8,MiscReview,"Gonn, meur ras.","Yes, thank you."
+213,8,MiscReview,"Ottomma diwes. Gwin yw, dell dybav, ha yeyn. Bryntin!","Here's (some) drink. It's wine I think, and cold. Splendid!"
+214,8,MiscReview,"Eus pluvenn genes, mar pleg? Eus!","Have you a pen, please? Yes!"
+215,8,MiscReview,An gegin yw kul.,The kitchen is narrow.
+216,9,Examples,"Gav dhymm mes piw yw henna, mar pleg? Mr Grace yw henna","Excuse me but who is that, please? That's Mr Grace."
+217,9,Examples,"Piw yw Mr Lock ytho? Ottena! An gour ena yw Mr Lock, an gour hir na.","Who is Mr Lock then? Look! that man there is Mr. Lock, that tall man."
+218,9,Review,Hemm yw aval hweg.,This is a sweet apple.
+219,9,Review,"An avon Tamer yw avon vras, down.","The River Tamar is a large, deep river"
+220,9,Review,Hemm yw koes bras.,This is a big wood.
+221,9,Review,Pow teg yw Breten Vyghan.,A beautiful country is Brittany.
+222,9,Review,Ottomma kador-vregh vyghan.,Here's a small armchair.
+223,9,Review,Yma le gesys omma.,There's a place left here.
+224,9,Review,Yma kador gesys ryb an voes vras.,There's a chair left beside the big table
+225,9,Review,Hel an Dre yw drehevyans teg.,The town hall is a fine building.
+226,9,Review,"An gour yw den da, dell dybav.","The husband is a good person, I think."
+227,9,Review,A nyns yw hemma gwin almaynek? Ny wonn!,Isn't this a German wine? I don't know!
+228,9,Review,Yeth dha yw Kernewek.,A good language is Cornish.
+229,9,Review,"Tus dha yns, sur.","Good people they are, certainly."
+230,9,Review,Kewer deg yw brav mes nyns yw an gewer teg lemmyn.,Fine weather is great but the weather isn't fine now.
+231,9,Review,Gwydhelek yw yeth keltek,Irish is a Celtic language.
+232,9,Review,"An voes ma ha'n lestrier na yw mebyl koth, dell hevel.","This table and that dresser are old furniture, it seems."
+233,9,Review,"Lyver berr yw lyver da, dell dybav.","A short book is a good book, I think."
+234,9,Review,"Eus kenter vyghan berr ena genes, mar pleg?","Is there a small, short nail there with you, please?"
+235,9,Review,Tus keltek yns.,They are Celtic people.
+236,9,Review,Henn yw flogh da.,That's a good child.
+237,9,Review,An re na yw fleghes dha.,Those are good children.
+238,9,Review,Fatell yw an karrji ytho? Splann yw!,What's the garage like then? It's fine.
+239,9,Review,Py par pluvenn yw honna?,What kind of pen is that?
+240,9,Review,Pluvenn-fenten yw.,It's a fountain pen.
+241,9,Review,Piw yw honna? Honn yw Loveday.,Who is that? That's Loveday.
+242,9,Review,Piw yw an re na ena?,Who are those (people) there?
+243,9,Review,Mr ha Mrs Harrison yns.,Mr and Mrs Harrison they are.
+244,9,Review,Piw yw an venyn voen ena?,Who is that slim woman there?
+245,9,Review,Fiona yw. Tioges yw Fiona.,Fiona it is. A farmwife is Fiona.
+246,9,Review,Piw yw an benynes koth na? Ny wonn!,Who are those old women there? I don't know!
+247,9,MiscReview,"Yma anwoes war an flogh na, sur.",That child certainly has a cold.
+248,9,MiscReview,Eus nebonan y'n le'ti ena?,Is there anyone in the dairy there?
+249,9,MiscReview,Fatell yw an gewer an gorthugher ma?,How is the weather this evening?
+250,9,MiscReview,Splann ha sygh yw hi.,Fine and dry.
+251,9,MiscReview,A nyns eus yeth keltek yn Kembra?,Isn't there a Celtic language in Wales?
+252,9,MiscReview,Yma avon vras ha hir yn Almayn.,"There is a large, long river in Germany."
+253,9,MiscReview,An avon na yw an Rayn,That river is the Rhine.
+254,9,MiscReview,"Nyns yw an ostel ma da, dell hevel.","This hotel is not good, it seems."
+255,9,MiscReview,Yw an maw parys lemmyn?,Is the boy ready now?
+256,9,MiscReview,Yma bleujyow byw gesys war an fordh omma.,There are live flowers left on the road here.
+257,9,MiscReview,An chi a-ji dhe'n koes yw chi nowydh.,The house in the wood is a new house.
+258,9,MiscReview,A nyns eus notenn verr gesys y'n gegin?,Isn't there a short note left in the kitchen?
+259,9,MiscReview,"Eus gweder byghan genes, mar pleg?","Have you got a small mirror with you, please?"
+260,9,MiscReview,Py avon yw homma?,What river is this?
+261,9,MiscReview,An avon Tavi yw hi.,The river Tavy it is.
+262,9,MiscReview,Hi a wra glaw lemmyn mes toemm yw hi.,It's raining now but it's warm.
+263,9,MiscReview,"Dydh da, Charles. Fatla genes?","Hullo, Charles. How are you?"
+264,9,MiscReview,"Yn poynt da, dell hevel.","Well, it seems."
+265,9,MiscReview,"Sur, nyns yw an vyrgh feusik.",Certainly the daughter isn't lucky.
+266,9,MiscReview,Yw an dra ma 'kador' yn kernewek?,Is this object 'kador' in Cornish?
+267,9,MiscReview,"Yw, sur. Hemm yw 'kador' ha henn yw 'kador-vregh' yn kernewek.",Certainly. This is 'kador' and that is 'kador-vregh' in Cornish.
+268,9,MiscReview,Tus fol yns.,They are foolish people.
+269,9,MiscReview,Py yeth yw kewsys yn Kembra?,What language is spoken in Wales?
+270,9,MiscReview,Kembrek yw kewsys ena ryb Sowsnek.,Welsh is spoken there beside English.
+271,10,Examples,Ottena tour an eglos.,See there the church tower.
+272,10,Examples,"Kemmer kres an lovan ma, mar pleg.","Take the middle of this rope, please."
+273,10,Examples,Toll alhwedh daras hel an dre.,The keyhole of the town hall door.
+274,10,Examples,Broder tas Kevyn.,Kevin's father's brother.
+275,10,Examples,Dorn shyndys an flogh.,The child's injured hand.
+276,10,Review,Mab Pol yw broder Simon,Paul's son is Simon's brother.
+277,10,Review,Tour an eglos ma yw gwann.,The tower of this church is weak.
+278,10,Review,Toll an daras yw hir mes kul.,The door opening is high but narrow.
+279,10,Review,Gwreg an gour ma yw Kernewes dha.,This man's wife is a good Cornishwoman.
+280,10,Review,Ottena - daras an karr yw shyndys.,Look there! The door of the car is damaged.
+281,10,Review,Henn yw karr hwegron Jori.,That's George's father-in-law's car.
+282,10,Review,Honn yw kares hweger Myrna.,That's a relation of Myrna's mother-in-law.
+283,10,Review,Yma padell blos war voes an gegin.,There's a dirty pan on the kitchen table.
+284,10,Review,Hel an Dre yw bras.,The town hall is large.
+285,10,Review,"Kemmer dorn an maw, mar pleg.","Take the child's hand, please."
+286,10,Review,A nyns yw bras an avon ha down?,Isn't the river large and deep?
+287,10,Review,Kres an koes yw le kosel.,The middle of the wood is a quiet place.
+288,10,Review,A nyns eus penn lovan omma?,Isn't there a rope end here?
+289,10,Review,Kemmer an penn ma ytho!,Take this end then!
+290,10,Review,"Pluvek an gador-vregh yw plos, dell hevel.","The armchair cushion is dirty, it seems."
+291,10,Review,"Lost an ki ma yw berr, sur.","This dog's tail is short, certainly."
+292,10,MiscReview,Eus moes dherow yn kres an hel?,Is there an oak table in the centre of the hall?
+293,10,MiscReview,"Gorthugher da, Jenefer. Kemmer an lyver ma, mar pleg!","Good evening, Jenefer. Take this book, please!"
+294,10,MiscReview,Eus anwoes war Jori? Eus!,Has George got a cold. Yes!
+295,10,MiscReview,"Noy Mr Toms ha mab Mr. Rickard yw parow, dell hevel.","Mr Tom's nephew and Mr. Rickard's son are equals, it seems."
+296,10,MiscReview,Py hwedhel yw gwir?,Which story is true?
+297,10,MiscReview,An notenn yw parys lemmyn,The note is ready now.
+298,10,MiscReview,Py drehevyans yw hel an dre.,Which building is the town hall?
+299,10,MiscReview,Ottena! An drehevyans bras.,There look! The big building.
+300,10,MiscReview,An maw yw shyndys mes salow yw.,The boy is hurt but he is safe.
+301,10,MiscReview,"Nos dha, Roy! Nos dha, Tom!","Good night, Roy! Good night, Tom!"
+302,10,MiscReview,Yma kenter vras y'n toll ma. Kenter goth yw homma sur.,There's a large nail in this hole. It's an old nail certainly.
+303,10,MiscReview,Tour an eglos na yw nowydh,That church tower is new.
+304,10,MiscReview,Nyns eus le gesys yn kres an dre lemmyn.,There isn't a place left in the town centre now.
+305,10,MiscReview,An ki ma yw gorow.,This dog is male.
+306,10,MiscReview,Yma toll down yn kres an fordh.,There is a deep hole in the centre of the road.
+307,10,MiscReview,Fatell yw an gewer genes?,How is the weather with you?
+308,10,MiscReview,Hi yw kommolek omma.,It's cloudy here.
+309,10,MiscReview,"Yw an yeth kernewek dhe les? Yw, sur!",Is the Cornish language useful? It certainly is!
+310,10,MiscReview,Pyth yw yeth Alban?,What is the language of Scotland?
+311,10,MiscReview,Albanek yw kewsys ena ryb Sowsnek.,Gaelic is spoken there beside English.
+312,11,Review,My yw lowen.,I am happy.
+313,11,Review,Ty yw fur.,You are wise.
+314,11,Review,Ev yw kloppek.,He is lame.
+315,11,Review,Ev yw gwir.,It (a statement) is true.
+316,11,Review,Hi yw teg.,She is pretty.
+317,11,Review,Hi yw gwag.,It (a basket) is empty.
+318,11,Review,Ni yw warbarth.,We are together.
+319,11,Review,Hwi yw parys.,You are ready.
+320,11,Review,I yw koth.,They are old.
+321,11,Review,"Ev yw derow, derow kernewek.","It is oak, Cornish oak."
+322,11,Review,Ty yw Kelt.,You are a Celt.
+323,11,Review,I yw gesys warbarth y'n hel.,They are left together in the hall.
+324,11,Review,"Ty yw tiek, dell dybav.","You are a farmer, I think."
+325,11,Review,Ev yw ki fol.,He's a silly dog.
+326,11,Review,"Hi yw myrgh an teylu, mowes teg yw hi.","She's the daughter of the family, she's a pretty girl."
+327,11,Review,Ni yw lowen lemmyn.,We are happy now.
+328,11,Review,I yw dhe les.,They are useful.
+329,11,Review,Ha lemmyn hwi yw gour ha gwreg.,And now you are man and wife.
+330,11,MiscReview,Pyth yw penn an hwedhel? Ny wonn.,What is the end of the story? I don't know.
+331,11,MiscReview,Fatell yw an tas lemmyn?,How is father now?
+332,11,MiscReview,Gwann ha kloppek hwath yw ev.,Weak and lame he is still.
+333,11,MiscReview,Nyns eus anwoes war Pam namoy.,Pam hasn't got a cold now.
+334,11,MiscReview,Yma kador gesys y'n hel.,There is a chair left in the hall.
+335,11,MiscReview,"Hemm yw fur, dell dybav.","This is wise, I think."
+336,11,MiscReview,Ottena an ostel.,There's the hotel.
+337,11,MiscReview,"Kemmer an notenn, mar pleg!","Take the note, please!"
+338,11,MiscReview,Py par prenn yw hemma?,What sort of wood is this?
+339,11,MiscReview,An prenn ma yw derow.,This wood is oak.
+340,11,MiscReview,Noy Mr Turner yw maw bras.,Mr Turner's nephew is a big boy.
+341,11,MiscReview,"Nos dha, Maria, dha weles!","Good night, Mary, see you!"
+342,11,MiscReview,A nyns eus fordh dha a-rag an karrji?,Isn't there a good road in front of the garage?
+343,11,MiscReview,Yw hi hweger Yowann?,Is she John's mother-in-law?
+344,11,MiscReview,Fatell yw an dus ena lemmyn?,How are the people there now?
+345,11,MiscReview,"Brav yns hag yn poynt da, dell dybav.","They are fine and in good health, I think."
+346,11,MiscReview,"Awelek yw hi, sur.",It is certainly very windy.
+347,11,MiscReview,Ni yw warbarth lemmyn.,We are together now.
+348,11,MiscReview,"An re ma, i yw parow, dell hevel.","These, they are equal, it seems."
+349,11,MiscReview,Chi koth ha yeyn yw ev.,"An old, cold house it is."
+350,12,Review,Nyns yw hi pur lowen lemmyn.,She is not very happy now.
+351,12,Review,Ni yw pur doemm.,We are very warm
+352,12,Review,Yma fordh pur gul ryb an pras.,There is a very narrow road beside the field.
+353,12,Review,A nyns yw an chambour ma pur deg?,Isn't this bedroom very nice?
+354,12,Review,An lovan ma yw re verr.,This rope is too short.
+355,12,Review,I yw re voen.,They are too thin.
+356,12,Review,"Gour Morwenna yw re dew, a nyns yw?","Morwenna's husband is too fat, isn't he?"
+357,12,Review,An gewer yw teg lowr.,The weather is fine enough.
+358,12,Review,Yw an gwin ma yeyn lowr?,Is this wine cold enough?
+359,12,Review,Hemm yw hweg lowr.,This is sweet enough.
+360,12,Review,Yw an karr salow lowr lemmyn?,Is the car safe enough now?
+361,12,Review,"An re na yw lowr, meur ras.","Those are enough, thanks."
+362,12,Review,Eus avalow lowr genes?,Have you got enough apples?
+363,12,MiscReview,Kemmer hemma mar pleg!,Take this please!
+364,12,MiscReview,"An bara ma yw sygh, pur sygh.","This bread is dry, very dry."
+365,12,MiscReview,"Ottomma Jori. Jori yw kenderow Mark, a nyns yw gwir, Jori?","Here's George. George is Mark's cousin, isn't it true, George?"
+366,12,MiscReview,"Alban yw bras, pur vras.","Scotland is large, very large."
+367,12,MiscReview,Eus bara gesys? Eus! Yma ev y'n gegin.,Is there any bread left? Yes! It's in the kitchen.
+368,12,MiscReview,Shyndys yw penn an ki ma mes byw yw ev hwath.,This dog's head is injured but it is alive still.
+369,12,MiscReview,Tewl yw hi yn kres an koes.,It is dark in the centre of the wood.
+370,12,MiscReview,Nyns yw honna da.,That is not good.
+371,12,MiscReview,Yma toll y'n bluvek ma.,There's a hole in this cushion.
+372,12,MiscReview,"Fatell yw an chambour? Pur dha, meur ras.","How is the bedroom? Very good, thanks."
+373,12,MiscReview,"An jynn-skrifa yw plos, dell hevel.","The typewriter is dirty, it seems."
+374,12,MiscReview,Py lovan yw hir lowr?,Which rope is long enough?
+375,12,MiscReview,Daras an eglos yw koth.,The church door is old.
+376,12,MiscReview,Yma tus a-rag hel an dre. Lost hir yw.,There are people in front of the town hall. It's a long queue.
+377,12,MiscReview,"Dohajydh da, Lowena. Fatla genes lemmyn? Da lowr, meur ras.","Good afternoon, Lowena. How are you now? Well enough, thanks."
+378,12,MiscReview,Glaw skav a wra hi.,It's raining lightly.
+379,12,MiscReview,Yeth wir an den na yw Kernewek.,That person's true language is Cornish.
+380,12,MiscReview,"Hwi yw parys lemmyn, dell hevel.","You are ready now, it seems."
+381,12,MiscReview,Pyth yw hemma? Lyver kembrek yw.,What's this? It's a Welsh book.
+382,13,Review,An chiow y'n dre ma yw pur goth.,The houses in this town are very old.
+383,13,Review,"Kanoryon an eglos yw da. Gwir, kanoryon dha yns.","The church singers are good. True, good singers they are."
+384,13,Review,Nyns yw leuryow an chi salow lemmyn.,The floors of the house are not safe now.
+385,13,Review,An del y'n koes yw sygh.,The leaves in the wood are dry.
+386,13,Review,Yma delennow hir war an skorrenn verr na.,There are long leaves on that short branch.
+387,13,Review,Gwydh an koes ma yw koth.,The trees of this wood are old.
+388,13,Review,Yma skorrennow bras war an wydhenn na.,There are big branches on that tree.
+389,13,Review,Chambours an ostel ma yw byghan.,The bedrooms of this hotel are small.
+390,13,Review,Yma gervaow yn penn an lyver.,There are word lists at the end of the book.
+391,13,Review,"Fleghes dha yns, sur.",They are good children certainly.
+392,13,Review,An lyvrow yw gwerthys.,The books are sold.
+393,13,Review,"Myrghes Tamsin yw teg, pur deg.","Tamsin's daughters are pretty, very pretty."
+394,13,MiscReview,Yw an losow byw hwath?,Are the plants alive still?
+395,13,MiscReview,"Hemm yw da lowr, meur ras.","This is good enough, thanks."
+396,13,MiscReview,A nyns eus neppyth gesys?,Isn't there anything left?
+397,13,MiscReview,Nyns yw hemma dhe les lemmyn.,This is no use now.
+398,13,MiscReview,Yma padellow plos lowr y'n gegin!,There are enough dirty saucepans in the kitchen!
+399,13,MiscReview,Eus stamp genes mar pleg? Eus!,"Have you a stamp, please? Yes!"
+400,13,MiscReview,"Py par stamp eus genes, ytho?",What sort of stamp do you have then?
+401,13,MiscReview,Pow Frynk yw pow pur vras ha pur deg.,France is a very big and beautiful country.
+402,13,MiscReview,Py traow yw gwerthys lemmyn?,What things are sold now?
+403,13,MiscReview,A wodhowgh hwi oll konvedhes hemma?,Do you all understand this?
+404,13,MiscReview,"Ni yw sallow lemmyn, dell dybav.","We are safe now, I think."
+405,13,MiscReview,Nyns eus nebonan gesys yn hel an dre.,There is no-one left in the town hall.
+406,13,MiscReview,"Fatell yw an bara na? brav yw, meur ras.","What is that bread like? It's fine, thanks."
+407,13,MiscReview,"Pyth yw an draow ma, an re byghan.","What are these things, the small ones?"
+408,13,MiscReview,"Kentrow yns, dell hevel.","They are nails, it seems."
+409,13,MiscReview,Avonyow Almayn yw hir.,The rivers of Germany are long.
+410,13,MiscReview,"Feusik yns, a nyns yns i.","They are lucky, aren't they."
+411,13,MiscReview,"Trevow Breten Vyghan yw teg, pur deg.","The towns of Britttany are beautiful, very beautiful."
+412,13,MiscReview,Del an kesten yw gras,The leaves of the chestnut are large.
+413,13,MiscReview,An gestenenn goth na yw bras.,That old chestnut is large.
+414,13,MiscReview,Dorn flogh yw byghan.,The hand of a child is small.
+415,14,Review,Yma tri fysk war an plat na.,There are three fish on that plate.
+416,14,Review,Onan yw brithel.,One is a mackerel.
+417,14,Review,Yma teyr gwydhenn y'n lowarth.,There are three trees in the garden.
+418,14,Review,Yma diw gestenenn ena.,There are two chestnut trees there.
+419,14,Review,An arghans yw tanow lemmyn.,Money is scarce now.
+420,14,Review,Nyns eus arghans lowr rag boes.,There is not enough money for food.
+421,14,Review,"An dhew wour na yw parow, dell hevel.","Those two men are equals, it seems."
+422,14,Review,"Mes sur, nyns yw an dhiw venyn parow.","But certainly, the two women are not equals."
+423,14,Review,Oll an mebyl yw diw voes koth ha peder kador.,All the furniture is two old tables and four chairs.
+424,14,Review,Yma unn karr a-rag an chi.,There is one car in front of the house.
+425,14,Review,Eus ostel yn kres an dre?,Is there an hotel in the town centre?
+426,14,Review,Eus! Yma pymp ostel ena.,Yes! There are five hotels there.
+427,14,Review,Kemmer teyr henter ytho!,Take three nails then!
+428,14,Review,Yma unnek mowes ha trydhek maw oll warbarth.,There are eleven girls and thirteen boys all together.
+429,14,Review,"Yma deg hwegynn gesys, dell dybav.","There are ten sweets left, I think."
+430,14,Review,Yma unn garrek pur vras ena.,There is one very large rock there.
+431,14,Review,Ottena teyr delenn rudh war an leur.,Look there are three red leaves on the ground.
+432,14,Review,Yma peswar stamp gesys y'n lyver.,There are four stamps left in the book.
+433,14,Review,Ugens lyver yw gwerthys lemmyn.,Twenty books are sold now.
+434,14,Review,Eus hwetek plat byghan war an lestrier?,Are there sixteen small plates on the dresser?
+435,14,Review,I yw tri flogh fol.,They are three foolish children.
+436,14,MiscReview,Del an gwydh ma yw tanow.,The leaves of these trees are thin.
+437,14,MiscReview,Eus boes lowr gesys rag an ki?,Is there enough food left for the dog?
+438,14,MiscReview,Eus! Yma boes war blat y'n gegin,Yes! There is food on a plate in the kitchen.
+439,14,MiscReview,"An erva yw hir, re hir.","The word list is long, too long."
+440,14,MiscReview,"Pyth yw an re na, an tri thra dhu na ena? Ny wonn!","What are those, those three black things there? I don't know."
+441,14,MiscReview,"Dohajydh da, Maria. Fatla genes?","Good afternoon, Mary. How are you?"
+442,14,MiscReview,"Brav, meur ras.","Fine, thanks."
+443,14,MiscReview,Ni yw seyth kaner oll warbarth.,We are seven singers altogether.
+444,14,MiscReview,Fatell yw an dhew garr?,What are the two cars like?
+445,14,MiscReview,Onan yw rudh hag onan yw du.,One is red and one is black.
+446,14,MiscReview,An lovan ma yw re verr. Eus onan hir genes?,This rope is too short. Have you a long one?
+447,14,MiscReview,An dhiw gador ma yw an re poes.,These two chairs are the heavy ones.
+448,14,MiscReview,Piw yw an re na - an dus koth?,Who are those - the old people?
+449,14,MiscReview,An gour yw tas-gwynn Lowena mes ny wonn piw yw an venyn.,The man is Lowena's grandfather but I don't know who the woman is.
+450,14,MiscReview,Py par del yw an re ma?,What sort of leaves are these?
+451,14,MiscReview,"Del derow yns, dell dybav.","Oak leaves, I think."
+452,14,MiscReview,Yma anwoes war ewnter Tamsin.,Tamsin's uncle has a cold.
+453,14,MiscReview,Nyns yw homma da.,This is not good.
+454,15,Review,Py eur yw hi lemmyn?,What time is it now?
+455,15,Review,Eth eur marnas ugens mynysenn yw hi.,It's twenty to eight.
+456,15,Review,Kwarter wosa deg eur yw hi.,It's a quarter past ten.
+457,15,Review,Unnek eur poran yw hi.,It's exactly eleven o'clock.
+458,15,Review,Teyr mynysenn warn ugens dhe hwegh eur yw hi.,It's twenty-three minutes to six.
+459,15,Review,Pymp eur hanter yw hi.,It's half past five.
+460,15,Review,Hanter dydh poran yw hi.,It's exactly midday.
+461,15,Review,A-dro dhe gwarter wosa naw eur yw hi.,It's about a quarter past nine.
+462,15,Review,"Dhe by eur yth yw an kuntelles, mar pleg?","At what time is the meeting, please?"
+463,15,Review,"Dhe seyth eur hanter, dell dybav.","At half past seven, I think."
+464,15,Review,"Dhe by eur yth yw an nessa kyttrin dhe Druru, mar pleg?","At what time is the next bus to Truro, please?"
+465,15,Review,Nyns eus kyttrin dhe Druru kyns peder eur.,There is no bus to Truro before four o'clock.
+466,15,Review,Dhe by eur yth yw an nessa prys boes?,At what time is the next meal?
+467,15,Review,Ny wonn.,I don't know.
+468,15,MiscReview,Hemm yw kerdh hir mes brav yw,This is a long walk but it's grand.
+469,15,MiscReview,Yw an li parys?,Is lunch ready?
+470,15,MiscReview,Yw. Yma hi war an voes y'n gegin.,Yes. It's on the kitchen table.
+471,15,MiscReview,Py par diwes eus dhe brys koen?,What kind of drink is there at dinner?
+472,15,MiscReview,Yma po korev po gwin gans an goen.,There is beer or wine with the dinner.
+473,15,MiscReview,Duw genes Tom - dha weles wosa prys te.,Goodbye Tom - see you after tea.
+474,15,MiscReview,Fatell yw karr Mrs Trewartha?,What is Mrs Trewartha's car like?
+475,15,MiscReview,"Pur skav yw ev, dell hevel.","It's very fast, it seems."
+476,15,MiscReview,Eus golow lowr rag an redyans?,Is there enough light for the reading?
+477,15,MiscReview,Nag eus. Re dewl yw hi.,No. It's too dark.
+478,15,MiscReview,Yma spas lowr y'n le na lemmyn.,There is enough room in that place now.
+479,15,MiscReview,Gour kloppek yw ev.,He is a lame man.
+480,15,MiscReview,An paper ma yw plos.,This paper is dirty.
+481,15,MiscReview,Py par korev yw da?,What kind of beer is good?
+482,15,MiscReview,"Korev kernewek, sur.","Cornish beer, of course."
+483,15,MiscReview,To an chi yw rudh.,The roof of the house is red.
+484,15,MiscReview,Kerdh hir yw dhe'n eglos.,It's a long walk to the church.
+485,16,Review,Ple'ma Yowann?,Where is John?
+486,16,Review,Y'n lowarth (yma ev).,In the garden (he is).
+487,16,Review,Ple'ma Tamsin?,Where is Tamsin?
+488,16,Review,Y'n gegin (yma hi).,In the kitchen (she is).
+489,16,Review,Ple'ma an karr?,Where is the car?
+490,16,Review,Y'n karrji (yma ev).,In the garage (it is).
+491,16,Review,Ple'ma gweder bras?,Where is there a large mirror?
+492,16,Review,Y'n hel (yma onan).,In the hall (there is one).
+493,16,Review,Ple'ma'n skathow?,Where are the boats?
+494,16,Review,Y'n porth (ymons i).,In the harbour (they are).
+495,16,Review,Ple'ma spisti Mr Pennros?,Where is Mr Penrose's grocery shop?
+496,16,Review,Yn kres an dre (yma ev).,In the town centre (it is).
+497,16,Review,Ple'ma an byskadoryon ytho?,Where are the fishermen then?
+498,16,Review,Y'n skath (ymons i).,On board the boat (they are).
+499,16,MiscReview,Ottena ewnter Morwenna; gour da yw ev. ,There's Morwenna's uncle; he's a good man.
+500,16,MiscReview,"Henn yw gow, sur.","That's a lie, certainly."
+501,16,MiscReview,Yma fordh dre gres an dre.,There's a road through the town centre.
+502,16,MiscReview,A nyns eus kanstell y'n gegin?,Isn't there a basket in the kitchen?
+503,16,MiscReview,A ny wodhesta konvedhes hemma?,Don't you understand this?
+504,16,MiscReview,"Gonn, sur lowr.","I do, sure enough."
+505,16,MiscReview,"Re vyghan yw an spas ma, re gul.","This space is too small, too narrow."
+506,16,MiscReview,Yma an re na omma dhe eth eur dell vydh usys,Those (people) are here at eight o'clock usually.
+507,16,MiscReview,"An gibell yw pur vras, pur hir.","The bath is very large, very long."
+508,16,MiscReview,An Gresenn Gernewek yw le da ha dhe les yw hi rag tus Kernow.,The Cornish Centre is a good place and it is useful for the people of Cornwall.
+509,16,MiscReview,Eus lyvrow genowgh hwi oll?,Have you all got books?
+510,16,MiscReview,"Yma niverow war an paper ma. Pyth yns i, a wodhesta?","There are numbers on this paper. What are they, do you know?"
+511,16,MiscReview,Na wonn. Ny wonn pyth yns.,"No, I don't know what they are."
+512,16,MiscReview,Py podigow yw glann? An re ma?,Which pots are clean? These?
+513,16,MiscReview,"A nyns yw henna tarow y'n pras na? Yw, dell hevel.","Isn't that a bull in that field? Yes, it seems."
+514,16,MiscReview,"Berrheans an lyver ma yw dhe les, dell dybav.","The abridgement of this book is useful, I think."
+515,16,MiscReview,Eus amanenn war an bara? Eus!,Is there butter on the bread? Yes!
+516,16,MiscReview,Tri flat yw terrys.,Three plates are broken.
+517,16,MiscReview,Teyr mynysenn ha'n boes yw parys,Three minutes and the food is ready.
+518,16,MiscReview,"Py eur yw hi lemmyn, mar pleg?","What time is it now, please?"
+519,16,MiscReview,Deg mynysenn dhe beder eur poran.,Ten minutes to four exactly.
+520,17,Review,Yma tri den ha peswar ugens yn keur an chapel.,There are eighty- three people in the chapel choir
+521,17,Review,Yma pymp tavern warn ugens y'n dre.,There are twenty-five inns in the town
+522,17,Review,Yma deg den warn ugens y'n teylu bras na.,There are thirty persons in that large family.
+523,17,Review,A-dro dhe gans lyver yw gwerthys lemmyn.,About a hundred books are sold now.
+524,17,Review,Hanter kans milder yw an fordh dhe Druru.,The road to Truro is fifty miles.
+525,17,Review,Hanter peswar warn ugens yw par dhe dhewdhek.,Half of twenty-four is equal to twelve.
+526,17,Review,Yma dewdhek flogh ha tri ugens y'n skol na. re vyghan yw hi martesen.,There are seventy-two children in that school. It is too small perhaps.
+527,17,Review,Pymp chi ha peswar ugens yw chiow nowydh.,Eighty-five houses are new houses.
+528,17,Review,Yma dew gi ha dew ugens a-ji dhe'n gresenn.,There are forty-two dogs in the centre.
+529,17,Review,"Teyr benyn warn ugens, peswar gour warn ugens hag unnek flogh yw etek den ha dew ugens warbarth.","Twenty-three women, twenty-four men and eleven children is fifty-eight people altogether."
+530,17,MiscReview,An donsyow bretonek ma yw brav.,Those Breton dances are grand.
+531,17,MiscReview,'Bro Goth' yw kan an vro.,'Bro goth' is the song of the country.
+532,17,MiscReview,Fatell yw pronter an chapel?,What is the chapel preacher like?
+533,17,MiscReview,"Nyns yw ev re dha, dell hevel","He isn't too good, it seems."
+534,17,MiscReview,Yma hwegh den warn ugens y'n kuntelles a-ji dhe hel an dre.,There are twenty-six people in the meeting in the town hall.
+535,17,MiscReview,"Kemmer an ganstell, mar pleg!","Take the basket, please!"
+536,17,MiscReview,"Fatla genes lemmyn, Gari?","How are you now, Gary?"
+537,17,MiscReview,"Da lowr, meur ras, mes yma anwoes warnav, dell dybav.","Well enough, thanks, but I've got a cold, I think."
+538,17,MiscReview,Py flogh yw mab Mrs Olver?,Which child is Mrs Olver's son?
+539,17,MiscReview,Ottena! An maw moen na ryb an daras.,There look! That thin boy next to the door.
+540,17,MiscReview,Pyth yw rag koen?,What's for supper?
+541,17,MiscReview,"Ny wonn hwath, pysk martesen.","I don't know yet, fish perhaps."
+542,17,MiscReview,Dhe by eur yw li y'n ostel ma?,At what time is lunch in this hotel?
+543,17,MiscReview,Dhe hanter dydh poran.,At midday exactly.
+544,17,MiscReview,Py par aval yw hemma?,What kind of apple is this?
+545,17,MiscReview,Aval 'Mamm-wynn an Gov' yw ev.,It's a Granny Smith apple.
+546,17,MiscReview,Deves yw tanow war an voen.,Sheep are scarce on the down.
+547,17,MiscReview,A wodhesta konvedhes hemma?,Do you understand this?
+548,17,MiscReview,Na wonn! Arta mar pleg.,No! Again please.
+549,17,MiscReview,Nyns yw an bargen-tir ma pur vras.,This farm is not very big.
+550,17,MiscReview,Fatell yw an gewer lemmyn?,What's the weather like now?
+551,17,MiscReview,"Oer, niwlek ha tewl yw hi.","It's very cold, misty and dark."
+552,17,MiscReview,Yma peder kador warn ugens gesys a-ji dhe hel an eglos.,There are twenty-four chairs left in the church hall.
+553,17,MiscReview,"I yw pur feusik, dell dybav.","They are very lucky, I think."
+554,17,MiscReview,"Ty yw kar Mona, a nyns yw henna gwir?","You are a relation of Mona, isn't that true?"
+555,17,MiscReview,Yw! My yw keniterow Mona.,Yes! I'm Mona's cousin.
+556,18,Examples,ryb an amari,by the cupboard
+557,18,Examples,a-rag an amari,in front of the cupboard
+558,18,Examples,a-dryv an amari,behind the cupboard
+559,18,Examples,war an amari,on the cupboard
+560,18,Examples,y'n amari,in the cupboard
+561,18,Examples,yn-dann an voes,under the table
+562,18,Examples,orth an tan,at the fire
+563,18,Examples,der an pras,through the meadow
+564,18,Examples,gans an teylu,with the family
+565,18,Examples,Ple'ma an gath?,Where is the cat?
+566,18,Examples,Ryb an fos (yma hi).,Beside the wall (it is).
+567,18,Examples,Ple'ma Jori?,Where is George?
+568,18,Examples,Orth an voes (yma ev).,At the table (he is).
+569,18,Examples,Ple'ma an hanafow?,Where are the cups?
+570,18,Examples,Y'n gegin (ymons i).,In the kitchen (they are).
+571,18,Examples,Ple'ma an karr?,Where is the car?
+572,18,Examples,A-rag an karrji (yma an karr).,In front of the garage (is the car).
+573,18,Examples,Ple'ma an eskisyow?,Where are the shoes?
+574,18,Examples,Yn-dann an gweli (ymons i),Under the bed (they are).
+575,18,Examples,Ple'ma an lowarth?,Where is the garden?
+576,18,Examples,A-dryv an chi (yma ev).,Behind the house (it is).
+577,18,Examples,Ple'ma Maria?,Where is Mary?
+578,18,Examples,Orth an voes (yma hi).,At the table (she is).
+579,18,Examples,Usi an gath y'n lowarth?,Is the cat in the garden?
+580,18,Examples,Usi! Yma hi ena.,Yes! She is there.
+581,18,Examples,A nyns usi an boes war an voes hwath?,Isn't the food on the table yet?
+582,18,Examples,Nag usi! Nyns usi ev ena hwath.,No! It's not there yet.
+583,18,Examples,Usi an lyvrow omma?,Are the books here?
+584,18,Examples,Esons i war an voes?,Are they on the table?
+585,18,Examples,Esons/Nag esons.,They are/They are not.
+586,18,Review,Ple'ma an lyver melyn?,Where is the yellow book?
+587,18,Review,War an voes (yma) martesen.,On the table (it is) perhaps.
+588,18,Review,Ple'ma an arghantti?,Where is the bank?
+589,18,Review,Yn kres an dre yma ev.,It's in the town centre.
+590,18,Review,Ple'ma an gador lemmyn?,Where is the chair now?
+591,18,Review,Orth an fos yma hi.,It's against the wall.
+592,18,Review,"Ple'ma an bollys, mar pleg?","Where are the bowls, please?"
+593,18,Review,"Y'n amari ymons, dell dybav.","They are in the cupboard, I think."
+594,18,Review,Usi hwoer Peder y'n skol na?,Is Peter's sister in that school?
+595,18,Review,Usi! Yma hi ena gans Peder.,Yes! She's there with Peter.
+596,18,Review,Usi an lost a-rag an hel?,Is the queue in front of the hall?
+597,18,Review,Usi! Hag yma lost hir ryb an hel ynwedh.,Yes! And there is a long queue beside the hall too.
+598,18,Review,Eus lost rag an kyttrin?,Is there a queue for the bus?
+599,18,Review,Nag eus! Nyns eus nebonan ena.,No! There's no one there.
+600,18,Review,Eus kuntelles omma lemmyn?,Is there a meeting here now?
+601,18,Review,"Eus! yma, dell hevel.","Yes! There is, it seems."
+602,18,Review,A nyns usi an lyver y'n argh-lyvrow na?,Isn't the book in that bookcase?
+603,18,Review,Nag usi! Nyns usi ev ena.,No! It's not there.
+604,18,Review,A nyns usi an bleujennow genes?,Haven't you got the flowers? (literally Aren't the flowers with you?)
+605,18,Review,Nag esons! Nyns esons.,No! They are not.
+606,18,Review,Ymons i gans an vamm.,Mother has them. (literally They are with the mother.)
+607,18,Review,Ple'ma an ki? Usi ev y'n lowarth?,Where is the dog? Is he in the garden?
+608,18,Review,Usi! Hag yma an gath ena ynwedh.,Yes! And the cat is there also.
+609,18,Review,Esons i ena warbarth ytho?,Are they there together then?
+610,18,Review,Nag esons! Yma an ki war an leur mes yma an gath y'n wydhenn.,No! The dog is on the ground but the cat is in the tree.
+611,18,MiscReview,Kres oy yw melyn.,The middle of an egg is yellow.
+612,18,MiscReview,"Kemmer an dornleow, mar pleg","Take the handles, please."
+613,18,MiscReview,Ottomma gerva verr.,Here's a short word list.
+614,18,MiscReview,"An erva ma yw hir lowr, dell dybav.","This word list is long enough, I think"
+615,18,MiscReview,Fatell yw an eskisyow ma ytho?,How are these shoes then?
+616,18,MiscReview,Re vras yns.,They are too big.
+617,18,MiscReview,"Pur ughel yw tour an eglos, a nyns yw ev?","The church tower is very high, isn't it?"
+618,18,MiscReview,Ottena klokk an eglos!,"Look there, the church clock!"
+619,18,MiscReview,Teyr eur poran yw hi.,It's three o'clock exactly.
+620,18,MiscReview,Py folenn yw nessa?,Which page is next?
+621,18,MiscReview,Folenn niver nownsek yw an nessa folenn.,Page number nineteen is the next page.
+622,18,MiscReview,Pyth yw an bleujennow ma?,What are these flowers?
+623,18,MiscReview,Lili yns.,They are lilies
+624,18,MiscReview,"An keur yw parys lemmyn, dell hevel.","The choir is ready now, it seems."
+625,18,MiscReview,Yma dew dhen ha dew ugens y'n kuntelles. Hemm yw niver da rag kuntelles a'n par ma.,There are forty-two people in the meeting. This is a good number for a meeting of this kind.
+626,18,MiscReview,Oyow bryjys yw da rag hansel.,Boiled eggs are good for breakfast.
+627,19,Examples,Meur a win yw re.,Much wine is too much.
+628,19,Examples,Yma meur a voestiow da y'n dre.,There are many good restaurants in town.
+629,19,Examples,Broyow pals yw boghosek.,Many countries are poor.
+630,19,Examples,"Lies karr yw re skav, dell dybav.","Many cars are too fast, I think."
+631,19,Examples,Nebes tus yw kevoethek.,Few people are rich.
+632,19,Examples,Ottomma nebes keus ragos!,Here is some cheese for you!
+633,19,Review,Nebes fordhow y'n ynys yw ledan lowr mes meur a fordhow ena yw re gul.,Few roads on the island are wide enough but many roads there are too narrow.
+634,19,Review,Yma meur a orses gell yn Amerika.,There are lots of brown bears in America.
+635,19,Review,Nyns eus meur a gommolennow lemmyn.,There are not many clouds now.
+636,19,Review,Yma meur a wydhennw ha meur a vleujennow yn lowarth an chi bras na.,There are many trees and many flowers in the garden of that big house.
+637,19,Review,Pyskadoryon bals y'n porth ma yw boghosek.,Many fishermen in this harbour are poor.
+638,19,Review,Yma kanoryon bals yn keur an chapel.,There are many singers in the chapel choir.
+639,19,Review,Tus bals yw re dew.,Many people are too fat.
+640,19,Review,"Lies ostel yw gwag, dell hevel.","Many hotels are empty, it seems."
+641,19,Review,A nyns eus lies aval gesys?,Aren't there lots of apples left?
+642,19,Review,"Lies gerva yw re hir, dell dybav.","Many word lists are too long, I think."
+643,19,MiscReview,Ple'ma an tri faper?,Where are the three papers?
+644,19,MiscReview,War an voes ymons.,They are on the table.
+645,19,MiscReview,Ple'ma an gever ytho?,Where are athe goats then?
+646,19,MiscReview,Y'n pras a-dryv drehevyans a-dryv an bargen-tir ymons martesen.,They are in the field behind the farm building perhaps.
+647,19,MiscReview,Yma an vamm-wynn orth an fenester gans an tas-gwynn.,Grandmother is at the window with grandfather.
+648,19,MiscReview,"Oyow bryjys yw bryntin, meur ras.","Boiled eggs are fine, thanks."
+649,19,MiscReview,Yma dewdhek lyver ha dew-ugens y'n argh-lyvrow.,There are fifty-two books in the bookcase.
+650,19,MiscReview,Pyth yw an ynysow ma?,What are these islands.
+651,19,MiscReview,Ynysow Syllan yns.,They are the Isles of Scilly.
+652,19,MiscReview,Yma hwetek den ha peswar ugens y'n eglos warbarth gans an pronter.,There are ninety-six people in the church together with the parson.
+653,19,MiscReview,An dhiw gador warn ugens yw parys a-ji dhe'n hel.,The twenty-two chairs are ready inside the hall.
+654,19,MiscReview,"Py eur yw hi lemmyn, mar pleg?","What time is it now, please?"
+655,19,MiscReview,Trydhek mynysenn wosa diw eur poran yw hi.,It's thirteen minutes past two o'clock exactly.
+656,19,MiscReview,Dhe by eur yth yw an tren dhe Aberplymm?,At what time is the train to Plymouth?
+657,19,MiscReview,Dhe beder eur marnas kwarter yw ev.,It's at quarter to four.
+658,19,MiscReview,"A-dro dhe unn eur yw hi lemmyn, dell dybav.","It's about one o'clock now, I think."
+659,19,MiscReview,Yma an plasenn y'n amari byghan.,The records are in the small cupboard.
+660,19,MiscReview,Dornleow an darasow yw plos.,The door handles are dirty.
+661,19,MiscReview,Lavrek an maw nay w re hir ha re ledan.,The boy's trousers are too long and too wide.
+662,19,MiscReview,Pur goth yw an tavern ma.,This inn is very old.
+663,19,MiscReview,"Ev yw moen lowr, sur.","He is thin enough, certainly."
+664,19,MiscReview,Nyns eus platow lowr.,There aren't enough plates.
+665,19,MiscReview,"Hwi yw pur lowen, dell vydh usys.","You are very happy, as usual."
+666,19,MiscReview,"Ni yw pur doemm, sur!","We are very hot, sure!"
+667,19,MiscReview,"Skorr an gwydh yw terrys, a nyns yns i?","The branches of the trees are broken, aren't they?"
+668,19,MiscReview,Nos dha ytho!,Good night then!
+669,19,MiscReview,"An yeth frynkek yw kewsys y'n pow ma, a nyns yw hi?","The French language is spoken in this country, isn't it?"
+670,19,MiscReview,"Piw yw honna, an venyn voen na orth an voes?","Who is that, that slim woman at the table?"
+671,19,MiscReview,"Tamsin yw hi, myrgh Mr ha Mres Angell.","She's Tamsin, Mr ans Mrs Angell's daughter."
+672,19,MiscReview,Py chambour yw an nessa dhe'n lowarth a-rag?,Which bedroom is nearest to the front garden?
+673,19,MiscReview,"Pyth yns i, mar pleg, an puskes ma?","What are they, please, these fish?"
+674,19,MiscReview,Brithyli yns.,They are mackerel.
+675,20,Examples,"Kemmer an lyver ma, mar pleg!","Take this book, please!"
+676,20,Examples,Igor e! folenn ugens.,Open it! Page twenty.
+677,20,Examples,Meur ras. Dege e lemmyn!,Thank you. Shut it now!
+678,20,Examples,"Ro an lyver dhe Sou, mar pleg!","Give the book to Sue, please!"
+679,20,Examples,"Pys e, po hi, a igeri an lyver dhe folenn ugens ha lenn an kynsa linenn!","Ask him, or her, to open the book at page twenty and read the first line!"
+680,20,Examples,Gwra an keth tra gans nebonan arall!,Do the same thing with someone else!
+681,20,Examples,Lavar dhymm! ,Tell me!
+682,20,Examples,Ro dhymm!,Give me!
+683,20,Examples,Pysi neppyth dhiworth nebonan.,Ask someone for something.
+684,20,Examples,Pysi nebonan a wul neppyth.,Ask someone to do something.
+685,20,Review,"Dege an daras, mar pleg, yeyn yw hi!","Shut the door, please, it's cold!"
+686,20,Review,Gwra e lemmyn!,Do it now!
+687,20,Review,Lenn an lavarow!,Read out the phrases!
+688,20,Review,Ro an arghans dhe Beder!,Give the money to Peter!
+689,20,Review,Kemmerewgh an re ma!,Take these!
+690,20,Review,Skrifewgh hanow an lyver war gynsa linen an folenn!,Write the name of the book on the first line of the page!
+691,20,Review,Pys e diworth Margh!,Ask Mark for it!
+692,20,Review,Pys Helen a ri e dhe Margh!,Ask Helen to give it to Mark!
+693,20,Review,"Lavar dhymm, pyth yw hemma!","Tell me, what is this!"
+694,20,Review,Gwrewgh e warbarth!,Do it together!
+695,20,Review,Igor an fenester po dege an daras! Re wynsek yw hi!,Open the window or close the door! It's too windy!
+696,20,Review,Lennewgh an lavar warbarth!,Read the sentence together!
+697,20,Review,"Ke dhe'n fenester, mar pleg!","Go to the window, please!"
+698,20,Review,Dewgh orth an tan! Oer yw hi!,Come to the fire it's very cold!
+699,20,Review,Kemmerewgh oll dorn nebonan!,Everyone take someone's hand!
+700,20,MiscReview,"Kres trey yw le bysi, dell vydh usys, mes kres an dre ma yw gwag.","A town centre is usually a busy place, but this town centre is empty."
+701,20,MiscReview,"Nyns eus par dhe'n gour ma, dell dybav.","This man has no equal, I think."
+702,20,MiscReview,An diogyon gernewek yw an kynsa a-ji dhe'n varghas.,The Cornish farmers are the first inside the market.
+703,20,MiscReview,Lavarow lowr yw lowr.,Enough words are enough.
+704,20,MiscReview,Meur a lavarow yw flows.,Much speech is nonsense.
+705,20,MiscReview,"Eus arghans lowr genes, Tom?","Have you enough money, Tom?"
+706,20,MiscReview,"Nyns eus, Maria, ro dhymm nebes peunsow, mar pleg!","No, Mary, give me a few pounds please!"
+707,20,MiscReview,"Myttin da, Yowann. Fatla genes?","Good morning, John. How are you?"
+708,20,MiscReview,"Da lowr, meur ras, mes yma anwoes poes warnav.","Well enough, thanks, but I have a heavy cold."
+709,20,MiscReview,Pyth yw an blasenn ma? Piw yw an kaner?,What is that record? Who is the singer?
+710,20,MiscReview,Dornla an ganstell ma yw terrys.,The handle of this basket is broken.
+711,20,MiscReview,A wodhesta konvedhes an lavar ma?,Do you understand this expression?
+712,20,MiscReview,"Na wonn! Arta, mar pleg!","No! Again, please!"
+713,20,MiscReview,Piw yw pronter an eglos ma?,Who is the vicar of this church?
+714,20,MiscReview,Mr Le'ti yw an pronter omma.,Mr Laity is the vicar here.
+715,21,Review,Drehevyans an skol ma yw koth.,This school building is old.
+716,21,Review,Nyns ov koth na nyns ov yowynk.,I am not old nor am I young.
+717,21,Review,"Kowethes Maria os, dell dybav.","You are a friend of Mary's, I think."
+718,21,Review,Nyns yw an boesti ma onan da.,This restaurant is not a good one.
+719,21,Review,On ni parys lemmyn?,Are we ready now?
+720,21,Review,Py lies owgh hwi oll warbarth?,How many are you altogether?
+721,21,Review,Yns i ensamplow da?,Are they good examples?
+722,21,Review,A nyns yns i kernewek?,Aren't they Cornish?
+723,21,MiscReview,Fatell yw an mebyl y'n chi na?,What's the furniture like in that house?
+724,21,MiscReview,Py arghantti yw an nessa?,Which bank is the nearest?
+725,21,MiscReview,"Feusik on ni, sur.","We are lucky, certainly."
+726,21,MiscReview,Yma unn chi a-dryv an sinema; chi Mr Pollglas yw ev.,There is a certain house behind the cinema; it's Mr Pollglas's house.
+727,21,MiscReview,Kemmer tri hwegynn!,Take three sweets!
+728,21,MiscReview,Piw yw an gwettha flogh?,Who is the worst child?
+729,21,MiscReview,"Margh yw, deell dybav.","Mark is, I think."
+730,21,MiscReview,"Py eur yw hi, mar pleg?","What time is it, please?"
+731,21,MiscReview,Eth eur poran yw hi.,It's exactly eight o'clock.
+732,21,MiscReview,Fatla genes an myttin ma?,How are you this morning?
+733,21,MiscReview,Nyns ov yn poynt da. Yma anwoes poes warnav.,I'm not well. I have a heavy cold.
+734,21,MiscReview,"Na gewgh, mar pleg!","Don't go, please!"
+735,21,MiscReview,An re na yw boghosek. Tiogyon gernewek yns.,Those (people) are poor. They are Cornish farmers.
+736,21,MiscReview,Berrheans lyver yw dhe les.,The abridgement of a book is useful.
+737,21,MiscReview,"Eus pluvenn rudh genes, mar pleg?","Have you a red pen, please?"
+738,21,MiscReview,Ro dhymm plat!,Give me a plate!
+739,21,MiscReview,Arta mar pleg!,"Again, please!"
+740,21,MiscReview,"Plat, onan bras!","A plate, a big one!"
+741,21,MiscReview,Pyth yw henna - an dra dhu ma?,What's that - that black thing?
+742,21,MiscReview,Nyns yw an kerdh re hir.,The walk isn't too long.
+743,21,MiscReview,"Yns i hwerydh, an dhiw vowes na?","Are they sisters, those two girls?"
+744,21,MiscReview,Yma deg stamp gesys y'n lyver-stamp ma.,There are ten stamps left in this stamp book.
+745,21,MiscReview,Na lavar ger! A wodhesta konvedhes?,Don't say a word! Do you understand?
+746,21,MiscReview,Broder Androw yw pronter yn unn eglos.,Andrew's brother is a vicar in a certain church.
+747,21,MiscReview,Oll an draow ma yw parys.,All these things are ready.
+748,21,MiscReview,Py par bargen-tir yw henna?,What kind of farm is that?
+749,21,MiscReview,Bargen-tir deves yw ev.,It's a sheep farm.
+750,21,MiscReview,"Igor daras an gegin, mar pleg!","Open the kitchen door, please!"
+751,21,MiscReview,Yma meur a dus a-ji dhe'n hel.,There are lots of people inside the hall.
+752,21,MiscReview,Re boeth yw hi dhe hanter-dydh.,It's too hot at mid-day.
+753,21,MiscReview,Nebes geryow yw lowr.,A few words are enough.
+754,21,MiscReview,Pur sygh yw an lowarth.,The garden is very dry.
+755,21,MiscReview,"Dohajydh da dhis, Me. Kewer deg, a nyns yw hi?","Good afternoon to you, May. Nice weather, isn't it?"
+756,21,MiscReview,"Trydhek den ha dew-ugens a-ji dhe'n kyttrin yw re, dell hevel.","Fifty-three people in the bus are too many, it seems."
+757,21,MiscReview,Yma an vamm orth an daras. Igor e ytho!,Mother is at the door. Open it then!
+758,22,Examples,An eneval ma yw haval orth margh.,This animal is similar to a horse.
+759,22,Examples,Yw hemma an keth plat ha'n huni kyns?,Is this the same plate as the one before?
+760,22,Examples,"An plat ma yw plos, ro dhymm onan arall, mar pleg!","This plate is dirty, bring me another one, please!"
+761,22,Examples,Yma ensamplow erell war folenn 72.,There are other examples on page 72.
+762,22,Examples,Lies den arall yw kamm war an dra ma.,Many other people are wrong on this matter.
+763,22,Examples,Ottomma ken euryor.,Here's another (kind of) watch.
+764,22,Examples,An gewer hedhyw yw dihaval diworth an gewer de.,The weather today is different from the weather yesterday.
+765,22,Review,Leurlenn an chambour yw haval orth huni an hel; melyn ha gwyrdh yns i.,The bedroom carpet is like the one in the hall; they are yellow and green.
+766,22,Review,An enyval na yw haval orth davas mes nyns yw ev davas.,That animal is like a sheep but it isn't a sheep.
+767,22,Review,Na lavar an keth tra arta.,Don't say the same thing again.
+768,22,Review,Nyns yw hemma an keth lyver ha huni Yowann.,This isn't the same book as John's.
+769,22,Review,Ke yn kettermyn ha Maria!,Go at the same time as Mary!
+770,22,Review,Yma an ganstell arall yn-dann an voes ena. Kemmer hi!,The other basket is under the table there. Take it!
+771,22,Review,A nyns usi an tavern nowydh ogas dhe'n huni arall?,Isn't the new pub near the other one?
+772,22,Review,"Nyns yw an traow ma pur haval orth an re erell, yns i?","These are not very similar to the others, are they?"
+773,22,Review,Plema'n benynes erell lemmyn?,Where are the other women now?
+774,22,Review,Yn stevell arall ymons.,They are in the other room.
+775,22,Review,"Ken termyn, ken hwedhel!","Another time, another story!"
+776,22,Review,Kemmer ken hwegynn ytho!,Take another (kind of) sweet then!
+777,22,Review,Hemm yw kamm. An lavar ma yw dihaval diworth an lavar arall.,This is wrong. This sentence is different from the other sentence.
+778,22,Review,"Broyow erell yw gwell, dell hevel.","Other countries are better, it seems."
+779,22,Review,Yma kommol y'n ebron ha dihaval yns diworth an re erell.,There are clouds in the sky and they are different from the others.
+780,23,Examples,An gwydh o glas.,The trees were green.
+781,23,Examples,An vugh o byghan.,The cow was small.
+782,23,Examples,Hemm o pur dha.,That was very good.
+783,23,Examples,Henn o gwir.,That was true.
+784,23,Examples,En vy diek?,Was I lazy?
+785,23,Examples,Esta klav?,Were you ill?
+786,23,Examples,O hi kowethes?,Was she a friend?
+787,23,Examples,Nyns en ni toemm.,We were not warm.
+788,23,Examples,Ewgh hwi drog pes?,Were you displeased?
+789,23,Examples,Nyns ens i hwerydh.,They were not sisters.
+790,23,Examples,Fol en vy.,I was foolish.
+791,23,Examples,Yth esov yn chi Karol.,I am in Carol's house.
+792,23,Examples,"Nyns esons genes, sur.","They are not with you, certainly."
+793,23,Examples,Esesta war an treth?,Were you on the beach?
+794,23,Examples,Yth esen vy yn gorsav an hyns-horn.,I was in the railway station.
+795,23,Examples,Nyns esesta ganso.,You weren't with him.
+796,23,Examples,Nyns esa an bel ena.,The ball was not there.
+797,23,Examples,Yth eson y'n lowarth.,We are in the garden.
+798,23,Examples,Esowgh hwi orth an voes?,Are you at the table?
+799,23,Examples,Yth esen ni y'n dre.,We were in town.
+800,23,Examples,Esewgh hwi war an treth?,Were you on the beach?
+801,23,Examples,Nag esen!,(No) We were not!
+802,23,Examples,Yth esens i yn-dann an lawlenn yn mysk an traow erell.,They were under the umbrella amongst the other things.
+803,23,Review,My o lowen ena mes nyns o Morwenna lowen martesen.,I was happy there but Morwenna was not happy perhaps.
+804,23,Review,Yth esen vy y'n karr Jori.,I was in George's car.
+805,23,Review,An vugh o gwynn ha gell.,The cow was white and brown.
+806,23,Review,Yth esa an vugh y'n pras gans an re erell.,The cow was in the meadow with the others.
+807,23,Review,Nyns esens y'n pras bras.,They weren't in the big meadow.
+808,23,Review,O ev pes da gans hemma? Nag o!,Was he pleased with this? No!
+809,23,Review,Esa ev y'n lowarth ytho?,Was he in the garden then?
+810,23,Review,"Nyns ewgh parys, dell dybav.","You were not ready, I think."
+811,23,Review,Nyns esewgh a-ji dhe'n drehevyans.,You were not inside the building.
+812,23,Review,A nyns ens i pes da gans henna?,Weren't they pleased with that?
+813,23,Review,A nyns esens i yn gorsav an kyttrin?,Weren't they in the bus station?
+814,23,Review,Esta skwith gans an oberennow?,Were you tired with the exercises?
+815,23,Review,Esesta y'n Gresenn Gernewek?,Were you in the Cornish Centre?
+816,23,Review,Glas o an del y'n koes.,The leaves in the wood were green.
+817,23,Review,Y'n koes yth esa del gell war an leur.,In the wood there were brown leaves on the ground.
+818,23,Review,Kamm en ni.,We were wrong.
+819,23,Review,Yth esen ni yn skath vras Mr Tommas.,We were in Mr Thomas's big boat.
+820,23,Review,A nyns esa an fleghes warbarth yn gorsav an hyns-horn?,Weren't the children together in the railway station?
+821,23,Review,"Esens, sur.","They were, certainly."
+822,23,Review,Hwi o drog pes y'n prys na.,You were displeased on that occasion.
+823,23,Review,Yth esewgh yn Truru y'n prys na.,You were in Truro on that occasion.
+824,23,MiscReview,Yth esa diw venyn warn ugens y'n kuntelles.,There were twenty-two people in the meeting.
+825,23,MiscReview,"An donsyow kernewek yw da, a nyns yns i?","The Cornish dances are good, aren't they?"
+826,23,MiscReview,Pys glawlenn diworth an vodrep!,Ask Auntie for an umbrella!
+827,23,MiscReview,Na gewgh gans tus kemmyn!,Don't go with common people!
+828,23,MiscReview,An gweder o terrys.,The mirror was broken.
+829,23,MiscReview,Py ostel yw an gwella yn Manow?,Which hotel is best in the Isle of Man?
+830,23,MiscReview,Fatell o an gewer ytho?,How was the weather then?
+831,23,MiscReview,"Kosel o ha toemm, pur deg o hi.","Calm and warm, it was very fine."
+832,23,MiscReview,Nyns esa meur a vebyl nowydh y'n chi.,There wasn't much new furniture in the house.
+833,23,MiscReview,Nebes fleghes o gokki.,A few children were silly.
+834,23,MiscReview,Gyllys o meur a arghans ha nyns o devedhys arghans lowr.,A lot of money had (was) gone and not enough money had (was) come.
+835,23,MiscReview,Yw hi fur ytho?,Is she wise then?
+836,23,MiscReview,"Nag yw, dell leverir.","She is not, as they say."
+837,23,MiscReview,"Ro dhymm bara hag amanenn, dell vydh usys, mar pleg!","Give me bread and butter as usual, please!"
+838,23,MiscReview,Nyns esa kommolenn y'n ebrenn.,There wasn't a (single) cloud in the sky.
+839,23,MiscReview,Eus oyl lowr yn jynn an karr?,Is there enough oil in the engine of the car?
+840,24,Review,Ow hi yw kloppek.,My dog is lame.
+841,24,Review,"Dha gota yw plos, dell dybav.","Your coat is dirty, I think."
+842,24,Review,Nyns yw nowydh y ji.,His house is not new.
+843,24,Review,Nyns yw ev y ji nowydh.,It is not his new house.
+844,24,Review,Yw hy howethas Myrna ytho?,Is her friend Myrna then?
+845,24,Review,Agan stevell y'n ostel o re vyghan.,Our room in the hotel was too small.
+846,24,Review,Agas tas yw ow howeth.,Your father is my friend.
+847,24,Review,"Aga fleghes yw klav, dell glewav.","Their children are ill, I hear."
+848,24,Review,Agan kesva yw onan dha.,Our association is a good one.
+849,24,Review,Nyns o ow boes parys.,My food was not ready.
+850,24,Review,Dha gyttrin yw gyllys lemmyn.,Your bus is gone now.
+851,24,Review,An wydhenn ma yw marow. Hy del yw gell.,This tree is dead. Its leaves are brown.
+852,24,Review,A nyns esa delenn las gesys? Nag esa!,Wasn't there a single green leaf left? No!
+853,24,Review,"Pan en maw, ow theylu o boghesek, sur.","When I was a boy. my family was poor, certainly."
+854,24,Review,Pan esa drehevyans ena nyns esa golow lowr yn agan chi.,"When there was a building there, there wasn't enough light."
+855,24,Review,"Pan nag o kevoethek, lowen o ev.","When he was not rich, he was happy."
+856,25,Examples,My a werthas an karr koth.,I sold the old car.
+857,25,Examples,An tas a wolghas an ki,Father washed the dog.
+858,25,Examples,Ni a esedhas ena.,We sat there.
+859,25,Examples,An keur a ganas.,The choir sang.
+860,25,Examples,My re werthas an karr koth.,I have sold the old car.
+861,25,Examples,An tas re wolghas an ki,Father has washed the dog.
+862,25,Examples,Ni re esedhas ena,We have sat there.
+863,25,Examples,"""Ha lemmyn ni yw parys,"" yn-medh Tamsyn.","""And now we are ready,"" said Tamsyn."
+864,25,Examples,"""Deus omma!"" yn-medhav.","""Come here!"" I said."
+865,25,Examples,My a brenas jynn-amontya.,I bought a computer.
+866,25,Examples,Y prenas an tas jynn-amontya.,Father bought a computer.
+867,25,Examples,A brensys jy an radyo na?,Did you buy that radio?
+868,25,Examples,Ny brensyn an boes y'n eur na.,We didn't buy the food then.
+869,25,Review,A wolghsys jy an hanafow an myttin ma?,Did you wash the cups this morning?
+870,25,Review,"Golghis, sur!","Yes, certainly!"
+871,25,Review,Ytho ny wolghsys hemma.,Well you didn't wash this one.
+872,25,Review,"Maria a wolghas henna, dell dybav.","Mary washed that one, I think."
+873,25,Review,"Golgh e arta, mar pleg!","Wash it again, please!"
+874,25,Review,Dy' Sadorn y prenas Wella ki.,(On) Saturday Wella bought a dog.
+875,25,Review,Ev re brenas keun kyns.,He has bought dogs before.
+876,25,Review,Piw a leveris henna?,Who said that?
+877,25,Review,A boensys jy pub dydh?,Did you run every day?
+878,25,Review,Poen lemmyn ytho!,Run now then!
+879,25,Review,An keur a ganas kan gernewek mes ny gensyn gans an keur.,The choir sang a Cornish song but we did not sing with the choir.
+880,25,Review,An vamm re worras an kinyow war an voes lemmyn. Kynsa yma kowl onyon.,Mother has put the dinner on the table now. First there is onion soup.
+881,25,Review,Y'n eur na y hwiskas hi pows las.,At that time she wore a blue dress.
+882,25,Review,Martyn eth dhe'n treth mes nyns eth dhe neuvya.,Martin went to the beach but he didn't go to swim.
+883,25,Review,Y'n eur na yth eth ev dhe skol an eglos.,He then went to the church school.
+884,26,Examples,An flogh a bren hwegynnow.,The child buys sweets.
+885,26,Examples,An benynes a esedh orth an fenester.,The women sit at the window.
+886,26,Examples,Ni a neuv y'n mor.,We swim in the sea.
+887,26,Examples,Ny bren an flogh hwegynnow.,The child does not buy sweets.
+888,26,Examples,A bren an flogh hwegynnow?,Does the child buy sweets?
+889,26,Examples,Gans y arghans y pren an flogh hwegynnow.,With his money the child buys sweets.
+890,26,Examples,Gans aga arghans y pren an fleghes hwegynnow.,With their money the children buy sweets.
+891,26,Examples,Y'n gwerthji na y prenons aga hwegynnow.,In that shop they buy their sweets.
+892,26,Examples,Ny weresav y'n lowarth.,I don't help in the garden.
+893,26,Examples,A welydh jy an eglos?,Do you see the church?
+894,26,Examples,Ena y tiskwedhyn an skeusennow.,Then we show the photographs.
+895,26,Examples,War an voes y hworrons i an boes.,On the table they put the food.
+896,26,Review,An tren a as an gorsav dhe eth eur hanter poran.,The train leaves the station at half past eight exactly.
+897,26,Review,My a wolgh an lestri gans dowr poeth.,I wash the dishes with very hot water.
+898,26,Review,Ny yv ev korev mes gwin hepken.,He does not drink beer but only wine.
+899,26,Review,A esedhons i orth an tan pub gorthugher?,Do they sit at the fire every evening?
+900,26,Review,Ena y hworrav ow hota war an gador.,Then I put my coat on the chair.
+901,26,Review,A ny weresydh jy dha vamm y'n gegin?,Don't you help your mother in the kitchen?
+902,26,Review,Kolan a vir orth an lyver heb redya unn ger.,Colin looks at the book without reading one word.
+903,26,Review,Eseli an gowethas a esedh yn chi an pronter.,The members of the society sit in the parson's house.
+904,26,Review,Hi a vet orth Pol rag li.,She meets Paul for lunch.
+905,26,Review,A bal Mighal yn y lowarth lemmyn? Na bal ev!,Does Michael dig in his garden now? No! (He does not dig).
+906,26,Review,Ni a glew an glaw orth fenester an chambour.,We hear the rain against the window of the bedroom.
+907,26,Review,Piw a dhysk kernewek y'n dre ma?,Who learns Cornish in this town?
+908,26,Review,"Tri po peswar den, dell dybav.","Three or four people, I think."
+909,26,Review,Tus a dheu dhe weles an eglos koth.,People come to see the old church.
+910,26,Review,"Jago a wisk y gota nowydh, my a wel.","James wears his new coat, I see."
+911,26,MiscReview,Agan boes dhe'n prys ma yw bewin.,Our food for this meal is beef.
+912,26,MiscReview,"Drog yw genev, dha wedrenn yw gwag. Kemmer an wedrennas a win ma!","I'm sorry, your glass is empty. Take this glassful of wine!"
+913,26,MiscReview,"Ny vern, mes meur ras!","It doesn't matter, but thanks!"
+914,26,MiscReview,My a worta Tamsin orth daras an eglos.,I wait for Tamsin at the door of the church.
+915,26,MiscReview,Pyth yw an daffar ma?,What is this gear?
+916,26,MiscReview,Fatell yw an gewer? Eus howlsplann?,How is the weather? Is there (any) sunshine?
+917,26,MiscReview,Y'n hwedhel na puptra o koynt.,In that story everything was strange.
+918,26,MiscReview,"""Nyns en vy feusik,"" yn-medh Hykka.","""I wasn't lucky,"" said Richard."
+919,26,MiscReview,"Ple'ma ow fluvenn, mammik?","Where's my pen, mummy?"
+920,26,MiscReview,"War an leur yn-dann dha weli yn dha jambour, dell vydh usys!","On the floor under your bed in  your bedroom, as usual!"
+921,27,Examples,My a wra lenna hwedhel dhe'n fleghes pub gorthugher.,I read to the children every evening.
+922,27,Examples,Hi a vynnas mos gans Morwenna.,She wished to go with Morwenna.
+923,27,Examples,Toni a yll esedha ryb Richard.,Tony can sit beside Richard.
+924,27,Examples,My a wra gweres y'n chi.,I do help in the house.
+925,27,Examples,Maria a wrug kewsel.,Mary did speak.
+926,27,Examples,Hi a wra glaw a-vorow.,Hi a wra glaw a-vorow.
+927,27,Examples,A wre'ta klewes an gan?,Do you hear the song?
+928,27,Examples,A wruss'ta esedha gans Mighal?,A wruss'ta esedha gans Mighal?
+929,27,Examples,A vynn'ta kemmeres an bluvenn ma?,Will you have this pen?
+930,27,Examples,"Mynnav! Ro hi dhymm, mar pleg.","I will! Give it to me, please."
+931,27,Examples,"A vynn'ta skrifa dha hanow, mar pleg?","Will you write your name, please?"
+932,27,Examples,Na vynnav! Drog yw genev.,I will not! I'm sorry.
+933,27,Examples,A vynn'ta leverel dhymm an acheson?,Will you tell me the reason?
+934,27,Examples,Mynnav! An bluvenn ma yw gwag.,I will. This pen is empty.
+935,27,Examples,A wodhesta neuvya?,Can you swim? (Do you know how to swim?)
+936,27,Examples,Gonn.,"Yes, I know how to."
+937,27,Examples,Na wonn.,"No, I don't know how to."
+938,27,Examples,A yll'ta kuntell an lyvrow?,Can you collect the books? (Have you the time/opportunity to?)
+939,27,Examples,"Gallav, sur.","I can, certainly."
+940,27,Examples,Na allav.,No I can't.
+941,27,Examples,An dowr a yn nans dhe'n mor.,The water goes down to the sea.
+942,27,Examples,Nebonan arall eth yn le Karl.,Someone else went in place of Charles.
+943,27,Examples,An gwyns a dheu a'n mor.,The wind comes from the sea.
+944,27,Examples,Jenefer a dheuth gans hy gour.,Jenifer came with her husband.
+945,27,Review,An vowes a wra hy ober omma.,The girl does her work here.
+946,27,Review,My a vynn esedha yn y le.,I will sit in his place.
+947,27,Review,Ev a yll gorra y draow ena.,He can put his things there.
+948,27,Review,Ni a dhe Druru gans ow thas.,We go to Truro with my father.
+949,27,Review,"Maria a wrug henna, dell glewav.","Mary did that, I hear."
+950,27,Review,Nebonan a allas gweres.,Someone was able to help.
+951,27,Review,Peub a dheuth gans arghans lowr.,Everyone came with enough money.
+952,27,Review,Da o.,It was good.
+953,27,Review,Ny vynnas Lowena mones gans hy hwoer.,Lowena did not wish to go with her sister.
+954,27,Review,A ny allas an venyn gwiska hy hota?,Could the woman not wear her coat?
+955,27,Review,A yll an fleghes neuvya omma?,Can the children swim here?
+956,27,MiscReview,Fatell o an gewer yn Itali?,How was the weather in Italy?
+957,27,MiscReview,"Poeth o, sur, pur boeth.","It was hot, certainly, very hot."
+958,27,MiscReview,Py par gwerther yw Jago?,What sort of salesman is James?
+959,27,MiscReview,Py gour yw dha hwegron?,Which man is your father-in-law?
+960,27,MiscReview,"Ottena! An den berr, tew.","See over there! The short, fat person."
+961,27,MiscReview,Piw o hy howethes wir?,Who was her true friend?
+962,27,MiscReview,Ni oll warbarth eth yn-nans dhe'n treth rag neuvya.,We all went down to the beach together in order to swim.
+963,27,MiscReview,Pyth yw hemma a-dryv an amari?,What is that behind the cupboard?
+964,27,MiscReview,"Paper-nowodhow koth yw, sur.",It's surely an old newspaper.
+965,27,MiscReview,"Berrheans an lyver o re verr, dell dybav.","The abridgement of the book was too short, I think."
+966,27,MiscReview,My a brenas dewdhek oy nowydh y'n bargen-tir.,I bought twelve new eggs at the farm.
+967,27,MiscReview,Py eur o pan dheuth hi tre arta?,What time was it when she came home again?
+968,27,MiscReview,Nebes geryow yw an gwella.,A few words are the best.
+969,27,MiscReview,Nyns esa meur a win gesys rag kinyow.,There was not much wine left for dinner
+970,27,MiscReview,Yth esa hwans dhymm a vones.,I wanted to go.
+971,27,MiscReview,Ynter an garrek ha'n mor yth esen vy.,I was between the rock and the sea.
+972,27,MiscReview,A nyns owgh hwi yeyn orth an daras ena?,Aren't you cold by the door there?
+973,27,MiscReview,"Gorr oyl a-ji dhe'n jynn; gwag yw, dell hevel.",Put some oil in the engine; it's empty it seems.
+974,27,MiscReview,Nyns yw an hwedhel 'Mil Nos ha Nos' unn hwedhel mes lies hwedhel yn unn lyver.,The story 'A Thousand and One Nights' is not one story but many stories in one book.
+975,27,MiscReview,"Fatell o an gewer y'n eur na? Oer o, pur oer.","How was the weather at that time? It was cold, very cold."
+976,27,MiscReview,Yth esa toll yn to hy chi ha ledan o an keth toll na.,There was a hole in the roof of her house and that same hole was wide.
+977,27,MiscReview,An glaw a dheuth a-ji der an toll.,The rain came in through the hole.
+978,27,MiscReview,Py boesti yw an gwella y'n dre ha py boesti yw an gwettha?,Which restaurant is the best in the town and which restaurant is the worst?
+979,27,MiscReview,"Boesti an tavern 'An Margh Wynn' yw an gwella, dell dybav, ha'n boesti a-ji dhe'n varghas yw an gwettha, dell glewav.","The restaurant of 'The White Horse' is the best, I think, and the restaurant in the market is the worst, I hear."
+980,27,MiscReview,Ottena! Yma y wreg ganso lemmyn.,Look! There's his wife with him now.
+981,27,MiscReview,"Hwel, ena hanafas a goffi yw brav.","Work, then a cup of coffee is fine."
+982,28,Examples,An keur a ganas dhe'n fleghes.,The choir sang to the children.
+983,28,Examples,An keur a ganas dhedha.,The choir sang to them.
+984,28,Examples,Yma an vowes ganso eev.,The girl is with him (emphatic).
+985,28,Examples,My a vynn esedha gansa ynsi.,I will sit with them (emphatic).
+986,28,Review,Henna a dhiskwedhas an folenn dhedha.,That person showed the paper to them.
+987,28,Review,Ny worrsons i aga hanstell warnedhi (an voes).,They did not put their basket on it (the table).
+988,28,Review,A ganas Margh genowgh?,Did Mark sing with you?
+989,28,Review,My a welas tarow y'n pras.,I saw a bull in the field.
+990,28,Review,Yth esa bughes ynno ynwedh.,There were cows in it too.
+991,28,Review,"Kemmer an kowl ma, yma bollas ragos.","Take this soup, there is a bowlful for you."
+992,28,Review,Hebdhi nyns ov lowen.,Without her I am not happy.
+993,28,Review,Nyns eth Morwenna hebov.,Morwenna did not go without me.
+994,28,Review,A leversys jy hemma ragon?,Did you say that for us?
+995,28,Review,Rygdhi y hwrug ev an dra.,For her he did the thing.
+996,28,Review,Gwra an hwel gansa!,Do the work with them!
+997,28,Review,"Ro e dhymmo vy, mar pleg!","Give it to me, please!"
+998,28,Review,Ny dhiskwedhsyn an golow dhedha.,We did not show them the light.
+999,28,Review,Lavar dhymm piw yw an re ma!,Tell me who those people are!
+1000,28,MiscReview,"Nos dha dhywgh hwi oll, nos dha!","Good night to you all, good night!"
+1001,28,MiscReview,Eus nebes koffi gesys ragov? Nag eus. Yma te hepken.,Is there a little coffee left for me? No. There is tea only.
+1002,28,MiscReview,Usi an saghasow a avalow a-ji dhe'n karrji? Esons!,Are the bags of apples inside the garage? They are!
+1003,28,MiscReview,Pyth yw an dra ma yn Kernewek? Glawlenn yw.,What is this object in Cornish? It's 'glawlenn' (umbrella).
+1004,28,MiscReview,Py hwel eus dhodho?,What work has he got?
+1005,28,MiscReview,"Dyskador yw, dell glewav.","He is a teacher, I hear."
+1006,28,MiscReview,"Nyns yns aga hota ynsi, sur.","They are not their coats, certainly."
+1007,28,MiscReview,"Ny wonn kovedhes. Arta mar pleg, ha lenta.","I don't understand. Again please, and slower."
+1008,28,MiscReview,Hy thas-gwynn o pronter yn Eglos Pow Sows.,Her grandfather was a parson in the Church of England.
+1009,28,MiscReview,Ott! Chymbla an chi na yw gyllys gans an gwyns krev.,Look! The chimney of that house has gone with the strong wind.
+1010,28,MiscReview,"Tasik, tasik! Ple'ma agan ki?","Daddy, daddy! Where is our dog?"
+1011,28,MiscReview,"Piw yns i, an re na a-rag gwerthji an horner?","Who are they, those (people) in front of the ironmonger's shop?"
+1012,28,MiscReview,"Ny wonn. Mes na gews dhedha! Tus kemmyn yns, dell hevel, ha nyns yns agan parow, sur.","I don't know. But don't speak to them! They are common people, it seems and they are not our equals for sure."
+1013,28,MiscReview,Pub avon omma yw keltek ha pub menydh ynwedh.,Every river here is Celtic and every mountain too.
+1014,28,MiscReview,Bregh an gador ma yw terrys.,The arm of this chair is broken.
+1015,28,MiscReview,"On ni diwedhes? On, dell dybav.","Are we late? We are, I think."
+1016,28,MiscReview,Yma bownder verr ha kul ynter an dhew bras vras.,"There is a short, narrow lane between the two big fields."
+1017,28,MiscReview,Yntra naw den ev yw an lyha oll.,Among nine people he is the least of all.
+1018,28,MiscReview,"Re dhiwedhes os, ow howeth, ha nyns eus hanafas a goffi ragos.","You are too late, my friend, and there is no cup of coffee for you."
+1019,29,Examples,Yma Jerri ow koska lemmyn.,Jerry is sleeping now.
+1020,29,Examples,Yth esov ow tybri ow hoen.,I am eating my supper.
+1021,29,Examples,Nyns eson ow megi.,We are not smoking.
+1022,29,Examples,My yw skwith.,I am tired.
+1023,29,Examples,Yth esen ow tybri.,I was eating.
+1024,29,Examples,Yma an avon ow resek yn krev.,The river is running strongly.
+1025,29,Examples,Yma krys ow kregi war benn an gweli.,There is a shirt hanging on the end of the bed.
+1026,29,Examples,Yma an fleghes ow tyski Kembrek.,The children are learning Welsh.
+1027,29,Examples,Yma an gowethas owth omguntell.,The society is meeting.
+1028,29,Examples,Yma ki owth hartha a-ves.,There is a dog barking outside.
+1029,29,Examples,Nyns usi an flogh ow koska lemmyn.,The child is not sleeping now.
+1030,29,Examples,Nyns eus karr ow tos.,There is no car coming.
+1031,29,Examples,Nyns usi hy harr ow tos.,Her car is not coming.
+1032,29,Examples,Eus gwyns ow hwytha?,Is there a wind blowing?
+1033,29,Examples,Usi an keur ow kana?,Is the choir singing?
+1034,29,Examples,Esowgh hwi ow redya warbarth?,Are you reading together?
+1035,29,Examples,A nyns esen ni ow kweres?,Weren't we helping?
+1036,29,Examples,Nyns esons ow kwari yn ta.,They are not playing well.
+1037,29,Examples,Esos jy ow kasa lemmyn?,Are you leaving now?
+1038,29,Examples,Nyns esowgh ow mires orthiv.,You are not looking at me.
+1039,29,Examples,Yth esov ow powes y'n lowarth.,I am resting in the garden.
+1040,29,Examples,Yth esos ow synsi an lovan.,You are holding the rope.
+1041,29,Examples,Yma ev ow palas gans an bal derrys.,He is digging with the broken spade.
+1042,29,Examples,Yth eson ow terri bleujennow.,We are picking flowers.
+1043,29,Examples,Yth esowgh hwi ow nesa an gresenn.,You are approaching the centre.
+1044,29,Examples,Ymons owth oberi gans aga thas.,They are working with their father.
+1045,29,Examples,Yth esens ow kolghi an lestri plos.,They were washing the dirty dishes.
+1046,29,Examples,Yth esa an maw ow megi.,The boy was smoking.
+1047,29,Examples,Nyns esov ow skrifa travydh.,I am not writing anything.
+1048,29,Examples,"Nyns esos jy ow serri, esos jy?","You are not getting angry, are you?"
+1049,29,Examples,Nyns esen ni ow redya.,We were not reading.
+1050,29,Examples,Nyns usi an yeynell owth oberi.,The refrigerator is not working.
+1051,29,Examples,Nyns eus nebonan ow kelwel.,There is no one calling.
+1052,29,Examples,Nyns eson ni ow megi.,We are not smoking.
+1053,29,Examples,Nyns esowgh ow sevel hwath.,You are not standing yet.
+1054,29,Examples,Nyns esons ow tos.,They are not coming.
+1055,29,Examples,Nyns esen vy ow kana.,I was not singing.
+1056,29,Examples,Esos jy ow koslowes?,Are you listening?
+1057,29,Examples,Usi an goel ow lenwel?,Is the sail filling?
+1058,29,Examples,Eus flogh ow kewsel?,Is there a child speaking?
+1059,29,Examples,Esons i ow kerdhes gensi?,Are they walking with her?
+1060,29,Examples,Usi an gerens ow keskewsel?,Are the parents talking together?
+1061,29,Examples,Esewgh hwi ow kewsel orti?,Were you speaking to her?
+1062,29,Examples,Esov!,I am! 
+1063,29,Examples,Usi!,It is!
+1064,29,Examples,Eus!,There is!
+1065,29,Examples,Esons!,They are!
+1066,29,Examples,Esens!,They were!
+1067,29,Examples,Esen!,I was!
+1068,29,Examples,Esen!,We were!
+1069,29,Examples,Nag esov!,I am not!
+1070,29,Examples,Nag usi!,It is not!
+1071,29,Examples,Nag eus!,There is not!
+1072,29,Examples,Nag esons!,They are not!
+1073,29,Examples,Nag esens!,They were not!
+1074,29,Examples,Nag esen!,I was not!
+1075,29,Examples,Nag esen!,We were not!
+1076,29,Examples,An vamm-wynn a gar esedha.,Grandmother likes sitting.
+1077,29,Examples,Yma an vamm-wynn owth esedha.,Grandmother is sitting.
+1078,29,Review,My a gar dybri dyenn kernewek.,I love eating Cornish cream.
+1079,29,Review,Yth esov ow tybri li y'n gegin.,I am eating lunch in the kitchen.
+1080,29,Review,Joy a vynn skrifa dhodho.,Joy will write to him.
+1081,29,Review,Yma hi ow skrifa dhodho y'n chi.,She is writing to him in the house.
+1082,29,Review,Joy re skrifas dhodho mes nyns eus gorthyp hwath.,Joy has written to him but there is no reply yet.
+1083,29,Review,Yma an baner owth yskynna.,The flag is going up.
+1084,29,Review,My a allas yskynna an vre heb gweres.,I was able to ascend the hill without help.
+1085,29,Review,Yma ev ow kuntell an tokynyow.,He is collecting the tickets.
+1086,29,Review,Y ober yw kuntell an tokynyow.,His work is collecting the tickets
+1087,29,Review,Lowena a gar gwiska hy hota du.,Lowena likes wearing her black coat.
+1088,29,Review,Nyns usi hi ow kwiska hy hota du.,She is not wearing her black coat.
+1089,29,MiscReview,Gorr an kellylli war an voes!,Put the knives on the table!
+1090,29,MiscReview,Morwenna yw lowen. Hy fenn-bloedh yw hedhyw.,Morwenna is happy. Her birthday is today.
+1091,29,MiscReview,Py mappa yw an gwella ragon?,What map is the best for us?
+1092,29,MiscReview,Py par gorthyp yw henna?,What sort of answer is that?
+1093,29,MiscReview,Fatell o an gewer ragowgh y'n Alban?,How was the weather for you in Scotland?
+1094,29,MiscReview,Esedh y'n trysa desk!,Sit in the third desk.
+1095,29,MiscReview,Y'n seythves dydh an dra o dien.,On the seventh day the matter was complete.
+1096,29,MiscReview,Kan an kynsa salm warn ugens!,Sing the twenty-first psalm!
+1097,29,MiscReview,Kikti Mr Bates yw an peswara gwerthji yn Stret an Eglos.,Mr Bates' butcher's shop is the fourth shop in Church Street.
+1098,29,MiscReview,Hi a lennas an nawves dyskans.,She read the ninth lesson.
+1099,29,MiscReview,An dohajydh ma ymons i ow metya orth aga howetha.,This afternoon they are meeting their friends.
+1100,29,MiscReview,A nyns esens i ow synsi an dornleow?,Weren't they holding the handles?
+1101,29,MiscReview,"A vynn'ta dybri an aval ma? Na vynnav, meur ras!",Will you eat this apple? No thanks!
+1102,29,MiscReview,A yll'ta gweles an mor hwath? Gallav!,Can you see the sea yet? I can (= yes).
+1103,29,MiscReview,Ottomma an ganstell mes nyns eus travydh ynni.,Look here's the basket but there's nothing in it.
+1104,29,MiscReview,Ottena an kok mes nyns eus den ynno.,There is the fishing boat but there's no one in it.
+1105,29,MiscReview,Lemmyn y prenyn brithylli y'n varghas.,Now we buy mackerel in the market.
+1106,29,MiscReview,A vynnowgh hwi mones genen dhe'n dons?,Will you go with us to the dance?
+1107,29,MiscReview,Ev a wrug lestrier a brenn derow.,He made a dresser of oak wood.
+1108,29,MiscReview,I re werthas an sinema koth.,They have sold the old cinema.
+1109,29,MiscReview,An losow yw byw hwath.,The plants are alive still.
+1110,29,MiscReview,Marilynn vyghan a welas sim y'n wydhenn.,Little Marilyn saw a monkey in the tree.
+1111,29,MiscReview,Kemmer an diwes ma ragos.,Take this drink for you (= yourself).
+1112,29,MiscReview,Ny garav an venyn na namoy.,I don't like that woman any more.
+1113,29,MiscReview,An ebrenn o loes gans kommol ha hi a wrug glaw.,The sky was grey with clouds and it rained.
+1114,29,MiscReview,Ty a yll lenwel an hanaf a dhowr. Yv hanafas anodho!,You can fill the cup with water. Drink a cupful of it!
+1115,29,MiscReview,Jori a asas y gi yn-mes a'n chi.,George left his dog outside the house.
+1116,29,MiscReview,Ny yllydh jy esedha war an glesin. Re lyb yw ev.,You can't sit on the lawn. It's too wet.
+1117,29,MiscReview,Duw genes! Dha weles skon.,Goodbye! See you soon.
+1118,29,MiscReview,Nyns yw ow harr gwerthys hwath.,My car is not sold yet.
+1119,29,MiscReview,Hy fows wyrdh yw nowydh.,Her green dress is new.
+1120,29,MiscReview,An re na a glapp flows.,Those (people) talk nonsense.
+1121,29,MiscReview,Ny aswonnav an gour na.,I don't know that man.
+1122,29,MiscReview,Yth esa kestenenn hir yn kres an glesin.,There was a tall chestnut tree in the middle of the lawn.
+1123,29,MiscReview,Piw yw hy hweger ytho?,"Who is her mother-in-law, then?"
+1124,29,MiscReview,Mir orth an bluvek blos na!,Look at that dirty cushion!
+1125,29,MiscReview,"Gorta diw vynysenn, mar pleg!","Wait two minutes, please!"
+1126,30,Examples,Meur ras dhis a'n te.,Thank you for the tea.
+1127,30,Examples,Meur ras dhis ow tos.,Thank you for coming.
+1128,30,Examples,Meur ras dhywgh hwi ow kweres gans an hwel.,Thank you for helping with the work.
+1129,30,Examples,Aswonnav gras dhis a'n boes.,Thank you for the food.
+1130,30,Examples,Synsys meur ov dhis a'n gweres.,I am much obliged to you for the help.
+1131,30,Examples,Pandr'a wre'ta Sadornweyth?,What do you do on Saturdays?
+1132,30,Examples,Pandr'a dhybris Peder y'n boesti chenek na?,What did Peter eat in that Chinese restaurant?
+1133,30,Examples,Pandr'a redyas an flogh?,What did the child read?
+1134,30,Examples,Pandra! A nyns eus arghans gesys?,What! Isn't there any money left?
+1135,30,Examples,Ass yw da an boes ma!,How good this food is!
+1136,30,Examples,Ass o kamm y lavar!,How wrong his words were!
+1137,30,Examples,Ass wrons i kana!,How they do sing!
+1138,30,Review,Meur ras dhis a'n gweres.,Thank you for the help.
+1139,30,Review,Pandr'a wrug hi gans an paper-nowodhow?,What did she do with the newspaper?
+1140,30,Review,Ny wrav ow oberenn uskis.,I do not do my exercises quickly.
+1141,30,Review,Ass yw ewnter Ralf feusik!,How lucky uncle Ralph is!
+1142,30,Review,Yma hwans dhymm a weles an eglos vryntin na.,I want to see that fine church.
+1143,30,Review,Fatell o an gewer yn Sen Ostell?,How was the weather in St. Austell?
+1144,30,Review,"Awelek o, pur awelek, heb mar.","It was windy, very windy, without a doubt."
+1145,30,Review,My a wra henna arta.,I shall do that again.
+1146,30,Review,Py par yeth yw honna?,What kind of language is that?
+1147,30,Review,"Ass os gokki, Kernewek yw hi.","How silly you are, it's Cornish."
+1148,30,Review,Pandr'a wredh jy gans an toll yn to an karrji?,What shall you do with the hole in the roof of the garage?
+1149,30,Review,Aswonnav gras dhywgh hwi ow kuntell an arghans ragon.,I thank you for collecting the money for us..
+1150,30,Review,Pandra! A nyns yw henna noy Mr Peters?,What! Isn't that Mr Peters' nephew?
+1151,30,Review,Pandr'a evons i? Gwin rudh?,What do they drink? Red wine?
+1152,30,Review,"Ro dhymm gwedrennas anodho, mar pleg!","Give me a glassful of it, please!"
+1153,30,Review,Ny wren ni kewsel dhedha.,We don't speak to them.
+1154,30,Review,A wrewgh hwi dannvon lytherow heb stampow?,Do you send letters without stamps?
+1155,30,Review,"Pan wra hi ergh, yeyn yw an gewer.","When it snows, the weather is cold."
+1156,30,MiscReview,Piw a yll bos salow?,Who can be safe?
+1157,30,MiscReview,Bleujennow an eythin yw melyn ha rudh.,The flowers of the gorse are yellow and red.
+1158,30,MiscReview,Yma hwans dhymm a dhybri oyow bryjys rag hansel.,I want to eat boiled eggs for breakfast.
+1159,30,MiscReview,Ugens mildir yw dhe Lannstefan.,It is twenty miles to Launceston.
+1160,30,MiscReview,Yma meur a fenestri y'n drehevyans na.,There are lots of windows in that building.
+1161,30,MiscReview,Gorr dha dhaffar y'n garth!,Put your gear in the yard!
+1162,30,MiscReview,"My re viras orth y vregh. Shyndys yw, dell hevel.","I have looked at his arm. It is injured, it seems."
+1163,31,Review,Hi re dhrehedhas hy hansves penn-bloedh.,She has reached her hundredth birthday.
+1164,31,Review,Ny dhiwedhis vy an trysa lyver hwath.,I have not finished the third book yet.
+1165,31,Review,An degves ger y'n ugensves linenn yw 'kath'.,The tenth word in the twentieth line is 'kath' (cat).
+1166,31,Review,Ev a redyas y hanow y'n peswara koloven war an pympes folenn a'n paper-nowodhow.,He read his name in the fourth column on the fifth page of the newspaper.
+1167,31,Review,Hanterkansves penn-bloedh diwedh Nessa Bresel an Norvys o ha seytegves pennbloedh ha tri ugens diwedh Kynsa Bresel an Norvys.,It was the fiftieth anniversary of the end of the Second World War and the seventy-seventh anniversary of the end of the First World War.
+1168,31,Review,Ottena! kommol loes a-ugh an koes.,Look! Grey clouds above the wood.
+1169,31,Review,Yma Breten Vyghan dres an mor.,Brittany is over the sea.
+1170,31,Review,My re welas ydhyn pals y'n lowarth haneth.,I have seen many birds in the garden this evening.
+1171,31,Review,Fest da o an boes y'n ostel na.,The food in that hotel was very good.
+1172,31,Review,Piw a bellgewsis orthis haneth?,Who telephoned you this evening?
+1173,31,MiscReview,Pandr'a synsis ev yn y dhorn?,What did he hold in his hand?
+1174,31,MiscReview,"Diskwedh e dhymm, mar pleg!","Show it to me, please!"
+1175,31,MiscReview,Eus gever y'n gwel? Eus!,Are there any goats in the field? Yes!
+1176,31,MiscReview,Py lies? Peder gaver.,How many? Four goats.
+1177,31,MiscReview,Py eur o hi pan dheuth hi tre?,What time was it when she came home?
+1178,31,MiscReview,Deg mynysenn wosa hwegh eur.,Ten minutes after six.
+1179,31,MiscReview,Gorr glow war an tan. Oer yw hi.,Put coal on the fire. It's cold.
+1180,31,MiscReview,Yma meur a arghans dhodho.,He has much money.
+1181,31,MiscReview,Kevoethek yw ev.,He's rich.
+1182,31,MiscReview,Nyns yw hemma an keth sagh ha'n kynsa huni.,This is not the same bag as the first one.
+1183,31,MiscReview,Yma hwans dhymm a yskynna an vre ughel na.,I want to ascend that high hill.
+1184,31,MiscReview,Nyns ov gwerther da.,I am not a good salesman.
+1185,31,MiscReview,I a vynnas mos y'n eur na pan nag ens pes da gans ow hows.,They wished to go then when they were not pleased with what I said.
+1186,31,MiscReview,Ny yllowgh gwari peldroes y'n pras na.,You cannot play football in that field.
+1187,31,MiscReview,Ni a gar hwedhel didhanus.,We love an amusing story.
+1188,31,MiscReview,Py liw yw an sethow na? Melyn yns.,What colour are those jars? They are yellow.
+1189,31,MiscReview,Ny welyn an baner kernewek a-ugh tour an eglos y'n dre ma.,We do not see the Cornish flag above the church tower in this town.
+1190,32,Examples,"An vlydhen yw mil, naw kans, pymthek ha peswar ugens.","The year is one thousand, nine hundred and ninety-five."
+1191,32,Review,"Mis Genver yw oer, mis Est yw poeth, dell vydh usys.","January is cold, August is hot, usually."
+1192,32,Review,Yma deg dydh warn ugens yn mis-Metheven hag unnek dydh warn ugens yn mis-Gortheren.,There are thirty days in June and thirty-one days in July.
+1193,32,Review,Hemm yw unn jydh ha tri ugens warbarth.,That is sixty-one days altogether.
+1194,32,Review,Yma tri mis yn Gwenton.,There are three months in Spring.
+1195,32,Review,Py dydh yw an pympes warn ugens a vis Kevardhu?,What day is the twenty-fifth of December?
+1196,32,Review,"Dy' Mergher yw an degves, dell dybav.","Wednesday is the tenth, I think."
+1197,32,Review,"Y'n vlydhen mil, naw kans ha pymp ha dew ugens Nessa Bresel an Norvys a dhiwedhas.",In the year nineteen hundred and forty-five the Second World War ended.
+1198,32,Review,Py dydh yw ev hedhyw?,What day is it today?
+1199,32,Review,"Dy' Gwener an nownsegves a vis-Genver y'n vlydhen mil, naw kans, pymthek ha peswar ugens yw.","It is Friday the nineteenth of January in the year one thousand, nine hundred and ninety-five."
+1200,32,MiscReview,Ow hwegron a oberas y'n karrji war y garr koth.,My father-in-law worked in the garage on his old car.
+1201,32,MiscReview,"Y nith, Hylda, a glewas Bretonek kewsys yn Montroules.","His niece, Hilda, heard Breton spoken in Morlaix."
+1202,32,MiscReview,Dohajydh da dhywgh hwi oll.,Good afternoon to you all.
+1203,32,MiscReview,A vynnowgh hwi kewsel kernewek genen?,Will you speak Cornish with us?
+1204,32,MiscReview,An maw a dennas an lovan mes re wann o ev.,The boy pulled the rope but he was too weak.
+1205,32,MiscReview,Ny yll ev gul an ober na namoy.,He cannot do that work any more.
+1206,32,MiscReview,"Ple'ma ow fluvennow, an huni dhu ha'n huni rudh?","Where are my pens, the black one and the red one?"
+1207,32,MiscReview,Yma hwans dhymm a brena brithili.,I wish to buy mackerel.
+1208,32,MiscReview,Yth eson ow nesa dhe gres an dre.,We are approaching the town centre.
+1209,33,Examples,Da yw genev redya.,I like to read.
+1210,33,Examples,Da yw gans Loveday kana.,Loveday likes to sing.
+1211,33,Examples,Da yw genes mires orth an bellwolok.,You like to watch the television.
+1212,33,Examples,Drog yw ganso eva gwin.,He doesn't like to drink wine.
+1213,33,Examples,Da yw gensi dybri boes da.,She likes to eat good food.
+1214,33,Examples,Da yw genen kerdhes.,We like to walk.
+1215,33,Examples,Da yw genowgh donsya.,You like to dance.
+1216,33,Examples,Drog yw gansa oberi y'n lowarth.,They do not like to work in the garden.
+1217,33,Examples,Da yw genev neuvya.,I like swimming.
+1218,33,Examples,Da yw gans an fleghes gwari.,The children like to play.
+1219,33,Examples,Drog yw genev bos a-ves nosweyth.,I don't like being out at night.
+1220,33,Examples,Drog yw gans Loveday dybri boes frynkek.,Loveday doesn't like eating French food.
+1221,33,Examples,Nyns o da ganso gortos re bell.,He didn't like waiting too long.
+1222,33,Examples,Drog o ganso gortos re bell.,He disliked waiting too long.
+1223,33,Examples,Gwell yw gans Jori kewsel Kernewek.,George prefers to speak Cornish.
+1224,33,Examples,Kas yw gans pubonan esedha re hir.,Everyone hates sitting too long.
+1225,33,Examples,Poes o gansa bos unnver gensi.,They were reluctant to agree with her.
+1226,33,Examples,Yw gwell genes jy kavoes dha dokyn lemmyn?,Do you prefer to have your ticket now?
+1227,33,Examples,"Nyns o re boes gansa esedha rag aga the, dell hevel.","They weren't too reluctant to sit down for their tea, it seems."
+1228,33,Review,"Da yw gans Maria gwari gensi, herwydh usadow.","Mary likes playing with her, usually."
+1229,33,Review,Kas yw genev kerdhes tre hebos.,I hate walking home without you.
+1230,33,Review,Gwell o genen bos unnver ganso.,We prefered agreeing with him.
+1231,33,Review,Drog yw genen triga yn mes a'n dre.,We don't like living out of town.
+1232,33,Review,Poes yw gansa poenya re bell.,They are reluctant to run too far.
+1233,33,Review,"Ystynn dha dhorn dhymm, da yw genev synsi dha dhorn.","Hold out your hand to me, I like to hold your hand."
+1234,33,Review,Poes o gans an fleghes gwari a-ves pan wrug hi glaw mes da o gansa gul henna pan wra hi ergh.,The children were reluctant to play outside when it rained but they like to do that when it snows.
+1235,33,MiscReview,Ev a ystynnas an pellgowser dhymm.,He handed me the telephone.
+1236,33,MiscReview,"Gorr an taklow yn stevell arall, mar pleg!","Put the gear in another room, please!"
+1237,33,MiscReview,An pympes stevell war an tu na yw agan chambour nyni.,The fifth room on that side is our bedroom.
+1238,33,MiscReview,"An ystynnyans yw berrheans an lyver dien, dell hevel dhymm.","The supplement is an abridgement of the whole book, it seems to me."
+1239,33,MiscReview,"Ass yw honna drog! Yet an lowarth, daras an chi ha'n fenestri yw rudhvelyn aga liw.","How bad that is! The garden gate, the house door and the windows are orange in colour."
+1240,33,MiscReview,Pubonan a warias y'n stret y'n eur na. Ny warisons y'n lowarth.,Everyone played in the street then. They did not play in the garden.
+1241,33,MiscReview,"Yma anwoes warnowgh oll, dell glewav.","You all have a cold, I hear."
+1242,33,MiscReview,Chiow bras ha tus kevoethek a drig ynna.,Big houses and rich people live in them.
+1243,33,MiscReview,Pys e a wortos a-ves!,Ask him to wait outside.
+1244,33,MiscReview,An gath vyghan a warias yn-dann an gweli.,The little cat played under the bed.
+1245,33,MiscReview,"Pan splann an loergann war an arvor a-dreus an mor kosel, assyw hi teg!","When the full moon shines on the shore across the calm sea, how beautiful it is!"
+1246,33,MiscReview,Mir orth an bellwolok! Yndella ty a yll dyski meur.,Watch the television! In that way you can learn much.
+1247,33,MiscReview,"Talan a veu genys Dy' Yow an nessa warn ugens a vis Hedra y'n vlydhen mil, naw kans ha seytek. Seytek bloedh ha tri ugens o ev yn mil naw kans pymthek ha peswar ugens. Ev yw yagh hwath.","Talan was born on Thursday the twenty-second of October, nineteen hundred and seventeen. He was seventy-seven years old in nineteen hundred and ninety-five. He is still fit."
+1248,34,Examples,Eus karr dhis?,Have you a car?
+1249,34,Examples,Eus chi dhis?,Have you a house?
+1250,34,Examples,Eus ki dhis?,Have you a dog?
+1251,34,Examples,Yma karr dhymm.,I have a car.
+1252,34,Examples,Eus gerlyver dhis?,Have you a dictionary?
+1253,34,Examples,Eus! Yma gerlyver dhymm.,Yes! I have a dictionary.
+1254,34,Examples,Esa karr dhis?,Did you have a car?
+1255,34,Examples,Yth esa karr dhymm.,I did have a car.
+1256,34,Examples,Esa sagh dhis?,Did you have a bag?
+1257,34,Examples,Esa! Yth esa sagh dhymm,Yes! I did have a bag.
+1258,34,Examples,Eus flogh dhedhi?,Has she a child?
+1259,34,Examples,Eus! Yma flogh dhedhi.,Yes! She has a child.
+1260,34,Examples,Esa kath dhedha?,Did they have a cat?
+1261,34,Examples,Esa! Yth esa kath dhedha,Yes! They had a cat.
+1262,34,Examples,Eus ki ganso?,Has he a dog with him?
+1263,34,Examples,Eus! Yma ki ganso,Yes! He has a dog with him.
+1264,34,Examples,Eus flogh gensi?,Is there a child with her?
+1265,34,Examples,Esa koweth genes?,Did you have a friend with you?
+1266,34,Examples,Esa! Yth esa koweth genev.,Yes! I had a friend with me.
+1267,34,Examples,Yw an bluvenn ma dhis?,Is this pen yours?
+1268,34,Examples,Yw! An bluvenn yw dhymm.,It is! The pen is mine.
+1269,34,Examples,Nag yw! Nyns yw an bluvenn dhymm.,It is not! The pen is not mine.
+1270,34,Examples,O an lyver dhe Yowann?,Was the book John's?
+1271,34,Examples,O! An lyver o dhe Yowann.,Yes! It was John's book.
+1272,34,Examples,Nag o! Nyns o an lyver dhe Yowann.,No! The book was not John's.
+1273,34,Review,Eus jynn-amontya dhis? Nag eus!,Have you a computer? No!
+1274,34,Review,Eus kadoryow-bregh dhedhi? Eus!,Has she got armchairs? Yes!
+1275,34,Review,Yma diw gador-vregh dhedhi.,She has two armchairs.
+1276,34,Review,Nyns eus tigenn nowydh dhymm.,I have not got a new wallet. .
+1277,34,Review,Yma nebes pelyow dhe'n fleghes.,The children have a few balls.
+1278,34,Review,Eus hanow dhe'n ki ma?,Has this dog got a name?
+1279,34,Review,Esa le'ti dhe'n bargen-tir na?,Had that farm a dairy?
+1280,34,Review,Nyns esa keow ledan dhe'n pras.,The field did not have wide hedges.
+1281,34,Review,Eus esedhva vras dhe'n chi na?,Has that house a large lounge?
+1282,34,Review,Eus! Yma onan pur vras dhodho.,Yes! It has a large one.
+1283,34,Review,Eus kath gensi? Nag eus lemmyn.,Has she a cat with her? Not now!
+1284,34,Review,Esa aga broder gansa?,Did they have their brother with them?
+1285,34,Review,Yw an dhewweder ma dhis?,Are these spectacles yours?
+1286,34,Review,"Yns. I yw dhymm, meur ras.","Yes. They are mine, thanks."
+1287,34,Review,Yw an wedrenn ma dhedhi? Yw!,Is this her glass? Yes!
+1288,34,Review,A nyns yw an nessa karr dhe Vr Martyn?,Isn't the next car Mr Martin's?
+1289,34,Review,"Yw! Ev yw dhe Vr Martyn, dell dybav.","Yes! It's Mr Martin's, I think."
+1290,34,Review,O an eskisyow dhedha? Ens!,Were the shoes theirs? Yes!
+1291,34,Review,A nyns o an diwes na dhe Wella?,Wasn't that Wella's drink?
+1292,34,Review,Nag o! Dhe Gerensa o.,No! It was Karenza's.
+1293,34,Review,My a verrhas ow hows mes ny verrhasons aga hows ynsi.,I cut short my speech but they did not cut short their speech.
+1294,34,MiscReview,Tasik! Tasik! Ottena! Ergh war an glesin!,Daddy! Daddy! Look! Snow on the lawn!
+1295,34,MiscReview,Aga chi yw gwerthys y'n eur ma.,Their house is sold now.
+1296,34,MiscReview,Dha weles Dy' Meurth martesen!,See you (on) Tuesday perhaps!
+1297,34,MiscReview,Niver an gorholyon y'n porth yw eth.,The number of ships in the harbour is eight. .
+1298,34,MiscReview,"Hedhyw yw an dewdhegves a vis Meurth, pennbloedh ow gwreg.","Today is the twelfth of March, my wife's birthday."
+1299,34,MiscReview,"Ro dhymm an hoelan, mar pleg!","Give me the salt, please!"
+1300,34,MiscReview,Ple'ma an gerlyver Kernewek?,Where is the Cornish dictionary?
+1301,34,MiscReview,"War drysa estyllenn an argh-lyvrow y'n esedhva yma, dell dybav.","On the third shelf of the bookcase in the lounge it is, I think."
+1302,34,MiscReview,Yth esa ke isel a-dal an chi.,There was a low hedge opposite the house.
+1303,34,MiscReview,Nyns esa tra arall a-dal dhodho.,There was nothing else opposite it.
+1304,34,MiscReview,Yth esa pastiow yeyn rag agan kroust. Bryntin!,There were cold pasties for our crib. Fine!
+1305,34,MiscReview,Yth esov ow mires orth an gorholyon ena.,I am looking at the ships there.
+1306,34,MiscReview,Hi a wiskas hy fows las.,She wore her blue dress.
+1307,34,MiscReview,Ny evav ten a koffi herwydh usadow.,I don't drink tea nor coffee usually.
+1308,34,MiscReview,"Pan dhewelav tre, an teylu yw lowen.","When I return home, the family is happy."
+1309,34,MiscReview,Mona re gollas hy arghans.,Mona has lost her money.
+1310,34,MiscReview,An gath a gosk war an gweliow.,The cat sleeps on the beds.
+1311,34,MiscReview,Ena y lammas an vugh dres an ke.,Then the cow jumped over the hedge.
+1312,34,MiscReview,"Mr Evans, an tiek, a vag deves ha hoghes.","Mr Evans, the farmer, breeds sheep and cows."
+1313,34,MiscReview,"Glanha an bord du ragov, mar pleg.","Clean the blackboard for me, please."
+1314,34,MiscReview,Ny gyrghsons aga thaklow gansa.,They didn't bring their things with them.
+1315,34,MiscReview,An vodrep Me a dorras bleujennow yn hy lowarth.,Aunt May picked flowers in her garden.
+1316,34,MiscReview,Dowr an fenten a dhe'n gover.,The spring water goes to the brook.
+1317,34,MiscReview,Ny wra ev y hwel. Diek yw ev.,He doesn't do his work. He is lazy.
+1318,34,MiscReview,Ev yw diwedhes pupprys.,He is always late.
+1319,34,MiscReview,Ammeth yw tra vras yn Kernow.,Agriculture is a big affair in Cornwall.
+1320,35,Examples,Oll an dus a asas an kuntelles warbarth.,All the people left the meeting together.
+1321,35,Examples,Oll anedha a drelyas a-dhistowgh.,All of them turned straightaway.
+1322,35,Examples,Oll ahanan a ganas y'n keur na.,All of us sang in that choir.
+1323,35,Examples,"Kernowyon oll, keffrys koth ha yowynk.","Cornish people all, both old and young."
+1324,35,Examples,Meur ras dhywgh hwi oll.,Thank you all.
+1325,35,Examples,Nebes a lever yndella.,A few people say so.
+1326,35,Examples,Nebes geryow yw gwella.,A few words are best.
+1327,35,Examples,Nebes ahanowgh hwi a vydh dewisys.,A few of you will be chosen.
+1328,35,Examples,Nebes leth yw gesys.,A little milk is left.
+1329,35,Examples,Nebes anodho o poder.,A little of it was rotten.
+1330,35,Examples,Nyns eus karr vyth y'n fordh.,There is no car at all on the road.
+1331,35,Examples,A leveris ev travyth? Ger vyth!,Did he say anything? Not a word!
+1332,35,Examples,A welsys jy an edhen na? Travyth!,Did you see that bird? I didn't see anything!
+1333,35,Examples,Ev a leveris mann.,He said nothing.
+1334,35,Examples,Ny drelyas onan anedha a-dhistowgh.,Not one of them turned straightaway.
+1335,35,Examples,Ny ganas onan ahanan y'n keur na.,None of us sang in that choir.
+1336,35,Examples,Ev a welas ros a horn.,He saw an iron wheel.
+1337,35,Examples,Yw an amari ma gwrys a brenn-derow?,Is this cupboard made of oak wood?
+1338,35,Examples,Ugens a'n fleghes a wortas a-dhelergh.,Twenty of the children waited behind.
+1339,35,Examples,Kans anedha a dhehwelis.,A hundred of them returned.
+1340,35,Review,"Ystynn dhymm nebes leth, mar pleg. Yma syghes dhymm.","Pass me some milk, please. I'm thirsty."
+1341,35,Review,Oll ahanan a yll gorthybi dhe'n govynn na.,All of us can answer that question.
+1342,35,Review,Oll an gerens yw marow lemmyn.,All the near relations are dead now.
+1343,35,Review,"Nebes a'n hynwyn yw kernewek, dell hevel.","Some of the names are Cornish, it seems."
+1344,35,Review,"A-barth oll ahanan, 'Meur ras!'.","On behalf of all of us, 'Thanks!'."
+1345,35,Review,Yw oll ahanowgh parys?,Are you all ready?
+1346,35,Review,Nyns eus denvydh omma kynth yw hi seyth eur lemmyn.,There's no one here although it's seven o'clock now.
+1347,35,Review,Nyns yw onan ahanowgh krev lowr dhe sevel an men ma.,Not one of you is strong enough to lift this stone.
+1348,35,Review,"An pastiow da ma yw gwrys a vewin. An vamm a brenas an kig yn kikti Mr Ross, an kiger. Ev a werth an gwella bewin.",These good pasties are made of beef. Mother bought the meat in Mr. Ross' butcher's shop. He sells the best beef.
+1349,35,Review,An bowjiow yw gwrys a brenn.,The cowsheds are made of wood.
+1350,35,Review,An hwegynnow na o gwrys a sugra gwynnrudh.,Those sweets were made of pink sugar.
+1351,35,MiscReview,"Ass yns teg, pennow an menydhyow y'n howlsedhes, an howl rudh a-ughta.","How beautiful the tops of the mountains are in the sunset, the red sun above them."
+1352,35,MiscReview,Ny wonn konvedhes travydh yn y gever.,I don't understand anything about it.
+1353,35,MiscReview,Pandr'a leveris Maria yn kever Manow? Ny leveris hi ger yn hy hever.,What did Mary say about the Isle of Man? She didn't say a word about it.
+1354,35,MiscReview,An leth y'n badell a brojyas yn kettermyn ha'n dowr y'n galter.,The milk in the saucepan boiled at the same time as the water in the kettle.
+1355,35,MiscReview,Yma hwans dhymm a wovynn henna orth Jenefer po yn hy le nebonan arall.,I want to ask Jenifer that or in her place someone else.
+1356,35,MiscReview,An pyskador a dennas an ankor ha'n kok a woelyas a-dhistowgh.,The fisherman pulled the anchor and the boat sailed straight away.
+1357,35,MiscReview,I a balas kleudh down a-dro dhe'n park-kerri.,They dug a deep trench around the car park.
+1358,35,MiscReview,"Fisten, fisten! Yma ergh ow tos!","Hurry, hurry! There's snow coming!"
+1359,35,MiscReview,Piw a armas yndella?,Who shouted like that?
+1360,35,MiscReview,Kommol loes a dhre glaw.,Grey clouds bring rain.
+1361,35,MiscReview,Fatell o y worthyp? Ass o gokki!,How was his reply? How silly it was!
+1362,35,MiscReview,Ottomma! Ow gols. My re dennas dew vlewynn wynn diworto!,See here! My hair. I've pulled two white hairs from it!
+1363,35,MiscReview,"Yowann a wovynnas orth an tiek, 'Py par gwydh yns i?' Ev a worthybis, 'Derow yns'.","John asked the farmer, 'What sort of trees are they?' He replied, 'They are oaks.'"
+1364,35,MiscReview,"Oll an fleghes a arm, 'Kernow bys vykken!' Pes da ov vy a henna.","All the children shout, 'Cornwall for ever!' I am pleased at that."
+1365,35,MiscReview,Yma peder ros dhe bub karr. Yma an pympes a-ji ynno.,Every car has four wheels. The fifth one is inside it.
+1366,35,MiscReview,Yma nown dhe'n vebyon. An vamm a vynn ri nebes boes dhedha. Mes eus boes lowr y'n yeynell? Eus. Yma meur a vara hag amanenn gesys hwath ynwedh.,The boys are hungry. Mother will give them some food. But is there enough food in the refrigerator? Yes! There is a lot of bread and butter still left as well.
+1367,35,MiscReview,"Esedh a-dhelergh, mar pleg. Nyns eus le gesys rybov.","Sit at the back, please. There's no place left beside me."
+1368,35,MiscReview,Ty a vydh meur dhe les omma owth oberi genen.,You will be very useful here working with us.
+1369,36,Examples,Yth esen ow redya an paper-nowodhow ha my ow tybri.,I was reading the newspaper while I was eating.
+1370,36,Examples,Golgh dha dhiwleuv kyns dybri dha voes!,Wash your hands before eating your food!
+1371,36,Examples,Tas a gosk yn ta wosa oberi yn tiwysek.,Father sleeps well after working hard.
+1372,36,Examples,"Kyns y vos dyskador, souder o.",Before he was a teacher he was a soldier.
+1373,36,Examples,Wosa agan gweles ev eth tre.,After seeing us he went home.
+1374,36,Review,Yth esen a'm esedh hag i ow tonsya.,I was sitting while they were dancing.
+1375,36,Review,Yma Peder ow kolghi fos yn unn stevell ha'y wreg ow liwya fosow an stevell arall.,Peter is washing a wall in one room while his wife is painting the walls of the other room.
+1376,36,Review,Yth esa an vamm a'y sav ha'n fleghes ow kwari.,Mother was standing while the children were playing.
+1377,36,Review,Yma perghenn an boesti ow jynn-skrifa gans unn bys hag ev ow megi yn keth prys.,The owner of the restaurant is typing with one finger while smoking at the same time.
+1378,36,Review,Yth esens i a'ga gorwedh y'ga gweli ha'n vamm ow pareusi aga hansel.,They were lying in bed while mother was preparing their breakfast.
+1379,36,Review,Omwolgh ha my owth omwiska!,Wash while I am dressing!
+1380,36,Review,Wosa redya an dowlenn my a geskewsis yn hy hever gans ow gour.,After reading the programme I talked about it with my husband.
+1381,36,Review,"An drehevyans o melin goth kyns y vos diwotti, herwydh y berghenn.","The building was an old mill before it was a pub, according to its owner."
+1382,36,Review,Karol a lanhas an lestri kyns aga daskorr dhe'n lestrier.,Carol cleaned the dishes before returning them to the dresser.
+1383,36,MiscReview,An gewer yw hager war an heyl. Ny yll den gweles a-dreus dhodho.,The weather is ugly on the estuary. A person cannot see across it.
+1384,36,MiscReview,Mir orth an pons! Yma puskes y'n avon yn-danno.,Look at the bridge! There are fish in the river under it.
+1385,36,MiscReview,An hyns yw efan mes leun a dus yw ev.,The road is wide but it is full of people.
+1386,36,MiscReview,Ke dhe-ves! Pur skwith ov.,Go away! I am very tired.
+1387,36,MiscReview,Nevra ny vynn hi dehweles ha homm yw kales.,She will never wish to return and that is hard.
+1388,36,MiscReview,An tiek a dhros y vughes dhe'n skiber.,The farmer brought his cows to the barn.
+1389,36,MiscReview,An rewler a worras an lytherow war an desk rybdho.,The manager put the letters on the desk beside him.
+1390,36,MiscReview,Yma euth dhymm. My a glewas tros ughel yn-mes y'n lowarth.,I'm terrified. I heard a loud noise outside in the garden.
+1391,36,MiscReview,Ottena! A-dro dhe hanterkans hos war an lynn yn kres an hal.,Look there! About fifty ducks on the lake in the middle of the moor.
+1392,36,MiscReview,Ymons i ow neuvya warbarth.,They are swimming together.
+1393,36,MiscReview,Res yw dhe Vr Richards mos dh'y soedhva pub dydh mes soweth diwedhes yw ev treweythyow.,Mr Richards must go to his office every day but unfortunately he is sometimes late.
+1394,36,MiscReview,Ny welsons an kert orth an gornell.,They did not see the lorry at the corner.
+1395,36,MiscReview,Pow pell yw Ejyp ha tir bras yw ynwedh.,Egypt is a distant country and it is large also.
+1396,36,MiscReview,Usi an lytherva ogas dhe hel an dre? Usi!,Is the post office near the town hall? Yes!
+1397,36,MiscReview,An peswara drehevyans diworto yw ev a'n keth tu.,It's the fourth building from it on the same side.
+1398,36,MiscReview,Goel Sen Pyran a vydh pub blydhen dhe'n pympes a vis Meurth.,St Piran's Day is on the fifth of March each year.
+1399,36,MiscReview,Tus pals a dhe'n eglos y'gan gwlas dhe'n jydh na.,Many people go to church in our land on that day.
+1400,36,MiscReview,Ple'ma bedh Sen Pyran hedhyw? Piw a woer?,Where is St Piran's grave today? Who knows?
+1401,37,Examples,Nyns ov mar dha dell o ev.,I am not as good as he was.
+1402,37,Examples,Janet yw hirra es Lisa.,Janet is taller than Liza.
+1403,37,Examples,Bronn Wennili yw an ughella menydh yn Kernow.,Brown Willy is the highest mountain in Cornwall.
+1404,37,Examples,"Kyn hwelas an lyther, ny redyas ger anodho.","Though he saw the letter, he did not read a word of it."
+1405,37,Examples,"Kynth o an gewer toemm, nyns eth hi dhe'n dre mes gortos tre.","Though the weather was hot, she did not go to town but stayed home."
+1406,37,Review,"An re ma yw mar dha avel hemma, dell glewav.","These are as good as this, I hear."
+1407,37,Review,Nyns yw an wivrenn mar hir avel an huni arall.,The wire is not as long as the other one.
+1408,37,Review,Bys dhe'n eur ma nyns yw an gewer mar lyb dell o hi de.,Until now the weather is not as wet as it was yesterday.
+1409,37,Review,"Nyns ov mar dhrog avella, dell dybav.","I am not as bad as they, I think."
+1410,37,Review,Yw Margh mar drist dell o ev Dy' Sul?,Is Mark as sad as he was on Sunday?
+1411,37,Review,Hware yth omglewis mar lowen avel edhen.,Suddenly I felt as happy as a bird.
+1412,37,Review,A nyns yw hy chi mar vyghan avel krow den bal?,Isn't her house as small as a miner's hut?
+1413,37,Review,Puptra a vydh mar salow avel chi pronter.,Everything will be as safe as a parson's house.
+1414,37,Review,Nyns on ni mar feusik avelli.,We are not as lucky as her.
+1415,37,Review,Na gows mar fol!,Don't talk so foolishly!
+1416,37,Review,Lowena o mar skav avelov ow tonsya.,Lowena was as nimble as me (at) dancing.
+1417,37,Review,"Dell glewav, an korev na yw kepar ha dowr toemm.","As I hear, that beer is like warm water."
+1418,37,Review,Esta mar oer dell leverydh?,Were you as cold as you say?
+1419,37,Review,Mar es yw dyski Kernewek avel dyski ken yeth.,It's as easy to learn Cornish as to learn any language.
+1420,37,Review,Dew our diwettha o pan dheuth hi.,It was two hours later when she came.
+1421,37,Review,Milvil yw moy es naw kans mil a gans mil.,A million is more than nine hundred thousand by a hundred thousand.
+1422,37,Review,Yw korev a'n par na kreffa ages gwin?,Is beer of that sort stronger than wine?
+1423,37,Review,Kolan a boenyas dihwans dh'y vamm mes lenta o es y hwoer.,Colin ran hard to his mother but he was slower than his sister.
+1424,37,Review,Pandra! An gewer yw braffa lemmyn.,What! The weather is finer now.
+1425,37,Review,Y'n Gwenton an eythin yw hwekka es dell yns i y'n Gwav.,In the Spring the gorse is sweeter than it is in winter.
+1426,37,Review,Nyns yw an vebyon hirra ages aga hwerydh.,The boys are not taller than their sisters.
+1427,37,Review,Hy gour o poessa agessi.,Her husband was heavier than she.
+1428,37,Review,Keur an chapel yw brassa es keur eglos an blu martesen.,The chapel choir is bigger than the choir of the parish perhaps.
+1429,37,Review,Py lies den yw furra ages Seleven?,How many people are wiser than Solomon?
+1430,37,Review,Esedh orth an tan! Ty a vydh toemma ena.,Sit at the fire. You will be warmer there.
+1431,37,Review,Py par ydhyn a nij ugella ages an kommol?,What kind of birds fly higher than the clouds?
+1432,37,Review,"Roger yw moy bysi es y goweth, Les.","Roger is busier than his friend, Les."
+1433,37,Review,An dra ma yw an gwettha oll.,This affair is the worst of all.
+1434,37,Review,A nyns yw an lew an kreffa enyval y'n norvys?,Is not the lion the strongest animal in the world?
+1435,37,Review,An brassa stevell yw an nessa stevell dhe'n wolghva.,The biggest room is the nearest room to the bathroom.
+1436,37,Review,Gwari peldroes. Henn yw an gwella gwari!,Playing football. That is the best game!
+1437,37,Review,Nag yw! Gwari rygbi yw gwell es gwari peldroes.,No! Playing rugby is better than playing football.
+1438,37,Review,"An tewa dyenn a vydh pup-prys melyn, mar velyn avel amanenn.","The thickest cream is always yellow, as yellow as butter."
+1439,37,Review,Dr Treven o an furra medhyk y'n dre. Nyns esa medhyk furra agesso yn mysk an vedhygyon erell.,Dr Tremayne was the wisest doctor in the town. There was no doctor wiser than he amongst the other doctors.
+1440,37,MiscReview,Yma hwans dhymm a wortos ow gwreg yn gorsav an kyttrin.,I want to wait for my wife in the bus station.
+1441,37,MiscReview,Puskes a neuv yn dowrow an avon ha'n mor.,Fish swim in the waters of the river and the sea.
+1442,37,MiscReview,Res yw dhe bubonan sywya an keth fordh ha'n huni gyns.,Everyone must follow the same course as the one before.
+1443,37,MiscReview,"Kynth o an galter leun a dhowr bryjys, nyns esa lowr rag peswar hanafas a de.","Although the kettle was full of boiled water, there was not enough for four cups of tea."
+1444,37,MiscReview,"Kyn hwra an eseli aga ober, nyns yw ev da gans peub anedha.","Though the members do their work, not all of them are satisfied with it."
+1445,37,MiscReview,Yth esen vy y'n dre hag a-wosa yn tre arta.,I was in town and afterwards at home again.
+1446,37,MiscReview,Yma an vamm ow tiwiska an yowynka flogh.,Mother is undressing the youngest child.
+1447,37,MiscReview,Henri a vynn esedha war an isella kador.,Henry will sit on the lowest chair.
+1448,37,MiscReview,Ny yll ev esedha war an ughella huni.,He cannot sit on the highest one.
+1449,37,MiscReview,"An skoloryon, mebyon ha mowesi, a dhe'n keth skol y'n dre.","The schoolchildren, boys and girls, go to the same school in town."
+1450,38,Examples,Perl a wrug gweres an maw.,Pearl helped the boy.
+1451,38,Examples,Perl a wrug y weres.,Pearl helped him.
+1452,38,Examples,Peder a wrug ow gweles.,Peter saw me.
+1453,38,Examples,Hi a vynn dha glewes.,She will hear you.
+1454,38,Examples,Lowena a yll y skrifa.,Lowena can write it.
+1455,38,Examples,My a wra hy hudha.,I shall hide it.
+1456,38,Examples,Yowann a vynnas agan toella.,John wished to deceive us.
+1457,38,Examples,Nebonan a wrug agas herdhya.,Someone pushed you.
+1458,38,Examples,Hwi a allas aga frena.,You were able to buy them.
+1459,38,Examples,Ny wrug Maria aga gweles ena.,Mary didn't see them there.
+1460,38,Examples,Piw a vynn ow gweres?,Who will help me?
+1461,38,Examples,Py flogh a wra y dhyski?,Which child will learn it?
+1462,38,Examples,Pyth a wra y lanhe?,What cleans it?
+1463,38,Examples,Pandr'a yll y dhaskorr?,What can return it?
+1464,38,Examples,Piw a vynn'ta y weles?,Whom will you see?
+1465,38,Examples,Py chi a wrug Mr Potter y brena?,What house did Mr Potter buy?
+1466,38,Examples,Pandr'a yllons i y wul?,What can they do?
+1467,38,Examples,I yw ow mamm ha'm tas.,They are my mother and my father.
+1468,38,Examples,Pam a dheuth y'n stevell hag esedha ha redya lyver.,"Pam came into the room, sat down and read a book."
+1469,38,Examples,Pam a dheuth y'n stevell hag a esedhas hag a redyas lyver.,Pam came into the room and sat down and read a book.
+1470,38,Examples,Pam a dheuth y'n stevell ha hi a esedhas ha hi a redyas lyver.,Pam came into the room and she sat down and she read a book.
+1471,38,Examples,Pam a dheuth y'n stevell mes ny redyas hi lyver.,Pam came into the room but she did not read a book.
+1472,38,Examples,Pam a dheuth y'n stevell hag yma hi ena hwath.,Pam came into the room and she is still there.
+1473,38,Examples,Pam a dheuth y'n stevell ha my a gewsis orti.,Pam came into the room and I spoke to her.
+1474,38,Review,"Plema'n boes, mar pleg? Meg a wra y bareusi.","Where is the food, please? Meg is going to prepare it."
+1475,38,Review,Ny allav y drelya yn Sowsnek.,I can't translate it into English.
+1476,38,Review,Piw a yll aga dannvon dhodho dh'aga frevi.,Who can send them to him to test them?
+1477,38,Review,Ni a vynn y dhiwedha a-dhistowgh.,We will finish it straightaway.
+1478,38,Review,Kemmer an wedrenn arta. Ny wrug Jenni hy lenwel a win.,Take the glass again. Jenny didn't fill it with wine.
+1479,38,Review,A wre'ta agan aswonn? Drog yw genev! Ny wrav agas aswonn.,Do you know us? Sorry! I don't know you.
+1480,38,Review,"Ottomma an selsigennow ma! Re goth yns, sur. Piw a vynn aga dybri lemmyn?","Look here, these sausages! They are too old, surely. Who will eat them now?"
+1481,38,Review,A wra an venyn na ow hara? Ny wonn! Ny wonn!,Does that woman love me? I don't know! I don't know!
+1482,38,Review,Pubonan a synsis an lovan ha'y thenna.,Everyone held the rope and pulled it.
+1483,38,Review,Yma an tas ow palas y'n lowarth. Piw a vynn y weres?,Father is digging in the garden. Who will help him?
+1484,38,MiscReview,Meur a draow yw gwerthys.,Many things are sold.
+1485,38,MiscReview,An awel o krev. Ny allas an gorholyon dos ogas dhe'n porth.,The wind was strong. The ships couldn't come near to the harbour.
+1486,38,MiscReview,An tasow-wynn a esedhas warbarth yn-mes a'n diwotti ha klappya.,The grandfathers sat together outside the pub and chatted.
+1487,38,MiscReview,Yma an gath a'y growedh war an leur yn-dann an gador y'n esedhva.,The cat is lying on the floor under the chair in the sitting room.
+1488,38,MiscReview,Eus arghans lowr y'n arghantti rag prena karr nowydh?,Is there enough money in the bank to buy a new car?
+1489,38,MiscReview,Eus arghans lowr dhyn ynno?,Have we enough money in it?
+1490,38,MiscReview,Noy Mr Stevens yw moen ha'y nith yw tew.,Mr Stevens's nephew is slim and his niece is fat.
+1491,38,MiscReview,"Ro dhedhi hy eskisyow gell, mar pleg.","Give her her brown shoes, please."
+1492,38,MiscReview,Dhe by eur yth yw an tren dhe Loundres an dohajydh ma?,At what time is the train to London this afternoon?
+1493,38,MiscReview,Yma tren skav dhe dhiw eur marnas teyr mynysenn warn ugens.,There is a fast train at twenty-three minutes to two.
+1494,38,MiscReview,Otta! An lavrek ma yw re verr ragov.,Look! These trousers are too short for me.
+1495,38,MiscReview,Res yw dhis prena lavrek nowydh ytho.,You must buy new trousers then.
+1496,38,MiscReview,Yth esa syghes bras dhymmo vy hag yth evis gwedrennas a gorev a-dhistowgh.,I had a great thirst and I drank a glassful of beer straightaway.
+1497,38,MiscReview,"Nebes podigow yw terrys, re erell yw plos. Ny yll den eva leth anedha.","Some jugs are broken, others are dirty. No one can drink milk from them."
+1498,38,MiscReview,Usi an amaris orth an fos? Ymons!,Are the cupboards against the wall? Yes!
+1499,38,MiscReview,"Nyns eus gesys kestenenn y'n koes, dell dybav.","There isn't a chestnut tree left in the wood, I think."
+1500,38,MiscReview,Martesen onan goth hepken.,Perhaps an old one only.
+1501,38,MiscReview,Syns dornla an daras ha trel e!,Catch hold of the door handle and turn it!
+1502,38,MiscReview,Py lies mildir yw an fordh dhe Druru a Essa?,How many miles is the road to Truro from Saltash?
+1503,38,MiscReview,Kanow agan bro yw hwekka ages kanow broyow erell.,The songs of our land are sweeter than the songs of other lands.
+1504,38,MiscReview,Ni a dhybris li. Ena ni a gerdhas. Kerdh hir o dhe'n kerrek war an hal,We ate lunch. Then we walked. It was a long walk to the rocks on the moor.
+1505,38,MiscReview,Lost aga hi yw shyndys.,Their dog's tail is injured.
+1506,38,MiscReview,Poes o genen pysi Martyn a weres gans an hwel mes da o ganso agan gweres.,We were reluctant to ask Martin to help us with the work but he was glad to help us.
+1507,38,MiscReview,Golgh an badell vras kyns hy gorra yn amari an gegin.,Wash the big saucepan before putting it in the kitchen cupboard.
+1508,38,MiscReview,Jen a skubas strel daras an chi gans skubell gales ha strel an esedhva gans skubell vedhel.,Jane swept the door mat of the house with a hard brush and the lounge mat with a soft brush.
+1509,38,MiscReview,Ewnter Frank a droghas skorrennow gans heskenn hag ev a wrug aga gorra war an tansys yn y lowarth.,Uncle Frank cut branches with a saw and he put them on a bonfire in his garden.
+1510,38,MiscReview,An gwithyas-kres a yskynnas an skeul bys dhe fenester an ughella chambour.,The policeman went up the ladder as far as the window of the highest bedroom.
+1511,38,MiscReview,Na hwarth! My re gollas an sebon y'n dowr. Res yw dhymm y hwilas.,Don't laugh! I've lost the soap in the water. I must look for it.
+1512,38,MiscReview,Fatell yll hi bywa heb pellgowser yn hy chi?,How can she live without a telephone in her house?
+1513,38,MiscReview,An vamm-wynn re verwis a-dhistowgh.,Grandmother has died suddenly.
+1514,38,MiscReview,Wosa li y kevis vy pal ha mos yn-mes dhe balas y'n lowarth a-rag an chi.,After lunch I got a spade and went out to dig in the front garden.
+1515,39,Examples,Prag y harmas ev?,Why did he shout?
+1516,39,Examples,Prag yth evas hi an te toeth da?,Why did she drink the tea very quickly?
+1517,39,Examples,Prag y trigas Mighal tre? ,Why did Michael stay home? 
+1518,39,Examples,Prag na vynnydh jy gortos penn an gwari? Drefenn ow bos helergh ow tehweles tre.,Why don't you wait for the end of the play? Because I shall be late returning home.
+1519,39,Review,Prag y prenas Pol an korev? Drefenn ow bos heb arghans.,Why did Paul buy the beer? Because I was without money.
+1520,39,Review,Prag y teuthons i ena? Drefenn bos hwans dhedha a'gan gweles.,Why did they come then? Because they wanted to see us.
+1521,39,Review,"Prag y targanas an gwas kewer deg hag yma hi ow kul glaw? Drefenn ev dhe vos gokki, sur.","Why did the fellow forecast fine weather and it's raining? Because he was silly, certainly."
+1522,39,Review,Prag y hworfennowgh agas ober dhe beder eur pub Dy' Gwener? Drefenn bos hwans dhyn a vones tre moy a-varr.,Why do you finish your work at four o'clock every Friday? Because we want to go home earlier.
+1523,39,Review,Prag y tybydh yndella? Drefenn nag eus ken fordh dhe dybi.,Why do you think so? Because there is no other way to think.
+1524,39,Review,Prag nag esosta ow skoedhya dha goweth? Drefenn nag ov mar anfur dhe wul henna y'n prys ma.,Why are you not supporting your friend? Because I am not so unwise (as) to do that this time.
+1525,39,Review,Prag y tregh ev an skorrennow na? Drefenn ev dh'aga leski war an tansys.,Why does he cut those branches? Because he burns them on the bonfire.
+1526,39,Review,Prag na worr Hykka y basti y'n forn? Drefenn ev dh'y dhybri yeyn.,Why doesn't Dick put his pasty in the oven? Because he eats it cold.
+1527,39,MiscReview,Yma fleghes ow kwari yn garth-gwari an skol vyghan. Re anedha yw bysi. Yma re erell a'ga sav orth fos an keth skol.,There are children playing in the playground of the little school. Some of them are busy. Others are standing against the wall of the same school.
+1528,39,MiscReview,Prag yma an re ma ow sevel yndella? Martesen drefenn aga bos skwith. I re worfennas aga gwari ynsi.,Why are these standing in this way? Perhaps because they are tired. They have finished their game.
+1529,39,MiscReview,"'Osta lewyer an karr ma, syrr?' yn-medh an gwithyas kres. 'Ov!' Mr Karn a worthybis. 'Pandr'a hwer?'","'Are you the driver of this car, Sir?' the policeman said. 'I am!' Mr Carne replied. 'What's afoot?'"
+1530,39,MiscReview,"'Yma diwros war an fordh ena ha gour shyndys a'y wrowedh war an leur', an gwithyas kres a leveris. 'Res yw dhis gortos deg mynysenn, mar pleg. Ni a vynn y worra dhe'n klavji a-dhistowgh.'","'There's a bicycle on the road there and a man lying injured.' replied the policeman. 'You must wait ten minutes, please. We will take him to hospital immediately.'"
+1531,39,MiscReview,"'My a vynn agas skoedhya y'n dra ma,' Mr Karn a leveris. 'A allav vy agas gweres?'","'I will support you in that,' Mr Carne said. 'Can I help you?'"
+1532,39,MiscReview,"An glaw yw tynna es dell o de. Nyns o an dhargan gwir, my a dyb.","The rain is more intense than it was yesterday. The forecast was not true, I think."
+1533,39,MiscReview,Yma jynn-ebrenn ughel a-ugh an kommol. A yll'ta y glewes?,There's an aeroplane high above the clouds. Can you hear it?
+1534,39,MiscReview,Gallav mes ny allav y weles.,I can but I cannot see it.
+1535,39,MiscReview,"Ro dhymm dha drigva ha'th hanow, mar pleg.","Give me your name and address, please."
+1536,39,MiscReview,Oll ahanowgh yw Kernewegoryon mes nebes ahanowgh yw gwell ages re erell.,All of you are Cornish speakers but some of you are better than others.
+1537,39,MiscReview,Igor gorher an badell! Pyth eus yn-danno?,Open the lid of the saucepan. What's beneath it?
+1538,39,MiscReview,Piw a appos an lewyoryon-taksi y'n ranndir ma?,Who examines the taxi drivers in this district?
+1539,39,MiscReview,"Esowgh hwi ow kwaytya kerdh an olifanses ha'n kowrvergh ha'n enyvales erell dre gres an dre? Soweth, gyllys yns. I eth alemma seulabrys dhe deyr eur poran.","Are you waiting for the procession of the elephants and the camels through the town centre? A pity, they are gone. They went from here at three o'clock exactly."
+1540,39,MiscReview,"Pan o Pamela difun, hi a wolghas an lestri ha'ga gorra y'n gloes.","When Pamela was awake, she washed the dishes and put them in the rack."
