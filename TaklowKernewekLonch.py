@@ -34,6 +34,7 @@ mytools = [
     ('Inflektya', 'inflektyaGUI.py'),
     ('Ranna Syllabennow', 'sylrannakwGUI.py'),
     ('Treuslytherenna KK->FSS', 'treuslytherennaGUI.py'),
+    ('Kov Treylyans', 'kovtreylyansGUI.py'),
     ('Statistegow Korpus', 'cornish_corpus.py'),
     ('Tekst --> Kows (dre espeak)', 'espeak-text-to-speech/kows_kernewek_GUI.py')
     ]

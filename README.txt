@@ -43,6 +43,13 @@ testenn.txt and cw_strip.txt are files I have been using to feed sylabellen_rann
 
 niverow.py: this contains functions to generate text numbers in Cornish, either from integers, or with the noun included. 
 
+kovtreylyans.py: A rudimentary 'Translation Memory' tool. Take an input English sentence and find common bigrams
+and trigrams with a set of bilingual sentences, and return these as output along with sentences in which they occur,
+currently using the end of chapter examples from Skeul an Yeth 1 by Wella Brown. Options exist to find all bigrams
+and trigrams, or only those that contain at least one non-stopword (based on NLTK stopwords corpus).
+
+kovtreylyansGUI.py: A Tkinter GUI frontend for kovtreylyans.py.
+
 espeak-text-to-speech/: This folder contains scripts that enable the use of the espeak text-to-speech software to make a basic attempt at reading Cornish text. This was achieved by using string replace functions to alter the spelling to conform the text to Welsh spelling conventions to the extent that the espeak Welsh voice will produce an approximately correct result. The espeak Welsh voice is fairly basic so it is not very realistic. 
 The gorhemmyn_kw.py file greets the user depending on the time of day according to the system clock (uses espeak).
 
@@ -61,6 +68,7 @@ treuslytherennaGUI.py: A Tkinter GUI frontend for treuslytherenna.py
 inflektyaGUI.py: A Tkinter GUI frontend for inflektya.py
 
 espeak-text-to-speech/kows_kernewek_GUI.py: A Tkinter GUI for Cornish text to speech.
+
 
 TaklowKernewekLonchyer.pyw: A launcher bar which launches the other Python scripts. It may be necessary to copy the taklowGUI.py script or create a symbolic link in the espeak-text-to-speech directory since otherwise its import fails when launcher in this way. The launcher bar uses TaklowKernewekLonch.py which is adaptation of PyGadgets.py from the Programming Python 3rd edition examples. This uses the further programs launchmodes.py and Launcher.py taken from the Programming Python 3rd edition examples.
 
