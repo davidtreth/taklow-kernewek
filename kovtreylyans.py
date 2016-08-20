@@ -215,12 +215,12 @@ def outputSent(insentwords, corpussents, returnOutText=False, outputmode='nonsto
     sentNsT = [s for s in sentNsT if s not in sentNsT_2stop]
     sentNs = [s for s in sentNs if s not in sentNs_1stop]
         
-    # create list of tuples of index number and Ngrams
+    # create list of tuples of index number and N-grams
     # for N grams containing at least 1 non stopword
     # i.e. maximum 1 stopword in bigrams, 2 in trigrams.
     sentNs_big_1stop = [(n, bigrs[n]) for n in sentNs_1stop]
     sentNs_tri_2stop = [(n, trigrs[n]) for n in sentNsT_2stop]
-    # sort the lists by the first element of the Ngram
+    # sort the lists by the first element of the N-gram
     sentNs_big_1stop = sorted(sentNs_big_1stop, key=itemgetter(1))
     sentNs_tri_2stop = sorted(sentNs_tri_2stop, key=itemgetter(1))
     sentNs_big_1stop = sorted(sentNs_big_1stop, key=lambda nlist:len(nlist[1]), reverse=True)
@@ -233,7 +233,10 @@ def outputSent(insentwords, corpussents, returnOutText=False, outputmode='nonsto
     # for N grams containing all stopwords
     sentNs_big = [(n, bigrs[n]) for n in sentNs]
     sentNs_tri = [(n, trigrs[n]) for n in sentNsT]
-    # sort the lists by the first element of the Ngram
+    # sort the lists by the length, then the
+    # first element of the N-gram
+    # i.e. prefer sentences where there are more
+    # N-grams in common
     sentNs_big = sorted(sentNs_big, key=itemgetter(1))
     sentNs_tri = sorted(sentNs_tri, key=itemgetter(1))
     sentNs_big = sorted(sentNs_big, key=lambda nlist:len(nlist[1]), reverse=True)
@@ -267,6 +270,8 @@ def outputSent(insentwords, corpussents, returnOutText=False, outputmode='nonsto
         return outputText
 
 def readCorpusSkeulYeth():
+    """ read the Skeul an Yeth 1 sentence corpus 
+    and return it as a CorpusSents object """
     skeulanyethCSV = "skeulanyeth.csv"
     skeulanyethCSV = os.path.join("kernewek_corpus",skeulanyethCSV)
     skeulanyeth1 = CorpusSents(skeulanyethCSV)
@@ -285,6 +290,9 @@ def kovtreyl(inputText, corpussents, casesensit=False, allNgrams=False):
 
     
 if __name__ == "__main__":
+    # if launched at the command-line
+    # take arguments for case-sensitivity
+    # and whether to include stopword only N-grams
     parser = argparse.ArgumentParser()
     parser.add_argument("-c", "--casesensit", action="store_true",
                         help="make search for N grams case sensitive (by default it will not be).")
