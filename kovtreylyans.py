@@ -4,17 +4,23 @@
 # ends of chapters of Skeul An Yeth 1 by Wella Brown
 import nltk
 from nltk.corpus import stopwords
-import csv, os
+import csv, os, argparse, sys, imp
 from operator import itemgetter
-import sys, imp
+
 imp.reload(sys)
-sys.setdefaultencoding('utf-8')
+if sys.version_info[0] < 3:
+    sys.setdefaultencoding('utf-8')
 
 class CorpusSents(object):
     """
     class to hold the corpus sentences, and bigrams, trigrams etc.
     """
     def __init__(self, inCSVfile, casesensit=False):
+        """
+        get the Cornish and English sentences
+        as a dictionary indexed by a number
+        get corpus bigrams and trigrams as a list of nested tuples
+        """
         self.kw_sents, self.en_sents = getCorpusSents(inCSVfile)
         self.bi_1stop = getCorpusSentBigrams(inCSVfile, casesensit = casesensit, maxstopwords=1)
         self.tri_2stop = getCorpusSentBigrams(inCSVfile, trigrams=True, casesensit = casesensit, maxstopwords=2)
@@ -107,14 +113,17 @@ def getCorpusSentBigrams(sentencefile, trigrams = False, casesensit = True, corn
 
 def getInSentWords(casesensit=False):
     """ get a sentence in from the command line and tokenize it """
-    inputSen = raw_input("Enter an English sentence\n")
+    if sys.version_info[0] < 3:
+        inputSen = raw_input("Enter an English sentence\n")
+    else:
+        inputSen = input("Enter an English sentence\n")
     insentwords = nltk.word_tokenize(inputSen)
     if not(casesensit):
         insentwords = [w.lower() for w in insentwords]
     return insentwords
 
 def getInSentGUI(inputText, casesensit=False):
-    """ get sentence from GUI and tokenize it """
+    """ get sentence as a string from GUI and tokenize it """
     insentwords = nltk.word_tokenize(inputText)
     if not(casesensit):
         insentwords = [w.lower() for w in insentwords]
@@ -134,10 +143,10 @@ def getBigrams(wordlist):
     return listinpSb
 
 def findCommonNgrams(corpussents, inputSNgrams):
-    """ find the common n-grams between the corpus, and 
+    """ find the common N-grams between the corpus, and 
     a given sentence 
 
-    return a list of the sentence numbers, and the common N grams"""
+    return a list of the sentence numbers, and the common N-grams """
     sentNs = [s[0] for s in corpussents if s[1] in inputSNgrams]
     commonNgrams = nltk.defaultdict(list)
     for s in corpussents:
@@ -148,15 +157,22 @@ def findCommonNgrams(corpussents, inputSNgrams):
     return sentNs, commonNgrams
 
 def unpacklisttuples(tuplelist):
+    """ take a list of tuples, containing the N-grams
+    and format it into a single flat string """
     punctchars = "!:,.?\"\'"
     if len(tuplelist) == 1:
+        # if there is only one tuple
         output = "("
         for i,w in enumerate(tuplelist[0]):
             if i > 0 and w not in punctchars:
+                # put a space between words, except
+                # if the 'word' is a punctuation
+                # character or it is the first word
                 output += " "
             output += w
         output += ")"
     else:
+        # if there are more than one
         output = ""
         for t in tuplelist:
             output += "("
@@ -165,23 +181,25 @@ def unpacklisttuples(tuplelist):
                     output += " "
                 output += w
             output += "), "
+            # put a comma and space between each N-gram tuple
+        # but at the end, remove the trailing comma+space
         output = output[:-2]
     return output
             
             
             
-            
-
 def outputSent(insentwords, corpussents, returnOutText=False, outputmode='nonstop'):
     """ display the output for a list of words insentwords """
     # display the trigrams from the input sentence
-    print("\ntrigrams for input sentence are:")
+    print("\n")
+    outputText = ""
+    outputText +="trigrams for input sentence are:\n"
     listinpSt = getTrigrams(insentwords)
-    print(listinpSt)
+    outputText += repr(listinpSt)
     # display the bigrams from the input sentence
-    print("\nbigrams for input sentence are:")
+    outputText += "\n\nbigrams for input sentence are:\n"
     listinpSb = getBigrams(insentwords)
-    print(listinpSb)
+    outputText += repr(listinpSb)
     # find common bigrams and trigrams
     sentNs, bigrs =  findCommonNgrams(corpussents.bi_all, listinpSb)
     sentNsT, trigrs =  findCommonNgrams(corpussents.tri_all, listinpSt)
@@ -227,9 +245,7 @@ def outputSent(insentwords, corpussents, returnOutText=False, outputmode='nonsto
 
     # print the common trigrams, and bigrams
     # and the sentences where they occur
-    print("\n")
-    outputText = ""
-    outputText += "Listing N grams with a minimum of 1 non-stopword each:\n"
+    outputText += "\n\nListing N-grams with a minimum of 1 non-stopword each:\n"
     outputText += "Common trigrams:\n"
     for n in sentNsT_2stop:    
         outputText+="{kw}  --  {en} {t}\n".format(kw=corpussents.kw_sents[n].ljust(60), en=corpussents.en_sents[n].ljust(60), t = unpacklisttuples(trigrs[n]))
@@ -269,26 +285,30 @@ def kovtreyl(inputText, corpussents, casesensit=False, allNgrams=False):
 
     
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-c", "--casesensit", action="store_true",
+                        help="make search for N grams case sensitive (by default it will not be).")
+    parser.add_argument("-a", "--allNgrams", action="store_true",
+                        help="return sentences matching all bigrams and trigrams. By default only those containing at least one word not in the NLTK stopwords corpus will be used.")
+    args = parser.parse_args()
+    
+    # decide whether to use all bigrams, or only ones that have at
+    # least one word that is not in the NLTK stopwords corpus.
+    if args.allNgrams:
+        outputmode = "all"
+    else:
+        outputmode = "nonstop"
+    
     # by default use the example sentences at
     # the end of each chapter from
     # Skeul an Yeth 1 by Wella Brown
     skeulanyethCSV = "skeulanyeth.csv"
     skeulanyethCSV = os.path.join("kernewek_corpus",skeulanyethCSV)
-    skeulanyeth1 = CorpusSents(skeulanyethCSV)
+    skeulanyeth1 = CorpusSents(skeulanyethCSV, args.casesensit)
 
-    
-    # get the Cornish and English sentences
-    # as a dictionary indexed by a number
-    #kw_sents, en_sents = getCorpusSents(skeulanyeth)
-    # get corpus bigrams and trigrams as a list of nested tuples
-    casesensit = False
-    #skeulyethbi_1stop = getCorpusSentBigrams(skeulanyeth, casesensit = casesensit, maxstopwords=1)
-    #skeulyethtri_2stop = getCorpusSentBigrams(skeulanyeth, trigrams=True, casesensit = casesensit, maxstopwords=2)
-    #skeulyethbi_all = getCorpusSentBigrams(skeulanyeth, casesensit = casesensit)
-    #skeulyethtri_all = getCorpusSentBigrams(skeulanyeth, trigrams=True, casesensit = casesensit)
     while True:
         # get a sentence from the command-line
-        insentwords = getInSentWords(casesensit)
+        insentwords = getInSentWords(args.casesensit)
         # display output for it
-        outputSent(insentwords, skeulanyeth1, outputmode="all")
+        outputSent(insentwords, skeulanyeth1, False, outputmode)
         print("\n")
