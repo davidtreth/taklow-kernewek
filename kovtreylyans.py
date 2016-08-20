@@ -204,10 +204,11 @@ def formatSentences(kw, en, ngramstr, linelength=80, sepstr1="  --  ", sepstr2="
     """ format the bilingual sentences across multiple lines if needed """
     totallength = len(kw)+len(sepstr1)+len(en)+len(sepstr2)+len(ngramstr)
     sentslength = linelength - (len(sepstr2)+len(ngramstr)) - len(sepstr1)
-    sentlength = sentslength // 2
+    sentlength = sentslength // 2 
     if totallength <= linelength and len(kw) < sentlength and len(en) < sentlength:
         # can fit on one line
-        sentformatted = kw.ljust(sentlength) + sepstr1 + en.ljust(sentlength) + sepstr2 + ngramstr
+        ngrlength = linelength - sentslength - len(sepstr1)
+        sentformatted = kw.ljust(sentlength) + sepstr1 + en.ljust(sentlength) + sepstr2 + ngramstr.rjust(ngrlength)
         return sentformatted
     else:
         sentslength2 = linelength - len(sepstr1)
