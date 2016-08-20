@@ -82,10 +82,14 @@ while True:
             commontrigrams[t] = list(set(commontrigrams[t]))
 
     for t in commontrigrams:
-        print("{kw}  --  {en} : {ng}".format(kw=skeulanyeth1.kw_sents[t], en=skeulanyeth1.en_sents[t], ng=commontrigrams[t]))
+        print(kovtreylyans.formatSentences(skeulanyeth1.kw_sents[t], skeulanyeth1.en_sents[t],
+                                           kovtreylyans.unpacklisttuples(commontrigrams[t])))
+        #print("{kw}  --  {en} : {ng}".format(kw=skeulanyeth1.kw_sents[t], en=skeulanyeth1.en_sents[t], ng=commontrigrams[t]))
               
     for b in commonbigrams:
-        print("{kw}  --  {en} : {ng}".format(kw=skeulanyeth1.kw_sents[b], en=skeulanyeth1.en_sents[b], ng=commonbigrams[b]))
+        print(kovtreylyans.formatSentences(skeulanyeth1.kw_sents[b], skeulanyeth1.en_sents[b],
+                                           kovtreylyans.unpacklisttuples(commonbigrams[b])))
+        #print("{kw}  --  {en} : {ng}".format(kw=skeulanyeth1.kw_sents[b], en=skeulanyeth1.en_sents[b], ng=commonbigrams[b]))
         
     #print(commonbigrams)
     #print(commontrigrams)

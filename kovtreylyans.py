@@ -186,8 +186,54 @@ def unpacklisttuples(tuplelist):
         output = output[:-2]
     return output
             
-            
-            
+def textWrap(curline, restoftext):
+    """ prevent splitting words across lines """
+    if len(curline) == 0 or len(restoftext) == 0:
+        return curline, restoftext
+    else:
+        while curline[-1:] != " " and restoftext[:1] != " ":
+            # i.e. if the line break has fallen in the middle of a word
+            # move a character to the next line
+            restoftext = curline[-1] + restoftext
+            curline = curline[:-1]
+        if restoftext[:1] == " ":
+            restoftext = restoftext[1:]
+        return curline, restoftext
+
+def formatSentences(kw, en, ngramstr, linelength=80, sepstr1="  --  ", sepstr2="  "):
+    """ format the bilingual sentences across multiple lines if needed """
+    totallength = len(kw)+len(sepstr1)+len(en)+len(sepstr2)+len(ngramstr)
+    sentslength = linelength - (len(sepstr2)+len(ngramstr)) - len(sepstr1)
+    sentlength = sentslength // 2
+    if totallength <= linelength and len(kw) < sentlength and len(en) < sentlength:
+        # can fit on one line
+        sentformatted = kw.ljust(sentlength) + sepstr1 + en.ljust(sentlength) + sepstr2 + ngramstr
+        return sentformatted
+    else:
+        sentslength2 = linelength - len(sepstr1)
+        sentlength2 = sentslength2 // 2
+        kwlines = []
+        enlines = []
+        while (len(kw)>0 or len(en)>0):
+            kwline = kw[:sentlength2]
+            enline = en[:sentlength2]
+            kw = kw[sentlength2:]
+            en = en[sentlength2:]
+            kwline, kw = textWrap(kwline, kw)
+            enline, en = textWrap(enline, en)
+            kwlines.append(kwline.ljust(sentlength2))
+            enlines.append(enline.ljust(sentlength2))
+        sentformatted = ''
+        for line in zip(kwlines, enlines):
+            sentformatted += line[0]
+            sentformatted += sepstr1
+            sentformatted += line[1]
+            sentformatted += '\n'
+        # return N-grams string on a separate line
+        sentformatted += '\n{Ng}\n\n'.format(Ng=ngramstr)
+        return sentformatted
+        
+    
 def outputSent(insentwords, corpussents, returnOutText=False, outputmode='nonstop'):
     """ display the output for a list of words insentwords """
     # display the trigrams from the input sentence
@@ -250,21 +296,25 @@ def outputSent(insentwords, corpussents, returnOutText=False, outputmode='nonsto
     # and the sentences where they occur
     outputText += "\n\nListing N-grams with a minimum of 1 non-stopword each:\n"
     outputText += "Common trigrams:\n"
-    for n in sentNsT_2stop:    
-        outputText+="{kw}  --  {en} {t}\n".format(kw=corpussents.kw_sents[n].ljust(60), en=corpussents.en_sents[n].ljust(60), t = unpacklisttuples(trigrs[n]))
+    for n in sentNsT_2stop:
+        outputText += formatSentences(corpussents.kw_sents[n], corpussents.en_sents[n], unpacklisttuples(trigrs[n]))
+        #outputText+="{kw}  --  {en} {t}\n".format(kw=corpussents.kw_sents[n].ljust(60), en=corpussents.en_sents[n].ljust(60), t = unpacklisttuples(trigrs[n]))
     outputText += "\nCommon bigrams:\n"
-    for n in sentNs_1stop:    
-        outputText += "{kw}  --  {en} {b}\n".format(kw=corpussents.kw_sents[n].ljust(60), en=corpussents.en_sents[n].ljust(60), b = unpacklisttuples(bigrs[n]))
+    for n in sentNs_1stop:
+        outputText += formatSentences(corpussents.kw_sents[n], corpussents.en_sents[n], unpacklisttuples(bigrs[n]))
+        #outputText += "{kw}  --  {en} {b}\n".format(kw=corpussents.kw_sents[n].ljust(60), en=corpussents.en_sents[n].ljust(60), b = unpacklisttuples(bigrs[n]))
 
     if outputmode == "all":
         # if outputmode is "all", include Ngrams containing only stopwords
         outputText += "\nOther N grams containing only stopwords:\n"
         outputText += "Common trigrams:\n"
-        for n in sentNsT:    
-            outputText += "{kw}  --  {en} {t}\n".format(kw=corpussents.kw_sents[n].ljust(60), en=corpussents.en_sents[n].ljust(60), t = unpacklisttuples(trigrs[n]))
+        for n in sentNsT:
+            outputText += formatSentences(corpussents.kw_sents[n], corpussents.en_sents[n], unpacklisttuples(trigrs[n]))
+            #outputText += "{kw}  --  {en} {t}\n".format(kw=corpussents.kw_sents[n].ljust(60), en=corpussents.en_sents[n].ljust(60), t = unpacklisttuples(trigrs[n]))
         outputText+="\nCommon bigrams:\n"
-        for n in sentNs:    
-            outputText += "{kw}  --  {en} {b}\n".format(kw=corpussents.kw_sents[n].ljust(60), en=corpussents.en_sents[n].ljust(60), b = unpacklisttuples(bigrs[n]))
+        for n in sentNs:
+            outputText += formatSentences(corpussents.kw_sents[n], corpussents.en_sents[n], unpacklisttuples(bigrs[n]))
+            #outputText += "{kw}  --  {en} {b}\n".format(kw=corpussents.kw_sents[n].ljust(60), en=corpussents.en_sents[n].ljust(60), b = unpacklisttuples(bigrs[n]))
     print(outputText)
     if returnOutText:
         return outputText

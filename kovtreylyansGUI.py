@@ -29,11 +29,11 @@ if __name__ == '__main__':
         inputtext = ent.gettext()
         print("Input: {i}".format(i=inputtext))
         output = ''
-        msg3.text.config(fg = 'dark red', bg = 'light yellow', font=('Arial', 14, 'normal'), state=tk.NORMAL)
+        msg3.text.config(fg = 'dark red', bg = 'light yellow', font=('Monospace', 14, 'normal'), state=tk.NORMAL)
         if inputtext:
             if options.state() == 'All trigrams and bigrams':
                 output = kovtreylyans.kovtreyl(inputtext, skeulanyeth1, False, allNgrams=True)
-                msg3.text.config(font=('Arial', 12, 'normal'))
+                msg3.text.config(font=('Monospace', 12, 'normal'))
             else:
                 # show only N grams containing non stopwords
                 output = kovtreylyans.kovtreyl(inputtext, skeulanyeth1, False, allNgrams=False)
@@ -43,7 +43,7 @@ if __name__ == '__main__':
         msg3.text.config(state=tk.DISABLED)
     def clearboxes():
         ent.clear()
-        msg3.text.config(fg = 'dark red', bg='light yellow',font=('Arial', 12, 'normal'),state=tk.NORMAL)
+        msg3.text.config(fg = 'dark red', bg='light yellow',font=('Monospace', 12, 'normal'),state=tk.NORMAL)
         msg3.clear()
         msg3.text.config(state=tk.DISABLED)
         
@@ -59,7 +59,7 @@ if __name__ == '__main__':
     
     # output
     msg3 = ScrolledText(root)
-    msg3.text.config(fg = 'dark red', bg='light yellow', width=40, height=11,font=('Arial', 14, 'bold'), state=tk.DISABLED)
+    msg3.text.config(fg = 'dark red', bg='light yellow', width=80, height=11,font=('Monospace', 14, 'bold'), state=tk.DISABLED)
     msg3.pack()
 
     # buttons
