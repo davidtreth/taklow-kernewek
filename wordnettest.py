@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 # some test code using WordNet synsets
+from __future__ import print_function
 import nltk
 from nltk.corpus import wordnet as wn
 from nltk.corpus import stopwords
@@ -19,20 +20,22 @@ def getsynonyms(word):
     else:
         definitions = [s.definition() for s in synsets]        
     for d in zip(synsets, definitions):
-        print(d)
+        print("{s}: {df}".format(s=d[0], df=d[1]))
     hypernyms = []
     synonyms = []
     for syn in synsets:
         hyp = syn.hypernyms()
+        hyp = [h for h in hyp if h not in hypernyms]
         hypernyms.extend(hyp)
     print("\nHypernyms")
-    print(hypernyms)
+    #print(hypernyms)
+    
     if int(nltk.__version__[0]) < 3:
-        definitions = [s.definition for s in synsets]
+        definitions = [s.definition for s in hypernyms]
     else:
-        definitions = [s.definition() for s in synsets]        
+        definitions = [s.definition() for s in hypernyms]        
     for d in zip(hypernyms, definitions):
-        print(d)
+        print("{h}: {df}".format(h=d[0], df=d[1]))
     print("\nHyponyms of all hypernyms")
     for h in hypernyms:
         hypo = h.hyponyms()
@@ -40,7 +43,8 @@ def getsynonyms(word):
             synonyms.extend([lemma.name for synset in hypo for lemma in synset.lemmas])
         else:
             synonyms.extend([lemma.name() for synset in hypo for lemma in synset.lemmas()])
-    print(synonyms)
+    synonyms = sorted(set(synonyms))
+    print(", ".join([s.replace("_"," ") for s in synonyms]))
     return synonyms
 
 
@@ -103,7 +107,8 @@ while True:
     commontrigrams = sorted(commontrigrams, key=lambda nlist:len(nlist[1]), reverse=True)
     
    
-    print(commonbigrams)
+    # print(commonbigrams)
+    print("\n")
     for t in commontrigrams:
         print(kovtreylyans.formatSentences(skeulanyeth1.kw_sents[t[0]], skeulanyeth1.en_sents[t[0]],
                                            kovtreylyans.unpacklisttuples(t[1])))
