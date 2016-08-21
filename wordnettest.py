@@ -35,11 +35,10 @@ def getsynonyms(word):
         print(d)
     print("\nHyponyms of all hypernyms")
     for h in hypernyms:
+        hypo = h.hyponyms()
         if int(nltk.__version__[0]) < 3:
-            hypo = h.hyponyms
             synonyms.extend([lemma.name for synset in hypo for lemma in synset.lemmas])
         else:
-            hypo = h.hyponyms()
             synonyms.extend([lemma.name() for synset in hypo for lemma in synset.lemmas()])
     print(synonyms)
     return synonyms
