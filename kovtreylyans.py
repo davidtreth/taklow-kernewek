@@ -22,10 +22,13 @@ class CorpusSents(object):
         get corpus bigrams and trigrams as a list of nested tuples
         """
         self.kw_sents, self.en_sents = getCorpusSents(inCSVfile)
-        self.bi_1stop = getCorpusSentBigrams(inCSVfile, casesensit = casesensit, maxstopwords=1)
-        self.tri_2stop = getCorpusSentBigrams(inCSVfile, trigrams=True, casesensit = casesensit, maxstopwords=2)
+        self.bi_1stop = getCorpusSentBigrams(inCSVfile,
+                                             casesensit=casesensit, maxstopwords=1)
+        self.tri_2stop = getCorpusSentBigrams(inCSVfile, trigrams=True,
+                                              casesensit=casesensit, maxstopwords=2)
         self.bi_all = getCorpusSentBigrams(inCSVfile, casesensit = casesensit)
-        self.tri_all = getCorpusSentBigrams(inCSVfile, trigrams=True, casesensit = casesensit)
+        self.tri_all = getCorpusSentBigrams(inCSVfile,
+                                            trigrams=True, casesensit=casesensit)
         
         
     
@@ -46,7 +49,8 @@ def getCorpusSents(sentencefile):
             en_sents[int(row['SentenceNumber'])] = row['English']
     return kw_sents, en_sents
 
-def getCorpusSentBigrams(sentencefile, trigrams = False, casesensit = True, cornish=False, maxstopwords=99):
+def getCorpusSentBigrams(sentencefile, trigrams=False, casesensit=True,
+                         cornish=False, maxstopwords=99):
     """ expects a text file which is a comma separated variable file
     with headers including 'SentenceNumber' with an index number
     that should be unique in the corpus, 'Kernewek' with the text
@@ -298,11 +302,13 @@ def outputSent(insentwords, corpussents, returnOutText=False, outputmode='nonsto
     outputText += "\n\nListing N-grams with a minimum of 1 non-stopword each:\n"
     outputText += "Common trigrams:\n"
     for n in sentNsT_2stop:
-        outputText += formatSentences(corpussents.kw_sents[n], corpussents.en_sents[n], unpacklisttuples(trigrs[n]))
+        outputText += formatSentences(corpussents.kw_sents[n],
+                                      corpussents.en_sents[n], unpacklisttuples(trigrs[n]))
         #outputText+="{kw}  --  {en} {t}\n".format(kw=corpussents.kw_sents[n].ljust(60), en=corpussents.en_sents[n].ljust(60), t = unpacklisttuples(trigrs[n]))
     outputText += "\nCommon bigrams:\n"
     for n in sentNs_1stop:
-        outputText += formatSentences(corpussents.kw_sents[n], corpussents.en_sents[n], unpacklisttuples(bigrs[n]))
+        outputText += formatSentences(corpussents.kw_sents[n],
+                                      corpussents.en_sents[n], unpacklisttuples(bigrs[n]))
         #outputText += "{kw}  --  {en} {b}\n".format(kw=corpussents.kw_sents[n].ljust(60), en=corpussents.en_sents[n].ljust(60), b = unpacklisttuples(bigrs[n]))
 
     if outputmode == "all":
@@ -310,11 +316,13 @@ def outputSent(insentwords, corpussents, returnOutText=False, outputmode='nonsto
         outputText += "\nOther N grams containing only stopwords:\n"
         outputText += "Common trigrams:\n"
         for n in sentNsT:
-            outputText += formatSentences(corpussents.kw_sents[n], corpussents.en_sents[n], unpacklisttuples(trigrs[n]))
+            outputText += formatSentences(corpussents.kw_sents[n],
+                                          corpussents.en_sents[n], unpacklisttuples(trigrs[n]))
             #outputText += "{kw}  --  {en} {t}\n".format(kw=corpussents.kw_sents[n].ljust(60), en=corpussents.en_sents[n].ljust(60), t = unpacklisttuples(trigrs[n]))
         outputText+="\nCommon bigrams:\n"
         for n in sentNs:
-            outputText += formatSentences(corpussents.kw_sents[n], corpussents.en_sents[n], unpacklisttuples(bigrs[n]))
+            outputText += formatSentences(corpussents.kw_sents[n],
+                                          corpussents.en_sents[n], unpacklisttuples(bigrs[n]))
             #outputText += "{kw}  --  {en} {b}\n".format(kw=corpussents.kw_sents[n].ljust(60), en=corpussents.en_sents[n].ljust(60), b = unpacklisttuples(bigrs[n]))
     print(outputText)
     if returnOutText:
@@ -337,7 +345,7 @@ def kovtreyl(inputText, corpussents, casesensit=False, allNgrams=False):
         outputmode = "all"
     else:
         outputmode = "nonstop"
-    return outputSent(insentwords, corpussents, returnOutText = True, outputmode=outputmode)
+    return outputSent(insentwords, corpussents, returnOutText=True, outputmode=outputmode)
 
     
 if __name__ == "__main__":

@@ -4,16 +4,20 @@ import nltk
 from nltk.corpus import wordnet as wn
 from nltk.corpus import stopwords
 import sys, imp
+from operator import itemgetter
 import kovtreylyans
+
 imp.reload(sys)
 if sys.version_info[0] < 3:
     sys.setdefaultencoding('utf-8')
 
-
 def getsynonyms(word):
     print("word: {w}".format(w=word))
     synsets = wn.synsets(word)
-    definitions = [s.definition() for s in synsets]
+    if int(nltk.__version__[0]) < 3:
+        definitions = [s.definition for s in synsets]
+    else:
+        definitions = [s.definition() for s in synsets]        
     for d in zip(synsets, definitions):
         print(d)
     hypernyms = []
@@ -23,13 +27,20 @@ def getsynonyms(word):
         hypernyms.extend(hyp)
     print("\nHypernyms")
     print(hypernyms)
-    definitions = [s.definition() for s in hypernyms]
+    if int(nltk.__version__[0]) < 3:
+        definitions = [s.definition for s in synsets]
+    else:
+        definitions = [s.definition() for s in synsets]        
     for d in zip(hypernyms, definitions):
         print(d)
     print("\nHyponyms of all hypernyms")
     for h in hypernyms:
-        hypo = h.hyponyms()
-        synonyms.extend([lemma.name() for synset in hypo for lemma in synset.lemmas()])
+        if int(nltk.__version__[0]) < 3:
+            hypo = h.hyponyms
+            synonyms.extend([lemma.name for synset in hypo for lemma in synset.lemmas])
+        else:
+            hypo = h.hyponyms()
+            synonyms.extend([lemma.name() for synset in hypo for lemma in synset.lemmas()])
     print(synonyms)
     return synonyms
 
@@ -66,9 +77,12 @@ while True:
         listinpSb = kovtreylyans.getBigrams(sentwords)
         #print(listinpSt)
         #print(listinpSb)
-        sentNs_1stop, bigrs_1stop =  kovtreylyans.findCommonNgrams(skeulanyeth1.bi_1stop, listinpSb)
-        sentNsT_2stop, trigrs_2stop =  kovtreylyans.findCommonNgrams(skeulanyeth1.tri_2stop, listinpSt)
+        sentNs_1stop, bigrs_1stop =  kovtreylyans.findCommonNgrams(skeulanyeth1.bi_1stop,
+                                                                   listinpSb)
+        sentNsT_2stop, trigrs_2stop =  kovtreylyans.findCommonNgrams(skeulanyeth1.tri_2stop,
+                                                                     listinpSt)
 
+        
         #print(bigrs_1stop)
         for b in bigrs_1stop:
             for bi in bigrs_1stop[b]:
@@ -81,14 +95,24 @@ while True:
                 commontrigrams[t].append(tri)
             commontrigrams[t] = list(set(commontrigrams[t]))
 
+    order1 = sorted(commonbigrams, key=commonbigrams.get)
+    commonbigrams = [(n, commonbigrams[n]) for n in order1]
+    commonbigrams = sorted(commonbigrams, key=lambda nlist:len(nlist[1]), reverse=True)
+    
+    order1 = sorted(commontrigrams, key=commontrigrams.get)
+    commontrigrams = [(n, commontrigrams[n]) for n in order1]
+    commontrigrams = sorted(commontrigrams, key=lambda nlist:len(nlist[1]), reverse=True)
+    
+   
+    print(commonbigrams)
     for t in commontrigrams:
-        print(kovtreylyans.formatSentences(skeulanyeth1.kw_sents[t], skeulanyeth1.en_sents[t],
-                                           kovtreylyans.unpacklisttuples(commontrigrams[t])))
+        print(kovtreylyans.formatSentences(skeulanyeth1.kw_sents[t[0]], skeulanyeth1.en_sents[t[0]],
+                                           kovtreylyans.unpacklisttuples(t[1])))
         #print("{kw}  --  {en} : {ng}".format(kw=skeulanyeth1.kw_sents[t], en=skeulanyeth1.en_sents[t], ng=commontrigrams[t]))
               
     for b in commonbigrams:
-        print(kovtreylyans.formatSentences(skeulanyeth1.kw_sents[b], skeulanyeth1.en_sents[b],
-                                           kovtreylyans.unpacklisttuples(commonbigrams[b])))
+        print(kovtreylyans.formatSentences(skeulanyeth1.kw_sents[b[0]], skeulanyeth1.en_sents[b[0]],
+                                           kovtreylyans.unpacklisttuples(b[1])))
         #print("{kw}  --  {en} : {ng}".format(kw=skeulanyeth1.kw_sents[b], en=skeulanyeth1.en_sents[b], ng=commonbigrams[b]))
         
     #print(commonbigrams)
