@@ -4,7 +4,7 @@
 # ends of chapters of Skeul An Yeth 1 by Wella Brown
 import nltk
 from nltk.corpus import stopwords
-import csv, os, argparse, sys, imp
+import csv, os, argparse, sys, imp, time
 from operator import itemgetter
 
 imp.reload(sys)
@@ -21,14 +21,34 @@ class CorpusSents(object):
         as a dictionary indexed by a number
         get corpus bigrams and trigrams as a list of nested tuples
         """
+        starttime = time.time()
+        print("importing corpus t = {t0}\nRunning getCorpusSents()".format(
+            t0=0))
         self.kw_sents, self.en_sents = getCorpusSents(inCSVfile)
-        self.bi_1stop = getCorpusSentBigrams(inCSVfile,
-                                             casesensit=casesensit, maxstopwords=1)
-        self.tri_2stop = getCorpusSentBigrams(inCSVfile, trigrams=True,
-                                              casesensit=casesensit, maxstopwords=2)
+        print("getCorpusSents() completed. t = {t1}\n\nrunning getCorpusSentBigrams()".format(
+            t1=time.time()-starttime))
+
         self.bi_all = getCorpusSentBigrams(inCSVfile, casesensit = casesensit)
+        print("all bigrams obtained. t={t4}\nobtaining trigrams".format(
+            t4=time.time() - starttime))
         self.tri_all = getCorpusSentBigrams(inCSVfile,
                                             trigrams=True, casesensit=casesensit)
+        print("all trigrams obtained. t={t5}\nfiltering bi and trigrams for at least 1 non-stopword".format(
+            t5=time.time() - starttime))
+        stopwds = stopwords.words('english')
+        self.bi_1stop = [bi for bi in self.bi_all if sum(w in stopwds for w in bi[1]) < 2]
+#        self.bi_1stop = getCorpusSentBigrams(inCSVfile,
+#                                             casesensit=casesensit, maxstopwords=1)
+        print("bigrams with 1 non-stopword obtained. t={t2}".format(
+            t2=time.time() - starttime))
+#        self.tri_2stop = getCorpusSentBigrams(inCSVfile, trigrams=True,
+#                                              casesensit=casesensit, maxstopwords=2)
+        self.tri_2stop = [tri for tri in self.tri_all if sum(w in stopwds for w in tri[1]) < 3]
+        print("trigrams with 1 non-stopword obtained. t={t3}".format(
+            t3=time.time() - starttime))
+        print("CorpusSents object constructed\n")
+            
+        
         
         
     
@@ -70,14 +90,21 @@ def getCorpusSentBigrams(sentencefile, trigrams=False, casesensit=True,
     with open(sentencefile) as csvinfile:
         reader = csv.DictReader(csvinfile)
         #print(reader.fieldnames)
-        sents_bigrams = []
-        sents_trigrams = []
+        sents_bigrams = {}
+        sents_trigrams = {}
         kw_sents = {}
         en_sents = {}
+        bcount = 0
+        tcount = 0
+        tokenizetime = 0.0
+        ngramlooptime = 0.0
         for row in reader:
             # convert each entry into a list of words
+            t0 = time.time()
             kw = nltk.word_tokenize(row['Kernewek'])
             en = nltk.word_tokenize(row['English'])
+            t1 = time.time() - t0
+            tokenizetime += t1
             if not(casesensit):
                 kw = [w.lower() for w in kw]
                 en = [w.lower() for w in en]
@@ -87,31 +114,44 @@ def getCorpusSentBigrams(sentencefile, trigrams=False, casesensit=True,
                 words = en
             # by default finds bigrams
             # if trigrams is True find trigrams instead
+            tngram0 = time.time()
             if trigrams:
                 for t in nltk.trigrams(words):
-                    if cornish:
+                    if cornish or maxstopwords == 99: 
                         nstop = 0
                     else:
-                        nstop=sum([w in stopwords.words('english') for w in t])
+                        nstop=sum(w in stopwords.words('english') for w in t)
                     if nstop <= maxstopwords:
-                        sents_trigrams.append((row['SentenceNumber'], t))
+                        sents_trigrams[tcount] = (row['SentenceNumber'], t)
+                        tcount += 1
                 # kwtri = list(nltk.trigrams(kw))
                 # entri = list(nltk.trigrams(en))
             else:
                 for b in nltk.bigrams(words):
-                    if cornish:
+                    if cornish or maxstopwords == 99:
                         nstop = 0
                     else:
-                        nstop=sum([w in stopwords.words('english') for w in b])
+                        nstop=sum(w in stopwords.words('english') for w in b)
                     if nstop <= maxstopwords:
-                        sents_bigrams.append((row['SentenceNumber'], b))
+                        sents_bigrams[bcount] = (row['SentenceNumber'], b)
+                        bcount += 1
+            tngram1 = time.time() - tngram0
+            ngramlooptime += tngram1
+        
                 # kwbi = list(nltk.bigrams(kw))
                 # enbi = list(nltk.bigrams(en))
             #print(kw, en)
             #print(kwbi, enbi)
+        print("time spent tokenizing sentences = {t}".format(t=tokenizetime))
         if trigrams:
+            print("time looping through nltk.trigrams(words) = {t}".format(
+            t=ngramlooptime))
+            sents_trigrams = [sents_trigrams[tc] for tc in sents_trigrams]
             return sents_trigrams
         else:
+            print("time looping through nltk.bigrams(words) = {t}".format(
+            t=ngramlooptime))
+            sents_bigrams = [sents_bigrams[bc] for bc in sents_bigrams]
             return sents_bigrams
 
 
