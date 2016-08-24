@@ -279,7 +279,7 @@ def formatSentences(kw, en, ngramstr, linelength=80, sepstr1="  --  ", sepstr2="
         return sentformatted
         
     
-def outputSent(insentwords, corpussents, returnOutText=False, outputmode='nonstop'):
+def outputSent(insentwords, corpussents, returnOutText=False, outputmode='nonstop', linelength=80):
     """ display the output for a list of words insentwords """
     # display the trigrams from the input sentence
     print("\n")
@@ -343,12 +343,12 @@ def outputSent(insentwords, corpussents, returnOutText=False, outputmode='nonsto
     outputText += "Common trigrams:\n"
     for n in sentNsT_2stop:
         outputText += formatSentences(corpussents.kw_sents[n],
-                                      corpussents.en_sents[n], unpacklisttuples(trigrs[n]))
+                                      corpussents.en_sents[n], unpacklisttuples(trigrs[n]), linelength=linelength)
         #outputText+="{kw}  --  {en} {t}\n".format(kw=corpussents.kw_sents[n].ljust(60), en=corpussents.en_sents[n].ljust(60), t = unpacklisttuples(trigrs[n]))
     outputText += "\nCommon bigrams:\n"
     for n in sentNs_1stop:
         outputText += formatSentences(corpussents.kw_sents[n],
-                                      corpussents.en_sents[n], unpacklisttuples(bigrs[n]))
+                                      corpussents.en_sents[n], unpacklisttuples(bigrs[n]), linelength=linelength)
         #outputText += "{kw}  --  {en} {b}\n".format(kw=corpussents.kw_sents[n].ljust(60), en=corpussents.en_sents[n].ljust(60), b = unpacklisttuples(bigrs[n]))
 
     if outputmode == "all":
@@ -357,12 +357,12 @@ def outputSent(insentwords, corpussents, returnOutText=False, outputmode='nonsto
         outputText += "Common trigrams:\n"
         for n in sentNsT:
             outputText += formatSentences(corpussents.kw_sents[n],
-                                          corpussents.en_sents[n], unpacklisttuples(trigrs[n]))
+                                          corpussents.en_sents[n], unpacklisttuples(trigrs[n]), linelength=linelength)
             #outputText += "{kw}  --  {en} {t}\n".format(kw=corpussents.kw_sents[n].ljust(60), en=corpussents.en_sents[n].ljust(60), t = unpacklisttuples(trigrs[n]))
         outputText+="\nCommon bigrams:\n"
         for n in sentNs:
             outputText += formatSentences(corpussents.kw_sents[n],
-                                          corpussents.en_sents[n], unpacklisttuples(bigrs[n]))
+                                          corpussents.en_sents[n], unpacklisttuples(bigrs[n]), linelength=linelength)
             #outputText += "{kw}  --  {en} {b}\n".format(kw=corpussents.kw_sents[n].ljust(60), en=corpussents.en_sents[n].ljust(60), b = unpacklisttuples(bigrs[n]))
     print(outputText)
     if returnOutText:
@@ -378,14 +378,14 @@ def readCorpusSkeulYeth():
     
     
     
-def kovtreyl(inputText, corpussents, casesensit=False, allNgrams=False):
+def kovtreyl(inputText, corpussents, casesensit=False, allNgrams=False, linelength=80):
     """ return the output from an input string """
     insentwords = getInSentGUI(inputText, casesensit=casesensit)
     if allNgrams:
         outputmode = "all"
     else:
         outputmode = "nonstop"
-    return outputSent(insentwords, corpussents, returnOutText=True, outputmode=outputmode)
+    return outputSent(insentwords, corpussents, returnOutText=True, outputmode=outputmode, linelength=linelength)
 
     
 if __name__ == "__main__":
