@@ -16,11 +16,11 @@ if __name__ == '__main__':
 
     options = Radiobar(root, ['Mode Hir', 'Mode Berr', 'Mode Linenn'], side=tk.TOP, anchor=tk.NW,default='Mode Linenn')
     options.pack(side=tk.LEFT, fill=tk.Y)
-    options.config(relief=tk.RIDGE, bd=2)
+    options.config(relief=tk.RIDGE, bd=2, padx=10, pady=10)
 
-    options2 = Radiobar(root, ['Rannans war-rag', 'Rannans war-dhelergh'], side=tk.TOP, anchor=tk.NW, default='Rannans war-rag')
+    options2 = Radiobar(options, ['Rannans war-rag', 'Rannans war-dhelergh'], side=tk.TOP, anchor=tk.NW, default='Rannans war-rag')
     options2.pack(side=tk.LEFT, fill=tk.Y)
-    options2.config(relief=tk.RIDGE, bd=2)
+    options2.config(pady=10)
     
     def allstates(): print(options.state(), options2.state(), ent.gettext())
 
@@ -39,8 +39,11 @@ if __name__ == '__main__':
                 
             if options.state() == 'Mode Hir':
                 output = tr.text_KK2FSS(inputtext,fwd,longform=True)
-                msg3.text.config(font=('Arial', 14, 'normal'))
+                msg3.text.config(font=('Arial', 14, 'normal'),
+                                 width=66, height=12)
             elif options.state() == 'Mode Linenn' or options.state() == 'Mode Berr':
+                msg3.text.config(font=('Arial', 16, 'bold'),
+                                 width=60, height=11)
                 lines = inputtext.split('\n')
                 for l in lines:
                     if options.state() == 'Mode Linenn':
@@ -64,12 +67,12 @@ if __name__ == '__main__':
     
     # text entry bar for input
     ent = ScrolledText(root)
-    ent.text.config(width=40, height = 11)
+    ent.text.config(width=60, height = 11)
     ent.pack(expand=0)
     
     # output
     msg3 = ScrolledText(root)
-    msg3.text.config(fg = 'dark red', bg='light yellow', width = 40, height = 11, font=('Arial', 16, 'bold'), state=tk.DISABLED)
+    msg3.text.config(fg = 'dark red', bg='light yellow', width = 60, height = 11, font=('Arial', 16, 'bold'), state=tk.DISABLED)
     msg3.pack()
 
     # buttons

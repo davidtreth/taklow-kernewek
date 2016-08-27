@@ -67,12 +67,14 @@ if __name__ == '__main__':
                         anchor=tk.NW, default = 'Heb raghenwyn a syw')
     
     options3.config(relief=tk.RIDGE, bd=2)
-
-    options4 = CheckButtonBar(root, ['Ynworrans + eskorrans FSS'],
-                              side=tk.BOTTOM,anchor=tk.SW)
+    rhead4 = tk.Label(options3, text = "Usya FSS?")
+    rhead4.config(font=('Arial', 12, 'bold'))
+    rhead4.pack(side=tk.TOP, anchor=tk.NW, pady=5)
+    options4 = CheckButtonBar(options3, ['Ynworrans + eskorrans FSS'],
+                              side=tk.BOTTOM,anchor=tk.NW, font=('Arial', 13))
     options3.pack(side=tk.LEFT, fill=tk.Y)
-    options4.pack(side=tk.LEFT, fill=tk.Y)
-    options4.config(relief = tk.RIDGE, bd = 2)
+    options4.pack(side=tk.LEFT, fill=tk.BOTH, expand=tk.Y)
+    #options4.config(relief = tk.RIDGE, bd = 2)
 
 
     
@@ -154,7 +156,7 @@ if __name__ == '__main__':
     
     # text entry bar for input
     ent = Entrybar(root)
-    ent.pack()
+    ent.pack(pady=10)
     
     # output
     msg3 = ScrolledText(root)

@@ -47,16 +47,18 @@ class Radiobar(tk.Frame):
 
 class CheckButtonBar(tk.Frame):
     """ a row of check boxes """
-    def __init__(self,parent=None, labels = [], side=tk.LEFT,anchor=tk.W,
+    def __init__(self,parent=None, labels = [], side=tk.LEFT,
+                 justify=tk.CENTER, anchor=tk.W,
                  font=('Arial', 14, 'normal')):
         tk.Frame.__init__(self,parent)
         self.states = []
-        for l in labels:
+        for r, l in enumerate(labels):
             var = tk.IntVar()
-            chk = tk.Checkbutton(self,text=l,variable=var)
-            chk.pack(side=tk.TOP)
-            chk.config(font=font)
+            chk = tk.Checkbutton(self,text=l, font=font,
+                                 justify=justify,
+                                 variable=var).grid(row=r, sticky=tk.W)
             self.states.append(var)
+            
     def state(self):
         return [v.get() for v in self.states]
         

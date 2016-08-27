@@ -25,7 +25,7 @@ if __name__ == '__main__':
 
     options = Radiobar(root, ['All trigrams and bigrams', 'Only N grams with a non-stopword'], side=tk.TOP, anchor=tk.NW,default='Only N grams with a non-stopword')
     options.pack(side=tk.LEFT, fill=tk.Y)
-    options.config(relief=tk.RIDGE, bd=2)
+    options.config(relief=tk.RIDGE, bd=2, padx=5, pady=5)
 
     skeulanyeth1 = kovtreylyans.readCorpusSkeulYeth()
     
@@ -41,11 +41,11 @@ if __name__ == '__main__':
         msg3.text.config(fg = 'dark red', bg = 'light yellow', font=('Monospace', 14, 'normal'), state=tk.NORMAL)
         if inputtext:
             if options.state() == 'All trigrams and bigrams':
-                output = kovtreylyans.kovtreyl(inputtext, skeulanyeth1, False, allNgrams=True, linelength=outputwidth)
+                output = kovtreylyans.kovtreyl(inputtext, skeulanyeth1, False, allNgrams=True, linelength=outputwidth-2)
                 msg3.text.config(font=('Monospace', 12, 'normal'))
             else:
                 # show only N grams containing non stopwords
-                output = kovtreylyans.kovtreyl(inputtext, skeulanyeth1, False, allNgrams=False, linelength=outputwidth)
+                output = kovtreylyans.kovtreyl(inputtext, skeulanyeth1, False, allNgrams=False, linelength=outputwidth-2)
             # print(output)
 
         msg3.settext(output)
@@ -59,11 +59,11 @@ if __name__ == '__main__':
         
     msg = tk.Label(root, text="Write an English sentence in the box below please:")
     msg.config(font=('Arial', 16, 'bold'))
-    msg.pack()
+    msg.pack(pady=10)
     
     # text entry bar for input
     ent = ScrolledText(root)
-    ent.text.config(width=40,height=7)
+    ent.text.config(width=outputwidth,height=7)
     ent.pack(expand=0)
     
     # output

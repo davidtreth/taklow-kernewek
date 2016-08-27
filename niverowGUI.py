@@ -14,7 +14,9 @@ if __name__ == '__main__':
     mhead.config(font=('Arial', 16, 'bold'))
     mhead.pack(side=tk.TOP, anchor=tk.NW)
 
-    options = CheckButtonBar(root, ['Usya Hanow','Hanow Benow'], side=tk.TOP, anchor=tk.NW)
+    options = CheckButtonBar(root, ['Usya Hanow','Hanow Benow'],
+                             side=tk.TOP,
+                             justify=tk.LEFT, anchor=tk.NW)
     options.pack(side=tk.LEFT, fill=tk.Y)
     options.config(relief=tk.RIDGE, bd=2)
     def allstates(): print(options.state(), ent.fetch(), ent2.fetch())
@@ -54,25 +56,25 @@ if __name__ == '__main__':
         
     msg = tk.Label(root, text="Gorrewgh niver a-woles mar pleg")
     msg.config(font=('Arial', 16, 'bold'))
-    msg.pack()
+    msg.pack(anchor=tk.W)
     
     # text entry bar for number
     ent = Entrybar(root)
-    ent.pack()
+    ent.pack(anchor=tk.W)
     
     msg2 = tk.Label(root, text="Gorrewgh hanow kernewek a-woles mar pleg")
     msg2.config(font=('Arial', 16, 'bold'))
-    msg2.pack()
+    msg2.pack(anchor=tk.W)
     # text entry bar for noun
     ent2 = Entrybar(root)
-    ent2.pack()
+    ent2.pack(anchor=tk.W)
     # irregular plural?
     msg4 = tk.Label(root, text="Gorrewgh hanow liesplek a-woles mar nag yw -ow")
     msg4.config(font=('Arial', 16, 'bold'))
-    msg4.pack()
+    msg4.pack(anchor=tk.W)
     # text entry bar for plural noun
     ent3 = Entrybar(root)
-    ent3.pack()
+    ent3.pack(anchor=tk.W)
     # output
     msg3 = tk.Label(root)
     msg3.config(fg = 'dark red', bg='light yellow',font=('Arial', 18, 'bold'), text='')

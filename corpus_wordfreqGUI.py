@@ -8,6 +8,7 @@ from taklowGUI import Kwitya, Entrybar, Radiobar, ScrolledText
 import cornish_corpus
 import matplotlib
 import pylab
+import copy
 
 comparelist = []
 defaultsamples = ["a","ha","an","dhe","yn","yw","ow","ev","rag","mes","esa","yth","y"]
@@ -27,7 +28,7 @@ def addtocomparelist():
     ent3.clear()
         
 def clearcomparelist():
-    comparelist = []
+    del comparelist[:]
     outbox.settext("")
 
 def getcomparelist():
@@ -49,15 +50,34 @@ def printoutput():
     if modechoice.state() == 'Derivas Ollgemmyn':
         topN = getIntMinL(ent2.fetch(), 20)
         minL = getIntMinL(ent.fetch(), 4)
-        outbox.settext(cornish_corpus.basicReport(kk_text_dict[textchoice.state()], textchoice.state(), topN, minL))                       
+        if textchoice.state() == 'Oll an Tekstow':
+            outbox.settext(cornish_corpus.basicReportAll(kk_texts,
+                                                         names, topN, minL,
+                                                         pause=False))
+        else:
+            outbox.settext(cornish_corpus.basicReport(
+                kk_text_dict[textchoice.state()], textchoice.state(),
+                topN, minL))                       
     if modechoice.state() == 'Rol Menoghderow Ger':
         topN = getIntMinL(ent2.fetch(), 20)
         minL = getIntMinL(ent.fetch())
-        outbox.settext(cornish_corpus.MostFreqWords1Text(kk_text_dict[textchoice.state()], textchoice.state(), topN, minL))
+        if textchoice.state() == 'Oll an Tekstow':
+            outbox.settext(cornish_corpus.MostFrequentWords(kk_texts, names,
+                                                            topN, minL))
+        else:
+            outbox.settext(cornish_corpus.MostFreqWords1Text(
+                kk_text_dict[textchoice.state()], textchoice.state(),
+                topN, minL))
     if modechoice.state() == 'Hirder Geryow\n(tresenn menowghder kumulativ)':
-        cornish_corpus.nLettersFDist(kk_texts,names)
+        pylab.figure()
+        if textchoice.state() == 'Oll an Tekstow':
+            outbox.settext(cornish_corpus.nLettersFDist(kk_texts,names))
+        else:
+            outbox.settext(cornish_corpus.nLettersFDist(
+                [kk_text_dict[textchoice.state()]],[textchoice.state()]))
         pylab.show()
     if modechoice.state() == 'Menowghder Ger\n(tresenn barr)':
+        pylab.figure()
         comparelist = getcomparelist()
         if len(comparelist) == 0:
             comparelist = defaultsamples
@@ -76,40 +96,47 @@ if __name__ == '__main__':
     kk_texts, names = cornish_corpus.corpusKK()
     kk_text_dict = {k:v for (k,v) in zip(names, kk_texts)}
     # choose text
-    textchoice = Radiobar(root, names, side=tk.TOP, anchor=tk.NW,default='Bewnans Meryasek', justify=tk.LEFT)
+    textmenu = copy.copy(names)
+    textmenu.append("Oll an Tekstow")
+    textchoice = Radiobar(root, textmenu, side=tk.TOP, anchor=tk.NW,default='Bewnans Meryasek', justify=tk.LEFT)
     textchoice.pack(side=tk.LEFT, fill=tk.Y)
     textchoice.config(relief=tk.RIDGE, bd=2)
+
+    mhead2 = tk.Label(root, text="Dewis Gwrythyans")
+    mhead2.config(font=('Arial', 16, 'bold'))
+    mhead2.pack(side=tk.TOP, anchor=tk.NW)
+    
     modechoice = Radiobar(root, ['Derivas Ollgemmyn', 'Rol Menoghderow Ger',
                                  'Hirder Geryow\n(tresenn menowghder kumulativ)',
                                  'Menowghder Ger\n(tresenn barr)'],
                           side=tk.TOP, anchor=tk.NW, justify = tk.LEFT, default = 'Derivas Ollgemmyn')
-    msg = tk.Label(modechoice, text="Keworrowgh isella niver a lytherennow rag rolyow menoghder ger a-woeles:",
+    msg = tk.Label(modechoice, text="Keworrowgh isella niver a lytherennow\nrag rolyow menoghder ger a-woeles:",
                    anchor=tk.W, justify=tk.LEFT, pady=10)
     msg.config(font=('Arial', 12))
-    msg.pack()
+    msg.pack(anchor=tk.W)
     ent = Entrybar(modechoice,
                    anchor=tk.NW)
-    ent.pack(fill=tk.X)
-    msg2 = tk.Label(modechoice, text="Keworrowgh niver a eryow dhe dherivas an menowghder a-woeles:",
+    ent.pack(anchor=tk.W)
+    msg2 = tk.Label(modechoice, text="Keworrowgh niver a eryow dhe dherivas\nan menowghder a-woeles:\ndefowt = 20",
                     anchor=tk.W, justify=tk.LEFT, pady=10)
     msg2.config(font=('Arial', 12))
-    msg2.pack()
+    msg2.pack(anchor=tk.W)
     ent2 = Entrybar(modechoice,
                     anchor=tk.NW)
-    ent2.pack(fill=tk.X)
-    msg3 = tk.Label(modechoice, text="Keworrowgh ger dhe geheveli menowghderow dres an tekstow:",
+    ent2.pack(anchor=tk.W)
+    msg3 = tk.Label(modechoice, text="Keworrowgh ger dhe geheveli\nmenowghderow dres an tekstow:",
                     anchor=tk.W, justify=tk.LEFT, pady=10)
     msg3.config(font=('Arial', 12))
-    msg3.pack()
+    msg3.pack(anchor=tk.W)
     ent3 = Entrybar(modechoice,
                     anchor=tk.NW)
-    ent3.pack(fill=tk.X)        
-    keworra = tk.Button(modechoice, text='Keworra dhe rol', font=('Arial', 14),
+    ent3.pack(anchor=tk.W)        
+    keworra = tk.Button(modechoice, text="Keworra ger dhe'n rol", font=('Arial', 14),
               command = addtocomparelist)
-    klerhe = tk.Button(modechoice, text='Klerhe rol', font=('Arial', 14),
+    klerhe = tk.Button(modechoice, text='Klerhe an rol', font=('Arial', 14),
               command = clearcomparelist)
-    keworra.pack(anchor=tk.NW)
-    klerhe.pack(anchor=tk.NW)        
+    keworra.pack(anchor=tk.NW, pady=10)
+    klerhe.pack(anchor=tk.NW, pady=10)        
     modechoice.pack(side=tk.LEFT, fill=tk.Y)
     modechoice.config(relief=tk.RIDGE, bd=2)
         

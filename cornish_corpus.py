@@ -87,7 +87,30 @@ def listPercentsN(text,cfd,dictlist, textname):
     print("\n")
     #cfd.tabulate(cumulative=True)
 
-    
+def formatCFDnLetters(cfdlist):
+    """
+    return formatted text output
+    for list of cumulative frequency by
+    length of words for each texts
+
+    @param cfdlist: a list of tuples
+    each of which has the first item the
+    text name, and the second a list of tuples
+    consisting of an integer expressing length
+    of word, and a float of the cumulative percentage
+    """
+    outputtext = ""
+    for t in cfdlist:
+        outputtext += t[0] + "\n"
+        for tup in t[1]:
+            outputtext += "{n} letters: {cumul:.2f}%\n".format(n=tup[0],
+                                                              cumul=float(tup[1]))
+        outputtext += "\n"
+    return outputtext
+            
+        
+        
+        
 def nLettersFDist(kk_texts_Texts,names):
     """ create conditional frequency distributions
     based on length of words for a set of NLTK texts,
@@ -105,6 +128,7 @@ def nLettersFDist(kk_texts_Texts,names):
     # a list containing dictionaries indexed by length of word
     # which contain percentage frequencies of words of that length
     dictlist = []
+    output = []
     #print nameslist
     for t in zip(kk_texts_Texts, names):
         listPercentsN(t[0],cfd,dictlist, t[1])
@@ -121,10 +145,12 @@ def nLettersFDist(kk_texts_Texts,names):
             st = "-"
         #print("d=",d)
         pylab.plot(keyslist,valueslist_cumulative,label = names[d],linewidth=2,linestyle=st)
+        output.append(zip(keyslist, valueslist_cumulative))
     pylab.title("Cumulative % frequency of lengths of words in various Cornish texts.")
     pylab.legend()
     pylab.xlabel("Word length")
     pylab.ylabel("Cumulative % frequency")
+    return formatCFDnLetters(zip(names,output))
 
 def getCFD(kk_texts_Texts, casesensit=False):
     """
@@ -276,8 +302,9 @@ def basicReportAll(kk_texts_Texts, textnames, topN=50, minL=4, pause=True):
     @param pause: whether to pause between each text.
     @type pause: C{bool}
     """
+    outputtext = ""
     for i in zip(kk_texts_Texts, textnames):
-        basicReport(i[0], i[1], topN, minL)
+        outputtext += basicReport(i[0], i[1], topN, minL)
         if pause:
             if sys.version_info[0] < 3:
                 w = raw_input("Press Enter to continue...\n")
@@ -285,6 +312,7 @@ def basicReportAll(kk_texts_Texts, textnames, topN=50, minL=4, pause=True):
                 w = input("Press Enter to continue...\n")
             if w.lower() == "skip" or w.lower() == "lamma":
                 pause = False
+    return outputtext
 
 def freqCompareInterAct(casesensit=False, interactive=True):
     """ 

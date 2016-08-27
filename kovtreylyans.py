@@ -286,11 +286,13 @@ def outputSent(insentwords, corpussents, returnOutText=False, outputmode='nonsto
     outputText = ""
     outputText +="trigrams for input sentence are:\n"
     listinpSt = getTrigrams(insentwords)
-    outputText += repr(listinpSt)
+    listinpSt = [tuple([w.encode("utf-8") for w in t]) for t in listinpSt]
+    outputText += str(listinpSt)
     # display the bigrams from the input sentence
     outputText += "\n\nbigrams for input sentence are:\n"
     listinpSb = getBigrams(insentwords)
-    outputText += repr(listinpSb)
+    listinpSb = [tuple([w.encode("utf-8") for w in b]) for b in listinpSb]
+    outputText += str(listinpSb)
     # find common bigrams and trigrams
     sentNs, bigrs =  findCommonNgrams(corpussents.bi_all, listinpSb)
     sentNsT, trigrs =  findCommonNgrams(corpussents.tri_all, listinpSt)

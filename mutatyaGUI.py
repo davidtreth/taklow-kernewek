@@ -18,7 +18,7 @@ if __name__ == '__main__':
     mstate.pack(side=tk.LEFT, fill=tk.Y)
     mstate.config(relief=tk.RIDGE, bd=2)
 
-    tradgraph = CheckButtonBar(root, ['Lytherennans hengovek'], side=tk.TOP, anchor=tk.NW)
+    tradgraph = CheckButtonBar(root, ['Lytherennans\nhengovek (SWF/T)'], side=tk.TOP, justify = tk.LEFT, anchor=tk.NW)
     tradgraph.pack(side=tk.LEFT, fill=tk.Y)
     tradgraph.config(relief=tk.RIDGE, bd=2)
 
@@ -42,13 +42,14 @@ if __name__ == '__main__':
             msg2.config(text = mutatya.format_rev_mutate(mutatya.rev_mutate(ent.fetch(), False, tradgraph.state()[0]), True),
             font=('Monospace', 14, 'bold'))
     
-    msg = tk.Label(root, text="Gorrewgh ger kernewek a-woles mar pleg")
+    msg = tk.Label(root, text="Gorrewgh ger kernewek a-woles mar pleg",
+                   padx=5)
     msg.config(font=('Arial', 16, 'bold'))
     msg.pack()
     
     # text entry bar
     ent = Entrybar(root)
-    ent.pack()
+    ent.pack(padx=5, pady=5)
 
     msg2 = tk.Label(root)
     msg2.config(bg = 'light yellow', fg = 'dark red', font=('Monospace', 18, 'bold'))
