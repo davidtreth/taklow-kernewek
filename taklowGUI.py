@@ -32,14 +32,14 @@ class Gadael(tk.Frame):
         
 class Radiobar(tk.Frame):
     """ radio buttons to select one from a list """
-    def __init__(self,parent=None, picks=[], side=tk.LEFT, anchor=tk.W,
-                 font=('Arial', 13, 'normal'), default = False):
+    def __init__(self,parent=None, picks=[], side=tk.LEFT, justify=tk.CENTER,
+                 anchor=tk.W, font=('Arial', 13, 'normal'), default = False):
         tk.Frame.__init__(self, parent)
         self.var = tk.StringVar()
         if default in picks:
             self.var.set(default)
         for pick in picks:
-            rad = tk.Radiobutton(self, text=pick, value = pick, variable=self.var)
+            rad = tk.Radiobutton(self, text=pick, value = pick, justify=justify, variable=self.var)
             rad.config(font=font)
             rad.pack(side=side, anchor=anchor, expand=tk.N)
     def state(self):
