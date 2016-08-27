@@ -21,26 +21,37 @@ import matplotlib
 import pylab
 import sys
 
-def basicReport(text, topN=50, minL=4):
-    print(("Text: {n}".format(n=text.name)))
+def basicReport(text, textname, topN=50, minL=4):
+    """ print out at the command line a report of a text 
+
+    Given an NLTK text, output the number of words, number
+    of different words, and some word frequency information.
+
+    @param text: An NLTK text
+    @param topN: A number detailing how many of the most frequent words
+    should be listed.
+    @type topN: C{int}
+    @param minL: A number detailing the minimum number of letters in the second
+    list of words and their frequencies.
+    @type minL: C{int}
+    """
+    print(("Text: {n}".format(n=textname)))
     print("\n")
     print("Collocations: {c}\n".format(c=text.collocations()))
-    # frequency distribution
-    # fdist_len = nltk.FreqDist([len(w) for w in text])
-    # print fdist_len.keys()
-    # this should already be alphabetic
     text_alpha = [w for w in text if w.isalpha()]
     print(("number of words = {nw}\n".format(nw=len(text_alpha))))
     print(("number of different words = {ndw}\n".format(ndw = len(set([w.lower() for w in text_alpha])))))
     # frequency distribution (alphabetic)
-    fdist_len2 = nltk.FreqDist([len(w) for w in text_alpha])
+    fdist_len = nltk.FreqDist([len(w) for w in text_alpha])
     print(("Lengths of words in descending order of frequency {lw}\n".format(
-        lw = [(length,freq) for length,freq in fdist_len2.items()])))
+        lw = [(length,freq) for length,freq in fdist_len.items()])))
     # frequency distribution (alphabetic, lowercase)
     fdist_alpha = nltk.FreqDist([w.lower() for w in text_alpha])
-    
+    # convert the items of the frequency distribution into a list of tuples
     vocabkeyvaltup = [(k,v) for (k,v) in fdist_alpha.items()]
+    # sort by decreasing frequency
     vocab = sorted(vocabkeyvaltup, key=lambda keyvaltup: keyvaltup[1], reverse=True)
+    # make of list of the words themselves
     vocab = [v[0] for v in vocab]
     print(("Top {tN} words: {wN}\n".format(tN = topN, wN=[w.encode("ascii") for w in vocab[:topN]])))
     # frequency distribution (alphabetic, lowercase, more than minL letters)
@@ -52,8 +63,18 @@ def basicReport(text, topN=50, minL=4):
                                                                      m=minL,
                                                                      wN_m=[w.encode("ascii") for w in vocab4[:topN]])))
 
-def listPercentsN(text,cfd,dictlist):
-    print("\nText: {n}\n".format(n=text.name))
+def listPercentsN(text,cfd,dictlist, textname):
+    """
+    add a dictionary lenwordsdict that describes the frequencies of words by length
+    to the list dictlist
+
+    @param text: an NLTK text
+    @param cfd: an NLTK conditional frequency distribution for the text
+    @param dictlist: A list containing dictionaries, where each one contains the
+    frequencies of words of different lengths.
+    @type dictlist: C{list}
+    """
+    print("\nText: {n}\n".format(n=textname))
     fdist = cfd[text.name]
     # dictionary indexed by length of word
     lenwordsdict = {}
@@ -66,8 +87,15 @@ def listPercentsN(text,cfd,dictlist):
 
     
 def nLettersFDist(kk_texts_Texts,names):
-    # conditional frequency distribution
-    # based on length of words
+    """ create conditional frequency distributions
+    based on length of words for a set of NLTK texts,
+    and draw a graph.
+
+    @param kk_texts_Texts: a list of NLTK texts
+    @param names: the names of the texts
+    @type kk_texts_Texts: C{list}
+    @type names: C{list}
+    """
     cfd = nltk.ConditionalFreqDist(
             (text.name,len(word))
             for text in kk_texts_Texts
@@ -75,10 +103,9 @@ def nLettersFDist(kk_texts_Texts,names):
     # a list containing dictionaries indexed by length of word
     # which contain percentage frequencies of words of that length
     dictlist = []
-    nameslist = [n for n in names]
     #print nameslist
-    for t in kk_texts_Texts:
-        listPercentsN(t,cfd,dictlist)
+    for t in zip(kk_texts_Texts, names):
+        listPercentsN(t[0],cfd,dictlist, t[1])
     #print dictlist
     for d in range(len(dictlist)):
         keyslist = [0]+[i[0] for i in dictlist[d].items()]
@@ -98,7 +125,14 @@ def nLettersFDist(kk_texts_Texts,names):
     pylab.ylabel("Cumulative % frequency")
 
 def getCFD(kk_texts_Texts, casesensit=False):
-    # conditional frequency distribution
+    """
+    get conditional frequency distribution of all the texts
+
+    @param kk_texts_Text: a list of NLTK Texts
+    @type kk_texts_Text: C{list}
+    @param casesensit: whether to be case sensitive
+    @type casesensit: C{bool}
+    """
     # based on alphabetic words
     if casesensit:
         cfd = nltk.ConditionalFreqDist(
@@ -112,21 +146,44 @@ def getCFD(kk_texts_Texts, casesensit=False):
             for word in text if word.isalpha())
     return cfd
 
-def MostFrequentWords(kk_texts_Texts, N=20, casesensit=False):
+def MostFrequentWords(kk_texts_Texts, textnames, N=20, casesensit=False):
+    """
+    print out list of the most frequent words in each text
+
+    @param kk_texts_Texts: List of NLTK Texts.
+    @type kk_texts_Texts: C{list}
+    @param N: how many words to list. Default is 20.
+    @type N: C{int}
+    @param casesensit: whether to be case sensitive.
+    @type casesensit: C{bool}
+    """
     cfd = getCFD(kk_texts_Texts, casesensit)
-    for t in kk_texts_Texts:
-        print("\nText: {n}\n".format(n=t.name))
-        fdist = cfd[t.name]
+    for t in zip(kk_texts_Texts, textnames):
+        print("\nText: {n}\n".format(n=t[1]))
+        fdist = cfd[t[0].name]
         keyvaltup = [(k,v) for (k,v) in fdist.items()]
         keyvaltupsort = sorted(keyvaltup, key=lambda keyvaltup: keyvaltup[1], reverse=True)
         print("{n} most frequent words are:".format(n=N))
         for kv in keyvaltupsort[:N]:
-            print(kv[0]," : ",str(100*(float(kv[1])/len(t)))[:5],"% ")
+            print(kv[0]," : ",str(100*(float(kv[1])/len(t[0])))[:5],"% ")
         print("\n")
     #cfd.tabulate(cumulative=True)
     #cfd.plot(cumulative=True)
 
 def compareSamples(kk_texts_Texts,names, samples, casesensit=False):
+    """
+    Produce a bar plot comparing the frequency of words in a list samples
+    across the different texts.
+
+    @param kk_texts_Texts: A list of NLTK Texts.
+    @type kk_texts_Texts: C{list}
+    @param names: A list of the text names.
+    @type names: C{list}
+    @param samples: A list of sample words to compare.
+    @type samples: C{list}
+    @param casesensit: Whether to be case sensitive.
+    @type casesensit: C{bool}
+    """
     cfd = getCFD(kk_texts_Texts, casesensit)
     colors = "rgbcmkyw"
     freqs_lists = []
@@ -138,27 +195,29 @@ def compareSamples(kk_texts_Texts,names, samples, casesensit=False):
             freqs_list = [100.0*float(f[s.lower()])/len(t) for s in samples]
         print("Text {t}, frequencies {f}.".format(t=t.name, f=freqs_list))
         freqs_lists.append(freqs_list)
-    
-    ind = pylab.arange(len(samples))
-    nameslist = [n for n in names]
-    width = 1.0/(len(nameslist)+1)
 
+    # produce one group of bars for each text
+    ind = pylab.arange(len(samples))
+    width = 1.0/(len(names)+1)
     bar_groups = []
-    for s in range(len(nameslist)):
+    for s in range(len(names)):
         bars = pylab.bar(ind+s*width,freqs_lists[s],width=width,color = colors[s % len(colors)])
         bar_groups.append(bars)
     # add some vertical lines for readability
     for s in range(len(samples)):
-        pylab.axvline(x=((s+1)*width*(len(nameslist)+1)-0.5*width), ymin=0, ymax = 100,
+        pylab.axvline(x=((s+1)*width*(len(names)+1)-0.5*width), ymin=0, ymax = 100,
                       linewidth=0.5, color='b', linestyle='-')
-        pylab.title("% frequency of various words in Cornish texts")
-        pylab.ylabel("% frequency")
-        pylab.legend([b[0] for b in bar_groups],nameslist)
-        pylab.xticks(ind+(len(nameslist)/2.0)*width,samples)
-        pylab.tight_layout()
+        
+    pylab.title("% frequency of various words in Cornish texts")
+    pylab.ylabel("% frequency")
+    pylab.legend([b[0] for b in bar_groups],names)
+    pylab.xticks(ind+(len(names)/2.0)*width,samples)
+    pylab.tight_layout()
             
 def corpusKK():
-    # do imports for traditional (and some revived) texts in Kemmyn
+    """
+    do imports for traditional (and some revived) texts in Kemmyn
+    """
     import read_kernewek_KK_texts
     kk_texts, names = read_kernewek_KK_texts.getKKtexts()
     # use NLTK functions to select words
@@ -173,11 +232,24 @@ def corpusKK():
     return kk_texts_Texts, names
 
 
-def basicReportAll(kk_texts_Texts, topN=50, minL=4, pause=True):
-    # cycle through the texts
-    # do basic report
-    for i in kk_texts_Texts:
-        basicReport(i, topN, minL)
+def basicReportAll(kk_texts_Texts, textnames, topN=50, minL=4, pause=True):
+    """
+    cycle through the texts and output a basic report for each
+
+    @param kk_texts_Texts: a list of NLTK Texts.
+    @type kk_texts_Texts: C{list}
+    @param textnames: a list of the names of the texts.
+    @type textnams: C{list}
+    @param topN: how many of the most frequent words to list.
+    @type topN: C{int}
+    @param minL: minimum number of letters for the second list
+    of most frequent words omitting short words.
+    @type minL: C{int}
+    @param pause: whether to pause between each text.
+    @type pause: C{bool}
+    """
+    for i in zip(kk_texts_Texts, textnames):
+        basicReport(i[0], i[1], topN, minL)
         if pause:
             if sys.version_info[0] < 3:
                 w = raw_input("Press Enter to continue...\n")
@@ -186,10 +258,51 @@ def basicReportAll(kk_texts_Texts, topN=50, minL=4, pause=True):
             if w.lower() == "skip" or w.lower() == "lamma":
                 pause = False
 
+def freqCompareInterAct(casesensit=False, interactive=True):
+    """ 
+    Request words from the command line input and
+    run compareSamples() to compare their frequencies.
+    
+    @param casesensit: whether to be case sensitive
+    @type casesensit: C{bool}
+    @param interactive: whether to use interactive mode. If False, use a
+    default list of samples.
+    @type interactive: C{bool}
+    """
+    defaultsamples = ["a","ha","an","dhe","yn","yw","ow","ev","rag","mes","esa","yth","y"]
+    print("Please enter a words to compare frequency across the texts.\nEnter the word 'default' to use the default wordlist.\nPress Enter without any text to stop building the wordlist and draw the graph:")
+    # the words to compare abundance of across the texts
+    
+    if not(interactive):
+        samples = defaultsamples
+    else:
+        samples = []
+        while interactive:
+            if sys.version_info[0] < 3:
+                w = raw_input("Enter word:\n")
+            else:
+                w = input("Enter word:\n")
+            if len(w) > 0:
+                if w.lower() == "default":
+                    # if the word 'default' is entered
+                    # use the default sample word list
+                    samples = defaultsamples
+                    interactive = False
+                else:
+                    # otherwise append the sample to the list
+                    samples.append(w)
+            else:
+                # if w has length zero
+                # stop building the samples list
+                interactive = False
+    if not(casesensit):
+        samples = [s.lower() for s in samples]
+    samples = sorted(set(samples))    
+    compareSamples(kk_texts_Texts,names, samples)
 
 if __name__ == '__main__':     
     kk_texts_Texts, names = corpusKK()
-    basicReportAll(kk_texts_Texts)
+    basicReportAll(kk_texts_Texts, names)
     if sys.version_info[0] < 3:
         w = raw_input("Plot cumulative frequency plot for lengths of words (y/n)?\n")
     else:
@@ -198,26 +311,5 @@ if __name__ == '__main__':
         if w[0].lower=="y":
             nLettersFDist(kk_texts_Texts,names)
             pylab.figure()
-
-    
-    print("Please enter a words to compare frequency across the texts.\nEnter the word 'default' to use the default wordlist.\nPress Enter without any text to stop building the wordlist and draw the graph:")
-    # the words to compare abundance of across the texts
-    samples = []
-    t = True
-    while t:
-        if sys.version_info[0] < 3:
-            w = raw_input("Enter word:\n")
-        else:
-            w = input("Enter word:\n")
-        if w.isalpha():
-            if w.lower() == "default":
-                # default sample word list
-                samples = ["a","ha","an","dhe","yn","yw","ow","ev","rag","mes","esa","yth","y"]
-                t = False
-            else:
-                samples.append(w)
-        else:
-            t = False
-    samples = sorted(set(samples))    
-    compareSamples(kk_texts_Texts,names, samples)
+    freqCompareInterAct()    
     pylab.show()
