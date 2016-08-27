@@ -118,7 +118,7 @@ def nLettersFDist(kk_texts_Texts,names):
         else:
             st = "-"
         #print("d=",d)
-        pylab.plot(keyslist,valueslist_cumulative,label = nameslist[d],linewidth=2,linestyle=st)
+        pylab.plot(keyslist,valueslist_cumulative,label = names[d],linewidth=2,linestyle=st)
     pylab.title("Cumulative % frequency of lengths of words in various Cornish texts.")
     pylab.legend()
     pylab.xlabel("Word length")
@@ -308,7 +308,7 @@ if __name__ == '__main__':
     else:
         w = input("Plot cumulative frequency plot for lengths of words (y/n)?\n")
     if w.isalpha():
-        if w[0].lower=="y":
+        if w[0].lower()=="y":
             nLettersFDist(kk_texts_Texts,names)
             pylab.figure()
     freqCompareInterAct()    
