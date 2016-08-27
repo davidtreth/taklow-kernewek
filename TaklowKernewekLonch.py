@@ -35,8 +35,8 @@ mytools = [
     ('Ranna Syllabennow', 'sylrannakwGUI.py'),
     ('Treuslytherenna KK->FSS', 'treuslytherennaGUI.py'),
     ('Kov Treylyans', 'kovtreylyansGUI.py'),
-    ('Statistegow Korpus\n(linenn arghadow)', 'cornish_corpus.py'),
-    ('Menowghder Ger', 'corpus_wordfreqGUI.py'),
+    #('Statistegow Korpus\n(linenn arghadow)', 'cornish_corpus.py'),
+    ('Statistegow Korpus', 'corpus_wordfreqGUI.py'),
     ('Tekst --> Kows (dre espeak)', 'espeak-text-to-speech/kows_kernewek_GUI.py')
     ]
 

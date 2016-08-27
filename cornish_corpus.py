@@ -212,13 +212,14 @@ def compareSamples(kk_texts_Texts,names, samples, casesensit=False):
     cfd = getCFD(kk_texts_Texts, casesensit)
     colors = "rgbcmkyw"
     freqs_lists = []
-    for t in kk_texts_Texts:
+    for t,n in zip(kk_texts_Texts, names):
         f = cfd[t.name]
         if casesensit:
             freqs_list = [100.0*float(f[s])/len(t) for s in samples]
         else:
             freqs_list = [100.0*float(f[s.lower()])/len(t) for s in samples]
-        outputtext += "Text {t}, frequencies {f}.\n".format(t=t.name, f=freqs_list)
+        freqs_list_print = [round(f, 4) for f in freqs_list]
+        outputtext += "Text {t}, frequencies {f}.\n\n".format(t=n, f=freqs_list_print)
         freqs_lists.append(freqs_list)
 
     # produce one group of bars for each text

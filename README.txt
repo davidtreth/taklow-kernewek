@@ -69,6 +69,8 @@ inflektyaGUI.py: A Tkinter GUI frontend for inflektya.py
 
 espeak-text-to-speech/kows_kernewek_GUI.py: A Tkinter GUI for Cornish text to speech.
 
+corpus_wordfreqGUI.py: A Tkinter GUI to output the frequencies of the most common words in the corpus texts, draw a cumulative frequency plot of lengths of words in the texts, or draw a grouped bar chart of frequencies of particular words.
+In the last case, it is neccesary to add words to the samples list using the entry box and buttons in the middle panel (or accept the default sample list).
 
 TaklowKernewekLonchyer.pyw: A launcher bar which launches the other Python scripts. It may be necessary to copy the taklowGUI.py script or create a symbolic link in the espeak-text-to-speech directory since otherwise its import fails when launcher in this way. The launcher bar uses TaklowKernewekLonch.py which is adaptation of PyGadgets.py from the Programming Python 3rd edition examples. This uses the further programs launchmodes.py and Launcher.py taken from the Programming Python 3rd edition examples.
 
