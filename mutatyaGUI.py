@@ -18,9 +18,8 @@ if __name__ == '__main__':
     mstate.pack(side=tk.LEFT, fill=tk.Y)
     mstate.config(relief=tk.RIDGE, bd=2)
 
-    tradgraph = CheckButtonBar(root, ['Lytherennans\nhengovek (SWF/T)'], side=tk.TOP, justify = tk.LEFT, anchor=tk.NW)
+    tradgraph = CheckButtonBar(mstate, ['Lytherennans\nhengovek (SWF/T)'], side=tk.TOP, justify = tk.LEFT, anchor=tk.NW)
     tradgraph.pack(side=tk.LEFT, fill=tk.Y)
-    tradgraph.config(relief=tk.RIDGE, bd=2)
 
     def allstates(): print(mstate.state(), tradgraph.state(), intmstate(), ent.fetch())
     def intmstate():
@@ -36,7 +35,7 @@ if __name__ == '__main__':
         if intmstate() < 7:
             print(mutatya.mutate(ent.fetch(),intmstate()))
             msg2.config(text = mutatya.mutate(ent.fetch(),intmstate(), tradgraph.state()[0]),
-                        font=('Monospace', 18, 'bold'))
+                        font=('Monospace', 16, 'bold'))
         else:
             print(mutatya.format_rev_mutate(mutatya.rev_mutate(ent.fetch(), False, tradgraph.state()[0]), True))
             msg2.config(text = mutatya.format_rev_mutate(mutatya.rev_mutate(ent.fetch(), False, tradgraph.state()[0]), True),
@@ -52,7 +51,7 @@ if __name__ == '__main__':
     ent.pack(padx=5, pady=5)
 
     msg2 = tk.Label(root)
-    msg2.config(bg = 'light yellow', fg = 'dark red', font=('Monospace', 18, 'bold'))
+    msg2.config(bg = 'light yellow', fg = 'dark red', font=('Monospace', 16, 'bold'))
     msg2.pack(expand=tk.YES,fill=tk.BOTH, anchor=tk.CENTER)
 
     # buttons

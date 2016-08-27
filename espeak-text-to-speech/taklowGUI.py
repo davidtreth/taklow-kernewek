@@ -19,16 +19,27 @@ class Kwitya(tk.Frame):
         ans = messagebox.askokcancel('Verifya kwityans', "Kwitya yn hwir?")
         if ans: tk.Frame.quit(self)
 
+class Gadael(tk.Frame):
+    """ quit button in Welsh """
+    def __init__(self, parent = None,font=('Arial',14)):
+        tk.Frame.__init__(self,parent)
+        self.pack()
+        widget = tk.Button(self, text='Gadael', font=font,command=self.gadael)
+        widget.pack(side=tk.LEFT)
+    def gadael(self):
+        ans = messagebox.askokcancel('Byddwch siwr am gadael?', "Gadael yn gwir?")
+        if ans: tk.Frame.quit(self)
+        
 class Radiobar(tk.Frame):
     """ radio buttons to select one from a list """
-    def __init__(self,parent=None, picks=[], side=tk.LEFT, anchor=tk.W,
-                 font=('Arial', 13, 'normal'), default = False):
+    def __init__(self,parent=None, picks=[], side=tk.LEFT, justify=tk.CENTER,
+                 anchor=tk.W, font=('Arial', 13, 'normal'), default = False):
         tk.Frame.__init__(self, parent)
         self.var = tk.StringVar()
         if default in picks:
             self.var.set(default)
         for pick in picks:
-            rad = tk.Radiobutton(self, text=pick, value = pick, variable=self.var)
+            rad = tk.Radiobutton(self, text=pick, value = pick, justify=justify, variable=self.var)
             rad.config(font=font)
             rad.pack(side=side, anchor=anchor, expand=tk.N)
     def state(self):
@@ -36,16 +47,18 @@ class Radiobar(tk.Frame):
 
 class CheckButtonBar(tk.Frame):
     """ a row of check boxes """
-    def __init__(self,parent=None, labels = [], side=tk.LEFT,anchor=tk.W,
+    def __init__(self,parent=None, labels = [], side=tk.LEFT,
+                 justify=tk.CENTER, anchor=tk.W,
                  font=('Arial', 14, 'normal')):
         tk.Frame.__init__(self,parent)
         self.states = []
-        for l in labels:
+        for r, l in enumerate(labels):
             var = tk.IntVar()
-            chk = tk.Checkbutton(self,text=l,variable=var)
-            chk.pack(side=tk.TOP)
-            chk.config(font=font)
+            chk = tk.Checkbutton(self,text=l, font=font,
+                                 justify=justify,
+                                 variable=var).grid(row=r, sticky=tk.W)
             self.states.append(var)
+            
     def state(self):
         return [v.get() for v in self.states]
         

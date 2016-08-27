@@ -133,12 +133,12 @@ def numberkw_noun(num, noun, fem=False, npl = "ow"):
     if num > 20999 and num < 40000:
         num_k = numberkw(num) + " a " + mutatya.mutate(npl,2)
             
-    if num > 39999 and num < 100000:
+    if num > 39999 and (num < 100000)or(num % 20000 == 0 and num <200000):
         num_k = numberkw(num) + " a " + mutatya.mutate(npl,2)
         if num % 20000 == 0:
             num_k = numberkw(num//20000) + " ugens mil " + mutatya.mutate(noun,2)
 
-    if num > 99999 and num < 1000000:
+    elif num > 99999 and num < 1000000:
         num_k = numberkw(num) +" a " + mutatya.mutate(npl,2)
         if num % 100000 == 0:
             num_k = numberkw(num//100000) + " kans mil " + mutatya.mutate(noun,2)
@@ -235,12 +235,14 @@ def numberkw(num):
             num_k = numberkw((num % 20000)//1000) + " mil warn ugens"
         else:            
             num_k = numberkw((num % 20000)//1000) + " mil warn ugens"+ha+ numberkw(num % 1000)
-    if num >39999 and num<100000:
-        if num % 1000 == 0:
+    if num >39999 and (num<100000 or (num % 20000 ==0)and(num<200000)):
+        if num % 20000 == 0:
+            num_k = numberkw(num//20000) + " ugens mil"
+        elif num % 1000 == 0:
             num_k = numberkw((num % 20000)//1000) + " mil ha "+ numberkw(num//20000) + " ugens"
         else:
             num_k = numberkw((num % 20000)//1000) + " mil ha "+ numberkw(num//20000) + " ugens" +ha+ numberkw(num % 1000)
-    if num > 99999 and num < 1000000:
+    elif num > 99999 and num < 1000000:
         num_k = numberkw(num//1000) + " a vilyow" + ha + numberkw(num % 1000)
         if num % 1000 == 0:
             num_k = numberkw(num//1000) + " a vilyow"

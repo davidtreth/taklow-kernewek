@@ -141,7 +141,7 @@ if __name__ == '__main__':
     modechoice.config(relief=tk.RIDGE, bd=2)
         
     outbox = ScrolledText(root)
-    outbox.text.config(bg = 'light yellow', fg = 'dark red', width=60, height=30,
+    outbox.text.config(bg = 'light yellow', fg = 'dark red', width=60, height=20,
                     font=('Monospace', 14, 'bold'))
     outbox.pack()
     # buttons
