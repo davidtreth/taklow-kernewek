@@ -5,14 +5,19 @@ if sys.version_info[0] < 3:
 else:
     import tkinter as tk
 from taklowGUI import Kwitya, Entrybar, Radiobar, ScrolledText
-import cornish_corpus
-import matplotlib
 import pylab
 import copy
 
 comparelist = []
 defaultsamples = ["a","ha","an","dhe","yn","yw","ow","ev","rag","mes","esa","yth","y"]
 
+def checkNLTK():
+    try:
+        import nltk
+    except ImportError:
+        return 0
+    return 1
+    
 def addtocomparelist():
     newword = ent3.fetch()
     if "," in newword:
@@ -80,28 +85,43 @@ def printoutput():
         pylab.figure()
         comparelist = getcomparelist()
         if len(comparelist) == 0:
-            comparelist = defaultsamples
+            comparelist = defaultsamples           
         outbox.text.config(bg = 'light yellow', fg = 'dark red',
                                font=('Monospace', 12, 'normal'))
-        outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.compareSamples(kk_texts, names, comparelist))
+        if textchoice.state() == 'Oll an Tekstow': 
+            outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.compareSamples(
+            kk_texts, names, comparelist))
+        else:
+            outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.compareSamples(
+            [kk_text_dict[textchoice.state()]],[textchoice.state()], comparelist))        
         pylab.show()     
                 
     
 if __name__ == '__main__':
     root = tk.Tk()
     root.title('Corpus Kernewek')
+
     mhead = tk.Label(root, text = "Tekst")
     mhead.config(font=('Arial', 16, 'bold'))
     mhead.pack(side=tk.TOP, anchor=tk.NW)
-    kk_texts, names = cornish_corpus.corpusKK()
-    kk_text_dict = {k:v for (k,v) in zip(names, kk_texts)}
+    # check NLTK is available
+    c = checkNLTK()
+    print("NLTK available = {c}".format(c=c))
+    if c == 0:
+        names = ["Bewnans Meryasek","Gwreans an Bys","Origo Mundi",
+        "Passio Christ","Resurrectio Domini","Solemptnyta","LoTR chapter",
+        "Tregear Homilies"]
+    else:
+        import cornish_corpus
+        kk_texts, names = cornish_corpus.corpusKK()
+        kk_text_dict = {k:v for (k,v) in zip(names, kk_texts)}
     # choose text
     textmenu = copy.copy(names)
     textmenu.append("Oll an Tekstow")
-    textchoice = Radiobar(root, textmenu, side=tk.TOP, anchor=tk.NW,default='Bewnans Meryasek', justify=tk.LEFT)
+    textchoice = Radiobar(root, textmenu, side=tk.TOP, anchor=tk.NW,
+                          default='Bewnans Meryasek', justify=tk.LEFT)
     textchoice.pack(side=tk.LEFT, fill=tk.Y)
     textchoice.config(relief=tk.RIDGE, bd=2)
-
     mhead2 = tk.Label(root, text="Dewis Gwrythyans")
     mhead2.config(font=('Arial', 16, 'bold'))
     mhead2.pack(side=tk.TOP, anchor=tk.NW)
@@ -139,15 +159,23 @@ if __name__ == '__main__':
     klerhe.pack(anchor=tk.NW, pady=10)        
     modechoice.pack(side=tk.LEFT, fill=tk.Y)
     modechoice.config(relief=tk.RIDGE, bd=2)
-        
     outbox = ScrolledText(root)
     outbox.text.config(bg = 'light yellow', fg = 'dark red', width=60, height=20,
                     font=('Monospace', 14, 'bold'))
+
     outbox.pack()
+    c=checkNLTK()
     # buttons
     Kwitya(root).pack(side=tk.RIGHT)
-    tk.Button(root, text = 'Dalleth', font=('Arial',14),
-              command = printoutput).pack(side=tk.RIGHT)
+    dalleth = tk.Button(root, text = 'Dalleth', font=('Arial',14),
+                        command = printoutput)
+    if c == 0:
+        dalleth['state']=tk.DISABLED
+        outbox.settext("Python Natural Language Processing Toolkit (NLTK) not available.\nDownload from www.nltk.org if not on the system.")   
+    dalleth.pack(side=tk.RIGHT)   
+
+
+
     root.mainloop()
 
 

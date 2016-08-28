@@ -28,7 +28,6 @@
 
 from __future__ import print_function
 import sys
-import nltk
 import re
 import argparse
 import codecs
@@ -37,7 +36,11 @@ import imp
 imp.reload(sys)
 if sys.version_info[0] < 3:
     sys.setdefaultencoding('utf-8')
-
+try:
+    import nltk
+except ImportError:
+    print("NLTK not available. Download from www.nltk.org if not on the system.")
+    
 class kwKemmynRegExp:
     """
     holds the regular expressions to match Kernewek Kemmyn text
@@ -110,7 +113,10 @@ class RannaSyllabenn:
         # nltk.word_tokenize puts these in separate words
         apos_geryow = ["'m","'s","'th"]
         # use NLTK to split the input text into words
-        geryow = nltk.word_tokenize(inputtext)
+        try:
+            geryow = nltk.word_tokenize(inputtext)
+        except AttributeError:
+            print("nltk.word_tokenize() not available. Use nltk.download() in the Python shell to download Punkt Tokenizer Models.")
         # print(self.geryow)
         # go through and concatenate the 'words' beginning with apostrophes
         # to the previous word

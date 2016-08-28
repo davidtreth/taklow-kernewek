@@ -5,8 +5,64 @@ if sys.version_info[0] < 3:
 else:
     import tkinter as tk
 from taklowGUI import Kwitya, Radiobar, ScrolledText
-import syllabenn_ranna_kw as syl
 
+
+def allstates(): print(options.state(), options2.state(), ent.gettext())
+
+def printsylranna():
+    """ show the output in Cornish, according to the options
+    in the radiobar is selected """
+    allstates()
+    inputtext = ent.gettext()
+    print("Input: {i}".format(i=inputtext))
+    output = ''
+    msg3.text.config(fg = 'dark red', bg = 'light yellow',
+                     font=('Arial', 16, 'bold'), state=tk.NORMAL)
+    if inputtext:
+        if options2.state() == 'Rannans war-rag':
+            fwd = True
+        else: fwd = False
+                
+        if options.state() == 'Mode Hir':
+            output = syl.detailSylsText(inputtext,fwd)
+            msg3.text.config(font=('Arial', 14, 'normal'),
+                             width=66, height=12)
+        elif options.state() == 'Mode Linenn':
+            msg3.text.config(font=('Arial', 16, 'bold'),
+                             width=60, height=11)
+            lines = inputtext.split('\n')                
+            for l in lines:                    
+                output += syl.countSylsLine(l,fwd)+'\n\n'
+            output = output[:-1]
+        else:
+            msg3.text.config(font=('Arial', 16, 'bold'),
+                             width=60, height=11)
+            # use short mode by default if nothing is selected
+            output = syl.detailSylsText(inputtext,fwd,short=True)
+        print(output)
+    msg3.settext(output)
+    msg3.text.config(state=tk.DISABLED)
+
+def clearboxes():
+    ent.clear()
+    msg3.text.config(fg = 'dark red', bg='light yellow',
+                     font=('Arial', 16, 'bold'),state=tk.NORMAL)
+    msg3.clear()
+    msg3.text.config(state=tk.DISABLED)
+
+def checkNLTK():
+    try:
+        import nltk
+    except ImportError:        
+        errtext = "Python Natural Language Processing Toolkit (NLTK) not available.\nDownload from www.nltk.org if not on the system."
+        return 0, errtext
+    try:
+        t = nltk.word_tokenize("test text")
+    except AttributeError:
+        errtext = "nltk.word_tokenize() not available.\nUse nltk.download() in the Python shell to download Punkt Tokenizer Models."
+        return 0, errtext
+    return 1, "success"
+    
 if __name__ == '__main__':
     root = tk.Tk()
     root.title('Syllabenn Ranna Kernewek')
@@ -14,54 +70,16 @@ if __name__ == '__main__':
     mhead.config(font=('Arial', 16, 'bold'))
     mhead.pack(side=tk.TOP, anchor=tk.NW)
 
-    options = Radiobar(root, ['Mode Hir', 'Mode Berr', 'Mode Linenn'], side=tk.TOP, anchor=tk.NW,default='Mode Berr')
+    options = Radiobar(root, ['Mode Hir', 'Mode Berr', 'Mode Linenn'],
+                       side=tk.TOP, anchor=tk.NW,default='Mode Berr')
     options.pack(side=tk.LEFT, fill=tk.Y)
     options.config(relief=tk.RIDGE, bd=2, padx=10, pady=10)
 
-    options2 = Radiobar(options, ['Rannans war-rag', 'Rannans war-dhelergh'], side=tk.TOP, anchor=tk.NW, default='Rannans war-dhelergh')
+    options2 = Radiobar(options, ['Rannans war-rag', 'Rannans war-dhelergh'],
+                        side=tk.TOP, anchor=tk.NW, default='Rannans war-dhelergh')
     options2.pack(side=tk.LEFT, fill=tk.Y)
     options2.config(pady=10)
     
-    def allstates(): print(options.state(), options2.state(), ent.gettext())
-
-    def printsylranna():
-        """ show the output in Cornish, according to the options
-         in the radiobar is selected """
-        allstates()
-        inputtext = ent.gettext()
-        print("Input: {i}".format(i=inputtext))
-        output = ''
-        msg3.text.config(fg = 'dark red', bg = 'light yellow', font=('Arial', 16, 'bold'), state=tk.NORMAL)
-        if inputtext:
-            if options2.state() == 'Rannans war-rag':
-                fwd = True
-            else: fwd = False
-                
-            if options.state() == 'Mode Hir':
-                output = syl.detailSylsText(inputtext,fwd)
-                msg3.text.config(font=('Arial', 14, 'normal'),
-                                 width=66, height=12)
-            elif options.state() == 'Mode Linenn':
-                msg3.text.config(font=('Arial', 16, 'bold'),
-                                 width=60, height=11)
-                lines = inputtext.split('\n')                
-                for l in lines:                    
-                    output += syl.countSylsLine(l,fwd)+'\n\n'
-                output = output[:-1]
-            else:
-                msg3.text.config(font=('Arial', 16, 'bold'),
-                                 width=60, height=11)
-                # use short mode by default if nothing is selected
-                output = syl.detailSylsText(inputtext,fwd,short=True)
-            print(output)
-
-        msg3.settext(output)
-        msg3.text.config(state=tk.DISABLED)
-    def clearboxes():
-        ent.clear()
-        msg3.text.config(fg = 'dark red', bg='light yellow',font=('Arial', 16, 'bold'),state=tk.NORMAL)
-        msg3.clear()
-        msg3.text.config(state=tk.DISABLED)
         
         
     msg = tk.Label(root, text="Gorrewgh tekst kernewek a-woeles mar pleg:")
@@ -75,15 +93,26 @@ if __name__ == '__main__':
     
     # output
     msg3 = ScrolledText(root)
-    msg3.text.config(fg = 'dark red', bg='light yellow', width=60, height=11,font=('Arial', 16, 'bold'), state=tk.DISABLED)
+    msg3.text.config(fg = 'dark red', bg='light yellow', width=60, height=11,
+                     font=('Arial', 16, 'bold'), state=tk.DISABLED)
     msg3.pack()
-
     # buttons
     Kwitya(root).pack(side=tk.RIGHT)
-    tk.Button(root, text = 'Diskwedh Syllabennow', font=('Arial',14),
-           command = printsylranna).pack(side=tk.RIGHT)
+    disk = tk.Button(root, text = 'Diskwedh Syllabennow', font=('Arial',14),
+                     command = printsylranna)
     tk.Button(root, text = 'Klerhe', font=('Arial', 14),
            command = clearboxes).pack(side=tk.LEFT)
+    # check NLTK is available
+    c = checkNLTK()
+    print("NLTK available = {c}".format(c=c))
+    if c[0] == 1:    
+        import syllabenn_ranna_kw as syl
+    else:
+        msg3.text.config(state=tk.NORMAL)
+        msg3.settext(c[1])
+        disk['state'] = tk.DISABLED
+    disk.pack(side=tk.RIGHT)  
+
     root.mainloop()
 
 
