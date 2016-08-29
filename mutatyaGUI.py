@@ -11,7 +11,7 @@ if __name__ == '__main__':
     root = tk.Tk()
     root.title('Mutatya')
     mhead = tk.Label(root, text = "Studh Treylyans")
-    mhead.config(font=('Arial', 16, 'bold'))
+    mhead.config(font=('Helvetica', 16, 'bold'))
     mhead.pack(side=tk.TOP, anchor=tk.NW)
     # various mutation states
     mstate = Radiobar(root, ['1 (heb treylyans)', '2 (medhel)', '3 (hwythys)', '4 (kales)', '5 (kemmyskys)', '6 (kemmyskys wosa \'th)', '7 (kildreylyans)'], side=tk.TOP, anchor=tk.NW,default='1 (heb treylyans)')
@@ -35,15 +35,15 @@ if __name__ == '__main__':
         if intmstate() < 7:
             print(mutatya.mutate(ent.fetch(),intmstate()))
             msg2.config(text = mutatya.mutate(ent.fetch(),intmstate(), tradgraph.state()[0]),
-                        font=('Monospace', 16, 'bold'))
+                        font=('Courier', 16, 'bold'))
         else:
             print(mutatya.format_rev_mutate(mutatya.rev_mutate(ent.fetch(), False, tradgraph.state()[0]), True))
             msg2.config(text = mutatya.format_rev_mutate(mutatya.rev_mutate(ent.fetch(), False, tradgraph.state()[0]), True),
-            font=('Monospace', 14, 'bold'))
+            font=('Courier', 14, 'bold'))
     
     msg = tk.Label(root, text="Gorrewgh ger kernewek a-woles mar pleg",
                    padx=5)
-    msg.config(font=('Arial', 16, 'bold'))
+    msg.config(font=('Helvetica', 16, 'bold'))
     msg.pack()
     
     # text entry bar
@@ -51,12 +51,12 @@ if __name__ == '__main__':
     ent.pack(padx=5, pady=5)
 
     msg2 = tk.Label(root)
-    msg2.config(bg = 'light yellow', fg = 'dark red', font=('Monospace', 16, 'bold'))
+    msg2.config(bg = 'light yellow', fg = 'dark red', font=('Courier', 16, 'bold'))
     msg2.pack(expand=tk.YES,fill=tk.BOTH, anchor=tk.CENTER)
 
     # buttons
     Kwitya(root).pack(side=tk.RIGHT)
-    tk.Button(root, text = 'Mutatya', font=('Arial',14),
+    tk.Button(root, text = 'Mutatya', font=('Helvetica',14),
            command = printmform).pack(side=tk.RIGHT)
     root.mainloop()
 

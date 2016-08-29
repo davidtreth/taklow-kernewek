@@ -10,7 +10,7 @@ else:
 
 class Kwitya(tk.Frame):
     """ define quit button """
-    def __init__(self, parent = None,font=('Arial',14)):
+    def __init__(self, parent = None,font=('Helvetica',14)):
         tk.Frame.__init__(self,parent)
         self.pack()
         widget = tk.Button(self, text='Kwitya', font=font,command=self.kwitya)
@@ -21,7 +21,7 @@ class Kwitya(tk.Frame):
 
 class Gadael(tk.Frame):
     """ quit button in Welsh """
-    def __init__(self, parent = None,font=('Arial',14)):
+    def __init__(self, parent = None,font=('Helvetica',14)):
         tk.Frame.__init__(self,parent)
         self.pack()
         widget = tk.Button(self, text='Gadael', font=font,command=self.gadael)
@@ -33,7 +33,7 @@ class Gadael(tk.Frame):
 class Radiobar(tk.Frame):
     """ radio buttons to select one from a list """
     def __init__(self,parent=None, picks=[], side=tk.LEFT, justify=tk.CENTER,
-                 anchor=tk.W, font=('Arial', 13, 'normal'), default = False):
+                 anchor=tk.W, font=('Helvetica', 13, 'normal'), default = False):
         tk.Frame.__init__(self, parent)
         self.var = tk.StringVar()
         if default in picks:
@@ -49,7 +49,7 @@ class CheckButtonBar(tk.Frame):
     """ a row of check boxes """
     def __init__(self,parent=None, labels = [], side=tk.LEFT,
                  justify=tk.CENTER, anchor=tk.W,
-                 font=('Arial', 14, 'normal')):
+                 font=('Helvetica', 14, 'normal')):
         tk.Frame.__init__(self,parent)
         self.states = []
         for r, l in enumerate(labels):
@@ -66,7 +66,7 @@ class CheckButtonBar(tk.Frame):
 class Entrybar(tk.Frame):
     """ text entry bar """
     def __init__(self, parent=None, side=tk.TOP, anchor=tk.N,
-                 font=('Arial', 13, 'normal')):
+                 font=('Helvetica', 13, 'normal')):
         tk.Frame.__init__(self,parent)
         self.var = tk.StringVar()
         self.ent = tk.Entry(self)
@@ -81,7 +81,7 @@ class Entrybar(tk.Frame):
 class ScrolledText(tk.Frame):
     """ text box with scroll """
     def __init__(self,parent=None, text='', file=None,
-                 font=('Arial', 14, 'normal')):
+                 font=('Helvetica', 14, 'normal')):
         tk.Frame.__init__(self, parent)
         self.pack(expand=tk.YES, fill=tk.BOTH)
         self.makewidgets(font)

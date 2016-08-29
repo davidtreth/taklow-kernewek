@@ -87,7 +87,7 @@ def printoutput():
         if len(comparelist) == 0:
             comparelist = defaultsamples           
         outbox.text.config(bg = 'light yellow', fg = 'dark red',
-                               font=('Monospace', 12, 'normal'))
+                               font=('Courier', 12, 'normal'))
         if textchoice.state() == 'Oll an Tekstow': 
             outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.compareSamples(
             kk_texts, names, comparelist))
@@ -102,7 +102,7 @@ if __name__ == '__main__':
     root.title('Corpus Kernewek')
 
     mhead = tk.Label(root, text = "Tekst")
-    mhead.config(font=('Arial', 16, 'bold'))
+    mhead.config(font=('Helvetica', 16, 'bold'))
     mhead.pack(side=tk.TOP, anchor=tk.NW)
     # check NLTK is available
     c = checkNLTK()
@@ -123,7 +123,7 @@ if __name__ == '__main__':
     textchoice.pack(side=tk.LEFT, fill=tk.Y)
     textchoice.config(relief=tk.RIDGE, bd=2)
     mhead2 = tk.Label(root, text="Dewis Gwrythyans")
-    mhead2.config(font=('Arial', 16, 'bold'))
+    mhead2.config(font=('Helvetica', 16, 'bold'))
     mhead2.pack(side=tk.TOP, anchor=tk.NW)
     
     modechoice = Radiobar(root, ['Derivas Ollgemmyn', 'Rol Menoghderow Ger',
@@ -132,28 +132,28 @@ if __name__ == '__main__':
                           side=tk.TOP, anchor=tk.NW, justify = tk.LEFT, default = 'Derivas Ollgemmyn')
     msg = tk.Label(modechoice, text="Keworrowgh isella niver a lytherennow\nrag rolyow menoghder ger a-woeles:",
                    anchor=tk.W, justify=tk.LEFT, pady=10)
-    msg.config(font=('Arial', 12))
+    msg.config(font=('Helvetica', 12))
     msg.pack(anchor=tk.W)
     ent = Entrybar(modechoice,
                    anchor=tk.NW)
     ent.pack(anchor=tk.W)
     msg2 = tk.Label(modechoice, text="Keworrowgh niver a eryow dhe dherivas\nan menowghder a-woeles:\ndefowt = 20",
                     anchor=tk.W, justify=tk.LEFT, pady=10)
-    msg2.config(font=('Arial', 12))
+    msg2.config(font=('Helvetica', 12))
     msg2.pack(anchor=tk.W)
     ent2 = Entrybar(modechoice,
                     anchor=tk.NW)
     ent2.pack(anchor=tk.W)
     msg3 = tk.Label(modechoice, text="Keworrowgh ger dhe geheveli\nmenowghderow dres an tekstow:",
                     anchor=tk.W, justify=tk.LEFT, pady=10)
-    msg3.config(font=('Arial', 12))
+    msg3.config(font=('Helvetica', 12))
     msg3.pack(anchor=tk.W)
     ent3 = Entrybar(modechoice,
                     anchor=tk.NW)
     ent3.pack(anchor=tk.W)        
-    keworra = tk.Button(modechoice, text="Keworra ger dhe'n rol", font=('Arial', 14),
+    keworra = tk.Button(modechoice, text="Keworra ger dhe'n rol", font=('Helvetica', 14),
               command = addtocomparelist)
-    klerhe = tk.Button(modechoice, text='Klerhe an rol', font=('Arial', 14),
+    klerhe = tk.Button(modechoice, text='Klerhe an rol', font=('Helvetica', 14),
               command = clearcomparelist)
     keworra.pack(anchor=tk.NW, pady=10)
     klerhe.pack(anchor=tk.NW, pady=10)        
@@ -161,13 +161,13 @@ if __name__ == '__main__':
     modechoice.config(relief=tk.RIDGE, bd=2)
     outbox = ScrolledText(root)
     outbox.text.config(bg = 'light yellow', fg = 'dark red', width=60, height=20,
-                    font=('Monospace', 14, 'bold'))
+                    font=('Courier', 14, 'bold'))
 
     outbox.pack()
     c=checkNLTK()
     # buttons
     Kwitya(root).pack(side=tk.RIGHT)
-    dalleth = tk.Button(root, text = 'Dalleth', font=('Arial',14),
+    dalleth = tk.Button(root, text = 'Dalleth', font=('Helvetica',14),
                         command = printoutput)
     if c == 0:
         dalleth['state']=tk.DISABLED

@@ -34,11 +34,11 @@ if __name__ == '__main__':
     root = tk.Tk()
     root.title('Inflektya Verbow Kernewek')
     mhead = tk.Label(root, text = "Dewisyow")
-    mhead.config(font=('Arial', 16, 'bold'))
+    mhead.config(font=('Helvetica', 16, 'bold'))
     mhead.pack(side=tk.TOP, anchor=tk.NW)
     
     rhead = tk.Label(root, text = "Amser")
-    rhead.config(font=('Arial', 12, 'bold'))
+    rhead.config(font=('Helvetica', 12, 'bold'))
     rhead.pack(side=tk.TOP, anchor=tk.NW)
     options = Radiobar(root, ['A-lemmyn', 'Tremenys', 'Anperfydh', 'Gorperfydh',
                               'Islavarek A-lemmyn', 'Islavarek Anperfydh',
@@ -51,7 +51,7 @@ if __name__ == '__main__':
     options.config(relief=tk.RIDGE, bd=2)
 
     rhead2 = tk.Label(root, text = "Person")
-    rhead2.config(font=('Arial', 12, 'bold'))
+    rhead2.config(font=('Helvetica', 12, 'bold'))
     rhead2.pack(side=tk.TOP, anchor=tk.NW)
     options2 = Radiobar(root, ['My', 'Ty', 'Ev', 'Hi', 'Ni',
                                'Hwi', 'I', 'Anpersonek', 'Pub Person'],
@@ -60,7 +60,7 @@ if __name__ == '__main__':
     options2.config(relief=tk.RIDGE, bd=2)
 
     rhead3 = tk.Label(root, text = "Raghenwyn a syw")
-    rhead3.config(font=('Arial', 12, 'bold'))
+    rhead3.config(font=('Helvetica', 12, 'bold'))
     rhead3.pack(side=tk.TOP, anchor=tk.NW)
     options3 = Radiobar(root, ['Heb raghenwyn a syw', 'Raghenwyn a syw',
                                'Raghenwyn a syw gans poeslev'], side=tk.TOP,
@@ -68,10 +68,10 @@ if __name__ == '__main__':
     
     options3.config(relief=tk.RIDGE, bd=2)
     rhead4 = tk.Label(options3, text = "Usya FSS?")
-    rhead4.config(font=('Arial', 12, 'bold'))
+    rhead4.config(font=('Helvetica', 12, 'bold'))
     rhead4.pack(side=tk.TOP, anchor=tk.NW, pady=5)
     options4 = CheckButtonBar(options3, ['Ynworrans + eskorrans FSS'],
-                              side=tk.BOTTOM,anchor=tk.NW, font=('Arial', 13))
+                              side=tk.BOTTOM,anchor=tk.NW, font=('Helvetica', 13))
     options3.pack(side=tk.LEFT, fill=tk.Y)
     options4.pack(side=tk.LEFT, fill=tk.BOTH, expand=tk.Y)
     #options4.config(relief = tk.RIDGE, bd = 2)
@@ -100,7 +100,7 @@ if __name__ == '__main__':
         inputtext = inputtext.lower()
         print(("Input: {i}".format(i=inputtext)))
         output = ''
-        msg3.text.config(fg = 'dark red', bg = 'light yellow', font=('Monospace', 16, 'bold'), state=tk.NORMAL)
+        msg3.text.config(fg = 'dark red', bg = 'light yellow', font=('Courier', 16, 'bold'), state=tk.NORMAL)
         if inputtext:
             if options2.state() == 'Pub Person':
                 if options.state() == 'ppl':
@@ -136,7 +136,7 @@ if __name__ == '__main__':
                                                  suffixDict[options3.state()])[0]
                 if output == 'NULL':
                     output = "Nyns yw amser '{t}', person '{p}' ewn rag verb '{v}'".format(t=options.state(), p=options2.state(), v=inputtext)
-                # msg3.text.config(font=('Arial', 14, 'normal'))
+                # msg3.text.config(font=('Helvetica', 14, 'normal'))
             if not(inputtext.isalpha()):
                 output = "Gwarnyans, nyns yw an ynworrans alpfabetek.\n\n"+output
             print(output)
@@ -145,13 +145,13 @@ if __name__ == '__main__':
         msg3.text.config(state=tk.DISABLED)
     def clearboxes():
         ent.clear()
-        msg3.text.config(fg = 'dark red', bg='light yellow',font=('Monospace', 16, 'bold'),state=tk.NORMAL)
+        msg3.text.config(fg = 'dark red', bg='light yellow',font=('Courier', 16, 'bold'),state=tk.NORMAL)
         msg3.clear()
         msg3.text.config(state=tk.DISABLED)
         
         
     msg = tk.Label(root, text="Gorrewgh verb kernewek a-woeles mar pleg:")
-    msg.config(font=('Arial', 16, 'bold'))
+    msg.config(font=('Helvetica', 16, 'bold'))
     msg.pack()
     
     # text entry bar for input
@@ -160,14 +160,14 @@ if __name__ == '__main__':
     
     # output
     msg3 = ScrolledText(root)
-    msg3.text.config(fg = 'dark red', bg='light yellow', width=40, height=11,font=('Monospace', 16, 'bold'), state=tk.DISABLED)
+    msg3.text.config(fg = 'dark red', bg='light yellow', width=40, height=11,font=('Courier', 16, 'bold'), state=tk.DISABLED)
     msg3.pack()
 
     # buttons
     Kwitya(root).pack(side=tk.RIGHT)
-    tk.Button(root, text = 'Inflektya Verb', font=('Arial',14),
+    tk.Button(root, text = 'Inflektya Verb', font=('Helvetica',14),
               command = printinflektya).pack(side=tk.RIGHT)
-    tk.Button(root, text = 'Klerhe', font=('Arial', 14),
+    tk.Button(root, text = 'Klerhe', font=('Helvetica', 14),
            command = clearboxes).pack(side=tk.LEFT)
     root.mainloop()
 

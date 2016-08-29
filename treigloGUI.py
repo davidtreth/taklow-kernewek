@@ -11,7 +11,7 @@ if __name__ == '__main__':
     root = tk.Tk()
     root.title('Treiglo')
     mhead = tk.Label(root, text = "Ystad Treiglo")
-    mhead.config(font=('Arial', 16, 'bold'))
+    mhead.config(font=('Helvetica', 16, 'bold'))
     mhead.pack(side=tk.TOP, anchor=tk.NW)
     # various mutation states
     mstate = Radiobar(root, ['1 (heb treiglo)', '2 (treiglad meddal)', '3 (treiglad llais)', '7 (treiglad trwynol)', '8 (cymysgu wedi "ni")', '9 (gwrthdroi treiglad)'], side=tk.TOP, anchor=tk.NW,default='1 (heb treiglo)')
@@ -32,14 +32,14 @@ if __name__ == '__main__':
         if intmstate() < 9:
             print(mutatya.mutate_cy(ent.fetch(),intmstate()))
             msg2.config(text = mutatya.mutate_cy(ent.fetch(),intmstate()),
-                        font=('Monospace', 18, 'bold'))
+                        font=('Courier', 18, 'bold'))
         else:
             print(mutatya.format_rev_mutate(mutatya.rev_mutate_cy(ent.fetch(), False), cy=True))
             msg2.config(text = mutatya.format_rev_mutate(mutatya.rev_mutate_cy(ent.fetch(), False), cy=True),
-            font=('Monospace', 14, 'bold'))
+            font=('Courier', 14, 'bold'))
     
     msg = tk.Label(root, text="Rhowch gair Cymraeg islaw os gwelwch yn dda")
-    msg.config(font=('Arial', 16, 'bold'))
+    msg.config(font=('Helvetica', 16, 'bold'))
     msg.pack()
     
     # text entry bar
@@ -47,12 +47,12 @@ if __name__ == '__main__':
     ent.pack()
 
     msg2 = tk.Label(root)
-    msg2.config(bg = 'light yellow', fg = 'dark red', font=('Monospace', 18, 'bold'))
+    msg2.config(bg = 'light yellow', fg = 'dark red', font=('Courier', 18, 'bold'))
     msg2.pack(expand=tk.YES,fill=tk.BOTH, anchor=tk.CENTER)
 
     # buttons
     Gadael(root).pack(side=tk.RIGHT)
-    tk.Button(root, text = 'Treiglo', font=('Arial',14),
+    tk.Button(root, text = 'Treiglo', font=('Helvetica',14),
            command = printmform).pack(side=tk.RIGHT)
     root.mainloop()
 

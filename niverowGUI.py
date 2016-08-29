@@ -11,7 +11,7 @@ if __name__ == '__main__':
     root = tk.Tk()
     root.title('Niverow')
     mhead = tk.Label(root, text = "Dewisyow")
-    mhead.config(font=('Arial', 16, 'bold'))
+    mhead.config(font=('Helvetica', 16, 'bold'))
     mhead.pack(side=tk.TOP, anchor=tk.NW)
 
     options = CheckButtonBar(root, ['Usya Hanow','Hanow Benow'],
@@ -31,7 +31,7 @@ if __name__ == '__main__':
         except ValueError:            
             output = "Res yw gorra niver y'n kyst\n avel bysies, rag ensample '42'"
             print(output)
-            msg3.config(fg = 'orange', bg='black',font=('Arial', 18, 'bold'))
+            msg3.config(fg = 'orange', bg='black',font=('Helvetica', 18, 'bold'))
         if niver or niver==0:
             if options.state()[0] == 1 and ent2.fetch() != "":
                 if ent3.fetch() != "":
@@ -44,18 +44,18 @@ if __name__ == '__main__':
             else:
                 output = niverow.numberkw_float(niver)
             print(output)
-            msg3.config(fg = 'dark red', bg = 'light yellow', font=('Arial', 18, 'bold'))
+            msg3.config(fg = 'dark red', bg = 'light yellow', font=('Helvetica', 18, 'bold'))
         msg3.config(text = output)
 
     def clearboxes():
         ent.clear()
         ent2.clear()
         ent3.clear()
-        msg3.config(fg = 'dark red', bg='light yellow',font=('Arial', 18, 'bold'), text='')
+        msg3.config(fg = 'dark red', bg='light yellow',font=('Helvetica', 18, 'bold'), text='')
         
         
     msg = tk.Label(root, text="Gorrewgh niver a-woles mar pleg")
-    msg.config(font=('Arial', 16, 'bold'))
+    msg.config(font=('Helvetica', 16, 'bold'))
     msg.pack(anchor=tk.W)
     
     # text entry bar for number
@@ -63,28 +63,28 @@ if __name__ == '__main__':
     ent.pack(anchor=tk.W)
     
     msg2 = tk.Label(root, text="Gorrewgh hanow kernewek a-woles mar pleg")
-    msg2.config(font=('Arial', 16, 'bold'))
+    msg2.config(font=('Helvetica', 16, 'bold'))
     msg2.pack(anchor=tk.W)
     # text entry bar for noun
     ent2 = Entrybar(root)
     ent2.pack(anchor=tk.W)
     # irregular plural?
     msg4 = tk.Label(root, text="Gorrewgh hanow liesplek a-woles mar nag yw -ow")
-    msg4.config(font=('Arial', 16, 'bold'))
+    msg4.config(font=('Helvetica', 16, 'bold'))
     msg4.pack(anchor=tk.W)
     # text entry bar for plural noun
     ent3 = Entrybar(root)
     ent3.pack(anchor=tk.W)
     # output
     msg3 = tk.Label(root)
-    msg3.config(fg = 'dark red', bg='light yellow',font=('Arial', 18, 'bold'), text='')
+    msg3.config(fg = 'dark red', bg='light yellow',font=('Helvetica', 18, 'bold'), text='')
     msg3.pack(expand=tk.YES,fill=tk.BOTH, anchor=tk.CENTER)
 
     # buttons
     Kwitya(root).pack(side=tk.RIGHT)
-    tk.Button(root, text = 'Diskwedh Niver', font=('Arial',14),
+    tk.Button(root, text = 'Diskwedh Niver', font=('Helvetica',14),
            command = printniver).pack(side=tk.RIGHT)
-    tk.Button(root, text = 'Klerhe', font=('Arial', 14),
+    tk.Button(root, text = 'Klerhe', font=('Helvetica', 14),
            command = clearboxes).pack(side=tk.LEFT)
     root.mainloop()
 

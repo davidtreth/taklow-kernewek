@@ -53,7 +53,7 @@ if __name__ == '__main__':
         
     
     msg = tk.Label(root, text="Gorrewgh geryow kernewek a-woles mar pleg")
-    msg.config(font=('Arial', 16, 'bold'))
+    msg.config(font=('Helvetica', 16, 'bold'))
     msg.pack()
     
     # text entry bar
@@ -63,17 +63,17 @@ if __name__ == '__main__':
 
     # output display
     msg2 = tk.Label(root)
-    msg2.config(bg = 'light yellow', fg = 'dark red', font=('Arial', 18, 'bold'))
+    msg2.config(bg = 'light yellow', fg = 'dark red', font=('Helvetica', 18, 'bold'))
     msg2.pack(expand=tk.YES,fill=tk.BOTH, anchor=tk.CENTER)
 
     # buttons
     Kwitya(root).pack(side=tk.RIGHT)
-    tk.Button(root, text = 'Kewsel', font=('Arial',14),           
+    tk.Button(root, text = 'Kewsel', font=('Helvetica',14),           
            command = printentbar).pack(side=tk.RIGHT)
-    tk.Button(root, text = 'Gorhemmyn', font=('Arial',14),
+    tk.Button(root, text = 'Gorhemmyn', font=('Helvetica',14),
            command = gorhemmyn).pack(side=tk.LEFT)
     
-    tk.Button(root, text = 'Klerhe', font=('Arial',14),           
+    tk.Button(root, text = 'Klerhe', font=('Helvetica',14),           
            command = clearboxes).pack(side=tk.LEFT)
     
     root.mainloop()
