@@ -5,7 +5,7 @@ if sys.version_info[0] < 3:
 else:
     import tkinter as tk
 from taklowGUI import Kwitya, Entrybar, Radiobar, ScrolledText
-import pylab
+import matplotlib.pyplot as plt
 import copy
 
 comparelist = []
@@ -39,6 +39,9 @@ def clearcomparelist():
 def getcomparelist():
     return comparelist
 
+def clearfigures():
+    plt.close("all")
+    
 def allstates(): print(textchoice.state(), modechoice.state(), ent.fetch(), ent2.fetch(), ent3.fetch())
 
 def getIntMinL(eboxtext, defaultval=1):
@@ -74,15 +77,15 @@ def printoutput():
                 kk_text_dict[textchoice.state()], textchoice.state(),
                 topN, minL))
     if modechoice.state() == 'Hirder Geryow\n(tresenn menowghder kumulativ)':
-        pylab.figure()
+        plt.figure()
         if textchoice.state() == 'Oll an Tekstow':
             outbox.settext(cornish_corpus.nLettersFDist(kk_texts,names))
         else:
             outbox.settext(cornish_corpus.nLettersFDist(
                 [kk_text_dict[textchoice.state()]],[textchoice.state()]))
-        pylab.show()
+        plt.show()
     if modechoice.state() == 'Menowghder Ger\n(tresenn barr)':
-        pylab.figure()
+        plt.figure()
         comparelist = getcomparelist()
         if len(comparelist) == 0:
             comparelist = defaultsamples           
@@ -94,7 +97,7 @@ def printoutput():
         else:
             outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.compareSamples(
             [kk_text_dict[textchoice.state()]],[textchoice.state()], comparelist))        
-        pylab.show()     
+        plt.show()     
                 
     
 if __name__ == '__main__':
@@ -169,9 +172,13 @@ if __name__ == '__main__':
     Kwitya(root).pack(side=tk.RIGHT)
     dalleth = tk.Button(root, text = 'Dalleth', font=('Helvetica',14),
                         command = printoutput)
+    klerhefigs = tk.Button(root, text = 'Klerhe Tresennow', font=('Helvetica',14),
+                           command = clearfigures)
+    
     if c == 0:
         dalleth['state']=tk.DISABLED
-        outbox.settext("Python Natural Language Processing Toolkit (NLTK) not available.\nDownload from www.nltk.org if not on the system.")   
+        outbox.settext("Python Natural Language Processing Toolkit (NLTK) not available.\nDownload from www.nltk.org if not on the system.")
+    klerhefigs.pack(side=tk.RIGHT)
     dalleth.pack(side=tk.RIGHT)   
 
 

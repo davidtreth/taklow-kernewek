@@ -17,7 +17,8 @@
 from __future__ import print_function
 import nltk
 # import the matplotlib library to make the output graphs
-import pylab
+import matplotlib.pyplot as plt
+import numpy as np
 import sys
 
 def basicReport(text, textname, topN=50, minL=4, printcmdline=True):
@@ -143,16 +144,16 @@ def nLettersFDist(kk_texts_Texts,names):
         else:
             st = "-"
         #print("d=",d)
-        pylab.plot(keyslist,valueslist_cumulative,label = names[d],linewidth=2,linestyle=st)
+        plt.plot(keyslist,valueslist_cumulative,label = names[d],linewidth=2,linestyle=st)
         output.append(zip(keyslist, valueslist_cumulative))
     if len(names) > 1:
-        pylab.title("Cumulative % frequency of lengths of words in various Cornish texts.")
-        pylab.legend()
+        plt.title("Cumulative % frequency of lengths of words in various Cornish texts.")
+        plt.legend()
     else:
-        pylab.title("Cumulative % frequency of lengths of words in {n}.".format(n=names[0]))
-    pylab.xlabel("Word length")
-    pylab.ylabel("Cumulative % frequency")
-    pylab.tight_layout()
+        plt.title("Cumulative % frequency of lengths of words in {n}.".format(n=names[0]))
+    plt.xlabel("Word length")
+    plt.ylabel("Cumulative % frequency")
+    plt.tight_layout()
     return formatCFDnLetters(zip(names,output))
 
 def getCFD(kk_texts_Texts, casesensit=False):
@@ -252,27 +253,27 @@ def compareSamples(kk_texts_Texts,names, samples, casesensit=False):
         freqs_lists.append(freqs_list)
 
     # produce one group of bars for each text
-    ind = pylab.arange(len(samples))
+    ind = np.arange(len(samples))
     width = 1.0/(len(names)+1)
     bar_groups = []
     for s in range(len(names)):
-        bars = pylab.bar(ind+s*width,freqs_lists[s],width=width,color = colors[s % len(colors)])
+        bars = plt.bar(ind+s*width,freqs_lists[s],width=width,color = colors[s % len(colors)])
         bar_groups.append(bars)
 
     if len(names) > 1:   
         # add some vertical lines for readability
         for s in range(len(samples)):
-            pylab.axvline(x=((s+1)*width*(len(names)+1)-0.5*width),
+            plt.axvline(x=((s+1)*width*(len(names)+1)-0.5*width),
                           ymin=0, ymax = 100, linewidth=0.5, color='b', linestyle='-')
-        pylab.title("% frequency of various words in Cornish texts")
-        pylab.legend([b[0] for b in bar_groups],names)
+        plt.title("% frequency of various words in Cornish texts")
+        plt.legend([b[0] for b in bar_groups],names)
     else:
-        pylab.title("% frequency of various words in {n}".format(n=names[0]))
+        plt.title("% frequency of various words in {n}".format(n=names[0]))
         
-    pylab.ylabel("% frequency")    
-    pylab.xticks(ind+(len(names)/2.0)*width,samples)
-    pylab.axis(xmin=-0.5*width, xmax = len(samples)*width*(len(names)+1)-0.5*width)
-    pylab.tight_layout()
+    plt.ylabel("% frequency")    
+    plt.xticks(ind+(len(names)/2.0)*width,samples)
+    plt.axis(xmin=-0.5*width, xmax = len(samples)*width*(len(names)+1)-0.5*width)
+    plt.tight_layout()
     print(outputtext)
     return outputtext
             
@@ -359,6 +360,8 @@ def freqCompareInterAct(casesensit=False, interactive=True):
                 # if w has length zero
                 # stop building the samples list
                 interactive = False
+        if len(samples) == 0:
+            samples = defaultsamples
     if not(casesensit):
         samples = [s.lower() for s in samples]
     samples = sorted(set(samples))    
@@ -374,6 +377,6 @@ if __name__ == '__main__':
     if w.isalpha():
         if w[0].lower()=="y":
             nLettersFDist(kk_texts_Texts,names)
-            pylab.figure()
+            plt.figure()
     freqCompareInterAct()    
-    pylab.show()
+    plt.show()
