@@ -46,6 +46,10 @@ def clearboxes():
                      font=('Helvetica', 16, 'bold'), state=tk.NORMAL)
     msg3.clear()
     msg3.text.config(state=tk.DISABLED)
+
+def copyclipbd():
+    root.clipboard_clear()
+    root.clipboard_append(msg3.gettext())    
     
 if __name__ == '__main__':
     root = tk.Tk()
@@ -86,6 +90,8 @@ if __name__ == '__main__':
            command = printtreus)
     tk.Button(root, text = 'Klerhe', font=('Helvetica', 14),
            command = clearboxes).pack(side=tk.LEFT)
+    tk.Button(root, text = 'Kopi dhe\'n Klyppbordh', font=('Helvetica', 14),
+              command = copyclipbd).pack(side=tk.LEFT)
     # check NLTK is available
     c = checkNLTK()
     print("NLTK available = {c}".format(c=c))           

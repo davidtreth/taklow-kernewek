@@ -1,3 +1,4 @@
+# coding=utf-8
 from __future__ import print_function
 import sys
 if sys.version_info[0] < 3:
@@ -29,6 +30,11 @@ if __name__ == '__main__':
             return int(mstate.state()[0])
         except:
             return 1
+        
+    def copyclipbd():
+        root.clipboard_clear()
+        root.clipboard_append(msg2.cget("text"))
+
     def printmform():
         """ show the mutated form of whatever has been input in the
         entry bar """
@@ -58,6 +64,8 @@ if __name__ == '__main__':
     Kwitya(root).pack(side=tk.RIGHT)
     tk.Button(root, text = 'Mutatya', font=('Helvetica',14),
            command = printmform).pack(side=tk.RIGHT)
+    tk.Button(root, text = 'Kopi dhe\'n Klyppbordh', font=('Helvetica', 14),
+              command = copyclipbd).pack(side=tk.LEFT)
     root.mainloop()
 
 

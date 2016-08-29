@@ -1,3 +1,4 @@
+# coding=utf-8
 from __future__ import print_function
 import sys
 if sys.version_info[0] < 3:
@@ -29,7 +30,7 @@ def addtocomparelist():
         newword = newword.strip()
         newword = newword.lower()
         comparelist.append(newword)
-        outbox.settext(comparelist)
+    outbox.settext(comparelist)
     ent3.clear()
         
 def clearcomparelist():
@@ -99,6 +100,9 @@ def printoutput():
             [kk_text_dict[textchoice.state()]],[textchoice.state()], comparelist))        
         plt.show()     
                 
+def copyclipbd():
+    root.clipboard_clear()
+    root.clipboard_append(outbox.gettext())
     
 if __name__ == '__main__':
     root = tk.Tk()
@@ -174,12 +178,15 @@ if __name__ == '__main__':
                         command = printoutput)
     klerhefigs = tk.Button(root, text = 'Klerhe Tresennow', font=('Helvetica',14),
                            command = clearfigures)
+    klyppbordh = tk.Button(root, text = 'Kopi dhe\'n Klyppbordh', font=('Helvetica', 14),
+              command = copyclipbd)
     
     if c == 0:
         dalleth['state']=tk.DISABLED
         outbox.settext("Python Natural Language Processing Toolkit (NLTK) not available.\nDownload from www.nltk.org if not on the system.")
     klerhefigs.pack(side=tk.RIGHT)
-    dalleth.pack(side=tk.RIGHT)   
+    dalleth.pack(side=tk.RIGHT)
+    klyppbordh.pack(side=tk.LEFT)
 
 
 

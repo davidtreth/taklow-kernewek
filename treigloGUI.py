@@ -1,3 +1,4 @@
+# coding=utf-8
 from __future__ import print_function
 import sys
 if sys.version_info[0] < 3:
@@ -37,6 +38,9 @@ if __name__ == '__main__':
             print(mutatya.format_rev_mutate(mutatya.rev_mutate_cy(ent.fetch(), False), cy=True))
             msg2.config(text = mutatya.format_rev_mutate(mutatya.rev_mutate_cy(ent.fetch(), False), cy=True),
             font=('Courier', 14, 'bold'))
+    def copyclipbd():
+        root.clipboard_clear()
+        root.clipboard_append(msg2.cget("text"))
     
     msg = tk.Label(root, text="Rhowch gair Cymraeg islaw os gwelwch yn dda")
     msg.config(font=('Helvetica', 16, 'bold'))
@@ -54,6 +58,8 @@ if __name__ == '__main__':
     Gadael(root).pack(side=tk.RIGHT)
     tk.Button(root, text = 'Treiglo', font=('Helvetica',14),
            command = printmform).pack(side=tk.RIGHT)
+    tk.Button(root, text = 'Copïo i\'r Clipfwrdd', font=('Helvetica', 14),
+              command = copyclipbd).pack(side=tk.LEFT)
     root.mainloop()
 
 

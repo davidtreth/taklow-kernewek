@@ -1,3 +1,4 @@
+# coding=utf-8
 from __future__ import print_function
 import sys
 if sys.version_info[0] < 3:
@@ -56,7 +57,11 @@ def clearboxes():
     msg3.text.config(fg = 'dark red', bg='light yellow',font=('Courier', 12, 'normal'),state=tk.NORMAL)
     msg3.clear()
     msg3.text.config(state=tk.DISABLED)
-        
+    
+def copyclipbd():
+    root.clipboard_clear()
+    root.clipboard_append(msg3.gettext())
+    
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("-n", "--netbook", action="store_true",
@@ -100,6 +105,8 @@ if __name__ == '__main__':
               command = printkovtreylyans)
     tk.Button(root, text = 'Klerhe', font=('Helvetica', 14),
            command = clearboxes).pack(side=tk.LEFT)
+    tk.Button(root, text = 'Kopi dhe\'n Klyppbordh', font=('Helvetica', 14),
+              command = copyclipbd).pack(side=tk.LEFT)
 
     # check NLTK is available
     c = checkNLTK()

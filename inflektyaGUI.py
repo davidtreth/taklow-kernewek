@@ -1,3 +1,4 @@
+# coding=utf-8
 from __future__ import print_function
 import sys
 if sys.version_info[0] < 3:
@@ -96,7 +97,7 @@ if __name__ == '__main__':
             imp.reload(inflektya)
             inflektya.set_kemmyn()
 
-        inputtext = ent.fetch()
+        inputtext = ent.fetch().encode('utf-8')
         inputtext = inputtext.lower()
         print(("Input: {i}".format(i=inputtext)))
         output = ''
@@ -149,6 +150,9 @@ if __name__ == '__main__':
         msg3.clear()
         msg3.text.config(state=tk.DISABLED)
         
+    def copyclipbd():
+        root.clipboard_clear()
+        root.clipboard_append(msg3.gettext())
         
     msg = tk.Label(root, text="Gorrewgh verb kernewek a-woeles mar pleg:")
     msg.config(font=('Helvetica', 16, 'bold'))
@@ -169,6 +173,8 @@ if __name__ == '__main__':
               command = printinflektya).pack(side=tk.RIGHT)
     tk.Button(root, text = 'Klerhe', font=('Helvetica', 14),
            command = clearboxes).pack(side=tk.LEFT)
+    tk.Button(root, text = 'Kopi dhe\'n Klyppbordh', font=('Helvetica', 14),
+              command = copyclipbd).pack(side=tk.LEFT)
     root.mainloop()
 
 

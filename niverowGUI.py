@@ -1,3 +1,4 @@
+# coding=utf-8
 from __future__ import print_function
 import sys
 if sys.version_info[0] < 3:
@@ -44,8 +45,8 @@ if __name__ == '__main__':
             else:
                 output = niverow.numberkw_float(niver)
             print(output)
-            msg3.config(fg = 'dark red', bg = 'light yellow', font=('Helvetica', 18, 'bold'))
-        msg3.config(text = output)
+            msg3.config(fg = 'dark red', bg = 'light yellow', font=('Helvetica', 18, 'bold'), text=output)
+        #msg3.config(text = output)
 
     def clearboxes():
         ent.clear()
@@ -53,6 +54,9 @@ if __name__ == '__main__':
         ent3.clear()
         msg3.config(fg = 'dark red', bg='light yellow',font=('Helvetica', 18, 'bold'), text='')
         
+    def copyclipbd():
+        root.clipboard_clear()
+        root.clipboard_append(msg3.cget("text"))
         
     msg = tk.Label(root, text="Gorrewgh niver a-woles mar pleg")
     msg.config(font=('Helvetica', 16, 'bold'))
@@ -86,6 +90,8 @@ if __name__ == '__main__':
            command = printniver).pack(side=tk.RIGHT)
     tk.Button(root, text = 'Klerhe', font=('Helvetica', 14),
            command = clearboxes).pack(side=tk.LEFT)
+    tk.Button(root, text = 'Kopi dhe\'n Klyppbordh', font=('Helvetica', 14),
+              command = copyclipbd).pack(side=tk.LEFT)
     root.mainloop()
 
 
