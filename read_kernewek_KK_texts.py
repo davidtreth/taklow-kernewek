@@ -8,5 +8,5 @@ def getKKtexts(filepattern=r".*kk.*\.txt",corpus_root = "kernewek_corpus/"):
     # to make sure we're selecting the right files
     print(kk_texts.fileids(),"\n")
     # names are hardcoded atm    
-    kknames = ["Bewnans Meryasek","Gwreans an Bys","Origo Mundi","Passio Christ","Resurrectio Domini","Solemptnyta","LoTR chapter","Tregear Homilies"]
+    kknames = ["Bewnans Meryasek","Gwreans an Bys","Origo Mundi","Passio Christ","Resurrectio Domini","Solemptnyta","LoTR chapters","Tregear Homilies"]
     return kk_texts, kknames

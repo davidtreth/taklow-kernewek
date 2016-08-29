@@ -112,7 +112,7 @@ if __name__ == '__main__':
     print("NLTK available = {c}".format(c=c))
     if c == 0:
         names = ["Bewnans Meryasek","Gwreans an Bys","Origo Mundi",
-        "Passio Christ","Resurrectio Domini","Solemptnyta","LoTR chapter",
+        "Passio Christ","Resurrectio Domini","Solemptnyta","LoTR chapters",
         "Tregear Homilies"]
     else:
         import cornish_corpus
