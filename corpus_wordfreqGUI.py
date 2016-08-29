@@ -66,7 +66,7 @@ def printoutput():
             outbox.settext(cornish_corpus.basicReport(
                 kk_text_dict[textchoice.state()], textchoice.state(),
                 topN, minL))                       
-    if modechoice.state() == 'Rol Menoghderow Ger':
+    if modechoice.state() == 'Rol Menowghderow Ger':
         topN = getIntMinL(ent2.fetch(), 20)
         minL = getIntMinL(ent.fetch())
         if textchoice.state() == 'Oll an Tekstow':
@@ -129,7 +129,7 @@ if __name__ == '__main__':
     mhead2.config(font=('Helvetica', 16, 'bold'))
     mhead2.pack(side=tk.TOP, anchor=tk.NW)
     
-    modechoice = Radiobar(root, ['Derivas Ollgemmyn', 'Rol Menoghderow Ger',
+    modechoice = Radiobar(root, ['Derivas Ollgemmyn', 'Rol Menowghderow Ger',
                                  'Hirder Geryow\n(tresenn menowghder kumulativ)',
                                  'Menowghder Ger\n(tresenn barr)'],
                           side=tk.TOP, anchor=tk.NW, justify = tk.LEFT, default = 'Derivas Ollgemmyn')
