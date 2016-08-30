@@ -8,6 +8,35 @@ else:
 from taklowGUI import Gadael, Radiobar, Entrybar, CheckButtonBar
 import mutatya
 
+
+def allstates(): print(mstate.state(), ent.fetch())
+def intmstate():
+    """ extract integer mutation state to call mutatya.mutate_cy() with
+    if nothing has been clicked, assume no mutation (state 1) 
+    Not actually needed in this script since vals is set in Radiobar """
+    try:
+        return int(mstate.state()[0])
+    except:
+        return 1
+        
+def printmform():
+    """ show the mutated form of whatever has been input in the
+    entry bar """
+    if mstate.state() < 9:
+        print(mutatya.mutate_cy(ent.fetch(),mstate.state()))
+        msg2.config(text = mutatya.mutate_cy(ent.fetch(),mstate.state()),
+                    font=('Courier', 18, 'bold'))
+    else:
+        print(mutatya.format_rev_mutate(mutatya.rev_mutate_cy(ent.fetch(), False),
+                                        cy=True))
+        msg2.config(text = mutatya.format_rev_mutate(mutatya.rev_mutate_cy(
+            ent.fetch(), False), cy=True), font=('Courier', 14, 'bold'))
+
+def copyclipbd():
+    """ copy the contents of the output window to the clipboard """
+    root.clipboard_clear()
+    root.clipboard_append(msg2.cget("text"))
+
 if __name__ == '__main__':
     root = tk.Tk()
     root.title('Treiglo')
@@ -15,32 +44,10 @@ if __name__ == '__main__':
     mhead.config(font=('Helvetica', 16, 'bold'))
     mhead.pack(side=tk.TOP, anchor=tk.NW)
     # various mutation states
-    mstate = Radiobar(root, ['1 (heb treiglo)', '2 (treiglad meddal)', '3 (treiglad llais)', '7 (treiglad trwynol)', '8 (cymysgu wedi "ni")', '9 (gwrthdroi treiglad)'], side=tk.TOP, anchor=tk.NW,default='1 (heb treiglo)')
+    mstate = Radiobar(root, ['Heb treiglo', 'Treiglad meddal', 'Treiglad llais', 'Treiglad trwynol', 'Cymysgu wedi "ni"', 'Gwrthdroi treiglad'],
+                      [1,2,3,7,8,9], side=tk.TOP, anchor=tk.NW,default=1)
     mstate.pack(side=tk.LEFT, fill=tk.Y)
     mstate.config(relief=tk.RIDGE, bd=2)
-
-    def allstates(): print(mstate.state(), tradgraph.state(), intmstate(), ent.fetch())
-    def intmstate():
-        """ extract integer mutation state to call mutatya.mutate_cy() with
-        if nothing has been clicked, assume no mutation (state 1) """
-        try:
-            return int(mstate.state()[0])
-        except:
-            return 1
-    def printmform():
-        """ show the mutated form of whatever has been input in the
-        entry bar """
-        if intmstate() < 9:
-            print(mutatya.mutate_cy(ent.fetch(),intmstate()))
-            msg2.config(text = mutatya.mutate_cy(ent.fetch(),intmstate()),
-                        font=('Courier', 18, 'bold'))
-        else:
-            print(mutatya.format_rev_mutate(mutatya.rev_mutate_cy(ent.fetch(), False), cy=True))
-            msg2.config(text = mutatya.format_rev_mutate(mutatya.rev_mutate_cy(ent.fetch(), False), cy=True),
-            font=('Courier', 14, 'bold'))
-    def copyclipbd():
-        root.clipboard_clear()
-        root.clipboard_append(msg2.cget("text"))
     
     msg = tk.Label(root, text="Rhowch gair Cymraeg islaw os gwelwch yn dda")
     msg.config(font=('Helvetica', 16, 'bold'))
