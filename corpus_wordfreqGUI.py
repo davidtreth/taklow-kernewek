@@ -5,7 +5,7 @@ if sys.version_info[0] < 3:
     import Tkinter as tk
 else:
     import tkinter as tk
-from taklowGUI import Kwitya, Entrybar, Radiobar, ScrolledText
+from taklowGUI import Kwitya2, Entrybar, Radiobar, ScrolledText
 import matplotlib.pyplot as plt
 import copy
 
@@ -42,6 +42,7 @@ def getcomparelist():
 
 def clearfigures():
     plt.close("all")
+    root.focus_force()
     
 def allstates(): print(textchoice.state(), modechoice.state(), ent.fetch(), ent2.fetch(), ent3.fetch())
 
@@ -173,7 +174,7 @@ if __name__ == '__main__':
     outbox.pack()
     c=checkNLTK()
     # buttons
-    Kwitya(root).pack(side=tk.RIGHT)
+    Kwitya2(root).pack(side=tk.RIGHT)
     dalleth = tk.Button(root, text = 'Dalleth', font=('Helvetica',14),
                         command = printoutput)
     klerhefigs = tk.Button(root, text = 'Klerhe Tresennow', font=('Helvetica',14),

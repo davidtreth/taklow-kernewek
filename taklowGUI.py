@@ -19,6 +19,17 @@ class Kwitya(tk.Frame):
         ans = messagebox.askokcancel('Verifya kwityans', "Kwitya yn hwir?")
         if ans: tk.Frame.quit(self)
 
+class Kwitya2(tk.Frame):
+    """ define quit button """
+    def __init__(self, parent = None,font=('Helvetica',14)):
+        tk.Frame.__init__(self,parent)
+        self.pack()
+        widget = tk.Button(self, text='Kwitya', font=font,command=self.kwitya)
+        widget.pack(side=tk.LEFT)
+    def kwitya(self):
+        ans = messagebox.askokcancel('Verifya kwityans', "Kwitya yn hwir?")
+        if ans: sys.exit()
+
 class Gadael(tk.Frame):
     """ quit button in Welsh """
     def __init__(self, parent = None,font=('Helvetica',14)):
