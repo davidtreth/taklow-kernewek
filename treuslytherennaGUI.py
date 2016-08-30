@@ -1,5 +1,5 @@
 from __future__ import print_function
-import sys
+import sys, argparse
 if sys.version_info[0] < 3:
     import Tkinter as tk
 else:
@@ -25,10 +25,10 @@ def printtreus():
         if options.state() == 'Mode Hir':
             output = tr.text_KK2FSS(inputtext,fwd,longform=True)
             msg3.text.config(font=('Helvetica', 14, 'normal'),
-                             width=66, height=12)
+                             width=66, height=12+heightadjust)
         elif options.state() == 'Mode Linenn' or options.state() == 'Mode Berr':
             msg3.text.config(font=('Helvetica', 16, 'bold'),
-                             width=60, height=11)
+                             width=60, height=11+heightadjust)
             lines = inputtext.split('\n')
             for l in lines:
                 if options.state() == 'Mode Linenn':
@@ -52,6 +52,14 @@ def copyclipbd():
     root.clipboard_append(msg3.gettext())    
     
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-n", "--netbook", action="store_true",
+                        help="Netbook mode - for smaller screens.")
+    args = parser.parse_args()
+    if args.netbook:
+        heightadjust = -4
+    else:
+        heightadjust = 0
     root = tk.Tk()
     root.title('Treuslytherenna Kernewek Kemmyn --> Furv Skrifys Savonek')
     mhead = tk.Label(root, text = "Dewisyow")
@@ -75,12 +83,12 @@ if __name__ == '__main__':
     
     # text entry bar for input
     ent = ScrolledText(root)
-    ent.text.config(width=60, height = 11)
+    ent.text.config(width=60, height = 11+heightadjust)
     ent.pack(expand=0)
     
     # output
     msg3 = ScrolledText(root)
-    msg3.text.config(fg = 'dark red', bg='light yellow', width = 60, height = 11,
+    msg3.text.config(fg = 'dark red', bg='light yellow', width = 60, height = 11+heightadjust,
                      font=('Helvetica', 16, 'bold'), state=tk.DISABLED)
     msg3.pack()
         
