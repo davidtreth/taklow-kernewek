@@ -46,7 +46,7 @@ def termyn_approx(hour, minute):
     return termyn
 
 def get_hour(hour, minute):
-    if hour == 0:
+    if hour % 24 == 0:
         h = "hanternos"
     elif hour == 12:
         h = "hanterdydh"
