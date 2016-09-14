@@ -42,7 +42,7 @@ def termyn_approx(hour, minute):
     if hoursfrac % 1 == 0.5:
         termyn = "hanter wosa "+ get_hour(hourint, 0)
     if hoursfrac % 1 == 0.75:
-        termyn = "kwarter dhe "+ mutatya.mutate(get_hour((hourint+1)%24,0),2)
+        termyn = "kwarter dhe "+ mutatya.mutate(get_hour(hourint+1,0),2)
     return termyn
 
 def get_hour(hour, minute):
@@ -72,12 +72,12 @@ def termyn_exact(hour, minute):
     elif minute == 30:
         termyn = "hanter wosa "+ get_hour(hour, minute)
     elif minute == 45:
-        termyn = "kwarter dhe "+ mutatya.mutate(get_hour((hour+1) % 24, minute),2)
+        termyn = "kwarter dhe "+ mutatya.mutate(get_hour(hour+1, minute),2)
     else:
         if minute < 30:
             termyn = niverow.numberkw_noun(minute, "mynysenn") + " wosa " + get_hour(hour, minute)
         else:
-            termyn = niverow.numberkw_noun(60-minute, "mynysenn") + " dhe " + mutatya.mutate(get_hour((hour+1) % 24, minute),2)
+            termyn = niverow.numberkw_noun(60-minute, "mynysenn") + " dhe " + mutatya.mutate(get_hour(hour+1, minute),2)
     return termyn
     
     
