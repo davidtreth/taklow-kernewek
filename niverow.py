@@ -1,6 +1,6 @@
 # coding=utf-8
 # David Trethewey
-# updated 06-08-2016
+# updated 14-09-2016
 import sys
 import mutatya
 
@@ -8,6 +8,11 @@ numarray = ["onan","dew","tri","peswar","pymp",
             "hwegh","seyth","eth","naw","deg",
             "unnek","dewdhek","trydhek","peswardhek","pymthek",
             "hwetek","seytek","etek","nownsek","ugens"]
+numarray_ord = ["kynsa", "nessa", "tressa", "peswora", "pympes",
+                "hweghves", "seythves", "ethves", "nawves", "degves",
+                "unnegves", "dewdhegves", "trydhegves", "peswardhegves",
+                "pythegves", "hwetegves", "seytegves", "etegves",
+                "nownsegves", "ugensves"]
 
 def unnnoun(noun, fem=False):
     if fem:
@@ -184,7 +189,7 @@ def numberkw_noun(num, noun, fem=False, npl = "ow"):
 
 def numberkw(num):
     """ return the Cornish for the numeral <num> without a noun """
-    
+    num = int(num)
     if num == 0:
         num_k = "mann"
     if num > 0 and num < 21:
@@ -340,7 +345,47 @@ def numberkw_float_noun(num, noun, fem=False, npl = "ow"):
             npl = noun+npl
         num_k += mutatya.mutate(npl,2)
         return num_k
+
+def numberkw_ord(num):
+    num = int(num)
+    assert(num>0), "number should be positive"
+    assert(num<=1000), "only numbers up to 1000 implemented so far"
+    if num <=20:
+        return numarray_ord[num-1]
     
+    if num > 20 and num < 40:
+        num_k = numarray_ord[num-21] + " warn ugens"
+
+    if (num > 39 and num < 100)or(num > 119 and num < 200):
+        firstpart = num % 20
+        secondpart = num // 20
+
+        num_k = numarray_ord[firstpart-1] +" ha " + numarray[secondpart-1] + " ugens"
+        if firstpart == 0:
+            num_k = numarray[secondpart-1] + " ugensves"
+    if num == 100:
+        num_k = "kansves"
+    if num > 100 and num < 120:
+        num_k = "kans ha "+ numberkw_ord(num-100)
+    if num > 199 and num < 1000:
+        kansow = num // 100
+        if num % 100 < 21 or num % 20 == 0 or num % 100 == 50:
+            if num % 100 == 0:
+                num_k = numarray[kansow-1] + " kansves"
+            else:
+                num_k = numarray[kansow-1] + " kans ha " + numberkw_ord(num % 100)
+        else:
+            num_k = numarray[kansow-1] + " kans, " + numberkw_ord(num % 100)
+
+    if num % 1000 < 200 and(num % 20 == 0 or num % 1000 < 21):
+        ha = " ha "
+    else:
+        ha = ", "
+    if num == 1000:
+        num_k = "milves"
+    return num_k
+    
+
 def interactiveTest():
     if sys.version_info[0] < 3:
         number = raw_input("Enter number as integer:")
