@@ -58,10 +58,11 @@ def get_hour(hour, minute):
             ampm = " dohajydhweyth"
         else:
             ampm = " gorthugherweyth"
-        if minute in [0,15,30,45]:
-            h = niverow.numberkw(hour12) + " eur" + ampm
-        else:
-            h = niverow.numberkw(hour12) + ampm
+        h = niverow.numberkw(hour12) + " eur" + ampm
+#        if minute in [0,15,30,45]:
+#            h = niverow.numberkw(hour12) + " eur" + ampm
+#        else:
+#            h = niverow.numberkw(hour12) + ampm
     return h
 
 def termyn_exact(hour, minute):
@@ -80,7 +81,21 @@ def termyn_exact(hour, minute):
             termyn = niverow.numberkw_noun(60-minute, "mynysenn") + " dhe " + mutatya.mutate(get_hour(hour+1, minute),2)
     return termyn
     
-    
+def dydhyas(timenow, blydhen = False):
+    if blydhen:
+        date_kw = "{wday} {mday} mis-{mon} {yr}".format(
+            wday = dydhyow[timenow.tm_wday],
+            mday = niverow.numberkw_ord(timenow.tm_mday),
+            mon = misyow[timenow.tm_mon],
+            yr = niverow.numberkw(timenow.tm_year))
+    else:
+        date_kw = "{wday} {mday} mis-{mon}".format(
+            wday = dydhyow[timenow.tm_wday],
+            mday = niverow.numberkw_ord(timenow.tm_mday),
+            mon = misyow[timenow.tm_mon])
+    return date_kw
+        
+
 timenow = time.localtime()
 date_kw = "{wday} {mday} mis-{mon}".format(wday=dydhyow[timenow.tm_wday], mday=niverow.numberkw_ord(timenow.tm_mday), mon=misyow[timenow.tm_mon])
 
@@ -105,16 +120,9 @@ if __name__ == '__main__':
 
     if args.dydh:
         if args.blydhen:
-            date_kw = "{wday} {mday} mis-{mon} {yr}".format(
-                wday = dydhyow[timenow.tm_wday],
-                mday = niverow.numberkw_ord(timenow.tm_mday),
-                mon = misyow[timenow.tm_mon],
-                yr = niverow.numberkw(timenow.tm_year))
+            date_kw = dydhyas(timenow,blydhen=True)
         else:
-            date_kw = "{wday} {mday} mis-{mon}".format(
-                wday = dydhyow[timenow.tm_wday],
-                mday = niverow.numberkw_ord(timenow.tm_mday),
-                mon = misyow[timenow.tm_mon])
+            date_kw = dydhyas(timenow)
         print(date_kw)
     if args.nes or args.kewar:
         print("{h:02}:{m:02}".format(h=timenow.tm_hour, m=timenow.tm_min))

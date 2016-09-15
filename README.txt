@@ -50,7 +50,7 @@ and trigrams, or only those that contain at least one non-stopword (based on NLT
 
 kovtreylyansGUI.py: A Tkinter GUI frontend for kovtreylyans.py.
 
-espeak-text-to-speech/: This folder contains scripts that enable the use of the espeak text-to-speech software to make a basic attempt at reading Cornish text. This was achieved by using string replace functions to alter the spelling to conform the text to Welsh spelling conventions to the extent that the espeak Welsh voice will produce an approximately correct result. The espeak Welsh voice is fairly basic so it is not very realistic. 
+espeaktexttospeech/: This folder contains scripts that enable the use of the espeak text-to-speech software to make a basic attempt at reading Cornish text. This was achieved by using string replace functions to alter the spelling to conform the text to Welsh spelling conventions to the extent that the espeak Welsh voice will produce an approximately correct result. The espeak Welsh voice is fairly basic so it is not very realistic. 
 The gorhemmyn_kw.py file greets the user depending on the time of day according to the system clock (uses espeak).
 
 sentence_generator/: This folder contains some horribly obsfucated Python code to generate random sentences following particular structures in Cornish from a small vocabulary. It can optionally give an English gloss on the sentences.
@@ -67,11 +67,11 @@ treuslytherennaGUI.py: A Tkinter GUI frontend for treuslytherenna.py
 
 inflektyaGUI.py: A Tkinter GUI frontend for inflektya.py
 
-espeak-text-to-speech/kows_kernewek_GUI.py: A Tkinter GUI for Cornish text to speech.
+espeaktexttospeech/kows_kernewek_GUI.py: A Tkinter GUI for Cornish text to speech.
 
 corpus_wordfreqGUI.py: A Tkinter GUI to output the frequencies of the most common words in the corpus texts, draw a cumulative frequency plot of lengths of words in the texts, or draw a grouped bar chart of frequencies of particular words.
 In the last case, it is neccesary to add words to the samples list using the entry box and buttons in the middle panel (or accept the default sample list).
 
-TaklowKernewekLonchyer.pyw: A launcher bar which launches the other Python scripts. It may be necessary to copy the taklowGUI.py script or create a symbolic link in the espeak-text-to-speech directory since otherwise its import fails when launcher in this way. The launcher bar uses TaklowKernewekLonch.py which is adaptation of PyGadgets.py from the Programming Python 3rd edition examples. This uses the further programs launchmodes.py and Launcher.py taken from the Programming Python 3rd edition examples.
+TaklowKernewekLonchyer.pyw: A launcher bar which launches the other Python scripts. It may be necessary to copy the taklowGUI.py script or create a symbolic link in the espeaktexttospeech directory since otherwise its import fails when launcher in this way. The launcher bar uses TaklowKernewekLonch.py which is adaptation of PyGadgets.py from the Programming Python 3rd edition examples. This uses the further programs launchmodes.py and Launcher.py taken from the Programming Python 3rd edition examples.
 
 

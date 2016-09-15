@@ -32,24 +32,26 @@ mytools = [
     ('Niverow', 'niverowGUI.py'),
     ('Mutatya', 'mutatyaGUI.py'),
     ('Inflektya', 'inflektyaGUI.py'),
+    ('Termyn ha Dydhyas', 'termynGUI.py'),
     ('Ranna Syllabennow', 'sylrannakwGUI.py'),
     ('Treuslytherenna KK->FSS', 'treuslytherennaGUI.py'),
     ('Kov Treylyans', 'kovtreylyansGUI.py'),
     #('Statistegow Korpus\n(linenn arghadow)', 'cornish_corpus.py'),
     ('Statistegow Korpus', 'corpus_wordfreqGUI.py'),
-    ('Tekst --> Kows (dre espeak)', 'espeak-text-to-speech/kows_kernewek_GUI.py')
+    ('Tekst --> Kows (dre espeak)', 'espeaktexttospeech/kows_kernewek_GUI.py')
     ]
 
 mytools_netbook = [
     ('Niverow', 'niverowGUI.py'),
     ('Mutatya', 'mutatyaGUI.py'),
     ('Inflektya', 'inflektyaGUI.py'),
+    ('Termyn ha Dydhyas', 'termynGUI.py'),
     ('Ranna Syllabennow', 'sylrannakwGUI.py --netbook'),
     ('Treuslytherenna KK->FSS', 'treuslytherennaGUI.py --netbook'),
     ('Kov Treylyans', 'kovtreylyansGUI.py --netbook'),
     #('Statistegow Korpus\n(linenn arghadow)', 'cornish_corpus.py'),
     ('Statistegow Korpus', 'corpus_wordfreqGUI.py'),
-    ('Tekst --> Kows (dre espeak)', 'espeak-text-to-speech/kows_kernewek_GUI.py')
+    ('Tekst --> Kows (dre espeak)', 'espeaktexttospeech/kows_kernewek_GUI.py')
     ]
 if __name__ == '__main__':
     prestart, toolbar = 1, 0
