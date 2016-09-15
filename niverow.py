@@ -11,7 +11,7 @@ numarray = ["onan","dew","tri","peswar","pymp",
 numarray_ord = ["kynsa", "nessa", "tressa", "peswora", "pympes",
                 "hweghves", "seythves", "ethves", "nawves", "degves",
                 "unnegves", "dewdhegves", "trydhegves", "peswardhegves",
-                "pythegves", "hwetegves", "seytegves", "etegves",
+                "pymthegves", "hwetegves", "seytegves", "etegves",
                 "nownsegves", "ugensves"]
 
 def unnnoun(noun, fem=False):
