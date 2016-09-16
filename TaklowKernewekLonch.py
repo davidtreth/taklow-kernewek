@@ -22,10 +22,19 @@ def runLauncher(mytools):
     # put up a simple launcher bar for later use
     root = tk.Tk()
     root.title('TaklowKernewek GUI')
-    for (name, commandLine) in mytools:
-        b = tk.Button(root, text=name, fg='black', bg='beige', border=2,
+    row1 = tk.Frame(root)
+    row2 = tk.Frame(root)
+    for (name, commandLine) in mytools[:5]:
+        b = tk.Button(row1, text=name, fg='black', bg='beige', border=2,
                    command=PortableLauncher(name, commandLine))
         b.pack(side=tk.LEFT, expand=tk.YES, fill=tk.BOTH)
+    row1.pack(side=tk.TOP, expand=tk.YES, fill=tk.BOTH)
+    for (name, commandLine) in mytools[5:]:
+        b = tk.Button(row2, text=name, fg='black', bg='beige', border=2,
+                   command=PortableLauncher(name, commandLine))
+        b.pack(side=tk.LEFT, expand=tk.YES, fill=tk.BOTH)
+    row2.pack(side=tk.TOP, expand=tk.YES, fill=tk.BOTH)
+                
     root.mainloop()
 
 mytools = [
