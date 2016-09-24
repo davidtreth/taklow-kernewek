@@ -67,7 +67,7 @@ def get_hour(hour, minute):
 
 def termyn_exact(hour, minute):
     if minute == 0:
-        termyn = get_hour(hour)
+        termyn = get_hour(hour, minute)
     elif minute == 15:
         termyn = "kwarter wosa " + get_hour(hour, minute)
     elif minute == 30:
