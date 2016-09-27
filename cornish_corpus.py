@@ -20,7 +20,20 @@ import nltk
 import matplotlib.pyplot as plt
 import numpy as np
 import sys
+import string
 
+def countchars(text_alpha):
+    """ 
+    @param text_alpha: list of alphabetic words
+    @type text_alpha: C{list}
+    """
+    textst = "".join(text_alpha)
+    # currently filters out non-ascii chars
+    textst = [c.lower() for c in textst if c in string.ascii_letters]
+    chardict = nltk.defaultdict(int)
+    for c in textst:
+        chardict[c] += 1
+    return chardict
 
 
 def basicReport(text, textname, topN=50, minL=4, printcmdline=True):
@@ -222,6 +235,8 @@ def MostFrequentWords(kk_texts_Texts, textnames, N=20, minL = 1, casesensit=Fals
     #cfd.plot(cumulative=True)
     return outputtext
 
+
+    
 def MostFreqWords1Text(Text, name, N=20, casesensit=False):
     """
     find most frequent words for a single text
@@ -235,7 +250,45 @@ def MostFreqWords1Text(Text, name, N=20, casesensit=False):
     @type casesensit: C{bool}
     """
     return MostFrequentWords([Text], [name], N, casesensit)
+
+
+def MostFreqLetters(kk_texts_Texts, textnames):
+    """
+    return a list of the most frequent letters in each text
+
+    doesn't account for digraphs currently, rather individual characters
     
+    @param kk_texts_Texts: List of NLTK Texts.
+    @type kk_texts_Texts: C{list}
+    """
+    outputtext = ""
+    for t in zip(kk_texts_Texts, textnames):
+        outputtext += "Text: {n}\n".format(n=t[1])
+        textalpha = [w for w in t[0] if w.isalpha()]
+        lentextstr = len("".join(textalpha))
+        chardict = countchars(textalpha)
+        kvtup = [(k,v) for (k,v) in chardict.items()]
+        kvtupsort = sorted(kvtup, key = lambda kvtup: kvtup[1], reverse=True)
+        outputtext += "Letters in descending order of frequency:\n\n"
+        maxF = kvtupsort[0][1]
+        for kv in kvtupsort:
+            outputtext += "{char:3}:{pcfreq:^8.2%}: N = {freq:>{lg}}\n".format(char=kv[0], pcfreq=float(kv[1])/lentextstr, freq=kv[1], lg=int(np.log10(maxF))+1)
+        outputtext += "\n"
+    return outputtext
+
+
+def MostFreqLetters1Text(Text, name):
+    """
+    return a list of the most frequent letters in each text
+
+    doesn't account for digraphs currently, rather individual characters
+    
+    @param Text: A NLTK text
+    @param name: The name of the next
+    @type name: C{string}
+    """
+    return MostFreqLetters([Text], [name])
+
 def compareSamples(kk_texts_Texts,names, samples, casesensit=False):
     """
     Produce a bar plot comparing the frequency of words in a list samples
