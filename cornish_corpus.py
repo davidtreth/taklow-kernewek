@@ -21,6 +21,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import sys
 
+
+
 def basicReport(text, textname, topN=50, minL=4, printcmdline=True):
     """ print out at the command line a report of a text 
 
@@ -37,9 +39,13 @@ def basicReport(text, textname, topN=50, minL=4, printcmdline=True):
     """
     outputtext = ""
     outputtext += "Text: {n}\n\n".format(n=textname)
+    # note - doesn't return True for accented characters
     text_alpha = [w for w in text if w.isalpha()]
-    outputtext += "number of words = {nw}\n".format(nw=len(text_alpha))
-    outputtext += "number of different words = {ndw}\n\n".format(ndw = len(set([w.lower() for w in text_alpha])))    
+    outputtext += "number of alphabetic words = {nw}\n".format(nw=len(text_alpha))
+    outputtext += "number of different alphabetic words = {ndw}\n\n".format(ndw = len(set([w.lower() for w in text_alpha])))
+    
+    outputtext += "total number of characters in alphabetic words = {c}\n".format(c=sum(len(w) for w in text_alpha))
+    outputtext += "mean word length = {m:.02f}\n\n".format(m=np.mean([len(w) for w in text_alpha]))
     # frequency distribution (alphabetic)
     fdist_len = nltk.FreqDist([len(w) for w in text_alpha])
     outputtext += "Lengths of words in descending order of frequency\n{lw}\n\n".format(
@@ -196,14 +202,20 @@ def MostFrequentWords(kk_texts_Texts, textnames, N=20, minL = 1, casesensit=Fals
         fdist = cfd[t[0].name]
         keyvaltup = [(k,v) for (k,v) in fdist.items()]
         keyvaltupsort = sorted(keyvaltup, key=lambda keyvaltup: keyvaltup[1], reverse=True)
+
         if minL > 1:
             keyvaltupsort = [(k,v) for (k,v) in keyvaltupsort if len(k) >= minL]
             outputtext += "{n} most frequent words with at least {m} letters are:\n\n".format(n=N, m=minL)
         else:
             outputtext += "{n} most frequent words are:\n\n".format(n=N)
+        maxL = max(len(kv[0]) for kv in keyvaltupsort[:N])
+        maxF = keyvaltupsort[0][1]
         for kv in keyvaltupsort[:N]:
-            outputtext += "{word} : {pcfreq:.3%}\n".format(word=kv[0],
-                                                        pcfreq=float(kv[1])/len(t[0]))
+            outputtext += "{word:<{m}} : {pcfreq:.3%} :   N = {freq:>{lg}}\n".format(word=kv[0],
+                                                                          m=maxL+2,
+                                                                          pcfreq=float(kv[1])/len(t[0]),
+                                                                                     freq=kv[1],
+                                                                                     lg=int(np.log10(maxF))+1)
             #print(kv[0]," : ",str(100*(float(kv[1])/len(t[0])))[:5],"% ")
         outputtext += "\n"
     #cfd.tabulate(cumulative=True)
