@@ -14,24 +14,33 @@
 # 26-08-2016 - further edits to make more modular
 # and introduce some interactivity
 #
+
 from __future__ import print_function
 import nltk
 # import the matplotlib library to make the output graphs
 import matplotlib.pyplot as plt
 import numpy as np
-import sys
 import string
-
-def countchars(text_alpha):
+import sys
+import imp
+imp.reload(sys)
+sys.setdefaultencoding('utf-8')
+def countchars(text_alpha, digraphs=True):
     """ 
     @param text_alpha: list of alphabetic words
     @type text_alpha: C{list}
     """
+    # currently filters out non-ascii chars    
+    text_alpha = [w.lower() for w in text_alpha]
+
+
+    if digraphs:
+        text_alpha = [w.replace("ch", u"č") for w in text_alpha]
     textst = "".join(text_alpha)
-    # currently filters out non-ascii chars
-    textst = [c.lower() for c in textst if c in string.ascii_letters]
+    
     chardict = nltk.defaultdict(int)
     for c in textst:
+        c = c.replace(u"č", "ch")
         chardict[c] += 1
     return chardict
 
