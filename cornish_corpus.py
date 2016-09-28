@@ -25,7 +25,9 @@ import sys
 import imp
 imp.reload(sys)
 sys.setdefaultencoding('utf-8')
-def countchars(text_alpha, digraphs=True):
+
+
+def countchars(text_alpha, chdigraph=True, const_digraphs = True):
     """ 
     @param text_alpha: list of alphabetic words
     @type text_alpha: C{list}
@@ -34,13 +36,39 @@ def countchars(text_alpha, digraphs=True):
     text_alpha = [w.lower() for w in text_alpha]
 
 
-    if digraphs:
+    if chdigraph:
+        text_alpha = [w.replace("cch", u"ć") for w in text_alpha]
         text_alpha = [w.replace("ch", u"č") for w in text_alpha]
+    if const_digraphs:
+        text_alpha = [w.replace("ggh", u"ǵ") for w in text_alpha]
+        text_alpha = [w.replace("gh", u"ǧ") for w in text_alpha]
+        
+        text_alpha = [w.replace("dh", u"ð") for w in text_alpha]
+        
+        text_alpha = [w.replace("tth", u"ꝥ") for w in text_alpha]
+        text_alpha = [w.replace("th", u"Þ") for w in text_alpha]
+
+        text_alpha = [w.replace("ssh", u"ś") for w in text_alpha]
+        text_alpha = [w.replace("sh", u"š") for w in text_alpha]
+
+        text_alpha = [w.replace("hw", u"ħ") for w in text_alpha]
+
     textst = "".join(text_alpha)
     
     chardict = nltk.defaultdict(int)
     for c in textst:
+        c = c.replace(u"ć", "cch")
         c = c.replace(u"č", "ch")
+        c = c.replace(u"ǵ", "ggh")
+        c = c.replace(u"ǧ", "gh")
+        c = c.replace(u"ð", "dh")
+        c = c.replace(u"ꝥ", "tth")
+        c = c.replace(u"Þ", "th")
+
+        c = c.replace(u"ś", "ssh")
+        c = c.replace(u"š", "sh")
+        c = c.replace(u"ħ", "hw")
+        
         chardict[c] += 1
     return chardict
 
