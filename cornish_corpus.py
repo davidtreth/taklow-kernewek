@@ -27,7 +27,8 @@ imp.reload(sys)
 sys.setdefaultencoding('utf-8')
 
 
-def countchars(text_alpha, chdigraph=True, const_digraphs = True):
+def countchars(text_alpha, chdigraph=True, const_digraphs = True,
+               vowel_digraphs = True):
     """ 
     @param text_alpha: list of alphabetic words
     @type text_alpha: C{list}
@@ -53,6 +54,11 @@ def countchars(text_alpha, chdigraph=True, const_digraphs = True):
 
         text_alpha = [w.replace("hw", u"ħ") for w in text_alpha]
 
+    if vowel_digraphs:
+        text_alpha = [w.replace("oe", u"ǒ") for w in text_alpha]
+        text_alpha = [w.replace("ou", u"ú") for w in text_alpha]
+        text_alpha = [w.replace("eu", u"ě") for w in text_alpha]
+
     textst = "".join(text_alpha)
     
     chardict = nltk.defaultdict(int)
@@ -67,7 +73,11 @@ def countchars(text_alpha, chdigraph=True, const_digraphs = True):
 
         c = c.replace(u"ś", "ssh")
         c = c.replace(u"š", "sh")
-        c = c.replace(u"ħ", "hw")
+        c = c.replace(u"ħ", "hw") 
+
+        c = c.replace(u"ǒ", "oe")
+        c = c.replace(u"ú", "ou")
+        c = c.replace(u"ě", "eu")
         
         chardict[c] += 1
     return chardict
