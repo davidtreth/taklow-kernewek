@@ -59,7 +59,7 @@ mytools_netbook = [
     ('Treuslytherenna KK->FSS', 'treuslytherennaGUI.py --netbook'),
     ('Kov Treylyans', 'kovtreylyansGUI.py --netbook'),
     #('Statistegow Korpus\n(linenn arghadow)', 'cornish_corpus.py'),
-    ('Statistegow Korpus', 'corpus_wordfreqGUI.py'),
+    ('Statistegow Korpus', 'corpus_wordfreqGUI.py --netbook'),
     ('Tekst --> Kows (dre espeak)', 'espeaktexttospeech/kows_kernewek_GUI.py')
     ]
 if __name__ == '__main__':

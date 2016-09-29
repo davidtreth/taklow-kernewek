@@ -1,6 +1,6 @@
 # coding=utf-8
 from __future__ import print_function
-import sys
+import sys, argparse
 if sys.version_info[0] < 3:
     import Tkinter as tk
 else:
@@ -113,6 +113,15 @@ def copyclipbd():
     root.clipboard_append(outbox.gettext())
     
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-n", "--netbook", action="store_true",
+                        help="Netbook mode - for smaller screens.")
+    args = parser.parse_args()
+    if args.netbook:
+        heightadjust = -8
+    else:
+        heightadjust = 0
+
     root = tk.Tk()
     root.title('Corpus Kernewek')
 
@@ -176,7 +185,7 @@ if __name__ == '__main__':
     modechoice.pack(side=tk.LEFT, fill=tk.Y)
     modechoice.config(relief=tk.RIDGE, bd=2)
     outbox = ScrolledText(root)
-    outbox.text.config(bg = 'light yellow', fg = 'dark red', width=60, height=20,
+    outbox.text.config(bg = 'light yellow', fg = 'dark red', width=60, height=20+heightadjust,
                     font=('Courier', 14, 'bold'))
 
     outbox.pack()
