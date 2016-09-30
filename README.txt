@@ -94,6 +94,8 @@ This counts the numbers of each character using a defaultdict(int) adding one to
 Digraphs are handled by temporarily replacing the digraphs with single characters and looping through the alphabetic words of the text joined into a as a single string.
 For example the digraph ch is replaced by č and sh by š before looping through, but converted back to ch and sh for output.
 
+It is also possible to draw a lexical dispersion plot, showing where in a text particular words appear graphically, as a percentage of the whole text.
+
 TaklowKernewekLonchyer.pyw: A launcher bar which launches the other Python scripts. It may be necessary to copy the taklowGUI.py script or create a symbolic link in the espeaktexttospeech directory since otherwise its import fails when launched in this way. The launcher bar uses TaklowKernewekLonch.py which is adaptation of PyGadgets.py from the Programming Python 3rd edition examples. This uses the further programs launchmodes.py and Launcher.py taken from the Programming Python 3rd edition examples.
 
 TaklowKernewekLonchyer_netbook.pyw: This is a version of the launcher bar, which sets some of the GUI window sizes more suited to smaller screen sizes.

@@ -141,7 +141,9 @@ if __name__ == '__main__':
             if not(inputtext.isalpha()):
                 output = "Gwarnyans, nyns yw an ynworrans alpfabetek.\n\n"+output
             print(output)
-
+        # a bit of a hack to centre justify the output
+        # should really do this in Tkinter
+        output = "{o:^36}".format(o=output)
         msg3.settext(output)
         msg3.text.config(state=tk.DISABLED)
     def clearboxes():

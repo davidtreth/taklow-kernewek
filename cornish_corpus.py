@@ -360,6 +360,7 @@ def compareSamples(kk_texts_Texts,names, samples, casesensit=False):
             freqs_list = [100.0*float(f[s])/len(t) for s in samples]
         else:
             freqs_list = [100.0*float(f[s.lower()])/len(t) for s in samples]
+            
         freqs_list_print = [round(fr, 4) for fr in freqs_list]
         outputtext += "Text {t}, frequencies {f}.\n\n".format(t=n, f=freqs_list_print)
         freqs_lists.append(freqs_list)
@@ -388,7 +389,88 @@ def compareSamples(kk_texts_Texts,names, samples, casesensit=False):
     plt.tight_layout()
     print(outputtext)
     return outputtext
+
+def compareSamplesLinear(kk_texts_Texts,names, samples, casesensit=False):
+    """
+    Produce a bar plot comparing the frequency of words in a list samples
+    across the different texts.
+
+    @param kk_texts_Texts: A list of NLTK Texts.
+    @type kk_texts_Texts: C{list}
+    @param names: A list of the text names.
+    @type names: C{list}
+    @param samples: A list of sample words to compare.
+    @type samples: C{list}
+    @param casesensit: Whether to be case sensitive.
+    @type casesensit: C{bool}
+    """
+    outputtext = ""
+    cfd = getCFD(kk_texts_Texts, casesensit)
+    colors = "rgbcmk"
+    ycoord = 0.1
+    yticks = []
+    if len(kk_texts_Texts) == 1:
+        plt.figure()
+        plt.title(names[0])
+        axes = plt.gca()
+        nwords = len(kk_texts_Texts[0])
+        outputtext += "Text: {t}, length: {l} words\n".format(t=names[0], l=nwords)
+        for i,s in enumerate(samples):
+            indexes = []
+            pcindexes = []        
+            for j,w in enumerate(kk_texts_Texts[0]):
+                if not(casesensit):
+                    w = w.lower()
+                if s == w:
+                    indexes.append(j)
+                    pcindexes.append(round(100.0*j/nwords,1))
+            print(s, zip(indexes, pcindexes))
+            outputtext += "Sample word: {s}. Number of occurances: {n}\nIndexes:{i}\nPercent Indexes: {p}\n".format(
+                n=len(indexes), s=s, i=indexes, p=pcindexes)
+            col = colors[i % len(colors)]
+            plt.plot(pcindexes, np.zeros(len(pcindexes)) + ycoord, "{c}s".format(c=col))
+            yticks.append(ycoord)
+            ycoord += 0.1
+        axes.set_xlim([0,100])
+        axes.set_ylim([0,0.1*len(samples)+0.1])
+        axes.set_yticklabels(samples)
+        axes.set_xlabel("Percent location in text")
+        axes.set_yticks(yticks)
+
             
+    else:
+        for s in samples:
+            plt.figure()
+            axes = plt.gca()
+            plt.title(s)
+            ycoord = 0.1
+            outputtext += "Sample word: {s}\n".format(s=s)
+            for j,(t,n) in enumerate(zip(kk_texts_Texts, names)):
+                indexes = []
+                pcindexes = []
+                nwords = len(t)
+                print(n)
+                for i,w in enumerate(t):
+                    if not(casesensit):
+                        w = w.lower()
+                    if s == w:
+                        indexes.append(i)
+                        pcindexes.append(round(100.0*i/nwords,1))
+                print(s, zip(indexes,pcindexes))
+                outputtext += "Text {t}:\nNumber of occurances: {n}. Indexes:{i}\nPercent Indexes: {p}\n".format(
+                    t=n, n=len(indexes), i=indexes, p=pcindexes)
+                col = colors[i % len(colors)]
+                plt.plot(pcindexes, np.zeros(len(pcindexes))+ycoord,"{c}s".format(c=col))
+                yticks.append(ycoord)            
+                ycoord += 0.1
+            outputtext += "\n"
+            axes.set_xlim([0,100])
+            axes.set_ylim([0,0.1*len(kk_texts_Texts)+0.1])            
+            axes.set_yticklabels(names)
+            axes.set_xlabel("Percent location in text")
+            axes.set_yticks(yticks)
+        
+    return outputtext
 def corpusKK():
     """
     do imports for traditional (and some revived) texts in Kemmyn
@@ -478,6 +560,7 @@ def freqCompareInterAct(casesensit=False, interactive=True):
         samples = [s.lower() for s in samples]
     samples = sorted(set(samples))    
     compareSamples(kk_texts_Texts,names, samples)
+    compareSamplesLinear(kk_texts_Texts,names, samples)
 
 if __name__ == '__main__':     
     kk_texts_Texts, names = corpusKK()
