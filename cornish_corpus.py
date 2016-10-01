@@ -21,7 +21,7 @@ import nltk
 import matplotlib.pyplot as plt
 import numpy as np
 import string
-import sys
+import sys, argparse
 import imp
 imp.reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -611,8 +611,12 @@ def freqCompareInterAct(casesensit=False, interactive=True):
     if w4.isalpha() and w4[0].lower()=="y":
         generateText(kk_texts_Texts, names)
 
-if __name__ == '__main__':     
-    kk_texts_Texts, names = corpusKW()
+if __name__ == '__main__':    
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-m", "--manuscript", action="store_true",
+help="Use manuscript spelling texts instead of Kemmyn.")
+    args = parser.parse_args()
+    kk_texts_Texts, names = corpusKW(args.manuscript)
     basicReportAll(kk_texts_Texts, names)
     if sys.version_info[0] < 3:
         w = raw_input("Plot cumulative frequency plot for lengths of words (y/n)?\n")
