@@ -130,6 +130,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("-n", "--netbook", action="store_true",
                         help="Netbook mode - for smaller screens.")
+    parser.add_argument("-m", "--manuscript", action="store_true",
+                        help="Use manuscript spelling texts instead of Kemmyn.")
     args = parser.parse_args()
     if args.netbook:
         heightadjust = -8
@@ -148,18 +150,19 @@ if __name__ == '__main__':
     c = checkNLTK()
     print("NLTK available = {c}".format(c=c))
     if c == 0:
-        names = ["Bewnans Meryasek","Gwreans an Bys","Origo Mundi",
-        "Passio Christ","Resurrectio Domini","Solemptnyta","LoTR chapters",
-        "Tregear Homilies"]
+        names = ["Bewnans Meryasek", "Charter Fragment", "Gwreans an Bys",
+                 "Passhyon Agan Arloedh", "Origo Mundi",
+                 "Passio Christ","Resurrectio Domini","Solemptnyta",
+                 "LoTR chapters", "Tregear Homilies"]
     else:
         import cornish_corpus
-        kk_texts, names = cornish_corpus.corpusKK()
+        kk_texts, names = cornish_corpus.corpusKW(args.manuscript)
         kk_text_dict = {k:v for (k,v) in zip(names, kk_texts)}
     # choose text
     textmenu = copy.copy(names)
     textmenu.append("Oll an Tekstow")
     textchoice = Radiobar(root, textmenu, side=tk.TOP, anchor=tk.NW,
-                          default='Bewnans Meryasek', justify=tk.LEFT,
+                          default='Gwreans an Bys', justify=tk.LEFT,
                           font=('Helvetica', 13+fontsizeadj, 'normal'))
     textchoice.pack(side=tk.LEFT, fill=tk.Y)
     textchoice.config(relief=tk.RIDGE, bd=2)

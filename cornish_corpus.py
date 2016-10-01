@@ -471,22 +471,25 @@ def compareSamplesLinear(kk_texts_Texts,names, samples, casesensit=False):
             axes.set_yticks(yticks)
         
     return outputtext
-def corpusKK():
+def corpusKW(manuscript=False):
     """
     do imports for traditional (and some revived) texts in Kemmyn
     """
     import read_kernewek_KK_texts
-    kk_texts, names = read_kernewek_KK_texts.getKKtexts()
+    if manuscript:
+        kw_texts, names = read_kernewek_KK_texts.getMStexts()
+    else:
+        kw_texts, names = read_kernewek_KK_texts.getKKtexts()
     # use NLTK functions to select words
-    kk_texts_words = [kk_texts.words(i) for i in kk_texts.fileids()]
+    kw_texts_words = [kw_texts.words(i) for i in kw_texts.fileids()]
     # select those words that are alphabetic
-    kk_texts_words_alpha = [[w for w in t if w.isalpha()] for t in kk_texts_words]
+    kw_texts_words_alpha = [[w for w in t if w.isalpha()] for t in kw_texts_words]
     # make a NLTK text from the alphabetic words in each of the texts
     # then put into a list of nltk.Text 
     #kk_texts_Texts = [nltk.Text(i) for i in kk_texts_words]
-    kk_texts_Texts = [nltk.Text(i) for i in kk_texts_words_alpha]
+    kw_texts_Texts = [nltk.Text(i) for i in kw_texts_words_alpha]
     # print kk_texts_words_alpha[0][:10]
-    return kk_texts_Texts, names
+    return kw_texts_Texts, names
 
 
 def basicReportAll(kk_texts_Texts, textnames, topN=50, minL=4, pause=True):
@@ -609,7 +612,7 @@ def freqCompareInterAct(casesensit=False, interactive=True):
         generateText(kk_texts_Texts, names)
 
 if __name__ == '__main__':     
-    kk_texts_Texts, names = corpusKK()
+    kk_texts_Texts, names = corpusKW()
     basicReportAll(kk_texts_Texts, names)
     if sys.version_info[0] < 3:
         w = raw_input("Plot cumulative frequency plot for lengths of words (y/n)?\n")
