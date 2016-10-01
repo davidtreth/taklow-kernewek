@@ -517,6 +517,35 @@ def basicReportAll(kk_texts_Texts, textnames, topN=50, minL=4, pause=True):
                 pause = False
     return outputtext
 
+def concordances(kk_texts_Texts, textnames, samples):
+    outputtext = ""
+    print("Concordances\n")
+    outputtext += "Concordances\n"
+    for s in samples:
+        print("Sample word {s}\n".format(s=s))
+        outputtext += "Sample word {s}\n".format(s=s)
+        for t,n in zip(kk_texts_Texts,textnames):
+            print("Text: {t}\n".format(t=n))
+            outputtext += "Text: {t}\n".format(t=n)
+            t.concordance(s)
+            print("Word appearing in similar contexts to {s}:\n".format(s=s))
+            outputtext += "Word appearing in similar contexts to {s}:\n".format(s=s)
+            t.similar(s)
+            print("\n")
+    return outputtext
+
+def generateText(kk_texts_Texts, textnames):
+    outputtext = ""
+    print("Generated text\n")
+    outputtext += "Generated text\n"
+    
+    for t,n in zip(kk_texts_Texts,textnames):
+        print("Text: {t}\n".format(t=n))
+        outputtext += "Text: {t}\n".format(t=n)
+        t.generate()
+        print("\n")
+    return outputtext
+        
 def freqCompareInterAct(casesensit=False, interactive=True):
     """ 
     Request words from the command line input and
@@ -559,8 +588,25 @@ def freqCompareInterAct(casesensit=False, interactive=True):
     if not(casesensit):
         samples = [s.lower() for s in samples]
     samples = sorted(set(samples))    
-    compareSamples(kk_texts_Texts,names, samples)
-    compareSamplesLinear(kk_texts_Texts,names, samples)
+
+    if sys.version_info[0] < 3:
+        w = raw_input("Plot bar chart word frequency plot (y/n)?\n")
+        w2 = raw_input("Plot lexical dispersion plot (y/n)?\n")
+        w3 = raw_input("Output concordances (y/n)?\n")
+        w4 = raw_input("Output generated text (y/n)?\n")
+    else:
+        w = input("Plot bar chart word frequency plot (y/n)?\n")
+        w2 = input("Plot lexical dispersion plot (y/n)?\n")
+        w3 = input("Output concordances (y/n)?\n")
+        w4 = input("Output generated text (y/n)?\n")
+    if w.isalpha() and w[0].lower()=="y":
+        compareSamples(kk_texts_Texts,names, samples)
+    if w2.isalpha() and w2[0].lower()=="y":
+        compareSamplesLinear(kk_texts_Texts,names, samples)
+    if w3.isalpha() and w3[0].lower()=="y":
+        concordances(kk_texts_Texts,names, samples)
+    if w4.isalpha() and w4[0].lower()=="y":
+        generateText(kk_texts_Texts, names)
 
 if __name__ == '__main__':     
     kk_texts_Texts, names = corpusKK()
