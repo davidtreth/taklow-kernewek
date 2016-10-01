@@ -10,7 +10,9 @@ import matplotlib.pyplot as plt
 import copy
 
 comparelist = []
-defaultsamples = ["a","ha","an","dhe","yn","yw","ow","ev","rag","mes","esa","yth","y"]
+defaultsamples = ['dhe', 'gans', 'war', 'dhymm', 'dhymmo', 'genev', 'warnav', 'rag', 'mes']
+#["a","ha","an","dhe","yn","yw","ow","ev","rag","mes","esa","yth","y"]
+
 
 def checkNLTK():
     try:
@@ -93,7 +95,7 @@ def printoutput():
             outbox.settext(cornish_corpus.nLettersFDist(
                 [kk_text_dict[textchoice.state()]],[textchoice.state()]))
         plt.show()
-    if modechoice.state() == 'Menowghder Ger\n(tresenn barr)':
+    if modechoice.state() == 'Menowghder Ger (tresenn barr)':
         plt.figure()
         comparelist = getcomparelist()
         if len(comparelist) == 0:
@@ -120,7 +122,20 @@ def printoutput():
             outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.compareSamplesLinear(
                 [kk_text_dict[textchoice.state()]], [textchoice.state()], comparelist))
         plt.show()
-            
+    if modechoice.state() == 'Konkordans':
+        comparelist = getcomparelist()
+        if len(comparelist) == 0:
+            comparelist = ['dhe', 'gans']
+        outbox.text.config(bg = 'light yellow', fg = 'dark red',
+                               font=('Courier', 12, 'normal'))
+        if textchoice.state() == 'Oll an Tekstow':
+            outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.concordances(
+                kk_texts, names, comparelist, 60, 25))
+        else:
+            outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.concordances(
+                [kk_text_dict[textchoice.state()]], [textchoice.state()], comparelist,
+                60,25))
+        
                 
 def copyclipbd():
     root.clipboard_clear()
@@ -167,14 +182,15 @@ if __name__ == '__main__':
     textchoice.pack(side=tk.LEFT, fill=tk.Y)
     textchoice.config(relief=tk.RIDGE, bd=2)
     mhead2 = tk.Label(root, text="Dewis Gwrythyans")
-    mhead2.config(font=('Helvetica', 16+fontsizeadj, 'bold'))
+    mhead2.config(font=('Helvetica', 16+fontsizeadj*2, 'bold'))
     mhead2.pack(side=tk.TOP, anchor=tk.NW)
     
     modechoice = Radiobar(root, ['Derivas Ollgemmyn', 'Rol Menowghderow Ger',
                                  'Rol Menowghderow Lytherenn',
                                  'Hirder Geryow\n(tresenn menowghder kumulativ)',
-                                 'Menowghder Ger\n(tresenn barr)',
-                                 'Tresenn Keskar Ger'],
+                                 'Menowghder Ger (tresenn barr)',
+                                 'Tresenn Keskar Ger',
+                                 'Konkordans'],
                           side=tk.TOP, anchor=tk.NW, justify = tk.LEFT, default = 'Derivas Ollgemmyn',
                           font=('Helvetica', 13+fontsizeadj, 'normal'))
     msg = tk.Label(modechoice, text="Keworrowgh isella niver a lytherennow\nrag rolyow menoghder ger a-woeles:",

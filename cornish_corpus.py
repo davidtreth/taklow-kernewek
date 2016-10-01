@@ -22,6 +22,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import string
 import sys, argparse
+from StringIO import StringIO
 import imp
 imp.reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -520,34 +521,44 @@ def basicReportAll(kk_texts_Texts, textnames, topN=50, minL=4, pause=True):
                 pause = False
     return outputtext
 
-def concordances(kk_texts_Texts, textnames, samples):
-    outputtext = ""
+def concordances(kk_texts_Texts, textnames, samples, width=79, lines=25):
+    buff = StringIO()
+    temp = sys.stdout
+    sys.stdout = buff
+    #outputtext = ""
     print("Concordances\n")
-    outputtext += "Concordances\n"
+    #outputtext += "Concordances\n"
     for s in samples:
         print("Sample word {s}\n".format(s=s))
-        outputtext += "Sample word {s}\n".format(s=s)
+        #outputtext += "Sample word {s}\n".format(s=s)
         for t,n in zip(kk_texts_Texts,textnames):
             print("Text: {t}\n".format(t=n))
-            outputtext += "Text: {t}\n".format(t=n)
-            t.concordance(s)
-            print("Word appearing in similar contexts to {s}:\n".format(s=s))
-            outputtext += "Word appearing in similar contexts to {s}:\n".format(s=s)
+            #outputtext += "Text: {t}\n".format(t=n)
+            t.concordance(s, width, lines)
+            print("\nWords appearing in similar contexts to {s}:".format(s=s))
+            #outputtext += "Word appearing in similar contexts to {s}:\n".format(s=s)
             t.similar(s)
             print("\n")
-    return outputtext
+    sys.stdout = temp
+    return buff.getvalue()
 
 def generateText(kk_texts_Texts, textnames):
-    outputtext = ""
+    """ not used at present because it doesn't work
+    on NLTK version 3 """
+    buff = StringIO()
+    temp = sys.stdout
+    sys.stdout = buff
+    #outputtext = ""
     print("Generated text\n")
-    outputtext += "Generated text\n"
+    #outputtext += "Generated text\n"
     
     for t,n in zip(kk_texts_Texts,textnames):
         print("Text: {t}\n".format(t=n))
-        outputtext += "Text: {t}\n".format(t=n)
+        #outputtext += "Text: {t}\n".format(t=n)
         t.generate()
         print("\n")
-    return outputtext
+    sys.stdout = temp
+    return buff.getvalue()
         
 def freqCompareInterAct(casesensit=False, interactive=True):
     """ 
@@ -596,20 +607,17 @@ def freqCompareInterAct(casesensit=False, interactive=True):
         w = raw_input("Plot bar chart word frequency plot (y/n)?\n")
         w2 = raw_input("Plot lexical dispersion plot (y/n)?\n")
         w3 = raw_input("Output concordances (y/n)?\n")
-        w4 = raw_input("Output generated text (y/n)?\n")
     else:
         w = input("Plot bar chart word frequency plot (y/n)?\n")
         w2 = input("Plot lexical dispersion plot (y/n)?\n")
         w3 = input("Output concordances (y/n)?\n")
-        w4 = input("Output generated text (y/n)?\n")
+
     if w.isalpha() and w[0].lower()=="y":
         compareSamples(kk_texts_Texts,names, samples)
     if w2.isalpha() and w2[0].lower()=="y":
         compareSamplesLinear(kk_texts_Texts,names, samples)
     if w3.isalpha() and w3[0].lower()=="y":
-        concordances(kk_texts_Texts,names, samples)
-    if w4.isalpha() and w4[0].lower()=="y":
-        generateText(kk_texts_Texts, names)
+        print(concordances(kk_texts_Texts,names, samples))
 
 if __name__ == '__main__':    
     parser = argparse.ArgumentParser()
