@@ -1,0 +1,4884 @@
+# `Bewnans Ke': the Life of St Ke 
+# In April 2002 the world of Cornish studies was astonished and thrilled by 
+# the news that a manuscript containing a new Middle Cornish text had been 
+# discovered (Graham Thomas, `Two Middle Cornish plays: a note', National 
+# Library of Wales Journal, 32 (2001 ), 121  2). The forthcoming edition of 
+# the text by Graham Thomas and Nicholas Williams is eagerly awaited; 
+# meanwhile many people, in Cornwall and elsewhere, are justly keen to know 
+# more of the contents of National Library of Wales MS. 23,849D, for both its 
+# linguistic and its literary interest. It is therefore desirable for a 
+# reliable text to be made available as soon as possible, pending the 
+# publication of Thomas's and Williams's edition. Thomas himself has 
+# generously given his approval of my making an interim version of the text 
+# available, until their edition is published. The National Library of Wales 
+# has generously given permission for the text of its MS. 23,849D to be made 
+# public in this way. All users of the present text will be grateful to Graham 
+# Thomas and to the National Library for their generosity; once Thomas's and 
+# Williams's printed edition is available, this internet-text will be removed. 
+# Apparently nothing is known of the provenance of the manuscript. It was 
+# found among the papers of the late Professor J. E. Caerwyn Williams after 
+# his death in 1999. Caerwyn Williams seems never to have mentioned the piece 
+# to anyone, although he had transcribed a small portion of it and must have 
+# recognised its significance. The manuscript of the only other surviving 
+# Middle Cornish saint's play, the Life of St Meriasek, is also in the 
+# National Library of Wales, to which it came as part of the collection at 
+# Peniarth, near Tywyn in the county of Merioneth (MS. Peniarth 105). Since 
+# both these Cornish saints' plays, like the earlier Ordinalia (the Biblical 
+# cycle), were evidently written at Glasney College at Penryn, it is possible 
+# that the two manuscripts travelled to Wales together, and became separated 
+# later. Many people, myself included, wondered at first whether this 
+# discovery was too good to be true; but its genuineness seems guaranteed by 
+# the script, by the language, and (as Andrew Hawke kindly informs me) by the 
+# sixteenth-century watermark on the paper. The genesis of the present text 
+# has been as follows. I transcribed it in summer 2002 from photographs 
+# supplied by the National Library. Michael Polkinhorn checked my 
+# transcription against his own, also made from photographs. I have sent a 
+# copy of my text to Graham Thomas; the two transcripts have been compared, 
+# and we have discussed the discrepancies. In a few places we have agreed to 
+# differ as to the intended reading, but the text offered here is therefore 
+# very close to Thomas's diplomatic text which will appear in Thomas's and 
+# Williams's edition. Thomas has kindly supplied his numbering of the stanzas, 
+# and they are the ones used here. They may be altered very slightly in the 
+# final edition, and are therefore provisional at this stage. What is offered 
+# here is essentially what is visible on the photographs; there are one or two 
+# places where a letter (usually one easily deduced) is apparently visible on 
+# the manuscript but not on the photographs. Although for the most part the 
+# reading of the manuscript is clear, in a few awkward passages the 
+# establishment of correct readings goes hand-in-hand with the elucidation of 
+# the meaning, and in some of these passages it may be that a slightly 
+# different reading will eventually come to be agreed. The following 
+# conventions have been observed in the text given here. Since capital letters 
+# and word-spacing are used inconsistently in the manuscript, as so often at 
+# this period, I have standardised capital letters for proper names, according 
+# to the sense where that is apparent to me at this stage. There will be many 
+# other places where word-division or capitalisation will need to be altered 
+# as elucidation proceeds. Since such work is very much in progress, I have 
+# not presumed to punctuate the text. Expansions of abbreviations in the main 
+# text have been indicated by italics, which are also used for the speakers, 
+# the Latin stage-directions and the Cornish prose `headlines' (see below); 
+# but it has not seemed necessary to indicate expanded abbreviations within 
+# the stage-directions. Because the Arthurian section follows the story given 
+# by Geoffrey of Monmouth so closely (see below), I have chosen forms 
+# approximating to the conventional Galfridian ones for the names of some 
+# minor kings whose names in the manuscript are written ambiguously (notably 
+# Epistopus, corresponding to Geoffrey's Epistrophus, and Augelus). I have 
+# occasionally offered an emendation, where there is no doubt what is 
+# necessary, but in these cases I have indicated the manuscript reading as 
+# well; such cases are ones where there is a simple scribal error of copying, 
+# of a kind readily explained by the usual principles of textual criticism. 
+# Other letters in square brackets have been supplied, either because they 
+# were omitted by the scribe, or in places where the manuscript is damaged but 
+# letters can safely be restored. The letters n and u, and sometimes other 
+# letters, are ambiguously written in the manuscript, and only the sense can 
+# dictate which should be used; there may well be places where elucidation 
+# will show that I have chosen wrongly. No doubt there are also other minor 
+# errors, typographical or other, still remaining, and I shall be very pleased 
+# to incorporate any corrections sent to me. On the pages of the manuscript 
+# the lines are laid out in a manner which indicates the metrical structure of 
+# each stanza, and I have retained that indication by a system of up to three 
+# indentations: lines whose indentation corresponds here are ones occupying 
+# corresponding places within the rhyme-scheme of a stanza. The contents of 
+# the play are given in a synopsis below. An old numbering of the leaves 
+# indicates that the manuscript, which now contains twenty leaves, formerly 
+# had five more leaves at the beginning, a pair of leaves at two points in the 
+# interior (two between the present folios 8 & 9, and two between the 
+# present 12 & 13), and presumably five more leaves at the end. These losses 
+# affect our understanding of the contents. At first it was thought that the 
+# manuscript contained two plays, one about St Ke (on the present 
+# folios 1 - 8) and one about King Arthur (folios 9 - 20); but for reasons 
+# given below it seems likely that the Arthurian section actually formed part 
+# of the Life of St Ke, in which case the manuscript contains a single play, 
+# and the lost leaves would have linked the two sections. The modern name 
+# Bewnans Ke has accordingly become an agreed one for the whole text of the 
+# manuscript, on the assumption that it is a single work, and by analogy with 
+# Bewnans Meriasek, the modern name for the other saint's play in Middle 
+# Cornish. However, St Ke is not mentioned in the extant Arthurian section. 
+# The hand changes noticeably between the two sections, the earlier being in a 
+# secretary hand of the mid-sixteenth century, while the later is in an italic 
+# hand; but close examination suggests that the same person copied both parts, 
+# since some scribal habits, and some letter-forms, are shared between the 
+# first and second parts. However, the quality of the language and of the 
+# dramatic action is considerably greater in the first section than in the 
+# second. A moral saying spoken by St Ke in the first section is repeated 
+# word-for-word by Modred in the second (stanzas 135 and 427). The key to 
+# understanding the contents of the work is provided by a French summary of a 
+# lost Latin life of St Ke, given by Albert Le Grand, in his La Vie, gestes, 
+# mort, et miracles des saincts de la Bretagne armorique (Nantes, 1637, and 
+# subsequent editions), under the saint's feast-day, 5th November. In the last 
+# third of this summary the saint, after his dealings with King Theodoric 
+# (Teudar) and the founding of his monastery at Kea, returns to Brittany. He 
+# is then sent for by the prelates of Britain, asking him to intercede between 
+# King Arthur and his nephew Modred, in an attempt to avert civil war. (The 
+# story here follows very closely that of Geoffrey of Monmouth, and is 
+# evidently derived from it, directly or indirectly.) However, with the 
+# arrival of a Saxon army to aid Modred, St Ke decides that he can do nothing 
+# to help and returns again to Brittany, passing through Winchester where he 
+# persuades Queen Guinevere to enter a nunnery. He dies shortly afterwards at 
+# Cleder, near the north coast of Finistere. (See also G. H. Doble, Four 
+# Saints of the Fal (1929), especially pp. 7 - 21.) From this account it is 
+# clear that we should expect a Life of St Ke to conclude with the story of 
+# Arthur's betrayal by Modred, and it is therefore very probable that 
+# Le Grand's summary thus explains the section concerning Arthur in our 
+# manuscript. If so, we must suppose that in the two folios lost between 
+# folios 8 & 9, St Ke returned to Cleder in Brittany, and the scene then 
+# changed to King Arthur and his refusal to acknowledge the overlordship of 
+# the Emperor Lucius in Rome; and likewise we must suppose that the presumed 
+# five folios lost at the end of the manuscript included St Ke's abortive trip 
+# to Britain, and then his return to Cleder and his death there. The language 
+# of the text, like that of the Life of St Meriasek, is good Middle Cornish. 
+# It largely fails to show any of the sound-changes by which Late Cornish (the 
+# language of the late sixteenth to the eighteenth centuries) is defined, such 
+# as the diagnostic change of nn to dn. (See O. J. Padel, A Popular Dictionary 
+# of Cornish Place-Names (1988), pp. 26 and 32  4.) These sound-changes began 
+# to appear frequently in the later sixteenth century, and are often shown in 
+# the play The Creacion of the World (1611), though that text also continues 
+# to use, by convention, some Middle Cornish spellings. Our scribe, though 
+# writing presumably in the second half of the sixteenth century, twice 
+# complained that his exemplar had been spoilt by the loss of pages (see the 
+# remarks on folios 5r and 20r), so he was avowedly copying from an older 
+# manuscript. We may conjecture that the lost original may have been written 
+# in around 1500, like that of St Meriasek written in 1504, and the state of 
+# the language would accord with this estimate. 
+## O. J. Padel 
+## ojp10@cam.ac.uk 
+## March 2003
+## ------------------------------------------------------------------------ ##
+
+# A very provisional English translation of Bewnans Ke made by Michael 
+# Polkinhorn can now be found at :
+
+#  http://myweb.tiscali.co.uk/grrraphics/BewnansKe.pdf 
+
+# Like Oliver Padel's original pdf file of the Cornish ms text, this file gives 
+# errors with _gv_ and some other readers, but works with _acroread_.
+
+## ------------------------------------------------------------------------ ##
+
+## Summary of the action of `Bewnans Ke' 
+# The numbers are those of stanzas (as supplied by Graham Thomas); conjectures 
+# of plot come from the French summary of a lost Latin life of St Ke, found in 
+# A. Le Grand, La Vie ... des saincts de la Bretagne armorique (Nantes, 1637; 
+# and subsequent editions), 5 November. 
+
+# [Five folios lost, presumably recounting St Ke's noble birth, education and 
+# promotion to the episcopacy, which he later renounces.] 
+
+# 1 - 11 ... ... St Ke [still in Brittany?] restores to life one of three 
+# shepherds, and then embarks for Cornwall by boat. {Or according to the 
+# Cornish text, by flying flag stone!! No Celtic saint should be without one}
+# King Teudar's forester finds St Ke in the king's forest [of Rosewa, where Ke 
+# had landed], and takes him to the king at Goodern [in Kea parish]. 
+
+# 12 - 84 Teudar and Ke in theological dispute; Teudar orders St Ke to be 
+# imprisoned; further disputation. Teudar agrees to give St Ke an estate near 
+# the forest of Rosewa, and then plans to go hunting there. 
+
+# 85 - 108 [Text incomplete, owing to damaged folios in the scribe's exemplar: 
+# in the lost text St Ke shelters a stag hunted by Teudar, and Teudar or his 
+# men (4 `torturers') steal Ke's oxen, and break three of his teeth when he 
+# demands them back.] 
+
+# 109 - 123 Ke causes a holy well to arise at Killiow Soor [in Kea parish]; he 
+# cures a leper, who gives the saint more land [also in Kea parish]. Stags 
+# come to plough for St Ke in place of his stolen oxen. 
+
+# 124 - 180 Teudar [taken ill?] negotiates with Ke to make amends for his broken 
+# teeth. Teudar and Ke agree that Ke shall have whatever land he can impark 
+# while Teudar is in the bath; Teudar consults Owbra to concoct a potion; 
+# Teudar gets stuck in the bath, and thus loses a large portion of land. 
+
+# [Two folios lost: in the lost text St Ke returns to Cleder in Brittany?] 
+
+# 181 - 230 Arthur in state: (181 - 192) Duke Cador and Augelus king of 
+# Scotland; squires, bishops; (193 - 201) Beduer, Ke (Kay), Hoel, Cador, and 
+# others; (205 - 212) 7 kings, as guests of Arthur, plus Modred and Gawain; 
+# (216 - 230) knights. 
+
+# 231 - 269 Emperor Lucius learns that Arthur refuses to pay tribute; he 
+# sends 12 legates to Arthur (235 - 247, the 12 legates hail the emperor; 
+# 255 - 269, they greet Arthur). 
+
+# [Two folios lost] 
+
+# 270 - 305 Arthur, with legates and kings, refuses to pay tribute; the 
+# legates return to Lucius. 
+
+# 306 - 355 Lucius sends for senators, kings, and dukes, who come to greet 
+# him (339 - 353, 7 kings and 5 dukes greet Lucius). Lucius takes counsel and 
+# departs for France. 
+
+# 356 - 361 Arthur leaves Modred in charge and takes leave of Guinevere. 
+
+# 362 - 374 Battle [in France] between Arthur's and Lucius's forces; Lucius is 
+# killed and Arthur sends his head to Rome. 
+
+# 375 - 409 Modred and Guinevere together in Arthur's palace; a bishop crowns 
+# Modred. 
+
+# 410 - 424 The news is brought to Arthur, who takes counsel. 
+
+# 425 - 430 Modred obtains the help of the Saxon Cheldric. 
+
+# 431 - 434 Battle between Arthur's and Modred's forces. 
+
+# 435 - 437 Guinevere in the palace. 
+
+# [Five folios lost? If the Cornish play followed the Latin life as summarised 
+# by Le Grand, St Ke was presumably sent for as mediator but realised that his 
+# mission was hopeless; he returned to Brittany, passing through Winchester 
+# where he visited Guinevere and persuaded her to join a convent, and then 
+# died peacefully in his community at Cleder.]
+
+## ----------------------------------------------------------------------- ##
+
+##OJP1 
+#### [`Bewnans Ke']: National Library of Wales, MS. 23,849D 
+### [5 folios missing] * * * * * 
+### [fol. 1r, photo 1] 
+
+## Kela[docus], surgit ... 
+BK001.1  Gorthyans thum arluth a nef   ## m superscript
+BK001.2  a vynnas clowas ow lef        ## nn with superscript
+BK001.3  | e weras ...                 ## wera[a]?; {... sur my a'th pyz}
+BK001.4  saf in ban in hanow an tas    ## {first 'in' elided ???
+BK001.5  han mab ker han spuryssans    ## [glossed spurys mas] 
+BK001.6  | ha ke sa...                 ## {... - - / ... y'n byz}
+
+## Tertius pastor, surgit de dormitione 
+BK002.1  Me regoskas inteffry 
+BK002.2  ha der hvn ethevely 
+BK002.3  | them ow bos degys in ban     ## m superscript
+BK002.4  ha ny wylyn da na drog 
+BK002.5  kyn fena gorys the grog        ## kyn with n superscript
+BK002.6  | ny won ethe ahanan           ## won with n suprscr
+
+BK003.1  Saw vn voys whek a belder 
+BK003.2  a vghaf in vhelder 
+BK003.3  | ow kowsal cler 
+BK003.4  a leveris pur ylyn             ## final n suprscr
+BK003.5  devethys o the dirmyn          ## final n suprscr
+BK003.6  | saw lemmyn vn marth a wher   ## leMmyN suprscrs
+BK003.7  Der vyrtu a pyjadow 
+BK003.8  te a dryl heb faladow 
+BK003.9  | dyl vyn Dv ath prennas ker   ## vyN, preNnas suprscrs
+
+## Secundus pastor 
+BK004.1  By god te a ve marow 
+BK004.2  ha me avel mordarow         ## {mordarow : seal? walrus!?}
+BK005.3  | owth ola hag owth owtya 
+## Primus pastor 
+BK004.4  Owtya a ren ha crya 
+BK004.5  ha parugy the fya 
+BK004.6  | drog ethegam ow towtya ## -gam/n ? m/n suprscr {yth ezen}
+
+# Et sic recederunt [?] opillo.. siue pastores 
+
+## Keladocus 
+BK005.1  The Jesu gorthyans ha gras 
+BK005.2  ethesaf ynhe thom plas        ## m suprscr {ynne (pres3s) for ynnyz?}
+BK005.3  | ys del desefsan ow bos      ## n suprscr
+#                                  ## Et ibit Keladocus super lapide iter[um] 
+BK005.4  gans gras the worth an dryngys  ## d[r]yngys 
+BK005.5  an men am deg desympys          ## desyMpys suprscr
+BK005.6  | pur own neb e fenna mos       ## Nn suprscr {ewn neb y fynne}
+
+# Et moniebat loens {locus??} [sic, for dicens?] 
+
+BK006.1  Tyrhys of quick ha deson 
+##OJP2 
+BK006.2  nebas e won ow nacion 
+BK006.3  | in bysma plema ow bos 
+BK006.4  Christ der vertu ath passyon 
+BK006.5  ament ow carnacyon              ## {amont ?}
+BK006.6  | Dv ha den kepar del os        ## kepAR abbrev
+
+## Forestrani forestrarius [sic] 
+BK007.1  Wel emet cosyn forsoth 
+BK007.2  barth in forest ow arluth 
+BK007.3  | the wruthyl pytho the dowl   ## {gul : to make out, discerne ?}
+BK007.4  the negys them menaga          ## m suprscr
+BK007.5  py te a fyth edrega            ##  edreg[a] 
+BK007.6  | kyn fes tregys gans an Jowl 
+
+## Keladocus 
+BK008.1  Ow negys ny wothvethys      ## {ny wodhvydhydh - thou shalt not know}
+BK008.2  na worship te ny fethyth    ## {for worthip} {ny'th fydh+ydh ?}
+BK008.3  | the gens awos gog thywys  ## {dhe gyns?}
+BK008.4  me ath syns pur harlot         ## [m]e ...
+BK008.5  mar qvreta torn mervnsort ## mervnsort? {mar unn sort - of any kind?} 
+BK008.6  | dellegys thym ow tewys    ## m suprscr; de[l?]legys 
+
+## Forestarius 
+# [F]orest [Goo]ddron [gaste]ll 
+BK009.1  The worthyb stowt thym ew bern   ## m suprscr 
+BK009.2  bys in Gooddron then myghtern    ## theN suprscr 
+BK009.3  | in ... trush the lappanow 
+BK009.4  me ath wor thy heb astal    ## heb[?] 
+BK009.5  ena ema y gastall 
+BK009.6  | ha Teuthar ew e hanaw     ## [ha Teutha]r ... 
+
+# ...docus 
+### [fol. 1v, photo 2] 
+
+## [Keladocus] 
+#BK010.1  ... 
+#BK010.2  ... ho ## [?] 
+BK010.3  | gans gras Dv war ow ena  ## gaNs suprscr 
+#BK010.4  ... e[?] sol [or fol?]  ## e[?] sol [of fol?] 
+#BK010.5  ... gosal 
+BK010.6  | der reson kin tremena 
+
+## {Forestari} ...eus 
+BK011.1  A theth corf ancombryngy   ## ancoMbryNgy suprscr 
+BK011.2  dar fol e reta sengy 
+BK011.3  | Teuthar an arluth gwella   ## teUthar abbr?
+BK011.4  gogy pan ves denethys       ## paN suprscr
+BK011.5  the dermyn ew devethys    ## n suprscr
+BK011.6  | nythues bewa na fella 
+
+# Tunc forestarius et Keladocus veniunt coram rege Teutharo 
+
+BK012.1  Lowena thys syr Teuthar 
+BK012.2  | a barth yth towr 
+BK012.3  lowena thys corf heb parow  ## {for heb par} 
+BK012.4  | ha mer honour 
+##OJP3 
+BK012.5  || drys peb in bys 
+BK012.6  an kerth gwas ma vs gena   ## {kerth for keth} 
+BK012.7  me an cafas rum ena         ## ruM suprscr 
+BK012.8  || in forest han yet degys 
+
+## Teutharus 
+BK013.1  Te javal ew henna gwyr   ## heNna suprscr 
+BK013.2  | lavar heb gow 
+BK013.3  a bel eta then tyr      ## n suprscr 
+BK013.4  | menyk the bow 
+BK013.5  || what hath thy mam    ##  (what hath thy man) 
+BK013.6  Ho ys thy lord tel me that 
+BK013.7  a serusta hager prot 
+BK013.8  || gogy dyndyl kimmes blam   ## n suprscr 
+
+## Keladocus 
+BK014.1  Yf thow wylt her the clen ryght 
+BK014.2  | truly syr kyng            ## kyNg suprscr 
+BK014.3  my lord ys god of almyght 
+BK014.4  | that mad al thyngs 
+BK014.5  || both gret & smal 
+BK014.6  Ha me a vyth gylwys Ke 
+BK014.7  drys voer a Golan in dre 
+BK014.8  || nowyth etof re Vyhal 
+
+# [in margin ... a Rosewa]
+
+BK015.0  in dre Golan, lehan veen,       ## ...in [?] dre ... 
+BK015.0  Ke a dyrhas in forest a Rosewa 
+
+BK015.1  Ow lester a ve lehan 
+BK015.2  | drys mor pour thown 
+BK015.3  nyngew repref thom ehan  ## nyNgew thoM suprscr; reperf [sic] 
+BK015.4  hag awos own 
+BK015.5  || me a dyrhas 
+BK015.6  in forest a Rosewa 
+BK015.7  ne ren vry pew as pewa   ## reN suprscr 
+BK015.8  || kyn feva arluth mar vras 
+
+## Teutharus 
+BK016.1  A out warnas traytor puer 
+BK016.2  | lader ath oys 
+BK016.3  me a wor e lytste sur 
+BK016.4  | a barth om coys 
+BK016.5  || ran am kyrwas        ## raN aM suprscr 
+BK016.6  re syn Jovyn an curloys    ## [corrected from cr-] 
+BK016.7  me a vyn gwelas the woys   ## n suprscr 
+BK016.8  || te a verew interhyrwas 
+
+## [Ke]ladocus 
+BK017.1  Gas cres rag den melygas   ## n suprscr 
+BK017.2  | os er the wev 
+BK017.3  ne hevelyth benegas 
+BK017.4  | nag a bar Tv 
+BK017.5  || heb falladow
+##OJP4 
+BK017.6  Rag me reth clowas ow ty 
+BK017.7  the Jovyn plos gweth ys ky 
+BK017.8  || drog el ha dyawl casadow 
+
+## Teutharus (`owt owt owt') 
+BK018.1  A out plethaf the guthy 
+BK018.2  | galsaf in fol 
+BK018.3  an Jowl rodueth thum cvthy   ## m suprscr 
+BK018.4  | in mes e dol 
+BK018.5  || by godes arme      ## es abbr 
+# Teutharus discendit theatro 
+BK018.6  gans gwas ethof devwenhys   ## gaNs devweNhys suprscr 
+BK018.7  ham dv Jovyn eselhys        ## m suprscr 
+BK018.8  || ogh ponvogyk ewow garne  ## poNvogyk suprscr; [sic, for garme] 
+
+BK019.1  Lavor vskys te javdyn  ## n suprscr 
+BK019.2  | raf casadow 
+BK019.3  pan dv vs gwel ys Jovyn   ## paN JovyN suprscr 
+BK019.4  | an caradow 
+BK019.5  || thym the gregy          ## m suprscr 
+BK019.6  po te a verew der passyon 
+BK019.7  kin fe jovdan Babylon 
+BK019.8  || omma ragas ow pegy    ## oMma suprscr 
+
+## Keladocus 
+BK020.1  Fy the Jovyn tebel el   ## n suprscr;  teb[e]l 
+BK020.2  | henna ew dyow pur     ## heNna suprscr;  [sic, dyow for dyowl] 
+BK020.3  nynges dv saw onyn lel  ## nyNges suprscr;  ony[n?] [l?]el 
+BK020.4  | thynny in sur         ## thyNny suprscr 
+BK020.5  || neb a rug nef 
+BK020.6  hammyns vs gwrys ... ...barth ## haMmyNs suprscr; gwr{[ys oll war]barth} [?] ... b[?]arth 
+BK020.7  am dyrryvas ... ...rth     ## dyrryva[s?]; {... kyns dybarth ??} 
+BK020.8  || nan cryssa an gevith gwef  ## naN aN suprscr 
+
+# Teuthar... 
+### [fol. 2r (`7'), photo 3] 
+
+## Teutharus 
+BK021.0  Py thesa Dv kyns bos neb tra 
+
+BK021.1  Mar quruk the Thew nor ha nef   ## [M]ar 
+BK021.2  | ha myns vs grys       ## n suprscr; [altered from gre-] 
+BK021.3  lavar thym pletheya ef  ## m suprscr 
+BK021.4  | ha me ath pys 
+BK021.5  || kyns bos neb tra     ## kyMs suprscr 
+BK021.6  in vrna tyrler nynso    ## nyNso suprscr; [for tyller] 
+BK021.7  desympys gorthyb thymmo    ## thyMmo suprscr 
+BK021.8  || ha gas clowas reson da   ## n suprscr 
+
+## Keladocus 
+BK022.0  Ethese ine thowges Dev ow trega 
+
+BK022.1  Scon te a vyth gorthybys 
+BK022.2  | heb hyrvyge 
+BK022.3  etheso Dv in e thowgys 
+BK022.4  | suer ow trega 
+BK022.5  || ha whath ema 
+##OJP5 
+BK022.6  ha gengys vs recevys   ## geNgys suprscr; [for dengys]; [for ve?] 
+BK022.7  in Dv parfyt me a grys 
+BK022.8  || an worthyas ker Marya 
+
+## Teutharius 
+BK023.1  The aflos a bredireth 
+BK023.2  | te fals goky 
+BK023.3  thymmo ve pan leveryth   ## thyMmo suprscr 
+BK023.4  | kymmys mestry          ## keMmys suprscr 
+BK023.5  || ath Dv tyntyl         ## tyNtyl suprscr 
+BK023.6  ha bos dengys in Dv puer 
+BK023.7  pan in kowsyth nynso fuer  ## nyNso suprscr 
+BK023.8  || rag y brevy te e fyl    ## [y altered from e] 
+
+## Keladocus 
+BK024.1  Teuthar nyn gegas in fas  ## nyN [or nyM] suprscr 
+BK024.2  | war ow forth hyr 
+BK024.3  Christ mab an vghella tas 
+BK024.4  | ew Dv pur wyer 
+BK024.5  || ha den heb nam        ## deN suprscr 
+BK024.6  an Spuryssans concevyys  ## coNce suprscr 
+BK024.7  hag a Varya genys 
+BK024.8  || kekeffrys mayghtath ha mam 
+
+## Teuthar[u]s 
+BK025.1  Taw theth cregy gagemmer  ## gageMmer suprscr 
+BK025.2  | choryl bothorak 
+BK025.3  gweth oge ys covrt renner  ## er abbr 
+BK025.4  | ylf pylf clovorak 
+BK025.5  || suer te a pren 
+BK025.6  ow galarow nyngyns lowes   ## nyNgyNs suprscr 
+BK025.7  a vn rybot te the gows 
+BK025.8  || e vo kyffrys due ha den ## [vo read vos; but cf. the vota 46] 
+
+BK026.1  The thew ew onyn heb fal 
+BK026.2  | fy thys gansa 
+BK026.3  te mvskok den ew aral 
+BK026.4  | the thv etho 
+BK026.5  || ew ij heb gyl 
+BK026.6  ha dv lel te a gowsys 
+BK026.7  nages mars onyn in wys        ## [sic, for bys?]{or ME ywys ?}  
+BK026.8  || gorthyb lemmen te pen pyl  ## leMmeN suprscr 
+
+## Keladocus 
+BK027.1  Me a worthyb thys sertan 
+BK027.2  | gorwith in ta 
+BK027.3  nynges gwyer Thew saw onyn   ## nyNges onyN suprscr 
+BK027.4  | han kerth henna          ## haN heNna suprscr; ke\r/th 
+BK027.5  || ew den in suer         ## deN suprscr 
+BK027.6  Dv ew der substans e das 
+BK027.7  ha den parfyt mer e ras   ## ar abbr 
+##OJP6 
+BK027.8  || a barth e vam gwyrthyas pur ## m subrscr; [gwyrthyas glossed maiden] 
+
+BK028.1  Enaf ha corf den ew 
+BK028.2  | in kethtella 
+BK028.3  | der reson da 
+BK028.4  || onyn ew Christ 
+BK028.5  Dv ha den ow arluth gvew 
+BK028.6  | neb a formyas nef han bys 
+BK028.7  | ha henna mars te an crys 
+BK028.8  || anfugyk os drys pub gyst 
+
+## Teutharus 
+BK029.1  Marso Christ dv mar rajak 
+BK029.2  | pew o e das 
+BK029.3  te pen boba lagajak 
+BK029.4  | ro gorthyb vas 
+BK029.5  || bith war na fal 
+BK029.6  anotha te regowsys 
+BK029.7  saw pew ew ny attendys 
+BK029.8  || ema dowt thym e vos gal 
+
+## Keladocus 
+BK030.0  The drylya Teuthar the faith a Christ 
+
+BK030.1  Naborth neb dowt molothak 
+BK030.2  | gothvith in ta 
+BK030.3  bos an Tas ol gallogak 
+BK030.4  | a rug pub tra 
+BK030.5  || tas Christ Iesu 
+BK030.6  gwayt e worthya pub termayn 
+BK030.7  ha nagh Astrot ha Jovyn 
+BK030.8  || hath fals dvwaw in pub tu 
+
+###[fol. 2v, photo 4] 
+
+## [Teu]tharus 
+BK031.1  Owt te a lavar an tas    ## tas? 
+BK031.2  | the wul pub tra        ## wul? tra? 
+BK031.3  etho an mab na gew vas   ## etho? 
+BK031.4  | oberath da             ## oberath? 
+BK031.5  || ny rug na drok 
+BK031.6  ha neb na relha neb pyth 
+BK031.7  e vos gwyer thew ne brevith 
+BK031.8  || bys venytha te pen cog    ## te?, p[en] 
+
+## [Ke]ladocus 
+BK032.0  The drylya Tewdar the faith a Christ    ## The? the? a? 
+
+BK032.1  Ol myns a rug an tas Dv 
+BK032.2  | an mab an grug maga suer 
+BK032.3  marsyw the dowl bos haggew     ## [haggew? looks like theddowl?] 
+BK032.4  | golsow lemmyn ha bith  fuer  ## bith? 
+BK032.5  || an mab ema 
+BK032.6  in tas han tas ynno ef 
+BK032.7  vn Dv yns gwrer nor ha nef 
+BK032.8  || crygyans compis ew henna
+
+##OJP7 
+
+BK033.1  An tas Dv han mab ker  ## [ker for kerra?] 
+BK033.2  e movns bythquath 
+BK033.3  vn oys ow kysober   ## [kysober for kysobera?] 
+BK033.4  afuys furneth       ## afuys? 
+BK033.5  the cancyvya 
+BK033.6  ober annyll ew prevys 
+BK033.7  aga oberth keffrys      ## [sic, for kekeffrys] 
+BK033.8  a mynnyes e attendya 
+
+BK034.1  An sperys sans gallosak 
+BK034.2  ew heb qveston 
+BK034.3  in Dryngys Dv marthojek 
+BK034.4  try parson 
+BK034.5  ow kyfrangnya              ## [sic, for kysrangnya?] 
+BK034.6  try personne eternal yns 
+BK034.7  hag vn gwyer thew byttygyns 
+BK034.8  nagh dyawl ugy ha servya     ## <ha> sic for <ow> 
+
+## Teutharus 
+BK035.1  Out owt owt I am ful wod 
+BK035.2  harow harow 
+BK035.3  by Mahunys precyus blod 
+BK035.4  bethyth marow 
+BK035.5  a wel then pow 
+BK035.6  te a levar tavas pan 
+BK035.7  nath uesta dv saw onyn 
+BK035.8  me a bref genas bos gow 
+
+BK036.1  An tas han mab der reson 
+BK036.2  porrys ew dv 
+BK036.3  te a gef ow bos gwyrryon  ## gef? 
+BK036.4  attend ha clow 
+BK036.5  na vith ydyot 
+BK036.6  trega suer ew an spurys 
+BK036.7  a ve thym rag leverys 
+BK036.8  ytho try dv e ma thys 
+BK036.9  Jovyn Beryth hag Astrot 
+
+## Keladocus 
+# The drylya Tewdar the faith Christ [sic] 
+
+BK037.1  Fy the Jovyn ha Beryth   ## [B]eryth 
+BK037.2  hag Astrot plos 
+BK037.3  ha the gymmys a govyt  ## govy[t?] 
+BK037.4  ha dyeth ha nos 
+BK037.5  aga servya 
+BK037.6  heb dowt kynthyns persons try 
+BK037.7  in Dryngys onyn yns y 
+BK037.8  Dv gallosak the worthya 
+
+BK038.1  Omden gas the folneb  ## gas? [folneb sic, for -neth?] 
+BK038.2  serf Dv avan 
+BK038.3  yn howl yma rowndenab   ## [-enab sic, for -neth?] 
+##OJP8 
+BK038.4  ha golow splan 
+BK038.5  ha tomdar bras 
+BK038.6  whath vn howl ew pub seson 
+BK038.7  in keth tella der reson 
+BK038.8  arluth nef in try ferson 
+BK038.9  ew vn Dv heb dowt in cas 
+
+BK039.1  Tryl then Dv na me ath kysk 
+BK039.2  ha nagh Jovyn 
+BK039.3  po in effarn te a lysk 
+BK039.4  in tan whylfyn         ## [for whyflyn?] 
+BK039.5  heb dowethva 
+BK039.6  hag in della nyn gew vas 
+BK039.7  Christ reth amendya der e ras  ## ame[n]dya 
+BK039.8  ha roy thys gwel elethva
+BK039.9  : amen 
+
+## Teutharus 
+BK040.1  Ser the thewan te pen pist  ## 'the' l deleted; [cf. Ser the thywan 421] 
+BK040.2  ha pur harlot 
+BK040.3  na gows thym a Christ 
+BK040.4  an ruf rybot           ## [ruf sic, for raf] 
+BK040.5  a ve maraw 
+BK040.6  rag e foly in crows pryn 
+BK040.7  in mes am golag omden 
+BK040.8  rag nvm pleg the lavarow 
+
+## Keladocus 
+BK041.1  Ethegus ow cokya  ## [or Ethega(n)s?] 
+BK041.2  drys peb in wlas 
+BK041.3  kin fyrwys mab Marya 
+BK041.4  Dv mer a ras 
+BK041.5  a barth dowgys       ## bar[th]? d deleted? [dowgys sic, for dengys?] 
+BK041.6  der e thowgys e tathorhas 
+BK041.7  e honnyn par del vynnas 
+BK041.8  hay lel servant dyspernys 
+
+# Teutharus 
+###[fol. 3r, photo 5] 
+
+## Teuthareus 
+BK042.1  Nagows folneth me ath pys 
+BK042.2  heb bos the well 
+BK042.3  mar pewas Christ me a grys 
+BK042.4  warlergh mirwall 
+BK042.5  ow dv Jovyn 
+BK042.6  am dathorhas der e ver ras   ## [am sic, for an] 
+BK042.7  e coyth thotha gothvas gras 
+BK042.8  hay lvn worthy pub termyn 
+
+## Keladocus 
+BK043.1  Tewdar nynsos skyental 
+BK043.2  in pub theffry 
+BK043.3  saw anfugyk pub kental 
+##OJP9 
+BK043.4  ha pur woky 
+BK043.5  te a vith gv 
+BK043.6  Jovyn ew dyawl gweth ys ky 
+BK043.7  me a levar thotha fy 
+BK043.8  ha the kemmys an syns dv 
+
+# Hic Teutharus ascendit a[d] modum tirannii 
+
+## Teutharus (`owt owt owt fol fol fol') 
+BK044.1  Ovt mylwyth war an faytor 
+BK044.2  ny won a raf 
+BK044.3  del rum cuthys an traytor 
+BK044.4  galsaf in claf 
+BK044.5  rag galarow 
+BK044.6  How te geylar des in rag 
+BK044.7  hath vaw genas heb ardag  ## [h]ath 
+BK044.8  ha boltys ha carharow 
+
+## Carcerator 
+BK045.1  Dun ahanan pen tarow 
+BK045.2  ma ow arluth ow kelwal 
+BK045.3  nyn gvge heb galarow 
+BK045.4  ha kveth orth e elewal 
+BK045.5  me a wor gwyr 
+
+## Garcon 
+BK045.6  Gwyer ew ny a vyn dybbry 
+BK045.7  kyns levyrrya mes a gy 
+BK045.8  war lyrgh henna ny an myr 
+
+## Carcer[a]tor 
+BK046.1  Hay rag cavgh an jowl yth vyn 
+BK046.2  pandra reta darvny 
+BK046.3  me a grys e fyth pen 
+BK046.4  dar ny ylta dysvna    ## [sic, for dyfvna?] 
+BK046.5  dy drog reffa 
+
+## Garcon 
+BK046.6  Ow me a wothya pur da 
+BK046.7  the vota ow recordya  ## [cf. e vo kyffrys 25] 
+BK046.8  ow bosa den eredie 
+
+## Carcerator 
+BK047.1  Ow methew ew an javal 
+BK047.2  py gokyhes by my sowl 
+BK047.3  the then fol ythew haval 
+BK047.4  ny won fyth pyth vyth ow thowl 
+# [the thyn fol ethew haval | ny won, repeated] 
+BK047.5  rag y furhe 
+
+## Garcon 
+BK047.6  Te am grussa fuer forsoyth   ## forso\y/th 
+BK047.7  ham whyppys gvelan vloyth    ## [for .v. loyth?] 
+BK047.8  nowyth derhys mes an ke 
+##OJP10 
+
+## Carcerator 
+BK048.1  Re gorf Astrot dv rajak 
+BK048.2  in ow holan a gara 
+BK048.3  me a ra thekhyskajak 
+BK048.4  kyn neffra dybbry bara 
+BK048.5  thyn a bavrys           ## [thyn or thym] 
+
+## Garcon 
+BK048.6  Gwra in della lagajak 
+BK048.7  ha thys me a vith grajak 
+BK048.8  fystyn dewhans me ath pys 
+
+## Carcerato[r] 
+BK049.1  Ow me ara by my sowl 
+BK049.2  ha ragas me a dowl towl 
+BK049.3  re gorf Astrot 
+# Carcerator venit coram rege Teutharo dicens 
+BK049.4  an tas harlot   ## [tas for gwas?] 
+BK049.5  an gevith tro 
+BK049.6  may fe gwell 
+BK049.7  then pur loral 
+BK049.8  kynne thymmo 
+
+BK050.01  Lowena thum arluth stowt 
+BK050.02  lowena the flowr an bys 
+BK050.03  nave ow mayster heb dowt 
+BK050.04  me a thotha sola brys 
+BK050.05  ef an lettyas 
+BK050.06  pan wellys ethowgy       ## [ethowgy sic, for e thowlugy] 
+BK050.07  na vynha hastia thy vohy 
+BK050.08  marthys coyth me an settyas 
+
+BK050.09  A vargh thotha pan gowsen 
+BK050.10  ef a flattra a gasak 
+BK050.11  war ow fay ny thesefsan 
+BK050.12  e fenna an paccasak 
+BK050.13  bonas mar hyll 
+BK050.14  ha kemmys dewenhys 
+BK050.15  leverough both ages brys 
+BK050.16  ow arluth the neb na fyll 
+
+# Teutharus in sede sua per R D [?] 
+###[fol. 3v, photo 6] 
+
+## [Teuthar]us in [sede] sua 
+BK051.1  Wylcom gentyl pen taraw 
+BK051.2  mer syngys of theth cara  ## th[e?]th 
+BK051.3  del os body heb paraw 
+BK051.4  kymmar Ke ha carhara 
+BK051.5  in chaynys fyne           ## in? 
+BK051.6  fals dv ema ow conys      ## conys [?] 
+BK051.7  gwayt may fova presonys 
+BK051.8  in calatter hag in payn 
+##OJP11 
+
+## Garcon 
+# Ke in car[ha]row ha [p]reson [g]orys 
+
+BK052.1  Arluth a ver ryelder 
+BK052.2  the arghadow a vith gwrys 
+BK052.3  Ke angevith yselder 
+BK052.4  in carharow a ver spys 
+BK052.5  in preson cref     ## [looks like oref, for cref] 
+BK052.6  me an colrun gans cronow   ## [colrun for colrum?] 
+BK052.7  in mosater ha ponow 
+BK052.8  der y hot blew e ben a def 
+
+## Teutharus 
+BK053.1  An tyllak vester ath vs 
+BK053.2  a lavassa the weras 
+BK053.3  pan ew ow dewan mar drvs 
+BK053.4  ef the vynnas bysmeras 
+BK053.5  thyn ethyw bern  ## [thyn or thym] 
+BK053.6  om danger goef er bos 
+BK053.7  gwel a vea then harlot dos 
+BK053.8  in noeth der spethas ha spern 
+
+## Garcon 
+# Ke in carharow ha in prison gorys 
+
+BK054.1  Ke a berveth te harlot 
+BK054.2  in preson in mysk prevas 
+BK054.3  e fyth ena te rybot 
+BK054.4  pottys gwarthak ha devas 
+BK054.5  ow mosogy 
+BK054.6  ha carynnyas a henys 
+BK054.7  gogy vith pan vos genys  ##  [vos sic, for ves?] 
+BK054.8  in ponowter ow penys     ## [read ponvoter?] 
+BK054.9  dyth ha nos ow progy 
+
+## Keladocus 
+# Crygyans Ke 
+
+BK055.1  Christ ew ow bewnans ham boys 
+BK055.2  mannaf gref penys na nawn     ## [na for ha] 
+BK055.3  ef am pernas gans e wos 
+BK055.4  gothaf torment may thew own 
+BK055.5  ha galarow 
+BK055.6  thymmo ragtha e gerensa  ## [ragtha for rag?] 
+BK055.7  in della me a vynsa 
+BK055.8  kyn fe rys thym bos marow 
+
+BK056.1  Inweth ef ew ow whecter 
+BK056.2  orth mosokter omdefen 
+BK056.3  ha genaf ethew tecter 
+BK056.4  in bysma perthy anken 
+BK056.5  hag eselder 
+BK056.6  in nef may fyf vghelhys 
+BK056.7  in regn a thor hag a bys 
+BK056.8  by venytha in pelder     ## [by for bys] 
+
+##OJP12 
+
+## Carcerator, attonitando turant 
+BK057.1  Elhas ow den ew fyys 
+BK057.2  ha ny won ple hylla bos 
+BK057.3  sola brys kynthof cryys 
+BK057.4  then turant ny vetha mos 
+BK057.5  rag own a drol              ## [hag omthyvlanya orta, deleted] 
+BK057.6  saw whath rys ew mos thotha 
+# Ad regem dicens 
+BK057.7  hag omthyvlanya orta 
+BK057.8  me a wor e fyth fol 
+
+#Carcerator ad regem vadit dicens 
+
+BK058.1  Syr thewgh lowena 
+BK058.2  na syrrough kynthoma hil 
+BK058.3  ow maw nyngewgy gena 
+BK058.4  orth ow otham e a fyl 
+BK058.5  gallus then fo 
+BK058.6  byttegyns parys ove 
+BK058.7  rag gul a nyns a vynhe 
+BK058.8  ow arluth penagol a vo 
+
+## Teutharus 
+BK059.1  A harlot drog refary 
+BK059.2  gans the govanscosow gow 
+BK059.3  war lyrgh hemma benary 
+BK059.4  mar petheth mettys in pow 
+BK059.5  ren nor am dog 
+BK059.6  ha re Astrot ha Jovyn 
+BK059.7  in dyspyt theth nassyoyn 
+BK059.8  the vaw the honen ath crog 
+
+## Carcerator, inclinando 
+BK060.01  Ny goyth thewhy arluth ker 
+BK060.02  an blam warnaf e settya 
+BK060.03  me a thotha gans an ger 
+BK060.04  na ve ow maw thum lettya  ## lettya? 
+BK060.05  drog chawns thy ben 
+
+## Teutharus 
+BK060.06  Taw taw harlot theth cregy 
+BK060.07  a throg thewath re wyrwhy 
+BK060.08  in mes am golak omden 
+
+## Carcerator 
+BK060.09  A gwef a dryst arlythy 
+BK060.10  mar whyth e hyl afflythy 
+BK060.11  lemmyn gyllys of then sen  ## [cf. degys then sen 117] 
+
+# Carcerator a rege dissendit 
+
+# Keladocus 
+###[fol. 4r, photo 7: `Iesus'] 
+
+## Keladocus 
+BK061.1  Arluth esos ahvhan 
+BK061.2  benegas reby pub prys 
+##OJP13 
+BK061.3  pan tynnyth in the bassion 
+BK061.4  ow bos keffrannak in bys 
+BK061.5  marsew the ras 
+BK061.6  pan om chastyys heb mar 
+BK061.7  inta e won te am car 
+BK061.8  gorthys reby in pub plas 
+
+## Garcon 
+# Dal rag golowis 
+
+BK062.1  Awotomma tra anath 
+BK062.2  galsaf dal rag golowys 
+BK062.3  me am byth drog nevn hanath 
+BK062.4  gans Teuthar pan vo clowys 
+BK062.5  whath betegens 
+BK062.6  mos the warnya me a vyn 
+BK062.7  a thesympys re Durpyn 
+BK062.8  om pen kyn torra ow dyns 
+
+# Tunc venit coram rege 
+
+BK063.1  Lowena thum arluth flowre 
+BK063.2  now new tydynges hav I brought 
+BK063.3  me a lever the why dowr 
+BK063.4  al our labor ys for nowght 
+BK063.5  the dv am ros       ## [the for re?] 
+BK063.6  ema plenty a wolow 
+BK063.7  py tarosvan dewolow 
+BK063.8  adro the Ge deith ha nos 
+
+## Teutharus (`owt owt owt owt owt') 
+BK064.1  A out out haraw haraw 
+BK064.2  ogh elhas gove er bos 
+BK064.3  marsew gwyer the lavarow 
+BK064.4  nywon ple halla mos 
+BK064.5  rag annetter 
+BK064.6  Das nyngewa dyenys    ## [Das for Dar] 
+BK064.7  in mosogter ow penys 
+BK064.8  in paynys ha callacter  ## [for calatter?] 
+
+## Garcon 
+BK065.1  Nagew ow arluth pur weyr 
+BK065.2  na ny gen galar na gv 
+BK065.3  Saw e davas a vyth hyr 
+BK065.4  pub vr ow corthya e thew 
+BK065.5  war e thew lyn 
+BK065.6  ha whecter ema gansa 
+# Whecter sawer gans Ke 
+BK065.7  ny glowis moy in neb tra 
+BK065.8  na ny glowa byttyth fynn 
+
+## Teuthar (`owt owt owt owt owt') 
+BK066.1  Owt owt out I am ful wod 
+BK066.2  rag eselweth galsaf claf 
+BK066.3  by manhunys precyous blod  ## manhunys [sic] 
+BK066.4  ny won lemmen pe raf 
+##OJP14 
+BK066.5  elhas ha gv 
+BK066.6  pan waytyan e vos maraw 
+BK066.7  nynges drog na galaraw 
+BK066.8  then fals a scornyas ow dv 
+
+BK067.1  A pen taraw spyt refo 
+BK067.2  ny wothys gwardya preson 
+BK067.3  a caffan neb a waythya 
+BK067.4  yngevea gwereson 
+BK067.5  may fo the well 
+BK067.6  gayler da esa thymmo 
+BK067.7  te fals rag trystya theso 
+BK067.8  elhas hylbys ew a bel 
+
+## Garcon 
+BK068.1  Kyn fegy vith mar fasaw 
+BK068.2  ath torment ny ro favan 
+BK068.3  the thew ef a ra grasaw 
+BK068.4  the gorf pan relher ankan 
+BK068.5  predar ha myr 
+BK068.6  etho mos thy dormente  ##  [thy altered from the] 
+BK068.7  nyngew ken the accowntya 
+BK068.8  agys guthyl o thesyr  ## [o for e?] 
+
+## Teutharus 
+BK069.01  Mar tesyer cafas drog 
+BK069.02  me anto by godes brow 
+BK069.03  nyngew henna mars pencog 
+BK069.04  my an helgh in mes an pow 
+BK069.05  then jowler gwyns 
+BK069.06  namoy na r... gewelys   ## [or gwelys?] 
+BK069.07  kerh the vos araynys 
+BK069.08  byth devethys sulve gyns 
+
+## Garcon 
+BK069.09  Ow arluth heb falladow 
+BK069.10  me ara the arghadaw      ## ar\g/hadaw 
+BK069.11  re syn Paffan pen an syns 
+
+# Tunc ad Keladocum dicens 
+
+BK070.1  Ke dees mes ath carharow 
+BK070.2  te a thum arluth hastely 
+BK070.3  gwayt bos war ath lavarow 
+BK070.4  fatel rylly y gortheby 
+BK070.5  rag fregh ew eff 
+
+## Keladocus 
+BK070.6  Bethans mar freth del vynho 
+BK070.7  nvm bues owne a gows orto 
+BK070.8  gans gweras Christ arluth nef 
+
+## Garcon ad regem 
+# Keladocus & Garcon venit ad rege [sic] 
+
+BK071.1  Arluth ryal in pub le 
+##OJP15 
+BK071.2  ay thoma ve devethys 
+BK071.3  hath presnar gena devethys 
+BK071.4  govyn orta both the vrys 
+BK071.5  drys mas ew suer           ## ['drys mas' for dremas?] 
+BK071.6  ha dew da ema thotha 
+BK071.7  mar mynneth myllya gansa  ## ms <nynneth> 
+BK071.8  war ow fay nyth synge fuer 
+
+# Tetharus ad garconnem deind' ad Kelado... 
+###[fol. 4v, photo 8: `Iesu'] 
+
+## Te[u]tharus ad garconem deind' ad Keladocum 
+BK072.1  A harlot reby leskys 
+BK072.2  desympis gweyf ow golog 
+BK072.3  he te gwra del os keskys 
+BK072.4  manafy ge na moy drog 
+BK072.5  cres in dv pur 
+BK072.6  a yl gvl e vnadow 
+BK072.7  ha nagh Christ an casadow 
+BK072.8  ath vewnans may fyg suer   ## [fyg for fyge?] 
+
+# Hic dencendunt [sic] ad tentarium 
+##Keladocus 
+# Mar tue Tevder kelatha ef an kef war e forth hyr 
+
+BK073.1  Na nahaf a bur woky 
+BK073.2  awos own ath galarow 
+BK073.3  me nahaf Dv a vercy  ## [me for ne?] 
+BK073.4  ragho kynfena maraw 
+BK073.5  na raf pur wyer 
+BK073.6  war ow horf mar qvreth maystry 
+BK073.7  mes an bysma pan ylhy 
+BK073.8  te an kef war the forth hyr 
+
+## Teutharus 
+BK074.1  A out gove rag dvwan 
+BK074.2  ow horf a vyth nygythys 
+BK074.3  deaw hanter ew ow holan 
+BK074.4  mar goynt ethof gorthebys 
+BK074.5  gans an stranger 
+BK074.6  te gwas pan a stat ay thotha 
+BK074.7  kyns te thotha thum powma  ## [thum for then?] 
+BK074.8  lavar thymmo heb danger 
+
+## Keladocus 
+# Ay stat a Callan arghebscob 
+
+BK075.1  Ow stat o del vynnas Christ 
+BK075.2  arghebscob en in Colan 
+BK075.3  kepar del rug lyas gyst 
+BK075.4  an bys fals hay worsvan   ## [read darosvan?] 
+BK075.5  me run nahas 
+BK075.6  rag ethesaf ow towtya 
+BK075.7  a drug ha prosperyte 
+BK075.8  bos res mos the bayn ahas 
+
+## Teutharus, subrindens [sic] 
+BK076.1  Rum faye neb pyth ew neb tra 
+##OJP16 
+BK076.2  abatys ew the skeans 
+BK076.3  lemmen me a wor inta 
+BK076.4  orth the worthyb ha gwryans 
+BK076.5  the vos cleghys 
+BK076.6  ath aswonfyn ve the stat 
+BK076.7  ne setsan warnas algat 
+BK076.8  na russan rag meth an bys 
+
+BK077.1  A pesta den eredy 
+BK077.2  te a thoksas kehar claf  ## [a?] 
+BK077.3  saw drefen the vos goky 
+BK077.4  me a rug ow dewan scaf 
+BK077.5  ham galanas 
+BK077.6  pan thesta dowt a rowath 
+BK077.7  re Jovyn ema trewath 
+BK077.8  ha pytta thym ahanas 
+
+## Keladocus 
+# Rosewa 
+
+BK078.1  Marth is trewath ahana 
+BK078.2  gas thymmo in Rosewa 
+BK078.3  vn nebas tyr a vo da 
+BK078.4  thum kenwheras the wewa 
+BK078.5  in evelder 
+BK078.6  ha kysvew hedre veny 
+BK078.7  num cloweth ow kyny 
+BK078.8  in bys war lergh vhelder 
+
+## Teutharus a ros the Ke an gwel nessa thun gooys [?] in Rosewa 
+BK079.1  Ethegas ow kowsal da 
+BK079.2  te casadow 
+BK079.3  ha ry theso me a ra 
+BK079.4  the vnadou 
+BK079.5  mar qvreth tewal 
+BK079.6  saw rum ena 
+BK079.7  pos ew gena 
+BK079.8  ow dv te the thynwel 
+
+BK080.1  Me a vyn ry thys an gwel 
+BK080.2  nessa the goys 
+BK080.3  in Rosowa saw byth lel 
+BK080.4  na gows ... dreys 
+BK080.5  an dewow ker         ## an[?] 
+BK080.6  ha sekertly 
+BK080.7  bew hedre ve 
+BK080.8  ow ro theso a vyth clere 
+
+## Keladocus 
+BK081.1  Tewdar gyntel gromercy 
+BK081.2  the theneson 
+BK081.3  ath dewow ne gowsave
+BK081.4  erbyn reson 
+##OJP17 
+BK081.5  na raf heb mar 
+BK081.6  genas farwell 
+BK081.7  Dv mer e mel    ## [for nell?] 
+BK081.8  orth e voth rebo the gar 
+
+## Teutharus 
+# Keladocus descendat 
+
+BK082.1  Amen henna ew Jovyn 
+BK082.2  an caradaw 
+BK082.3  e vannath genas cosyn 
+BK082.4  dv plegadow 
+BK082.5  the wor ha gwrek         ## {dhe wowr ha gwreg} 
+BK082.6  Suel an gowrethya ef  ## gowrethy\a?/; {seul a'n gordhy ev} 
+BK082.7  angeveth nef 
+BK082.8  hag in bysma dv whath tek 
+
+# Helhor the Rosewa 
+
+BK083.1  How te helhor dvus arag  ## dvus? 
+BK083.2  the Rosewa heb ardag 
+BK083.3  mos may hellyn 
+BK083.4  the sportya pols   ## [poyl, written below] 
+BK083.5  thether I will 
+BK083.6  by synt Jovyn 
+
+# Et assindet rex et debet Arator pre[?]...ri adsit p[r?]atu[m?] 
+
+###[fol. 5r (`10'), photo 9: `Iesus'] 
+
+## Consultus perteritus 
+
+# (Insipienter hic lacerantur folia quatuor) 
+
+## Teutharus 
+BK084.1  Pew. a vo. ny ew 
+
+## Secundus tortor 
+BK085.1  In vn rowt 
+BK085.2  Arluth jentel 
+
+## Primus tortor 
+BK086.1  Agys enmy 
+BK086.2  rag guthyl gurmennadow 
+
+# Ducu[n]t Keladocum coram rege 
+
+## Quartus tortores [sic] 
+BK087.1  In vn rowt arluth da 
+BK087.2  gul a frvthow ny a vyn 
+BK087.3  A yscar bras na ken 
+BK087.4  ny rys mars gorhemmyn 
+
+## Teutharus 
+BK088.1  Naha ... 
+BK088.2  ... derrygy 
+BK088.3  ... servygy 
+BK088.4  ... by in crog 
+BK088.5  say that te pen cog 
+BK088.6  a thyawl cows 
+BK088.7  a lobbry sovs 
+##OJP18 
+
+## Primus tortor ad regem; 
+
+## secundus tortor 
+
+## Tertius tortor 
+BK089.1  Nyn ... 
+BK089.2  Kyn ... 
+BK089.3  ha certan ... 
+BK089.4  me a ... 
+BK089.5  arluth ... 
+BK089.6  ny a... 
+
+## Quartus tortor 
+BK090.1  ... na borth dowt 
+BK090.2  yth ege ... 
+BK090.3  henna a rug ... 
+BK090.4  ... ow arluth stowt 
+BK090.5  Ny a jasty ... 
+BK090.6  ny ew bysquath ... 
+
+## Tetharus 
+BK091.1  Gwysyon foll ... 
+BK091.2  bynar rewelhy ... 
+BK091.3  ha rema ... 
+BK091.4  thotha Keweth ... 
+
+## Keladocus 
+BK092.1  Ath woys ... 
+
+## Quartus tortores [sic] 
+BK093.1  respys ... 
+BK093.2  Ker ... 
+BK093.3  myghterne 
+
+## (Keladocus) 
+
+## Quartus tortors [sic] 
+BK094.1  ... myghterne savns per 
+BK094.2  ... asker 
+
+## Keladocus 
+BK095.1  ... gorthys rebo 
+BK095.2  ... e naha na theffo 
+
+## Quartus tortor 
+BK096.1  gans nowothow 
+
+## K. Secundus tortor ad regem 
+BK097.1  ... ythyns terrys 
+BK097.2  ... nara serrys 
+BK097.3  an churl certan 
+# Tortores trasiunt ad regem 
+BK097.4  ... na dysplaysys 
+BK097.5  ... ason gaysys 
+BK097.6  dun ahanan 
+
+# 2 tortores ad regem 
+# iij dans Ke terris 
+##OJP19 
+
+BK098.1  Arluth thewhy lowena 
+BK098.2  Ke rebe hoddyys garow 
+BK098.3  hay thyns terrys rum ena 
+BK098.4  the gyns nygen galaraw 
+BK098.5  nara heb mar 
+BK098.6  rag an payn vs thotha gwrys 
+BK098.7  the voy ethew lowenhys 
+BK098.8  ny welys mab den ay bar 
+
+BK099.1  Pan deseffan 
+BK099.2  bos an lorden 
+BK099.3  pour galarak 
+BK099.4  grassa the Christ 
+BK099.5  ara an pyst    ## ar[a?] 
+BK099.6  fest a arak 
+
+## Quartus tortor ad regem 
+# Pen Ke a ve terrys bys in grogan 
+
+BK100.1  Arluth ker na vith serrys 
+BK100.2  ny a rug the arghadaw 
+BK100.3  dyns an churl a ve terrys 
+BK100.4  ha pen bras an casadaw 
+BK100.5  bys in grogan 
+BK100.6  henna o e vnanadow   ## [sic, for vnadow] 
+BK100.7  thy thewera pejadow 
+BK100.8  rag dysaysy e gorys hogan  ## [read dyses y gorf?] 
+
+BK101.1  Joy e golan 
+BK101.2  ew thom Passion  ## [thom read then?] 
+BK101.3  war an norvys 
+BK101.4  ens the gregy 
+BK101.5  nyn gew thynny 
+BK101.6  gvl both e vrys 
+
+## Teutharus (`owt owt owt owt owt') 
+BK102.1  A evgh thywhy in le gras 
+BK102.2  ha mollath dv ham molath 
+BK102.3  ny won praga efeugh vas  ## [efeugh for eseugh?] 
+BK102.4  mars vnsell rag bugolath 
+BK102.5  parcel gothow 
+BK102.6  then cans myl deawl regyllough 
+BK102.7  ha byner rethewellough 
+BK102.8  why na tebal nawothow 
+
+BK103.1  An fals brybrous  ## [for brybours] 
+BK103.2  brebur tholowrs 
+BK103.3  rum grvg mvscog 
+BK103.4  voydough ha coyth 
+BK103.5  degowgh an toyt 
+BK103.6  mes am golok 
+
+## Quartus tortors [sic] 
+# rag dader telys: henna ew lavar kymmyn 
+##OJP20 
+
+BK104.1  Ny ara syr forsoth 
+BK104.2  aragough na vyn gwelas 
+BK104.3  the servantes tues vras e coyth  ## coyth? 
+BK104.4  bos wothywath drog telys 
+BK104.5  in gweyr heb mar 
+BK104.6  henna ew laver kymmyn 
+BK104.7  ha me a laver lymmyn 
+BK104.8  thynny rewerys e bar 
+
+BK105.1  Sevantes brysyon  ## sevantes [sic] 
+BK105.2  a the bleysyon 
+BK105.3  ha pejadaw 
+BK105.4  bewnans moy suer 
+BK105.5  ew the dvs fuer 
+BK105.6  bos tyowgow 
+
+# ..a transeiunt [?] a rege 
+# Primus tortor 
+###[fol. 5v (`10'), photo 10: `Iesu'] 
+
+## Primus tortor 
+BK106.1  Gweyr ew henna by my sowl 
+BK106.2  vn pols tynhylsyn   ## [pols altered from plas; tynhylsyn? read y hylsyn?] 
+BK106.3  rowtya lemmyn nyn gew vas an towl 
+BK106.4  mayth esave ow towtya 
+BK106.5  ytvan war nans 
+BK106.6  asvos halfovrs ny dal man 
+BK106.7  marsen bohosak ha gwan 
+BK106.8  ny a vith bywar thegans 
+
+BK107.1  Asserewys 
+BK107.2  avith kefys 
+BK107.3  ha fyngys od 
+BK107.4  poura work 
+BK107.5  ha prederak 
+BK107.6  ove by god 
+
+# Recedunt tortores et faciunt pausa[c]ionem brevis [sic] 
+
+## ----------------------------------------------------------------------- ##
+
+## Keladocus 
+# Ke a rug fentan gans e lorgh in Keliaw Soor 
+BK108.1  Jesu Christ mab Marya 
+BK108.2  | roy thym gras theth lel servya     ## m, er abbr
+BK108.3  lemmyn del wraf the besy             ## leMmyN suprscr
+BK108.4  | orden dower thym rag eva           ## n, m suprscr
+BK108.5  a Christ rebe benegas 
+BK108.6  attomma fyntan spryngys              ## attoMma fyNtaN suprscr
+
+## Leprosus 
+BK109.1  A Ke Dv reth covea          ## {kovie : cherish}
+BK109.2  rag kerensa Marya                 ## n suprscr
+BK109.3  | hay mab ath pernas in pren      ## preN suprscr
+BK109.4  saw ve am drog vs om kyk          ## oM suprscr; {eus y'm kig}
+BK109.5  ha neffra me ath vynyk        ## {my a'th vennig}
+BK109.6  | leper of an troys then pen      ## theN peN suprscr
+
+##OJP21 
+## Keladocus 
+BK110.1  Arluth nef reth gweresa  ## {could help thee}
+BK110.2  ha fyth ynna ha pege     ## ynNa suprscr; {pyze var of pyzi 'praying' ??}
+BK110.3  | ef ew pen an vethogyan  ## peN aN ..gyaN suprscr
+BK110.4  hag A ylwyth the sawya     ## {a ylwi ? : if thou were to call}
+BK110.5  fystyn lemmyn des gena    ## fystyN leMmyN suprscr
+BK110.6  | bys vn fyntan vs reban  ## fyNtaN vs rebaN suprscr; {rybon as adverb 'at hand, beside us'}
+
+## Leprosus 
+BK111.1  Fyntan dek ema ryban    ## fyNtaN ... rybaN suprscr
+BK111.2  me a thy genas deson       ## desoN suprscr
+BK111.3  | a thesempys gans an ger  ## m, gaNs suprscr
+
+## Keladocus 
+BK111.4  Christ ow arluth me a bys 
+BK111.5  Reth weresa a ver spys       ## {may he help thee}
+BK111.3  | kepar del eth purnas ker   ## {keppar dell y'th prenas ker}
+
+
+BK112.1  Jesu rebo the vethak 
+BK112.2  an leper cref ath ethek  ## {hag? euthek (abbr. misread?)}
+#                   Leprosus hic lauiet [?], vel auspergat leprosum aqua 
+BK112.3  | nath gresso bys venytha 
+BK112.4  ostendat modo mirum     ## {Latin}; steNdat, miruM suprscr
+BK112.5  hic qui Naaman Sirum    ## {Latin}
+BK112.6  | mundare dedit aqua    ## {Latin}; muNdare suprscr
+
+## Leprosus 
+# Fentan Kylyow Kaw, pedyr eraw dyer 
+BK113.1  A Ke benygas reby 
+BK113.2  der weras Christ hay vercy 
+BK113.3  | te rum grug saw            ## m suprscr
+BK113.4  ha rum dros a ver bonvas     ## m suprscr; {a veur boenvoz}
+BK113.5  te a vith neb aswonvos       ## aswoNvos suprscr
+BK113.6  | omma in Kyllyov Kaw        ## oMma suprscr
+
+# Fowr akars of ground Leper a ros the Ke an fentan C[?]hysoor ha peder eraw dyer 
+
+BK114.1  Me a vyn ry thys in ro    ## n suprscr
+BK114.2  an fentan ma hag adro     ## feNtan suprscr
+BK114.3  | thethy pedyr erow dyer 
+BK114.4  hedre ve bew waran bys 
+BK114.5  me as mvsyr a ver spys 
+BK114.6  | maga ledan avel hyer   ## n suprscr 
+
+# Iste fons vocatur fons Keladoci, et est apud Keliow Soor, in quidam [sic] clavso vocatur [sic] Park Ke vsque in hodiernum diem. {the last phrase looks like a calque on heddyw y'n jydh}
+
+## Keladocus 
+# Veniet ad [blank] 
+BK115.1  Gramercy theso dremas 
+BK115.2  mab Marya len a ras 
+BK115.3  | a ve the vethak heb mar 
+BK115.4  Gwayt man gorworthy pub termyn  ## termyN suprscr; {ma'n gordhi} 
+BK115.5  rag gurthvhar ha myttyn         ## n suprscr
+BK115.6  | ny ges thenny mar tha car ## theNny suprscr; {nyns eus ?; so good a friend ??}
+
+# Discendit leprsus [sic]
+
+##OJP22 
+
+BK116.1  Arluth nef rebo gorthys 
+BK116.2  mar deke eth of confortys   ## [mar dek ethof ..., in margin] 
+BK116.3  | der wryans an caradow 
+# Rosewa: ceruos sub iugere [?] venietes [sic] ante se in theatro 
+
+### [fol. 6r (`11'), photo 11: `Iesu'] 
+
+## Keladocus 
+BK116.4  Ef re thonvanas kyrwas      ## thoNvanas suprscr
+BK116.5  in le ohan thum gweras      ## ohaN thuM suprscr
+BK116.6  henna ew arluth benygas     ## heNna suprscr; {henn yw}
+BK116.7  | ha gesow the wormoladow   ## {ha gwiw dhe wormoladow}
+
+## Keladocus 
+# Rosewa Keladocus ad aratorem dicat Hethlor ha kyrwas 
+BK117.1  Ow hethlor dursona thys 
+BK117.2  a wotove devethys 
+BK117.3  | am dyns terys mes am pen   ## [am for an]; peN suprscr
+BK117.4  ha kronkyys ha kerethys 
+BK117.5  | ove ha degys then sen ## theN suprscr; [sen? {fenn : fundus ??} cf. gyllys of then sen 60] 
+
+## Arator 
+BK118.1  Arluth vs in vhelder 
+BK118.2  re thanvanna yselder       ## thaNvaNna suprscr 
+BK118.3  | war gorf Tewdar velygas 
+BK118.4  hag anfugy in pelder 
+BK118.5  | in yffarnow kegygys ## [kegygys?] {kes-syg-yz : bound, tied-up? or kessydhyyz : chastised?}
+
+## Keladocus 
+BK119.1  Na gorsy densa del os       ## {na gors zy : don't curse ???}
+BK119.2  a wylta kyrwas enos 
+BK119.3  | del vynnas Dv whar ha dof   ## vyNnas suprscr 
+BK119.4  orth an ewy ow devethys      ## {<ewy ow> for yewyow : yokes}
+BK119.5  gansa may hallan gonys        ## hallaN suprscr
+BK119.6  | num gasas Jesus an cof      ## m suprscr; {J hasn't forgotten me??}
+
+## Arator 
+BK120.1  Henna suer ew tra anath      ## heNna suprscr
+BK120.2  ha tra na wharvu bythquath     ## [wharva?] 
+BK120.3  | may clowas ve in neb gwlas   ## [g]wlas
+BK120.4  dys benygy desempys           ## {deus ?}
+BK120.5  ha me as gor the wonys 
+BK120.6  | gans weras Christ lvn a ras  ## <a>? ; gaNs suprscr
+
+## Keladocus 
+BK121.1  In hanow Dv me as son 
+BK121.2  mana relhas theso beron    ## {wrellens .. broen (W brwyn - sadness) : so that they might do thee no harm}
+BK121.3  | ha naske a barth Jowan   ## {naske for nask i : tether them} 
+BK121.4  Dv re vynnas ragonny       ## vyNnas ragoNny suprscr
+BK121.5  gvthyl marclys pur thefry 
+BK121.6  | ny a yl bonas lowan 
+
+## Arator 
+# Ke a thros an kyrwas the wonys 
+BK122.1  Me as nask thys war vn dro
+
+##OJP23 
+
+BK122.1  Me as nask thys war vn dro
+BK122.2  in termyn gwelha rebo        ## termyN suprscr
+BK122.3  | der voth Dv ker thy laha   ## [sic, for lawa] 
+BK122.4  a wottovns y ordaynys        ## \a/; vyN suprscr
+BK122.5  me a vyn dallath gonys 
+BK122.6  rag mos ew an thyaha         ## [last word?] 
+
+
+BK123.1  In rag Kyrnyk ha Kella 
+BK123.2  in hanow Dv vhella 
+BK123.3  | gonethovgh heb bysmeras 
+BK123.4  me a lever rum besow        ## ruM suprscr; {by my thumbs ???}
+BK123.5  neffra nyngevyth esow       ## nyNgevyth suprscr; {yzow : crops?}
+BK123.6  | a venna Dv the weras      ## veNna suprscr
+
+## ----------------------------------------------------------------------- ##
+
+## Teutharus 
+BK124.1  Ow maseger cuf e das 
+BK124.2  joy war the vody ha ras 
+BK124.3  des in rag a thesempys 
+BK124.4  ha te a vyth mer a gras 
+BK124.5  lemmyn rag gul ow negys 
+
+## Secundus nuncius 
+BK125.1  Lowena thys syr Tewdar 
+BK125.2  lowena thys corf heb par 
+BK125.3  an gwelha gowr           ## g\o/wr 
+BK125.4  gul negysyow me a gar 
+BK125.5  a drelya thys the honor 
+
+## Teutharus 
+BK126.1  Eugh myr py stat ema Ke 
+BK126.2  mar kallas Christ e sawya 
+BK126.3  ay galarow 
+BK126.4  Innno ema ow fythya  ## 'Innno' [sic] 
+BK126.5  e vosa Dv heb parow 
+
+BK127.1  Lavar thotha mara myn 
+BK127.2  trylia thagan dv Jovyn 
+BK127.3  ef a vith ow mata gvew 
+BK127.4  ha gul e voth me a vyn 
+BK127.5  rag an trespes myntellyow 
+
+# Secundus nuncius 
+###[fol. 6v, photo 12: `Iesu'] 
+
+## [Secundus nuncius] 
+BK128.1  Ages negys a vyth gwrys 
+BK128.2  inscon orth both agys brys 
+BK128.3  ow arluth da 
+BK128.4  nvm let solas war an bys 
+BK128.5  erna theffyf theugh arta 
+
+## [Teut]harus 
+BK129.1  Fystyn scaf heb bysmeras  ## scaf ? 
+BK129.2  Jovyn rebo the weras 
+
+##OJP24 
+
+## [Secundus] nuncius 
+BK130.1  Hay how benedicite 
+BK130.2  pan aray vs genas Ke 
+BK130.3  ha pan wyry 
+BK130.4  re Astrot ath nycyte 
+BK130.5  hath coyntys nyngoes hyry 
+
+BK131.1  Syr Teuthar attenyrhys 
+BK131.2  ha thymmo ef a hyrhys 
+BK131.3  feflygh orthys aspyas  ## [for aspya?] 
+BK131.4  der Christ marsos gweregys  ## ma[r?]sos 
+BK131.5  a ban rug the goorry  ## [for garhara?] 
+
+BK132.1  Gorthya Jovyn te a ra 
+BK132.2  ha thum arluth magata 
+BK132.3  te a vith suer pub seson 
+BK132.4  hag amyndya ef a ra 
+BK132.5  yth kevar del vo reson 
+
+## Keladocus 
+BK133.1  Syrvy the thewaw tavas pan 
+BK133.2  bonas mata the bagan 
+BK133.3  nyn gew ragof            ## rago[f?] 
+BK133.4  ha Jovyn ew dyawl sertan 
+BK133.5  fy myllwhy then thew above 
+
+## Secundus nuncius 
+BK134.1  Gogy bythquath er bos den 
+BK134.2  me a wostel te an pren 
+BK134.3  awos ol the goynt wyry 
+BK134.4  te a also cafas cren 
+BK134.5  a Dvthar ow predery 
+
+## Keladocus 
+BK135.1  A varwo awos arveth 
+BK135.2  nyn gew gyvyw the vorogath  ## 'gyvwyw' [sic, for gvyw; [cf. 427] 
+BK135.3  inmeth an hen 
+BK135.4  ny vef re goward bythquath 
+BK135.5  na ny vetheth hedre ven     ## vetheth [read vethaf?] 
+
+## Secundus nuncius reversus ad regem 
+BK136.1  Ow arluth theugh lowena 
+# Nuncius reversus ad regem dicens 
+BK136.2  nawothow ema gena 
+BK136.3  na pleg thewhy me a grys 
+
+## Teutharus 
+BK136.4  Pan nowothow cuf e das 
+BK136.5  dar ny vyn Ke bos dremas 
+BK136.6  lavar thymmo me ath pys 
+
+##OJP25 
+
+## Secundus nuncius 
+BK137.1  Na vyn arluth awos fuer  ## 'awos' [read bones?] fuer 
+BK137.2  dv Jovyn ew dyawl pur vr  ## [read dyawl pur?] 
+BK137.3  del ma ef ow reportya 
+BK137.4  ha why ew abo pagan 
+BK137.5  nyngew ragtha in certain  ## ny[n]gew 
+BK137.6  bos mata thew e metha 
+BK137.7  Saw refrens ahanogh why 
+BK137.8  orthowgh kefrys ef a fy 
+BK137.9  ren kerth Dv a wonethay  ## [sic, for wonetha?] 
+
+## Teutharus 
+BK138.1  Ough elhas asof serrys 
+BK138.2  ow holan crak ew terrys 
+BK138.3  ow clowas e lavarow 
+BK138.4  ha why ew abo pagan 
+BK138.5  nyngew ragha in certan  ## 'ragha' for ragtha? 
+BK138.6  an rybot mar sue marth 
+BK138.7  ef am dyswra kyn tebarth 
+BK138.8  elhas ne vena maraw 
+
+## Secundus nuncius 
+BK139.1  Tra varthus ew an troytor 
+BK139.2  ethesa ef hay hethlor 
+BK139.3  cresough avel pan dohan 
+BK139.4  owth oras scaf ha besy 
+BK139.5  ha kyrwas gwyls pur praty 
+BK139.6  aragtha in le ohan 
+
+# Teutharus 
+###[fol. 7r, photo 13] 
+
+## Teutharus (`owt owt owt owt owt') 
+BK140.1  Gove pan ve denethys 
+BK140.2  elhas e wos wharuethys      ## 'wos' for vos? 
+BK140.3  ow bos skornys gans lorall 
+BK140.4  dryswrys ove ha lethys  ## 'drys-' for dys- 
+BK140.5  rag tristyns og in goral 
+BK140.6  a consler cam 
+BK140.7  pyth ew cvsyl 
+BK140.8  orth an wrusyl  ## [read ortho wruthyl?] 
+BK140.9  cows dyspyt the vap the vam 
+
+## Consoltus tremens 
+BK141.1  Arluth na vith mar garaw 
+BK141.2  te a bat ow skyans      ## read 'te a abat'? 
+BK141.3  pan glowaf the lavaraw 
+BK141.4  gwryth ow thavas ew pur vans  ## gwryt[h?] 
+BK141.5  rag very scruyth 
+BK141.6  mar fol e reth fernewy 
+BK141.7  rag own te thum re verwhy 
+BK141.8  ny vetha dos athan gvyth 
+
+##OJP26 
+
+BK142.1  Me ath cusyl byttygens 
+BK142.2  par del alla prethegys 
+BK142.3  re synt Astrot pen an syns 
+BK142.4  ny gosta thys heregys 
+BK142.5  na moy orth Ke 
+BK142.6  rag pystryer ew ef suer 
+BK142.7  nyn dysplaysyth mar sos fuer 
+BK142.8  hedre vo bys in e le 
+
+## Teutharus 
+BK143.1  A owt warnas te rybot 
+BK143.2  pan reta ow cusullya 
+BK143.3  the gasa cres then harlot 
+BK143.4  a vyn prest ow defya 
+BK143.5  ham dvwow mas 
+BK143.6  the gusullyow ew myscog 
+BK143.7  desempys gveyf ow golok 
+BK143.8  ha dyspyt the vab the das 
+
+## Consultus 
+BK144.01  Ke a wor pur vlew an saf 
+BK144.02  in gorthenab e eworthon  ## [read gorthenab eworthon] 
+BK144.03  don e sor nyngew mar scaf 
+BK144.04  coyth ew eben hag erthon 
+BK144.05  hag antall 
+BK144.06  mar conyth der nygromons 
+BK144.07  hagan latha in vn dawns 
+BK144.08  gallas an jowl the hel 
+BK144.09  may fo gwel 
+BK144.10  thys ervthy 
+BK144.11  hay dyscvthy 
+BK144.12  rag own bos drys re esall 
+
+## Teutharus 
+BK145.01  Elhas ow bos dogluthys  ## dogluthy[s?] 
+BK145.02  may thew rys thym e bese 
+BK145.03  asa allaf bos cvthys 
+BK145.04  pan yl loral ow gesya 
+BK145.05  han pan bayvge 
+BK145.06  nyngew marth kyn fen methak 
+BK145.07  ha serrys ha gwan fethak 
+BK145.08  gove rag an kenvge 
+BK145.09  ylhas ha gv 
+BK145.10  rag very spyt 
+BK145.11  dyswrys of quit 
+BK145.12  pandra rama trv trevath ew   ## {leg. trevath trv ?} 
+
+## Consultus 
+BK146.01  Omgonfortyough arluth whek 
+BK146.02  ha pub tra ol a vith da 
+##OJP27 
+BK146.03  nyder ascorn laver tek 
+BK146.04  orth ow hvsyl why a ra 
+BK146.05  gans pith gyrryow 
+BK146.06  doly sagh molothow 
+BK146.07  ken ef a ra anothow 
+BK146.08  ay vaner marsewhy squyth 
+BK146.09  ha mer thvwon 
+BK146.10  ew heb queston 
+BK146.11  ha denerhys 
+BK146.12  dyswryans mab den in bys 
+
+## Teutharus 
+BK147.1  Neugh ahanna cannas flowr 
+BK147.2  ha kerth Ke thym bys om towr 
+BK147.3  rag ethesaf in awhyr 
+BK147.4  fysten dewhans me ath pys 
+BK147.5  erna vony vnwerhys 
+BK147.6  neffra nyveth da ow cher  ## ms <myveth> 
+
+## Secundus nuncius 
+# Jovyn an curloys 
+
+BK148.1  Arluth honorys reby 
+BK148.2  me an kergh thys pur thely 
+BK148.3  rag pan yllyf 
+BK148.4  re syn Jovyn an curloys 
+BK148.5  ny gosk gwelan in dan droys 
+BK148.6  theso bys may tewyllyf 
+
+##Teutharus 
+BK148.7  Fystyn ow servant gwella 
+BK148.8  Astrot genas reg elha 
+BK148.9  ha Jovyn warnas re wyllyf 
+
+# Secundus nuncius vadit ad Keladocum 
+# Nun[c?] vadi... Keladoc... Nunciu... 
+###[fol. 7v (`12'), photo 14] 
+
+## Secundus nuncius cuis [?] vadit ad Keladocum 
+BK149.1  Syn Jovyn reth sawya Ke 
+BK149.2  te a retys lavurrya 
+BK149.3  bys om arluth desempys 
+BK149.4  ny fyth ken ys beawty   ## b\e/awty 
+BK149.5  pan deffy thy rum lowta 
+BK149.6  te a wothvith the negys 
+
+## Keladocus 
+BK150.1  Mar pith rys thym in della 
+BK150.2  in hanow Dv vhella 
+BK150.3  genas me a 
+BK150.4  Jesus an arluth gwelha 
+BK150.5  mab an wyrthyas vwelha 
+BK150.6  roy thym gras the wuthyl da
+
+##OJP28 
+
+## Secundus nuncius transit ad regem cum Kelado [sic] 
+BK151.1  Lowena thys drys pub re 
+#                              Keladocus transit ad regem 
+BK151.2  arluth vhal in the se 
+BK151.3  avel emprowr desethys 
+BK151.4  the negys ew gwrys whare 
+BK151.5  ha me sotal devethys 
+
+## Keladocus 
+BK152.1  Tevthare bona dies 
+BK152.2  pur wyer nyth car neb lyes 
+BK152.3  rag the debal vanerow 
+BK152.4  henna me re aspeas 
+BK152.5  mar debal los ny fyas 
+BK152.6  a pe vas the oberow 
+
+## Teutharus, sibridens [sic] 
+BK153.1  Wylcom Ke ha me ath pys 
+BK153.2  orthave navith serrys 
+BK153.3  rag gule the voth me a vyn 
+BK153.4  me a wor ow bos camblys 
+BK153.5  saw pur wyer rag an tryspys 
+BK153.6  ema thym eddrag tyn 
+
+BK154.1  Laver an pyth a vynhy  ## 'pyth' [altered from peth] 
+BK154.2  gans the golan the vny 
+BK154.3  ha te a vith ef heb mar 
+BK154.4  mar pyth om gallus e ry 
+BK154.5  mars re govytys y fy 
+BK154.6  rag in sertan me ath care 
+
+## Keladocus 
+BK155.1  Syr Teuthar mer gras theso 
+BK155.2  kyn hellen cafas in ro 
+BK155.3  ol the arlotegh defry 
+BK155.4  me ny govytya nahen 
+BK155.5  saw an myns tyer a barkyen 
+BK155.6  ow cul tronkys hedre ve 
+
+## Teutharus 
+# O cul tronkys 
+
+BK156.1  An mens tyrath a barkys 
+BK156.2  hedre ven o cul tronkys 
+BK156.3  me a ro thys perpetual 
+BK156.4  in dyswyllyans an trespas 
+BK156.5  ha moy ha pos     ## [blank] 
+BK156.6  te a vith dihogal 
+
+## Keladocus 
+# Keladocus 
+# Turant a dorras iij dans Ke 
+
+BK157.1  Teuthar gentel gramersy 
+BK157.2  gans the ro hath cortesy 
+BK157.3  kylmys of somotythe   ## ky\l/mys 
+##OJP29 
+BK157.4  te a rug ow dyvan claf 
+BK157.5  sav ol theso me an gaf 
+BK157.6  rag the vos gyntel ha fre 
+
+## Teutharus 
+# The Rosewa in mes a Gooddron 
+
+BK158.1  Dun ahanan cosyn ker 
+BK158.2  the Rosewa heb danger 
+BK158.3  thum lavarow me a syns 
+BK158.4  de rag Ovbra gans an ger 
+BK158.5  ha dog genas the thafer 
+BK158.6  rag ov styvya sulvegyns 
+
+# Et discendit rer [sic, for rex] Teutharus 
+# cum suis [looks like siijs?] fan' [for famulis?] 
+
+## Ovbra 
+BK159.1  Arluth the why lowena 
+BK159.2  te a yl ow benena 
+BK159.3  marthys dentyth ahana 
+BK159.4  pan eth clowas ow kylwal 
+BK159.5  me skerys moy ys gwenhal  ## 'me' for ne? 
+BK159.6  an forth orth hi lavana 
+
+# Tevtharus 
+###[fol. 8r (`13'), photo 15: `Iesu'] 
+
+## Teutharus 
+BK160.1  A Ovbra good chavns refo 
+BK160.2  desympys rys ew theso 
+BK160.3  ow styvya war nebas cows 
+BK160.4  dythtya the jorrygow ow mel 
+BK160.5  rys ew gwelas orth an wel 
+BK160.6  nagota ge mowas lows 
+
+## Ovbra 
+BK161.1  Nagof ov arluth defry 
+BK161.2  rag ysmegennow costly 
+BK161.3  vs thym heb mar 
+BK161.4  ha lyas denteth ely 
+BK161.5  rag corf ha rag esyly 
+BK161.6  nynges ysmek aga far 
+
+BK162.1  Atomma dogga dryton 
+BK162.2  ny sowrd clevas in mab pron 
+BK162.3  na rewgh wyth e lawsa 
+BK162.4  fit ex camis mordula    ## 'camis' [sic, for canis] 
+BK162.5  ha leth an wegyth gafna 
+BK162.6  nasteva levgh a vys mee 
+
+BK163.1  Henna ew gwastervynnys 
+BK163.2  dyghtys a gyk herynnys 
+BK163.3  ha blonak hagh vrygh vnlew 
+BK163.4  fryys war tan in padal 
+BK163.5  ha gansa leth an hudal  ## [or hadal?] 
+BK163.6  a sof pottys oyow bew 
+
+##OJP30 
+
+## Teutharus 
+BK164.1  Da om pleg the lavaraw 
+BK164.2  me a wor nythes paraw 
+BK164.3  tochyng the gar benenas 
+BK164.4  plenteth lowr a ylleow 
+BK164.5  rag pub maner annyow 
+BK164.6  heb dowte kefyr genas 
+
+## Ovbra 
+BK165.1  Ow arluth devgh a lena 
+BK165.2  why a vyth war ow ena 
+BK165.3  stewys fyn ha heb delay 
+# In geren 
+BK165.4  desempys evgh in geren 
+BK165.5  Mahun dv hay oferan 
+BK165.6  re venygo an aray 
+
+## Teutharuus 
+# [T.] a ros kymmys the Ke the barkya der vo ef in geren 
+
+BK166.1  A wotta ve pur barys 
+BK166.2  me a vyn in gwelha prys 
+BK166.3  in geren dallath entra 
+BK166.4  lemmyn Ke ow mata gvyv 
+BK166.5  an ambos kepar del ew 
+BK166.6  ke ge dvwans the barkya 
+
+## Keladocus 
+BK167.1  Teuthar gyntyl scon me a 
+BK167.2  Dv roy thym gras the wul da 
+BK167.3  orth e voth an caradow 
+
+## Teuthar 
+BK167.4  Harlygh gwra gwelha gylly 
+BK167.5  kyn parkys myns a wylly 
+BK167.6  te an pew heb falladow 
+
+## Ovbra 
+BK168.1  Me a gergh erb a rasaw  ## gerg[h] 
+BK168.2  drys keel drys gwel dryrs prasaw  ## dryrs sic 
+BK168.3  drys tvow dryrs rvn drys mene     ## 'tvow' for tnow; 'dryrs' sic  
+BK168.4  ha drys kew ha drys fosow 
+BK168.5  ha drys myn drys gryn drys trosow 
+BK168.6  a dowl an jowl in Kembra 
+
+BK169.1  Atomma losow an gog 
+BK169.2  ha culregh ny a son drog 
+BK169.3  hearlygh in agys body 
+BK169.4  me as dres genawgh in dowr 
+BK169.5  ha gwreugh leas nobyl owr 
+BK169.6  a ysnegow pur gostly 
+
+## Teutharus 
+
+##OJP31 
+
+BK170.1  Ovbra floure an benenas 
+BK170.2  ny won vith plethaf genas 
+BK170.3  mar gurryus os yth wryhans 
+BK170.4  me a vyn the avoncya 
+BK170.5  ha martesyn the lavncya 
+BK170.6  re syn Turpyn ow thassans 
+
+# Keladocus 
+###[fol. 8v (`13'), photo 16: `Iesu'] 
+
+## Keladocus 
+# Pejadow Ke the confoundya Tevrant 
+
+BK171.1  Gorthys rebo Dv a nef 
+BK171.2  gans gweras theworta ef 
+BK171.3  ny rys thymmo bos amys 
+BK171.4  a dyr Brytyn the vonys 
+BK171.5  tevrant rebo confoundys 
+BK171.6  hedre vema orth e geys 
+
+## Secundus nuncius, ad regem 
+BK172.1  Arluth rebo confortys  ## 'rebo' for reby? 
+BK172.2  ema a fyrth wharvethys 
+BK172.3  gans an loral Ke pur wyer 
+BK172.4  ha fosset bras drehevys  ## fosset? 
+BK172.5  pan vo hy cvl dewethys 
+BK172.6  hy a thustun mer a dyer 
+
+## Tevtharus 
+BK173.1  Ny gresaf awos an bys 
+BK173.2  bos maner thetho parkys 
+BK173.3  a dyreth whath          ## dyr[e]th 
+BK173.4  an geffa den in danna 
+BK173.5  a ban etha a lemma 
+BK173.6  ny gessa hanter vn lath 
+
+## Secundus nuncius 
+# The orth Kewnans an Velyn bys Kevard Tremvstel Penpol Wartha 
+
+BK174.1  Me a wor gwyer hag an crys 
+BK174.2  bos ke thotha drehevys 
+BK174.3  the worth Kewnans an Velyn 
+BK174.4  bys Keward Tremvstel Pen Pol Wartha 
+BK174.5  an mor the gela cowal 
+BK174.6  pur theffry ef an ystyn 
+BK174.7  lorth war e lergh ef a thray 
+BK174.8  ha e fyth ke bras ha gay 
+BK174.9  war e lergh re syn Turpyn 
+
+## Teutharus (`owt owt owt owt owt') 
+BK175.1  Out out marsew henna gwyer 
+BK175.2  an tecka parcel am tyr    ## a[n] 
+BK175.3  ew kyllys re syn Torpyn 
+BK175.4  heb venytha dewelys     ## venyth[a] 
+BK175.5  gove bythquath e welys 
+BK175.6  ny lowenhaf om tyrmyn 
+
+##OJP32 
+
+BK176.1  Out warnas tebal venyn 
+BK176.2  awos myl bvns ny vynsen 
+BK176.3  the welas run oferen 
+BK176.4  drethas ethof pystrys  ## [read pystryys?] 
+BK176.5  omma ethesaf gwryes 
+# Geren 
+BK176.6  ha glenys orth an geren 
+
+## Ovbra 
+BK177.1  Syrra na vethough serrys 
+BK177.2  orthave me agys pys 
+BK177.3  rag Ke re rug ol an drog 
+
+##Tevtharus 
+BK177.4  In della me a sopos 
+BK177.5  may halla kees e borpos 
+BK177.6  e gonha rebo in crog 
+
+BK178.01  Jovyn gwer thv 
+BK178.02  gweras lemmyn 
+BK178.03  ha gans ow rv 
+BK178.04  in ow thermyn 
+BK178.05  me ath lvnen worth  ## 'lvnen' read lvn 
+BK178.06  mear thysaysys 
+BK178.07  of drys pub gyst 
+BK178.08  kyn fen gaysys 
+BK178.09  gans pobyl Christ 
+BK178.10  nyn gew mar bowrth  ## g\e/w 
+
+BK179.01  Jovyn dv pur 
+BK179.02  lven a rasaw 
+BK179.03  dusqua the gvre 
+BK179.04  dyndyl grasaw 
+BK179.05  ow arluth mas 
+BK179.06  gwyth ve orth sham 
+BK179.07  he re vysmer  ## 'he' for ha 
+BK179.08  kyn tvs ath vlam 
+BK179.09  hag a lever 
+BK179.10  na thusta ras 
+
+BK180.01  Dar nvm clowyth 
+BK180.02  orth the begy 
+BK180.03  nynges ewyth 
+BK180.04  in the vody 
+BK180.05  moy ys levgh 
+BK180.06  Jovyn pen cog 
+BK180.07  dv bothorag 
+BK180.08  gwyth ve orth drog 
+BK180.09  te glovorag 
+BK180.10  refoga evgh 
+
+# Keladocus wenit [sic] ad regem
+
+##OJP33 
+### * * * * * [2 folios, old `14' and `15', missing] 
+###[fol. 9r (`16'), photo 17: `Secundo'] 
+
+## [Prim?]us armiger 
+BK181.1  Arluth worthy 
+BK181.2  parys ony 
+BK181.3  theth plegadow 
+# Discendit armiger 
+BK181.4  rag mos then le 
+BK181.5  bythquath nave 
+BK181.6  thewhy parow 
+
+## Cadorus dux Cornubiae 
+BK182.1  Pes seniors je vow commavnd  ## s[e?]niors 
+BK182.2  yonk ha loys Gothal ha Scot 
+BK182.3  pes tout gent pedit & grovnd  ## p\e/s 
+BK182.4  ha kemmyrs a vyr der hot  ## sic, for kemmys? {or _kemmyns_??} 
+BK182.5  bethans pur war 
+BK182.6  me ew duk Kernow Cador 
+BK182.7  ny yl den vith don ow sor 
+BK182.8  in bys bythquath numbe par 
+
+BK183.1  Me a vyn a barth an tas 
+BK183.2  mos ahanan toyth garaw 
+BK183.3  the le na thyfyk pen las 
+BK183.4  the Chy an Govr heb paraw 
+BK183.5  a Gyllywyk 
+BK183.6  Arthur ew henna heb flows 
+BK183.7  a wel corf ny glowyr covs 
+BK183.8  benytha gans tavas kyk 
+
+# Desendit 
+
+## Augelus rex Albanie qui nunc Scotia dicitur 
+BK184.1  Pax nunc omnes viuentes  ## viue[n]tes 
+BK184.2  kefrys bresyon ha kemmyn 
+BK184.3  et estote trementes 
+BK184.4  thewhy me a worhemmyn 
+BK184.5  bethough pur glor 
+BK184.6  me ew body dyspusonld    ## sic, for dyspusond 
+BK184.7  Augel myghtern in Scotland 
+BK184.8  gwel corf ny gerth war an dor 
+
+BK185.01  A barth Christ an mad gwelha 
+BK185.02  me a vyn mos gans mer grys 
+BK185.03  the ge an gowr ryelha 
+BK185.04  ow arluth flowran an bys 
+BK185.05  a Gyllywyk 
+BK185.06  Arthur ew henna heb flows 
+BK185.07  a wel corf ny glowyr cows 
+BK185.08  benytha gans tavas kyk 
+BK185.09  solet adimplere 
+BK185.10  omne bonum 
+##OJP34 
+BK185.11  yma tregys in Kembra   ## {rhyme indicates _Kembre_} 
+BK185.12  in vrbe legionum 
+# Id est Moneuia 
+
+## Quartus armiger 
+BK186.1  Ow arluth gay 
+BK186.2  in gvelha ray 
+BK186.3  ny a genowgh 
+BK186.4  bys in e dor 
+BK186.5  del veth in dowr 
+BK186.6  gansa menovgh 
+
+# Hic discendi[t] [-derunt, added later] 
+
+## Primus pontifix 
+BK187.1  Pax omnes audientes 
+BK187.2  pan gows flowran an clergy 
+BK187.3  vltra omnes viuentes 
+BK187.4  kemerys bras ha worthy 
+BK187.5  of the gvsyl 
+BK187.6  nyn ges myghtern in neb gwlas 
+BK187.7  na wothvean rennothas 
+BK187.8  dystogh lyha e vrusyl 
+
+BK188.1  Me a vyn ren gwerhesow 
+BK188.2  mos thum sofran a lenha 
+BK188.3  nyn ges martha kenwesow 
+BK188.4  in chy arluth in bysma 
+BK188.5  behan na bras 
+BK188.6  Arthur ew henna heb fal 
+BK188.7  nyn ges myghtern mar rial 
+BK188.8  in dan nef heb dowt in cas 
+
+# Descendit 
+
+## Primus crucifir 
+BK189.1  Arluth gwelha 
+BK189.2  gwreugh in della 
+BK189.3  fistenough thy 
+BK189.4  ha ny ath sew 
+BK189.5  ow arluth gvew 
+BK189.6  bys in e chy 
+
+## Secundus episcopus 
+BK190.1  Pax vos omnes legistis 
+BK190.2  tewough in vn gyrlyves 
+BK190.3  gaudebit mundus iste 
+BK190.4  pan deffy ha dyryvyas  ## deffy? 
+BK190.5  am skyansow 
+BK190.6  acovntys of mablean 
+BK190.7  drys tvs an bys yn tyan 
+BK190.8  ha parfet in mysk cansaw 
+
+BK191.1  Me a vyn mos heb gortas 
+BK191.2  a barth Dv in vhelder 
+BK191.3  the ge ow arluth cortys 
+##OJP35 
+BK191.4  neb ew mer eryelder 
+BK191.5  hay gallus bras 
+BK191.6  Arthur ew henna heb fal 
+BK191.7  nyn ges myghtern mar ryal 
+BK191.8  in dan nef heb dowt in cas 
+
+# Discendit; dicit [?] episcopus crucifer 
+
+## Secundus crusifer 
+BK192.1  Ow arluth gwreugh 
+BK192.2  ahanan evugh 
+BK192.3  a barth an tas 
+BK192.4  tam bys may fewgh 
+BK192.5  gans perhan ras 
+
+# Beduerus ad Ke 
+###[fol. 9v, photo 18: `Iesu'] 
+
+## [B]eduerus ad Ke 
+BK193.1  Dv reth hembronko syr Kay 
+BK193.2  qui novel in bona fay  ## qui? 
+BK193.3  gentyl cosyn whethyr gost 
+
+## [K]ayus ad Wethworn [sic, for Bethworn] 
+BK193.4  Welcum cosin by my sovl 
+BK193.5  mos the Arthor ew ov thowl 
+BK193.6  nyn lavaraf awos bost 
+
+## Beduerus 
+BK194.1  Me a debis ethothy 
+BK194.2  ow broder e fennowgh why 
+BK194.3  laverrya gans weras Christ 
+
+## Kayus 
+BK194.4  Ou dol ew mos thy araf      ## 'Ou dol' for thowl? 
+BK194.5  dun warbarth fistenyn scaf 
+BK194.6  e fyth ena lyas gist 
+
+## Hoelus ad Bethworn 
+BK195.1  My dver cosyn wel etak 
+BK195.2  py fega ha Dv in rak 
+BK195.3  marseugh the Arthor porwyr 
+BK195.4  ow thowl ew monas genowgh 
+BK195.5  e fyth lyas kevenovgh 
+BK195.6  in e chy a thyvers tyr 
+
+## Beduerus 
+BK196.1  Gwyr a leverough ovwan 
+BK196.2  me an to thevgh re govwan 
+BK196.3  pur welcum ough genanny 
+BK196.4  del on gver freth in casow 
+BK196.5  warbarth the berhan rasow 
+BK196.6  kys fystynen agen try 
+
+##OJP36 
+
+## Cadorus 
+BK197.1  Morreth Dv reth convya 
+BK197.2  pyfys a barth Marya 
+BK197.3  e thew the dovl lavyrrya 
+
+## Morryth 
+BK197.4  Dys in Arthor in tefry 
+BK197.5  Cador lowena thewhy 
+BK197.6  decus dux Cornubiae 
+
+## Cadorus 
+BK198.1  Cosyn whek dun ny warbarth 
+BK198.2  gans weras Dv kyn tebarth 
+BK198.3  ny agan byth lowena 
+
+## Moryth 
+BK198.4  Ny gans Arthor in e fal 
+BK198.5  kyn tryken bys woyl Myhal 
+BK198.6  wylcum ny a vyth ena 
+
+## Augelus 
+BK199.1  Ov vous gard movn beal amowrs  ## 'Ov'? for Dv 
+BK199.2  pydv ysy ny ovg an covrs 
+BK199.3  y wold wyte by my pol 
+
+## Cadorus 
+BK199.4  Lowena thewhy Augel 
+BK199.5  mos the Arthor dyovgal 
+BK199.6  a ren agen arluth ol 
+
+## Primus pontifix 
+BK200.1  Dv vous gard an bon matyn 
+BK200.2  I pray you gentyl cosyn 
+BK200.3  whetherward be you goyng 
+
+## Secundus episcopus 
+BK200.4  Brother God save you an se 
+BK200.5  I go to lord myld & fre 
+BK200.6  to Arthur our myghty kyng 
+
+# Tunc ambulant circa theatrum omnes bini et trini 
+
+## Primus pontifix 
+BK201.1  Marya rebo gvrthys 
+BK201.2  mar ver ethof lowenhys 
+BK201.3  gallas mettya genough why 
+
+## Secundus episcopus 
+BK201.4  Me ew peys magata 
+BK201.5  ha govenak thym ema 
+BK201.6  pur welcum efe thynny 
+
+##OJP37 
+
+## Arthurus rex Britaniae qui nunc Anglia dicitur 
+BK202.1  Peysyth y hot wyld & tam  ## cf. 320 
+BK202.2  den ha best peswar trosak 
+BK202.3  I say Arthur is my nam 
+BK202.4  myghtern bras ha galosak 
+BK202.5  ha conquerior 
+BK202.6  maratof ha trewelas 
+BK202.7  ny byth mab den ov gwelas 
+BK202.8  rag arsevnans ha terrvr 
+
+# Arthor pan vova angry a the in bis then yskerans a throk fare 
+
+BK203.1  War pur nebas lavarow 
+BK203.2  me ew den nangevas par 
+BK203.3  ya ov golag ew garow 
+BK203.4  han strykyes a omweldar 
+BK203.5  in suer heb mar 
+BK203.6  mara pethaf dywenhys 
+BK203.7  me amvos in bys 
+BK203.8  ham yskererans a throk far  ## for yskerrans 
+
+# Tra re glowis [?] 
+###[fol. 10r (`17'), photo 19: `Iesu'; `Centio'(?)] 
+
+## Arthur 
+BK204.1  Tra re glowys vackya 
+BK204.2  mara qver e procedya  ## mara? 
+BK204.3  e fyth skyans ow lakya 
+BK204.4  kyn gallas eremedy 
+BK204.5  ha trya fest        ## t[?]rya 
+BK204.6  ny vith scaf e thustuthy 
+BK204.7  ow gasa ve heb cvthy 
+BK204.8  thum yskerans me a gest 
+
+## Rex Orcados 
+BK205.1  Me a gest then vghelha 
+BK205.2  arluth vs a vghan loer 
+BK205.3  ystyn quaral na relha 
+BK205.4  erbyn myghtern Bretyn Veor 
+BK205.5  Arthor gour mas 
+BK205.6  a vod mar qvrer y wooddros 
+BK205.7  ha me myghtern Orcados 
+BK205.8  an socker gans ol ow gwlas 
+
+## Rex Norgogie, secundus 
+BK206.1  Gans ol ow gwlas ma perys 
+BK206.2  me myghtern Norgagh inweth 
+BK206.3  ethy gansso drys an bys  ## gansso? 
+BK206.4  thy socra dyhow ha cleth 
+BK206.5  drys sygh ha lyn       ## h[a] 
+BK206.6  kynfe dowthak dewenhys 
+BK206.7  both e golan a vith gwrys 
+BK206.8  ehonyn kepar del vyn 
+
+## Rex Dacie, tertius 
+##OJP38 
+BK207.1  Kepar del vyn renothas 
+BK207.2  me a ganso myghtern Das 
+BK207.3  hag in batal hag in cas 
+BK207.4  me an socker in pub plas 
+BK207.5  gans ol ow mebel 
+BK207.6  hay yskerans me a vras 
+BK207.7  maras mettya by my las 
+BK207.8  in bysma ny vewas pel  ## 'ny' ms <my> 
+
+## Rex Islandie, quartus 
+BK208.1  Na vewans pel ren passyon 
+BK208.2  maras mettyaf in neb scor 
+BK208.3  y astevith damnassyon 
+BK208.4  kyn fe rys thym mos drys vor 
+BK208.5  thaga welas 
+BK208.6  me ew myghtern in Island 
+BK208.7  maga freth avel tvrand 
+BK208.8  corf ankengy ha dylys 
+
+## Rex Godlandie, quintus 
+BK209.1  Delys ove ha fasaw 
+BK209.2  myghtern Godland corf heb paraw  ## [read par] 
+BK209.3  parys rag mos then cosow 
+BK209.4  gans Arthor in gwyr heb mar 
+BK209.5  drys ol an bys 
+BK209.6  byner re ympynnyth boys 
+BK209.7  mar ny scollya ve ow goys 
+BK209.8  orth e socra mar pyth rys 
+
+## Rex Cragow, sextus 
+BK210.1  Mar pyth rys war ow forth hyr 
+BK210.2  me myghtern Cragow cors-syth  ## [-syth added to pyth just below] 
+BK210.3  gans Arthor in quarel gwyr 
+BK210.4  a vith paris corf ha pyth 
+BK210.5  heb gul delay 
+BK210.6  me a gansa ha garow 
+BK210.7  rag bewa ha bos marow 
+BK210.8  wel myght he be stowt ha gay 
+BK  [[[[[
+## Arthurus, sedens 
+BK211.1  Stowt & gay & symly syr 
+BK211.2  I am sitting on my se 
+BK211.3  nvm ankevyr ve pur wyr 
+BK211.4  hedre vo nef in e le 
+BK211.5  fers of ha freth 
+BK211.6  penagel am sorr gans cam 
+BK211.7  ef an gevyth tebal lam 
+BK211.8  awos own an jowl hay vam 
+BK211.9  om yskerans me a feth 
+
+## Rex Castyl, septimus 
+##OJP39 
+
+BK212.1  Me a feth ren arluth Dv 
+BK212.2  mar pyth rys thym in the le 
+BK212.3  hag a dretha gans ow gv 
+BK212.4  myghtern Castyl in pub degre 
+BK212.5  the wethel gist 
+BK212.6  settys of rag the gery 
+BK212.7  ha dyswul ha conquerya 
+BK212.8  the yskerans der gras Christ 
+
+## Modredus nepos regis Arthur 
+BK213.1  Der gras Christ agen pernas 
+BK213.2  me Modreth a lever freth 
+BK213.3  Arthur a vyth gvarthevyas 
+BK213.4  hay yskerans ef a feth 
+BK213.5  ow ownter ew 
+BK213.6  mara falla thotha ef 
+BK213.7  them refallo Dv an nef 
+BK213.8  the begy ken nynsof gvyw 
+
+## Walganivs 
+BK214.1  Gvyw ew ow arluth heb flows 
+BK214.2  the honovr drys tvs an bys 
+BK214.3  mar sves denvith a vyn cows 
+BK214.4  py gul erbyn both e vres 
+BK214.5  ef a throg far 
+BK214.6  mar trek vgh ehylvith 
+BK214.7  ha henna why a wilwyth 
+BK214.8  ken fe emprour bethans war  ## emp\r/our 
+
+###[fol. 10v, photo 20: `Iesu'] 
+
+BK215.1  Avith soker 
+BK215.2  myghtern Arthur 
+BK215.3  in quarel gwyer 
+BK215.4  dris mor ha tyr 
+BK215.5  me Syr Gawen 
+BK215.6  ..an serres [?] anwek [?] lowan [in margin] 
+
+## ..lglisius 
+BK216.01  Anwek lowan ove suer 
+BK216.02  pan deffy ha trewelas 
+BK216.03  ow yskerans ny vith fuer 
+BK216.04  mar ny rowns ow gohlas 
+BK216.05  hag omdenna 
+BK216.06  Elider ethof hynwys 
+BK216.07  the Arthor marrak gortlys 
+BK216.08  y anmy rag debenna 
+BK216.09  ha suer heb dovt 
+BK216.10  me as devyn 
+BK216.11  hem [sic, for hen] ha mebyn 
+BK216.12  maras mettya 
+BK216.13  ny vith lettya 
+BK216.14  i a verv kyn fens mar stowt 
+
+##OJP40 
+# Discendit ordinale 
+
+## Kayus 
+BK217.1  Ave pater in terno 
+BK217.2  lowena thum arluth mas 
+BK217.3  rex potens es in bono 
+BK217.4  ha gvrthyas in pub cas 
+BK217.5  certayn heb mar 
+BK217.6  ryal os in pub degre 
+BK217.7  ha der vo bys in e le    ## {hedra vo}
+BK217.8  in dan an hovl nyfyth par 
+
+## Boduerus 
+BK218.1  Lowena thys flower an bys 
+BK218.2  arluth myl bow ha gwlasow 
+BK218.3  lyas rebe lowenhys 
+BK218.4  ow predery ath rasow 
+BK218.5  heb mar 
+BK218.6  ryal os in pub degre 
+BK218.7  hedre vo bys in ele 
+BK218.8  in dan an howl myfyth [sic, for nyfyth] par 
+
+## Hoelus, Hoelus 
+BK219.1  Lowena ha sansolath 
+BK219.2  thagan arluth pub seson 
+BK219.3  ha fves ha skeantolath 
+BK219.4  governans ha reson     ## gover\n/ans 
+BK219.5  sertan heb mar 
+BK219.6  ryal os in pub degre 
+BK219.7  hedre vo bys in e le 
+BK219.8  in dan an howl nyfyth par 
+
+## Arthur, Arthur 
+BK220.1  Byan venv movn beal amors 
+BK220.2  kyn fewhy cans peha 
+BK220.3  welcom mylwyth ow sokors 
+BK220.4  why redueth in er gwelha 
+BK220.5  may hallasough dos 
+BK220.6  kynteffa ow thas an beth 
+BK220.7  ham mam ham flehys in weth 
+BK220.8  wulcumha ny alsons bos 
+
+## Hoelus dux 
+BK221.1  Gromessy an gwelha tas 
+BK221.2  Arthor rych a ryowta 
+BK221.3  yth chy ny thesyk pen las 
+BK221.4  a sym mer the veowta 
+BK221.5  war ow lowta 
+BK221.6  ny ve thebar ad hvneth 
+BK221.7  drys arlythy Christvneth 
+BK221.8  te an bew an pryncipawt 
+
+# Hic assendit Kayus Beduerus et Hoelus 
+##OJP41 
+# et discendit a dixtereis post regem Castil 
+
+## Augelus 
+BK222.1  Ave pater Arthore 
+BK222.2  lowena thys hag oner 
+BK222.3  turba gentis futurae 
+BK222.4  a record the vonas flowr 
+BK222.5  mer ew he [for the?] fves 
+BK222.6  the vannath hath ryelder 
+BK222.7  ara the gorf in pelder 
+BK222.8  nyth ankevyr byttyth brves 
+
+## Morrydus 
+BK223.1  Lowena thum arluth mas 
+BK223.2  lowena then gwelha govr 
+BK223.3  lowena the berhan ras 
+BK223.4  lowena thys barth yth towr 
+BK223.5  mer ew the fves 
+BK223.6  the vannath hath ryelder 
+BK223.7  ara the gorf in pelder 
+BK223.8  nyth ankevyr byttyth brves 
+
+## Cadorus 
+BK224.1  Lowena ha lvne rowath 
+BK224.2  theso war ver lavarow 
+BK224.3  rag bos in yth elonoyth 
+BK224.4  ny ve genys the barow 
+BK224.5  mer ew the fves 
+BK224.6  the vannath hath ryelder 
+BK224.7  a ra the gorf in pelder 
+BK224.8  nyth ankevyr byttyth brves 
+
+## Arthur 
+BK225.1  Benevenistis cari 
+BK225.2  wulcum in cres ow holan 
+BK225.3  nunc possum iocundari 
+BK225.4  bos devethys ow cvvyon 
+BK225.5  ham kyfuywy 
+BK225.6  why am cher hag am dythan 
+BK225.7  a trykkowgh bytte vlythan 
+BK225.8  gras e wothvean the why 
+
+###[fol. 11r (`18'), photo 21: `Iesus'] 
+
+## Augelus 
+BK226.1  Gromersy arluth cortys 
+BK226.2  flowran ol an arlythy 
+BK226.3  colles y gar nanhovly[s?] 
+BK226.4  rag henna e tuth thewhy 
+BK226.5  saw kevennovgh 
+BK226.6  del ew a goyth leverys 
+BK226.7  por theffry ny vith kery[s?] 
+BK226.8  mar teva re venowgh 
+
+# Tunc assendunt Augelus, Morridus et Caddorus 
+# et sedebunt a senistris post regem Cragow 
+##OJP42 
+
+## Primus pontifex 
+BK227.1  Aue pater rex splendens 
+BK227.2  an gwelha corf a thug gv 
+BK227.3  larga gratis inpendens 
+BK227.4  arluth cortys os ath rv 
+BK227.5  menovgh prevys 
+BK227.6  the omthegyans ew worthy 
+BK227.7  contys in mysk arlythy 
+BK227.8  neffra ny vyth ankevys 
+
+## Secundus episcopus 
+BK228.1  Arthuro sit gloria 
+BK228.2  an gwelha corf a thug gv 
+BK228.3  tua vita floria 
+BK228.4  chyf an bysma os heb dowt  # {leg. <dew> _Duw_} 
+BK228.5  menovgh prevys 
+BK228.6  the omthegyans ew worthy 
+BK228.7  contys in mysk arlythy 
+BK228.8  neffra ny vyth ankevys 
+
+## Arthur 
+BK229.1  Benevenistis domini 
+BK229.2  welcom ough genaf in suer 
+BK229.3  bono pollentes omni 
+BK229.4  tvs vas owhy ha tus fuer 
+BK229.5  ham confessors 
+BK229.6  mylwyth welcum ough gena 
+BK229.7  asyw mer ow lowena 
+BK229.8  a thevythyans ov amors 
+
+## Primus episcopus 
+BK230.1  Gramersy arluth glorius 
+BK230.2  the peb ethos plegadow 
+BK230.3  heel oge ha plentethus 
+BK230.4  ha gvyw the wormoladow 
+BK230.5  dris yonk ha loys 
+BK230.6  a ban dallathas an bys 
+BK230.7  noble marrak me a grys 
+BK230.8  ny ombrevys in dan scoys 
+
+# Clavdatur [t]entum Arturi 
+# Tunc ascendunt episcopi et [?] sedebunt diuisim post reges 
+
+## Lucius Hiberus emperator Romanerum 
+BK231.1  Pax omnes Christiani 
+BK231.2  et barbarum gentes 
+BK231.3  Scoti Picti pagani 
+BK231.4  quot sub viuentes 
+BK231.5  bethans pur glor 
+BK231.6  rag mar tema ha rowtya 
+BK231.7  ha fernevwhy ha stowtya 
+BK231.8  ny vith mab den nam dowtya 
+##OJP43 
+BK231.9  na whath graf lost yn dan dor 
+
+BK232.1  Me ew Lucie an emprror [sic] 
+BK232.2  ambes trubyt a pub tyr 
+BK232.3  drys Bryttyn rag ow onor 
+BK232.4  ha der vestry ha der wyr 
+BK232.5  me am byth ef 
+BK232.6  marrak thymmo both ow brys 
+BK232.7  vhal worthyys of in bys 
+BK232.8  moy agys Dv me a grys 
+BK232.9  in e dron in gwlaskor nef 
+
+BK233.1  Saw ema vn ankenak 
+BK233.2  anfvgyk orth ov cuthy 
+BK233.3  henna rum gvruk dewenyk 
+BK233.4  drefen navyn ov rvthy 
+BK233.5  go ef er bos 
+BK233.6  me a rowt e skovornow 
+BK233.7  yngylwyr Arthur Cornow 
+BK233.8  hag an deben avel hos 
+
+BK234.01  Ow hanhasow 
+BK234.02  deugh thym in rag 
+BK234.03  drys an gwlasow 
+BK234.04  scon heb ardag 
+BK234.05  rys ew rowtya 
+BK234.06  serp avel spern 
+BK234.07  ha morlohys 
+BK234.08  bys in myghtern 
+BK234.09  vge bohys 
+BK234.10  orth ow dovtya 
+
+# Tunc venet legators bini et bini [or t[r]ini] ortam [for coram] emperatore 
+
+## First legatus senator 
+BK235.01  Hayl pryns of myght 
+BK235.02  vhal in tron both 
+BK235.03  day & night 
+BK235.04  the wostoyth on 
+BK235.05  ow arluth stowt 
+BK235.06  myns a vynhy 
+BK235.07  ol avyth gwrys 
+BK235.08  trystyough thynny 
+BK235.09  flowran an bys 
+BK235.10  na berthowgh dowt 
+
+# Secundus legatus 
+###[fol. 11v, photo 22] 
+###['Quarto'] 
+
+##  Secundus legatus 
+BK236.01  Hayl arluth fre 
+BK236.02  han gwelha govr 
+##OJP44 
+BK236.03  bythquath a ve 
+BK236.04  gwelys in towr 
+BK236.05  na whath a vyth 
+BK236.06  arluth vhal 
+BK236.07  mer ew the ras 
+BK236.08  trybut ryal 
+BK236.09  a lyas gwlas 
+BK236.10  why agys byth 
+
+## Tertius legatus 
+BK237.01  Hayl syr emprour 
+BK237.02  yth ryawta 
+BK237.03  gans mer honowr 
+BK237.04  ha beawta 
+BK237.05  ha gorthyans bras 
+BK237.06  par theuuvgh [or thennvgh?] suer 
+BK237.07  ny gerth war leer 
+BK237.08  rych os ha fuer 
+BK237.09  hath gallas mer 
+BK237.10  heb dowt in cas 
+
+## Quartus legatus 
+BK238.01  Hayl arluth heel 
+BK238.02  drys pub huny 
+BK238.03  colan den lel 
+BK238.04  ny yl vny 
+BK238.05  moy ryelder 
+BK238.06  is clowas kethel 
+BK238.07  ath reawta 
+BK238.08  avel mab whethel 
+BK238.09  the veawta 
+BK238.10  a [?] in pelder 
+
+## Quintus legatus 
+BK239.01  Hayl arluth ker 
+BK239.02  pehan tectar 
+BK239.03  colorys cler 
+BK239.04  lvn a whekter 
+BK239.05  a caradow 
+BK239.06  arluthesow 
+BK239.07  ath hoyl pup prys 
+BK239.08  ren gwerhesow 
+BK239.09  te a bew an bys 
+BK239.10  theth vnadow 
+
+## Sextus legatus 
+BK240.01  Hayl arluth bold 
+BK240.02  del os savns per 
+BK240.03  clothys of gold 
+BK240.04  ha velwet ker 
+BK240.05  ev the aray 
+##OJP45 
+BK240.06  damask boytkyn 
+BK240.07  inweth cendal 
+BK240.08  bys ha satynn 
+BK240.09  the porpor pal 
+BK240.10  ha pannow gay 
+
+## Immperator [sic] 
+BK241.01  Welcum amors 
+BK241.02  owgh thy pup prys 
+BK241.03  welcom sokers 
+BK241.04  drys tvs an bes 
+BK241.05  owhy heb mar 
+BK241.06  e tof rum sergh 
+BK241.07  a garaf suer 
+BK241.08  e tha dynnergh 
+BK241.09  bys in Arthur 
+BK241.10  bethans por war 
+
+## Septimus legatus 
+BK242.01  Hayl arluth grym 
+BK242.02  del os gallant 
+BK242.03  hath skyans lym 
+BK242.04  ol theth talant 
+BK242.05  an bys ath cher 
+BK242.06  efyth rvweth 
+BK242.07  heb rvwynva 
+BK242.08  yth tylvweth 
+BK242.09  ha wyrthynva 
+BK242.10  na borth awher 
+
+## Octavus legatus 
+BK243.01  Hayl arluth ker 
+BK243.02  caradowha 
+BK243.03  ys an hovl cler 
+BK243.04  ha golowha 
+BK243.05  pan ve clerha 
+BK243.06  caradowder 
+BK243.07  ema yth fas 
+BK243.08  ha golowder 
+BK243.09  mer ew the ras [gras, with g deleted?] 
+BK243.10  arluth kerha 
+
+## Nonus legatus 
+BK244.01  Hayl arluth gay 
+BK244.02  vhal in ban 
+BK244.03  yn bona fay 
+BK244.04  ny wyskys pan 
+BK244.05  body ath par 
+BK244.06  ethos floran 
+BK244.07  drys peb in noer 
+BK244.08  an vethygan 
+##OJP46 
+BK244.09  in dan an doer 
+BK244.10  ath worth heb mar 
+
+## Decimus legatus 
+BK245.01  Hail arluth fers 
+BK245.02  freth gans cletha 
+BK245.03  bresyon ath chers 
+BK245.04  in kynbetha 
+BK245.05  waraga glyn 
+BK245.06  ha ken forsoth 
+BK245.07  yskynsa drog 
+BK245.08  whath lowan goyth 
+BK245.09  in y vgog 
+BK245.10  thys a ynclyn 
+
+## Undecimus legatus 
+BK246.01  Hayl arluth feth 
+BK246.02  ha gallasak 
+BK246.03  a vn mab leth 
+BK246.04  nyve torgak 
+BK246.05  the ge parow 
+BK246.06  marnys Arthur 
+BK246.07  an dyawl dygnas 
+BK246.08  saw henna suer 
+BK246.09  ew gvrthyfyas 
+BK246.10  ha corf garow 
+
+# Duodecimus legatus 
+###[fol. 12r (`19'), photo 23: `Iesus'] 
+
+## Duodecimus legatus 
+BK247.01  Hayl prins heb par 
+BK247.02  te a bew ol 
+BK247.03  penagel nath car 
+BK247.04  gveth ow [sic, for ew?] ys fol 
+BK247.05  ha moy folla 
+BK247.06  pals ew a owr 
+BK247.07  yth castylly wormolha 
+BK247.08  the [or ye] in kylly 
+BK247.09  nygh in dowr trvth 
+BK247.10  na fylly nath svl ma 
+BK247.11  thilly 
+BK247.12  dan ny gan 
+BK247.13  na py ma bran 
+BK247.14  nath prys 
+
+## Enperator [sic] 
+BK248.01  Wylcum tvs vas 
+BK248.02  owhy thymmo 
+BK248.03  Dv danvon ras 
+BK248.04  warnovgh a dro 
+BK248.05  in keta pol 
+BK248.06  wylcum owhy 
+##OJP47 
+BK248.07  arag ow sal 
+BK248.08  wylcum yns y 
+BK248.09  ha re Vehal 
+BK248.10  wylcum ough ol 
+
+BK249.01  Ow cothmans da 
+BK249.02  del ough in suer 
+BK249.03  lemmyn why a 
+BK249.04  by [for bys] in Arthur 
+BK249.05  gans lether clos 
+BK249.06  kynthewa freth 
+BK249.07  settyough e coyt 
+BK249.08  elhas soweth 
+BK249.09  in dan e doyt 
+BK249.10  mar synsough bos 
+
+## First legatus 
+BK250.01  Arluth myl bow 
+BK250.02  os gallosak 
+BK250.03  rag gul the brow 
+BK250.04  lyas trosak 
+BK250.05  par barys on 
+BK250.06  the worhemmyn 
+BK250.07  scon me an gwra 
+BK250.08  hag a rekyn 
+BK250.09  orth mab an pla 
+BK250.10  let vs a lon 
+
+## Emperator 
+BK251.1  Lyvyryns theugh praga e ma 
+BK251.2  ow qvragnyg drys ow thyr 
+BK251.3  ha praga e rug dyelha 
+BK251.4  ow cosyns heb fortha wyer 
+BK251.5  hay coyt gwen pe 
+BK251.6  ow thrvbut a Vretyn Veer 
+BK251.7  pur dvn an vyst [or vyrt?] neb vr 
+BK251.8  ol mago stowt del omwre 
+
+## Secundus legatus 
+BK252.01  Rag meth na vethens gegys [ys not he vnder the movn, deleted] 
+BK252.02  ay servys the omdenna 
+BK252.03  freth y feth gweregys 
+BK252.04  mar peth rys dos the henna 
+BK252.05  ol theth desyer 
+BK252.06  gwrens e drvbut hay svt 
+BK252.07  rag bos maraw ha bewa 
+BK252.08  ny ath saker gans the wyr 
+BK252.09  ha henna crys 
+BK252.10  penagel na vyn 
+BK252.11  bos the wostyoyt [for wostoyth?] 
+BK252.12  saw kowsa tyn 
+##OJP48 
+BK252.13  hag an hostoyt 
+BK252.14  ny an gor quit mes an bys 
+
+## Imperator 
+BK253.01  Henna ew gyntyl [ve deleted] leverys 
+BK253.02  ys not he vnder the movn 
+BK253.03  na ny gyrthys war werys 
+BK253.04  but I can bryng hem a down 
+BK253.05  kyn fe mar stowt 
+BK253.06  mar pyth rys thym [or thyn] synge cas 
+BK253.07  a ses lyas myghtern gwlas 
+BK253.08  a the thymmo gans y rowt 
+BK253.09  thum gweras snyurt [for smart?] 
+BK253.10  a hanan eugh 
+BK253.11  a barth an tas 
+BK253.12  han [or ham] negys gwreugh 
+BK253.13  lemmyn in fas 
+BK253.14  do as men [looks like nnen] pluk vp yor hart 
+
+## Secundus legatus, in via 
+BK254.1  Senatur sav gvel a vys 
+BK254.2  a rag Arthur pan deffa 
+BK254.3  besy ew this bonas wys 
+BK254.4  rag pur cas del desefsa 
+BK254.5  ny worthyb ef 
+BK254.6  then messag vs danvenys 
+BK254.7  vhal ethew kelenys 
+BK254.8  in mysk myns vs in dan nef 
+
+## First legatus 
+BK255.1  Kynfe mar freth dv halan 
+BK255.2  an vlethan in kynsa deyth 
+BK255.3  me a gows war mab malan 
+BK255.4  ha nyn sparya wor ow fayth 
+BK255.5  naraf heb dowt 
+BK255.6  mar kows gyrryow trewelas 
+BK255.7  ny vanna evos kelys 
+BK255.8  me an gorthyb maga stowt 
+
+# Logitt' [?] coram Arthuro 
+
+BK256.1  Ave rex dignitatis 
+BK256.2  corsow prevys in cosow 
+BK256.3  in via honestatis 
+BK256.4  theworth Lucy canhasow 
+BK256.5  danvenys on 
+BK256.6  dris leas gwlas 
+BK256.7  rag nygyssas 
+BK256.8  orthewhy so mot y gon 
+
+# Secundus legatus 
+###[fol. 12v, photo 24] 
+
+## Secundus legatus 
+BK257.1  Lowena the berhan ras 
+##OJP49 
+BK257.2  avel emperor desethys 
+BK257.3  lowena thys myghtern mas 
+BK257.4  canhasow on devethys 
+BK257.5  prevath heb son 
+BK257.6  drys lyas gwlas 
+BK257.7  rag nygyssas     ## ny\gy/ssas 
+BK257.8  orthawhy so mos the gon 
+
+## Arthur 
+BK258.01  Senators mas 
+BK258.02  welcum forsoyth 
+BK258.03  drefen the ras 
+BK258.04  hath vos arluth 
+BK258.05  an goys ryal 
+BK258.06  saw gwayt byth fuer 
+BK258.07  ow nygyssyas 
+BK258.08  rag ken in suer 
+BK258.09  thys ny vyth fas 
+BK258.10  omma napel 
+
+## Tertius legatus 
+BK259.1  Lowena thum gwelha govr 
+BK259.2  a ve bythquath a Gurnow 
+BK259.3  gwel corf in tent nag in towr 
+BK259.4  whath ny glowys skovernow 
+BK259.5  e vos genys 
+BK259.6  agan hvnyth 
+BK259.7  in Christonath    ## Ch\r/istonath 
+BK259.8  a nowyth nag a henys 
+
+## Quartus legatus 
+BK260.1  Lowena ha beawtys 
+BK260.2  the warthyvyas lyas cas 
+BK260.3  myghtern gentyl ha cortys 
+BK260.4  gwel corf e vos in neb gwlas 
+BK260.5  ny ve genys 
+BK260.6  agan hvneth 
+BK260.7  in Christonath 
+BK260.8  a nowyth hag a henys 
+
+## Quintus legatus 
+BK261.1  Lowena ha ryelder 
+BK261.2  the flowren an vyghterneth 
+BK261.3  hag honor bras in pelder 
+BK261.4  bys venytha heb dvwath 
+BK261.5  sertan heb flos 
+BK261.6  a thallath bys 
+BK261.7  mayfen cofuys    ## ma\y/fen [or na-?] cofuys [or cofnys?] 
+BK261.8  a well corf ny glowys cows 
+
+## Sextus legatus 
+##OJP50 
+
+BK262.1  Lowena ha sansolath 
+BK262.2  the beawty berhennak 
+BK262.3  flowran a skyentolath 
+BK262.4  ha gallosak in leawte 
+BK262.5  os war pub ovs 
+BK262.6  a thallath bys 
+BK262.7  nayfen cofuys [or cofnys?] 
+BK262.8  a wel corf ny glowys cows 
+
+## Arthur 
+BK263.01  Marrogyon flowr 
+BK263.02  wylcum om tyr 
+BK263.03  iwer onowr 
+BK263.04  the why pub wyer 
+BK263.05  mar tyrffynnowgh 
+BK263.06  saw mar ses fowt 
+BK263.07  berth yn dynneugh 
+BK263.08  kynfewgh mar hovt 
+BK263.09  ewgh mes an dergh 
+BK263.10  hag omdennowgh 
+
+## Septimus legatus 
+BK264.1  Lowena theugh a vyghterne 
+BK264.2  hag onors drys an tasow 
+BK264.3  the yskerans a dres spern 
+BK264.4  mara meryth in fasow 
+BK264.5  sertan heb mar 
+BK264.6  a pes syrrys 
+BK264.7  hath voth [altered from both] terrys 
+BK264.8  nyth wortesa gwyls na whar 
+
+## Octavus legatus 
+BK265.1  Lowena thys myghtern stowt 
+BK265.2  in vhelder in the se 
+BK265.3  pob ath wormol nynges dowt 
+BK265.4  hedre vo bys in e le 
+BK265.5  ha suer heb mar 
+BK265.6  a pes syrrys 
+BK265.7  hath voth terrys 
+BK265.8  nyth wortesa gwyls na whar 
+
+## Nonus legatus 
+BK266.1  Lowena this a dasak 
+BK266.2  gwarthyvyas mer a gwlasaw 
+BK266.3  ne [ni?] ve the bar re gasak 
+BK266.4  na nyn gwelvith lagasaw 
+BK266.5  in bys hagan 
+BK266.6  myr in garaw 
+BK266.7  han corf maraw 
+BK266.8  rag vth a grop in grogan 
+##OJP51 
+
+## Decimo [sic] legatus 
+BK267.1  Lowena then ryelha 
+BK267.2  pryns a allos ombrevy 
+BK267.3  ren tas a nef vhelha 
+BK267.4  ny yller the ankevy 
+BK267.5  in bys hogan 
+BK267.6  myr in garaw 
+BK267.7  han corf maraw 
+BK267.8  rag vth a grop in grogan 
+
+## Undecimus legatus 
+BK268.1  Lowena a regnation 
+BK268.2  theso drys an re erall 
+BK268.3  in mysk ol an Christonnyon 
+BK268.4  nynges orthes rag perel 
+BK268.5  mars & [?] emperowr 
+BK268.6  agan arluth 
+BK268.7  henna forsoyth 
+BK268.8  drys peb a bew an onor 
+
+## Duodicimus legatus 
+BK269.1  Lowena this myghtern feteth 
+BK269.2  gwerror fers ha galosak 
+BK269.3  ny won in bys pew ath feth 
+BK269.4  den na best peswar trosak 
+BK269.5  agan arluth 
+BK269.6  henna forsoth 
+BK269.7  drys peb a bew an emprowr 
+
+## Arthur 
+BK270.1  Per noterdam byanvenv 
+BK270.2  roy warnowgh ha ryelder 
+BK270.3  ebyth galaunt retenv 
+BK270.4  ha devethis a belder 
+BK270.5  ha thewgh grasow 
+BK270.6  ha ganhasow 
+BK270.7  agys messag mar sew vas 
+BK270.8  welcum om gwlas 
+
+## First legatus ad reginam 
+
+### * * * * * [2 folios, old `20' and `21', missing] 
+###[fol. 13r (`22'), photo 25: `Iesus'] 
+
+## First legatus 
+BK271.1  Henna ew gwyer 
+BK271.2  war ow forth hyr 
+BK271.3  por gentyll ew 
+BK271.4  hay vos presyvs 
+BK271.5  hag honorys 
+BK271.6  ave gvyw 
+
+## Arthurus 
+##OJP52 
+
+BK272.01  Ow soget kata ponan  ## {kettep onan} 
+BK272.02  me a vyn war ow lowta 
+BK272.03  ombarvuge a hanan      ## {ombareuzi}
+BK272.04  the wosper gans beawta 
+BK272.05  delleuugh fus [for tus] fuer 
+BK272.06  ordnowgh a ragof vskis 
+BK272.07  peswar myghtern curunys 
+BK272.08  gans clethythyow a owr per 
+
+BK272.09  In tokyn me the fetha 
+BK272.10  ow yskerans in pub tv 
+BK272.11  han [for ham?] bos parys the sconya 
+BK272.12  pub cam der weras Jesu 
+BK272.13  an prennas tyn 
+BK272.14  Mundus tennenda ampla 
+BK272.15  per quatuor acclinata 
+BK272.16  gvef a relha er ow fyn 
+
+## Augelus, stando 
+BK273.1  Arluth ker the arhadow 
+BK273.2  a vith gwreys hath worhemyn 
+BK273.3  parys on theth vnadow 
+BK273.4  rag the servya pub termyn 
+BK273.5  gans ryelder 
+BK273.6  drethos e thon lewenhys 
+BK273.7  gallas the los drys an bys 
+BK273.8  bys in hethans in pelder 
+
+## Arthurus 
+BK274.1  Gwaytyough gul agys dvver 
+BK274.2  ens peswar myghtern worthy 
+BK274.3  the thon a rag Gwynnever   ## {Gwynnuwer} 
+BK274.4  deaw gopyl a gelemmy 
+BK274.5  dof gans pluf gwyn 
+# Culvers 
+BK274.6  rag an vyghtern real   ## {leg. vyghternes} 
+BK274.7  in tokyn hy bos vval 
+BK274.8  ha whek ha tek hag y lyn  ## {ylyn 'translucent'} 
+
+## Rex Norgogie 
+BK275.1  Ny ara syra forsoyth 
+BK275.2  in hanow an tas gwelha 
+BK275.3  ny glowsyn cows a arloyth 
+BK275.4  yndan an howl ryelha 
+BK275.5  [paris ony deleted] agesowgh why 
+BK275.6  dun then chapal 
+BK275.7  scon heb astal 
+BK275.8  parys ony 
+
+## Artvrus, dessendit 
+BK276.01  Dvn ow amors ham cvvyon 
+BK276.02  gans solas hag eglynnyon 
+##OJP53 
+BK276.03  | ha merth ha melody    ##  {... hweg ?} 
+BK276.04  thagan palas gwel ew thyn 
+BK276.05  | revertya gans cannow  ##  {... teg ?}
+BK276.06  ha predery ren Avstyn 
+BK276.07  || agen gwayow nynsa an gof    ## [not clear where these words belong] 
+BK276.08  goeth Lucy rum tas a nef 
+BK276.09  me a garsa thotha ef 
+BK276.10  || dusquethas vnwith pew of 
+
+## Lucy 
+# Hic regum procerumque chorerum decet stipare revetit [sic] 
+# Arthurum [sic, for Arthurus] in palacio suo 
+
+## Cadorus 
+BK277.1  Pur barys ew the socckors 
+BK277.2  na thyglon saw the oners 
+BK277.3  del os myghtern heb parow 
+
+## Arthurus 
+BK277.4  Na raf ow gentyl amors 
+BK277.5  gwel ew gena bos marow 
+
+## Sextus legatus 
+BK278.1  Grovs Christ benedicite 
+BK278.2  pan rowtya vs gans Arthur 
+BK278.3  me a grys bos nycyte 
+BK278.4  ha gokyvgh then emp(e)rowr 
+BK278.5  mos the [servya deleted] syrry 
+BK278.6  gallas mar stowt 
+BK278.7  erbyn e rowt 
+BK278.8  ma veth mab den gregyrry 
+
+## Primus legatus 
+BK279.1  Dun the glowas ereson 
+BK279.2  rag an matters govynnys 
+BK279.3  pur cas etev an seson 
+BK279.4  may fyth corden ystynnys 
+BK279.5  an maglenha 
+
+## Septimus legatus 
+BK279.6  Dun a barth tv 
+BK279.7  saw rag own gv 
+BK279.8  na gowsyn ny a henna 
+
+## Primus legatus 
+BK280.01  Hail semly syr on your towr 
+BK280.02  salue then sal in tean 
+BK280.03  me a lever arluth flowr 
+BK280.04  orth ow [?] both gyllys vean 
+BK280.05  gans gorthyb then gwelha gowr 
+##OJP54 
+BK280.06  bythquath a wesk lyan 
+BK280.07  na darsough ny 
+
+## Arthurus, stando 
+BK280.08  Dv reth wela mes ay dorn 
+BK280.09  syth thou wylt so hastely gon 
+BK280.10  me a worthyb thys dely 
+
+# Secundus legatus 
+###[fol. 13v, photo 26] 
+
+## Secundus legatus 
+BK281.01  Me a garsa in tefry 
+BK281.02  cafas gorthyb in certan 
+BK281.03  ha war an trvb[vt] manly 
+BK281.04  ew try myl bowns in blethan 
+BK281.05  a vo gwyn 
+BK281.06  try myl a henna kemerough cvr 
+BK281.07  bvns in rag ow arluth nyvyn suer 
+BK281.08  bonas hel tha awon 
+BK281.09  bletha ha newon gew pe l [sic] 
+BK281.10  in tyowgall 
+BK281.11  saw stoppys gwyen blethennow 
+
+## Arthurus 
+BK282.01  Lavar theth arluth cosyn 
+BK282.02  me releverys heb flows 
+BK282.03  ran an trvbut a wovyn 
+BK282.04  na goyth na hen war nebas ovs 
+BK282.05  then stat a Rome 
+BK282.06  mars e ben ef dybynnys 
+BK282.07  mar goyth pan ew govynnys 
+BK282.08  me an danfner thy ynnys [or yuuys?] 
+BK282.09  by the dredful day of don [sic, for dom] 
+
+BK282.10  Yea bys vycken 
+BK282.11  nynsa na hen 
+BK282.12  rag Bretayn Veer 
+BK282.13  theth arluth mas 
+BK282.14  gwra dyryvas 
+BK282.15  henna martor 
+
+BK283.01  Ny worthebe thotha 
+BK283.02  toching then questons eral 
+BK283.03  bys may tanvanho thymma 
+BK283.04  py war ganow leverall 
+BK283.05  in erbers in powadro 
+BK283.06  an lynes in tyawgal 
+BK283.07  praga etevons 
+BK283.08  heb denvith thaga gonys 
+BK283.09  saw rag own bos somonys 
+BK283.10  a Romans a vyth vystyys 
+BK283.11  yn steovne panna alhons 
+
+##OJP55 
+
+## Primus legatus 
+BK284.1  Syr king dar ny vynnowgh why 
+BK284.2  leverough expedient 
+BK284.3  [sy deleted] ry ken gorthyb the Lucy 
+BK284.4  ha bonas moy obedient 
+BK284.5  ys in della 
+
+## Arthurus, se[den?]do 
+BK284.6  Na vanna heb the dolla 
+BK284.7  rag henna nagam pelha 
+BK284.8  te an kef rag an gwelha 
+
+# Omnes fm [?] stabu[n]t 
+
+## Octavus legatus 
+BK285.01  Ef a vith gweth 
+BK285.02  re Christ ys wel 
+BK285.03  the gyrryow ferth  ## {leg. freth} 
+BK285.04  in tyhogal 
+BK285.05  ath setanans 
+BK285.06  pan ys clowo 
+BK285.07  Lucy mar dv 
+BK285.08  poys vyth ganso 
+BK285.09  nyth gas ath vew 
+BK285.10  run sperys sans 
+
+## Arthurus, stando ad modum tyranny 
+BK286.01  Arjaf rengys 
+BK286.02  the ves omden 
+BK286.03  py run drengys 
+BK286.04  skettyaf the ben 
+BK286.05  hath coloren [or colorem?] 
+BK286.06  the worth the scoyth 
+BK286.07  gans the gonha 
+BK286.08  kepar ha goyth 
+BK286.09  te mab honna 
+BK286.10  tebal voran 
+
+# Hic sedebit Arthurus; omnes fanuli [sic] stabunt 
+# Tunc legaty cadent ad genua perterriti 
+
+## Nonus legatus, perterritus, flectando 
+BK287.01  Arluth worthy 
+BK287.02  na vith garow 
+BK287.03  kyn kowsyn ny 
+BK287.04  mes lavarow 
+BK287.05  canhasow on 
+BK287.06  rag danferys 
+BK287.07  gans gyrryow syth 
+BK287.08  pan yns ottrys 
+BK287.09  ny dallans pyth 
+BK287.10  so moty gon 
+
+##OJP56 
+
+## Arthurus, sedendo 
+BK288.01  Ny rug Lucy 
+BK288.02  furneth in vys 
+BK288.03  mer a foly 
+BK288.04  o prederys 
+BK288.05  mos thum serry 
+BK288.06  ef may hvnyth 
+BK288.07  awos e gre 
+BK288.08  run Christonath 
+BK288.09  ny yl neffra 
+BK288.10  ow dystvthy 
+
+# Primus legatus valeatis 
+###[fol. 14r (`23'), photo 27] 
+
+## First legatus 
+BK289.01  Valeatis 
+BK289.02  rer [sic, for rex] Arthure 
+BK289.03  libertatis 
+BK289.04  quo future 
+BK289.05  memor estis 
+
+# Hic claudatur tentum et ibi pausatur 
+
+## Arthurus, stando 
+BK289.06  Bona vita 
+BK289.07  vobis chari 
+BK289.08  ha dythyow 
+BK289.09  bys venari 
+BK289.10  in honestis 
+
+## Decimus legatus, in via 
+BK290.1  Arluth Christ thagan dyfen 
+BK290.2  in dywath na vyn cvthis 
+BK290.3  an nevvoys ew vvylen 
+BK290.4  na vith neffra dvvuthys 
+BK290.5  heb arholas 
+BK290.6  a theu [or then] gv the ny pan ven 
+BK290.7  ..oref [or cref?] ew pan sorr then lvn 
+BK290.8  gans Arthor cvdufollas [?] 
+
+## First legatus 
+BK291.01  Gas cres rag scham 
+BK291.02  gvew os the vlam 
+BK291.03  rag nyn gyw vas 
+BK291.04  suer ethum glow 
+BK291.05  a omthygnow 
+BK291.06  the lendevnys [?] gas 
+BK291.07  rag methan bys 
+BK291.08  agan yskar 
+BK291.09  whath a throg fuer 
+BK291.10  hay woeth a vith esylhys 
+
+BK292.1  Salue solus seculi 
+BK292.2  empror worthy in pub plas 
+##OJP57 
+BK292.3  sicut splendor speculi 
+BK292.4  ys the fernys of your fas 
+BK292.5  shening so bright 
+
+## Emperator Lucy 
+BK292.6  Welcum pan owgh devethys 
+BK292.7  ny goyth thewgh bos kerethys 
+BK292.8  whylye be swynys so light     ## {whyl~ye be swynys ???} 
+
+BK293.1  Pan nowothov pan getlow 
+BK293.2  vs genowgh why an cost west 
+BK293.3  marsew bersys an whetlow 
+BK293.4  wold I wer now at ny [for my] rest 
+BK293.5  leverough scon 
+BK293.6  a vyn bos gostoyth 
+BK293.7  thymmo ve kepar del goyth 
+BK293.8  ha chastya y golan 
+
+## First legatus 
+BK294.1  Na vyn ow arluth heb nam 
+BK294.2  awos merwal der an cletha 
+BK294.3  ethesough why ow cul cam 
+BK294.4  theto [sic] ef suer e metha 
+BK294.5  war ow forth hier 
+BK294.6  ha rum arluth am perys 
+BK294.7  thynny ef a leverys 
+BK294.8  e vos gvyryak yth ympyr 
+
+BK295.1  Mar ow codres ymsesya [or yn-?] 
+BK295.2  in neb dythyow vs ow tos 
+BK295.3  settys rag thagan dyseysya 
+BK295.4  me a wor the wyr e vos 
+BK295.5  ha pryns heb [pa] par 
+BK295.6  ew ef ha mer the breysya 
+BK295.7  drys svel a welys heb mar 
+
+## Emperator Lucy (`owt owt owt owt owt owt') 
+BK296.1  Pan drotate in dar fol 
+BK296.2  pan in preysyth araga 
+BK296.3  by my soul nyngeth the gol 
+BK296.4  vevgh a rosa the ga 
+BK296.5  omden the ves 
+BK296.6  rag own cafan [?] ef war an pol 
+BK296.7  a behen [?] ereta ges 
+
+BK297.1  Marrogyan leverugh why 
+BK297.2  pan worshyp er agys fith 
+BK297.3  a wothya Arthor the ry 
+BK297.4  rag an trubut sola theth [or thyth] 
+BK297.5  a stoppyas ef 
+BK297.6  rys ew thotha e thoscor [?] 
+##OJP58 
+BK297.7  awos e nerth hay wlascor 
+BK297.8  mar myn bewa in dan nef 
+
+## First legatus 
+BK298.1  Syr na vethough grockhys 
+BK298.2  na omgeryough bettevoth [sic, for -eth] 
+BK298.3  an trubut pan ve tochys 
+BK298.4  e worthyb o tyn ha freth 
+BK298.5  hag ef garaw 
+BK298.6  hag ow thavoch forsoyth 
+BK298.7  ay wlascor trubut na goyth 
+BK298.8  mars agys pen ow arluth 
+BK298.9  henna o e lavarow 
+
+BK299.1  Ha der reson ha drefan 
+BK299.2  e vos mer goyth govynnys 
+BK299.3  ef a leverys efan 
+BK299.4  efethowgh why dybynnys 
+BK299.5  thy aquyttya 
+BK299.6  na gwel gorthyb [or -p] nagen be 
+BK299.7  me ath warne so motythe 
+BK299.8  kyn fynhas ow andytya 
+
+# Emperator `owt owt owt owt owt owt haraw' 
+###[fol. 14v, photo 28: `Iesus'] 
+
+## Emperator (`owt owt owt owt owt owt haraw') 
+BK300.1  A thew gohy ow holan 
+BK300.2  mars me an darvith the kyns 
+BK300.3  ewos a rys war entron 
+BK300.4  in dyspyt in kyg ethyns 
+BK300.5  mar an mettya 
+BK300.6  an rebel gv       ## {gow ?}
+BK300.7  & fals dellew 
+BK300.8  me an dyel heb lettya 
+
+BK301.1  Dar ny worthebys myn rew 
+BK301.2  praga e fuldrys ow cosyn 
+BK301.3  ha subiect neb a bew 
+BK301.4  ow thyr ren geffa tristyns 
+BK301.5  an tyllak ways 
+BK301.6  kyn fe an jowl in e byn 
+BK301.7  a sew coyth yn gorfensen 
+BK301.8  an caffan a rag ow fas 
+
+## Duodecimus legatus 
+BK302.1  Nyn gyw y daul gorthebey 
+BK302.2  the na moy a gys matters 
+BK302.3  bys praga in kerthaugh why 
+BK302.4  etef lynas in erthors 
+BK302.5  heb gonythe 
+BK302.6  e gyrryow ef ew henna 
+BK302.7  ha suer ny vyn omdenna 
+##OJP59 
+BK302.8  awos own a gortew 
+
+## Emperator Lucy (`owt owt owt owt owt owt haraw tango') 
+BK303.1  A Dv danvon anfugy 
+BK303.2  war an raf glovorak na 
+BK303.3  mollath Christ han trefugy 
+BK303.4  war gorf [blank: unfinished line] 
+BK303.5  gegy ay vew 
+BK303.6  me an heth in mes ay nyeth 
+BK303.7  ny allaf gotha e ryeth 
+BK303.8  e ma ow skethy re Dew 
+
+BK304.1  Kyn kemerhis castylly 
+BK304.2  ham lawothnys a vith pals 
+BK304.3  me a bes ow askylly 
+BK304.4  byth ny falla ve an fals 
+BK304.5  orth ovhovly 
+BK304.6  drys tennyn [or tenuyn?] ha menythyow 
+BK304.7  ef a velyk an dythyow 
+BK304.8  may tallythyf e dovla 
+
+## Secundus legatus 
+BK305.1  Ow holan a vyth in cren 
+BK305.2  pan vo kowsys ay hanow 
+BK305.3  ef ew an bolta mab den 
+BK305.4  a gampoller gans ganow 
+BK305.5  suer heb kelas 
+BK305.6  in syrrys neb an gwelha 
+BK305.7  nyn dythursa pythellya 
+BK305.8  war nanbos [or nambos] e wohelas 
+
+## Tertius legatus 
+BK306.01  Pan leverys agys fuer 
+BK306.02  agys nygysyow thotha 
+BK306.03  kyn thon corfow da ha fuer 
+BK306.04  an myr han wel anotha 
+BK306.05  agen teylly           ##  te\y/lly 
+BK306.06  e weflow hay lagasow 
+BK306.07  hay goynntnans o mar fasow 
+BK306.08  may the gan ow thum gelly 
+BK306.09  ol clamderak 
+BK306.10  war agen glvn in vn strays [or scrays] 
+BK306.11  pur blyant ow pegy gras 
+BK306.12  agen bewnans awherak 
+
+## Imperator (`owt owt owt owt owt owt owt' lysky bus) 
+BK307.1  A traytors ragas bo spyt 
+BK307.2  kemmys orth ow dvwenhe 
+BK307.3  ow holan ew crackys [qyck [?] deleted] quyt 
+BK307.4  drefen why thy lowenhe 
+BK307.5  derlewd omthon 
+##OJP60 
+BK307.6  ha gans henna e wormol 
+BK307.7  eugh an golak in neb tol 
+BK307.8  an gwelha ahanowgh ol 
+BK307.9  re gorf Dv ny dal on 
+
+BK308.1  Moyhes ow fyanhasow 
+BK308.2  ma ow holan ow qvana 
+BK308.3  maseger pen canhasow 
+BK308.4  deugh a rag in vn a thana 
+BK308.5  ke sovyth ha north 
+# Tunc receperunt legatus et preparabunt reges 
+BK308.6  ha gvra cry cref in pub cost 
+BK308.7  ow soccors may teffons tost 
+BK308.8  a gy the vys in vn lost 
+BK308.9  fystyn na let ke ath forth 
+
+BK309.1  Ha gvayt gwarnya myghtern Medes 
+BK309.2  ha myghtern Grek maga suer 
+BK309.3  may founs [or fonns] gena desempys 
+BK309.4  rag otham vs a dvs fuer 
+BK309.5  thym drys pub tra 
+BK309.6  inweth gwarnow senators 
+BK309.7  kepar delyns ow amors 
+BK309.8  may teffans them in tornma 
+
+# Nuncius: honor 
+###[fol. 15r (`24'), photo 29: `Iesus'] 
+
+## Nuncius 
+BK310.1  Honor thum arluth ryal 
+BK310.2  nirys this ow regnrya [or regurya?] 
+BK310.3  bost ew gena ha fest mal 
+BK310.4  yth nygysyow laverrya 
+BK310.5  syr farewell 
+BK310.6  se glowyns pebol a dro 
+BK310.7  in nergh korf kemmys a vo 
+BK310.8  in arvow rys ew thotha 
+BK310.9  hastia thum arluth vhall 
+
+BK311.1  Bethough gansa kynpenbys 
+BK311.2  an gorhemmyn ew henna 
+BK311.3  ha [replacing rag deleted] ris ew gvl e thevys 
+BK311.4  war bayn cregy ha tenna 
+BK311.5  ny dal bos goyth            ## {'no need to be proud'? cf. PC 0381} 
+BK311.6  rag prynnya dewas ha boys 
+BK311.7  harlyg robowghynk [sic] ha loys   ## {hardlych robbewgh yo'ynk ha loez}
+BK311.8  myns a gyffovgh war an forth 
+
+## Boccus rex Medorum 
+BK312.1  Pax nunc prelyatores 
+BK312.2  prynsys [or pryncys?] dukys marrogyon 
+BK312.3  saltem debiliores 
+BK312.4  rag hastys of am colan 
+##OJP61 
+BK312.5  kynthoma pyth 
+BK312.6  ha trewyllyk om dedys 
+BK312.7  ya Boccus myghtern Medys 
+BK312.8  ew ow hanow gorrough vyth 
+
+## Primus nuncius 
+BK313.1  Ave pater in terno 
+BK313.2  Lucy agys dynnyrhes 
+BK313.3  vt est potentes in bono 
+BK313.4  saw e golan ew cvthys 
+BK313.5  rag galaraw [or -av] 
+BK313.6  Arthur a vyn e vettya 
+BK313.7  in hast hay oversettya 
+BK313.8  ef re dos in ger maraw [or -av] 
+
+## Boccus rex Medorum 
+BK314.1  Canhas welcum os sertan 
+BK314.2  Lucy ys lord of honor 
+BK314.3  an ryboth myghtern Breatayn 
+BK314.4  thotha ef nyra dolor 
+BK314.5  then jawden fy 
+BK314.6  heb let me a thum gvelha 
+BK314.7  then myrnans er na gelha 
+BK314.8  e yskar ny the thum chy 
+
+## Primus nuncius 
+BK315.1  Henna ew kowsys garow 
+BK315.2  hag a golan stowt porwyer 
+BK315.3  ny gefyr agys paraw 
+BK315.4  in dan howl in mor na tyer 
+BK315.5  syr farwell      ## fa\r/well 
+
+## Boccus rex Medorum 
+BK315.6  Farwell canhas plegadaw 
+BK315.7  laver thum tas caradaw 
+BK315.8  me an vesk [or vest?] ha ke napell 
+
+# Hic dissendit rex 
+
+## Epystopus rex Grecorum 
+BK316.1  Sileat omnis viuus 
+BK316.2  Latinus atque Grecus 
+BK316.3  conticeat natiuuus [sic] 
+BK316.4  argus luscus & cecus 
+BK316.5  ha gvyls ha whar 
+BK316.6  myghtern Grece ove om towr 
+BK316.7  Epystopus body flower 
+BK316.8  indan an howl numbves par 
+
+## Primus nuncius 
+BK317.1  Lowena thys a vyterne 
+BK317.2  ow arluth a tynyrhis 
+BK317.3  gallas garaw avel spern 
+##OJP62 
+BK317.4  in ol hast ef ath pegys 
+BK317.5  a thos thotha 
+BK317.6  in myth Arthur ema gwyer 
+BK317.7  thotha ef in e ympyer 
+BK317.8  markyl in deg the wortha 
+
+## Epystopus rex Grecorum 
+BK318.1  Welcum oge gar byben 
+BK318.2  ny thovtyaf an nowothow 
+BK318.3  an Vretons me a the ben 
+BK318.4  e kerth vn vaner ha gothow 
+BK318.5  gas ve hag hy 
+BK318.6  ha gwarn ow arluth garow 
+BK318.7  e yskar a vith maraw 
+BK318.8  ha tovchys kepar ha ky 
+
+## Primus nuncius 
+BK319.1  Henna ew kowsys efan 
+BK319.2  hag a golan dyspusant 
+BK319.3  me a vyn mos ahanan 
+BK319.4  delough myghtern sofvsant 
+BK319.5  na vethough pell 
+
+## Epystopus rex Grecorum 
+BK319.6  Me a thum arluth war nvg 
+BK319.7  nvm leth na nyl lanow na crvg 
+BK319.8  conhas farwel 
+
+###[fol. 15v, photo 30] 
+
+## First senator 
+BK320.1  Pes seniors par tavt leter 
+BK320.2  peys yet I hot rygh & powr [cf. 202] 
+BK320.3  agys bewnans marsough ker 
+BK320.4  syglowgh orth senator 
+BK320.5  ne dices moet 
+BK320.6  duk Borgayn awos e frap 
+BK320.7  ny yl poral thymmo scap 
+BK320.8  orth ow nobyl nyaspyn groet 
+
+## First nuncius 
+BK321.1  Ave senator 
+BK321.2  vt imperator 
+BK321.3  sedens in trono 
+BK321.4  deus confirmet 
+BK321.5  vos et conseruet 
+BK321.6  in omni bono 
+
+## First senator 
+BK322.1  Welcum canhas ker 
+BK322.2  pan gerth ha pan ger 
+BK322.3  how faryth my lord 
+BK322.4  maren cvthys den 
+##OJP63 
+BK322.5  rum fay ef an pryn 
+BK322.6  nyn gvyth nerth nag ord 
+
+## First nuncius 
+BK323.1  Grug myghtern Bretayn 
+BK323.2  gans ganow efan 
+BK323.3  ren gog thy vos tyn 
+BK323.4  ha dos in e dyr 
+BK323.5  rag govyn neb gwyer 
+BK323.6  hay thyswull avan 
+
+## First senator 
+BK324.1  Owt war an molak 
+BK324.2  ny vyth cosolak 
+BK324.3  goyth in ow body 
+BK324.4  na ny uyttyaf boys 
+BK324.5  erna [welly deleted] welhaf goys 
+BK324.6  an pen dystody 
+
+## First nuncius 
+BK325.1  Farwel suffran mas 
+BK325.2  an gwelha tas 
+BK325.3  roy thewhy gul da 
+BK325.4  a Thew asew col 
+BK325.5  agen arluth ol 
+BK325.6  in gosyth mar sa 
+
+## First senator 
+BK326.1  Naga na borth dout 
+BK326.2  nynges den mar stowt 
+BK326.3  a vyrhe der hot 
+BK326.4  nan gvren ny pordam 
+BK326.5  na thowtyans rag sham 
+BK326.6  Cornow na Scot 
+
+# Hic dissendit senator 
+
+## Secundus senator 
+BK327.1  Pax omnis murmvrantes 
+BK327.2  siglowough pan vyf ow cows 
+BK327.3  estote vt infantes 
+BK327.4  me a nowyth aga fovs 
+BK327.5  penagel na dew 
+BK327.6  in Rom me ew senator 
+BK327.7  accontys an gwelha gowr 
+BK327.8  vs am ehan hethew bew 
+
+## First nuncius 
+BK328.1  Boal syr Du don vous bonior 
+BK328.2  movn senior an prydyth mort 
+BK328.3  kepar dellough e soccor 
+BK328.4  why a the hag an confort 
+BK328.5  lyas e ras 
+##OJP64 
+BK328.6  claf ew e golan soweth 
+# Arthur nyuld [or my'ld for mylord?] Gornow 
+BK328.7  Arthor Gornow myghtern freth 
+BK328.8  a vyn orta syngy cas 
+
+## Secundus senator 
+BK329.1  Bien venv canhas savns peer 
+BK329.2  thum arluth vskys ethaf 
+BK329.3  vith na berthyns neb awher 
+BK329.4  pan Arthor a vith pur glaf 
+BK329.5  hay esyly 
+BK329.6  orth thynny ny yl settya 
+BK329.7  ny an dyvyn heb lettya 
+BK329.8  neffra nan saw ely 
+
+## First nuncius 
+BK330.1  I tak leve movn amy 
+BK330.2  prys ew thymmo fystyna 
+BK330.3  an forth welha towlough why 
+BK330.4  Arthor rag ew worlynya 
+BK330.5  ren geffa gv 
+BK330.6  markyl gul e volenta 
+BK330.7  ny rys thyn [or thym?] joy ow pewa 
+BK330.8  fatyl vyth elhas a thew 
+
+## Secundus senator 
+BK331.1  Canhas gentyl na borth dowt 
+BK331.2  awos Arthor ny a rowt 
+
+# Hic dessendit senator ad Arthurum 
+
+## First nuncius 
+BK332.1  Salue salus populi 
+BK332.2  gloryus lord ful of great myght 
+BK332.3  pulcher flos decus mundi 
+BK332.4  I can tell you the clen ryght 
+BK332.5  Dv dvstvny 
+BK332.6  an vyghternath por gevyn 
+BK332.7  a nvg [sic, for rvg?] thygo drys tennyn [or tenuyn?] 
+BK332.8  hath soccors oll pub hvny 
+
+## Imperator Lucy 
+BK333.1  Welcum os flowr canhasow 
+BK333.2  welcum melwith rum ena 
+BK333.3  gormolys thys ha grasaw 
+BK333.4  ha war the gorf lowena 
+BK333.5  joy hag awen 
+BK333.6  Arthur a verew mar harlot 
+BK333.7  auyel fals Judas Yscaryot 
+BK333.8  a omgrogas orth scawan 
+
+## Boccus rex Medorum 
+BK334.1  Syr Du don vous bonior 
+BK334.2  nolite constristari [sic, for contristari?] 
+##OJP65 
+BK334.3  in dan an howl nyn ges gowr  ## go\w/r 
+BK334.4  as feth bys venari 
+BK334.5  fete bon cher 
+BK334.6  vith na thowt Arthor the grog 
+BK334.7  ny an dog mvnys ha meg 
+BK334.8  rum arluth an pernas ker 
+
+# Epystopus 
+###[fol. 16r (`25'), photo 31] 
+
+## Epistopus 
+BK335.1  Lowena thum arluth stowt 
+BK335.2  gallosak drys svel a ve 
+BK335.3  the yskerans ny a glowt 
+BK335.4  y an pren vngyth a the 
+BK335.5  fete bon cher 
+BK335.6  vith na thowt Arthor the grog 
+BK335.7  ny an deg mvnys ha mog 
+BK335.8  ren arluth an prennas ker 
+
+## First senator 
+BK336.1  Lowena thum arluth freth 
+BK336.2  gallosak drys tvs an bys 
+BK336.3  in ow holan tyn regeth 
+BK336.4  the vos kemmys dvwhenhys 
+BK336.5  war ow lowta 
+BK336.6  the yskar angevyth pows 
+BK336.7  me a vith dewath e gows 
+BK336.8  an gwel ny the wel sowta 
+
+## Secundo [sic] senator 
+BK337.1  Lowena thewhy a ras 
+BK337.2  hag honor ha beawta 
+BK337.3  x myl lowan thum tas 
+BK337.4  de ew mer the reawta 
+BK337.5  war ow lowta 
+BK337.6  the yskar an gevyth pows 
+BK337.7  me a veth thewhy e gows 
+BK337.8  an gwel ny the wel sowta 
+
+##Imperator 
+BK338.01  Welcum ough arlythy mas 
+BK338.02  ha Dv ren vanna ras 
+BK338.03  warnough in katap hvny 
+BK338.04  why an soccker in pub cas 
+BK338.05  hag am confort the thow gras 
+BK338.06  kepar del vynnaf vny 
+BK338.07  Arthor pryck bost 
+BK338.08  an prenwyth tost 
+BK338.09  ha suer ny an dyelha 
+BK338.10  ha whath pelha [word order unclear in these two lines] 
+
+# Hic assendit Boccus et Epystopus et senator 
+
+## Sertorius rex Libie 
+##OJP66 
+BK339.01  Lowena the flowr an bys 
+BK339.02  elhas the vos dvenhis 
+BK339.03  eselder bras ew gena 
+BK339.04  neb na vyn gul both the vris 
+BK339.05  mar ne vetha dyhelhis 
+BK339.06  bynar rem [sic, for num?] bo lowena 
+BK339.07  caerevew  ## [caereve\w/ sic, for hedre vew?]; {... re Dhuw?} 
+BK339.08  me Sertory 
+BK339.09  myghtern Lyby 
+BK339.10  a res dretho gans ow gv 
+
+## Excerces rex Ituriorum, secundus rex 
+BK340.01  Lowena thys ser Lucy 
+BK340.02  ow arluth emperor worthy 
+BK340.03  ny redeth thys gans an ger 
+BK340.04  the sogys hath wostoyth on 
+BK340.05  byth lowaneys the golan 
+BK340.06  ath yskar na berth awher 
+BK340.07  arluth worthy 
+BK340.08  me Excerces 
+BK340.09  ew gverror fers 
+BK340.10  ha myghtern in Inury 
+
+## Alphatina rex Hijspanie, tertius rex 
+BK341.01  Hail thewhy ha lowena 
+BK341.02  ny redueth theugh thum ena 
+BK341.03  the wostoyth an gvlasow pel 
+BK341.04  Arthor rag ethevenya 
+BK341.05  ef a verew kyn tremena 
+BK341.06  kyn fe vyth mar ver e nyel [or nyl] 
+BK341.07  ny scap rum pen 
+BK341.08  ea tristyough thyn 
+BK341.09  me Alphatyn 
+BK341.10  myghtern Spain an deg thesen 
+
+## Micyppa rex Babiloniae, quartus rex 
+BK342.01  Lowena thum arluth mas 
+BK342.02  ny redueth [altered from reduath?] a lyas gwlas 
+BK342.03  pan glowsyn the vos serrys 
+BK342.04  genegy rag syngy cas 
+BK342.05  pen the yskar ren ow thas 
+BK342.06  in ol hast a vith terrys 
+BK342.07  der vras colan 
+BK342.08  me Micyppa 
+BK342.09  ew gwerryor da 
+BK342.10  ha myghtern in Babylon 
+
+## Pandrasys rex Egiptiorum, quintus rex 
+BK343.01  Lowena thum arluth flower 
+BK343.02  na berthewgh kveth na dolor  ## k\v/eth 
+BK343.03  Arthor angevith ankan 
+##OJP67 
+BK343.04  ha golheys nan docca troys 
+BK343.05  ny an gaskyl gorf ha coys   ## {koes [not koez!] 'leg'?} 
+BK343.06  annotha kentel falhan 
+BK343.07  me Pendrasys 
+BK343.08  ew den desty [or descy?] 
+BK343.09  gverryor fersly 
+BK343.10  myghtern Egip myl prevys 
+
+## Hirtacius rex Partorum, sextus rex 
+BK344.01  Lowena thum arluth ker 
+BK344.02  byth lowena [read lowen?] ha da the cher 
+BK344.03  ny redueth agan gwlasow 
+BK344.04  thege in socker ryal [?] 
+BK344.05  may hylly towlal dyal 
+BK344.06  war the yskar in fasow 
+BK344.07  me Hirtasy 
+BK344.08  mightern Partys 
+BK344.09  a veth inwys 
+BK344.10  orth Arthor an fals lvthky 
+
+# Imperator 
+###[fol. 16v, photo 32: `Iesu'] 
+
+## Imperator 
+BK345.1  Welcum os myghtern Partys 
+BK345.2  ha myghtern Egyp kefrys 
+BK345.3  welcum myghtern Babylon 
+BK345.4  welcum mightern Spain deffry 
+BK345.5  welcum myghtern Itvry 
+BK345.6  hag inweth myghtern Lyby 
+BK345.7  welcum in cres ow holan 
+
+## Mustensar rex Affricorum, septimus rex 
+BK346.01  Lowena ha beawtys 
+BK346.02  thum arluth gentyl cortys 
+BK346.03  rag the onors ny re dueth 
+BK346.04  gas ve hag Arthor Gornow 
+BK346.05  me an dorn gans ow dornow 
+BK346.06  may clamderha rag veth 
+BK346.07  ren spurys sans 
+BK346.08  me Mvstensar 
+BK346.09  an tebal gower 
+BK346.10  of myghtern in Affrycans 
+
+## First Policus dux Grecie, primus 
+BK347.01  Lowena hag honors tew 
+BK347.02  thum arluth drys suel vs bew 
+BK347.03  ny res theugh bo [for bos] dvenyk 
+BK347.04  awos lavarow drog den 
+BK347.05  neb ath cvthys an tyn bren 
+BK347.06  may welly an ankenak 
+BK347.07  moy [sic, for my or me] Ypolyt 
+BK347.08  duk [C]reth heb fall           ## [looks like oreth, for creth] 
+##OJP68 
+BK347.09  gan bonas mal 
+BK347.10  war e vody ara spyt 
+
+## Eth\i/on dux Boetie [or dux Boeti, 2] 
+BK348.01  Lowena ha ryeldar 
+BK348.02  hag honor bras in pelder 
+BK348.03  thum arluth drys pub hvny 
+BK348.04  der voth Dv in vhelder 
+BK348.05  theth yskar gwren yselder 
+BK348.06  kepar del vynnyth vny 
+BK348.07  me Ethyon 
+BK348.08  duk Boecy 
+BK348.09  war the enmy 
+BK348.10  a rys gans lvne devocyon 
+
+## Teuthar dux Phrigis [or Phrigie?], tertius dux 
+BK349.01  Lowena ha lvn yehas 
+BK349.02  thum arluth ha gormolys 
+BK349.03  drys kenevar vs genis 
+BK349.04  the yskar gan weras Dv 
+BK349.05  a ragas angevyth gv 
+BK349.06  der e golan stakenys 
+BK349.07  rag me Teuthar 
+BK349.08  duk Phrygy suer 
+BK349.09  kynfe in dver 
+BK349.10  a vyn delay gans an kver 
+
+## Euander dux Siria, quartus dux 
+BK350.01  Honorter ha poteste 
+BK350.02  ha rowath ha dignite 
+BK350.03  tha gan arluth pob seson 
+BK350.04  an tyllyk attuen thas 
+BK350.05  a vith boys then bryny bras 
+BK350.06  rag e frappys dyreson 
+BK350.07  m[e] Euander 
+BK350.08  duk Syry an dyelha 
+BK350.09  ren tas an nef vhelha 
+BK350.10  me an helgh in efander 
+
+## Pollitetes dux Bitinie, quintus dux 
+BK351.01  Lowena tha gan suffran 
+BK351.02  del os arluth cref ha gwan 
+BK351.03  the wostoyth on devethys 
+BK351.04  neb ath cvthys in sertan 
+BK351.05  a veth goef er e ran 
+BK351.06  a ragas efeth lethys 
+BK351.07  rag an pylf prowt 
+BK351.08  rum cvthysve 
+BK351.09  duk Bitini 
+BK351.10  Pollitetes gwerryor stowt 
+
+##OJP69 
+
+## Imperator 
+BK352.01  Welcum arlythy gwlasaw 
+BK352.02  gormolys theugh ha grasaw 
+BK352.03  | rag why am car me a wel 
+BK352.04  Arthor a gel e rasow 
+BK352.05  in spyt in e lagasow 
+BK352.06  | me am byth an lorgh han bell 
+BK352.07  || ol thum talant 
+BK352.08  fers of ha lym 
+BK352.09  ha soccors grym 
+BK352.10  || asa allaf bos galant 
+
+BK353.1  Reges Arabum & Saba 
+BK353.2  | reges Tharsis & insule 
+BK353.3  ha lyas myghtern ema 
+BK353.4  | a thothy thymo whare 
+BK353.5  || in suer heb mar 
+BK353.6  a pe danvenys thetha 
+BK353.7  rag dyswruthyl der an cletha 
+BK353.8  || an anfugyk fals nam car 
+
+# Boccus 
+###[fol. 17r (`26'), photo 33: `Iesu'] 
+
+## Boccus 
+BK354.1  Lowr ony by Godes arm [army, with y deleted?] 
+BK354.2  | ha henna why a wylwith 
+BK354.3  then molothake ny a jarm 
+BK354.4  | mar tryg vghan ehylwith 
+BK354.5  || awos e nerth 
+BK354.6  kyn fe an jovle war escoyth 
+BK354.7  ny an dywoys avel goyth 
+BK354.8  || in dyspyt thy gerans perth 
+
+## Imperator 
+BK355.1  Ethough ow nerth ham socckers 
+BK355.2  kepar dellough ow amors 
+BK355.3  | war tua Frynk fystynnyn 
+BK355.4  mar tve Arthor mes ay wlas 
+BK355.5  ef an gyf na reva vas 
+BK355.6  | ena ny an dyyrbyn 
+
+#Hic discendit et venient in Franciam 
+
+## Epistophus 
+BK355.7  Dun ha ny venyn lettya 
+BK355.8  erna ylhyn e vettya 
+
+## Arthur 
+BK356.1  Ow spovs gentyl Gvynvwer 
+BK356.2  | mos then batal me a vyn 
+BK356.3  gwayt may rylhy the thever 
+BK356.4  | gvrthvherow ha myttyn 
+BK356.5  || gwethveyth cof 
+BK356.6  ham [or han?] noe ara the rewlya 
+##OJP70 
+BK356.7  Du roy theugh gul honesta 
+BK356.8  || mos a raf ny won a thof 
+
+# Hic dessendit Arthurus cum suis omnibus militibus et procedit vexillam; 
+# hic osculatur regina [sic] 
+
+## Regina 
+BK357.01  A Dv asof morothak 
+BK357.02  | ow honyn kyn lavara 
+BK357.03  me a yl bos hyrethtak [sic] 
+BK357.04  | pan a moyha a gara 
+BK357.05  || mar bel an pow 
+BK357.06  ha namhygh theth rag para 
+BK357.07  ow arluth merth hep cara 
+BK357.08  || elhas thymmo e fyth guow [or gnow?] 
+## Regina 
+BK357.09  A Dv a formyas pub tra 
+BK357.10  run droy thymmo in poynt ta 
+
+## Modoredus [sic] nepos 
+BK358.1  A ow arlothas kerha 
+BK358.2  | am avnter na borth awher 
+BK358.3  ay gavow a brederha 
+BK358.4  | neffra ny vith da e ger 
+BK358.5  || navith por wyer 
+BK358.6  kyntha ow ownter a bel 
+BK358.7  an nowothow a vith gwel 
+BK358.8  || ha gortas da nyngew hyer 
+
+## Arthurus 
+BK359.01  Ebscobowe mas 
+BK359.02  a parth an tas 
+BK359.03  | evgh thagys pow 
+BK359.04  me athengas 
+BK359.05  Dv mer e ras 
+BK359.06  | roy them gallos gul ov scow [looks like srow?] 
+
+## Primus episcopus 
+BK359.07  Christ arluth nef 
+BK359.08  gras clow the lef 
+BK359.09  | hath peiadow 
+BK359.10  the dre ethen 
+BK359.11  hag e pegyn 
+BK359.12  | ragas the Thew caradow 
+
+# Hic dessendunt pontifices 
+
+## Arthurus 
+BK360.1  Te a the Vretayn Modreth [sic] 
+BK360.2  gans an vyghternyas heb let 
+BK360.3  | govern an wlas 
+BK360.4  ha the honester omset 
+BK360.5  | in dywath may festa gras 
+##OJP71 
+
+## Modredus 
+BK360.6  The worhemmyn a vyth gwrys 
+BK360.7  pur manyfest lowenhys 
+BK360.8  | ow ownter ker ren ow thas 
+
+## Arthurus, in via 
+BK361.1  Lemmyn ow gwerrors gwelha 
+BK361.2  | dun ahanan in vn rowt 
+BK361.3  gans gweras Dv vhelha 
+BK361.4  | ay lavarow nil ew stowt 
+BK361.5  || my an gwra clor 
+BK361.6  | rag ef a verew nynges dowt 
+BK361.7  || mar pith kevys vgh an dor 
+
+## Imperator Lucy 
+BK362.1  Ema Arthur devethys 
+BK362.2  ha ny gansa canfethys 
+BK362.3  | in rag degoug[h] ow banar 
+BK362.4  may halla bos dyglynnys 
+BK362.5  hag ef hay bobyl keffrys 
+BK362.6  | kepar del ew an vanar 
+
+# Hic procedunt vexillum 
+BK363.1  Ov gverrors da ha worthy 
+BK363.2  | prederough agys hvneth 
+BK363.3  avell [?] tvs del russans y 
+BK363.4  | subiect ol Christonath 
+BK363.5  || ethyns in weth 
+BK363.6  ha dun coyt waran Vretons 
+BK363.7  ha prosternyug [or -yng] an felans 
+BK363.8  || then myrnans dyhow ha cloth [sic, for cleth] 
+
+# Arthurus 
+###[fol. 17v, photo 34] 
+
+## Arthurus 
+BK364.01  Merough plema an Romans 
+BK364.02  ow settya ragow myrnans 
+BK364.03  | peswar cans veyl in vn cor 
+BK364.04  Marya myghternas nef 
+BK364.05  gwra thym sockor clow ow lef 
+BK364.06  | dellyw ov thrist warnas mer 
+BK364.07  || pys the vab ras 
+BK364.08  hethew mam byf an victory 
+BK364.09  Maria mam a vercy 
+BK364.10  || clow ve dellos benen vas 
+
+BK365.1  Ow sockors da ham cosyns 
+BK365.2  | prederough agys tasow 
+BK365.3  trystyough in Dv hag in syns 
+BK365.4  | dysquethough agys rasow 
+BK365.5  || war an hanter tus ma tyn 
+BK365.6  gans weras Christ rum dythow 
+##OJP72 
+BK365.7  me a vyn denvyn the dryhow 
+BK365.8  || myns a theffa er ow fyn 
+
+# Hic pugnabunt et Lucius quandam lanceam [sic] concussus cadit et moritur 
+
+##Imperator 
+BK366.1  Owt marow of suer heb nam 
+BK366.2  Marya an gwelha mam 
+BK366.3  | in cheryta ragaf pys 
+BK366.4  mam bo gevyans ol am cam 
+BK366.5  Christ ow arluth thyso jam 
+BK366.6  | me a gemmyn ow sperys 
+
+## Arthurus 
+BK367.1  Marow ew Lucy heb gyl 
+BK367.2  hay werrors in katap myl 
+BK367.3  | mars an cowars resyas [sic, for refyas?] 
+BK367.4  Jesu kymmar e ena 
+BK367.5  ha gravnt thotha lowena 
+BK367.6  | gans the woys te an pernas 
+
+BK368.1  Ow canhas ker ke thegy 
+BK368.2  bys in Rom gans pen Lvcy 
+BK368.3  | ha por harth then senators 
+BK368.4  trybut Bretayn presanty [sic] ## {-e} 
+BK368.5  in dyscharg thymmo nefra 
+BK368.6  | ha the ol ow successors 
+
+## Secundus nuncius 
+BK369.01  Ow arluth da 
+BK369.02  | agys negys 
+BK369.03  sver me an gwra 
+BK369.04  | a thesympys 
+BK369.05  || na borth awher [written bortha wher] 
+BK369.06  rag drys pub tra 
+BK369.07  | vs war an bys 
+BK369.08  me a garsa 
+BK369.09  | gul both the vrys 
+BK369.10  || ow arluth ker 
+
+# Ad quatuor senatores Romanorum dicens 
+
+BK370.01  Chif an cyta 
+BK370.02  | a barth yth towr 
+BK370.03  thys lowena 
+BK370.04  | myghtern Arthur 
+BK370.05  || attynnyrhys 
+BK370.06  ha thys gena 
+BK370.07  | pen syr Lucy 
+BK370.08  war ow ena 
+BK370.09  | rag derwery 
+BK370.10  || ew danvenys
+
+##OJP73 
+
+BK371.01  An pen algat 
+BK371.02  | kyn fe dolors 
+BK371.03  the ol an stat 
+BK371.04  | an senators 
+BK371.05  || ew danferys 
+BK371.06  tribut nahen 
+BK371.07  | nynges byth suer 
+BK371.08  bys in gorfan 
+BK371.09  | the worth Arthor 
+BK371.10  || nay successors me a grys 
+
+## Tres senatores Romanorum 
+BK372.01  Elhas elhas 
+BK372.02  | bonas marow 
+BK372.03  neb o mar vras 
+BK372.04  | corf heb parow 
+BK372.05  || an empror Lucy 
+BK372.06  saw betegens 
+BK372.07  | an Dv del wor 
+BK372.08  Christ pen an syns 
+BK372.09  | rebo socker 
+BK372.10  || pub vr theyn ny 
+
+## Secundus nuncius 
+BK373.1  Genough farwel 
+BK373.2  | gowr gentyl mas 
+BK373.3  ny dal bos pel 
+BK373.4  | ow kefrow has 
+BK373.5  || so mot y go 
+BK373.6  Christ mer enel 
+BK373.7  | Dv levn a ras  ## l\e/vn 
+BK373.8  || regas gvytho 
+
+# Senator 
+###[fol. 18r (`27'), photo 35: `Iesu Christ'] 
+
+## Senator 
+BK374.01  Farwell rum fer 
+BK374.02  | ow cosyn whek 
+BK374.03  canhas savns per 
+BK374.04  | dry[s] pub mab grek 
+BK374.05  || os hag ylyn 
+BK374.06  bannath synt Cler 
+BK374.07  | ha synt Ya 
+BK374.08  ha Jesus ker 
+BK374.09  | mab Maria 
+BK374.10  || in the gerhyn 
+
+BK375.01  An arlythy 
+BK375.02  | kepar dell goyth 
+BK375.03  a the deffry 
+BK375.04  | pen ow arloyth 
+BK375.05  || thy anterya 
+##OJP74 
+BK375.06  gans melody 
+BK375.07  | ha mer worthyans 
+BK375.08  empror worthy 
+BK375.09  | in e vewnans 
+BK375.10  || par del ewa 
+
+## Secundus [?] nuncius 
+BK376.01  Arluth ryal 
+BK376.02  | thys baute 
+BK376.03  gwrys ew sotal 
+BK376.04  | war ow lowta 
+BK376.05  || the arghadow 
+
+# Breui peusaciome [sic, for pausacione] et ibit ad fentum [for tentum] Kay 
+
+## Arthurus 
+BK376.06  A ca[n]has mas 
+BK376.07  | da refary 
+BK376.08  ha this mer gras 
+BK376.09  | by venary 
+BK376.10  || a caradow 
+
+## Modredus in palacio Arthuri 
+BK377.1  Arlothas ker 
+BK377.2  meer ew cher    ## {meur yw [ow] cher} 
+BK377.3  | the why heb mar 
+BK377.4  | me agys car 
+BK377.5  || dek myl blek moy agys ow mam  ## {leg. 'yz} 
+BK377.6  mar ne wetha genovgh prof ## {mar ny weythav/withav genowgh prov; p = provision??}
+BK377.7  ny won a raf 
+BK377.8  ny lowenhaf 
+BK377.9  || in ow vythyow [for dythyow] neffra jam [for tam?] 
+
+## Regina 
+BK378.01  Gas the bythas  ## {pyz+a(n)z : pleadings??} 
+BK378.02  rag nyngew vas 
+BK378.03  | num gwreth the sergh 
+BK378.04  | orth lostow mirth    ## {nb for mergh/sergh} 
+BK378.05  || drys algow kyn fen tynnys  ## {<< alzyow}
+BK378.06  nyngew ow thowl 
+BK378.07  servya an jowl 
+BK378.08  | le ew gena       ## {[much] less would I be beheaded by a sword}
+BK378.09  | war ow ena 
+BK378.10  || gans cletha bos debennys 
+
+## Modredus 
+BK379.01  Der gerynga 
+BK379.02  flowr e hynsa 
+BK379.03  | gallas in claf 
+BK379.04  | ny won a raf 
+BK379.05  || rag paynys ha callater 
+BK379.06  ow vnadow 
+BK379.07  a garadow 
+##OJP75 
+BK379.08  | ew mos genas 
+BK379.09  | flowr benegas 
+BK379.10  || thyth scoth in pervecter [sic, for prevetter] 
+
+## Regina 
+BK380.01  The levd desyr 
+BK380.02  am cvth por wyer 
+BK380.03  na gampol[a] 
+BK380.04  ny dal toller [for tolla] 
+BK380.05  Arthur agen arluth flower 
+BK380.06  nyngew dever 
+BK380.07  na gows evver 
+BK380.08  o den byth war 
+BK380.09  thymmo heb mar 
+BK380.10  te drog den ny vethyt[h] gowr 
+
+## Modredus 
+BK381.01  Elhas a Thv 
+BK381.02  elhas ha gv 
+BK381.03  trom gallarow 
+BK381.04  am gwra maraw 
+BK381.05  ham dewath genaf ema 
+BK381.06  ny thebbra boys 
+BK381.07  na num deg troys 
+BK381.08  na raf por wyr 
+BK381.09  kerensa hyer 
+BK381.10  war ow fay ew myer dra 
+
+## Regina 
+BK382.1  Gove the vos ov cvthy 
+BK382.2  mara callas [for callaf?] the rvthy 
+BK382.3  der kerensa heb gul tros 
+BK382.4  te a yl ov doglvthy 
+BK382.5  ha the gavow dyskvthy 
+BK382.6  pan vynhy in tellar clos 
+
+## Modredus 
+BK383.1  A Dv vhal gwyn ow bys 
+BK383.2  ow holan ew lowenhys 
+BK383.3  ny allaf e amontya 
+BK383.4  arlothas gvyn avel gvrys 
+BK383.5  dun then chamber me ath pys 
+BK383.6  may hyllyn omacovntya 
+
+#Regina 
+###[fol. 18v, photo 36] 
+
+## Regina 
+BK384.1  The voth a raf rum peryl 
+BK384.2  lemmyn benenas gentyl 
+BK384.3  evugh dvwans then erberow 
+BK384.4  dellough slegh ha trevysy 
+BK384.5  ha cuntyllough in fysy 
+##OJP76 
+BK384.  erbys rag gvthyl dovrow 
+
+## First_a ppedissera [sic] 
+BK385.1  Ow arlothas kyns ys nos 
+BK385.2  ny a ra thewhy dvvr ros 
+BK385.3  galanow re vap an syns 
+BK385.4  hag a wyth in keladow 
+BK385.5  the obereth casadow 
+BK385.6  Dv an aswon byttygyns 
+
+# Dessendet puell [sic] 
+
+## Secunda pedissera, in platea 
+BK386.1  An [sic, for Re?] venovgh a vo gvelys 
+BK386.2  dyskowgh [for dystowgh] e fyth ankevys 
+BK386.3  rum arluth Dv 
+BK386.4  me a wel henna prevys 
+BK386.5  gans Gwynwer er hy gv    ## {Gwyn(n)uwer ??}
+
+## Tertia pedessera 
+BK387.1  Levd ema owth umbrevy 
+BK387.2  mar goyth [for got?] pan ra ankevy 
+BK387.3  pryns mar ryall 
+BK387.4  hy a chans hy ath drevy 
+BK387.5  orth meth ha cas ha dyal 
+
+## Modredus, reuirtans [?] in aulum 
+BK388.1  War ow lowta Gwynwer         ## {leg. <Gwynvver> for Gwyn(n)uwer} 
+BK388.2  my a vyn gul ow dever 
+BK388.3  hag in Bretayn bos myghtern 
+BK388.4  re Christ arluth vhelha 
+BK388.5  me a vyn gul in della 
+BK388.6  gans ow ownter ken fe berne 
+
+## Regina 
+BK389.1  Ow amor denvenough why 
+BK389.2  e thol war lerth arlythy 
+BK389.3  may hallowgh bos cvrvnys 
+
+## Modredus 
+BK389.4  In ketela me a vyn 
+BK389.5  keffrys drys segh ha drys lyn 
+BK389.6  canhas de rag desempys 
+
+## Primus nuncius 
+BK390.1  Salve pater Modrede 
+BK390.2  lowena thum arluth stowt 
+BK390.3  as I am wis indeed 
+BK390.4  your commaund wth great speed 
+BK390.5  a vyth gwrys na berthowgh dowt 
+
+## Modredus 
+BK391.1  Ke bys in escob in scon 
+##OJP77 
+BK391.2  dellos sotal hag vskes 
+BK391.3  ha laver me the thanvon 
+BK391.4  del in caraf in colan 
+BK391.5  may teffa thym desympys 
+
+## Primus nuncius 
+BK392.1  Me a ra syr por wyr 
+BK392.2  num let glaw na tarenys 
+BK392.3  sotal a raf the thysyer 
+BK392.4  kyn fe an forthow mar hyer 
+BK392.5  scaf ove ha sowenys 
+
+## Nuncius ad pontificom [sic] ibit dicens 
+BK393.1  My lord God save you anshe 
+BK393.2  notum Dev don vous bon ior 
+BK393.3  danferys theugh me re be 
+BK393.4  bys om arluth why a the 
+BK393.5  the gows orta in e dowr 
+
+## Primus pontifex 
+BK394.1  Welcum canhas re Jowan 
+BK394.2  how faryth our lord Modereth [Order of lines unclear.] 
+BK394.3  ewa yagh ewa lowan 
+BK394.4  me a thotha re Jowan 
+BK394.5  a thesempys ny raf let 
+
+## Primus nuncius 
+BK395.1  Agys daryvyas ew mas 
+BK395.2  byth ny allaf bonas gwel 
+BK395.3  why a thyrfyn cafas gras 
+BK395.4  drys kenever vs in wlas 
+BK395.5  ow arluth genowgh farwell 
+
+## Primus [pontifex deleted] episcopus 
+BK396.1  Ow bannath genas cosyn 
+BK396.2  in gvlas nef re omgyffyn 
+
+# Dissendit pontyfix ad Moderus [sic] rege 
+
+# Primus nuncius 
+###[fol. 19r (`28'), photo 37: `Iesus'] 
+
+## [Primus nun]ci[u]s ad [Mo]dredum 
+BK397.1  Lowena thum arluth stowt 
+BK397.2  avel empror desethis 
+BK397.3  drys peb in bys te a rowt 
+BK397.4  the negys ew gwrys heb dowt 
+BK397.5  ha me sotal devethis   ## dev\e/this 
+
+## Modredus 
+BK398.1  Ow bannath thys purcevand 
+BK398.2  te a thindel the breysya 
+BK398.3  gwel corf os ys Colybrand 
+BK398.4  te a fyth cyvyl de gravnd 
+BK398.5  fystyn dvwhans thy seysya
+##OJP78 
+
+## [F]irst' nuncius 
+BK399.1  Gramercy ow arluth gay 
+BK399.2  ve avter cuyr larg core 
+BK399.3  ny vith the wel ow aray 
+BK399.4  awos the ro by thys day 
+BK399.5  ny wysk blow na more 
+
+## [Fi]rst' episcopus [a]d Modredum 
+BK400.1  Lowena the why pub prys 
+BK400.2  ha skyentolath ha ras 
+BK400.3  me redueth theugh gans mer grys 
+BK400.4  rag guthyl both agys brys 
+BK400.5  par dellough rewlar an wlas 
+
+## [M]odredus 
+BK401.1  Welcum os ow ebscob mas 
+BK401.2  welcum os heb falladow 
+BK401.3  mer [sic, for mar?] welcum avel ow thas 
+BK401.4  me a wor theso mer gras 
+BK401.5  rag the thos thum arhadow 
+
+# Et dissendit Modredus 
+
+## Modredus, in via 
+BK402.1  Bos cvrvnis me a vyn 
+BK402.2  myghtern in Bretayn in wys 
+BK402.3  penagel a gows er ow fyn 
+BK402.4  ef an prenwyth hag in tyn 
+BK402.5  cvryn ve a thesempys 
+
+## [Fir]stus pontifix 
+BK403.1  Modret me a vea fol 
+BK403.2  in della mara qvrelhan 
+BK403.3  e trylsa thymmo the gol 
+BK403.4  serry agen arluth ol 
+BK403.5  agys ownter Dv dyfan 
+
+## [M]odredus 
+BK404.1  Te an ser kyn tremena 
+BK404.2  py myll a vith marew 
+BK404.3  mar ny asentyyth gena 
+BK404.4  te a hebcor lowena 
+BK404.5  war bur nebas lavaraw  ## b\u/r 
+
+## Primus episcopus 
+BK405.1  Kin fena dyanhethys 
+BK405.2  nyth cvryn ow crabanow 
+BK405.3  na rowns kynfena lethis 
+BK405.4  rag own bonas kerethi[s] 
+BK405.5  gans suel a vgar ganow 
+
+## Modredus 
+##OJP79 
+BK406.1  Mar ny vethaf cvrvnys 
+BK406.2  in tan pordum te a lysk 
+BK406.3  may fo the dyn crathvnys 
+BK406.4  te toller omscvmynys 
+BK406.5  gans the whethlow me ath kesk 
+
+## Pontifex 
+BK407.1  Erbyn the ruddrys [for woddrys?] Modret 
+BK407.2  rag own a throg by my saul 
+BK407.3  ny dal gvthyl thymmo let 
+BK407.4  cvryn Bretayn me a set 
+BK407.5  war the ben in hanaw Pavl 
+
+BK408.1  An lahys te a lel syns 
+BK408.2  ha gvyer the ol the wostoyth 
+BK408.3  gvyryow eglos myns del ens 
+BK408.4  ha statys kepar ha kyns kyns [sic] 
+BK408.5  the vightern da del degoyth 
+
+## [M]odredus 
+BK409.1  Del vo reson me ara 
+BK409.2  gans weras Dv ha yehas 
+BK409.3  por wyer om gallos ema 
+BK409.4  kekeffrys gul drog ha da 
+BK409.5  ke dre ow bannath genas 
+
+## Pontifix 
+BK410.1  Me a ra Modred heb mar 
+BK410.2  ethesaf omma lowr pel 
+BK410.3  am nygysyow a pen war 
+BK410.4  rum arluth nan gevas par 
+BK410.5  ny thothyan thys mar sotal 
+
+# Hic dissendit pontifyx 
+
+# Modredus 
+###[fol. 19v, photo 38: `Iesus'] 
+
+## Modredus 
+BK411.1  Me ew myghtern in Bretayn 
+BK411.2  mar sves [gap] vith na faytor   ## {den?}
+BK411.3  er ow fyn a gows[o] mane 
+BK411.4  ef an gevith calys ran 
+BK411.5  me a[n] lath avel traytor 
+
+## Secundus nuncius 
+BK412.1  Arluth confortys reby 
+BK412.2  elhas bos rys thymmo dry 
+BK412.3  thysa [read thys] nowothow a tholor 
+BK412.4  ponvotter vs wharvethis 
+BK412.5  rag kveth pan in canfethis  ## k\v/eth 
+BK412.6  me re jangyas ow holor 
+
+BK413.1  Ny lowenhis war nebas vs 
+##OJP80 
+BK413.2  a ban kyns clowys e gows 
+BK413.3  agys noe omskvmvnys 
+BK413.4  traytor ny rug e thvver 
+BK413.5  prevath ew gans Gvynwer 
+BK413.6  in Bretayn Ver cvrvnys 
+
+## Arthurus (`owt owt owt owt owt') 
+BK414.1  Owt gallaf [read galsof?] am skyans 
+BK414.2  ny alsa [-f deleted] moy dyswryans 
+BK414.3  wharvos neffra er ow fyn 
+BK414.4  Dv roy thymmo dampnassyon 
+BK414.5  hag eselder ha passyon 
+
+BK415.1  Owt war an fals am traysys 
+BK415.2  han throg venyn am geysys 
+BK415.3  henna moy rum dyseysys 
+BK415.4  duwath ay doil ma crytter 
+BK415.5  elhas bos rys thym kyny 
+BK415.6  neb a rug ow bylyny 
+BK415.7  maraw rys gvylfyth ytter 
+
+## Hoelus dux 
+BK416.1  Myschef re bo gvelys cler 
+BK416.2  war nebas ath [read neb ath] tros in awher 
+BK416.3  han arluth ath pernas ker 
+BK416.4  reth lowenha sul vegyns 
+BK416.5  war neb a arug del whirvys 
+BK416.6  mollath yewynk ha byrvys 
+BK416.7  ha mollath noeth hag yrvys 
+BK416.8  mollath Chryst hag ol an syns 
+
+## Arthurus 
+BK417.1  Canhas gvarn an anprevion 
+BK417.2  na vyth hveth war ow holan 
+BK417.3  er na vons e dyskerwys 
+
+## Secundus nuncius, transit ad Moredus [sic] 
+BK417.4  Me a ra heb falladow 
+BK417.5  arluth jentyll carradow 
+BK417.6  e coyth thew bos clowys 
+
+BK418.1  Hayl syr Modret in the dron 
+BK418.2  canhas of somot y gon 
+BK418.3  theworth Arthur danvenys 
+BK418.4  gans dynnerth stowt ha calys 
+BK418.5  ath worthyb byth avysyys 
+BK418.6  na vith re hawt kvlenys 
+
+## Modredus 
+BK419.1  Na gows na moy a henna 
+##OJP81 
+BK419.2  me ath kesk a omdenna 
+BK419.3  hedre vo tecca an bers 
+BK419.4  kyn fynnas Arthur ygy 
+BK419.5  ens an javal the gregy 
+BK419.6  changys an bys nangev whers 
+
+## Secundus nuncius 
+BK420.1  Te a russa moy furneth 
+BK420.2  guthyl ken eredyeth 
+BK420.3  ys covs mar fyth lavarow 
+BK420.4  me a lever thys Modres 
+BK420.5  keffrys te han viternas 
+BK420.6  in ol hast a vith marow 
+
+# Regina 
+###[fol. 20r (`29'), photo 39] 
+
+## [Regin]a 
+BK421.1  Ser the thywan te pen cog  ##  [cf. Ser the thewan 40] 
+BK421.2  desempis gvef ow golog 
+BK421.3  rag te tyllyk nyth cara 
+BK421.4  mar kowsyth moy a Arthor 
+BK421.5  omgoith ve te fals bribor 
+BK421.6  neffra ny thibbryth bara 
+
+## [M]odredus 
+BK421.7  Ens mes am golag vskys 
+BK421.8  py me an lath desempys 
+BK421.9  re syn Thomas a gara 
+
+## Nuncius, [re]vartens [ad] Arthurum 
+# [This stanza is a corrupt version of the following one] 
+
+#BK422x.1  Arthusta bys in henna 
+#BK422x.2  precius ew 
+#BK422x.3  arluth Dv reth consayl 
+#BK422x.4  ny yl tavas reportya 
+#BK422x.5  torma mvr 
+#BK422x.6  ath noe ew re thispusant 
+#BK422x.7  fool ha trynk avel tvrant 
+
+# Tria hoc in loco conteruntur folia, perfecte idio nun scibuntur [for scribuntur] omnia. 
+
+## Nuncius, [a]d Arthurum 
+BK422.1  A thuska bys in henna 
+BK422.2  pris ew thymma 
+BK422.3  arluth Dv reth confortya 
+BK422.4  ny yl tavas reportya 
+BK422.5  turna myvns [read myns?] vs yna 
+BK422.6  hath noe ew re thispusant 
+BK422.7  fol ha trink avel tvrant 
+BK422.8  towl rag the dvwenna 
+
+## [A]rthurus 
+BK423.1  Elhas elhas ha gv  ## {6; leg. 'thimma' for 'ha'} 
+##OJP82 
+BK423.2  gove rag spyt trv~a~th_ew  ## {tru a Dhuw! 'alas, o God'} 
+BK423.3  drefan ef the wul drog ... thimma  ## {... = 'rv' or _yew_???; 'thimma' belongs two lines up?} 
+BK423.4  ough tromhas ow galarow   ## { ow trommhe ?} 
+BK423.5  elhas na vena marow 
+BK423.6  theugh e thof gly     ## {4;  _gluw_ or _glew_ ??} 
+
+# {
+#BK423.1   ellas ellas | dhymmo guw 
+#BK423.2   | go_vy rag spit | tru a Dhuw! 
+#BK423.3   drefenn | ev dhe wul drog ruw  ## ... drog yew 'evil yoke'?
+                                          ## or drog ruw 'evil rule'???
+#BK423.4   ow trommhe | ow galarow  ##  'exaserpating my sorrows' 
+#BK423.5   ellas | na vena marow   ## 'alas that I might not be dead' 
+#BK423.6   | dhewgh yth ov gluw   ## ... ov glew 'valiant' as W ??
+                        ## or _yth ov gluw_ 'I'm incandescent (with rage)' ?? 
+# }
+
+BK424.1  Howen [sic] omma te a dryg 
+BK424.2  rag dyfenn an pow orth bryg 
+BK424.3  me a tryst this nos ha dyth 
+BK424.4  sicut noui te barun 
+BK424.5  parum galliarum 
+BK424.6  an governans te a vith 
+
+## Hoelus 
+BK425.1  Paris ove theth onor 
+BK425.2  gans ol ov nel ham sockor 
+BK425.3  neffra theso ny falla 
+
+## Arthurus 
+BK425.4  Gramersie gentyll Howen 
+BK425.5  ha me this maga lowan 
+BK425.6  an tal mara calla 
+
+BK426.1  Dun ahanan dewygyk [or vewygyk?] 
+BK426.2  ow holan ev sethisgyk [?] 
+BK426.3  war lergh dyswul ow enmy 
+BK426.4  kynfe in cres menath horn 
+BK426.5  me a devyn adev thorn 
+BK426.6  in hast by godes body 
+
+## Regina 
+BK427.1  Moddreth byth war omwra cref 
+BK427.2  avel bothiak syth e wref 
+BK427.3  Arthor a the sulva gyns 
+
+## Modredus 
+BK427.4  A varwa awos arveth 
+BK427.5  nyn gew gvew the varogath [cf. 135] 
+BK427.6  whath ow forpos me a syns 
+
+BK428.1  Me re thanvanas deffry 
+BK428.2  duk an Saxens Chellery 
+BK428.3  the whelas myns a geffa 
+BK428.4  a bagans in Germany 
+BK428.5  & jubuenient [for sub-?] Picti 
+BK428.6  gweras lowr a the thimma 
+
+BK429.1  An duk an gevith pur wyer 
+BK429.2  rag e laver ol an tyr 
+BK429.3  a thowr Hombyr the Scotland 
+BK429.4  ha mins an geva Horsus 
+
+# Mortige\r/nus king of this ...nd 
+##OJP83 
+BK429.5  berd in Kint ha Hengystus 
+BK429.6  in termyn Mortygernus 
+BK429.7  when he was king in this land 
+
+# Chellerius dux Saxonum 
+###[fol. 20v, photo 40: `Iesu Christ'] 
+
+## Chellerius dux Saxonium 
+BK430.01  Hail king Moddreth in the thron 
+BK430.02  gans plenty a sovdoryon 
+BK430.03  a welta ve devethis 
+
+## Modredus 
+BK430.04  Welcum cosyn Chellery 
+BK430.05  gans gweras ahanowgh why 
+BK430.06  ow eskar a vith lethis 
+BK430.07  an coet was my num bues dowt 
+BK430.08  dun ahanan in vn rowt 
+BK430.09  der agis gweras gwren ef maraw 
+BK430.10  gans tvs ha bois ywys 
+BK430.11  rum arluth Dv hed [sic, for heb] parow 
+
+# Dessendit Modredus satillitibus cum suis 
+
+## Modredus 
+BK431.1  An crothak 
+BK431.2  in hast e fyth dielhiys 
+
+## Arthurus 
+BK431.3  Merough plema an cronak 
+BK431.4  kepar dellew mollothak 
+BK431.5  dun warnotha gans mer grys 
+
+BK432.01  Ow servantes marum kerough 
+BK432.02  agys dyhowgh prederowgh 
+BK432.03  ha bethoug[h] war 
+BK432.04  na glowo agys ama dolors 
+BK432.05  na coyth man vith car 
+BK432.06  Ahanowgh meth kyns ov lyfynhas 
+BK432.07  Modreth o pyth an darivyas 
+BK432.08  an fykyl fals 
+BK432.09  saw ny vith gvryth gwethan ys fol 
+BK432.10  pan in crethis gans Calesvol 
+BK432.11  me an dyhals 
+
+## Modredus 
+BK433.1  Owt ny vith vas me a grys 
+BK433.2  new revyan dyelhis 
+BK433.3  na ve bos Dv an gwelha 
+
+# Hic obuiawerunt [?] 
+
+BK433.4  trom regothas in awher 
+BK433.5  rum arluth am pernas ker 
+BK433.6  ny wortaf omma pelha 
+
+# Hic moritur [sic] Auglus et Walgere 
+
+## Arthurus 
+##OJP84 
+BK434.1  Ow thrator rum gohelas 
+BK434.2  drog chavns war an kyn welas 
+BK434.3  na alsanny devlal thyals 
+
+# Tunc fiugiat [sic] Modreduus [sic] et postea Cambiret [?] 
+
+BK434.4  re Christ am pernas in pren 
+BK434.5  drys ol wlas kynthellyen 
+BK434.6  whath ny a vith orth an fals 
+
+BK435.01  Warnotha Dv tal dyel 
+BK435.02  now myghtern Scotland Augel 
+BK435.03  ha syr Gawen ew maraw 
+BK435.04  J ow [for ew?] chyf ow marogyon 
+BK435.05  a Thew gohy ow holan 
+BK435.06  rag trystyns ha gallaraw 
+BK435.07  Ke wyn an duk 
+BK435.08  ha bith war a [for na?] ve lethis 
+BK435.09  in cres host myghter [sic] Medys 
+BK435.10  pan ve Lucy debynnys 
+BK435.11  may thof cvrys re sint Luk 
+
+# Arthrus [sic] ambulabit cum suis in theatro 
+
+## Primus nuncius, ad regina [sic] dicens 
+BK436.1  Hail yth towr ow arlothas 
+BK436.2  desyys suer ew Moddras 
+BK436.3  Arthur ren hoddyas garaw 
+BK436.4  mar wyr dellouia [or delloma?] jacca 
+BK436.5  ef an gevyth an lacka 
+BK436.6  hag in hast a vith maraw 
+
+## Regina 
+BK437.1  Ny won vith ple hallas [for hallaf?] mos 
+BK437.2  a Dv a vynha ow bos 
+BK437.3  shamys 
+BK437.4  ham gar syttys der hi ben 
+BK437.5  elhas ny yl bos nahen 
+
+## Prima pedissyqua [?] 
+BK438.1  Trv te a ve kentresow 
+BK438.2  mad servia arluthesow 
+BK438.3  tek ywys 
+BK438.4  gans eglynnyow ha gveresow 
+BK438.5  ha gva rybbryn ha bersow 
+
+# Regina 
+### * * * * * [Probably 5 folios missing] 
+
+
+
+
+
+
+#### End of File 
+
