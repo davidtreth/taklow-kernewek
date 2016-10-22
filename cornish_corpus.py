@@ -64,21 +64,23 @@ def countchars(text_alpha, chdigraph=True, const_digraphs = True,
     
     chardict = nltk.defaultdict(int)
     for c in textst:
-        c = c.replace(u"ć", "cch")
-        c = c.replace(u"č", "ch")
-        c = c.replace(u"ǵ", "ggh")
-        c = c.replace(u"ǧ", "gh")
-        c = c.replace(u"ð", "dh")
-        c = c.replace(u"ꝥ", "tth")
-        c = c.replace(u"Þ", "th")
+        if chdigraph:
+            c = c.replace(u"ć", "cch")
+            c = c.replace(u"č", "ch")
+        if const_digraphs:
+            c = c.replace(u"ǵ", "ggh")
+            c = c.replace(u"ǧ", "gh")
+            c = c.replace(u"ð", "dh")
+            c = c.replace(u"ꝥ", "tth")
+            c = c.replace(u"Þ", "th")
 
-        c = c.replace(u"ś", "ssh")
-        c = c.replace(u"š", "sh")
-        c = c.replace(u"ħ", "hw") 
-
-        c = c.replace(u"ǒ", "oe")
-        c = c.replace(u"ú", "ou")
-        c = c.replace(u"ě", "eu")
+            c = c.replace(u"ś", "ssh")
+            c = c.replace(u"š", "sh")
+            c = c.replace(u"ħ", "hw") 
+        if vowel_digraphs:
+            c = c.replace(u"ǒ", "oe")
+            c = c.replace(u"ú", "ou")
+            c = c.replace(u"ě", "eu")
         
         chardict[c] += 1
     return chardict
@@ -301,7 +303,8 @@ def MostFreqWords1Text(Text, name, N=20, casesensit=False):
 
 
 def MostFreqLetters(kk_texts_Texts, textnames,
-                    condigraph=True, voweldigraph=True):
+                    condigraph=True, voweldigraph=True,
+                    chdigraph=True):
     """
     return a list of the most frequent letters in each text
     
@@ -315,7 +318,7 @@ def MostFreqLetters(kk_texts_Texts, textnames,
         outputtext += "Text: {n}\n".format(n=t[1])
         textalpha = [w for w in t[0] if w.isalpha()]
         lentextstr = len("".join(textalpha))
-        chardict = countchars(textalpha, True, condigraph, voweldigraph)
+        chardict = countchars(textalpha, chdigraph, condigraph, voweldigraph)
         kvtup = [(k,v) for (k,v) in chardict.items()]
         kvtupsort = sorted(kvtup, key = lambda kvtup: kvtup[1], reverse=True)
         outputtext += "Letters in descending order of frequency:\n\n"
@@ -326,7 +329,8 @@ def MostFreqLetters(kk_texts_Texts, textnames,
     return outputtext
 
 
-def MostFreqLetters1Text(Text, name, condigraph=True, voweldigraph=True):
+def MostFreqLetters1Text(Text, name,
+                         condigraph=True, voweldigraph=True, chdigraph=True):
     """
     return a list of the most frequent letters in each text
     
@@ -336,7 +340,7 @@ def MostFreqLetters1Text(Text, name, condigraph=True, voweldigraph=True):
     @type condigraph: C{bool}
     @type voweldigraph: C{bool}
     """
-    return MostFreqLetters([Text], [name], condigraph, voweldigraph)
+    return MostFreqLetters([Text], [name], condigraph, voweldigraph, chdigraph)
 
 def compareSamples(kk_texts_Texts,names, samples, casesensit=False):
     """
