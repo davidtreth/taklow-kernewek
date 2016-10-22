@@ -300,21 +300,22 @@ def MostFreqWords1Text(Text, name, N=20, casesensit=False):
     return MostFrequentWords([Text], [name], N, casesensit)
 
 
-def MostFreqLetters(kk_texts_Texts, textnames):
+def MostFreqLetters(kk_texts_Texts, textnames,
+                    condigraph=True, voweldigraph=True):
     """
     return a list of the most frequent letters in each text
-
-    doesn't account for digraphs currently, rather individual characters
     
     @param kk_texts_Texts: List of NLTK Texts.
     @type kk_texts_Texts: C{list}
+    @type condigraph: C{bool}
+    @type voweldigraph: C{bool}
     """
     outputtext = ""
     for t in zip(kk_texts_Texts, textnames):
         outputtext += "Text: {n}\n".format(n=t[1])
         textalpha = [w for w in t[0] if w.isalpha()]
         lentextstr = len("".join(textalpha))
-        chardict = countchars(textalpha)
+        chardict = countchars(textalpha, True, condigraph, voweldigraph)
         kvtup = [(k,v) for (k,v) in chardict.items()]
         kvtupsort = sorted(kvtup, key = lambda kvtup: kvtup[1], reverse=True)
         outputtext += "Letters in descending order of frequency:\n\n"
@@ -325,17 +326,17 @@ def MostFreqLetters(kk_texts_Texts, textnames):
     return outputtext
 
 
-def MostFreqLetters1Text(Text, name):
+def MostFreqLetters1Text(Text, name, condigraph=True, voweldigraph=True):
     """
     return a list of the most frequent letters in each text
-
-    doesn't account for digraphs currently, rather individual characters
     
     @param Text: A NLTK text
     @param name: The name of the next
     @type name: C{string}
+    @type condigraph: C{bool}
+    @type voweldigraph: C{bool}
     """
-    return MostFreqLetters([Text], [name])
+    return MostFreqLetters([Text], [name], condigraph, voweldigraph)
 
 def compareSamples(kk_texts_Texts,names, samples, casesensit=False):
     """

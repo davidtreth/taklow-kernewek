@@ -93,6 +93,7 @@ It can also now count letter frequencies, using consonant and vowel digraphs.
 This counts the numbers of each character using a defaultdict(int) adding one to d[c] whenever the character c is encountered.
 Digraphs are handled by temporarily replacing the digraphs with single characters and looping through the alphabetic words of the text joined into a as a single string.
 For example the digraph ch is replaced by č and sh by š before looping through, but converted back to ch and sh for output.
+Update 22/10/16: In the GUI there is now an option to use, or not use the digraphs in the letter frequency calculation (except ch which is used in both cases).
 
 It is also possible to draw a lexical dispersion plot, showing where in a text particular words appear graphically, as a percentage of the whole text.
 

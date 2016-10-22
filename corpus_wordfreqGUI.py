@@ -86,7 +86,13 @@ def printoutput():
         else:
             outbox.settext(cornish_corpus.MostFreqLetters1Text(
                 kk_text_dict[textchoice.state()], textchoice.state()))
-            
+    if modechoice.state() == 'Rol Menowghderow Lytherenn\n(heb dilytherennow)':
+        if textchoice.state() == 'Oll an Tekstow':
+            outbox.settext(cornish_corpus.MostFreqLetters(kk_texts, names, False, False))
+        else:
+            outbox.settext(cornish_corpus.MostFreqLetters1Text(
+                kk_text_dict[textchoice.state()], textchoice.state(), False, False))
+               
     if modechoice.state() == 'Hirder Geryow\n(tresenn menowghder kumulativ)':
         plt.figure()
         if textchoice.state() == 'Oll an Tekstow':
@@ -187,6 +193,7 @@ if __name__ == '__main__':
     
     modechoice = Radiobar(root, ['Derivas Ollgemmyn', 'Rol Menowghderow Ger',
                                  'Rol Menowghderow Lytherenn',
+                                 'Rol Menowghderow Lytherenn\n(heb dilytherennow)',
                                  'Hirder Geryow\n(tresenn menowghder kumulativ)',
                                  'Menowghder Ger (tresenn barr)',
                                  'Tresenn Keskar Ger',
