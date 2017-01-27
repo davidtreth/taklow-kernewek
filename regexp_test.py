@@ -23,6 +23,10 @@ dewson_kodha2 = KKre_dev.dewson_kodha_re
 
 testwords = ['penn', 'pennskol', 'penneglos', 'penneglosow',
              'an', 'androw', 'anaswonnys']
+             
+#testwords = [t.title() for t in testwords]             
+
+
 print("arbrovya syllabelRegExp")
 print("ger: REmatches REDevmatches")
 for t in testwords:    
