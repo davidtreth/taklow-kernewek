@@ -131,21 +131,29 @@ class kwKemmynDevRegExp:
     
     # diwethRegExp matches a syllable at the end of the word
     diwetRegExp =  re.compile(r'''
-    ((bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|qwr?|Qwr?|ch|Ch|Dhr?\'?|dhr?\'?|
-    dl|dr|Dl|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bckdfjlghpmnrstvwyzBCKDFJLGHPMNRSTVWYZ]\'?)? #consonant or c. cluster
-    \'?(ay|a\'?w|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|\'?[aeoiuyAEIOUY]\'?) # vowel
-    (lgh|ls|lt|bl|br|bb|kl|kr|kn|kwr?|kk|cch|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgjklmnprstvw]\'?)? # optionally a second consonant or cluster ie CVC?
+    ((bl|br|kl|kr|kn|kwr?|qwr?|ch|dhr?\'?|
+    dl|dr|fl|fr|vl|vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|hwr?|ph|pr|pl|shr?|str?
+    |skr?|skw?|sbr|spr|sp?l?|sm|tth|thr?|tr|tl|wr|wl|[bckdfjlghpmnrstvwyz]\'?)? #consonant or c. cluster
+    \'?(ay|a\'?w|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|\'?[aeoiuy]\'?) # vowel
+    (lgh|ls|lt|bl|br|bb|kl|kr|kn|kwr?|kk|cch|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|
+    gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|
+    rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|
+    [bdfgjklmnprstvw]\'?)? # optionally a second consonant or cluster ie CVC?
     (\-|\.|\,|;|:|!|\?|\(|\))*
     )$
-    ''', re.X)
+    ''', re.X + re.I)
     # kynsaRegExp matches syllable at beginning of a word
     # 1st syllable could be CV, CVC, VC, V
     kynsaRegExp =  re.compile(r'''
-    ^((\'?(bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|qwr?|Qwr?|ch|Ch|Dhr?|dhr?|dl|dr|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|gwr?|gwl?|gl|gr|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bckdfghjlmnprtvwyzBCKDFGHJLMNPRTVWYZ])\'?)? # optional C. 
-    \'?(ay|a\'?w|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])\'? # Vowel
-    (lgh|ls|lk|ld|lf|lt|bb?|kk?|cch|n?ch|n?dr|dh|dd?|ff?|vv?|ght|gg?h?|ll?|mp|mm?|nk|nd|nj|ns|nth?|nn?|pp?|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rj|rf|rs|rr?|sh|st|sk|sp|ss?|tt?h|tt?|[jw]\'?)? # optional C.
+    ^((\'?(bl|br|kl|kr|kn|kwr?|qwr?|ch|dhr?|dl|dr|fl|fr|vl|vr|gwr?|gwl?|gl|gr|
+    gn|hwr?|ph|pr|pl|shr?|str?|skr?|skw?|sbr|spr|sp?l?|sm|tth|thr?|tr|tl|
+    wr|wl|[bckdfghjlmnprtvwyz])\'?)? # optional C. 
+    \'?(ay|a\'?w|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|[aeoiuy])\'? # Vowel
+    (lgh|ls|lk|ld|lf|lt|bb?|kk?|cch|n?ch|n?dr|dh|dd?|ff?|vv?|ght|gg?h?|ll?|
+    mp|mm?|nk|nd|nj|ns|nth?|nn?|pp?|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rj|rf|rs|rr?|
+    sh|st|sk|sp|ss?|tt?h|tt?|[jw]\'?)? # optional C.
     (\-|\.|\,|;|:|!|\?|\(|\))*
-    )''', re.X)
+    )''', re.X + re.I)
 
     # these regular expressions below are not really used elsewhere
     # and may not be consistent with the above.
@@ -156,19 +164,35 @@ class kwKemmynDevRegExp:
     dewson_kodha_re = re.compile(r'ay|oy|ey|aw|ew|iw|ow|uw|yw', re.X)
 
     # word ending in vowels
-    pennvog_re = re.compile(r'^(.*?)(ay|aw|ey|eu|ew|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ou|Ow|Uw|Yw|[aeoiuyAEIOUY])$', re.X)
+    pennvog_re = re.compile(r'''^(.*?)(ay|aw|ey|eu|ew|iw|oe|oy|ow|ou|
+    uw|yw|[aeoiuy])$''', re.X + re.I)
     # word ending in consonants
-    lostkess_re = re.compile(r'^(.*?)(lgh|ls|lt|bl|br|bb|kl|kr|kn|kwr?|kk|cch|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgjklmnprstvw])$', re.X)
+    lostkess_re = re.compile(r'''^(.*?)(lgh|ls|lt|bl|br|bb|kl|kr|kn|kwr?|kk|
+    cch|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|
+    nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|
+    sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgjklmnprstvw])$''', re.X + re.I)
     # consonant-vowel sequence at the end
-    lostKB_re =  re.compile(r'(.*?)(bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|qwr?|Qwr?|ch|Ch|Dhr?\'?|dhr?\'?|dl|dr|Dl|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bckdfjlghpmnrstvwyzBCKDFJLGHPMNRSTVWYZ])(ay|aw|ey|eu|ew|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])$', re.X)
+    lostKB_re =  re.compile(r'''(.*?)(bl|br|kl|kr|kn|kwr?|qwr?|ch|
+    dhr?\'?|dl|dr|fl|fr|vl|vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|hwr?|ph|pr|pl|
+    shr?|str?|skr?|skw?|sbr|spr|sp?l?|Sp?l?|sm|tth|thr?|tr|tl|wr|wl|
+    [bckdfjlghpmnrstvwyz])
+    (ay|aw|ey|eu|ew|iw|oe|oy|ow|ou|uw|yw|[aeoiuy])$''', re.X + re.I)
     # vowel-consonant sequnce at the end
-    lostBK_re = re.compile(r'(.*?)(ay|aw|ey|eu|ew|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])(lgh|ls|lt|bl|br|bb|kl|kr|kn|kwr?|kk|cch|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgjklmnprstvw])$', re.X)
+    lostBK_re = re.compile(r'''(.*?)(ay|aw|ey|eu|ew|iw|oe|oy|ow|ou|
+    uw|yw|[aeoiuy])(lgh|ls|lt|bl|br|bb|kl|kr|kn|kwr?|kk|cch|n?ch|dhr?|dl|n?dr|
+    dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|ph|
+    pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|
+    tt|[bdfgjklmnprstvw])$''', re.X + re.I)
     # TODO: may need some more debugging checking which consonant clusters should be
     # considered 'single' and 'double' for the purposes of vowel length
     # vowel and single consonant
-    lostBK_single =  re.compile(r'(.*?)(ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])(ch|dh|gh|ph|sh|st|sk|th|[bkdfgjlmnprstvw])$', re.X)
+    lostBK_single =  re.compile(r'''(.*?)(ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|
+    [aeoiuy])(ch|dh|gh|ph|sh|st|sk|th|[bkdfgjlmnprstvw])$''', re.X + re.I)
     # vowel and double consonant
-    lostBK_double = re.compile(r'(.*?)(ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])(lgh|bl|br|bb|kl|kr|kn|kw|kk|nch|cch|dl|dr|dd|ff|vv|ggh|ll|mp|nj|mm|nk|nd|ns|nth?|nn|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rr|rv|rn|rj|rf|rs|ssh|ss|tth|tt|jj)$', re.X)
+    lostBK_double = re.compile(r'''(.*?)(ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|
+    [aeoiuy])(lgh|bl|br|bb|kl|kr|kn|kw|kk|nch|cch|dl|dr|dd|ff|vv|ggh|ll|
+    mp|nj|mm|nk|nd|ns|nth?|nn|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rr|rv|rn|rj|rf|rs|
+    ssh|ss|tth|tt|jj)$''', re.X + re.I)
 
 class kwFSSRegExp:
     """
