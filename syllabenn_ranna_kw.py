@@ -40,6 +40,33 @@ try:
     import nltk
 except ImportError:
     print("NLTK not available. Download from www.nltk.org if not on the system.")
+
+def preprocess2ASCII(inputtext):
+    """
+    replace any of apostrophe, backtick, or open/close single quote
+    with apostrophe
+    
+    similarly replace possible other double quote characters 
+    with ASCII double quote "
+    and various hyphen characters with ASCII hyphen -    
+    based on http://www.cs.sfu.ca/~ggbaker/reference/characters/
+    """
+    inputtext = inputtext.encode('utf-8')    
+    singlequotechars = ['`','‘','’','′']
+    doublequotechars = ['“','”','″','〃']
+    hyphenchars = ['‐','–','—','−','‑','⁃']
+    for h in hyphenchars:
+        if h in inputtext:
+            inputtext = inputtext.replace(h,'-')
+    for d in doublequotechars:
+        if d in inputtext:
+            inputtext = inputtext.replace(d,'"')
+    for s in singlequotechars:
+        #print(s)
+        if s in inputtext:
+            inputtext = inputtext.replace(s,"'")
+    #print(inputtext)
+    return inputtext
     
 class kwKemmynRegExp:
     """
@@ -51,17 +78,17 @@ class kwKemmynRegExp:
     # a syllable could have structure CV, CVC, VC, V
     # will now match traditional graphs c-, qw- yn syllable initial position
     syllabelRegExp = r'''(?x)
-    ((bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|qwr?|Qwr?|ch|Ch|Dhr?\'?|dhr?\'?|dl|dr|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bckdfjvlghmnprstwyzBCKDFJVLGHMNPRSTVWZY]) # consonant
-    \'?(ay|a\'?w|eu|ey|ew|iw|oe|oy|ow|ou|uw|yw|[aeoiuy])\'? #vowel
+    (\'?(bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|qwr?|Qwr?|ch|Ch|Dhr?\'?|dhr?\'?|dl|dr|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bckdfjvlghmnprstwyzBCKDFJVLGHMNPRSTVWZY]) # consonant
+    \'?(a\'?y|a\'?w|eu|e\'?y|e\'?w|iw|oe|oy|ow|ou|uw|yw|[aeoiuy])\'? #vowel
 (lgh|ls|lt|bl|br|bb|kl|kr|kn|kwr?|kk|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgljmnpkrstvw])? #  optional const.
     )| # or
-    (\'?(ay|a\'?w|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])\'? # vowel
+    (\'?(a\'?y|a\'?w|eu|e\'?w|e\'?y|iw|oe|oy|ow|ou|uw|yw|A\'?y|Aw|E\'?y|Eu|E\'?w|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])\'? # vowel
     (lgh|ls|lt|bl|bb|kl|kr|kn|kwr?|kk|cch|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgljmnpkrstvw]\'?)?) # consonant (optional)
     '''
     # diwethRegExp matches a syllable at the end of the word
     diwetRegExp =  r'''(?x)
-    ((bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|qwr?|Qwr?|ch|Ch|Dhr?\'?|dhr?\'?|dl|dr|Dl|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bckdfjlghpmnrstvwyzBCKDFJLGHPMNRSTVWYZ]\'?)? #consonant or c. cluster
-    \'?(ay|a\'?w|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|\'?[aeoiuyAEIOUY]\'?) # vowel
+    (\'?(bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|qwr?|Qwr?|ch|Ch|Dhr?\'?|dhr?\'?|dl|dr|Dl|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bckdfjlghpmnrstvwyzBCKDFJLGHPMNRSTVWYZ]\'?)? #consonant or c. cluster
+    \'?(a\'?y|a\'?w|eu|e\'?w|e\'?y|iw|oe|oy|ow|ou|uw|yw|A\'?y|Aw|E\'?y|Eu|E\'?w|Iw|Oe|Oy|Ow|Ou|Uw|Yw|\'?[aeoiuyAEIOUY]\'?) # vowel
     (lgh|ls|lt|bl|br|bb|kl|kr|kn|kwr?|kk|cch|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgjklmnprstvw]\'?)? # optionally a second consonant or cluster ie CVC?
     (\-|\.|\,|;|:|!|\?|\(|\))*
     )$
@@ -70,10 +97,16 @@ class kwKemmynRegExp:
     # 1st syllable could be CV, CVC, VC, V
     kynsaRegExp =  r'''(?x)
     ^((\'?(bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|qwr?|Qwr?|ch|Ch|Dhr?|dhr?|dl|dr|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|gwr?|gwl?|gl|gr|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bckdfghjlmnprtvwyzBCKDFGHJLMNPRTVWYZ])\'?)? # optional C. 
-    \'?(ay|a\'?w|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])\'? # Vowel
+    \'?(a\'?y|a\'?w|eu|e\'?w|e\'?y|iw|oe|oy|ow|ou|uw|yw|A\'?y|Aw|E\'?y|Eu|E\'?w|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])\'? # Vowel
     (lgh|ls|lk|ld|lf|lt|bb?|kk?|cch|n?ch|n?dr|dh|dd?|ff?|vv?|ght|gg?h?|ll?|mp|mm?|nk|nd|nj|ns|nth?|nn?|pp?|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rj|rf|rs|rr?|sh|st|sk|sp|ss?|tt?h|tt?|[jw]\'?)? # optional C.
     (\-|\.|\,|;|:|!|\?|\(|\))*
     )'''
+    # TODO: may need some more debugging checking which consonant clusters should be
+    # considered 'single' and 'double' for the purposes of vowel length
+    # vowel and single consonant
+    lostBK_single =  r'(.*?)(a\'?y|aw|eu|e\'?w|e\'?y|iw|oe|oy|ow|ou|uw|yw|A\'?y|Aw|E\'?y|Eu|E\'?w|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])(ch|dh|gh|ph|sh|st|sk|th|[bkdfgjlmnprstvw])$'
+    # vowel and double consonant
+    lostBK_double = r'(.*?)(a\'?y|aw|eu|e\'?w|e\'?y|iw|oe|oy|ow|ou|uw|yw|A\'?y|Aw|E\'?y|Eu|E\'?w|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])(lgh|bl|br|bb|kl|kr|kn|kw|kk|nch|cch|dl|dr|dd|ff|vv|ggh|ll|mp|nj|mm|nk|nd|ns|nth?|nn|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rr|rv|rn|rj|rf|rs|ssh|ss|tth|tt|jj)$'
 
     # these regular expressions below are not really used elsewhere
     # and may not be consistent with the above.
@@ -81,22 +114,16 @@ class kwKemmynRegExp:
     # rising dipthongs
     dewson_sevel_re = r'ya|ye|yo|yu|wa|we|wi|wo|wy'
     # falling dipthongs
-    dewson_kodha_re = r'ay|oy|ey|aw|ew|iw|ow|uw|yw'
+    dewson_kodha_re = r'a\'?y|oy|e\'?y|aw|e\'?w|iw|ow|uw|yw'
 
     # word ending in vowels
-    pennvog_re = r'^(.*?)(ay|aw|ey|eu|ew|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ou|Ow|Uw|Yw|[aeoiuyAEIOUY])$'
+    pennvog_re = r'^(.*?)(a\'?y|aw|e\'?y|eu|e\'?w|iw|oe|oy|ow|ou|uw|yw|A\'?y|Aw|E\'?y|Eu|E\'?w|Iw|Oe|Oy|Ou|Ow|Uw|Yw|[aeoiuyAEIOUY])$'
     # word ending in consonants
     lostkess_re = r'^(.*?)(lgh|ls|lt|bl|br|bb|kl|kr|kn|kwr?|kk||cch|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgjklmnprstvw])$'
     # consonant-vowel sequence at the end
-    lostKB_re =  r'(.*?)(bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|qwr?|Qwr?|ch|Ch|Dhr?\'?|dhr?\'?|dl|dr|Dl|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bckdfjlghpmnrstvwyzBCKDFJLGHPMNRSTVWYZ])(ay|aw|ey|eu|ew|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])$'
+    lostKB_re =  r'(.*?)\'?(bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|qwr?|Qwr?|ch|Ch|Dhr?\'?|dhr?\'?|dl|dr|Dl|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bckdfjlghpmnrstvwyzBCKDFJLGHPMNRSTVWYZ])(a\'?y|aw|e\'?y|eu|e\'?w|iw|oe|oy|ow|ou|uw|yw|A\'?y|Aw|E\'?y|Eu|E\'?w|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])$'
     # vowel-consonant sequnce at the end
-    lostBK_re = r'(.*?)(ay|aw|ey|eu|ew|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])(lgh|ls|lt|bl|br|bb|kl|kr|kn|kwr?|kk|cch|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgjklmnprstvw])$'
-    # TODO: may need some more debugging checking which consonant clusters should be
-    # considered 'single' and 'double' for the purposes of vowel length
-    # vowel and single consonant
-    lostBK_single =  r'(.*?)(ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])(ch|dh|gh|ph|sh|st|sk|th|[bkdfgjlmnprstvw])$'
-    # vowel and double consonant
-    lostBK_double = r'(.*?)(ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|Ay|Aw|Ey|Eu|Ew|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])(lgh|bl|br|bb|kl|kr|kn|kw|kk|nch|cch|dl|dr|dd|ff|vv|ggh|ll|mp|nj|mm|nk|nd|ns|nth?|nn|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rr|rv|rn|rj|rf|rs|ssh|ss|tth|tt|jj)$'
+    lostBK_re = r'(.*?)(a\'?y|aw|e\'?y|eu|e\'?w|iw|oe|oy|ow|ou|uw|yw|A\'?y|Aw|E\'?y|Eu|E\'?w|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])(lgh|ls|lt|bl|br|bb|kl|kr|kn|kwr?|kk|cch|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgjklmnprstvw])$'
 
 class kwKemmynDevRegExp:
     """
@@ -111,18 +138,18 @@ class kwKemmynDevRegExp:
     # a syllable could have structure CV, CVC, VC, V
     # will now match traditional graphs c-, qw- yn syllable initial position
     syllabelRegExp = re.compile(r'''
-    ((bl|br|kl|kr|kn|kwr?|qwr?|ch|dhr?\'?|
+    (\'?(bl|br|kl|kr|kn|kwr?|qwr?|ch|dhr?\'?|
     dl|dr|fl|fr|vl|vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|
     hwr?|ph|pr|pl|shr?|str?|skr?|
     skw?|sbr|spr|sp?l?|sm|tth|thr?|tr|tl|
     wr|wl|[bckdfjvlghmnprstwyz]) # consonant
-    \'?(ay|a\'?w|eu|ey|ew|iw|oe|oy|ow|ou|uw|yw|[aeoiuy])\'? #vowel
+    \'?(a\'?y|a\'?w|eu|e\'?y|e\'?w|iw|oe|oy|ow|ou|uw|yw|[aeoiuy])\'? #vowel
     (lgh|ls|lt|bl|br|bb|kl|kr|kn|kwr?|kk|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|
     gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|
     rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|
     [bdfgljmnpkrstvw])? # optional const.
     )| # or
-    (\'?(ay|a\'?w|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|[aeoiuy])\'? # vowel
+    (\'?(a\'?y|a\'?w|eu|e\'?w|e\'?y|iw|oe|oy|ow|ou|uw|yw|[aeoiuy])\'? # vowel
     (lgh|ls|lt|bl|bb|kl|kr|kn|kwr?|kk|cch|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|
     gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|
     rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|
@@ -131,10 +158,10 @@ class kwKemmynDevRegExp:
     
     # diwethRegExp matches a syllable at the end of the word
     diwetRegExp =  re.compile(r'''
-    ((bl|br|kl|kr|kn|kwr?|qwr?|ch|dhr?\'?|
+    (\'?(bl|br|kl|kr|kn|kwr?|qwr?|ch|dhr?\'?|
     dl|dr|fl|fr|vl|vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|hwr?|ph|pr|pl|shr?|str?
     |skr?|skw?|sbr|spr|sp?l?|sm|tth|thr?|tr|tl|wr|wl|[bckdfjlghpmnrstvwyz]\'?)? #consonant or c. cluster
-    \'?(ay|a\'?w|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|\'?[aeoiuy]\'?) # vowel
+    \'?(a\'?y|a\'?w|eu|e\'?w|e\'?y|iw|oe|oy|ow|ou|uw|yw|\'?[aeoiuy]\'?) # vowel
     (lgh|ls|lt|bl|br|bb|kl|kr|kn|kwr?|kk|cch|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|
     gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|
     rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|
@@ -148,23 +175,34 @@ class kwKemmynDevRegExp:
     ^((\'?(bl|br|kl|kr|kn|kwr?|qwr?|ch|dhr?|dl|dr|fl|fr|vl|vr|gwr?|gwl?|gl|gr|
     gn|hwr?|ph|pr|pl|shr?|str?|skr?|skw?|sbr|spr|sp?l?|sm|tth|thr?|tr|tl|
     wr|wl|[bckdfghjlmnprtvwyz])\'?)? # optional C. 
-    \'?(ay|a\'?w|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|[aeoiuy])\'? # Vowel
+    \'?(a\'?y|a\'?w|eu|e\'?w|e\'?y|iw|oe|oy|ow|ou|uw|yw|[aeoiuy])\'? # Vowel
     (lgh|ls|lk|ld|lf|lt|bb?|kk?|cch|n?ch|n?dr|dh|dd?|ff?|vv?|ght|gg?h?|ll?|
     mp|mm?|nk|nd|nj|ns|nth?|nn?|pp?|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rj|rf|rs|rr?|
     sh|st|sk|sp|ss?|tt?h|tt?|[jw]\'?)? # optional C.
     (\-|\.|\,|;|:|!|\?|\(|\))*
     )''', re.X + re.I)
-
+    
+    # TODO: may need some more debugging checking which consonant clusters should be
+    # considered 'single' and 'double' for the purposes of vowel length
+    # vowel and single consonant
+    lostBK_single =  re.compile(r'''(.*?)(a\'?y|aw|eu|e\'?w|e\'?y|iw|oe|oy|ow|ou|uw|yw|
+    [aeoiuy])(ch|dh|gh|ph|sh|st|sk|th|[bkdfgjlmnprstvw])$''', re.X + re.I)
+    # vowel and double consonant
+    lostBK_double = re.compile(r'''(.*?)(a\'?y|aw|eu|e\'?w|e\'?y|iw|oe|oy|ow|ou|uw|yw|
+    [aeoiuy])(lgh|bl|br|bb|kl|kr|kn|kw|kk|nch|cch|dl|dr|dd|ff|vv|ggh|ll|
+    mp|nj|mm|nk|nd|ns|nth?|nn|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rr|rv|rn|rj|rf|rs|
+    ssh|ss|tth|tt|jj)$''', re.X + re.I)
+    
     # these regular expressions below are not really used elsewhere
     # and may not be consistent with the above.
     
     # rising dipthongs
     dewson_sevel_re = re.compile(r'ya|ye|yo|yu|wa|we|wi|wo|wy', re.X)
     # falling dipthongs
-    dewson_kodha_re = re.compile(r'ay|oy|ey|aw|ew|iw|ow|uw|yw', re.X)
+    dewson_kodha_re = re.compile(r'a\'?y|oy|e\'?y|aw|e\'?w|iw|ow|uw|yw', re.X)
 
     # word ending in vowels
-    pennvog_re = re.compile(r'''^(.*?)(ay|aw|ey|eu|ew|iw|oe|oy|ow|ou|
+    pennvog_re = re.compile(r'''^(.*?)(a\'?y|aw|e\'?y|eu|e\'?w|iw|oe|oy|ow|ou|
     uw|yw|[aeoiuy])$''', re.X + re.I)
     # word ending in consonants
     lostkess_re = re.compile(r'''^(.*?)(lgh|ls|lt|bl|br|bb|kl|kr|kn|kwr?|kk|
@@ -172,27 +210,18 @@ class kwKemmynDevRegExp:
     nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|
     sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgjklmnprstvw])$''', re.X + re.I)
     # consonant-vowel sequence at the end
-    lostKB_re =  re.compile(r'''(.*?)(bl|br|kl|kr|kn|kwr?|qwr?|ch|
+    lostKB_re =  re.compile(r'''(.*?)\'?(bl|br|kl|kr|kn|kwr?|qwr?|ch|
     dhr?\'?|dl|dr|fl|fr|vl|vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|hwr?|ph|pr|pl|
     shr?|str?|skr?|skw?|sbr|spr|sp?l?|Sp?l?|sm|tth|thr?|tr|tl|wr|wl|
     [bckdfjlghpmnrstvwyz])
-    (ay|aw|ey|eu|ew|iw|oe|oy|ow|ou|uw|yw|[aeoiuy])$''', re.X + re.I)
+    (a\'?y|aw|e\'?y|eu|e\'?w|iw|oe|oy|ow|ou|uw|yw|[aeoiuy])$''', re.X + re.I)
     # vowel-consonant sequnce at the end
-    lostBK_re = re.compile(r'''(.*?)(ay|aw|ey|eu|ew|iw|oe|oy|ow|ou|
+    lostBK_re = re.compile(r'''(.*?)(a\'?y|aw|e\'?y|eu|e\'?w|iw|oe|oy|ow|ou|
     uw|yw|[aeoiuy])(lgh|ls|lt|bl|br|bb|kl|kr|kn|kwr?|kk|cch|n?ch|dhr?|dl|n?dr|
     dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|ph|
     pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|
     tt|[bdfgjklmnprstvw])$''', re.X + re.I)
-    # TODO: may need some more debugging checking which consonant clusters should be
-    # considered 'single' and 'double' for the purposes of vowel length
-    # vowel and single consonant
-    lostBK_single =  re.compile(r'''(.*?)(ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|
-    [aeoiuy])(ch|dh|gh|ph|sh|st|sk|th|[bkdfgjlmnprstvw])$''', re.X + re.I)
-    # vowel and double consonant
-    lostBK_double = re.compile(r'''(.*?)(ay|aw|eu|ew|ey|iw|oe|oy|ow|ou|uw|yw|
-    [aeoiuy])(lgh|bl|br|bb|kl|kr|kn|kw|kk|nch|cch|dl|dr|dd|ff|vv|ggh|ll|
-    mp|nj|mm|nk|nd|ns|nth?|nn|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rr|rv|rn|rj|rf|rs|
-    ssh|ss|tth|tt|jj)$''', re.X + re.I)
+
 
 class kwFSSRegExp:
     """
@@ -222,7 +251,7 @@ class RannaSyllabenn:
         # print(inputtext)
         self.inputtext = inputtext
         # nltk.word_tokenize puts these in separate words
-        apos_geryow = ["'m","'s","'th"]
+        apos_geryow = ["'m","'s","'th", "'n"]
         # use NLTK to split the input text into words
         try:
             geryow = nltk.word_tokenize(inputtext)
@@ -675,7 +704,7 @@ class Syllabenn:
         # maybe some ambiguity in how words are segmented?
         return lengtharray
     
-def countSylsLine(linetext,fwd=False,mode='text'):
+def countSylsLine(linetext,fwd=False,mode='text',regexps=kwKemmynRegExp):
     """ count the total syllables in each line
     mode is either 'text', 'list' or 'nsyllist'
     to return either a string, list with words
@@ -686,7 +715,7 @@ def countSylsLine(linetext,fwd=False,mode='text'):
     outlist = []
     outnsyllist = []
     for i in rannans.geryow:
-        g = Ger(i,rannans,fwd)
+        g = Ger(i,rannans,fwd,regexps=regexps)
         # for each word, display it with number of syllables
         if g.graph != '':
             outtext += g.shortoutput()
@@ -703,12 +732,12 @@ def countSylsLine(linetext,fwd=False,mode='text'):
         return outtext
     
 
-def detailSylsText(intext,fwd=False,short=False):
+def detailSylsText(intext,fwd=False,short=False,regexps=kwKemmynRegExp):
     outtext = ""
     rannans = RannaSyllabenn(intext)
     punctchars = ".,;:!?()-"
     for i in rannans.geryow:
-        g = Ger(i,rannans,fwd)
+        g = Ger(i,rannans,fwd,regexps=regexps)
         # avoid printing 'words' that consist only of a
         # punctuation character
         if g.graph != '' and g.graph not in punctchars:
@@ -740,6 +769,8 @@ if __name__ == '__main__':
                         help="Line by line mode. Counts syllables in each line, and uses shorter reporting of each word.")
     parser.add_argument("--short",action="store_true",
                         help="Short output for each word, i.e. only number of syllables, rather than details and syllable lengths")
+    parser.add_argument("--devregexp", action="store_true",
+                        help="Use the development KK regular expressions rather than standard")
     args = parser.parse_args()
     # Check that the input parameter has been specified.
     if args.inputfile == None:
@@ -748,9 +779,14 @@ if __name__ == '__main__':
         sys.exit()
         
     f = codecs.open(args.inputfile,"r",encoding="utf-8",errors="replace")
+    if args.devregexp:
+        regexps = kwKemmynDevRegExp
+    else:
+        regexps = kwKemmynRegExp
     if args.line:
-            inputtext = f.readlines()
+            inputtext = f.readlines()            
             for n,line in enumerate(inputtext):
+                line = preprocess2ASCII(line)
                 #line = line.encode('utf-8')
                 print("Linenn {l}".format(l=n+1))
                 rannans = RannaSyllabenn(line)
@@ -760,7 +796,7 @@ if __name__ == '__main__':
                 # count the total syllables in each line
                 Nsls = 0
                 for i in rannans.geryow:
-                    g = Ger(i,rannans,args.fwd)
+                    g = Ger(i,rannans,args.fwd, regexps=regexps)
                     # for each word, display it with number of syllables
                     if g.graph != '':
                         g.diskwedhshort()
@@ -768,6 +804,7 @@ if __name__ == '__main__':
                 print("\nNiver a sylabennow y'n linenn = {n}\n".format(n=Nsls))
     else:
         inputtext = f.read()
+        inputtext = preprocess2ASCII(inputtext)
         #inputtext = inputtext.encode('utf-8')
         rannans = RannaSyllabenn(inputtext)
         # run test code if --test argument has been used
@@ -776,7 +813,7 @@ if __name__ == '__main__':
 
         punctchars = ".,;:!?()-"
         for i in rannans.geryow:
-            g = Ger(i,rannans,args.fwd)
+            g = Ger(i,rannans,args.fwd, regexps=regexps)
             # avoid printing 'words' that consist only of a
             # punctuation character
             if g.graph != '' and g.graph not in punctchars:

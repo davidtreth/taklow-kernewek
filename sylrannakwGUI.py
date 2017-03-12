@@ -19,6 +19,8 @@ def printsylranna():
     msg3.text.config(fg = 'dark red', bg = 'light yellow',
                      font=('Helvetica', 16, 'bold'), state=tk.NORMAL)
     if inputtext:
+        # standardise quote characters etc.
+        inputtext = syl.preprocess2ASCII(inputtext)
         if options2.state() == 'Rannans war-rag':
             fwd = True
         else: fwd = False

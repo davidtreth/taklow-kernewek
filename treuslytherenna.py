@@ -338,8 +338,10 @@ if __name__ == '__main__':
         # read file line by line
         inputtext = f.readlines()
         for line in inputtext:
+            line = syllabenn_ranna_kw.preprocess2ASCII(line)
             outline = line_KK2FSS(line, fwds, not(args.short), args.verberr)
             print(outline+"\n")
     else:
         inputtext = f.read()
+        inputtext = syllabenn_ranna_kw.preprocess2ASCII(inputtext)
         print (text_KK2FSS(inputtext, fwds, not(args.short), args.verberr))

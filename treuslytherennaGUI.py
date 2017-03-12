@@ -6,6 +6,8 @@ else:
     import tkinter as tk
 from taklowGUI import Kwitya, Radiobar, ScrolledText
 from sylrannakwGUI import checkNLTK
+from syllabenn_ranna_kw import preprocess2ASCII
+
 def allstates(): print(options.state(), options2.state(), ent.gettext())
 
 def printtreus():
@@ -18,6 +20,7 @@ def printtreus():
     msg3.text.config(fg = 'dark red', bg = 'light yellow',
                      font=('Helvetica', 16, 'bold'), state=tk.NORMAL)
     if inputtext:
+        inputtext = preprocess2ASCII(inputtext)
         if options2.state() == 'Rannans war-rag':
             fwd = True
         else: fwd = False
