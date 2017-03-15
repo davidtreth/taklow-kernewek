@@ -229,7 +229,72 @@ class kwFSSRegExp:
     placeholder at present
     
     it should be possible I think to match either Main or Traditional variants
-    """    
+    """
+    
+    # syllable structure not determined correctly at present
+    # needs debugging FSS regexes
+    
+    syllabelRegExp = re.compile(r'''
+    (\'?(|[ck][lrn]|[kq]wr?|ch|dhr?\'?|
+    |[bdfv][lr]|vv|ll|gwr?|gwl?|g[lr]|gg?h|gn|
+    hwr?|whr?|p[hrl]|shr?|str?|s[ck]r?|
+    skw?|sqw|sbr|spr|sp?l?|sm|tth|thr?|
+    [tw][rl]|[bckdfjvlghmnprstwyz]) # consonant
+    \'?(a\'?y|a\'?w|eu|e\'?y|e\'?w|iw|oo|oy|ow|ou|uw|yw|[aeoiuy])\'? #vowel
+    (lgh|ls|lt|[bdfv][lr]|bb|[ck][lrn]|[ck]k|[kq]wr?|n?ch|dhr?|n?dr|dd|ff|vv|
+    gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|p[hrlp]|rgh?|
+    rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|s[ck]|ss|sp?l?|tt?h|tt|
+    [bdfglhmnpkrstvw])? # optional const.
+    )| # or
+    (\'?(a\'?y|a\'?w|eu|e\'?w|e\'?y|iw|oo|oy|ow|ou|uw|yw|[aeoiuy])\'? # vowel
+    (lgh|ls|lt|[bdfv][lr]|bb|[ck][lrn]|[ck]k|[kq]wr?|n?ch|dhr?|n?dr|dd|ff|vv|
+    gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|p[hrlp]|rgh?|
+    rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|s[ck]|ss|sp?l?|tt?h|tt|
+    [bdfglhmnpkrstvw]\'?)?) # consonant (optional)
+    ''', re.X + re.I)
+    
+    
+    # diwethRegExp matches a syllable at the end of the word
+    diwetRegExp =  re.compile(r'''
+    (\'?([bcdfvk][lr]|[ck]n|[kq]wr?|ch|dhr?\'?|
+    [dfv][lr]|vv|ll|gwr?|gwl?|g[lr]|gg?h|gn|hwr?|whr?|p[hrl]|shr?|str?
+    |s[ck]r?|skw?|sqw|sbr|spr|sp?l?|sm|tth|thr?|[tw][rl]|[bckdfjlghpmnrstvwyz]\'?)? #consonant or c. cluster
+    \'?(a\'?y|a\'?w|eu|e\'?w|e\'?y|iw|oo|oy|ow|ou|uw|yw|\'?[aeoiuy]\'?) # vowel
+    (lgh|ls|lt|[bdfk][lr]|bb|[ck][lrn]|[ck]k|[kq]wr?|cch|n?ch|dhr?|n?dr|dd|ff|vl|vv|
+    gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|p[hrlp]|rgh?|
+    rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|s[ck]|ss|sp?l?|tt?h|tt|
+    [bdfgjklmnprstvw]\'?)? # optionally a second consonant or cluster ie CVC?
+    (\-|\.|\,|;|:|!|\?|\(|\))*
+    )$
+    ''', re.X + re.I)
+    
+    # kynsaRegExp matches syllable at beginning of a word
+    # 1st syllable could be CV, CVC, VC, V
+    kynsaRegExp =  re.compile(r'''
+    ^((\'?(b[lr]|[ck][lrn]|[kq]wr?|ch|dhr?|[dfv][lr]|gwr?|gwl?|g[lrn]|
+    hwr?|whr?|p[hrl]|shr?|str?|s[ck]r?|s[kq]w|sbr|spr|sp?l?|sm|tth|thr?|[tw][rl]|
+    [bckdfghjlmnprtvwyz])\'?)? # optional C. 
+    \'?(a\'?y|a\'?w|eu|e\'?w|e\'?y|iw|oo|oy|ow|ou|uw|yw|[aeoiuy])\'? # Vowel
+    (lgh|ls|lk|ld|lf|lt|[bdf][lr]|bb?|[ck][lrn]|c?k|kk|[kq]wr?|cch|n?ch|n?dr|dh|
+    dd?|ff?|vv?|ght|gg?h?|ll?|
+    mp|mm?|nk|nd|nj|ns|nth?|nn?|pp?|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rj|rf|rs|rr?|
+    sh|st|sk|sp|ss?|tt?h|tt?|[jw]\'?)? # optional C.
+    (\-|\.|\,|;|:|!|\?|\(|\))*
+    )''', re.X + re.I)
+    
+    # TODO: may need some more debugging checking which consonant clusters should be
+    # considered 'single' and 'double' for the purposes of vowel length
+    # may need revising for FSS
+    # vowel and single consonant    
+    lostBK_single =  re.compile(r'''(.*?)(a\'?y|aw|eu|e\'?w|e\'?y|iw|oo|oy|ow|ou|uw|yw|
+    [aeoiuy])(ch|dh|gh|ph|sh|st|sk|th|[bkdfgjlmnrsvw])$''', re.X + re.I)
+    # vowel and double consonant
+    lostBK_double = re.compile(r'''(.*?)(a\'?y|aw|eu|e\'?w|e\'?y|iw|oo|oy|ow|ou|uw|yw|
+    [aeoiuy])(lgh|bl|br|bb|kl|kr|kn|kw|[ck]k|nch|cch|dl|dr|dd|ff|vv|ggh|ll|ls|
+    mp|nj|mm|nk|nd|ns|nth?|nn|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rr|rv|rn|rj|rf|rs|
+    ssh|ss|tth|tt|jj|[pt])$''', re.X + re.I)    
+    
+    
 class kwFSSLateRegExp:
     """
     will hold the regular expressions to match Standard Writen Form (Late) text
@@ -415,7 +480,7 @@ class Ger:
     """
     class for a word of Cornish text
     """
-    def __init__(self,ger,rannans,fwds=False,regexps=kwKemmynRegExp):
+    def __init__(self,ger,rannans,fwds=False,regexps=kwKemmynRegExp, FSSmode=False):
         """ initialize Ger object
         """
         self.graph = ger # an ger kowal
@@ -447,7 +512,10 @@ class Ger:
         self.n_sls = len(sls)
         for s in self.sls:
             # create a Syllabenn object and append it to a list
-            self.slsObjs.append(Syllabenn(s,rannans))
+            if FSSmode:
+                self.slsObjs.append(FSSSyllabenn(s,rannans))
+            else:
+                self.slsObjs.append(Syllabenn(s,rannans))
         #print ("len(self.slsObjs) = {l}".format(l=len(self.slsObjs)))
         for i,s in enumerate(self.slsObjs):
             # store number of syllables in word, position in word
@@ -534,7 +602,7 @@ class Ger:
         """ show short output for each word """    
         print(self.shortoutput(),end="")
         
-class Syllabenn:           
+class Syllabenn(object):           
     """
     Class for syllable
     """
@@ -703,7 +771,150 @@ class Syllabenn:
         # regular expressions pick up single/double consts properly
         # maybe some ambiguity in how words are segmented?
         return lengtharray
+
+
+class FSSSyllabenn(Syllabenn):     
+    """
+    Class for a syllable in FSS mode
+    will override lengthSylParts method
+    to calculate length for standard written form
+    """
     
+    def __init__(self, graph, rannans, regexps=kwFSSRegExp):
+        """ inherit from Syllabenn class """
+        # syllable structure not determined correctly at present
+        # needs debugging FSS regexes
+        super(FSSSyllabenn, self).__init__(graph, rannans, regexps=regexps)
+        self.lengtharray = self.lengthSylParts()
+        self.syllableLength = sum(self.lengtharray)
+        
+    def lengthSylParts(self, regexps=kwFSSRegExp):
+        """ find the lengths of each part of the syllable
+        and the syllable as a whole """
+        # TO be written
+        # initialise elements of lengtharray to 1
+        lengtharray = list(range(len(self.sylparts)))
+        lengtharray = [i*0 + 1 for i in lengtharray]
+        punctchars = "'.,;:!?()-"
+        graph_nopunct = self.grapheme
+        for c in punctchars:
+            graph_nopunct = graph_nopunct.replace(c,"")
+        #print("self.structure={s}".format(s=self.structure))
+        if self.structure == 'CVC':
+            lengtharray[0] = 1  # hirder an kynsa kessonenn
+            #print("self.monosyl={m}".format(m=self.monosyl))
+            if self.monosyl:
+            # mars yw unnsyllabenn:
+                if re.search(regexps.lostBK_single,graph_nopunct):
+                    lengtharray[1] = 2
+                    # mars yw kessonenn unnplek: bogalenn hir 
+                    # ha kessonenn verr
+                    # yn FSS nyns eus bogalennow hanterhir
+                    # ytho hirder yw 2 yn le 3
+                    lengtharray[2] = 1
+                else:
+                    if re.search(regexps.lostBK_double,graph_nopunct):
+                        lengtharray[1] = 1
+                        # mars yw kessonenn dewblek: bogalenn verr
+                        # ha kessonenn verr
+                        # nyns yw geminates yn FSS
+                        lengtharray[2] = 1
+            else:
+                if self.stressed:
+                    # mars yw liessyllabenn poesys:
+                    if re.search(regexps.lostBK_single,graph_nopunct):
+                        # mars yw kessonenn unnplek: boglenn hir
+                        # ha kessonenn verr
+                        lengtharray[1] = 2
+                        lengtharray[2] = 1
+                    else:
+                        if re.search(regexps.lostBK_double,graph_nopunct):
+                            # mars yw kessonenn dewblek: bogalenn verr
+                            # ha kessonenn verr
+                            # nag yw geminate yn FSS
+                            lengtharray[1] = 1
+                            lengtharray[2] = 1
+                        
+                else:
+                    # mars yw liessyllabelenn anpoesys:
+                    #    bogalenn verr ha kessonenn verr
+                    lengtharray[1] = 1
+                    lengtharray[2] = 1
+
+        if self.structure == 'CV':
+            lengtharray[0] = 1  # hirder an kynsa kessonenn
+            if self.monosyl:
+                # mars yw unnsyllabenn:
+                # bogalenn hir
+                # mes 2 yn le 3 yn FSS
+                lengtharray[1] = 2
+            else:
+                if self.stressed:
+                    # mars yw liessyllabenn poesys:
+                    # bogalenn hir
+                    lengtharray[1] = 2
+                else:
+                    # mars yw liessyllabenn anpoesys:
+                    # bogalenn verr 
+                    lengtharray[1] = 1
+
+        if self.structure == 'VC':
+            if self.monosyl:
+                # mars yw unnsyllabenn:
+                if re.search(regexps.lostBK_single,graph_nopunct):
+                    lengtharray[0] = 2
+                    # mars yw kessonenn unnplek: bogalenn hir 
+                    # mes 2 yn le 3
+                    # ha kessonenn berr
+                    lengtharray[1] = 1
+                else:
+                    if re.search(regexps.lostBK_double,graph_nopunct):
+                        lengtharray[0] = 1
+                        # mars yw kessonenn dewblek: bogalenn verr
+                        # ha kessonenn verr
+                        lengtharray[1] = 1
+            else:
+                if self.stressed:
+                    # mars yw liessyllabenn poesys:
+                    if re.search(regexps.lostBK_single,graph_nopunct):
+                        # mars yw kessonenn unnplek: boglenn hir
+                        lengtharray[0] = 2
+                        lengtharray[1] = 1
+                    else:
+                        if re.search(regexps.lostBK_double,graph_nopunct):
+                            # mars yw kessonenn dewblek: bogalenn verr
+                            lengtharray[0] = 1
+                            lengtharray[1] = 1
+
+
+                else:
+                    # mars yw liessyllabenn anpoesys:
+                    #    bogalenn berr
+                    lengtharray[0] = 1
+                    lengtharray[1] = 1
+
+        if self.structure == 'V':            
+            if self.monosyl:
+            # mars yw unnsyllabenn:
+            # bogalenn hir
+            # 2 yn le 3 yn FSS
+                lengtharray[0] = 2
+            else:
+                if self.stressed:
+                    # mars yw liessyllabenn poesys:
+                    # bogalenn hir
+                    lengtharray[0] = 2
+                else:
+                    # mars yw liessyllabenn anpoesys:
+                    # bogalenn verr
+                    lengtharray[0] = 1
+
+        # TO DO
+        # probably needs a bit of debugging to make sure 
+        # regular expressions pick up single/double consts properly
+        # maybe some ambiguity in how words are segmented?
+        return lengtharray        
+        
 def countSylsLine(linetext,fwd=False,mode='text',regexps=kwKemmynRegExp):
     """ count the total syllables in each line
     mode is either 'text', 'list' or 'nsyllist'
@@ -771,6 +982,8 @@ if __name__ == '__main__':
                         help="Short output for each word, i.e. only number of syllables, rather than details and syllable lengths")
     parser.add_argument("--devregexp", action="store_true",
                         help="Use the development KK regular expressions rather than standard")
+    parser.add_argument("--fssregexp", action="store_true",
+                        help="Use the FSS/Standard Written form regular expressions rather than standard. takes priority over --devregexp.")                        
     args = parser.parse_args()
     # Check that the input parameter has been specified.
     if args.inputfile == None:
@@ -779,7 +992,9 @@ if __name__ == '__main__':
         sys.exit()
         
     f = codecs.open(args.inputfile,"r",encoding="utf-8",errors="replace")
-    if args.devregexp:
+    if args.fssregexp:
+        regexps = kwFSSRegExp
+    elif args.devregexp:
         regexps = kwKemmynDevRegExp
     else:
         regexps = kwKemmynRegExp
@@ -796,7 +1011,7 @@ if __name__ == '__main__':
                 # count the total syllables in each line
                 Nsls = 0
                 for i in rannans.geryow:
-                    g = Ger(i,rannans,args.fwd, regexps=regexps)
+                    g = Ger(i,rannans,args.fwd, regexps=regexps, FSSmode=args.fssregexp)
                     # for each word, display it with number of syllables
                     if g.graph != '':
                         g.diskwedhshort()
@@ -813,7 +1028,7 @@ if __name__ == '__main__':
 
         punctchars = ".,;:!?()-"
         for i in rannans.geryow:
-            g = Ger(i,rannans,args.fwd, regexps=regexps)
+            g = Ger(i,rannans,args.fwd, regexps=regexps, FSSmode=args.fssregexp)
             # avoid printing 'words' that consist only of a
             # punctuation character
             if g.graph != '' and g.graph not in punctchars:
