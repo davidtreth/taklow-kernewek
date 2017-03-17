@@ -122,16 +122,19 @@ def convert_s_c(inputword):
             outputgraph = outputgraph.replace("syon", "cyon")
         outputgraph = outputgraph.replace("sysy", "cycy")
         outputgraph = outputgraph.replace("syan", "cyan")
-        # reverse some possible incorrect substitutions
-        # in the endings of inflected verbs
-        if inputword.graph.lower() in datageryow.verbs_infl:
-            if outputgraph[-5:] == "cewgh":
-                outputgraph = outputgraph[:-5]+"sewgh"
-            if outputgraph[-4:] == "cens":
-                outputgraph = outputgraph[:-4]+"sens"
-            if outputgraph[-3:] in ["cen","ces","cis"]:
-                outputgraph = outputgraph[:-3]+"s"+outputgraph[-2:]        
-        inputword.graph = outputgraph
+    if inputword.graph.lower() in datageryow.words_sh_c:
+        outputgraph = inputword.graph.replace("shy", "cy")
+        outputgraph = outputgraph.replace("sh", "cy")
+    # reverse some possible incorrect substitutions
+    # in the endings of inflected verbs
+    if inputword.graph.lower() in datageryow.verbs_infl:
+        if outputgraph[-5:] == "cewgh":
+            outputgraph = outputgraph[:-5]+"sewgh"
+        if outputgraph[-4:] == "cens":
+            outputgraph = outputgraph[:-4]+"sens"
+        if outputgraph[-3:] in ["cen","ces","cis"]:
+            outputgraph = outputgraph[:-3]+"s"+outputgraph[-2:]        
+    inputword.graph = outputgraph
 
 def convert_misc(inputword, inputgraph):
     """ Various lexical level substitutions 

@@ -187,13 +187,16 @@ words_c = ["abesedari", "abesedaris", "assendyans", "dissernyans",
            "fondasyons", "fysysyen", "fysysyens", "mensyon", "mensyons",
            "menystrasyon", "menystrasyons", "nasyon", "nasyons", "nasyonal",
            "optysyan", "optysyans", "optysyanes", "optysyanesow", "potensyal",
-           "potensyals", "presyous", "revelasyon", "revelasyons", "salvasyon",
+           "potensyals", "revelasyon", "revelasyons", "salvasyon",
            "salvasyons", "spesyli", "stasyon", "stasyons", "tradisyon",
            "tradisyons", "tradisyonal", "vokasyon", "selder", "selders",
            "sellulos", "selluloyd", "sentimeter", "sentimetrow", "sertan",
            "sider", "siders", "sidi", "sidis", "sigar", "sigarow", "sigarik",
            "sigarigow", "sinema", "sinemas", "sirk", "sirkow", "sita", "sitys",
            "sivil","chyfsita","chyfsitys"]
+
+# words where <sh> in KK is replaced by <c> in SWF
+words_sh_c = ["preshyous", "speshly", "speshyal"]
 # words that have a SWF <c> in place of KK <s> but also retain <syon> elsewhere
 # in the word
 words_c_syon = ["prosessyon", "prosessyons"]
@@ -207,6 +210,7 @@ verbs_infl = []
 addallinflectedforms(words_c, verbs_c)
 addallinflectedforms(verbs_infl, verbs_c)
 addallmutatedforms(words_c)
+addallmutatedforms(words_sh_c)
 addallmutatedforms(verbs_infl)
 addallmutatedforms(words_c_syon)            
 addallmutatedforms(words_SWF_kk)
