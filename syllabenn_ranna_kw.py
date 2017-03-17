@@ -235,8 +235,8 @@ class kwFSSRegExp:
     # needs debugging FSS regexes
     
     syllabelRegExp = re.compile(r'''
-    (\'?(|[ck][lrn]|[kq]wr?|ch|dhr?\'?|
-    |[bdfv][lr]|vv|ll|gwr?|gwl?|g[lr]|gg?h|gn|
+    (\'?([ck][lrn]|[kq]wr?|ch|dhr?\'?|
+    [bdfv][lr]|vv|ll|gwr?|gwl?|g[lr]|gg?h|gn|
     hwr?|whr?|p[hrl]|shr?|str?|s[ck]r?|
     skw?|sqw|sbr|spr|sp?l?|sm|tth|thr?|
     [tw][rl]|[bckdfjvlghmnprstwyz]) # consonant
@@ -915,7 +915,8 @@ class FSSSyllabenn(Syllabenn):
         # maybe some ambiguity in how words are segmented?
         return lengtharray        
         
-def countSylsLine(linetext,fwd=False,mode='text',regexps=kwKemmynRegExp):
+def countSylsLine(linetext,fwd=False,mode='text',regexps=kwKemmynRegExp,
+                  FSSmode=False):
     """ count the total syllables in each line
     mode is either 'text', 'list' or 'nsyllist'
     to return either a string, list with words
@@ -926,7 +927,7 @@ def countSylsLine(linetext,fwd=False,mode='text',regexps=kwKemmynRegExp):
     outlist = []
     outnsyllist = []
     for i in rannans.geryow:
-        g = Ger(i,rannans,fwd,regexps=regexps)
+        g = Ger(i,rannans,fwd,regexps=regexps, FSSmode=FSSmode)
         # for each word, display it with number of syllables
         if g.graph != '':
             outtext += g.shortoutput()
@@ -943,12 +944,13 @@ def countSylsLine(linetext,fwd=False,mode='text',regexps=kwKemmynRegExp):
         return outtext
     
 
-def detailSylsText(intext,fwd=False,short=False,regexps=kwKemmynRegExp):
+def detailSylsText(intext,fwd=False,short=False,regexps=kwKemmynRegExp,
+                   FSSmode=False):
     outtext = ""
     rannans = RannaSyllabenn(intext)
     punctchars = ".,;:!?()-"
     for i in rannans.geryow:
-        g = Ger(i,rannans,fwd,regexps=regexps)
+        g = Ger(i,rannans,fwd,regexps=regexps, FSSmode=FSSmode)
         # avoid printing 'words' that consist only of a
         # punctuation character
         if g.graph != '' and g.graph not in punctchars:

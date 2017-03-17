@@ -133,15 +133,17 @@ def convert_s_c(inputword):
                 outputgraph = outputgraph[:-3]+"s"+outputgraph[-2:]        
         inputword.graph = outputgraph
 
-def convert_misc(inputword):
-    """ Various lexical level substitutions """
+def convert_misc(inputword, inputgraph):
+    """ Various lexical level substitutions 
+    inputword is a Ger object after syllable level substitutions
+    inputgraph is the original KK spelling """
     # diworth --> dhyworth, diwar --> dhywar
     # subst diwor- --> dhywor-, diwar- --> dhywar-  but don't change diwarr
     # a-dhiworth --> a-dhyworth subst a-dhiwo- --> a-dhywo-
     # a-dhiwar --> a-dhywar subst a-dhiwa- --> a-dhywa
     outputgraph = inputword.graph
-    if inputword.graph.lower() == "diwarr":
-        pass
+    if inputgraph.lower() == "diwarr":
+        outputgraph = "diwar"
     elif inputword.graph.lower()[:5] == "diwar":
         outputgraph = inputword.graph.replace("diwar","dhywar")
     elif inputword.graph.lower()[:5] == "diwor":
@@ -180,10 +182,12 @@ def syl_KK2FSS(inputsyl, inputword):
     convert_double_consts(inputsyl)
     
 
-def wordlevelsubs_KK2FSS(inputword):
+def wordlevelsubs_KK2FSS(inputword, inputgraph):
     """ concatenate the processed syllable spellings
     into a new word spelling and make any necessary word
-    level substitutions """
+    level substitutions 
+    inputword is a Ger object after syllable level substitutions
+    inputgraph is the original KK spelling """
     # replace the plaintext syllable list
     inputword.sls = [s.grapheme for s in inputword.slsObjs]
     # build spelling of word from spelling of syllables
@@ -191,7 +195,7 @@ def wordlevelsubs_KK2FSS(inputword):
     # substitute c for s where necessary
     convert_s_c(inputword)
     # miscellaneous lexical level substitutions
-    convert_misc(inputword)
+    convert_misc(inputword, inputgraph)
     
 def word_KK2FSS(ger,verberr=False):
     """ expect Ger object and convert its spelling to SWF """
@@ -219,7 +223,7 @@ def word_KK2FSS(ger,verberr=False):
                 # print("syllable {s}".format(s=s.grapheme))
                 syl_KK2FSS(s,ger)
                 # print("syllable {s}".format(s=s.grapheme))
-            wordlevelsubs_KK2FSS(ger)
+            wordlevelsubs_KK2FSS(ger, inputgraph)
         else:
             failedend = ''
             # if there are no syllables found

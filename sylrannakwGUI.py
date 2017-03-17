@@ -7,7 +7,9 @@ else:
 from taklowGUI import Kwitya, Radiobar, ScrolledText
 
 
-def allstates(): print(options.state(), options2.state(), ent.gettext())
+def allstates():
+    print(options.state(), options2.state(),
+          kkfss.state(), ent.gettext())
 
 def printsylranna():
     """ show the output in Cornish, according to the options
@@ -24,9 +26,17 @@ def printsylranna():
         if options2.state() == 'Rannans war-rag':
             fwd = True
         else: fwd = False
+        
+        if kkfss.state() == 'Kernewek FSS':
+            regexps=syl.kwFSSRegExp
+            FSS = True
+        else:
+            regexps=syl.kwKemmynRegExp
+            FSS = False
                 
         if options.state() == 'Mode Hir':
-            output = syl.detailSylsText(inputtext,fwd)
+            output = syl.detailSylsText(inputtext, fwd, regexps=regexps,
+                                        FSSmode=FSS)
             msg3.text.config(font=('Helvetica', 14, 'normal'),
                              width=66, height=12+heightadjust)
         elif options.state() == 'Mode Linenn':
@@ -34,13 +44,16 @@ def printsylranna():
                              width=60, height=11+heightadjust)
             lines = inputtext.split('\n')                
             for l in lines:                    
-                output += syl.countSylsLine(l,fwd)+'\n\n'
+                output += syl.countSylsLine(l, fwd, regexps=regexps,
+                                            FSSmode=FSS)+'\n\n'
             output = output[:-1]
         else:
             msg3.text.config(font=('Helvetica', 16, 'bold'),
                              width=60, height=11+heightadjust)
             # use short mode by default if nothing is selected
-            output = syl.detailSylsText(inputtext,fwd,short=True)
+            output = syl.detailSylsText(inputtext, fwd,
+                                        short=True, regexps=regexps,
+                                        FSSmode=FSS)
         print(output)
     msg3.settext(output)
     msg3.text.config(state=tk.DISABLED)
@@ -94,6 +107,11 @@ if __name__ == '__main__':
                         side=tk.TOP, anchor=tk.NW, default='Rannans war-dhelergh')
     options2.pack(side=tk.LEFT, fill=tk.Y)
     options2.config(pady=10)
+    
+    kkfss = Radiobar(options2, ['Kernewek Kemmyn', 'Kernewek FSS'],
+                        side=tk.TOP, anchor=tk.NW, default='Kernewek Kemmyn')
+    kkfss.pack(side=tk.LEFT, fill=tk.Y)
+    kkfss.config(pady=10)
     
         
         

@@ -88,7 +88,8 @@ words_y = ["spyrys", "kynsa", "ynter", "ylyn", "pympes", "ydhyn", "dhy'hwi", "ch
            "slynkya", "kyni", "kessydhya", "kessydhyans", "pygans", "bynytha", "bynitha", "ysow",
            "dyskans", "myrghes", "kyrghes", "kyrghys", "lyver", "lyvrow", "bryntin", "possybyl",
            "possybylta", "possybyltas","anpossybyl", "onpossybyl", "anpossybylta", "onpossybylta",
-           "anpossybylytas", "onpossybylytas", "dyski", "pysi", "mynysenn"]
+           "anpossybylytas", "onpossybylytas", "dyski", "pysi", "mynysenn",
+           "nammnygen", "bysmer"]
 
 verbs_y = ["krysi", "slynkya", "kyni", "kessydhya", "dybri", "dyski", "pysi", "tyli", "attyli", "bryjyon", "lesvryjyon"]    
 
@@ -117,28 +118,33 @@ SWF_owords.remove("goen")
 # words that have unusual stress
 
 # words of more than one syllable stress on final syllable
+# should now include both KK and FSS variants
 final_syl_stress_words = ['ages','ahwer','androw','ankoth','ankres','attal',
                           'avel','aweyl','boban','boken','bulhorn','bysmer',
-                          'byttegyns','byttele','degoedh','dihwans',
+                          'bismer', 'byttegyns','byttele','degoedh','dihwans',
                           'a-dhihwans','demmas','devis','devri','tevri',
-                          'diank','dohajydh','dolos',
-                          'dremas','drog-atti','eghan','godhor','godramm',
+                          'degoodh', 'diank','dohajydh', 'dohajedh', 'dolos',
+                          'dremas','drog-atti','eghan','godhor', 'godram',
+                          'godramm', 'goldheys',
                           'goeldheys','myghtern','nahen','nameur','nammnygen',
+                          'namnygen', 'piwpenag', 'pegans', 'penag', 'peseul',
                           'namoy','naneyl','piwpynag','poken','pygans','pynag',
-                          'pyseul','seulabrys','seuladhydh','soweth','toetta',
+                          'pyseul','seulabrys','seuladhydh', 'seulabres',
+                          'seuladhedh', 'soweth','toetta', 'totta',
                           'war-barth','warbarth','yma','ymons','ynwedh','ytho',
                           'evy','tejy','eev','hyhi','nyni',
                           'hwyhwi','ynsi','yn-bann','yn-dann','ynbann',
-                          'yndann','a-ji','a-dhann','dygoel','dygweyth',
-                          'a-rag','dherag','a-dherag',
-                          'a-dhiworth','omri','omdowl', 'dibygans',
-                          'diber-dowr','diwvanek-plat', 'a-droes']
+                          'yndann','a-ji','a-dhann','dygoel', 'dygol',
+                          'dygweyth', 'a-rag','dherag','a-dherag',
+                          'a-dhiworth', 'a-dhyworth', 'omri','omdowl', 'dibygans',
+                          'diber-dowr','diwvanek-plat', 'a-droes', 'a-droos']
 
 addallmutatedforms(final_syl_stress_words)    
 
 # words of 3 or more syls. stressed on first syl.
 first_syl_stress_words = ['arader','aradror','kenedhel','kelegel','kenderow',
-                          'klabytter','lelduri','lenduri','tulyfant',
+                          'klabytter', 'clabytter', 'lelduri','lenduri',
+                          'tulyfant',
                           'hardigras','oratri','trayturi','genedhel',
                           'henedhel','gelegel','helegel','genderow',
                           'henderow','glabytter','dulyfant','thulyfant',
@@ -155,14 +161,14 @@ unstressed_monosyls = ['an','a','y','re','ny','yth','nyns','na','nag','ow',
                        'dell']
     
 # 2 syllable words with di- that are stressed on the first syllable
-words_di_stress1 = ["dial", "dibegh", "dibenn", "dibra", "diek", "dien",
-                    "difenn", "dilesh", "dillas", "dinan", "dinas", "dinek",
+words_di_stress1 = ["dial", "dibegh", "dibenn", "diben", "dibra", "diek", "dien",
+                    "difenn", "difen", "dilesh", "dillas", "dinan", "dinas", "dinek",
                     "diner", "disel", "diskan", "diskar", "diskeudh", "dismyk",
                     "distowgh", "disya", "divers", "divyn", "diwarr",
                     "diwbaw", "diwbleth", "diwdhorn", "diwedh", "diwen",
                     "diwes", "diwfer", "diwfordh", "diwgell", "diwglun",
-                    "diwla", "diwlens", "diwroev", "diwros", "diwskeodh",
-                    "diwvogh", "diwvregh", "diwvronn", "diwweus", "diwweyth"]
+                    "diwla", "diwlens", "diwroev", "diwrov", "diwros", "diwskoedh", "diwskodh",
+                    "diwvogh", "diwvregh", "diwvronn", "diwvron", "diwweus", "diwweyth"]
 
 addallmutatedforms(words_di_stress1)
 
