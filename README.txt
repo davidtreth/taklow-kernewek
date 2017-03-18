@@ -36,7 +36,8 @@ sylabellen_ranna.py: a module for splitting Cornish words into their consituent 
 Update (08-07-15): now this calculates syllable and word length on the basis of 1 unit for a short vowel or consonant, 2 for half-long vowel or gemminate 'double' consonant, or 3 for a long vowel.
 Update (16-04-16): there is now an option to go through line-by-line counting the number of syllables in each line with the --line option. The --short option simply reports the number of syllables found in each word rather than giving details.
 Update (18-03-17): There are now regular expressions in the Standard Written Form of Cornish (FSS). The regular expressions have also been rewritten using re.compile for clarity.
-There is some more work to do because some words have more than one possible segmentation. This can be an issue when a rare consonant cluster exists, such as <lv> in arv, palv etc. but other words such as milvil have the same grapheme split into two syllables. Possibly develop a version that identifies every possible segmentation, and assigns probabilities somehow.
+There is some more work to do because some words have more than one possible segmentation. This can be an issue when a rare consonant cluster exists, such as <lv> in palv etc. but other words such as milvil have the same grapheme split into two syllables. However once the <lv> grapheme is allowed to terminate a syllable, milvil is split into ['milv', 'il'] in forward segmentation mode.
+A similar issue exists with <rv> in arv etc. Possibly develop a version that identifies every possible segmentation, and assigns probabilities somehow.
 
 
 # Usage: python sylabelenn_ranna_kw.py <inputfile>
