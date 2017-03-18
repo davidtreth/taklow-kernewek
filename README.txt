@@ -35,6 +35,9 @@ update 10.08.16: now includes functions mutate_cy() and rev_mutate_cy() to do We
 sylabellen_ranna.py: a module for splitting Cornish words into their consituent syllables. A work in progress and a prelimary to a program to transliterate between different Cornish spelling systems such as Kemmyn and the Standard Written Form. It has also been suggested to me that in future I could also develop this in the area of rhyme, and poetry etc.
 Update (08-07-15): now this calculates syllable and word length on the basis of 1 unit for a short vowel or consonant, 2 for half-long vowel or gemminate 'double' consonant, or 3 for a long vowel.
 Update (16-04-16): there is now an option to go through line-by-line counting the number of syllables in each line with the --line option. The --short option simply reports the number of syllables found in each word rather than giving details.
+Update (18-03-17): There are now regular expressions in the Standard Written Form of Cornish (FSS). The regular expressions have also been rewritten using re.compile for clarity.
+There is some more work to do because some words have more than one possible segmentation. This can be an issue when a rare consonant cluster exists, such as <lv> in arv, palv etc. but other words such as milvil have the same grapheme split into two syllables. Possibly develop a version that identifies every possible segmentation, and assigns probabilities somehow.
+
 
 # Usage: python sylabelenn_ranna_kw.py <inputfile>
 # where <inputfile> is the path to an input file containing 
@@ -42,6 +45,8 @@ Update (16-04-16): there is now an option to go through line-by-line counting th
 #
 # there are optional command line switches --test (runs some extra test code), --line (line by line processing of input),
 # --short (only reports number of syllables in each word rather than displaying details)
+
+
 
 treuslytherenna.py: a module for converting Kernewek Kemmyn text to the Standard Written Form of Cornish. 
 

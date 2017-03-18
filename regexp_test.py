@@ -10,6 +10,7 @@ from syllabenn_ranna_kw import kwKemmynRegExp as KKre
 from syllabenn_ranna_kw import kwKemmynDevRegExp as KKre_dev
 from syllabenn_ranna_kw import kwFSSRegExp as FSSre
 
+
 def getTestWord():
     if sys.version_info[0] < 3:
         w = raw_input('Gorr ger arbrov mar pleg: ')
