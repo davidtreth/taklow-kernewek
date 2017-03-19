@@ -19,7 +19,21 @@ def getTestWord():
     else:
         w = input('Gorr ger arbrov mar pleg: ')
     return w
-    
+
+def deleteFinal(word, finalsylregexp):
+    """ word is the string containing the word """
+    syl = re.findall(finalsylregexp, word)
+    #syl should be a list containing one tuple 
+    #intended to be output of re.findall(word, diwetRegExp)
+    print("Final syllable regexp match tuple: {S}".format(S=syl))
+    if syl[0][0]:
+        finalrev = syl[0][0][::-1]
+    else:
+        # where one of the vowels with umlaut is used
+        finalrev = syl[0][5][::-1]
+    w_notfinal = word[::-1].replace(finalrev, "", 1)[::-1]
+    return w_notfinal, finalrev[::-1]
+
 sylRE = CYre.syllabelRegExp
 diwetRE = CYre.diwetRegExp 
 kynsaRE = CYre.kynsaRegExp
@@ -45,14 +59,38 @@ print("arbrovya syllabelRegExp")
 for t in testwords:    
     m = re.findall(sylRE, t)
     print("{w}:\n".format(w=t))
+    sylstrs = []
     for i, s in enumerate(m):
         print("S{i}: {s}".format(i=i+1, s=s))
+        sylstr = s[0] + s[4] + s[7]
+        sylstrs.append(sylstr)
+    print("")
+    print("{w}: {n} syllables:".format(w=t, n=len(sylstrs)))
+    for i, s in enumerate(sylstrs):
+        print("{i}:{s} ".format(i=i+1, s=s), end="")
     print("\n")
-
+    
 print("arbrovya diwetRegExp")
 for t in testwords:
     m = re.findall(diwetRE, t)
     print("{w}:\nFinalSyl:{sls}\n".format(w=t, sls=m))
+
+
+print("arbrovya diwetRegExp (recursive)")
+for t in testwords:
+    syls = []
+    word = t
+    while word:
+        print("{w}:".format(w=word))
+        word2, finalsyl = deleteFinal(word, diwetRE)
+        print("FinalSyl:{f}\n".format(f=finalsyl))
+        word = word2
+        syls.append(finalsyl)
+    syls.reverse()
+    print("{w}: matching backwards {n} syllables:".format(w=t, n=len(syls)))
+    for i, s in enumerate(syls):
+        print("{i}:{s} ".format(i=i+1, s=s), end="")
+    print("\n")
     
 print("arbrovya kynsaRegExp")
 for t in testwords:

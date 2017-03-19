@@ -341,19 +341,26 @@ class cyRegExp:
     
     # diwethRegExp matches a syllable at the end of the word
     diwetRegExp =  re.compile(r'''
-    (\'?([bcdftw][lr]|cn|cwr?|chl?|ddr?|
-    ff|ll?|gwr?|gwl?|g[lr]|gn|ng?h?|chw?r?|p[hrl]|si|str?|
+    (\'?([bcdmftw][lr]|cn|cwr?|chl?|ddr?|
+    ff|ll?|gwr?|gwl?|g[lr]|gn|ng?h?|mh|chw?r?|p[hrl]|si|str?|
     s[cg]r?|sgw?|sbr|spr|sp?l?|sm|th?r?|tl|w[rl]|
     [bcdfghpmnrstwiz]\'?)? #consonant or c. cluster
     \'?(ae|ai|au|aw|ei|eu|ew|iw|oe|oi|ow|uw|[wŵ]y|yw|
-    \'?[aâáàeêéèoôóòiîíìuûúùyŷýỳwŵẃẁ]\'?) # vowel
+    \'?[aâáàeêéèoôóòiîíìuûúùyŷýỳwŵẃẁ])\'? # vowel
     (lch|ls|lt|[bdftw][lr]|bb|c[lrn]|cwr?|ddr?|n?dr|ff|
     cht?|gw|gl|gn|ld|lff?|lc|lg|llt?|mm|mp|nc|ng|nd|ns|nth?|nn|p[hrlp]|rch?|
     rdd?|rth?|rc|rg|rl|rff?|rm|rn|rr|rs|st|sc|sg|ss|sp?l?|th|tt|
     [bcdfgjlmnprstwz]\'?)? # optionally a second consonant or cluster ie CVC?
     (\-|\.|\,|;|:|!|\?|\(|\))*
-    )$
-    ''', re.X + re.I + re.U)
+    )$| #or
+    ((\'?(c[lrn]|chl?|cwr?|si|ddr?|
+    [bdftw][lr]|ff|ff[lr]|ll|gwr?|gwl?|g[lr]|gn|ng|nh|ngh|mr|mh|
+    chwr?|p[hrl]|rh|shr?|str?|scr?|sgr?|
+    sgw?|sbr|spr|sp?l?|sm|th?r?|tl|w[rl]|
+    [bcdfjlghmnprstwiz])\'?)? # consonant (optional)
+    \'?[äëïöüẅÿ]\'? # vowel with umlaut
+    (\-|\.|\,|;|:|!|\?|\(|\))*
+    )$''', re.X + re.I + re.U)
     
     # kynsaRegExp matches syllable at beginning of a word
     # 1st syllable could be CV, CVC, VC, V
