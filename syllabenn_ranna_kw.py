@@ -51,7 +51,8 @@ def preprocess2ASCII(inputtext):
     and various hyphen characters with ASCII hyphen -    
     based on http://www.cs.sfu.ca/~ggbaker/reference/characters/
     """
-    inputtext = inputtext.encode('utf-8')    
+    if sys.version_info[0] < 3:
+        inputtext = inputtext.encode('utf-8')    
     singlequotechars = ['`','‘','’','′']
     doublequotechars = ['“','”','″','〃']
     hyphenchars = ['‐','–','—','−','‑','⁃']
@@ -67,7 +68,15 @@ def preprocess2ASCII(inputtext):
             inputtext = inputtext.replace(s,"'")
     #print(inputtext)
     return inputtext
-    
+def safe_unicode(obj, *args):
+    """ return the unicode representation of obj """
+    try:
+        return unicode(obj, *args)
+    except UnicodeDecodeError:
+        # obj is byte string
+        ascii_text = str(obj).encode('string_escape')
+        return unicode(ascii_text)
+
 class kwKemmynRegExp:
     """
     holds the regular expressions to match Kernewek Kemmyn text
@@ -314,7 +323,7 @@ class cyRegExp:
     
     syllabelRegExp = re.compile(r'''
     (\'?(c[lrn]|chl?|cwr?|si|ddr?|
-    [bdfmtw][lr]|ff|ff[lr]|ll|gwr?|gwl?|g[lr]|gn|ng?h?|mh|
+    [bdfmtw][lr]|ff|ff[lr]|ll|n?gwr?|n?gwl?|g[lr]|gn|ng?h?|mh|
     chw?r?|p[hrl]|rh|si|str?|scr?|sgr?|
     sgw?|sbr|spr|sp?l?|sm|th?r?|tl|w[rl]|
     [bcdfjlghmnprstwiz]) # consonant 
@@ -331,7 +340,7 @@ class cyRegExp:
     [bcdfglhmnprstwiz]\'?)? # consonant (optional)
     )| # or
     (\'?(c[lrn]|chl?|cwr?|si|ddr?|
-    [bdftw][lr]|ff|ff[lr]|ll|gwr?|gwl?|g[lr]|gn|ng|nh|ngh|mr|mh|
+    [bdftw][lr]|ff|ff[lr]|ll|n?gwr?|n?gwl?|g[lr]|gn|ng|nh|ngh|mr|mh|
     chwr?|p[hrl]|rh|shr?|str?|scr?|sgr?|
     sgw?|sbr|spr|sp?l?|sm|th?r?|tl|w[rl]|
     [bcdfjlghmnprstwiz])? # consonant
@@ -342,7 +351,7 @@ class cyRegExp:
     # diwethRegExp matches a syllable at the end of the word
     diwetRegExp =  re.compile(r'''
     (\'?([bcdmftw][lr]|cn|cwr?|chl?|ddr?|
-    ff|ll?|gwr?|gwl?|g[lr]|gn|ng?h?|mh|chw?r?|p[hrl]|si|str?|
+    ff|ll?|n?gwr?|n?gwl?|g[lr]|gn|ng?h?|mh|chw?r?|p[hrl]|si|str?|
     s[cg]r?|sgw?|sbr|spr|sp?l?|sm|th?r?|tl|w[rl]|
     [bcdfghpmnrstwiz]\'?)? #consonant or c. cluster
     \'?(ae|ai|au|aw|ei|eu|ew|iw|oe|oi|ow|uw|[wŵ]y|yw|
@@ -354,7 +363,7 @@ class cyRegExp:
     (\-|\.|\,|;|:|!|\?|\(|\))*
     )$| #or
     ((\'?(c[lrn]|chl?|cwr?|si|ddr?|
-    [bdftw][lr]|ff|ff[lr]|ll|gwr?|gwl?|g[lr]|gn|ng|nh|ngh|mr|mh|
+    [bdftw][lr]|ff|ff[lr]|ll|n?gwr?|n?gwl?|g[lr]|gn|ng|nh|ngh|mr|mh|
     chwr?|p[hrl]|rh|shr?|str?|scr?|sgr?|
     sgw?|sbr|spr|sp?l?|sm|th?r?|tl|w[rl]|
     [bcdfjlghmnprstwiz])\'?)? # consonant (optional)
@@ -366,7 +375,7 @@ class cyRegExp:
     # 1st syllable could be CV, CVC, VC, V
     kynsaRegExp =  re.compile(r'''
     ^((\'?([bdm][lr]|c[lrn]|cwr?|chl?|ddr?|ff|ff?[lr]|ll|
-    gwr?|gwl?|g[lrn]|ng?h?|
+    n?gwr?|n?gwl?|g[lrn]|ng?h?|
     chw?r?|p[hrl]|rh|si|str?|scr?|sgw?|sbr|spr|sp?l?|sm|th?r?|[tw][rl]|
     [bcdfghjlmnprstwiz])\'?)? # optional C. 
     \'?(ae|ai|au|aw|ei|eu|ew|iw|oe|oi|ow|uw|[wŵ]y|yw|
@@ -378,7 +387,7 @@ class cyRegExp:
     (\-|\.|\,|;|:|!|\?|\(|\))*
     )| #or
     ^((\'?(c[lrn]|chl?|cwr?|si|ddr?|
-    [bdftw][lr]|ff|ff[lr]|ll|gwr?|gwl?|g[lr]|gn|ng|nh|ngh|mr|mh|
+    [bdftw][lr]|ff|ff[lr]|ll|n?gwr?|n?gwl?|g[lr]|gn|ng|nh|ngh|mr|mh|
     chwr?|p[hrl]|rh|shr?|str?|scr?|sgr?|
     sgw?|sbr|spr|sp?l?|sm|th?r?|tl|w[rl]|
     [bcdfjlghmnprstwiz])\'?) # consonant
@@ -580,7 +589,8 @@ class Ger:
     """
     class for a word of Cornish text
     """
-    def __init__(self,ger,rannans,fwds=False,regexps=kwKemmynRegExp, FSSmode=False):
+    def __init__(self,ger,rannans,fwds=False,regexps=kwKemmynRegExp, FSSmode=False,
+                 CYmode = False):
         """ initialize Ger object
         """
         self.graph = ger # an ger kowal
@@ -612,7 +622,9 @@ class Ger:
         self.n_sls = len(sls)
         for s in self.sls:
             # create a Syllabenn object and append it to a list
-            if FSSmode:
+            if CYmode:
+                self.slsObjs.append(CYSyllabenn(s, rannans))
+            elif FSSmode:
                 self.slsObjs.append(FSSSyllabenn(s,rannans))
             else:
                 self.slsObjs.append(Syllabenn(s,rannans))
@@ -670,7 +682,8 @@ class Ger:
         """ return long output for each word"""
         line1 = "An ger yw: {g}".format(g=self.graph)
         line2 = "Niver a syllabennow yw: {n}".format(n=self.n_sls)
-        line3 = "Hag yns i: {sls}".format(sls=[s.encode("utf-8") for s in self.sls])
+        line3 = "Hag yns i: {sls}".format(sls=[s for s in self.sls])
+        #line3 = "Hag yns i: {sls}".format(sls=self.sls)
         outlines = [line1,line2,line3]
         # for each syllable, display its spelling - capitalized if stressed
         # structure (CVC/CV/VC/V)
@@ -727,6 +740,7 @@ class Syllabenn(object):
         self.position = 0
         self.final = False
         self.graphGer = ''
+        self.sylparts = []
         # print(syl)
         # slice syl list to get the syllable parts
         # i.e. consonant clusters + vowels
@@ -1021,6 +1035,10 @@ class CYSyllabenn(FSSSyllabenn):
     Class for a syllable in Welsh
     subclasses the FSS mode
     placeholder
+
+    will also need to write data in datageryow.py with 
+    abnormally stressed words in Welsh
+    and tell the Ger class to use it
     """
     def __init__(self, graph, rannans, regexps=cyRegExp):
         """ inherit from FSSSyllabenn class """
@@ -1030,21 +1048,30 @@ class CYSyllabenn(FSSSyllabenn):
         # print(syl)
         # slice syl list to get the syllable parts
         # i.e. consonant clusters + vowels
-        if len(syl) > 0:
-            if syl[0][0] != '':
+        if len(self.syl) > 0:
+            if self.syl[0][0] != '':
             # if there is a consonant at start
-                sylparts = syl[0][1:4]
+                sylparts = self.syl[0][1:4]
                 # print(sylparts)
                 if sylparts[2] == '': # CV i.e. no second consonant
                     sylparts = sylparts[0:2]
                     self.structure = 'CV'
                 else:
                     self.structure = 'CVC'
-            elif syl[0][4] != '':
+            elif self.syl[0][7] != '':
+                # syllabel uses a vowel with umlaut
+                sylparts = self.syl[8:10]
+                if sylparts[0] == '': # V only
+                    sylparts = sylparts[1:]
+                    self.structure = 'V'
+                else:
+                    self.structure = 'CV'
+                
+            elif self.syl[0][4] != '':
             # initial vowel
-                sylparts = syl[0][5:7]
+                sylparts = self.syl[0][5:7]
                 # print(sylparts)
-                if sylparts[1] == '': #V alone
+                if sylparts[1] == '': # V only
                     sylparts = sylparts[0:1]
                     self.structure = 'V'
                 else:
@@ -1052,6 +1079,133 @@ class CYSyllabenn(FSSSyllabenn):
             self.sylparts = sylparts
             self.lengtharray = self.lengthSylParts()
             self.syllableLength = sum(self.lengtharray)
+            
+    def lengthSylParts(self, regexps=cyRegExp):
+        """ find the lengths of each part of the syllable
+        and the syllable as a whole """
+        # needs to be rewritten and tested for Welsh
+        # initialise elements of lengtharray to 1
+        lengtharray = list(range(len(self.sylparts)))
+        lengtharray = [i*0 + 1 for i in lengtharray]
+        punctchars = "'.,;:!?()-"
+        graph_nopunct = self.grapheme
+        for c in punctchars:
+            graph_nopunct = graph_nopunct.replace(c,"")
+        #print("self.structure={s}".format(s=self.structure))
+        if self.structure == 'CVC':
+            lengtharray[0] = 1  # hirder an kynsa kessonenn
+            #print("self.monosyl={m}".format(m=self.monosyl))
+            if self.monosyl:
+            # mars yw unnsyllabenn:
+                if re.search(regexps.lostBK_single,graph_nopunct):
+                    lengtharray[1] = 2
+                    # mars yw kessonenn unnplek: bogalenn hir 
+                    # ha kessonenn verr
+                    # yn FSS nyns eus bogalennow hanterhir
+                    # ytho hirder yw 2 yn le 3
+                    lengtharray[2] = 1
+                else:
+                    if re.search(regexps.lostBK_double,graph_nopunct):
+                        lengtharray[1] = 1
+                        # mars yw kessonenn dewblek: bogalenn verr
+                        # ha kessonenn verr
+                        # nyns yw geminates yn FSS
+                        lengtharray[2] = 1
+            else:
+                if self.stressed:
+                    # mars yw liessyllabenn poesys:
+                    if re.search(regexps.lostBK_single,graph_nopunct):
+                        # mars yw kessonenn unnplek: boglenn hir
+                        # ha kessonenn verr
+                        lengtharray[1] = 2
+                        lengtharray[2] = 1
+                    else:
+                        if re.search(regexps.lostBK_double,graph_nopunct):
+                            # mars yw kessonenn dewblek: bogalenn verr
+                            # ha kessonenn verr
+                            # nag yw geminate yn FSS
+                            lengtharray[1] = 1
+                            lengtharray[2] = 1
+                        
+                else:
+                    # mars yw liessyllabelenn anpoesys:
+                    #    bogalenn verr ha kessonenn verr
+                    lengtharray[1] = 1
+                    lengtharray[2] = 1
+
+        if self.structure == 'CV':
+            lengtharray[0] = 1  # hirder an kynsa kessonenn
+            if self.monosyl:
+                # mars yw unnsyllabenn:
+                # bogalenn hir
+                # mes 2 yn le 3 yn FSS
+                lengtharray[1] = 2
+            else:
+                if self.stressed:
+                    # mars yw liessyllabenn poesys:
+                    # bogalenn hir
+                    lengtharray[1] = 2
+                else:
+                    # mars yw liessyllabenn anpoesys:
+                    # bogalenn verr 
+                    lengtharray[1] = 1
+
+        if self.structure == 'VC':
+            if self.monosyl:
+                # mars yw unnsyllabenn:
+                if re.search(regexps.lostBK_single,graph_nopunct):
+                    lengtharray[0] = 2
+                    # mars yw kessonenn unnplek: bogalenn hir 
+                    # mes 2 yn le 3
+                    # ha kessonenn berr
+                    lengtharray[1] = 1
+                else:
+                    if re.search(regexps.lostBK_double,graph_nopunct):
+                        lengtharray[0] = 1
+                        # mars yw kessonenn dewblek: bogalenn verr
+                        # ha kessonenn verr
+                        lengtharray[1] = 1
+            else:
+                if self.stressed:
+                    # mars yw liessyllabenn poesys:
+                    if re.search(regexps.lostBK_single,graph_nopunct):
+                        # mars yw kessonenn unnplek: boglenn hir
+                        lengtharray[0] = 2
+                        lengtharray[1] = 1
+                    else:
+                        if re.search(regexps.lostBK_double,graph_nopunct):
+                            # mars yw kessonenn dewblek: bogalenn verr
+                            lengtharray[0] = 1
+                            lengtharray[1] = 1
+
+
+                else:
+                    # mars yw liessyllabenn anpoesys:
+                    #    bogalenn berr
+                    lengtharray[0] = 1
+                    lengtharray[1] = 1
+
+        if self.structure == 'V':            
+            if self.monosyl:
+            # mars yw unnsyllabenn:
+            # bogalenn hir
+            # 2 yn le 3 yn FSS
+                lengtharray[0] = 2
+            else:
+                if self.stressed:
+                    # mars yw liessyllabenn poesys:
+                    # bogalenn hir
+                    lengtharray[0] = 2
+                else:
+                    # mars yw liessyllabenn anpoesys:
+                    # bogalenn verr
+                    lengtharray[0] = 1
+
+        # TO DO
+        # probably needs a bit of debugging to make sure 
+        # regular expressions pick up single/double consts properly
+        # maybe some ambiguity in how words are segmented?
+        return lengtharray        
         
         
 def countSylsLine(linetext,fwd=False,mode='text',regexps=kwKemmynRegExp,
@@ -1124,7 +1278,9 @@ if __name__ == '__main__':
     parser.add_argument("--devregexp", action="store_true",
                         help="Use the development KK regular expressions rather than standard")
     parser.add_argument("--fssregexp", action="store_true",
-                        help="Use the FSS/Standard Written form regular expressions rather than standard. takes priority over --devregexp.")                        
+                        help="Use the FSS/Standard Written form regular expressions rather than standard. takes priority over --devregexp.")
+    parser.add_argument("--cyregexp", action="store_true",
+                        help="Use Welsh regular expressions. Takes priority over other regexp options.")
     args = parser.parse_args()
     # Check that the input parameter has been specified.
     if args.inputfile == None:
@@ -1133,7 +1289,11 @@ if __name__ == '__main__':
         sys.exit()
         
     f = codecs.open(args.inputfile,"r",encoding="utf-8",errors="replace")
-    if args.fssregexp:
+    if args.cyregexp:
+        if sys.version_info[0] < 3:
+            print("Python 3 advised for Welsh text, to correctly process non-ASCII letters")
+        regexps = cyRegExp
+    elif args.fssregexp:
         regexps = kwFSSRegExp
     elif args.devregexp:
         regexps = kwKemmynDevRegExp
@@ -1152,7 +1312,9 @@ if __name__ == '__main__':
                 # count the total syllables in each line
                 Nsls = 0
                 for i in rannans.geryow:
-                    g = Ger(i,rannans,args.fwd, regexps=regexps, FSSmode=args.fssregexp)
+                    g = Ger(i,rannans,args.fwd, regexps=regexps,
+                            FSSmode=args.fssregexp,
+                            CYmode=args.cyregexp)
                     # for each word, display it with number of syllables
                     if g.graph != '':
                         g.diskwedhshort()
@@ -1169,7 +1331,9 @@ if __name__ == '__main__':
 
         punctchars = ".,;:!?()-"
         for i in rannans.geryow:
-            g = Ger(i,rannans,args.fwd, regexps=regexps, FSSmode=args.fssregexp)
+            g = Ger(i,rannans,args.fwd, regexps=regexps,
+                    FSSmode=args.fssregexp,
+                    CYmode=args.cyregexp)
             # avoid printing 'words' that consist only of a
             # punctuation character
             if g.graph != '' and g.graph not in punctchars:
