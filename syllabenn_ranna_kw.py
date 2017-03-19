@@ -314,18 +314,18 @@ class cyRegExp:
     
     syllabelRegExp = re.compile(r'''
     (\'?(c[lrn]|chl?|cwr?|si|ddr?|
-    [bdftw][lr]|ff|ff[lr]|ll|gwr?|gwl?|g[lr]|gn|ng?h?|mr|mh|
+    [bdfmtw][lr]|ff|ff[lr]|ll|gwr?|gwl?|g[lr]|gn|ng?h?|mh|
     chw?r?|p[hrl]|rh|si|str?|scr?|sgr?|
     sgw?|sbr|spr|sp?l?|sm|th?r?|tl|w[rl]|
-    [bcdfjlghmnprstwiz]) # consonant
-    \'?(ae|ai|aw|ei|ew|iw|oe|oi|ow|uw|ŵy|yw|[aâáàeêéèoôóòiîíìuûúùyŷýỳwŵẃẁ])\'? #vowel
-    (lch|ls|lt|[bdftw][lr]|bb|c[lrn]|cwr?|n?si|ddr?|n?dr|ff|
+    [bcdfjlghmnprstwiz]) # consonant 
+    \'?(ae|ai|au|aw|ei|ew|iw|oe|oi|ow|uw|[wŵ]y|yw|[aâáàeêéèoôóòiîíìuûúùyŷýỳwŵẃẁ])\'? #vowel
+    (lch|ls|lt|[bdftw][lr]|bb|c[lrn]|cwr?|ddr?|n?dr|ff|
     cht?|gw|gl|gn|ld|lff?|lc|lg|llt?|mm|mp|nc|nd|ns|nth?|nn|p[hrlp]|rch?|
     rdd?|rth?|rc|rl|rff?|rh|rm|rn|rr|rs|st|sc|sg|ss|sp?l?|th|tt|
     [bcdfglhmnprstwiz])? # optional const.
     )| # or
-    (\'?(ae|ai|aw|ei|eu|ew|iw|oe|oi|ow|uw|ŵy|yw|[aâáàeêéèoôóòiîíìuûúùyŷýỳwŵẃẁ])\'? # vowel
-    (lch|ld|ls|lt|[bdftw][lr]|bb|c[lrn]|cwr?|n?si|ddr?|n?dr|ff|
+    (\'?(ae|ai|au|aw|ei|eu|ew|iw|oe|oi|ow|uw|[wŵ]y|yw|[aâáàeêéèoôóòiîíìuûúùyŷýỳwŵẃẁ])\'? # vowel
+    (lch|ld|ls|lt|[bdftw][lr]|bb|c[lrn]|cwr?|ddr?|n?dr|ff|
     cht?|gw|gl|gn|ld|lff?|lc|lg|llt?|mm|mp|nc|nd|ns|nth?|nn|p[hrlp]|rch?|
     rdd?|rth?|rc|rl|rff?|rh|rm|rn|rr|rs|st|sc|sg|ss|sp?l?|th|tt|
     [bcdfglhmnprstwiz]\'?)? # consonant (optional)
@@ -334,58 +334,67 @@ class cyRegExp:
     [bdftw][lr]|ff|ff[lr]|ll|gwr?|gwl?|g[lr]|gn|ng|nh|ngh|mr|mh|
     chwr?|p[hrl]|rh|shr?|str?|scr?|sgr?|
     sgw?|sbr|spr|sp?l?|sm|th?r?|tl|w[rl]|
-    [bcdfjlghmnprstwiz]) # consonant
-    \'?([äëïöüẅÿ])\'?) #vowel
-    ''', re.X + re.I)
+    [bcdfjlghmnprstwiz])? # consonant
+    \'?([äëïöüẅÿ])\'?) # vowel with umlaut
+    ''', re.X + re.I + re.U)
     
     
     # diwethRegExp matches a syllable at the end of the word
     diwetRegExp =  re.compile(r'''
-    (\'?([bcdftw][lr]|cn|[cwr?|chl?|ddr?|
-    |ff|ll|gwr?|gwl?|g[lr]|gn|ng?h?|chw?r?|p[hrl]|si|str?
-    |s[cg]r?|sgw?|sbr|spr|sp?l?|sm|th?r?|tl|w[rl|
-    [bcdflghpmnrstwiz]\'?)? #consonant or c. cluster
-    \'?(ae|ai|aw|ei|eu|ew|iw|oe|oi|ow|uw|ŵy|yw|
+    (\'?([bcdftw][lr]|cn|cwr?|chl?|ddr?|
+    ff|ll?|gwr?|gwl?|g[lr]|gn|ng?h?|chw?r?|p[hrl]|si|str?|
+    s[cg]r?|sgw?|sbr|spr|sp?l?|sm|th?r?|tl|w[rl]|
+    [bcdfghpmnrstwiz]\'?)? #consonant or c. cluster
+    \'?(ae|ai|au|aw|ei|eu|ew|iw|oe|oi|ow|uw|[wŵ]y|yw|
     \'?[aâáàeêéèoôóòiîíìuûúùyŷýỳwŵẃẁ]\'?) # vowel
-    (lch|ls|lt|[bdftw][lr]|bb|c[lrn]|cwr?|n?si|ddr?|n?dr|ff|
+    (lch|ls|lt|[bdftw][lr]|bb|c[lrn]|cwr?|ddr?|n?dr|ff|
     cht?|gw|gl|gn|ld|lff?|lc|lg|llt?|mm|mp|nc|ng|nd|ns|nth?|nn|p[hrlp]|rch?|
     rdd?|rth?|rc|rg|rl|rff?|rm|rn|rr|rs|st|sc|sg|ss|sp?l?|th|tt|
     [bcdfgjlmnprstwz]\'?)? # optionally a second consonant or cluster ie CVC?
     (\-|\.|\,|;|:|!|\?|\(|\))*
     )$
-    ''', re.X + re.I)
+    ''', re.X + re.I + re.U)
     
     # kynsaRegExp matches syllable at beginning of a word
     # 1st syllable could be CV, CVC, VC, V
     kynsaRegExp =  re.compile(r'''
-    ^((\'?(bd[lr]|c[lrn]|cwr?|chl?|ddr?|ff|ff?[lr]|ll|gwr?|gwl?|g[lrn]|
+    ^((\'?([bdm][lr]|c[lrn]|cwr?|chl?|ddr?|ff|ff?[lr]|ll|
+    gwr?|gwl?|g[lrn]|ng?h?|
     chw?r?|p[hrl]|rh|si|str?|scr?|sgw?|sbr|spr|sp?l?|sm|th?r?|[tw][rl]|
     [bcdfghjlmnprstwiz])\'?)? # optional C. 
-    \'?(ae|ai|aw|ei|eu|ew|iw|oe|oi|ow|uw|ŵy|yw|
+    \'?(ae|ai|au|aw|ei|eu|ew|iw|oe|oi|ow|uw|[wŵ]y|yw|
     \'?[aâáàeêéèoôóòiîíìuûúùyŷýỳwŵẃẁ]\'?) # Vowel
-    (lch|ls|ld|lf|ll?t?|[bdf][lr]|bb?|c[lrn]|cwr?|n?si|n?dr|
+    (lch|ls|ld|lf|ll?t?|[bdf][lr]|bb?|c[lrn]|cwr?|n?dr|
     dd?|ff?|cht|gg?|mp|mm?|n[cg]|nd|nj|ns|nth?|nn?|pp?|
     rch?|rdd?|rth?|r[cg]|rl|rm|rn|rj|rff?|rs|rr?|
-    si|st|s[cg]|s[bp]|ss?|tt?h?|[jwz]\'?)? # optional C.
+    st|s[cg]|s[bp]|ss?|tt?h?|[jwz]\'?)? # optional C.
     (\-|\.|\,|;|:|!|\?|\(|\))*
-    )''', re.X + re.I)
+    )| #or
+    ^((\'?(c[lrn]|chl?|cwr?|si|ddr?|
+    [bdftw][lr]|ff|ff[lr]|ll|gwr?|gwl?|g[lr]|gn|ng|nh|ngh|mr|mh|
+    chwr?|p[hrl]|rh|shr?|str?|scr?|sgr?|
+    sgw?|sbr|spr|sp?l?|sm|th?r?|tl|w[rl]|
+    [bcdfjlghmnprstwiz])\'?) # consonant
+    \'?[äëïöüẅÿ]\'? # vowel with umlaut
+    (\-|\.|\,|;|:|!|\?|\(|\))*
+    )''', re.X + re.I + re.U)
     
     # TODO: may need some more debugging checking which consonant clusters should be
     # considered 'single' and 'double' for the purposes of vowel length
     # may need revising for FSS
     # vowel and single consonant    
-    lostBK_single =  re.compile(r'''(.*?)(ae|ai|aw|ei|eu|ew|iw|oe|oi|ow|
-    uw|ŵy|yw|
+    lostBK_single =  re.compile(r'''(.*?)(ae|ai|au|aw|ei|eu|ew|iw|oe|oi|ow|
+    uw|[wŵ]y|yw|
     \'?[aâáàeêéèoôóòiîíìuûúùyŷýỳwŵẃẁ]\'?)
-    (ch|dd|ph|si|st|s[cg]|th|ff|[bcdfgjlmnrswz])$''', re.X + re.I)
+    (ch|dd|ph|st|s[cg]|th|ff|[bcdfgjlmnrswz])$''', re.X + re.I + re.U)
     # vowel and double consonant
-    lostBK_double = re.compile(r'''(.*?)(ae|ai|aw|ei|eu|ew|iw|oe|oi|ow|
-    uw|ŵy|yw|
+    lostBK_double = re.compile(r'''(.*?)(ae|ai|au|aw|ei|eu|ew|iw|oe|oi|ow|
+    uw|[wŵ]y|yw|
     \'?[aâáàeêéèoôóòiîíìuûúùyŷýỳwŵẃẁ]\'?)
-    (lch|bl|br|bb|[cg]l|cr|cn|cw|nsi|dl|dr|ll|ls|
+    (lch|bl|br|bb|[cg]l|cr|cn|cw|dl|dr|ll|ls|
     mp|nj|mm|n[cg]|nd|ns|nth?|nn|pr|pl|pp|rch?|rdd?|rth?|
     r[cg]|rl|rr|rff?|rn|rj|rs|
-    ss|tth|tt|jj|[pt])$''', re.X + re.I)    
+    ss|tth|tt|jj|[pt])$''', re.X + re.I + re.U)    
 
     
 class RannaSyllabenn:
@@ -998,6 +1007,45 @@ class FSSSyllabenn(Syllabenn):
         # regular expressions pick up single/double consts properly
         # maybe some ambiguity in how words are segmented?
         return lengtharray        
+
+
+class CYSyllabenn(FSSSyllabenn):     
+    """
+    Class for a syllable in Welsh
+    subclasses the FSS mode
+    placeholder
+    """
+    def __init__(self, graph, rannans, regexps=cyRegExp):
+        """ inherit from FSSSyllabenn class """
+        # needs debugging FSS regexes
+        super(CYSyllabenn, self).__init__(graph, rannans, regexps=regexps)
+
+        # print(syl)
+        # slice syl list to get the syllable parts
+        # i.e. consonant clusters + vowels
+        if len(syl) > 0:
+            if syl[0][0] != '':
+            # if there is a consonant at start
+                sylparts = syl[0][1:4]
+                # print(sylparts)
+                if sylparts[2] == '': # CV i.e. no second consonant
+                    sylparts = sylparts[0:2]
+                    self.structure = 'CV'
+                else:
+                    self.structure = 'CVC'
+            elif syl[0][4] != '':
+            # initial vowel
+                sylparts = syl[0][5:7]
+                # print(sylparts)
+                if sylparts[1] == '': #V alone
+                    sylparts = sylparts[0:1]
+                    self.structure = 'V'
+                else:
+                    self.structure = 'VC'
+            self.sylparts = sylparts
+            self.lengtharray = self.lengthSylParts()
+            self.syllableLength = sum(self.lengtharray)
+        
         
 def countSylsLine(linetext,fwd=False,mode='text',regexps=kwKemmynRegExp,
                   FSSmode=False):
