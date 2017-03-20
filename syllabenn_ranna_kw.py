@@ -381,7 +381,7 @@ class cyRegExp:
     \'?(ae|ai|au|aw|ei|eu|ew|iw|oe|oi|ow|uw|[wŵ]y|yw|
     \'?[aâáàeêéèoôóòiîíìuûúùyŷýỳwŵẃẁ]\'?) # Vowel
     (lch|ls|ld|lf|ll?t?|[bdf][lr]|bb?|c[lrn]|cwr?|n?dr|
-    dd?|ff?|cht|gg?|mp|mm?|n[cg]|nd|nj|ns|nth?|nn?|pp?|
+    dd?|ff?|cht?|gg?|mp|mm?|n[cg]|nd|nj|ns|nth?|nn?|pp?|
     rch?|rdd?|rth?|r[cg]|rl|rm|rn|rj|rff?|rs|rr?|
     st|s[cg]|s[bp]|ss?|tt?h?|[jwz]\'?)? # optional C.
     (\-|\.|\,|;|:|!|\?|\(|\))*
