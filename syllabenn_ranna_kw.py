@@ -2,22 +2,35 @@
 # -*- coding: utf-8 -*-
 # David Trethewey 06-05-2016 
 # code is Open Source (GPL)
+# Fenten Igor yw an kodenn ma (GPL)
 #
-# A rough and ready hacked together segmentation of Cornish (Kernewek Kemmyn) text 
+# A rough and ready hacked together segmentation of Cornish (Kernewek Kemmyn or SWF) text 
 # to the syllable level using regular expressions. 
 #
+# Rannans tekst Kernewek nebes hakkys yn garow (Kernewek Kemmyn po FSS) dhe syllabennow
+# 'regular expressions' (pyth yw henna yn Kernewek?)
+#
 # This version makes a calculation of syllable length
-# taking 1 unit as short vowel, 2 as a half-long, 3 as long
+# in Kernewek Kemmyn taking 1 unit as short vowel, 2 units for a half-long, 3 as long
 # 1 a normal consonant and 2 as a gemminated double consonant
 # e.g. mm in kamm
-# 
+# in SWF there are no half-long vowels or gemminated consonants, therefore 
+# 1 is a short vowel and 2 is a long vowel, and all consonants have length 1 
+#
+# An vershyon ma a wra amontyans hirder an syllabenn
+# yn Kernewek Kemmyn bogalenn verr yw 1 unses, bogalenn hanter hir yw 2 unses, hag onan hir
+# yw 3 unses.
+# Yma 1 unses yn kessonenn normal ha 2 yn kessonenn gemmynheys
+# kepar ha mm yn kamm
+# Yn FSS nag eus bogalennow hanterhir po kesson gemmynheys, ytho unses yw dhe
+# vogalenn verr ha 2 dhe vogalenn hir, ha hirder a 1 yw gans pub kessonenn
 #
 # This module is used by the module treuslytherenna.py to convert Kernewek Kemmyn
 # text to the Standard Written Form
 #
 # Usage: python syllabenn_ranna_kw.py --test <inputfile>
 # where <inputfile> is the path to an input file containing 
-# text in Kernewek Kemmyn
+# text in Kernewek Kemmyn (or FSS or Welsh if the relevant options are used)
 # --test is an optional flag to run the test routines in profya()
 # --fwd uses segmentation starting from the beginning of each word, rather than
 # starting from the end and working backwards
@@ -25,6 +38,24 @@
 # word and its number of syllables
 # --line causes it to step through the input file line by line, and count the number of syllables
 # in the whole line
+# --fssregexp causes the Standard Written Form regular expressions to be use
+# these aim to match either SWF Main or Traditional forms, but not yet Late
+# --cyregexp uses the (experimental) regular expressions to match Welsh text
+# this will override --fssregexp
+
+# Usyans: python syllabenn_ranna_kw.py --test <inputfile>
+# hag <inputfile> yw hyns dhe restrenn ynworrans gans tekst yn Kernewek Kemmyn
+# po FSS po Kembrek mars yw an dewisyansow usys
+# --test yw baner dewisel rag dhe eksekutya kodenn arbrov yn profya()
+# --fwd a wra rannans diworth dalleth pub ger, yn le dalleth a'n lost hag oberi 
+# a-dhelergh
+# --short a wra eskorrans berra gans pub ger ha niver syllabennow
+# --line a wra kemmer an restrenn dre linennow, hag amontya niver a syllabennow
+# yn pub linenn
+# --fssregexp a war usya regexps a wra aswonn tekst yn Furv Skrifys Savonek
+# yn furv savonek po hengovek, mes na Diwedhes hwath.
+# --cyregexp a wra usya regexp (arbrovel) dhe aswonn tekst Kembrek
+# henna a wra gorrewlya --fssregexp 
 
 from __future__ import print_function
 import sys
