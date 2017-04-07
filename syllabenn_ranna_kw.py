@@ -128,7 +128,7 @@ class kwKemmynRegExp:
     # diwethRegExp matches a syllable at the end of the word
     diwetRegExp =  r'''(?x)
     (\'?(bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|qwr?|Qwr?|ch|Ch|Dhr?\'?|dhr?\'?|dl|dr|Dl|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bckdfjlghpmnrstvwyzBCKDFJLGHPMNRSTVWYZ]\'?)? #consonant or c. cluster
-    \'?(a\'?y|a\'?w|eu|e\'?w|e\'?y|iw|oe|oy|ow|ou|uw|yw|A\'?y|Aw|E\'?y|Eu|E\'?w|Iw|Oe|Oy|Ow|Ou|Uw|Yw|\'?[aeoiuyAEIOUY]\'?) # vowel
+    \'?(a\'?y|a\'?w|eu|e\'?w|e\'?y|iw|oe|oy|ow|ou|uw|yw|A\'?y|Aw|E\'?y|Eu|E\'?w|Iw|Oe|Oy|Ow|Ou|Uw|Yw|\'?[aeoiuyAEIOUY])\'? # vowel
     (lgh|ls|lt|lv|bl|br|bb|kl|kr|kn|kwr?|kk|cch|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgjklmnprstvw]\'?)? # optionally a second consonant or cluster ie CVC?
     (\-|\.|\,|;|:|!|\?|\(|\))*
     )$
@@ -201,7 +201,7 @@ class kwKemmynDevRegExp:
     (\'?(bl|br|kl|kr|kn|kwr?|qwr?|ch|dhr?\'?|
     dl|dr|fl|fr|vl|vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|hwr?|ph|pr|pl|shr?|str?
     |skr?|skw?|sbr|spr|sp?l?|sm|tth|thr?|tr|tl|wr|wl|[bckdfjlghpmnrstvwyz]\'?)? #consonant or c. cluster
-    \'?(a\'?y|a\'?w|eu|e\'?w|e\'?y|iw|oe|oy|ow|ou|uw|yw|\'?[aeoiuy]\'?) # vowel
+    \'?(a\'?y|a\'?w|eu|e\'?w|e\'?y|iw|oe|oy|ow|ou|uw|yw|\'?[aeoiuy])\'? # vowel
     (lgh|ls|lt|bl|br|bb|kl|kr|kn|kwr?|kk|cch|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|
     gg?ht?|gw|gl|gn|ld|lf|lv|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|
     rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|
@@ -298,7 +298,7 @@ class kwFSSRegExp:
     (\'?([bcdfvk][lr]|[ck]n|[kq]wr?|ch|dhr?\'?|
     [dfv][lr]|vv|ll|gwr?|gwl?|g[lr]|gg?h|gn|hwr?|whr?|p[hrl]|cy|shr?|str?
     |s[ck]r?|skw?|sqw|sbr|spr|sp?l?|sm|tth|thr?|[tw][rl]|[bckdfjlghpmnrstvwyz]\'?)? #consonant or c. cluster
-    \'?(a\'?y|a\'?w|eu|e\'?w|e\'?y|iw|oo|oy|ow|ou|uw|yw|\'?[aeoiuy]\'?) # vowel
+    \'?(a\'?y|a\'?w|eu|e\'?w|e\'?y|iw|oo|oy|ow|ou|uw|yw|\'?[aeoiuy])\'? # vowel
     (lgh|ls|lt|[bdfk][lr]|bb|[ck][lrn]|[ck]k|[kq]wr?|cch|n?ch|dhr?|n?dr|dd|ff|vl|vv|
     gg?ht?|gw|gl|gn|ld|lf|lv|lk|ll|mm|mp|nk|nd|nj|ns|nth?|nn|p[hrlp]|rgh?|
     rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|cy|sh|st|s[ck]|ss|sp?l?|tt?h|tt|
