@@ -113,8 +113,9 @@ def convert_double_consts(inputsyl):
 def convert_s_c(inputword):
     """ in some words, change s to c. This is done by 
     lookup basically """
+    outputgraph = inputword.graph
     if inputword.graph.lower() in datageryow.words_c:
-        outputgraph = inputword.graph.replace("se","ce")
+        outputgraph = outputgraph.replace("se","ce")
         outputgraph = outputgraph.replace("si", "ci")
         outputgraph = outputgraph.replace("syal", "cyal")
         outputgraph = outputgraph.replace("syol", "cyol")
@@ -123,7 +124,7 @@ def convert_s_c(inputword):
         outputgraph = outputgraph.replace("sysy", "cycy")
         outputgraph = outputgraph.replace("syan", "cyan")
     if inputword.graph.lower() in datageryow.words_sh_c:
-        outputgraph = inputword.graph.replace("shy", "cy")
+        outputgraph = outputgraph.replace("shy", "cy")
         outputgraph = outputgraph.replace("sh", "cy")
     # reverse some possible incorrect substitutions
     # in the endings of inflected verbs
