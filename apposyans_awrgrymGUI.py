@@ -67,6 +67,11 @@ class AppAwrgrym(tk.Frame):
                   command = self.dalleth).pack(side=tk.LEFT)
         
 
+    def choosemode(self):
+        if self.options.state() == "Keworra po marnas":
+            self.qumode = "keworramarnas"
+        else:
+            self.qumode = self.options.state().lower()
         
     def allstates(self): print(self.options.state(), self.gorthyp.fetch())
     
@@ -108,11 +113,12 @@ class AppAwrgrym(tk.Frame):
                                                           b=niverow.numberkw(x2)))
         return marnasyans
     
-    def govynn1(self, mode="keworramarnas"):
+    def govynn1(self):
         self.starttime = time.time()
-        if mode=="keworramarnas":
+        self.choosemode()
+        if self.qumode=="keworramarnas":
             g = random.choice([self.keworra, self.marnas])
-        elif mode == "marnas":
+        elif self.qumode == "marnas":
             g = self.marnas
         else:
             g = self.keworra
