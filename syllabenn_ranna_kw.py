@@ -28,6 +28,9 @@
 # This module is used by the module treuslytherenna.py to convert Kernewek Kemmyn
 # text to the Standard Written Form
 #
+# Usys yw an modul gans modul treuslytherenna.py dhe dreylya tekst Kernewek Kemmyn
+# bys dhe'n Furv Skrifys Savonek
+#
 # Usage: python syllabenn_ranna_kw.py --test <inputfile>
 # where <inputfile> is the path to an input file containing 
 # text in Kernewek Kemmyn (or FSS or Welsh if the relevant options are used)
@@ -112,7 +115,8 @@ class kwKemmynRegExp:
     """
     holds the regular expressions to match Kernewek Kemmyn text
     """
-    # perhaps replace these by using re.compile()?
+    # these are written using re.compile() in kwKemmynDevRegExp
+    # Skrifys yns dre re.compile yn kwKemmynDevRegExp
     
     # syllabelRegExp should match syllable anywhere in a word
     # a syllable could have structure CV, CVC, VC, V
