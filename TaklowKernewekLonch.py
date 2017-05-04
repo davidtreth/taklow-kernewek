@@ -39,6 +39,7 @@ def runLauncher(mytools):
 
 mytools = [
     ('Niverow', 'niverowGUI.py'),
+    ('Apposyans Awrgrym', 'apposyans_awrgrymGUI.py'),
     ('Mutatya', 'mutatyaGUI.py'),
     ('Inflektya', 'inflektyaGUI.py'),
     ('Termyn ha Dydhyas', 'termynGUI.py'),
@@ -52,6 +53,7 @@ mytools = [
 
 mytools_netbook = [
     ('Niverow', 'niverowGUI.py'),
+    ('Apposyans Awrgrym', 'apposyans_awrgrymGUI.py'),    
     ('Mutatya', 'mutatyaGUI.py'),
     ('Inflektya', 'inflektyaGUI.py'),
     ('Termyn ha Dydhyas', 'termynGUI.py'),
