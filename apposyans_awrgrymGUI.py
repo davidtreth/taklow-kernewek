@@ -30,15 +30,8 @@ class AppAwrgrym(tk.Frame):
     def make_widgets(self):
         """ display the GUI widgets """
         self.mhead = tk.Label(self, text = "Dewisyow")
-        self.mhead.config(font=('Helvetica', 16, 'bold'))
+        self.mhead.config(font=('Helvetica', 16, 'bold'), padx=5, pady=5)
         self.mhead.pack(side=tk.TOP, anchor=tk.NW)
-        # choose whether to have addition, subtraction or either at random
-        self.options = Radiobar(self, ['Keworra po marnas', 'Keworra', 'Marnas'],
-                                side=tk.TOP,
-                                justify=tk.LEFT, anchor=tk.NW,
-                                default='Keworra po marnas')
-        self.options.pack(side=tk.LEFT, fill=tk.Y)
-        self.options.config(relief=tk.RIDGE, bd=2)
         # choose difficulty level        
         self.options2 = Radiobar(self, ['Es', 'Kres', 'Kales'],
                                 vals = [1, 2, 3],
@@ -46,10 +39,17 @@ class AppAwrgrym(tk.Frame):
                                 justify=tk.LEFT, anchor=tk.NW,
                                 default=1)
         self.options2.pack(side=tk.LEFT, fill=tk.Y)
-        self.options2.config(relief=tk.RIDGE, bd=2)
+        self.options2.config(relief=tk.RIDGE, bd=2, padx=5)
+        # choose whether to have addition, subtraction or either at random
+        self.options = Radiobar(self, ['Keworra po marnas', 'Keworra', 'Marnas'],
+                                side=tk.TOP,
+                                justify=tk.LEFT, anchor=tk.NW,
+                                default='Keworra po marnas')
+        self.options.pack(side=tk.LEFT, fill=tk.Y)
+        self.options.config(relief=tk.RIDGE, bd=2, padx=5)
         
         self.msg = tk.Label(self, text="Govynn:")
-        self.msg.config(font=('Helvetica', 16, 'bold'))
+        self.msg.config(font=('Helvetica', 16, 'bold'), padx=10, pady=10)
         self.msg.pack(anchor=tk.W)
     
         # question
@@ -66,6 +66,7 @@ class AppAwrgrym(tk.Frame):
         self.msg2.pack(anchor=tk.W)
         # text entry bar for answer
         self.gorthyp = Entrybar(self)
+        self.gorthyp.config(padx=10, pady=5)
         self.gorthyp.pack(anchor=tk.W)
         self.gorthyp.focus()
         # bind both Enter and the numeric keypad Enter
