@@ -60,14 +60,17 @@ class Radiobar(tk.Frame):
             self.var=tk.IntVar()
             if default in vals:
                 self.var.set(default)
-                    
+        self.rads = []            
         for pick, v in zip(picks, vals):
             rad = tk.Radiobutton(self, text=pick, value = v, justify=justify,
                                  variable=self.var)
             rad.config(font=font)
             rad.pack(side=side, anchor=anchor, expand=tk.N)
+            self.rads.append(rad)
     def state(self):
         return self.var.get()
+
+        
 
 class CheckButtonBar(tk.Frame):
     """ a row of check boxes """

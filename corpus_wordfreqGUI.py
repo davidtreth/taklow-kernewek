@@ -8,251 +8,359 @@ else:
 from taklowGUI import Kwitya2, Entrybar, Radiobar, ScrolledText
 import matplotlib.pyplot as plt
 import copy
+try:
+    import cornish_corpus
+except ImportError:
+    print("error importing cornish_corpus")
+    
 
 comparelist = []
 defaultsamples = ['dhe', 'gans', 'war', 'dhymm', 'dhymmo', 'genev', 'warnav', 'rag', 'mes']
 #["a","ha","an","dhe","yn","yw","ow","ev","rag","mes","esa","yth","y"]
+class CorpusStats(tk.Frame):
+    labelTexts = {'modechoice': {'en':['General Report',
+                                       'Word Frequencies List',
+                                       'Letter Frequencies List',
+                                       'Letter Frequencies List\n(without digraphs)',
+                                       'Length of words\n(cumulative frequency graph)',
+                                       'Word Frequency Bar Chart',
+                                       'Lexical Dispersion Plot',
+                                       'Concordance'],
+                                 'kw':['Derivas Ollgemmyn',
+                                       'Rol Menowghderow Ger',
+                                       'Rol Menowghderow Lytherenn',
+                                       'Rol Menowghderow Lytherenn\n(heb dilytherennow)',
+                                       'Hirder Geryow\n(tresenn menowghder kumulativ)',
+                                       'Menowghder Ger (tresenn barr)',
+                                       'Tresenn Keskar Ger',
+                                       'Konkordans']},
+                  'textchoice':{'en':['Bewnans Meryasek',
+                                      'Charter Fragment',
+                                      'Creation of the World',
+                                      'Passhyon Agan Arloedh',
+                                      'Origo Mundi',
+                                      'Passio Christ',
+                                      'Resurrectio Domini',
+                                      'Solemptnyta',
+                                      'LoTR chapters',
+                                      'Tregear Homilies',
+                                      'All Texts'],
+                                'kw':['Bewnans Meryasek',
+                                      'Darn Chartour',
+                                      'Gwreans an Bys',
+                                      'Passhyon Agan Arloedh',
+                                      'Origo Mundi',
+                                      'Passio Christ',
+                                      'Resurrectio Domini',
+                                      'Solemptnyta',
+                                      'Chapters Arloedh an Bysowyer',
+                                      'Pregethow Tregear',
+                                      'Oll an Tekstow']},
+                  'mhead':{'en': 'Text',
+                           'kw': 'Tekst'},
+                  'mhead2':{'en': 'Options',
+                            'kw': 'Dewis Gwrythyans'},
+                  'msg': {'en': 'Enter the minimum number of letters\nfor word frequency list below:',
+                          'kw': 'Keworrowgh isella niver a lytherennow\nrag rolyow menoghder ger a-woeles:'},
+                  'msg2':{'en': 'Enter the number of words to report\nfrequency of below:\ndefault = 20',
+                          'kw': 'Keworrowgh niver a eryow dhe dherivas\nan menowghder a-woeles:\ndefowt = 20'},
+                  'msg3':{'en': 'Enter a word to compare frequencies of\nacross the texts:',
+                          'kw': 'Keworrowgh ger dhe geheveli\nmenowghderow dres an tekstow:'},
+                  'keworra':{'en': 'Add word to the list',
+                             'kw': "Keworra ger dhe'n rol"},
+                  'klerhe': {'en': 'Clear the list',
+                             'kw': 'Klerhe an rol'},
+                  'dalleth': {'en': 'Start',
+                              'kw': 'Dalleth'},
+                  'klerhefigs': {'en': 'Clear Figures',
+                                 'kw': 'Klerhe Tresennow'},
+                  'klyppbordh': {'en': 'Copy to Clipboard',
+                                 'kw': "Kopi dhe'm Klyppbordh"},
+                  'switchlang': {'en':'Kernewek',
+                                 'kw': 'English'},
+                  'windowtitle': {'en': 'Cornish Corpus Statistics',
+                                  'kw': 'Korpus Kernewek'},
+                  'NLTKerr':{'en': 'Python Natural Language Processing Toolkit (NLTK) not available.\nDownload from www.nltk.org if not on the system.',
+                             'kw': 'Nyns yw Python Natural Language Processing Toolkit (NLTK) kavadow.\nIskargewgh diworth www.nltk.org mar nyns yw war agas jynn-amontya.'}
+    }
 
+    def __init__(self, parent = None, netbook=False):
+        tk.Frame.__init__(self, parent)
+        self.ifacelang = 'kw'
+        self.comparelist = []
+        self.defaultsamples = ['dhe', 'gans', 'war', 'dhymm', 'dhymmo', 'genev', 'warnav', 'rag', 'mes']
+        self.master.title(CorpusStats.labelTexts['windowtitle'][self.ifacelang])
+        self.pack()
+        self.make_widgets(netbook)
+    def make_widgets(self, netbook=False):
+        """ display GUI widgets """
+        if netbook:
+            heightadjust = -8
+            fontsizeadj = -2
+        else:
+            heightadjust = 0
+            fontsizeadj = 0
+        self.mhead = tk.Label(self, text = CorpusStats.labelTexts['mhead'][self.ifacelang])
+        self.mhead.config(font=('Helvetica', 16+fontsizeadj, 'bold'))
+        self.mhead.pack(side=tk.TOP, anchor=tk.NW)        
+        c = self.checkNLTK()
+        print("NLTK available = {c}".format(c=c))
+        if c == 0:
+            self.names = ["Bewnans Meryasek", "Charter Fragment", "Gwreans an Bys",
+                          "Passhyon Agan Arloedh", "Origo Mundi",
+                          "Passio Christ","Resurrectio Domini","Solemptnyta",
+                          "LoTR chapters", "Tregear Homilies"]
+        else:
+            import cornish_corpus
+            self.kk_texts, self.names = cornish_corpus.corpusKW(args.manuscript)
+            self.kk_text_dict = {k:v for (k,v) in zip(self.names, self.kk_texts)}    
+        textmenu = CorpusStats.labelTexts['textchoice'][self.ifacelang]
+        self.textchoice = Radiobar(self, textmenu, vals=range(len(textmenu)), side = tk.TOP, anchor = tk.NW,
+                                   default = 2, justify=tk.LEFT,
+                                   font=('Helvetica', 13+fontsizeadj, 'normal'))
+        self.textchoice.pack(side=tk.LEFT, fill=tk.Y)
+        self.textchoice.config(relief=tk.RIDGE, bd=2)
+        self.switchlang = tk.Button(self.textchoice, text=CorpusStats.labelTexts['switchlang'][self.ifacelang],
+                                    font=('Helvetica', 14+fontsizeadj), command=self.changeifacelang)
+        self.switchlang.pack(anchor=tk.SW, side=tk.LEFT, padx=10, pady=10)
 
-def checkNLTK():
-    try:
-        import nltk
-    except ImportError:
-        return 0
-    return 1
+        self.mhead2 = tk.Label(self, text=CorpusStats.labelTexts['mhead2'][self.ifacelang])
+        self.mhead2.config(font=('Helvetica', 16+fontsizeadj*2, 'bold'))
+        self.mhead2.pack(side=tk.TOP, anchor=tk.NW)
+        mchoicetext = CorpusStats.labelTexts['modechoice'][self.ifacelang]
+        mchoicevals = range(len(mchoicetext))
+        self.modechoice = Radiobar(self, mchoicetext,
+                                   vals = mchoicevals,
+                                   side=tk.TOP, anchor=tk.NW, justify=tk.LEFT, default = 0,
+                                   font = ('Helvetica',13+fontsizeadj, 'normal'))
+        self.msg1 = tk.Label(self.modechoice, text=CorpusStats.labelTexts['msg'][self.ifacelang],
+                             anchor=tk.W, justify=tk.LEFT, pady=10)
+        self.msg1.config(font=('Helvetica', 12+fontsizeadj))
+        self.msg1.pack(anchor=tk.W)
+        self.ent = Entrybar(self.modechoice,
+                            anchor=tk.NW)
+        self.ent.pack(anchor=tk.W, padx=5)        
+        self.msg2 = tk.Label(self.modechoice, text=CorpusStats.labelTexts['msg2'][self.ifacelang],
+                             anchor=tk.W, justify=tk.LEFT, pady=10)
+        self.msg2.config(font=('Helvetica', 12+fontsizeadj))
+        self.msg2.pack(anchor=tk.W)
+        self.ent2 = Entrybar(self.modechoice,
+                             anchor=tk.NW)
+        self.ent2.pack(anchor=tk.W, padx=5)        
+        self.msg3 = tk.Label(self.modechoice, text=CorpusStats.labelTexts['msg3'][self.ifacelang],
+                             anchor=tk.W, justify=tk.LEFT, pady=10)
+        self.msg3.config(font=('Helvetica', 12+fontsizeadj))
+        self.msg3.pack(anchor=tk.W, padx=5)        
+        self.ent3 = Entrybar(self.modechoice,
+                             anchor=tk.NW)
+        self.ent3.pack(anchor=tk.W, padx=5)
+        self.keworra = tk.Button(self.modechoice, text=CorpusStats.labelTexts['keworra'][self.ifacelang],
+                                 font=('Helvetica', 14+fontsizeadj),
+                                 command = self.addtocomparelist)
+        self.klerhe = tk.Button(self.modechoice, text=CorpusStats.labelTexts['klerhe'][self.ifacelang],
+                                font=('Helvetica', 14+fontsizeadj),
+                                command = self.clearcomparelist)
+        self.keworra.pack(anchor=tk.NW, side=tk.LEFT, pady=10)
+        self.klerhe.pack(anchor=tk.NW, side=tk.LEFT, pady=10)
+        self.modechoice.pack(side=tk.LEFT, fill=tk.Y)
+        self.modechoice.config(relief=tk.RIDGE, bd=2)
+        self.outbox = ScrolledText(self)
+        self.outbox.text.config(bg = 'light yellow', fg = 'dark red', width=60, height=20+heightadjust,
+                                font=('Courier', 14, 'bold'))
+        self.outbox.pack()
+        # buttons
+        self.Kwitya = Kwitya2(self)
+        self.Kwitya.pack(side=tk.RIGHT)
+        self.dalleth = tk.Button(self, text = CorpusStats.labelTexts['dalleth'][self.ifacelang],
+                                 font=('Helvetica',14),
+                                 command = self.printoutput)
+        self.klerhefigs = tk.Button(self, text = CorpusStats.labelTexts['klerhefigs'][self.ifacelang],
+                                    font=('Helvetica',14),
+                                    command = self.clearfigures)
+        self.klyppbordh = tk.Button(self, text = CorpusStats.labelTexts['klyppbordh'][self.ifacelang],
+                                    font=('Helvetica', 14),
+                                    command = self.copyclipbd)
     
-def addtocomparelist():
-    newword = ent3.fetch()
-    if "," in newword:
-        newwordlist = newword.split(",")
-        newwordlist = [w.strip() for w in newwordlist]
-        newwordlist = [w.lower() for w in newwordlist if w.isalpha()]
-        comparelist.extend(newwordlist)
-    else:
-        newword = newword.strip()
-        newword = newword.lower()
-        comparelist.append(newword)
-    outbox.settext(comparelist)
-    ent3.clear()
+        if c == 0:
+            self.dalleth['state']=tk.DISABLED
+            self.outbox.settext(CorpusStats.labelTexts['NLTKerr'][self.ifacelang])
+        self.klerhefigs.pack(side=tk.RIGHT)
+        self.dalleth.pack(side=tk.RIGHT)
+        self.klyppbordh.pack(side=tk.LEFT)              
+
+    def checkNLTK(self):
+        try:
+            import nltk
+        except ImportError:
+            return 0
+        return 1
+    
+    def addtocomparelist(self):
+        newword = self.ent3.fetch()
+        if "," in newword:
+            newwordlist = newword.split(",")
+            newwordlist = [w.strip() for w in newwordlist]
+            newwordlist = [w.lower() for w in newwordlist if w.isalpha()]
+            self.comparelist.extend(newwordlist)
+        else:
+            newword = newword.strip()
+            newword = newword.lower()
+            self.comparelist.append(newword)
+        self.outbox.settext(self.comparelist)
+        self.ent3.clear()
         
-def clearcomparelist():
-    del comparelist[:]
-    outbox.settext("")
+    def clearcomparelist(self):
+        del self.comparelist[:]
+        self.outbox.settext("")
 
-def getcomparelist():
-    return comparelist
+    def getcomparelist(self):
+        return self.comparelist
 
-def clearfigures():
-    plt.close("all")
-    root.focus_force()
+    def clearfigures(self):
+        plt.close("all")
+        self.focus_force()
     
-def allstates(): print(textchoice.state(), modechoice.state(), ent.fetch(), ent2.fetch(), ent3.fetch())
+    def allstates(self): print(self.textchoice.state(), self.modechoice.state(), self.ent.fetch(), self.ent2.fetch(), self.ent3.fetch())
 
-def getIntMinL(eboxtext, defaultval=1):
-    """ get integer for minimum word length, or for number of frequencies to return. """
-    try:
-        minL = int(eboxtext)
-    except ValueError:
-        print("warning, input cannot be converted to integer. using value of {d}".format(d=defaultval))
-        minL = defaultval
-    return minL
-    
-def printoutput():
-    """ show the output """
-    if modechoice.state() == 'Derivas Ollgemmyn':
-        topN = getIntMinL(ent2.fetch(), 20)
-        minL = getIntMinL(ent.fetch(), 4)
-        if textchoice.state() == 'Oll an Tekstow':
-            outbox.settext(cornish_corpus.basicReportAll(kk_texts,
-                                                         names, topN, minL,
-                                                         pause=False))
+    def getIntMinL(self, eboxtext, defaultval=1):
+        """ get integer for minimum word length, or for number of frequencies to return. """
+        try:
+            minL = int(eboxtext)
+        except ValueError:
+            print("warning, input cannot be converted to integer. using value of {d}".format(d=defaultval))
+            minL = defaultval
+        return minL
+
+    def changeifacelang(self):
+        if self.ifacelang == 'kw':
+            self.ifacelang = 'en'
         else:
-            outbox.settext(cornish_corpus.basicReport(
-                kk_text_dict[textchoice.state()], textchoice.state(),
-                topN, minL))                       
-    if modechoice.state() == 'Rol Menowghderow Ger':
-        topN = getIntMinL(ent2.fetch(), 20)
-        minL = getIntMinL(ent.fetch())
-        if textchoice.state() == 'Oll an Tekstow':
-            outbox.settext(cornish_corpus.MostFrequentWords(kk_texts, names,
-                                                            topN, minL))
-        else:
-            outbox.settext(cornish_corpus.MostFreqWords1Text(
-                kk_text_dict[textchoice.state()], textchoice.state(),
-                topN, minL))
-    if modechoice.state() == 'Rol Menowghderow Lytherenn':
-        if textchoice.state() == 'Oll an Tekstow':
-            outbox.settext(cornish_corpus.MostFreqLetters(kk_texts, names))
-        else:
-            outbox.settext(cornish_corpus.MostFreqLetters1Text(
-                kk_text_dict[textchoice.state()], textchoice.state()))
-    if modechoice.state() == 'Rol Menowghderow Lytherenn\n(heb dilytherennow)':
-        if textchoice.state() == 'Oll an Tekstow':
-            outbox.settext(cornish_corpus.MostFreqLetters(kk_texts, names, False, False))
-        else:
-            outbox.settext(cornish_corpus.MostFreqLetters1Text(
-                kk_text_dict[textchoice.state()], textchoice.state(), False, False))
+            self.ifacelang = 'kw'
+        self.switchlang.config(text=self.labelTexts['switchlang'][self.ifacelang])
+        self.master.title(self.labelTexts['windowtitle'][self.ifacelang])
+        self.mhead.config(text=self.labelTexts['mhead'][self.ifacelang])
+        newpicks = self.labelTexts['textchoice'][self.ifacelang]
+        for p,r in zip(newpicks, self.textchoice.rads):
+            r.config(text=p)
+            
+        #self.textchoice.config(picks=self.labelTexts['textchoice'][self.ifacelang])
+        self.mhead2.config(text=self.labelTexts['mhead2'][self.ifacelang])
+        newpicks = self.labelTexts['modechoice'][self.ifacelang]
+        for p,r in zip(newpicks, self.modechoice.rads):
+            r.config(text=p)        
+        #self.modechoice.config(picks=self.labelTexts['modechoice'][self.ifacelang])
+        self.msg1.config(text=self.labelTexts['msg'][self.ifacelang])
+        self.msg2.config(text=self.labelTexts['msg2'][self.ifacelang])
+        self.msg3.config(text=self.labelTexts['msg3'][self.ifacelang])
+        self.keworra.config(text=self.labelTexts['keworra'][self.ifacelang])
+        self.klerhe.config(text=self.labelTexts['klerhe'][self.ifacelang])
+        self.dalleth.config(text=self.labelTexts['dalleth'][self.ifacelang])
+        self.klerhefigs.config(text=self.labelTexts['klerhefigs'][self.ifacelang])
+        self.klyppbordh.config(text=self.labelTexts['klyppbordh'][self.ifacelang])
+
+
+        
+
+    def printoutput(self):
+        """ show the output """
+        if self.modechoice.state() == 0:
+            topN = self.getIntMinL(self.ent2.fetch(), 20)
+            minL = self.getIntMinL(self.ent.fetch(), 4)
+            if self.textchoice.state() == 10:
+                self.outbox.settext(cornish_corpus.basicReportAll(self.kk_texts,
+                                                                  self.names, topN, minL,
+                                                                  pause=False))
+            else:
+                self.outbox.settext(cornish_corpus.basicReport(
+                    self.kk_text_dict[self.names[self.textchoice.state()]], self.names[self.textchoice.state()],
+                    topN, minL))                       
+        if self.modechoice.state() == 1:
+            # rol menowghder ger
+            topN = self.getIntMinL(self.ent2.fetch(), 20)
+            minL = self.getIntMinL(self.ent.fetch())
+            if self.textchoice.state() == 10:
+                self.outbox.settext(cornish_corpus.MostFrequentWords(self.kk_texts, self.names,
+                                                                     topN, minL))
+            else:
+                self.outbox.settext(cornish_corpus.MostFreqWords1Text(
+                    self.kk_text_dict[self.names[self.textchoice.state()]], self.names[self.textchoice.state()],
+                    topN, minL))
+        if self.modechoice.state() == 2:
+            if self.textchoice.state() == 10:
+                self.outbox.settext(cornish_corpus.MostFreqLetters(self.kk_texts, self.names))
+            else:
+                self.outbox.settext(cornish_corpus.MostFreqLetters1Text(
+                    self.kk_text_dict[self.names[self.textchoice.state()]], self.names[self.textchoice.state()]))
+        if self.modechoice.state() == 3:
+            if self.textchoice.state() == 10:
+                self.outbox.settext(cornish_corpus.MostFreqLetters(self.kk_texts, self.names, False, False))
+            else:
+                self.outbox.settext(cornish_corpus.MostFreqLetters1Text(
+                    self.kk_text_dict[self.names[self.textchoice.state()]], self.names[self.textchoice.state()], False, False))
                
-    if modechoice.state() == 'Hirder Geryow\n(tresenn menowghder kumulativ)':
-        plt.figure()
-        if textchoice.state() == 'Oll an Tekstow':
-            outbox.settext(cornish_corpus.nLettersFDist(kk_texts,names))
-        else:
-            outbox.settext(cornish_corpus.nLettersFDist(
-                [kk_text_dict[textchoice.state()]],[textchoice.state()]))
-        plt.show()
-    if modechoice.state() == 'Menowghder Ger (tresenn barr)':
-        plt.figure()
-        comparelist = getcomparelist()
-        if len(comparelist) == 0:
-            comparelist = defaultsamples           
-        outbox.text.config(bg = 'light yellow', fg = 'dark red',
-                               font=('Courier', 12, 'normal'))
-        if textchoice.state() == 'Oll an Tekstow': 
-            outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.compareSamples(
-            kk_texts, names, comparelist))
-        else:
-            outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.compareSamples(
-            [kk_text_dict[textchoice.state()]],[textchoice.state()], comparelist))        
-        plt.show()
-    if modechoice.state() == 'Tresenn Keskar Ger':
-        comparelist = getcomparelist()
-        if len(comparelist) == 0:
-            comparelist = defaultsamples
-        outbox.text.config(bg = 'light yellow', fg = 'dark red',
-                               font=('Courier', 12, 'normal'))
-        if textchoice.state() == 'Oll an Tekstow':
-            outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.compareSamplesLinear(
-                kk_texts, names, comparelist))
-        else:
-            outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.compareSamplesLinear(
-                [kk_text_dict[textchoice.state()]], [textchoice.state()], comparelist))
-        plt.show()
-    if modechoice.state() == 'Konkordans':
-        comparelist = getcomparelist()
-        if len(comparelist) == 0:
-            comparelist = ['dhe', 'gans']
-        outbox.text.config(bg = 'light yellow', fg = 'dark red',
-                               font=('Courier', 12, 'normal'))
-        if textchoice.state() == 'Oll an Tekstow':
-            outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.concordances(
-                kk_texts, names, comparelist, 60, 25))
-        else:
-            outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.concordances(
-                [kk_text_dict[textchoice.state()]], [textchoice.state()], comparelist,
-                60,25))
+        if self.modechoice.state() == 4:
+            plt.figure()
+            if self.textchoice.state() == 10:
+                self.outbox.settext(cornish_corpus.nLettersFDist(self.kk_texts,self.names))
+            else:
+                self.outbox.settext(cornish_corpus.nLettersFDist(
+                    [self.kk_text_dict[self.names[self.textchoice.state()]]],[self.names[self.textchoice.state()]]))
+            plt.show()
+        if self.modechoice.state() == 5:
+            plt.figure()
+            comparelist = self.getcomparelist()
+            if len(comparelist) == 0:
+                comparelist = self.defaultsamples           
+            self.outbox.text.config(bg = 'light yellow', fg = 'dark red',
+                                    font=('Courier', 12, 'normal'))
+            if self.textchoice.state() == 10: 
+                self.outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.compareSamples(
+                    self.kk_texts, self.names, comparelist))
+            else:
+                self.outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.compareSamples(
+                    [self.kk_text_dict[self.names[self.textchoice.state()]]],[self.names[self.textchoice.state()]], comparelist))        
+            plt.show()
+        if self.modechoice.state() == 6:
+            comparelist = self.getcomparelist()
+            if len(comparelist) == 0:
+                comparelist = self.defaultsamples
+            self.outbox.text.config(bg = 'light yellow', fg = 'dark red',
+                                    font=('Courier', 12, 'normal'))
+            if self.textchoice.state() == 10:
+                self.outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.compareSamplesLinear(
+                    self.kk_texts, self.names, comparelist))
+            else:
+                self.outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.compareSamplesLinear(
+                    [self.kk_text_dict[self.names[self.textchoice.state()]]], [self.names[self.textchoice.state()]], comparelist))
+            plt.show()
+        if self.modechoice.state() == 7:
+            comparelist = self.getcomparelist()
+            if len(comparelist) == 0:
+                comparelist = ['dhe', 'gans']
+            self.outbox.text.config(bg = 'light yellow', fg = 'dark red',
+                                    font=('Courier', 12, 'normal'))
+            if self.textchoice.state() == 10:
+                self.outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.concordances(
+                    self.kk_texts, self.names, comparelist, 60, 25))
+            else:
+                self.outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.concordances(
+                    [self.kk_text_dict[self.names[self.textchoice.state()]]], [self.names[self.textchoice.state()]], comparelist,
+                    60,25))
         
                 
-def copyclipbd():
-    root.clipboard_clear()
-    root.clipboard_append(outbox.gettext())
+    def copyclipbd(self):
+        self.clipboard_clear()
+        self.clipboard_append(self.outbox.gettext())
     
 if __name__ == '__main__':
+
     parser = argparse.ArgumentParser()
     parser.add_argument("-n", "--netbook", action="store_true",
                         help="Netbook mode - for smaller screens.")
     parser.add_argument("-m", "--manuscript", action="store_true",
                         help="Use manuscript spelling texts instead of Kemmyn.")
+    
     args = parser.parse_args()
-    if args.netbook:
-        heightadjust = -8
-        fontsizeadj = -2
-    else:
-        heightadjust = 0
-        fontsizeadj = 0
 
-    root = tk.Tk()
-    root.title('Corpus Kernewek')
-
-    mhead = tk.Label(root, text = "Tekst")
-    mhead.config(font=('Helvetica', 16+fontsizeadj, 'bold'))
-    mhead.pack(side=tk.TOP, anchor=tk.NW)
-    # check NLTK is available
-    c = checkNLTK()
-    print("NLTK available = {c}".format(c=c))
-    if c == 0:
-        names = ["Bewnans Meryasek", "Charter Fragment", "Gwreans an Bys",
-                 "Passhyon Agan Arloedh", "Origo Mundi",
-                 "Passio Christ","Resurrectio Domini","Solemptnyta",
-                 "LoTR chapters", "Tregear Homilies"]
-    else:
-        import cornish_corpus
-        kk_texts, names = cornish_corpus.corpusKW(args.manuscript)
-        kk_text_dict = {k:v for (k,v) in zip(names, kk_texts)}
-    # choose text
-    textmenu = copy.copy(names)
-    textmenu.append("Oll an Tekstow")
-    textchoice = Radiobar(root, textmenu, side=tk.TOP, anchor=tk.NW,
-                          default='Gwreans an Bys', justify=tk.LEFT,
-                          font=('Helvetica', 13+fontsizeadj, 'normal'))
-    textchoice.pack(side=tk.LEFT, fill=tk.Y)
-    textchoice.config(relief=tk.RIDGE, bd=2)
-    mhead2 = tk.Label(root, text="Dewis Gwrythyans")
-    mhead2.config(font=('Helvetica', 16+fontsizeadj*2, 'bold'))
-    mhead2.pack(side=tk.TOP, anchor=tk.NW)
-    
-    modechoice = Radiobar(root, ['Derivas Ollgemmyn', 'Rol Menowghderow Ger',
-                                 'Rol Menowghderow Lytherenn',
-                                 'Rol Menowghderow Lytherenn\n(heb dilytherennow)',
-                                 'Hirder Geryow\n(tresenn menowghder kumulativ)',
-                                 'Menowghder Ger (tresenn barr)',
-                                 'Tresenn Keskar Ger',
-                                 'Konkordans'],
-                          side=tk.TOP, anchor=tk.NW, justify = tk.LEFT, default = 'Derivas Ollgemmyn',
-                          font=('Helvetica', 13+fontsizeadj, 'normal'))
-    msg = tk.Label(modechoice, text="Keworrowgh isella niver a lytherennow\nrag rolyow menoghder ger a-woeles:",
-                   anchor=tk.W, justify=tk.LEFT, pady=10)
-    msg.config(font=('Helvetica', 12+fontsizeadj))
-    msg.pack(anchor=tk.W)
-    ent = Entrybar(modechoice,
-                   anchor=tk.NW)
-    ent.pack(anchor=tk.W)
-    msg2 = tk.Label(modechoice, text="Keworrowgh niver a eryow dhe dherivas\nan menowghder a-woeles:\ndefowt = 20",
-                    anchor=tk.W, justify=tk.LEFT, pady=10)
-    msg2.config(font=('Helvetica', 12+fontsizeadj))
-    msg2.pack(anchor=tk.W)
-    ent2 = Entrybar(modechoice,
-                    anchor=tk.NW)
-    ent2.pack(anchor=tk.W)
-    msg3 = tk.Label(modechoice, text="Keworrowgh ger dhe geheveli\nmenowghderow dres an tekstow:",
-                    anchor=tk.W, justify=tk.LEFT, pady=10)
-    msg3.config(font=('Helvetica', 12+fontsizeadj))
-    msg3.pack(anchor=tk.W)
-    ent3 = Entrybar(modechoice,
-                    anchor=tk.NW)
-    ent3.pack(anchor=tk.W)        
-    keworra = tk.Button(modechoice, text="Keworra ger dhe'n rol", font=('Helvetica', 14+fontsizeadj),
-              command = addtocomparelist)
-    klerhe = tk.Button(modechoice, text='Klerhe an rol', font=('Helvetica', 14+fontsizeadj),
-              command = clearcomparelist)
-    keworra.pack(anchor=tk.NW, side=tk.LEFT, pady=10)
-    klerhe.pack(anchor=tk.NW, side=tk.LEFT, pady=10)        
-    modechoice.pack(side=tk.LEFT, fill=tk.Y)
-    modechoice.config(relief=tk.RIDGE, bd=2)
-    outbox = ScrolledText(root)
-    outbox.text.config(bg = 'light yellow', fg = 'dark red', width=60, height=20+heightadjust,
-                    font=('Courier', 14, 'bold'))
-
-    outbox.pack()
-    c=checkNLTK()
-    # buttons
-    Kwitya2(root).pack(side=tk.RIGHT)
-    dalleth = tk.Button(root, text = 'Dalleth', font=('Helvetica',14),
-                        command = printoutput)
-    klerhefigs = tk.Button(root, text = 'Klerhe Tresennow', font=('Helvetica',14),
-                           command = clearfigures)
-    klyppbordh = tk.Button(root, text = 'Kopi dhe\'n Klyppbordh', font=('Helvetica', 14),
-              command = copyclipbd)
-    
-    if c == 0:
-        dalleth['state']=tk.DISABLED
-        outbox.settext("Python Natural Language Processing Toolkit (NLTK) not available.\nDownload from www.nltk.org if not on the system.")
-    klerhefigs.pack(side=tk.RIGHT)
-    dalleth.pack(side=tk.RIGHT)
-    klyppbordh.pack(side=tk.LEFT)
-
-
-
-    root.mainloop()
-
-
+    corpus = CorpusStats(netbook=args.netbook)
+    corpus.mainloop()    
