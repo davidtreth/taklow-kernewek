@@ -86,7 +86,7 @@ def countchars(text_alpha, chdigraph=True, const_digraphs = True,
     return chardict
 
 
-def basicReport(text, textname, topN=50, minL=4, printcmdline=True):
+def basicReport(text, textname, topN=50, minL=4, printcmdline=True, outlang='kw'):
     """ print out at the command line a report of a text 
 
     Given an NLTK text, output the number of words, number
@@ -100,19 +100,42 @@ def basicReport(text, textname, topN=50, minL=4, printcmdline=True):
     list of words and their frequencies.
     @type minL: C{int}
     """
+    outTexts = {'texttitle': {'en': 'Text', 'kw': 'Tekst:'},
+                'nwords': {'en':'number of alphabetic words',
+                           'kw':'niver geryow lytherennek'},
+                'ndiffwords': {'en':'number of different alphabetic words',
+                               'kw':'niver geryow lytherennek dihaval'},
+                'nchars': {'en':'total number of characters in alphabetic words',
+                           'kw': 'sommenn niver lytherennow yn geryow lytherennek'},
+                'meanlenword': {'en':'mean word length =',
+                                'kw':'hirder ger mayn ='},
+                'freqwordshead': {'en':'Lengths of words in descending order of frequency',
+                                  'kw':'Hirder geryow yn aray diyskynna menowghder'},
+                'top': {'en':'Top ',
+                        'kw':''},
+                'words': {'en':'words',
+                          'kw':'geryow moyha kemmyn'},
+                'wordsof':{'en':'words of',
+                           'kw':'geryow moyha kemmyn gans'},
+                'letters': {'en':'or more letters',
+                            'kw':'lytherennow dhe\'n lyha'}
+                }
     outputtext = ""
-    outputtext += "Text: {n}\n\n".format(n=textname)
+    outputtext += "{t}: {n}\n\n".format(t=outTexts['texttitle'][outlang], n=textname)
     # note - doesn't return True for accented characters
     text_alpha = [w for w in text if w.isalpha()]
-    outputtext += "number of alphabetic words = {nw}\n".format(nw=len(text_alpha))
-    outputtext += "number of different alphabetic words = {ndw}\n\n".format(ndw = len(set([w.lower() for w in text_alpha])))
+    outputtext += "{t} = {nw}\n".format(t=outTexts['nwords'][outlang], nw=len(text_alpha))
+    outputtext += "{t} = {ndw}\n\n".format(t=outTexts['ndiffwords'][outlang],
+                                           ndw = len(set([w.lower() for w in text_alpha])))
     
-    outputtext += "total number of characters in alphabetic words = {c}\n".format(c=sum(len(w) for w in text_alpha))
-    outputtext += "mean word length = {m:.02f}\n\n".format(m=np.mean([len(w) for w in text_alpha]))
+    outputtext += "{t} = {c}\n".format(t=outTexts['nchars'][outlang],
+                                       c=sum(len(w) for w in text_alpha))
+    outputtext += "{t} = {m:.02f}\n\n".format(t=outTexts['meanlenword'][outlang],
+                                              m=np.mean([len(w) for w in text_alpha]))
     # frequency distribution (alphabetic)
     fdist_len = nltk.FreqDist([len(w) for w in text_alpha])
-    outputtext += "Lengths of words in descending order of frequency\n{lw}\n\n".format(
-        lw = [(length,freq) for length,freq in fdist_len.items()])
+    outputtext += "{t}\n{lw}\n\n".format(t=outTexts['freqwordshead'][outlang],
+                                         lw = [(length,freq) for length,freq in fdist_len.items()])
     # frequency distribution (alphabetic, lowercase)
     fdist_alpha = nltk.FreqDist([w.lower() for w in text_alpha])
     # convert the items of the frequency distribution into a list of tuples
@@ -121,20 +144,25 @@ def basicReport(text, textname, topN=50, minL=4, printcmdline=True):
     vocab = sorted(vocabkeyvaltup, key=lambda keyvaltup: keyvaltup[1], reverse=True)
     # make of list of the words themselves
     vocab = [v[0] for v in vocab]
-    outputtext += "Top {tN} words:\n{wN}\n\n".format(tN = topN, wN=[w.encode("ascii") for w in vocab[:topN]])
+    outputtext += "{t1}{tN} {t2}:\n{wN}\n\n".format(t1=outTexts['top'][outlang],
+                                                    t2=outTexts['words'][outlang],
+                                                    tN = topN, wN=[w.encode("ascii") for w in vocab[:topN]])
     # frequency distribution (alphabetic, lowercase, more than minL letters)
     fdist_alpha_minL_ormore = nltk.FreqDist([w.lower() for w in text_alpha if len(w)>=minL])
     vocabkeyvaltup = [(k,v) for (k,v) in fdist_alpha_minL_ormore.items()]
     vocab4 = sorted(vocabkeyvaltup, key=lambda keyvaltup: keyvaltup[1], reverse=True)
     vocab4 = [v[0] for v in vocab4]
-    outputtext += "Top {tN} words of {m} or more letters:\n{wN_m}\n\n".format(tN = topN,
-                                                                     m=minL,
-                                                                     wN_m=[w.encode("ascii") for w in vocab4[:topN]])
+    outputtext += "{t1}{tN} {t2} {m} {t3}:\n{wN_m}\n\n".format(t1=outTexts['top'][outlang],
+                                                               t2=outTexts['wordsof'][outlang],
+                                                               t3=outTexts['letters'][outlang],
+                                                               tN = topN,
+                                                               m=minL,
+                                                               wN_m=[w.encode("ascii") for w in vocab4[:topN]])
     if printcmdline:
         print(outputtext)
     return outputtext
 
-def listPercentsN(text,cfd,dictlist, textname):
+def listPercentsN(text,cfd,dictlist, textname, outlang='kw'):
     """
     add a dictionary lenwordsdict that describes the frequencies of words by length
     to the list dictlist
@@ -145,18 +173,26 @@ def listPercentsN(text,cfd,dictlist, textname):
     frequencies of words of different lengths.
     @type dictlist: C{list}
     """
-    print("\nText: {n}\n".format(n=textname))
+    outTexts = {
+        'text': {'en':'Text',
+                 'kw':'Tekst'},
+        'letters': {'en':'letters',
+                    'kw':'lytherenn'}
+        }
+
+    print("\n{t}: {n}\n".format(t=outTexts['text'][outlang],
+                                n=textname))
     fdist = cfd[text.name]
     # dictionary indexed by length of word
     lenwordsdict = {}
     for s in fdist:
-        print(s," letters : ",str(100*(float(fdist[s])/len(text)))[:5],"% ")
+        print(s," {t} : ".format(t=outTexts['letters'][outlang]),str(100*(float(fdist[s])/len(text)))[:5],"% ")
         lenwordsdict[s] = 100*(float(fdist[s])/len(text))
     dictlist.append(lenwordsdict)
     print("\n")
     #cfd.tabulate(cumulative=True)
 
-def formatCFDnLetters(cfdlist):
+def formatCFDnLetters(cfdlist, outlang='kw'):
     """
     return formatted text output
     for list of cumulative frequency by
@@ -168,19 +204,24 @@ def formatCFDnLetters(cfdlist):
     consisting of an integer expressing length
     of word, and a float of the cumulative percentage
     """
+    outTexts = {
+        'letters': {'en':'letters',
+                    'kw':'lytherenn'}
+        }
     outputtext = ""
     for t in cfdlist:
         outputtext += t[0] + "\n"
         for tup in t[1]:
-            outputtext += "{n} letters: {cumul:.2f}%\n".format(n=tup[0],
-                                                              cumul=float(tup[1]))
+            outputtext += "{n} {t}: {cumul:.2f}%\n".format(n=tup[0],
+                                                           t=outTexts['letters'][outlang],
+                                                           cumul=float(tup[1]))
         outputtext += "\n"
     return outputtext
             
         
         
         
-def nLettersFDist(kk_texts_Texts,names):
+def nLettersFDist(kk_texts_Texts,names, outlang='kw'):
     """ create conditional frequency distributions
     based on length of words for a set of NLTK texts,
     and draw a graph.
@@ -190,6 +231,16 @@ def nLettersFDist(kk_texts_Texts,names):
     @type kk_texts_Texts: C{list}
     @type names: C{list}
     """
+    outTexts = {
+        'plottitle': {'en':'Cumulative % frequency of lengths of words in various Cornish texts.',
+                      'kw':'% Menowghder Kumulativ hirder geryow yn tekstow Kernewek divers.'},
+        'plottitle2': {'en':'Cumulative % frequency of lengths of words in',
+                       'kw':'% Menowghder Kumulativ hirder geryow yn'},
+        'xlab':{'en':'Word length',
+                'kw':'Hirder Ger'},
+        'ylab':{'en':'Cumulative % frequency',
+                'kw':'Menowghder % kumulativ'}
+        }
     cfd = nltk.ConditionalFreqDist(
             (text.name,len(word))
             for text in kk_texts_Texts
@@ -200,7 +251,7 @@ def nLettersFDist(kk_texts_Texts,names):
     output = []
     #print nameslist
     for t in zip(kk_texts_Texts, names):
-        listPercentsN(t[0],cfd,dictlist, t[1])
+        listPercentsN(t[0],cfd,dictlist, t[1], outlang=outlang)
     #print dictlist
     for d in range(len(dictlist)):
         keyslist = [0]+[i[0] for i in dictlist[d].items()]
@@ -216,14 +267,15 @@ def nLettersFDist(kk_texts_Texts,names):
         plt.plot(keyslist,valueslist_cumulative,label = names[d],linewidth=2,linestyle=st)
         output.append(zip(keyslist, valueslist_cumulative))
     if len(names) > 1:
-        plt.title("Cumulative % frequency of lengths of words in various Cornish texts.")
+        plt.title(outTexts['plottitle'][outlang])
         plt.legend()
     else:
-        plt.title("Cumulative % frequency of lengths of words in {n}.".format(n=names[0]))
-    plt.xlabel("Word length")
-    plt.ylabel("Cumulative % frequency")
+        plt.title("{t} {n}.".format(t=outTexts['plottitle2'][outlang],
+                                    n=names[0]))
+    plt.xlabel(outTexts['xlab'][outlang])
+    plt.ylabel(outTexts['ylab'][outlang])
     plt.tight_layout()
-    return formatCFDnLetters(zip(names,output))
+    return formatCFDnLetters(zip(names,output), outlang=outlang)
 
 def getCFD(kk_texts_Texts, casesensit=False):
     """
@@ -247,7 +299,7 @@ def getCFD(kk_texts_Texts, casesensit=False):
             for word in text if word.isalpha())
     return cfd
 
-def MostFrequentWords(kk_texts_Texts, textnames, N=20, minL = 1, casesensit=False):
+def MostFrequentWords(kk_texts_Texts, textnames, N=20, minL = 1, casesensit=False, outlang='kw'):
     """
     return a list of the most frequent words in each text
 
@@ -258,6 +310,18 @@ def MostFrequentWords(kk_texts_Texts, textnames, N=20, minL = 1, casesensit=Fals
     @param casesensit: whether to be case sensitive.
     @type casesensit: C{bool}
     """
+    outTexts = {
+        'the':{'en':'The',
+               'kw':'An'},
+        'mostfreq':{'en':'most frequent words',
+                    'kw':'geryow an moyha kemmyn'},
+        'atleast':{'en':'with at least',
+                   'kw':'gans an lyha'},
+        'are':{'en':'are',
+               'kw':'yw'},
+        'letters':{'en':'letters are',
+                   'kw':'lytherenn yw'}
+        }
     outputtext = ""
     cfd = getCFD(kk_texts_Texts, casesensit)
     for t in zip(kk_texts_Texts, textnames):
@@ -268,15 +332,22 @@ def MostFrequentWords(kk_texts_Texts, textnames, N=20, minL = 1, casesensit=Fals
 
         if minL > 1:
             keyvaltupsort = [(k,v) for (k,v) in keyvaltupsort if len(k) >= minL]
-            outputtext += "{n} most frequent words with at least {m} letters are:\n\n".format(n=N, m=minL)
+            outputtext += "{t0} {n} {t1} {t2} {m} {t3}:\n\n".format(t0=outTexts['the'][outlang],
+                                                                    t1=outTexts['mostfreq'][outlang],
+                                                                    t2=outTexts['atleast'][outlang],
+                                                                    t3=outTexts['letters'][outlang],
+                                                                    n=N, m=minL)
         else:
-            outputtext += "{n} most frequent words are:\n\n".format(n=N)
+            outputtext += "{t0} {n} {t1} {t2}:\n\n".format(t0=outTexts['the'][outlang],
+                                                           t1=outTexts['mostfreq'][outlang],
+                                                           t2=outTexts['are'][outlang],
+                                                           n=N)
         maxL = max(len(kv[0]) for kv in keyvaltupsort[:N])
         maxF = keyvaltupsort[0][1]
         for kv in keyvaltupsort[:N]:
             outputtext += "{word:<{m}} : {pcfreq:.3%} :   N = {freq:>{lg}}\n".format(word=kv[0],
-                                                                          m=maxL+2,
-                                                                          pcfreq=float(kv[1])/len(t[0]),
+                                                                                     m=maxL+2,
+                                                                                     pcfreq=float(kv[1])/len(t[0]),
                                                                                      freq=kv[1],
                                                                                      lg=int(np.log10(maxF))+1)
             #print(kv[0]," : ",str(100*(float(kv[1])/len(t[0])))[:5],"% ")
@@ -287,7 +358,7 @@ def MostFrequentWords(kk_texts_Texts, textnames, N=20, minL = 1, casesensit=Fals
 
 
     
-def MostFreqWords1Text(Text, name, N=20, casesensit=False):
+def MostFreqWords1Text(Text, name, N=20, casesensit=False, outlang='kw'):
     """
     find most frequent words for a single text
     
@@ -299,12 +370,12 @@ def MostFreqWords1Text(Text, name, N=20, casesensit=False):
     @param casesensit: whether to be case sensitive.
     @type casesensit: C{bool}
     """
-    return MostFrequentWords([Text], [name], N, casesensit)
+    return MostFrequentWords([Text], [name], N, casesensit, outlang=outlang)
 
 
 def MostFreqLetters(kk_texts_Texts, textnames,
                     condigraph=True, voweldigraph=True,
-                    chdigraph=True):
+                    chdigraph=True, outlang='kw'):
     """
     return a list of the most frequent letters in each text
     
@@ -313,6 +384,9 @@ def MostFreqLetters(kk_texts_Texts, textnames,
     @type condigraph: C{bool}
     @type voweldigraph: C{bool}
     """
+    outTexts= {'lettersdesc':{'en':'Letters in descending order of frequency',
+                              'kw':'Lytherennow yn aray diyskynna menowghder'}
+               }
     outputtext = ""
     for t in zip(kk_texts_Texts, textnames):
         outputtext += "Text: {n}\n".format(n=t[1])
@@ -321,16 +395,19 @@ def MostFreqLetters(kk_texts_Texts, textnames,
         chardict = countchars(textalpha, chdigraph, condigraph, voweldigraph)
         kvtup = [(k,v) for (k,v) in chardict.items()]
         kvtupsort = sorted(kvtup, key = lambda kvtup: kvtup[1], reverse=True)
-        outputtext += "Letters in descending order of frequency:\n\n"
+        outputtext += "{t}:\n\n".format(t=outTexts['lettersdesc'][outlang])
         maxF = kvtupsort[0][1]
         for kv in kvtupsort:
-            outputtext += "{char:3}:{pcfreq:^8.2%}: N = {freq:>{lg}}\n".format(char=kv[0], pcfreq=float(kv[1])/lentextstr, freq=kv[1], lg=int(np.log10(maxF))+1)
+            outputtext += "{char:3}:{pcfreq:^8.2%}: N = {freq:>{lg}}\n".format(char=kv[0],
+                                                                               pcfreq=float(kv[1])/lentextstr,
+                                                                               freq=kv[1],
+                                                                               lg=int(np.log10(maxF))+1)
         outputtext += "\n"
     return outputtext
 
 
 def MostFreqLetters1Text(Text, name,
-                         condigraph=True, voweldigraph=True, chdigraph=True):
+                         condigraph=True, voweldigraph=True, chdigraph=True, outlang='kw'):
     """
     return a list of the most frequent letters in each text
     
@@ -340,9 +417,9 @@ def MostFreqLetters1Text(Text, name,
     @type condigraph: C{bool}
     @type voweldigraph: C{bool}
     """
-    return MostFreqLetters([Text], [name], condigraph, voweldigraph, chdigraph)
+    return MostFreqLetters([Text], [name], condigraph, voweldigraph, chdigraph, outlang=outlang)
 
-def compareSamples(kk_texts_Texts,names, samples, casesensit=False):
+def compareSamples(kk_texts_Texts,names, samples, casesensit=False, outlang='kw'):
     """
     Produce a bar plot comparing the frequency of words in a list samples
     across the different texts.
@@ -356,6 +433,18 @@ def compareSamples(kk_texts_Texts,names, samples, casesensit=False):
     @param casesensit: Whether to be case sensitive.
     @type casesensit: C{bool}
     """
+    outTexts = {
+        'text':{'en':'Text',
+                'kw':'Tekst'},
+        'freq':{'en':'frequencies',
+                'kw':'menowghderow'},
+        'plottitle':{'en':'% frequency of various words in Cornish texts',
+                     'kw':'% menowghder nebes geryow yn tekstow Kernewek'},
+        'plottitle2':{'en':'% frequency of various words in',
+                      'kw':'% menowghder nebes geryow yn'},
+        'ylab':{'en':'% frequency',
+                'kw':'% menowghder'}
+        }
     outputtext = ""
     cfd = getCFD(kk_texts_Texts, casesensit)
     colors = "rgbcmkyw"
@@ -368,7 +457,9 @@ def compareSamples(kk_texts_Texts,names, samples, casesensit=False):
             freqs_list = [100.0*float(f[s.lower()])/len(t) for s in samples]
             
         freqs_list_print = [round(fr, 4) for fr in freqs_list]
-        outputtext += "Text {t}, frequencies {f}.\n\n".format(t=n, f=freqs_list_print)
+        outputtext += "{l1} {t}, {l2} {f}.\n\n".format(l1=outTexts['text'][outlang],
+                                                       t=n, l2=outTexts['freq'][outlang],
+                                                       f=freqs_list_print)
         freqs_lists.append(freqs_list)
 
     # produce one group of bars for each text
@@ -384,19 +475,20 @@ def compareSamples(kk_texts_Texts,names, samples, casesensit=False):
         for s in range(len(samples)):
             plt.axvline(x=((s+1)*width*(len(names)+1)-0.5*width),
                           ymin=0, ymax = 100, linewidth=0.5, color='b', linestyle='-')
-        plt.title("% frequency of various words in Cornish texts")
+        plt.title(outTexts['plottitle'][outlang])
         plt.legend([b[0] for b in bar_groups],names)
     else:
-        plt.title("% frequency of various words in {n}".format(n=names[0]))
+        plt.title("{l} {n}".format(l=outTexts['plottitle2'][outlang],
+                                   n=names[0]))
         
-    plt.ylabel("% frequency")    
+    plt.ylabel(outTexts['ylab'][outlang])
     plt.xticks(ind+(len(names)/2.0)*width,samples)
     plt.axis(xmin=-0.5*width, xmax = len(samples)*width*(len(names)+1)-0.5*width)
     plt.tight_layout()
     print(outputtext)
     return outputtext
 
-def compareSamplesLinear(kk_texts_Texts,names, samples, casesensit=False):
+def compareSamplesLinear(kk_texts_Texts,names, samples, casesensit=False, outlang='kw'):
     """
     Produce a bar plot comparing the frequency of words in a list samples
     across the different texts.
@@ -410,6 +502,25 @@ def compareSamplesLinear(kk_texts_Texts,names, samples, casesensit=False):
     @param casesensit: Whether to be case sensitive.
     @type casesensit: C{bool}
     """
+    outTexts = {
+        'text':{'en':'Text',
+                'kw':'Tekst'},
+        'length':{'en':'length',
+                  'kw':'hirder'},
+        'words':{'en':'words',
+                 'kw':'geryow'},
+        'sample':{'en':'Sample word',
+                  'kw':'Ger sampel'},
+        'occur':{'en':'Number of occurances',
+                 'kw':'Niver hwarvedhyansow'},
+        'index':{'en': 'Indexes',
+                 'kw': 'Menegennow'},
+        'pcindex':{'en': 'Percent Indexes',
+                   'kw': 'Menegennow Kansrann'},
+        'xlab':{'en':'Percent location in text',
+                'kw':'Savla kansrann y\'n tekst'}
+    }
+
     outputtext = ""
     cfd = getCFD(kk_texts_Texts, casesensit)
     colors = "rgbcmk"
@@ -420,7 +531,11 @@ def compareSamplesLinear(kk_texts_Texts,names, samples, casesensit=False):
         plt.title(names[0])
         axes = plt.gca()
         nwords = len(kk_texts_Texts[0])
-        outputtext += "Text: {t}, length: {l} words\n".format(t=names[0], l=nwords)
+        outputtext += "{a}: {t}, {b}: {l} {c}\n".format(a=outTexts['text'][outlang],
+                                                        t=names[0],
+                                                        b=outTexts['length'][outlang],
+                                                        l=nwords,
+                                                        c=outTexts['words'][outlang])
         for i,s in enumerate(samples):
             indexes = []
             pcindexes = []        
@@ -431,8 +546,13 @@ def compareSamplesLinear(kk_texts_Texts,names, samples, casesensit=False):
                     indexes.append(j)
                     pcindexes.append(round(100.0*j/nwords,1))
             print(s, zip(indexes, pcindexes))
-            outputtext += "Sample word: {s}. Number of occurances: {n}\nIndexes:{i}\nPercent Indexes: {p}\n".format(
-                n=len(indexes), s=s, i=indexes, p=pcindexes)
+            outputtext += "{a}: {s}. {b}: {n}\n{c}:{i}\n{d}: {p}\n".format(
+                a = outTexts['sample'][outlang],
+                n=len(indexes), s=s,
+                b = outTexts['occur'][outlang],
+                c = outTexts['index'][outlang],
+                d = outTexts['pcindex'][outlang],
+                i=indexes, p=pcindexes)
             col = colors[i % len(colors)]
             plt.plot(pcindexes, np.zeros(len(pcindexes)) + ycoord, "{c}s".format(c=col))
             yticks.append(ycoord)
@@ -440,7 +560,7 @@ def compareSamplesLinear(kk_texts_Texts,names, samples, casesensit=False):
         axes.set_xlim([0,100])
         axes.set_ylim([0,0.1*len(samples)+0.1])
         axes.set_yticklabels(samples)
-        axes.set_xlabel("Percent location in text")
+        axes.set_xlabel(outTexts['xlab'][outlang])
         axes.set_yticks(yticks)
 
             
@@ -450,7 +570,8 @@ def compareSamplesLinear(kk_texts_Texts,names, samples, casesensit=False):
             axes = plt.gca()
             plt.title(s)
             ycoord = 0.1
-            outputtext += "Sample word: {s}\n".format(s=s)
+            outputtext += "{a}: {s}\n".format(a=outTexts['sample'][outlang],
+                                              s=s)
             for j,(t,n) in enumerate(zip(kk_texts_Texts, names)):
                 indexes = []
                 pcindexes = []
@@ -463,7 +584,11 @@ def compareSamplesLinear(kk_texts_Texts,names, samples, casesensit=False):
                         indexes.append(i)
                         pcindexes.append(round(100.0*i/nwords,1))
                 print(s, zip(indexes,pcindexes))
-                outputtext += "Text {t}:\nNumber of occurances: {n}. Indexes:{i}\nPercent Indexes: {p}\n".format(
+                outputtext += "{a} {t}:\n{b}: {n}. {c}:{i}\n{d}: {p}\n".format(
+                    a = outTexts['text'][outlang],
+                    b = outTexts['occur'][outlang],
+                    c = outTexts['index'][outlang],
+                    d = outTexts['pcindex'][outlang],
                     t=n, n=len(indexes), i=indexes, p=pcindexes)
                 col = colors[i % len(colors)]
                 plt.plot(pcindexes, np.zeros(len(pcindexes))+ycoord,"{c}s".format(c=col))
@@ -473,19 +598,19 @@ def compareSamplesLinear(kk_texts_Texts,names, samples, casesensit=False):
             axes.set_xlim([0,100])
             axes.set_ylim([0,0.1*len(kk_texts_Texts)+0.1])            
             axes.set_yticklabels(names)
-            axes.set_xlabel("Percent location in text")
+            axes.set_xlabel(outTexts['xlab'][outlang])
             axes.set_yticks(yticks)
         
     return outputtext
-def corpusKW(manuscript=False):
+def corpusKW(manuscript=False, outlang='kw'):
     """
     do imports for traditional (and some revived) texts in Kemmyn
     """
     import read_kernewek_KK_texts
     if manuscript:
-        kw_texts, names = read_kernewek_KK_texts.getMStexts()
+        kw_texts, names = read_kernewek_KK_texts.getMStexts(outlang=outlang)
     else:
-        kw_texts, names = read_kernewek_KK_texts.getKKtexts()
+        kw_texts, names = read_kernewek_KK_texts.getKKtexts(outlang=outlang)
     # use NLTK functions to select words
     kw_texts_words = [kw_texts.words(i) for i in kw_texts.fileids()]
     # select those words that are alphabetic
@@ -498,7 +623,7 @@ def corpusKW(manuscript=False):
     return kw_texts_Texts, names
 
 
-def basicReportAll(kk_texts_Texts, textnames, topN=50, minL=4, pause=True):
+def basicReportAll(kk_texts_Texts, textnames, topN=50, minL=4, pause=True, outlang='kw'):
     """
     cycle through the texts and output a basic report for each
 
@@ -514,33 +639,49 @@ def basicReportAll(kk_texts_Texts, textnames, topN=50, minL=4, pause=True):
     @param pause: whether to pause between each text.
     @type pause: C{bool}
     """
+    outTexts = {'input':{'en':'Press Enter to continue...\n',
+                         'kw':'Gwask Enter dhe besya...\n'}
+                }
     outputtext = ""
     for i in zip(kk_texts_Texts, textnames):
-        outputtext += basicReport(i[0], i[1], topN, minL)
+        outputtext += basicReport(i[0], i[1], topN, minL, outlang=outlang)
         if pause:
             if sys.version_info[0] < 3:
-                w = raw_input("Press Enter to continue...\n")
+                w = raw_input(outTexts['input'][outlang])
             else:
-                w = input("Press Enter to continue...\n")
+                w = input(outTexts['input'][outlang])
             if w.lower() == "skip" or w.lower() == "lamma":
                 pause = False
     return outputtext
 
-def concordances(kk_texts_Texts, textnames, samples, width=79, lines=25):
+def concordances(kk_texts_Texts, textnames, samples, width=79, lines=25, outlang='kw'):
+    outTexts = {
+        'concord':{'en':'Concordances\n',
+                   'kw':'Konkordansow\n'},
+        'sample':{'en':'Sample word',
+                  'kw':'Ger sampel'},
+        'text':{'en':'Text',
+                'kw':'Tekst'},
+        'context':{'en':'Words appearing in similar contexts to',
+                   'kw':'Geryow a diskwa yn kettestennow haval dhe'}
+        }
     buff = StringIO()
     temp = sys.stdout
     sys.stdout = buff
     #outputtext = ""
-    print("Concordances\n")
+    print(outTexts['concord'][outlang])
     #outputtext += "Concordances\n"
     for s in samples:
-        print("Sample word {s}\n".format(s=s))
+        print("{a} {s}\n".format(a=outTexts['sample'][outlang],
+                                 s=s))
         #outputtext += "Sample word {s}\n".format(s=s)
         for t,n in zip(kk_texts_Texts,textnames):
-            print("Text: {t}\n".format(t=n))
+            print("{a}: {t}\n".format(a=outTexts['text'][outlang],
+                                      t=n))
             #outputtext += "Text: {t}\n".format(t=n)
             t.concordance(s, width, lines)
-            print("\nWords appearing in similar contexts to {s}:".format(s=s))
+            print("\n{a} {s}:".format(a=outTexts['context'][outlang],
+                                      s=s))
             #outputtext += "Word appearing in similar contexts to {s}:\n".format(s=s)
             t.similar(s)
             print("\n")
@@ -565,7 +706,7 @@ def generateText(kk_texts_Texts, textnames):
     sys.stdout = temp
     return buff.getvalue()
         
-def freqCompareInterAct(casesensit=False, interactive=True):
+def freqCompareInterAct(casesensit=False, interactive=True, outlang='kw'):
     """ 
     Request words from the command line input and
     run compareSamples() to compare their frequencies.
@@ -576,8 +717,20 @@ def freqCompareInterAct(casesensit=False, interactive=True):
     default list of samples.
     @type interactive: C{bool}
     """
+    outTexts = {
+        'intro':{'en':"Please enter a word to compare frequency across the texts.\nEnter the word 'default' to use the default wordlist.\nPress Enter without any text to stop building the wordlist and draw the graph:",
+                 'kw':"Gorr ger mar pleg dhe gesheveli menowgher dres an tekstow.\nGorr an ger 'default' dhe usya an rol ger defowt.\nGorr Enter heb tekst dhe hedhi drehevel an rol ger ha delinya an tresenn:"},
+        'input':{'en':'Enter word:\n',
+                 'kw':'Gorr ger:\n'},
+        'barchart':{'en':'Plot bar chart word frequency plot (y/n)?\n',
+                    'kw':'Delinya tresenn menowghder ger barr (y/n)?\n'},        
+        'lexdesp':{'en':'Plot lexical dispersion plot (y/n)?\n',
+                   'kw':'Delinya tresenn keskar ger (y/n)?\n'},
+        'concord':{'en':'Output concordances (y/n)?\n',
+                   'kw':'Diskwedhes konkordansow (y/n)?\n'}        
+        }
     defaultsamples = ["a","ha","an","dhe","yn","yw","ow","ev","rag","mes","esa","yth","y"]
-    print("Please enter a words to compare frequency across the texts.\nEnter the word 'default' to use the default wordlist.\nPress Enter without any text to stop building the wordlist and draw the graph:")
+    print(outTexts['intro'][outlang])
     # the words to compare abundance of across the texts
     
     if not(interactive):
@@ -586,9 +739,9 @@ def freqCompareInterAct(casesensit=False, interactive=True):
         samples = []
         while interactive:
             if sys.version_info[0] < 3:
-                w = raw_input("Enter word:\n")
+                w = raw_input(outTexts['input'][outlang])
             else:
-                w = input("Enter word:\n")
+                w = input(outTexts['input'][outlang])
             if len(w) > 0:
                 if w.lower() == "default":
                     # if the word 'default' is entered
@@ -609,13 +762,13 @@ def freqCompareInterAct(casesensit=False, interactive=True):
     samples = sorted(set(samples))    
 
     if sys.version_info[0] < 3:
-        w = raw_input("Plot bar chart word frequency plot (y/n)?\n")
-        w2 = raw_input("Plot lexical dispersion plot (y/n)?\n")
-        w3 = raw_input("Output concordances (y/n)?\n")
+        w = raw_input(outTexts['barchart'][outlang])
+        w2 = raw_input(outTexts['lexdesp'][outlang])
+        w3 = raw_input(outTexts['concord'][outlang])
     else:
-        w = input("Plot bar chart word frequency plot (y/n)?\n")
-        w2 = input("Plot lexical dispersion plot (y/n)?\n")
-        w3 = input("Output concordances (y/n)?\n")
+        w = input(outTexts['barchart'][outlang])
+        w2 = input(outTexts['lexdesp'][outlang])
+        w3 = input(outTexts['concord'][outlang])        
 
     if w.isalpha() and w[0].lower()=="y":
         compareSamples(kk_texts_Texts,names, samples)
@@ -624,20 +777,30 @@ def freqCompareInterAct(casesensit=False, interactive=True):
     if w3.isalpha() and w3[0].lower()=="y":
         print(concordances(kk_texts_Texts,names, samples))
 
-if __name__ == '__main__':    
+if __name__ == '__main__':
+    outTexts = {'cumfreq':{'en':'Plot cumulative frequency plot for lengths of words (y/n)?\n',
+                           'kw':'Delinya tresenn menowghder kumulativ hirder geryow (y/n)?\n'}
+                }
+                
     parser = argparse.ArgumentParser()
     parser.add_argument("-m", "--manuscript", action="store_true",
 help="Use manuscript spelling texts instead of Kemmyn.")
+    parser.add_argument("-e", "--english", action="store_true",
+help="Output explanatory text in English (default is Cornish).")
     args = parser.parse_args()
-    kk_texts_Texts, names = corpusKW(args.manuscript)
-    basicReportAll(kk_texts_Texts, names)
-    if sys.version_info[0] < 3:
-        w = raw_input("Plot cumulative frequency plot for lengths of words (y/n)?\n")
+    if args.english:
+        outlang = 'en'
     else:
-        w = input("Plot cumulative frequency plot for lengths of words (y/n)?\n")
+        outlang = 'kw'    
+    kk_texts_Texts, names = corpusKW(args.manuscript, outlang=outlang)
+    basicReportAll(kk_texts_Texts, names, outlang=outlang)
+    if sys.version_info[0] < 3:
+        w = raw_input(outTexts['cumfreq'][outlang])
+    else:
+        w = input(outTexts['cumfreq'][outlang])
     if w.isalpha():
         if w[0].lower()=="y":
-            nLettersFDist(kk_texts_Texts,names)
+            nLettersFDist(kk_texts_Texts,names, outlang=outlang)
             plt.figure()
-    freqCompareInterAct()    
+    freqCompareInterAct(outlang=outlang)    
     plt.show()
