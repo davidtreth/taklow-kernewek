@@ -311,6 +311,8 @@ def MostFrequentWords(kk_texts_Texts, textnames, N=20, minL = 1, casesensit=Fals
     @type casesensit: C{bool}
     """
     outTexts = {
+        'text':{'en':'Text',
+                'kw':'Tekst'},
         'the':{'en':'The',
                'kw':'An'},
         'mostfreq':{'en':'most frequent words',
@@ -325,7 +327,7 @@ def MostFrequentWords(kk_texts_Texts, textnames, N=20, minL = 1, casesensit=Fals
     outputtext = ""
     cfd = getCFD(kk_texts_Texts, casesensit)
     for t in zip(kk_texts_Texts, textnames):
-        outputtext += "Text: {n}\n".format(n=t[1])
+        outputtext += "{x}: {n}\n".format(x=outTexts['text'][outlang], n=t[1])
         fdist = cfd[t[0].name]
         keyvaltup = [(k,v) for (k,v) in fdist.items()]
         keyvaltupsort = sorted(keyvaltup, key=lambda keyvaltup: keyvaltup[1], reverse=True)
@@ -389,11 +391,13 @@ def MostFreqLetters(kk_texts_Texts, textnames,
     @type voweldigraph: C{bool}
     """
     outTexts= {'lettersdesc':{'en':'Letters in descending order of frequency',
-                              'kw':'Lytherennow yn aray diyskynna menowghder'}
+                              'kw':'Lytherennow yn aray diyskynna menowghder'},
+               'text':{'en':'Text',
+                       'kw':'Tekst'}
                }
     outputtext = ""
     for t in zip(kk_texts_Texts, textnames):
-        outputtext += "Text: {n}\n".format(n=t[1])
+        outputtext += "{x}: {n}\n".format(x = outTexts['text'][outlang], n=t[1])
         textalpha = [w for w in t[0] if w.isalpha()]
         lentextstr = len("".join(textalpha))
         chardict = countchars(textalpha, chdigraph, condigraph, voweldigraph)
@@ -690,7 +694,15 @@ def concordances(kk_texts_Texts, textnames, samples, width=79, lines=25, outlang
             t.similar(s)
             print("\n")
     sys.stdout = temp
-    return buff.getvalue()
+
+    outtext = buff.getvalue()
+    # replace English text in NLTK concordance output if outlang is kw
+    kwreplaces = [['Displaying', 'Ow tiskwedhes'], ['matches', 'hwarvedhyans'],
+                  ['No', 'Nag eus'], [' of ', ' a ']]
+    if outlang == 'kw':
+        for r in kwreplaces:
+            outtext = outtext.replace(r[0], r[1])        
+    return outtext
 
 def generateText(kk_texts_Texts, textnames):
     """ not used at present because it doesn't work

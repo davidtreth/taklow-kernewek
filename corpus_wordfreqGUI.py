@@ -109,22 +109,24 @@ class CorpusStats(tk.Frame):
         else:
             self.ifacelang = 'kw'
         self.mscript = mscript
+        self.netbook = netbook
+        if self.netbook:
+            self.heightadjust = -8
+            self.fontsizeadj = -2
+        else:
+            self.heightadjust = 0
+            self.fontsizeadj = 0
+
         self.comparelist = []
         self.defaultsamples = ['dhe', 'gans', 'war', 'dhymm', 'dhymmo', 'genev', 'warnav', 'rag', 'mes']
         self.master.title(CorpusStats.labelTexts['windowtitle'][self.ifacelang])
         self.pack()
-        self.make_widgets(netbook)
+        self.make_widgets()
         
-    def make_widgets(self, netbook=False):
+    def make_widgets(self):
         """ display GUI widgets """
-        if netbook:
-            heightadjust = -8
-            fontsizeadj = -2
-        else:
-            heightadjust = 0
-            fontsizeadj = 0
         self.mhead = tk.Label(self, text = CorpusStats.labelTexts['mhead'][self.ifacelang])
-        self.mhead.config(font=('Helvetica', 16+fontsizeadj, 'bold'))
+        self.mhead.config(font=('Helvetica', 16+self.fontsizeadj, 'bold'))
         self.mhead.pack(side=tk.TOP, anchor=tk.NW)        
         c = self.checkNLTK()
         print("NLTK available = {c}".format(c=c))
@@ -149,59 +151,59 @@ class CorpusStats(tk.Frame):
             
         self.textchoice = Radiobar(self, textmenu, vals=optionnums, side = tk.TOP, anchor = tk.NW,
                                    default = 2, justify=tk.LEFT,
-                                   font=('Helvetica', 13+fontsizeadj, 'normal'))
+                                   font=('Helvetica', 13+self.fontsizeadj, 'normal'))
         self.textchoice.pack(side=tk.LEFT, fill=tk.Y)
         self.textchoice.config(relief=tk.RIDGE, bd=2)
         self.switchlang = tk.Button(self.textchoice, text=CorpusStats.labelTexts['switchlang'][self.ifacelang],
-                                    font=('Helvetica', 14+fontsizeadj), command=self.changeifacelang)
+                                    font=('Helvetica', 14+self.fontsizeadj), command=self.changeifacelang)
         self.switchlang.pack(anchor=tk.SW, side=tk.LEFT, padx=10, pady=10)
         self.switchms = tk.Button(self.textchoice, text=CorpusStats.labelTexts['switchms'][self.ifacelang],
-                                    font=('Helvetica', 14+fontsizeadj), command=self.switchms)
+                                    font=('Helvetica', 14+self.fontsizeadj), command=self.switchms)
         self.switchms.pack(anchor=tk.SW, side=tk.LEFT, padx=10, pady=10)
         
 
         self.mhead2 = tk.Label(self, text=CorpusStats.labelTexts['mhead2'][self.ifacelang])
-        self.mhead2.config(font=('Helvetica', 16+fontsizeadj*2, 'bold'))
+        self.mhead2.config(font=('Helvetica', 16+self.fontsizeadj*2, 'bold'))
         self.mhead2.pack(side=tk.TOP, anchor=tk.NW)
         mchoicetext = CorpusStats.labelTexts['modechoice'][self.ifacelang]
         mchoicevals = range(len(mchoicetext))
         self.modechoice = Radiobar(self, mchoicetext,
                                    vals = mchoicevals,
                                    side=tk.TOP, anchor=tk.NW, justify=tk.LEFT, default = 0,
-                                   font = ('Helvetica',13+fontsizeadj, 'normal'))
+                                   font = ('Helvetica',13+self.fontsizeadj, 'normal'))
         self.msg1 = tk.Label(self.modechoice, text=CorpusStats.labelTexts['msg'][self.ifacelang],
                              anchor=tk.W, justify=tk.LEFT, pady=10)
-        self.msg1.config(font=('Helvetica', 12+fontsizeadj))
+        self.msg1.config(font=('Helvetica', 12+self.fontsizeadj))
         self.msg1.pack(anchor=tk.W)
         self.ent = Entrybar(self.modechoice,
                             anchor=tk.NW)
         self.ent.pack(anchor=tk.W, padx=5)        
         self.msg2 = tk.Label(self.modechoice, text=CorpusStats.labelTexts['msg2'][self.ifacelang],
                              anchor=tk.W, justify=tk.LEFT, pady=10)
-        self.msg2.config(font=('Helvetica', 12+fontsizeadj))
+        self.msg2.config(font=('Helvetica', 12+self.fontsizeadj))
         self.msg2.pack(anchor=tk.W)
         self.ent2 = Entrybar(self.modechoice,
                              anchor=tk.NW)
         self.ent2.pack(anchor=tk.W, padx=5)        
         self.msg3 = tk.Label(self.modechoice, text=CorpusStats.labelTexts['msg3'][self.ifacelang],
                              anchor=tk.W, justify=tk.LEFT, pady=10)
-        self.msg3.config(font=('Helvetica', 12+fontsizeadj))
+        self.msg3.config(font=('Helvetica', 12+self.fontsizeadj))
         self.msg3.pack(anchor=tk.W, padx=5)        
         self.ent3 = Entrybar(self.modechoice,
                              anchor=tk.NW)
         self.ent3.pack(anchor=tk.W, padx=5)
         self.keworra = tk.Button(self.modechoice, text=CorpusStats.labelTexts['keworra'][self.ifacelang],
-                                 font=('Helvetica', 14+fontsizeadj),
+                                 font=('Helvetica', 14+self.fontsizeadj),
                                  command = self.addtocomparelist)
         self.klerhe = tk.Button(self.modechoice, text=CorpusStats.labelTexts['klerhe'][self.ifacelang],
-                                font=('Helvetica', 14+fontsizeadj),
+                                font=('Helvetica', 14+self.fontsizeadj),
                                 command = self.clearcomparelist)
         self.keworra.pack(anchor=tk.NW, side=tk.LEFT, pady=10)
         self.klerhe.pack(anchor=tk.NW, side=tk.LEFT, pady=10)
         self.modechoice.pack(side=tk.LEFT, fill=tk.Y)
         self.modechoice.config(relief=tk.RIDGE, bd=2)
         self.outbox = ScrolledText(self)
-        self.outbox.text.config(bg = 'light yellow', fg = 'dark red', width=60, height=20+heightadjust,
+        self.outbox.text.config(bg = 'light yellow', fg = 'dark red', width=60, height=20+self.heightadjust,
                                 font=('Courier', 14, 'bold'))
         self.outbox.pack()
         # buttons
@@ -273,6 +275,7 @@ class CorpusStats(tk.Frame):
         else:
             self.ifacelang = 'kw'
         self.switchlang.config(text=self.labelTexts['switchlang'][self.ifacelang])
+        self.switchms.config(text=self.labelTexts['switchms'][self.ifacelang])
         self.master.title(self.labelTexts['windowtitle'][self.ifacelang])
         self.mhead.config(text=self.labelTexts['mhead'][self.ifacelang])
         if self.mscript:
@@ -282,12 +285,10 @@ class CorpusStats(tk.Frame):
         for p,r in zip(newpicks, self.textchoice.rads):
             r.config(text=p)
             
-        #self.textchoice.config(picks=self.labelTexts['textchoice'][self.ifacelang])
         self.mhead2.config(text=self.labelTexts['mhead2'][self.ifacelang])
         newpicks = self.labelTexts['modechoice'][self.ifacelang]
         for p,r in zip(newpicks, self.modechoice.rads):
             r.config(text=p)        
-        #self.modechoice.config(picks=self.labelTexts['modechoice'][self.ifacelang])
         self.msg1.config(text=self.labelTexts['msg'][self.ifacelang])
         self.msg2.config(text=self.labelTexts['msg2'][self.ifacelang])
         self.msg3.config(text=self.labelTexts['msg3'][self.ifacelang])
@@ -306,6 +307,9 @@ class CorpusStats(tk.Frame):
         self.mscript = not(self.mscript)
         currstate = self.textchoice.state()
         self.textchoice.destroyrads()
+        self.switchlang.pack_forget()
+        self.switchms.pack_forget()
+        #self.textchoice.pack_forget()
         # reload texts to get new names
         self.kk_texts, self.names = cornish_corpus.corpusKW(self.mscript, outlang=self.ifacelang)
         self.kk_text_dict = {k:v for (k,v) in zip(self.names, self.kk_texts)}
@@ -321,6 +325,8 @@ class CorpusStats(tk.Frame):
             currstate = 2
         self.textchoice.newrads(picks=textmenu, vals=optionnums,
                                 default=currstate)
+        self.switchlang.pack(anchor=tk.SW, side=tk.LEFT, padx=10, pady=10)
+        self.switchms.pack(anchor=tk.SW, side=tk.LEFT, padx=10, pady=10)
         # rerun self.printoutput to show results in manuscript / Kemmyn
         self.printoutput()        
         
