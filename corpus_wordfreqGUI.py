@@ -56,6 +56,22 @@ class CorpusStats(tk.Frame):
                                       'Chapters Arloedh an Bysowyer',
                                       'Pregothow Tregear',
                                       'Oll an Tekstow']},
+                  'textchoicems':{'en':['Life of Ke',
+                                      'Charter Fragment',
+                                      'Creation of the World',
+                                      'Passion of our Lord',
+                                      'Origo Mundi',
+                                      'Passio Christ',
+                                      'Resurrectio Domini',
+                                      'All Texts'],
+                                'kw':['Bewnans Ke',
+                                      'Darn Chartour',
+                                      'Gwreans an Bys',
+                                      'Passhyon Agan Arloedh',
+                                      'Origo Mundi',
+                                      'Passio Christ',
+                                      'Resurrectio Domini',
+                                      'Oll an Tekstow']},   
                   'mhead':{'en': 'Text',
                            'kw': 'Tekst'},
                   'mhead2':{'en': 'Options',
@@ -84,17 +100,19 @@ class CorpusStats(tk.Frame):
                              'kw': 'Nyns yw Python Natural Language Processing Toolkit (NLTK) kavadow.\nIskargewgh diworth www.nltk.org mar nyns yw war agas jynn-amontya.'}
     }
 
-    def __init__(self, parent = None, netbook=False, english=False):
+    def __init__(self, parent = None, netbook=False, english=False, mscript=False):
         tk.Frame.__init__(self, parent)
         if english:
             self.ifacelang = 'en'
         else:
             self.ifacelang = 'kw'
+        self.mscript = mscript
         self.comparelist = []
         self.defaultsamples = ['dhe', 'gans', 'war', 'dhymm', 'dhymmo', 'genev', 'warnav', 'rag', 'mes']
         self.master.title(CorpusStats.labelTexts['windowtitle'][self.ifacelang])
         self.pack()
         self.make_widgets(netbook)
+        
     def make_widgets(self, netbook=False):
         """ display GUI widgets """
         if netbook:
@@ -117,9 +135,17 @@ class CorpusStats(tk.Frame):
             # import cornish_corpus
             # uneccesary as done already
             self.kk_texts, self.names = cornish_corpus.corpusKW(args.manuscript, outlang=self.ifacelang)
-            self.kk_text_dict = {k:v for (k,v) in zip(self.names, self.kk_texts)}    
-        textmenu = CorpusStats.labelTexts['textchoice'][self.ifacelang]
-        self.textchoice = Radiobar(self, textmenu, vals=range(len(textmenu)), side = tk.TOP, anchor = tk.NW,
+            self.kk_text_dict = {k:v for (k,v) in zip(self.names, self.kk_texts)}
+        if self.mscript:
+            textmenu = CorpusStats.labelTexts['textchoicems'][self.ifacelang]
+            # make all texts option still 10 even though there are fewer texts in manuscript spelling
+            optionnums = range(len(textmenu)-1)
+            optionnums.append(10)
+        else:
+            textmenu = CorpusStats.labelTexts['textchoice'][self.ifacelang]
+            optionnums = range(len(textmenu))
+            
+        self.textchoice = Radiobar(self, textmenu, vals=optionnums, side = tk.TOP, anchor = tk.NW,
                                    default = 2, justify=tk.LEFT,
                                    font=('Helvetica', 13+fontsizeadj, 'normal'))
         self.textchoice.pack(side=tk.LEFT, fill=tk.Y)
@@ -243,7 +269,10 @@ class CorpusStats(tk.Frame):
         self.switchlang.config(text=self.labelTexts['switchlang'][self.ifacelang])
         self.master.title(self.labelTexts['windowtitle'][self.ifacelang])
         self.mhead.config(text=self.labelTexts['mhead'][self.ifacelang])
-        newpicks = self.labelTexts['textchoice'][self.ifacelang]
+        if self.mscript:
+            newpicks = self.labelTexts['textchoicems'][self.ifacelang]
+        else:
+            newpicks = self.labelTexts['textchoice'][self.ifacelang]
         for p,r in zip(newpicks, self.textchoice.rads):
             r.config(text=p)
             
@@ -382,5 +411,5 @@ if __name__ == '__main__':
                         help="Start with interface in English (default is Cornish).")    
     args = parser.parse_args()
 
-    corpus = CorpusStats(netbook=args.netbook, english=args.english)
+    corpus = CorpusStats(netbook=args.netbook, english=args.english, mscript=args.manuscript)
     corpus.mainloop()    
