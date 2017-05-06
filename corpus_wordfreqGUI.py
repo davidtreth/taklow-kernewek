@@ -94,6 +94,8 @@ class CorpusStats(tk.Frame):
                                  'kw': "Kopi dhe'm Klyppbordh"},
                   'switchlang': {'en':'Kernewek',
                                  'kw': 'English'},
+                  'switchms':{'en':'Switch MS / KK',
+                             'kw':'Skwychya MS / KK'},
                   'windowtitle': {'en': 'Cornish Corpus Statistics',
                                   'kw': 'Korpus Kernewek'},
                   'NLTKerr':{'en': 'Python Natural Language Processing Toolkit (NLTK) not available.\nDownload from www.nltk.org if not on the system.',
@@ -153,6 +155,10 @@ class CorpusStats(tk.Frame):
         self.switchlang = tk.Button(self.textchoice, text=CorpusStats.labelTexts['switchlang'][self.ifacelang],
                                     font=('Helvetica', 14+fontsizeadj), command=self.changeifacelang)
         self.switchlang.pack(anchor=tk.SW, side=tk.LEFT, padx=10, pady=10)
+        self.switchms = tk.Button(self.textchoice, text=CorpusStats.labelTexts['switchms'][self.ifacelang],
+                                    font=('Helvetica', 14+fontsizeadj), command=self.switchms)
+        self.switchms.pack(anchor=tk.SW, side=tk.LEFT, padx=10, pady=10)
+        
 
         self.mhead2 = tk.Label(self, text=CorpusStats.labelTexts['mhead2'][self.ifacelang])
         self.mhead2.config(font=('Helvetica', 16+fontsizeadj*2, 'bold'))
@@ -291,13 +297,33 @@ class CorpusStats(tk.Frame):
         self.klerhefigs.config(text=self.labelTexts['klerhefigs'][self.ifacelang])
         self.klyppbordh.config(text=self.labelTexts['klyppbordh'][self.ifacelang])
         # reload texts to get new names
-        self.kk_texts, self.names = cornish_corpus.corpusKW(args.manuscript, outlang=self.ifacelang)
+        self.kk_texts, self.names = cornish_corpus.corpusKW(self.mscript, outlang=self.ifacelang)
         self.kk_text_dict = {k:v for (k,v) in zip(self.names, self.kk_texts)}
         # rerun self.printoutput to show results in new interface language
         self.printoutput()
 
+    def switchms(self):
+        self.mscript = not(self.mscript)
+        currstate = self.textchoice.state()
+        self.textchoice.destroyrads()
+        # reload texts to get new names
+        self.kk_texts, self.names = cornish_corpus.corpusKW(self.mscript, outlang=self.ifacelang)
+        self.kk_text_dict = {k:v for (k,v) in zip(self.names, self.kk_texts)}
+        if self.mscript:
+            textmenu = CorpusStats.labelTexts['textchoicems'][self.ifacelang]
+        else:
+            textmenu = CorpusStats.labelTexts['textchoice'][self.ifacelang]
+            
+        # make all texts option still 10 even though there are fewer texts in manuscript spelling
+        optionnums = range(len(textmenu)-1)
+        optionnums.append(10)
+        if currstate not in optionnums:
+            currstate = 2
+        self.textchoice.newrads(picks=textmenu, vals=optionnums,
+                                default=currstate)
+        # rerun self.printoutput to show results in manuscript / Kemmyn
+        self.printoutput()        
         
-
     def printoutput(self):
         """ show the output """
         if self.modechoice.state() == 0:

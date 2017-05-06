@@ -100,7 +100,7 @@ def basicReport(text, textname, topN=50, minL=4, printcmdline=True, outlang='kw'
     list of words and their frequencies.
     @type minL: C{int}
     """
-    outTexts = {'texttitle': {'en': 'Text', 'kw': 'Tekst:'},
+    outTexts = {'texttitle': {'en': 'Text', 'kw': 'Tekst'},
                 'nwords': {'en':'number of alphabetic words',
                            'kw':'niver geryow lytherennek'},
                 'ndiffwords': {'en':'number of different alphabetic words',
@@ -342,8 +342,12 @@ def MostFrequentWords(kk_texts_Texts, textnames, N=20, minL = 1, casesensit=Fals
                                                            t1=outTexts['mostfreq'][outlang],
                                                            t2=outTexts['are'][outlang],
                                                            n=N)
-        maxL = max(len(kv[0]) for kv in keyvaltupsort[:N])
-        maxF = keyvaltupsort[0][1]
+        if len(keyvaltupsort) > 0:
+            maxL = max(len(kv[0]) for kv in keyvaltupsort[:N])        
+            maxF = keyvaltupsort[0][1]
+        else:
+            maxL = N
+            maxF = 0
         for kv in keyvaltupsort[:N]:
             outputtext += "{word:<{m}} : {pcfreq:.3%} :   N = {freq:>{lg}}\n".format(word=kv[0],
                                                                                      m=maxL+2,

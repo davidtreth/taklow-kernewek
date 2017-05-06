@@ -69,6 +69,35 @@ class Radiobar(tk.Frame):
             self.rads.append(rad)
     def state(self):
         return self.var.get()
+    
+    def destroyrads(self):
+        for rad in self.rads:
+            rad.destroy()
+            
+    def newrads(self, picks=[], vals=[], side=tk.TOP, justify=tk.CENTER,
+                anchor=tk.W, font=('Helvetica', 13, 'normal'), default=False):
+        if len(vals) == 0:
+            # if vals is an empty list
+            # use strings in picks
+            # for values
+            self.var = tk.StringVar()
+            if default in picks:
+                self.var.set(default)
+            vals = picks
+        else:
+            # otherwise assume vals is
+            # a list of ints
+            self.var=tk.IntVar()
+            if default in vals:
+                self.var.set(default)
+        self.rads = []
+        for pick, v in zip(picks, vals):
+            rad = tk.Radiobutton(self, text=pick, value = v, justify=justify,
+                                 variable=self.var)
+            rad.config(font=font)
+            rad.pack(side=side, anchor=anchor, expand=tk.N)
+            self.rads.append(rad)
+        
 
         
 
