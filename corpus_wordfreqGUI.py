@@ -72,8 +72,10 @@ class CorpusStats(tk.Frame):
                                       'Passio Christ',
                                       'Resurrectio Domini',
                                       'Oll an Tekstow']},   
-                  'mhead':{'en': 'Text',
-                           'kw': 'Tekst'},
+                  'mhead':{False:{'en': 'Text (Kemmyn)',
+                                  'kw': 'Tekst (Kemmyn)'},
+                           True:{'en': 'Text (Manuscript)',
+                                 'kw': 'Tekst (Mammskrif)'}},
                   'mhead2':{'en': 'Options',
                             'kw': 'Dewis Gwrythyans'},
                   'msg': {'en': 'Enter the minimum number of letters\nfor word frequency list below:',
@@ -127,7 +129,7 @@ class CorpusStats(tk.Frame):
         
     def make_widgets(self):
         """ display GUI widgets """
-        self.mhead = tk.Label(self, text = CorpusStats.labelTexts['mhead'][self.ifacelang])
+        self.mhead = tk.Label(self, text = CorpusStats.labelTexts['mhead'][self.mscript][self.ifacelang])
         self.mhead.config(font=('Helvetica', 16+self.fontsizeadj, 'bold'))
         self.mhead.pack(side=tk.TOP, anchor=tk.NW)        
         c = self.checkNLTK()
@@ -279,7 +281,7 @@ class CorpusStats(tk.Frame):
         self.switchlang.config(text=self.labelTexts['switchlang'][self.ifacelang])
         self.switchms.config(text=self.labelTexts['switchms'][self.mscript][self.ifacelang])
         self.master.title(self.labelTexts['windowtitle'][self.ifacelang])
-        self.mhead.config(text=self.labelTexts['mhead'][self.ifacelang])
+        self.mhead.config(text=self.labelTexts['mhead'][self.mscript][self.ifacelang])
         if self.mscript:
             newpicks = self.labelTexts['textchoicems'][self.ifacelang]
         else:
@@ -307,6 +309,7 @@ class CorpusStats(tk.Frame):
 
     def switchms(self):
         self.mscript = not(self.mscript)
+        self.mhead.config(text=self.labelTexts['mhead'][self.mscript][self.ifacelang])
         currstate = self.textchoice.state()
         self.textchoice.destroyrads()
         self.switchlang.pack_forget()
