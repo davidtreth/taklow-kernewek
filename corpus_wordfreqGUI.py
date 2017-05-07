@@ -94,8 +94,10 @@ class CorpusStats(tk.Frame):
                                  'kw': "Kopi dhe'm Klyppbordh"},
                   'switchlang': {'en':'Kernewek',
                                  'kw': 'English'},
-                  'switchms':{'en':'Switch MS / KK',
-                             'kw':'Skwychya MS / KK'},
+                  'switchms':{False:{'en':'Switch to manuscript',
+                                     'kw':'Skwychya dhe Vammskrif'},
+                              True:{'en':'Switch to Kemmyn',
+                                    'kw':'Skwychya dhe Gemmyn'}},
                   'windowtitle': {'en': 'Cornish Corpus Statistics',
                                   'kw': 'Korpus Kernewek'},
                   'NLTKerr':{'en': 'Python Natural Language Processing Toolkit (NLTK) not available.\nDownload from www.nltk.org if not on the system.',
@@ -157,7 +159,7 @@ class CorpusStats(tk.Frame):
         self.switchlang = tk.Button(self.textchoice, text=CorpusStats.labelTexts['switchlang'][self.ifacelang],
                                     font=('Helvetica', 14+self.fontsizeadj), command=self.changeifacelang)
         self.switchlang.pack(anchor=tk.SW, side=tk.LEFT, padx=10, pady=10)
-        self.switchms = tk.Button(self.textchoice, text=CorpusStats.labelTexts['switchms'][self.ifacelang],
+        self.switchms = tk.Button(self.textchoice, text=CorpusStats.labelTexts['switchms'][self.mscript][self.ifacelang],
                                     font=('Helvetica', 14+self.fontsizeadj), command=self.switchms)
         self.switchms.pack(anchor=tk.SW, side=tk.LEFT, padx=10, pady=10)
         
@@ -275,7 +277,7 @@ class CorpusStats(tk.Frame):
         else:
             self.ifacelang = 'kw'
         self.switchlang.config(text=self.labelTexts['switchlang'][self.ifacelang])
-        self.switchms.config(text=self.labelTexts['switchms'][self.ifacelang])
+        self.switchms.config(text=self.labelTexts['switchms'][self.mscript][self.ifacelang])
         self.master.title(self.labelTexts['windowtitle'][self.ifacelang])
         self.mhead.config(text=self.labelTexts['mhead'][self.ifacelang])
         if self.mscript:
@@ -325,6 +327,7 @@ class CorpusStats(tk.Frame):
             currstate = 2
         self.textchoice.newrads(picks=textmenu, vals=optionnums,
                                 default=currstate)
+        self.switchms.config(text=self.labelTexts['switchms'][self.mscript][self.ifacelang])
         self.switchlang.pack(anchor=tk.SW, side=tk.LEFT, padx=10, pady=10)
         self.switchms.pack(anchor=tk.SW, side=tk.LEFT, padx=10, pady=10)
         # rerun self.printoutput to show results in manuscript / Kemmyn
