@@ -739,10 +739,7 @@ class Ger:
     def diskwedh(self):
         """ show output for each word """
         for l in self.longoutput():
-            try:
-                print(l)
-            except:
-                pass
+            print(l)
 
     def shortoutput(self):
         """ return short output for each word 
