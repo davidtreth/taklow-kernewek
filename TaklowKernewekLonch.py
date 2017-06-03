@@ -18,10 +18,10 @@ def runImmediate(mytools):
         # on Windows keep stdio console window up for 5 seconds
         for i in range(5): time.sleep(1); print(('\b' + '.'*10), end = ' ')
 
-def runLauncher(mytools):
+def runLauncher(mytools, wtitle='TaklowKernewek GUI'):
     # put up a simple launcher bar for later use
     root = tk.Tk()
-    root.title('TaklowKernewek GUI')
+    root.title(wtitle)
     row1 = tk.Frame(root)
     row2 = tk.Frame(root)
     for (name, commandLine) in mytools[:5]:
@@ -63,6 +63,12 @@ mytools_netbook = [
     #('Statistegow Korpus\n(linenn arghadow)', 'cornish_corpus.py'),
     ('Statistegow Korpus', 'corpus_wordfreqGUI.py --netbook'),
     ('Tekst --> Kows (dre espeak)', 'espeaktexttospeech/kows_kernewek_GUI.py')
+    ]
+mytools_cymraeg = [('Treiglo', 'treigloGUI.py'),
+                   ('Rhannu Sillafau', 'sylrannacyGUI.py')
+    ]
+mytools_cymraeg_netbook = [('Treiglo', 'treigloGUI.py'),
+                           ('Rhannu Sillafau', 'sylrannacyGUI.py --netbook')
     ]
 if __name__ == '__main__':
     prestart, toolbar = 1, 0

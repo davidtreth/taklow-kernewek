@@ -739,7 +739,10 @@ class Ger:
     def diskwedh(self):
         """ show output for each word """
         for l in self.longoutput():
-            print(l)
+            try:
+                print(l)
+            except:
+                pass
 
     def shortoutput(self):
         """ return short output for each word 
@@ -776,7 +779,7 @@ class Syllabenn(object):
         self.final = False
         self.graphGer = ''
         self.sylparts = []
-        # print(syl)
+        #print(syl)
         # slice syl list to get the syllable parts
         # i.e. consonant clusters + vowels
         if len(syl) > 0:
