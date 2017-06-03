@@ -55,7 +55,7 @@ mytools_netbook = [
     ('Niverow', 'niverowGUI.py'),
     ('Apposyans Awrgrym', 'apposyans_awrgrymGUI.py'),    
     ('Mutatya', 'mutatyaGUI.py'),
-    ('Inflektya', 'inflektyaGUI.py'),
+    ('Inflektya', 'inflektyaGUI.py --netbook'),
     ('Termyn ha Dydhyas', 'termynGUI.py'),
     ('Ranna Syllabennow', 'sylrannakwGUI.py --netbook'),
     ('Treuslytherenna KK->FSS', 'treuslytherennaGUI.py --netbook'),

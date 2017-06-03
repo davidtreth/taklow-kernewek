@@ -1,6 +1,7 @@
 # coding=utf-8
 from __future__ import print_function
 import sys
+import argparse
 if sys.version_info[0] < 3:
     import Tkinter as tk
 else:
@@ -31,6 +32,14 @@ suffixDict = {'Heb raghenwyn a syw':0, 'Raghenwyn a syw':1,
               'Raghenwyn a syw gans poeslev':2}
 
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-n", "--netbook", action="store_true",
+                        help="Netbook mode - for smaller screens.")
+    args = parser.parse_args()
+    if args.netbook:
+        fontsizeadj = -2
+    else:
+        fontsizeadj = 0
     
     root = tk.Tk()
     root.title('Inflektya Verbow Kernewek')
@@ -47,6 +56,7 @@ if __name__ == '__main__':
                               'Anperfydh Usadow', 'A-lemmyn Hir Indef',
                               'Anperfydh Hir', 'A-lemmyn Hir Def',
                               'A-lemmyn Hir Aff', 'Perfydh'],
+                       font=('Helvetica', 13+fontsizeadj, 'normal'),
                        side=tk.TOP, anchor=tk.NW,default='A-lemmyn')
     options.pack(side=tk.LEFT, fill=tk.Y)
     options.config(relief=tk.RIDGE, bd=2)
@@ -56,6 +66,7 @@ if __name__ == '__main__':
     rhead2.pack(side=tk.TOP, anchor=tk.NW)
     options2 = Radiobar(root, ['My', 'Ty', 'Ev', 'Hi', 'Ni',
                                'Hwi', 'I', 'Anpersonek', 'Pub Person'],
+                        font=('Helvetica', 13+fontsizeadj, 'normal'),
                         side=tk.TOP, anchor=tk.NW, default='My')
     options2.pack(side=tk.LEFT, fill=tk.Y)
     options2.config(relief=tk.RIDGE, bd=2)
@@ -65,6 +76,7 @@ if __name__ == '__main__':
     rhead3.pack(side=tk.TOP, anchor=tk.NW)
     options3 = Radiobar(root, ['Heb raghenwyn a syw', 'Raghenwyn a syw',
                                'Raghenwyn a syw gans poeslev'], side=tk.TOP,
+                        font=('Helvetica', 13+fontsizeadj, 'normal'),
                         anchor=tk.NW, default = 'Heb raghenwyn a syw')
     
     options3.config(relief=tk.RIDGE, bd=2)
@@ -72,7 +84,7 @@ if __name__ == '__main__':
     rhead4.config(font=('Helvetica', 12, 'bold'))
     rhead4.pack(side=tk.TOP, anchor=tk.NW, pady=5)
     options4 = CheckButtonBar(options3, ['Ynworrans + eskorrans FSS'],
-                              side=tk.BOTTOM,anchor=tk.NW, font=('Helvetica', 13))
+                              side=tk.BOTTOM,anchor=tk.NW, font=('Helvetica', 13+fontsizeadj))
     options3.pack(side=tk.LEFT, fill=tk.Y)
     options4.pack(side=tk.LEFT, fill=tk.BOTH, expand=tk.Y)
     #options4.config(relief = tk.RIDGE, bd = 2)
@@ -101,7 +113,7 @@ if __name__ == '__main__':
         inputtext = inputtext.lower()
         print(("Input: {i}".format(i=inputtext)))
         output = ''
-        msg3.text.config(fg = 'dark red', bg = 'light yellow', font=('Courier', 16, 'bold'), state=tk.NORMAL)
+        msg3.text.config(fg = 'dark red', bg = 'light yellow', font=('Courier', 16+fontsizeadj, 'bold'), state=tk.NORMAL)
         if inputtext:
             if options2.state() == 'Pub Person':
                 if options.state() == 'ppl':
@@ -148,7 +160,7 @@ if __name__ == '__main__':
         msg3.text.config(state=tk.DISABLED)
     def clearboxes():
         ent.clear()
-        msg3.text.config(fg = 'dark red', bg='light yellow',font=('Courier', 16, 'bold'),state=tk.NORMAL)
+        msg3.text.config(fg = 'dark red', bg='light yellow',font=('Courier', 16+fontsizeadj, 'bold'),state=tk.NORMAL)
         msg3.clear()
         msg3.text.config(state=tk.DISABLED)
         
@@ -157,7 +169,7 @@ if __name__ == '__main__':
         root.clipboard_append(msg3.gettext())
         
     msg = tk.Label(root, text="Gorrewgh verb kernewek a-woeles mar pleg:")
-    msg.config(font=('Helvetica', 16, 'bold'))
+    msg.config(font=('Helvetica', 16+fontsizeadj, 'bold'))
     msg.pack()
     
     # text entry bar for input
@@ -166,16 +178,16 @@ if __name__ == '__main__':
     
     # output
     msg3 = ScrolledText(root)
-    msg3.text.config(fg = 'dark red', bg='light yellow', width=40, height=11,font=('Courier', 16, 'bold'), state=tk.DISABLED)
+    msg3.text.config(fg = 'dark red', bg='light yellow', width=40, height=11,font=('Courier', 16+fontsizeadj, 'bold'), state=tk.DISABLED)
     msg3.pack()
 
     # buttons
     Kwitya(root).pack(side=tk.RIGHT)
-    tk.Button(root, text = 'Inflektya Verb', font=('Helvetica',14),
+    tk.Button(root, text = 'Inflektya Verb', font=('Helvetica',14+fontsizeadj),
               command = printinflektya).pack(side=tk.RIGHT)
-    tk.Button(root, text = 'Klerhe', font=('Helvetica', 14),
+    tk.Button(root, text = 'Klerhe', font=('Helvetica', 14+fontsizeadj),
            command = clearboxes).pack(side=tk.LEFT)
-    tk.Button(root, text = 'Kopi dhe\'n Klyppbordh', font=('Helvetica', 14),
+    tk.Button(root, text = 'Kopi dhe\'n Klyppbordh', font=('Helvetica', 14+fontsizeadj),
               command = copyclipbd).pack(side=tk.LEFT)
     root.mainloop()
 

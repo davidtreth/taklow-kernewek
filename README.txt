@@ -68,6 +68,16 @@ termyn.py: A set of functions for telling the time and date in Cornish. This mak
 wordnettest.py: a program that uses the NLTK Wordnet corpus to find related words from an input English sentence, in order to attempt to find synonynms in the bilingual corpus.
 For example 'hill' has a number of synsets, one of which is a hyponym of the Synset('natural_elevation.n.01'): a raised or elevated geological formation. The hyponyms of this will include words such as mountain.
 However it is also a baseball term Synset('mound.n.01'): (baseball) the slight elevation on which the pitcher stands and the hypernym Synset('baseball_equipment.n.01'): equipment used in playing baseball will match to a wide variety of baseball terms.
+As it is quite experimental and doesn't have a GUI frontend (yet), it is not included in the launch bar of TaklowKernewekLonchyer.pyw, so should be separately launched.
+
+apposyans_awrgrym.py: ask the user 20 mental arithmetic questions with numbers as Cornish words.
+
+Graphical User Interface frontends
+==================================
+
+TaklowKernewekLonchyer.pyw: A launcher bar which launches the other Python scripts. It may be necessary to copy the taklowGUI.py script or create a symbolic link in the espeaktexttospeech directory since otherwise its import fails when launched in this way. The launcher bar uses TaklowKernewekLonch.py which is adaptation of PyGadgets.py from the Programming Python 3rd edition examples. This uses the further programs launchmodes.py and Launcher.py taken from the Programming Python 3rd edition examples.
+
+TaklowKernewekLonchyer_netbook.pyw: This is a version of the launcher bar, which sets some of the GUI window sizes more suited to smaller screen sizes.
 
 kovtreylyansGUI.py: A Tkinter GUI frontend for kovtreylyans.py.
 
@@ -80,7 +90,7 @@ taklowGUI.py: defines some Tkinter GUI widgets imported by other GUI modules.
 
 mutatyaGUI.py: A Tkinter GUI frontend for mutatya.py. Now includes reverse mutation, and option for 'traditional' graphs as used in SWF/T.
 
-treigloGUI.py: A Tkinter GUI for the Welsh mutation functions of mutatya.py. Not included in the launch bar of TaklowKernewekLonchyer.pyw, so should be separately launched.
+treigloGUI.py: A Tkinter GUI for the Welsh mutation functions of mutatya.py. Not included in the launch bar of TaklowKernewekLonchyer.pyw, so should be separately launched. There will in future be a separate launch bar for Welsh language tools.
 
 sylrannaGUI.py: A Tkinter GUI frontend for syllabenn_ranna_kw.py
 
@@ -88,7 +98,7 @@ treuslytherennaGUI.py: A Tkinter GUI frontend for treuslytherenna.py
 
 inflektyaGUI.py: A Tkinter GUI frontend for inflektya.py
 
-termynGUI.py: A Tkinter GUI frontend for termyn.py, allowing display of the date, and time either approximate to quarter hours, or to the minute, or a greeting appropriate to teh time of day.
+termynGUI.py: A Tkinter GUI frontend for termyn.py, allowing display of the date, and time either approximate to quarter hours, or to the minute, or a greeting appropriate to the time of day.
 
 espeaktexttospeech/kows_kernewek_GUI.py: A Tkinter GUI for Cornish text to speech.
 
@@ -103,9 +113,10 @@ Update 22/10/16: In the GUI there is now an option to use, or not use the digrap
 
 It is also possible to draw a lexical dispersion plot, showing where in a text particular words appear graphically, as a percentage of the whole text.
 
-TaklowKernewekLonchyer.pyw: A launcher bar which launches the other Python scripts. It may be necessary to copy the taklowGUI.py script or create a symbolic link in the espeaktexttospeech directory since otherwise its import fails when launched in this way. The launcher bar uses TaklowKernewekLonch.py which is adaptation of PyGadgets.py from the Programming Python 3rd edition examples. This uses the further programs launchmodes.py and Launcher.py taken from the Programming Python 3rd edition examples.
+As of May 2017, there is now an option to choose the interface language of the GUI (Cornish or English) and switch between using Kernewek Kemmyn and manuscript spellings (there is a different set of texts available in each).
 
-TaklowKernewekLonchyer_netbook.pyw: This is a version of the launcher bar, which sets some of the GUI window sizes more suited to smaller screen sizes.
+apposyans_awrgrymGUI.py: A graphical user interface mental arithmatic quiz.
 
-
+Allows choice between easy (only numbers 1 to 10, and answers are always >= 0), medium (input numbers up to 20, and negative answers allowed), hard (input numbers up to 40).
+It can also be specified whether to have only addition, or subtraction, or either, randomly chosen.
 

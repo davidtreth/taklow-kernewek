@@ -61,7 +61,8 @@ def printsylranna():
 def clearboxes():
     ent.clear()
     msg3.text.config(fg = 'dark red', bg='light yellow',
-                     font=('Helvetica', 16, 'bold'),state=tk.NORMAL)
+                     font=('Helvetica', 16+fontsizeadj, 'bold'),
+                     state=tk.NORMAL)
     msg3.clear()
     msg3.text.config(state=tk.DISABLED)
     
@@ -89,13 +90,15 @@ if __name__ == '__main__':
     args = parser.parse_args()
     if args.netbook:
         heightadjust = -4
+        fontsizeadj = -1
     else:
         heightadjust = 0
+        fontsizeadj = 0
 
     root = tk.Tk()
     root.title('Syllabenn Ranna Kernewek')
     mhead = tk.Label(root, text = "Dewisyow")
-    mhead.config(font=('Helvetica', 16, 'bold'))
+    mhead.config(font=('Helvetica', 16+fontsizeadj, 'bold'))
     mhead.pack(side=tk.TOP, anchor=tk.NW)
 
     options = Radiobar(root, ['Mode Hir', 'Mode Berr', 'Mode Linenn'],
@@ -116,7 +119,7 @@ if __name__ == '__main__':
         
         
     msg = tk.Label(root, text="Gorrewgh tekst kernewek a-woeles mar pleg:")
-    msg.config(font=('Helvetica', 16, 'bold'))
+    msg.config(font=('Helvetica', 16+fontsizeadj, 'bold'))
     msg.pack()
     
     # text entry bar for input
@@ -127,15 +130,15 @@ if __name__ == '__main__':
     # output
     msg3 = ScrolledText(root)
     msg3.text.config(fg = 'dark red', bg='light yellow', width=60, height=11+heightadjust,
-                     font=('Helvetica', 16, 'bold'), state=tk.DISABLED)
+                     font=('Helvetica', 16+fontsizeadj, 'bold'), state=tk.DISABLED)
     msg3.pack()
     # buttons
     Kwitya(root).pack(side=tk.RIGHT)
-    disk = tk.Button(root, text = 'Diskwedh Syllabennow', font=('Helvetica',14),
+    disk = tk.Button(root, text = 'Diskwedh Syllabennow', font=('Helvetica',14+fontsizeadj),
                      command = printsylranna)
-    tk.Button(root, text = 'Klerhe', font=('Helvetica', 14),
+    tk.Button(root, text = 'Klerhe', font=('Helvetica', 14+fontsizeadj),
            command = clearboxes).pack(side=tk.LEFT)
-    tk.Button(root, text = 'Kopi dhe\'n Klyppbordh', font=('Helvetica', 14),
+    tk.Button(root, text = 'Kopi dhe\'n Klyppbordh', font=('Helvetica', 14+fontsizeadj),
               command = copyclipbd).pack(side=tk.LEFT)
     # check NLTK is available
     c = checkNLTK()

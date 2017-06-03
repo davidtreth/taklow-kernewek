@@ -18,7 +18,7 @@ def printtreus():
     print("Input: {i}".format(i=inputtext))
     output = ''
     msg3.text.config(fg = 'dark red', bg = 'light yellow',
-                     font=('Helvetica', 16, 'bold'), state=tk.NORMAL)
+                     font=('Helvetica', 16+fontsizeadj, 'bold'), state=tk.NORMAL)
     if inputtext:
         inputtext = preprocess2ASCII(inputtext)
         if options2.state() == 'Rannans war-rag':
@@ -27,10 +27,10 @@ def printtreus():
             
         if options.state() == 'Mode Hir':
             output = tr.text_KK2FSS(inputtext,fwd,longform=True)
-            msg3.text.config(font=('Helvetica', 14, 'normal'),
+            msg3.text.config(font=('Helvetica', 14+fontsizeadj, 'normal'),
                              width=66, height=12+heightadjust)
         elif options.state() == 'Mode Linenn' or options.state() == 'Mode Berr':
-            msg3.text.config(font=('Helvetica', 16, 'bold'),
+            msg3.text.config(font=('Helvetica', 16+fontsizeadj, 'bold'),
                              width=60, height=11+heightadjust)
             lines = inputtext.split('\n')
             for l in lines:
@@ -46,7 +46,7 @@ def printtreus():
 def clearboxes():
     ent.clear()
     msg3.text.config(fg = 'dark red', bg='light yellow',
-                     font=('Helvetica', 16, 'bold'), state=tk.NORMAL)
+                     font=('Helvetica', 16+fontsizeadj, 'bold'), state=tk.NORMAL)
     msg3.clear()
     msg3.text.config(state=tk.DISABLED)
 
@@ -61,12 +61,14 @@ if __name__ == '__main__':
     args = parser.parse_args()
     if args.netbook:
         heightadjust = -4
+        fontsizeadj = -1
     else:
         heightadjust = 0
+        fontsizeadj = 0
     root = tk.Tk()
     root.title('Treuslytherenna Kernewek Kemmyn --> Furv Skrifys Savonek')
     mhead = tk.Label(root, text = "Dewisyow")
-    mhead.config(font=('Helvetica', 16, 'bold'))
+    mhead.config(font=('Helvetica', 16+fontsizeadj, 'bold'))
     mhead.pack(side=tk.TOP, anchor=tk.NW)
 
     options = Radiobar(root, ['Mode Hir', 'Mode Berr', 'Mode Linenn'], side=tk.TOP, anchor=tk.NW,default='Mode Linenn')

@@ -455,7 +455,7 @@ def compareSamples(kk_texts_Texts,names, samples, casesensit=False, outlang='kw'
         }
     outputtext = ""
     cfd = getCFD(kk_texts_Texts, casesensit)
-    colors = "rgbcmkyw"
+    colors = "rgbcmky"
     freqs_lists = []
     for t,n in zip(kk_texts_Texts, names):
         f = cfd[t.name]

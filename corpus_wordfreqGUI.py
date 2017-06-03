@@ -116,10 +116,12 @@ class CorpusStats(tk.Frame):
         self.netbook = netbook
         if self.netbook:
             self.heightadjust = -8
-            self.fontsizeadj = -2
+            self.fontsizeadj = -4
+            self.padadj = -5
         else:
             self.heightadjust = 0
             self.fontsizeadj = 0
+            self.padadj = 0
 
         self.comparelist = []
         self.defaultsamples = ['dhe', 'gans', 'war', 'dhymm', 'dhymmo', 'genev', 'warnav', 'rag', 'mes']
@@ -176,21 +178,21 @@ class CorpusStats(tk.Frame):
                                    side=tk.TOP, anchor=tk.NW, justify=tk.LEFT, default = 0,
                                    font = ('Helvetica',13+self.fontsizeadj, 'normal'))
         self.msg1 = tk.Label(self.modechoice, text=CorpusStats.labelTexts['msg'][self.ifacelang],
-                             anchor=tk.W, justify=tk.LEFT, pady=10)
+                             anchor=tk.W, justify=tk.LEFT, pady=10+self.padadj)
         self.msg1.config(font=('Helvetica', 12+self.fontsizeadj))
         self.msg1.pack(anchor=tk.W)
         self.ent = Entrybar(self.modechoice,
                             anchor=tk.NW)
         self.ent.pack(anchor=tk.W, padx=5)        
         self.msg2 = tk.Label(self.modechoice, text=CorpusStats.labelTexts['msg2'][self.ifacelang],
-                             anchor=tk.W, justify=tk.LEFT, pady=10)
+                             anchor=tk.W, justify=tk.LEFT, pady=10+self.padadj)
         self.msg2.config(font=('Helvetica', 12+self.fontsizeadj))
         self.msg2.pack(anchor=tk.W)
         self.ent2 = Entrybar(self.modechoice,
                              anchor=tk.NW)
         self.ent2.pack(anchor=tk.W, padx=5)        
         self.msg3 = tk.Label(self.modechoice, text=CorpusStats.labelTexts['msg3'][self.ifacelang],
-                             anchor=tk.W, justify=tk.LEFT, pady=10)
+                             anchor=tk.W, justify=tk.LEFT, pady=10+self.padadj)
         self.msg3.config(font=('Helvetica', 12+self.fontsizeadj))
         self.msg3.pack(anchor=tk.W, padx=5)        
         self.ent3 = Entrybar(self.modechoice,
@@ -208,7 +210,7 @@ class CorpusStats(tk.Frame):
         self.modechoice.config(relief=tk.RIDGE, bd=2)
         self.outbox = ScrolledText(self)
         self.outbox.text.config(bg = 'light yellow', fg = 'dark red', width=60, height=20+self.heightadjust,
-                                font=('Courier', 14, 'bold'))
+                                font=('Courier', 14+self.fontsizeadj, 'bold'))
         self.outbox.pack()
         # buttons
         self.Kwitya = Kwitya2(self)
@@ -217,10 +219,10 @@ class CorpusStats(tk.Frame):
                                  font=('Helvetica',14),
                                  command = self.printoutput)
         self.klerhefigs = tk.Button(self, text = CorpusStats.labelTexts['klerhefigs'][self.ifacelang],
-                                    font=('Helvetica',14),
+                                    font=('Helvetica',14+self.fontsizeadj),
                                     command = self.clearfigures)
         self.klyppbordh = tk.Button(self, text = CorpusStats.labelTexts['klyppbordh'][self.ifacelang],
-                                    font=('Helvetica', 14),
+                                    font=('Helvetica', 14+self.fontsizeadj),
                                     command = self.copyclipbd)
     
         if c == 0:
@@ -395,7 +397,7 @@ class CorpusStats(tk.Frame):
             if len(comparelist) == 0:
                 comparelist = self.defaultsamples           
             self.outbox.text.config(bg = 'light yellow', fg = 'dark red',
-                                    font=('Courier', 12, 'normal'))
+                                    font=('Courier', 12+self.fontsizeadj, 'normal'))
             if self.textchoice.state() == 10: 
                 self.outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.compareSamples(
                     self.kk_texts, self.names, comparelist,
@@ -410,7 +412,7 @@ class CorpusStats(tk.Frame):
             if len(comparelist) == 0:
                 comparelist = self.defaultsamples
             self.outbox.text.config(bg = 'light yellow', fg = 'dark red',
-                                    font=('Courier', 12, 'normal'))
+                                    font=('Courier', 12+self.fontsizeadj, 'normal'))
             if self.textchoice.state() == 10:
                 self.outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.compareSamplesLinear(
                     self.kk_texts, self.names, comparelist, outlang=self.ifacelang))
@@ -424,7 +426,7 @@ class CorpusStats(tk.Frame):
             if len(comparelist) == 0:
                 comparelist = ['dhe', 'gans']
             self.outbox.text.config(bg = 'light yellow', fg = 'dark red',
-                                    font=('Courier', 12, 'normal'))
+                                    font=('Courier', 12+self.fontsizeadj, 'normal'))
             if self.textchoice.state() == 10:
                 self.outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.concordances(
                     self.kk_texts, self.names, comparelist, 60, 25, outlang=self.ifacelang))
