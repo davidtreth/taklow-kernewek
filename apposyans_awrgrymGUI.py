@@ -33,20 +33,28 @@ class AppAwrgrym(tk.Frame):
         self.mhead.config(font=('Helvetica', 16, 'bold'), padx=5, pady=5)
         self.mhead.pack(side=tk.TOP, anchor=tk.NW)
         # choose difficulty level        
-        self.options2 = Radiobar(self, ['Es', 'Kres', 'Kales'],
-                                vals = [1, 2, 3],
+        self.options2 = Radiobar(self, ['Es', 'Kres', 'Kales', 'Pur Gales'],
+                                vals = [1, 2, 3, 4],
                                 side=tk.TOP,
                                 justify=tk.LEFT, anchor=tk.NW,
                                 default=1)
         self.options2.pack(side=tk.LEFT, fill=tk.Y)
         self.options2.config(relief=tk.RIDGE, bd=2, padx=5)
+
+
         # choose whether to have addition, subtraction or either at random
-        self.options = Radiobar(self, ['Keworra po marnas', 'Keworra', 'Marnas'],
+        self.options = Radiobar(self.options2, ['Keworra po marnas', 'Keworra', 'Marnas'],
                                 side=tk.TOP,
                                 justify=tk.LEFT, anchor=tk.NW,
                                 default='Keworra po marnas')
         self.options.pack(side=tk.LEFT, fill=tk.Y)
-        self.options.config(relief=tk.RIDGE, bd=2, padx=5)
+        #self.options.config(relief=tk.RIDGE, bd=2, padx=0)
+        self.options.config(padx=0, pady=10)
+
+        self.kalettermsg = tk.Label(self.options, text="Gwask 'Dalleth'\nwosa chanjya\nan nivel kaletter\nrag dastalleth\nan apposyans.")
+        self.kalettermsg.config(font=('Helvetica', 11), padx=5, pady=5)
+        self.kalettermsg.pack(side=tk.TOP, fill=tk.Y)
+        
         
         self.msg = tk.Label(self, text="Govynn:")
         self.msg.config(font=('Helvetica', 16, 'bold'), padx=10, pady=10)
@@ -92,7 +100,7 @@ class AppAwrgrym(tk.Frame):
         # easy allowed only numbers up to 10
         # and supresses negative answers to subtractions
         # medium up to 20, and hard up to 40
-        maxNdict = {1: 10, 2: 20, 3:40}
+        maxNdict = {1: 10, 2: 20, 3:40, 4:100}
         return maxNdict[self.options2.state()]
         
     def choosemode(self):        
@@ -115,11 +123,11 @@ class AppAwrgrym(tk.Frame):
         try:
             g = int(g)
             if g == kewar:
-                return True, "Ewn os"
+                return True, "Ty a ros {}\nEwn os".format(g)
             else:
-                return False, "Kamm os"
+                return False, "Ty a ros {}\nKamm os".format(g)
         except:
-            return False, "Nag yw {a} niver".format(a=g)
+            return False, "Nag yw {} niver".format(g)
 
     def keworra(self):
         """ ask an addition question """
@@ -132,8 +140,13 @@ class AppAwrgrym(tk.Frame):
         # store sum and answer as text and figures
         self.gorthyptekst = "{a} + {b} = {c}".format(a=niverow.numberkw(x1), b=niverow.numberkw(x2), c=niverow.numberkw(keworrans))
         self.gorthypbys = "{a} + {b} = {c}".format(a=x1, b=x2, c=keworrans)
-        gov = "Pyth yw {a} ha {b}?".format(a=niverow.numberkw(x1),
-                                           b=niverow.numberkw(x2))
+        if self.options2.state() < 4:
+            gov = "Pyth yw {a} ha {b}?".format(a=niverow.numberkw(x1),
+                                               b=niverow.numberkw(x2))
+        else:
+            gov = "Pyth yw {a} + {b}?".format(a=niverow.numberkw(x1),
+                                               b=niverow.numberkw(x2))
+            
         gov = gov.replace("ha u","hag u")
         gov = gov.replace("ha e","hag e")
         gov = gov.replace("ha o","hag o")
@@ -161,8 +174,14 @@ class AppAwrgrym(tk.Frame):
                                                      c=niverow.numberkw_float(marnasyans))
         self.gorthypbys = "{a} - {b} = {c}".format(a=x1, b=x2, c=marnasyans)
         # display the question
-        self.diskwedhgovynn("Pyth yw {a} marnas {b}?".format(a=niverow.numberkw(x1),
-                                                          b=niverow.numberkw(x2)))
+        if self.options2.state() < 4:
+            gov = "Pyth yw {a} marnas {b}?".format(a=niverow.numberkw(x1),
+                                                   b=niverow.numberkw(x2))
+        else:
+            gov = "Pyth yw {a} - {b}?".format(a=niverow.numberkw(x1),
+                                                   b=niverow.numberkw(x2))
+        
+        self.diskwedhgovynn(gov)
         return marnasyans
     
     def govynn1(self):
@@ -200,10 +219,10 @@ class AppAwrgrym(tk.Frame):
                 # if answer was correct
                 t = time.time() - self.starttime
                 # increment total points by at least 1 point
-                # and up to an extra 10 points for speed
-                self.poyntys += max([10-t, 0]) + 1
+                # and up to an extra 1 point for speed
+                self.poyntys += max([(10.0-t)/10.0, 0]) + 1
                 self.niverewn += 1
-                tekst = "{k}\n{t:.1f}s, {e}/{g}, sommenn poyntys = {p:.1f}".format(k=kewarder[1],
+                tekst = "{k}\n{t:.1f}s, {e}/{g}, sommenn poyntys = {p:.2f}".format(k=kewarder[1],
                                                                                    t=t,
                                                                                    p=self.poyntys,
                                                                                    e=self.niverewn,
@@ -212,7 +231,7 @@ class AppAwrgrym(tk.Frame):
                 fcolour='dark green'
             else:
                 # if the answer was wrong
-                tekst = "{k}\n{t}  {b}\n{e}/{g}, sommenn poyntys = {p:.1f}".format(k=kewarder[1],
+                tekst = "{k}\n{t}  {b}\n{e}/{g}, sommenn poyntys = {p:.2f}".format(k=kewarder[1],
                                                                          t=self.gorthyptekst,
                                                                          b=self.gorthypbys,
                                                                          p=self.poyntys,
@@ -234,7 +253,7 @@ class AppAwrgrym(tk.Frame):
 
     def gorfenna(self):
         """ give report of user's number correct, and score """
-        endmsg = "Ty a wrug {e} kewar a {N}. Dha skor yw {n:.1f} a boyntys".format(e = self.niverewn,
+        endmsg = "Ty a wrug {e} kewar a {N}. Dha skor yw {n:.2f} a boyntys".format(e = self.niverewn,
                                                                                  N = self.Ngovynn,
                                                                                  n = self.poyntys)
         self.msg3.config(fg = 'blue', bg = 'light yellow', font=('Helvetica', 18, 'bold'), text=endmsg)
