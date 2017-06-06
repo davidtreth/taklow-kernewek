@@ -1,3 +1,4 @@
+# coding=utf-8
 import inflektya
 import treuslytherenna as tr
 import datainflektya_swf as dtinf_swf

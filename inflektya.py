@@ -1,3 +1,4 @@
+# coding=utf-8
 # David Trethewey
 # vershyon 14-05-2016
 """

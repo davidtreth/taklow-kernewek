@@ -1,3 +1,4 @@
+# coding=utf-8
 # from Programming Python 3rd edition Mark Lutz
 ###############################################################
 # launch Python programs with reusable launcher scheme classes;

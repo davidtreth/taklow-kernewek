@@ -1,3 +1,4 @@
+# coding=utf-8
 # base module for GUI
 import sys
 if sys.version_info[0] < 3:

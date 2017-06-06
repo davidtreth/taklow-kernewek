@@ -1,3 +1,4 @@
+# coding=utf-8
 from __future__ import print_function
 import syllabenn_ranna_kw
 import datageryow

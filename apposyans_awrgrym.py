@@ -1,3 +1,4 @@
+# coding=utf-8
 import niverow
 import random
 import sys

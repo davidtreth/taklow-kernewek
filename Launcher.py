@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# coding=utf-8
 """
 ==========================================================================
 Tools to find files, and run Python demos even if your environment has

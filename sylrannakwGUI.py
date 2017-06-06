@@ -1,3 +1,4 @@
+# coding=utf-8
 from __future__ import print_function
 import sys, argparse
 if sys.version_info[0] < 3:

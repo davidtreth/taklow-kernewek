@@ -1,3 +1,4 @@
+# coding=utf-8
 # based on PyGadgets.py from Programming Python 3rd edition examples
 from __future__ import print_function
 import sys, time
