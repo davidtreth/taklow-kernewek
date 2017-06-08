@@ -250,12 +250,25 @@ class AppAwrgrym(tk.Frame):
                 else:
                     # if required number of questions have been asked                
                     self.gorfenna()
-
+                    
+    def bonuspoyntys(self, bonus=5):
+        """ points bonus for getting all correct """
+        self.poyntys = self.poyntys + bonus
+                     
+        
     def gorfenna(self):
         """ give report of user's number correct, and score """
-        endmsg = "Ty a wrug {e} kewar a {N}. Dha skor yw {n:.2f} a boyntys".format(e = self.niverewn,
-                                                                                 N = self.Ngovynn,
-                                                                                 n = self.poyntys)
+        if self.niverewn == self.Ngovynn:
+            self.bonuspoyntys()
+            bonusmsg  = "\nKeslowena!\nTy a worthybis pub govynn yn ewn.\nBonus a bymp poynt yw genes!\n"
+        elif self.niverewn == 0:
+            bonusmsg = "\nTruan!\nTy a worthybis pub govynn yn kamm!\nMartesen kath a gerdhas a-dro dha vysowek!\n"
+        else:
+            bonusmsg = ""
+        endmsg = "Ty a wrug {e} kewar a {N}. {b}Dha skor yw {n:.2f} a boyntys".format(e = self.niverewn,
+                                                                                      N = self.Ngovynn,
+                                                                                      b = bonusmsg,
+                                                                                      n = self.poyntys)
         self.msg3.config(fg = 'blue', bg = 'light yellow', font=('Helvetica', 18, 'bold'), text=endmsg)
         
     def dalleth(self):
