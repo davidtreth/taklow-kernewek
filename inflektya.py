@@ -1,6 +1,6 @@
 # coding=utf-8
 # David Trethewey
-# vershyon 14-05-2016
+#
 """
 An module ma a wra inflektya verbow Kernewek
 This module inflects Cornish verbs
@@ -13,6 +13,7 @@ import datainflektya as dtinf
 def make_tense_dict(list_tenses, past_pl="NULL"):
     """
     y telledh bos list_tenses rol taklennow RannowVerbAnreyth
+    an gwreythres ma a dhrehevel a-ji dhe erlyver a erlyvrow ha'y dhaskorr
     list_tenses should be a list of RannowVerbAnreyth objects (parts of irregular verbs)
     assembles these into a dictionary of dictionaries and returns it
     """
@@ -24,7 +25,8 @@ def make_tense_dict(list_tenses, past_pl="NULL"):
     return outdict
 
 def lastvowel(verbstr):
-    """ return the last vowel of a string """
+    """ daskorr an diwettha bogalenn a gordenn
+        return the last vowel of a string """
     if verbstr[-1] in vowels:
         finalvowel = verbstr[-1]
         pos = len(verbstr)-1
@@ -33,31 +35,42 @@ def lastvowel(verbstr):
         return lastvowel(verbstr[:-1])
 
 def lastconsonant(verbstr):
-    """ kavoes an diwettha kessonenn
-    returns last consonant cluster for hardening/doubling in subjunctive """
+    """ kavoes an diwettha kessonenn po bagas anedha rag kalesheans yn islavarek
+    returns last consonant (cluster) for hardening/doubling in subjunctive """
     consonants = re.split(r'[aeiouy]', verbstr)
     lastcon = consonants[-1]
     if lastcon == '':
         lastcon = consonants[-2]
-    # lenlastconstclust = len(lastcon)
-    # pos = len(verbstr)-lenlastconstclust
-    # return lastcon, pos, lenlastconstclust
     return lastcon
 
 def inflektya_reyth(verb, stem, person, tense, suffix_pro):
-    """ inflect a regular verb
-    verb is the verbal noun
-    stem is the stem
-    person is an integer 0-7
-    tense is here an integer 0-7
-    suffix_pro is a flag to determine whether there are
-    no suffixed pronouns, standard ones, or emphatic ones """
+    """ inflektya verb reyth
+        verb yw hanow verbek
+        stem yw an arrenn
+        person yw niver 0-7
+        tense yw niver 0-7
+        suffix_pro yw skwych dhe dhetermya mar nyns eus raghenwyn stegys,
+        yma raghenwyn stegys po raghenwyn poeslevys stegys
+        
+        inflect a regular verb
+        verb is the verbal noun
+        stem is the stem
+        person is an integer 0-7
+        tense is here an integer 0-7
+        suffix_pro is a flag to determine whether there are
+        no suffixed pronouns, standard ones, or emphatic ones """
     if tense < 8:
-        # should always be an integer 0-7
-        # check whether should use the endings with i/y vowel
+        # Y telledh bos 'tense' integer 0-7
+        # chekkya omma mars yw res an pennow gans bogalenn i/y
         # verbow a worfenn gans -el, -es, -he, -i
         # ha verbow in rol verbs_i_3sp
-        # a'n jeves 3s. tremenys gans -is yn le -as
+        # a'n jeves 3s. tremenys gans -is yn le -as        #
+        #
+        # 'tense' should always be an integer 0-7
+        # check whether should use the endings with i/y vowel
+        # verbs ending in -el, -es, -he, -i
+        # and verbs in the list rol verbs_i_3sp
+        # have 3s past tense with -is in place of -as
         
         if (verb[-2:] in dtinf.endings_ivowel or verb[-1:] in dtinf.endings_ivowel) and (
                 (not verb in dtinf.verbs_klywes)and(not verb in dtinf.verbs_ankevi)):
@@ -69,10 +82,12 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
         else:
             endings = dtinf.endings_alltenses.tense_endings(tensesDict[tense])
     if tense < 7:
+        # rag pub amser saw an ysparth
         # for all tenses except past participle
         ending = endings.person_ending(person)
-    if tense == 7: # if past participle
+    if tense == 7: # mars yw ysparth - if past participle
         ending = endings
+    # yn verbow kepar he benniga treylya g-->k in 3ps ha 3p gorhemmynek    
     # in verbs such as benniga change g-->k in 3ps and 2p imp.
     if ending == "":
         if stem[-1] == "g":
@@ -100,22 +115,26 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
             # subjunctive has extra -ah-
             ending = "ah"+ending
         if tense == 7:
-            # yma -es dhe'n ben yn ppl
+            # yma -es dhe'n arrenn y'n ysparth
             # past participle adds -es to the stem.
             ending = "es"
-    origending = ending #before addition of suffixed pronoun
+    origending = ending # kyns keworrans raghanow lostelvenn - before addition of suffixed pronoun
     if (suffix_pro == 1)and(person > 0)and(tense != 7):
+        # mar tegoedh raghenwyn lostelvenn, ha nag yw po anpersonel po ysparth
         # if there should be suffixed pronouns, and it isn't impersonal or ppl
         ending = ending + " " + dtinf.suffixed_pros[person]
     if (suffix_pro == 2)and(person > 0)and(tense != 7):
+        # mar tegoedh raghenwyn lostelvenn poeslevys, ha nag yw po anpersonel po ysparth
         # if there should be emphatic suffixed pronouns, and not impersonal or ppl
         ending = ending + " " + dtinf.suffixed_pros_emph[person]
     # verbow a worfenn gans -ya
     # verbs ending in -ya
     if stem[-1] == "y":
         # -y- yw gwithys heb y arall, i po s yn penn po nag eus penn
+        #
         # -y- retained except where another y, i or s occurs in the ending
         # or where there is no suffix (3s pres, 2s imperative)
+        #
         # yn verb amaya, an y yw gwithys pupprys
         # in amaya, the y is always retained
         if verb not in dtinf.verbs_amaya:
@@ -143,7 +162,6 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
                 laststemvowel, pos = lastvowel(stem)
                 if stem[-1] == 'y':
                     laststemvowel, pos = lastvowel(stem[:-1])
-                #if laststemvowel == "a":
                 if ((tense == 4)or(tense == 5)):
                     # chanjys dhe -y- yn islavarek
                     # in subjunctive further affected to -y-
@@ -196,15 +214,16 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
                 stem = stem[:pos] + "a" + stem[pos+1:]
             
     # type IGERI
-    # gwitha bogalenn ben derowel -a- po -o- yn amserowa syw:
+    # gwitha bogalenn arrenn derowel -a- po -o- yn amserowa syw:
     # retain original stem vowel -a- or -o- in following tenses:
-    # pres/future 1s
-    # preterite 3s and 3p
-    # pluperfect all persons
-    # subjuctive pres 3s. and 3p.
-    # subjunctive imp. all persons
-    # imperative 2s.
+    # a-lemmyn/devedhek - pres/future 1s
+    # tremenys 3 unnplek ha 3 liesplek- preterite 3s and 3p
+    # gorberfydh pub person - pluperfect all persons
+    # islavarek a-lemmyn 3 unn. ha 3 lies. - subjuctive pres 3s. and 3p.
+    # islavarek anperfydh pub person - subjunctive imp. all persons
+    # gorhemmyn 2 unnplek - imperative 2s.
     if verb in dtinf.verbs_igeri_o:
+    # y'n rann moyha'n verbow ma, 'e' yw an hanow verb
     # with most of these verbs, it is the 'e' in the verb noun
         laststemvowel, pos = lastvowel(stem)
         if laststemvowel == "o":
