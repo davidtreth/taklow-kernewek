@@ -370,19 +370,24 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
         if ((tense == 1)and(person == 7))or(tense == 3):
             stem = stem[:-2] + stem[-1] + stem[-2]
 
-    # HWITHRA type
-    # stem ends in two consonant sounds, the second of which is -l-, -m-, -n-, or -r-
-    # delivra changes -vr- to -rv- 3s. pres/fut, 2s. imperative, + where ending starts with an s
-    # NOT IMPLEMENTED
-    # in subjunctives consonant before lrmn undergoes hardening of doubling
-        # print(verb,stem, tense)
-        # print(verb in verbs_hwithra)
+    """ verbow a sort HWITHRA type
+        stem ends in two consonant sounds, the second of which is -l-, -m-, -n-, or -r-
+        delivra changes -vr- to -rv- 3s. pres/fut, 2s. imperative, + where ending starts with an s
+        in subjunctives consonant before lrmn undergoes hardening or doubling
+        
+        garrenn a worfenn gans dew gessonenn, an eyl anedha yw l, m, n po r
+        delivra a janj -vr- dhe -rv- 3u. a-lemmyn, 2u. gorhemmyn ha pan dalleth penn gans s
+        yn islavaregow kessonenn a-rag lrmn a galeshe po dewbleghe """
     if verb in dtinf.verbs_hwithra:
-        # print(stem)
         if ((tense == 0)and((person == 3)or(person == 4)))or((tense == 6)and(person == 2)):
-            # in 3s. pres/future and 2s. imperative
-            # a vowel is introduced usually -e-
-            # sometimes -o- or -y-
+            """ yn 3u. a-lemmyn ha 2u. gorhemmyn
+                bogalenn yw keworrys dell vydh usys -e-
+                traweythyow -o- po -y-
+                
+                in 3s. pres/future and 2s. imperative
+                a vowel is introduced usually -e-
+                sometimes -o- or -y-
+            """
             if verb in dtinf.verbs_resna:
                 vowel = "o"
             else:
@@ -400,9 +405,13 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
             
         if origending != "":
             if origending[0] == "s": 
-                # when verbal ending starts with an -s-
-                # the final consonant of the stem may drop out and be shortened
-                # and an apostrophe introduced
+                """ ha penn an verb a dhalleth gans s-
+                diwettha kessonenn an arrenn a yll koedha ha bos berrhys
+                ha kollverk usys
+                
+                when verbal ending starts with an s-
+                the final consonant of the stem may drop out and be shortened
+                and an apostrophe introduced """
                 if stem[-2:] == "sh":
                     stem1 = stem[:-2]
                     stem2 = stem[-2:]
@@ -419,20 +428,29 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
                 else:
                     stem = stem1+ "e" +stem2
 
-    # GWYSTLA type
-    # final consonant is -l-, -m-, -n- or -r- preceded by two adjacent consonants.
+    """ verbow a sort GWYSTLA type
+        an diwettha kessonenn yw -l, -m, -n po -r wosa dew gessonenn warbarth
+        final consonant is -l, -m, -n or -r preceded by two adjacent consonants.
+    """
     if verb in dtinf.verbs_gwystla:
         vowel = "e"
         if ((tense == 0)and((person == 3)or(person == 4)))or((tense == 6)and(person == 2)):
-            # in 3s. pres/fut and 2s. imperative, an -e- is put before the final consonant
+            """ yn 3u. a-lemmyn ha 2u. gorhemmyn , -e- yw gorrys a-rag an diwethha kessonenn
+                in 3s. pres/fut and 2s. imperative, an -e- is put before the final consonant """
             stem = stem[:-1]+vowel+stem[-1]
         if origending != "":
             if origending[0] == "s":
-                # when verbal ending starts with an -s-
-                # -e- is put before the final consonant of the stem
-                # and verb remains uncontracted
+                """
+                ha penn verb a dhalleth gans s-
+                -e- yw gorrys a-rag diwettha kesonnen an arrenn
+                ha ny wra an verb berrhe
+                
+                when verbal ending starts with an s-
+                -e- is put before the final consonant of the stem
+                and verb remains uncontracted """
                 stem = stem[:-1] + vowel + stem[-1]
         if (tense == 4)or(tense == 5):
+            # an islavarek a janj gans pennow a syw:
             # subjunctive changes with following endings:
             # -ndl- > -ntl-; -ldr- > -ltr-; -rdr- > -rtr
             if stem[-3:] == "ndl":
@@ -442,68 +460,80 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
             if stem[-3:] == "rdr":
                 stem = stem[:-3] + "rtr"
 
-    # LESTA
-    # where stem ends in -s- followed by another consonant, this second consonant may be omitted
-    # can be shown in writing by replacement with apostrophe
+    """ verbow a sort LESTA type
+    mar kwra garrenn a worfenn in -s- sywys gans kessonenn arall,
+    an nessa kessonenn a yll bos dileys, hag a yll bos diskwedhys yn skrif gans kollverk
+    
+    where stem ends in -s- followed by another consonant, this second consonant may be omitted
+    can be shown in writing by replacement with apostrophe """
     if verb in dtinf.verbs_lesta:
         if origending != "":
             if origending[0] == "s":
                 stem = stem[:-1]+"'"
 
-    # diskwedhes, drehevel, gortos, hwilas. stem change in 3rd person present and 2p sing imperative
+    """ diskwedhes, drehevel, gortos, hwilas.
+        garrenn a janj yn 3a person a-lemmyn ha 2a unnplk gorhemmyn
+        stem change in 3rd person present and 2p sing imperative """
     if (verb in dtinf.verbs_stemdict_diskwedhes)and(((tense == 0)and(
             (person == 3)or(person == 4))or(tense == 6 and person == 2))):
         stem = dtinf.verbs_stemdict_diskwedhes[verb]
 
-    # DYBRI
-    # vowel affectation in stem
-    # y --> e e.g. in dybri
-    # in pres pers 1,3,4,6,7
-    # pres subj pers 3,4
-    # imp subj all pers
-    # imperative pers 2
+    """ verbow a sort DYBRI type
+    maneruster bogalenn y'n arrenn
+    vowel affectation in stem
+    
+    y --> e e.g. in dybri
+    in 
+    a-lemmyn - pres pers 1,3,4,6,7
+    islavarek a-lemmyn - pres subj pers 3,4
+    islavarek anperfydh - imp subj all pers
+    gorhemmyn - imperative pers 2 """
     if verb in dtinf.verbs_dybri:
         if ((tense == 0) and (person in [1, 3, 4, 6, 7])) or ((tense == 4) and (
                 person in [0, 3, 4, 7])) or (tense == 5) or ((tense == 6) and (person == 2)):
             stem = stem.replace("y", "e", 1)
 
+    # daskorr an gorthyp
     # return the result
     inflectedverb = stem+ending
     return inflectedverb, 1
 
 def inflektya_validate_person(person):
-    """ check person is an integer from 0 to 7 """
-    # expect an integer from 0 to 7
+    """ chekkya bos person niver leun ynter 0 ha 7
+    check person is an integer from 0 to 7 """
     try:
         person = int(person)
-        if person not in list(range(8)):
-            return False
-        else:
-            return True
+        return person in list(range(8))
     except ValueError:
         return False
 
 def inflektya_validate_tense(verb, person, tense):
-    """ check tense is one of the strings in the 
-    tenses dictionary """
+    """ chekkya mars yw an amser onan a'n taklennow yn gerlyver amserow
+    check tense is one of the strings in the tenses dictionary """
     if tense not in tensesDict.values():
+        # kompoesa parameter amser
         # validate tense parameter
         return False
     if ((person == 0)or(person == 1))and(tense == "gorhemmyn"):
-        # impersonal and 1s don't exist in imperative
         # nyns eus anpersonek ha'n 1s y'n gorhemmyn
+        # impersonal and 1s don't exist in imperative
         # print "invalid tense/person combination"
         return False
     if tense == "devedhek" and verb not in dtinf.verbs_devedhek:
+        # saw nebes verbow a'n jeves amser devedhek sempel
+        # mar nag yw onan anedha, daskorr False
         # only a few verbs have a simple future tense
-        # if not return invalid
+        # if not return False
         return False
     if tense == "anperfydh_usadow" and verb not in dtinf.verbs_anperfydh_usadow:
+        # saw nebes verbow a'n jeves amser anperfydh usadow difrans
+        # mar nag yw onan anedha daskorr False
         # only a few verbs have a separate habitual imperfect
-        # if not return invalid
+        # if not return False
         return False
     if tense in ["a-lemmyn_hir_indef", "anperfydh_hir", "a-lemmyn_hir_def",
                  "a-lemmyn_hir_aff"] and verb != "bos":
+        # furvow hir an verb  bos
         # the long forms which are particular to bos
         return False
     if tense == "perfydh" and verb not in dtinf.verbs_perfydh:
@@ -512,12 +542,14 @@ def inflektya_validate_tense(verb, person, tense):
 
 def inflektya(verb, person, tense, suffix_pro=0):
     """ person: 0=imp,1=1s,2=2s,3=3sm,4=3sf,5=1p,6=2p,7=3p
-     tense: 0=present, 1=preterite, 2=imperfect, 3=pluperfect, 4=subjpres, 5=subjimp
+     amser - tense: 0=present, 1=preterite, 2=imperfect, 3=pluperfect, 4=subjpres, 5=subjimp
     6=imperative,7=past_participle,8=future,9=habitual imperfect
     0=longform_present_indef,11=longform_imperfect,12=longform_present_defni
     3=longform_present_aff,14=perfect
+    y tegoedh an amser bos tekst
     expect string for the tense """
     
+    # nebes verbos a'n jeves lytherennansow po furvow erell
     # alternate spellings of the same verb, e.g. doen/degi
     if verb in dtinf.verbs_alternatesp:
         verb = dtinf.verbs_alternatesp[verb]
@@ -529,12 +561,18 @@ def inflektya(verb, person, tense, suffix_pro=0):
     # nebes verbow yw defowtek
     # certain verbs are incomplete/defective
 
-    # suffix_pro: flag to say whether to include suffixed pronoun
+    # suffix_pro:
+    # skwych dhe leverel  mar kwra usya raghenwyn lostelvennek
+    # flag to say whether to include suffixed pronoun
     if suffix_pro not in [0, 1, 2]:
+        # mar nag yw 0, 1 po 2 gwra settya dhe 0 - heb raghanow vyth
         # if it is anything other than 0,1,2
         # set to 0 i.e. no suffixed pronoun
         suffix_pro = 0
+    # daskorrans mars yw kamm a neb sort
+    # dummy value to return if there is an error
     invalidinput = "NULL"
+    # mars yw sewen, daskorr 1, mars yw kamm, 0
     # successflag = 1 if successful, 0 if error
     if not inflektya_validate_person(person):
         return invalidinput, 0
@@ -542,6 +580,7 @@ def inflektya(verb, person, tense, suffix_pro=0):
         person = int(person)
 
     if not inflektya_validate_tense(verb, person, tense):
+        # mar nyns yw amser possybl rag an ver, daskorr 'NULL'
         # if the tense is invalid for the verb, return a NULL
         return invalidinput, 0
 
@@ -559,16 +598,25 @@ def inflektya(verb, person, tense, suffix_pro=0):
         if verb in dtinf.verbs_stemnoun:
             stem = verb
         if ("islavarek" in tense)and(verb not in dtinf.verbs_gwystla)and(verb not in dtinf.verbs_pe)and(verb[-2:] != "ia"):
-            # kesson a wra dewblek po kaleshe y'n islavarek
-            # double/harden consonants in subjunctive
-            # but not generally in verbs_gwystla
-            # and not in verbs ending -ia
+            """ kesson a wra dewblek po kaleshe y'n islavarek
+                double/harden consonants in subjunctive
+            
+                mes nag yw pupprys yn verbow yn rol verbs_gwystla
+                ha nag yn verbow a worfenn -ia
+              
+                but not generally in verbs_gwystla
+                and not in verbs ending -ia
+            """
             lastconststem = lastconsonant(stem)
             # print(lastconststem)
             if lastconststem in dtinf.stem_changes:
-                # do a string replace, but first reverse the stem, and the
-                # arguments for replace, so that it is only done once
-                # for the last time lastconststem occurs in stem
+                """ gul string replace(), mes kyns oll kildenna an arrenn
+                    ha'n argamentys rag replace() may hwrello namoy es unnweyth
+                    rag an diwettha tro lastconststem yw y'n arrenn
+                    
+                    do a string replace(), but first reverse the stem, and the
+                    arguments for replace(), so that it is only done once
+                    for the last time lastconststem occurs in stem """
                 stem = stem[::-1].replace(lastconststem[::-1],
                                           dtinf.stem_changes[lastconststem][::-1], 1)[::-1]
         return inflektya_reyth(verb, stem, person, tenses_code_dict[tense], suffix_pro)
@@ -619,10 +667,11 @@ Preposition {prepos} is unknown".format(prepos=prepos)))
 
 def rol_personys_amserow(verb):
     """
-    pryntya rol a personys ha'n amserow rag verb
+    pryntya rol a persons ha'n amserow rag verb
     print a list of persons for each tense of verb
     """
     print(("Verb {verb}:".format(verb=verb.upper())))
+    # anperfydh kyns tremenys kepar ha "Cornish Verbs"
     # print imperfect before preterite
     # to match order in "Cornish Verbs"
     tensesorder = [0, 2, 1, 3, 4, 5, 6, 7]
@@ -640,6 +689,7 @@ def rol_personys_amserow(verb):
             print(("{person}: {inflVerb}".format(person="PPL".ljust(14),
                                                 inflVerb=inflektya(verb, 1, t, 1)[0]).rjust(12)))
         else:
+            # anpersolen orth an diwedh kepar ha "Cornish Verbs"
             # print impersonal at the end instead so it matches "Cornish Verbs" book
             persons = list(range(1, 8))
             persons.append(0)
@@ -656,6 +706,7 @@ def rol_personys_prepos(prepos):
     print(("Preposition {p}:".format(p=prepos.upper())))
     for p in range(7):
         if inflektya_prepos(prepos, p+1, 1)[1] == 0:
+            # mar nag yw prepos aswonnys avel rager
             # if prepos is not known as a preposition
             break
         print(("{person}: {inflPrep}".format(person=personDict[p+1].ljust(14),
@@ -663,7 +714,8 @@ def rol_personys_prepos(prepos):
     print("\n")
 
 def rol_personys_amser_interact():
-    """ Interactively get a verb from keyboard input and repeat until 'q' is entered """
+    """ Kavoes verb diworth ynworrans bysowek ha daswul bys pan vydh 'q' ynworrys
+        Interactively get a verb from keyboard input and repeat until 'q' is entered """
     if sys.version_info[0] < 3:
         verb = raw_input("Ro an verb dhe inflektya mar pleg. Ro 'q' dhe kwittya. \n\
         Enter the verb to inflect please. Enter 'q' to quit.\n\n")
@@ -676,7 +728,8 @@ def rol_personys_amser_interact():
     else:
         return 1
 def rol_personys_prepos_interact():
-    """ Interactively get a preposition from keyboard input and repeat until 'q' is entered """
+    """ Kavoes rager diworth ynworrans bysowek ha daswul bys pan vydh 'q' ynworrys
+        Interactively get a preposition from keyboard input and repeat until 'q' is entered """
     if sys.version_info[0] < 3:
         prepos = raw_input("Ro an rager dhe inflektya mar pleg. Ro 'q' dhe kwittya. \n\
         Enter the preposition to inflect please. Enter 'q' to quit.\n\n")
@@ -690,8 +743,10 @@ def rol_personys_prepos_interact():
         return 1
 
 def run_testcode():
-    """ when started from the command-line, print out a few verbs and prepositions
-    and then ask for them interactively """
+    """ Mars yw an modul ma dallethys an linenn arghadow, eskorra nebes verbow
+        ha ragerow hag ena govynn an devnydhor rag moy.
+        when started from the command-line, print out a few verbs and prepositions
+        and then ask for them interactively """
     rol_personys_amserow("prena")
     rol_personys_amserow("bos")
     rol_personys_amserow("y'm beus")
@@ -724,7 +779,7 @@ personDict = {0:'anpersonek',
               6:'2pl',
               7:'3pl'}
 
-# tense: 0=present, 1=preterite, 2=imperfect, 3=pluperfect, 4=subjpres, 5=subjimp
+# amser - tense: 0=present, 1=preterite, 2=imperfect, 3=pluperfect, 4=subjpres, 5=subjimp
 # 6=imperative,7=past_participle,8=future,9=habitual imperfect
 # 10=longform_present_indef,11=longform_imperfect,12=longform_present_defni
 # 13=longform_present_aff,14=perfect

@@ -18,7 +18,8 @@ class LostowPersonek(object):
         self.amser = amser
         
     def person_ending(self, personnum):
-        """ return the personal ending for a single person defined by personnum """
+        """ daskorr penn personel rag unn berson herwydh personnum
+            return the personal ending for a single person defined by personnum """
         return self.lostow_dict[personnum]
 
 
@@ -53,6 +54,7 @@ class RannowVerbAnreyth(object):
     verb anreyth inflektys - unn amser
     inflected irregular verb of one tense
     """
+    # henwyn amserow yn Sowsnek
     # English translations of the tense names
     amserowEN = {"a-lemmyn":"present",
                  "tremenys":"preterite",
@@ -83,9 +85,11 @@ class RannowVerbAnreyth(object):
         amser: the tense
         """
         self.verbnoun = verbnoun
+        # gwitha furvow inflektys yn rol, hag yn erlyver
         # store the inflected forms in a list, and in a dictionary
         self.rannow = [anpersonek, my, ty, ev, hi, ni, hwi, i]
         self.rannow_dict = {0:anpersonek, 1:my, 2:ty, 3:ev, 4:hi, 5:ni, 6:hwi, 7:i}
+        # gwith hanow an amser ha'y dreylyans yn Sowsnek
         # store the tense name and its English translation
         self.amser = amser
         self.amser_en = RannowVerbAnreyth.amserowEN[amser]
@@ -105,10 +109,10 @@ class RannowVerbAnreythOllAmser(object):
         value yw taklenn RannowVerbAnreyth
 
         if not defective, it will have tenses 0-7 and maybe more
-         a few verbs don't have past participle
-         dictionary of tenses in dict_tenses
-         each key in dict_tenses is tense
-         value is RannowVerbAnreyth object
+        a few verbs don't have past participle
+        dictionary of tenses in dict_tenses
+        each key in dict_tenses is tense
+        value is RannowVerbAnreyth object
         """
         self.verbnoun = verbnoun
         self.tenses_list = []
@@ -122,6 +126,7 @@ class RannowVerbAnreythOllAmser(object):
         """
         self.tenses_list.append(tense.amser)
         self.tenses_en_list.append(tense.amser_en)
+        # gerlyver a erlyvrow
         # a dictionary of dictionaries
         self.dict_tenses[tense.amser] = tense.rannow_dict
 
@@ -235,6 +240,7 @@ endings_ivowel = ["el", "es", "he", "i"]
 verbs_klywes = ['daromres', 'difres', 'domhwel', 'goslowes', 'gwari', 'gweres', 'happwari', 'klywes', 'mynnes',
                 'omweres', 'powes', 'rydhwari', 'terlentri']
 
+# an verbow ma a'n jeves y/i y'n anperfydh mes nag y'n tremenys
 # these verbs have y/i vowel in imperfect but not preterite
 verbs_ankevi = ['adhyski', 'ankevi', 'arbrevi', 'dasseni', 'debreni', 'degemmeres', 'digevelsi', 'drehedhes',
                 'dyski', 'eskelmi', 'goleski', 'gonedha', 'gorleski', 'gorvires', 'gorweles', 'goslowes', 'govires',
@@ -248,12 +254,17 @@ verbs_i_imp = ["amma", "aswonn", "dalleth", "dervynn", "dewis", "diberth", "dife
                "galloes", "godhav", "gonis", "kammwonis", "govynn", "hembronk", "hwerthin", "lavasos",
                "minhwerthin", "omladh", "pobas"]
 verbs_i_imp.extend(verbs_ankevi)
+# nyns eus dhe hembronk y yn anperfydh yn "Cornish Verbs" mes yth yw dhodho yn Wella Brown GMC
 # hembronk doesn't have y in imperfect in Cornish Verbs but says it does in Wella Brown GMC
 
+# verbow gans -ya ha'n -y gwithys hogen mars yma y, i, s yn pennow
 # verbs in -ya where the -y is always retained even if y,i,s occur in endings
 verbs_amaya = ['amaya', 'araya', 'assaya', 'baya', 'obaya']
 
-#plus all verbs in -el, -es (except klywes and mynnes), -he and -i
+# hag oll verbow gans -el, -es (marnas klywes, mynnes), -he ha -i
+# plus all verbs in -el, -es (except klywes and mynnes), -he and -i
+
+
 verbs_tava = ['amala', 'aras', 'argya', 'arva', 'arwaska', 'aslamma', 'attamya', 'badhya', 'bagha', 'balya', 'bannya',
               'basa', 'batalyas', 'batha', 'blamya', 'blasa', 'bodhara', 'braga', 'braggya', 'brallya', 'brasa',
               'bratha', 'charjya', 'chasya', 'dadhla', 'dampnya', 'dargana', 'dasa', 'debatya', 'delatya',
@@ -271,20 +282,28 @@ verbs_tava = ['amala', 'aras', 'argya', 'arva', 'arwaska', 'aslamma', 'attamya',
               'skattra', 'sklandra', 'skwardya', 'sowdhanas', 'spala', 'sparya', 'splanna',
               'spralla', 'staga', 'stankya', 'statya', 'taga', 'takla', 'takya', 'talkya', 'tardha',
               'tardra', 'tava', 'tebelfara', 'terghya', 'travalya', 'tynkyal', 'ughkarga']
-# diella, droga, miowal, moga, terghya the last stem vowel is not a
+# diella, droga, miowal, moga, terghya:
+# diwettha bogalenn an arrenn nag yw a the last stem vowel is not a
 
+# kepar ha tava mes nag eus chanj dhe y yn islavarek
 # like tava but no change to y in subjunctive
 verbs_gwana = ["gwana"]
+# a --> y yn nebes persons hag amserow (hag eus i po y po -owgh yn penn)
 # a --> y in some persons and tenses (when there is a i or y in ending or -owgh)
 verbs_amma = ['amma', 'dalla', 'eva', 'ewnranna', 'kamma', 'ranna', 'salla']
 
+# y --> a yn nebes persons hag amserow
 # y --> a in some persons and tenses
 verbs_fyllel = ["fyllel"]
 
+# ow --> ew yn nebes persons hag amswerow (hag eus i po y po -owgh yn penn)
 # ow --> ew in some persons and tenses (when there is a i or y in ending or -owgh)
 verbs_pregowtha = ["pregowtha"]
 
-# dannvon, daskorr o-->e (when there is a i or y in ending or -owgh)
+
+# dannvon, daskorr o-->e
+# hag eus i po y po -owgh yn penn
+# when there is a i or y in ending or -owgh
 verbs_dannvon = ['amovya', 'dannvon', 'daskorr', 'diaskorna', 'fronna', 'goslowes', 'hembronk', 'movya', 'pobas']
 
 verbs_igeri_o = ['ankevi', 'argelli', 'dasseni', 'dasserghi', 'debreni', 'dedhwi', 'deskerni', 'eskelmi', 'goderri',
@@ -321,8 +340,10 @@ verbs_gwystla = ['arwoestla', 'dampnya', 'entra', 'flattra', 'fynngla', 'fysla',
                  'plansa', 'rambla', 'restra', 'sakra', 'sampla', 'skattra', 'sklandra', 'skombla', 'skrambla',
                  'solempnya', 'sompna', 'takla', 'tardra', 'tempra', 'tempra', 'terlentri']
 
+# nag yw chanjys kessonenn yn islavarek
 # don't do subjubctive consonant changes
 verbs_pe = ["pe"]
+# bogalenn ynworrys dhe derri bagas kessonenn dhe benn an arrenn yn nebes person
 # vowel introduced to break up consonant cluster at end of stem in some persons
 verbs_hwithra = ['ankombra', 'bedhygla', 'bokla', 'chershya', 'dadhla', 'delivra', 'destna', 'dibra', 'dilestra',
                  'dybri', 'dyegri', 'fagla', 'fekla', 'godra', 'grysla', 'gwedhra', 'gwedra', 'hwedhla',
@@ -334,11 +355,12 @@ verbs_hwithra = ['ankombra', 'bedhygla', 'bokla', 'chershya', 'dadhla', 'delivra
 verbs_resna = ["resna", "sokra"]
 verbs_fekla = ["chershya", "destna", "fekla", "takla"]
 verbs_delivra = ["delivra"]
+# na wra berrhe garrenn hag ynworra kollverk
 # when not to shorten stem and have an apostrophe
 verbs_ankombra = ["ankombra", "chershya", "delivra", "destna", "dilestra", "lestra"]
 
-
-# in 3rd person present tense stem change and 2ps imperative
+# yn 3a person a-lemmyn ha 2a person unnplek gorhemmyn, chanj garrenn 
+# in 3rd person present tense and 2ps imperative stem change 
 verbs_stemdict_diskwedhes = {"diskwedhes":"diskwa", "drehevel":"drehav", "gortos":"gorta",
                              "hwilas":"hwila"}
 
@@ -348,10 +370,11 @@ verbs_irregular = ["attyli", "bos", "bryjyon", "darvos", "dastyllo", "diswul", "
                    "dyllo", "godhvos", "gordhyllo", "gorwul", "gul", "hwarvos", "klywes", "kowlwul", "lesvryjyon",
                    "mos", "omdhoen", "omglywes", "omri", "omwul", "piwa", "ri", "ti", "tyli", "y'm beus"]
 
+# maneruster bogalenn y-->e y'n arrenn yn nebes person e.g. deber
 # vowel affectation y--> e in stem in some persons e.g. deber
 verbs_dybri = ["dybri"]
 
-# chanjyow ben kalesheans po dewblekheans
+# chanjyow garrenn kalesheans po dewblekheans
 # hardening or doubling in ending of the stem
 stem_changes = {"b":"pp", "bl":"ppl", "br":"ppr", "ch":"cch", "d":"tt",
                 "dh":"tth", "dhl":"tthl", "dhr":"tthr", "dhw":"tthw",
@@ -366,22 +389,31 @@ stem_changes = {"b":"pp", "bl":"ppl", "br":"ppr", "ch":"cch", "d":"tt",
                 "th":"tth", "thl":"tthl", "thr":"tthr", "thw":"tthw", "tl":"ttl",
                 "v":"ff", "vn":"ffn", "vr":"ffr", "ws":"wss", "wth":"wtth"}
 
-# alternate spellings of the same verb, e.g. doen/degi
+# lytherennansow po furvow difrans a nebes versow
+# alternate forms or spellings of the same verb, e.g. doen/degi
 verbs_alternatesp = {"degi":"doen", "bones":"bos", "dones":"dos", "devones":"dos", "devos":"dos",
                      "godhav":"godhevel", "gruthyl":"gul", "guthyl":"gul", "gwruthyl":"gul",
                      "mones":"mos", "pregowth":"pregowtha", "talvos":"tyli"}
 
-# Verbow Anreyth
-# Irregular verbs
-# BOS
-#need extra parameter to decide short/long
-#say long = 0 or long = 1
-#and another to distinguish usi/yma/eus and ymons/esons
-#definite = 1 or definite = 0 to distinguish yma/usi from yma/eus
-#affirmative = 1/0 to use yma/ymons in affirmative and usi/eus or esons in neg/interrog
-# at present the above are implemented as separate tenses
+""" Verbow Anreyth
+    Irregular verbs
+    BOS
+    edhomm parameter moy dhe ervira ynter berr/hir
+    need extra parameter to decide short/long
+    e.g. long = 0 or long = 1
+    ha stroeth / anstroeth
+    and another to distinguish definiteness
+    usi/yma/eus , ymons/esons
 
-# use short form as a default to avoid key error in dictionary
+    definite = 1 or definite = 0 to distinguish yma/usi from yma/eus
+    affirmative = 1/0 to use yma/ymons in affirmative and usi/eus or esons in neg/interrog
+  
+   y'n termyn ma, yth yw gwrys avel amserow difrans
+   at present the above are implemented as separate tenses
+
+   usya furv berr avel defowt dhe gwitha rag kamm alwhedg yn gerlyver 
+   use short form as a default to avoid key error in dictionary
+   """
 bos_shortpres = RannowVerbAnreyth("bos", "or", "ov", "os", "yw", "yw",
                                   "on", "owgh", "yns", "a-lemmyn")
 bos_preterite = RannowVerbAnreyth("bos", "beus", "beuv", "beus", "beu", "beu",
@@ -397,7 +429,7 @@ bos_impfsubj = RannowVerbAnreyth("bos", "bes", "ben", "bes", "be", "be",
 bos_imperative = RannowVerbAnreyth("bos", "NULL", "NULL", "bydh", "bedhes",
                                    "bedhes", "bedhen", "bedhewgh", "bedhens",
                                    "gorhemmyn")
-bos_pastparticiple = "bedhys" # used only in compounds
+bos_pastparticiple = "bedhys" # saw yn kompownds - used only in compounds
 bos_future = RannowVerbAnreyth("bos", "bydher", "bydhav", "bydhydh", "bydh",
                                "bydh", "bydhyn", "bydhowgh", "bydhons",
                                "devedhek")
@@ -648,8 +680,9 @@ hwarvos_inflected = RannowVerbAnreythOllAmser("hwarvos")
 hwarvos_inflected.add_tense_list(hwarvos_tenses, hwarvos_pastparticiple)
 
 # DARVOS
-# only 3s pret and past participle
 # 3s tremenys ha ppl yn unnsel
+# only 3s pret and past participle
+
 darvos_preterite = RannowVerbAnreyth("darvos", "NULL", "NULL", "NULL", "darva",
                                      "darva", "NULL", "NULL", "NULL",
                                      "tremenys")
@@ -659,6 +692,7 @@ darvos_inflected = RannowVerbAnreythOllAmser("darvos")
 darvos_inflected.add_tense_list(darvos_tenses, darvos_pastparticiple)
 
 # KLYWES
+# nag eus devedhek sempel po anperfydh usadow
 # no simple future or habitual imperfect
 
 klywes_pres = RannowVerbAnreyth("klywes", "klywir", "klywav", "klywydh",
@@ -689,7 +723,7 @@ klywes_tenses = [klywes_pres, klywes_preterite, klywes_imperfect,
 klywes_inflected = RannowVerbAnreythOllAmser("klywes")
 klywes_inflected.add_tense_list(klywes_tenses, klywes_pastparticiple)
 
-#OMGLYWES similarly conjugated
+#OMGLYWES yn furv ogas dhe KLYWES - similarly conjugated to KLYWES
 omglywes_pres = RannowVerbAnreyth("omglywes", "omglywir", "omglywav",
                                   "omglywydh", "omglyw", "omglyw", "omglywyn",
                                   "omglywowgh", "omglywons", "a-lemmyn")
@@ -1504,7 +1538,7 @@ endings_A = {1:"av", 2:"as", 3:"o", 4:"i", 5:"an", 6:"owgh", 7:"a"}
 endings_B = {1:"ov", 2:"os", 3:"o", 4:"i", 5:"on", 6:"owgh", 7:"a"}
 endings_C = {1:"iv", 2:"is", 3:"o", 4:"i", 5:"yn", 6:"owgh", 7:"a"}
 endings_D = {1:"", 2:"", 3:"", 4:"", 5:"", 6:"", 7:""}
-# dhe, gans irregular
+# dhe, gans yw anreyth - are irregular
 a_stems = {1:"ahan", 2:"ahan", 3:"anodh", 4:"anedh", 5:"ahan", 6:"ahan", 7:"anedh"}
 agovis_stems = {1:"a'm govis", 2:"a'th wovis", 3:"a'y wovis", 4:"a'y govis", 5:"a'gan govis",
                 6:"a'gas govis", 7:"a'ga govis"}
