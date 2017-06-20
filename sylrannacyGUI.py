@@ -9,12 +9,12 @@ if sys.version_info[0] < 3:
     import Tkinter as tk
 else:
     import tkinter as tk
-from taklowGUI import Gadael, Radiobar, ScrolledText
+from taklowGUI import Gadael, Radiobar, ScrolledText, CheckButtonBar
 
 
 def allstates():
     print(options.state(), options2.state(),
-          ent.gettext())
+          rhybudd.state(), ent.gettext())
 
 def printsylranna():
     """ show the output in Welsh, according to the options
@@ -34,7 +34,7 @@ def printsylranna():
         regexps=syl.cyRegExp
         if options.state() == 'Mode Hir':
             output = syl.detailSylsText(inputtext, fwd, regexps=regexps,
-                                        FSSmode=False)
+                                        FSSmode=False, CYmode=True, gwarnya=rhybudd.state()[0])
             msg3.text.config(font=('Helvetica', 14+fontsizeadj, 'normal'),
                              width=66, height=12+heightadjust)
         elif options.state() == 'Mode Llinell':
@@ -43,7 +43,7 @@ def printsylranna():
             lines = inputtext.split('\n')                
             for l in lines:                    
                 output += syl.countSylsLine(l, fwd, regexps=regexps,
-                                            FSSmode=False)+'\n\n'
+                                            FSSmode=False, CYmode=True, gwarnya=rhybudd.state()[0])+'\n\n'
             output = output[:-1]
         else:
             msg3.text.config(font=('Helvetica', 16+fontsizeadj, 'bold'),
@@ -51,7 +51,7 @@ def printsylranna():
             # use short mode by default if nothing is selected
             output = syl.detailSylsText(inputtext, fwd,
                                         short=True, regexps=regexps,
-                                        FSSmode=False)
+                                        FSSmode=False, CYmode=True,  gwarnya=rhybudd.state()[0])
         print(output)
     msg3.settext(output)
     msg3.text.config(state=tk.DISABLED)
@@ -107,6 +107,10 @@ if __name__ == '__main__':
                         side=tk.TOP, anchor=tk.NW, default='Rhannu yn ôl')
     options2.pack(side=tk.LEFT, fill=tk.Y)
     options2.config(pady=10)
+
+    
+    rhybudd = CheckButtonBar(options2, ['Rhybuddio os nac ydy\'r gair wedi defnyddio yn cyfan'], side=tk.TOP, anchor=tk.NW)
+    rhybudd.pack(side=tk.LEFT, fill=tk.Y)        
     
     msg = tk.Label(root, text="Rhowch testun Cymraeg ar lawr os gwelwch yn dda:")
     msg.config(font=('Helvetica', 16+fontsizeadj, 'bold'))

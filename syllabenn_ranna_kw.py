@@ -625,9 +625,13 @@ class Ger:
     class for a word of Cornish text
     """
     def __init__(self,ger,rannans,fwds=False,regexps=kwKemmynRegExp, FSSmode=False,
-                 CYmode = False):
+                 CYmode = False, gwarnya=False):
         """ initialize Ger object
         """
+        if CYmode:
+            self.CYmode = True # used to ensure warning displayed in Welsh if segmentation doesn't use all of input
+        else:
+            self.CYmode = False
         self.graph = ger # an ger kowal
         # dilea an dashow -
         # self.grapheme = self.grapheme.replace("-","")
@@ -653,6 +657,15 @@ class Ger:
             sls = rannans.ranna_syl(self.graph,regexps.diwetRegExp,fwd=False,bwd=True)
 
         # print(sls)
+        self.segmented_word = ''.join(sls)
+        if self.segmented_word != ger:
+            if gwarnya:
+                print("warning: segmentation has not processed all of input '{g}'.\nGwarnyans: ny wrug an rannans argerdhes oll an ynworrans '{g}'".format(g=ger))
+                print("segmentation only processed '{s}'\nNy wrug an rannans argerdhes marnas '{s}'".format(s=self.segmented_word))
+            self.completeseg = False
+        else:
+            self.completeseg = True
+        
         self.sls = sls
         self.n_sls = len(sls)
         for s in self.sls:
@@ -713,13 +726,17 @@ class Ger:
             syl.syllableLength = sum(syl.lengtharray)
             self.hirderGer += syl.syllableLength
 
-    def longoutput(self):
+    def longoutput(self, gwarnya=False):
         """ return long output for each word"""
         line1 = "An ger yw: {g}".format(g=self.graph)
         line2 = "Niver a syllabennow yw: {n}".format(n=self.n_sls)
         line3 = "Hag yns i: {sls}".format(sls=[s for s in self.sls])
         #line3 = "Hag yns i: {sls}".format(sls=self.sls)
-        outlines = [line1,line2,line3]
+        if not(gwarnya) or self.graph == self.segmented_word:
+            outlines = [line1,line2,line3]
+        else:
+            line1point5 = self.gwarnyans(lang='bi')
+            outlines = [line1,line1point5,line2,line3]
         # for each syllable, display its spelling - capitalized if stressed
         # structure (CVC/CV/VC/V)
         # list with length of syllable parts
@@ -735,20 +752,45 @@ class Ger:
         # total length of syllables in word
         outlines.append("Hirder ger kowal = {H}".format(H=self.hirderGer))
         return outlines
+    
+    def gwarnyans(self, lang="kw"):
+        """ return warning if not all of word consumed """
+        if not(self.completeseg):
+            # not all of word consumed by regexp
+            if self.CYmode:
+                outtext = "Rhybudd: dydy y rhaniad ddim wedi defnyddio y gair '{g}' yn cyfan. Mae'r rhaniad wedi defnyddio dim ond '{s}'"  
+            elif lang == "bi":
+                outtext = "Warning: segmentation has not processed all of input '{g}'.\nGwarnyans: ny wrug an rannans argerdhes oll an ynworrans '{g}'. Segmentation only processed '{s}'\nNy wrug an rannans argerdhes marnas '{s}'"
+            elif lang == "en":
+                outtext = "Warning: segmentation has not processed all of input '{g}'. Segmentation only processed '{s}'"
+            else:
+                outtext = "Gwarnyans: ny wrug an rannans argerdhes oll an ynworrans '{g}'. Ny wrug an rannans argerdhes marnas '{s}'"
+            outtext = outtext.format(g=self.graph, s=self.segmented_word)
+            return outtext
+        else:
+            return ''
             
-    def diskwedh(self):
+    
+    def diskwedh(self, gwarnya=False):
         """ show output for each word """
+        if gwarnya:
+            print(self.gwarnyans(lang='bi'))        
         for l in self.longoutput():
             print(l)
+        
 
-    def shortoutput(self):
+    
+    def shortoutput(self, gwarnya=False):
         """ return short output for each word 
         spelling: number of syllables """
-        return "{g}:{n}  ".format(g=self.graph,n=self.n_sls)
+        if gwarnya and not self.completeseg:
+            return"{g}:{n}:{w}  ".format(g=self.graph, n=self.n_sls, w=self.gwarnyans(lang='kw'))
+        else:
+            return "{g}:{n}  ".format(g=self.graph,n=self.n_sls)
     
-    def diskwedhshort(self):
+    def diskwedhshort(self, gwarnya=False):
         """ show short output for each word """    
-        print(self.shortoutput(),end="")
+        print(self.shortoutput(gwarnya=gwarnya),end="")
         
 class Syllabenn(object):           
     """
@@ -1244,7 +1286,7 @@ class CYSyllabenn(FSSSyllabenn):
         
         
 def countSylsLine(linetext,fwd=False,mode='text',regexps=kwKemmynRegExp,
-                  FSSmode=False):
+                  FSSmode=False, CYmode=False, gwarnya=False):
     """ count the total syllables in each line
     mode is either 'text', 'list' or 'nsyllist'
     to return either a string, list with words
@@ -1255,10 +1297,10 @@ def countSylsLine(linetext,fwd=False,mode='text',regexps=kwKemmynRegExp,
     outlist = []
     outnsyllist = []
     for i in rannans.geryow:
-        g = Ger(i,rannans,fwd,regexps=regexps, FSSmode=FSSmode)
+        g = Ger(i,rannans,fwd,regexps=regexps, FSSmode=FSSmode, CYmode=CYmode)
         # for each word, display it with number of syllables
         if g.graph != '':
-            outtext += g.shortoutput()
+            outtext += g.shortoutput(gwarnya=gwarnya)
             outlist.append((g.graph,g.n_sls))            
             Nsls += g.n_sls
             outnsyllist.append((g.n_sls))
@@ -1273,20 +1315,20 @@ def countSylsLine(linetext,fwd=False,mode='text',regexps=kwKemmynRegExp,
     
 
 def detailSylsText(intext,fwd=False,short=False,regexps=kwKemmynRegExp,
-                   FSSmode=False):
+                   FSSmode=False, CYmode=False, gwarnya=False):
     outtext = ""
     rannans = RannaSyllabenn(intext)
     punctchars = ".,;:!?()-"
     for i in rannans.geryow:
-        g = Ger(i,rannans,fwd,regexps=regexps, FSSmode=FSSmode)
+        g = Ger(i,rannans,fwd,regexps=regexps, FSSmode=FSSmode, CYmode=CYmode)
         # avoid printing 'words' that consist only of a
         # punctuation character
         if g.graph != '' and g.graph not in punctchars:
             if short:
-                outtext += g.shortoutput()
+                outtext += g.shortoutput(gwarnya=gwarnya)
             else:
                 # print long form with syllable details
-                outtext += "\n".join(g.longoutput())
+                outtext += "\n".join(g.longoutput(gwarnya=gwarnya))
                 outtext += "\n\n"
     return outtext
     
@@ -1316,6 +1358,8 @@ if __name__ == '__main__':
                         help="Use the FSS/Standard Written form regular expressions rather than standard. takes priority over --devregexp.")
     parser.add_argument("--cyregexp", action="store_true",
                         help="Use Welsh regular expressions. Takes priority over other regexp options.")
+    parser.add_argument("--warn", action="store_true",
+                        help="Display warnings if words not fully consumed by regular expressions. Default is not to do so")
     args = parser.parse_args()
     # Check that the input parameter has been specified.
     if args.inputfile == None:
@@ -1349,10 +1393,10 @@ if __name__ == '__main__':
                 for i in rannans.geryow:
                     g = Ger(i,rannans,args.fwd, regexps=regexps,
                             FSSmode=args.fssregexp,
-                            CYmode=args.cyregexp)
+                            CYmode=args.cyregexp, gwarnya=args.warn)
                     # for each word, display it with number of syllables
                     if g.graph != '':
-                        g.diskwedhshort()
+                        g.diskwedhshort(gwarnya=args.warn)
                         Nsls += g.n_sls
                 print("\nNiver a sylabennow y'n linenn = {n}\n".format(n=Nsls))
     else:
@@ -1368,14 +1412,14 @@ if __name__ == '__main__':
         for i in rannans.geryow:
             g = Ger(i,rannans,args.fwd, regexps=regexps,
                     FSSmode=args.fssregexp,
-                    CYmode=args.cyregexp)
+                    CYmode=args.cyregexp, gwarnya=args.warn)
             # avoid printing 'words' that consist only of a
             # punctuation character
             if g.graph != '' and g.graph not in punctchars:
                 if args.short:
                     # print short form word:nsyls
-                    g.diskwedhshort()
+                    g.diskwedhshort(gwarnya=args.warn)
                 else:
                     # print long form with syllable details
-                    g.diskwedh()
+                    g.diskwedh(gwarnya=args.warn)
                     print('\n')

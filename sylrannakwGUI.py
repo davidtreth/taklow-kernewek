@@ -5,12 +5,12 @@ if sys.version_info[0] < 3:
     import Tkinter as tk
 else:
     import tkinter as tk
-from taklowGUI import Kwitya, Radiobar, ScrolledText
+from taklowGUI import Kwitya, Radiobar, ScrolledText, CheckButtonBar
 
 
 def allstates():
     print(options.state(), options2.state(),
-          kkfss.state(), ent.gettext())
+          kkfss.state(), gwarnya.state(), ent.gettext())
 
 def printsylranna():
     """ show the output in Cornish, according to the options
@@ -37,7 +37,7 @@ def printsylranna():
                 
         if options.state() == 'Mode Hir':
             output = syl.detailSylsText(inputtext, fwd, regexps=regexps,
-                                        FSSmode=FSS)
+                                        FSSmode=FSS, gwarnya=gwarnya.state()[0])
             msg3.text.config(font=('Helvetica', 14, 'normal'),
                              width=66, height=12+heightadjust)
         elif options.state() == 'Mode Linenn':
@@ -46,7 +46,7 @@ def printsylranna():
             lines = inputtext.split('\n')                
             for l in lines:                    
                 output += syl.countSylsLine(l, fwd, regexps=regexps,
-                                            FSSmode=FSS)+'\n\n'
+                                            FSSmode=FSS, gwarnya=gwarnya.state()[0])+'\n\n'
             output = output[:-1]
         else:
             msg3.text.config(font=('Helvetica', 16, 'bold'),
@@ -54,7 +54,7 @@ def printsylranna():
             # use short mode by default if nothing is selected
             output = syl.detailSylsText(inputtext, fwd,
                                         short=True, regexps=regexps,
-                                        FSSmode=FSS)
+                                        FSSmode=FSS, gwarnya=gwarnya.state()[0])
         print(output)
     msg3.settext(output)
     msg3.text.config(state=tk.DISABLED)
@@ -117,7 +117,8 @@ if __name__ == '__main__':
     kkfss.pack(side=tk.LEFT, fill=tk.Y)
     kkfss.config(pady=10)
     
-        
+    gwarnya = CheckButtonBar(kkfss, ['Gwarnya mar nag yw ger argerdhys yn tien'], side=tk.TOP, anchor=tk.NW)
+    gwarnya.pack(side=tk.LEFT, fill=tk.Y)        
         
     msg = tk.Label(root, text="Gorrewgh tekst kernewek a-woeles mar pleg:")
     msg.config(font=('Helvetica', 16+fontsizeadj, 'bold'))
