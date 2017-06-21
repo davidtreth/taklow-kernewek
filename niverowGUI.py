@@ -7,6 +7,7 @@ else:
     import tkinter as tk
 from taklowGUI import Kwitya, Entrybar, CheckButtonBar
 import niverow
+import textwrap
 
 if __name__ == '__main__':
     root = tk.Tk()
@@ -44,7 +45,9 @@ if __name__ == '__main__':
                     output = niverow.numberkw_float_noun(niver,ent2.fetch(),options.state()[1],npl)
             else:
                 output = niverow.numberkw_float(niver)
+            output = textwrap.fill(output, 40)
             print(output)
+            
             msg3.config(fg = 'dark red', bg = 'light yellow', font=('Helvetica', 18, 'bold'), text=output)
         #msg3.config(text = output)
 
