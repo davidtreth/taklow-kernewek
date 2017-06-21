@@ -9,6 +9,7 @@ else:
 from taklowGUI import Kwitya, CheckButtonBar
 import termyn, niverow
 import espeaktexttospeech.gorhemmyn_kw as gorhemmyn
+import textwrap
 
 if __name__ == '__main__':
     root = tk.Tk()
@@ -53,10 +54,12 @@ if __name__ == '__main__':
         if gor:
             g = gorhemmyn.Gorhemmyn()
             output += g.gorhemmyn
-        
- 
-        print(output)
-        msg3.config(fg = 'dark red', bg = 'light yellow', font=('Helvetica', 18, 'bold'), text=output)
+
+        wrapoutput = ""
+        for line in output.split("\n"):
+            wrapoutput += textwrap.fill(line, 50) + "\n"
+        print(wrapoutput)
+        msg3.config(fg = 'dark red', bg = 'light yellow', font=('Helvetica', 18, 'bold'), text=wrapoutput)
         #msg3.config(text = output)
 
     def clearboxes():
