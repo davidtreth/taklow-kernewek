@@ -7,7 +7,7 @@ else:
     import tkinter as tk
 from taklowGUI import Gadael, Radiobar, Entrybar, CheckButtonBar
 import mutatya
-
+import textwrap
 
 def allstates(): print(mstate.state(), ent.fetch())
 def intmstate():
@@ -23,14 +23,18 @@ def printmform():
     """ show the mutated form of whatever has been input in the
     entry bar """
     if mstate.state() < 9:
-        print(mutatya.mutate_cy(ent.fetch(),mstate.state()))
-        msg2.config(text = mutatya.mutate_cy(ent.fetch(),mstate.state()),
+        weditreiglo = mutatya.mutate_cy(ent.fetch(),mstate.state())
+        weditreiglo = textwrap.fill(weditreiglo, 60)
+        #print(mutatya.mutate_cy(ent.fetch(),mstate.state()))
+        print(weditreiglo)
+        msg2.config(text = weditreiglo,
                     font=('Courier', 18, 'bold'))
     else:
-        print(mutatya.format_rev_mutate(mutatya.rev_mutate_cy(ent.fetch(), False),
-                                        cy=True))
-        msg2.config(text = mutatya.format_rev_mutate(mutatya.rev_mutate_cy(
-            ent.fetch(), False), cy=True), font=('Courier', 14, 'bold'))
+        hebtreiglo = mutatya.format_rev_mutate(mutatya.rev_mutate_cy(ent.fetch(), False), cy=True)
+        hebtreiglo = textwrap.fill(hebtreiglo, 60)
+        print(hebtreiglo)
+        
+        msg2.config(text = hebtreiglo, font=('Courier', 14, 'bold'))
 
 def copyclipbd():
     """ copy the contents of the output window to the clipboard """

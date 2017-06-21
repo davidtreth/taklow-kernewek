@@ -7,6 +7,7 @@ else:
     import tkinter as tk
 from taklowGUI import Kwitya, Radiobar, Entrybar, CheckButtonBar
 import mutatya
+import textwrap
 
 if __name__ == '__main__':
     root = tk.Tk()
@@ -39,12 +40,18 @@ if __name__ == '__main__':
         """ show the mutated form of whatever has been input in the
         entry bar """
         if intmstate() < 7:
-            print(mutatya.mutate(ent.fetch(),intmstate()))
-            msg2.config(text = mutatya.mutate(ent.fetch(),intmstate(), tradgraph.state()[0]),
+            #print(mutatya.mutate(ent.fetch(),intmstate()))
+            mutatys =  mutatya.mutate(ent.fetch(),intmstate(), tradgraph.state()[0])
+            mutatys = textwrap.fill(mutatys, 60)
+            print(mutatys)
+            msg2.config(text = mutatys,
                         font=('Courier', 16, 'bold'))
         else:
-            print(mutatya.format_rev_mutate(mutatya.rev_mutate(ent.fetch(), False, tradgraph.state()[0]), True))
-            msg2.config(text = mutatya.format_rev_mutate(mutatya.rev_mutate(ent.fetch(), False, tradgraph.state()[0]), True),
+            dimutatys = mutatya.format_rev_mutate(mutatya.rev_mutate(ent.fetch(), False, tradgraph.state()[0]), True)
+            #print(mutatya.format_rev_mutate(mutatya.rev_mutate(ent.fetch(), False, tradgraph.state()[0]), True))
+            mutatys = textwrap.fill(dimutatys, 60)
+            print(dimutatys)
+            msg2.config(text = dimutatys,
             font=('Courier', 14, 'bold'))
     
     msg = tk.Label(root, text="Gorrewgh ger kernewek a-woles mar pleg",
