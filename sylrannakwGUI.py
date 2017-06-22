@@ -5,12 +5,13 @@ if sys.version_info[0] < 3:
     import Tkinter as tk
 else:
     import tkinter as tk
-from taklowGUI import Kwitya, Radiobar, ScrolledText, CheckButtonBar
+from taklowGUI import Kwitya, Radiobar, ScrolledText, CheckButtonBar, wraplines
 import textwrap
 
 def allstates():
     print(options.state(), options2.state(),
           kkfss.state(), gwarnya.state(), ent.gettext())
+
 
 def printsylranna():
     """ show the output in Cornish, according to the options
@@ -38,6 +39,8 @@ def printsylranna():
         if options.state() == 'Mode Hir':
             output = syl.detailSylsText(inputtext, fwd, regexps=regexps,
                                         FSSmode=FSS, gwarnya=gwarnya.state()[0])
+            # only needed in cases of very long words
+            output = wraplines(output)
             msg3.text.config(font=('Helvetica', 14, 'normal'),
                              width=66, height=12+heightadjust)
             
@@ -48,9 +51,7 @@ def printsylranna():
             for l in lines:                    
                 output += syl.countSylsLine(l, fwd, regexps=regexps,
                                             FSSmode=FSS, gwarnya=gwarnya.state()[0])+'\n\n'
-            output = output.split("\n")
-            output = [textwrap.fill(l, 60) for l in output]
-            output = "\n".join(output)
+            output = wraplines(output)
         else:
             msg3.text.config(font=('Helvetica', 16, 'bold'),
                              width=60, height=11+heightadjust)

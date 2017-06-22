@@ -9,13 +9,13 @@ if sys.version_info[0] < 3:
     import Tkinter as tk
 else:
     import tkinter as tk
-from taklowGUI import Gadael, Radiobar, ScrolledText, CheckButtonBar
+from taklowGUI import Gadael, Radiobar, ScrolledText, CheckButtonBar, wraplines
 import textwrap
 
 def allstates():
     print(options.state(), options2.state(),
           rhybudd.state(), ent.gettext())
-
+    
 def printsylranna():
     """ show the output in Welsh, according to the options
     in the radiobar is selected """
@@ -35,8 +35,13 @@ def printsylranna():
         if options.state() == 'Mode Hir':
             output = syl.detailSylsText(inputtext, fwd, regexps=regexps,
                                         FSSmode=False, CYmode=True, gwarnya=rhybudd.state()[0])
+            # long mode doesn't normally need word wrapping, but just in case
+            # someone enters Llan50goch in full
+            output=wraplines(output)
+            
             msg3.text.config(font=('Helvetica', 14+fontsizeadj, 'normal'),
                              width=66, height=12+heightadjust)
+            
         elif options.state() == 'Mode Llinell':
             msg3.text.config(font=('Helvetica', 16+fontsizeadj, 'bold'),
                              width=60, height=11+heightadjust)
@@ -44,9 +49,7 @@ def printsylranna():
             for l in lines:                    
                 output += syl.countSylsLine(l, fwd, regexps=regexps,
                                             FSSmode=False, CYmode=True, gwarnya=rhybudd.state()[0])+'\n\n'
-            output = output.split("\n")
-            output = [textwrap.fill(l, 60) for l in output]
-            output = "\n".join(output)                
+            output = wraplines(output)
 
         else:
             msg3.text.config(font=('Helvetica', 16+fontsizeadj, 'bold'),

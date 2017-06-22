@@ -6,7 +6,7 @@ if sys.version_info[0] < 3:
 else:
     import tkinter as tk
 import argparse
-from taklowGUI import Kwitya, Radiobar, ScrolledText
+from taklowGUI import Kwitya, Radiobar, ScrolledText, wraplines
 import textwrap
 
 def checkNLTK():
@@ -48,9 +48,8 @@ def printkovtreylyans():
         else:
             # show only N grams containing non stopwords
             output = kovtreylyans.kovtreyl(inputtext, skeulanyeth1, False, allNgrams=False, linelength=outputwidth-2)
-        output = output.split('\n')
-        output = [textwrap.fill(l, 80) for l in output]
-        output = '\n'.join(output)
+        output = wraplines(output, 80)
+
         # print(output)
 
     msg3.settext(output)

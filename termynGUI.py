@@ -6,7 +6,7 @@ if sys.version_info[0] < 3:
     import Tkinter as tk
 else:
     import tkinter as tk
-from taklowGUI import Kwitya, CheckButtonBar
+from taklowGUI import Kwitya, CheckButtonBar, wraplines
 import termyn, niverow
 import espeaktexttospeech.gorhemmyn_kw as gorhemmyn
 import textwrap
@@ -54,10 +54,13 @@ if __name__ == '__main__':
         if gor:
             g = gorhemmyn.Gorhemmyn()
             output += g.gorhemmyn
+            try:
+                # wrap in try in case espeak doesn't exist
+                g.kewsel()
+            except:
+                pass
 
-        wrapoutput = ""
-        for line in output.split("\n"):
-            wrapoutput += textwrap.fill(line, 50) + "\n"
+        wrapoutput = wraplines(output, 50)
         print(wrapoutput)
         msg3.config(fg = 'dark red', bg = 'light yellow', font=('Helvetica', 18, 'bold'), text=wrapoutput)
         #msg3.config(text = output)

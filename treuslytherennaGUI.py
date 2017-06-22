@@ -5,7 +5,7 @@ if sys.version_info[0] < 3:
     import Tkinter as tk
 else:
     import tkinter as tk
-from taklowGUI import Kwitya, Radiobar, ScrolledText
+from taklowGUI import Kwitya, Radiobar, ScrolledText, wraplines
 from sylrannakwGUI import checkNLTK
 from syllabenn_ranna_kw import preprocess2ASCII
 import textwrap
@@ -29,6 +29,7 @@ def printtreus():
             
         if options.state() == 'Mode Hir':
             output = tr.text_KK2FSS(inputtext,fwd,longform=True)
+            output = wraplines(output)
             msg3.text.config(font=('Helvetica', 14+fontsizeadj, 'normal'),
                              width=66, height=12+heightadjust)
         elif options.state() == 'Mode Linenn' or options.state() == 'Mode Berr':
@@ -40,10 +41,7 @@ def printtreus():
                     output += tr.line_KK2FSS(l,fwd) + '\n\n'
                 else:
                     output += tr.line_KK2FSS(l,fwd,longform=False) + '\n'
-            output = output.split('\n')
-            output = [textwrap.fill(l, 60) for l in output]
-            output = '\n'.join(output)            
-                                  
+            output = wraplines(output)
         print(output)
 
     msg3.settext(output)

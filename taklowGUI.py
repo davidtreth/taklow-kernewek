@@ -1,6 +1,7 @@
 # coding=utf-8
 # base module for GUI
 import sys
+import textwrap
 if sys.version_info[0] < 3:
     import Tkinter as tk
     import tkMessageBox as messagebox
@@ -8,6 +9,12 @@ else:
     import tkinter as tk
     from tkinter import messagebox
 
+def wraplines(outtext, width=60):
+    """ word wrap one line at a time, to preserve original newlines """
+    outtext = outtext.split("\n")
+    outtext = [textwrap.fill(l, width) for l in outtext]
+    outtext = "\n".join(outtext)
+    return outtext
 
 class Kwitya(tk.Frame):
     """ define quit button """

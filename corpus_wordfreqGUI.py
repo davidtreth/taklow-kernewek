@@ -5,16 +5,17 @@ if sys.version_info[0] < 3:
     import Tkinter as tk
 else:
     import tkinter as tk
-from taklowGUI import Kwitya2, Entrybar, Radiobar, ScrolledText
+from taklowGUI import Kwitya2, Entrybar, Radiobar, ScrolledText, wraplines
 import matplotlib.pyplot as plt
 import copy
 import textwrap
+
+
 try:
     import cornish_corpus
 except ImportError:
     print("error importing cornish_corpus")
     
-
 comparelist = []
 defaultsamples = ['dhe', 'gans', 'war', 'dhymm', 'dhymmo', 'genev', 'warnav', 'rag', 'mes']
 #["a","ha","an","dhe","yn","yw","ow","ev","rag","mes","esa","yth","y"]
@@ -414,9 +415,7 @@ class CorpusStats(tk.Frame):
                     [self.kk_text_dict[self.names[self.textchoice.state()]]],
                     [self.names[self.textchoice.state()]],
                     comparelist, outlang=self.ifacelang)
-            outputtext = outputtext.split('\n')
-            outputtext = [textwrap.fill(l, 60) for l in outputtext]
-            outputtext = '\n'.join(outputtext)                  
+            outputtext = wraplines(outputtext)
             self.outbox.settext(outputtext)        
             plt.show()
         if self.modechoice.state() == 6:
@@ -433,9 +432,7 @@ class CorpusStats(tk.Frame):
                     [self.kk_text_dict[self.names[self.textchoice.state()]]],
                     [self.names[self.textchoice.state()]],
                     comparelist, outlang=self.ifacelang)
-            outputtext = outputtext.split('\n')
-            outputtext = [textwrap.fill(l, 60) for l in outputtext]
-            outputtext = '\n'.join(outputtext)            
+            outputtext = wraplines(outputtext)           
             self.outbox.settext(outputtext)
             plt.show()
         if self.modechoice.state() == 7:
@@ -452,9 +449,7 @@ class CorpusStats(tk.Frame):
                     [self.kk_text_dict[self.names[self.textchoice.state()]]],
                     [self.names[self.textchoice.state()]],
                     comparelist, 60,25, outlang=self.ifacelang)
-            outputtext = outputtext.split('\n')
-            outputtext = [textwrap.fill(l, 60) for l in outputtext]
-            outputtext = '\n'.join(outputtext) 
+            outputtext = wraplines(outputtext)
             self.outbox.settext(outputtext)                
     def copyclipbd(self):
         self.clipboard_clear()
