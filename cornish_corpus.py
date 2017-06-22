@@ -22,10 +22,15 @@ import matplotlib.pyplot as plt
 import numpy as np
 import string
 import sys, argparse
-from StringIO import StringIO
+try:
+    from StringIO import StringIO
+except ImportError:
+    from io import StringIO
+    
 import imp
 imp.reload(sys)
-sys.setdefaultencoding('utf-8')
+if sys.version_info[0] < 3:
+    sys.setdefaultencoding('utf-8')
 
 
 def countchars(text_alpha, chdigraph=True, const_digraphs = True,

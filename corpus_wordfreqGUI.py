@@ -15,6 +15,7 @@ try:
     import cornish_corpus
 except ImportError:
     print("error importing cornish_corpus")
+
     
 comparelist = []
 defaultsamples = ['dhe', 'gans', 'war', 'dhymm', 'dhymmo', 'genev', 'warnav', 'rag', 'mes']
