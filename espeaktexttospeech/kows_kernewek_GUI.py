@@ -11,7 +11,7 @@ else:
 from taklowGUI import Kwitya, ScrolledText
 import gorhemmyn_kw as gor
 import kernewek_to_welshorthography as kw2cy
-
+import textwrap
 
 
 if __name__ == '__main__':
@@ -32,7 +32,8 @@ if __name__ == '__main__':
         """ show whatever has been input in the
         entry bar, and speak it """
         print(ent.gettext())
-        msg2.config(text = ent.gettext())
+        outtext = textwrap.fill(ent.gettext(), 60)
+        msg2.config(text = outtext)
         root.update_idletasks()
         kewsel(ent.gettext())
         

@@ -8,6 +8,7 @@ else:
 from taklowGUI import Kwitya, Radiobar, ScrolledText
 from sylrannakwGUI import checkNLTK
 from syllabenn_ranna_kw import preprocess2ASCII
+import textwrap
 
 def allstates(): print(options.state(), options2.state(), ent.gettext())
 
@@ -39,6 +40,10 @@ def printtreus():
                     output += tr.line_KK2FSS(l,fwd) + '\n\n'
                 else:
                     output += tr.line_KK2FSS(l,fwd,longform=False) + '\n'
+            output = output.split('\n')
+            output = [textwrap.fill(l, 60) for l in output]
+            output = '\n'.join(output)            
+                                  
         print(output)
 
     msg3.settext(output)

@@ -8,6 +8,7 @@ else:
 from taklowGUI import Kwitya2, Entrybar, Radiobar, ScrolledText
 import matplotlib.pyplot as plt
 import copy
+import textwrap
 try:
     import cornish_corpus
 except ImportError:
@@ -344,15 +345,21 @@ class CorpusStats(tk.Frame):
             topN = self.getIntMinL(self.ent2.fetch(), 20)
             minL = self.getIntMinL(self.ent.fetch(), 4)
             if self.textchoice.state() == 10:
-                self.outbox.settext(cornish_corpus.basicReportAll(self.kk_texts,
-                                                                  self.names, topN, minL,
-                                                                  pause=False,
-                                                                  outlang=self.ifacelang))
+                outputtext = cornish_corpus.basicReportAll(self.kk_texts,
+                                                           self.names, topN, minL,
+                                                           pause=False,
+                                                           outlang=self.ifacelang)
             else:
-                self.outbox.settext(cornish_corpus.basicReport(
-                    self.kk_text_dict[self.names[self.textchoice.state()]], self.names[self.textchoice.state()],
+                outputtext = cornish_corpus.basicReport(
+                    self.kk_text_dict[self.names[self.textchoice.state()]],
+                    self.names[self.textchoice.state()],
                     topN, minL,
-                    outlang=self.ifacelang))                       
+                    outlang=self.ifacelang)
+            outputtext = outputtext.split('\n')
+            outputtext = [textwrap.fill(l, 60) for l in outputtext]
+            outputtext = '\n'.join(outputtext)
+            
+            self.outbox.settext(outputtext)
         if self.modechoice.state() == 1:
             # rol menowghder ger
             topN = self.getIntMinL(self.ent2.fetch(), 20)
@@ -398,14 +405,19 @@ class CorpusStats(tk.Frame):
                 comparelist = self.defaultsamples           
             self.outbox.text.config(bg = 'light yellow', fg = 'dark red',
                                     font=('Courier', 12+self.fontsizeadj, 'normal'))
-            if self.textchoice.state() == 10: 
-                self.outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.compareSamples(
+            if self.textchoice.state() == 10:
+                outputtext = str(comparelist)+'\n\n'+cornish_corpus.compareSamples(
                     self.kk_texts, self.names, comparelist,
-                    outlang=self.ifacelang))
+                    outlang=self.ifacelang)
             else:
-                self.outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.compareSamples(
-                    [self.kk_text_dict[self.names[self.textchoice.state()]]],[self.names[self.textchoice.state()]],
-                    comparelist, outlang=self.ifacelang))        
+                outputtext = str(comparelist)+'\n\n'+cornish_corpus.compareSamples(
+                    [self.kk_text_dict[self.names[self.textchoice.state()]]],
+                    [self.names[self.textchoice.state()]],
+                    comparelist, outlang=self.ifacelang)
+            outputtext = outputtext.split('\n')
+            outputtext = [textwrap.fill(l, 60) for l in outputtext]
+            outputtext = '\n'.join(outputtext)                  
+            self.outbox.settext(outputtext)        
             plt.show()
         if self.modechoice.state() == 6:
             comparelist = self.getcomparelist()
@@ -414,12 +426,17 @@ class CorpusStats(tk.Frame):
             self.outbox.text.config(bg = 'light yellow', fg = 'dark red',
                                     font=('Courier', 12+self.fontsizeadj, 'normal'))
             if self.textchoice.state() == 10:
-                self.outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.compareSamplesLinear(
-                    self.kk_texts, self.names, comparelist, outlang=self.ifacelang))
+                outputtext = str(comparelist)+'\n\n'+cornish_corpus.compareSamplesLinear(
+                    self.kk_texts, self.names, comparelist, outlang=self.ifacelang)
             else:
-                self.outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.compareSamplesLinear(
-                    [self.kk_text_dict[self.names[self.textchoice.state()]]], [self.names[self.textchoice.state()]],
-                    comparelist, outlang=self.ifacelang))
+                outputtext = str(comparelist)+'\n\n'+cornish_corpus.compareSamplesLinear(
+                    [self.kk_text_dict[self.names[self.textchoice.state()]]],
+                    [self.names[self.textchoice.state()]],
+                    comparelist, outlang=self.ifacelang)
+            outputtext = outputtext.split('\n')
+            outputtext = [textwrap.fill(l, 60) for l in outputtext]
+            outputtext = '\n'.join(outputtext)            
+            self.outbox.settext(outputtext)
             plt.show()
         if self.modechoice.state() == 7:
             comparelist = self.getcomparelist()
@@ -428,14 +445,17 @@ class CorpusStats(tk.Frame):
             self.outbox.text.config(bg = 'light yellow', fg = 'dark red',
                                     font=('Courier', 12+self.fontsizeadj, 'normal'))
             if self.textchoice.state() == 10:
-                self.outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.concordances(
-                    self.kk_texts, self.names, comparelist, 60, 25, outlang=self.ifacelang))
+                outputtext = str(comparelist)+'\n\n'+cornish_corpus.concordances(
+                    self.kk_texts, self.names, comparelist, 60, 25, outlang=self.ifacelang)
             else:
-                self.outbox.settext(str(comparelist)+'\n\n'+cornish_corpus.concordances(
-                    [self.kk_text_dict[self.names[self.textchoice.state()]]], [self.names[self.textchoice.state()]],
-                    comparelist, 60,25, outlang=self.ifacelang))
-        
-                
+                outputtext = str(comparelist)+'\n\n'+cornish_corpus.concordances(
+                    [self.kk_text_dict[self.names[self.textchoice.state()]]],
+                    [self.names[self.textchoice.state()]],
+                    comparelist, 60,25, outlang=self.ifacelang)
+            outputtext = outputtext.split('\n')
+            outputtext = [textwrap.fill(l, 60) for l in outputtext]
+            outputtext = '\n'.join(outputtext) 
+            self.outbox.settext(outputtext)                
     def copyclipbd(self):
         self.clipboard_clear()
         self.clipboard_append(self.outbox.gettext())

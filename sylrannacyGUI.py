@@ -10,7 +10,7 @@ if sys.version_info[0] < 3:
 else:
     import tkinter as tk
 from taklowGUI import Gadael, Radiobar, ScrolledText, CheckButtonBar
-
+import textwrap
 
 def allstates():
     print(options.state(), options2.state(),
@@ -44,7 +44,10 @@ def printsylranna():
             for l in lines:                    
                 output += syl.countSylsLine(l, fwd, regexps=regexps,
                                             FSSmode=False, CYmode=True, gwarnya=rhybudd.state()[0])+'\n\n'
-            output = output[:-1]
+            output = output.split("\n")
+            output = [textwrap.fill(l, 60) for l in output]
+            output = "\n".join(output)                
+
         else:
             msg3.text.config(font=('Helvetica', 16+fontsizeadj, 'bold'),
                              width=60, height=11+heightadjust)
@@ -52,6 +55,7 @@ def printsylranna():
             output = syl.detailSylsText(inputtext, fwd,
                                         short=True, regexps=regexps,
                                         FSSmode=False, CYmode=True,  gwarnya=rhybudd.state()[0])
+            output = textwrap.fill(output, 60)
         print(output)
     msg3.settext(output)
     msg3.text.config(state=tk.DISABLED)

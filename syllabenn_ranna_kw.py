@@ -760,7 +760,7 @@ class Ger:
             if self.CYmode:
                 outtext = "Rhybudd: dydy y rhaniad ddim wedi defnyddio y gair '{g}' yn cyfan. Mae'r rhaniad wedi defnyddio dim ond '{s}'"  
             elif lang == "bi":
-                outtext = "Warning: segmentation has not processed all of input '{g}'.\nGwarnyans: ny wrug an rannans argerdhes oll an ynworrans '{g}'. Segmentation only processed '{s}'\nNy wrug an rannans argerdhes marnas '{s}'"
+                outtext = "Warning: segmentation has not processed all of input '{g}'.\nGwarnyans: ny wrug an rannans argerdhes oll an ynworrans '{g}'.\nSegmentation only processed '{s}'\nNy wrug an rannans argerdhes marnas '{s}'"
             elif lang == "en":
                 outtext = "Warning: segmentation has not processed all of input '{g}'. Segmentation only processed '{s}'"
             else:
