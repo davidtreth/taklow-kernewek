@@ -400,7 +400,19 @@ class NiferCymraeg:
 
         self.maxTrad = 20
 
-
+    def replaces(self, num_cy):
+        num_cy = num_cy.replace("  "," ")
+        num_cy = num_cy.replace("a u","ac u")
+        num_cy = num_cy.replace("a e","ac e")
+        num_cy = num_cy.replace("a ê","ac ê")
+        num_cy = num_cy.replace("a o","ac o")
+        num_cy = num_cy.replace("a ô","ac ô")
+        num_cy = num_cy.replace("a w","ac w")
+        num_cy = num_cy.replace("a ŵ","ac ŵ")
+        num_cy = num_cy.replace("tri can","tri chan") 
+        num_cy = num_cy.replace("dau mil", "dau vil")
+        return num_cy
+    
     def setMaxTrad(self, maxTrad):
         self.maxTrad = maxTrad
         
@@ -482,6 +494,8 @@ class NiferCymraeg:
                 num_cy = "biliwn"
             if num > 1e9:
                 num_cy = str(num)
+
+        num_cy = self.replaces(num_cy)              
         return num_cy
             
 
@@ -638,6 +652,7 @@ class NiferCymraeg:
             num_cy = "deugain " + noun
         elif num > 40:
             num_cy = self.firstpartnouncy(num-40, noun, fem) + " a deugain"
+        num_cy = self.replaces(num_cy)              
         return num_cy
 
     def numbercy_float(self, num):
