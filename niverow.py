@@ -438,29 +438,32 @@ class NiferCymraeg:
                 if tensunits == 0:
                     num_cy = self.numarray_dep[hundreds-1] + " cant"
                 else:
-                    num_cy =  self.numarray_dep[hundreds-1] + " cant a " + self.numbercy(tensunits)
+                    num_cy =  self.numarray_dep[hundreds-1] + " cant a " + mutatya.mutate_cy(self.numbercy(tensunits), 3)
             if num == 1000:
                 num_cy = "mil"
             if num % 1000 < 200 and(num % 20 == 0 or num % 1000 < 21):
                 a = " a "
+                mutatst = 3
             else:
                 a = ", "
-                
+                mutatst = 1
 
             if num > 1000 and num < 2000:
-                num_cy = "mil"+ a+ self.numbercy(num % 1000)
+                num_cy = "mil"+ a+ mutatya.mutate_cy(self.numbercy(num % 1000), mutatst)
 
             if num > 1999 and num < 21000:
                 if num % 1000 == 0:
                     num_cy = self.numbercy(num//1000, dep=True) + " mil"
                 else:
-                    num_cy = self.numbercy(num//1000, dep=True) + " mil"+a + self.numbercy(num % 1000)
+                    num_cy = self.numbercy(num//1000, dep=True) + " mil"+a + mutatya.mutate_cy(self.numbercy(num % 1000), mutatst)
             if num > 20999 and num < 200000:
                 if num % 1000 == 0:
                     num_cy = self.numbercyDeg(num//1000) + " mil"
                 else:
                     num_cy = self.numbercyDeg(num // 1000) + " mil " + self.numbercy(num % 1000)
             if num > 199999 and num < 1000000:
+                if num % 100000 == 0:
+                    num_cy = self.numarray_dep[(num // 100000)-1] + " can mil"
                 if num % 1000 == 0:
                     num_cy = self.numarray_dep[(num // 100000)-1] + " cant "+ self.numbercyDeg((num%100000)//1000) + " mil"
                 else:
@@ -469,22 +472,26 @@ class NiferCymraeg:
                 num_cy = "miliwn"
             if num % 1000000 < 200 and(num % 20 == 0 or num % 1000 < 21):
                 a = " a "
+                mutatst = 3
             else:
-                a = ", "                
+                a = ", "
+                mutatst = 1
             if num > 1000000 and num < 2000000:
-                num_cy = "miliwn"+ a+ self.numbercy(num % 1000000)
+                num_cy = "miliwn"+ a+ mutatya.mutate_cy(self.numbercy(num % 1000000), mutatst)
 
             if num > 1999999 and num < 21000000:
                 if num % 1000000 == 0:
                     num_cy = self.numbercy(num//1000000, dep=True) + " miliwn"
                 else:
-                    num_cy = self.numbercy(num//1000000, dep=True) + " miliwn"+a + self.numbercy(num % 1000000)
+                    num_cy = self.numbercy(num//1000000, dep=True) + " miliwn"+a + mutatya.mutate_cy(self.numbercy(num % 1000000), mutatst)
             if num > 20999999 and num < 200000000:
                 if num % 1000000 == 0:
                     num_cy = self.numbercyDeg(num//1000000) + " miliwn"
                 else:
                     num_cy = self.numbercyDeg(num // 1000000) + " miliwn " + self.numbercy(num % 1000000)
             if num > 199999999 and num < 1000000000:
+                if num % 100000000 == 0:
+                    num_cy = self.numarray_dep[(num // 100000000)-1] + " can miliwn"
                 if num % 1000000 == 0:
                     num_cy = self.numarray_dep[(num // 100000000)-1] + " cant "+ self.numbercyDeg((num%100000000)//1000000) + " miliwn"
                 else:
@@ -515,7 +522,7 @@ class NiferCymraeg:
             if units == 0:            
                 num_cy = "cant " + self.numarray_dep[tens-1] + " deg"
             elif tens == 0:
-                num_cy = "cant a "+self.numarray[units-1]
+                num_cy = "cant a "+mutatya.mutate_cy(self.numarray[units-1], 3)
             else:
                 num_cy = "cant " + self.numarray_dep[tens-1] + " deg "+self.numarray[units-1]
         else:
@@ -555,7 +562,7 @@ class NiferCymraeg:
                 if num == 50:
                     num_cy = "hanner cant"
                 else:
-                    num_cy = self.numbercy(firstpart) + " a "+ self.numbercy(secondpart, dep=True) + " ugain"
+                    num_cy = self.numbercy(firstpart) + " a "+ mutatya.mutate_cy(self.numbercy(secondpart, dep=True), 3) + " ugain"
         if num == 100:
             num_cy = "cant"
         if num > 100 and num < 120:
@@ -563,7 +570,7 @@ class NiferCymraeg:
             secondpart = num // 20
             num_cy = "cant a "+ self.numbercy(num-100)
                     
-            num_cy = self.numbercy(firstpart) + " a " + self.numbercy(secondpart, dep=True) + " ugain"
+            num_cy = self.numbercy(firstpart) + " a " + mutatya.mutate_cy(self.numbercy(secondpart, dep=True), 3) + " ugain"
 
         return num_cy
 
