@@ -385,13 +385,184 @@ def numberkw_ord(num):
         num_k = "milves"
     return num_k
     
+class NiferCymraeg:
+    def __init__(self):
+        self.numarray = ["un", "dau", "tri", "pedwar", "pump",
+                         "chwech", "saith", "wyth", "naw", "deg"]
+        self.numarray_dep = ["un", "dau", "tri", "pedwar", "pum",
+                         "chwe", "saith", "wyth", "naw", "deg"]
+        self.numarray_f = ["un", "dwy", "tair", "pedair", "pump",
+                           "chwech", "saith", "wyth", "naw", "deg"]
+    
+        # handle 12, 15, 19, 20 as exceptions
+        self.numarray_ord = ["cyntaf", "ail", "trydydd", "pedwerydd", "pumed",
+                             "chweched", "seithfed", "wythfed", "nawfed", "degfed"]
+
+        self.maxTrad = 20
+
+
+    def setMaxTrad(self, maxTrad):
+        self.maxTrad = maxTrad
+        
+    def numbercy(self, num, dep=False):
+        """ return the Welsh for the numeral <num> without a noun """
+        num = int(num)
+        if num == 0:
+            num_cy = "dim"
+        if num > 0 and num <= 10:
+            if dep:
+                num_cy = self.numarray_dep[num-1]
+            else:
+                num_cy = self.numarray[num-1]
+        if num > 10 and num < 200:
+            if num > self.maxTrad:
+                num_cy = self.numbercyDeg(num)
+            else:
+                num_cy = self.numbercyUgain(num)
+        elif num >= 200:
+            if num < 1000:
+                tensunits = num % 100
+                hundreds = num // 100
+                if tensunits == 0:
+                    num_cy = self.numarray_dep[hundreds-1] + " cant"
+                else:
+                    num_cy =  self.numarray_dep[hundreds-1] + " cant a " + self.numbercy(tensunits)
+            if num == 1000:
+                num_cy = "mil"
+            if num % 1000 < 200 and(num % 20 == 0 or num % 1000 < 21):
+                a = " a "
+            else:
+                a = ", "
+                
+
+            if num > 1000 and num < 2000:
+                num_cy = "mil"+ a+ self.numbercy(num % 1000)
+
+            if num > 1999 and num < 21000:
+                if num % 1000 == 0:
+                    num_cy = self.numbercy(num//1000, dep=True) + " mil"
+                else:
+                    num_cy = self.numbercy(num//1000, dep=True) + " mil"+a + self.numbercy(num % 1000)
+            if num > 20999 and num < 200000:
+                if num % 1000 == 0:
+                    num_cy = self.numbercyDeg(num//1000) + " mil"
+                else:
+                    num_cy = self.numbercyDeg(num // 1000) + " mil " + self.numbercy(num % 1000)
+            if num > 199999 and num < 1000000:
+                if num % 1000 == 0:
+                    num_cy = self.numarray_dep[(num // 100000)-1] + " cant "+ self.numbercyDeg((num%100000)//1000) + " mil"
+                else:
+                    num_cy = self.numarray_dep[(num // 100000)-1] + " cant "+ self.numbercyDeg((num%100000)//1000) + " mil " +  self.numbercy(num % 1000)
+            if num == 1000000:
+                num_cy = "miliwn"
+            if num % 1000000 < 200 and(num % 20 == 0 or num % 1000 < 21):
+                a = " a "
+            else:
+                a = ", "                
+            if num > 1000000 and num < 2000000:
+                num_cy = "miliwn"+ a+ self.numbercy(num % 1000000)
+
+            if num > 1999999 and num < 21000000:
+                if num % 1000000 == 0:
+                    num_cy = self.numbercy(num//1000000, dep=True) + " miliwn"
+                else:
+                    num_cy = self.numbercy(num//1000000, dep=True) + " miliwn"+a + self.numbercy(num % 1000000)
+            if num > 20999999 and num < 200000000:
+                if num % 1000000 == 0:
+                    num_cy = self.numbercyDeg(num//1000000) + " miliwn"
+                else:
+                    num_cy = self.numbercyDeg(num // 1000000) + " miliwn " + self.numbercy(num % 1000000)
+            if num > 199999999 and num < 1000000000:
+                if num % 1000000 == 0:
+                    num_cy = self.numarray_dep[(num // 100000000)-1] + " cant "+ self.numbercyDeg((num%100000000)//1000000) + " miliwn"
+                else:
+                    num_cy = self.numarray_dep[(num // 100000000)-1] + " cant "+ self.numbercyDeg((num%100000000)//1000000) + " miliwn " +  self.numbercy(num % 1000000)            
+                # not yet implemented behaviour for larger numbers
+            if num == 1e9:
+                num_cy = "biliwn"
+            if num > 1e9:
+                num_cy = str(num)
+        return num_cy
+            
+
+    def numbercyDeg(self, num):
+        assert num > 10
+        assert num < 200
+        if num < 100:
+            tens = num // 10
+            units = num % 10
+            if units == 0:
+                num_cy = self.numarray_dep[tens-1] + " deg"
+            else:
+                num_cy = self.numarray_dep[tens-1] + " deg "+self.numarray[units-1]
+        elif num > 100:
+            tens = (num-100) // 10
+            units = num % 10
+            if units == 0:            
+                num_cy = "cant " + self.numarray_dep[tens-1] + " deg"
+            elif tens == 0:
+                num_cy = "cant a "+self.numarray[units-1]
+            else:
+                num_cy = "cant " + self.numarray_dep[tens-1] + " deg "+self.numarray[units-1]
+        else:
+            num_cy = "cant"
+        return num_cy
+
+    def numbercyUgain(self, num):
+        assert num > 10
+        assert num < 200
+        if num > 10 and num < 15:
+            num_cy = self.numarray[num-11] + " ar ddeg"
+        if num == 12:
+            num_cy = "dauddeg"
+        if num == 15:
+            num_cy = "pymtheg"
+        if num > 15 and num < 20:
+            num_cy = self.numarray[num-16] + " ar bymtheg"
+        if num == 18:
+            num_cy = "deunaw"
+        if num == 20:
+            num_cy = "ugain"
+        if num > 20 and num < 40:
+            num_cy = self.numbercy(num-20) + " ar hugain"
+        if num == 40:
+            num_cy = "deugain"
+        if (num > 40 and num < 100) or (num > 119 and num < 200):
+            firstpart = num % 20
+            secondpart = num // 20
+            if firstpart == 0:
+                if num == 60:
+                    num_cy = "trigain"
+                elif num == 120:
+                    num_cy = "chweugain"
+                else:
+                    num_cy = self.numbercy(secondpart, dep=True) + " ugain"
+            else:
+                if num == 50:
+                    num_cy = "hanner cant"
+                else:
+                    num_cy = self.numbercy(firstpart) + " a "+ self.numbercy(secondpart, dep=True) + " ugain"
+        if num == 100:
+            num_cy = "cant"
+        if num > 100 and num < 120:
+            firstpart = num % 20
+            secondpart = num // 20
+            num_cy = "cant a "+ self.numbercy(num-100)
+                    
+            num_cy = self.numbercy(firstpart) + " a " + self.numbercy(secondpart, dep=True) + " ugain"
+
+        return num_cy
+
 
 def interactiveTest():
     if sys.version_info[0] < 3:
         number = raw_input("Enter number as integer:")
     else:
         number = input("Enter number as integer:")
-    number_int = int(number)
+    try:
+        number_int = int(number)
+    except:
+        return None
     if sys.version_info[0] < 3:
         noun = raw_input("Enter noun:")
     else:
@@ -454,7 +625,28 @@ def basicTests():
     for n in testns:
         print ("{n:15d}: {k:s}".format(n=n,k=numberkw_noun(n,ki,ki_f,ki_pl)))
     print(underline)
+
+def cymraegTests():
+    cyN = NiferCymraeg()
+    testNums = [1,3,7,11,15, 17, 18, 25, 36, 50,
+                51, 72, 100, 105, 140, 147, 200, 217,
+                232, 500, 1000, 4000, 5674, 14562,
+                27865, 79562, 105689, 170000, 1000000,
+                1000001, 7000000, 756345234, 100000000, 2345565785]
+    print("Prawfau Niferau Cymraeg")
+    for t in testNums:
+        print("{n}: {c}".format(n=t, c=cyN.numbercy(t)))
+    print("setting MaxTrad = 10")
+    cyN.setMaxTrad(10)
+    for t in testNums:
+        print("{n}: {c}".format(n=t, c=cyN.numbercy(t)))
+    print("setting MaxTrad = 200")
+    cyN.setMaxTrad(200)
+    for t in testNums:
+        print("{n}: {c}".format(n=t, c=cyN.numbercy(t)))
+    
 if __name__ == "__main__":
     basicTests()
     print()
     interactiveTest()
+    cymraegTests()
