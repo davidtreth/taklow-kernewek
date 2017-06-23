@@ -394,7 +394,7 @@ class NiferCymraeg:
         self.numarray_f = ["un", "dwy", "tair", "pedair", "pump",
                            "chwech", "saith", "wyth", "naw", "deg"]
     
-        # handle 12, 15, 19, 20 as exceptions
+        # handle 12, 15, 18, 20 as exceptions
         self.numarray_ord = ["cyntaf", "ail", "trydydd", "pedwerydd", "pumed",
                              "chweched", "seithfed", "wythfed", "nawfed", "degfed"]
 
@@ -553,7 +553,120 @@ class NiferCymraeg:
 
         return num_cy
 
+    def firstpartnouncy(self, num, noun, fem=False):
+        assert num < 20
+        if num == 0:
+            return ""
+        if num > 15:
+            if num == 18:
+                firstpart_cy = "deunaw "+noun
+            elif num == 15:
+                firstpart_cy = "pymtheg "+noun
+            else:    
+                firstpart_cy = self.firstpartnouncy(num-15, noun, fem) + " ar bymtheg"
+        elif num > 10:
+            if num == 12:
+                firstpart_cy = "dauddeg "+noun
+            else:
+                firstpart_cy = self.firstpartnouncy(num-10, noun, fem) + " ar ddeg"
+            
+        # give number 1-9 or first part of compound
+        elif num > 4:
+            # direct lookup for numbers up to 10
+            if num == 6:
+                firstpart_cy = "chwe " + mutatya.mutate_cy(noun, 3)
+            else:
+                firstpart_cy = self.numarray_dep[num-1] + " " + noun
+            
+        else:
+            # override for numbers 1-4 to handle mutation
+            # and feminine forms if 'fem' is True
+            # mutation should only happen for 1,3,4 for fem. nouns
+            # variable fem keeps track of gender
 
+            if num == 4:
+                if fem:
+                    firstpart_cy = "pedair " + noun # feminine form
+                else:
+                    firstpart_cy = "pedwar " + noun
+            if num == 3:
+                if fem:
+                    firstpart_cy = "tair " + noun
+                else:
+                    firstpart_cy = "tri " + mutatya.mutate_cy(noun, 3)
+            if num == 2:
+                if fem:
+                    firstpart_cy = "dwy " + mutatya.mutate_cy(noun, 2)
+                else:
+                    firstpart_cy = "dau " + mutatya.mutate_cy(noun, 2)
+            if num == 1:
+                if fem:
+                    firstpart_cy = "un " + mutatya.mutate_cy(noun, 2)
+                else:
+                    firstpart_cy = "un " + noun
+        return firstpart_cy
+    
+    def numbercy_noun(self, num, noun, fem=False, npl = "au"):
+        """ Returns numeral <num> in Welsh compounded with <noun>
+
+        <fem> is a boolean variable specifying whether the noun is feminine
+        <npl> is the plural of <noun>. if it isn't specified default to
+        <noun>+'ow'
+        """
+        # default plural suffix -ow
+        if npl == "au":
+            npl = noun+npl
+        if not(isinstance(num,int)):
+            print("num is not an integer. attempting conversion...")
+            num = int(num)
+            if num < 0:
+                print("num is negative, multiplying by -1")
+                num = num * -1
+            print("num={n}".format(n=num))
+
+        if num == 0:
+            num_cy = "dim o {n}".format(n=mutatya.mutate_cy(npl, 2))
+        elif num > self.maxTrad or num > 49:
+            num_cy = self.numbercy(num) + " o {n}".format(n=mutatya.mutate_cy(npl, 2))
+        elif num > 0 and num < 20:
+            num_cy = self.firstpartnouncy(num, noun, fem)
+        elif num == 20:
+            num_cy = "ugain " + noun
+        elif num > 20 and num < 40:
+            num_cy = self.firstpartnouncy(num-20, noun, fem) + " ar hugain"
+        elif num == 40:
+            num_cy = "deugain " + noun
+        elif num > 40:
+            num_cy = self.firstpartnouncy(num-40, noun, fem) + " a deugain"
+        return num_cy
+
+    def numbercy_float(self, num):
+        if num < 0.0:
+            return "minws " + self.numbercy_float(-1*num)
+        num_cy = self.numbercy(int(num))
+        if num == int(num) or num == 0:
+            return num_cy
+        else:
+            decdigits = str(num).split(".")[1]
+            num_cy = num_cy + " pwynt "
+            for d in decdigits:
+                num_cy = num_cy + self.numbercy(int(d)) + ", "
+            if num_cy[-2:] == ", ":
+                num_cy = num_cy[:-2]
+            return num_cy            
+        
+    def numbercy_float_noun(self, num, noun, fem=False, npl = "au"):
+        if num == int(abs(num)):
+            return self.numbercy_noun(num,noun,fem,npl)
+        else:
+            num_cy = self.numbercy_float(num)
+            num_cy += " o "
+            # default plural suffix -ow
+            if npl == "au":
+                npl = noun+npl
+            num_cy += mutatya.mutate_cy(npl,2)
+            return num_cy
+        
 def interactiveTest():
     if sys.version_info[0] < 3:
         number = raw_input("Enter number as integer:")
@@ -644,7 +757,14 @@ def cymraegTests():
     cyN.setMaxTrad(200)
     for t in testNums:
         print("{n}: {c}".format(n=t, c=cyN.numbercy(t)))
-    
+    print("setting MaxTrad = 50")
+    cyN.setMaxTrad(50)
+    for t in testNums[:20]:
+        print("{n}: {c}".format(n=t, c=cyN.numbercy_noun(t, "cath", True, "cathod")))
+    print("setting MaxTrad = 10")
+    cyN.setMaxTrad(10)
+    for t in testNums[:20]:
+        print("{n}: {c}".format(n=t, c=cyN.numbercy_noun(t, "cath", True, "cathod")))    
 if __name__ == "__main__":
     basicTests()
     print()
