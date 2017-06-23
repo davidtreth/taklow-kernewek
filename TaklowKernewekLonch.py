@@ -65,10 +65,12 @@ mytools_netbook = [
     ('Statistegow Korpus', 'corpus_wordfreqGUI.py --netbook'),
     ('Tekst --> Kows (dre espeak)', 'espeaktexttospeech/kows_kernewek_GUI.py')
     ]
-mytools_cymraeg = [('Treiglo', 'treigloGUI.py'),
+mytools_cymraeg = [('Niferau', 'niferaucyGUI.py'),
+                   ('Treiglo', 'treigloGUI.py'),
                    ('Rhannu Sillafau', 'sylrannacyGUI.py')
     ]
-mytools_cymraeg_netbook = [('Treiglo', 'treigloGUI.py'),
+mytools_cymraeg_netbook = [('Niferau', 'niferaucyGUI.py'),
+                           ('Treiglo', 'treigloGUI.py'),
                            ('Rhannu Sillafau', 'sylrannacyGUI.py --netbook')
     ]
 if __name__ == '__main__':
