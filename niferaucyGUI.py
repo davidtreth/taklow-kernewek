@@ -5,7 +5,7 @@ if sys.version_info[0] < 3:
     import Tkinter as tk
 else:
     import tkinter as tk
-from taklowGUI import Kwitya, Entrybar, CheckButtonBar
+from taklowGUI import Gadael, Entrybar, CheckButtonBar
 import niverow
 import textwrap
 
@@ -96,7 +96,7 @@ if __name__ == '__main__':
     msg3.pack(expand=tk.YES,fill=tk.BOTH, anchor=tk.CENTER)
 
     # buttons
-    Kwitya(root).pack(side=tk.RIGHT)
+    Gadael(root).pack(side=tk.RIGHT)
     tk.Button(root, text = 'Dangos Nifer', font=('Helvetica',14),
            command = printniver).pack(side=tk.RIGHT)
     tk.Button(root, text = 'Clirio', font=('Helvetica', 14),
