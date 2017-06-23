@@ -149,20 +149,28 @@ def basicReport(text, textname, topN=50, minL=4, printcmdline=True, outlang='kw'
     vocab = sorted(vocabkeyvaltup, key=lambda keyvaltup: keyvaltup[1], reverse=True)
     # make of list of the words themselves
     vocab = [v[0] for v in vocab]
+    if sys.version_info[0] < 3:
+        wN=[w.encode("ascii") for w in vocab[:topN]]
+    else:
+        wN=vocab[:topN]
     outputtext += "{t1}{tN} {t2}:\n{wN}\n\n".format(t1=outTexts['top'][outlang],
                                                     t2=outTexts['words'][outlang],
-                                                    tN = topN, wN=[w.encode("ascii") for w in vocab[:topN]])
+                                                    tN = topN, wN=wN)
     # frequency distribution (alphabetic, lowercase, more than minL letters)
     fdist_alpha_minL_ormore = nltk.FreqDist([w.lower() for w in text_alpha if len(w)>=minL])
     vocabkeyvaltup = [(k,v) for (k,v) in fdist_alpha_minL_ormore.items()]
     vocab4 = sorted(vocabkeyvaltup, key=lambda keyvaltup: keyvaltup[1], reverse=True)
     vocab4 = [v[0] for v in vocab4]
+    if sys.version_info[0] < 3:
+        wN_m=[w.encode("ascii") for w in vocab4[:topN]]
+    else:
+        wN_m=vocab4[:topN]
     outputtext += "{t1}{tN} {t2} {m} {t3}:\n{wN_m}\n\n".format(t1=outTexts['top'][outlang],
                                                                t2=outTexts['wordsof'][outlang],
                                                                t3=outTexts['letters'][outlang],
                                                                tN = topN,
                                                                m=minL,
-                                                               wN_m=[w.encode("ascii") for w in vocab4[:topN]])
+                                                               wN_m=wN_m)
     if printcmdline:
         print(outputtext)
     return outputtext

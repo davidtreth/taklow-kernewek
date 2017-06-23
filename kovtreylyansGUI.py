@@ -48,7 +48,7 @@ def printkovtreylyans():
         else:
             # show only N grams containing non stopwords
             output = kovtreylyans.kovtreyl(inputtext, skeulanyeth1, False, allNgrams=False, linelength=outputwidth-2)
-        output = wraplines(output, 80)
+        output = wraplines(output, wline)
 
         # print(output)
 
@@ -73,10 +73,12 @@ if __name__ == '__main__':
         outputwidth=60
         fontsizeadj = -2
         heightadj = 0
+        wline = 60
     else:
         outputwidth=80
         fontsizeadj=0
         heightadj = 0
+        wline = 80
     root = tk.Tk()
     root.title('Kovtreylyans Kernewek')
     mhead = tk.Label(root, text = "Dewisyow")

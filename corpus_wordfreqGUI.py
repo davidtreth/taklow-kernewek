@@ -121,11 +121,12 @@ class CorpusStats(tk.Frame):
             self.heightadjust = -8
             self.fontsizeadj = -4
             self.padadj = -5
+            self.wline = 50
         else:
             self.heightadjust = 0
             self.fontsizeadj = 0
             self.padadj = 0
-
+            self.wline = 60
         self.comparelist = []
         self.defaultsamples = ['dhe', 'gans', 'war', 'dhymm', 'dhymmo', 'genev', 'warnav', 'rag', 'mes']
         self.master.title(CorpusStats.labelTexts['windowtitle'][self.ifacelang])
@@ -152,11 +153,11 @@ class CorpusStats(tk.Frame):
         if self.mscript:
             textmenu = CorpusStats.labelTexts['textchoicems'][self.ifacelang]
             # make all texts option still 10 even though there are fewer texts in manuscript spelling
-            optionnums = range(len(textmenu)-1)
+            optionnums = list(range(len(textmenu)-1))
             optionnums.append(10)
         else:
             textmenu = CorpusStats.labelTexts['textchoice'][self.ifacelang]
-            optionnums = range(len(textmenu))
+            optionnums = list(range(len(textmenu)))
             
         self.textchoice = Radiobar(self, textmenu, vals=optionnums, side = tk.TOP, anchor = tk.NW,
                                    default = 2, justify=tk.LEFT,
@@ -329,7 +330,7 @@ class CorpusStats(tk.Frame):
             textmenu = CorpusStats.labelTexts['textchoice'][self.ifacelang]
             
         # make all texts option still 10 even though there are fewer texts in manuscript spelling
-        optionnums = range(len(textmenu)-1)
+        optionnums = list(range(len(textmenu)-1))
         optionnums.append(10)
         if currstate not in optionnums:
             currstate = 2
@@ -357,9 +358,7 @@ class CorpusStats(tk.Frame):
                     self.names[self.textchoice.state()],
                     topN, minL,
                     outlang=self.ifacelang)
-            outputtext = outputtext.split('\n')
-            outputtext = [textwrap.fill(l, 60) for l in outputtext]
-            outputtext = '\n'.join(outputtext)
+            outputtext = wraplines(outputtext, self.wline)
             
             self.outbox.settext(outputtext)
         if self.modechoice.state() == 1:
@@ -416,7 +415,7 @@ class CorpusStats(tk.Frame):
                     [self.kk_text_dict[self.names[self.textchoice.state()]]],
                     [self.names[self.textchoice.state()]],
                     comparelist, outlang=self.ifacelang)
-            outputtext = wraplines(outputtext)
+            outputtext = wraplines(outputtext, self.wline)
             self.outbox.settext(outputtext)        
             plt.show()
         if self.modechoice.state() == 6:
@@ -433,7 +432,7 @@ class CorpusStats(tk.Frame):
                     [self.kk_text_dict[self.names[self.textchoice.state()]]],
                     [self.names[self.textchoice.state()]],
                     comparelist, outlang=self.ifacelang)
-            outputtext = wraplines(outputtext)           
+            outputtext = wraplines(outputtext, self.wline)           
             self.outbox.settext(outputtext)
             plt.show()
         if self.modechoice.state() == 7:
@@ -450,7 +449,7 @@ class CorpusStats(tk.Frame):
                     [self.kk_text_dict[self.names[self.textchoice.state()]]],
                     [self.names[self.textchoice.state()]],
                     comparelist, 60,25, outlang=self.ifacelang)
-            outputtext = wraplines(outputtext)
+            outputtext = wraplines(outputtext, self.wline)
             self.outbox.settext(outputtext)                
     def copyclipbd(self):
         self.clipboard_clear()
