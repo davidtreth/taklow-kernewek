@@ -495,6 +495,7 @@ def inflektya_reyth(verb, stem, person, tense, suffix_pro):
 
     # daskorr an gorthyp
     # return the result
+
     inflectedverb = stem+ending
     return inflectedverb, 1
 

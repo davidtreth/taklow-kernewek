@@ -108,8 +108,10 @@ if __name__ == '__main__':
             SWF = False
             imp.reload(inflektya)
             inflektya.set_kemmyn()
-
-        inputtext = ent.fetch().encode('utf-8')
+        if sys.version_info[0] < 3:
+            inputtext = ent.fetch().encode('utf-8')
+        else:
+            inputtext = ent.fetch()
         inputtext = inputtext.lower()
         print(("Input: {i}".format(i=inputtext)))
         output = ''
@@ -167,7 +169,7 @@ if __name__ == '__main__':
     def copyclipbd():
         root.clipboard_clear()
         root.clipboard_append(msg3.gettext())
-        
+
     msg = tk.Label(root, text="Gorrewgh verb kernewek a-woeles mar pleg:")
     msg.config(font=('Helvetica', 16+fontsizeadj, 'bold'))
     msg.pack()
