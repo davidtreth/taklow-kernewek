@@ -41,7 +41,10 @@ if __name__ == '__main__':
         except ValueError:            
             output = "Mae rhaid rhowch nifer yn y bocs\n mewn ffigurau, fel esiampl '42'"
             print(output)
-            msg3.config(fg = 'orange', bg='black',font=('Helvetica', 18, 'bold'))
+            output = textwrap.fill(output, 40)
+            msg3.config(fg = 'orange', bg='black',font=('Helvetica', 18, 'bold'), text=output)
+            return None
+
         if niver or niver==0:
             if options.state()[0] == 1 and ent2.fetch() != "":
                 if ent3.fetch() != "":
