@@ -11,7 +11,7 @@ else:
 from taklowGUI import Kwitya, ScrolledText
 import gorhemmyn_kw as gor
 import kernewek_to_welshorthography as kw2cy
-#import niverow_to_geryow
+import niverow_to_geryow
 import textwrap
 
 
@@ -21,11 +21,10 @@ if __name__ == '__main__':
 
     def allstates(): print(ent.gettext())
 
-    def kewsel(kwtext, replacefigs=False):
+    def kewsel(kwtext, replacefigs=True):
         """ speaks cornish text by Cymricising the spelling
         and feeding to espeak at the command line """
         # first replace numerals by words in Cornish
-        # not enabled pending resolving import niverow issue
         if replacefigs:
             kwtext = niverow_to_geryow.niverow2kwtext(kwtext)
             

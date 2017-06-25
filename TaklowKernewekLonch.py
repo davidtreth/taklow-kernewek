@@ -49,7 +49,7 @@ mytools = [
     ('Kov Treylyans', 'kovtreylyansGUI.py'),
     #('Statistegow Korpus\n(linenn arghadow)', 'cornish_corpus.py'),
     ('Statistegow Korpus', 'corpus_wordfreqGUI.py'),
-    ('Tekst --> Kows (dre espeak)', 'espeaktexttospeech/kows_kernewek_GUI.py')
+    ('Tekst --> Kows (dre espeak)', 'kows_kernewek_GUI.py')
     ]
 
 mytools_netbook = [
@@ -63,7 +63,7 @@ mytools_netbook = [
     ('Kov Treylyans', 'kovtreylyansGUI.py --netbook'),
     #('Statistegow Korpus\n(linenn arghadow)', 'cornish_corpus.py'),
     ('Statistegow Korpus', 'corpus_wordfreqGUI.py --netbook'),
-    ('Tekst --> Kows (dre espeak)', 'espeaktexttospeech/kows_kernewek_GUI.py')
+    ('Tekst --> Kows (dre espeak)', 'kows_kernewek_GUI.py')
     ]
 mytools_cymraeg = [('Niferau', 'niferaucyGUI.py'),
                    ('Treiglo', 'treigloGUI.py'),

@@ -81,8 +81,19 @@ TaklowKernewekLonchyer_netbook.pyw: This is a version of the launcher bar, which
 
 kovtreylyansGUI.py: A Tkinter GUI frontend for kovtreylyans.py.
 
-espeaktexttospeech/: This folder contains scripts that enable the use of the espeak text-to-speech software to make a basic attempt at reading Cornish text. This was achieved by using string replace functions to alter the spelling to conform the text to Welsh spelling conventions to the extent that the espeak Welsh voice will produce an approximately correct result. The espeak Welsh voice is fairly basic so it is not very realistic. 
-The gorhemmyn_kw.py file greets the user depending on the time of day according to the system clock (uses espeak).
+There are some scripts that enable the use of the espeak text-to-speech software to make a basic attempt at reading Cornish text. This was achieved by using string replace functions to alter the spelling to conform the text to Welsh spelling conventions to the extent that the espeak Welsh voice will produce an approximately correct result. The espeak Welsh voice is fairly basic so it is not very realistic.
+
+The kernewek_to_welshorthography.py transliterates text for input into the Welsh voice of espeak.
+The file niverow_to_geryow.py turns any numbers in figures into Cornish text using the niverow.py module.
+
+The files kows_kernewek.py, kows_kernewek_sepaker.sh and kows_kernewek_tofile.sh drive espeak in a basic shell-scripting way, expecting to be used with command line arguments as follows:
+
+usage: ./kows_kernewek_speaker.sh <input Cornish text file>
+usage: ./kows_kernewek_tofile.sh <input Cornish text file> <output sound file>
+
+kows_kernewek_GUI.py has a  Tkinter GUI window where text can be written in and spoken using espeak.
+
+The gorhemmyn_kw.py file greets the user depending on the time of day according to the system clock (uses espeak). This is also now integrated into kows_kernewek_GUI.
 
 sentence_generator/: This folder contains some horribly obsfucated Python code to generate random sentences following particular structures in Cornish from a small vocabulary. It can optionally give an English gloss on the sentences.
 
@@ -99,8 +110,6 @@ treuslytherennaGUI.py: A Tkinter GUI frontend for treuslytherenna.py
 inflektyaGUI.py: A Tkinter GUI frontend for inflektya.py
 
 termynGUI.py: A Tkinter GUI frontend for termyn.py, allowing display of the date, and time either approximate to quarter hours, or to the minute, or a greeting appropriate to the time of day.
-
-espeaktexttospeech/kows_kernewek_GUI.py: A Tkinter GUI for Cornish text to speech.
 
 corpus_wordfreqGUI.py: A Tkinter GUI to output the frequencies of the most common words in the corpus texts, draw a cumulative frequency plot of lengths of words in the texts, or draw a grouped bar chart of frequencies of particular words.
 In the last case, it is neccesary to add words to the samples list using the entry box and buttons in the middle panel (or accept the default sample list).

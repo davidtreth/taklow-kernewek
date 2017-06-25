@@ -8,7 +8,7 @@ else:
     import tkinter as tk
 from taklowGUI import Kwitya, CheckButtonBar, wraplines
 import termyn, niverow
-import espeaktexttospeech.gorhemmyn_kw as gorhemmyn
+import gorhemmyn_kw as gorhemmyn
 import textwrap
 
 if __name__ == '__main__':

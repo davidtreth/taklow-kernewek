@@ -4,10 +4,7 @@
 # skrifys rag #speakcornish week 2015
 import time
 import os
-try:
-    import kernewek_to_welshorthography
-except ImportError:
-    import espeaktexttospeech.kernewek_to_welshorthography as kernewek_to_welshorthography
+import kernewek_to_welshorthography
 class Gorhemmyn:
     # py termynyow a wra chanjya 
     # furv an gorhemmynadow
