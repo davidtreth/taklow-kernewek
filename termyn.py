@@ -93,6 +93,8 @@ def dydhyas(timenow, blydhen = False):
             wday = dydhyow[timenow.tm_wday],
             mday = niverow.numberkw_ord(timenow.tm_mday),
             mon = misyow[timenow.tm_mon])
+    if timenow.tm_mday == 5 and timenow.tm_mon == 3:
+        date_kw += "\nDydh Gool Peran Lowen!"
     return date_kw
         
 
