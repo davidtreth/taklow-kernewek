@@ -58,7 +58,7 @@ def get_hour(hour, minute):
             ampm = " dohajydhweyth"
         else:
             ampm = " gorthugherweyth"
-        h = niverow.numberkw(hour12) + " eur" + ampm
+        h = niverow.numberkw_noun(hour12, "eur", fem=True) + ampm
 #        if minute in [0,15,30,45]:
 #            h = niverow.numberkw(hour12) + " eur" + ampm
 #        else:
