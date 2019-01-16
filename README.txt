@@ -70,7 +70,7 @@ For example 'hill' has a number of synsets, one of which is a hyponym of the Syn
 However it is also a baseball term Synset('mound.n.01'): (baseball) the slight elevation on which the pitcher stands and the hypernym Synset('baseball_equipment.n.01'): equipment used in playing baseball will match to a wide variety of baseball terms.
 As it is quite experimental and doesn't have a GUI frontend (yet), it is not included in the launch bar of TaklowKernewekLonchyer.pyw, so should be separately launched.
 
-apposyans_awrgrym.py: ask the user 20 mental arithmetic questions with numbers as Cornish words.
+apposyans_awgrym.py: ask the user 20 mental arithmetic questions with numbers as Cornish words.
 
 Graphical User Interface frontends
 ==================================
@@ -124,7 +124,7 @@ It is also possible to draw a lexical dispersion plot, showing where in a text p
 
 As of May 2017, there is now an option to choose the interface language of the GUI (Cornish or English) and switch between using Kernewek Kemmyn and manuscript spellings (there is a different set of texts available in each).
 
-apposyans_awrgrymGUI.py: A graphical user interface mental arithmatic quiz.
+apposyans_awgrymGUI.py: A graphical user interface mental arithmatic quiz.
 
 Allows choice between easy (only numbers 1 to 10, and answers are always >= 0), medium (input numbers up to 20, and negative answers allowed), hard (input numbers up to 40).
 It can also be specified whether to have only addition, or subtraction, or either, randomly chosen.

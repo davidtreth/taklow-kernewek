@@ -1,7 +1,7 @@
 # coding=utf-8
 #
 # this isn't currently 08-06-17 being used by the
-# apposyans_awrgrywGUI module, which implements
+# apposyans_awgrywGUI module, which implements
 # the addition and subtraction functions etc. within itself
 
 import niverow

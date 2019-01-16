@@ -7,16 +7,16 @@ else:
     import tkinter as tk
 from taklowGUI import Kwitya, Entrybar, Radiobar
 import niverow
-# import apposyans_awrgrym as aw
+# import apposyans_awgrym as aw
 # currently functions are implemented internally rather
 # than importing text mode ones
 import time, random
 import math
 
-class AppAwrgrym(tk.Frame):
+class AppAwgrym(tk.Frame):
     def __init__(self, parent=None):
         tk.Frame.__init__(self, parent)
-        self.master.title("Apposyans Awrgrym")
+        self.master.title("Apposyans Awgrym")
         self.pack()
         # initialise parameters
         self.niverewn = 0
@@ -283,7 +283,7 @@ class AppAwrgrym(tk.Frame):
         
         
 if __name__ == '__main__':
-    kwiz = AppAwrgrym()
+    kwiz = AppAwgrym()
     kwiz.mainloop()    
 
 

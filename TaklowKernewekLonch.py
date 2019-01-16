@@ -40,7 +40,7 @@ def runLauncher(mytools, wtitle='TaklowKernewek GUI'):
 
 mytools = [
     ('Niverow', 'niverowGUI.py'),
-    ('Apposyans Awrgrym', 'apposyans_awrgrymGUI.py'),
+    ('Apposyans Awgrym', 'apposyans_awgrymGUI.py'),
     ('Mutatya', 'mutatyaGUI.py'),
     ('Inflektya', 'inflektyaGUI.py'),
     ('Termyn ha Dydhyas', 'termynGUI.py'),
@@ -54,7 +54,7 @@ mytools = [
 
 mytools_netbook = [
     ('Niverow', 'niverowGUI.py'),
-    ('Apposyans Awrgrym', 'apposyans_awrgrymGUI.py'),    
+    ('Apposyans Awgrym', 'apposyans_awgrymGUI.py'),    
     ('Mutatya', 'mutatyaGUI.py'),
     ('Inflektya', 'inflektyaGUI.py --netbook'),
     ('Termyn ha Dydhyas', 'termynGUI.py'),
