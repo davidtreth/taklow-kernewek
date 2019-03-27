@@ -5,6 +5,7 @@ import datageryow
 import argparse
 import codecs
 import string
+import re
 
 # TODO
 # vocalic alternation e.g. byw but bewnans, bewnansow
@@ -207,7 +208,12 @@ def word_KK2FSS(ger,verberr=False):
     if ger.graph != '':
         # record input spelling before KK-->SWF
         inputgraph = ger.graph
-        capital = inputgraph[0].isupper()
+        s = re.split('[a-zA-Z]+', inputgraph)
+        firstalpha = len(s[0])
+        if firstalpha == len(inputgraph):
+            capital = False
+        else:
+            capital = inputgraph[firstalpha].isupper()
         allcaps = inputgraph.isupper()
         ger.graph = ger.graph.lower()
         if len(ger.slsObjs) > 0:
@@ -235,16 +241,18 @@ def word_KK2FSS(ger,verberr=False):
             # generally will be a punctuation character
             if not(ger.graph[0].isalpha() or ger.graph[0].isdigit()) and ger.graph[0] not in '[{(-':
                 # if it isn't a letter or digit or open bracket or hyphen
-                # where no syllables were found, don't change the input spelling
+                # where no syllables were found, don't change the input spelling                
                 ger.graph = inputgraph
-            if len(ger.slsObjs) == 0 or inputgraph != inputgraphseg:
-                # if the segmentation failed, append the failed end
-                # though perhaps should simply return input
-                # becasue these are liable to be personal name
-                # non-Cornish place names, or unassimilated loanwords
-                ger.graph += failedend
-        if capital:
-            ger.graph = string.capwords(ger.graph)
+        if len(ger.slsObjs) == 0 or inputgraph.lower() != inputgraphseg:
+            # if the segmentation failed, append the failed end
+            # though perhaps should simply return input
+            # becasue these are liable to be personal name
+            # non-Cornish place names, or unassimilated loanwords
+            ger.graph += failedend
+        if capital:            
+            nonalpha = ger.graph[:firstalpha]            
+            alpha = string.capwords(ger.graph[firstalpha:])
+            ger.graph = nonalpha + alpha
         if allcaps:
             ger.graph = ger.graph.upper()
                 
@@ -270,8 +278,11 @@ def line_KK2FSS(line,fwds=False,longform=True, verberr=False):
         # print(g.graph)
         outline += g.graph                    
         if g.graph not in '([{':
-            # add spaces between words except after an open bracket
-            outline += ' '
+            # add spaces between words except after an open bracket or trailing hyphen
+            if g.graph[-1] == "-" and len(g.graph)>1:
+                pass
+            else:
+                outline += ' '
     if longform:
         outputtext += "\nFSS: {f}".format(f=outline)
     else:
@@ -349,7 +360,10 @@ if __name__ == '__main__':
         for line in inputtext:
             line = syllabenn_ranna_kw.preprocess2ASCII(line)
             outline = line_KK2FSS(line, fwds, not(args.short), args.verberr)
-            print(outline+"\n")
+            if args.short:
+                print(outline)
+            else:
+                print(outline+"\n")
     else:
         inputtext = f.read()
         inputtext = syllabenn_ranna_kw.preprocess2ASCII(inputtext)
