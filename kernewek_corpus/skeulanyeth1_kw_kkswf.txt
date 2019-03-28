@@ -38,10 +38,10 @@ KK: Nos dha, Wella!
 FSS: Nos dha, Wella! 
 
 KK: Dohajydh da, Ann.
-FSS: Dohajedh da, Ann. 
+FSS: Dohajydh da, Ann. 
 
 KK: Dohajydh da, Malcolm - fatla genes?
-FSS: Dohajedh da, Malcolm - fatla genes? 
+FSS: Dohajydh da, Malcolm - fatla genes? 
 
 KK: Da lowr, meur ras - ha ty?
 FSS: Da lowr, meur ras - ha ty? 
@@ -323,7 +323,7 @@ KK: Yw an mebyl parys? Nag yns.
 FSS: Yw an mebyl parys? Nag yns. 
 
 KK: An lyver ma yw dhe les, dell dybav.
-FSS: An lyver ma yw dhe les, dell debav. 
+FSS: An lyver ma yw dhe les, dell dybav. 
 
 KK: Ottomma kenter war an gador ma.
 FSS: Ottomma kenter war an gador ma. 
@@ -404,7 +404,7 @@ KK: Eus leow gesys y'n sinema lemmyn?
 FSS: Eus leow gesys y'n cinema lemmyn? 
 
 KK: An re ma yw nowydh, dell dybav.
-FSS: An re ma yw nowydh, dell debav. 
+FSS: An re ma yw nowydh, dell dybav. 
 
 KK: Pyth yw hemma?
 FSS: Pyth yw hemma? 
@@ -425,7 +425,7 @@ KK: Py tus yw kernewek omma?
 FSS: Py tus yw kernewek omma? 
 
 KK: Oll an re na, dell dybav.
-FSS: Oll an re na, dell debav. 
+FSS: Oll an re na, dell dybav. 
 
 KK: Pyth yw hemma, Pol?
 FSS: Pyth yw hemma, Pol? 
@@ -440,7 +440,7 @@ KK: A wodhesta konvedhes Kernewek.
 FSS: A wodhesta konvedhes Kernewek. 
 
 KK: Gonn, dell dybav.
-FSS: Gonn, dell debav. 
+FSS: Gonn, dell dybav. 
 
 KK: Py lyver yw Kembrek?
 FSS: Py lyver yw Kembrek? 
@@ -457,8 +457,8 @@ FSS: Hemm yw dhe les, sur.
 KK: An pow na yw Pow Sows.
 FSS: An pow na yw Pow Sows. 
 
-KK: An stamp ma yw Iwedhonek.
-FSS: An stamp ma yw Iwedhonek. 
+KK: An stamp ma yw Iwerdhonek.
+FSS: An stamp ma yw Iwerdhonek. 
 
 KK: Fatell yw an gewer lemmyn?
 FSS: Fatel yw an gewer lemmyn? 
@@ -491,7 +491,7 @@ KK: Ogh! Da lowr. Mes yma anwoes warnav.
 FSS: Ogh! Da lowr. Mes yma anwos warnav. 
 
 KK: Gwynsek yw hi an dohajydh ma.
-FSS: Gwynsek yw hi an dohajedh ma. 
+FSS: Gwynsek yw hi an dohajydh ma. 
 
 KK: Yw, sur.
 FSS: Yw, sur. 
@@ -512,7 +512,7 @@ KK: A nyns yw an maw ma lowen?
 FSS: A nyns yw an maw ma lowen? 
 
 KK: Yw, dell dybav.
-FSS: Yw, dell debav. 
+FSS: Yw, dell dybav. 
 
 KK: Homm yw feusik. Yma aval gesys.
 FSS: Homm yw feusik. Yma aval gesys. 
@@ -548,7 +548,7 @@ KK: An gwyns yw skav lemmyn, dell hevel.
 FSS: An gwyns yw skav lemmyn, dell hevel. 
 
 KK: An gador ma yw kembrek, dell dybav.
-FSS: An gador ma yw kembrek, dell debav. 
+FSS: An gador ma yw kembrek, dell dybav. 
 
 KK: A wodhowgh hwi oll konvedhes Kernewek?
 FSS: A wodhowgh hwi oll konvedhes Kernewek? 
@@ -587,7 +587,7 @@ KK: An byskadoryon yw parys lemmyn.
 FSS: An byskadoryon yw parys lemmyn. 
 
 KK: An diogyon na yw feusik, dell dybav.
-FSS: An diogyon na yw feusik, dell debav. 
+FSS: An diogyon na yw feusik, dell dybav. 
 
 KK: Yma an dioges yn le'ti lemmyn.
 FSS: Yma an dioges yn le'ti lemmyn. 
@@ -635,7 +635,7 @@ KK: Gonn, meur ras.
 FSS: Gonn, meur ras. 
 
 KK: Ottomma diwes. Gwin yw, dell dybav, ha yeyn. Bryntin!
-FSS: Ottomma diwes. Gwin yw, dell debav, ha yeyn. Bryntin! 
+FSS: Ottomma diwes. Gwin yw, dell dybav, ha yeyn. Bryntin! 
 
 KK: Eus pluvenn genes, mar pleg? Eus!
 FSS: Eus pluven genes, mar pleg? Eus! 
@@ -674,7 +674,7 @@ KK: Hel an Dre yw drehevyans teg.
 FSS: Hel an Dre yw drehevyans teg. 
 
 KK: An gour yw den da, dell dybav.
-FSS: An gour yw den da, dell debav. 
+FSS: An gour yw den da, dell dybav. 
 
 KK: A nyns yw hemma gwin almaynek? Ny wonn!
 FSS: A nyns yw hemma gwin almaynek? Ny wonn! 
@@ -695,7 +695,7 @@ KK: An voes ma ha'n lestrier na yw mebyl koth, dell hevel.
 FSS: An voos ma ha'n lestrier na yw mebyl koth, dell hevel. 
 
 KK: Lyver berr yw lyver da, dell dybav.
-FSS: Lyver berr yw lyver da, dell debav. 
+FSS: Lyver berr yw lyver da, dell dybav. 
 
 KK: Eus kenter vyghan berr ena genes, mar pleg?
 FSS: Eus kenter vyghan berr ena genes, mar pleg? 
@@ -968,7 +968,7 @@ KK: I yw gesys warbarth y'n hel.
 FSS: I yw gesys warbarth y'n hel. 
 
 KK: Ty yw tiek, dell dybav.
-FSS: Ty yw tiek, dell debav. 
+FSS: Ty yw tiek, dell dybav. 
 
 KK: Ev yw ki fol.
 FSS: Ev yw ki fol. 
@@ -1001,7 +1001,7 @@ KK: Yma kador gesys y'n hel.
 FSS: Yma kador gesys y'n hel. 
 
 KK: Hemm yw fur, dell dybav.
-FSS: Hemm yw fur, dell debav. 
+FSS: Hemm yw fur, dell dybav. 
 
 KK: Ottena an ostel.
 FSS: Ottena an ostel. 
@@ -1031,7 +1031,7 @@ KK: Fatell yw an dus ena lemmyn?
 FSS: Fatel yw an dus ena lemmyn? 
 
 KK: Brav yns hag yn poynt da, dell dybav.
-FSS: Brav yns hag yn poynt da, dell debav. 
+FSS: Brav yns hag yn poynt da, dell dybav. 
 
 KK: Awelek yw hi, sur.
 FSS: Awelek yw hi, sur. 
@@ -1127,7 +1127,7 @@ KK: Yma tus a-rag hel an dre. Lost hir yw.
 FSS: Yma tus a-rag hel an dre. Lost hir yw. 
 
 KK: Dohajydh da, Lowena. Fatla genes lemmyn? Da lowr, meur ras.
-FSS: Dohajedh da, Lowena. Fatla genes lemmyn? Da lowr, meur ras. 
+FSS: Dohajydh da, Lowena. Fatla genes lemmyn? Da lowr, meur ras. 
 
 KK: Glaw skav a wra hi.
 FSS: Glaw skav a wra hi. 
@@ -1208,7 +1208,7 @@ KK: A wodhowgh hwi oll konvedhes hemma?
 FSS: A wodhowgh hwi oll konvedhes hemma? 
 
 KK: Ni yw salow lemmyn, dell dybav.
-FSS: Ni yw salow lemmyn, dell debav. 
+FSS: Ni yw salow lemmyn, dell dybav. 
 
 KK: Nyns eus nebonan gesys yn hel an dre.
 FSS: Nyns eus nebonan gesys yn hel an dre. 
@@ -1283,7 +1283,7 @@ KK: Yma unnek mowes ha trydhek maw oll warbarth.
 FSS: Yma unnek mowes ha tredhek maw oll warbarth. 
 
 KK: Yma deg hwegynn gesys, dell dybav.
-FSS: Yma deg hwegyn gesys, dell debav. 
+FSS: Yma deg hwegyn gesys, dell dybav. 
 
 KK: Yma unn garrek pur vras ena.
 FSS: Yma unn garrek pur vras ena. 
@@ -1319,7 +1319,7 @@ KK: Pyth yw an re na, an tri thra dhu na ena? Ny wonn!
 FSS: Pyth yw an re na, an tri thra dhu na ena? Ny wonn! 
 
 KK: Dohajydh da, Maria. Fatla genes?
-FSS: Dohajedh da, Maria. Fatla genes? 
+FSS: Dohajydh da, Maria. Fatla genes? 
 
 KK: Brav, meur ras.
 FSS: Brav, meur ras. 
@@ -1349,7 +1349,7 @@ KK: Py par del yw an re ma?
 FSS: Py par del yw an re ma? 
 
 KK: Del derow yns, dell dybav.
-FSS: Del derow yns, dell debav. 
+FSS: Del derow yns, dell dybav. 
 
 KK: Yma anwoes war ewnter Tamsin.
 FSS: Yma anwos war ewnter Tamsin. 
@@ -1385,7 +1385,7 @@ KK: Dhe by eur yth yw an kuntelles, mar pleg?
 FSS: Dhe by eur yth yw an kuntelles, mar pleg? 
 
 KK: Dhe seyth eur hanter, dell dybav.
-FSS: Dhe seyth eur hanter, dell debav. 
+FSS: Dhe seyth eur hanter, dell dybav. 
 
 KK: Dhe by eur yth yw an nessa kyttrin dhe Druru, mar pleg?
 FSS: Dhe by eur yth yw an nessa kyttrin dhe Druru, mar pleg? 
@@ -1538,7 +1538,7 @@ KK: A nyns yw henna tarow y'n pras na? Yw, dell hevel.
 FSS: A nyns yw henna tarow y'n pras na? Yw, dell hevel. 
 
 KK: Berrheans an lyver ma yw dhe les, dell dybav.
-FSS: Berrheans an lyver ma yw dhe les, dell debav. 
+FSS: Berrheans an lyver ma yw dhe les, dell dybav. 
 
 KK: Eus amanenn war an bara? Eus!
 FSS: Eus amanen war an bara? Eus! 
@@ -1607,7 +1607,7 @@ KK: Fatla genes lemmyn, Gari?
 FSS: Fatla genes lemmyn, Gari? 
 
 KK: Da lowr, meur ras, mes yma anwoes warnav, dell dybav.
-FSS: Da lowr, meur ras, mes yma anwos warnav, dell debav. 
+FSS: Da lowr, meur ras, mes yma anwos warnav, dell dybav. 
 
 KK: Py flogh yw mab Mrs Olver?
 FSS: Py flogh yw mab Mrs Olver? 
@@ -1655,7 +1655,7 @@ KK: Yma peder kador warn ugens gesys a-ji dhe hel an eglos.
 FSS: Yma peder kador warn ugens gesys a-ji dhe hel an eglos. 
 
 KK: I yw pur feusik, dell dybav.
-FSS: I yw pur feusik, dell debav. 
+FSS: I yw pur feusik, dell dybav. 
 
 KK: Ty yw kar Mona, a nyns yw henna gwir?
 FSS: Ty yw kar Mona, a nyns yw henna gwir? 
@@ -1775,7 +1775,7 @@ KK: Ple'ma an bollys, mar pleg?
 FSS: Ple'ma an bollys, mar pleg? 
 
 KK: Y'n amari ymons, dell dybav.
-FSS: Y'n amari ymons, dell debav. 
+FSS: Y'n amari ymons, dell dybav. 
 
 KK: Usi hwoer Peder y'n skol na?
 FSS: Usi hwor Peder y'n skol na? 
@@ -1838,7 +1838,7 @@ KK: Ottomma gerva verr.
 FSS: Ottomma gerva verr. 
 
 KK: An erva ma yw hir lowr, dell dybav.
-FSS: An erva ma yw hir lowr, dell debav. 
+FSS: An erva ma yw hir lowr, dell dybav. 
 
 KK: Fatell yw an eskisyow ma ytho?
 FSS: Fatel yw an eskisyow ma ytho? 
@@ -1886,7 +1886,7 @@ KK: Broyow pals yw boghosek.
 FSS: Broyow pals yw boghosek. 
 
 KK: Lies karr yw re skav, dell dybav.
-FSS: Lies karr yw re skav, dell debav. 
+FSS: Lies karr yw re skav, dell dybav. 
 
 KK: Nebes tus yw kevoethek.
 FSS: Nebes tus yw kevothek. 
@@ -1922,7 +1922,7 @@ KK: A nyns eus lies aval gesys?
 FSS: A nyns eus lies aval gesys? 
 
 KK: Lies gerva yw re hir, dell dybav.
-FSS: Lies gerva yw re hir, dell debav. 
+FSS: Lies gerva yw re hir, dell dybav. 
 
 KK: Ple'ma an tri faper?
 FSS: Ple'ma an tri faper? 
@@ -1970,7 +1970,7 @@ KK: Dhe beder eur marnas kwarter yw ev.
 FSS: Dhe beder eur marnas kwarter yw ev. 
 
 KK: A-dro dhe unn eur yw hi lemmyn, dell dybav.
-FSS: A-dro dhe unn eur yw hi lemmyn, dell debav. 
+FSS: A-dro dhe unn eur yw hi lemmyn, dell dybav. 
 
 KK: Yma an plasenn y'n amari byghan.
 FSS: Yma an plasen y'n amari byghan. 
@@ -2099,7 +2099,7 @@ KK: Kres trey yw le bysi, dell vydh usys, mes kres an dre ma yw gwag.
 FSS: Kres trey yw le bysi, dell vydh usys, mes kres an dre ma yw gwag. 
 
 KK: Nyns eus par dhe'n gour ma, dell dybav.
-FSS: Nyns eus par dhe'n gour ma, dell debav. 
+FSS: Nyns eus par dhe'n gour ma, dell dybav. 
 
 KK: An diogyon gernewek yw an kynsa a-ji dhe'n varghas.
 FSS: An diogyon gernewek yw an kynsa a-ji dhe'n varghas. 
@@ -2147,7 +2147,7 @@ KK: Nyns ov koth na nyns ov yowynk.
 FSS: Nyns ov koth na nyns ov yowynk. 
 
 KK: Kowethes Maria os, dell dybav.
-FSS: Kowethes Maria os, dell debav. 
+FSS: Kowethes Maria os, dell dybav. 
 
 KK: Nyns yw an boesti ma onan da.
 FSS: Nyns yw an bosti ma onan da. 
@@ -2183,7 +2183,7 @@ KK: Piw yw an gwettha flogh?
 FSS: Piw yw an gwettha flogh? 
 
 KK: Margh yw, deell dybav.
-FSS: Margh yw, deell debav. 
+FSS: Margh yw, deell dybav. 
 
 KK: Py eur yw hi, mar pleg?
 FSS: Py eur yw hi, mar pleg? 
@@ -2261,7 +2261,7 @@ KK: Pur sygh yw an lowarth.
 FSS: Pur sygh yw an lowarth. 
 
 KK: Dohajydh da dhis, Me. Kewer deg, a nyns yw hi?
-FSS: Dohajedh da dhis, Me. Kewer deg, a nyns yw hi? 
+FSS: Dohajydh da dhis, Me. Kewer deg, a nyns yw hi? 
 
 KK: Trydhek den ha dew-ugens a-ji dhe'n kyttrin yw re, dell hevel.
 FSS: Tredhek den ha dew-ugens a-ji dhe'n kyttrin yw re, dell hevel. 
@@ -2426,7 +2426,7 @@ KK: Esa ev y'n lowarth ytho?
 FSS: Esa ev y'n lowarth ytho? 
 
 KK: Nyns ewgh parys, dell dybav.
-FSS: Nyns ewgh parys, dell debav. 
+FSS: Nyns ewgh parys, dell dybav. 
 
 KK: Nyns esewgh a-ji dhe'n drehevyans.
 FSS: Nyns esewgh a-ji dhe'n drehevyans. 
@@ -2519,7 +2519,7 @@ KK: Ow hi yw kloppek.
 FSS: Ow hi yw kloppek. 
 
 KK: Dha gota yw plos, dell dybav.
-FSS: Dha gota yw plos, dell debav. 
+FSS: Dha gota yw plos, dell dybav. 
 
 KK: Nyns yw nowydh y ji.
 FSS: Nyns yw nowydh y ji. 
@@ -2612,7 +2612,7 @@ KK: Ytho ny wolghsys hemma.
 FSS: Ytho ny wolghsys hemma. 
 
 KK: Maria a wolghas henna, dell dybav.
-FSS: Maria a wolghas henna, dell debav. 
+FSS: Maria a wolghas henna, dell dybav. 
 
 KK: Golgh e arta, mar pleg!
 FSS: Golgh e arta, mar pleg! 
@@ -2720,7 +2720,7 @@ KK: Piw a dhysk kernewek y'n dre ma?
 FSS: Piw a dhysk kernewek y'n dre ma? 
 
 KK: Tri po peswar den, dell dybav.
-FSS: Tri po peswar den, dell debav. 
+FSS: Tri po peswar den, dell dybav. 
 
 KK: Tus a dheu dhe weles an eglos koth.
 FSS: Tus a dheu dhe weles an eglos koth. 
@@ -2891,7 +2891,7 @@ KK: Paper-nowodhow koth yw, sur.
 FSS: Paper-nowodhow koth yw, sur. 
 
 KK: Berrheans an lyver o re verr, dell dybav.
-FSS: Berrheans an lyver o re verr, dell debav. 
+FSS: Berrheans an lyver o re verr, dell dybav. 
 
 KK: My a brenas dewdhek oy nowydh y'n bargen-tir.
 FSS: My a brenas dewdhek oy nowydh y'n bargen-tir. 
@@ -2933,7 +2933,7 @@ KK: Py boesti yw an gwella y'n dre ha py boesti yw an gwettha?
 FSS: Py bosti yw an gwella y'n dre ha py bosti yw an gwettha? 
 
 KK: Boesti an tavern 'An Margh Wynn' yw an gwella, dell dybav, ha'n boesti a-ji dhe'n varghas yw an gwettha, dell glewav.
-FSS: Bosti an tavern 'An Margh Wynn' yw an gwella, dell debav, ha'n bosti a-ji dhe'n varghas yw an gwettha, dell glewav. 
+FSS: Bosti an tavern 'An Margh Wynn' yw an gwella, dell dybav, ha'n bosti a-ji dhe'n varghas yw an gwettha, dell glewav. 
 
 KK: Ottena! Yma y wreg ganso lemmyn.
 FSS: Ottena! Yma y wreg ganso lemmyn. 
@@ -2981,7 +2981,7 @@ KK: A leversys jy hemma ragon?
 FSS: A leversys jy hemma ragon? 
 
 KK: Rygdhi y hwrug ev an dra.
-FSS: Regdhi y hwrug ev an dra. 
+FSS: Rygdhi y hwrug ev an dra. 
 
 KK: Gwra an hwel gansa!
 FSS: Gwra an hwel gansa! 
@@ -3023,7 +3023,7 @@ KK: Hy thas-gwynn o pronter yn Eglos Pow Sows.
 FSS: Hy thas-gwynn o pronter yn Eglos Pow Sows. 
 
 KK: Ott! Chymbla an chi na yw gyllys gans an gwyns krev.
-FSS: Ott! Chembla an chi na yw gyllys gans an gwyns krev. 
+FSS: Ott! Chymbla an chi na yw gyllys gans an gwyns krev. 
 
 KK: Tasik, tasik! Ple'ma agan ki?
 FSS: Tasik, tasik! Ple'ma agan ki? 
@@ -3041,7 +3041,7 @@ KK: Bregh an gador ma yw terrys.
 FSS: Bregh an gador ma yw terrys. 
 
 KK: On ni diwedhes? On, dell dybav.
-FSS: On ni diwedhes? On, dell debav. 
+FSS: On ni diwedhes? On, dell dybav. 
 
 KK: Yma bownder verr ha kul ynter an dhew bras vras.
 FSS: Yma bownder verr ha kul ynter an dhew bras vras. 
@@ -3293,7 +3293,7 @@ KK: Hi a lennas an nawves dyskans.
 FSS: Hi a lennas an nawves dyskans. 
 
 KK: An dohajydh ma ymons i ow metya orth aga howetha.
-FSS: An dohajedh ma ymons i ow metya orth aga howetha. 
+FSS: An dohajydh ma ymons i ow metya orth aga howetha. 
 
 KK: A nyns esens i ow synsi an dornleow?
 FSS: A nyns esens i ow synsi an dornleow? 
@@ -3566,7 +3566,7 @@ KK: Ny welyn an baner kernewek a-ugh tour an eglos y'n dre ma.
 FSS: Ny welyn an baner kernewek a-ugh tour an eglos y'n dre ma. 
 
 KK: An vlydhen yw mil, naw kans, pymthek ha peswar ugens.
-FSS: An vledhen yw mil, naw kans, pemthek ha peswar ugens. 
+FSS: An vledhen yw mil, naw kans, pymthek ha peswar ugens. 
 
 KK: Mis Genver yw oer, mis Est yw poeth, dell vydh usys.
 FSS: Mis Genver yw oor, mis Est yw pooth, dell vydh usys. 
@@ -3584,7 +3584,7 @@ KK: Py dydh yw an pympes warn ugens a vis Kevardhu?
 FSS: Py dydh yw an pympes warn ugens a vis Kevardhu? 
 
 KK: Dy' Mergher yw an degves, dell dybav.
-FSS: Dy' Mergher yw an degves, dell debav. 
+FSS: Dy' Mergher yw an degves, dell dybav. 
 
 KK: Y'n vlydhen mil, naw kans ha pymp ha dew ugens Nessa Bresel an Norvys a dhiwedhas.
 FSS: Y'n vledhen mil, naw kans ha pymp ha dew ugens Nessa Bresel an Norvys a dhiwedhas. 
@@ -3593,7 +3593,7 @@ KK: Py dydh yw ev hedhyw?
 FSS: Py dydh yw ev hedhyw? 
 
 KK: Dy' Gwener an nownsegves a vis-Genver y'n vlydhen mil, naw kans, pymthek ha peswar ugens yw.
-FSS: Dy' Gwener an nownsegves a vis-Genver y'n vledhen mil, naw kans, pemthek ha peswar ugens yw. 
+FSS: Dy' Gwener an nownsegves a vis-Genver y'n vledhen mil, naw kans, pymthek ha peswar ugens yw. 
 
 KK: Ow hwegron a oberas y'n karrji war y garr koth.
 FSS: Ow hwegron a oberas y'n karrji war y garr koth. 
@@ -3602,7 +3602,7 @@ KK: Y nith, Hylda, a glewas Bretonek kewsys yn Montroules.
 FSS: Y nith, Hylda, a glewas Bretonek kewsys yn Montroules. 
 
 KK: Dohajydh da dhywgh hwi oll.
-FSS: Dohajedh da dhywgh hwi oll. 
+FSS: Dohajydh da dhywgh hwi oll. 
 
 KK: A vynnowgh hwi kewsel kernewek genen?
 FSS: A vynnowgh hwi kewsel kernewek genen? 
@@ -3737,7 +3737,7 @@ KK: Mir orth an bellwolok! Yndella ty a yll dyski meur.
 FSS: Mir orth an bellwolok! Yndella ty a yll dyski meur. 
 
 KK: Talan a veu genys Dy' Yow an nessa warn ugens a vis Hedra y'n vlydhen mil, naw kans ha seytek. Seytek bloedh ha tri ugens o ev yn mil naw kans pymthek ha peswar ugens. Ev yw yagh hwath.
-FSS: Talan a veu genys Dy' Yow an nessa warn ugens a vis Hedra y'n vledhen mil, naw kans ha seytek. Seytek bloodh ha tri ugens o ev yn mil naw kans pemthek ha peswar ugens. Ev yw yagh hwath. 
+FSS: Talan a veu genys Dy' Yow an nessa warn ugens a vis Hedra y'n vledhen mil, naw kans ha seytek. Seytek bloodh ha tri ugens o ev yn mil naw kans pymthek ha peswar ugens. Ev yw yagh hwath. 
 
 KK: Eus karr dhis?
 FSS: Eus karr dhis? 
@@ -3863,7 +3863,7 @@ KK: A nyns yw an nessa karr dhe Vr Martyn?
 FSS: A nyns yw an nessa karr dhe Vr Martyn? 
 
 KK: Yw! Ev yw dhe Vr Martyn, dell dybav.
-FSS: Yw! Ev yw dhe Vr Martyn, dell debav. 
+FSS: Yw! Ev yw dhe Vr Martyn, dell dybav. 
 
 KK: O an eskisyow dhedha? Ens!
 FSS: O an eskisyow dhedha? Ens! 
@@ -3899,7 +3899,7 @@ KK: Ple'ma an gerlyver Kernewek?
 FSS: Ple'ma an gerlever Kernewek? 
 
 KK: War drysa estyllenn an argh-lyvrow y'n esedhva yma, dell dybav.
-FSS: War dresa estyllen an argh-lyvrow y'n esedhva yma, dell debav. 
+FSS: War dresa estyllen an argh-lyvrow y'n esedhva yma, dell dybav. 
 
 KK: Yth esa ke isel a-dal an chi.
 FSS: Yth esa ke isel a-dal an chi. 
@@ -4097,7 +4097,7 @@ KK: Yma nown dhe'n vebyon. An vamm a vynn ri nebes boes dhedha. Mes eus boes low
 FSS: Yma nown dhe'n vebyon. An vamm a vynn ri nebes boos dhedha. Mes eus boos lowr y'n yeynell? Eus. Yma meur a vara hag amanen gesys hwath ynwedh. 
 
 KK: Esedh a-dhelergh, mar pleg. Nyns eus le gesys rybov.
-FSS: Esedh a-dhelergh, mar pleg. Nyns eus le gesys rebov. 
+FSS: Esedh a-dhelergh, mar pleg. Nyns eus le gesys rybov. 
 
 KK: Ty a vydh meur dhe les omma owth oberi genen.
 FSS: Ty a vydh meur dhe les omma owth oberi genen. 
@@ -4163,7 +4163,7 @@ KK: An tiek a dhros y vughes dhe'n skiber.
 FSS: An tiek a dhros y vughes dhe'n skiber. 
 
 KK: An rewler a worras an lytherow war an desk rybdho.
-FSS: An rewler a worras an lytherow war an desk rebdho. 
+FSS: An rewler a worras an lytherow war an desk rybdho. 
 
 KK: Yma euth dhymm. My a glewas tros ughel yn-mes y'n lowarth.
 FSS: Yma euth dhymm. My a glewas tros ughel yn-mes y'n lowarth. 
@@ -4223,7 +4223,7 @@ KK: Bys dhe'n eur ma nyns yw an gewer mar lyb dell o hi de.
 FSS: Bys dhe'n eur ma nyns yw an gewer mar lyb dell o hi de. 
 
 KK: Nyns ov mar dhrog avella, dell dybav.
-FSS: Nyns ov mar dhrog avella, dell debav. 
+FSS: Nyns ov mar dhrog avella, dell dybav. 
 
 KK: Yw Margh mar drist dell o ev Dy' Sul?
 FSS: Yw Margh mar drist dell o ev Dy' Sul? 
@@ -4472,7 +4472,7 @@ KK: Ro dhedhi hy eskisyow gell, mar pleg.
 FSS: Ro dhedhi hy eskisyow gell, mar pleg. 
 
 KK: Dhe by eur yth yw an tren dhe Loundres an dohajydh ma?
-FSS: Dhe by eur yth yw an tren dhe Loundres an dohajedh ma? 
+FSS: Dhe by eur yth yw an tren dhe Loundres an dohajydh ma? 
 
 KK: Yma tren skav dhe dhiw eur marnas teyr mynysenn warn ugens.
 FSS: Yma tren skav dhe dhiw eur marnas teyr mynysen warn ugens. 
@@ -4493,7 +4493,7 @@ KK: Usi an amaris orth an fos? Ymons!
 FSS: Usi an amaris orth an fos? Ymons! 
 
 KK: Nyns eus gesys kestenenn y'n koes, dell dybav.
-FSS: Nyns eus gesys kestenen y'n koos, dell debav. 
+FSS: Nyns eus gesys kestenen y'n koos, dell dybav. 
 
 KK: Martesen onan goth hepken.
 FSS: Martesen onan goth hepken. 
@@ -4565,7 +4565,7 @@ KK: Prag y hworfennowgh agas ober dhe beder eur pub Dy' Gwener? Drefenn bos hwan
 FSS: Prag y hworfennowgh agas ober dhe beder eur pub Dy' Gwener? Drefen bos hwans dhyn a vones tre moy a-varr. 
 
 KK: Prag y tybydh yndella? Drefenn nag eus ken fordh dhe dybi.
-FSS: Prag y tebydh yndella? Drefen nag eus ken fordh dhe debi. 
+FSS: Prag y tybydh yndella? Drefen nag eus ken fordh dhe dybi. 
 
 KK: Prag nag esosta ow skoedhya dha goweth? Drefenn nag ov mar anfur dhe wul henna y'n prys ma.
 FSS: Prag nag esosta ow skoodhya dha goweth? Drefen nag ov mar anfur dhe wul henna y'n prys ma. 
@@ -4613,7 +4613,7 @@ KK: Piw a appos an lewyoryon-taksi y'n ranndir ma?
 FSS: Piw a appos an lewyoryon-taksi y'n ranndir ma? 
 
 KK: Esowgh hwi ow kwaytya kerdh an olifanses ha'n kowrvergh ha'n enyvales erell dre gres an dre? Soweth, gyllys yns. I eth alemma seulabrys dhe deyr eur poran.
-FSS: Esowgh hwi ow kwaytya kerdh an olifanses ha'n kowrvergh ha'n enyvales erel dre gres an dre? Soweth, gyllys yns. I eth alemma seulabres dhe deyr eur poran. 
+FSS: Esowgh hwi ow kwaytya kerdh an olifanses ha'n kowrvergh ha'n enyvales erel dre gres an dre? Soweth, gyllys yns. I eth alemma seulabrys dhe deyr eur poran. 
 
 KK: Pan o Pamela difun, hi a wolghas an lestri ha'ga gorra y'n gloes.
 FSS: Pan o Pamela difun, hi a wolghas an lestri ha'ga gorra y'n gloos. 

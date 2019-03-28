@@ -11,8 +11,8 @@ Gorthugher da, Jori - fatla genes?
 Yn poynt da, meur ras. 
 Nos dha, oll! 
 Nos dha, Wella! 
-Dohajedh da, Ann. 
-Dohajedh da, Malcolm - fatla genes? 
+Dohajydh da, Ann. 
+Dohajydh da, Malcolm - fatla genes? 
 Da lowr, meur ras - ha ty? 
 Da lowr, meur ras. 
 Dydh da, Maria. 
@@ -106,7 +106,7 @@ An den na yw feusik, dell hevel.
 An fordh ma yw kul. 
 James ha Lowena yw parow. 
 Yw an mebyl parys? Nag yns. 
-An lyver ma yw dhe les, dell debav. 
+An lyver ma yw dhe les, dell dybav. 
 Ottomma kenter war an gador ma. 
 Homm yw fol, sur. 
 Hel an dre yw nowydh mes an eglos yw koth. 
@@ -133,25 +133,25 @@ An drehevyans a-rag an chi yw karrji.
 Eus traow gesys war an lestrier? 
 Eus! Yma traow gesys ena 
 Eus leow gesys y'n cinema lemmyn? 
-An re ma yw nowydh, dell debav. 
+An re ma yw nowydh, dell dybav. 
 Pyth yw hemma? 
 An dra na yw pluven. 
 Pyth yw hweg? 
 An aval ma yw hweg, sur. 
 A nyns eus davas y'n pras na? 
 Py tus yw kernewek omma? 
-Oll an re na, dell debav. 
+Oll an re na, dell dybav. 
 Pyth yw hemma, Pol? 
 Arta, mar pleg. 
 An gwin ma yw Almaynek. 
 A wodhesta konvedhes Kernewek. 
-Gonn, dell debav. 
+Gonn, dell dybav. 
 Py lyver yw Kembrek? 
 Hemm yw kembrek. 
 Py lyver yw dhe les? 
 Hemm yw dhe les, sur. 
 An pow na yw Pow Sows. 
-An stamp ma yw Iwedhonek. 
+An stamp ma yw Iwerdhonek. 
 Fatel yw an gewer lemmyn? 
 Yma awel. 
 Pooth yw an gewer lemmyn. 
@@ -162,14 +162,14 @@ Ott! An pras yw niwlek.
 Fatal genes, Mighal? 
 Yn poynt da, Les, meur ras. Ha ty? 
 Ogh! Da lowr. Mes yma anwos warnav. 
-Gwynsek yw hi an dohajedh ma. 
+Gwynsek yw hi an dohajydh ma. 
 Yw, sur. 
 Eus glaw? 
 Eus. Hi a wra glaw lemmyn. 
 An karr ma yw gwerthys. 
 An voos ma yw nowydh. 
 A nyns yw an maw ma lowen? 
-Yw, dell debav. 
+Yw, dell dybav. 
 Homm yw feusik. Yma aval gesys. 
 Yma ostel yn unn dre yn Breten Vyghan. Ostel dha yw. 
 Pyth yw an drehevyans ma? 
@@ -181,7 +181,7 @@ Honn yw Kernewes.
 Ottomma Karl! Almaynek yw. 
 Kernow ha Breten Vyghan yw parow. Sur, parow yns. 
 An gwyns yw skav lemmyn, dell hevel. 
-An gador ma yw kembrek, dell debav. 
+An gador ma yw kembrek, dell dybav. 
 A wodhowgh hwi oll konvedhes Kernewek? 
 Gonn! Gonn! 
 Sur, an eglos ma yw oor. 
@@ -194,7 +194,7 @@ An vamm, an vyrgh ha'n vodrep oll yw benow.
 A nyns yw an hweger lowen namoy? 
 An vowes yw yowynk. 
 An byskadoryon yw parys lemmyn. 
-An diogyon na yw feusik, dell debav. 
+An diogyon na yw feusik, dell dybav. 
 Yma an dioges yn le'ti lemmyn. 
 A nyns eus ke ryb an koos? Nag eus! 
 An jynn-skrifa na yw koth mes da. 
@@ -210,7 +210,7 @@ Py lyver yw gesys?
 Pyth yw hemma, an dra ma, yn Kernewek? 
 'Gweder' yw. A wodhesta konvedhes? 
 Gonn, meur ras. 
-Ottomma diwes. Gwin yw, dell debav, ha yeyn. Bryntin! 
+Ottomma diwes. Gwin yw, dell dybav, ha yeyn. Bryntin! 
 Eus pluven genes, mar pleg? Eus! 
 An gegin yw kul. 
 Gav dhymm mes piw yw henna, mar pleg? Mr Grace yw henna 
@@ -223,14 +223,14 @@ Ottomma kador-vregh vyghan.
 Yma le gesys omma. 
 Yma kador gesys ryb an voos vras. 
 Hel an Dre yw drehevyans teg. 
-An gour yw den da, dell debav. 
+An gour yw den da, dell dybav. 
 A nyns yw hemma gwin almaynek? Ny wonn! 
 Yeth dha yw Kernewek. 
 Tus dha yns, sur. 
 Kewer deg yw brav mes nyns yw an gewer teg lemmyn. 
 Gwydhelek yw yeth keltek 
 An voos ma ha'n lestrier na yw mebyl koth, dell hevel. 
-Lyver berr yw lyver da, dell debav. 
+Lyver berr yw lyver da, dell dybav. 
 Eus kenter vyghan berr ena genes, mar pleg? 
 Tus keltek yns. 
 Henn yw flogh da. 
@@ -321,7 +321,7 @@ I yw koth.
 Ev yw derow, derow kernewek. 
 Ty yw Kelt. 
 I yw gesys warbarth y'n hel. 
-Ty yw tiek, dell debav. 
+Ty yw tiek, dell dybav. 
 Ev yw ki fol. 
 Hi yw myrgh an teylu, mowes teg yw hi. 
 Ni yw lowen lemmyn. 
@@ -332,7 +332,7 @@ Fatel yw an tas lemmyn?
 Gwann ha kloppek hwath yw ev. 
 Nyns eus anwos war Pam namoy. 
 Yma kador gesys y'n hel. 
-Hemm yw fur, dell debav. 
+Hemm yw fur, dell dybav. 
 Ottena an ostel. 
 Kemmer an noten, mar pleg! 
 Py par prenn yw hemma? 
@@ -342,7 +342,7 @@ Nos dha, Maria, dha weles!
 A nyns eus fordh dha a-rag an karrji? 
 Yw hi hweger Yowan? 
 Fatel yw an dus ena lemmyn? 
-Brav yns hag yn poynt da, dell debav. 
+Brav yns hag yn poynt da, dell dybav. 
 Awelek yw hi, sur. 
 Ni yw warbarth lemmyn. 
 An re ma, i yw parow, dell hevel. 
@@ -374,7 +374,7 @@ An jynn-skrifa yw plos, dell hevel.
 Py lovan yw hir lowr? 
 Daras an eglos yw koth. 
 Yma tus a-rag hel an dre. Lost hir yw. 
-Dohajedh da, Lowena. Fatla genes lemmyn? Da lowr, meur ras. 
+Dohajydh da, Lowena. Fatla genes lemmyn? Da lowr, meur ras. 
 Glaw skav a wra hi. 
 Yeth wir an den na yw Kernewek. 
 Hwi yw parys lemmyn, dell hevel. 
@@ -401,7 +401,7 @@ Py par stamp eus genes, ytho?
 Pow Frynk yw pow pur vras ha pur deg. 
 Py traow yw gwerthys lemmyn? 
 A wodhowgh hwi oll konvedhes hemma? 
-Ni yw salow lemmyn, dell debav. 
+Ni yw salow lemmyn, dell dybav. 
 Nyns eus nebonan gesys yn hel an dre. 
 Fatel yw an bara na? brav yw, meur ras. 
 Pyth yw an draow ma, an re byghan. 
@@ -426,7 +426,7 @@ Eus ostel yn kres an dre?
 Eus! Yma pymp ostel ena. 
 Kemmer teyr henter ytho! 
 Yma unnek mowes ha tredhek maw oll warbarth. 
-Yma deg hwegyn gesys, dell debav. 
+Yma deg hwegyn gesys, dell dybav. 
 Yma unn garrek pur vras ena. 
 Ottena teyr delen rudh war an leur. 
 Yma peswar stamp gesys y'n lyver. 
@@ -438,7 +438,7 @@ Eus boos lowr gesys rag an ki?
 Eus! Yma boos war blat y'n gegin 
 An erva yw hir, re hir. 
 Pyth yw an re na, an tri thra dhu na ena? Ny wonn! 
-Dohajedh da, Maria. Fatla genes? 
+Dohajydh da, Maria. Fatla genes? 
 Brav, meur ras. 
 Ni yw seyth kaner oll warbarth. 
 Fatel yw an dhew garr? 
@@ -448,7 +448,7 @@ An dhiw gador ma yw an re poos.
 Piw yw an re na - an dus koth? 
 An gour yw tas-gwynn Lowena mes ny wonn piw yw an venyn. 
 Py par del yw an re ma? 
-Del derow yns, dell debav. 
+Del derow yns, dell dybav. 
 Yma anwos war ewnter Tamsin. 
 Nyns yw homma da. 
 Py eur yw hi lemmyn? 
@@ -460,7 +460,7 @@ Pymp eur hanter yw hi.
 Hanter dydh poran yw hi. 
 A-dro dhe gwarter wosa naw eur yw hi. 
 Dhe by eur yth yw an kuntelles, mar pleg? 
-Dhe seyth eur hanter, dell debav. 
+Dhe seyth eur hanter, dell dybav. 
 Dhe by eur yth yw an nessa kyttrin dhe Druru, mar pleg? 
 Nyns eus kyttrin dhe Druru kyns peder eur. 
 Dhe by eur yth yw an nessa prys boos? 
@@ -511,7 +511,7 @@ Yma niverow war an paper ma. Pyth yns i, a wodhesta?
 Na wonn. Ny wonn pyth yns. 
 Py podigow yw glann? An re ma? 
 A nyns yw henna tarow y'n pras na? Yw, dell hevel. 
-Berrheans an lyver ma yw dhe les, dell debav. 
+Berrheans an lyver ma yw dhe les, dell dybav. 
 Eus amanen war an bara? Eus! 
 Tri flat yw terrys. 
 Teyr mynysen ha'n boos yw parys 
@@ -534,7 +534,7 @@ Nyns yw ev re dha, dell hevel
 Yma hwegh den warn ugens y'n kuntelles a-ji dhe hel an dre. 
 Kemmer an ganstell, mar pleg! 
 Fatla genes lemmyn, Gari? 
-Da lowr, meur ras, mes yma anwos warnav, dell debav. 
+Da lowr, meur ras, mes yma anwos warnav, dell dybav. 
 Py flogh yw mab Mrs Olver? 
 Ottena! An maw moon na ryb an daras. 
 Pyth yw rag kon? 
@@ -550,7 +550,7 @@ Nyns yw an bargen-tir ma pur vras.
 Fatel yw an gewer lemmyn? 
 Oor, niwlek ha tewl yw hi. 
 Yma peder kador warn ugens gesys a-ji dhe hel an eglos. 
-I yw pur feusik, dell debav. 
+I yw pur feusik, dell dybav. 
 Ty yw kar Mona, a nyns yw henna gwir? 
 Yw! My yw keniterow Mona. 
 ryb an amari 
@@ -590,7 +590,7 @@ Yn kres an dre yma ev.
 Ple'ma an gador lemmyn? 
 Orth an fos yma hi. 
 Ple'ma an bollys, mar pleg? 
-Y'n amari ymons, dell debav. 
+Y'n amari ymons, dell dybav. 
 Usi hwor Peder y'n skol na? 
 Usi! Yma hi ena gans Peder. 
 Usi an lost a-rag an hel? 
@@ -611,7 +611,7 @@ Nag esons! Yma an ki war an leur mes yma an gath y'n wedhen.
 Kres oy yw melyn. 
 Kemmer an dornleow, mar pleg 
 Ottomma gerva verr. 
-An erva ma yw hir lowr, dell debav. 
+An erva ma yw hir lowr, dell dybav. 
 Fatel yw an eskisyow ma ytho? 
 Re vras yns. 
 Pur ughel yw tour an eglos, a nyns yw ev? 
@@ -627,7 +627,7 @@ Oyow bryjys yw da rag hansel.
 Meur a win yw re. 
 Yma meur a vostiow da y'n dre. 
 Broyow pals yw boghosek. 
-Lies karr yw re skav, dell debav. 
+Lies karr yw re skav, dell dybav. 
 Nebes tus yw kevothek. 
 Ottomma nebes keus ragos! 
 Nebes fordhow y'n enys yw ledan lowr mes meur a fordhow ena yw re gul. 
@@ -639,7 +639,7 @@ Yma kanoryon bals yn keur an chapel.
 Tus bals yw re dew. 
 Lies ostel yw gwag, dell hevel. 
 A nyns eus lies aval gesys? 
-Lies gerva yw re hir, dell debav. 
+Lies gerva yw re hir, dell dybav. 
 Ple'ma an tri faper? 
 War an voos ymons. 
 Ple'ma an gever ytho? 
@@ -655,7 +655,7 @@ Py eur yw hi lemmyn, mar pleg?
 Tredhek mynysen wosa diw eur poran yw hi. 
 Dhe by eur yth yw an tren dhe Aberplym? 
 Dhe beder eur marnas kwarter yw ev. 
-A-dro dhe unn eur yw hi lemmyn, dell debav. 
+A-dro dhe unn eur yw hi lemmyn, dell dybav. 
 Yma an plasen y'n amari byghan. 
 Dornleow an darasow yw plos. 
 Lavrek an maw nay w re hir ha re ledan. 
@@ -698,7 +698,7 @@ Ke dhe'n fenester, mar pleg!
 Dewgh orth an tan! Oor yw hi! 
 Kemerewgh oll dorn nebonan! 
 Kres trey yw le bysi, dell vydh usys, mes kres an dre ma yw gwag. 
-Nyns eus par dhe'n gour ma, dell debav. 
+Nyns eus par dhe'n gour ma, dell dybav. 
 An diogyon gernewek yw an kynsa a-ji dhe'n varghas. 
 Lavarow lowr yw lowr. 
 Meur a lavarow yw flows. 
@@ -714,7 +714,7 @@ Piw yw pronter an eglos ma?
 Mr Le'ti yw an pronter omma. 
 Drehevyans an skol ma yw koth. 
 Nyns ov koth na nyns ov yowynk. 
-Kowethes Maria os, dell debav. 
+Kowethes Maria os, dell dybav. 
 Nyns yw an bosti ma onan da. 
 On ni parys lemmyn? 
 Py lies owgh hwi oll warbarth? 
@@ -726,7 +726,7 @@ Feusik on ni, sur.
 Yma unn chi a-dryv an cinema; chi Mr Pollglas yw ev. 
 Kemmer tri hwegyn! 
 Piw yw an gwettha flogh? 
-Margh yw, deell debav. 
+Margh yw, deell dybav. 
 Py eur yw hi, mar pleg? 
 Eth eur poran yw hi. 
 Fatla genes an myttin ma? 
@@ -752,7 +752,7 @@ Yma meur a dus a-ji dhe'n hel.
 Re booth yw hi dhe hanter-dydh. 
 Nebes geryow yw lowr. 
 Pur sygh yw an lowarth. 
-Dohajedh da dhis, Me. Kewer deg, a nyns yw hi? 
+Dohajydh da dhis, Me. Kewer deg, a nyns yw hi? 
 Tredhek den ha dew-ugens a-ji dhe'n kyttrin yw re, dell hevel. 
 Yma an vamm orth an daras. Igor e ytho! 
 An eneval ma yw haval orth margh. 
@@ -807,7 +807,7 @@ Yth esa an vugh y'n pras gans an re erel.
 Nyns esens y'n pras bras. 
 O ev pes da gans hemma? Nag o! 
 Esa ev y'n lowarth ytho? 
-Nyns ewgh parys, dell debav. 
+Nyns ewgh parys, dell dybav. 
 Nyns esewgh a-ji dhe'n drehevyans. 
 A nyns ens i pes da gans henna? 
 A nyns esens i yn gorsav an kyttrin? 
@@ -838,7 +838,7 @@ Ro dhymm bara hag amanen, dell vydh usys, mar pleg!
 Nyns esa komolen y'n ebren. 
 Eus oyl lowr yn jynn an karr? 
 Ow hi yw kloppek. 
-Dha gota yw plos, dell debav. 
+Dha gota yw plos, dell dybav. 
 Nyns yw nowydh y ji. 
 Nyns yw ev y ji nowydh. 
 Yw hy howethas Myrna ytho? 
@@ -869,7 +869,7 @@ Ny brensyn an boos y'n eur na.
 A wolghsys jy an hanafow an myttin ma? 
 Golghis, sur! 
 Ytho ny wolghsys hemma. 
-Maria a wolghas henna, dell debav. 
+Maria a wolghas henna, dell dybav. 
 Golgh e arta, mar pleg! 
 Dy' Sadorn y prenas Wella ki. 
 Ev re brenas keun kyns. 
@@ -905,7 +905,7 @@ Hi a vet orth Pol rag li.
 A bal Mighal yn y lowarth lemmyn? Na bal ev! 
 Ni a glew an glaw orth fenester an chambour. 
 Piw a dhysk kernewek y'n dre ma? 
-Tri po peswar den, dell debav. 
+Tri po peswar den, dell dybav. 
 Tus a dheu dhe weles an eglos koth. 
 Jago a wisk y gota nowydh, my a wel. 
 Agan boos dhe'n prys ma yw bewin. 
@@ -962,7 +962,7 @@ Piw o hy howethes wir?
 Ni oll warbarth eth yn-nans dhe'n treth rag neuvya. 
 Pyth yw hemma a-dryv an amari? 
 Paper-nowodhow koth yw, sur. 
-Berrheans an lyver o re verr, dell debav. 
+Berrheans an lyver o re verr, dell dybav. 
 My a brenas dewdhek oy nowydh y'n bargen-tir. 
 Py eur o pan dheuth hi tre arta? 
 Nebes geryow yw an gwella. 
@@ -976,7 +976,7 @@ Fatel o an gewer y'n eur na? Oor o, pur oor.
 Yth esa toll yn to hy chi ha ledan o an keth toll na. 
 An glaw a dheuth a-ji der an toll. 
 Py bosti yw an gwella y'n dre ha py bosti yw an gwettha? 
-Bosti an tavern 'An Margh Wynn' yw an gwella, dell debav, ha'n bosti a-ji dhe'n varghas yw an gwettha, dell glewav. 
+Bosti an tavern 'An Margh Wynn' yw an gwella, dell dybav, ha'n bosti a-ji dhe'n varghas yw an gwettha, dell glewav. 
 Ottena! Yma y wreg ganso lemmyn. 
 Hwel, ena hanafas a goffi yw brav. 
 An keur a ganas dhe'n fleghes. 
@@ -992,7 +992,7 @@ Kemmer an kowl ma, yma bollas ragos.
 Hebdhi nyns ov lowen. 
 Nyns eth Morwenna hebov. 
 A leversys jy hemma ragon? 
-Regdhi y hwrug ev an dra. 
+Rygdhi y hwrug ev an dra. 
 Gwra an hwel gansa! 
 Ro e dhymmo vy, mar pleg! 
 Ny dhiskwedhsyn an golow dhedha. 
@@ -1006,13 +1006,13 @@ Dyskador yw, dell glewav.
 Nyns yns aga hota ynsi, sur. 
 Ny wonn kovedhes. Arta mar pleg, ha lenta. 
 Hy thas-gwynn o pronter yn Eglos Pow Sows. 
-Ott! Chembla an chi na yw gyllys gans an gwyns krev. 
+Ott! Chymbla an chi na yw gyllys gans an gwyns krev. 
 Tasik, tasik! Ple'ma agan ki? 
 Piw yns i, an re na a-rag gwerthji an horner? 
 Ny wonn. Mes na gews dhedha! Tus kemmyn yns, dell hevel, ha nyns yns agan parow, sur. 
 Pub avon omma yw keltek ha pub menydh ynwedh. 
 Bregh an gador ma yw terrys. 
-On ni diwedhes? On, dell debav. 
+On ni diwedhes? On, dell dybav. 
 Yma bownder verr ha kul ynter an dhew bras vras. 
 Yntra naw den ev yw an lyha oll. 
 Re dhiwedhes os, ow howeth, ha nyns eus hanafas a goffi ragos. 
@@ -1096,7 +1096,7 @@ Y'n seythves dydh an dra o dien.
 Kan an kynsa salm warn ugens! 
 Kikti Mr Bates yw an peswara gwerthji yn Stret an Eglos. 
 Hi a lennas an nawves dyskans. 
-An dohajedh ma ymons i ow metya orth aga howetha. 
+An dohajydh ma ymons i ow metya orth aga howetha. 
 A nyns esens i ow synsi an dornleow? 
 A vynn'ta dybri an aval ma? Na vynnav, meur ras! 
 A yll'ta gweles an mor hwath? Gallav! 
@@ -1187,19 +1187,19 @@ Ny yllowgh gwari peldros y'n pras na.
 Ni a gar hwedhel didhanus. 
 Py liw yw an sethow na? Melyn yns. 
 Ny welyn an baner kernewek a-ugh tour an eglos y'n dre ma. 
-An vledhen yw mil, naw kans, pemthek ha peswar ugens. 
+An vledhen yw mil, naw kans, pymthek ha peswar ugens. 
 Mis Genver yw oor, mis Est yw pooth, dell vydh usys. 
 Yma deg dydh warn ugens yn mis-Metheven hag unnek dydh warn ugens yn mis-Gortheren. 
 Hemm yw unn jydh ha tri ugens warbarth. 
 Yma tri mis yn Gwenton. 
 Py dydh yw an pympes warn ugens a vis Kevardhu? 
-Dy' Mergher yw an degves, dell debav. 
+Dy' Mergher yw an degves, dell dybav. 
 Y'n vledhen mil, naw kans ha pymp ha dew ugens Nessa Bresel an Norvys a dhiwedhas. 
 Py dydh yw ev hedhyw? 
-Dy' Gwener an nownsegves a vis-Genver y'n vledhen mil, naw kans, pemthek ha peswar ugens yw. 
+Dy' Gwener an nownsegves a vis-Genver y'n vledhen mil, naw kans, pymthek ha peswar ugens yw. 
 Ow hwegron a oberas y'n karrji war y garr koth. 
 Y nith, Hylda, a glewas Bretonek kewsys yn Montroules. 
-Dohajedh da dhywgh hwi oll. 
+Dohajydh da dhywgh hwi oll. 
 A vynnowgh hwi kewsel kernewek genen? 
 An maw a dennas an lovan mes re wann o ev. 
 Ny yll ev gul an ober na namoy. 
@@ -1244,7 +1244,7 @@ Pys e a wortos a-ves!
 An gath vyghan a warias yn-dann an gweli. 
 Pan splann an lorgan war an arvor a-dreus an mor kosel, assyw hi teg! 
 Mir orth an bellwolok! Yndella ty a yll dyski meur. 
-Talan a veu genys Dy' Yow an nessa warn ugens a vis Hedra y'n vledhen mil, naw kans ha seytek. Seytek bloodh ha tri ugens o ev yn mil naw kans pemthek ha peswar ugens. Ev yw yagh hwath. 
+Talan a veu genys Dy' Yow an nessa warn ugens a vis Hedra y'n vledhen mil, naw kans ha seytek. Seytek bloodh ha tri ugens o ev yn mil naw kans pymthek ha peswar ugens. Ev yw yagh hwath. 
 Eus karr dhis? 
 Eus chi dhis? 
 Eus ki dhis? 
@@ -1286,7 +1286,7 @@ Yw an dhewweder ma dhis?
 Yns. I yw dhymm, meur ras. 
 Yw an wedren ma dhedhi? Yw! 
 A nyns yw an nessa karr dhe Vr Martyn? 
-Yw! Ev yw dhe Vr Martyn, dell debav. 
+Yw! Ev yw dhe Vr Martyn, dell dybav. 
 O an eskisyow dhedha? Ens! 
 A nyns o an diwes na dhe Wella? 
 Nag o! Dhe Gerensa o. 
@@ -1298,7 +1298,7 @@ Niver an gorholyon y'n porth yw eth.
 Hedhyw yw an dewdhegves a vis Meurth, pennblodh ow gwreg. 
 Ro dhymm an holan, mar pleg! 
 Ple'ma an gerlever Kernewek? 
-War dresa estyllen an argh-lyvrow y'n esedhva yma, dell debav. 
+War dresa estyllen an argh-lyvrow y'n esedhva yma, dell dybav. 
 Yth esa ke isel a-dal an chi. 
 Nyns esa tra aral a-dal dhodho. 
 Yth esa pastiow yeyn rag agan kroust. Bryntin! 
@@ -1364,7 +1364,7 @@ Yowan a wovynnas orth an tiek, 'Py par gwydh yns i?' Ev a worthebis, 'Derow yns'
 Oll an fleghes a arm, 'Kernow bys vykken!' Pes da ov vy a henna. 
 Yma peder ros dhe bub karr. Yma an pympes a-ji ynno. 
 Yma nown dhe'n vebyon. An vamm a vynn ri nebes boos dhedha. Mes eus boos lowr y'n yeynell? Eus. Yma meur a vara hag amanen gesys hwath ynwedh. 
-Esedh a-dhelergh, mar pleg. Nyns eus le gesys rebov. 
+Esedh a-dhelergh, mar pleg. Nyns eus le gesys rybov. 
 Ty a vydh meur dhe les omma owth oberi genen. 
 Yth esen ow redya an paper-nowodhow ha my ow tybri. 
 Golgh dha dhiwleuv kyns dybri dha voos! 
@@ -1386,7 +1386,7 @@ An hyns yw efan mes leun a dus yw ev.
 Ke dhe-ves! Pur skwith ov. 
 Nevra ny vynn hi dehweles ha homm yw kales. 
 An tiek a dhros y vughes dhe'n skiber. 
-An rewler a worras an lytherow war an desk rebdho. 
+An rewler a worras an lytherow war an desk rybdho. 
 Yma euth dhymm. My a glewas tros ughel yn-mes y'n lowarth. 
 Ottena! A-dro dhe hanterkans hos war an lynn yn kres an hal. 
 Ymons i ow neuvya warbarth. 
@@ -1406,7 +1406,7 @@ Kynth o an gewer tomm, nyns eth hi dhe'n dre mes gortos tre.
 An re ma yw mar dha avel hemma, dell glewav. 
 Nyns yw an wivren mar hir avel an huni aral. 
 Bys dhe'n eur ma nyns yw an gewer mar lyb dell o hi de. 
-Nyns ov mar dhrog avella, dell debav. 
+Nyns ov mar dhrog avella, dell dybav. 
 Yw Margh mar drist dell o ev Dy' Sul? 
 Hware yth omglewis mar lowen avel edhen. 
 A nyns yw hy chi mar vyghan avel krow den bal? 
@@ -1489,14 +1489,14 @@ Eus arghans lowr y'n arghantti rag prena karr nowydh?
 Eus arghans lowr dhyn ynno? 
 Noy Mr Stevens yw moon ha'y nith yw tew. 
 Ro dhedhi hy eskisyow gell, mar pleg. 
-Dhe by eur yth yw an tren dhe Loundres an dohajedh ma? 
+Dhe by eur yth yw an tren dhe Loundres an dohajydh ma? 
 Yma tren skav dhe dhiw eur marnas teyr mynysen warn ugens. 
 Otta! An lavrek ma yw re verr ragov. 
 Res yw dhis prena lavrek nowydh ytho. 
 Yth esa seghes bras dhymmo vy hag yth evis gwedrennas a gorev a-dhistowgh. 
 Nebes podigow yw terrys, re erel yw plos. Ny yll den eva leth anedha. 
 Usi an amaris orth an fos? Ymons! 
-Nyns eus gesys kestenen y'n koos, dell debav. 
+Nyns eus gesys kestenen y'n koos, dell dybav. 
 Martesen onan goth hepken. 
 Syns dornla an daras ha trel e! 
 Py lies mildir yw an fordh dhe Druru a Essa? 
@@ -1520,7 +1520,7 @@ Prag y prenas Pol an korev? Drefen ow bos heb arghans.
 Prag y teuthons i ena? Drefen bos hwans dhedha a'gan gweles. 
 Prag y targanas an gwas kewer deg hag yma hi ow kul glaw? Drefen ev dhe vos gocki, sur. 
 Prag y hworfennowgh agas ober dhe beder eur pub Dy' Gwener? Drefen bos hwans dhyn a vones tre moy a-varr. 
-Prag y tebydh yndella? Drefen nag eus ken fordh dhe debi. 
+Prag y tybydh yndella? Drefen nag eus ken fordh dhe dybi. 
 Prag nag esosta ow skoodhya dha goweth? Drefen nag ov mar anfur dhe wul henna y'n prys ma. 
 Prag y tregh ev an skorrennow na? Drefen ev dh'aga leski war an tansys. 
 Prag na worr Hycka y basti y'n forn? Drefen ev dh'y dhybri yeyn. 
@@ -1536,5 +1536,5 @@ Ro dhymm dha drigva ha'th hanow, mar pleg.
 Oll ahanowgh yw Kernewegoryon mes nebes ahanowgh yw gwell ages re erel. 
 Igor gorher an badell! Pyth eus yn-danno? 
 Piw a appos an lewyoryon-taksi y'n ranndir ma? 
-Esowgh hwi ow kwaytya kerdh an olifanses ha'n kowrvergh ha'n enyvales erel dre gres an dre? Soweth, gyllys yns. I eth alemma seulabres dhe deyr eur poran. 
+Esowgh hwi ow kwaytya kerdh an olifanses ha'n kowrvergh ha'n enyvales erel dre gres an dre? Soweth, gyllys yns. I eth alemma seulabrys dhe deyr eur poran. 
 Pan o Pamela difun, hi a wolghas an lestri ha'ga gorra y'n gloos. 

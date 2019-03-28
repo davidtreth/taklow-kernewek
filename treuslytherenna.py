@@ -84,7 +84,8 @@ def convert_y(inputsyl):
         # select half-long vowels, that are y (not ay, ey, oy)
         # and not syllables ending in a vowel (often should have been a consonantal y
         # e.g. in -ya words)
-        if vowellength == 2 and vowel == 'y' and inputsyl.structure[-1] != 'V':
+        # and not final syllables
+        if vowellength == 2 and vowel == 'y' and inputsyl.structure[-1] != 'V' and not(inputsyl.final):
             #if args.verberr and 'y' in inputsyl.grapheme:
             #    print("convert_y")
             #    print(inputsyl.sylparts)

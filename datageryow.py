@@ -12,7 +12,7 @@ def addallmutatedforms(listwords):
         if w not in listwords:
             listwords.append(w)
 
-def addallinflectedforms(listwords,listverbs):
+def addallinflectedforms(listwords,listverbs, listpreps=None):
     """ add the inflected forms of the verbs in listverbs to listwords """
     # the tenses of the verb expected by inflektya.inflektya()
     tensesDict = {0:"a-lemmyn",
@@ -40,6 +40,18 @@ def addallinflectedforms(listwords,listverbs):
     for v in inflectedverbparts:
         if v not in listwords:
             listwords.append(v)
+    if listpreps:
+        inflectedprepparts = []
+        for prep in listpreps:
+            inflectedprepparts.append(prep)
+            for per in range(7):
+                # 0 is impersonal form of verb, not relavent for prepositions
+                person = per + 1
+                inflectedprepparts.append(inflektya.inflektya_prepos(prep, person, 0)[0])
+        for p in inflectedprepparts:
+            if p not in listwords:
+                listwords.append(p)
+            
 
 
 ## data for treuslytherenna.py ##
@@ -84,15 +96,16 @@ verbs_uw = ["gywa"]
 
 # words that have a KK half-long y which doesn't become e in SWF
 # likely not yet a complete list   
-words_y = ["spyrys", "kynsa", "ynter", "ylyn", "pympes", "ydhyn", "dhy'hwi", "chyften", "byghan",
-           "trynses", "kryjyans", "vydholl", "vytholl", "bythkweth", "krysi", "ystynn", "dybri",
-           "slynkya", "kyni", "kessydhya", "kessydhyans", "pygans", "bynytha", "bynitha", "ysow",
-           "dyskans", "myrghes", "kyrghes", "kyrghys", "lyver", "lyvrow", "bryntin", "possybyl",
-           "possybylta", "possybyltas","anpossybyl", "onpossybyl", "anpossybylta", "onpossybylta",
-           "anpossybylytas", "onpossybylytas", "dyski", "pysi", "mynysenn",
-           "nammnygen", "bysmer"]
-
-verbs_y = ["krysi", "slynkya", "kyni", "kessydhya", "dybri", "dyski", "pysi", "tyli", "attyli", "bryjyon", "lesvryjyon"]    
+words_y = ['anpossybyl', 'anpossybylta', 'anpossybylytas', 'bryntin', 'byghan',
+ 'bynitha', 'bynytha', 'bysmer', 'bythkweth', 'chyften', 'chymbla', "dhy'hwi",
+  'dybri', 'dyskans', 'dyski', 'kessydhya', 'kessydhyans', 'kryjyans', 'krysi',
+  'kyni', 'kynsa', 'kyrghes', 'kyrghys', 'lyver', 'lyvrow', 'mynysenn', 'myrghes',
+   'nammnygen', 'onpossybyl', 'onpossybylta', 'onpossybylytas', 'possybyl',
+    'possybylta', 'possybyltas', 'pygans', 'pympes', 'pymthek', 'pysi', 'slynkya', 'spyrys',
+     'trynses', 'vydholl', 'vytholl', 'ydhyn', 'ylyn', 'ynter', 'ysow', 'ystynn'] 
+verbs_y = ["krysi", "slynkya", "kyni", "kessydhya", "dybri", "dyski", "pysi",
+ "tyli", "tybi", "attyli", "bryjyon", "lesvryjyon"]
+preps_y = ["rag", "ryb"]
 
 addallinflectedforms(words_uw,verbs_uw)
 addallmutatedforms(words_uw)
@@ -102,7 +115,7 @@ for w in wrong_mut_gyw:
     words_uw.remove(w)
 
 
-addallinflectedforms(words_y, verbs_y)
+addallinflectedforms(words_y, verbs_y, preps_y)
 addallmutatedforms(words_y)            
 
 addallmutatedforms(SWF_oowords)
