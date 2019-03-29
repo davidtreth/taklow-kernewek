@@ -299,9 +299,9 @@ class kwFSSRegExp:
     
     # diwethRegExp matches a syllable at the end of the word
     diwetRegExp =  re.compile(r'''
-    (\'?([bcdfvk][lr]|[ck]n|[kq]wr?|ch|dhr?\'?|
+    (\'?(ck[lr]|[bckdfv][lr]|[ck]n|[kq]wr?|ch|dhr?\'?|
     [dfv][lr]|vv|ll|gwr?|gwl?|g[lr]|gg?h|gn|hwr?|whr?|p[hrl]|cy|shr?|str?
-    |s[ck]r?|skw?|sqw|sbr|spr|sp?l?|sm|tth|thr?|[tw][rl]|[bckdfjlghpmnrstvwyz]\'?)? #consonant or c. cluster
+    |s[ck]r?|skw?|sqw|sbr|spr|sp?l?|sm|tth|thr?|[tw][rl]|ck|[bckdfjlghpmnrstvwyz]\'?)? #consonant or c. cluster
     \'?(a\'?y|a\'?w|eu|e\'?w|e\'?y|iw|oo|oy|ow|ou|uw|yw|\'?[aeoiuy])\'? # vowel
     (lgh|ls|lt|[bdfk][lr]|bb|[ck][lrn]|[ck]k|[kq]wr?|cch|n?ch|dhr?|n?dr|dd|ff|vl|vv|
     gg?ht?|gw|gl|gn|ld|lf|lv|lk|ll|lm|mm|mp|nk|nd|nj|ns|nth?|nn|p[hrlp]|rgh?|
