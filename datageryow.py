@@ -99,10 +99,13 @@ verbs_uw = ["gywa"]
 words_y = ['anpossybyl', 'anpossybylta', 'anpossybylytas', 'bryntin', 'byghan',
  'bynitha', 'bynytha', 'bysmer', 'bythkweth', 'chyften', 'chymbla', "dhy'hwi",
   'dybri', 'dyskans', 'dyski', 'kessydhya', 'kessydhyans', 'kryjyans', 'krysi',
-  'kyni', 'kynsa', 'kyrghes', 'kyrghys', 'lyver', 'lyvrow', 'mynysenn', 'myrghes',
-   'nammnygen', 'onpossybyl', 'onpossybylta', 'onpossybylytas', 'possybyl',
-    'possybylta', 'possybyltas', 'pygans', 'pympes', 'pymthek', 'pysi', 'slynkya', 'spyrys',
-     'trynses', 'vydholl', 'vytholl', 'ydhyn', 'ylyn', 'ynter', 'ysow', 'ystynn'] 
+  'kyni', 'kynsa', 'kyrghes', 'kyrghys', 'lyver', 'lyvrow', 'gerlyver', 'gerlyvrow',
+  'dydhlyver', 'dydhlyvrow', 'gidlyver', 'gidlyvrow', 'dornlyver', 'dornlyvrow',
+  'kowethlyver', 'kowethlyvrow', 'roeslyver', 'roeslyvrow', 'skriflyver', 'skriflyvrow',
+  'dysklyver', 'dysklyvrow', 'mynysenn', 'myrghes', 'nammnygen',
+  'onpossybyl', 'onpossybylta', 'onpossybylytas', 'possybyl', 'possybylta', 'possybyltas',
+   'pygans', 'pympes', 'pymthek', 'pysi', 'slynkya', 'spyrys', 'trynses',
+    'vydholl', 'vytholl', 'ydhyn', 'ylyn', 'ynter', 'ysow', 'ystynn'] 
 verbs_y = ["krysi", "slynkya", "kyni", "kessydhya", "dybri", "dyski", "pysi",
  "tyli", "tybi", "attyli", "bryjyon", "lesvryjyon"]
 preps_y = ["rag", "ryb"]
@@ -151,7 +154,11 @@ final_syl_stress_words = ['ages','ahwer','androw','ankoth','ankres','attal',
                           'yndann','a-ji','a-dhann','dygoel', 'dygol',
                           'dygweyth', 'a-rag','dherag','a-dherag',
                           'a-dhiworth', 'a-dhyworth', 'omri','omdowl', 'dibygans',
-                          'diber-dowr','diwvanek-plat', 'a-droes', 'a-droos']
+                          'diber-dowr','diwvanek-plat', 'a-droes', 'a-droos',
+                          "y'ga", "y'gan", "y'gas"]
+# in Gerlyver Meur, y'ga, y'gan, y'gas are unstressed, but every other
+# unstressed word is a monosyllable. marking them as final stress
+# stops them from becoming e'gan in transliteration to SWF                          
 
 addallmutatedforms(final_syl_stress_words)    
 

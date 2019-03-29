@@ -1978,8 +1978,8 @@ FSS: Yma an plasen y'n amari byghan.
 KK: Dornleow an darasow yw plos.
 FSS: Dornleow an darasow yw plos. 
 
-KK: Lavrek an maw nay w re hir ha re ledan.
-FSS: Lavrek an maw nay w re hir ha re ledan. 
+KK: Lavrek an maw na yw re hir ha re ledan.
+FSS: Lavrek an maw na yw re hir ha re ledan. 
 
 KK: Pur goth yw an tavern ma.
 FSS: Pur goth yw an tavern ma. 
@@ -2095,8 +2095,8 @@ FSS: Dewgh orth an tan! Oor yw hi!
 KK: Kemmerewgh oll dorn nebonan!
 FSS: Kemerewgh oll dorn nebonan! 
 
-KK: Kres trey yw le bysi, dell vydh usys, mes kres an dre ma yw gwag.
-FSS: Kres trey yw le bysi, dell vydh usys, mes kres an dre ma yw gwag. 
+KK: Kres tre yw le bysi, dell vydh usys, mes kres an dre ma yw gwag.
+FSS: Kres tre yw le bysi, dell vydh usys, mes kres an dre ma yw gwag. 
 
 KK: Nyns eus par dhe'n gour ma, dell dybav.
 FSS: Nyns eus par dhe'n gour ma, dell dybav. 
@@ -2182,8 +2182,8 @@ FSS: Kemmer tri hwegyn!
 KK: Piw yw an gwettha flogh?
 FSS: Piw yw an gwettha flogh? 
 
-KK: Margh yw, deell dybav.
-FSS: Margh yw, deell dybav. 
+KK: Margh yw, dell dybav.
+FSS: Margh yw, dell dybav. 
 
 KK: Py eur yw hi, mar pleg?
 FSS: Py eur yw hi, mar pleg? 
@@ -3496,8 +3496,8 @@ FSS: An degves ger y'n ugensves linen yw 'kath'.
 KK: Ev a redyas y hanow y'n peswara koloven war an pympes folenn a'n paper-nowodhow.
 FSS: Ev a redyas y hanow y'n peswara koloven war an pympes folen a'n paper-nowodhow. 
 
-KK: Hanterkansves penn-bloedh diwedh Nessa Bresel an Norvys o ha seytegves pennbloedh ha tri ugens diwedh Kynsa Bresel an Norvys.
-FSS: Hanterkansves penn-bloodh diwedh Nessa Bresel an Norvys o ha seytegves pennblodh ha tri ugens diwedh Kynsa Bresel an Norvys. 
+KK: Hanterkansves penn-bloedh diwedh Nessa Bresel an Norvys o ha seytegves penn-bloedh ha tri ugens diwedh Kynsa Bresel an Norvys.
+FSS: Hanterkansves penn-bloodh diwedh Nessa Bresel an Norvys o ha seytegves penn-bloodh ha tri ugens diwedh Kynsa Bresel an Norvys. 
 
 KK: Ottena! kommol loes a-ugh an koes.
 FSS: Ottena! kommol loos a-ugh an koos. 
@@ -3730,8 +3730,8 @@ FSS: Pys e a wortos a-ves!
 KK: An gath vyghan a warias yn-dann an gweli.
 FSS: An gath vyghan a warias yn-dann an gweli. 
 
-KK: Pan splann an loergann war an arvor a-dreus an mor kosel, assyw hi teg!
-FSS: Pan splann an lorgan war an arvor a-dreus an mor kosel, assyw hi teg! 
+KK: Pan splann an loergann war an arvor a-dreus an mor kosel, ass yw hi teg!
+FSS: Pan splann an lorgan war an arvor a-dreus an mor kosel, ass yw hi teg! 
 
 KK: Mir orth an bellwolok! Yndella ty a yll dyski meur.
 FSS: Mir orth an bellwolok! Yndella ty a yll dyski meur. 
@@ -3752,10 +3752,10 @@ KK: Yma karr dhymm.
 FSS: Yma karr dhymm. 
 
 KK: Eus gerlyver dhis?
-FSS: Eus gerlever dhis? 
+FSS: Eus gerlyver dhis? 
 
 KK: Eus! Yma gerlyver dhymm.
-FSS: Eus! Yma gerlever dhymm. 
+FSS: Eus! Yma gerlyver dhymm. 
 
 KK: Esa karr dhis?
 FSS: Esa karr dhis? 
@@ -3896,7 +3896,7 @@ KK: Ro dhymm an hoelan, mar pleg!
 FSS: Ro dhymm an holan, mar pleg! 
 
 KK: Ple'ma an gerlyver Kernewek?
-FSS: Ple'ma an gerlever Kernewek? 
+FSS: Ple'ma an gerlyver Kernewek? 
 
 KK: War drysa estyllenn an argh-lyvrow y'n esedhva yma, dell dybav.
 FSS: War dresa estyllen an argh-lyvrow y'n esedhva yma, dell dybav. 
@@ -4130,7 +4130,7 @@ KK: Yma perghenn an boesti ow jynn-skrifa gans unn bys hag ev ow megi yn keth pr
 FSS: Yma perghen an bosti ow jynn-skrifa gans unn bys hag ev ow megi yn keth prys. 
 
 KK: Yth esens i a'ga gorwedh y'ga gweli ha'n vamm ow pareusi aga hansel.
-FSS: Yth esens i a'ga gorwedh e'ga gweli ha'n vamm ow pareusi aga hansel. 
+FSS: Yth esens i a'ga gorwedh y'ga gweli ha'n vamm ow pareusi aga hansel. 
 
 KK: Omwolgh ha my owth omwiska!
 FSS: Omwolgh ha my owth omwiska! 
@@ -4193,7 +4193,7 @@ KK: Goel Sen Pyran a vydh pub blydhen dhe'n pympes a vis Meurth.
 FSS: Gool Sen Peran a vydh pub bledhen dhe'n pympes a vis Meurth. 
 
 KK: Tus pals a dhe'n eglos y'gan gwlas dhe'n jydh na.
-FSS: Tus pals a dhe'n eglos e'gan gwlas dhe'n jydh na. 
+FSS: Tus pals a dhe'n eglos y'gan gwlas dhe'n jydh na. 
 
 KK: Ple'ma bedh Sen Pyran hedhyw? Piw a woer?
 FSS: Ple'ma bedh Sen Peran hedhyw? Piw a wor? 
