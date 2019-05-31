@@ -5,11 +5,11 @@ from nltk.corpus import PlaintextCorpusReader
 def getKKtexts(filepattern=r".*kk.*\.txt",corpus_root = "kernewek_corpus/", outlang='kw'):
     textNames = {'en':["Life of Meryasek", "Charter Fragment", "Creation of the World",
                        "Passion of our Lord", "Origo Mundi", "Passio Christ",
-                       "Resurrectio Domini", "Solemptnyta", "LoTR chapters",
+                       "Resurrectio Domini", "Skeul an Yeth 1 examples", "Solemptnyta", "LoTR chapters",
                        "Tregear Homilies"],
                  'kw':["Bewnans Meryasek", "Darn Chartour", "Gwreans an Bys",
                        "Passhyon Agan Arloedh", "Origo Mundi", "Passio Christ",
-                       "Resurrectio Domini", "Solemptnyta", "Chapters Arloedh an Bysowyer",
+                       "Resurrectio Domini", "Ensamplow Skeul an Yeth 1", "Solemptnyta", "Chapters Arloedh an Bysowyer",
                        "Pregothow Tregear"]
                  }
     # select the Kernewek Kemmyn texts with a regular expression

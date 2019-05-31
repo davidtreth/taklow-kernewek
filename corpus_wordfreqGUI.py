@@ -44,6 +44,7 @@ class CorpusStats(tk.Frame):
                                       'Origo Mundi',
                                       'Passio Christ',
                                       'Resurrectio Domini',
+                                      'Skeul an Yeth 1 examples',
                                       'Solemptnyta',
                                       'LoTR chapters',
                                       'Tregear Homilies',
@@ -55,6 +56,7 @@ class CorpusStats(tk.Frame):
                                       'Origo Mundi',
                                       'Passio Christ',
                                       'Resurrectio Domini',
+                                      'Ensamplow Skeul an Yeth 1',
                                       'Solemptnyta',
                                       'Chapters Arloedh an Bysowyer',
                                       'Pregothow Tregear',
@@ -143,7 +145,7 @@ class CorpusStats(tk.Frame):
         if c == 0:
             self.names = ["Bewnans Meryasek", "Charter Fragment", "Gwreans an Bys",
                           "Passhyon Agan Arloedh", "Origo Mundi",
-                          "Passio Christ","Resurrectio Domini","Solemptnyta",
+                          "Passio Christ","Resurrectio Domini", "Skeul an Yeth 1", "Solemptnyta",
                           "LoTR chapters", "Tregear Homilies"]
         else:
             # import cornish_corpus
@@ -329,9 +331,9 @@ class CorpusStats(tk.Frame):
         else:
             textmenu = CorpusStats.labelTexts['textchoice'][self.ifacelang]
             
-        # make all texts option still 10 even though there are fewer texts in manuscript spelling
+        # make all texts option still 11 even though there are fewer texts in manuscript spelling
         optionnums = list(range(len(textmenu)-1))
-        optionnums.append(10)
+        optionnums.append(11)
         if currstate not in optionnums:
             currstate = 2
         self.textchoice.newrads(picks=textmenu, vals=optionnums,
@@ -347,7 +349,7 @@ class CorpusStats(tk.Frame):
         if self.modechoice.state() == 0:
             topN = self.getIntMinL(self.ent2.fetch(), 20)
             minL = self.getIntMinL(self.ent.fetch(), 4)
-            if self.textchoice.state() == 10:
+            if self.textchoice.state() == 11:
                 outputtext = cornish_corpus.basicReportAll(self.kk_texts,
                                                            self.names, topN, minL,
                                                            pause=False,
@@ -365,7 +367,7 @@ class CorpusStats(tk.Frame):
             # rol menowghder ger
             topN = self.getIntMinL(self.ent2.fetch(), 20)
             minL = self.getIntMinL(self.ent.fetch())
-            if self.textchoice.state() == 10:
+            if self.textchoice.state() == 11:
                 self.outbox.settext(cornish_corpus.MostFrequentWords(self.kk_texts, self.names,
                                                                      topN, minL,
                                                                      outlang=self.ifacelang))
@@ -375,14 +377,14 @@ class CorpusStats(tk.Frame):
                     topN, minL,
                     outlang=self.ifacelang))
         if self.modechoice.state() == 2:
-            if self.textchoice.state() == 10:
+            if self.textchoice.state() == 11:
                 self.outbox.settext(cornish_corpus.MostFreqLetters(self.kk_texts, self.names, outlang=self.ifacelang))
             else:
                 self.outbox.settext(cornish_corpus.MostFreqLetters1Text(
                     self.kk_text_dict[self.names[self.textchoice.state()]], self.names[self.textchoice.state()],
                     outlang=self.ifacelang))
         if self.modechoice.state() == 3:
-            if self.textchoice.state() == 10:
+            if self.textchoice.state() == 11:
                 self.outbox.settext(cornish_corpus.MostFreqLetters(self.kk_texts, self.names, False, False,
                                                                    outlang=self.ifacelang))
             else:
@@ -392,7 +394,7 @@ class CorpusStats(tk.Frame):
                
         if self.modechoice.state() == 4:
             plt.figure()
-            if self.textchoice.state() == 10:
+            if self.textchoice.state() == 11:
                 self.outbox.settext(cornish_corpus.nLettersFDist(self.kk_texts,self.names, outlang=self.ifacelang))
             else:
                 self.outbox.settext(cornish_corpus.nLettersFDist(
@@ -406,7 +408,7 @@ class CorpusStats(tk.Frame):
                 comparelist = self.defaultsamples           
             self.outbox.text.config(bg = 'light yellow', fg = 'dark red',
                                     font=('Courier', 12+self.fontsizeadj, 'normal'))
-            if self.textchoice.state() == 10:
+            if self.textchoice.state() == 11:
                 outputtext = str(comparelist)+'\n\n'+cornish_corpus.compareSamples(
                     self.kk_texts, self.names, comparelist,
                     outlang=self.ifacelang)
@@ -424,7 +426,7 @@ class CorpusStats(tk.Frame):
                 comparelist = self.defaultsamples
             self.outbox.text.config(bg = 'light yellow', fg = 'dark red',
                                     font=('Courier', 12+self.fontsizeadj, 'normal'))
-            if self.textchoice.state() == 10:
+            if self.textchoice.state() == 11:
                 outputtext = str(comparelist)+'\n\n'+cornish_corpus.compareSamplesLinear(
                     self.kk_texts, self.names, comparelist, outlang=self.ifacelang)
             else:
@@ -441,7 +443,7 @@ class CorpusStats(tk.Frame):
                 comparelist = ['dhe', 'gans']
             self.outbox.text.config(bg = 'light yellow', fg = 'dark red',
                                     font=('Courier', 12+self.fontsizeadj, 'normal'))
-            if self.textchoice.state() == 10:
+            if self.textchoice.state() == 11:
                 outputtext = str(comparelist)+'\n\n'+cornish_corpus.concordances(
                     self.kk_texts, self.names, comparelist, 60, 25, outlang=self.ifacelang)
             else:
