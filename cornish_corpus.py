@@ -676,6 +676,19 @@ def basicReportAll(kk_texts_Texts, textnames, topN=50, minL=4, pause=True, outla
     return outputtext
 
 def concordances(kk_texts_Texts, textnames, samples, width=59, lines=25, outlang='kw'):
+    """ get the output for the .concordance() method of each nltk Text 
+    
+    @param kk_texts_Texts: a list of NLTK Texts.
+    @type kk_texts_Texts: C{list}
+    @param textnames: a list of the names of the texts.
+    @type textnams: C{list}
+    @param samples: A list of sample words to compare.
+    @type samples: C{list}
+    @param width: width to pass to the Text.concordances() method
+    @type width: C{int}        
+    @param lines: number of lines of concordance output to give
+    @type lines: C{int}            
+    """
     outTexts = {
         'concord':{'en':'Concordances\n',
                    'kw':'Konkordansow\n'},
@@ -715,6 +728,46 @@ def concordances(kk_texts_Texts, textnames, samples, width=59, lines=25, outlang
     if outlang == 'kw':
         for r in kwreplaces:
             outtext = outtext.replace(r[0], r[1])        
+    return outtext
+
+def findallRegex(kk_texts_Texts, textnames, regexes=["<.*><a><vynn>", "<.*><a><wra>", "<y><fynn.*>","<y><hwr.*>"], outlang='kw'):
+    outTexts = {
+        'regexsearch':{'en':'Regular Expression findall\n',
+                   'kw':'findall Ekspresyans Reyth\n'},
+        'regex':{'en':'Regex',
+                  'kw':'Regex'},
+        'text':{'en':'Text',
+                'kw':'Tekst'},
+        'noccur':{'en': 'N occurances',
+                'kw':'N hwarvedhyansow'}
+        }
+    buff = StringIO()
+    temp = sys.stdout
+    sys.stdout = buff
+    
+    print(outTexts['regexsearch'][outlang])
+    for r in regexes:
+        print("{a} {r}\n".format(a=outTexts['regex'][outlang],
+                                 r=r))
+        #outputtext += "Sample word {s}\n".format(s=s)
+        for t,n in zip(kk_texts_Texts,textnames):
+            print("{a}: {t}\n".format(a=outTexts['text'][outlang],
+                                      t=n))
+            #outputtext += "Text: {t}\n".format(t=n)
+            prevbuff = buff.getvalue()
+            t.findall(r) 
+            regexpoutput = buff.getvalue()
+            regexpoutput = regexpoutput.replace(prevbuff, "")
+            print(regexpoutput)
+            if regexpoutput:           
+                noccur = len(regexpoutput.split("; "))
+            else:
+                noccur = 0
+            print("{a} {r}: {n}\n".format(a=outTexts['noccur'][outlang], n=noccur, r=r))
+            
+            print("\n")
+    sys.stdout = temp
+    outtext = buff.getvalue()
     return outtext
 
 def generateText(kk_texts_Texts, textnames):

@@ -28,7 +28,8 @@ class CorpusStats(tk.Frame):
                                        'Length of words\n(cumulative frequency graph)',
                                        'Word Frequency Bar Chart',
                                        'Lexical Dispersion Plot',
-                                       'Concordance'],
+                                       'Concordance',
+                                       'Regex findall'],
                                  'kw':['Derivas Ollgemmyn',
                                        'Rol Menowghderow Ger',
                                        'Rol Menowghderow Lytherenn',
@@ -36,7 +37,8 @@ class CorpusStats(tk.Frame):
                                        'Hirder Geryow\n(tresenn menowghder kumulativ)',
                                        'Menowghder Ger (tresenn barr)',
                                        'Tresenn Keskar Ger',
-                                       'Konkordans']},
+                                       'Konkordans',
+                                       'findall Regex']},
                   'textchoice':{'en':['Life of Meryasek',
                                       'Charter Fragment',
                                       'Creation of the World',
@@ -452,7 +454,25 @@ class CorpusStats(tk.Frame):
                     [self.names[self.textchoice.state()]],
                     comparelist, 59,25, outlang=self.ifacelang)
             outputtext = wraplines(outputtext, self.wline)
-            self.outbox.settext(outputtext)                
+            self.outbox.settext(outputtext)
+        if self.modechoice.state() == 8:
+            regexlist = ["<.*><.*><.*><.*><a><vynn><.*><.*><.*>",
+            "<.*><.*><.*><.*><a><wra><.*><.*><.*>",
+            "<.*><.*><.*><y><fynn.*><.*><.*><.*>",
+            "<.*><.*><.*><y><hwr.*><.*><.*><.*>"]          
+            self.outbox.text.config(bg = 'light yellow', fg = 'dark red',
+                                    font=('Courier', 10+self.fontsizeadj, 'normal'))
+            if self.textchoice.state() == 11:
+                outputtext = str(regexlist)+'\n\n'+cornish_corpus.findallRegex(
+                    self.kk_texts, self.names, regexlist, outlang=self.ifacelang)
+            else:
+                outputtext = str(regexlist)+'\n\n'+cornish_corpus.findallRegex(
+                    [self.kk_text_dict[self.names[self.textchoice.state()]]],
+                    [self.names[self.textchoice.state()]],
+                    regexlist, outlang=self.ifacelang)
+            outputtext = outputtext.replace("; ","\n\n")
+            outputtext = wraplines(outputtext, self.wline)
+            self.outbox.settext(outputtext)                             
     def copyclipbd(self):
         self.clipboard_clear()
         self.clipboard_append(self.outbox.gettext())
