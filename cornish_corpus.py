@@ -675,7 +675,7 @@ def basicReportAll(kk_texts_Texts, textnames, topN=50, minL=4, pause=True, outla
                 pause = False
     return outputtext
 
-def concordances(kk_texts_Texts, textnames, samples, width=79, lines=25, outlang='kw'):
+def concordances(kk_texts_Texts, textnames, samples, width=59, lines=25, outlang='kw'):
     outTexts = {
         'concord':{'en':'Concordances\n',
                    'kw':'Konkordansow\n'},

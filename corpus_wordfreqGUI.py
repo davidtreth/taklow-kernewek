@@ -442,15 +442,15 @@ class CorpusStats(tk.Frame):
             if len(comparelist) == 0:
                 comparelist = ['dhe', 'gans']
             self.outbox.text.config(bg = 'light yellow', fg = 'dark red',
-                                    font=('Courier', 12+self.fontsizeadj, 'normal'))
+                                    font=('Courier', 10+self.fontsizeadj, 'normal'))
             if self.textchoice.state() == 11:
                 outputtext = str(comparelist)+'\n\n'+cornish_corpus.concordances(
-                    self.kk_texts, self.names, comparelist, 60, 25, outlang=self.ifacelang)
+                    self.kk_texts, self.names, comparelist, 59, 25, outlang=self.ifacelang)
             else:
                 outputtext = str(comparelist)+'\n\n'+cornish_corpus.concordances(
                     [self.kk_text_dict[self.names[self.textchoice.state()]]],
                     [self.names[self.textchoice.state()]],
-                    comparelist, 60,25, outlang=self.ifacelang)
+                    comparelist, 59,25, outlang=self.ifacelang)
             outputtext = wraplines(outputtext, self.wline)
             self.outbox.settext(outputtext)                
     def copyclipbd(self):
