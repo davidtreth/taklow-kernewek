@@ -456,10 +456,15 @@ class CorpusStats(tk.Frame):
             outputtext = wraplines(outputtext, self.wline)
             self.outbox.settext(outputtext)
         if self.modechoice.state() == 8:
+            comparelist = self.getcomparelist()
             regexlist = ["<.*><.*><.*><.*><a><vynn><.*><.*><.*>",
             "<.*><.*><.*><.*><a><wra><.*><.*><.*>",
             "<.*><.*><.*><y><fynn.*><.*><.*><.*>",
-            "<.*><.*><.*><y><hwr.*><.*><.*><.*>"]          
+            "<.*><.*><.*><y><hwr.*><.*><.*><.*>"]
+            # find any comparelist items which begin and end in angle brackets
+            comparelist = [c for c in comparelist if (c[0]=="<" and c[-1] == ">")]
+            if len(comparelist) > 0:
+                regexlist = comparelist          
             self.outbox.text.config(bg = 'light yellow', fg = 'dark red',
                                     font=('Courier', 10+self.fontsizeadj, 'normal'))
             if self.textchoice.state() == 11:

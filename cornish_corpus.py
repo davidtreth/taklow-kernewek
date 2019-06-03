@@ -758,7 +758,8 @@ def findallRegex(kk_texts_Texts, textnames, regexes=["<.*><a><vynn>", "<.*><a><w
             t.findall(r) 
             regexpoutput = buff.getvalue()
             regexpoutput = regexpoutput.replace(prevbuff, "")
-            print(regexpoutput)
+            regexpoutput = regexpoutput.strip()
+            #print(regexpoutput, len(regexpoutput))
             if regexpoutput:           
                 noccur = len(regexpoutput.split("; "))
             else:
