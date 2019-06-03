@@ -19,7 +19,7 @@ Description:
 
 cornish_corpus.py: some code using the Python NLTK to analyse Cornish text statistically.
 
-find the commonest words in particular texts (see kernewek-corpus folder) etc.
+find the commonest words in particular texts (see kernewek_corpus folder) etc.
 The program is now capable of counting letter frequencies within a text including ch, gh, dh, th, and sh as consonant digraphs and the gemminate forms as trigraphs, and oe, eu, and ou as vowel digraphs.
 There are other potential things that may in future be done with corpora in NLTK see http://www.nltk.org/
 This program will need Python NLTK and matplotlib to be available.
@@ -129,3 +129,9 @@ apposyans_awgrymGUI.py: A graphical user interface mental arithmatic quiz.
 Allows choice between easy (only numbers 1 to 10, and answers are always >= 0), medium (input numbers up to 20, and negative answers allowed), hard (input numbers up to 40).
 It can also be specified whether to have only addition, or subtraction, or either, randomly chosen.
 
+
+kernewek_corpus/
+a folder containing the traditional texts, most in both manuscript and Kernewek Kemmyn form, though Bewnans Ke is only available in manuscript spelling, and Bewnans Meriasek and Pregothow Treger are only available in Kemmyn form.
+
+kernewek_corpus/stripped/
+a folder containing text files of the texts, with only the text itself, removing explanatory notes, translators notes, stage directions, character names heading a paragraph etc. Where something is unclear if it is part of the main text, my rule has been to retain lines that are part of the line numbering, e.g. the Latin lines spoken by the doctor in 1446-1447 of Bewnans Meriasek.
