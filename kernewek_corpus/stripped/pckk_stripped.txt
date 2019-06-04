@@ -1,24 +1,8 @@
-
-PASSIO CHRISTI - KK Version made from Norris's edition, 1859
-
-Warning: I made this transliterated version for my own private use as a computerised look-up index for 
-Norris; it must not be regarded as in any way reliable or consistent.   K.S., Dec 1995
-
-[] = original spelling; or stage directions {} = comment, N = Norris, B = scribe B.
-NS = Nance/Smith. NSS = NS ed Sandercock (KK). Proper names usually left in original spelling.
-
-
-HIC INCIPIT PASSIO
-DOMINI NOSTRI JHESU CHRISTI
-
-[Hic stat jhesus in monte quarentana v[ersus] j[ordanum] et despicit intra jericho et jerusalem]
-
-IHC.
 Dhywgh lavara' ow dyskyblon,
 pysewgh toth da oll keskolonn,
-Dyw dres puptra eus a-ughon,			[a huhon]
-dhywgh y'n bys ma y ras dannvon,		[grath]
-y'n diwedh may fewgh selwys.	5PC
+Dyw dres puptra eus a-ughon,
+dhywgh y'n bys ma y ras dannvon,
+y'n diwedh may fewgh selwys.	5
 
 Gans an eledh yw golow;
 yn nev agas enevow
@@ -32,54 +16,47 @@ ha denagha oberow da,
 dell lavarav dhywgh an gwir.
 
 Lavurya a wra pup-prys	15
-rag dri den dhe vos dempnys				[dampnys]
+rag dri den dhe vos dempnys
 dhe boenow, na ve selwys.
-Hennaw oll yw y dhesir.					{NSS henn yw oll}
+Hennaw oll yw y dhesir.
 
 Yowynk ha loes kyn fons toellys
-dre y dennvos mersi galwens:	20			[gylwys]
+dre y dennvos mersi galwens:	20
 skon y alloes a vydh lehes.
-Mersi yw skoes dhe neb a'n pys			[stos]
+Mersi yw skoes dhe neb a'n pys	
 piwpynag oll a vo ev.
-Pysadow a leun golonn					[pyiadow]
-a worr dhe-ves temptashyon	25			[temptacion]
+Pysadow a leun golonn		
+a worr dhe-ves temptashyon	25			
 na vo troblys y enev.
 
-			[hic descendant omnes de monte]
-
-IHC.
 Ha my a bys ragowgh ow Thas
 may fewgh selwys dre y leun ras
 hag oll kyrghys dhodho dh'y wlas
 yn joy a bys heb striv ha kas	30
 yn sertan gans an eledh.
 
-Ny yll kolon prederi					[yv]
-an tekter a'gas bydh hwi.				[asbetheugh]
+Ny yll kolon prederi
+an tekter a'gas bydh hwi.
 Henna a vydh heb diwedh.
 
-Petrus
 A Vester hweg gordhys re bi!	35
 pan wredh mar deg agan dyski.
 Ass on hwansek oll dhe bysi,
 lettrys ha leg war Dhyw mersi!
 
-Andreas
 Oll ni a bys yowynk ha hen
 war Dhyw pup-prys mersi 'gan ken	40
 may fen gwithys rag an bilen
 hag oll selwys trank heb worfenn.
 
-IHC.
 Penys a res rag y derros
 may fo lehes meur a'y alloes.
 Dre ow fenys dew-ugens nos	45
-dhymm devedhys ewl dhe voes.					[a wel]
+dhymm devedhys ewl dhe voes.
 
-Sathanas
-Mara'n jeves ewl dysbri,						[yl]
+Mara'n jeves ewl dysbri,
 my a woer gwir yredi
-yn sertan nag ywa Dyw.						{NSS yw e}
+yn sertan nag ywa Dyw.	
 My a vynn mos dh'y demptya,	50
 mara kallav y denna
 dhe wul glotni war neb tu.
@@ -91,8 +68,6 @@ Den yw dhe beub dhehweles:
 saw y ober ha'y dhyskas
 pub oll a wra tremena.
 
-[hic descendit satnas et dicit ad jhm]
-
 Dhiso jy y lavarav:
 mars os Mab Dyw a-wartha,	60
 desempis argh ha lavar
@@ -100,20 +75,16 @@ dhe'n kals meyn ma bos bara.
 My a wodhvydh y'n eur na
 pyth yw dha alloes heb mar.
 
-IHC.
 Mabden heb ken es bara	65
-bydh ny'n jeves oll bywnans,					[bewnes]
+bydh ny'n jeves oll bywnans,
 lemmyn yn lavarow da
 a dheu 'dhiworth an Drynses.
-
-ad discipulos
 
 Ow dyskyblon, dre henna
 lemmyn hwi a yll gweles	70
 lavar Dyw maga dell wra
 neb a yll y gemmeres.
 
-Johannes
 A Vester ker karadow,
 dell leverydh, my a grys
 y fydh agan enevow	75
@@ -121,17 +92,15 @@ dre lavarow Dyw megys.
 Ha, fethys an dywolow,
 y'n lyvrow dell yw skrifys
 ni kyrghys dhe'n nev golow
-yn joy vynitha a bes.						[vynytha]
+yn joy vynitha a bes.
 
-Sathnas
 Mars os Dyw a nev golow,
-diskwa lemmyn marthusyow,					[dysqua]
+diskwa lemmyn marthusyow,					
 may hylliv vy y weles.
 Ke war bynakyl an templa,
 hag ena gwra esedha.	85
 Nyns yw dhis tyller pur es.
 
-IHC.
 My a vynn mos ow honan
 war an pynakyl yn-bann
 dhe esedha.
@@ -139,19 +108,15 @@ Yma dhymmo yn sertan	90
 dhe wruthyl unn pols byghan
 taklow priva.
 
-tunc diabolus temptet eum dicens			[S. tunc > iterum]
-
-Sathanas
 Ughel yth os esedhys,
 ha deantell re'm lowta.
 Y'n lyver yma skrifys	95
 bos eledh worth dha witha
-rag own dha vos disevys,					[desesys]
+rag own dha vos disevys,					
 dha droes orth men pystiga.
 Mars os Mab Dyw a veur brys,
 diyskynn ha dhe'n dor ke.	100
 
-IHC.
 Yma skrifys y'n lyvrow,
 ny goedh dhis temptya dha Dhyw
 yn neb maner,
@@ -159,36 +124,27 @@ saw dha Arloedh Dyw a nev
 y koedh dhis y wordhya ev	105
 yn pub tyller.
 
-					[descendit jhs]
-
 Deun alemma, kowetha,
 war venydhyow dhe wandra
-ha dhe bysi							[pigy]
+ha dhe bysi
 ow Thas kerra, dh'y lawa,	110
 der y vodh dh'agas gwitha
-rag terrosa.							[terrygy]
+rag terrosa.
 
-Andreas							[NSS Johannes - error?]
 Oll dell vynni, Arloedh ker,
 my a wra yn pub tyller
-hedra vyn byw y'n bys ma.	115			[veyn]
+hedra vyn byw y'n bys ma.	115
 Gans penys ha gologhas
 my a bys Dyw meur y ras
 dannvon gras dhyn ni omma.
 
-Bartholomeus
 Mester ker, re bi gordhys
 dell goedh gans tus oll a'n bys,	120
-rag dha dhyskas yw pur dha.				{GM p.86}
+rag dha dhyskas yw pur dha.
 Gwynn y vys a vo trygys
 yn dha servis, rag tristyns
-ny'n degemmer vynitha.					[vynytha]
+ny'n degemmer vynitha.	
 
-iterum diabolus temptet eum dicens
-
-						[hic descendit Gabriell]
-
-Sathnas
 Ottomma menydh ughel,	125
 ha my a dhiskwa dhis gwel
 a veur a bow.
@@ -202,17 +158,15 @@ Oll an re ma ty a'fydh
 ow gordhya mara mynnydh	135
 war ben dha dhewlin isel.
 
-IHC.
 Ty Sathnas, dyowl milligys,
 yma skrifys y'n lyvrow,
 yn pub maner y koedh dhis
 gordhya dha Dhyw ha'y hanow.	140
 Ke dhe-ves, emskemunys,
-y'n difeyth y'n tewolgow:				{NSS. tewlwolow}
+y'n difeyth y'n tewolgow:
 dha vaystri a vydh lehes
 nevra war an enevow.
 
-Sathnas
 Go vy vydh pan yth dhodho,
 pan ov fethys 'dhiworto
 teyrgweyth hedhyw,
@@ -220,9 +174,6 @@ ha'n maystri bras oll a'm bo
 my re'n kollas kwit dredho,
 may kanav tru!	150
 
-					[recedit satanas]
-
-Deus Pater
 Ow eledh, sevewgh yn-bann!
 Ewgh alemma ahanan
 dhe servya ow Mab kerra
@@ -230,7 +181,6 @@ re fethas an fals jevan
 hedhyw teyrgweyth, yn sertan.	155
 Gwynnvys neb a'n gordh yn ta.
 
-Michael
 A Das Dyw, galloesek fest,
 dha worhemmynnadow prest
 sur ni a wra.
@@ -238,27 +188,18 @@ Ihesus Crist dha unn Vab ker	160
 my a'n serv gans enor meur
 ha Maria.
 
-						[hic descendant angeli]
-
-Gabriel
 ihesus crist, lowena dhis!
 Myghtern os war nev ha'n bys
 hag Arloedh fest galloesek.	165
 Dha Das kerra, dh'y lawa,
-re'n dannvonas dhe'th servya,				{'n = 'us'}
+re'n dannvonas dhe'th servya,
 rag meur dhodho ty a bleg.
 
-IHC.
 Gordhyans ha gras dhe Dhyw ow Thas,
 leun a versi,	170
 pan dhannvonas yn enor bras
 dhymm servysi.
 
-----------------------------------
-
-et tunc mittens duos discipulos ad castellum ad quaerendum asinum et pullum
-
-IHC.
 Ens dew a'm dyskyblon
 dhe'n kastell eus a-ragon
 a-dhesempis, heb lettya.	175
@@ -273,17 +214,13 @@ Dhe'n Arloedh edhomm yma
 dhe wruthyl gans an re na.
 Ev a's delirv genowgh hwi.
 
-Jacobus Maior
 Arloedh ker, dha arghadow	185
 my a'n gwra heb falladow,
 kepar dell erghsys dhyn ni.
 Deun yn kerdh, ow broder hweg;
 my a gews dhodho mar deg
-na skonir pandr'a wren ni.	190				[penda]
+na skonir pandr'a wren ni.	190
 
-	[jacob pr. matheus eunt pro asino et pullo]
-
-Matheus
 My a genes yn lowen,
 hag a dhoro an asyn
 genen, ha'n ebel keffrys.
@@ -291,58 +228,45 @@ Yn hanow an Tas ughel,
 ke a-bervedh y'n kastell	195
 a-dheragov, my a'th pys.
 
-Jacobus Maior
 An Tas Dyw a wrug puptra
-roy dhyn hedhyw gwruthyl da,					[joy]
+roy dhyn hedhyw gwruthyl da,					
 amen, pysyn yn perfeyth.
 Otta an asyn omma,	200
 ha'n ebel kelmys yma
 gensi. Gweres, er dha fydh.
 
-Custos
 Kowetha, dhymm leverewgh
 yn skon, prag yth hembrenkowgh
 ow enyvales dhe-ves?	205
 
-Matheus
 Dha worthybi my a wra:
 dhe'n Arloedh dhe wul yma,
 dre dha vodh, gansa nebes.
 
-Custos
 Oll dh'y vodh a's kemmeres,
 a-ban vynn'a yndella.	210
 My a vynnsa y talviens
 mil beuns dhodho a owr da.
 
-Jacobus Maior
 Gwir yw y vones Arloedh,
 ha'y ober a brev henna.
 Neb na'n gortthyo dell dhegoedh	215
 nyns yw den fur, dell grysa'.
 
-et tunc veniet cum asino et pullo ad jhesum et dicit matheus
-		[hic Matheus et Jacob osculantur Jhm.]
-
-Matheus
 Mester hweg, dhis lowena!
-Otta an asyn gene'					[gene]
+Otta an asyn gene'					
 ha'n ebel dhiso keffrys.
 War hy heyn, rag dha esya,		220
 dillas my a vynn lesa.
 Yskynn yn-bann, mars yw prys.
 
-IHC.
 Ow Thas yn y wolowys
 re bo gweres dhywgh pup-prys
-orth temptashyon an tebel,	225					[temptacyon]
+orth temptashyon an tebel,	225					
 ma'gas bo lowena nev,
 pan verwiv, dh'agas enev.
-Dewisys owgh, dewdhek lel.						{NSS hwi}
+Dewisys owgh, dewdhek lel.					
 
-Tunc veniunt pueri ebreorum et deferant palmas et flores contra jhesum et dicit primus puer
-
-Is Puer
 Nowodhow my re glywas -
 bones Ihesus bennigys	230
 ow tos omma dhe'n sita.
@@ -350,27 +274,23 @@ Er y bynn mynnav mones.
 My a garsa y weles.
 Ev yw Dyw leun a byta.
 
-IIs Puer
 Oll ni a vynn mos er y bynn	235
 rag y wordhya.
 Dyw a versi dhe bub huni
 sur yth ywa.
 
-IIIs Puer
 Fleghes Ebrow deun yn unn rew
 skon heb lettya	240
 erbynn Ihesu ben yw gwir Dhyw
 ow tos dhe'n dre.
 
-IVs Puer
 Yn kettelle ni a vynn.
 Branchys oliv pan gyffyn
 ni a's sett a-dheragdho	245
-hag a'n gordh gwella gyllyn:			[guel hagh ylyn
+hag a'n gordh gwella gyllyn:			
 pub oll war benn y dhewlin,
 a gan yn gordhyans dhodho.
 
-Vs Puer
 Mar ny gavav branchys 'vas,
 my a dhestrypp ow dillas	250
 hag a's sett yn-dann y dreys,
@@ -378,23 +298,18 @@ hag a gan dh'agan Selwyas:
 Bennigys yw Mab a ras
 yn hanow Dyw devedhys!
 
-VIs Puer
 My a vynn sur yndella	255
 di'ska ow dillas gwella
 ha tewlel a-dheragdho.
 Yma genev flourys teg
 yn enor dhe'm Arloedh hweg
-aga skoellya yn-danno.	260				[agas skulya]
+aga skoellya yn-danno.	260
 
-VIIs Puer
 Palm ha bayys, byksyn, erbys
 genev yma.
 Arloedh a nev, gwith ow enev
 rag pub droktra.
 
-Nunc ascendet super asinum et pullum et equitabit ad templum et dicit jhesu
-
-IHC.
 Ow bennath oll re'gas bo	265
 ow tos yn enor dhymmo
 gans branchys, flourys keffrys.
@@ -402,7 +317,6 @@ Unn jydh a dheu, yredi,
 ma'n talvydhav oll dhywgh hwi -
 kemmys enor dhymm yw gwrys.	270
 
-Is Puer
 Mab Davydh, dhis lowena!
 My a'th pys a'gan sawya
 ha'gan dri dhe wlaskor nev.
@@ -410,15 +324,13 @@ Bennigys yw neb a dheu
 yn hanow Dyw, dh'y lawa!	275
 Myghtern Ysrael, Arloedh krev!
 
-IIs Puer
-Lowena dhis, Mab Davydh!					[dauid]
+Lowena dhis, Mab Davydh!					
 Mab Dyw os ha den ynwedh.
 Saw oll dha len servysi!
 Rag dha vones devedhys	280
 yn hanow Dyw, bennigys
 my a grys dha vos, devri.
 
-IIIs Puer
 Devri bennigys ty yw!
 Gwynnvys a allo bos gwiw,
 yn sertan, len dhe'th wordhya.	285
@@ -426,25 +338,21 @@ Heb toell pur wir my a grys
 dredhos y fydhyn selwys.
 A Vab Dyw, dhis lowena!
 
-IVs Puer
 Lowena dhis Arloedh an bys
 ha nev ynwedh!	290
-Ro dhymmo gras a dhos dhe'th plas				[grath, plath]
+Ro dhymmo gras a dhos dhe'th plas
 gans dha eledh.
 
-Vs Puer
 Lowena sur dhe'n Dyw yw pur
 ha den keffrys!
 Dredhos tejy y fydh oll ni	295
 yn gwir sawys.
 
-VIs Puer
 Ihesu a ras yw Mab ha Tas
 leun a versi.
 Oll ni a bys lowena dhis
 yn pur devri.	300
 
-VIIs Puer
 Ihesus hweg a Natharet,
 lowena dhiso heb lett,
 ha meur a enor yn tevri!
@@ -452,17 +360,13 @@ Ty yw Selwador an bys,
 ha henna sur my a grys.
 Ahanav kemmer mersi.
 
-IHC.
 Lemmyn warbarth, ow fleghes,
-ow bennath dhy'hwi pup-prys.					[thywhy]
+ow bennath dhy'hwi pup-prys.
 Klywys vydh agas desir.
 Hwi a vydh akwitys da	310
 rag an enor y'n tor' ma
 a wrussowgh dhymmo, pur wir.
 
-tunc descendet ihc et eat in templum et dicit ihc
-
-IHC.
 My a vynn diyskynna
 ha mos y'n tempel hware
 dhe weles oll an fer na.	315
@@ -470,33 +374,20 @@ Yn chi Dyw mars eus marghas,
 my a's chas yn-mes, pub gwas,
 hag a dewl agas gwara
 
------------------------------------------
-
-
-			[hic pompabit episcopus cayphas]
-
-Cayphas
 Leverewgh dhymm, kowetha,
-p'yw henna a dheu dhe'n dre	320	[pyw]{piw yw} {B. thueth, NSS
-							 dheuth}
+p'yw henna a dheu dhe'n dre	320
 war geyn asyn hag ebel
 ow mos war-tu ha'n templa?
 My a grys y kemmersa
 hwath an eyl, kyns es merwel.
 
-					[hic descendit Cayphas]
-
-Pannarius
 Ev yw an profoes Ihesu,	325
 a lever y vos Mab Dyw
 a nev ughel:
 devedhys a Nazare,
 tre a wlaskor Galile
 pur dhiogel.	330
-			[pannarius ibit ad templum]
------------------------------
 
-IHC.
 Hwi wikoryon, ewgh yn-mes!
 Yth esowgh hwi ow kuthyl ges
 a Dhyw hag a'y Sans Eglos,
@@ -504,23 +395,20 @@ yn ow Chi a Bysadow
 pan wrewgh agas marghasow	335
 ha fowys dhe ladron blos.
 
-Mercenarius
 Lavar lemmyn, ty Jhesu,
-pan dokyn eus a vertu				[pan drok vo yn a-ver-tu]
-a dhiskwedhys ta dhyn ni,			{imperfect?}
+pan dokyn eus a vertu				
+a dhiskwedhys ta dhyn ni,			
 pan wre'ta mar goynt fara,	340
 ow skoellya agan gwara
 ha'n fer orth y dhistrui?
 
-IHC.
 Tokyn dhywgh mar ny dhiskwa
 kyn fe diswrys an templa
 dhe'n dor kwit, na saffa mann,	345
-my a'n dreha sur arta					[dreha]
+my a'n dreha sur arta
 kyns penn tri dydh, re'm lowta,
 tekka ages kyns yn-bann.
 
-Pannarius
 Henna yw pur skorn ha ges,
 rag y feu, kyns y vos gwrys,	350
 dew-ugens blydhen ha hwegh,
@@ -528,10 +416,6 @@ hag yn tri dydh diogel
 ev a wra y dhrehevel,
 kyn fe terrys oll a'y le.
 
---------------------------------
-					hic pompabit pilatus
-
-Pilatus
 My a vynn mos dhe'n tempel,	355
 gologhas rag leverel
 ha pysi war dhyw Yovyn.
@@ -539,11 +423,6 @@ My a grys bones an gwas
 Ihesu ow kul maystri bras.
 Diswul an fer ev a vynn.	360
 
-					[descendit pilatus]
-
-nunc transeat pilatus ad templum ierusalem et dicit mercenarius [ad cayphan]
-
-Mercenarius
 Hayl Syrr Cayfas, epskop stout!
 M'aidez! Ihesu an gwas prout
 re wrug re maystri y'n dre,
@@ -551,25 +430,20 @@ hag ev dhyn re leveris,
 kyn fe an templa diswrys,	365
 yn tri dydh y'n drehavsa.
 
-Cayphas
 Gow a lever an jowdyn!
-Ev a'n pren, re Sen Yovyn,				[synt]
+Ev a'n pren, re Sen Yovyn,				
 mar ny dhenagh y hwedhlow.
 Ott an justis ow tos dhyn!	370
 Anodho ev gwres dell vynn
 pan glywvo y lavarow.
 
-tunc veniet pilatus ad cayphan pontificem et dicit
-
-Pilatus
 Syrr Cayphas, dhis lowena!
 Pan faryng eus y'n templa
-gans Ihesu an fals vrybour!	375			[brybor]
+gans Ihesu an fals vrybour!	375
 Ev re dhiswrug an varghas.
 Yma ow kul maystri bras
 rag mynnes kavoes enor.
 
-Cayfas
 Wolkomm Pilat, by this day!
 Ev re wrug meur a dheray.	380
 Dre woeth y hwrug leverel
@@ -577,7 +451,6 @@ kyn fe diswrys an templa,
 yn tri dydh y'n drehavsa
 bythkweyth hwath na veva gwell.
 
-Pilatus
 Ev ny wra lemmyn bostya.	385
 Pub den y'n bys ma a woer
 den vydh oll na'n drehavsa
@@ -587,11 +460,6 @@ Y dhrehevel mara koer,	390
 y koedh dhyn oll y wordhya,
 keffrys yn tir hag yn mor.
 
-	[hic venient pilatus et cayphas ad templum]
-
-tunc eant omnes ad templum et dicit cecus
-
-Cecus
 Jhesu, Arloedh leun a ras,
 kepar dell osa Selwyas,
 my a'th pys yn cheryta	395
@@ -599,21 +467,18 @@ a sawya ow dewlagas.
 Bythkweyth hwath, tebel na mas,
 ny welis gansa banna.
 
-Claudus
 Ha my, evredh, sur a'th pys
 awos an Tas bennigys,	400
 ro dhymm ow herdh dre dha ras,
-ha vynitha my a grys				[venytha]
+ha vynitha my a grys
 dha vos a wyrghes genys,
 Mab Dyw, agan Dasprenyas.
 
-IHC.
 My a'gas saw yn lowen:	405
 In nomine Patris et Filii
 et Spiritus Sancti, Amen.
 Transite a me sani.
 
-Cecus
 A Ihesu hweg, leun a ras,
 lemmyn gans ow dewlagas	410
 sur my a wel!
@@ -621,69 +486,55 @@ Ty yw Arloedh nev ha bys:
 pur wir yw henna my a grys
 gans oll ow nell.
 
-Claudus
 A Arloedh hweg, saw ov ha teg	415
 a bub kleves!
 Dres pub huni pur wir os jy
 sur bennigys.
 
-Is Puer
 Mab Dauid, dhis lowena!
 bennigys os dres peub oll!	420
 My a'th pys, skrif ow ena,
 pan viv marow, yn dha rol.
 
-IIs Puer
 Lowena dhis, Mab Dauid,
 dell os dres peub bennigys!
 Mab Dyw os, ha den ynwedh,	425
 yn y hanow devedhys.
 
-IIIs Puer
 Ihesu myghtern Ysrael,
 my a bys, dhis lowena!
 Kyrgh dhis ow enev gans el,
 pan wrav a'n bys tremena.	430
 
-Pilatus
 Ihesu, pandr'a lever'ta
 a'n fleghes eus ow kana?
-Yowynkses menowgh a wra			[yowynkes]
+Yowynkses menowgh a wra
 yn yowynkneth meur notya.
 
-IHC.
 Y'n lyvrow skrifys yma	435
 bos kollenwys lowena
 a anow an fleghes dha
 ha'n re vunys ow tena.
 
-pilatus dicit ad Cayphan]
-
-Pilatus
 Ny amont travydh hemma,
 Cayphas, ny yllyn spedya:	440
 yma oll tus an bys ma
 yn sertan worth y sywya.
 
-Cayphas
 Ny wodhowgh pandr'a gewsowgh
-na pandra a bregewthowgh.			[bryge wreugh]
+na pandra a bregewthowgh.			
 My a lever dhywgh hware:	445
 gwell yw unn den dhe verwel
 ages oll an bobel lel
 dhe vos kellys, re'm lowta.
 
-Pilatus
 Re Iovyn, arloedh an bys,
-dell leverydh y fydh gwrys	450				[a vyth]
+dell leverydh y fydh gwrys	450
 dhe'n plosek gwas avleythys.
-My a gach an kasadow						[basadow]
+My a gach an kasadow		
 peub a'y du yn lavarow.
-Worta den na woslowes.			[woslowys]{2S imper}
+Worta den na woslowes.		
 
-et tunc omnes ient ad tentos suos et symon leprosus veniet ad jhesum et dicit ei
-
-Symon Leprosus
 Syrra, Arloedh, my a'th pys	455
 a dhybri genev unn prys,
 dre dha vodh, ha'th dyskyblon,
@@ -691,7 +542,6 @@ rag yma boes pareusys
 dhiso ha dhedha keffrys
 yn plas eus omma rybon.	460
 
-IHC.
 My a genes yn lowen,
 ha'm dyskyblon kettep penn,
 dhe'th arghadow.
@@ -699,9 +549,6 @@ Peder, Androw ha Iowan,
 Symon, Jud, dun ahanan	465
 heb falladow.
 
-hic veniet maria magdalena ad jhesu cum domino  [[Nance: in domo] symon lepros.]
-
-Juda
 Arloedh, henna yw gwrys da.
 Hwi a woer pyth yw gwella
 dhywgh dhe wruthyl.
@@ -709,7 +556,6 @@ Gwell es oll tus an bys ma,	470
 dell os dalleth a buptra,
 y redh kusul.
 
-Mar. Magd.
 My a vynn mos dhe ura
 ow Arloedh, treys ha diwla,
 gans oynment ker, yn sertan,	475
@@ -728,25 +574,21 @@ a dal meur a vona da
 war dha benn y dhinewi
 ha war dha dreys magata.
 
-Symon Leprosus
 A pe profoes bennigys
 yn sur ev a wodhvia	490
 hy bos hi peghadores:
 ny's gassa dh'y elia.
 
-IHC.
 Symon, dell ov ervirys,
 yma dhymmo, re'm lowta,
 nebes dhe leverel dhis:	495
 goslow orthiv vy hware.
 
-Symon Leprosus
 Mester, lavar desempis,
 yn skon dhymmo, heb lettya,
 an dra eus sur war dha vrys:
 er dha bynn ny wrav skonya.	500 
 
-IHC.
 Kyns yn unn tyller y'n bys
 dew gendoner yth esa
 dhe unn dettor, my a grys.
@@ -760,12 +602,10 @@ Lavar dhymmo, a verr spys,
 pyneyl o moyha synsys	510
 a'n keth dew ma dh'y gara?
 
-Symon Leprosus
 My a re skon gorthyp dhis:
 neb may feu moyha gevys
 a gar moyha, yn pub le.
 
-IHC.
 Sertan gwir vreus yw honna.	515
 Ty a wel an venyn ma:
 hwath a-ban dheutha y'th chi
@@ -787,20 +627,17 @@ rag kemmys hi dhe'm kara.	530
 Dha fay re wrug dha sawya.
 Ke yn kres, lavarav dhis.
 
-Judas Scariot
 Pyth yw an edhomm via
 an oynment ker y skoellya?
 Ev a allsa bos gwerthys	535
 a dri hans diner ha moy,
 ha'n re na galser dhe ri
 dhe voghosogyon y'n bys.
-			[hic surgant omnes et ambulant]
 
-IHC.
 Na dhegewgh sorr yn kolonn
 orth neb a wra ow ura,	540
 rag ow thorment a dheu skon
-genowgh na'm boma tryga.				[byve]
+genowgh na'm boma tryga.
 Hwi a gyv boghosogyon
 pub eur warnowgh ow karma:
 pan vynnowgh agas honan	545
@@ -810,14 +647,9 @@ An keth oynment a skoellyas
 warnav, rag ow ynkleudhyas
 hi a'n gwrug, dre gerensa.
 Pypynag may fo redys	550
-an Aweyl ma, kyhwedhlys			[S. taveth lys]
+an Aweyl ma, kyhwedhlys	
 hi a vydh, pur wir, nevra.
 
-------------------------------
-
-					[ordinale ad cayphe]
-
-Cayphas
 Ow mab-lyenn, kyrgh Annas
 an pryns, may hylliv klywes
 pyth yw an gusul wella	555
@@ -825,16 +657,11 @@ dhe wruthyl worth an traytour
 may ma lies gwreg ha gour
 ow trelya dhodho toth da.
 
-Crocer
 Syrra, my a wra, heb fowt.
 Farwel, ow bennath genes!	560
 Da via kyns dos Sabot
 diswruthyl an fals profoes.
 
-et tunc iet ad principem annam et dicit crociarius. et pompabit si velit.
-		[hic pompabit annas pro platea] [[Nance: et praeterea Crocer dicit]]
-
-Crocer dicit
 Lowena dhis, syrr pryns gay!
 Syrr Cayfas genev, par fay,
 a'th tynnerghis, hag a'th pys	565
@@ -842,49 +669,37 @@ a dhos dhodho bys yn tre,
 dre dha vodh, dh'y gusulya
 worth Ihesu pandr'a vydh gwrys.
 
-Princeps Annas
 My a dhodho yn lowen,
 dell ywa ow syrra-da,	570
 rag diswuthyl an bilen
 mar kews erbynn an lagha.
 
-		et tunc iet ad episcopum [descendit]
-
 Hayl Cayfas, syrr epskop stout,
 deg kankweyth dhis lowena!
 
-Cayphas
 Wolkomm by Mahommys blout!	575
 Deus nes hag esedh genev.
-
-					ascendit annas
 
 Yma unn gwas marthys prout
 oll an sita ow trelya
 'dhiworth Mahomm by myn hout
 ha'gan laghys ow shyndya.	580
 
-Princeps Annas
 Dannvon tus dh'y aspia,
 mara'n kevons yn neb chi,
 ha'n kelmens treys ha diwla
 ha'n hembronkens bys dhyn ni.
 
-hic venit judas ad eos et dicit: [princeps Annas expectat et [[Nance: cum]] cayphas]
-
-Judas Scar.
 Leverewgh dhymmo hware	585
 pandr'a vynnowgh dhymm dhe ri,
 ha my a wra dhywgh spedya
 ow kavoes Krist yredi.
 
-Cayphas
 Koweth hweg, by my laute,
 ty a'fydh myns a vynni.	590
 Govynn worthyn heb lettya
 py seul a vynnydh, devri.
 
-Judas Scar.
 Deg warn ugens a vona:
 my ny vynnav kavoes le,
 yn gwiryonedh,	595
@@ -892,52 +707,39 @@ ha res dhywgh dri gweres
 genev vy dh'y gemmeres
 yn nos privedh.
 
-Cayphas
 Sur oll dha wovynnadow
 ty a'fydh yn gwir heb wow:	600
 ottensi genev parys.
 Lavar dhymmo, koweth mas,
-py eur a tus dh'y gyrghes?				{a = 'go'}
+py eur a tus dh'y gyrghes?				
 Ha gwayt na ven ni toellys.
 
-Judas Scariot
 Pur ewn pan vo ow sopya	605
 my a dheu dh'agas gwarnya.
 Ha gwaytyewgh bos tus parys
 gans battys ha kledhedhyow,
-ynwedh lanterns gans golow			[lanters]
+ynwedh lanterns gans golow
 ma na ven ni sowdhenys.	610
 
-et tunc veniet iudas iscariot ad ihesum et apostolos et dicit cayphas
-
-Cayphas
 Re'm fay, ty yw koweth da:
 dha rewardya my a wra
 rag dha servis.
 Arvow lowr dhyn ni yma
 ha gwesyon stout y'n tor' ma	615
 a'n kach uskis.
-________________________________
 
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
-Nunc mittat Jhc. discipulos ad parandum cenam dominicam
-
-IHC.
 Ewgh y'n dre hag ordenewgh
 boes Pask dhyn ni heb lettya.
 Peder ha Iowan, kerdhewgh
 may fova parys hware.	620
 
-Petrus
 Arloedh kuv, lavar dhyn ni
-y'n keth tre ma py fynni				{NS ple}
+y'n keth tre ma py fynni
 boes pask dhyn ni ordena,
 ha my a'n dyght yredi,
 may hyllyn dell goedh dybri,	625
-ha dhe'n Tas sakrifia.				{NS sacryfysa}
+ha dhe'n Tas sakrifia.	
 
-IHC.
 Pan vewgh a-ji dhe'n sita,
 hwi a dhierbynn hware
 den ow toen pycher dowr glan.
@@ -947,45 +749,37 @@ ha leverewgh yn sertan,
 
 leverewgh dhe wour an chi
 agas mester dhe dhannvon:
-py plas y hyll ev dybri	635			{N y thylle}
+py plas y hyll ev dybri	635
 ev hag oll y dhyskyblon?
 Hag ev a dhiskwa dhy'hwi
 unn skiber efan yn skon;
 gwaytewgh dhyghtya boes ynni
 lowr dh'agan soper ragon.	640
 
-Iohannes
 Arloedh kuv ker, ni a wra
 kepar dell erghsys dhyn ni.
 Peder, koweth, deun toth da,
 agan negys gwren bysi.
 
-Petrus
 Fistenyn fast alemma,	645
 dell worhemmynnis devri;
 mar kevyn den a'n par na
 ni a'n syw bys yn y ji.
 
-----------------------------
-
-Pater familias
 Ke alemma, servont ker,
 kergh a'n fenten dhymm dowr kler	650
 dhe dhyghtya boes
 dhyn nyni erbynn soper,
 kepar dell yw an vaner
-dy' Yow Hablys.						[Hamlos]
+dy' Yow Hablys.
 
-Ffamulus
 My a gergh dowr dhis hware;	655
 otta ow fycher gene'
 yn ow dorn rag y gerghes.
-					Et tunc iet et implet
 War ow koedh, by my laute,
 my a vynn y dhoen dhe dre,
-ha fistena gans toth bras.	660		{gans omitted in NS1982}
+ha fistena gans toth bras.	660
 
-Iohannes
 Peder, my a wel unn den
 ow toen pycher dowr toth men;
 deun war y lergh my a'th pys:
@@ -993,9 +787,6 @@ res yw bos gwir lavarow
 agan Arloedh heb parow,	665
 neb yw Dyw ha den keffrys.
 
-Et tunc iet ad patremfamilias et dicit ei petrus:
-
-Petrus
 Kres Dyw a-berth y'n chi ma!
 Ihesu agan Mester da
 a'm dannvonas dhe wovynn
@@ -1003,7 +794,6 @@ py le y'n jevydh ev chi.	670
 Rag y'n nos haneth dybri
 boes Pask omma ev a vynn.
 
-Pr. Familias
 Dewgh genev, my a dhiskwa
 chi dh'agas Mester hware
 rag parusi y soper:	675
@@ -1013,35 +803,28 @@ kavoes y es heb danjer.
 
 Otta omma skyber deg,
 ha kala lowr war hy leur;	680
-pynag vo, lettrys po leg,			[N. lettys pylek]
+pynag vo, lettrys po leg,
 a weles an chi ny'm deur.
 
-Iohannes
 An chi yn ta dhymm a bleg.
 A nev ughel an Tas meur
 re'th ordenno, ty ha'th wreg,	685
-pan vi marow, yn y kur.		[cver]{perhaps keur 'choir'???}
-				Et tunc parabunt cenam
+pan vi marow, yn y kur.
 
-Petrus
 Johann, gweres ow kul tan,
 rag yma boes lowr sertan
 omma sur erbynn soper.
 A peva oll parusys.	690
 Fisten lemmyn my a'th pys
-may fo dyghtys an vreder				[a vreder]
+may fo dyghtys an vreder
 
-Iohannes
 Otta an tan ow tewi.
 Dens, pan vo bodh gansa i,
 aga boes a vydh parys.	695
 Hwath a-varr prys soper yw,
 tan bras an oen re a liw
-kyns y vos medhel-restys.			[methen]{NS1982 medhew}
+kyns y vos medhel-restys.
 
-			Nunc surgit ihc. et eat ad cenam
-
-IHC.
 Deun alemma ahanan,
 rag gans Peder ha Iowan	700
 nans yw bos soper parys
@@ -1049,10 +832,6 @@ erbynn agan bos gansa.
 Termyn vydh dhyn ni sopya.
 Symon hweg, ow bennath dhis.
 
-Et tunc ihc recedit ab eo et veniet ad sicipulos et dicit
-
-								[Jhs. osculatur eos]
-IHC.
 Kres Dyw a-berth y'n annedh	705
 ha'm bennath re'gas bo hwath.
 Yw oen Pask dhyn ni parys
@@ -1061,17 +840,13 @@ may hyllyn mos dhe soper?
 Lavar an gwir dhymm, Peder,
 dell y'th karav meur pup-prys.	710
 
-Petrus
 A Arloedh ker, parys yw;
-an Tas Dyw roy dhyn bos gwyw				[thy'm]
+an Tas Dyw roy dhyn bos gwyw
 dhe vos len servysi dhis,
 ha'm bredereth oll ynwedh.
 Esedhewgh yn kosoleth,	715
 rag skon hwi a vydh servys.
 
-Et tunc omnes sedent in cena et dicit ihc
-
-IHC.
 Pur wir dhywgh my a lever,
 my re dhesyras fest meur
 dybri genowgh hwi haneth
@@ -1086,7 +861,6 @@ bys mayth ylliv yn ow gwlas,
 ha hwi genev gans ow Thas,
 heb diwedhva, prest yn joy.
 
-Iohannes
 Arloedh ker, gwra yn lowen!
 Hedra vi y'n bys genen	730
 nevra tristyns ny'gan bydh.
@@ -1094,80 +868,67 @@ Dell osa Dyw dhyn ha Penn,
 mara kwelyn dhis anken
 nevra ny a'vydh dhe weth.
 
-IHC.
 My a lever gwiryonedh;	735
 onan ahanowgh haneth
 re'm gwerthas dhe'm eskerens
 neb eus genev ow tybri,
-a'm toellvydh yn surredi,	[Ms towyth, later corrected to
-						cowyth]{N. koweth; NS tullvyth}
+a'm toellvydh yn surredi,
 ha sur a'm gorr dhe vernans.	740
-							{NS, following a suggestion of
-							N, moves ll. 769-773 here}
-Iudas Scar.
+
 Arloedh, leverel dhymm gwra
 mars ov vy an keth henna,
 na vo den arall sklandrys.
 
-IHC.
 Ow tybri genev yma
 a'm tallyour y'n keth boes ma,	745
-neb re'm gwerthas seulabrys.					[sollabreys]
+neb re'm gwerthas seulabrys.				
 
 Mab Dyw a dremen a'n bys
 anodho dell yw skrifys
-yn lyvrow yn lies le.						[lyfryow]
+yn lyvrow yn lies le.					
 Go-ev vydh neb a'm gwerthas;	750
 mil well 'via ren ow Thas
 y'n bys ma genys na ve.
 
-Iudas Scar.
 Mester hweg, awos an Tas,
 lavar dhymmo heb lettya,
 oma vy neb a'th werthas	755
-dhe'n Yedhewon dhe ladha?					[huthewon]
+dhe'n Yedhewon dhe ladha?
 
-IHC.
 Kyns lemmyn my a's gwarnyas,
 hag a lever dhywgh arta:
 ty re'n leveris, Iudas,
 an gwiryonedh re'm lowta.	760
-				[hic Jhs. dat hostiam apostolis]
 
 An bara ma kemmerewgh
 dhywgh lemmyn yn kettep penn,
 hag anodho oll dybrewgh;
-ow korf yw, re'n oferen,				{NS dhe'n}[B. yv ef]
+ow korf yw, re'n oferen,
 kepar dell leveris dhywgh,	765
 gwerthys, ledhys y'n growsprenn.
 Dredho ef prennys vydhowgh,
 oll ow tus, gour ha benyn.
 
-Andreas					{NS moves this stanza to l. 741}
 A Arloedh ker bennigys,
 yma dhymm meur varthusyon
 piw a yll henna bones?
 Ahanan ny vydh onan.
 
-Iacobus Minor
 P'yw an brassa den synsys
 yn mysk oll dha dhyskyblon?
-Neb a'n godhvo gorthybes,775			[gorthybes]{3 sing imper}
+Neb a'n godhvo gorthybes, 775
 kyn fo mar stout a'y golonn.
 
-Iacobus Maior
 Neb a vo y'n moyha gre
 a vydh an brassa henwys,
-herwydh neb a vo yn le				{yn le 'in a lesser'}
+herwydh neb a vo yn le
 dell woer pub den oll y'n bys.	780
 
-Symon
 Ytho leverewgh hware
 kepar dell owgh fur synsys
 yn mysk oll an gowetha,
 p'yw henna, my a'gas pys?
 
-IHC.
 Myghternedh war aga thus
 a veu arlydhi a'y us
 yn sertan kyns es lemmyn;
@@ -1186,12 +947,10 @@ Ha gorthybewgh dhymm yn ta:
 p'yw a synsowgh hwi moyha
 neb a serv, py a dheber?
 
-Symon
 A nyns yw neb a dheppro?	800
 Yw, sur, dell hevel dhymmo,
 moy yw arloedh es spenser.
 
-IHC.
 Y'n kres my re esedhas,
 avel servont ow servya,
 ha hwi genev re drygas	805
@@ -1208,7 +967,6 @@ Dydh Breus y hwrewgh esedha
 oll an bys ma rag jujya	815
 pub oll herwydh y ober.
 
-Bartholomeus
 Mester, bennigys re bi,
 rag dha dhyskas tek dhyn ni
 yw parys yn pub termyn.
@@ -1216,89 +974,69 @@ Erbynn an pyth a gewsi	820
 ny yll denvydh gorthybi.
 Dha resons yns da ha fin.
 
-IHC.
-			[hic Jhs. dat vinum apostolis]
 Evewgh lemmyn oll an gwin,
 rag hemma yw ow goes fin
 hag a vydh ragowgh skoellys	825
 yn dehwellyans peghosow.
-Hwi a'm kofva vy heb gow			[cofua]{NS kofha}
-pysowgh may feva evys.		[pysough]{NS pesquyth 'wherever'}
+Hwi a'm kofva vy heb gow
+pysowgh may feva evys.	
 
-Philippus
 An Tas Dyw roy dhyn bos gwyw
-dha woes ker dhe resseva	830			[resceue]
+dha woes ker dhe resseva	830
 dre dha vodh y'n jydh hedhyw.
 My a'n pys yn cheryta.
 
-[hic aqua paratur ad lauandum pedes apostolorum et manitergium]
-
-IHC.
 Toemmens onan dowr war tan,
-rag wosa soper sertan					[woge]
+rag wosa soper sertan					
 my a wolgh oll agas treys,	835
 ha gans towell a lin glan
 my a's segh kettep onan
 a bub mostedhes ha leys.
 
-tunc iohannes apostolus venit cum aqua calida et pelluvio et dicit iohannes
-
-Iohannes
 Arloedh, yma dowr toemmys
 lowr may hallons bos golghys	840
 aga treys kettep pol.
 
-IHC.
 Yn bason bedhens gorrys,
 ha my a's golgh desempis
 may fons glan a bub plos oll.
 
-et interea ihc manitergio incipiet lavare pedes discipulorum et cum venit ad petrum dicit ei petrus
-
-Petrus
 Arloedh, golghi mara kwredh	845
 ow treys dhymm y fia meth
 hedra viv byw yn sertan.
 
-IHC.
 Pandr'a wrav ny wodhes hwath;
 ty a'n godhvydh y'n diwedh
-wosa ow mos ahanan.	850					[woge]
+wosa ow mos ahanan.	850					
 
-Petrus
 my a'n te dhis, re'n ow Thas,
 kyn na vens nevra goghys
 ty ny's golghydh yn neb kas
-war vyns oll ov ervirys.				[beyns]{NS vyns}
+war vyns oll ov ervirys.
 
-IHC.
 Taw, Peder, ty ny wodhes	855
-lemmyn pandr'a wrama dhis;			[pedra wrama vy thy's]
+lemmyn pandr'a wrama dhis;
 mar ny'th wolghav dre ow ras
 yn nev ny vydhydh trygys.
 
-Petrus
 Arloedh, dhymmo vy na as
 penn na troes na vo golghys.	860
 
-IHC.
 Neb a vo y gorf golghys
 ny'n jeves edhomm golghi,
-saw y dreys na vons sedhys,				{sedhi 'submerge'}
+saw y dreys na vons sedhys,
 rag glan yw oll yredi.
 
 A bub plos yth owgh glanhes,	865
 mes oll nyns owgh glan devri.
-Yma onan pur vostyes					[vostyys]
+Yma onan pur vostyes	
 omma a'gas kompani.
 
-Iohannes
 A Mester kuv, Arloedh nev,
 my a grys pur wir yn ta	870
 bos an keth den na, go-ev
 pan ve genys dhe'n bys ma.
 
-IHC.
 Mester genowgh y'm gelwir,
 hag Arloedh henna yw gwir.
 Ytho mar kwruga golghi	875
@@ -1312,15 +1050,13 @@ avel ys yn nothlennow
 dh'agas kroedra, my a grys..
 Rav rag, Peder karadow,
 lies gweyth my re pysis
-na drelya y gowsesow,	885			[gousesow]{GM kowsesyow}
+na drelya y gowsesow,	885			
 awos own bones ledhys.
 
-Petrus
 Arloedh kuv, my yw parys
 godhav genes bos ledhys
-ha gorrys fast yn pryson.			[prison]
+ha gorrys fast yn pryson.
 
-IHC. 
 Kyns bos unn nos tremenys	890
 hwi a vydh pur wir sklandrys
 ahanav, kettep mab bronn.
@@ -1333,17 +1069,14 @@ Saw my warlergh drehevel
 a's dierbynn diogel
 yn Galile oll warbarth.
 
-Petrus
 Ha kyn fons i oll sklandrys,
 nevra awos bos ledhys	900
 my ny wrav dha dhivlasa.
 
-IHC.
 Peder, my a lever dhis,
-kyns es bos kulyek-kenys		[B. kyns bos then kullyek kenys]
+kyns es bos kulyek-kenys
 teyr gweyth y hwredh ow nagha.
 
-Petrus
 Kyn fena ledhys marow	905
 dre veur bayn ha galarow,
 ny'th tenaghav bynari.
@@ -1351,19 +1084,16 @@ Awos own bras lavarow,
 agan Arloedh heb parow
 my ny'n naghav war ow fay.	910
 
-IHC.
 Leverewgh, ow dyskyblon,
 mara fyllis dhywgh travydh
 pan wruga agas dannvon
 heb lorgh na skryp nos ha dydh.
 
-Andreas
 Na fyllis, A Arloedh da,	915
 na fowt bythkweyth ny'gan beu.
 Yn agan edhomm puptra
 pub eur parys dhyn 'vedha.
 
-IHC.
 Lemmyn, lorgh neb a'n jeffo
 gorrens y skryp diworto;	920
 ha neb na'n jeffo naneyl
@@ -1371,29 +1101,19 @@ gwerthens y huk dhe brena
 anedhi dhodho kledha.
 Res yw bos gwir an Aweyl.
 
-[hic parantur duo gladii et petrus portet unum]
-
-Petrus
 Yma omma dyw kledha	925
 parys gans ow kowetha,
 kales ha sherp kekeffrys.
 
-IHC.
-Ow bennath dhywgh vynitha.			{GM vynitha. Vynytha??}
+Ow bennath dhywgh vynitha.
 Pur wir, lowr yw en re na
 rag governya oll an bys.	930
 
----------------------------
-
-tunc ibit iudas scarioth ad principes sacerdotum et dixit eis
-
-Iudas Scarioth
-Hayl syrr epskop . esos y'th kop			{'cope'}
-owth esedha!						[ow thy sethe]
-Hayl prins Annas . thy'hwi jammes		[qammas]{> -as for rhyme}
+Hayl syrr epskop . esos y'th kop	
+owth esedha!				
+Hayl prins Annas . thy'hwi jammes	
 meur lowena!
 
-Cayphas
 Wolkomm Iudas, par mon fay,	935
 wolkomm by Maghomys lay,
 wolkomm milweyth yn ow hel.
@@ -1401,59 +1121,48 @@ Lavar lemmyn mars yw prys
 dannvon genes tus ervys
 dhe gyrghes an vil losel.	940
 
-Iudas Scarioth
 Yw, syrra, by Godys fo;
 saw gwaytyens pub may tokko
 ganso lorgh py kledha da,
 ha mowysi gans golow
 yn lanterns heb falladow.	945
 Fistenewgh fast alemma.
-				[judas scar. expectat ibi]
 
-Cayphas
 Bennath Maghom re'th fo prest,
 rag sertan lel os ha trest,
 ha stedfast y'th ambosow.
 Tormentorys, wythow rest,	950		
 comyth hedry, lest and mest,
-lemmyn yn ow edhommow.				[yn ol ovthommow]
-		[tortor habet gladium et fustem]
+lemmyn yn ow edhommow.				
 
-Is tortor
-Hayl, volaveth volaveth!						{?vouz l'avez}
+Hayl, volaveth volaveth!
 Euthek meur yw dha areth
 lemmyn worth agan gelwel.	955
 Lavar dhymmo yn privedh
 pandra yw dha volonjedh,
 ha my a'n gwra diogel.
 
-Cayphas
 Tormentors, yn kettep gwas,
 ewgh alemma gans Iudas	960
 dhe gyrghes an gwas muskok
-usi ow owth omwul Mab Dyw.		[ov ym(wryl); B. ovth omwryl]
+usi ow owth omwul Mab Dyw.
 Pur wir ev a'n jevydh gew
 pan dheffo yn ow golok.
 
-Princeps Annas
 Lavar, koweth da dell os,	965
 fatell yllyn aswonnvos
 an harlot yn mysk y dus;
 rag ganso yma heb fal
 meur a'y dus dhodho haval,
-na aswonnyn an profoes.	970	{so that we will not recognise}
+na aswonnyn an profoes.	970
 
-Iudas Scar.
 My a dhysk dhywgh tokyn da:
 y salusi my a wra
 mar skon dell dhyffiv dhodho,
 hag a hware dh'y amma.
 Henna yw ev re'm lowta;	975
 settyewgh dalghenn skon ynno.
-	[Judas sta(ns) expectat cum principe Anna]
 
-Cayphas
-		[loquitur ad principem annam]
 Ha hwi, Annas, ow deuv ker,
 diskwedhewgh bos prins somper
 rag diswul Kristonyon.
@@ -1461,7 +1170,6 @@ Drewgh bys omma dhe'm tyller	980
 an harlotwas a lever
 y vos Myghtern Yedhewon.
 
-Princeps Annas
 Heb dout henna my a wra,
 rag dhymm yna tokyn da
 rag y gavoes.	985
@@ -1470,13 +1178,11 @@ Kettel y'n jeffo an bay
 y'n kechir wythovte nay
 an fals profoes.
 
-Cayphas
 Fisten ow deuv hweg-evy.
 Gwayt an harlot na skappyo:	990
 Drog handla, dell y'm kyrri,
 pan gyffi dalghenn ynno.
 
-IIs Tortor
 Henna my a wra hware,
 re Maghom, arloedh pub le,
 yn despit dhe'n kasadow.	995
@@ -1484,16 +1190,13 @@ Deun alemma, kowetha,
 my a'n doro dhywgh dhe dre,
 arloedh, dhe'th dannvonadow.
 
-JUdas Scar.
 Bysi yw dhywgh bones war.
 Koynt meur yw an gwas heb mar,	1000
 hag a aswonn lies wrynch.
-Skolkyewgh dhi yn-dann dava,			{NS 'feeling  your way'}
+Skolkyewgh dhi yn-dann dava,
 rag mara's gwel ev a wra
-mos dhe gudha war unn plynch.				{NS wor' un plynch
-									'in a twinkling'}
+mos dhe gudha war unn plynch.
 
-Princeps Annas
 Mas yw dha gusul devri.	1005
 Mar skon dhodho dell ymmi
 kechyewgh ev y'n vryansenn,
@@ -1501,26 +1204,19 @@ ha dalghennewgh mar gales
 ma na allo predheges,
 yn despit oll dh'y eghenn.	1010
 
-----------------------------------
-tunc ibat (sic) Jhc in montem olivarium ad orandum et assumet secum petrum jacobum [majorem] et 
-johannem
 
-IHC. Ow dyskyblon, esedhewgh
+Ow dyskyblon, esedhewgh
 hag omma pols powesewgh
 hedra vima ow pysi.
 Oll saw Peder ha Jamys
 ha Johann an tri a res	1015
 mones genev yredi.
 
-[hic petrus et Jacobnus major et Johannes eunt cum Jhesu]
-
-Thomas
 Arloedh, kepar dell vynni,
 dell osa Dyw dres pub tra,
 my a wra prest heb ynni,
 hedra viv byw y'n bys ma.	1020
 
-IHC.
 Agas tri, dewgh hwi genev,
 rag yma yn ow enev
 trystyns fast bys yn ankow.
@@ -1528,15 +1224,11 @@ Godhevewgh omma lavur
 ha goelyewgh genev yn sur	1025
 ow huvyon ker kolonnow.
 
-Jacobus Maior
 Ow holonn res eth yn klav
 ow klywes dha lavarow.
 Yn torment mara'th welav
 genes my a vydh marow.	1030
 
-tunc recedit ab eis et orabit ihc [et ipsi dormient]
-
-IHC.
 Ow Thas hweg, leun a ras da,
 possybyl yw dhis puptra.
 Dell ov dha Vab my a'th pys
@@ -1548,56 +1240,42 @@ Lemmyn na vo oll ow bodh
 kollenwys dhymmo lemmyn,
 saw dha vodh dhejy, Arloedh,
 bedhens gwrys yn pub termyn.	1040
-				[Jesus expectat ibi cum oracione]
 
-Deus Pater
-Ow hannas hweg, dhe'n bys koedh.			[tovth]
+Ow hannas hweg, dhe'n bys koedh.
 Lowena tekka godhvi
 Ihesu ow Mab kevarwoedh
 usi warnav ow pysi.
 
-Gabriel
 A Das, dell os bennigys,	1045
 mos dhodho yw ow yeunes,
 dell yw ow Arloedh ker.
-				[tunc descendit gabriel]
-et tunc dicit angelus ad ihm orando
 
 Gordhyans dhis ha lowena
 dha Das kerra, dh'y lawa,
 a erghys, Gwellha dha cher.	1050
 
-IHC.
 Ow Thas ker, gordhys re bo,
 rag y gonfort yw dhymmo
 fest parys yn pub termyn.
-Peder, ny woelsys yn fas			[wolsys]{NS ny wothfes yn fas}
+Peder, ny woelsys yn fas
 unn prysweyth genev goelyas	1055
-kyns es dos ow thorment tynn.				{NS question}
+kyns es dos ow thorment tynn.
 
-et tunc veniet ad discipulos tres et inveniet eos dormientes et dixit eis
-
-IHC.
 Hwath genev unn pos goelyewgh,
 ha war ow Thas fast pysewgh
-na entrewgh yn temptashyon.				[temptacyon]
+na entrewgh yn temptashyon.				
 Parys fest yw an spyrys	1060
-ha'n kig yw marthys grevyes				[grevyys]
+ha'n kig yw marthys grevyes			
 gans kleves ha govijyon.
 
-Petrus
 A Arloedh ker, my a wra
 mara kyllyn yndella.
 Ni dhe gammwul y hwonn gwir.	1065
 
-Iohannes
 Arloedh, agan dewlagas
 yw marthys klav ow koelyas.
 Goelyas o agan desir.
 
-et iterum recedit ab eis [et iet ad orandum et apostoli dormient]
-
-IHC.
 Ow Thas, mar ny yll bones
 may trelyo mernans dhe ves	1070
 saw y wodhav dhymm a res,
@@ -1605,9 +1283,6 @@ dha volonjedh re bo gwrys;
 rag an Skryptor bennigys
 res yw y vos gwir porres.
 
-et iterum veniet ad eos et inveniet eos dormientes et diccit eis
-
-IHC.
 Hwath, ow huvyon, difunewgh,	1075
 ha keskolonn oll pysewgh
 nag yllowgh yn temptashyon.
@@ -1615,9 +1290,6 @@ Iudas ny gosk unn banna,
 lemmyn dihwans fistena
 dhe'm ri dhe'n fals Yedhewon.	1080
 
-----------------------------------
-
-Iudas Scar.
 Perthewgh kov oll a'n tokyn
 a leveris kyns lemmyn
 dhy'hwi, a gowetha.
@@ -1625,13 +1297,6 @@ Pynnag a wrylliv amma,
 henn yw ev re', lowta.	1085
 Synsewgh e fast heb lettya.
 
-[hic venient princeps annas et tortores ambulantes in platea]
-
-----------------------------------
-
-iterum tercio orabat dicens
-
-IHC.
 Hwath ow Thas ker, leun a ras,
 mars yw dha vodh, gront an spas
 na dheffo dhymm an mernans.
@@ -1639,63 +1304,47 @@ Saw mar ny yll bos nahen,	1090
 dha vodh prest yn pub eghenn
 y gollenwel yw ow hwans.
 
-et tunc veniet ad eos tercio dicens
-
-IHC.
 Ow huvyon, lemmyn koskewgh,
 hag oll warbarth powesewgh.
 My re bysis lowr ow Thas.	1095
 Ow nesa yma an prys
 may fydh Mab Dyw ynno res
 dhe'n fals Yedhewon dignas.
-			et iterum veniet iudas et obuiabit eis
 
-IHC.
 Sevyn yn-bann . Deun ahanan
 skon alemma,				1100
 rag fals Iudas . neb a'm gwerthas
-ogas yma.			{NB yma, not yw, even though ogas is an adj.}
-[hic petrus Jacobus et Johannes eunt cum Jhesu]
+ogas yma.
 
-Iudas Scar.
 A Vester ker . yn pub tyller
 dhis lowena!
-				et osculatus est ihc.
 
-IHC.
 A gothman da . prag y hwre'ta	1105
 dhymmo amma?
 Dhymm dhe amma . ty re dheuth sur
 rag ow gwertha . dhe'n traytours pur.
 
-[hic Jhs dicit ad principem Annam et alios Judeos}
-
 Dhymm leverewgh . piw a hwilowgh,
 A Yedhewon?					1110
 
-Princeps Annas
 Ihesu, parde . a Nazare,
 an fals Kristyon.
-
-tunc abient retrorsum et cecident in terra et iterum interrogauit eos ihc dicens
 
 Hwithrewgh hedhyw . worthiv hware.
 My yw Ihesu . a Nazare.
 Leverewgh hwath . pan dhewgh mar freth,	1115
 piw a hwilowgh?
 
-Princeps Annas
 Ihesu re'm fydh . a Nazareth.
 Ny'n jevydh mewgh.
 
-IHC. My a leveris dhy'hwi
+My a leveris dhy'hwi
 ow bosa henna devri.	1120
 Ytho mar kwrewgh ow hwilas,
 gesewgh ow thus eus gene
 dhe-ves kwit dhe dremena.
 Yndella yw bodh ow Thas.
 
-Princeps Annas
 A lorels, re's bo droglamm!	1125
 Settyewgh dalghennow y'n kamm
 a lever y vos Mab Dyw,
@@ -1703,22 +1352,14 @@ ha deun ni ganso toth bras
 bys y'n epskop syrr Cayfas,
 yn gwettha prys, er y wew.	1130
 
-IIIs tortor
 My a'n dalghenn fest yn tynn,
 ha gans ow dornow a'n gwryn,
 na sewenno.
-
-				et tunc apprehendent eum
 
 Bys y'n epskop fistenyn,
 warfor strechya na wryllyn.	1135
 Deun skon ganso.
 
-tunc petrus abscidit auriculum tortoris nomine malcus et dicit
-
-						[hic petrus scidit auriculam Malci]
-
-Petrus
 Arloedh, lavar desempis
 dhyn ni mars yw bodh dha vrys
 ha bolonjedh an Tas
@@ -1726,7 +1367,6 @@ my dhe weskel gans kledha	1140
 neb eus worth dhe dhalghenna,
 sherewys drog aga gnas.
 
-IIIIs Tortor Malcus
 Owt, kowetha, gweresewgh!
 Ow skovarn treghys mirewgh
 kwit dhe-ves dhiworth ow fenn	1145
@@ -1734,15 +1374,11 @@ gans onan a'y dhyskyblon.
 'Ma an loes dre ow holonn
 rag galarow hag anken.
 
-hic jhc accipiet auriculum malchi et sanabit eum
-
-IHC.
 Gortewgh lemmyn, gokkies.
 Dhe'th skovarn hware yeghes	1150
 sur my a re.
-				[sanatur auricula malchi]
 A-barth ow Thas bennigys,
-dh'y dyller arta glenes,						{NB 3S imper.}
+dh'y dyller arta glenes,
 kepar dell veu.
 
 A Peder, trel dha gledha;
@@ -1764,8 +1400,6 @@ dell redyer yn lies le,
 dhe Vab Den godhav y'n bys,
 hag entra dh'y lowena.	1170
 
-[dicit ad Judeos]
-
 Hwi re dheuth dhymm gans arvow,
 gans fustow ha kledhedhyow,
 kepar ha pan vena vy
@@ -1773,20 +1407,13 @@ an purra lader y'n pow.
 Pan dhyskis y'n eglosyow	1175
 ny wrug denvydh ow synsi.
 
-tunc omnes discipuli eius fugient excepto iohanne cindone cooperto et petrus sequebatur (sic) eum a 
-longe
-
-Is Tortor
 A draytour bras, sur mab gal,
 dha gavoes genen yw mal.
 Kelmewgh warbarth y dhiwvregh,
 na allo diank dre wall.	1180
-Ev a'#n jevydh war an chall;
+Ev a'n jevydh war an chall;
 den vydholl na dhowtyens pegh.
 
-tunc IIs tortor accipiet iohannem apostolum et ipse relicto syndone nudus fugiet
-
-IIs tortor
 A gyglet of lynaja,
 ha ty mar yonk a'n aja,
 pandr'a wre'ta gans an gwas?	1185
@@ -1794,15 +1421,13 @@ Dha vantell gas yn gaja:
 my a'n kach rag ow waja,
 ha ty a greg, ren ow thas.
 
-IIIs Tortor
 Kyn fe dha dhiwvregh mar vras,
 my a's kelm re Sattenas
 warbarth avel lader pur,
-hag a'th worr bys yn CAyphas,
+hag a'th worr bys yn Cayphas,
 yn despit dhe'th tewlagas,
 rag na veus kyns lemmyn fur.
 
-IIIIs tortor
 Hembrenkewgh an harlotwas,	1195
 ha gans ow hwip my a'n chas,
 may kerttho garwa y gamm.
@@ -1810,49 +1435,34 @@ Ke yn rag, wyth yffle gras.
 My a grys by God ys fas
 an harlot re dhellos bramm.	1200
 
-et tunc venient ad episcopum cum ihu et dicent ei
-
-Princeps Annas
 Hayl, A hayl, epskop Cayphas!
 Otta devedhys an gwas
 omma genen bys y'th hel.
 Synsys meur on dhe Iudas,
-rag sur ev a'm hembronkas	1205			{NS a'n}
+rag sur ev a'm hembronkas	1205
 pur kompes bys y'n losel.
 
-[hic Thomas set presens et paratur ad ludum]
-
-Cayphas
 Wolkomm fest owgh y'n chi ma.
 A-dhesempis gwrewgh tan da,
 rag yeyn fest yw an awel.
-My a vynn y eksamnya,					[examne]
+My a vynn y eksamnya,			
 ha'y dus ha'y dhyskas hware.
 Prag ne gewsons diogel?
 
-			[hic descendit episcopus cayphas]
-
-Is Tortor
 Syrra Arloedh, yn sertan
 gwrys da via kavoes tan,
 rag marthys yeyn yw an gwyns.	1215
 Yna ow threys ha'm diwla
 dhiworthiv ow teglena,
 mayth yw kryghyllys ow dens.
-			[hic paratur ignis in atrio]
 
-IIs Tortor
 Kowetha, hedhewgh keunys,
 ha my a hwyth gans meur gris,	1220
 may tewo an tan hware;
 rag re'm fay, rag ewn anwoes
 ny glywav yeynder dhe'm troes;
 yth esov ow klamdera.
-[hic ancilla hostiarum sit parata ad ludendum]
 
-hic thomas introducet petrum et dicit thomas [ancillae hostiarum]
-
-Thomas
 Portheres, jentyl mars os,	1225
 my a'th pys a lavasos
 dri ow koweth a-bervedh;
@@ -1860,34 +1470,24 @@ ha mar te, re Dhyw a'm ros,
 my a wra mar veur ragos,
 y leverel yn privedh.	1230
 
-Ancilla ostiarum
 Re'm fay, koweth, my a wra
 ragos moy es yndella.
 Deus yn rag, a-barth Iovyn
-
-[ancilla dicit petro]
 
 osa jy, a koweth da,
 onan a dus an den ma,	1235
 worthis my a wra govynn?
 
-hic petrus primo negauit christum et dicit petrus
-
-Petrus
 My a worthyb heb lettya,
 ny veuv den dhodho bythkweyth,
 na ny welis, re'm lowta,
-kyns lemmyn y liw na'y fas.	1240			[y lyv na'y feth]
+kyns lemmyn y liw na'y fas.	1240
 
-IIIs tortor
 Otta low keunys gene;
 hwythens lemmyn peub yn freth.
 Neb na hwyttho, gwrens fannya
-gans y lappa worth an eth.			{GM 'lappet, flap, fold'}
+gans y lappa worth an eth.
 
-[hic Cayphas dicit ad Jhesum]
-
-Cayphas
 Lavar dhymmo vy yn skon,
 ple res eth dha dhyskublon?
 Prag na dheuthons i y'n chi?
@@ -1895,7 +1495,6 @@ Ha diskwa dhymm neb reson
 a'th tyskes omma dison,
 may hyllyn genes dyski.	1250
 
-IHC.
 Apert vythkweyth y tyskis
 ow dyskas dhe'n Yedhewon;
 worth golow nos ny gewsis,
@@ -1911,39 +1510,28 @@ kemmys dhedha re gewsis.
 Ytho worthiv ny goedh dhis
 govynn yn nos diogel.
 
-IVs Tortor
 Yndella, a gasadow,	1265
 y hworthybydh epskobow?
 Mar wir, vil despyt re'th fo.
 Rag ty dh'y gamm worthybi
 ty a'fydh boks truesi.
 Haue that, God yve thy wo!	1270
-		et tunc dabit alapam in faciem christi
 
-IHC.
 Mara kewsis falsuri,
 a henna dog dustuni;
 mes mara kewsis yn lel,
 prag y hwredh ow boksusi?
-Nyns yw lemmyn vileni	1275				[vyleny]{GM bileni}
+Nyns yw lemmyn vileni	1275
 awos gwiryonedh kewsel.
-			[hic tortores transeant ab eo]
 
-[hic ancillahostiarum tenat petrum et dicit]
-
-Ancilla Ostiarum
-			[dicit ad petrum}
 An den ma, war ow ena
 gans Ihesu a Nazare
 yn sertan a veu trygys!
-
-[hic pannarius et mercenarius sint parati ad ludendum}
 
 Ny dal dhodho y naghhe,	1280
 rag ev yw a Galile,
 ha'y den ganso prest megys.
 
-Petrus
 Benen, na gows
 rag an keth den na bythkweyth
 ny'n servyas war ow ena,	1285
@@ -1951,8 +1539,6 @@ na re'm fay my ny'n gwelis,
 may wodhven tremmyn yn bys
 yntredho ha'y gowetha.
 
-Cayphas
-[loquitur ad Jh.]
 Lavar dhymm dell y'm kyrri,
 prag yth osa mar wokki	1290
 A Ihesu hweg?
@@ -1960,7 +1546,6 @@ Re Iovyn, drog yw gene'
 na vynn'ta kammenn trelya
 yn maner teg.
 
-IHC.
 Bythkweyth my ny wrug foli,	1295
 lemmyn prest dader dhy'hwi,
 hag yn pub edhomm gweres;
@@ -1968,19 +1553,14 @@ saw sertan nynso o torn da
 dannvon gwesyon a'n par ma
 gans arvow dhe'm kemmeres.	1300
 
-Cayphas
 Myns a wrug my a'n avow,
-hag a gyv dustunyow				[dustunyow]{4 sylls acc metre,
-							so KK dustuniow? 
+hag a gyv dustunyow
 ty dhe gows erbynn lagha.
-
-[loquitur ad pannarium]
 
 kewsewgh lemmyn gwikoryon,
 dell owgh hwi synsys gwiryon,	1305
 pandr'a gewsis an den ma?
 
-Pannarius
 My a'n glywas diogel
 lieskweyth ow leverel
 an templa y hwre terri
@@ -1988,15 +1568,13 @@ hag arta y dhrehevel	1310
 yn tri dydh, na via gwell.
 Dhe hemma ov dustuni.
 
-Mercenarius
 Ha my a dheg dustuni
 y'n klywis ow leverel
 tri dydh wosa y derri	1315
 y hwre-va y dhrehevel.
 
-Cayphas
 Travydh ny wredh gorthybi
-erbynn dustunyow lel?				{dustuniow, 4 sylls.}
+erbynn dustunyow lel?
 Yth hevel bos falsuri
 genes pan wreta tewel.	1320
 My a'th konjor yredi
@@ -2004,7 +1582,6 @@ a-barth Dyw gans oll ow nell
 dhymmo vy may leverri
 mars osa Mab Dyw ughel?
 
-IHC
 Dell yw, ty re'n leveris.
 Saw hwath my a lever dhis,
 wosa hemma ty a wel
@@ -2017,26 +1594,19 @@ ha hwi a'n gwelvydh sertan
 y'n ayr worth agas jujya,
 oll tus an bys, krev ha gwann.
 
-et tunc scidet episcopus vestimenta sua propria (?) et dicit
-{Stokes propria (?); NS per iram}
-
-Cayphas
 An fals re skornyas gene'.	1335
 Nyns eus edhomm nagonan
-dhy'hwi a dhustunya,			{4 sylls. dustunia?}
+dhy'hwi a dhustunya,
 pan glywsowgh kows an jevan.
 
-[loquitur ad principem annam]
 pandra yn agas kusul
 yw gwell dhodho dhe wruthyl?	1340
 leverewgh my agas pys.
 
-Princeps Annas
 Ev re dhendilas yn ta
 godhav mernans y'n bys ma
 mara pydh e lel jujys.
 
-Cayphas
 Re'm fay, gwir yw agas kows.	1345
 ev a'n pren sur wythovt flows,
 yn ta dell y'n dendilas.
@@ -2044,7 +1614,6 @@ Tormentors, a-barth an pla
 meur despit dhywgh my a wra;
 dewgh yn-rag yn kettep gwas.	1350
 
-I Tortor
 Volavedh, we buth y com.
 Tellyth anon al an sum,
 mars yw dha vodh, epskop stout,
@@ -2052,35 +1621,27 @@ pandr'a res dhyn ni dhe wul?
 Rag my a'n gwra by my skul	1355
 pypynag vo wythout dout.
 
-CAyphas
 Tormentors, karadowyon,
 heb hwytha korn na gul son
 kyrghewgh Ihesu dhyn nyni.
 Pur ankensi gans dornow	1360
 dhodho war an skovornow
-rewgh boksasow truesi.				[boxsesow]
+rewgh boksasow truesi.
 
-			[hic paratur vestis ad velandum Jhc.]
-
-Is Tortor
 Syrr Cayphas, re sent Iouyn,
 my a wra dha worhemmynn
 fest yn lowen.	1365
 Wel y met, harlot jowdyn;
 ty a'fydh boksasow tynn
-war an dhewenn.					[dywen]{Diwen < gen?}
+war an dhewenn.
 
-IIs Tortor
 Gortewgh lemmyn, Kowetha.
 Gans kweth my a vynn kudha	1370
 y fas, hag onan a'n gwysk.
-Y'n eur na ev dismyges				{3S imper}
-py ganso y feu gwyskys.			[gansse, B ganssa]{NSS ganso}
+Y'n eur na ev dismyges
+py ganso y feu gwyskys.
 Synsewgh ev yn agan mysk.
 
-					[hic velatur Ihesus]
-
-IIIs Tortor
 Re'm fay, henna yw gwari da.	1375
 Y gudha skon my a wra.
 Gweskes lemmyn neb koweth,
@@ -2088,16 +1649,13 @@ may hallo ev dismygi,
 mars yw Mab Dyw a versi,
 piw a'n gweskis a'n barth kledh.	1380
 
-IVs Tortor
 A bur lorel, haue that!
-			[hic dat alapam Jhesu]
 dismyg lemmyn ty gwas smat,
 mar os Crist Mab Dyw a nev,
 piw a ros dhiso an hwatt?
 ha mara kwre'ta, re'm pat,	1385
 my a wra y gudha ev.
 
-Is Tortor
 Kyn na vynno dismygi,
 deun yn-rag gans an gwari,
 ha ren dhodho boksasow
@@ -2105,41 +1663,33 @@ gans dornow ha gwelynni	1390
 war an skovornow bysi,
 rag ev dhe gows hwedhlow gow.
 
-IIs Tortor
 My a vynn y dhiskudha,
 hag yn spit dhodho trewa
 war y fas ha'y dewlagas.	1395
-			[hic spuit in faciem Jhesu]
 Ha hwi ynwedh, kowetha,
 pub eur gwrewgh y dhespitya,
 ha defola fast an gwas.
 
-IIIs Tortor
-My a drew sur unn klott bras		[clotte]{not in GM}{klout??}
+My a drew sur unn klott bras
 hware yn y dhewlagas,	1400
-may kuttho hanter y fas.					[fath]
+may kuttho hanter y fas.	
 Yn ta ev re'n dendilas
 pan kammworthybis Cayfas,
 kavoes drog hag yfla-gras.
 
-IVs Tortor
-[dicit petro]
 An keth gwas ma yth esa	1405
 gans Ihesu worth y servya,
-ha'y nagha bydh na hwila,		[ha'y naghe byth ny wyla]
+ha'y nagha bydh na hwila,
 rag dha gows a brev nevra
 dha vos den a Galile.
 Apert dhe beub eus omma.	1410
 
-Petrus
 Na servis, re Dyw an Tas,
 na ny'n aswonnis yn fas
 kyns lemmyn y liw na'y fas;
 A-dheragowgh my a bys
 ow bones emskemunys	1415
 my mara'n sywis bydhkweyth.
-
-[et tunc ihesus respiciet petrum et dicit petrus]
 
 Tru, go-vy, ellas, ellas!
 my dhe nagha mar dhivlas
@@ -2165,7 +1715,7 @@ Tru, go-vy pan y'n grug-a.
 Ihesu hweg, ow Arloedh ker,	1435
 ahanav vy hwath preder,
 hag gav dhymm ow threspass.
-Yth happyas dhymm gul foli.		[thapyas]
+Yth happyas dhymm gul foli.
 Trestya a wrav y'th versi.
 Koedhys ov yn edrek bras.	1440
 
@@ -2176,34 +1726,28 @@ Ellas, guthyl yndella.
 Gav dhymm lemmyn y'n tor' ma,	1445
 a leun golonn my a'th pys.
 
-Cayphas
 Annas hweg, pyth yw kusul
 dhyn ni gwella dhe wruthyl
 worth an traytour?
 
-Princ. Annas
 My a lever dhywgh hware	1450
 deun warbarth dh'y eksmanya,
 an vil brybour.
 
-Cayphas
 Re'm fay, honna yw kusul dha;
 yn kettella my a wra.
 Deun bys dhodho heb lettya.	1455
 Gwas da, krosser, dhymm yma
 a aswonn meur a lagha,
-konnyng yw ow tisputya.					[tysputys]
+konnyng yw ow tisputya.
 
-Crocerius
 My a dhisput worto ev.
 Kyn fova Mab Dyw a'n nev	1460
 na mab an jowl ny rov bramm.
 Pyneyl pynag oll may fo
 my a wra by God ys  fo
 y gonkludya war unn lamm.
-					[descendit]
 
-CAyphas
 Drewgh an profoes a-bervedh,	1465
 rag my a vynn yn privedh
 hwath ynnweyth y eksamnya.
@@ -2211,7 +1755,6 @@ Mar kews ken es gwiryonedh
 my a'n te dhis war ow fydh
 ev a'n pren kyns tremena.	1470
 
-Is tortor
 Syrrys, dhewgh my a'n doro.
 Deus yn-rag, God yve thy wo,
 dhe'th anfeusi.
@@ -2219,15 +1762,11 @@ Ev ny vynn, by God ys fo,
 awos myns a wren dhodho	1475
 kewsel dhyn ni.
 
-et tunc ducent Jhesum in angulo s. in platea inter eos
-
-CAyphas
 Lavar dhyn ni gwiryonedh,
 heb fayntys na falsuri,
 mars osa Crist Mab Davydh,
 penn dres oll an brofoesi.	1480
 
-IHC.
 Kyn leverriv gwir, denvydh
 ahanowgh ny vynn krysi.
 Mara kovynnav travydh
@@ -2237,51 +1776,43 @@ Mab Dyw sur owth esedha
 a barth deghow diogel
 dhe'n Tas Dyw yn lowena.
 
-Cayphas
 Ytho dhyn ni yth hevel
 dre henna war ow lowta	1490
 dha vos Mab Dyw, meur y nell,
 leun a versi ha pyta.
 
-IHC.
 Hwi re leveris ow bo,
 ha pur wir yndella ov.
 Hwi a wra y aswonnvos	1495
 Dydh Breus, hag a'n kyv yn prov.
 
-Cayphas
 Pyth yw an edhomm gortos
-na kavoes dustunyow					{4 sylls; dustuniow?}
+na kavoes dustunyow
 a-ban wredh y aswonnvos?
 Dampnys yw dre y anow.	1500
 
-Princeps Annas
 Deun ganso er y anfeus
 dhe Pylat agan justis,
 may hallo kavoes y vreus
 ha kyns dos Sabot ledhys.
 
----------------------------------
-Judas Scar.
 My re beghas marthys treus	1505
 gwir woes Dyw pan werthis.
 Rakhenna an gwella eus
 daskorr myns mona yw pes.
 
-Cayphas
 Pandra yw henna dhyn ni,
 a-ban vynnsys y wertha?	1510
 Ty a woer gwir yredi
 ny wrug den dha konstryna.
-Judas Scar.
+
 A-ban nag eus ken maner,
 an arghans kettep diner
 my a's deghes war an leur.	1515
-			[hic projiciet monetam in terram]
+
 hag a vynn skon omgregi.
 Rag ow kwertha Crist dhy'hwi
 my re beghas marthys meur.
-[paratur arbor et capistrum ad suspendendum Judam]
 Ye, mar veur my re beghas
 ow kwertha Crist leun a ras	1520
 dhe'n Yedhewon dhe ladha.
@@ -2295,9 +1826,7 @@ sur a-dro the'm bryansenn
 a-dhesempys dhe'm taga.
 Go-vy vydh rag edrega
 bos mar hager ow gorfenn.	1530
-				[hic suspendit se]
 
-Satnas
 Mall yw genev dha gavoes
 dhe vos genen dhe derros,
 yn dha begh rag dha daga.
@@ -2305,8 +1834,6 @@ Dha enev, plos kasadow,
 ny vynn dos dre dha anow,	1535
 rag dhe Crist ty dhe amma.
 
-Cayphas
-			[hic cayphas accipiet monetam]
 An arghans my a gemmer
 hag a's gwith kettep diner
 yn sertan rag an termyn.
@@ -2314,7 +1841,6 @@ Ny goedh aga bos gorrys	1540
 y'n arghow rag bos prenys
 gansa mernans den brintyn.
 
-Princeps Annas
 My a gusul bos gansa
 prenys da, goen yn neb le
 rag ynkleudhva Kristonyon,	1545
@@ -2322,26 +1848,21 @@ ma na vons i ow flerya;
 aga fler a yll shyndya
 ha ladha meur Yedhewon.
 
-CAyphas
 Re'm fay, homma yw kusul dha.
 My a vynn gul yndella,	1550
 py le pynag y's kyffyn.
 
-Crocer.
 Yma goen vras dhymmo vy.
 My a's gwerth dhywgh yredi
 a dheg warn ugens sterlyn.
 
-Cayphas
 Ha my a's pren dhiworthis.	1555
 Otta an mona parys
 dhiso dhe be.
-			[monstrat loculos cum moneta]
 A-wel oll dhe'n arlydhi
 my a's pe yn surredi
 dhiso hware.	1560
 
-Crocer.
 My a's kemmer yn lowen
 hag a wront trank heb worfenn
 dhis y wertha
@@ -2349,50 +1870,38 @@ dhe ynkleudhyas Kristonyon,
 na vons yn mysk Yedhewon
 ow flerya re.
 
-[tunc soluit ei pecuniam et propemodum transiet cum ihesu ad pilatum]
-
-CAyphas
 Syrr pYlat, dhis lowena!
 Otta an Ihesu gene',
-dres bys dhiso yn kelmys.		[yu]{NSSyn}
+dres bys dhiso yn kelmys.
 My re'n kavas ow trelya	1570
 agan tus yn lies le
 yn-mes a gryjyans pup-prys.
 
-Princ. Annas
 My a'n klywas ow difenn
 na vo res awos eghenn
-trybut vydh dhe syrr Sesar,	1575			[trubit]
+trybut vydh dhe syrr Sesar,	1575
 hag ow postya y vos ev
 Cryst gwir unn Vab Dyw a nev,
 y'n bys ma na'n jeves par.
-				[hic tortor transiet domum]
 
-et tunc ascendant omnes praeter ihesum qui stabit ante tentum pilati
-
-Pilatus
 Wolkomm, Kayfas, re'm lowta,
 ty hag oll dha gowetha	1580
 sertan y'm hel.
 
-[loquiturty ad Jhu.]
 Lavar dhymmo vy yn skon
 mars os myghtern Yedhewon:
 kows gans meur nell.
 
-IHC.
 Pylat, ty re leveris	1585
 yn sertan kepar dell yw.
 Pur wiryonedh re gewssys
 ahanav, re'n jydh hedhyw.
 
-Pilatus
 My ny welav ken y'n bys
 may fe an keth den ma gwiw	1590
 dre reson dhe vos ledhys.
 Gwell via y gasa byw.
 
-Princeps Annas
 Yma ow trelya devri
 oll an wlaskor a Iudi,
 ow talleth yn Galile,	1595
@@ -2400,7 +1909,6 @@ bys omma, prest ow tyski
 ynno pub den oll krysi,
 hag ev avel Dyw gordhya.
 
-Pilatus
 Leverewgh dhymmo hware
 mars yw den a Glaile,	1600
 hag a alloes Erodes.
@@ -2408,7 +1916,6 @@ My a wra sur y dhannvo
 dhe'n turont Erod yn skon
 mars yw-a a'y arloettes.
 
-Princeps AAnnas
 Syrra, my a lever dhis,	1605
 pur wir ev a veu genys
 pur ewn yn Bethlem Iudi.
@@ -2416,26 +1923,20 @@ Gwrys da via, my a grys,
 dhodho y vos dannvenys,
 dell yw-a arloedh dhyn ni.	1610
 
-Pilatus
 Ev a dhodho, re'm lowta,
 ny vynnav pella lettya.
 Marghogyon, my a'gas pys,
 gorrewgh ev dhe Erod skon.
 Leverewgh my dh'y dhannvon
 dhodho rag gul bodh y vrys.
-[hic descendit pilatus et iet in tentum cayphas]
 
------------------------------------
-
-Is Miles
 My a'n gorr dhodho re'm sowl.
 Mar ny'n gorrav, an mil dyowl
 re dorro mellow y geyn,
 vynytha na effo kowl.
 Deus yn rag, yma dhe'm towl
-guthyl may fe dha woes yeyn.				{fe}{NSS fo}
+guthyl may fe dha woes yeyn.	
 
-Princeps Annas
 Syrr Cayphas, so mote y go,
 da via dhyn mos ganso,
 may hyllyn y akusya;	1625
@@ -2443,10 +1944,6 @@ ha dannvon dh'agan doktours,
 may fons rag agan onours
 er y bynn ow disputya.
 
-et tunc ipsi transeant cum jhu et parumper spaciabunt in platea dummodo nuncius eat post doctores et 
-dicit cayphas
-
-Cayphas
 That ys south by God ys fo,
 and ellys God yeue yow wo.	1630
 Annas hweg, re'n Arloedh Dyw,
@@ -2454,7 +1951,6 @@ lyzt, fonde kannas paramour,
 ke, lavar dhe'n dew doktour
 dos dhe gows erbynn Ihesu.
 
-Is Nuncius
 Henna my a wra heb lett,	1635
 an elles the difl yow fet
 ganso dhe dre yn y wlas.
@@ -2462,19 +1958,13 @@ Bot yowr doctours y yov fet
 bys yn Iherusalem sket.
 God yeue yow all yfla-gras.	1640
 
-nunc episcopus et princeps et milites omnes transient cum ihu et spaciabunt in platea
-
-CAyphas
 Well thew fare, messeger.
 Fisten dihwans gans an ger
 a-dhesempis,
 ha rewardys ty a vydh
 a-dhiworthiv vy re'm fydh	1645
 sur kyns pennvis.
-				hic pompabunt doctores
-[hic cayphas princeps annas et milites eunt cum Jhu ad herodem]
 
-Is Nuncius
 Hayl doktours ha mestrysi!
 Cayphas re erghis dhy'hwi
 a dhos dhe Ierusalem
@@ -2482,7 +1972,6 @@ dhe dhisputya worth Ihesu,	1650
 a lever y vos Mab Dyw
 a veu genys yn Bethlem.
 
-Is Doctor
 Pur barys dh'y worhemmynn
 ni a dhi a verr dermyn,
 agan dew wythoute fal;	1655
@@ -2490,7 +1979,6 @@ hag a'n konklud, an jowdyn,
 a lever y vos Dyw dhyn
 Na gowsso moy es margh dall.
 
-IIs Doctor
 My a'n konklud yredi,
 ma na wodhvo gorthybi	1660
 unn reson dhe'm argument.
@@ -2498,7 +1986,6 @@ Ass yw an den na gokki,
 mar mynn er agan pynn ni
 kows reson vydh verement.
 
-IIs Nuncius
 Ev a gews lavarow stout,	1665
 hag a lever dhe bub prout
 sertan y vones Mab Dyw,
@@ -2506,9 +1993,6 @@ neb a dheu dh'agan breusi
 y'n ayr Dydh Breus pub huni,
 ha'y hanow yw Crist Ihesu.	1670
 
-tunc doctores venient [et eunt ad herodem post alios]
-
-IIs Miles
 Ke yn kerdh, ty Ihesu plos.
 Bysi via dhis godhvos
 yn sertan meur a skriptours,
@@ -2516,17 +2000,11 @@ mara mynnydh gorthybi
 hedhyw konkludys na vi	1675
 mar kews dhiso an doktours,
 
-					hic p[ompabti si voluerit herodes
-
-Erodes
 Ny vynnav pell ombraysya,
 rag nyns yw an vaner 'vas.
 Dhe voy denvydh ny'm gordhsa,
 kyn fasyen meur, ren ow thas.	1680
 
-hic episcopus cayphas loquitur ad herodem et principes salutando eum
-
-CAyphas
 Heil syr lord and emperour,
 heil now kyng of kynggys flour,
 arloedh dres all an bys ma,
@@ -2534,9 +2012,6 @@ fayr an suyt, bryte of colour!
 Pylat dy'hwi, gans onour,	1685
 re dhannvonas unn adla.
 
-[Jhc hic ambulat ante tentum herodis paurumper]
-
-Herodes
 Wolkomm, Cayphas, re Iouyn,
 and yk Annas me cosyn,
 hag ol agas kowetha.
@@ -2544,7 +2019,6 @@ Leverewgh a verr dermyn	1690
 py hanow yw an jowdyn
 dhymmo a dhannvonas e.
 
-Princeps Annas
 Hemma yw an keth Ihesu
 a lever y vos Mab Dyw,
 mab Iosep, an kothwas gov.	1695
@@ -2552,7 +2026,6 @@ An templa ev a dhiswra;
 yn tri dydh ev a'n dreha',
 gwell ages kyns, meur yn prov.
 
-Herodes
 Mars yw hemma an Ihesu,
 wolkomm yw, re'n Arloedh Dyw.	1700
 Y weles my re yeunis.
@@ -2560,7 +2033,6 @@ Ha Pilat rag y dhannvon
 my a'n karvydh y'm kolonn
 alemma bys gorfenn bys.
 
-Is Doctor
 Hayl syrr, emperour an wlas,	1705
 Iouyn roy dhis bos den mas,
 ha len rewtlya dha wlaskor.
@@ -2568,7 +2040,6 @@ Ha hayl dhiso, syrr Cayfas,
 ha hayl dhiso, prins Annas.
 Hayl dhis, Ihesus an brybour!	1710
 
-Herodes
 Mestrysi, wolkomm y'm tour.
 Iouyn roy dhywgh meur onour
 warbarth oll kyns es merwel.
@@ -2578,13 +2049,11 @@ kepar dell owgh tus ughel.
 
 Rag my a vynn disputya
 worth Ihesu a Nazare;
-[herodes loquitur ad Jhesum]
 ha worthis my a wovynn
 mars osa Crist Mab Davydh,	1720
 Mab Dyw pur ha den ynwedh.
 Dre dha vodh gorthyp lemmyn
 
-Cayphas
 Y vos ev re leveris.
 Lies treveth y'n klywis,
 ma na yll y dhenagha.	1725
@@ -2592,7 +2061,6 @@ Mab Dyw pur, ha den keffrys,
 a vaghteth lan dineythys;
 ha henna meur varth via.
 
-IIs Doctor
 My a brev bos gow henna,
 rag Dyw ha den yw dew dra	1730
 pur kontrarius yn kinda.
@@ -2600,13 +2068,11 @@ Dyw yw spyrys heb bodi,
 den yw korf gans eseli.
 Bos an dhew ma na allsa.
 
-Herodes
 Gorthyp lemmyn Ihesu hweg	1735
 dhe'n mester, dell y'm kyrri.
-Lavar fur meur dhymm a bleg.				[a'm plek]
+Lavar fur meur dhymm a bleg.				
 Mars os Dyw diskwa dhyn ni.
 
-Is Doctor
 Y worthybi my a wra.
 Ev a allsa bos yn ta	1740
 hanter den ha hanter Dyw.
@@ -2614,7 +2080,6 @@ Den yw hanter morvoren,
 benyn a'n penn dhe'n kolon:
 yndella yw an Ihesu.
 
-IIs Doctor
 Ev a leveris ynwedh	1745
 tri dydh wosa mos y'n bedh
 dhe vywnans y tasserghi.
@@ -2622,7 +2087,6 @@ Ynwedh mar bydh den marow,
 y spyrys nevra heb gow
 bydh ny dheu yn y vodi.	1750
 
-Is Doctor
 My a worthyp dhiso lel;
 bydh ny wrug ev leverel
 corf hag enev y sevi.
@@ -2630,32 +2094,26 @@ Ev a dhassergh diogel
 lies prys wosa merwel	1755
 dhe benn tri dydh yredi.
 
-Herodes
 Ihesu, prag na worthebydh?
 Lavar dhymm awos travydh
 mara kwruss'ta leverel,
 kyn fe an templa diswrys
-kyn' penn tri dydh y hwrussys		1760		[try dyth]
+kyn' penn tri dydh y hwrussys		1760		
 gwell es kyns y dhrehevel.
 
-IIs Doctor
 Mara leversys henna,
 sertan ty yw mab an pla.
 Denvydh oll mar's dre bystri
 yn tri dydh ny'n drehavsa.	1765
-Pub pystrier y koedhva				[cothe; B. cothva]
+Pub pystrier y koedhva				
 dre reson da y leski.
-			et jhc semper tacebat [sic]
 
-Herodes
 Mars osa Mab Dyw a ras,
 diskwa dhymm neb maystri bras,	1770
 may hyllyn dhiso krysi.
 Ha mara kwredh, ren ow thas,
 y a syns dha vos dremas,
 hag a'th wordh bys vynari.
-
-et semper ihc tacebat et non respondebat ei nullum uerbum
 
 Pandra ny vynn'ta kewsel?	1775
 Dout a'n jeves an losel,
@@ -2664,8 +2122,6 @@ Nyns yw lemmyn unn boba.
 Kyns es y vos alemma
 yn gwynn ev a vydh gwiskys.	1780
 
-[hic paratur tunica alba propter ihesum et tradat consultor herodi]
-
 Yn tokyn y vos gokki,
 ha myns a gewsis foli
 ma na vedh y avowa,
@@ -2673,7 +2129,6 @@ hedhewgh surkot a bali.
 Dhodho my a vynn y ri,	1785
 rag ev dhymm dhe lavurya.
 
-COnsultor
 Syrra, ottensi parys.
 A's gwiskens a-dhesempis
 a-dro dhodho ev mar mynn.
@@ -2681,7 +2136,6 @@ Maga gwynn avel an gwrys,	1790
 dihedh via bones res
 kweth a'n par ma dhe jowdyn.
 
-Herodes
 Dhodho ev my a'n vossaw.
 Epskop, prins, doktour ha maw,
 dhe'n justis Pylat arta	1795
@@ -2689,7 +2143,6 @@ ewgh ganso yn kettep penn.
 My ny gavav ynno ken
 may koedhvo dhymm y ladha.
 
-Cayphas
 Syrra, ni a'n gorr hware
 dhe Pylat fast bys yn tre,	1800
 hag ev synsens gwiryonedh.
@@ -2697,15 +2150,13 @@ Farwel syour we wol go.
 Ow bennath y'th chi re bo,
 mar leun os a skentoleth.
 
-Herodes
 Wel thow fare syr Cayfas,	1805
 and yk me cosyn Annas.
 Kusulewgh menowgh Ihesu
 a asa y wokkineth
 ha trelya dhe skentoleth,
-ow tiwedh na ganno tru.	1810		[ow tyweth]{NSS wortywedh}
+ow tiwedh na ganno tru.	1810
 
-Princeps Annas
 My re'n kusulyas milweyth,
 saw ny vynn awos travydh
 gasa y debel gryjyans.
@@ -2713,9 +2164,6 @@ Oll myns trespass a wruga
 dhodho ev my a'n gavsa,	1815
 a mynna gelwel givyans.
 
-et tunc transient cum eo ad pilatum pervenient ad eum et dicit
-
-Is Miles
 A vil gadlyng, deus yn-rag.
 Wortiwedh hwath krog a'th tag.
 Otta ha koynt o an gwas,
@@ -2723,15 +2171,13 @@ pan na vynna gorthybi	1820
 a-dherak an arlydhi
 dhe resons an doktours bras.
 
-Is Doctor
 Farwel syres we wol go
 for thys cher haf we y do
-somot y thue.	1825				{S., NSS. thrive}
+somot y thue.	1825
 Yn sertan kyn na gowsso,
 dre lagha y koedh dhodho
 drog dhiwedha.
 
-Cayphas
 Syrr doktours, res yw thywgh hwath,
 bys may fo gwrys an diwedh,	1830
 sertan genen lavurya;
@@ -2739,29 +2185,23 @@ rag an harlot a gews freth.
 Pur wir ynno nyns eus meth
 dhywgh lavarav re'm lowta.
 
-IIs Doctor
 Yn lowen genowgh my a,	1835
 mara kyllyn thywgh gul da,
-na sevel yn le tyller.			{S., NSS. 'in any place}
+na sevel yn le tyller.
 Yn le may fynn, ni a with
 ma na gaffo gorthyp vydh
 er agan pynn dhe gows ger.	1840
 
-et tunc venient omnes ad pilatum et dicit
-
-IIs Miles
 Hayl syrr justis yn dha tour.
 Myghtern Erod gans onour
 re dhannvonas Ihesu dhis,
 hag yn gwynn ev re'n gwiskas.
-Vynitha dell afias,	1845						[dalasias]
+Vynitha dell afias,	1845
 ev a'th karvydh, my a grys.
 
-Pilatus
-SEnt Iouyn hweg re'n karro,
+Sent Iouyn hweg re'n karro,
 ha dres peub oll re'n gortthyo
 kepar dell yll-a yn ta.
-					hic descendit pilatus
 Lemmyn pryns ha mestrysi,	1850
 hag epskop Cayfas devri,
 hwi re dhros dhymm an den ma
@@ -2775,21 +2215,18 @@ nag Erod an arloedh krev.
 Pan veu genowgh akusys,
 ev ny gavas fowt y'n bys	1860
 pan y'n dannvonas ev dhyn.
-MAra mynna amendya
+Mara mynna amendya
 gwel via y dhelivra,
 heb drokkoleth dhiworthyn.
-				[loquitur ad carceratorem]
 
 How, jayler, a-barth Iouyn,	1865
 ty ha'th paja Hwypp an Tin
 dewgh agas dew skon yn-rag.
 
-Carcerator
 Oll dhe'th vodh, ow arloedh ker,
-devedhys on heb danjer					{NSS 'delay'}
+devedhys on heb danjer
 bys dhis omma heb ardak.	1870
 
-Pilatus
 Igor daras dha bryson
 ha gorr Ihesu ynno skon
 pols dhe bowes.
@@ -2797,17 +2234,14 @@ Mara mynnydh, kyrgh dhodho
 a-dhesempis, may's kaffo
 sur, unn mowes.
 
-Garcon
 Syrr Arloedh ker, kuv kolonn,
 igerys yw an pryson
-wyth out les.			{NSS wythowta les 'without deceit'}
+wyth out les.
 
 My a'n te dhis war ow fydh,	1880
 naneyl yn nos nag yn jydh
 ny'n jevydh kres.
-[pilatus et omnes Judei transient ad tentum Cayphae]
 
-Carcerator
 Ty vaw, lemmyn syns e fast,
 rag ev a woer lies kast
 rag dha doella.	1885
@@ -2815,7 +2249,6 @@ Den fel meur yw hag ynjin.
 Gwayt y wrynya, prest yn tynn,
 bydh na skappyo.
 
-Garcon
 My a'n kelm yn kres an wast,
 may pysso ev atta last	1890
 givyans war penn an dhewlin;
@@ -2823,27 +2256,20 @@ ha my a wra y dempra,
 bydh na allo ev fia.
 Nyns yw saw unn plos jowdyn.
 
-Carcerator
-Ke a-bervedh, koweth hweg,	1895				[ke a profeth]
+Ke a-bervedh, koweth hweg,	1895
 my a'th pys, genes mar pleg,
 war Iouyn gelwel mersi.
 Ha na gows kemmys hwedhlow,
 hag y'n eur na sur heb wow
 ty a bleg dhe'n arlydhi.	1900
 
-Garcon
 Hag yndella mara kwredh,
 nevra ny vydh sham na meth,
 saw meur a joy.
-Enor a'fydh vynitha.				[onor. B honor][vynytha]
+Enor a'fydh vynitha.
 Pub den oll a'th kar yn ta	1905
 yn pur devri.
 
-------------------------------
-
-				[pompabit lucifer si placet]
-
-Lucifer
 Ogh! Go-vy, mones mar bell!
 Agan maystri diogel
 yn sertan Cryst a leha.
@@ -2851,7 +2277,6 @@ Ny wonn dhe wul pyth yw gwell.	1910
 Y vos Mab Dyw meur y nell
 lemmyn ny a woer yn ta.
 
-Satanas
 Ellas, bythkweyth kyns lemmyn
 y vos gwir Dyw ny wodhyen.
 Worth hemma pyth yw kusul?	1915
@@ -2859,7 +2284,6 @@ Rag ev a gyrgh dhiworthyn
 kemmys na wortthyo Iouyn,
 hag a wra dhyn drog vresel.
 
-Belsebuc
 Leverewgh a-dhesempis
 dhe wreg Pilat an justis	1920
 sertan y teu venjans bras
@@ -2867,7 +2291,6 @@ war hy gour mar pydh ledhys
 Ihesu Cryst, an lel profoes,
 hag ynwedh war hy fleghes.
 
-Lucifer
 Ow bennath dhis Belsebuk,	1925
 dell osa prins ha chyf dug,
 ha fur dres dha kowetha.
@@ -2875,15 +2298,11 @@ Ty a yn sertan dhedhi
 a-dhesempis yn tevri
 yn skon rag hy husulya.	1930
 
-Belsebuc
 Hware dhedhi . yn skon my a.
 Bydhav bysi . sur war an dra,
 hag yn tevri . bydh ny falla'.
 Ow negys vy . spedya a wra.
 
-et tunc ipse iet ad uxorem pilati dormientem in teno et dicit ei belsebuc
-
-Belsebuc
 Hayl, A Hayl, madama vras!
 Dannvon dhe Bilat kannas.
 Pur wir, y teu venjans tynn
@@ -2891,7 +2310,6 @@ mar pydh an gwiryon diswrys
 warnowgh, war agas fleghes,
 ma'n gweler a verr dermyn.	1940
 
-Uxor Pilati
 Yw gwir dhymm a leverydh?
 Ny vynnsen awos travydh
 yndella bos hwarvedhys.
@@ -2899,7 +2317,6 @@ Mara kwellen yn sertan
 drog dhe'm fleghes, na dughan,	1945
 ow holonn a vydh terrys.
 
-Belsebuk
 Pur wir a lavarav dhis.
 Sertan mara pydh e ledhys
 y teu venjans war dha wour,
@@ -2907,23 +2324,20 @@ ha war dha fleghes keffrys.	1950
 Ev yw Cryst, Mab Dyw henwys,
 dannvenys a nev dhe'n nor.
 
-Uxor Pilati
 A-ban yw-a yndella
 my a vynn dannvon toth da
 ow hannas, rag y warnya.	1955
-				[recedit Belsebuk]
 Messejer, ke alemma.
 Leverel dhe'm arloedh gwra
 Ihesu na wrella dampnya.
 
 Rag my a welas dre hun
 pur wir y teu mernans tynn,	1960
-mara pydh eev ledhys,				[pythe ef. B pytha]
+mara pydh eev ledhys,
 warnodho, re sent Iouyn,
 ma'n gweler a verr termyn,
 ha war y fleghes keffrys.
 
-IIs Nuncius
 Aloedhes ker, my a wra	1965
 agas negys fistena,
 despit dhe vyrgh dha dhama
@@ -2931,33 +2345,26 @@ mar ny'n gwarnyav skon hware.
 
 ---------------------------------
 
-Pilatus
 Leverewgh dhymm heb lettya
-pan acheson a's beus hwi	1870			[pahan cheyson]
+pan acheson a's beus hwi	1870
 erbynn Ihesu Nazare,
 pan vynnowgh y dhistrui.
 
-Cayphas
 My a worthyp dhis hware
 an gwuryonedh yredi.
 Tebel dhen ev mar ny fe,	1975
 ni ny'n drosen dhiso jy,
 
-Pilatus
 Ytho hwi kemmerewgh e
 ha herwydh agas lagha
 ha konshyans gwrewgh y jujya
 dhe'n mernans mar koedh henna.	1980
 
-Princeps Annas
 Ny dhegoedh dhyn ni ladha
 denvydh oll y'n norvys ma,
 felon na lader kyn fe,
 heb breus justis vynytha.
 
-tunc pilatus ibit ad carcarem [solus] et dicit
-
-Pilatus
 Jayler, igor an daras,	1985
 rag my a vynn derivas
 worth Ihesu hwath.
@@ -2965,27 +2372,21 @@ Anodho dihedh via
 y wokkineth na asa,
 ha'y muskogneth.	1990
 
-Carcerator
 Hware dhywgh my a'n igor.
-Hwi a dhendilsa enor						[onor]
+Hwi a dhendilsa enor
 mar kallewgh dri
 an Ihesu dhe gen kryjyans.
 Ev re drelyas lies kans	1995
 yn-mes a'n fay.
 
-et tunc intrabit in carcerem pilatus [solus et dicit ad ihesum]
-
-Pilatus
 Lavar dhymmo vy yn skon,
 yw ty myghtern Yedhewon,
 kepar dell veus akusys?
 
-IHC.
 Gwir a leversys sertan	2000
 dhymm a'th anow dha honan,
-py gans kens re yw dys'sys.				[dyssys]
+py gans kens re yw dys'sys.
 
-Pilatus
 Lavar mars ov vy Yedhow.
 Dha bobel heb falladow,
 ha'n epskobow kekeffrys,	2005
@@ -2993,39 +2394,32 @@ a'th tros bys dhymmo omma.
 Pan dhrokkoleth a wruss'ta?
 Gorthyp vy, na viv toellys.
 
-IHC.
 Dha worthybi my a wra.
 Nyns yw ow gwlas a'n bys ma,	2010
 hag yn sertan a pe hi
 ow servons bydh ny'm gassa
-dhe'n Yedhewon ow kwertha,		[ow guerthe]{NSS ha'm gwertha}
+dhe'n Yedhewon ow kwertha,
 na'm beus gwlas ynno devri.
 
-Pilatus
 Ytho dre henna yth yw	2015
 dha vos myghtern war neb kor,
 pan lever'ta dhymm, Ihesu,
 dhiso jy bones gwlaskor.
 
-IHC.
 Ty re leveris an gwir.
 Myghtern ov war wlas ha tir.	2020
 Yn henna y feuv genys,
 rag henna dhe'n bys y teuth,
-rag doen dustuni ha gwryth		[guryth]{CE38 nf ? 'service,
-							action, performance, deeds'}
+rag doen dustuni ha gwryth
 dhe'n lenduri yn pub prys.
 
 Pypynag vo a'n barth wir,	2025
 a glywvydh ow voys y'n tir,
-Sarsyn py Yedhow kyn fo.					[py]{NSS po}
+Sarsyn py Yedhow kyn fo.
 
-Pilatus
 Lavar dhymmo, er dha fydh,
 pandra yw oll gwiryonedh,
 pan gewsydh meur anodho?	2030
-
-et non respondent ei et pilatus uadit foras et dicit iudeis
 
 My a's gwarn, yowynk ha hen,
 my ny gavav ynno ken
@@ -3035,19 +2429,13 @@ war Bask my dhe asa dhywgh	2035
 unn prysner ha'y dhelivra.
 
 A vynnowgh oll assentya
-rag Pask my dhe livra				[thylyfrye]
+rag Pask my dhe livra
 Ihesu, Myghtern Yedhewon?
 
-Cayphas
 A, na vynnyn, syrr iustis,	2040
 saw Barabas ny a bys,
 usi yn kolm yn pryson.
 
-			[tunc cayfas eit domum cum anna]
-
-et tunc vertit ad ihesum in ostio pretorii et dicit ei
-
-Pilatus
 A Ihesu, ass os gokki!
 Skon ty a'fydh anfeusi.
 Tormentors, a-barth an jowl,	2045
@@ -3055,10 +2443,6 @@ fistenewgh, dh'agas kregi.
 Degewgh genowgh pub huni
 hwyppys da, re'gas bo mewl!
 
-[hic paratur flagellum per tortores et postis ad ligandum Jhm. et corda et cathena et corona spinea 
-paratur]
-
-Is Tortor
 Hayl, volavedh, syrr iustis,
 awotta ni devedhys	2050
 warbarth ha'n kynsa galow.
@@ -3066,7 +2450,6 @@ Lavar dhyn ni, my a'th pys,
 dha volonjedh, a verr spys,
 na ven lettyes gans hwedhlow.
 
-Pilatus
 Tormentors, an keth gwas ma	2055
 gans skorjys ha hwyppys da
 gwrewgh y gronkya torr ha keyn.
@@ -3081,117 +2464,94 @@ gans spern gwrewgh y guruna,
 rag an harlot dhe fasya	2065
 y vos Myghtern Yedhewon.
 
-		et tunc pilatus ascendit in tentum suum
-
-IIs Tortor
 Henna my a wra re'm troes!
-MAll yw genev y gavoes,
+Mall yw genev y gavoes,
 rag y worra dh'y ankow.
-A harlot emskemunys	2070				[ymskemunys]
+A harlot emskemunys	2070				
 worth post ty a vydh kelmys,
 dhe wodhav an strokosow.
 
-IIIs Tortor
 My a'n kelm, by God ys fas,
 hag a gach an surkot vras
 dhe ves, eus a-dro dhodho,	2075
 
-[exeunt tum omnes denudatur alba et paratur purpura]
 
 may haller ri yfla-gras,
 ha knoukya prest tys-ha-tas.
-Venjans dhe neb a'n sparryo!				[sparryo]
-			[hic Jhs ligatur ad postem]
+Venjans dhe neb a'n sparryo!				
 
-IVs Tortor
 My a gelm fast an losel,
 may hallo peub oll dhe well	2080
 dhodho ev ri strokosow.
 Lemmyn oll, byghan ha bras,
 knoukyewgh ev dell dhendilas,
-may kosso y denewenow.		[tynwennow B dynwennow]{double n?}
+may kosso y denewenow.		
 
-Is Tortor
-My a'n knouk ev, er y wew.	2085		[wev]{Norris: lips.
-									NSS wew 'woe'.}
+My a'n knouk ev, er y wew.	2085
 Otta, mellow y geyn brew.
 Haue that, ty vil brathki!
 Ow boemmyn yw marthys glew.
 Ny vynn an gwas gelwel 'Tru',
 na pysi kavoes mersi.	2090
 
-IIs Tortor
 My a'n knouk fest dibita,
-ma'n jeffo peub oll bysna		{GM 'warning to evildoers'}
+ma'n jeffo peub oll bysna
 ow mires worth y vodi,
-dell waskav y bedrennow,			{from gweskel 'strike'}
+dell waskav y bedrennow,
 may fo goes y vlewennow	2095
 ha'y gorf oll, kyns es hedhi.
 
-IIs Tortor
 A vil losel, re'th krog!
 My a wra this meur a dhrog
 ha despit, somot y go,
 hag a'th hwypp war an wolok,	2100
 may hwelli gwryghon ha mog
-dha dhewlagas a-derdro.						[a dre dro]
+dha dhewlagas a-derdro.
 
-IIIs Tortor
 Ty a'n gwysk avel kawghwas.
 Ty a woer gwell bremmyn bras
 dyllo menowgh mes a'th tin.	2105
 A harlot, yn spit dhe'th fas,
 gans ow skorj tys-ha-tas
-my a'th wysk, may 'fo drog payn.			[pyn]
+my a'th wysk, may 'fo drog payn.
 
-Is Tortor
 Fi dhywgh, a vostoryon plos!
 
 Awos agas fas ha troes	2110
-ny wra boemm y worfenna.				[worlene]
-An harlot, fol y berghenn,		[foul y berhen]{see GM p.250} 
+ny wra boemm y worfenna.
+An harlot, fol y berghenn,
 awos kemmys drog a wren,
 a'n bys ny vynn tremena.
 
-IIs Tortor
 A-ban na vynn diwedha,	2115
 my a vynn y guruna
 avel Myghtern Yedhewon.
 Otta spern grysel gene',
 ha dreyn lymm ha sherp ynna
-a grob bys y'n ympynnyon.	2120			{kropya}{grop?}
-			[hic paratur spinea pro corona Jhu.]
+a grob bys y'n ympynnyon.	2120
 
-IIIs Tortor
 My a orden y wiska
 yn purpur rych, re'm lowta,
 kepar dell goedh dhe vyghtern
-					[resolvitur Jhs a poste]
 a vo nowydh kurunys.
 Myghtern Yedhewon, hayl dhis!	2125
 Rag dha salusi ny vern.
-					[genuflectit]
 
-IVs Tortor
 Ottomma genev heb fall
 kweth rudh sertan, purpur pall,
 dhe wiska a-dro dhodho.
-			[hic induunt eum purpura]
 Dihedh fest via, re'm chal,	2130
 y vos yn kyrghynn mab gal.
 Kemmer e, despit re'th fo!
 
-Is Tortor
 A-ban yw y gweth gwiskys,
 y gurun a vydh settys
 avel myghtern war y benn.	2135
 
-[hic coronatur Jhs. et ponunt virgam albam in manu ejus et quidam (?) unus eorum percussit caput Jhs.]
 Tennewgh oll, gans meur a gris,
-may fo dreyn an gurun [cys]				{NSS es 'gone'}
+may fo dreyn an gurun [cys]
 y'n ympynnyon dre an kenn.
 
-IIs Tortor
 My a's tenn gans oll ow nerth,
 mayth enttro an spikys serth	2140
 dre an kenn yn y grogen,
@@ -3199,23 +2559,16 @@ ha skoellya y ympynnyon.
 Hayl, Myghtern an Yedhewon,
 omwith lemmyn rag anken.
 
-Pilatus
-			[hic descendit Cayphas et Annas]
 Bennath vos dhywgh, tormentors,.	2145
 Powesewgh lemmmyn unn kors,
 my a'gas pys,
 hag ewgh dhe dre dhe koska.
 My a vynn y eksamnya
 a-dhesempis.	2150
-		[tortores transeunt domum]
-
-	et ibit ad ihm. in pretoria ubi ihc stat
 
 Lemmyn, Cryst, deus alena.
 Dha dhelivra my a wra
 mara kallav yredi.
-			[hic pilatus accipit eum per manum]
-tunc veniet ad eos foras et ihm in manu eius
 
 Syrrys, dhy'hwi lowena!
 awottava ev gene',	2155
@@ -3224,21 +2577,17 @@ Ny gavav vy ken ynno
 na blam dhe vones ledhys.
 Y asa dhe vos dhe'n fo:
 nyns eus gwell kusul y'n bys.	2160
-[hic cayphas et princeps annas et doctores venient ad pilatum]
 
-Princ. Annas
 Gorr e dhe'n mernans, gorr e
 yn prenn krows a-dhesempis,
 ha kelmys treys ha diwla.
-Ynni hi bedhens takkys.				[taclyys]{NSS, GM takkys}
+Ynni hi bedhens takkys.
 
-Pilatus
 Ottensa, kemmerewgh e,	2165
 ha krowsewgh ev a verr spys.
 My ny avav, re'm lowta,
 dh'y ladha ken vydh y'n bys.
 
-Cayphas.
 Yma dhyn ni lagha,
 hag yn sertan dre henna	2170
 y koedh dhodho bos ledhys,
@@ -3246,14 +2595,9 @@ drefenn ev dhe leverel
 y vones Mab Dyw ughel.
 Traytor yw dhe'n fay prevys.
 
-et tunc pilatus magis timet et iet iterum cum eo in pretorio et dicit ei unde es tu et ihc tacebit et dicit ei 
-pilatus iterum
-
-Pilatus
 Mara leveris hemma,	2175
 y eksamnya my a wra
 hwath yn priva.
-		hic iet cum eo [in pretorium]
 Ihesu, dell os koweth da,
 lavar a byle osa,
 er dha lowta.	2180
@@ -3265,17 +2609,13 @@ Galloes a'm beus dhe'th krowsya,
 ha galloes dhe'th telivra,	2185
 an eyl a vynniv y'n bys.
 
-IHC.
-Galloes warnav ny 'fies,			{for 'fia, to preserve rhyme?}
+Galloes warnav ny 'fies,
 na ve y vos vos grontys dhis
 diworth ughella Arloedh.
 Rag henna neb a'm gwerthas	2190
 meur dhe voy ev re beghas,
 ha drog warnodho a goedh.
 
-tunc exiet pilatus foras et ei obuiabit nuncius dicens ei
-
-IIs Nuncius
 Syrr arloedh, dhywgh lowena!
 Ow arloedhes sur gene'
 dre dhinargh a'gas pysis	2195
@@ -3288,34 +2628,27 @@ ma'n gweler a verr dermyn,	2200
 ha war dha fleghes keffrys.
 El a'n leveris dhedhi
 haneth, ha hi y'n gweli
-pur dhifun, myns re gewsis.		{NSS 'all that I have said'}
+pur dhifun, myns re gewsis.
 
-Pilatus
 Messejer, er dha lowta,	2205
 yw gwir dhymm a leverydh?
 
-IIs Nuncius
 Yw syrra, war ow ena,
 ha henna hwi a welvydh.
 
-Pilatus
 Mara kallaf y witha,
 pur wir ledhys bydh ny vydh.		2210
 My a wra y askusya
 mar verr dell alla' denvydh.
 
-et tunc dicit pilatus ad episcopum caypham et principem annas et doctores
-
 Arlydhi, war ow lowta,
 ny gavav ken dh'y ladha,
 na blam vydh-oll ynno ev.	2215
 
-[hic paratur cathedra pro pilato et scabella pro aliis]
 Rag henna my a goedhsa
 alemma y dhelivra,
 heb gul dhodho namoy grev.
 
-CAyphas
 Mara'n delivrydh heb mar,
 nyns os kothman dhe Sesar,	2220
 yw agan arloedh myghtern.
@@ -3323,19 +2656,14 @@ Rag myghtern neb a omwra
 erbynn Sesar kows yma,
 ha'y ladha travydh ny vern.
 
-Pilatus
 Ord'newgh bar dhe esedha,	2225
 ha my a wra y jujya,
 a-ban res dhymmo porres.
 
-Is Miles
 My a's orden dhywgh hware
 chayrys ha formys plenta.
 Esedhewgh, syrra justis.	2230
 
-et tunc iet et sedebat pro tribunali et dicit carceratori
-
-Pilatus
 An prysners kettp onan
 drewgh hwi yn-rag desempis.
 Dismas, Iesmas, Baraban,
@@ -3343,24 +2671,19 @@ may hallons bones breusys.
 Hou, jayler, a-barth malan,	2235
 deus yn-rag, ha'th vaw keffrys.
 
-Carcerator
 Anon syrr justis sertan,
 ni a fisten gans meur gris.
-
-hic omnes sedebunt pro tribunali scilicet pilatus cayphas princeps annas et doctores
 
 Now hwypp an Tin my a'th pys,
 sav yn-bann, dell y'm kyrri,	2240
 rag nans yw Pilat serrys,
 ow kria kepar ha ki.
 
-Garcon
 Kyn fe y golonn terrys,
 a henna my ny wrav vri.
 Mar'th eus own bones knoukys,	2245
 fisten fast alemma dhi.
 
-Pilatus
 A harlot, re'th fo droglamm.
 Ma strif yntra an dhew gamm.
 Ny wrons vri my dhe kria.
@@ -3368,78 +2691,62 @@ An prysners, bras ha byghan,	2250
 drewgh hwi dhymm, kettep onan,
 may haller aga jujya.
 
-Carcerator
 Re'm fay, Pilat re sorras.
 My a'th pys, awos Satnas,
 doro an ladron yn-mes.	2255
 
-Garcon
 My a lever an gwir dhis,
 dhe be yma ow wajys;
 ny vynnav tryga genes.
 
-CArc.
-Yn-dann ambos yth esos,				[ytheses]
+Yn-dann ambos yth esos,
 ha ken na fe da genes.	2260
 gul dha servis ty a wra.
 
-Garcon
 Ow arvedh bydh na hwila.
 Ahanas jy unn demma
 my ny synsav y'n tor' ma.
 
-Carc.
 My a vynn, re Dhyw a'm ros,	2265
-dha gemmeres gans kapyas					[carios]
+dha gemmeres gans kapyas
 hag yn pryson dha dewlel.
 
-Garcon
 My ny synsav unn bramm plos
 a'n kas, yn jydh nag yn nos,
 hag a henna ty a fyll.	2270
 
-Carc.
 Mir ha stordi yw an gwas,
 ha meur y lavarow bras,
 ha'm gorthybi oll dres keyn.
 
-Garcon
-Alemma bys yn Tryger,				{NSS Trigg hundred}
+Alemma bys yn Tryger,				
 war ow fay, lakka mester	2275
 ny allsen y dhyerbynn.
 
-Carc.
 Na wra flattra, na gul ges.
 Doro an prysners yn-mes,
-poken shyndys ni a vydh.						[bo ken]
+poken shyndys ni a vydh.
 
-Garcon
 A-dhesempis lemmyn taw.	2280
 Dhis ny vynnav bones maw.
 Kergh i dhejy mar mynnydh.
 
-Carc.
 Tebel esrvont a lever,
 mar serv ev bad y vester,
 'Ke dha honan ha gwra gwell'.	2285.
 
-Garcon
 My a lever dhis yn skon,
-gwask dha vaw [war] an skovarn			[vaw a'n scouoron]
-pan fi ev, gans meur a nell.				{?fia 'crie fie'}
-				[hic parantur duo gladii]
+gwask dha vaw war an skovarn
+pan fi ev, gans meur a nell.
 
-CArc.
 Deun yn kergh gans an prysners.
 Ke dhejy, kergh i yn-mes,	2290
 mos alemma may hyllyn.
 
-Garcon
 My a lever an kas dhis.
 I a yll bones kechys
 gans tus war fordh dhiworthyn
 
-Carc.
 Yndella y hyll koedha
 an dus warnan y'n tor' ma,
 na ven hardh dh'aga gwitha.
@@ -3447,15 +2754,13 @@ Gwell yw dhyn doen, my a grys,
 rag dout bos kontrewaytys
 yn sertan peub y gledha.	2300
 
-Garcon
 Henna yw leverys da.
 Gwell yw dhyn omassaya
-yn plas sertan kyns mones.			[plath]
+yn plas sertan kyns mones.
 Y'n eur na sur my a wel
 mara pydhyn ni abel	2305
 dhe wul defens a-rag tus.
 
-Carc.
 A bub tu bydh war lemmyn,
 rag dh'assaya my a vynn,
 py par mawe os y'n tor' ma.
@@ -3463,17 +2768,14 @@ Bydh war yn ta a'th ely:	2310
 y dochya a verr dermyn
 gans ow kledha my a wra.
 
-Garcon
-My a vynn dhejy a-dro				{? 'I will do so to you'}
+My a vynn dhejy a-dro
 ha dha worra jy dhe'n fo
 a-dhesempis.	1315
 
-Carc.
 Ny wredh hwath war ow ena
 guthyl dhymmo vy fia
 sur my a grys.
 
-Pilatus
 Hou, jayler, fisten toth da.
 Doro an prysners omma.	2320
 Ny glyw banna.
@@ -3488,23 +2790,20 @@ Fistenewgh, A dhew benn-koeg,
 drewgh an prysners oll y'm lok
 a-dhesempis.	2330
 
-Carc.
 A! merci, A vester hweg.
 My a's doro pur anhweg
 a-dheragos.
 
-Garcon
 Ny wren strechya na fella.
 Skon my a's gorr alemma	2335
 unn prys kyns nos.
 Dismas, Iesmas, dewgh yn-bann;
 Ihesu, ynwedh Baraban,
-agas breus dhe resseva;						[resseue]
+agas breus dhe resseva;
 rag hwi a skon ahanan	2340
 dhe Pilat, re sent Malan,
 rag yma owth esedha.
 
-Carc.
 Hayl, Pilat, syrr justis stout!
 Hayl syrr cayphas epskop prout!
 Hayl, prins Annas!	2345
@@ -3516,57 +2815,46 @@ gans meur a gris,	2350
 Dismas, Iesmas yn unn vu
 dhywgh devedhys.
 
-Pilatus
 Wolomm yns, re'n Arloedh Dyw!
 Otta dhywgh Myghtern Ihesu
 a-dheragowgh ow sevel.	2355
 
-Cayphas
 Syrr justis, ladh e, ladh e;
 y'n prenn krows gwrewgh y worra,
 dell yw gwiw diogel.
 
-Pilatus
 Ytho, hwi a vynn porres
 bos agas Myghern krowsys,	2360
 Ihesu Cryst a Nazare?
 
-Cayphas
 Nyns eus myghtern dhy'n y'n bys
 saw syrr Sesar, my a grys,
 hag a'n te war ow ena.
 
-Pilatus
 My a lever dhywgh sertan,	2365
 gwell yw kregi Baraban
 ha delivra an profoes.
 
-Princeps Annas
 Syrr justis, my a'gas pyus
 rag Pask may fo delivrys
 Barabas, heb skoellya y woes.	2370
 
-Pilatus
 Mara pydh e delivrys,
 dhe Ihesu pandr'a vydh gwrys?
 Leverewgh dhymmo yn skon.
 
-Cayphas
 Y'n prenn krows bedhens gorrys,
 ha treys ha diwleuv kelmys,	2375
 ha gwenys dre an golonn.
 
-Pilatus
 Mara mynnowgh yndella,
 leverewgh dre py lagha
 y koedh dhodho bos ledhys.
 
-IIs Doctor
 Henna yn skon ny a wra	2380
 dre'n lagha, a'n prev yn ta.
 Dalleth, koweth, my a'th pys.
 
-Is Doctor
 Bydh ny hevel dre lagha
 y koedh dhodho bos dampnys.
 Tewel avel unn boba	2385
@@ -3576,7 +2864,6 @@ dherag juj ny vydh jujys.
 Ytho, dre pub reson da,
 ny goedh dhodho bos krowsys.	2390
 
-IIs Doctor
 Er dha bynn kowsav kowal.
 Marth a'm beus a'th lavarow,
 doctour, dhe gewsel mar dall
@@ -3584,9 +2871,8 @@ gans an boba kasadow.
 Yth omwrug pur wir heb fall	2395
 Dyw ha den gans hwedhlow gow.
 Dhodho y koedh, by my chal,
-kyn na gowsso, bos marow.				[nagonse]
+kyn na gowsso, bos marow.
 
-Is Doctor
 Doctor, nyns yw henna mann,
 na ny yll bos yndella,	2400
 den dhe verwel yn sertan
@@ -3596,7 +2882,6 @@ hanter pysk ha hanter den.
 Y vos Dyw ha den yn glan	2405
 dhe'n keth tra na kryjyans ren.
 
-IIs Doctor
 Syrr doktour, lavarav dhis,
 ev a goedh dhodho merwel.
 An fer a veu dallethys
@@ -3606,7 +2891,6 @@ ha lies onan dhe well.
 Dredho y feu distrewys;
 yn-mes y hwrug y dewlel.
 
-Is Doctor
 Yma marth dhymm ahanas.	2415
 ty a aswonn an skriptor,
 ty dhe vynnas sowdhanas
@@ -3616,7 +2900,6 @@ termyn vydholl war neb kor,	2420
 saw y wordhya ev ha'y ras
 neb yw Arloedh tir ha mor.
 
-IIs Doctor
 Pur wir sertan an den ma
 lies den re wrug trelya.
 Agan lagha ev yma	2425
@@ -3626,9 +2909,8 @@ bones marow heb lettya.
 Oll an doktours y'n bys ma
 bydh ny allons y sawya.2430
 
-Is Doctor
 Dhodho ev nyns os kothman,
-dell hevel dhymmo ywis.				[yn wys]
+dell hevel dhymmo ywis.
 Konskyans da ny syw sertan,
 ladha den nag yw kablys.
 Ny glywas drog nagonan	2435
@@ -3636,7 +2918,6 @@ ev dhe wul bythkweyth y'n bys.
 Truedh via den yw glan
 falslych y vones diswrys.
 
-IIs Doctor
 Lies gweyth y hwrug bostya,
 dhiso jy dell lavara',	2440
 terri dhe'n dor an templa,
@@ -3646,7 +2927,6 @@ ha henna nevra ny wra.
 Y vywnans nyns eus gwitha,	2445
 na vo marow y'n tor' ma.
 
-Is Doctor
 Gwiryonedh a res bos dres
 a-bervedh y'n mater ma,
 ha lenduri kekeffrys,
@@ -3665,7 +2945,6 @@ rag y woes a vydh skoellys,	2460
 rag ev yw Mab Dyw a nev,
 dell lavarav an gwir dhis.
 
-IIs Doctor
 My a lever an gwir dhis:
 gwell yw y vos marow,
 es bos an bobel kellys	2465
@@ -3682,9 +2961,6 @@ Ni a vynn dha rekwirya,
 ha warbarth oll sur kria	2475
 'Crucifige!'
 
-				et dicunt omnes iudei crucifige
-
-Cayphas
 Kriewgh fast gans meur a gris
 may fo an Ihesu krowsys,
 mab an gwas gov,
@@ -3692,67 +2968,50 @@ ha Barabas delivrys.2480
 Nyns eus gwell kusul y'n bys
 pur wir yn prov.
 
-				crucifige eum
-
-Princeps Annas
 Syrr justis, awos Satan,
 delirv dhyn ni Baraban.
 Ni oll a'th pys dre dha vodh,	2485
 ha krows Ihesu an fals gwas
 yntra Dismas ha Iesmas,
 rag sur yndella y koedh.
-				et dicunt omnes crucifige eum
 
-Pilatus
 A-ban yw yndella lagha,
 dhe'n mernans oll an tri a,	2490
 ha Barabas delivrys.
 
-Dismas
 A syrra justis, mersi!
 Gesewgh vy dhe worthybi
 kyns ri breus dhe vos diswrys.
 
-Pilatus
-A-ban res an breus unnweyth	2495			{'I have given'}
+A-ban res an breus unnweyth	2495
 ny vynnav y ri diwweyth;
 saw yn tokyn ow bos glan
 a woes Ihesu Nazare,
 my a wolgh skon ow diwla,
 a-wel dhywgh kettep onan.	2500
-				et tunc lauet manus
 
-Cayphas
 Mar teu nenjans vydh ragdho
 warnan ni ev re goettho
 ha war oll agan fleghes!
 
-Pilatus
 May fo krowsys ow breus yw
 Dismas Iesmas ha Ihesu.	2505
 
-et tunc vocat tortores sedendo et dicit eis
-
 Tormentors yn kettep gwas!
-				[hic venient tortores]
 
-Is Tortor
 Syrr justis, dhis lowena!
 My re beu war ow ena
 owth omladh, mayth en pur skwith.
 Uskis ny yllyn poenya,	2510
-dell esov ow tyewa,					[tyene]
-ha hwys pub gwyth oll ha lith.		[goth]{GM p.113 'vein'}
+dell esov ow tyewa,
+ha hwys pub gwyth oll ha lith.
 
-Pilatus
 Tormentors, yn kettep penn,
-gorrewgh Ihesu y'n krowsprenn			{usually fem.}
+gorrewgh Ihesu y'n krowsprenn
 a-dhesempis.	2515
 Y dreys ha'y diwla yn tynn
 gans kentrow worth an plynkenn
 bedhens takkys.
-
-[hic paratur lignum crucis in cedron et due cruces pro latronibus]
 
 Dismas, dhodho a-dheghow
 kelmewgh fast gans lovanow	2520
@@ -3761,7 +3020,6 @@ Ha Iesmas a'n barth arall
 kechyewgh ev wythowte fal.
 Kerdhewgh heb flows.
 
-IIs Tortor
 Anon syrra, somotty thryue,	2525
 to the deth they schal blyue
 yn despit dh'aga eghen.
@@ -3769,27 +3027,21 @@ Com forth Ihesu yn ow dorn.
 Hayl Myghtern an Yedhewon!
 Ty a'fydh kowal anken.	2530
 
-[tenet eum et dicit derisui Aue rex Judeorum]
-
-IIIs Tortor
 Di'skyn y vantel hware,
 rag yn y dhillas arta
 an harlot a vydh gwyskys.
 
-[hic spoliat eum clamide purpura et ipse stat nudus]
 Saw leverewgh, kowetha,
 py kever prenn dh'y growsya?	2535
 My ny wonn, kyn fen ledhys.
 
-IVs Tortor
 Na my, re sent Iouyn hweg,
 a ve rag krows hanter teg,
 ewn ha krev, by God ys fo.
-Pub koweth oll, prederes,	2540		{3 sing imper}
-martesen 'vydh yn y vrys				[vyth]{NSS 'fyth'}
+Pub koweth oll, prederes,	2540		
+martesen 'vydh yn y vrys			
 dismygi prenn 'vas ple fo.
 
-Is Tortor
 My a lever heb lettya.
 War Cedron ow krowedha
 yma prenn da ren ow thas,	2545
@@ -3797,7 +3049,6 @@ ha henn yw emskemunys,
 rag ny allas den y'n bys
 anodho gul devnydh 'vas.
 
-IIs Tortor
 Ow bennath dhiso pub dydh.
 A henna krows da y fydh,	2550
 pan yw-a emskemunys.
@@ -3805,18 +3056,14 @@ Ha Cryst milligys, ynwedh
 dew  villigys y telledh
 warbarth aga bos gorrys.
 
-IIIs Tortor
 Deun dh'y gyrghes, Kowetha,	2555
 rag may hyllyn y settya
 y'n grows, kyns es dos Sabot.
 
-		[transeunt ad Cedron pro ligno crucis]
-
 How, otta an prenn omma.
 Nyns eus tekka y'n wlas ma.
-Gwren krows anodho war not.	2560	{GM p.326 'simultaneously'}
+Gwren krows anodho war not.	2560
 
-IVs Tortor
 yntra dew gwren y treghi
 rag kavoes treusprenn dhedhi,
 ha'y fastya gans ebil prenn.
@@ -3824,25 +3071,20 @@ Otta genev vy boni.
 My a'n tregh hware gensi.	2565
 Ny'n sparyav, awos anken.
 
-Is Tortor
-Ow bennath dhis vynitha,					[vynytha]
+Ow bennath dhis vynitha,
 rag an prenn yw treghys da.
 Ny allsa vydh bones gwell.
 Y delli skon my a wra,	2570
 rag ebil parys yma
 dh'aga fastya diogel.
-			[hic parantur due cruces pro latronibus]
 
-IIs Tortor
 My a woer ple'mons parys
 rag an wesyon ordenys	2580
 war ow ena.
 Lemmyn drehevewgh an gist.
 Yw gwrys krows war dhiwskoedh Cryst,
-dh'y doen dhe dre.					[the dre]{NSS dhe'n dre}
-		[hic ponunt crucem super humerum Jhu]
+dh'y doen dhe dre.
 
-IIIIs Tortor
 Kemmer hi, ty plos lorden,	2585
 syns war dha geyn an growsprenn.
 Yma lowr dhe sawgh dhiso.
@@ -3850,9 +3092,6 @@ Pur kowal ty a ynni.
 Ha hwi, losels, pub huni,
 ewgh yn kerdh, God yeve yow wo.	2590
 
-[MAria transit per aliam viam propter multitudinem populorum]
-
-Maria
 Ellas, A Cryst, ow Mab ker,
 yn meur bayn pan y'th welav!
 Ellas de keudh yn klamder
@@ -3865,12 +3104,11 @@ Eghan!
 Rag y fynner . mara kyller	2600
 gans paynys meur
 ow diswul glan.
-[hic maria dabit obviam Jhu in prota civitatis]
 Ogh, go-vy, ellas, ellas!
 Gweles ow Mab mar divlas
 gans tebelwesyon dyghtys.	2605
 A Vab, dha geudh re'm ladhas,
-na allav gweles yn fas					{NSS ny}
+na allav gweles yn fas
 kemmys dagrow re oelis.
 
 Go-vy, ny wonn pandr'a wrav.
@@ -3879,19 +3117,14 @@ dre prederow.
 Ny allav sevel yn fas
 war ow threys, ellas, ellas
 rag galarow!
-				[hic venit vernona et dicit]
-et tunc ihc cecidit in terram et illi obiabunt symon leprosus et dicent ei
 
-Is Tortor
 Gweres, ty harlot jowdyn,	2615
 ha dog an grows war dha geyn,
 rag nans yw Ihesu fethys.
 Rag gwannder ev re goedhas.
 Res yw dhiso y dhifres.
 Kemmer hi a-dhesempis.	2620
-			[hic ligatur manus Jhu a tergo]
 
-Symon Leprosus
 My a's deg fest yn lowen,
 rag y dhifres a anken.
 Dro hi dhymmo war ow skoedh.
@@ -3899,7 +3132,6 @@ A DHyw, ass owgh hwi bilen,
 ow ladha gwiryon heb ken;	2625
 hwath venjans warnowgh a goedh.
 
-Maria Iacobi
 Ogh, ellas, go-vy, tru, tru!
 gweles dhiso, a Ihesu
 kemmys sham ha vileni.
@@ -3907,7 +3139,6 @@ My a bys an Tas a nev	2630
 re dhannvonno venjans krev
 warnowgh oll kyns es dybri.
 
-Salome
 A Ihesu, go-vy ragos,
 mar tebeldhyghtys dha vos,
 ha ty ow kul kemmys da	2635
@@ -3915,10 +3146,6 @@ pub eur dhe edhommogyon.
 Ellas, klav yw ow holonn,
 dha vos yn plyt a'n par na.
 
-tunc ihc vertet ad eas et dicit:-
-					[et Johannes erit cum eis]
-
-IHC.
 Myrghes a Ierusalem,
 na oelewgh, na na wreugh drem	2640
 warnav vy, nag onan vydh;
@@ -3930,7 +3157,7 @@ may fennigewgh an torrow
 na's teva vydhkweyth fleghes,
 ha kekeffrys an bronnow
 na dhenas fleghesigow.
-Gwynn aga bys er bones.	2650				{NSS 'for being so'}
+Gwynn aga bys er bones.	2650
 
 Y'n eur na wrewgh pysadow
 may koettho an menydhyow
@@ -3939,7 +3166,6 @@ Ha hwi a bys an runyow
 dh'agas gorherri heb wow,	2655
 kemmys vydh an poenvotter.
 
-IIs Tortor
 A harlot, gans dha hwedhlow,
 anedha ty ny 'fydh prow,
 war ow ena.
@@ -3947,7 +3173,6 @@ Pur ogas yw dha ankow.	2660
 Towl an grows dhe'n dor, heb wow,
 dhe wrowedha.
 
-IIIs Tortor
 Ye-a, koweth da, ye-a,
 leverewgh dhymmo hware
 mar kodhowgh
@@ -3956,9 +3181,6 @@ y'n prenn-krows rag y fastya.
 Ewgh dhe wovynn heb lettya
 worth an gov yn Marghas-Yow.
 
-et tunc IVs tortor ibit ad fabrum et dicit fabro
-
-+IVs Tortor
 Hayl, ferror, lowena dhis!
 Eus teyr spik vras genes gwrys?	2670
 Lavar dhymm, dell y'm kyrri,
@@ -3966,32 +3188,25 @@ rag takkya an fals profoes
 y'n prenn-krows, gelwys Ihesus.
 Mar nyns eus, skon ke, gwra i.
 
-Faber
 My ny allav, re'm lowta,	2675
-gul kenter dhy'hwi bythkweyth					[bythyth]
+gul kenter dhy'hwi bythkweyth					
 rag mar klav yw ow diwla,
 ny alla' handla toul vydh.
 
-tunc uxor eius increpando eum dicit
-
-Uxor Fabri
 Pur wow a lever dha vin.
 Pan sevsys hedhyw myttin	2680
-sertan yagh ens aga dhiw.				[ieyw]
+sertan yagh ens aga dhiw.
 Diskwedh i a-dhann dha glok.
 Gwiw vies dhe gavoes krog.
 My a'n te, re'n jydh hedhyw.
 
-Faber
 My a's diskwa yn lowen.	2685
 Nyns eus warnedha kroghen
 nag yw trogh ha diruskys.
-				[ostendit manum]
 Dhymmo vy mar ny grysowgh,
 ottensi, a-wel oll dhywgh,
 kepar ha dell leveris.	2690
 
-Uxor
 A gadlyng, God yeue the wo!
 Ty re wordhyas war neb tro
 an fals losel.
@@ -4005,16 +3220,13 @@ Deus omma skon dhe hwytha,	2700
 ha my a dhalleth hware
 aga gul i.
 
-Faber
 A Ihesu, re bi gordhys.
 Dha vos Dyw ha den keffrys
 lemmyn my a woer yn ta.	2705
 Gwynnvys ynno neb a grys,
 rag dha weres yw parys
 dhe'th servysi y'n bys ma.
-			[faber retrahit se ab eis]
 
-Is Tortor
 My a hwyth avel gwas da.
 Nyns eus denvydh y'n pow ma	2710
 a hwyttho gwell.
@@ -4022,7 +3234,6 @@ Ny wonn gov yn oll Kernow
 a hwyttho gans meginow
 sertan bydh well.
 
-Uxor
 Ty a hwyth avel kawghwas.	2715
 Hwyth war gamm, venjans y'th glas.
 Ny dryg gwryghonenn y'n fog.
@@ -4030,7 +3241,6 @@ Powes lemmyn, losel was,
 ha knouk an horn tys-ha-tas.
 Mar ny wredh, ty a 'fydh krog.	2720
 
-Is Tortor
 My a wysk, so God me cach,
 ha henna gans meur a rach,
 mayth ystynno avel koer.
@@ -4038,20 +3248,18 @@ Nyns eus mab gov y'n wlas ma
 a waskko sertan mar dha,	2725
 ha henna pub oll a woer.
 
-Uxor
 Gwask war an min . re'th fo drog payn,
 A harlot pur.
 Boemmyn dres keyn . mar pydh-a yeyn
-ny dheu dhe gur.						{NSS 'come right'}
+ny dheu dhe gur.
 
 Saw kyn fens mortholek,
 dhe weth vydhons dhe'n kronek
 ha garow yn y dhiwla.
 Otta dell wysk hwymm-hwamm.
 Ty vil losel, gwask war gamm	2735
-ha kompes, yfl mot thow the.		{N. 'evil mayest thou thrive'}
+ha kompes, yfl mot thow the.
 
-Is Tortor
 My a wysk wythowte blam.
 Mars yns garow, dhe voy sham
 dhe'n flerys.
@@ -4059,7 +3267,6 @@ Mesurewgh toll dh'y dhiwla,	2740
 ha toll dh'y dreys heb lettya.
 Bedhens skon gwrys.
 
-IIs Tortor
 My a dell toll rag an eyl.
 Nyns eus gwas a west dhe Heyl
 a'n tollo gwell.	2745
@@ -4067,7 +3274,6 @@ Doro kenter er dha fydh,
 ha my a dakk y leuv gledh
 gans oll ow nell.
 
-IIIs Tortor
 My a dell toll rag hy benn
 a-dhesempis, heb anken,	2750
 rag tempra an harlot fol.
@@ -4075,20 +3281,15 @@ Ty losel, foul y berghenn,
 ystynn dha vregh war an prenn
 Re'm fay, ny dheu sur dhe'n toll!
 
-IVs Tortor
 Ny dheu y leuv sur dhe'n toll?
 
-IIIs Tortor
 Ny wra, koweth, by my pol,
 war troes-hys, my a woer gwir.
 
-IVs Tortor
 Na fors, kyn na dhrehettho.
 Ken toll ny vydh gwrys ragdho.
 Ni a's tenn, may fons lowr hir.	2760
-[hic paratur cordae ad trahendum brachia Jhesu]
 
-Is Tortor
 My a gelm skon lovan dha
 worth konna-bregh an adla,
 ha hwi tennewgh, agas tri,
@@ -4096,16 +3297,13 @@ bys may hettho hi dhe'n toll.
 Hag onan, a nell pyth fol,	2765
 gweskens kenter skon ynni.
 
-IIs Tortor
 My a denn, by God ys fast,
 may hettho dhe'n toll yn hast.
-Hala, tennewgh kettep penn,			[hale]{NSS hala 'haul'}
+Hala, tennewgh kettep penn,
 Y vellow kettep onan	2770
 diskevelsys yns, sertan.
-Lemmyn kentr' i worth an prenn.		[kentr'y]{or hi 'hand'? e
-								'him?}
+Lemmyn kentr' i worth an prenn.
 
-IHC.
 A Das hweg, gav dhedha i,
 rag ny wodhons yn tevri
 pyneyl a wrons, drog py da.	2775
@@ -4113,38 +3311,29 @@ Hag a kodhvens yredi,
 ny wrussens ow distrui.
 A Das ker, gav rag henna.
 
-IIIs Tortor
 A'y yvyans my ny rov bramm.
 Yn despit dhe vab dha vamm	2780
 kenter skon dre dha dhewdros
 my a's gwysk, may fo droglamm.
 Ha hwi, kelmewgh an dhew gamm
-yn diw grows, kyns bos prys boes.				{or: y'n dhiw}
+yn diw grows, kyns bos prys boes.
 
-[hic ligantur duo latrones in crucem]
-
-IVs Tortor
 My a gelm an eyl hware.	2785
 Otta ow lovan gene'
 rag y gelmi.
 
-Is Tortor
 Ha my a gelm y gila,
 alemma kyns tremena
 yn surredi.	2790
 
-Pilatus
 Syrrys, my re wrug skrifa
 agas cheson dh'y ladha.
 Takkewgh e a-ugh y benn.
-
-[hic scribit titulum causae mortis Jhesu]
 
 Ottensi parys gene':
 'Ev yw Ihesu Nazare,	2795
 yw myghtern an Yedhewon'.
 
-Cayphas
 Na skrif 'Myghtern Yedhewon',
 saw skrif ynno, an bilen
 dhe leverel y vos ev
@@ -4152,38 +3341,30 @@ Myghtern Yedhewon, sertan.	2800
 Yndella, kettep onan,
 y'n leveris my a brev.
 
-Pilatus
 My a worthyb dhywgh hware.
 An pyth a skrifis, skrifis.
 Na ken ny skrifav nevra,	2805
 awos dout bones ledhys.
 
-Princeps Annas
 Dro-va dhymmo dhe dakkya
 a-ugh y benn, gans meur gris,
 may hallo peub y redya,
 gour ha benyn kekeffrys.
 
-IIs Tortor
 Yn hanow an tas Satan,
 drehevewgh an grows yn-bann,
 ha delivrewgh hi dh'y le.
-[sublevat crucem]
 How! Hala, kettep onan!
 Gesewgh hi a-barth Malan	2815
-y'n mortes skwat dhe goedha.						[morter]
+y'n mortes skwat dhe goedha.						
 
-IIIs Tortor
-Hemma yw sur jag an pla.				{GM 'jag, jar, jolt'}
-							{NSS hem yu pur wyr jag}
-					[N p..yr [pur wyr?], sur inserted by B]
+Hemma yw sur jag an pla.
 Y gorf yw kryghyllys da
 sertan ganso.
 An dhiw grows erell yn-bann	2820
 drehevewgh, kettep onan,
 God yeue yow wo.
 
-IVs Tortor
 My ha'm koweth yn sertan
 a dhreha Dismas yn-bann.
 Gweres lemmyn my a'th pys.	2825
@@ -4191,7 +3372,6 @@ Ha hwi, drehevewgh y benn,
 may farwo an dhew vilen
 kwykk, heb hokya, bedhens gwrys.
 
-Is Tortor
 My a wra gans bones mall
 hale, hale op as schal.	2830
 Deun mars yw prys.
@@ -4199,9 +3379,6 @@ Gesewgh i dhe dhisplewyas,
 ha haylyewgh an myghtern bras
 a-dhesempis.
 
-[genuflectit illudens dominum Jhesu]
-
-CAyphas
 Myghtern Yedhewon y'th se,	2835
 hayl dhiso, ha lowena!
 Jentyl yth os esedhys.
@@ -4209,53 +3386,37 @@ A garsesta benyna?
 Mar mynnydh, war ow ena,
 my a gyrgh onan deg dhis.	2840
 
-[hic partiuntur sorte vestes Jhesu]
-
-IIs Tortor
 My a vynn lemmyn ranna
 yntredhon oll y dhillas,
 ha my a's rann dywgh hware,
 heb fowt vydh, ren ow thas.
 
-III Tortor							{no 's'}
 Dihedh meur yw dhymm skwardya	2845
 na terri pows an ploswas.
 Tewlel prenn mil well via.
 Pan vons skwerdys, ny vydh 'vas.
-[hic IIIs tortor sit coopertus et dabit sortes super tunicam Jhesu]
 
-IVs Tortor
 Otta tri frenn genev vy.
-
-Is Tortor
 Tan hemma, gorr gansa i,	2850
 ha henna yw peswara.
-
-IIs Tortor
 Lemmyn diskwedh ha lavar,
 p'yw an prenn a biw heb mar
 pows Ihesu a Nazare
 
-IIIs Tortor
 Henna a's piw yn sertan	2855
 hwi a woer kettep onan
 py prenn yw-a.
 
-IVs Tortor
 Re sent Iouyn, my a's piw.
 Kemmerens peub rann a'y du,
 degens dhe dre.	2860
 
-hic incipiunt principes sacerdotum et scribe salutare geniflectando ante eum et diridendum eum
-
-CAyphas
 Fi dhiso, pan leversys
-templa Dyw y'n distruys,					{2 sing impf}
+templa Dyw y'n distruys,					
 gwell es kyns y'n drehevys.
 Mars os Mab Dyw, a verr brys	2865
 omsaw skon a dhrokkoleth.
 
-Princeps Annas
 Maras osa Mab Dyw meur,
 diyskynn a'n vynk dhe'n leur,
 ha diskwa rann a'th vaystri.
@@ -4263,7 +3424,6 @@ Hag y'n eur na martesen	2870
 dhe'th lavarow y krysyn,
 hag a'th karvydh bynari.
 
-Cayphas
 Ev a allas diogel,
 dell glywis y leverel
 yn lies le,	2875
@@ -4271,37 +3431,27 @@ sawya bywnans tus erell,
 lemmyn y honan ny yll
 sur omsawya.
 
-Princeps Annas
 Mars yw myghtern Israel,
 leveryn oll dhodho, Hayl!	2880
-Hag a'n grows diyskynnes.				{3 sing imper}
+Hag a'n grows diyskynnes.				
 Mara kwre-va yndella,
 krysi dhodho ni a wra
 y vos profoes bennigys.
 
-Cayphas
 Yn y Dhyw y hwrug fydhya.	2885
 Lemmyn gwrens y dhelivra
 mar mynn a dhrog.
 Menowgh ev a wrug bostya
 y vos Mab Dyw, dh'y lawa,
-Arloedh an koeg.						[gok]
+Arloedh an koeg.
 
-[et tunc transeunt dominus pilatus cayphas et princeps annas]
-
-et tunc latro in sinistra parte imperando ei dicens
-
-Jesmas
 Mars osa Cryst Mab Dyw ker,
 omsaw skon yn neb maner
 na vi marow;
 ha saw ni genes ynwedhm
-na'n be mar hager dhiwedh	2895			[beyn]
+na'n be mar hager dhiwedh	2895
 na mar arow.
 
-tunc alius latro in dextera parte increpando latronem et dicit ei
-
-Dismas
 Taw, foul, ass osa gokki,
 na dhowtydh Dyw a versi,
 ha ty dampnys dhe'n mernans!
@@ -4314,15 +3464,13 @@ war an bys ma drokkoleth,
 na ny beghas war neb kor.	1905
 Arloedh Cryst, my a'th pyssa
 a brederi ahana'
-pan vi jy yn dha wlaskor.					[vyse]
+pan vi jy yn dha wlaskor.
 
-IHC.
 Pur wir, a lavarav dhis,
 genev hedhyw ty a vydh	2910
-rag dha fay yn paradhis						[paradys]
+rag dha fay yn paradhis
 kyns es hanter dohajydh.
 
-IVs Tortor
 Ty a'fydh kowal droglamm.
 Ny vynn an vil harlot kamm
 awos an bys diwedha.	2915
@@ -4330,7 +3478,6 @@ Kyrghyn Longys, an gwas dall,
 gans guv dhe wana an gal
 yn y golonn dibyta.
 
-Is Tortor
 Henna my a wra re'm sowl,
 rag ny wonn y'n bys gwell towl		2920
 dhyn dhe wruthyl dhe'n kanjon.
@@ -4338,7 +3485,6 @@ Pan vo guv yn y dhiwla,
 my a ergh dhodho herdhya,
 hag a'n gi ewn dh'y golonn.
 
-IHC.
 Benyn, a wll'ta dha flogh	2925
 milweth dyghtys ages brogh
 gans neb milgi?
@@ -4346,7 +3492,6 @@ Ha Iowan, otta dha vamm;
 yndella syns hi heb namm
 hedra vywi.	2930
 
-Marie
 Ellas, ellas, ogh tru, tru!
 Yn ow holonn ass yw bern,
 pan welav ow Mab Ihesu,
@@ -4356,7 +3501,7 @@ ha gans henna gwir Myghtern;
 treys ha diwleuv a bub tu
 fast takkyes gans kentrow hern.
 Ellas!
-Y's bydh Dydh Breus . meur a anfeus.	2940		[ef]
+Y's bydh Dydh Breus . meur a anfeus.	2940
 y gig ha'y goes
 neb a'n gwerthas.
 
@@ -4367,21 +3512,18 @@ Ellas, na varwen ynwedh,
 na fe kynsa ow diwedh
 es diwedh ow Mab y'n bys!
 
-Johannes
-A VAmm hweg, na borth ahwer,
+A Vamm hweg, na borth ahwer,
 rag nevra yn pub maner	2950
 my a vydh prest parys dhis.
 Bodh dha Vab yw yndella,
 rag selwel kemmys yw da,
 a-ban veu Adam formys.
 
-IHC.
 A Tas, Eli, Eloy . lama zabatany?	1955
 Os ow Dyw ker;
 prag y'm gessys . tuch dhiworthis
 yn neb maner?
 
-Is Tortor
 Yma ow kelwel Ely.
 Aspiewgh lemmyn bysi	2960
 mara teu dhe dhelivra.
@@ -4389,9 +3531,6 @@ Mara'n delirv yredi,
 ni a wra ynno krysi,
 hag a'n gordh pur wir nevra.
 
-[hic paratur spongium in tentu suo et dicit
-
-Centurio
 My a vynn mos dhe viras	1965
 fatell yw gans Ihesu ker.
 Dihedh via dhe dhen mas
@@ -4400,35 +3539,27 @@ A pe-va den drog y gnas,
 ny allsa yn neb maner	2970
 pur wir kavoes mar meur ras,
 rag sawya tus dre unn ger.
-				descendit centurio]
 
-IIs Tortor
 Nyns yw Eli a elwa.
 Seghes sur dhodho yma.
-Ev a'n jevydh drog wires.	2975				[a'n geve]
-				[extendit spongeam]
+Ev a'n jevydh drog wires.	2975				
 Ottensa genev parys,
 bystel, aysel kemmyskys,
 wassel, mar'th eus seghes bras.
 
-IHC.
 Seghes dhymmo vy yma.
 
-IIIs Tortor
 Otta diwes dhis omma.	2980
 Prag na wre'ta y eva?
 Kyns ty a wre maystri dhyn,
 lemmyn a'n grows diyskynn,
 ha ni a wra dha wordhya.
 
-IHC.
 A Das, yntra dha dhiwla	2985
 my a gemmynn ow spyrys.
 Dre dha vodh dhis kemmer e,
 dhe'n bys dell y'n dannvensys,
-[et tunc morietur ihc]		[hic sol obscuratur]
 
-IVs Tortor
 A dhyw Iouyn leun a ras,
 hemma yw tewolgow bras.2990
 Fatell en ni war-tu tre?
@@ -4436,53 +3567,37 @@ An howl y liw re gollas.
 My a grys ni re beghas
 hedhyw bras worth y ladha.
 
-Is Tortor
-				[hic fit terre motus]
 Yma an dor ow krenna.	2995
 Sevel ynwedh ny yllyn.
 Ny wonn fatell en dhe dre.
-Go-ni vydh pan y'n ledhsyn!			[lytthyn]
+Go-ni vydh pan y'n ledhsyn!
 
-IIs Tortor
-			[hic sepulcra aperiunt se]
 Ha'n bedhow owth igeri;
 mya a's gwel, war ow ena,	3000
 mar strechyn omma namoy
 ni a'gan bydh edrega.
 
-----------------------------------
-
-IIIs Tortor
 Longys, res yw dhis gene'
 unn pols byghan lavurya,
 dre worhemmynn an justis.	3005
-[et ducit longeum ad cruces et dat lanceam in manum ejus]
 
-Longeus
 My a genowgh yn lowen,
 mar kallen guthyl eghenn
 a sokor nag a servis.
 
-IVs Tortor
 Nebes servis ty a wra.
 Tan, syns y'th dorn an gyw na,	3010
 ha herdhy e gans nerth yn-bann.
 
-Longeus
 My a'n herdh gwella gylliv.
 Na vlamewgh vy kyn fylliv,
 rag dall ov, ny welav mann.
-				[hic perforat cor Jhu]
 
-Is Tortor
 Bennath sywes, syrra Longys.	3015
 Sent Iouyn hweg re'th karro.
 Henna yw pyth a-dhevis.
 Gallas lemmyn lowr ganso.
 
-tunc fluat sanguis super lancea usque ad manus longii militis et tunc terget oculos et uidebit et dicit
-
-Longeus
 Arloedh, dhymm gav . dell y'th pysav
 war benn dewlin.	3020
 An pyth a wren . my ny wodhien,
@@ -4495,11 +3610,7 @@ A Vaghteth lan . Unn Vab sertan
 os dhe'n Tas Dyw.
 Ow hammweyth bras . gav dhymm, a Das,
 dre dha vertu.	1330
-				[tortores ient domum]
 
------------------------------------
-
-Lucifer
 Ogh, my re beu boghes koynt,
 hag eth yn-rag re a boynt
 pur wir pan wrug dhe Pylat
@@ -4514,15 +3625,13 @@ Rag mar teu dh'agan porthow,	3040
 ev a derr an darasow
 hag a dhelirv an chettys.
 
-Belsebuc
 Ow arloedh ker Lucifer,
 displetys yw y vaner,
 ha kelmys worth an growsprenn.	3045
 Mar euthek yw dhe weles,
-may tegren an debeles					[tyglyn]
+may tegren an debeles					
 pan y'n gwellons, kettep penn.
 
-Satanas
 My a bar daras an yett,
 na gerggho alemma chett,	3050
 kyn fo mar fol.
@@ -4530,24 +3639,20 @@ Rag mara teu-va y'n chi,
 ev a's gorr dhiworthyn ni
 yn kettep poll.
 
-Lucifer
 Belsebuc hweg, hwyth dha gorn,	3055
 ha galw i dre a bub sorn,
-an dhywolow.				{NB lenition, though not human}
+an dhywolow.				
 Mara kaller y witha
 a ji, na alla entra
 dhe'n darasow.	3060
 
-Belsebuc
 My a hwyth gans meur a gris,
 keniver dyowl eus y'n bys.
 Sertan yn ta may klywfo.
 Rag mara kyll-a entra
 a-ji dhe'n yett, re'm lowta,	3065
 ev a wra dhyn ni droktro,
-				[flat cornu]
 
-Satanas
 Settewgh jistys worth an yett.
 Agas diwskoedh, kettep chett,
 herdhewgh worti hi ynwedh.
@@ -4555,7 +3660,6 @@ Mar teu a-bervedh sertan	3070
 an harlos kettep onan,
 ev a's delirv, war ow fydh.
 
-Lucifer
 A harlos, yn kettep gwas,
 herdhewgh, venjans y'gas glas!
 Py ken hwi a's bydh droglamm,	3075
@@ -4563,9 +3667,6 @@ rag yma ev sur devri
 ow toen oll agan maystri.
 My a grys ny dal vydh bramm.
 
--------------------------------
-
-Centurio
 Yn gwiryonedh, an den ma
 yw Mab Dyw an nev a-vann.	3080
 Drokka ober o henna,
@@ -4575,7 +3676,7 @@ awos mab-den dhe verwel,
 na korf dasserghi dhe vyw,	3085
 na dorgrys, yn tiogel.
 
-Y vos MAb Dyw da y syw,
+Y vos Mab Dyw da y syw,
 pan dorras kweyth an tempel.
 Drog pes ov, re'n jydh hedhyw,
 mar uskis ev dhe verwel.	3090
@@ -4586,14 +3687,9 @@ dhe dan ifarn, drokka le.
 
 Go-vy y vones ledhys,	3095
 kemmys dader prest a wre.
-Y dhader yw drog dylys						[drok tylys]
+Y dhader yw drog dylys
 pan y'n ladhsons dibyta.
 
----------------------------------
-
-tunc uenit iosep baramaeus et nichodemus et pecient corpus ihu.
-
-Nichodemus
 Iosep Baramathia,
 hwila korf Mab Maria	3100
 dhiworth Pylat an justis.
@@ -4601,34 +3697,30 @@ Rag marow y'n grows yma.
 Y ynkleudhyas via da,
 Mab Dyw o dhyn dannvenys.
 
-Josep
 Mars yw marow Ihesu ker,	3105
 nevra dhe weth vydh ow cher.
 Lies torn da y'n bys ma
 re wrug dhe voghosogyon.
 Sawya pub eghenn klevyon
 a vywa yn bywnans da.		3110
-				et tunc eat ad pilatum
-Hayl dhis now, a syrr justis!				[nob]
+
+Hayl dhis now, a syrr justis!				
 Ro dhymm kummyas, my a'th pys,
 a gemmeres korf Ihesu,
 yw y'n prenn-krows tremenys,
 may hallo bos ynkleudhys	3115
 yn bedh men, dha vodh mars yw.
 
-Pilatus
 My a grys heb falladow,
 nyns yw Ihesu tremenys.
 Centurio, lavar heb wow
 an gwiryonedh, my a'th pys.	3120
 
-Centurio
 Dhe androw nans o marow,
 ha daskerrys y spyrys;
 rag an howl y liw golow
 a gollas pan eth a'n bys.
 
-Pilatus
 My a vynnsa y witha,	3125
 ha ny yllyn kammen vydh.
 Peub oll esa ow kria
@@ -4638,7 +3730,6 @@ rag neghys bydh ny vydhydh,	3130
 hag yn bedh men ynkleudh e,
 y gavoes a-ban vynnydh.
 
-Iosep
 Gront mersi, syrra justis.
 Ev a vydh sur ynkleudhys
 yn le na veu den bythkweyth,	3135
@@ -4646,18 +3737,13 @@ yn alabaster gravys.
 Ragov y feu ordenys,
 maga hwynn avel an leth.
 
-	[paratur sepulcrum et lapis superponitur]
-
-Nichodemus
 Iosep, eus dhis kummyas
 an korf ker dhe ynkleudhyas?	3140
 Deun dh'y gemmeres dhe'n leur,
 mars eus gront dhiso grontys.
 Otta myrr genev parys,
 kans puns, ha henna yw meur.
-				[hic habeat Nichodemus pync.] {pincers}
 
-Iosep
 Nychodemus, koweth da,	3145
 kummyas grontys dhymm yma
 dh'y ynkleudhyas yn lowen.
@@ -4665,7 +3751,6 @@ Fistenyn dhodho hware.
 Eus pynser dhis dhe denna
 an kentrow yn-mes a'n prenn?	3150
 
-Nichodemus
 Otta pynser da parys.
 My a's tenn a-dhesempis,
 an dhiw yn-mes a'y dhiwla.
@@ -4673,9 +3758,6 @@ Hag a'y dhewdros kekeffrys.
 Iosep hweg, ressev e dhis,	3155
 hag yn sendal glan mayly e.
 
-[Joseph accipiet Jhm in brachia et portat cindone]
-
-Josep Bar.
 Pur lowen, re'n Arloedh Dyw,
 ha lowenna a pe byw.
 Drova yntra ow diwvregh.
@@ -4683,11 +3765,9 @@ Otta sendal glan a-les,	3160
 parys rag y ynkleudhyas.
 A'n ladhas, meur yw y begh.
 
-Maria
 Arlydhi, karadowyon,
 drewgh dhymm ow Mab, kuv kolonn,
 ha gesewgh vy dh'y handla.	3165
-				[Maria accipiet Jhm]
 
 Ellas rag y alarow;
 yeunsen ow bones marow,
@@ -4695,7 +3775,7 @@ yndella y vodh a pe!
 
 Ellas, A Vab . Myghtern y'th tron!
 Ellas, gweles . toll y'th kolonn,	3170
-marow na veuv!					{alas that I was not dead}
+marow na veuv!
 Ellas, bones . dha dreys skwerdys,
 oll dhe eskern . diskevelsys,
 tell y'th diwleuv!
@@ -4721,11 +3801,10 @@ neb yw Arloedh leun a ras.	3190
 Go-vy vydh, ellas, ellas
 ragos, Ihesu!
 
-A DHyw, gwynn ow bys nevra
+A Dhyw, gwynn ow bys nevra
 dha gorf ker glloes handla,
 rag Mab Dyw os, my a grys.	3195
 
-NIchodemus
 Gas vy lemmyn dh'y ura,
 yn kweth kyns es y vaylya
 gans aloes, myrr keffrys.
@@ -4733,32 +3812,23 @@ Hag i a with y vodi,
 na bottra vydh vynari,	3200
 kyn fe y'n bedh mil vlydhen,
 
-[hic ungetur corpus Maria unget caput Maria Magd unget pedes et alia unget cor ejus]
-
 na'y groghen unnweyth terri.
 Urys da yw yredi.
 Lemmyn mayl e yn lien.
 
-Iosep
 My a'n mayl skon war ow fydh.	3205
 Lemmyn gorryn ev y'n bedh.
 Ewnyn an men warnodho.
-				[sepellitur ihesus]
 Y wordhya dhyn y telledh,
 rag y wordhya an eledh
 a veu dannvenys dhodho.	3210.
 
-[hic eunt Johannes et alii genuflectentes ad sepulcrum et dant gratias patri et recedunt]
-
-Nichodemus
 Ewna an men my a wra.
 Awottensi ewnys da.
 Deun ni lemmyn war tu tre.
 An Tas Dyw a wrug puptra.
 Joy dhe beub eus y'n bys ma,	3215
 yn bywnans glan diwedha.
-
----------------------------------
 
 Goslowewgh oll, A dus vas!
 Bennath Ihesu, leun a ras,
@@ -4767,31 +3837,25 @@ Fatell veu Cryst mertherys	3220
 rag kerensa tus an bys
 hwi a welas yn tien.
 
-Hwi a breder a'y basshyon,					[passyon]
+Hwi a breder a'y basshyon,
 pub den oll yn y golonn,
 hag a'n gwith stedfast ha len.	3225
 Ny veu ragdho y honan
 y'n godhevis ev, sertan,
-ma's rag kerensa mab-den.					[mas]{NSS mes}
+ma's rag kerensa mab-den.
 
-DIskwa dhodho kerensa;
+Diskwa dhodho kerensa;
 gans dha golonn y wordhya
 gwra dydh ha nos.
 Pan vi a'n bys tremenys,
 gans Cryst y fydhydh trygys
-a-ji dh'y glos.					[clos]{GM 'enclosure'.
-		Nance understood it as W. clod, Breton klod 'glory'}
+a-ji dh'y glos.		
 
 Bennath Ihesu dhywgh nevra,	3235,
 ha henna prest my a bys.
-Ena pub oll war-tu ha tre.			[eus]{NSS ena}{ewgh???}
+Ena pub oll war-tu ha tre.
 An gwari yw diwedhys.
 Ha dewgh a-varr
 a-vorow, my a-gas pys,
 dhe weles fatell sevis
-Cryst mes a'n bedh, klor ha hwar.		[cler ha war]{NS klor}
-			{N. note: cf MC252.2(3) cleyr ha whar.
-
-
-                            
-                            
+Cryst mes a'n bedh, klor ha hwar.
