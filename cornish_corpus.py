@@ -631,7 +631,7 @@ def corpusKW(manuscript=False, outlang='kw'):
     if manuscript:
         kw_texts, names = read_kernewek_KK_texts.getMStexts(outlang=outlang)
     else:
-        kw_texts, names = read_kernewek_KK_texts.getKKtexts(outlang=outlang)
+        kw_texts, names = read_kernewek_KK_texts.getKKtexts_stripped(outlang=outlang)
     # use NLTK functions to select words
     kw_texts_words = [kw_texts.words(i) for i in kw_texts.fileids()]
     # select those words that are alphabetic
