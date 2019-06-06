@@ -131,7 +131,8 @@ It can also be specified whether to have only addition, or subtraction, or eithe
 
 
 kernewek_corpus/
-a folder containing the traditional texts, most in both manuscript and Kernewek Kemmyn form, though Bewnans Ke is only available in manuscript spelling, and Bewnans Meriasek and Pregothow Treger are only available in Kemmyn form.
+a folder containing the traditional texts, most in both manuscript and Kernewek Kemmyn form, though Bewnans Ke is only available in manuscript spelling, and Bewnans Meriasek is only available in Kemmyn form.
 
 kernewek_corpus/stripped/
 a folder containing text files of the texts, with only the text itself, removing explanatory notes, translators notes, stage directions, character names heading a paragraph etc. Where something is unclear if it is part of the main text, my rule has been to retain lines that are part of the line numbering, e.g. the Latin lines spoken by the doctor in 1446-1447 of Bewnans Meriasek.
+For Tregear, I manually removed editorial annotations - usually in single or double square brakets, though some single square brackets [] are part of the text and have been retained. These represent places where the correct text is unclear. The curly brackets {} are assimilated loanwords, and angle brackets <> unassimilated (mostly) English words. Text enclosed by plus signs + + were crossed out in the original manuscript. I have uploaded several files with and without the []{}<> marks - though text is always retained, and a file without the crossed out words.
