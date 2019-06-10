@@ -171,6 +171,9 @@ def basicReport(text, textname, topN=50, minL=4, printcmdline=True, outlang='kw'
                                                                tN = topN,
                                                                m=minL,
                                                                wN_m=wN_m)
+                                                               
+    outputtext += collocations(text, textname, outlang)
+    
     if printcmdline:
         print(outputtext)
     return outputtext
@@ -728,6 +731,34 @@ def concordances(kk_texts_Texts, textnames, samples, width=59, lines=25, outlang
     if outlang == 'kw':
         for r in kwreplaces:
             outtext = outtext.replace(r[0], r[1])        
+    return outtext
+
+def collocations(kk_Text, textname, outlang='kw'):
+    """ get the output for the .collocations() method of each nltk Text 
+    
+    @param kk_texts_Text: NLTK Texts.
+    @type kk_texts_Texts: NLTK Text
+    @param textname: names of the text.
+    @type textname: str
+           
+    """
+    outTexts = {
+        'colloc':{'en':'Collocations\n',
+                   'kw':'Collocations\n'},
+        'text':{'en':'Text',
+                'kw':'Tekst'}
+        }
+    buff = StringIO()
+    temp = sys.stdout
+    sys.stdout = buff
+    #outputtext = ""
+    print(outTexts['colloc'][outlang])    
+    print("{a}: {t}\n".format(a=outTexts['text'][outlang],
+        t=textname))
+    kk_Text.collocations()
+    print("\n")
+    sys.stdout = temp
+    outtext = buff.getvalue()      
     return outtext
 
 def findallRegex(kk_texts_Texts, textnames, regexes=["<.*><a><vynn>", "<.*><a><wra>", "<y><fynn.*>","<y><hwr.*>"], outlang='kw'):
