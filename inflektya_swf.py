@@ -15,8 +15,9 @@ def inflektya_swf(verb, person, tense, suffix_pro=0):
         if verb in dtinf_swf.irregverbs_all:
             return inflv, 1
         else:
-            if suffix_pro > 0 and person > 0:
+            if suffix_pro > 0 and person > 0 and tense != "ppl":
                 suffix = " "+inflv.split(" ")[-1]
+                inflv = inflv.split(" ")[-2]
             else:
                 suffix = ""
             return tr.wordstr_KK2FSS(inflv, True, False)+suffix, 1
@@ -49,12 +50,36 @@ def rol_personys_amserow(verb):
                                                 inflVerb=inflektya_swf(verb, 1, t, 1)[0]).rjust(12)))
         else:
             # print impersonal at the end instead so it matches "Cornish Verbs" book
-            persons = range(1, 8)
+            persons =list(range(1, 8))
             persons.append(0)
             for p in persons:
                 print(("{person}: {inflVerb}".format(person=inflektya.personDict[p].ljust(14),
                                                     inflVerb=inflektya_swf(verb, p, t, 1)[0]).rjust(12)))
-    print("\n")    
+    print("\n")
+    
+def rol_pub_person_amser(verb):
+    """
+    daskorr avel rol Python a stringys pub person hag amser rag verb
+    return as a Python list of strings all persons and tenses of a verb
+    """
+    allverbparts = []
+    # print imperfect before preterite
+    # to match order in "Cornish Verbs"
+    tensesorder = [0, 2, 1, 3, 4, 5, 6, 7]
+    if verb not in dtinf_swf.irregverbs_all:
+        tlist = [inflektya.tensesDict[t] for t in tensesorder]
+    else:
+        tlist = dtinf_swf.irregverbs_all[verb].tenses_list
+    for t in tlist:
+        persons = list(range(1,8))
+        persons.append(0)
+        for p in persons:
+            verbpart, success = inflektya_swf(verb, p, t, 0)
+            if success == 1:
+                # for non-existent persons the return will be ("NULL", 0)
+                allverbparts.append(verbpart)
+    return allverbparts
+
 def rol_personys_amser_interact():
     """ Interactively get a verb from keyboard input and repeat until 'q' is entered """
     if sys.version_info[0] < 3:

@@ -698,7 +698,29 @@ def rol_personys_amserow(verb):
                 print(("{person}: {inflVerb}".format(person=personDict[p].ljust(14),
                                                     inflVerb=inflektya(verb, p, t, 1)[0]).rjust(12)))
     print("\n")
-
+def rol_pub_person_amser(verb):
+    """
+    daskorr avel rol Python a stringys pub person hag amser rag verb
+    return as a Python list of strings all persons and tenses of a verb
+    """
+    allverbparts = []
+    # print imperfect before preterite
+    # to match order in "Cornish Verbs"
+    tensesorder = [0, 2, 1, 3, 4, 5, 6, 7]
+    if verb not in dtinf.irregverbs_all:
+        tlist = [tensesDict[t] for t in tensesorder]
+    else:
+        tlist = dtinf.irregverbs_all[verb].tenses_list
+    for t in tlist:
+        persons = list(range(1,8))
+        persons.append(0)
+        for p in persons:
+            verbpart, success = inflektya(verb, p, t, 0)
+            if success == 1:
+                # for non-existent persons the return will be ("NULL", 0)
+                allverbparts.append(verbpart)
+    return allverbparts
+    
 def rol_personys_prepos(prepos):
     """
     pryntya rol a personys rag prepos
