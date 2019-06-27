@@ -3,6 +3,7 @@ import inflektya
 import treuslytherenna as tr
 import datainflektya_swf as dtinf_swf
 import sys
+import re
 
 # import the data with special case and irregular verbs converted to SWF
 inflektya.set_swfmode()
@@ -22,13 +23,12 @@ def inflektya_swf(verb, person, tense, suffix_pro=0):
                 suffix = ""
             if tense == "tremenys" or tense == "gorperfydh":
                 # single consonant replaces <ll>, <mm>, <nn> before j, s
-                # in preterite and pluperfect/conditional                 
-                inflv = inflv[::-1].replace("sll","sl",1)[::-1]
-                inflv = inflv[::-1].replace("jll","jl",1)[::-1]
-                inflv = inflv[::-1].replace("smm","sm",1)[::-1]
-                inflv = inflv[::-1].replace("jmm","jm",1)[::-1]
-                inflv = inflv[::-1].replace("snn","sn",1)[::-1]
-                inflv = inflv[::-1].replace("jnn","jn",1)[::-1]                
+                # in preterite and pluperfect/conditional
+                inflv = inflv[::-1]
+                inflv = re.sub(r'([aeoy])([js])ll',r'\1\2l', inflv, 1)             
+                inflv = re.sub(r'([aeoy])([js])mm',r'\1\2m', inflv, 1)             
+                inflv = re.sub(r'([aeoy])([js])nn',r'\1\2n', inflv, 1)             
+                inflv = inflv[::-1]
             return tr.wordstr_KK2FSS(inflv, True, False)+suffix, 1        
     else:
         return "NULL", 0
