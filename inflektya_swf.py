@@ -20,9 +20,16 @@ def inflektya_swf(verb, person, tense, suffix_pro=0):
                 inflv = inflv.split(" ")[-2]
             else:
                 suffix = ""
-            return tr.wordstr_KK2FSS(inflv, True, False)+suffix, 1
-        
-
+            if tense == "tremenys" or tense == "gorperfydh":
+                # single consonant replaces <ll>, <mm>, <nn> before j, s
+                # in preterite and pluperfect/conditional                 
+                inflv = inflv[::-1].replace("sll","sl",1)[::-1]
+                inflv = inflv[::-1].replace("jll","jl",1)[::-1]
+                inflv = inflv[::-1].replace("smm","sm",1)[::-1]
+                inflv = inflv[::-1].replace("jmm","jm",1)[::-1]
+                inflv = inflv[::-1].replace("snn","sn",1)[::-1]
+                inflv = inflv[::-1].replace("jnn","jn",1)[::-1]                
+            return tr.wordstr_KK2FSS(inflv, True, False)+suffix, 1        
     else:
         return "NULL", 0
 
