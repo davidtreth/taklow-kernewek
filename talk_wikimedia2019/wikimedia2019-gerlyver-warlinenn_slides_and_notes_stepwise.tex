@@ -82,7 +82,9 @@ davidtreth@gmail.com \\ \href{https://taklowkernewek.neocities.org}{taklowkernew
 \begin{document}
 \begin{frame}
   \titlepage
-\note[item]{If there's anything to add to the chair's introduction of me, do so now}  
+\note[item]{I have been working in the Cornish Language Office at Cornwall Council on the data for the new version of the Cornish dictionary website that launched at the end of June 2019}
+\note[item]{This presentation descibes the work I have been doing working in creating a new version of the Standard Written Form of Cornish dictionary website published by Akademi Kernewek, the Cornish language academy}  
+\note[item]{I also discuss our collaboration with Dewi Bryn Jones and Delyth Prys of the Language Technology Centre at Bangor University and ways in which we have used Wikimedia resources to enrich the dictionary website}
 \end{frame}
 \section{Previous Dictionary}
 \subsection{Previous Cornish dictionary website}
@@ -111,7 +113,7 @@ davidtreth@gmail.com \\ \href{https://taklowkernewek.neocities.org}{taklowkernew
  \item<4-> Ability to add sound samples
  \item<5-> Disambiguation of translation equivalents
 \end{itemize}
-\note[item]{Previous version could be cumbersome to use on mobile platforms. Maes T uses Google Web Toolkit allowing a responsive web-based interface. Maes T allows the backend data to be separated from the frontend website, for Welsh this has allowed use on different websites and mobile apps using an API. The Language Technologies Unit in Bangor has created a Wordpress plugin {\it Porthydd} to assist its deployment.\cite{prys2012distributing}}
+\note[item]{The previous website could be cumbersome on mobile platforms. Maes T, the backend software written in Bangor University, uses Google Web Toolkit allowing a responsive web-based interface. Maes T separates the backend data from the frontend, for Welsh this has allowed use on different websites and mobile apps using an API. The Language Technologies Unit in Bangor created a Wordpress plugin {\it Porthydd} to assist its deployment.\cite{prys2012distributing}}
 \note[item]{Note difference between Middle and Late forms. \\ needs of beginning learners,
 advanced learners, fluent speakers, Akademi members doing language development work.}
 \note[item]{Personal forms were done for prepositions, which combine with personal pronouns in Cornish to form inflected forms. \\
@@ -119,9 +121,9 @@ hasn't been done for verbs, since this is a larger set of words, several tenses 
 perhaps show the most common paradigms and the auxilliary verbs?}
 \note[item]{Having sound samples is probably better than using IPA\\
 beginners may not understand these symbols.
-some of them aren't really agreed on, it is a Standard Written Form and
+some of the pronunciations aren't really agreed on, it is a Standard {\it Written} Form and
 may not be prescriptive for pronunciation.}
-\note[item]{e.g. \href{http://www.cornishdictionary.org.uk/?locale=en\#understanding}{www.cornishdictionary.org.uk/\#understanding} can mean an agreement, or knowledge. note dictionary also matches verb form understand, this is a feature of Maes T.}
+\note[item]{e.g. \href{http://www.cornishdictionary.org.uk/?locale=en\#understanding}{www.cornishdictionary.org.uk/\#understanding} can mean an agreement, or knowledge. note dictionary also matches verb form understand, this is a feature of Maes T (lemmatisation).}
 \end{frame}
 \begin{frame}{Things to improve}
 \begin{itemize}
@@ -155,9 +157,9 @@ before it became an established word in the language. There is a similar process
   \item<3-> Simplify some of the structure, move subentries to their own $<$lemma$>$s
   \item<4-> Collaboration with Dewi Bryn Jones (Bangor University) to enable it to be in a format suitable for import into Maes T
 \end{itemize}
-\note[item]{Certain words / phrases were in $<$partofspeechgroup$>$ and $<$subentry$>$ tags within $<$lemma$>$s.
-   this could lead to duplication where one phrase could exist as subentries of more than one $<$lemma$>$}
-\note[item]{Check cases where no part of speech is defined etc.}
+\note[item]{In the previous dictionary data, some words or phrases were in $<$partofspeechgroup$>$ and $<$subentry$>$ tags within $<$lemma$>$s.\\
+this could lead to duplication where one phrase could exist as subentries of more than one $<$lemma$>$}
+\note[item]{Check if there are any $<$lemma$>$s where no part of speech is defined etc.}
 \note[item]{Count occurances of descendant tags of $<$lemma$>$.}
 \note[item]{Count how many $<$lemma$>$ have each part of speech.}
 \end{frame} 
@@ -173,7 +175,7 @@ and define the M and L variants where they exist within this.}
 \note[item]{Previously they lived in independent $<$lemma$>$ and if you searched the M version it relied on references tags having been added to refer to the L version.}
 \note[item]{The previous data was not always systematic about how M / L distinction was marked. The M and L forms were independent of each other.}
 \end{frame}
-\begin{frame}[fragile]{Example of XML with M/L distinction}
+\begin{frame}[fragile]{Example of XML with Middle/Late distinction}
 \begin{scriptsize}
 \href{http://www.cornishdictionary.org.uk/?locale=en#aswa}{aswa}
 \begin{semiverbatim}
@@ -197,7 +199,7 @@ and define the M and L variants where they exist within this.}
 \end{scriptsize}
 \note[item]{On the website you can click through to the L version and vice versa, and to the English glosses.}
 \end{frame}
-\begin{frame}[fragile]{Example of XML with no M/L distinction}
+\begin{frame}[fragile]{Example of XML with no Middle/Late distinction}
 \begin{scriptsize}
 \href{http://www.cornishdictionary.org.uk/?locale=en#a-ugh}{a-ugh}
 \begin{semiverbatim}
@@ -255,9 +257,9 @@ There is however a $<$homonymnumber$>$ tag because {\scriptsize \tt a-ugh} can a
 \item<3-> Deployable via an API to the web or apps \cite{prys2012distributing} 
 \item<4-> Maes T has also been used for \href{http://geiriadur.bangor.ac.uk}{geiriadur.bangor.ac.uk} and \href{http://www.termiaduraddysg.org/}{www.termiaduraddysg.org} where sound samples are also presented
 \end{itemize}
-\note[item]{Maes T was guided by ISO standard formats and practices for terminology and lexicography. The ISO standard 15188 recommends a working group of 5-8 subject specialists and a terminologist.\\Provide interface designed to be user-friendly to non-terminologists, bilingual English-Welsh.}
-\note[item]{There is a four stage process\\1. Collecting Terms - record candidate terms for the source language term.\\2. Defining the concept - define in the source and target languages, add a disambiguator where needed.\\3. Standardizing Terms -record normative status of candidate terms.\\4. Linguistic Information - record part of speech, gender, plural forms etc.}
-\note[item]{Data can be served via an API, features such as showing related entries, popups to explain pos tags. matching images from Wikidata, Wikimedia Commons, linking to Wikipedia.}
+\note[item]{Maes T was guided by ISO standard formats and practices for terminology and lexicography. The ISO standard 15188 recommends a working group of 5-8 subject specialists and a terminologist.\\Provides an interface designed to be user-friendly to non-terminologists, bilingual English-Welsh.}
+\note[item]{There is a four stage process\\1. Collecting Terms - record candidate terms for the source language term.\\2. Defining the concept - define in the source and target languages, add a disambiguator where needed.\\3. Standardizing Terms - record normative status of candidate terms.\\4. Linguistic Information - record part of speech, gender, plural forms etc.}
+\note[item]{Data can be served via an API, features such as showing related entries, popups to explain part of speech tags, matching images from Wikidata, Wikimedia Commons, linking to Wikipedia.}
 \note[item]{Potential benefits of ISO standard based approach of Maes T for Cornish, such as software locali$[$sz$]$ations.}
 \end{frame}
 \begin{frame}{Termau.cymru}
@@ -268,7 +270,9 @@ There is however a $<$homonymnumber$>$ tag because {\scriptsize \tt a-ugh} can a
  \caption{\href{http://termau.cymru/\#filament}{termau.cymru/\#filament} \cite{Crossing2018}}
  \label{fig:filament}
 \end{figure}
-\note[item]{Filament: \href{http://termau.cymru/\#filament}{termau.cymru/\#filament}. In this case, the image was contributed by an expert, along with a definition.}
+\note[item]{Filament (in the atmosphere of the Sun): \href{http://termau.cymru/\#filament}{termau.cymru/\#filament}.\\
+
+In this case, the image was contributed by an expert, along with a definition.}
 \end{frame}
 \begin{frame}{Termau.cymru}
 \begin{figure}
@@ -278,7 +282,7 @@ There is however a $<$homonymnumber$>$ tag because {\scriptsize \tt a-ugh} can a
  \caption{\href{http://termau.cymru/\#ladybird}{termau.cymru/\#ladybird}}
  \label{fig:ladybird}
 \end{figure}
-\note[item]{Ladybirds: \href{http://termau.cymru/\#ladybird}{termau.cymru/\#ladybird}. In this case, Wikimedia commons images were used (manually chosen during a project with \href{http://www.cymdeithasedwardllwyd.cymru}{\it Cymdeithas Edward Llwyd}).}
+\note[item]{Ladybirds: \href{http://termau.cymru/\#ladybird}{termau.cymru/\#ladybird}. In this case, Wikimedia commons images were used (manually chosen during a project with \href{http://www.cymdeithasedwardllwyd.cymru}{\it Cymdeithas Edward Llwyd www.cymdeithasedwardllwyd.cymru}).}
 \end{frame}
 \begin{frame}{Termau.cymru}
 \begin{figure}
@@ -289,7 +293,8 @@ There is however a $<$homonymnumber$>$ tag because {\scriptsize \tt a-ugh} can a
  \label{fig:seagull}
 \end{figure}
 \note[item]{This was added as part of {\it Adar Y Byd}, a dictionary of bird names from \href{http://www.cymdeithasedwardllwyd.cymru}{\it Cymdeithas Edward Llwyd}. This had 9500 entries, so an automated method was used.}
-\note[item]{There is a species of moth called `Silurian' and this found a Wikimedia image of a Doctor Who character. \cite{Crossing2018}\\Note also: \href{http://termau.cymru/\#apple}{termau.cymru/\#apple} which showed in early July 2019 a picture of Apple headquarters rather than the fruit.\\\href{https://www.xkcd.com/2140/}{xkcd.com/2140 Reinvent the Wheel}\\Also beware of possible API changes.}
+\note[item]{Sound samples are available for some entries, this feature could also be used for pronunciations.}
+\note[item]{There is a species of moth called `Silurian' and the automated match found a Wikimedia image of a Doctor Who character, as noted in \cite{Crossing2018}.\\\href{https://www.xkcd.com/2140/}{xkcd.com/2140 Reinvent the Wheel}\\Also beware of possible API changes.}
 \end{frame}
 \begin{frame}{Adapting Maes T to better serve Cornish}
 \begin{itemize}
@@ -299,7 +304,7 @@ There is however a $<$homonymnumber$>$ tag because {\scriptsize \tt a-ugh} can a
 website rather than terminology dictionaries that usually have a 1:1 correspondence between Welsh-English in a given context
 \end{itemize}
 \note[item]{The original purpose of Maes T was to support terminology dictionaries which aimed at a one to one mapping between source language and target language terms. Although it had been used since for more general dictionaries such as \href{http://geiriadur.bangor.ac.uk}{geiriadur.bangor.ac.uk}.}
-\note[item]{Welsh grammars tend to treat the singulative / collective nouns as a normal singular / plural distinction e.g. coeden - coed, plentyn - plant, where the noun loses an ending to become plural.}
+\note[item]{For example, Welsh grammars tend to treat the singulative / collective nouns as a normal singular / plural distinction e.g. coeden - coed, plentyn - plant, where the noun loses an ending to become plural.}
 \note[item]{The plural of the singulative is a feature of (at least some forms) of Cornish, for a number of individual items, rather than en masse, for at least some n.coll. E.g. gwydh, gwedhen, gwydhennow. Not currently shown in dictionary.} 
 \end{frame}
 \begin{frame}{Transition to editing within Maes T}
@@ -333,6 +338,7 @@ Python scripts validating / analysing it
  \label{fig:sunflower}
 \end{figure}
 \note[item]{Explain a bit about linking to Wikimedia Commons images of plants, and to Wikipedia.}
+\note[item]{This is done by matching to Wikidata items, using SPARQL queries: \href{https://query.wikidata.org/}{query.wikidata.org}.}
 \note[item]{See \cite{Crossing2018} for more information on \href{http://termau.cymru}{Porth Termau Cenedlaethol Cymru termau.cymru} linking to Wikimedia images. This included automatically finding them using English and Latin names. }
 \end{frame}
 \subsection{Demonstration of new dictionary website}
@@ -341,7 +347,6 @@ Python scripts validating / analysing it
 \item Demonstrate the new dictionary website (demo of \href{http://cornishdictionary.org.uk/test/}{cornishdictionary.org.uk}) 
 \end{itemize}
 \note[item]{New version is now at the main URL.}
-\note[item]{Possibly do the demo at the end or in an unconference session subject to time, maybe better for flow of the talk to move to conclusions now.}
 \note[item]{Responsive design - e.g. \href{http://cornishdictionary.org.uk/\#moon}{cornishdictionary.org.uk/\#moon} automatically switches to two-column layout where there are matches in both languages, and if the screen width is low, these are stacked vertically rather than side-by-side.}
 \end{frame}
 \section*{Summary}
@@ -359,8 +364,8 @@ awareness of `traditional' spellings that some users prefer such that searching 
 spellings from other forms of Cornish e.g. gwydhenn (Kemmyn) - gwedhen (SWF) \\
 could M / L, and/or the `traditional' forms be offered as a user selection at the front-end?\\
 and a choice between a strict and `fuzzy' search?}
-\note[item]{Maes T does this for Welsh, using lemmatizers, spelling and grammar checkers. e.g. \href{http://geiriadur.bangor.ac.uk/\#plant}{geiriadur.bangor.ac.uk/\#plant} lemmatizes `plant' to the singular `plentyn' ``child''. It will also present the English entries for `plant'. \href{http://geiriadur.bangor.ac.uk/\#mor}{geiriadur.bangor.ac.uk/\#mor} gives the conjunction/adverb mor and the noun môr, as well as bôr (an alternate spelling for bore, b could have nasal mutated to m).\\Maes T customizes results using different API keys including different terminology resources and search settings.}
-\note[item]{Possibilities of wider linking to Wikimedia items including Wikidata?}
+\note[item]{Maes T does this for Welsh, using lemmatisers, spelling and grammar checkers. e.g. \href{http://geiriadur.bangor.ac.uk/\#plant}{geiriadur.bangor.ac.uk/\#plant} lemmatizes `plant' to the singular `plentyn' ``child''. It will also present the English entries for `plant'. \href{http://geiriadur.bangor.ac.uk/\#mor}{geiriadur.bangor.ac.uk/\#mor} gives the conjunction/adverb mor and the noun môr, as well as bôr (an alternate spelling for bore, b could have nasal mutated to m).\\Maes T customizes results using different API keys including different terminology resources and search settings.}
+\note[item]{Possibilities of wider linking to Wikimedia items?}
 \note[item]{Linkage with place-name map?}
 \end{scriptsize}
 \end{frame}
