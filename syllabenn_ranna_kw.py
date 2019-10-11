@@ -134,7 +134,7 @@ class kwKemmynRegExp:
     (\'?(bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|qwr?|Qwr?|ch|Ch|Dhr?\'?|dhr?\'?|dl|dr|Dl|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bckdfjlghpmnrstvwyzBCKDFJLGHPMNRSTVWYZ]\'?)? #consonant or c. cluster
     \'?(a\'?y|a\'?w|eu|e\'?w|e\'?y|iw|oe|oy|ow|ou|uw|yw|A\'?y|Aw|E\'?y|Eu|E\'?w|Iw|Oe|Oy|Ow|Ou|Uw|Yw|\'?[aeoiuyAEIOUY])\'? # vowel
     (lgh|ls|lt|lv|bl|br|bb|kl|kr|kn|kwr?|kk|cch|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|lm|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|r\'?s|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgjklmnprstvw]\'?)? # optionally a second consonant or cluster ie CVC?
-    (\-|\.|\,|;|:|!|\?|\(|\))*
+    (\-|\.|\,|;|:|\'|!|\?|\(|\))*
     )$
     '''
     # kynsaRegExp matches syllable at beginning of a word
@@ -143,7 +143,7 @@ class kwKemmynRegExp:
     ^((\'?(bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|qwr?|Qwr?|ch|Ch|Dhr?|dhr?|dl|dr|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|gwr?|gwl?|gl|gr|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bckdfghjlmnprtvwyzBCKDFGHJLMNPRTVWYZ])\'?)? # optional C. 
     \'?(a\'?y|a\'?w|eu|e\'?w|e\'?y|iw|oe|oy|ow|ou|uw|yw|A\'?y|Aw|E\'?y|Eu|E\'?w|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])\'? # Vowel
     (lgh|ls|lk|ld|lf|lt|lv|lm|bb?|kk?|cch|n?ch|n?dr|dh|dd?|ff?|vv?|ght|gg?h?|ll?|mp|mm?|nk|nd|nj|ns|nth?|nn?|pp?|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rj|rf|r\'?s|rr?|sh|st|sk|sp|ss?|tt?h|tt?|[jw]\'?)? # optional C.
-    (\-|\.|\,|;|:|!|\?|\(|\))*
+    (\-|\.|\,|;|:|\'|!|\?|\(|\))*
     )'''
     # TODO: may need some more debugging checking which consonant clusters should be
     # considered 'single' and 'double' for the purposes of vowel length
@@ -210,7 +210,7 @@ class kwKemmynDevRegExp:
     gg?ht?|gw|gl|gn|ld|lf|lv|lk|ll|lm|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|
     rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|r\'?s|sh|st|sk|ss|sp?l?|tt?h|tt|
     [bdfgjklmnprstvw]\'?)? # optionally a second consonant or cluster ie CVC?
-    (\-|\.|\,|;|:|!|\?|\(|\))*
+    (\-|\.|\,|\'|;|:|!|\?|\(|\))*
     )$
     ''', re.X + re.I)
     # kynsaRegExp matches syllable at beginning of a word
@@ -223,7 +223,7 @@ class kwKemmynDevRegExp:
     (lgh|ls|lk|ld|lf|lv|lt|bb?|kk?|cch|n?ch|n?dr|dh|dd?|ff?|vv?|ght|gg?h?|ll?|lm|
     mp|mm?|nk|nd|nj|ns|nth?|nn?|pp?|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rj|rf|r\'?s|rr?|
     sh|st|sk|sp|ss?|tt?h|tt?|[jw]\'?)? # optional C.
-    (\-|\.|\,|;|:|!|\?|\(|\))*
+    (\-|\.|\,|\'|;|:|!|\?|\(|\))*
     )''', re.X + re.I)
     
     # TODO: may need some more debugging checking which consonant clusters should be
@@ -307,7 +307,7 @@ class kwFSSRegExp:
     gg?ht?|gw|gl|gn|ld|lf|lv|lk|ll|lm|mm|mp|nk|nd|nj|ns|nth?|nn|p[hrlp]|rgh?|
     rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|r\'?s|cy|sh|st|s[ck]|ss|sp?l?|tt?h|tt|
     [bdfgjklmnprstvw]\'?)? # optionally a second consonant or cluster ie CVC?
-    (\-|\.|\,|;|:|!|\?|\(|\))*
+    (\-|\.|\,|\'|;|:|!|\?|\(|\))*
     )$
     ''', re.X + re.I)
     
@@ -322,7 +322,7 @@ class kwFSSRegExp:
     dd?|ff?|vv?|ght|gg?h?|ll?|lm|
     mp|mm?|nk|nd|nj|ns|nth?|nn?|pp?|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rj|rf|r\'?s|rr?|
     cy|sh|st|sk|sp|ss?|tt?h|tt?|[jw]\'?)? # optional C.
-    (\-|\.|\,|;|:|!|\?|\(|\))*
+    (\-|\.|\,|\'|;|:|!|\?|\(|\))*
     )''', re.X + re.I)
     
     # TODO: may need some more debugging checking which consonant clusters should be
@@ -395,7 +395,7 @@ class cyRegExp:
     cht?|gw|gl|gn|ld|lff?|lc|lg|llt?|mm|mp|nc|ng|nd|ns|nth?|nn|p[hrlp]|rch?|
     rdd?|rth?|rc|rg|rl|rff?|rm|rn|rr|rs|st|sc|sg|ss|sp?l?|th|tt|
     [bcdfgjlmnprstwz]\'?)? # optionally a second consonant or cluster ie CVC?
-    (\-|\.|\,|;|:|!|\?|\(|\))*
+    (\-|\.|\,|\'|;|:|!|\?|\(|\))*
     )$| #or
     ((\'?(c[lrn]|chl?|cwr?|si|ddr?|
     [bdftw][lr]|ff|ff[lr]|ll|n?gwr?|n?gwl?|g[lr]|gn|ng|nh|ngh|mr|mh|
@@ -403,7 +403,7 @@ class cyRegExp:
     sgw?|sbr|spr|sp?l?|sm|th?r?|tl|w[rl]|
     [bcdfjlghmnprstwiz])\'?)? # consonant (optional)
     \'?[äëïöüẅÿ]\'? # vowel with umlaut
-    (\-|\.|\,|;|:|!|\?|\(|\))*
+    (\-|\.|\,|\'|;|:|!|\?|\(|\))*
     )$''', re.X + re.I + re.U)
     
     # kynsaRegExp matches syllable at beginning of a word
@@ -427,7 +427,7 @@ class cyRegExp:
     sgw?|sbr|spr|sp?l?|sm|th?r?|tl|w[rl]|
     [bcdfjlghmnprstwiz])\'?) # consonant
     \'?[äëïöüẅÿ]\'? # vowel with umlaut
-    (\-|\.|\,|;|:|!|\?|\(|\))*
+    (\-|\.|\,|\'|;|:|!|\?|\(|\))*
     )''', re.X + re.I + re.U)
     
     # TODO: may need some more debugging checking which consonant clusters should be
