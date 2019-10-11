@@ -127,13 +127,13 @@ class kwKemmynRegExp:
 (lgh|ls|lt|bl|br|bb|kl|kr|kn|kwr?|kk|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|lm|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgljmnpkrstvw])? #  optional const.
     )| # or
     (\'?(a\'?y|a\'?w|eu|e\'?w|e\'?y|iw|oe|oy|ow|ou|uw|yw|A\'?y|Aw|E\'?y|Eu|E\'?w|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])\'? # vowel
-    (lgh|ls|lt|lv|bl|bb|kl|kr|kn|kwr?|kk|cch|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|lm|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgljmnpkrstvw]\'?)?) # consonant (optional)
+    (lgh|ls|lt|lv|bl|bb|kl|kr|kn|kwr?|kk|cch|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|lm|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|r\'?s|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgljmnpkrstvw]\'?)?) # consonant (optional)
     '''
     # diwethRegExp matches a syllable at the end of the word
     diwetRegExp =  r'''(?x)
     (\'?(bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|qwr?|Qwr?|ch|Ch|Dhr?\'?|dhr?\'?|dl|dr|Dl|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|vv|ll|gwr?|gwl?|gl|gr|gg?h|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bckdfjlghpmnrstvwyzBCKDFJLGHPMNRSTVWYZ]\'?)? #consonant or c. cluster
     \'?(a\'?y|a\'?w|eu|e\'?w|e\'?y|iw|oe|oy|ow|ou|uw|yw|A\'?y|Aw|E\'?y|Eu|E\'?w|Iw|Oe|Oy|Ow|Ou|Uw|Yw|\'?[aeoiuyAEIOUY])\'? # vowel
-    (lgh|ls|lt|lv|bl|br|bb|kl|kr|kn|kwr?|kk|cch|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|lm|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgjklmnprstvw]\'?)? # optionally a second consonant or cluster ie CVC?
+    (lgh|ls|lt|lv|bl|br|bb|kl|kr|kn|kwr?|kk|cch|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|gg?ht?|gw|gl|gn|ld|lf|lk|ll|lm|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|r\'?s|sh|st|sk|ss|sp?l?|tt?h|tt|[bdfgjklmnprstvw]\'?)? # optionally a second consonant or cluster ie CVC?
     (\-|\.|\,|;|:|!|\?|\(|\))*
     )$
     '''
@@ -142,7 +142,7 @@ class kwKemmynRegExp:
     kynsaRegExp =  r'''(?x)
     ^((\'?(bl|br|Bl|Br|kl|Kl|kr|Kr|kn|Kn|kwr?|Kwr?|qwr?|Qwr?|ch|Ch|Dhr?|dhr?|dl|dr|Dr|fl|Fl|fr|Fr|vl|Vl|vr|Vr|gwr?|gwl?|gl|gr|gn|Gwr?|Gwl?|Gl|Gr|Gn|hwr?|Hwr?|ph|Ph|pr|pl|Pr|Pl|shr?|Shr?|str?|Str?|skr?|Skr?|skw?|Skw?|sbr|Sbr|spr|Spr|sp?l?|Sp?l?|sm|Sm|tth|Tth|thr?|Thr?|tr|Tr|tl|Tl|wr|Wr|wl|Wl|[bckdfghjlmnprtvwyzBCKDFGHJLMNPRTVWYZ])\'?)? # optional C. 
     \'?(a\'?y|a\'?w|eu|e\'?w|e\'?y|iw|oe|oy|ow|ou|uw|yw|A\'?y|Aw|E\'?y|Eu|E\'?w|Iw|Oe|Oy|Ow|Ou|Uw|Yw|[aeoiuyAEIOUY])\'? # Vowel
-    (lgh|ls|lk|ld|lf|lt|lv|lm|bb?|kk?|cch|n?ch|n?dr|dh|dd?|ff?|vv?|ght|gg?h?|ll?|mp|mm?|nk|nd|nj|ns|nth?|nn?|pp?|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rj|rf|rs|rr?|sh|st|sk|sp|ss?|tt?h|tt?|[jw]\'?)? # optional C.
+    (lgh|ls|lk|ld|lf|lt|lv|lm|bb?|kk?|cch|n?ch|n?dr|dh|dd?|ff?|vv?|ght|gg?h?|ll?|mp|mm?|nk|nd|nj|ns|nth?|nn?|pp?|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rj|rf|r\'?s|rr?|sh|st|sk|sp|ss?|tt?h|tt?|[jw]\'?)? # optional C.
     (\-|\.|\,|;|:|!|\?|\(|\))*
     )'''
     # TODO: may need some more debugging checking which consonant clusters should be
@@ -196,7 +196,7 @@ class kwKemmynDevRegExp:
     (\'?(a\'?y|a\'?w|eu|e\'?w|e\'?y|iw|oe|oy|ow|ou|uw|yw|[aeoiuy])\'? # vowel
     (lgh|ls|lt|bl|bb|kl|kr|kn|kwr?|kk|cch|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|
     gg?ht?|gw|gl|gn|ld|lf|lv|lk|ll|lm|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|
-    rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|
+    rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|r\'?s|sh|st|sk|ss|sp?l?|tt?h|tt|
     [bdfgljmnpkrstvw]\'?)?) # consonant (optional)
     ''', re.X + re.I)
     
@@ -208,7 +208,7 @@ class kwKemmynDevRegExp:
     \'?(a\'?y|a\'?w|eu|e\'?w|e\'?y|iw|oe|oy|ow|ou|uw|yw|\'?[aeoiuy])\'? # vowel
     (lgh|ls|lt|bl|br|bb|kl|kr|kn|kwr?|kk|cch|n?ch|dhr?|dl|n?dr|dd|fl|fr|ff|vl|vv|
     gg?ht?|gw|gl|gn|ld|lf|lv|lk|ll|lm|mm|mp|nk|nd|nj|ns|nth?|nn|ph|pr|pl|pp|rgh?|
-    rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|sh|st|sk|ss|sp?l?|tt?h|tt|
+    rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|r\'?s|sh|st|sk|ss|sp?l?|tt?h|tt|
     [bdfgjklmnprstvw]\'?)? # optionally a second consonant or cluster ie CVC?
     (\-|\.|\,|;|:|!|\?|\(|\))*
     )$
@@ -221,7 +221,7 @@ class kwKemmynDevRegExp:
     wr|wl|[bckdfghjlmnprtvwyz])\'?)? # optional C. 
     \'?(a\'?y|a\'?w|eu|e\'?w|e\'?y|iw|oe|oy|ow|ou|uw|yw|[aeoiuy])\'? # Vowel
     (lgh|ls|lk|ld|lf|lv|lt|bb?|kk?|cch|n?ch|n?dr|dh|dd?|ff?|vv?|ght|gg?h?|ll?|lm|
-    mp|mm?|nk|nd|nj|ns|nth?|nn?|pp?|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rj|rf|rs|rr?|
+    mp|mm?|nk|nd|nj|ns|nth?|nn?|pp?|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rj|rf|r\'?s|rr?|
     sh|st|sk|sp|ss?|tt?h|tt?|[jw]\'?)? # optional C.
     (\-|\.|\,|;|:|!|\?|\(|\))*
     )''', re.X + re.I)
@@ -292,7 +292,7 @@ class kwFSSRegExp:
     (\'?(a\'?y|a\'?w|eu|e\'?w|e\'?y|iw|oo|oy|ow|ou|uw|yw|[aeoiuy])\'? # vowel
     (lgh|ls|lt|[bdfv][lr]|bb|[ck][lrn]|[ck]k|[kq]wr?|n?ch|dhr?|n?dr|dd|ff|vv|
     gg?ht?|gw|gl|gn|ld|lf|lv|lk|ll|lm|mm|mp|nk|nd|nj|ns|nth?|nn|p[hrlp]|rgh?|
-    rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|cy|sh|st|s[ck]|ss|sp?l?|tt?h|tt|
+    rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|r\'?s|cy|sh|st|s[ck]|ss|sp?l?|tt?h|tt|
     [bdfglhmnpkrstvw]\'?)?) # consonant (optional)
     ''', re.X + re.I)
     
@@ -305,7 +305,7 @@ class kwFSSRegExp:
     \'?(a\'?y|a\'?w|eu|e\'?w|e\'?y|iw|oo|oy|ow|ou|uw|yw|\'?[aeoiuy])\'? # vowel
     (lgh|ls|lt|[bdfk][lr]|bb|[ck][lrn]|[ck]k|[kq]wr?|cch|n?ch|dhr?|n?dr|dd|ff|vl|vv|
     gg?ht?|gw|gl|gn|ld|lf|lv|lk|ll|lm|mm|mp|nk|nd|nj|ns|nth?|nn|p[hrlp]|rgh?|
-    rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|rs|cy|sh|st|s[ck]|ss|sp?l?|tt?h|tt|
+    rdh?|rth?|rk|rl|rv|rm|rn|rr|rj|rf|r\'?s|cy|sh|st|s[ck]|ss|sp?l?|tt?h|tt|
     [bdfgjklmnprstvw]\'?)? # optionally a second consonant or cluster ie CVC?
     (\-|\.|\,|;|:|!|\?|\(|\))*
     )$
@@ -320,7 +320,7 @@ class kwFSSRegExp:
     \'?(a\'?y|a\'?w|eu|e\'?w|e\'?y|iw|oo|oy|ow|ou|uw|yw|[aeoiuy])\'? # Vowel
     (lgh|ls|lk|ld|lf|lv|lt|[bdf][lr]|bb?|[ck][lrn]|c?k|kk|[kq]wr?|cch|n?ch|n?dr|dh|
     dd?|ff?|vv?|ght|gg?h?|ll?|lm|
-    mp|mm?|nk|nd|nj|ns|nth?|nn?|pp?|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rj|rf|rs|rr?|
+    mp|mm?|nk|nd|nj|ns|nth?|nn?|pp?|rgh?|rdh?|rth?|rk|rl|rv|rm|rn|rj|rf|r\'?s|rr?|
     cy|sh|st|sk|sp|ss?|tt?h|tt?|[jw]\'?)? # optional C.
     (\-|\.|\,|;|:|!|\?|\(|\))*
     )''', re.X + re.I)
@@ -460,7 +460,11 @@ class RannaSyllabenn:
         # print(inputtext)
         self.inputtext = inputtext
         # nltk.word_tokenize puts these in separate words
-        apos_geryow = ["'m","'s","'th", "'n"]
+        apos_geryow = ["'m","'s","'th"]
+        # for certain words containing apostrophes like 'n
+        # the apostrophe ends up in its own word
+        # e.g. a-dhia'n --> ['a-dhia', "'", 'n']
+        apos_geryow2 = ["n", "w", "y", "l"]
         # use NLTK to split the input text into words
         try:
             geryow = nltk.word_tokenize(inputtext)
@@ -482,11 +486,17 @@ class RannaSyllabenn:
                 geryow2.append(ger2)
             else:
                 geryow2.append(g)
+        # fix words with 'm 's 'th
         for i,g in enumerate(geryow2[:-1]):
             if geryow2[i+1] in apos_geryow:
                 geryow2[i] = geryow2[i] + geryow2[i+1]
                 geryow2[i+1] = ''
-            
+        # fix words with 'n 'w 'y 'l
+        for i,g in enumerate(geryow2[:-2]):
+            if geryow2[i+1]=="'" and geryow2[i+2] in apos_geryow2:
+                geryow2[i] = geryow2[i] +"'" + geryow2[i+2]
+                geryow2[i+1] = ''
+                geryow2[i+2] = ''
         self.geryow = geryow2
             
     
