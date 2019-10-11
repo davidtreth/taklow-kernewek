@@ -120,7 +120,8 @@ Digraphs are handled by temporarily replacing the digraphs with single character
 For example the digraph ch is replaced by č and sh by š before looping through, but converted back to ch and sh for output.
 Update 22/10/16: In the GUI there is now an option to use, or not use the digraphs in the letter frequency calculation (except ch which is used in both cases).
 
-It is also possible to draw a lexical dispersion plot, showing where in a text particular words appear graphically, as a percentage of the whole text.
+It is also possibls
+le to draw a lexical dispersion plot, showing where in a text particular words appear graphically, as a percentage of the whole text.
 
 As of May 2017, there is now an option to choose the interface language of the GUI (Cornish or English) and switch between using Kernewek Kemmyn and manuscript spellings (there is a different set of texts available in each).
 
@@ -136,3 +137,14 @@ a folder containing the traditional texts, most in both manuscript and Kernewek 
 kernewek_corpus/stripped/
 a folder containing text files of the texts, with only the text itself, removing explanatory notes, translators notes, stage directions, character names heading a paragraph etc. Where something is unclear if it is part of the main text, my rule has been to retain lines that are part of the line numbering, e.g. the Latin lines spoken by the doctor in 1446-1447 of Bewnans Meriasek.
 For Tregear, I manually removed editorial annotations - usually in single or double square brakets, though some single square brackets [] are part of the text and have been retained. These represent places where the correct text is unclear. The curly brackets {} are assimilated loanwords, and angle brackets <> unassimilated (mostly) English words. Text enclosed by plus signs + + were crossed out in the original manuscript. I have uploaded several files with and without the []{}<> marks - though text is always retained, and a file without the crossed out words.
+
+GM09_words_notinSWF/
+some work on words found in Gerlyver Meur 2009 but not in the SWF online dictionary as of 2019.
+To start with, I focused on a list of words containing apostrophes:
+GM09_words_apostrophes.txt
+this was because the tokenization meant that some of these words actually got split to two words in the output
+
+and a list of words where backwards segmentation failed:
+GM09_words_bkwd_segfails.txt
+in these cases, the backwards segmentation starting from the end of the word assumes a semi-vowel y which leaves an
+incomplete syllable before it. 
