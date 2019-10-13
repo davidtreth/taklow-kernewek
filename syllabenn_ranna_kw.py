@@ -581,7 +581,29 @@ class RannaSyllabenn:
         if msyl:
             match_syl = msyl.group()
         return match_syl
-
+        
+    def match_syl_all(self, ger, regexp, fwd=True):
+        """ find all possible first or last syllables of a word
+        with regexp = kynsaRegExp for 1st syllables
+        regexp = diwetRegExp for last syllables
+        """
+        msyls = []
+        match_syl = ''        
+        msyl = re.search(regexp,ger)
+        if msyl:
+            match_syl = msyl.group()
+            msyls.append(match_syl)
+            while msyl:
+                if fwd:
+                    ger = match_syl[:-1]
+                else:
+                    ger = match_syl[1:]
+                msyl = re.search(regexp,ger)
+                if msyl:
+                    match_syl = msyl.group()
+                    msyls.append(match_syl)
+        return msyls
+        
     def diwettha_lytherenn(self,ger):
         """ return last letter of a word
         """
