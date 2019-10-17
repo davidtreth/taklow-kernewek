@@ -538,21 +538,21 @@ class RannaSyllabenn:
                 # consonants that can precede h in terminating a syllable
                 # if the syllable in question starts with semi-vowel y
                 if re.search(semivowel_y, d):
-                    print("semi-vowel y begins syllable {s} in word {g}".format(s=d, g=ger0))
+                    #print("semi-vowel y begins syllable {s} in word {g}".format(s=d, g=ger0))
                     ger_dalleth = ger.rsplit(d,1)[0]
                     d2 = self.match_syl(ger_dalleth, regexp)
                     if not(d2):
-                        print("failure to match regexp to {gd} in word {g}".format(gd=ger_dalleth, g=ger0))
-                        print("deleting y from beginning of syllable")
+                        #print("failure to match regexp to {gd} in word {g}".format(gd=ger_dalleth, g=ger0))
+                        #print("deleting y from beginning of syllable")
                         d = d[1:]
                 elif re.search(initial_hw, d):
-                    print("hw begins syllable {s} in word {g}".format(s=d, g=ger0))
+                    #print("hw begins syllable {s} in word {g}".format(s=d, g=ger0))
                     # without the last syllable
                     ger_dalleth = ger.rsplit(d,1)[0]
                     d2 = self.match_syl(ger_dalleth, regexp)
-                    if not(d2):
-                        print("failure to match regexp to {gd} in word {g}".format(gd=ger_dalleth, g=ger0))                    
-                        print("delete h from beginning of the syllable")
+                    if not(d2) and ger_dalleth.strip() != "":
+                        #print("failure to match regexp to {gd} in word {g}".format(gd=ger_dalleth, g=ger0))                    
+                        #print("delete h from beginning of the syllable")
                         d = d[1:]
                 # add the syllable to the list
                 if d != '':
