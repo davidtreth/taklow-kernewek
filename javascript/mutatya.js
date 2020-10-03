@@ -218,7 +218,10 @@ function mutate(word,mutationstate, trad=false) {
         }
         else {
             if (word.charAt(0) === "g"){
+                if (!((word.substring(0,2) === "gl") || (word.substring(0,2) === "gr")))
+                {
                 newword = "h"+ word.substring(1);
+                }
             }
         }
         return caseFormat(newword,outputcase);
@@ -246,7 +249,10 @@ function mutate(word,mutationstate, trad=false) {
             return caseFormat(newword,outputcase)
         }
         if (word.charAt(0) === "g"){
+            if (!((word.substring(0,2) === "gl") || (word.substring(0,2) === "gr")))
+            {
             newword = "h" + word.substring(1);
+            }
         }
         if (word.substring(0,2) === "gw"){
             newword = word.substring(1);

@@ -163,7 +163,10 @@ def mutate(word,mutationstate, trad=False):
             newword = "wh"+ word[2:]
         else:
             if word[0] == "g":
-                newword = "h"+ word[1:]
+                if word[0:2] == "gl" or word[0:2] == "gr":
+                    pass
+                else:
+                    newword = "h"+ word[1:]
         return caseFormat(newword,outputcase)
 
     if mutationstate == 6:
@@ -183,7 +186,10 @@ def mutate(word,mutationstate, trad=False):
             newword = "w" + word[1:]
             return caseFormat(newword,outputcase)
         if word[0] == "g":
-            newword = "h" + word[1:]
+            if word[0:2] == "gl" or word[0:2] == "gr":
+                pass
+            else:
+                newword = "h" + word[1:]
         if word[0:2] == "gw":
             newword = word[1:]
         return caseFormat(newword,outputcase)
