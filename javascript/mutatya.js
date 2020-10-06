@@ -310,6 +310,26 @@ else
 document.getElementById("mut").innerHTML = outp;
 }
 
+function jsmutate_all() {
+  var inp, outp;
+  // get value of text input
+  x = document.getElementById("kwtekst").value;
+  if (x == "") {
+    outp = "An kyst yw gwag. Res yw dhywgh gorra nebes tekst";
+}
+else
+{
+    var outp1 = "<tr><td>Heb treylyans</td><td><sup>1</sup>"+mutate(x, 1)+"</td></tr>";
+    var outp2 = "<tr><td>Treylans medhel</td><td><sup>2</sup>"+mutate(x, 2)+"</td></tr>";
+    var outp3 = "<tr><td>Treylans anellys</td><td><sup>3</sup>"+mutate(x, 3)+"</td></tr>";
+    var outp4 = "<tr><td>Treylans kales</td><td><sup>4</sup>"+mutate(x, 4)+"</td></tr>";
+    var outp5 = "<tr><td>Treylans kemmyskys</td><td><sup>5</sup>"+mutate(x, 5)+"</td></tr>";
+    var outp6 = "<tr><td>Treylans kemmyskys wosa 'th</td><td><sup>5</sup>"+mutate(x, 6)+"</td></tr>";
+    outp = "<table>" + outp1 + outp2 + outp3 + outp4 + outp5 + outp6 + "</table>";
+}
+document.getElementById("mut").innerHTML = outp;
+}
+
 console.log(caseFormat("dYDH dA NORVYS", "lower"));
 console.log(caseFormat("dYDH dA NORVYS", "upper"));
 console.log(caseFormat("dYDH dA NORVYS", "title"));
