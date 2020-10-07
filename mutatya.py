@@ -262,8 +262,10 @@ def mutate_cy(word, mutationstate):
             newword = "ngh" + word[1:]
         if word[0] == "p" and word[0:2] != "ph":
             newword = "mh" + word[1:]
-        if word[0] == "t":
+        if word[0] == "t" and word[0:2] != "th":
             newword = "nh" + word[1:]
+        if word[0:2] == "th":
+            newword = "nh" + word[2:]
         if word[0] == "b":
             newword = "m" + word[1:]
         if word[0] == "d" and word[0:2] != "dd":
@@ -446,7 +448,7 @@ def rev_mutate_cy(word, listmode = False):
     word = word.lower()
 
     # assume initial mh- nh- ngh- dd- only occur in mutated forms
-    # initial ph- th- are rare but do exist
+    # unmutated initial ph- th- are rare but do exist
     unmutated = {1:[], 2:[], 3:[], 7:[]}
     if word[0:3] != "ngh" and word[0:2] not in ["dd", "mh", "nh", "ng"]:
         unmutated[1].append(word)

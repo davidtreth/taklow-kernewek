@@ -95,7 +95,7 @@ function mutate(word,mutationstate, trad=false) {
         return caseFormat(word,outputcase);
     }
     var newword;
-    if (mutationstate == 2){
+    if (mutationstate === 2){
         // lentition
         newword = word;
         // exception for Gorsedh -> An Orsedh
@@ -261,8 +261,229 @@ function mutate(word,mutationstate, trad=false) {
     }
 }
 
+function mutate_cy(word, mutationstate) {
+    /*
+    take Welsh word as a str
+    and mutationstate as integer 1-3 or 7, 8
+    use variable outputcase
+    to return word in same capitalisation
+    as it went in
+    note that non-standard capITALization
+    will be turned lower case
+    1 = unmutated
+    2 = soft mutation
+    3 = aspirate mutation
+    7 = nasal mutation
+    8 = mixed mutation (after negative particle
+    Ni - may by written or not, where 
+    those letters that undergo aspirate mutation
+    do so, and other letters undergo soft mutation)
+    */
+    var outputcase = findOutputCase(word);
+    word = word.toLowerCase();
+    // default to no mutation if mutationstate isn't what is
+    // expected (int 1-3,7-8)
+    var mutationstatearr = [1,2,3,7,8];
+    if (mutationstatearr.indexOf(mutationstate) === -1){
+        // if not an integer in 1-3 or 7-8, set it to 1
+        mutationstate = 1;
+    }
+    if (mutationstate === 1){
+    return caseFormat(word, outputcase);
+    }
+    var newword;
+    if (mutationstate === 2){
+        // lentition
+        newword = word;        
+    if (word.charAt(0) === "g") {
+        newword = word.substring(1);
+        }
+    if ((word.charAt(0) === "b")||(word.charAt(0) === "m")) {
+        newword = "f" + word.substring(1);
+        }
+    if ((word.charAt(0) === "c")&&(word.substring(0,2) !== "ch")) {
+        newword = "g" + word.substring(1);
+        }
+    if ((word.charAt(0) === "d")&&(word.substring(0,2) !== "dd")) {
+        newword = "d" + word;
+        }
+    if ((word.charAt(0) === "p")&&(word.substring(0,2) !== "ph")) {
+        newword = "b" + word.substring(1);
+        }
+    if ((word.charAt(0) === "t")&&(word.substring(0,2) !== "th")) {
+        newword = "d" + word.substring(1); 
+        }   
+    if (word.substring(0,2) === "ll") {
+        newword = word.substring(1); 
+        }
+    if (word.substring(0,2) === "rh") {
+        newword = "r" + word.substring(2);
+        }
+    return caseFormat(newword, outputcase);
+    }       
+    if (mutationstate === 3){
+        // breathed mutation
+        newword = word;
+    if ((word.charAt(0) === "c")&&(word.substring(0,2) !== "ch")) {
+        newword = "ch" + word.substring(1);
+    }
+    if ((word.charAt(0) === "p")&&(word.substring(0,2) !== "ph")) {
+        newword = "ph" + word.substring(1);
+        }
+    if ((word.charAt(0) === "t")&&(word.substring(0,2) !== "th")) {
+        newword = "th" + word.substring(1); 
+        }                
+    return caseFormat(newword, outputcase);
+    }
+    if (mutationstate === 7){
+        // nasal mutation
+        newword = word; 
+    if ((word.charAt(0) === "c")&&(word.substring(0,2) !== "ch")) {
+        newword = "ngh" + word.substring(1);
+    }
+    if ((word.charAt(0) === "p")&&(word.substring(0,2) !== "ph")) {
+        newword = "mh" + word.substring(1);
+        }
+    if ((word.charAt(0) === "t")&&(word.substring(0,2) !== "th")) {
+        newword = "nh" + word.substring(1); 
+        }
+    if (word.substring(0,2) === "th") {
+        newword = "nh" + word.substring(2); 
+        }
+    if (word.charAt(0) === "b") {
+        newword = "m" + word.substring(1);
+        }
+    if ((word.charAt(0) === "d")&&(word.substring(0,2) !== "dd")) {
+        newword = "n" + word.substring(1);
+        }
+    if (word.charAt(0) === "g") {
+        newword = "ng" + word.substring(1);
+        }
+    return caseFormat(newword, outputcase);                                   
+    }
+    if (mutationstate === 8){
+        // mixed mutation
+        newword = word;
+        var cpt = "cpt"; 
+        if (cpt.indexOf(word.charAt(0)) !== -1) {
+            newword = mutate_cy(word, 3)
+        }
+        else {
+            newword = mutate_cy(word, 2)
+        }
+        return caseFormat(newword, outputcase);
+    }
+            
+}
+
+function rev_mutate_cy(word, listmode = false) {
+    /* Takes a word and outputs all possible words that could mutate to it
+    By default it will output a dictionary indexed by numbers [1, 2, 3, 7],
+    if listmode is set to True, it will be a flat list with duplicates
+    removed
+    */
+    var outputcase = findOutputCase(word);
+    word = word.toLowerCase();
+
+    // assume initial mh- nh- ng- ngh- dd- only occur in mutated forms
+    // unmutated initial ph- th- are rare but do exist
+    var unmutated = {1:[], 2:[], 3:[], 7:[]};
+    var mutonly = ["dd", "mh", "nh", "ng"];
+    var vowels_rl = "aâeêëiîïloöôruûwŵyŷ";
+    var rhll = ["rh", "ll"];
+    var ngnh = ["ng", "nh"];
+    if ((word.substring(0,3) !== "ngh") && (mutonly.indexOf(word.substring(0,2)) === -1)) {
+        unmutated[1].push(word);
+    }
+    // g->0
+    if ((vowels_rl.indexOf(word.charAt(0)) !== -1) && (rhll.indexOf(word.substring(0,2)) === -1)) {
+        unmutated[2].push("g"+word);
+    }
+    if ((word.charAt(0) === "f") && (word.substring(0,2) !== "ff")) {
+        unmutated[2].push("b" + word.substring(1));
+        unmutated[2].push("m" + word.substring(1));
+    }
+    if (word.charAt(0) === "g") {
+        unmutated[2].push("c" + word.substring(1));
+    }
+    if (word.substring(0,2) === "dd") {
+        unmutated[2].push("d" + word.substring(2));
+    }
+    if (word.charAt(0) === "b") {
+        unmutated[2].push("p" + word.substring(1));
+    }
+    if ((word.charAt(0) === "d") && (word.substring(0,2) !== "dd")) {
+        unmutated[2].push("t" + word.substring(1));
+    }
+    if ((word.charAt(0) === "l") && (word.substring(0,2) !== "ll")) {
+        unmutated[2].push("ll" + word.substring(1));
+    }
+    if ((word.charAt(0) === "r") && (word.substring(0,2) !== "rh")) {
+        unmutated[2].push("rh" + word.substring(1));
+    }
+    if (word.substring(0,2) === "ch") {
+        unmutated[3].push("c"+word.substring(2));
+    }
+    if (word.substring(0,2) === "ph") {
+        unmutated[3].push("p"+word.substring(2));
+    }
+    if (word.substring(0,2) === "th") {
+        unmutated[3].push("t"+word.substring(2));
+    }
+    if (word.substring(0,3) === "ngh") {
+        unmutated[7].push("c"+word.substring(3));
+    }
+    if (word.substring(0,2) === "mh") {
+        unmutated[7].push("p"+word.substring(2));
+    }
+    if ((word.substring(0,2) === "ng") && (word.substring(0,3) !== "ngh")) {
+        unmutated[7].push("g"+word.substring(2));
+    }
+    if (word.substring(0,2) === "nh") {
+        unmutated[7].push("t"+word.substring(2));
+    }
+    if ((word.charAt(0) === "m") && (word.substring(0,2) !== "mh")) {
+        unmutated[7].push("b"+word.substring(1));
+    }
+    if ((word.charAt(0) === "n") && (ngnh.indexOf(word.substring(0,2)) === -1)) {
+        unmutated[7].push("d"+word.substring(1));
+    }
+    
+    var unmutatedcasef = {};
+    const states = Object.keys(unmutated);
+    console.log(states);
+    var outw;
+    states.forEach((key, index) => {
+        unmutatedcasef[key] = [];
+        console.log(unmutated[key]);
+        for (w of unmutated[key]) {
+            outw = caseFormat(w, outputcase);
+            unmutatedcasef[key].push(outw);
+        }
+    });
+    if (listmode) {
+        var unmutlist = [];
+        Object.values(unmutatedcasef).forEach(val => {
+            unmutlist = unmutlist.concat(val);
+        });
+        var uniqunmutlist = [];
+        unmutlist.forEach((w) => {
+            if (!uniqunmutlist.includes(w)) {
+                uniqunmutlist.push(w);
+            }
+        });
+        uniqunmutlist.sort();
+        return uniqunmutlist;
+    }
+    else {
+        console.log(unmutatedcasef);
+        return unmutatedcasef;
+    }
+}
+
 function basicTests(objID){
     // test code - doesn't do all cases
+    if (document.getElementById(objID).innerHTML === "") {
     var objinnerHTML = "";
     var kath = "kath";
     var kath2 = "Kath";
@@ -295,6 +516,11 @@ function basicTests(objID){
            }
     objinnerHTML = objinnerHTML +"note - doesn't preserve capitalisation of non-standard capiTALISed input";
     document.getElementById(objID).innerHTML = objinnerHTML;
+}
+else 
+{
+    document.getElementById(objID).innerHTML = "";
+}
 }
 function jsmutate(mstate) {
   var inp, outp;
@@ -342,7 +568,51 @@ else
 }
 document.getElementById("mut").innerHTML = outp;
 }
+function jsmutate_cy(mstate) {
+  var inp, outp;
+  // get value of text input
+  x = document.getElementById("cytekst").value;
+  if (x == "") {
+    outp = "Mae'r cist yn wag. Mae rhaid i chi ysgrifennu testun";
+}
+else
+{
+    outp = mutate_cy(x, mstate);
+}
+document.getElementById("mutcy").innerHTML = outp;
+}
 
+function jsmutate_cy_all() {
+  var inp, outp;
+  // get value of text input
+  x = document.getElementById("cytekst").value;
+  if (x == "") {
+    outp = "Mae'r cist yn wag. Mae rhaid i chi ysgrifennu testun";
+}
+else
+{
+    var outp1 = "<tr><td>Ffurf heb treiglad</td><td>"+mutate_cy(x, 1)+"</td></tr>";
+    var outp2 = "<tr><td>Treiglad meddal</td><td>"+mutate_cy(x, 2)+"</td></tr>";
+    var outp3 = "<tr><td>Treiglad llais</td><td>"+mutate_cy(x, 3)+"</td></tr>";
+    var outp7 = "<tr><td>Treiglad trwynol</td><td>"+mutate_cy(x, 7)+"</td></tr>";
+    var outp8 = "<tr><td>Treiglad cymysg</td><td>"+mutate_cy(x, 8)+"</td></tr>";
+    outp = "<table>" + outp1 + outp2 + outp3 + outp7 + outp8 + "</table>";
+}
+document.getElementById("mutcy").innerHTML = outp;
+}
+function jsrevmutate_cy() {
+  var inp, outp;
+  // get value of text input
+  x = document.getElementById("cytekst").value;
+  if (x == "") {
+    outp = "Mae'r cist yn wag. Mae rhaid i chi ysgrifennu testun";
+}
+else
+{
+    outp = format_rev_mutate(rev_mutate_cy(x, listmode= false), kw=false, cy=true);
+}
+document.getElementById("mutcy").innerHTML = outp;
+}
 function rev_mutate(word, listmode = false, trad = false) {
     /* takes a word and outputs all possible words that could mutate to it 
 
@@ -544,6 +814,8 @@ function format_rev_mutate(revmdict, kw=false, cy=false) {
     output = output + "<table>";
     const descstates = Object.keys(mdesc);
     descstates.forEach((key, index) => {
+        console.log(key);
+        console.log(mdesc[key]);
         if (revmdict[key].length > 0) {
             output = output + "<tr><td>" + mdesc[key] + "</td>";
             for (w of revmdict[key]) {
@@ -555,6 +827,164 @@ function format_rev_mutate(revmdict, kw=false, cy=false) {
     output = output + "</table>";
     return output;
 }
+
+function basicTests_cy(objID) {
+    if (document.getElementById(objID).innerHTML === "") {
+    // test code - doesn't do all cases
+    var objinnerHTML = "";
+    var kath = "cath";
+    var kath2 = "Cath";
+    var kath3 = "CATH";
+    var kath4 = "caTH";
+    var gwari = "gwari";
+    var pen = "pen";
+    var tad = "tad";
+    var beic = "beic";
+    var draig = "draig";
+    var llan = "llan50goch";
+    var mor = "môr";
+    var rhwyfo = "rhwyfo";
+    var prynu = "prynais";
+    var gwerthu = "gwerthais";
+    
+    var expl = {1:"No Mutation", 2:"Soft Mutation\nvarious causes e.g. fem. sing. nouns after article, dy 'you' sg. poss. pron.", 3:"Breathed Mutation\ne.g. after 'a' and",7:"Nasal mutation\ne.g. after fy 'my' or yn 'in'"};
+    var underline = "-".repeat(30);
+    objinnerHTML = objinnerHTML + underline + "<br>";
+    var mstates = [1,2,3,7];
+    var r;
+    for (s of mstates) {
+        objinnerHTML = objinnerHTML + expl[s]+"<br>";
+        r = mutate_cy(kath, s);
+        objinnerHTML = objinnerHTML + `mutate_cy(${kath},${s}) = ${r}` + "<br>";
+        r = mutate_cy(kath2,s);
+        objinnerHTML = objinnerHTML + `mutate_cy(${kath2},${s}) = ${r}` + "<br>";
+        r = mutate_cy(kath3,s);
+        objinnerHTML = objinnerHTML + `mutate_cy(${kath3},${s}) = ${r}` + "<br>";
+        r = mutate_cy(kath4,s);
+        objinnerHTML = objinnerHTML + `mutate_cy(${kath4},${s}) = ${r}` + "<br>";
+        r = mutate_cy(gwari,s);
+        objinnerHTML = objinnerHTML + `mutate_cy(${gwari},${s}) = ${r}` + "<br>";
+        r = mutate_cy(pen,s);
+        objinnerHTML = objinnerHTML + `mutate_cy(${pen},${s}) = ${r}` + "<br>";
+        r = mutate_cy(tad,s);
+        objinnerHTML = objinnerHTML + `mutate_cy(${tad},${s}) = ${r}` + "<br>";
+        r = mutate_cy(beic,s);
+        objinnerHTML = objinnerHTML + `mutate_cy(${beic},${s}) = ${r}` + "<br>";
+        r = mutate_cy(draig,s);
+        objinnerHTML = objinnerHTML + `mutate_cy(${draig},${s}) = ${r}` + "<br>";
+        r = mutate_cy(llan,s);
+        objinnerHTML = objinnerHTML + `mutate_cy(${llan},${s}) = ${r}` + "<br>";
+        r = mutate_cy(mor,s);
+        objinnerHTML = objinnerHTML + `mutate_cy(${mor},${s}) = ${r}` + "<br>";
+        r = mutate_cy(rhwyfo,s);
+        objinnerHTML = objinnerHTML + `mutate_cy(${rhwyfo},${s}) = ${r}` + "<br>";
+        objinnerHTML = objinnerHTML + underline+"<br>";
+    }
+    objinnerHTML = objinnerHTML + "Mixed mutation after Ni negative particle, which is not always actually written/spoken but mutation remains." + "<br>";
+    r = mutate_cy(gwerthu,8);
+    objinnerHTML = objinnerHTML + `mutate_cy(${gwerthu}, 8) = ${r}` + "<br>";
+    r = mutate_cy(prynu,8);
+    objinnerHTML = objinnerHTML + `mutate_cy(${prynu}, 8) = ${r}` + "<br>";
+    
+    objinnerHTML = objinnerHTML + "note - doesn't preserve capitalisation of non-standard capiTALISed input";
+    document.getElementById(objID).innerHTML = objinnerHTML;
+}
+else {
+    document.getElementById(objID).innerHTML = "";
+}
+}
+
+function reverseTests(objID) {
+    /* test reverse mutation */
+    if (document.getElementById(objID).innerHTML === "") {
+    var objinnerHTML = "";
+    objinnerHTML = objinnerHTML + "main form" + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("gath")) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("hath")) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("voes")) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("fos")) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("den")) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("dhen")) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("tas")) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("thas")) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("weli")) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("kwari")) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("hwari")) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("whari")) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("gweth")) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("jydh")) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("japel")) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("kara")) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("cara")) + "<br>";
+    objinnerHTML = objinnerHTML + "trad form" + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("gath", false, true)) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("hath", false, true)) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("voes", false, true)) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("fos", false, true)) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("den", false, true)) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("dhen", false, true)) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("tas", false, true)) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("thas", false, true)) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("weli", false, true)) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("kwari", false, true)) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("hwari", false, true)) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("whari", false, true)) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("gweth", false, true)) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("jydh", false, true)) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("japel", false, true)) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("kara", false, true)) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rev_mutate("cara", false, true)) + "<br>";
+    document.getElementById(objID).innerHTML = objinnerHTML;
+}
+else {
+    document.getElementById(objID).innerHTML = "";
+}
+}
+
+function reverseTests_cy(objID) {
+    if (document.getElementById(objID).innerHTML === "") {
+    var objinnerHTML = "";
+    var p = rev_mutate_cy("bren", listmode= false);
+    var t = rev_mutate_cy("dad", listmode= false);
+    var g = rev_mutate_cy("gam", listmode= false);
+    var f = rev_mutate_cy("faich", listmode= false);
+    var dd = rev_mutate_cy("ddyn", listmode= false);
+    var g2 = rev_mutate_cy("air", listmode= false);
+    var ll = rev_mutate_cy("lais", listmode= false);
+    var rh = rev_mutate_cy("res", listmode= false);
+    var mh = rev_mutate_cy("mhren", listmode= false);
+    var nh = rev_mutate_cy("nhad", listmode= false);
+    var ngh= rev_mutate_cy("ngham", listmode= false);
+    var m = rev_mutate_cy("maich", listmode= false);
+    var n = rev_mutate_cy("nyn", listmode= false);
+    var ng = rev_mutate_cy("ngŵr", listmode= false);
+    var ph = rev_mutate_cy("phren", listmode= false);
+    var th = rev_mutate_cy("thad", listmode= false);
+    var ch = rev_mutate_cy("cham", listmode= false);
+    objinnerHTML = objinnerHTML + format_rev_mutate(p, kw=false, cy=true) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(t, kw=false, cy=true) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(g, kw=false, cy=true) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(f, kw=false, cy=true) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(dd, kw=false, cy=true) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(g2, kw=false, cy=true) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(ll, kw=false, cy=true) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(rh, kw=false, cy=true) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(mh, kw=false, cy=true) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(nh, kw=false, cy=true) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(ngh, kw=false, cy=true) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(m, kw=false, cy=true) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(n, kw=false, cy=true) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(ng, kw=false, cy=true) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(ph, kw=false, cy=true) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(th, kw=false, cy=true) + "<br>";
+    objinnerHTML = objinnerHTML + format_rev_mutate(ch, kw=false, cy=true) + "<br>";
+    document.getElementById(objID).innerHTML = objinnerHTML;
+}
+else {
+    document.getElementById(objID).innerHTML = "";
+}
+}
+
 console.log(caseFormat("dYDH dA NORVYS", "lower"));
 console.log(caseFormat("dYDH dA NORVYS", "upper"));
 console.log(caseFormat("dYDH dA NORVYS", "title"));

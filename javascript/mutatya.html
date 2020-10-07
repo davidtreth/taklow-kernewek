@@ -3,9 +3,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body>
-<h2>Mutation Javascript test page</h2>
+<h1>Mutation Javascript test page</h1>
+<h2>Treylans Kernewek</h2>
 <div>
-<p>Gorra nebes tekst a-is:</p>
+<h4>Gorra nebes tekst a-is:</h4>
 <input id="kwtekst">
 <button type="button" onclick="jsmutate(2)">2 (medhel)</button>
 <button type="button" onclick="jsmutate(3)">3 (hwythsonek)</button>
@@ -18,6 +19,23 @@
 </div>
 <button type="button" onclick="basicTests('testoutput')">basicTests()</button>
 <div id="testoutput"></div>
-
+<button type="button" onclick="reverseTests('revtestoutput')">reverseTests()</button>
+<div id="revtestoutput"></div>
+<h2>Treiglo Cymraeg</h2>
+<div>
+<h4>Rhowch testun is:</h4>
+<input id="cytekst">
+<button type="button" onclick="jsmutate_cy(2)">Treiglad meddal - soft</button>
+<button type="button" onclick="jsmutate_cy(3)">Treiglad llais - breathed</button>
+<button type="button" onclick="jsmutate_cy(7)">Treiglad trwynol - nasal</button>
+<button type="button" onclick="jsmutate_cy(8)">Treiglad cymysg - mixed</button><br>
+<button type="button" onclick="jsmutate_cy_all()">Pob treiglad </button>
+<button type="button" onclick="jsrevmutate_cy()">Gwrthdreiglo</button>
+<h3><p id="mutcy"></p></h3>
+</div>
+<button type="button" onclick="basicTests_cy('testoutputcy')">basicTests_cy()</button>
+<div id="testoutputcy"></div>
+<button type="button" onclick="reverseTests_cy('revtestoutputcy')">reverseTests_cy()</button>
+<div id="revtestoutputcy"></div>
 <script src="mutatya.js"></script>
 </body>
