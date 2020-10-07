@@ -179,7 +179,7 @@ function mutate(word,mutationstate, trad=false) {
         }
         if (word.charAt(0) === "g"){
             var tradc = 'einyw';
-            if (trad && tradc.indexOf(word.charAt(1))>-1){
+            if (trad && tradc.indexOf(word.charAt(1))===-1){
                 newword = "c" + word.substring(1);
             }
             else if (trad && word.charAt(1) === "w"){
@@ -525,13 +525,15 @@ else
 function jsmutate(mstate) {
   var inp, outp;
   // get value of text input
-  x = document.getElementById("kwtekst").value;
-  if (x == "") {
+  inp = document.getElementById("kwtekst").value;
+  var trad = document.getElementById("tradkw").checked;
+  
+  if (inp == "") {
     outp = "An kyst yw gwag. Res yw dhywgh gorra nebes tekst";
 }
 else
 {
-    outp = mutate(x, mstate);
+    outp = mutate(inp, mstate, trad);
 }
 document.getElementById("mut").innerHTML = outp;
 }
@@ -539,18 +541,19 @@ document.getElementById("mut").innerHTML = outp;
 function jsmutate_all() {
   var inp, outp;
   // get value of text input
-  x = document.getElementById("kwtekst").value;
-  if (x == "") {
+  inp = document.getElementById("kwtekst").value;
+  var trad = document.getElementById("tradkw").checked;
+  if (inp == "") {
     outp = "An kyst yw gwag. Res yw dhywgh gorra nebes tekst";
 }
 else
 {
-    var outp1 = "<tr><td>Heb treylyans</td><td><sup>1</sup>"+mutate(x, 1)+"</td></tr>";
-    var outp2 = "<tr><td>Treylans medhel</td><td><sup>2</sup>"+mutate(x, 2)+"</td></tr>";
-    var outp3 = "<tr><td>Treylans hwythsonek</td><td><sup>3</sup>"+mutate(x, 3)+"</td></tr>";
-    var outp4 = "<tr><td>Treylans kales</td><td><sup>4</sup>"+mutate(x, 4)+"</td></tr>";
-    var outp5 = "<tr><td>Treylans kemmyskys</td><td><sup>5</sup>"+mutate(x, 5)+"</td></tr>";
-    var outp6 = "<tr><td>Treylans kemmyskys wosa 'th</td><td><sup>5</sup>"+mutate(x, 6)+"</td></tr>";
+    var outp1 = "<tr><td>Heb treylyans</td><td><sup>1</sup>"+mutate(inp, 1, trad)+"</td></tr>";
+    var outp2 = "<tr><td>Treylans medhel</td><td><sup>2</sup>"+mutate(inp, 2, trad)+"</td></tr>";
+    var outp3 = "<tr><td>Treylans hwythsonek</td><td><sup>3</sup>"+mutate(inp, 3, trad)+"</td></tr>";
+    var outp4 = "<tr><td>Treylans kales</td><td><sup>4</sup>"+mutate(inp, 4, trad)+"</td></tr>";
+    var outp5 = "<tr><td>Treylans kemmyskys</td><td><sup>5</sup>"+mutate(inp, 5, trad)+"</td></tr>";
+    var outp6 = "<tr><td>Treylans kemmyskys wosa 'th</td><td><sup>5</sup>"+mutate(inp, 6, trad)+"</td></tr>";
     outp = "<table>" + outp1 + outp2 + outp3 + outp4 + outp5 + outp6 + "</table>";
 }
 document.getElementById("mut").innerHTML = outp;
@@ -558,13 +561,14 @@ document.getElementById("mut").innerHTML = outp;
 function jsrevmutate() {
   var inp, outp;
   // get value of text input
-  x = document.getElementById("kwtekst").value;
-  if (x == "") {
+  inp = document.getElementById("kwtekst").value;
+  var trad = document.getElementById("tradkw").checked;
+  if (inp == "") {
     outp = "An kyst yw gwag. Res yw dhywgh gorra nebes tekst";
 }
 else
 {
-    outp = format_rev_mutate(rev_mutate(x), kw=true);
+    outp = format_rev_mutate(rev_mutate(inp, listmode=false, trad=trad), kw=true);
 }
 document.getElementById("mut").innerHTML = outp;
 }
@@ -634,25 +638,25 @@ function rev_mutate(word, listmode = false, trad = false) {
     var gorsedh = ["orsedh", "orseth"];
     var tradc = 'einyw';
 
-    if (((letter2g.indexOf(word[0])>-1) || (letter2gr.indexOf(word.substring(0,2))>-1)||(gorsedh.indexOf(word.substring(0,6))>-1))&& !((word.substring(0,2) === "wh") && trad)) {
+    if (((letter2g.indexOf(word.charAt(0))>-1) || (letter2gr.indexOf(word.substring(0,2))>-1)||(gorsedh.indexOf(word.substring(0,6))>-1))&& !((word.substring(0,2) === "wh") && trad)) {
         unmutated[2].push("g"+word);
     }
-    if (word[0] === "v") {
+    if (word.charAt(0) === "v") {
         unmutated[2].push("b" + word.substring(1));
         unmutated[2].push("m" + word.substring(1));
     }
-    if (word[0] === "g") {
-        if (trad && tradc.indexOf(word[1]) === -1) {
+    if (word.charAt(0) === "g") {
+        if (trad && tradc.indexOf(word.charAt(1)) === -1) {
             unmutated[2].push("c" + word.substring(1));
         }
-        else if (trad && word[1] === "w") {
+        else if (trad && word.charAt(1) === "w") {
             unmutated[2].push("q" + word.substring(1));
         }
         else {
             unmutated[2].push("k" + word.substring(1));
         }
     }
-    if (word[0] === "j") {
+    if (word.charAt(0) === "j") {
         if (word.substring(0,4) === "jydh") {
             unmutated[2].push("d" + word.substring(1));
         }
@@ -663,15 +667,15 @@ function rev_mutate(word, listmode = false, trad = false) {
     if (word.substring(0,2) === "dh") {
         unmutated[2].push("d" + word.substring(2));
     }
-    if (word[0] === "b") {
+    if (word.charAt(0) === "b") {
         unmutated[2].push("p" + word.substring(1));
     }
-    if ((word[0] === "d") && (word.substring(0,2) !== "dh")) {
+    if ((word.charAt(0) === "d") && (word.substring(0,2) !== "dh")) {
         unmutated[2].push("t" + word.substring(1));
     }
 
-    if (word[0] === "h") {
-        if (trad && (tradc.indexOf(word[1]) === -1)) {
+    if (word.charAt(0) === "h") {
+        if (trad && (tradc.indexOf(word.charAt(1)) === -1)) {
             unmutated[3].push("c" + word.substring(1));
         }
         else {
@@ -681,32 +685,32 @@ function rev_mutate(word, listmode = false, trad = false) {
     if (trad && word.substring(0,2) === "wh") {
         unmutated[3].push("qw" + word.substring(2));
     }
-    if (word[0] === "f") {
+    if (word.charAt(0) === "f") {
         unmutated[3].push("p" + word.substring(1));
     }
     if (word.substring(0,2) === "th") {
         unmutated[3].push("t" + word.substring(2));
     }
-    if (word[0] === "p") {
+    if (word.charAt(0) === "p") {
         unmutated[4].push("b" + word.substring(1));
     }
-    if (word[0] === "t" && word.substring(0,2) !== "th") {
+    if (word.charAt(0) === "t" && word.substring(0,2) !== "th") {
         unmutated[4].push("d" + word.substring(1));
     }
-    if (word[0] === "k") {
+    if (word.charAt(0) === "k") {
         unmutated[4].push("g" + word.substring(1));
     }
-    if (trad && word[0] === "c" && (tradc.indexOf(word[1]) === -1)) {
+    if (trad && word.charAt(0) === "c" && (tradc.indexOf(word.charAt(1)) === -1)) {
         unmutated[4].push("g" + word.substring(1));
     }
     if (trad && word.substring(0,2) === "qw") {
         unmutated[4].push("g" + word.substring(1));
     }
-    if (word[0] === "f") {
+    if (word.charAt(0) === "f") {
         unmutated[5].push("b" + word.substring(1));
         unmutated[5].push("m" + word.substring(1));
     }
-    if ((word[0] === "t") && (word.substring(0,2) !== "th")) {
+    if ((word.charAt(0) === "t") && (word.substring(0,2) !== "th")) {
         unmutated[5].push("d" + word.substring(1));
     }
     if ((word.substring(0,3) === "hwo")||(word.substring(0,3) === "hwu")||(word.substring(0,4) === "hwro")||(word.substring(0,4) === "hwru")) {
@@ -715,34 +719,34 @@ function rev_mutate(word, listmode = false, trad = false) {
     if (trad && ((word.substring(0,3) === "who")||(word.substring(0,3) === "whu")||(word.substring(0,4) === "whro")||(word.substring(0,4) === "whru"))) {
         unmutated[5].push("g" + word.substring(2));
     }
-    if (word[0] === "h") {
+    if (word.charAt(0) === "h") {
         unmutated[5].push("g"+ word.substring(1));
     }
     if (trad && word.substring(0,2) === "wh") {
         unmutated[5].push("gw"+ word.substring(2));
     }
-    if (word[0] === "v") {
+    if (word.charAt(0) === "v") {
         unmutated[6].push("b" + word.substring(1));
         unmutated[6].push("m" + word.substring(1));        
     }
-    if ((word[0] === "t") && (word.substring(0,2) !== "th")) {
+    if ((word.charAt(0) === "t") && (word.substring(0,2) !== "th")) {
         unmutated[6].push("d" + word.substring(1));
     }
     // exception for Gorsedh -> An Orsedh
     if (trad) {
-        if ((gorsedh.indexOf(word.substring(0,6))>-1) || ((word[0] === "w") && (word[1] != "h"))) {
+        if ((gorsedh.indexOf(word.substring(0,6))>-1) || ((word.charAt(0) === "w") && (word.charAt(1) != "h"))) {
             unmutated[6].push("g" + word);
         }
     }
     else {
-        if ((gorsedh.indexOf(word.substring(0,6))>-1) || (word[0] === "w")) {
+        if ((gorsedh.indexOf(word.substring(0,6))>-1) || (word.charAt(0) === "w")) {
             unmutated[6].push("g" + word)
         }
         }
     if ((word.substring(0,2) === "wo")||(word.substring(0,2) === "wu")||(word.substring(0,3) === "wro")||(word.substring(0,3) === "wru")) {
         unmutated[6].push("g" + word.substring(1));
     }
-    if ((word[0] === "h") && (word[1] != "w")) {
+    if ((word.charAt(0) === "h") && (word.charAt(1) != "w")) {
         unmutated[6].push("g" + word.substring(1));
     }
 
