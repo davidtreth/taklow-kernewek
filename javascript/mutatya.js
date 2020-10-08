@@ -597,7 +597,7 @@ else
 {
     var outp1 = "<tr><td>Ffurf heb treiglad</td><td>"+mutate_cy(x, 1)+"</td></tr>";
     var outp2 = "<tr><td>Treiglad meddal</td><td>"+mutate_cy(x, 2)+"</td></tr>";
-    var outp3 = "<tr><td>Treiglad llais</td><td>"+mutate_cy(x, 3)+"</td></tr>";
+    var outp3 = "<tr><td>Treiglad llaes</td><td>"+mutate_cy(x, 3)+"</td></tr>";
     var outp7 = "<tr><td>Treiglad trwynol</td><td>"+mutate_cy(x, 7)+"</td></tr>";
     var outp8 = "<tr><td>Treiglad cymysg</td><td>"+mutate_cy(x, 8)+"</td></tr>";
     outp = "<table>" + outp1 + outp2 + outp3 + outp7 + outp8 + "</table>";
@@ -802,7 +802,7 @@ function format_rev_mutate(revmdict, kw=false, cy=false) {
     else if (cy)  {
         mdesc = {1:"Ffurf heb treiglad: ",
                  2:"Treiglad meddal oddi wrth: ",
-                 3:"Treiglad llais oddi wrth: ",
+                 3:"Treiglad llaes oddi wrth: ",
                  7:"Treiglad trwynol oddi wrth: "};
         output = "Gall bod y gair:<br>";
     }

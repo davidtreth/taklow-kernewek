@@ -412,7 +412,7 @@ def format_rev_mutate(revmdict, kw=False, cy=False):
     elif cy:
         mdesc = {1:"Ffurf heb treiglad: ",
                  2:"Treiglad meddal oddi wrth: ",
-                 3:"Treiglad llais oddi wrth: ",
+                 3:"Treiglad llaes oddi wrth: ",
                  7:"Treiglad trwynol oddi wrth: "}
         output = "Gall bod y gair:\n\n"
     else:
