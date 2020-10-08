@@ -664,34 +664,60 @@ def interactiveTest():
         num2 = input("Enter floating point number:")
     num2 = float(num2)
     print(numberkw_float(num2))
+*/    
+function basicTests(objID) {
     
-def basicTests():
-    underline = "-"*50
-    ki = "ki"
-    ki_f = False
-    ki_pl = "keun"
-    for n in range(10):
-        print ("{n:4d}: {k:s}".format(n=n+1,k=numberkw_noun(n+1,ki)))
-    for n in range(12,132,10):
-        print ("{n:4d}: {k:s}".format(n=n,k=numberkw_noun(n,ki)))
-    for n in range(13,133,10):
-        print ("{n:4d}: {k:s}".format(n=n,k=numberkw_noun(n,ki)))
-    print(underline)
-    kath = "kath"
-    kath_f = True
-    kath_pl = "kathes"
-    for n in range(10):
-        print ("{n:4d}: {k:s}".format(n=n+1,k=numberkw_noun(n+1,kath,kath_f,kath_pl)))
-    for n in range(12,162,10):
-        print ("{n:4d}: {k:s}".format(n=n,k=numberkw_noun(n,kath,kath_f,kath_pl)))
-    for n in range(13,163,10):
-        print ("{n:4d}: {k:s}".format(n=n,k=numberkw_noun(n,kath,kath_f,kath_pl)))
-    print(underline)
-    testns = [50,121,200, 216, 234, 275, 300, 360, 421, 1000, 1109, 1300, 1777, 1880, 2015, 2364, 7700, 16754, 20000, 36000, 60000, 70000, 70001, 567576,1000000,1000004,2000001,2000123,8000000,60000000,60000003, 60437464,378675476,9000000001,9000000017,9001000007]
-    for n in testns:
-        print ("{n:15d}: {k:s}".format(n=n,k=numberkw_noun(n,kath,kath_f,kath_pl)))
-    print(underline)
-    for n in testns:
-        print ("{n:15d}: {k:s}".format(n=n,k=numberkw_noun(n,ki,ki_f,ki_pl)))
-    print(underline)
-*/
+    if (document.getElementById(objID).innerHTML === "") {
+    var objinnerHTML = "";
+    var underline = "<p>"+ "-".repeat(50) + "</p>";
+    var ki = "ki";
+    var ki_f = false;
+    var ki_pl = "keun";
+    var n = 0;
+    objinnerHTML += "<table>";
+    for (n=0; n < 10; n++) {
+        objinnerHTML += `<tr><td>${n+1}</td><td>:</td><td>${numberkw_noun(n+1,ki)}</td></tr>`;
+    }
+    for (n=12; n <132; n = n+10) {
+        objinnerHTML += `<tr><td>${n}</td><td>:</td><td>${numberkw_noun(n,ki)}</td></tr>`;
+    }
+    for (n=13; n <133; n = n+10) {
+        objinnerHTML += `<tr><td>${n}</td><td>:</td><td>${numberkw_noun(n,ki)}</td></tr>`;
+    }
+    objinnerHTML += "</table>";
+    objinnerHTML += underline;
+    
+    var kath = "kath";
+    var kath_f = true;
+    var kath_pl = "kathes";
+    objinnerHTML += "<table>";
+    for (n=0; n < 10; n++) {
+        objinnerHTML += `<tr><td>${n+1}</td><td>:</td><td>${numberkw_noun(n+1,kath, kath_f, kath_pl)}</td></tr>`;        
+    }    
+    for (n =12; n<162; n = n + 10) {
+        objinnerHTML += `<tr><td>${n}</td><td>:</td><td>${numberkw_noun(n,kath, kath_f, kath_pl)}</td></tr>`;        
+    }
+    for (n = 13; n<163; n = n + 10) {
+        objinnerHTML += `<tr><td>${n}</td><td>:</td><td>${numberkw_noun(n,kath, kath_f, kath_pl)}</td></tr>`;        
+    }
+    objinnerHTML += "</table>";        
+    objinnerHTML += underline;
+    var testns = [50,121,200, 216, 234, 275, 300, 360, 421, 1000, 1109, 1300, 1777, 1880, 2015, 2364, 7700, 16754, 20000, 36000, 60000, 70000, 70001, 567576,1000000,1000004,2000001,2000123,8000000,60000000,60000003, 60437464,378675476,9000000001,9000000017,9001000007]
+    objinnerHTML += "<table>";
+    for (n of testns) {
+        objinnerHTML += `<tr><td>${n}</td><td>:</td><td>${numberkw_noun(n,kath, kath_f, kath_pl)}</td></tr>`;        
+    }
+    objinnerHTML += "</table>";        
+    objinnerHTML += underline;    
+    objinnerHTML += "<table>";
+    for (n of testns) {
+        objinnerHTML += `<tr><td>${n}</td><td>:</td><td>${numberkw_noun(n,ki, ki_f, ki_pl)}</td></tr>`;                
+    }
+    objinnerHTML += "</table>";        
+    objinnerHTML += underline;
+    document.getElementById(objID).innerHTML = objinnerHTML;    
+}
+else {
+    document.getElementById(objID).innerHTML = "";
+}
+}
