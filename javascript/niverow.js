@@ -11,190 +11,6 @@ var numarray_ord = ["kynsa", "nessa", "tressa", "peswora", "pympes",
                 "pymthegves", "hwetegves", "seytegves", "etegves",
                 "nownsegves", "ugensves"];
 
-function unnnoun(noun, fem=false) {
-    var mstate = 1;
-    if (fem) {
-        mstate = 2;
-    }
-    return "unn "+mutate(noun,mstate);
-}
-
-function dewnoun(noun, fem=false) {
-    if (fem) {
-        return "diw " + mutate(noun,2);  // feminine form
-    }
-    else {
-        return "dew " + nutate(noun,2);
-    }
-}
-    
-function trinoun(noun, fem=false) {
-    if (fem) {
-        return "teyr " + mutate(noun,3); // feminine form
-    }
-    else {
-        return "tri " + mutate(noun,3);
-    }
-}
-
-function firstpartnoun(num, noun, fem=false) {
-    if (num === 0) {
-        return "";
-    }
-    // give number 1-19 or first part of compound
-    var firstpart_k = "";
-    if ((num > 4)||((num === 4)&&(!(fem)))) {
-        // direct lookup for numbers up to 20
-        firstpart_k = numarray[num-1] + " " + noun;        
-    }
-    else {
-        /* override for numbers 1-4 to handle mutation
-         and feminine forms if 'fem' is true
-         mutation should only happen for 1 for fem. nouns
-         mutation for both masc. and fem. for 2, 3
-         and use of feminine forms for 2, 3, 4 for fem. nouns
-         variable fem keeps track of gender */
-        if ((num === 4)&&(fem)) {
-            firstpart_k = "peder " + noun; // feminine form            
-            }            
-        if (num === 3) {
-            firstpart_k = trinoun(noun,fem);
-        }
-        if (num === 2) {
-            firstpart_k = dewnoun(noun, fem);
-        }
-        if (num === 1) {
-            firstpart_k = unnnoun(noun,fem);
-        }        
-    }
-    return firstpart_k;
-}
-            
-/*
-def numberkw_noun(num, noun, fem=False, npl = "ow"):
-    """ Returns numeral <num> in Cornish compounded with <noun>
-
-    <fem> is a boolean variable specifying whether the noun is feminine
-    <npl> is the plural of <noun>. if it isn't specified default to
-    <noun>+'ow'
-    """
-    
-    # default plural suffix -ow
-    if npl == "ow":
-        npl = noun+npl
-        
-    if not(isinstance(num,int)):
-        print("num is not an integer. attempting conversion...")
-        num = int(num)
-        if num < 0:
-            print("num is negative, multiplying by -1")
-            num = num * -1
-        print("num={n}".format(n=num))
-        
-    if num == 0:
-        num_k = "zero a {n}".format(n=mutatya.mutate(npl,2))
-        return num_k
-        
-    if num > 0 and num < 21:     
-        num_k = firstpartnoun(num, noun, fem)
-        
-    if num > 20 and num < 40:
-        # numbers 21 to 39
-        num_k = firstpartnoun(num-20,noun,fem) + " warn ugens"
-            
-    if (num > 39 and num < 100)or(num > 119 and num < 200):
-        # numbers 40 to 199 excluding 100-119
-        firstpart = num % 20
-        secondpart = num // 20
-        if firstpart == 0:
-            num_k = numarray[secondpart-1] + " ugens " + noun
-        else:
-            num_k = firstpartnoun(firstpart,noun,fem) + " ha " + numarray[secondpart-1] + " ugens"
-        if num == 50:
-            # override for num=50
-            num_k = "hanterkans " + noun
-            
-    if num == 100:
-        num_k = "kans " + noun
-        
-    if num > 100 and num < 120:
-        num_k = "kans "+noun+" ha "+numarray[num-101]
-
-    if num > 199 and num < 1000:
-        ha = " ha "
-        kansow = num // 100
-        if num % 100 == 0:
-            num_k = numarray[kansow-1] + " kans " + noun
-        else: 
-            if num % 100 < 21 or num % 20 == 0:
-                num_k = numarray[kansow-1] + " kans "+ noun + ha + numberkw(num % 100)
-            else:
-                num_k = numberkw(num) + " a " + mutatya.mutate(npl,2)
-                                
-    if num > 999 and num < 21000:
-        if num == 1000:
-            num_k = "mil "+ mutatya.mutate(noun,2)
-        else:
-            if num % 1000 == 0:
-                num_k = numberkw(1000 * num//1000) + " " + mutatya.mutate(noun,2)
-            else:
-                if num % 1000 < 21 or (num % 1000 < 200 and num % 20 == 0) or num % 100 == 0:
-                    num_k = numberkw(1000*(num//1000)) + " " + mutatya.mutate(noun,2) + " ha " + numberkw(num % 1000)
-                else:
-                    num_k = numberkw(num) + " a " + mutatya.mutate(npl,2)
-
-    if num > 20999 and num < 40000:
-        num_k = numberkw(num) + " a " + mutatya.mutate(npl,2)
-            
-    if num > 39999 and (num < 100000)or(num % 20000 == 0 and num <200000):
-        num_k = numberkw(num) + " a " + mutatya.mutate(npl,2)
-        if num % 20000 == 0:
-            num_k = numberkw(num//20000) + " ugens mil " + mutatya.mutate(noun,2)
-
-    elif num > 99999 and num < 1000000:
-        num_k = numberkw(num) +" a " + mutatya.mutate(npl,2)
-        if num % 100000 == 0:
-            num_k = numberkw(num//100000) + " kans mil " + mutatya.mutate(noun,2)
-        if num == 100000:
-            num_k = "kans mil "+ mutatya.mutate(noun,2)
-    if num > 999999 and num < 2000000:
-        if num == 1000000:
-            num_k = "milvil " + mutatya.mutate(noun,2)
-        else:
-            num_k = numberkw(num) +  " a " + mutatya.mutate(npl,2)
-            
-    if num > 1999999 and num < 20000001:
-        if num % 1000000 == 0:
-            num_k = numberkw(num // 1000000) + " milvil " + mutatya.mutate(noun,2)
-            return num_k
-        else:
-            num_k = numberkw(num) +  " a " + mutatya.mutate(npl,2)
-
-    if num > 20000000 and num < 1000000000:
-        if num % 20000000 == 0 and num < 200000000:
-            num_k = numberkw(num//1000000) + " milvil " + mutatya.mutate(noun,2)
-        else:
-            num_k = numberkw(num) +  " a " + mutatya.mutate(npl,2)
-
-    if num > 999999999 and num < 2000000000:
-        num_k = numberkw(num) +  " a " + mutatya.mutate(npl,2)
-            
-    if num > 1999999999 and num < 20000000001:
-        num_k = numberkw(num) +  " a " + mutatya.mutate(npl,2)
-
-    if num > 2e10:
-        num_k = numberkw(num) +  " a " + mutatya.mutate(npl,2)
-
-    num_k = num_k.replace("  "," ")
-    num_k = num_k.replace("ha u","hag u")
-    num_k = num_k.replace("ha e","hag e")
-    num_k = num_k.replace("ha o","hag o")
-    num_k = num_k.replace("tri kans","tri hans")
-    num_k = num_k.replace("deg ha dew ugens","hanterkans")
-
-    # return the result
-    return num_k    
-*/
 function numberkw(num) {
     /* return the Cornish for the numeral <num> without a noun */
     num = parseInt(num);
@@ -399,6 +215,226 @@ function numberkw(num) {
 
     return num_k;    
 }
+function unnnoun(noun, fem=false) {
+    var mstate = 1;
+    if (fem) {
+        mstate = 2;
+    }
+    return "unn "+mutate(noun,mstate);
+}
+
+function dewnoun(noun, fem=false) {
+    if (fem) {
+        return "diw " + mutate(noun,2);  // feminine form
+    }
+    else {
+        return "dew " + mutate(noun,2);
+    }
+}
+    
+function trinoun(noun, fem=false) {
+    if (fem) {
+        return "teyr " + mutate(noun,3); // feminine form
+    }
+    else {
+        return "tri " + mutate(noun,3);
+    }
+}
+
+function firstpartnoun(num, noun, fem=false) {
+    if (num === 0) {
+        return "";
+    }
+    // give number 1-19 or first part of compound
+    var firstpart_k = "";
+    if ((num > 4)||((num === 4)&&(!(fem)))) {
+        // direct lookup for numbers up to 20
+        firstpart_k = numarray[num-1] + " " + noun;        
+    }
+    else {
+        /* override for numbers 1-4 to handle mutation
+         and feminine forms if 'fem' is true
+         mutation should only happen for 1 for fem. nouns
+         mutation for both masc. and fem. for 2, 3
+         and use of feminine forms for 2, 3, 4 for fem. nouns
+         variable fem keeps track of gender */
+        if ((num === 4)&&(fem)) {
+            firstpart_k = "peder " + noun; // feminine form            
+            }            
+        if (num === 3) {
+            firstpart_k = trinoun(noun,fem);
+        }
+        if (num === 2) {
+            firstpart_k = dewnoun(noun, fem);
+        }
+        if (num === 1) {
+            firstpart_k = unnnoun(noun,fem);
+        }        
+    }
+    return firstpart_k;
+}
+            
+
+function numberkw_noun(num, noun, fem=false, npl = "ow") {
+    /* Returns numeral <num> in Cornish compounded with <noun>
+
+    <fem> is a boolean variable specifying whether the noun is feminine
+    <npl> is the plural of <noun>. if it isn't specified default to
+    <noun>+'ow'
+    */
+    var num_k = "";
+    var n = "";
+    var firstpart = 0;
+    var secondpart = 0;
+    var ha = "";
+    var kansow = 0;
+    
+    // default plural suffix -ow
+    if (npl === "ow") {
+        npl = noun+npl;
+    }
+    if (num === 0) {
+        n = mutate(npl,2);
+        num_k = `zero a ${n}`;
+        return num_k;
+    }    
+    else if (num !== parseInt(num)) {
+        console.log("num is not an integer. attempting conversion...");
+        num = parseInt(num);
+        if (num < 0) {
+            console.log("num is negative, multiplying by -1");
+            num = num * -1;
+        }        
+        console.log(`num=${num}`);
+    }
+        
+    if ((num > 0) && (num < 21)) {
+        num_k = firstpartnoun(num, noun, fem);
+    }
+        
+    if ((num > 20) && (num < 40)) {
+        // numbers 21 to 39
+        num_k = firstpartnoun(num-20,noun,fem) + " warn ugens";
+    }
+                
+    if (((num > 39) && (num < 100))||((num > 119) && num < 200)) {
+        // numbers 40 to 199 excluding 100-119
+        firstpart = num % 20;
+        secondpart = Math.floor(num / 20);
+        if (firstpart === 0) {
+            num_k = numarray[secondpart-1] + " ugens " + noun;
+        }
+        else {
+            num_k = firstpartnoun(firstpart,noun,fem) + " ha " + numarray[secondpart-1] + " ugens";
+        }
+        if (num === 50) {
+            // override for num=50
+            num_k = "hanterkans " + noun;
+        }
+    }
+    if (num === 100) {
+        num_k = "kans " + noun;
+    }
+    if ((num > 100) && (num < 120)) {
+        num_k = "kans "+noun+" ha "+numarray[num-101];
+    }
+    if ((num > 199) && (num < 1000)) {
+        ha = " ha ";
+        kansow = Math.floor(num / 100);
+        if (num % 100 === 0) {
+            num_k = numarray[kansow-1] + " kans " + noun;
+        }
+        else { 
+            if ((num % 100 < 21) || (num % 20 === 0)) {
+                num_k = numarray[kansow-1] + " kans "+ noun + ha + numberkw(num % 100);
+            }
+            else {
+                num_k = numberkw(num) + " a " + mutate(npl,2);
+            }
+        }
+    }
+    if ((num > 999) && (num < 21000)) {
+        if (num === 1000) {
+            num_k = "mil "+ mutate(noun,2);
+        }
+        else {
+            if (num % 1000 === 0) {
+                num_k = numberkw(1000 * Math.floor(num/1000)) + " " + mutate(noun,2);
+            }
+            else {
+                if ((num % 1000 < 21) || ((num % 1000 < 200) && (num % 20 === 0)) || (num % 100 === 0)) {
+                    num_k = numberkw(1000*Math.floor(num/1000)) + " " + mutate(noun,2) + " ha " + numberkw(num % 1000);
+                }
+                else {
+                    num_k = numberkw(num) + " a " + mutate(npl,2);
+                }
+                }
+        }
+    }
+    if ((num > 20999) && (num < 40000)) {
+        num_k = numberkw(num) + " a " + mutate(npl,2);
+        }
+    if (((num > 39999) && (num < 100000))||((num % 20000 === 0) && (num <200000))) {
+        num_k = numberkw(num) + " a " + mutate(npl,2);
+        if (num % 20000 === 0) {
+            num_k = numberkw(Math.floor(num/20000)) + " ugens mil " + mutate(noun,2);
+        }
+    }
+    else if ((num > 99999) && (num < 1000000)) {
+        num_k = numberkw(num) +" a " + mutate(npl,2)
+        if (num % 100000 === 0) {
+            num_k = numberkw(Math.floor(num/100000)) + " kans mil " + mutate(noun,2);
+        }
+        if (num === 100000) {
+            num_k = "kans mil "+ mutate(noun,2);
+        }
+    }
+    if ((num > 999999) && (num < 2000000)) {
+        if (num === 1000000) {
+            num_k = "milvil " + mutate(noun,2);
+        }
+        else {
+            num_k = numberkw(num) +  " a " + mutate(npl,2);
+        }
+    }
+    if ((num > 1999999) && (num < 20000001)) {
+        if (num % 1000000 === 0) {
+            num_k = numberkw(Math.floor(num / 1000000)) + " milvil " + mutate(noun,2);
+            return num_k;
+        }
+        else {
+            num_k = numberkw(num) +  " a " + mutate(npl,2);
+        }
+    }
+
+    if ((num > 20000000) && (num < 1000000000)) {
+        if ((num % 20000000 === 0) && (num < 200000000)) {
+            num_k = numberkw(Math.floor(num/1000000)) + " milvil " + mutate(noun,2);
+        }
+        else {
+            num_k = numberkw(num) +  " a " + mutate(npl,2);
+        }
+    }
+    if ((num > 999999999) && (num < 2000000000)) {
+        num_k = numberkw(num) +  " a " + mutate(npl,2);
+    }
+    if ((num > 1999999999) && (num < 20000000001)) {
+        num_k = numberkw(num) +  " a " + mutate(npl,2);
+    }
+    if (num > 2e10) {
+        num_k = numberkw(num) +  " a " + mutate(npl,2);
+    }
+
+    num_k = num_k.replace("  "," ");
+    num_k = num_k.replace("ha u","hag u");
+    num_k = num_k.replace("ha e","hag e");
+    num_k = num_k.replace("ha o","hag o");
+    num_k = num_k.replace("tri kans","tri hans");
+    num_k = num_k.replace("deg ha dew ugens","hanterkans");
+
+    // return the result
+    return num_k;    
+}
 
 function jsniverkw() {
   var inp, outp, inpint;
@@ -457,19 +493,55 @@ function numberkw_float(num) {
         return num_k;
     }
 }
-/*        
-def numberkw_float_noun(num, noun, fem=False, npl = "ow"):
-    if num == int(abs(num)):
-        return numberkw_noun(num,noun,fem,npl)
-    else:
-        num_k = numberkw_float(num)
-        num_k += " a "
-        # default plural suffix -ow
-        if npl == "ow":
-            npl = noun+npl
-        num_k += mutatya.mutate(npl,2)
-        return num_k
-
+        
+function numberkw_float_noun(num, noun, fem=false, npl = "ow") {
+    if (num === parseInt(Math.abs(num))) {
+        return numberkw_noun(num,noun,fem,npl);
+    }
+    else {
+        num_k = numberkw_float(num);
+        num_k += " a ";
+        // default plural suffix -ow
+        if (npl === "ow") {
+            npl = noun+npl;
+        }
+        num_k += mutate(npl,2);
+        return num_k;
+    }
+}
+function jsnivernounkw() {
+  var inp, inpn, inppln, outp, inpint;
+  // get value of text input
+  inp = document.getElementById("kwtekstnivern").value;
+  inpn = document.getElementById("kwtekstnivernoun").value;
+  inppln = document.getElementById("kwtekstniverpluralnoun").value;
+  var fem = document.getElementById("femnoun").checked;
+  
+  if (inp === "") {
+    outp = "An kyst yw gwag. Res yw dhywgh gorra niver";
+    }
+    else {
+        if (inpn === "") {
+            inpn = "[n]";
+        }
+        if (inppln === ""){
+           // default plural suffix -ow
+           inppln = "ow"; 
+        }
+        if (inp === "0") {
+         outp = numberkw_float_noun(0, inpn, fem, inppln);
+        }    
+        else if (inp) {
+        inp = Number(inp);
+        outp = numberkw_float_noun(inp, inpn, fem, inppln);
+        }
+        else {
+        outp = "Nyns yw hemma niver. Res yw dhywgh gorra niver yn niverennow";
+        }   
+    }
+document.getElementById("nivernoun").innerHTML = outp;  
+}
+/*
 def numberkw_ord(num):
     num = int(num)
     assert(num>0), "number should be positive"
