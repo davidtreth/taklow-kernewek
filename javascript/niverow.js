@@ -404,24 +404,21 @@ function jsniverkw() {
   var inp, outp, inpint;
   // get value of text input
   inp = document.getElementById("kwtekstniver").value;
-  if (inp == "") {
+  if (inp === "") {
     outp = "An kyst yw gwag. Res yw dhywgh gorra niver";
-}
-else{
-    inp = Number(inp);
-    if (inp) {
-        inpint = parseInt(inp);
-        if (inp === inpint) {
-        outp = numberkw(inp);
     }
     else {
-        outp = "kedreylys dhe integer " + inpint + " : " + numberkw(inpint);
+        if (inp === "0") {
+         outp = numberkw_float(0);
+        }    
+        else if (inp) {
+        inp = Number(inp);
+        outp = numberkw_float(inp);
+        }
+        else {
+        outp = "Nyns yw hemma niver. Res yw dhywgh gorra niver yn niverennow";
+        }   
     }
-    }
-    else {
-    outp = "Nyns yw hemma niver. Res yw dhywgh gorra niver yn niverennow";
-    }   
-}
 document.getElementById("niver").innerHTML = outp;  
 }
 
@@ -432,22 +429,35 @@ function klerhe(form, output) {
     document.getElementById(output).innerHTML = "";
 }
 
-/*    
-def numberkw_float(num):
-    if num < 0.0:
-        return "minus " + numberkw_float(-1*num)
-    num_k = numberkw(int(num))
-    if num == int(num) or num == 0:
-        return num_k
-    else:
-        decdigits = str(num).split(".")[1]
-        num_k = num_k + " poynt "
-        for d in decdigits:
-            num_k = num_k + numberkw(int(d)) + ", "
-        if num_k[-2:] == ", ":
-            num_k = num_k[:-2]
-        return num_k
-        
+    
+function numberkw_float(num) {
+    if (num < 0.0) {
+        return "minus " + numberkw_float(-1*num);
+    }
+    var num_k;
+    if (num === 0) {
+        num_k = numberkw(num);
+        return num_k;
+    }
+    else if (num === parseInt(num)) {
+        num_k = numberkw(parseInt(num));
+        return num_k;
+    }
+    else {
+        num_k = numberkw(parseInt(num));        
+        var decdigits = num.toString().split(".")[1];
+        num_k = num_k + " poynt ";
+        var d;
+        for (d of decdigits) {
+            num_k = num_k + numberkw(parseInt(d)) + ", ";
+        }
+        if (num_k.slice(-2) === ", ") {
+            num_k = num_k.slice(0,-2);
+        }
+        return num_k;
+    }
+}
+/*        
 def numberkw_float_noun(num, noun, fem=False, npl = "ow"):
     if num == int(abs(num)):
         return numberkw_noun(num,noun,fem,npl)
