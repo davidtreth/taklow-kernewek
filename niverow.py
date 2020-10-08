@@ -251,10 +251,7 @@ def numberkw(num):
             num_k = numberkw((num % 20000)//1000) + " mil ha "+ numberkw(num//20000) + " ugens"
         else:
             num_k = numberkw((num % 20000)//1000) + " mil ha "+ numberkw(num//20000) + " ugens" +ha+ numberkw(num % 1000)
-    elif num > 99999 and num < 1000000:
-        num_k = numberkw(num//1000) + " a vilyow" + ha + numberkw(num % 1000)
-        if num % 1000 == 0:
-            num_k = numberkw(num//1000) + " a vilyow"
+    elif num > 99999 and num < 1000000:        
         if num < 200000:
             num_k = "kans ha "+ numberkw((num-100000)//1000) + " a vilyow" +ha + numberkw(num % 1000)
             if num % 1000 == 0:
@@ -264,6 +261,11 @@ def numberkw(num):
         else:
             if num % 20000 == 0 and num < 200000:
                 num_k = numberkw(num//20000) + " ugens mil"
+            else:
+                if num % 1000 == 0:
+                    num_k = numberkw(num//1000) + " a vilyow"
+                else:
+                    num_k = numberkw(num//1000) + " a vilyow" + ha + numberkw(num % 1000)
 
     if num > 999999 and num < 2000000:
         if num == 1000000:
@@ -310,7 +312,10 @@ def numberkw(num):
                 num_k = numberkw(num//1000000000) + " bilvil, " + numberkw(num % 1000000000)
 
     if num > 2e10:
-        num_k = numberkw(num//1000000000) + " a bilvilyow, " + numberkw(num % 1000000000)
+        if num % 1000000000 == 0:
+            num_k = numberkw(num // 1000000000) + "a bilvilyow"
+        else:
+            num_k = numberkw(num//1000000000) + " a bilvilyow, " + numberkw(num % 1000000000)
     
     num_k = num_k.replace("  "," ")
     num_k = num_k.replace("ha u","hag u")

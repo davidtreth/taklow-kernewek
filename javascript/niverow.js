@@ -271,11 +271,11 @@ function numberkw(num) {
             num_k = numberkw(Math.floor((num % 20000)/1000)) + " mil warn ugens"+ha+ numberkw(num % 1000);
         }
     }
-    if (((num > 39999) && (num<100000)) || ((num % 20000 ===0)&&(num<200000))) {
+    if (((num > 39999) && (num<100000)) || ((num % 20000 ===0)&&(num>39999)&&(num<200000))) {
         if (num === 100000) {
             num_k = "kans mil";        
-        }        
-        if (num % 20000 === 0) {
+        }
+        else if (num % 20000 === 0) {
             num_k = numberkw(Math.floor(num/20000)) + " ugens mil";
         }
         else if (num % 1000 === 0) {
@@ -286,10 +286,7 @@ function numberkw(num) {
         }
     }
     else if ((num > 99999)&&(num < 1000000)) {
-        num_k = numberkw(Math.floor(num/1000)) + " a vilyow" + ha + numberkw(num % 1000);
-        if (num % 1000 === 0) {
-            num_k = numberkw(Math.floor(num/1000)) + " a vilyow";
-        }
+
         if (num < 200000) {
             num_k = "kans ha "+ numberkw(Math.floor((num-100000)/1000)) + " a vilyow" +ha + numberkw(num % 1000);
             if (num % 1000 == 0) {
@@ -303,8 +300,15 @@ function numberkw(num) {
             if ((num % 20000 === 0)&&(num < 200000)) {
                 num_k = numberkw(Math.floor(num/20000)) + " ugens mil"
             }
+            else {                
+                if (num % 1000 === 0) {
+                    num_k = numberkw(Math.floor(num/1000)) + " a vilyow";
+                }       
+                else {
+                    num_k = numberkw(Math.floor(num/1000)) + " a vilyow" + ha + numberkw(num % 1000);
+                }         
+            }
         }
-
     }
     
     if ((num > 999999)&&(num < 2000000)) {
@@ -378,7 +382,12 @@ function numberkw(num) {
         }
     }
     if (num > 2e10) {
+        if (num % 1000000000 === 0) {
+            num_k = numberkw(Math.floor(num/1000000000)) + " a bilvilyow";
+        }
+        else {
         num_k = numberkw(Math.floor(num/1000000000)) + " a bilvilyow, " + numberkw(num % 1000000000);
+    }
     }
     num_k = num_k.replace("  "," ");
     num_k = num_k.replace("ha u","hag u");
