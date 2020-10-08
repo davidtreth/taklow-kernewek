@@ -541,46 +541,88 @@ function jsnivernounkw() {
     }
 document.getElementById("nivernoun").innerHTML = outp;  
 }
-/*
-def numberkw_ord(num):
-    num = int(num)
-    assert(num>0), "number should be positive"
-    assert(num<=1000), "only numbers up to 1000 implemented so far"
-    if num <=20:
-        return numarray_ord[num-1]
-    
-    if num > 20 and num < 40:
-        num_k = numarray_ord[num-21] + " warn ugens"
 
-    if (num > 39 and num < 100)or(num > 119 and num < 200):
-        firstpart = num % 20
-        secondpart = num // 20
-
-        num_k = numarray_ord[firstpart-1] +" ha " + numarray[secondpart-1] + " ugens"
-        if firstpart == 0:
-            num_k = numarray[secondpart-1] + " ugensves"
-    if num == 100:
-        num_k = "kansves"
-    if num > 100 and num < 120:
-        num_k = "kans ha "+ numberkw_ord(num-100)
-    if num > 199 and num < 1000:
-        kansow = num // 100
-        if num % 100 < 21 or num % 20 == 0 or num % 100 == 50:
-            if num % 100 == 0:
-                num_k = numarray[kansow-1] + " kansves"
-            else:
-                num_k = numarray[kansow-1] + " kans ha " + numberkw_ord(num % 100)
-        else:
-            num_k = numarray[kansow-1] + " kans, " + numberkw_ord(num % 100)
-
-    if num % 1000 < 200 and(num % 20 == 0 or num % 1000 < 21):
-        ha = " ha "
-    else:
-        ha = ", "
-    if num == 1000:
+function numberkw_ord(num) {
+    if (num === 0) {
+        num_k = "nyns eus ordynal rag zero";
+        return num_k;
+    }
+    if (num < 0) {
+        num_k = "nyns eus ordynal rag niverow negedhek";
+        return num_k;
+    }
+    num = Math.abs(parseInt(num));
+    var firstpart = 0;
+    var secondpart = 0;
+    var kansow = 0;
+    var num_k = "";
+    if (num > 1000) {
+        num_k = "ny veu niverow dres 1000 gwrys hwath";
+        return num_k;
+    }     
+    if (num <= 20) {
+        return numarray_ord[num-1];
+    }
+    if ((num > 20) && (num < 40)) {
+        num_k = numarray_ord[num-21] + " warn ugens";
+    }
+    if (((num > 39) && (num < 100))||((num > 119) && (num < 200))) {
+        firstpart = num % 20;
+        secondpart = Math.floor(num / 20);
+        num_k = numarray_ord[firstpart-1] +" ha " + numarray[secondpart-1] + " ugens";
+        if (firstpart === 0) {
+            num_k = numarray[secondpart-1] + " ugensves";
+            }
+        }
+    if (num === 100) {
+        num_k = "kansves";
+    }
+    if ((num > 100) && (num < 120)) {
+        num_k = "kans ha "+ numberkw_ord(num-100);
+    }
+    if ((num > 199) && (num < 1000)) {
+        kansow = Math.floor(num / 100);
+        if ((num % 100 < 21) || (num % 20 === 0) || (num % 100 === 50)) {
+            if (num % 100 === 0) {
+                num_k = numarray[kansow-1] + " kansves";
+            }
+            else {
+                num_k = numarray[kansow-1] + " kans ha " + numberkw_ord(num % 100);
+            }
+        }
+        else {
+            num_k = numarray[kansow-1] + " kans, " + numberkw_ord(num % 100);
+            }
+        }
+    if (num === 1000) {
         num_k = "milves"
-    return num_k
+    }
+    return num_k;
+}
 
+function jsniverordkw() {
+  var inp, outp, inpint;
+  // get value of text input
+  inp = document.getElementById("kwtekstniverord").value;
+  if (inp === "") {
+    outp = "An kyst yw gwag. Res yw dhywgh gorra niver";
+    }
+    else {
+        if (inp === "0") {
+         outp = numberkw_ord(0);
+        }    
+        else if (inp) {
+        inp = Number(inp);
+        outp = numberkw_ord(inp);
+        }
+        else {
+        outp = "Nyns yw hemma niver. Res yw dhywgh gorra niver yn niverennow";
+        }   
+    }
+document.getElementById("niverord").innerHTML = outp;  
+}
+
+/*
 def interactiveTest():
     if sys.version_info[0] < 3:
         number = raw_input("Enter number as integer:")
