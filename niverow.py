@@ -44,13 +44,15 @@ def firstpartnoun(num, noun, fem=False):
     else:
         # override for numbers 1-4 to handle mutation
         # and feminine forms if 'fem' is True
-        # mutation should only happen for 1,3,4 for fem. nouns
+        # mutation should only happen for 1 for fem. nouns
+        # mutation for both masc. and fem. for 2, 3
+        # and use of feminine forms for 2, 3, 4 for fem. nouns
         # variable fem keeps track of gender
         if num == 4:
             if fem:
                 firstpart_k = "peder " + noun # feminine form
             else:
-                firstpart_k = firstpart_k = numarray[num-1] + " " + noun
+                firstpart_k = numarray[num-1] + " " + noun
             return firstpart_k
         if num == 3:
             firstpart_k = trinoun(noun,fem)
@@ -240,8 +242,10 @@ def numberkw(num):
             num_k = numberkw((num % 20000)//1000) + " mil warn ugens"
         else:            
             num_k = numberkw((num % 20000)//1000) + " mil warn ugens"+ha+ numberkw(num % 1000)
-    if num >39999 and (num<100000 or (num % 20000 ==0)and(num<200000)):
-        if num % 20000 == 0:
+    if (num >39999 and num<100000) or (num % 20000 ==0)and(num<200000):
+        if num == 100000:
+            num_k = "kans mil"        
+        elif num % 20000 == 0:
             num_k = numberkw(num//20000) + " ugens mil"
         elif num % 1000 == 0:
             num_k = numberkw((num % 20000)//1000) + " mil ha "+ numberkw(num//20000) + " ugens"
@@ -260,13 +264,12 @@ def numberkw(num):
         else:
             if num % 20000 == 0 and num < 200000:
                 num_k = numberkw(num//20000) + " ugens mil"
-        if num == 100000:
-            num_k = "kans mil"
+
     if num > 999999 and num < 2000000:
         if num == 1000000:
             num_k = "milvil"
         else:
-            if ((num % 1000000 < 100)and(num % 20 == 0)) or (num % 1000000 < 20):            
+            if ((num % 1000000 < 200)and(num % 20 == 0)) or (num % 1000000 < 20) or ((num % 1000000 < 1000)and(num % 100 == 0)):            
                 num_k = "milvil ha " + numberkw(num-1000000)
             else:
                 num_k = "milvil, " + numberkw(num-1000000)
@@ -274,7 +277,7 @@ def numberkw(num):
         if num % 1000000 == 0:
             num_k = numberkw(num//1000000) + " milvil"
         else:
-            if ((num % 1000000 < 100)and(num % 20 == 0))or(num % 1000000 < 20):
+            if ((num % 1000000 < 200)and(num % 20 == 0))or(num % 1000000 < 20) or ((num % 1000000 < 1000)and(num % 100 == 0)):
                 num_k = numberkw(num//1000000) + " milvil ha " + numberkw(num % 1000000)
             else:
                 num_k = numberkw(num//1000000) + " milvil, " + numberkw(num % 1000000)
@@ -285,7 +288,7 @@ def numberkw(num):
             if num % 1000000 == 0:
                 num_k = numberkw(num//1000000) + " a vilvilyow"
             else:
-                if (num % 1000000 < 100)and((num % 20 == 0)or(num % 1000000 < 20)):
+                if ((num % 1000000 < 200)and(num % 20 == 0))or(num % 1000000 < 20) or ((num % 1000000 < 1000)and(num % 100 == 0)):
                     num_k = numberkw(num//1000000) + " a vilvilyow ha " + numberkw(num % 1000000)
                 else:
                     num_k = numberkw(num//1000000) + " a vilvilyow, " + numberkw(num % 1000000)
@@ -293,7 +296,7 @@ def numberkw(num):
         if num == 1000000000:
             num_k = "bilvil"
         else:
-            if (num % 1000000000 < 100)and((num %20 == 0)or(num % 1000000000 < 20)):        
+            if ((num % 1000000000 < 200)and(num % 20 == 0))or(num % 1000000000 < 20) or ((num % 1000000000 < 1000)and(num % 100 == 0)):        
                 num_k = "bilvil ha" + numberkw(num-1000000000)
             else:
                 num_k = "bilvil, " + numberkw(num-1000000000)
@@ -301,7 +304,7 @@ def numberkw(num):
         if num % 1000000000 == 0:
             num_k = numberkw(num // 1000000000) + " bilvil"
         else:
-            if (num % 1000000000 < 100)and((num % 20 == 0)or(num % 1000000000 < 20)):
+            if ((num % 1000000000 < 200)and(num % 20 == 0))or(num % 1000000000 < 20) or ((num % 1000000000 < 1000)and(num % 100 == 0)):
                 num_k = numberkw(num//1000000000) + " bilvil ha " + numberkw(num % 1000000000)
             else:
                 num_k = numberkw(num//1000000000) + " bilvil, " + numberkw(num % 1000000000)
