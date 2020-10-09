@@ -25,7 +25,7 @@ class NiferCymraeg {
         num_cy = num_cy.replace("a w","ac w");
         num_cy = num_cy.replace("a ŵ","ac ŵ");
         num_cy = num_cy.replace("tri can","tri chan");
-        num_cy = num_cy.replace("dau mil", "dau vil");
+        num_cy = num_cy.replace("dau mil", "dau fil");
         return num_cy;
     }
     set setMaxTrad(maxTrad) {
@@ -174,30 +174,37 @@ class NiferCymraeg {
         var tens = 0;
         var units = 0;
         var num_cy = "";
+        var mstate = 1;
         if ((num <= 10)||(num >= 200)) {
             console.log("numbercyDeg(num) expects num between 11-199");
         }
         if (num < 100) {
             tens = Math.floor(num / 10);
             units = num % 10;
+            if (tens === 2) {
+                mstate = 2;
+            }
             if (units === 0) {
-                num_cy = this.numarray_dep[tens-1] + " deg";
+                num_cy = this.numarray_dep[tens-1] + " " + mutate_cy("deg", mstate);
             }
             else {
-                num_cy = this.numarray_dep[tens-1] + " deg "+this.numarray[units-1];
+                num_cy = this.numarray_dep[tens-1] + " " + mutate_cy("deg ", mstate)+this.numarray[units-1];
             }
         }
         else if (num > 100) {
             tens = Math.floor((num-100) / 10);
             units = num % 10;
+            if (tens === 2) {
+                mstate = 2;
+            }            
             if (units === 0) {            
-                num_cy = "cant " + this.numarray_dep[tens-1] + " deg";
+                num_cy = "cant " + this.numarray_dep[tens-1] + " " + mutate_cy("deg", mstate);
             }
             else if (tens === 0) {
                 num_cy = "cant a "+mutate_cy(this.numarray[units-1], 3);
             }
             else {
-                num_cy = "cant " + this.numarray_dep[tens-1] + " deg "+this.numarray[units-1];
+                num_cy = "cant " + this.numarray_dep[tens-1] + " " + mutate_cy("deg ", mstate)+this.numarray[units-1];
             }
             }
         else {
@@ -273,7 +280,7 @@ class NiferCymraeg {
 }
     firstpartnouncy(num, noun, fem=false) {
         var firstpart_cy = "";
-        if ((num <= 10)||(num >= 200)) {
+        if (num > 19) {
             console.log("firstpartnouncy(num, noun) expects num < 20");
         }    
         if (num === 0) {
@@ -291,7 +298,12 @@ class NiferCymraeg {
             }
         }
         else if (num > 10) {
-            if (num === 12) {
+            /* not implemented at present:
+             * nasal mutation of dauddeg,  pymtheg, deunaw
+             * for blynedd, blwydd, diwrnod
+             * and change of deg --> -eng before m for 12, 15
+             */
+            if (num === 12) {                
                 firstpart_cy = "dauddeg "+noun;
             }
             else {
@@ -301,11 +313,18 @@ class NiferCymraeg {
         // give number 1-9 or first part of compound
         else if (num > 4) {
             // direct lookup for numbers up to 10
+            /* not implemented at present: 
+             * according to "A Welsh Grammar" (Stephen L. Williams):
+             * mutations for 7, 8 (soft, but not always observed)
+             * 7, 8 (nasal only for blynedd, blwydd, diwrnod(sometimes))
+             * 9, 10 (nasal only for blynedd, blwydd, diwrnod)
+             * 10 change of deg --> -eng before m
+             */
             if (num === 6) {
                 firstpart_cy = "chwe " + mutate_cy(noun, 3);
             }
             else {
-                firstpart_cy = self.numarray_dep[num-1] + " " + noun;
+                firstpart_cy = this.numarray_dep[num-1] + " " + noun;
             }
         }
         else {
@@ -377,9 +396,17 @@ class NiferCymraeg {
         }        
         console.log(`num=${num}`);
     }   
-        // use a plural noun for all numbers over 49 or where the decimal
-        // system is used
-        if ((num > this.maxTrad) || (num > 49)) {
+        /* use a plural noun for all numbers over 49 except 100
+        *  or where the decimal system is used
+        *  remember to change the last condition if changing the number 49
+        *  not implemented at present: 
+        *  nasal mutation of ugain, can 
+        *  for blynedd, blwydd, diwrnod
+        */
+        if (num === 100) {
+            num_cy = "can " + noun;
+        }
+        else if ((num > this.maxTrad) || (num > 49)) {
             num_cy = `${this.numbercy(num)} o ${mutate_cy(npl, 2)}`;
         }
         else if ((num > 0) && (num < 20)) {
@@ -525,32 +552,56 @@ function setMaxTradjs(cyN)
     cyN.maxTrad = maxtrad;
 }  
 cyN = new NiferCymraeg();
-/*
-def cymraegTests():
-    cyN = NiferCymraeg()
-    testNums = [1,3,7,11,15, 17, 18, 25, 36, 50,
+
+function cymraegTests(objID) {
+    if (document.getElementById(objID).innerHTML === "") {
+    var objinnerHTML = "";
+    var t;
+    cyN = new NiferCymraeg();
+    var testNums = [1,3,7,11,15, 17, 18, 25, 36, 50,
                 51, 72, 100, 105, 140, 147, 200, 217,
                 232, 500, 1000, 4000, 5674, 14562,
                 27865, 79562, 105689, 170000, 1000000,
-                1000001, 7000000, 756345234, 100000000, 2345565785]
-    print("Prawfau Niferau Cymraeg")
-    for t in testNums:
-        print("{n}: {c}".format(n=t, c=cyN.numbercy(t)))
-    print("setting MaxTrad = 10")
-    cyN.setMaxTrad(10)
-    for t in testNums:
-        print("{n}: {c}".format(n=t, c=cyN.numbercy(t)))
-    print("setting MaxTrad = 200")
-    cyN.setMaxTrad(200)
-    for t in testNums:
-        print("{n}: {c}".format(n=t, c=cyN.numbercy(t)))
-    print("setting MaxTrad = 50")
-    cyN.setMaxTrad(50)
-    for t in testNums[:20]:
-        print("{n}: {c}".format(n=t, c=cyN.numbercy_noun(t, "cath", True, "cathod")))
-    print("setting MaxTrad = 10")
-    cyN.setMaxTrad(10)
-    for t in testNums[:20]:
-        print("{n}: {c}".format(n=t, c=cyN.numbercy_noun(t, "cath", True, "cathod")))  
-        
-*/                    
+                1000001, 7000000, 756345234, 100000000, 2345565785];
+    objinnerHTML += "<h3>Prawfau Niferau Cymraeg</h3>";    
+    objinnerHTML += "<h4>Using default maxTrad = 20</h4>";
+    objinnerHTML += "<table>";
+    for (t of testNums) {            
+        objinnerHTML += `<tr><td>${t}</td><td>:</td><td>${cyN.numbercy(t)}</td></tr>`;
+    }
+    objinnerHTML += "</table>";
+    objinnerHTML += "<h4>setting maxTrad = 10</h4>";        
+    cyN.maxTrad = 10;
+    objinnerHTML += "<table>";
+    for (t of testNums) {
+        objinnerHTML += `<tr><td>${t}</td><td>:</td><td>${cyN.numbercy(t)}</td></tr>`;
+    }
+    objinnerHTML += "</table>";
+    objinnerHTML += "<h4>setting maxTrad = 200</h4>";
+    cyN.maxTrad = 200;
+    objinnerHTML += "<table>";
+    for (t of testNums) {
+        objinnerHTML += `<tr><td>${t}</td><td>:</td><td>${cyN.numbercy(t)}</td></tr>`;
+    }
+    objinnerHTML += "</table>";
+    objinnerHTML += "<h3>Prawfau niferau gydag enw</h3>";    
+    objinnerHTML += "<h4>setting maxTrad = 50</h4>";
+    cyN.maxTrad = 50;
+    objinnerHTML += "<table>";
+    for (t of testNums.slice(0,20)) {
+        objinnerHTML += `<tr><td>${t}</td><td>:</td><td>${cyN.numbercy_noun(t, "cath", true, "cathod")}</td></tr>`;
+    }
+    objinnerHTML += "</table>";
+    objinnerHTML += "<h4>setting maxTrad = 10</h4>";    
+    cyN.maxTrad =10;
+    objinnerHTML += "<table>";
+    for (t of testNums.slice(0,20)) {
+        objinnerHTML += `<tr><td>${t}</td><td>:</td><td>${cyN.numbercy_noun(t, "cath", true, "cathod")}</td></tr>`;
+    }
+    objinnerHTML += "</table>";
+    document.getElementById(objID).innerHTML = objinnerHTML;
+}
+else {
+    document.getElementById(objID).innerHTML = "";
+    }
+}

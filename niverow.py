@@ -418,7 +418,7 @@ class NiferCymraeg:
         num_cy = num_cy.replace("a w","ac w")
         num_cy = num_cy.replace("a ŵ","ac ŵ")
         num_cy = num_cy.replace("tri can","tri chan") 
-        num_cy = num_cy.replace("dau mil", "dau vil")
+        num_cy = num_cy.replace("dau mil", "dau fil")
         return num_cy
     
     def setMaxTrad(self, maxTrad):
@@ -656,6 +656,8 @@ class NiferCymraeg:
 
         if num == 0:
             num_cy = "dim o {n}".format(n=mutatya.mutate_cy(npl, 2))
+        if num == 100:
+            num_cy = "can " + noun
         elif num > self.maxTrad or num > 49:
             num_cy = self.numbercy(num) + " o {n}".format(n=mutatya.mutate_cy(npl, 2))
         elif num > 0 and num < 20:
