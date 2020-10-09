@@ -403,7 +403,7 @@ class NiferCymraeg {
         *  nasal mutation of ugain, can 
         *  for blynedd, blwydd, diwrnod
         */
-        if (num === 100) {
+        if ((num === 100)&&(this.maxTrad >= 100)) {
             num_cy = "can " + noun;
         }
         else if ((num > this.maxTrad) || (num > 49)) {

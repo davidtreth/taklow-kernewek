@@ -656,7 +656,7 @@ class NiferCymraeg:
 
         if num == 0:
             num_cy = "dim o {n}".format(n=mutatya.mutate_cy(npl, 2))
-        if num == 100:
+        if num == 100 and self.maxTrad >= 100:
             num_cy = "can " + noun
         elif num > self.maxTrad or num > 49:
             num_cy = self.numbercy(num) + " o {n}".format(n=mutatya.mutate_cy(npl, 2))
