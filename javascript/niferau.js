@@ -14,6 +14,7 @@ class NiferCymraeg {
                              "chweched", "seithfed", "wythfed", "nawfed", "degfed"];
         // default to using traditional numbers up to 20
         this.maxTrad = 20;
+        this.maxTradComp = 20;
 }
     replaces(num_cy) {
         num_cy = num_cy.replace("  "," ");
@@ -31,8 +32,21 @@ class NiferCymraeg {
     set setMaxTrad(maxTrad) {
         this.maxTrad = maxTrad;
     }
-    numbercy(num, dep=false) {
-        /* return the Welsh for the numeral <num> without a noun */        
+    set setMaxTradComp(maxTradComp) {
+        this.maxTradComp = maxTradComp;
+    }    
+    numbercy(num, dep=false, maxTrad=200) {
+        /* return the Welsh for the numeral <num> without a noun */
+        if (this.maxTrad < maxTrad) {
+            /* if this.maxTrad is set to < maxTrad
+               maxTrad will come from this.maxTradComp
+               in recursive calls for parts of compound numbers
+               set maxTrad to the lower number */
+            maxTrad = this.maxTrad;
+        }
+        /* allows setting of a lower threshold for parts of
+           compound numbers */
+        var maxTradC = this.maxTradComp;
         num = parseInt(num);
         // console.log(num);
         var num_cy = "";
@@ -52,9 +66,9 @@ class NiferCymraeg {
             }
         }
         if ((num > 10) && (num < 200)) {
-            if (num > this.maxTrad) {
-                if ((num > 100)&&(num % 100 < this.maxTrad)) {
-                num_cy = "cant a " + mutate_cy(this.numbercy(num-100), 3);
+            if (num > maxTrad) {
+                if ((num > 100)&&(num % 100 < maxTrad)) {
+                num_cy = "cant a " + mutate_cy(this.numbercy(num-100,dep=false,maxTrad=maxTradC), 3);
                 }
                 else {
                 num_cy = this.numbercyDeg(num);
@@ -72,7 +86,7 @@ class NiferCymraeg {
                     num_cy = this.numarray_dep[hundreds-1] + " cant";
                     }
                 else {
-                    num_cy =  this.numarray_dep[hundreds-1] + " cant a " + mutate_cy(this.numbercy(tensunits), 3);
+                    num_cy =  this.numarray_dep[hundreds-1] + " cant a " + mutate_cy(this.numbercy(tensunits,dep=false,maxTrad=maxTradC), 3);
                     }
                 }
             if (num === 1000) {
@@ -87,14 +101,14 @@ class NiferCymraeg {
                 mutatst = 1;
                 }
             if ((num > 1000) && (num < 2000)) {
-                num_cy = "mil"+ a+ mutate_cy(this.numbercy(num % 1000), mutatst);
+                num_cy = "mil"+ a+ mutate_cy(this.numbercy(num % 1000,dep=false,maxTrad=maxTradC), mutatst);
             }
             if ((num > 1999) && (num < 21000)) {
                 if (num % 1000 === 0) {
                     num_cy = this.numbercy(Math.floor(num/1000), dep=true) + " mil";
                 }
                 else {
-                    num_cy = this.numbercy(Math.floor(num/1000), dep=true) + " mil"+a + mutate_cy(this.numbercy(num % 1000), mutatst);
+                    num_cy = this.numbercy(Math.floor(num/1000), dep=true) + " mil"+a + mutate_cy(this.numbercy(num % 1000,dep=false,maxTrad=maxTradC), mutatst);
                 }
             }
             if ((num > 20999) && (num < 200000)) {
@@ -102,7 +116,7 @@ class NiferCymraeg {
                     num_cy = this.numbercyDeg(Math.floor(num/1000)) + " mil";
                 }
                 else {
-                    num_cy = this.numbercyDeg(Math.floor(num / 1000)) + " mil " + this.numbercy(num % 1000);
+                    num_cy = this.numbercyDeg(Math.floor(num / 1000)) + " mil " + this.numbercy(num % 1000,dep=false,maxTrad=maxTradC);
                 }
             }
             if ((num > 199999) && (num < 1000000)) {
@@ -113,7 +127,7 @@ class NiferCymraeg {
                     num_cy = this.numarray_dep[Math.floor(num / 100000)-1] + " cant "+ this.numbercyDeg(Math.floor((num%100000)/1000)) + " mil";
                 }
                 else {
-                    num_cy = this.numarray_dep[Math.floor(num / 100000)-1] + " cant "+ this.numbercyDeg(Math.floor((num%100000)/1000)) + " mil " +  this.numbercy(num % 1000);
+                    num_cy = this.numarray_dep[Math.floor(num / 100000)-1] + " cant "+ this.numbercyDeg(Math.floor((num%100000)/1000)) + " mil " +  this.numbercy(num % 1000,dep=false,maxTrad=maxTradC);
                 }
             }
             if (num === 1000000) {
@@ -128,22 +142,25 @@ class NiferCymraeg {
                 mutatst = 1;
             }
             if ((num > 1000000) && (num < 2000000)) {
-                num_cy = "miliwn"+ a+ mutate_cy(this.numbercy(num % 1000000), mutatst);
+                num_cy = "miliwn"+ a+ mutate_cy(this.numbercy(num % 1000000,dep=false,maxTrad=maxTradC), mutatst);
             }
             if ((num > 1999999) && (num < 21000000)) {
                 if (num % 1000000 === 0) {
                     num_cy = this.numbercy(Math.floor(num/1000000), dep=true) + " miliwn";
                 }
                 else {
-                    num_cy = this.numbercy(Math.floor(num/1000000), dep=true) + " miliwn"+a + mutate_cy(this.numbercy(num % 1000000), mutatst);
+                    num_cy = this.numbercy(Math.floor(num/1000000), dep=true) + " miliwn"+a + mutate_cy(this.numbercy(num % 1000000,dep=false,maxTrad=maxTradC), mutatst);
                 }
             }
             if ((num > 20999999) && (num < 200000000)) {
-                if (num % 1000000 === 0) {
+                if (num === 100000000) {
+                    num_cy = "can miliwn";
+                }
+                else if (num % 1000000 === 0) {
                     num_cy = this.numbercyDeg(Math.floor(num/1000000)) + " miliwn";
                 }
                 else {
-                    num_cy = this.numbercyDeg(Math.floor(num / 1000000)) + " miliwn " + this.numbercy(num % 1000000);
+                    num_cy = this.numbercyDeg(Math.floor(num / 1000000)) + " miliwn " + this.numbercy(num % 1000000,dep=false,maxTrad=maxTradC);
                 }
             }
             if ((num > 199999999) && (num < 1000000000)) {
@@ -154,7 +171,7 @@ class NiferCymraeg {
                     num_cy = this.numarray_dep[Math.floor(num / 100000000)-1] + " cant "+ this.numbercyDeg(Math.floor((num%100000000)/1000000)) + " miliwn";
                 }
                 else {
-                    num_cy = this.numarray_dep[Math.floor(num / 100000000)-1] + " cant "+ this.numbercyDeg(Math.floor((num%100000000)/1000000)) + " miliwn " +  this.numbercy(num % 1000000);
+                    num_cy = this.numarray_dep[Math.floor(num / 100000000)-1] + " cant "+ this.numbercyDeg(Math.floor((num%100000000)/1000000)) + " miliwn " +  this.numbercy(num % 1000000,dep=false,maxTrad=maxTradC);
                 }
             }
             // not yet implemented behaviour for larger numbers

@@ -407,6 +407,7 @@ class NiferCymraeg:
                              "chweched", "seithfed", "wythfed", "nawfed", "degfed"]
 
         self.maxTrad = 20
+        self.maxTradComp = 20;
 
     def replaces(self, num_cy):
         num_cy = num_cy.replace("  "," ")
@@ -424,8 +425,10 @@ class NiferCymraeg:
     def setMaxTrad(self, maxTrad):
         self.maxTrad = maxTrad
         
-    def numbercy(self, num, dep=False):
+    def numbercy(self, num, dep=False, maxTrad=200):
         """ return the Welsh for the numeral <num> without a noun """
+        if self.maxTrad < maxTrad:
+            maxTrad = self.maxTrad
         num = int(num)
         if num == 0:
             num_cy = "dim"
@@ -435,9 +438,9 @@ class NiferCymraeg:
             else:
                 num_cy = self.numarray[num-1]
         if num > 10 and num < 200:
-            if num > self.maxTrad:
-                if (num > 100)and(num % 100 < self.maxTrad):
-                    num_cy = "cant a " + mutatya.mutate_cy(self.numbercy(num-100), 3)
+            if num > maxTrad:
+                if (num > 100)and(num % 100 < maxTrad):
+                    num_cy = "cant a " + mutatya.mutate_cy(self.numbercy(num-100, maxTrad=self.maxTradComp), 3)
                 else:
                     num_cy = self.numbercyDeg(num)
             else:
@@ -449,7 +452,7 @@ class NiferCymraeg:
                 if tensunits == 0:
                     num_cy = self.numarray_dep[hundreds-1] + " cant"
                 else:
-                    num_cy =  self.numarray_dep[hundreds-1] + " cant a " + mutatya.mutate_cy(self.numbercy(tensunits), 3)
+                    num_cy =  self.numarray_dep[hundreds-1] + " cant a " + mutatya.mutate_cy(self.numbercy(tensunits, maxTrad=self.maxTradComp), 3)
             if num == 1000:
                 num_cy = "mil"
             if num % 1000 < 200 and(num % 20 == 0 or num % 1000 < 21):
@@ -460,25 +463,25 @@ class NiferCymraeg:
                 mutatst = 1
 
             if num > 1000 and num < 2000:
-                num_cy = "mil"+ a+ mutatya.mutate_cy(self.numbercy(num % 1000), mutatst)
+                num_cy = "mil"+ a+ mutatya.mutate_cy(self.numbercy(num % 1000, maxTrad=self.maxTradComp), mutatst)
 
             if num > 1999 and num < 21000:
                 if num % 1000 == 0:
                     num_cy = self.numbercy(num//1000, dep=True) + " mil"
                 else:
-                    num_cy = self.numbercy(num//1000, dep=True) + " mil"+a + mutatya.mutate_cy(self.numbercy(num % 1000), mutatst)
+                    num_cy = self.numbercy(num//1000, dep=True) + " mil"+a + mutatya.mutate_cy(self.numbercy(num % 1000, maxTrad=self.maxTradComp), mutatst)
             if num > 20999 and num < 200000:
                 if num % 1000 == 0:
                     num_cy = self.numbercyDeg(num//1000) + " mil"
                 else:
-                    num_cy = self.numbercyDeg(num // 1000) + " mil " + self.numbercy(num % 1000)
+                    num_cy = self.numbercyDeg(num // 1000) + " mil " + self.numbercy(num % 1000, maxTrad=self.maxTradComp)
             if num > 199999 and num < 1000000:
                 if num % 100000 == 0:
                     num_cy = self.numarray_dep[(num // 100000)-1] + " can mil"
                 elif num % 1000 == 0:
                     num_cy = self.numarray_dep[(num // 100000)-1] + " cant "+ self.numbercyDeg((num%100000)//1000) + " mil"
                 else:
-                    num_cy = self.numarray_dep[(num // 100000)-1] + " cant "+ self.numbercyDeg((num%100000)//1000) + " mil " +  self.numbercy(num % 1000)
+                    num_cy = self.numarray_dep[(num // 100000)-1] + " cant "+ self.numbercyDeg((num%100000)//1000) + " mil " +  self.numbercy(num % 1000,maxTrad=self.maxTradComp)
             if num == 1000000:
                 num_cy = "miliwn"
             if num % 1000000 < 200 and(num % 20 == 0 or num % 1000 < 21):
@@ -488,25 +491,27 @@ class NiferCymraeg:
                 a = ", "
                 mutatst = 1
             if num > 1000000 and num < 2000000:
-                num_cy = "miliwn"+ a+ mutatya.mutate_cy(self.numbercy(num % 1000000), mutatst)
+                num_cy = "miliwn"+ a+ mutatya.mutate_cy(self.numbercy(num % 1000000, maxTrad=self.maxTradComp), mutatst)
 
             if num > 1999999 and num < 21000000:
                 if num % 1000000 == 0:
                     num_cy = self.numbercy(num//1000000, dep=True) + " miliwn"
                 else:
-                    num_cy = self.numbercy(num//1000000, dep=True) + " miliwn"+a + mutatya.mutate_cy(self.numbercy(num % 1000000), mutatst)
+                    num_cy = self.numbercy(num//1000000, dep=True) + " miliwn"+a + mutatya.mutate_cy(self.numbercy(num % 1000000, maxTrad=self.maxTradComp), mutatst)
             if num > 20999999 and num < 200000000:
-                if num % 1000000 == 0:
+                if num == 100000000:
+                    num_cy = "can miliwn"
+                elif num % 1000000 == 0:
                     num_cy = self.numbercyDeg(num//1000000) + " miliwn"
                 else:
-                    num_cy = self.numbercyDeg(num // 1000000) + " miliwn " + self.numbercy(num % 1000000)
+                    num_cy = self.numbercyDeg(num // 1000000) + " miliwn " + self.numbercy(num % 1000000, maxTrad=self.maxTradComp)
             if num > 199999999 and num < 1000000000:
                 if num % 100000000 == 0:
                     num_cy = self.numarray_dep[(num // 100000000)-1] + " can miliwn"
                 elif num % 1000000 == 0:
                     num_cy = self.numarray_dep[(num // 100000000)-1] + " cant "+ self.numbercyDeg((num%100000000)//1000000) + " miliwn"
                 else:
-                    num_cy = self.numarray_dep[(num // 100000000)-1] + " cant "+ self.numbercyDeg((num%100000000)//1000000) + " miliwn " +  self.numbercy(num % 1000000)            
+                    num_cy = self.numarray_dep[(num // 100000000)-1] + " cant "+ self.numbercyDeg((num%100000000)//1000000) + " miliwn " +  self.numbercy(num % 1000000, maxTrad=self.maxTradComp)            
                 # not yet implemented behaviour for larger numbers
             if num == 1e9:
                 num_cy = "biliwn"
