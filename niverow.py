@@ -436,7 +436,10 @@ class NiferCymraeg:
                 num_cy = self.numarray[num-1]
         if num > 10 and num < 200:
             if num > self.maxTrad:
-                num_cy = self.numbercyDeg(num)
+                if (num > 100)and(num % 100 < self.maxTrad):
+                    num_cy = "cant a " + mutatya.mutate_cy(self.numbercy(num-100), 3)
+                else:
+                    num_cy = self.numbercyDeg(num)
             else:
                 num_cy = self.numbercyUgain(num)
         elif num >= 200:
@@ -472,7 +475,7 @@ class NiferCymraeg:
             if num > 199999 and num < 1000000:
                 if num % 100000 == 0:
                     num_cy = self.numarray_dep[(num // 100000)-1] + " can mil"
-                if num % 1000 == 0:
+                elif num % 1000 == 0:
                     num_cy = self.numarray_dep[(num // 100000)-1] + " cant "+ self.numbercyDeg((num%100000)//1000) + " mil"
                 else:
                     num_cy = self.numarray_dep[(num // 100000)-1] + " cant "+ self.numbercyDeg((num%100000)//1000) + " mil " +  self.numbercy(num % 1000)
@@ -500,7 +503,7 @@ class NiferCymraeg:
             if num > 199999999 and num < 1000000000:
                 if num % 100000000 == 0:
                     num_cy = self.numarray_dep[(num // 100000000)-1] + " can miliwn"
-                if num % 1000000 == 0:
+                elif num % 1000000 == 0:
                     num_cy = self.numarray_dep[(num // 100000000)-1] + " cant "+ self.numbercyDeg((num%100000000)//1000000) + " miliwn"
                 else:
                     num_cy = self.numarray_dep[(num // 100000000)-1] + " cant "+ self.numbercyDeg((num%100000000)//1000000) + " miliwn " +  self.numbercy(num % 1000000)            
@@ -577,8 +580,6 @@ class NiferCymraeg:
             firstpart = num % 20
             secondpart = num // 20
             num_cy = "cant a "+ self.numbercy(num-100)
-                    
-            num_cy = self.numbercy(firstpart) + " a " + mutatya.mutate_cy(self.numbercy(secondpart, dep=True), 3) + " ugain"
 
         return num_cy
 

@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<h1>Numerals in Cymraeg Javascript test page</h1>
+<p>See also <a href="niverowjs.html">Numerals in Kernewek Javascript test page</a>.</p>
+<div><h2>Nifer yn unig</h2>
+<h4>Rhowch nifer islaw:</h4>
+<form id = "cynifer">
+<input id="cytekstnifer">
+<button type="button" onclick="cyN.jsnifercy()">Dangos Nifer</button>
+<button type="button" onclick="cyN.klerhe('cynifer', 'nifer')">Klerhe</button>
+</form>
+<h3><p id="nifer"></p></h3></div>
+<div><h2>Nifer ac enw</h2>
+<h4>Rhowch nifer ac enw islaw:</h4>
+<form id = "cynifernoun">
+<table>
+<tr><td>Nifer: </td><td><input id="cytekstnifern"></td></tr>
+<tr><td>Enw: </td><td><input id="cytekstnifernoun"></td><td><input type="checkbox" id="femnoun" name="femnoun" value="femnoun"><label for="femnoun">Enw Benywaidd</label></td></tr>
+<tr><td>Enw Lluosog: </td><td><input id="cytekstniferpluralnoun"></td><td>Os bydd gwag, deffnyddir [N]+au</n></td></tr>
+</table>
+<button type="button" onclick="cyN.jsnifernouncy()">Dangos Nifer</button>
+<button type="button" onclick="cyN.klerhe('cynifernoun', 'nifernoun')">Klerhe</button>
+</form>
+<h3><p id="nifernoun"></p></h3>
+</div>
+<div>
+<div>
+<h3>Nifer uchaf am defnyddio niferau tradoddiadol:</h3>
+<form id = "trad">
+  <input type="radio" id="trad1" name="trad" value="10" onclick="setMaxTradjs(cyN)">
+  <label for="trad1">10</label><br>
+  <input type="radio" id="trad2" name="trad" value="20" onclick="setMaxTradjs(cyN)" checked="checked">
+  <label for="trad2">20</label><br>  
+  <input type="radio" id="trad3" name="trad" value="40" onclick="setMaxTradjs(cyN)">
+  <label for="trad3">40</label><br>
+  <input type="radio" id="trad4" name="trad" value="100" onclick="setMaxTradjs(cyN)">
+  <label for="trad4">100</label><br>
+  <input type="radio" id="trad5" name="trad" value="200" onclick="setMaxTradjs(cyN)">
+  <label for="trad5">200</label><br>
+  </form>
+  </div>
+</div>
+<!--<div>
+<h2>Ensamplow</h2>
+<p>Ensamplow hag usya henwyn 'ki' ha 'kath' gans lies niver.</p>
+<button type="button" onclick="basicTests('testoutput')">basicTests()</button>
+<div id="testoutput"></div>
+</div>-->
+<script src="mutatya.js"></script>
+<script src="niferau.js"></script>
+</body>
