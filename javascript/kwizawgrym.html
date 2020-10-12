@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<head> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<h1>Kwiz Awgrym</h1>
+<h2>Probably mostly functional but not styled yet</h2>
+<div class="dewisowkwiz">
+<h3 id="dewisowhead">Dewisow</h3>
+<div id="kaletter"><h4 id="kaletterhead">Kaletter</h4>
+<form id = "kaletter">
+  <input type="radio" id="kaletter1" name="kaletter" value="1" onclick="setKaletterjs(kwiz)">
+  <label for="kaletter1">Es</label><br>
+  <input type="radio" id="kaletter2" name="kaletter" value="2" onclick="setKaletterjs(kwiz)" checked="checked">
+  <label for="kaletter2">Kres</label><br>  
+  <input type="radio" id="kaletter3" name="kaletter" value="3" onclick="setKaletterjs(kwiz)">
+  <label for="kaletter3">Kales</label><br>
+  <input type="radio" id="kaletter4" name="kaletter" value="4" onclick="setKaletterjs(kwiz)">
+  <label for="kaletter4">Pur Gales</label><br>
+  </form>
+  </div>
+  <div id="oberyans">
+    <h4 id ="oberhead">Oberyansow</h4>
+    <form id = "ober">
+  <input type="radio" id="ober1" name="ober" value="1" onclick="setOberyansjs(kwiz)" checked="checked">
+  <label for="ober1">Keworra po marnas</label><br>
+  <input type="radio" id="ober2" name="ober" value="2" onclick="setOberyansjs(kwiz)">
+  <label for="ober2">Keworra</label><br>  
+  <input type="radio" id="ober3" name="ober" value="3" onclick="setOberyansjs(kwiz)">
+  <label for="ober3">Marnas</label><br>
+  <br>
+  </form>
+  </div>
+</div>
+<div id="kwizdalleth">
+<button type="button" onclick="kwiz.dalleth()">Dalleth</button>
+</div>
+<div class="styryansdewis">
+<p>Gwask 'Dalleth' wosa chanjya an nivel kaletter rag dastalleth an kwiz.</p></div>
+
+<div id="kystkwiz">
+    <div id="govynnawgrym"><h4 id="govynnhead">Govynn:</h4><div id="govynn"></div></div>
+    <div id="styryansgovynn">Gorrewgh gorthyp yn bysies a-woles mar pleg:</div>
+<div id="kystgorthyp">
+    <form id = "kwizgorthyp">
+<input id="gorthyp">   
+</form>
+</div>
+<div id="profyagorthyp">
+<button type="button" onclick="kwiz.rigorthyp()">Profya Gorthyp</button>
+</div>
+<div id="kystmesaj"></div>
+</div>
+<script src="mutatya.js"></script>
+<script src="niverow.js"></script>
+<script src="kwizawgrym.js"></script>
+</body>
