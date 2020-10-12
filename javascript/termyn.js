@@ -4,33 +4,43 @@
 */
 class Gorhemmyn {    
     // what time to change the greeting
+    /* static class fields are a fairly new feature 
+     * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+     * so put into contructor instead 
     static bora = 3;
     static myttin = 7;
     static dydh = 11;
     static dohajydh = 14;
     static gorthugher = 18;
     static nos = 23;
+    */
     constructor() {
+        var bora = 3;
+        var myttin = 7;
+        var dydh = 11;
+        var dohajydh = 14;
+        var gorthugher = 18;
+        var nos = 23;        
         var t = new Date();
         var our = t.getHours();
         this.gorhemmyn = "Dydh da"; // default
-        console.log(Gorhemmyn.nos)
-        if ((our >= Gorhemmyn.nos) || (our < Gorhemmyn.bora)) {
+        console.log(nos)
+        if ((our >= nos) || (our < bora)) {
             this.gorhemmyn = "Nos da";
             }
-        if ((our >= Gorhemmyn.bora) && (our < Gorhemmyn.myttin)) {
+        if ((our >= bora) && (our < myttin)) {
             this.gorhemmyn = "Bora da";
             }
-        if ((our >= Gorhemmyn.myttin) && (our < Gorhemmyn.dydh)) {
+        if ((our >= myttin) && (our < dydh)) {
             this.gorhemmyn = "Myttin da";
             }
-        if ((our >= Gorhemmyn.dydh) && (our < Gorhemmyn.dohajydh)) {
+        if ((our >= dydh) && (our < dohajydh)) {
             this.gorhemmyn = "Dydh da";
             }
-        if ((our >= Gorhemmyn.dohajydh) && (our < Gorhemmyn.gorthugher)) {
+        if ((our >= dohajydh) && (our < gorthugher)) {
             this.gorhemmyn = "Dohajydh da";
             }
-        if ((our >= Gorhemmyn.gorthugher) && (our < Gorhemmyn.nos)) {
+        if ((our >= gorthugher) && (our < nos)) {
             this.gorhemmyn = "Gorthugher da";
             }
         }
