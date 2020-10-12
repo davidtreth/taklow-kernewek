@@ -76,9 +76,9 @@ def termyn_exact(hour, minute):
         termyn = "kwarter dhe "+ mutatya.mutate(get_hour(hour+1, minute),2)
     else:
         if minute < 30:
-            termyn = niverow.numberkw_noun(minute, "mynysenn") + " wosa " + get_hour(hour, minute)
+            termyn = niverow.numberkw_noun(minute, "mynysenn", fem=True) + " wosa " + get_hour(hour, minute)
         else:
-            termyn = niverow.numberkw_noun(60-minute, "mynysenn") + " dhe " + mutatya.mutate(get_hour(hour+1, minute),2)
+            termyn = niverow.numberkw_noun(60-minute, "mynysenn", fem=True) + " dhe " + mutatya.mutate(get_hour(hour+1, minute),2)
     return termyn
     
 def dydhyas(timenow, blydhen = False):

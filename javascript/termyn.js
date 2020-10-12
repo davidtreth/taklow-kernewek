@@ -142,10 +142,10 @@ function termyn_exact(hour, minute) {
     }
     else {
         if (minute < 30) {
-            termyn = numberkw_noun(minute, "mynysenn") + " wosa " + get_hour(hour, minute);
+            termyn = numberkw_noun(minute, "mynysenn", fem=true) + " wosa " + get_hour(hour, minute);
         }
         else {
-            termyn = numberkw_noun(60-minute, "mynysenn") + " dhe " + mutate(get_hour(hour+1, minute),2);
+            termyn = numberkw_noun(60-minute, "mynysenn", fem=true) + " dhe " + mutate(get_hour(hour+1, minute),2);
             }
         }
     return termyn;
