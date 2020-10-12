@@ -2,7 +2,40 @@
  based on termyn.py
  ported to Javascript October 2020
 */
-
+class Gorhemmyn {    
+    // what time to change the greeting
+    static bora = 3;
+    static myttin = 7;
+    static dydh = 11;
+    static dohajydh = 14;
+    static gorthugher = 18;
+    static nos = 23;
+    constructor() {
+        var t = new Date();
+        var our = t.getHours();
+        this.gorhemmyn = "Dydh da"; // default
+        console.log(Gorhemmyn.nos)
+        if ((our >= Gorhemmyn.nos) || (our < Gorhemmyn.bora)) {
+            this.gorhemmyn = "Nos da";
+            }
+        if ((our >= Gorhemmyn.bora) && (our < Gorhemmyn.myttin)) {
+            this.gorhemmyn = "Bora da";
+            }
+        if ((our >= Gorhemmyn.myttin) && (our < Gorhemmyn.dydh)) {
+            this.gorhemmyn = "Myttin da";
+            }
+        if ((our >= Gorhemmyn.dydh) && (our < Gorhemmyn.dohajydh)) {
+            this.gorhemmyn = "Dydh da";
+            }
+        if ((our >= Gorhemmyn.dohajydh) && (our < Gorhemmyn.gorthugher)) {
+            this.gorhemmyn = "Dohajydh da";
+            }
+        if ((our >= Gorhemmyn.gorthugher) && (our < Gorhemmyn.nos)) {
+            this.gorhemmyn = "Gorthugher da";
+            }
+        }
+   }         
+            
 var misyow = {0:"Genver",
           1:"Hwevrer",
           2:"Meurth",
@@ -121,7 +154,7 @@ function dydhyas(timenow, blydhen = false) {
         date_kw = wday + " " + mday + " mis-"+mon;
         }
     if ((timenow.getDate() === 5) && (timenow.getMonth() === 3)) {
-        date_kw += "<p>Dydh Gool Peran Lowen!</p>"
+        date_kw += "<br><span>Dydh Gool Peran Lowen!</span>"
     }
     return date_kw;
 }
@@ -157,13 +190,19 @@ function refreshTermynDydhyas() {
         console.log(timeexact);
         $("#timeexact").text(timeexact);
         }
+    if (args.gorhemmyn) {
+        var gorhemmyn = new Gorhemmyn();
+        console.log(gorhemmyn.gorhemmyn);
+        $("#gorhemmyn").text(gorhemmyn.gorhemmyn);
+        }
     }    
     
 }
 var args = {dydh: true,
             blydhen: true,
             nes: true,
-            kewar: true};
+            kewar: true,
+            gorhemmyn: true};
                 
 $(document).ready(function()
 {
