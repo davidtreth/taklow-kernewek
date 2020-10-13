@@ -193,7 +193,8 @@ def numberkw(num):
     """ return the Cornish for the numeral <num> without a noun """
     num = int(num)
     if num == 0:
-        num_k = "mann"
+        num_k = "zero"
+        return num_k
     if num > 0 and num < 21:
         num_k = numarray[num-1]
     if num > 20 and num < 40:

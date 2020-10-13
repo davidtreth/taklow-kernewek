@@ -222,7 +222,8 @@ class AppAwgrym(tk.Frame):
                 # and up to an extra 1 point for speed
                 self.poyntys += max([(10.0-t)/10.0, 0]) + 1
                 self.niverewn += 1
-                tekst = "{k}\n{t:.1f}s, {e}/{g}, sommenn poyntys = {p:.2f}".format(k=kewarder[1],
+                tekst = "{gt}\n{k}\n{t:.1f}s, {e}/{g}, sommenn poyntys = {p:.2f}".format(gt=self.gorthyptekst,
+                                                                                   k=kewarder[1],
                                                                                    t=t,
                                                                                    p=self.poyntys,
                                                                                    e=self.niverewn,
@@ -231,8 +232,8 @@ class AppAwgrym(tk.Frame):
                 fcolour='dark green'
             else:
                 # if the answer was wrong
-                tekst = "{k}\n{t}  {b}\n{e}/{g}, sommenn poyntys = {p:.2f}".format(k=kewarder[1],
-                                                                         t=self.gorthyptekst,
+                tekst = "{gt}  {b}\n{k}\n{e}/{g}, sommenn poyntys = {p:.2f}".format(k=kewarder[1],
+                                                                         gt=self.gorthyptekst,
                                                                          b=self.gorthypbys,
                                                                          p=self.poyntys,
                                                                          e=self.niverewn,
