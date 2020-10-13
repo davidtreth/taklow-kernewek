@@ -47,10 +47,10 @@ mytools = [
     ('Ranna Syllabennow', 'sylrannakwGUI.py'),
     ('Treuslytherenna KK->FSS', 'treuslytherennaGUI.py'),
     ('Kov Treylyans', 'kovtreylyansGUI.py'),
-    #('Statistegow Korpus\n(linenn arghadow)', 'cornish_corpus.py'),
-    ('Statistegow Korpus', 'corpus_wordfreqGUI.py'),
-    ('Tekst --> Kows (dre espeak)', 'kows_kernewek_GUI.py')
+    ('Statistegow Korpus', 'corpus_wordfreqGUI.py')    
     ]
+    # ('Tekst --> Kows (dre espeak)', 'kows_kernewek_GUI.py')
+    # removed from main launchyer as user may not have espeak installed
 
 mytools_netbook = [
     ('Niverow', 'niverowGUI.py'),
@@ -61,10 +61,12 @@ mytools_netbook = [
     ('Ranna Syllabennow', 'sylrannakwGUI.py --netbook'),
     ('Treuslytherenna KK->FSS', 'treuslytherennaGUI.py --netbook'),
     ('Kov Treylyans', 'kovtreylyansGUI.py --netbook'),
-    #('Statistegow Korpus\n(linenn arghadow)', 'cornish_corpus.py'),
     ('Statistegow Korpus', 'corpus_wordfreqGUI.py --netbook'),
     ('Tekst --> Kows (dre espeak)', 'kows_kernewek_GUI.py')
     ]
+    # ('Tekst --> Kows (dre espeak)', 'kows_kernewek_GUI.py')
+    # removed from main launchyer as user may not have espeak installed
+    
 mytools_cymraeg = [('Niferau', 'niferaucyGUI.py'),
                    ('Treiglo', 'treigloGUI.py'),
                    ('Rhannu Sillafau', 'sylrannacyGUI.py')
