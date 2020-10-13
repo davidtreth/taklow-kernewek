@@ -1,0 +1,529 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+body {
+  background-color: LightGoldenRodYellow;
+  color: black;
+  font-family: Verdana;
+}
+a {
+  text-decoration:none;
+}
+.h3trans {
+  display: block;
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  color: FireBrick;
+  font-family:serif;
+}
+.h4constr {
+color: FireBrick;
+font-family:serif;
+}
+
+.transtext {
+  color: FireBrick;
+  font-family:serif;
+}
+.mapLeafletTest {
+    width: 800px; 
+    height: 600px; 
+}
+.mapLeafletTest2 {
+    width:512px;
+   height:512px; 
+   margin:50px;
+}
+.mapLeafletTest3 {
+    width:768px;
+   height:768px; 
+   border: 1px solid black;
+}
+.mapLeaflet1024px {
+    width:1024px;
+   height:1024px; 
+}
+.map512inline {
+  display:inline-block;
+  padding:25px;
+}
+.map1024inline {
+  display:inline-block;
+  padding:25px;
+}
+.leaflettext {
+  max-width: 562px;
+  margin:25px;
+}
+.map_canvas {margin-left: auto;
+    margin-right: auto;
+   /*width: 960px;
+   height: 720px;*/
+   width:800px;
+   height:600px;
+}
+.yethwerin_map_canvas {margin-left: 25px;
+  margin-right: auto;
+   width: 1000px;
+   height: 750px;
+}
+
+.map_QGIS {
+  display:inline-block;
+  margin:10px;
+}
+.map_QGIScycling {
+  display:inline-block;
+  margin:10px;
+}
+.versinfotxt {
+ font-family:serif;
+ font-style: italic;
+ font-size:small;
+ color: FireBrick;
+}
+
+.flagl{
+  border:2px solid black;
+  float:left;
+  margin:10px;
+  max-width:15%;
+  padding:0;
+  display:inline-block;
+}  
+.flagr{
+  border:2px solid black;
+  float:right;
+  margin:10px;
+  max-width:15%;
+  padding:0;
+  display:inline-block;
+}
+.flagim{
+  border:2px solid black;
+  max-width:200px;
+}
+div.NLPimage {
+  margin:50px;
+  max-width:100%;
+}
+div.NLPimage figcaption {
+  max-width:1200px;
+}
+img.NLPimage {
+  max-width:100%;
+border:1px solid black;
+}
+div.NLPbigimage {
+  max-width:100%;
+}
+img.NLPbigimage {
+  max-width:100%;
+border:1px solid black;
+}
+.taklowkwtextblock {
+  max-width:1400px;
+  margin:25px;
+}
+.yethwerintextblock {
+  max-width:1000px;
+  margin-left: 25px;
+  margin-right: auto;
+}
+
+.socialbuttons {
+display:inline-block;
+margin:20px;
+}
+.marsregionmap {
+margin:20px;
+padding:20px;
+display:inline-block;
+border: 0px solid #FFBA66;
+border-radius: 10px;
+background-color:#FFBA66;
+}
+.hemisphere {
+  display:inline-block;
+}
+.marsmapheadtext{
+  max-width:768px;
+}
+.marsregionhd{
+  clear:both;
+}
+.Sbutton{
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius:5px;
+}
+.ndImage{
+    max-width: 1200px;
+    display:inline-block;
+}
+.profImage{
+    max-width: 600px;
+    display:inline-block;
+}
+.random-souness{
+ display:block;
+ background-color:#FFBA66;
+ border: 1px solid black;
+ margin:5px;
+ padding:5px;	
+}
+div:hover .Sbutton {
+background-color:white;
+}
+
+nav {
+
+}
+nav.horiz {
+  width:100%;
+  display:block;
+  position: sticky;
+  top: 0;
+background-color:LightGoldenRodYellow;
+z-index: 99;
+}
+nav.horiz ul { margin:0; padding:0;
+}
+nav.horiz ul li {display:inline-block; 
+margin:0;
+padding: 5px 5px 10px 10px;
+background-color:#000000;
+border-right: solid white 1px;
+text-decoration: none;
+font-weight: bold;
+color:white;
+list-style:none;
+}
+nav.horiz ul li.activenav{
+border:solid gold 2px;
+background-color:#555555;
+}
+nav.horiz ul li a div.transtext {
+  color:Gold;
+}
+nav.horiz ul li:hover.activenav a div.transtext {
+  color:Gold;
+}
+nav.horiz ul li:hover a div.transtext {
+  color:FireBrick;
+}
+nav.horiz ul li:hover {
+  border-left: solid white 1px;
+  border-right: solid white 1px;
+  background-color:#FFFFFF;
+  color:black;
+}
+nav.horiz ul li:hover.activenav{
+border:solid gold 2px;
+background-color:#555555;
+color:white;
+}
+nav.horiz ul li:hover.activenav a {
+  color:white;
+  text-decoration: none;
+}
+nav.horiz ul li:hover a {
+  color:black;
+  text-decoration: none;
+}
+nav.horiz ul li a {
+  color:white;
+  text-decoration: none;
+}
+nav.horizL2 {
+position: sticky;
+top: 60px;
+}
+nav.horizL2 ul li{
+ padding: 3px 3px 6px 6px;
+ background-color:#333333;
+ font-weight: normal;
+}
+nav.horizMars ul li{
+ padding: 3px 3px 6px 6px;
+ background-color:#4D0F0F;
+ font-weight: normal;
+color:#FAFAD2;
+}
+nav.horizMars ul li.activenav{
+border:solid gold 2px;
+background-color:#801818;
+color:#FAFAD2;
+}
+nav.horizMars ul li:hover.activenav{
+border:solid gold 2px;
+background-color:#801818;
+color:#FAFAD2;
+}
+nav.horizMars ul li:hover {
+  border: solid black 1px;
+  background-color:#FFFFFF;
+  color:black;
+}
+nav.horizMars ul li:hover a {
+  color:black;
+  text-decoration: none;
+}
+nav.horiz ul li a {
+  color:#FAFAD2;
+  text-decoration: none;
+}
+nav.nadeliknav {
+display:inline;
+}
+#pagetitle{
+/*  border:1px solid black; 
+  background-color:white; */
+text-align:center;
+margin-left: 20px;
+margin-right: 20px;
+margin-top: 20px;
+margin-bottom: 20px;
+max-width:60%;
+display:inline-block;
+}
+#header{
+clear:both;
+text-align:center;
+border:2px solid black; 
+  background-color:white;
+  padding:10px;
+  margin:auto;
+  overflow:auto;
+}
+#changelanglist{
+  display:inline-block;
+  margin:0;
+  padding: 5px 5px 5px 5px;
+  background-color:#000000;
+  text-decoration: none;
+  color:white;
+  font-weight: bold;
+  border: solid black 1px;
+  
+  
+}
+#changelanglist:hover{
+  border: solid black 2px;
+  background-color:#FFFFFF;
+  color:black;  
+}
+.hiddenLang {display:none;
+}
+    
+#yethanwerintable {
+  text-align:center;
+  border: 1px solid black;
+}
+
+#yethanwerintable tr:nth-child(odd) {
+  background-color:Gainsboro;
+}
+
+#yethanwerintable tr td {
+  padding:5px;
+}
+#yethanwerintable tr th {
+  background-color:#000000;
+  color:Gold;
+  padding:10px;
+  text-align:center;
+} 
+td.addK
+{
+   text-align:left;
+}
+td.addS
+{
+   text-align:left;
+}
+
+ td.hiddendatestring
+{
+  display: none;
+} 
+.abershipsfig {
+  max-width:100%;
+}
+.crewdateplot{
+  margin:50px;
+}
+
+.termynfigures{
+  display:block;
+  margin:auto;
+  padding:25px;
+  font-size: 6em;
+  text-align:center;
+  max-height: 2em;
+}
+.termyntext{
+  display:block;
+  margin:auto;
+  padding: 10px 5px;
+  font-size: 4em;
+  text-align:center;
+  max-height: 1.5em;
+}
+.termyn_fs{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding:4vw;  
+  vertical-align: middle;
+}
+.termynfigures_fs{
+  display:block;
+  margin:auto;
+  padding: 1vw;
+  font-size: 8vw;
+  text-align:center;
+}
+.termyntext_fs{
+  display:block;
+  margin:auto;
+  padding: 0.5vw 0.2vw;
+  font-size: 4.5vw;
+  text-align:center;
+}
+
+#navtermynfs{
+  display: inline-block;
+  width: auto;
+}
+
+.nadelik2016 {
+background-color:black;	
+background-image: url("images/merrycatmas.jpg");
+background-repeat: no-repeat;
+max-width:1711px;
+background-size:cover;
+}    
+    
+    
+.nadelik2016text {
+color:orange;
+animation: nadelikmove 20s infinite;
+animation-direction: alternate;
+display:inline-block;
+background-color:rgb(0,0,0);
+background-color: rgba(127, 127, 0, 0.15);
+border-radius: 10px;
+text-align: left;
+margin-left: 50px;
+margin-top: 50px;
+margin-right:50px;
+padding:20px;
+text-shadow: 3px 2px darkslategray;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-weight:bold;
+font-size: 3.5em;
+}
+.nadeliktextcont{
+display:block;}
+.nadelikline2-outer{
+display:block;
+margin:20px;}
+.nadelik2016footer {
+position: absolute;
+margin-top:100px;
+color:white;}
+    
+.nadelikemoji{
+font-size:3.5em;
+margin-left:5px;
+margin-right:5px;
+margin-top:5px;
+margin-bottom:5px;
+animation: nadelikemoji 10s infinite;
+animation-direction: alternate;
+padding:5px;
+display:inline-block;
+font-family: "Hevetica", "Arial", sans-serif;
+/*background-color: rgba(127, 127, 127, 0.3);*/
+border-radius:10px;
+}    
+.nadelikemoji-outer{
+display:inline-block;
+margin:10px;
+}    
+/* Standard syntax */
+@keyframes nadelikmove {
+    from {color: orange;}
+    to {color: lime;}
+}
+@keyframes nadelikmovedydh {
+    from {color: yellow;}
+    to {color: red;}
+}
+@keyframes nadelikemoji {
+    from {margin-left:5px;
+    margin-right:5px;}
+    to {margin-left:50px;
+    margin-right:50px;}
+}   
+.nadelikdydhyow, .dydhnadelik{
+	
+	display:inline-block;
+font-size:2.5em;
+font-weight:bold;
+text-shadow: 2px 2px darkslategray;
+color:yellow;
+margin:20px;
+animation: nadelikmovedydh 20s infinite;
+animation-direction: alternate;
+}
+#dydhyow{
+font-size:1.5em;}    
+.nadelikr{
+float:right;} 
+.nadelikabbr{
+text-decoration: none;
+}   
+
+
+#nadelik-angels{color:white;
+animation: nadelikemoji 15s infinite;
+animation-direction: alternate;
+}
+#nadelik-stars{color:yellow;
+animation: nadelikemoji 25s infinite;
+animation-direction: alternate;
+}
+#nadelik-snow{color:white;
+animation: nadelikemoji 9s infinite;
+animation-direction: alternate;
+}
+#nadelik-trees{color:lime;
+animation: nadelikemoji 14s infinite;
+animation-direction: alternate;}
+#nadelik-santas{color:red;
+animation: nadelikemoji 7s infinite;
+animation-direction: alternate;}
+#nadelik-cakes{color:black;
+animation: nadelikemoji 13s infinite;
+animation-direction: alternate;}
+#nadelik-bells{color:gold;
+animation: nadelikemoji 11s infinite;
+animation-direction: alternate;}
+#nadelik-turkeys{color:orange;
+animation: nadelikemoji 18s infinite;
+animation-direction: alternate;}
+#nadelik-presents{color:darkblue;
+animation: nadelikemoji 8s infinite;
+animation-direction: alternate;}
+#nadelik-snowmen{color:white;
+animation: nadelikemoji 12s infinite;
+animation-direction: alternate;}
