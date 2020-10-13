@@ -85,6 +85,7 @@ class KwizAwgrym {
     // random numbers in question
     x1 = Math.ceil(Math.random() * n);
     x2 = Math.ceil(Math.random() * n);
+    console.log(this.kaletter, x1, "-", x2);
     if (this.kaletter === 1) {
         es = true;
     }
@@ -115,12 +116,15 @@ govynn1() {
 var r, garray, g, gorthyp;
 var d = new Date();
 this.starttime = d.getTime();
-if (this.oberyans === 1) {
+r = this.oberyans;
+console.log(this.oberyans, this.oberyans_text[r]);
+if (r === 1) {
     // random choice + or -
     r = Math.floor(Math.random() * 2) + 2;        
 }
 else {
     r = this.oberyans;
+    console.log(r);
 }
 if (r === 2) {
     gorthyp = this.keworra();
@@ -202,6 +206,7 @@ gorfenna() {
         bonusmsg = "";
     }
     endmsg = `Ty a wrug ${this.niverewn} kewar a ${this.Ngovynn}. ${bonusmsg}Dha skor yw ${this.poyntys.toFixed(2)} a boyntys`;
+    document.getElementById('govynn').innerHTML = "<em>Chanj an dewisow mar mynn'ta ha gwask 'Dalleth' dhe wul an kwiz arta!</em>";    
     document.getElementById("kystmesaj").innerHTML = endmsg;    
     
 }
@@ -223,7 +228,7 @@ function setKaletterjs(kwiz) {
     let kaletter;
     for (const rb of rbs) {
         if (rb.checked) {
-            kaletter = rb.value;
+            kaletter = parseInt(rb.value);
             console.log("kaletter: "+kaletter+" "+kwiz.kaletter_text[kaletter]);
             break;
         }
@@ -236,11 +241,11 @@ function setOberyansjs(kwiz)
     let ober;
     for (const rb of rbs) {
         if (rb.checked) {
-            ober = rb.value;
+            ober = parseInt(rb.value);
             console.log("oberyans: " + ober+" "+kwiz.oberyans_text[ober]);
             break;
         }
     }    
-    kwiz.oberyans = oberyans;
+    kwiz.oberyans = ober;
 }
 kwiz = new KwizAwgrym();

@@ -303,6 +303,24 @@ border:2px solid black;
   margin:auto;
   overflow:auto;
 }
+.shortheader {
+padding:5px;
+}
+.shortheader img {
+width:100px;
+}
+.shortheader #pagetitle {
+margin:10px;
+}
+.shortheader h2 {font-size: 1em;
+                margin:5px;
+}
+.shortheader .h3trans {font-size: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+  }
 #changelanglist{
   display:inline-block;
   margin:0;
