@@ -170,17 +170,17 @@ rigorthyp() {
     fcolour = "dark red";        
     }
     document.getElementById("kystmesaj").innerHTML = tekst;
-    document.getElementById("kystmesaj").style.color = fcolour;         
-    }
+    document.getElementById("kystmesaj").style.color = fcolour;
     /*  go to next question */    
     if (this.nivergwrys < this.Ngovynn) {
         // ask next question
-        this.gorthypkewar = this.govynn1();
+        this.gorthypkewar = this.govynn1();             
     }
     else {
         // finish if the required number of questions have been asked  
         this.gorfenna();
-}
+        }
+    }
 }
 
 bonuspoyntys(bonus=5) {
