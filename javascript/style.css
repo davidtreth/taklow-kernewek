@@ -382,15 +382,15 @@ td.addS
 .termynfigures{
   display: block;
   margin: auto;
-  padding: 1vw;
-  font-size: 6vw;
+  padding: 1vmin;
+  font-size: 6vmin;
   text-align: center;
 }
 .termyntext{
   display: block;
   margin: auto;
-  padding: 0.4vw 0.2vw;
-  font-size: 4vw;
+  padding: 0.4vmax 0.2vw;
+  font-size: 5vmin;
   text-align: center;
 }
 .termynkyst{
