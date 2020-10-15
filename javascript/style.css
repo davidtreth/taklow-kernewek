@@ -421,7 +421,12 @@ td.addS
   display: inline-block;
   width: auto;
 }
-
+.footer_fs {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding-left:8px;
+}
 .nadelik2016 {
 background-color:black;	
 background-image: url("images/merrycatmas.jpg");
