@@ -380,48 +380,51 @@ td.addS
 }
 
 .termynfigures{
-  display:block;
-  margin:auto;
-  padding:25px;
-  font-size: 6em;
-  text-align:center;
-  max-height: 2em;
+  display: block;
+  margin: auto;
+  padding: 1vw;
+  font-size: 6vw;
+  text-align: center;
 }
 .termyntext{
-  display:block;
-  margin:auto;
-  padding: 10px 5px;
-  font-size: 4em;
-  text-align:center;
-  max-height: 1.5em;
+  display: block;
+  margin: auto;
+  padding: 0.4vw 0.2vw;
+  font-size: 4vw;
+  text-align: center;
+}
+.termynkyst{
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .termyn_fs{
   position: absolute;
   top: 0;
   left: 0;
-  padding:4vw;  
+  padding: 4vw;  
   vertical-align: middle;
 }
 .termynfigures_fs{
-  display:block;
-  margin:auto;
+  display: block;
+  margin: auto;
   padding: 1vw;
   font-size: 8vw;
-  text-align:center;
+  text-align: center;
 }
 .termyntext_fs{
-  display:block;
-  margin:auto;
+  display: block;
+  margin: auto;
   padding: 0.5vw 0.2vw;
   font-size: 4.5vw;
-  text-align:center;
+  text-align: center;
 }
 
 #navtermynfs{
   display: inline-block;
   width: auto;
 }
-.footer_fs {
+
+.footer_fs{
   position: fixed;
   left: 0;
   bottom: 0;
