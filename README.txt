@@ -22,7 +22,12 @@ www.howlsedhes.co.uk/kerneweg (Traditional Texts -
     there are a range of Cornish texts available at the website
     http://www.chianyeth.com/index.php?title=Texts)
 www.kernewegva.com/tekstow.html (Solempnyta - Benjamin Bruch)
+
 www.learncornishlanguage.co.uk (Lord of the Rings translation by Jerry Sethir)
+this has been edited to remove footnotes that are included at the original
+webpage, and to convert quote characters from typographic apostrophes and quotes
+to standard ASCII single and double quote characters.
+
 www.kesva.org/free-books-to-download (Example sentences from Skeul an Yeth 1 -
     Wella Brown + Kesva an Taves Kernewek/Cornish Language Board)
 
