@@ -430,6 +430,170 @@ td.addS
   bottom: 0;
   padding-left:8px;
 }
+#kwizheaders {
+  position: relative;
+  border: 0px dotted black;
+  }
+  #kwizouter {
+    border: 0px dotted black;
+    margin:5px;
+    overflow: hidden;
+  }
+  .dewisowkwiz {
+    border: 0px dotted black;
+    max-width:40%;
+    margin:5px;
+    float:left;
+  }
+  .dewisowblock {
+    border: 0px dotted black;
+    margin:3px;
+  }
+  .kwizrightcol {
+    border: 0px dotted black;
+    width:50%;
+    margin:5px;
+    float:right;
+  }  
+  .styryansdewis {
+    display:block;
+    border: 0px dotted black;
+    margin: 5px;
+    width: 95%;
+    max-width: 1400px;
+  }
+  #kwizdalleth {
+    margin:5px;
+  }
+  #kwizdallethbutton {
+        font-size: x-large;
+  }
+  #govynnawrgrym {
+    border: 0px dotted black;
+    margin:5px;
+  }
+  #govynn {
+    border: 0px dotted black;
+    margin:3px;
+    padding:3px;
+    font-size: large;
+    background-color: palegoldenrod;
+  }  
+  #gorthypouter {
+    border: 0px dotted black;
+    margin:3px;
+  }
+  #profyagorthypbutton {
+        font-size: large;
+  }  
+  #kystmesaj {
+    border: 0px dotted black;
+    margin:3px;    
+    background-color: palegoldenrod;
+    overflow:hidden;
+  }
+  #kystgorthyp {
+    display: inline-block;
+  }
+  #profyagorthyp {
+    display: inline-block;
+  }
+  .kystmesajerr {
+    color:red;
+  }
+  .kystmesajgorthyptekst {
+    color:black;
+    margin:5px;
+    padding:10px;
+    text-align:center;
+    clear:both;
+  }
+  .kystmesajewn {
+    margin:5px;
+    padding:10px;
+    color:green;
+    font-size:large;
+    clear:both;
+    display:block;
+  }
+  .kystmesajkamm {
+        margin:5px;
+        padding:10px;
+        color:darkred;
+        font-size:large;
+        clear:both;
+        display:block;
+  }
+  .kystmesajewn span:nth-child(1), .kystmesajkamm span:nth-child(1) {
+    float:left;
+    display:block;
+  }
+  .kystmesajewn span:nth-child(2), .kystmesajkamm span:nth-child(2) {
+    float:right;
+    display:block;
+  }
+  .kystmesajgorthyptekst span:nth-child(1) {
+    float:left;
+    display:block;
+    text-align:center;
+  }
+  .kystmesajgorthyptekst span:nth-child(2) {
+    float:right;
+    display:block;
+    text-align:center;
+  }  
+  .kystmesajresults {
+    margin:5px;
+    padding:10px;
+    clear:both;
+    display:block;
+  }
+  .kystmesajresults span:nth-child(1) {
+    width:25%;
+    text-align:left;
+    display:inline-block;
+  }
+  .kystmesajresults span:nth-child(2) {
+    width:25%;
+    text-align:left;
+    display:inline-block;
+  }
+  .kystmesajresults span:last-child {
+    width:40%;
+    text-align:right;
+    display:inline-block;
+  }
+  .kystmesajniver {
+        margin:3px;
+        float:left;
+  }
+  .kystmesajtime {
+        margin:3px;
+  }  
+  .kystmesajpoyntys {
+        margin:3px;
+        float:right;
+  }
+  .kystmesajend {
+    margin:3px;
+    font-size:large;
+  }
+  .kystmesajpubewn {
+        margin-top:3px;
+        font-size:x-large;
+        color:darkgreen;
+  }
+  .kystmesajpubkamm {
+    margin-top:3px;
+        font-size:x-large;
+        color:darkred;
+  }
+  .kystmesajpubewn span {
+    margin: 2px;
+  }
+  .kystmesajpubkamm span {
+    margin: 2px;
+  }
 .nadelik2016 {
 background-color:black;	
 background-image: url("images/merrycatmas.jpg");

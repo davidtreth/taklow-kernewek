@@ -6,11 +6,10 @@
 </head>
 <body>
 <h1>Kwiz Awgrym</h1>
-<h2>Probably mostly functional but not styled yet</h2>
 <div id="kwizouter" class="taklowkwtextblock">
 <div class="dewisowkwiz">
 <h3 id="dewisowhead">Dewisow</h3>
-<div id="kaletter"><h4 id="kaletterhead">Kaletter</h4>
+<div id="kaletter" class="dewisowblock"><h4 id="kaletterhead">Kaletter</h4>
 <form id = "kaletter">
   <input type="radio" id="kaletter1" name="kaletter" value="1" onclick="setKaletterjs(kwiz)">
   <label for="kaletter1">Es</label><br>
@@ -22,7 +21,7 @@
   <label for="kaletter4">Pur Gales</label><br>
   </form>
   </div>
-  <div id="oberyans">
+  <div id="oberyans" class="dewisowblock">
     <h4 id ="oberhead">Oberyansow</h4>
     <form id = "ober">
   <input type="radio" id="ober1" name="ober" value="1" onclick="setOberyansjs(kwiz)" checked="checked">
@@ -35,24 +34,27 @@
   </form>
   </div>
 </div>
-<div id="kwizdalleth">
-<button type="button" onclick="kwiz.dalleth()">Dalleth</button>
-</div>
+<div class="kwizrightcol">
 <div id="kystkwiz">
+<div id="kwizdalleth">
+<button type="button" onclick="kwiz.dalleth()" id="kwizdallethbutton">Dalleth</button>
+</div>
     <div id="govynnawgrym"><h4 id="govynnhead">Govynn:</h4><div id="govynn"><em>Gwask 'Dalleth' dhe wul an kwiz!</em></div></div><br><br>
     <div id="styryansgovynn">Gorrewgh gorthyp yn bysies a-woles mar pleg:</div><br>
+<div id="gorthypouter">
 <div id="kystgorthyp">
 <form id = "kwizgorthyp" onsubmit="kwiz.rigorthyp();return false">
 <input id="gorthyp">   
 </form>
 </div>
 <div id="profyagorthyp">
-<button type="button" onclick="kwiz.rigorthyp()">Profya Gorthyp</button>
-</div><br><br>
+<button type="button" onclick="kwiz.rigorthyp()" id="profyagorthypbutton">Profya Gorthyp</button>
+</div></div>
 <div id="kystmesaj"></div>
 </div>
 </div>
-<div id="styryans" class="styryansdewis taklowkwtextblock"><p>Nivelow kaletter: Yn 'Es' nyns yw usys saw niverow 1-10, ha ny vydh gorthybow negedhek. Yma dhe 'Kres' niverow 1-20, ha marnasyansow a yll bos negedhek. Yma niverow 1-40 dhe 'Kales' hag yma dhe 'Pur Gales' niverow a-hys dhe 100. Possybl yw ynwedh dewis ynter kavos keworransow yn unnik, marnasyansow yn unnik, po kemmysk yntredha.</p>
+</div>
+<div id="styryans" class="styryansdewis"><p>Nivelow kaletter: Yn 'Es' nyns yw usys saw niverow 1-10, ha ny vydh gorthybow negedhek. Yma dhe 'Kres' niverow 1-20, ha marnasyansow a yll bos negedhek. Yma niverow 1-40 dhe 'Kales' hag yma dhe 'Pur Gales' niverow a-hys dhe 100. Possybl yw ynwedh dewis ynter kavos keworransow yn unnik, marnasyansow yn unnik, po kemmysk yntredha.</p>
 <p>Gwask 'Dalleth' wosa chanjya an nivel kaletter rag dastalleth an kwiz.</p>
 <div class="transtext"><p>Difficulty levels: At 'Easy' only numbers 1-10 are used and no answers are negative numbers. At 'Medium' there are numbers 1-20 and subtractions can have a negative answer. At 'Hard' there are numbers 1-40, and 'Very Hard' numbers up to 100. It is also possible to choose between getting additions only, subtractions only, or a mix of the two.</p><p>After changing the options, press 'Dalleth' to restart the quiz.</p></div>
 </div>
