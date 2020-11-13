@@ -58,8 +58,9 @@ def marnas(n=20, interMode=True):
     x1 = random.choice(np.arange(n) + 1)
     x2 = random.choice(np.arange(n) + 1)
     marnasyans = x1 - x2
-    gorthyp = govynn("Pyth yw {a} marnas {b}?\n".format(a=niverow.numberkw(x1),
-                                                        b=niverow.numberkw(x2)))
+    gorthyp = govynn(("Pyth yw {a} marnas {b}?"
+                      "\n").format(a=niverow.numberkw(x1),
+                                   b=niverow.numberkw(x2)))
     
     sommenntekst = "{a} - {b} = {c}".format(a=x1, b=x2, c=marnasyans)
     print(sommenntekst)
@@ -69,8 +70,9 @@ def liesriva(n=12, interMode=True):
     x1 = random.choice(np.arange(n) + 1)
     x2 = random.choice(np.arange(n) + 1)
     liesrivans = x1 * x2
-    gorthyp = govynn("Pyth yw {a} lieshys gans {b}?\n".format(a=niverow.numberkw(x1),
-                                                              b=niverow.numberkw(x2)))
+    gorthyp = govynn(("Pyth yw {a} lieshys gans {b}?"
+                      "\n").format(a=niverow.numberkw(x1),
+                                   b=niverow.numberkw(x2)))
     
     sommenntekst = "{a} * {b} = {c}".format(a=x1, b=x2, c=liesrivans)
     print(sommenntekst)
@@ -80,19 +82,19 @@ def disranna(n=12, interMode=True):
     x1 = random.choice(np.arange(n) + 1)
     x2 = random.choice(np.arange(n) + 1)
     liesrivans = x1 * x2
-    gorthyp = govynn("Pyth yw {a} disrynnys gans {b}?\n".format(a=niverow.numberkw(liesrivans),
-                                                                b=niverow.numberkw(x2)))
+    gorthyp = govynn(("Pyth yw {a} disrynnys gans {b}?"
+                      "\n").format(a=niverow.numberkw(liesrivans),
+                                   b=niverow.numberkw(x2)))
     sommenntekst = "{a} / {b} = {c}".format(a=liesrivans, b=x2, c=x1)
-    print(sommenntekst)
-    
+    print(sommenntekst)    
     return chekkGorthyp(gorthyp, x1, interMode)
     
     
 def govynn1(niverewn=0, poyntys=0, mode="oll", interMode=True):
     starttime = time.time()
-    if mode=="oll":
+    if mode == "oll":
         g = random.choice([keworra, marnas, liesriva, disranna])
-    elif mode=="keworramarnas":
+    elif mode == "keworramarnas":
         g = random.choice([keworra, marnas])
     elif mode == "marnas":
         g = marnas
@@ -102,10 +104,11 @@ def govynn1(niverewn=0, poyntys=0, mode="oll", interMode=True):
         t = time.time() - starttime
         poyntys += max([(10-t)/10.0, 0]) + 1
         niverewn += 1
-        tekst = "{t:.1f}s, {e}/{g}, sommenn poyntys={p:.1f}\n".format(t=t,
-                                                                      p=poyntys,
-                                                                      e=niverewn,
-                                                                      g=i+1)
+        tekst = ("{t:.1f}s, {e}/{g}, sommenn poyntys={p:.1f}"
+                 "\n").format(t=t,
+                              p=poyntys,
+                              e=niverewn,
+                              g=i+1)
         return True, niverewn, poyntys, tekst
     else:
         tekst = "{e}/{g}, sommenn poyntys={p:.1f}\n".format(p=poyntys,
@@ -122,8 +125,10 @@ if __name__ == "__main__":
         print(tekst)
 
     if niverewn == ngovynn:
-        print("Keslowena! Ty a worthybis pub govynn yn ewn! Bonus a bymp poynt yw genes!")
+        print("Keslowena! Ty a worthybis pub govynn yn ewn! "
+              "Bonus a bymp poynt yw genes!")
         poyntys += 5
     if niverewn == 0:
-        print("Truan! Ty a worthybis pub govynn yn kamm!\nMartesen kath a gerdhas a-dro dha vysowek!\n")
+        print("Truan! Ty a worthybis pub govynn yn kamm!\n"
+              "Martesen kath a gerdhas a-dro dha vysowek!\n")
     print("Dha niver a boyntys yw {n:.1f}".format(n=poyntys))
