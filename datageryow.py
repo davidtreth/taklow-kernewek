@@ -16,27 +16,29 @@ def addallinflectedforms(listwords,listverbs, listpreps=None):
     """ add the inflected forms of the verbs in listverbs to listwords """
     # the tenses of the verb expected by inflektya.inflektya()
     tensesDict = {0:"a-lemmyn",
-              1:"tremenys",
-              2:"anperfydh",
-              3:"gorperfydh",
-              4:"islavarek_a-lemmyn",
-              5:"islavarek_anperfydh",
-              6:"gorhemmyn",
-              7:"ppl",
-              8:"devedhek",
-              9:"anperfydh_usadow",
-             10:"a-lemmyn_hir_indef",
-             11:"anperfydh_hir",
-             12:"a-lemmyn_hir_def",
-             13:"a-lemmyn_hir_aff",
-             14:"perfydh"}
+                  1:"tremenys",
+                  2:"anperfydh",
+                  3:"gorperfydh",
+                  4:"islavarek_a-lemmyn",
+                  5:"islavarek_anperfydh",
+                  6:"gorhemmyn",
+                  7:"ppl",
+                  8:"devedhek",
+                  9:"anperfydh_usadow",
+                 10:"a-lemmyn_hir_indef",
+                 11:"anperfydh_hir",
+                 12:"a-lemmyn_hir_def",
+                 13:"a-lemmyn_hir_aff",
+                 14:"perfydh"}
     inflectedverbparts = []
     for verb in listverbs:
         inflectedverbparts.append(verb)        
         for per in range(8):
             for tense in range(8):
-                # inflect verb for the person per and tense. 0 is to not have the suffixed pron.
-                inflectedverbparts.append(inflektya.inflektya(verb,per,tensesDict[tense],0)[0])
+                # inflect verb for the person per and tense.
+                # 0 is to not have the suffixed pron.
+                inflectedverbparts.append(
+                    inflektya.inflektya(verb,per,tensesDict[tense],0)[0])
     for v in inflectedverbparts:
         if v not in listwords:
             listwords.append(v)
@@ -45,9 +47,11 @@ def addallinflectedforms(listwords,listverbs, listpreps=None):
         for prep in listpreps:
             inflectedprepparts.append(prep)
             for per in range(7):
-                # 0 is impersonal form of verb, not relavent for prepositions
+                # 0 is impersonal form of verb,
+                # not relavent for prepositions
                 person = per + 1
-                inflectedprepparts.append(inflektya.inflektya_prepos(prep, person, 0)[0])
+                inflectedprepparts.append(
+                    inflektya.inflektya_prepos(prep, person, 0)[0])
         for p in inflectedprepparts:
             if p not in listwords:
                 listwords.append(p)
@@ -88,35 +92,39 @@ verbs_SWF_kk = ["okkupya"]
 
 # words that had yw yn earlier Kernewek Kemmyn but uw in Gerlyver Meur and SWF
 words_uw = ["dyw", "dywses", "dywow","gyw", "dywes", "dywesow","gywow","gywa",
-            "didhyw", "didhywydh", "didhywydhyon", "didhywydhes", "didhywydhesow",
-            "dywonieth", "dywonydh", "dywonydhyon", "dywonydhes", "dywonydhesow",
-            "ryw", "rywyon", "rywek","plyw","plywow","plywek","plywogyon","plywoges", "plywogesow"]
+            "didhyw", "didhywydh", "didhywydhyon", "didhywydhes",
+            "didhywydhesow", "dywonieth", "dywonydh", "dywonydhyon",
+            "dywonydhes", "dywonydhesow", "ryw", "rywyon", "rywek", "plyw",
+            "plywow","plywek","plywogyon","plywoges", "plywogesow"]
 
 verbs_uw = ["gywa"]
 
 # words that have a KK half-long y which doesn't become e in SWF
 # likely not yet a complete list   
 words_y = ['anpossybyl', 'anpossybylta', 'anpossybylytas', 'bryntin', 'byghan',
- 'bynitha', 'bynytha', 'bysmer', 'bythkweth', 'chyften', 'chymbla', "dhy'hwi",
-  'dybri', 'dyskans', 'dyski', 'kessydhya', 'kessydhyans', 'kryjyans', 'krysi',
-  'kyni', 'kynsa', 'kyrghes', 'kyrghys', 'lyver', 'lyvrow', 'gerlyver', 'gerlyvrow',
-  'dydhlyver', 'dydhlyvrow', 'gidlyver', 'gidlyvrow', 'dornlyver', 'dornlyvrow',
-  'kowethlyver', 'kowethlyvrow', 'roeslyver', 'roeslyvrow', 'skriflyver', 'skriflyvrow',
-  'dysklyver', 'dysklyvrow', 'mynysenn', 'myrghes', 'nammnygen',
-  'onpossybyl', 'onpossybylta', 'onpossybylytas', 'possybyl', 'possybylta', 'possybyltas',
-   'pygans', 'pympes', 'pymthek', 'pysi', 'slynkya', 'spyrys', 'trynses',
-    'vydholl', 'vytholl', 'ydhyn', 'ylyn', 'ynter', 'ysow', 'ystynn'] 
+           'bynitha', 'bynytha', 'bysmer', 'bythkweth', 'chyften', 'chymbla',
+           "dhy'hwi", 'dybri', 'dyskans', 'dyski', 'kessydhya', 'kessydhyans',
+           'kryjyans', 'krysi', 'kyni', 'kynsa', 'kyrghes', 'kyrghys',
+           'lyver', 'lyvrow', 'gerlyver', 'gerlyvrow', 'dydhlyver',
+           'dydhlyvrow', 'gidlyver', 'gidlyvrow', 'dornlyver', 'dornlyvrow',
+           'kowethlyver', 'kowethlyvrow', 'roeslyver', 'roeslyvrow',
+           'skriflyver', 'skriflyvrow', 'dysklyver', 'dysklyvrow', 'mynysenn',
+           'myrghes', 'nammnygen', 'onpossybyl', 'onpossybylta',
+           'onpossybylytas', 'possybyl', 'possybylta', 'possybyltas',
+           'pygans', 'pympes', 'pymthek', 'pysi', 'slynkya', 'spyrys',
+           'trynses', 'vydholl', 'vytholl', 'ydhyn', 'ylyn', 'ynter', 'ysow',
+           'ystynn'] 
 verbs_y = ["krysi", "slynkya", "kyni", "kessydhya", "dybri", "dyski", "pysi",
- "tyli", "tybi", "attyli", "bryjyon", "lesvryjyon"]
+           "tyli", "tybi", "attyli", "bryjyon", "lesvryjyon"]
 preps_y = ["rag", "ryb"]
 
 addallinflectedforms(words_uw,verbs_uw)
 addallmutatedforms(words_uw)
+
 # avoid turning 'yw' etc. to uw
 wrong_mut_gyw = [w for w in words_uw if w[:2]=='yw']
 for w in wrong_mut_gyw:
     words_uw.remove(w)
-
 
 addallinflectedforms(words_y, verbs_y, preps_y)
 addallmutatedforms(words_y)            
@@ -130,7 +138,6 @@ SWF_owords.remove("goen")
 #print(SWF_owords)
 
 ## data for sylabelenn_ranna_kw.py ##
-
 
 # words that have unusual stress
 
@@ -153,9 +160,9 @@ final_syl_stress_words = ['ages','ahwer','androw','ankoth','ankres','attal',
                           'hwyhwi','ynsi','yn-bann','yn-dann','ynbann',
                           'yndann','a-ji','a-dhann','dygoel', 'dygol',
                           'dygweyth', 'a-rag','dherag','a-dherag',
-                          'a-dhiworth', 'a-dhyworth', 'omri','omdowl', 'dibygans',
-                          'diber-dowr','diwvanek-plat', 'a-droes', 'a-droos',
-                          "y'ga", "y'gan", "y'gas"]
+                          'a-dhiworth', 'a-dhyworth', 'omri','omdowl',
+                          'dibygans', 'diber-dowr','diwvanek-plat', 'a-droes',
+                          'a-droos', "y'ga", "y'gan", "y'gas"]
 # in Gerlyver Meur, y'ga, y'gan, y'gas are unstressed, but every other
 # unstressed word is a monosyllable. marking them as final stress
 # stops them from becoming e'gan in transliteration to SWF                          
@@ -165,11 +172,10 @@ addallmutatedforms(final_syl_stress_words)
 # words of 3 or more syls. stressed on first syl.
 first_syl_stress_words = ['arader','aradror','kenedhel','kelegel','kenderow',
                           'klabytter', 'clabytter', 'lelduri','lenduri',
-                          'tulyfant',
-                          'hardigras','oratri','trayturi','genedhel',
-                          'henedhel','gelegel','helegel','genderow',
-                          'henderow','glabytter','dulyfant','thulyfant',
-                          'drayturi','thrayturi']
+                          'tulyfant', 'hardigras','oratri','trayturi',
+                          'genedhel', 'henedhel','gelegel','helegel',
+                          'genderow', 'henderow','glabytter','dulyfant',
+                          'thulyfant', 'drayturi','thrayturi']
 
 # words of 4 or more syls. stressed on 2nd syl.
 second_syl_stress_words = ['keniterow','dygynsete','geniterow','heniterow',
@@ -182,14 +188,15 @@ unstressed_monosyls = ['an','a','y','re','ny','yth','nyns','na','nag','ow',
                        'dell']
     
 # 2 syllable words with di- that are stressed on the first syllable
-words_di_stress1 = ["dial", "dibegh", "dibenn", "diben", "dibra", "diek", "dien",
-                    "difenn", "difen", "dilesh", "dillas", "dinan", "dinas", "dinek",
-                    "diner", "disel", "diskan", "diskar", "diskeudh", "dismyk",
-                    "distowgh", "disya", "divers", "divyn", "diwarr",
-                    "diwbaw", "diwbleth", "diwdhorn", "diwedh", "diwen",
-                    "diwes", "diwfer", "diwfordh", "diwgell", "diwglun",
-                    "diwla", "diwlens", "diwroev", "diwrov", "diwros", "diwskoedh", "diwskodh",
-                    "diwvogh", "diwvregh", "diwvronn", "diwvron", "diwweus", "diwweyth"]
+words_di_stress1 = ["dial", "dibegh", "dibenn", "diben", "dibra", "diek",
+                    "dien", "difenn", "difen", "dilesh", "dillas", "dinan",
+                    "dinas", "dinek", "diner", "disel", "diskan", "diskar",
+                    "diskeudh", "dismyk", "distowgh", "disya", "divers",
+                    "divyn", "diwarr", "diwbaw", "diwbleth", "diwdhorn",
+                    "diwedh", "diwen", "diwes", "diwfer", "diwfordh",
+                    "diwgell", "diwglun", "diwla", "diwlens", "diwroev",
+                    "diwrov", "diwros", "diwskoedh", "diwskodh", "diwvogh",
+                    "diwvregh", "diwvronn", "diwvron", "diwweus", "diwweyth"]
 
 addallmutatedforms(words_di_stress1)
 
