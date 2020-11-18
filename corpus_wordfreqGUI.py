@@ -18,27 +18,32 @@ except ImportError:
 
     
 comparelist = []
-defaultsamples = ['dhe', 'gans', 'war', 'dhymm', 'dhymmo', 'genev', 'warnav', 'rag', 'mes']
+defaultsamples = ['dhe', 'gans', 'war', 'dhymm', 'dhymmo', 'genev', 'warnav',
+                  'rag', 'mes']
 #["a","ha","an","dhe","yn","yw","ow","ev","rag","mes","esa","yth","y"]
 class CorpusStats(tk.Frame):
-    labelTexts = {'modechoice': {'en':['General Report',
-                                       'Word Frequencies List',
-                                       'Letter Frequencies List',
-                                       'Letter Frequencies List\n(without digraphs)',
-                                       'Length of words\n(cumulative frequency graph)',
-                                       'Word Frequency Bar Chart',
-                                       'Lexical Dispersion Plot',
-                                       'Concordance',
-                                       'Regex findall'],
-                                 'kw':['Derivas Ollgemmyn',
-                                       'Rol Menowghderow Ger',
-                                       'Rol Menowghderow Lytherenn',
-                                       'Rol Menowghderow Lytherenn\n(heb dilytherennow)',
-                                       'Hirder Geryow\n(tresenn menowghder kumulativ)',
-                                       'Menowghder Ger (tresenn barr)',
-                                       'Tresenn Keskar Ger',
-                                       'Konkordans',
-                                       'findall Regex']},
+    labelTexts = {'modechoice':
+                    {'en':
+                        ['General Report',
+                        'Word Frequencies List',
+                        'Letter Frequencies List',
+                        'Letter Frequencies List\n(without digraphs)',
+                        'Length of words\n(cumulative frequency graph)',
+                        'Word Frequency Bar Chart',
+                        'Lexical Dispersion Plot',
+                        'Concordance',
+                        'Regex findall'],
+                    'kw':
+                        ['Derivas Ollgemmyn',
+                        'Rol Menowghderow Ger',
+                        'Rol Menowghderow Lytherenn',
+                        'Rol Menowghderow Lytherenn\n(heb dilytherennow)',
+                        'Hirder Geryow\n(tresenn menowghder kumulativ)',
+                        'Menowghder Ger (tresenn barr)',
+                        'Tresenn Keskar Ger',
+                        'Konkordans',
+                        'findall Regex']
+                    },
                   'textchoice':{'en':['Life of Meryasek',
                                       'Charter Fragment',
                                       'Creation of the World',
@@ -87,12 +92,21 @@ class CorpusStats(tk.Frame):
                                  'kw': 'Tekst (Mammskrif)'}},
                   'mhead2':{'en': 'Options',
                             'kw': 'Dewis Gwrythyans'},
-                  'msg': {'en': 'Enter the minimum number of letters\nfor word frequency list below:',
-                          'kw': 'Keworrowgh isella niver a lytherennow\nrag rolyow menoghder ger a-woeles:'},
-                  'msg2':{'en': 'Enter the number of words to report\nfrequency of below:\ndefault = 20',
-                          'kw': 'Keworrowgh niver a eryow dhe dherivas\nan menowghder a-woeles:\ndefowt = 20'},
-                  'msg3':{'en': 'Enter a word to compare frequencies of\nacross the texts:',
-                          'kw': 'Keworrowgh ger dhe geheveli\nmenowghderow dres an tekstow:'},
+                  'msg': {
+                    'en': ('Enter the minimum number of letters\n'
+                           'for word frequency list below:'),
+                    'kw': ('Keworrowgh isella niver a lytherennow\n'
+                           'rag rolyow menoghder ger a-woeles:')},
+                  'msg2':{
+                    'en': ('Enter the number of words to report\n'
+                           'frequency of below:\ndefault = 20'),
+                    'kw': ('Keworrowgh niver a eryow dhe dherivas\n'
+                           'an menowghder a-woeles:\ndefowt = 20')},
+                  'msg3':{
+                    'en': ('Enter a word to compare frequencies of\n'
+                           'across the texts:'),
+                    'kw': ('Keworrowgh ger dhe geheveli\n'
+                           'menowghderow dres an tekstow:')},
                   'keworra':{'en': 'Add word to the list',
                              'kw': "Keworra ger dhe'n rol"},
                   'klerhe': {'en': 'Clear the list',
@@ -111,11 +125,16 @@ class CorpusStats(tk.Frame):
                                     'kw':'Skwychya dhe Gemmyn'}},
                   'windowtitle': {'en': 'Cornish Corpus Statistics',
                                   'kw': 'Korpus Kernewek'},
-                  'NLTKerr':{'en': 'Python Natural Language Processing Toolkit (NLTK) not available.\nDownload from www.nltk.org if not on the system.',
-                             'kw': 'Nyns yw Python Natural Language Processing Toolkit (NLTK) kavadow.\nIskargewgh diworth www.nltk.org mar nyns yw war agas jynn-amontya.'}
+                  'NLTKerr':{
+                    'en': ('Python Natural Language Processing Toolkit (NLTK)'
+                           'not available.\nDownload from www.nltk.org'
+                           ' if not on the system.'),
+                    'kw': ('Nyns yw Python Natural Language Processing Toolkit'
+                           '(NLTK) kavadow.\nIskargewgh diworth www.nltk.org' 'mar nyns yw war agas jynn-amontya.')}
     }
 
-    def __init__(self, parent = None, netbook=False, english=False, mscript=False):
+    def __init__(self, parent = None, netbook=False,
+                 english=False, mscript=False):
         tk.Frame.__init__(self, parent)
         if english:
             self.ifacelang = 'en'
@@ -134,28 +153,32 @@ class CorpusStats(tk.Frame):
             self.padadj = 0
             self.wline = 60
         self.comparelist = []
-        self.defaultsamples = ['dhe', 'gans', 'war', 'dhymm', 'dhymmo', 'genev', 'warnav', 'rag', 'mes']
+        self.defaultsamples = ['dhe', 'gans', 'war', 'dhymm', 'dhymmo',
+                               'genev', 'warnav', 'rag', 'mes']
         self.master.title(CorpusStats.labelTexts['windowtitle'][self.ifacelang])
         self.pack()
         self.make_widgets()
         
     def make_widgets(self):
         """ display GUI widgets """
-        self.mhead = tk.Label(self, text = CorpusStats.labelTexts['mhead'][self.mscript][self.ifacelang])
+        self.mhead = tk.Label(self,
+            text=CorpusStats.labelTexts['mhead'][self.mscript][self.ifacelang])
         self.mhead.config(font=('Helvetica', 16+self.fontsizeadj, 'bold'))
         self.mhead.pack(side=tk.TOP, anchor=tk.NW)        
         c = self.checkNLTK()
         print("NLTK available = {c}".format(c=c))
         if c == 0:
-            self.names = ["Bewnans Meryasek", "Charter Fragment", "Gwreans an Bys",
-                          "Passhyon Agan Arloedh", "Origo Mundi",
-                          "Passio Christ","Resurrectio Domini", "Skeul an Yeth 1", "Solemptnyta",
+            self.names = ["Bewnans Meryasek", "Charter Fragment",
+                          "Gwreans an Bys", "Passhyon Agan Arloedh",
+                          "Origo Mundi", "Passio Christ","Resurrectio Domini", "Skeul an Yeth 1", "Solemptnyta",
                           "LoTR chapters", "Tregear Homilies"]
         else:
             # import cornish_corpus
-            # uneccesary as done already
-            self.kk_texts, self.names = cornish_corpus.corpusKW(args.manuscript, outlang=self.ifacelang)
-            self.kk_text_dict = {k:v for (k,v) in zip(self.names, self.kk_texts)}
+            # unecessary as done already
+            self.kk_texts, self.names = cornish_corpus.corpusKW(args.manuscript,
+                outlang=self.ifacelang)
+            self.kk_text_dict = {k:v for (k,v) in zip(self.names,
+                                                      self.kk_texts)}
         if self.mscript:
             textmenu = CorpusStats.labelTexts['textchoicems'][self.ifacelang]
             # make all texts option still 10 even though there are fewer texts in manuscript spelling
@@ -165,20 +188,23 @@ class CorpusStats(tk.Frame):
             textmenu = CorpusStats.labelTexts['textchoice'][self.ifacelang]
             optionnums = list(range(len(textmenu)))
             
-        self.textchoice = Radiobar(self, textmenu, vals=optionnums, side = tk.TOP, anchor = tk.NW,
-                                   default = 2, justify=tk.LEFT,
-                                   font=('Helvetica', 13+self.fontsizeadj, 'normal'))
+        self.textchoice = Radiobar(self, textmenu, vals=optionnums,
+                                   side = tk.TOP, anchor = tk.NW, default = 2, justify=tk.LEFT, font=('Helvetica',
+                                                          13+self.fontsizeadj, 'normal'))
         self.textchoice.pack(side=tk.LEFT, fill=tk.Y)
         self.textchoice.config(relief=tk.RIDGE, bd=2)
-        self.switchlang = tk.Button(self.textchoice, text=CorpusStats.labelTexts['switchlang'][self.ifacelang],
-                                    font=('Helvetica', 14+self.fontsizeadj), command=self.changeifacelang)
+        self.switchlang = tk.Button(self.textchoice,
+            text=CorpusStats.labelTexts['switchlang'][self.ifacelang],
+            font=('Helvetica', 14+self.fontsizeadj),
+            command=self.changeifacelang)
         self.switchlang.pack(anchor=tk.SW, side=tk.LEFT, padx=10, pady=10)
-        self.switchms = tk.Button(self.textchoice, text=CorpusStats.labelTexts['switchms'][self.mscript][self.ifacelang],
-                                    font=('Helvetica', 14+self.fontsizeadj), command=self.switchms)
+        self.switchms = tk.Button(self.textchoice,
+          text=CorpusStats.labelTexts['switchms'][self.mscript][self.ifacelang],
+          font=('Helvetica', 14+self.fontsizeadj), command=self.switchms)
         self.switchms.pack(anchor=tk.SW, side=tk.LEFT, padx=10, pady=10)
         
-
-        self.mhead2 = tk.Label(self, text=CorpusStats.labelTexts['mhead2'][self.ifacelang])
+        self.mhead2 = tk.Label(self,
+            text=CorpusStats.labelTexts['mhead2'][self.ifacelang])
         self.mhead2.config(font=('Helvetica', 16+self.fontsizeadj*2, 'bold'))
         self.mhead2.pack(side=tk.TOP, anchor=tk.NW)
         mchoicetext = CorpusStats.labelTexts['modechoice'][self.ifacelang]
@@ -187,57 +213,62 @@ class CorpusStats(tk.Frame):
                                    vals = mchoicevals,
                                    side=tk.TOP, anchor=tk.NW, justify=tk.LEFT, default = 0,
                                    font = ('Helvetica',13+self.fontsizeadj, 'normal'))
-        self.msg1 = tk.Label(self.modechoice, text=CorpusStats.labelTexts['msg'][self.ifacelang],
-                             anchor=tk.W, justify=tk.LEFT, pady=10+self.padadj)
+        self.msg1 = tk.Label(self.modechoice,
+            text=CorpusStats.labelTexts['msg'][self.ifacelang],
+            anchor=tk.W, justify=tk.LEFT, pady=10+self.padadj)
         self.msg1.config(font=('Helvetica', 12+self.fontsizeadj))
         self.msg1.pack(anchor=tk.W)
         self.ent = Entrybar(self.modechoice,
                             anchor=tk.NW)
         self.ent.pack(anchor=tk.W, padx=5)        
-        self.msg2 = tk.Label(self.modechoice, text=CorpusStats.labelTexts['msg2'][self.ifacelang],
-                             anchor=tk.W, justify=tk.LEFT, pady=10+self.padadj)
+        self.msg2 = tk.Label(self.modechoice,
+            text=CorpusStats.labelTexts['msg2'][self.ifacelang],
+            anchor=tk.W, justify=tk.LEFT, pady=10+self.padadj)
         self.msg2.config(font=('Helvetica', 12+self.fontsizeadj))
         self.msg2.pack(anchor=tk.W)
-        self.ent2 = Entrybar(self.modechoice,
-                             anchor=tk.NW)
+        self.ent2 = Entrybar(self.modechoice, anchor=tk.NW)
         self.ent2.pack(anchor=tk.W, padx=5)        
-        self.msg3 = tk.Label(self.modechoice, text=CorpusStats.labelTexts['msg3'][self.ifacelang],
-                             anchor=tk.W, justify=tk.LEFT, pady=10+self.padadj)
+        self.msg3 = tk.Label(self.modechoice,
+            text=CorpusStats.labelTexts['msg3'][self.ifacelang],
+            anchor=tk.W, justify=tk.LEFT, pady=10+self.padadj)
         self.msg3.config(font=('Helvetica', 12+self.fontsizeadj))
         self.msg3.pack(anchor=tk.W, padx=5)        
-        self.ent3 = Entrybar(self.modechoice,
-                             anchor=tk.NW)
+        self.ent3 = Entrybar(self.modechoice, anchor=tk.NW)
         self.ent3.pack(anchor=tk.W, padx=5)
-        self.keworra = tk.Button(self.modechoice, text=CorpusStats.labelTexts['keworra'][self.ifacelang],
-                                 font=('Helvetica', 14+self.fontsizeadj),
-                                 command = self.addtocomparelist)
-        self.klerhe = tk.Button(self.modechoice, text=CorpusStats.labelTexts['klerhe'][self.ifacelang],
-                                font=('Helvetica', 14+self.fontsizeadj),
-                                command = self.clearcomparelist)
+        self.keworra = tk.Button(self.modechoice,
+            text=CorpusStats.labelTexts['keworra'][self.ifacelang],
+            font=('Helvetica', 14+self.fontsizeadj),
+            command = self.addtocomparelist)
+        self.klerhe = tk.Button(self.modechoice,
+            text=CorpusStats.labelTexts['klerhe'][self.ifacelang],
+            font=('Helvetica', 14+self.fontsizeadj),
+            command = self.clearcomparelist)
         self.keworra.pack(anchor=tk.NW, side=tk.LEFT, pady=10)
         self.klerhe.pack(anchor=tk.NW, side=tk.LEFT, pady=10)
         self.modechoice.pack(side=tk.LEFT, fill=tk.Y)
         self.modechoice.config(relief=tk.RIDGE, bd=2)
         self.outbox = ScrolledText(self)
-        self.outbox.text.config(bg = 'light yellow', fg = 'dark red', width=60, height=20+self.heightadjust,
+        self.outbox.text.config(bg = 'light yellow', fg = 'dark red',
+                                width=60, height=20+self.heightadjust,
                                 font=('Courier', 14+self.fontsizeadj, 'bold'))
         self.outbox.pack()
         # buttons
         self.Kwitya = Kwitya2(self)
         self.Kwitya.pack(side=tk.RIGHT)
-        self.dalleth = tk.Button(self, text = CorpusStats.labelTexts['dalleth'][self.ifacelang],
-                                 font=('Helvetica',14),
-                                 command = self.printoutput)
-        self.klerhefigs = tk.Button(self, text = CorpusStats.labelTexts['klerhefigs'][self.ifacelang],
-                                    font=('Helvetica',14+self.fontsizeadj),
-                                    command = self.clearfigures)
-        self.klyppbordh = tk.Button(self, text = CorpusStats.labelTexts['klyppbordh'][self.ifacelang],
-                                    font=('Helvetica', 14+self.fontsizeadj),
-                                    command = self.copyclipbd)
+        self.dalleth = tk.Button(self,
+            text = CorpusStats.labelTexts['dalleth'][self.ifacelang],
+            font=('Helvetica',14), command = self.printoutput)
+        self.klerhefigs = tk.Button(self,
+            text = CorpusStats.labelTexts['klerhefigs'][self.ifacelang],
+            font=('Helvetica',14+self.fontsizeadj), command = self.clearfigures)
+        self.klyppbordh = tk.Button(self,
+            text = CorpusStats.labelTexts['klyppbordh'][self.ifacelang],
+            font=('Helvetica', 14+self.fontsizeadj), command = self.copyclipbd)
     
         if c == 0:
             self.dalleth['state']=tk.DISABLED
-            self.outbox.settext(CorpusStats.labelTexts['NLTKerr'][self.ifacelang])
+            self.outbox.settext(
+                CorpusStats.labelTexts['NLTKerr'][self.ifacelang])
         self.klerhefigs.pack(side=tk.RIGHT)
         self.dalleth.pack(side=tk.RIGHT)
         self.klyppbordh.pack(side=tk.LEFT)              
@@ -274,14 +305,18 @@ class CorpusStats(tk.Frame):
         plt.close("all")
         self.focus_force()
     
-    def allstates(self): print(self.textchoice.state(), self.modechoice.state(), self.ent.fetch(), self.ent2.fetch(), self.ent3.fetch())
+    def allstates(self): print(self.textchoice.state(), self.modechoice.state(),
+                               self.ent.fetch(), self.ent2.fetch(),
+                               self.ent3.fetch())
 
     def getIntMinL(self, eboxtext, defaultval=1):
-        """ get integer for minimum word length, or for number of frequencies to return. """
+        """ get integer for minimum word length, """
+        """ or for number of frequencies to return. """
         try:
             minL = int(eboxtext)
         except ValueError:
-            print("warning, input cannot be converted to integer. using value of {d}".format(d=defaultval))
+            print(("warning, input cannot be converted to integer."
+                  " using value of {d}").format(d=defaultval))
             minL = defaultval
         return minL
 
@@ -290,10 +325,13 @@ class CorpusStats(tk.Frame):
             self.ifacelang = 'en'
         else:
             self.ifacelang = 'kw'
-        self.switchlang.config(text=self.labelTexts['switchlang'][self.ifacelang])
-        self.switchms.config(text=self.labelTexts['switchms'][self.mscript][self.ifacelang])
+        self.switchlang.config(
+            text=self.labelTexts['switchlang'][self.ifacelang])
+        self.switchms.config(
+            text=self.labelTexts['switchms'][self.mscript][self.ifacelang])
         self.master.title(self.labelTexts['windowtitle'][self.ifacelang])
-        self.mhead.config(text=self.labelTexts['mhead'][self.mscript][self.ifacelang])
+        self.mhead.config(
+            text=self.labelTexts['mhead'][self.mscript][self.ifacelang])
         if self.mscript:
             newpicks = self.labelTexts['textchoicems'][self.ifacelang]
         else:
@@ -311,38 +349,46 @@ class CorpusStats(tk.Frame):
         self.keworra.config(text=self.labelTexts['keworra'][self.ifacelang])
         self.klerhe.config(text=self.labelTexts['klerhe'][self.ifacelang])
         self.dalleth.config(text=self.labelTexts['dalleth'][self.ifacelang])
-        self.klerhefigs.config(text=self.labelTexts['klerhefigs'][self.ifacelang])
-        self.klyppbordh.config(text=self.labelTexts['klyppbordh'][self.ifacelang])
+        self.klerhefigs.config(
+            text=self.labelTexts['klerhefigs'][self.ifacelang])
+        self.klyppbordh.config(
+            text=self.labelTexts['klyppbordh'][self.ifacelang])
         # reload texts to get new names
-        self.kk_texts, self.names = cornish_corpus.corpusKW(self.mscript, outlang=self.ifacelang)
+        self.kk_texts, self.names = cornish_corpus.corpusKW(
+            self.mscript,
+            outlang=self.ifacelang)
         self.kk_text_dict = {k:v for (k,v) in zip(self.names, self.kk_texts)}
         # rerun self.printoutput to show results in new interface language
         self.printoutput()
 
     def switchms(self):
         self.mscript = not(self.mscript)
-        self.mhead.config(text=self.labelTexts['mhead'][self.mscript][self.ifacelang])
+        self.mhead.config(
+            text=self.labelTexts['mhead'][self.mscript][self.ifacelang])
         currstate = self.textchoice.state()
         self.textchoice.destroyrads()
         self.switchlang.pack_forget()
         self.switchms.pack_forget()
         #self.textchoice.pack_forget()
         # reload texts to get new names
-        self.kk_texts, self.names = cornish_corpus.corpusKW(self.mscript, outlang=self.ifacelang)
+        self.kk_texts, self.names = cornish_corpus.corpusKW(
+            self.mscript, outlang=self.ifacelang)
         self.kk_text_dict = {k:v for (k,v) in zip(self.names, self.kk_texts)}
         if self.mscript:
             textmenu = CorpusStats.labelTexts['textchoicems'][self.ifacelang]
         else:
             textmenu = CorpusStats.labelTexts['textchoice'][self.ifacelang]
             
-        # make all texts option still 11 even though there are fewer texts in manuscript spelling
+        # make all texts option still 11 even though
+        # there are fewer texts in manuscript spelling
         optionnums = list(range(len(textmenu)-1))
         optionnums.append(11)
         if currstate not in optionnums:
             currstate = 2
         self.textchoice.newrads(picks=textmenu, vals=optionnums,
                                 default=currstate)
-        self.switchms.config(text=self.labelTexts['switchms'][self.mscript][self.ifacelang])
+        self.switchms.config(
+            text=self.labelTexts['switchms'][self.mscript][self.ifacelang])
         self.switchlang.pack(anchor=tk.SW, side=tk.LEFT, padx=10, pady=10)
         self.switchms.pack(anchor=tk.SW, side=tk.LEFT, padx=10, pady=10)
         # rerun self.printoutput to show results in manuscript / Kemmyn
@@ -354,16 +400,14 @@ class CorpusStats(tk.Frame):
             topN = self.getIntMinL(self.ent2.fetch(), 20)
             minL = self.getIntMinL(self.ent.fetch(), 4)
             if self.textchoice.state() == 11:
-                outputtext = cornish_corpus.basicReportAll(self.kk_texts,
-                                                           self.names, topN, minL,
-                                                           pause=False,
-                                                           outlang=self.ifacelang)
+                outputtext = cornish_corpus.basicReportAll(
+                    self.kk_texts, self.names, topN, minL, pause=False,
+                    outlang=self.ifacelang)
             else:
                 outputtext = cornish_corpus.basicReport(
                     self.kk_text_dict[self.names[self.textchoice.state()]],
                     self.names[self.textchoice.state()],
-                    topN, minL,
-                    outlang=self.ifacelang)
+                    topN, minL, outlang=self.ifacelang)
             outputtext = wraplines(outputtext, self.wline)
             
             self.outbox.settext(outputtext)
@@ -372,37 +416,43 @@ class CorpusStats(tk.Frame):
             topN = self.getIntMinL(self.ent2.fetch(), 20)
             minL = self.getIntMinL(self.ent.fetch())
             if self.textchoice.state() == 11:
-                self.outbox.settext(cornish_corpus.MostFrequentWords(self.kk_texts, self.names,
-                                                                     topN, minL,
-                                                                     outlang=self.ifacelang))
+                self.outbox.settext(cornish_corpus.MostFrequentWords(
+                    self.kk_texts, self.names, topN, minL,
+                    outlang=self.ifacelang))
             else:
                 self.outbox.settext(cornish_corpus.MostFreqWords1Text(
-                    self.kk_text_dict[self.names[self.textchoice.state()]], self.names[self.textchoice.state()],
-                    topN, minL,
+                    self.kk_text_dict[self.names[self.textchoice.state()]],
+                    self.names[self.textchoice.state()], topN, minL,
                     outlang=self.ifacelang))
         if self.modechoice.state() == 2:
             if self.textchoice.state() == 11:
-                self.outbox.settext(cornish_corpus.MostFreqLetters(self.kk_texts, self.names, outlang=self.ifacelang))
+                self.outbox.settext(cornish_corpus.MostFreqLetters(
+                    self.kk_texts, self.names, outlang=self.ifacelang))
             else:
                 self.outbox.settext(cornish_corpus.MostFreqLetters1Text(
-                    self.kk_text_dict[self.names[self.textchoice.state()]], self.names[self.textchoice.state()],
+                    self.kk_text_dict[self.names[self.textchoice.state()]],
+                    self.names[self.textchoice.state()],
                     outlang=self.ifacelang))
         if self.modechoice.state() == 3:
             if self.textchoice.state() == 11:
-                self.outbox.settext(cornish_corpus.MostFreqLetters(self.kk_texts, self.names, False, False,
-                                                                   outlang=self.ifacelang))
+                self.outbox.settext(cornish_corpus.MostFreqLetters(
+                    self.kk_texts, self.names, False, False,
+                    outlang=self.ifacelang))
             else:
                 self.outbox.settext(cornish_corpus.MostFreqLetters1Text(
-                    self.kk_text_dict[self.names[self.textchoice.state()]], self.names[self.textchoice.state()],
+                    self.kk_text_dict[self.names[self.textchoice.state()]],
+                    self.names[self.textchoice.state()],
                     False, False, outlang=self.ifacelang))
                
         if self.modechoice.state() == 4:
             plt.figure()
             if self.textchoice.state() == 11:
-                self.outbox.settext(cornish_corpus.nLettersFDist(self.kk_texts,self.names, outlang=self.ifacelang))
+                self.outbox.settext(cornish_corpus.nLettersFDist(
+                    self.kk_texts,self.names, outlang=self.ifacelang))
             else:
                 self.outbox.settext(cornish_corpus.nLettersFDist(
-                    [self.kk_text_dict[self.names[self.textchoice.state()]]],[self.names[self.textchoice.state()]],
+                    [self.kk_text_dict[self.names[self.textchoice.state()]]],
+                    [self.names[self.textchoice.state()]],
                     outlang=self.ifacelang))
             plt.show()
         if self.modechoice.state() == 5:
@@ -413,14 +463,15 @@ class CorpusStats(tk.Frame):
             self.outbox.text.config(bg = 'light yellow', fg = 'dark red',
                                     font=('Courier', 12+self.fontsizeadj, 'normal'))
             if self.textchoice.state() == 11:
-                outputtext = str(comparelist)+'\n\n'+cornish_corpus.compareSamples(
-                    self.kk_texts, self.names, comparelist,
-                    outlang=self.ifacelang)
+                outputtext = str(comparelist)+'\n\n'+ \
+                    cornish_corpus.compareSamples(self.kk_texts, self.names,                              comparelist,
+                                                  outlang=self.ifacelang)
             else:
-                outputtext = str(comparelist)+'\n\n'+cornish_corpus.compareSamples(
-                    [self.kk_text_dict[self.names[self.textchoice.state()]]],
-                    [self.names[self.textchoice.state()]],
-                    comparelist, outlang=self.ifacelang)
+                outputtext = str(comparelist)+'\n\n'+ \
+                    cornish_corpus.compareSamples([
+                        self.kk_text_dict[self.names[self.textchoice.state()]]],
+                        [self.names[self.textchoice.state()]],
+                        comparelist, outlang=self.ifacelang)
             outputtext = wraplines(outputtext, self.wline)
             self.outbox.settext(outputtext)        
             plt.show()
@@ -431,10 +482,13 @@ class CorpusStats(tk.Frame):
             self.outbox.text.config(bg = 'light yellow', fg = 'dark red',
                                     font=('Courier', 12+self.fontsizeadj, 'normal'))
             if self.textchoice.state() == 11:
-                outputtext = str(comparelist)+'\n\n'+cornish_corpus.compareSamplesLinear(
-                    self.kk_texts, self.names, comparelist, outlang=self.ifacelang)
+                outputtext = str(comparelist)+'\n\n'+ \
+                    cornish_corpus.compareSamplesLinear(
+                        self.kk_texts, self.names, comparelist,
+                        outlang=self.ifacelang)
             else:
-                outputtext = str(comparelist)+'\n\n'+cornish_corpus.compareSamplesLinear(
+                outputtext = str(comparelist)+'\n\n'+ \
+                    cornish_corpus.compareSamplesLinear(
                     [self.kk_text_dict[self.names[self.textchoice.state()]]],
                     [self.names[self.textchoice.state()]],
                     comparelist, outlang=self.ifacelang)
@@ -446,12 +500,16 @@ class CorpusStats(tk.Frame):
             if len(comparelist) == 0:
                 comparelist = ['dhe', 'gans']
             self.outbox.text.config(bg = 'light yellow', fg = 'dark red',
-                                    font=('Courier', 10+self.fontsizeadj, 'normal'))
+                                    font=('Courier', 10+self.fontsizeadj,
+                                          'normal'))
             if self.textchoice.state() == 11:
-                outputtext = str(comparelist)+'\n\n'+cornish_corpus.concordances(
-                    self.kk_texts, self.names, comparelist, 59, 25, outlang=self.ifacelang)
+                outputtext = str(comparelist)+'\n\n'+ \
+                    cornish_corpus.concordances(
+                        self.kk_texts, self.names, comparelist, 59, 25,
+                        outlang=self.ifacelang)
             else:
-                outputtext = str(comparelist)+'\n\n'+cornish_corpus.concordances(
+                outputtext = str(comparelist)+'\n\n'+ \
+                    cornish_corpus.concordances(
                     [self.kk_text_dict[self.names[self.textchoice.state()]]],
                     [self.names[self.textchoice.state()]],
                     comparelist, 59,25, outlang=self.ifacelang)
@@ -460,18 +518,21 @@ class CorpusStats(tk.Frame):
         if self.modechoice.state() == 8:
             comparelist = self.getcomparelist()
             regexlist = ["<.*><.*><.*><.*><a><vynn><.*><.*><.*>",
-            "<.*><.*><.*><.*><a><wra><.*><.*><.*>",
-            "<.*><.*><.*><y><fynn.*><.*><.*><.*>",
-            "<.*><.*><.*><y><hwr.*><.*><.*><.*>"]
+                         "<.*><.*><.*><.*><a><wra><.*><.*><.*>",
+                         "<.*><.*><.*><y><fynn.*><.*><.*><.*>",
+                         "<.*><.*><.*><y><hwr.*><.*><.*><.*>"]
             # find any comparelist items which begin and end in angle brackets
-            comparelist = [c for c in comparelist if (c[0]=="<" and c[-1] == ">")]
+            comparelist = [c for c in comparelist if (
+                c[0]=="<" and c[-1] == ">")]
             if len(comparelist) > 0:
                 regexlist = comparelist          
             self.outbox.text.config(bg = 'light yellow', fg = 'dark red',
-                                    font=('Courier', 10+self.fontsizeadj, 'normal'))
+                                    font=('Courier', 10+self.fontsizeadj,
+                                          'normal'))
             if self.textchoice.state() == 11:
                 outputtext = str(regexlist)+'\n\n'+cornish_corpus.findallRegex(
-                    self.kk_texts, self.names, regexlist, outlang=self.ifacelang)
+                    self.kk_texts, self.names, regexlist,
+                    outlang=self.ifacelang)
             else:
                 outputtext = str(regexlist)+'\n\n'+cornish_corpus.findallRegex(
                     [self.kk_text_dict[self.names[self.textchoice.state()]]],
@@ -492,8 +553,10 @@ if __name__ == '__main__':
     parser.add_argument("-m", "--manuscript", action="store_true",
                         help="Use manuscript spelling texts instead of Kemmyn.")
     parser.add_argument("-e", "--english", action="store_true",
-                        help="Start with interface in English (default is Cornish).")    
+                        help=("Start with interface in English "
+                              "(default is Cornish)."))    
     args = parser.parse_args()
 
-    corpus = CorpusStats(netbook=args.netbook, english=args.english, mscript=args.manuscript)
+    corpus = CorpusStats(netbook=args.netbook, english=args.english,
+                         mscript=args.manuscript)
     corpus.mainloop()    
