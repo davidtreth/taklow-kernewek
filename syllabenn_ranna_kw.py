@@ -476,14 +476,18 @@ class RannaSyllabenn:
         geryow2 = []
         for g in geryow:
             if re.search('[a-zA-Z]\-[a-zA-Z]', g):
+                ### 2022-04-07 decided to remove this to
+                ### avoid separating hypenated words
+                ### i.e. to treat as one word
                 # if there is a hyphen in the middle of the word
                 # separate it to two words
-                span = re.search('[a-zA-Z]\-[a-zA-Z]', g).span()
-                index = span[1]-1
-                ger1 = g[:index]
-                ger2 = g[index:]
-                geryow2.append(ger1)
-                geryow2.append(ger2)
+                #span = re.search('[a-zA-Z]\-[a-zA-Z]', g).span()
+                #index = span[1]-1
+                #ger1 = g[:index]
+                #ger2 = g[index:]
+                #geryow2.append(ger1)
+                #geryow2.append(ger2)
+                geryow2.append(g)
             else:
                 geryow2.append(g)
         # fix words with 'm 's 'th

@@ -305,7 +305,7 @@ KK: An tressa dydh my a wra
 FSS: An tressa dydh my a wra
 
 KK: dhe'n gwydh sevel yn-ban,
-FSS: dhe'n gwydh sevel yn-ban,
+FSS: dhe'n gwydh sevel en-ban,
 
 KK: ha doen delyow teg ha da
 FSS: ha doon delyow teg ha da
@@ -1040,7 +1040,7 @@ KK: Deun warbarth, an naw ordyr!
 FSS: Deun warbarth, an naw ordyr!
 
 KK: Helghyn yn-mes Lusifer
-FSS: Helghyn yn-mes Lusifer
+FSS: Helghyn en-mes Lusifer
 
 KK: a-dhesempis mes a'n nev.
 FSS: a-dhesempis mes a'n nev.
@@ -2087,7 +2087,7 @@ KK: rag der dha er yth 'valsa
 FSS: rag der dha er yth 'valsa
 
 KK: ty dhe dhos a'n nev toeth-ta,
-FSS: ty dhe dhos a'n nev tooth-ta,
+FSS: ty dhe dhos a'n nev toth-ta,
 
 KK: ha mara teudh alena
 FSS: ha mara teudh alena
@@ -3164,7 +3164,7 @@ KK: po kelli an gerensa
 FSS: po kelli an gerensa
 
 KK: eus ord'nys ynter-ranna.
-FSS: eus ord'nys enter-ranna.
+FSS: eus ord'nys ynter-ranna.
 
 KK:
 FSS:
@@ -3701,7 +3701,7 @@ KK:
 FSS:
 
 KK: Adam, ke yn-mes a'n wlas,
-FSS: Adam, ke yn-mes a'n wlas,
+FSS: Adam, ke en-mes a'n wlas,
 
 KK: dhe gres an bys dhe vywa;
 FSS: dhe gres an bys dhe vywa;
@@ -4163,7 +4163,7 @@ KK: an ys na'n frutys devri.
 FSS: an ys na'n frutys devri.
 
 KK: Taw, Abel, dhymmo, penn-koeg!
-FSS: Taw, Abel, dhemmo, penn-koog!
+FSS: Taw, Abel, dhemmo, penn-kog!
 
 KK: My a guntell dreyn ha spern
 FSS: My a guntell dreyn ha spern
@@ -4865,7 +4865,7 @@ KK: ow molleth dhiso pub prys!
 FSS: ow molleth dhiso pub prys!
 
 KK: Henna o gwann-ober gwrys,
-FSS: Henna o gwann-ober gwrys,
+FSS: Henna o gwan-ober gwrys,
 
 KK: may ma Dyw ha'n nor keffrys
 FSS: may ma Duw ha'n nor keffrys
@@ -4886,7 +4886,7 @@ KK: heb joy vydh na lowena
 FSS: heb joy vydh na lowena
 
 KK: der dha wann-ober omma.
-FSS: der dha wann-ober omma.
+FSS: der dha wan-ober omma.
 
 KK: Rakhenna voyd alemma,
 FSS: Rakhenna voyd alemma,
@@ -5912,7 +5912,7 @@ KK: my a wel unn lo'n pur vras
 FSS: my a wel unn lo'n pur vras
 
 KK: yn-hons yn bush ow plattya.
-FSS: yn-hons yn bush ow plattya.
+FSS: en-hons yn bush ow plattya.
 
 KK: Syrra, yn mysk an bestes
 FSS: Serra, yn mysk an bestes
@@ -6416,7 +6416,7 @@ KK: hag ev dha vroder nessa?
 FSS: hag ev dha vroder nessa?
 
 KK: Henna o gwann-ober gwrys.
-FSS: Henna o gwann-ober gwrys.
+FSS: Henna o gwan-ober gwrys.
 
 KK:
 FSS:
@@ -6947,7 +6947,7 @@ KK: My a wel sur unn wydhenn,
 FSS: My a wel sur unn wydhen,
 
 KK: ha serpont ynni a-vann.
-FSS: ha serpont enni a-vann.
+FSS: ha serpont enni a-van.
 
 KK: Marow sygh hi a 'valsa.
 FSS: Marow sygh hi a 'valsa.
@@ -8834,7 +8834,7 @@ KK: ty hag oll a'n kryjyans na!
 FSS: ty hag oll a'n kryjyans na!
 
 KK: A jorl koth, ty benn-pilys,
-FSS: A jorl koth, ty benn-pilys,
+FSS: A jorl koth, ty ben-pilys,
 
 KK: fatla vynnta jy henna;
 FSS: fatla vynnta jy henna;
@@ -8858,7 +8858,7 @@ KK: oll an bys a yll godhvos.
 FSS: oll an bys a yll godhvos.
 
 KK: Venjans war dha benn-kreghi!
-FSS: Venjans war dha benn-kreghi!
+FSS: Venjans war dha ben-kreghi!
 
 KK: Nyns eus omma den y'n wlas
 FSS: Nyns eus omma den y'n wlas
@@ -9428,7 +9428,7 @@ KK: Noy, my a worhemmynn dhis,
 FSS: Noy, my a worhemmyn dhis,
 
 KK: ke yn-mes a'n lester skon,
-FSS: ke yn-mes a'n lester skon,
+FSS: ke en-mes a'n lester skon,
 
 KK: dhe'th wreg ha'th fleghes keffrys,
 FSS: dhe'th wreg ha'th fleghes keffrys,
@@ -9455,7 +9455,7 @@ KK: yn edhomm, sur, pan vo res.
 FSS: yn edhom, sur, pan vo res.
 
 KK: Deun yn-mes, byghan ha bras,
-FSS: Deun yn-mes, byghan ha bras,
+FSS: Deun en-mes, byghan ha bras,
 
 KK: chatel, ydhyn ha bestes;
 FSS: chatel, ydhyn ha bestes;

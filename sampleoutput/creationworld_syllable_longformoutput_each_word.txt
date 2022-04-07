@@ -146,24 +146,15 @@ Hirder ger kowal = 5
 OMma
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-ji
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: ji
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ji']
-S1: JI, CV, hirder = [1, 3], hirder kowal = 4
+Hag yns i: ['a-', 'ji']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: JI, CV, hirder = [1, 2], hirder kowal = 3
 Hirder ger kowal = 4
 
-JI
+a-JI
 
 
 An ger yw: dhe'n
@@ -796,25 +787,16 @@ Hirder ger kowal = 4
 HA'W
 
 
-An ger yw: thron-
-Niver a syllabennow yw: 1
+An ger yw: thron-sedha
+Niver a syllabennow yw: 3
 
-Hag yns i: ['thron-']
-S1: THRON-, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
+Hag yns i: ['thron-', 'se', 'dha']
+S1: thron-, CVC, hirder = [1, 1, 1], hirder kowal = 3
+S2: SE, CV, hirder = [1, 2], hirder kowal = 3
+S3: dha, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 8
 
-THRON-
-
-
-An ger yw: sedha
-Niver a syllabennow yw: 2
-
-Hag yns i: ['se', 'dha']
-S1: SE, CV, hirder = [1, 2], hirder kowal = 3
-S2: dha, CV, hirder = [1, 1], hirder kowal = 2
-Hirder ger kowal = 5
-
-SEdha
+thron-SEdha
 
 
 An ger yw: ow
@@ -909,25 +891,16 @@ Hirder ger kowal = 6
 ynWEDH
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-woeles
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'woe', 'les']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: WOE, CV, hirder = [1, 2], hirder kowal = 3
+S3: les, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 7
 
-A-
-
-
-An ger yw: woeles
-Niver a syllabennow yw: 2
-
-Hag yns i: ['woe', 'les']
-S1: WOE, CV, hirder = [1, 2], hirder kowal = 3
-S2: les, CVC, hirder = [1, 1, 1], hirder kowal = 3
-Hirder ger kowal = 6
-
-WOEles
+a-WOEles
 
 
 An ger yw: skon
@@ -1084,24 +1057,15 @@ Hirder ger kowal = 6
 PLEsour
 
 
-An ger yw: pup-
-Niver a syllabennow yw: 1
+An ger yw: pup-prys
+Niver a syllabennow yw: 2
 
-Hag yns i: ['pup-']
-S1: PUP-, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
+Hag yns i: ['pup-', 'prys']
+S1: PUP-, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S2: prys, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 7
 
-PUP-
-
-
-An ger yw: prys
-Niver a syllabennow yw: 1
-
-Hag yns i: ['prys']
-S1: PRYS, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
-
-PRYS
+PUP-prys
 
 
 An ger yw: ha
@@ -2080,24 +2044,15 @@ Hirder ger kowal = 5
 DEUS
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-rag
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: rag
-Niver a syllabennow yw: 1
-
-Hag yns i: ['rag']
-S1: rag, CVC, hirder = [1, 3, 1], hirder kowal = 5
+Hag yns i: ['a-', 'rag']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: RAG, CVC, hirder = [1, 2, 1], hirder kowal = 4
 Hirder ger kowal = 5
 
-rag
+a-RAG
 
 
 An ger yw: uskis
@@ -2734,24 +2689,15 @@ Hirder ger kowal = 5
 DEUS
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-rag
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: rag
-Niver a syllabennow yw: 1
-
-Hag yns i: ['rag']
-S1: rag, CVC, hirder = [1, 3, 1], hirder kowal = 5
+Hag yns i: ['a-', 'rag']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: RAG, CVC, hirder = [1, 2, 1], hirder kowal = 4
 Hirder ger kowal = 5
 
-rag
+a-RAG
 
 
 An ger yw: dhymm
@@ -3051,25 +2997,16 @@ Hirder ger kowal = 5
 DEgre
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-woeles
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'woe', 'les']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: WOE, CV, hirder = [1, 2], hirder kowal = 3
+S3: les, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 7
 
-A-
-
-
-An ger yw: woeles
-Niver a syllabennow yw: 2
-
-Hag yns i: ['woe', 'les']
-S1: WOE, CV, hirder = [1, 2], hirder kowal = 3
-S2: les, CVC, hirder = [1, 1, 1], hirder kowal = 3
-Hirder ger kowal = 6
-
-WOEles
+a-WOEles
 
 
 An ger yw: my
@@ -3186,24 +3123,15 @@ Hirder ger kowal = 5
 DEWGH
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-rag
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: rag
-Niver a syllabennow yw: 1
-
-Hag yns i: ['rag']
-S1: rag, CVC, hirder = [1, 3, 1], hirder kowal = 5
+Hag yns i: ['a-', 'rag']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: RAG, CVC, hirder = [1, 2, 1], hirder kowal = 4
 Hirder ger kowal = 5
 
-rag
+a-RAG
 
 
 An ger yw: omma
@@ -3881,24 +3809,15 @@ Hirder ger kowal = 5
 NOR
 
 
-An ger yw: yn-
-Niver a syllabennow yw: 1
+An ger yw: yn-dann
+Niver a syllabennow yw: 2
 
-Hag yns i: ['yn-']
-S1: YN-, VC, hirder = [3, 1], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['yn-', 'dann']
+S1: yn-, VC, hirder = [1, 1], hirder kowal = 2
+S2: DANN, CVC, hirder = [1, 1, 2], hirder kowal = 4
+Hirder ger kowal = 6
 
-YN-
-
-
-An ger yw: dann
-Niver a syllabennow yw: 1
-
-Hag yns i: ['dann']
-S1: DANN, CVC, hirder = [1, 1, 2], hirder kowal = 4
-Hirder ger kowal = 4
-
-DANN
+yn-DANN
 
 
 An ger yw: an
@@ -4151,26 +4070,17 @@ Hirder ger kowal = 6
 BRAster
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-dhesempis
+Niver a syllabennow yw: 4
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'dhe', 'sem', 'pis']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: dhe, CV, hirder = [1, 1], hirder kowal = 2
+S3: SEM, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S4: pis, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 10
 
-A-
-
-
-An ger yw: dhesempis
-Niver a syllabennow yw: 3
-
-Hag yns i: ['dhe', 'sem', 'pis']
-S1: dhe, CV, hirder = [1, 1], hirder kowal = 2
-S2: SEM, CVC, hirder = [1, 2, 1], hirder kowal = 4
-S3: pis, CVC, hirder = [1, 1, 1], hirder kowal = 3
-Hirder ger kowal = 9
-
-dheSEMpis
+a-dheSEMpis
 
 
 An ger yw: Y'n
@@ -4204,25 +4114,16 @@ Hirder ger kowal = 4
 EUS
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-wartha
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'war', 'tha']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S3: tha, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 7
 
-A-
-
-
-An ger yw: wartha
-Niver a syllabennow yw: 2
-
-Hag yns i: ['war', 'tha']
-S1: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
-S2: tha, CV, hirder = [1, 1], hirder kowal = 2
-Hirder ger kowal = 6
-
-WARtha
+a-WARtha
 
 
 An ger yw: my
@@ -4573,24 +4474,15 @@ Hirder ger kowal = 7
 TERmyn
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-dro
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: dro
-Niver a syllabennow yw: 1
-
-Hag yns i: ['dro']
-S1: DRO, CV, hirder = [1, 3], hirder kowal = 4
+Hag yns i: ['a-', 'dro']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: dro, CV, hirder = [1, 1], hirder kowal = 2
 Hirder ger kowal = 4
 
-DRO
+A-dro
 
 
 An ger yw: dhe'm
@@ -4839,24 +4731,15 @@ Hirder ger kowal = 6
 SEvel
 
 
-An ger yw: yn-
-Niver a syllabennow yw: 1
+An ger yw: yn-ban
+Niver a syllabennow yw: 2
 
-Hag yns i: ['yn-']
-S1: YN-, VC, hirder = [3, 1], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['yn-', 'ban']
+S1: YN-, VC, hirder = [2, 1], hirder kowal = 3
+S2: ban, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 6
 
-YN-
-
-
-An ger yw: ban
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ban']
-S1: BAN, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
-
-BAN
+YN-ban
 
 
 An ger yw: ha
@@ -10004,24 +9887,15 @@ Hirder ger kowal = 5
 WAS
 
 
-An ger yw: mad-
-Niver a syllabennow yw: 1
+An ger yw: mad-e
+Niver a syllabennow yw: 2
 
-Hag yns i: ['mad-']
-S1: MAD-, CVC, hirder = [1, 3, 1], hirder kowal = 5
+Hag yns i: ['mad-', 'e']
+S1: MAD-, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S2: e, V, hirder = [1], hirder kowal = 1
 Hirder ger kowal = 5
 
-MAD-
-
-
-An ger yw: e
-Niver a syllabennow yw: 1
-
-Hag yns i: ['e']
-S1: E, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-E
+MAD-e
 
 
 An ger yw: of
@@ -10173,24 +10047,15 @@ Hirder ger kowal = 4
 GAY
 
 
-An ger yw: y-
-Niver a syllabennow yw: 1
+An ger yw: y-wrought
+Niver a syllabennow yw: 2
 
-Hag yns i: ['y-']
-S1: Y-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['y-', 'wrought']
+S1: Y-, V, hirder = [2], hirder kowal = 2
+S2: wrought, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 5
 
-Y-
-
-
-An ger yw: wrought
-Niver a syllabennow yw: 1
-
-Hag yns i: ['wrought']
-S1: WROUGHT, CVC, hirder = [1, 1, 1], hirder kowal = 3
-Hirder ger kowal = 3
-
-WROUGHT
+Y-wrought
 
 
 An ger yw: Seemly
@@ -13020,24 +12885,15 @@ Hirder ger kowal = 3
 ORTH
 
 
-An ger yw: mab-
-Niver a syllabennow yw: 1
+An ger yw: mab-den
+Niver a syllabennow yw: 2
 
-Hag yns i: ['mab-']
-S1: MAB-, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
+Hag yns i: ['mab-', 'den']
+S1: MAB-, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S2: den, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 7
 
-MAB-
-
-
-An ger yw: den
-Niver a syllabennow yw: 1
-
-Hag yns i: ['den']
-S1: DEN, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
-
-DEN
+MAB-den
 
 
 An ger yw: pan
@@ -15205,24 +15061,15 @@ Hirder ger kowal = 7
 HELghyn
 
 
-An ger yw: yn-
-Niver a syllabennow yw: 1
+An ger yw: yn-mes
+Niver a syllabennow yw: 2
 
-Hag yns i: ['yn-']
-S1: YN-, VC, hirder = [3, 1], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['yn-', 'mes']
+S1: YN-, VC, hirder = [2, 1], hirder kowal = 3
+S2: mes, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 6
 
-YN-
-
-
-An ger yw: mes
-Niver a syllabennow yw: 1
-
-Hag yns i: ['mes']
-S1: mes, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
-
-mes
+YN-mes
 
 
 An ger yw: Lusifer
@@ -15237,26 +15084,17 @@ Hirder ger kowal = 8
 LuSIfer
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-dhesempis
+Niver a syllabennow yw: 4
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'dhe', 'sem', 'pis']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: dhe, CV, hirder = [1, 1], hirder kowal = 2
+S3: SEM, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S4: pis, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 10
 
-A-
-
-
-An ger yw: dhesempis
-Niver a syllabennow yw: 3
-
-Hag yns i: ['dhe', 'sem', 'pis']
-S1: dhe, CV, hirder = [1, 1], hirder kowal = 2
-S2: SEM, CVC, hirder = [1, 2, 1], hirder kowal = 4
-S3: pis, CVC, hirder = [1, 1, 1], hirder kowal = 3
-Hirder ger kowal = 9
-
-dheSEMpis
+a-dheSEMpis
 
 
 An ger yw: mes
@@ -16719,24 +16557,15 @@ Hirder ger kowal = 6
 TEwlys
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-berth
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'berth']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: berth, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 5
 
-A-
-
-
-An ger yw: berth
-Niver a syllabennow yw: 1
-
-Hag yns i: ['berth']
-S1: BERTH, CVC, hirder = [1, 1, 2], hirder kowal = 4
-Hirder ger kowal = 4
-
-BERTH
+A-berth
 
 
 An ger yw: yn
@@ -16801,24 +16630,15 @@ Hirder ger kowal = 5
 TAN
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-dro
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: dro
-Niver a syllabennow yw: 1
-
-Hag yns i: ['dro']
-S1: DRO, CV, hirder = [1, 3], hirder kowal = 4
+Hag yns i: ['a-', 'dro']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: dro, CV, hirder = [1, 1], hirder kowal = 2
 Hirder ger kowal = 4
 
-DRO
+A-dro
 
 
 An ger yw: dhymmo
@@ -17803,24 +17623,15 @@ Hirder ger kowal = 5
 SAV
 
 
-An ger yw: yn-
-Niver a syllabennow yw: 1
+An ger yw: yn-bann
+Niver a syllabennow yw: 2
 
-Hag yns i: ['yn-']
-S1: YN-, VC, hirder = [3, 1], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['yn-', 'bann']
+S1: yn-, VC, hirder = [1, 1], hirder kowal = 2
+S2: BANN, CVC, hirder = [1, 1, 2], hirder kowal = 4
+Hirder ger kowal = 6
 
-YN-
-
-
-An ger yw: bann
-Niver a syllabennow yw: 1
-
-Hag yns i: ['bann']
-S1: BANN, CVC, hirder = [1, 1, 2], hirder kowal = 4
-Hirder ger kowal = 4
-
-BANN
+yn-BANN
 
 
 An ger yw: yn
@@ -19099,24 +18910,15 @@ Hirder ger kowal = 4
 CHARJ
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-ugh
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: ugh
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ugh']
-S1: UGH, VC, hirder = [3, 1], hirder kowal = 4
+Hag yns i: ['a-', 'ugh']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: ugh, VC, hirder = [1, 1], hirder kowal = 2
 Hirder ger kowal = 4
 
-UGH
+A-ugh
 
 
 An ger yw: pub
@@ -23021,24 +22823,15 @@ Hirder ger kowal = 5
 TEG
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-ugh
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: ugh
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ugh']
-S1: UGH, VC, hirder = [3, 1], hirder kowal = 4
+Hag yns i: ['a-', 'ugh']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: ugh, VC, hirder = [1, 1], hirder kowal = 2
 Hirder ger kowal = 4
 
-UGH
+A-ugh
 
 
 An ger yw: pub
@@ -23458,24 +23251,15 @@ Hirder ger kowal = 5
 TAN
 
 
-An ger yw: pup-
-Niver a syllabennow yw: 1
+An ger yw: pup-prys
+Niver a syllabennow yw: 2
 
-Hag yns i: ['pup-']
-S1: PUP-, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
+Hag yns i: ['pup-', 'prys']
+S1: PUP-, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S2: prys, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 7
 
-PUP-
-
-
-An ger yw: prys
-Niver a syllabennow yw: 1
-
-Hag yns i: ['prys']
-S1: PRYS, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
-
-PRYS
+PUP-prys
 
 
 An ger yw: yn
@@ -25691,24 +25475,15 @@ Hirder ger kowal = 6
 HENna
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-ugh
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: ugh
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ugh']
-S1: UGH, VC, hirder = [3, 1], hirder kowal = 4
+Hag yns i: ['a-', 'ugh']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: ugh, VC, hirder = [1, 1], hirder kowal = 2
 Hirder ger kowal = 4
 
-UGH
+A-ugh
 
 
 An ger yw: best
@@ -26690,27 +26465,18 @@ Hirder ger kowal = 4
 Re
 
 
-An ger yw: debel-
-Niver a syllabennow yw: 2
+An ger yw: debel-diwetthi
+Niver a syllabennow yw: 5
 
-Hag yns i: ['de', 'bel-']
-S1: DE, CV, hirder = [1, 2], hirder kowal = 3
+Hag yns i: ['de', 'bel-', 'di', 'we', 'tthi']
+S1: de, CV, hirder = [1, 1], hirder kowal = 2
 S2: bel-, CVC, hirder = [1, 1, 1], hirder kowal = 3
-Hirder ger kowal = 6
+S3: di, CV, hirder = [1, 1], hirder kowal = 2
+S4: WE, CV, hirder = [1, 2], hirder kowal = 3
+S5: tthi, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 12
 
-DEbel-
-
-
-An ger yw: diwetthi
-Niver a syllabennow yw: 3
-
-Hag yns i: ['di', 'we', 'tthi']
-S1: di, CV, hirder = [1, 1], hirder kowal = 2
-S2: WE, CV, hirder = [1, 2], hirder kowal = 3
-S3: tthi, CV, hirder = [1, 1], hirder kowal = 2
-Hirder ger kowal = 7
-
-diWEtthi
+debel-diWEtthi
 
 
 An ger yw: Gorta
@@ -26806,24 +26572,15 @@ Hirder ger kowal = 5
 ENtra
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-ji
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: ji
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ji']
-S1: JI, CV, hirder = [1, 3], hirder kowal = 4
+Hag yns i: ['a-', 'ji']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: JI, CV, hirder = [1, 2], hirder kowal = 3
 Hirder ger kowal = 4
 
-JI
+a-JI
 
 
 An ger yw: rag
@@ -27077,24 +26834,15 @@ Hirder ger kowal = 5
 BLEG
 
 
-An ger yw: A-
-Niver a syllabennow yw: 1
+An ger yw: A-ban
+Niver a syllabennow yw: 2
 
-Hag yns i: ['A-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: ban
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ban']
-S1: BAN, CVC, hirder = [1, 3, 1], hirder kowal = 5
+Hag yns i: ['A-', 'ban']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: ban, CVC, hirder = [1, 1, 1], hirder kowal = 3
 Hirder ger kowal = 5
 
-BAN
+A-ban
 
 
 An ger yw: oma
@@ -27150,44 +26898,26 @@ Hirder ger kowal = 4
 jy
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-barth
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'barth']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: barth, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 5
 
-A-
+A-barth
 
 
-An ger yw: barth
-Niver a syllabennow yw: 1
+An ger yw: a-ji
+Niver a syllabennow yw: 2
 
-Hag yns i: ['barth']
-S1: BARTH, CVC, hirder = [1, 1, 2], hirder kowal = 4
+Hag yns i: ['a-', 'ji']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: JI, CV, hirder = [1, 2], hirder kowal = 3
 Hirder ger kowal = 4
 
-BARTH
-
-
-An ger yw: a-
-Niver a syllabennow yw: 1
-
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: ji
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ji']
-S1: JI, CV, hirder = [1, 3], hirder kowal = 4
-Hirder ger kowal = 4
-
-JI
+a-JI
 
 
 An ger yw: ow
@@ -28197,25 +27927,16 @@ Hirder ger kowal = 6
 WYdhenn
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-wartha
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'war', 'tha']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S3: tha, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 7
 
-A-
-
-
-An ger yw: wartha
-Niver a syllabennow yw: 2
-
-Hag yns i: ['war', 'tha']
-S1: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
-S2: tha, CV, hirder = [1, 1], hirder kowal = 2
-Hirder ger kowal = 6
-
-WARtha
+a-WARtha
 
 
 An ger yw: gans
@@ -28567,26 +28288,17 @@ Hirder ger kowal = 5
 DHEUTH
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-dhiwedhes
+Niver a syllabennow yw: 4
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'dhi', 'we', 'dhes']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: dhi, CV, hirder = [1, 1], hirder kowal = 2
+S3: WE, CV, hirder = [1, 2], hirder kowal = 3
+S4: dhes, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 9
 
-A-
-
-
-An ger yw: dhiwedhes
-Niver a syllabennow yw: 3
-
-Hag yns i: ['dhi', 'we', 'dhes']
-S1: dhi, CV, hirder = [1, 1], hirder kowal = 2
-S2: WE, CV, hirder = [1, 2], hirder kowal = 3
-S3: dhes, CVC, hirder = [1, 1, 1], hirder kowal = 3
-Hirder ger kowal = 8
-
-dhiWEdhes
+a-dhiWEdhes
 
 
 An ger yw: mes
@@ -29204,24 +28916,15 @@ Hirder ger kowal = 5
 NEV
 
 
-An ger yw: toeth-
-Niver a syllabennow yw: 1
+An ger yw: toeth-ta
+Niver a syllabennow yw: 2
 
-Hag yns i: ['toeth-']
-S1: TOETH-, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
+Hag yns i: ['toeth-', 'ta']
+S1: TOETH-, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S2: ta, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 6
 
-TOETH-
-
-
-An ger yw: ta
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ta']
-S1: TA, CV, hirder = [1, 3], hirder kowal = 4
-Hirder ger kowal = 4
-
-TA
+TOETH-ta
 
 
 An ger yw: ha
@@ -30806,25 +30509,16 @@ Hirder ger kowal = 4
 EUS
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-wartha
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'war', 'tha']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S3: tha, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 7
 
-A-
-
-
-An ger yw: wartha
-Niver a syllabennow yw: 2
-
-Hag yns i: ['war', 'tha']
-S1: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
-S2: tha, CV, hirder = [1, 1], hirder kowal = 2
-Hirder ger kowal = 6
-
-WARtha
+a-WARtha
 
 
 An ger yw: hag
@@ -31119,25 +30813,16 @@ Hirder ger kowal = 4
 DHYW
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-wartha
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'war', 'tha']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S3: tha, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 7
 
-A-
-
-
-An ger yw: wartha
-Niver a syllabennow yw: 2
-
-Hag yns i: ['war', 'tha']
-S1: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
-S2: tha, CV, hirder = [1, 1], hirder kowal = 2
-Hirder ger kowal = 6
-
-WARtha
+a-WARtha
 
 
 An ger yw: hag
@@ -31732,26 +31417,17 @@ Hirder ger kowal = 4
 OV
 
 
-An ger yw: over-
-Niver a syllabennow yw: 2
+An ger yw: over-sotel
+Niver a syllabennow yw: 4
 
-Hag yns i: ['o', 'ver-']
-S1: O, V, hirder = [2], hirder kowal = 2
+Hag yns i: ['o', 'ver-', 'so', 'tel']
+S1: o, V, hirder = [1], hirder kowal = 1
 S2: ver-, CVC, hirder = [1, 1, 1], hirder kowal = 3
-Hirder ger kowal = 5
+S3: SO, CV, hirder = [1, 2], hirder kowal = 3
+S4: tel, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 10
 
-Over-
-
-
-An ger yw: sotel
-Niver a syllabennow yw: 2
-
-Hag yns i: ['so', 'tel']
-S1: SO, CV, hirder = [1, 2], hirder kowal = 3
-S2: tel, CVC, hirder = [1, 1, 1], hirder kowal = 3
-Hirder ger kowal = 6
-
-SOtel
+over-SOtel
 
 
 An ger yw: Lavar
@@ -32106,25 +31782,16 @@ Hirder ger kowal = 4
 EUS
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-wartha
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'war', 'tha']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S3: tha, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 7
 
-A-
-
-
-An ger yw: wartha
-Niver a syllabennow yw: 2
-
-Hag yns i: ['war', 'tha']
-S1: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
-S2: tha, CV, hirder = [1, 1], hirder kowal = 2
-Hirder ger kowal = 6
-
-WARtha
+a-WARtha
 
 
 An ger yw: yn
@@ -32158,25 +31825,16 @@ Hirder ger kowal = 5
 Ughel
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-ughon
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'u', 'ghon']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: U, V, hirder = [2], hirder kowal = 2
+S3: ghon, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 6
 
-A-
-
-
-An ger yw: ughon
-Niver a syllabennow yw: 2
-
-Hag yns i: ['u', 'ghon']
-S1: U, V, hirder = [2], hirder kowal = 2
-S2: ghon, CVC, hirder = [1, 1, 1], hirder kowal = 3
-Hirder ger kowal = 5
-
-Ughon
+a-Ughon
 
 
 An ger yw: Gow
@@ -35697,24 +35355,15 @@ Hirder ger kowal = 5
 Allav
 
 
-An ger yw: nep-
-Niver a syllabennow yw: 1
+An ger yw: nep-pell
+Niver a syllabennow yw: 2
 
-Hag yns i: ['nep-']
-S1: NEP-, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
+Hag yns i: ['nep-', 'pell']
+S1: NEP-, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S2: pell, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 7
 
-NEP-
-
-
-An ger yw: pell
-Niver a syllabennow yw: 1
-
-Hag yns i: ['pell']
-S1: PELL, CVC, hirder = [1, 1, 2], hirder kowal = 4
-Hirder ger kowal = 4
-
-PELL
+NEP-pell
 
 
 An ger yw: perthi
@@ -35916,24 +35565,15 @@ Hirder ger kowal = 7
 laGAsow
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-les
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: les
-Niver a syllabennow yw: 1
-
-Hag yns i: ['les']
-S1: LES, CVC, hirder = [1, 3, 1], hirder kowal = 5
+Hag yns i: ['a-', 'les']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: les, CVC, hirder = [1, 1, 1], hirder kowal = 3
 Hirder ger kowal = 5
 
-LES
+A-les
 
 
 An ger yw: ty
@@ -36275,24 +35915,15 @@ Hirder ger kowal = 4
 TRA
 
 
-An ger yw: yn-
-Niver a syllabennow yw: 1
+An ger yw: yn-bann
+Niver a syllabennow yw: 2
 
-Hag yns i: ['yn-']
-S1: YN-, VC, hirder = [3, 1], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['yn-', 'bann']
+S1: yn-, VC, hirder = [1, 1], hirder kowal = 2
+S2: BANN, CVC, hirder = [1, 1, 2], hirder kowal = 4
+Hirder ger kowal = 6
 
-YN-
-
-
-An ger yw: bann
-Niver a syllabennow yw: 1
-
-Hag yns i: ['bann']
-S1: BANN, CVC, hirder = [1, 1, 2], hirder kowal = 4
-Hirder ger kowal = 4
-
-BANN
+yn-BANN
 
 
 An ger yw: dha
@@ -36818,24 +36449,15 @@ Hirder ger kowal = 4
 SETT
 
 
-An ger yw: yn-
-Niver a syllabennow yw: 1
+An ger yw: yn-bann
+Niver a syllabennow yw: 2
 
-Hag yns i: ['yn-']
-S1: YN-, VC, hirder = [3, 1], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['yn-', 'bann']
+S1: yn-, VC, hirder = [1, 1], hirder kowal = 2
+S2: BANN, CVC, hirder = [1, 1, 2], hirder kowal = 4
+Hirder ger kowal = 6
 
-YN-
-
-
-An ger yw: bann
-Niver a syllabennow yw: 1
-
-Hag yns i: ['bann']
-S1: BANN, CVC, hirder = [1, 1, 2], hirder kowal = 4
-Hirder ger kowal = 4
-
-BANN
+yn-BANN
 
 
 An ger yw: ughel
@@ -39286,25 +38908,16 @@ Hirder ger kowal = 6
 GLYwas
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-wartha
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'war', 'tha']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S3: tha, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 7
 
-A-
-
-
-An ger yw: wartha
-Niver a syllabennow yw: 2
-
-Hag yns i: ['war', 'tha']
-S1: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
-S2: tha, CV, hirder = [1, 1], hirder kowal = 2
-Hirder ger kowal = 6
-
-WARtha
+a-WARtha
 
 
 An ger yw: war
@@ -39513,24 +39126,15 @@ Hirder ger kowal = 4
 Ha
 
 
-An ger yw: dhe-
-Niver a syllabennow yw: 1
+An ger yw: dhe-vy
+Niver a syllabennow yw: 2
 
-Hag yns i: ['dhe-']
-S1: DHE-, CV, hirder = [1, 3], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['dhe-', 'vy']
+S1: DHE-, CV, hirder = [1, 2], hirder kowal = 3
+S2: vy, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 5
 
-DHE-
-
-
-An ger yw: vy
-Niver a syllabennow yw: 1
-
-Hag yns i: ['vy']
-S1: vy, CV, hirder = [1, 3], hirder kowal = 4
-Hirder ger kowal = 4
-
-vy
+DHE-vy
 
 
 An ger yw: yn
@@ -43339,24 +42943,15 @@ Hirder ger kowal = 4
 DRA
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-ban
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: ban
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ban']
-S1: BAN, CVC, hirder = [1, 3, 1], hirder kowal = 5
+Hag yns i: ['a-', 'ban']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: ban, CVC, hirder = [1, 1, 1], hirder kowal = 3
 Hirder ger kowal = 5
 
-BAN
+A-ban
 
 
 An ger yw: res
@@ -43455,26 +43050,17 @@ Hirder ger kowal = 6
 ORD'nys
 
 
-An ger yw: ynter-
-Niver a syllabennow yw: 2
+An ger yw: ynter-ranna
+Niver a syllabennow yw: 4
 
-Hag yns i: ['yn', 'ter-']
-S1: YN, VC, hirder = [2, 1], hirder kowal = 3
+Hag yns i: ['yn', 'ter-', 'ran', 'na']
+S1: yn, VC, hirder = [1, 1], hirder kowal = 2
 S2: ter-, CVC, hirder = [1, 1, 1], hirder kowal = 3
-Hirder ger kowal = 6
+S3: RAN, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S4: na, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 11
 
-YNter-
-
-
-An ger yw: ranna
-Niver a syllabennow yw: 2
-
-Hag yns i: ['ran', 'na']
-S1: RAN, CVC, hirder = [1, 2, 1], hirder kowal = 4
-S2: na, CV, hirder = [1, 1], hirder kowal = 2
-Hirder ger kowal = 6
-
-RANna
+ynter-RANna
 
 
 An ger yw: Eva
@@ -43591,24 +43177,15 @@ Hirder ger kowal = 6
 VYNni
 
 
-An ger yw: Dro-
-Niver a syllabennow yw: 1
+An ger yw: Dro-va
+Niver a syllabennow yw: 2
 
-Hag yns i: ['Dro-']
-S1: DRO-, CV, hirder = [1, 3], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['Dro-', 'va']
+S1: DRO-, CV, hirder = [1, 2], hirder kowal = 3
+S2: va, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 5
 
-DRO-
-
-
-An ger yw: va
-Niver a syllabennow yw: 1
-
-Hag yns i: ['va']
-S1: VA, CV, hirder = [1, 3], hirder kowal = 4
-Hirder ger kowal = 4
-
-VA
+DRO-va
 
 
 An ger yw: dhymmo
@@ -45537,24 +45114,15 @@ Hirder ger kowal = 6
 DASTya
 
 
-An ger yw: A-
-Niver a syllabennow yw: 1
+An ger yw: A-ban
+Niver a syllabennow yw: 2
 
-Hag yns i: ['A-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: ban
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ban']
-S1: BAN, CVC, hirder = [1, 3, 1], hirder kowal = 5
+Hag yns i: ['A-', 'ban']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: ban, CVC, hirder = [1, 1, 1], hirder kowal = 3
 Hirder ger kowal = 5
 
-BAN
+A-ban
 
 
 An ger yw: goels'ta
@@ -47230,24 +46798,15 @@ Hirder ger kowal = 5
 DOR
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-hys
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: hys
-Niver a syllabennow yw: 1
-
-Hag yns i: ['hys']
-S1: HYS, CVC, hirder = [1, 3, 1], hirder kowal = 5
+Hag yns i: ['a-', 'hys']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: hys, CVC, hirder = [1, 1, 1], hirder kowal = 3
 Hirder ger kowal = 5
 
-HYS
+A-hys
 
 
 An ger yw: Ynter
@@ -47829,24 +47388,15 @@ Hirder ger kowal = 5
 DOR
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-hys
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: hys
-Niver a syllabennow yw: 1
-
-Hag yns i: ['hys']
-S1: HYS, CVC, hirder = [1, 3, 1], hirder kowal = 5
+Hag yns i: ['a-', 'hys']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: hys, CVC, hirder = [1, 1, 1], hirder kowal = 3
 Hirder ger kowal = 5
 
-HYS
+A-hys
 
 
 An ger yw: Dhe'm
@@ -48015,24 +47565,15 @@ Hirder ger kowal = 5
 NA'M
 
 
-An ger yw: bo-
-Niver a syllabennow yw: 1
+An ger yw: bo-ma
+Niver a syllabennow yw: 2
 
-Hag yns i: ['bo-']
-S1: BO-, CV, hirder = [1, 3], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['bo-', 'ma']
+S1: BO-, CV, hirder = [1, 2], hirder kowal = 3
+S2: ma, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 5
 
-BO-
-
-
-An ger yw: ma
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ma']
-S1: ma, CV, hirder = [1, 3], hirder kowal = 4
-Hirder ger kowal = 4
-
-ma
+BO-ma
 
 
 An ger yw: lowena
@@ -48436,24 +47977,15 @@ Hirder ger kowal = 8
 woLOwys
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-ban
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: ban
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ban']
-S1: BAN, CVC, hirder = [1, 3, 1], hirder kowal = 5
+Hag yns i: ['a-', 'ban']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: ban, CVC, hirder = [1, 1, 1], hirder kowal = 3
 Hirder ger kowal = 5
 
-BAN
+A-ban
 
 
 An ger yw: ov
@@ -50404,24 +49936,15 @@ Hirder ger kowal = 4
 KE
 
 
-An ger yw: yn-
-Niver a syllabennow yw: 1
+An ger yw: yn-mes
+Niver a syllabennow yw: 2
 
-Hag yns i: ['yn-']
-S1: YN-, VC, hirder = [3, 1], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['yn-', 'mes']
+S1: YN-, VC, hirder = [2, 1], hirder kowal = 3
+S2: mes, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 6
 
-YN-
-
-
-An ger yw: mes
-Niver a syllabennow yw: 1
-
-Hag yns i: ['mes']
-S1: mes, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
-
-mes
+YN-mes
 
 
 An ger yw: a'n
@@ -53104,24 +52627,15 @@ Hirder ger kowal = 7
 SERpont
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-ji
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: ji
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ji']
-S1: JI, CV, hirder = [1, 3], hirder kowal = 4
+Hag yns i: ['a-', 'ji']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: JI, CV, hirder = [1, 2], hirder kowal = 3
 Hirder ger kowal = 4
 
-JI
+a-JI
 
 
 An ger yw: rag
@@ -53155,24 +52669,15 @@ Hirder ger kowal = 5
 DOElla
 
 
-An ger yw: A-
-Niver a syllabennow yw: 1
+An ger yw: A-ban
+Niver a syllabennow yw: 2
 
-Hag yns i: ['A-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: ban
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ban']
-S1: BAN, CVC, hirder = [1, 3, 1], hirder kowal = 5
+Hag yns i: ['A-', 'ban']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: ban, CVC, hirder = [1, 1, 1], hirder kowal = 3
 Hirder ger kowal = 5
 
-BAN
+A-ban
 
 
 An ger yw: oma
@@ -56144,24 +55649,15 @@ Hirder ger kowal = 6
 DHYMmo
 
 
-An ger yw: penn-
-Niver a syllabennow yw: 1
+An ger yw: penn-koeg
+Niver a syllabennow yw: 2
 
-Hag yns i: ['penn-']
+Hag yns i: ['penn-', 'koeg']
 S1: PENN-, CVC, hirder = [1, 1, 2], hirder kowal = 4
-Hirder ger kowal = 4
+S2: koeg, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 7
 
-PENN-
-
-
-An ger yw: koeg
-Niver a syllabennow yw: 1
-
-Hag yns i: ['koeg']
-S1: KOEG, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
-
-KOEG
+PENN-koeg
 
 
 An ger yw: My
@@ -58166,24 +57662,15 @@ Hirder ger kowal = 5
 kyn
 
 
-An ger yw: fo-
-Niver a syllabennow yw: 1
+An ger yw: fo-va
+Niver a syllabennow yw: 2
 
-Hag yns i: ['fo-']
-S1: FO-, CV, hirder = [1, 3], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['fo-', 'va']
+S1: FO-, CV, hirder = [1, 2], hirder kowal = 3
+S2: va, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 5
 
-FO-
-
-
-An ger yw: va
-Niver a syllabennow yw: 1
-
-Hag yns i: ['va']
-S1: VA, CV, hirder = [1, 3], hirder kowal = 4
-Hirder ger kowal = 4
-
-VA
+FO-va
 
 
 An ger yw: serrys
@@ -62362,24 +61849,15 @@ Hirder ger kowal = 6
 GWANdra
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-dro
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: dro
-Niver a syllabennow yw: 1
-
-Hag yns i: ['dro']
-S1: DRO, CV, hirder = [1, 3], hirder kowal = 4
+Hag yns i: ['a-', 'dro']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: dro, CV, hirder = [1, 1], hirder kowal = 2
 Hirder ger kowal = 4
 
-DRO
+A-dro
 
 
 An ger yw: y'n
@@ -64970,25 +64448,16 @@ Hirder ger kowal = 3
 O
 
 
-An ger yw: gwann-
-Niver a syllabennow yw: 1
+An ger yw: gwann-ober
+Niver a syllabennow yw: 3
 
-Hag yns i: ['gwann-']
-S1: GWANN-, CVC, hirder = [1, 1, 2], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['gwann-', 'o', 'ber']
+S1: gwann-, CVC, hirder = [1, 1, 1], hirder kowal = 3
+S2: O, V, hirder = [2], hirder kowal = 2
+S3: ber, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 8
 
-GWANN-
-
-
-An ger yw: ober
-Niver a syllabennow yw: 2
-
-Hag yns i: ['o', 'ber']
-S1: O, V, hirder = [2], hirder kowal = 2
-S2: ber, CVC, hirder = [1, 1, 1], hirder kowal = 3
-Hirder ger kowal = 5
-
-Ober
+gwann-Ober
 
 
 An ger yw: gwrys
@@ -65324,25 +64793,16 @@ Hirder ger kowal = 4
 dha
 
 
-An ger yw: wann-
-Niver a syllabennow yw: 1
+An ger yw: wann-ober
+Niver a syllabennow yw: 3
 
-Hag yns i: ['wann-']
-S1: WANN-, CVC, hirder = [1, 1, 2], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['wann-', 'o', 'ber']
+S1: wann-, CVC, hirder = [1, 1, 1], hirder kowal = 3
+S2: O, V, hirder = [2], hirder kowal = 2
+S3: ber, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 8
 
-WANN-
-
-
-An ger yw: ober
-Niver a syllabennow yw: 2
-
-Hag yns i: ['o', 'ber']
-S1: O, V, hirder = [2], hirder kowal = 2
-S2: ber, CVC, hirder = [1, 1, 1], hirder kowal = 3
-Hirder ger kowal = 5
-
-Ober
+wann-Ober
 
 
 An ger yw: omma
@@ -68454,24 +67914,15 @@ Hirder ger kowal = 5
 HWOER
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-barth
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'barth']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: barth, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 5
 
-A-
-
-
-An ger yw: barth
-Niver a syllabennow yw: 1
-
-Hag yns i: ['barth']
-S1: BARTH, CVC, hirder = [1, 1, 2], hirder kowal = 4
-Hirder ger kowal = 4
-
-BARTH
+A-barth
 
 
 An ger yw: mamm
@@ -68588,24 +68039,15 @@ Hirder ger kowal = 5
 Abel
 
 
-An ger yw: penn-
-Niver a syllabennow yw: 1
+An ger yw: penn-bras
+Niver a syllabennow yw: 2
 
-Hag yns i: ['penn-']
+Hag yns i: ['penn-', 'bras']
 S1: PENN-, CVC, hirder = [1, 1, 2], hirder kowal = 4
-Hirder ger kowal = 4
+S2: bras, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 7
 
-PENN-
-
-
-An ger yw: bras
-Niver a syllabennow yw: 1
-
-Hag yns i: ['bras']
-S1: BRAS, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
-
-BRAS
+PENN-bras
 
 
 An ger yw: ynwedh
@@ -69340,25 +68782,16 @@ Hirder ger kowal = 7
 SETTyav
 
 
-An ger yw: gwel-
-Niver a syllabennow yw: 1
+An ger yw: gwel-gala
+Niver a syllabennow yw: 3
 
-Hag yns i: ['gwel-']
-S1: GWEL-, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
+Hag yns i: ['gwel-', 'ga', 'la']
+S1: gwel-, CVC, hirder = [1, 1, 1], hirder kowal = 3
+S2: GA, CV, hirder = [1, 2], hirder kowal = 3
+S3: la, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 8
 
-GWEL-
-
-
-An ger yw: gala
-Niver a syllabennow yw: 2
-
-Hag yns i: ['ga', 'la']
-S1: GA, CV, hirder = [1, 2], hirder kowal = 3
-S2: la, CV, hirder = [1, 1], hirder kowal = 2
-Hirder ger kowal = 5
-
-GAla
+gwel-GAla
 
 
 An ger yw: Genev
@@ -70644,24 +70077,15 @@ Hirder ger kowal = 6
 TOEllys
 
 
-An ger yw: A-
-Niver a syllabennow yw: 1
+An ger yw: A-ban
+Niver a syllabennow yw: 2
 
-Hag yns i: ['A-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: ban
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ban']
-S1: BAN, CVC, hirder = [1, 3, 1], hirder kowal = 5
+Hag yns i: ['A-', 'ban']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: ban, CVC, hirder = [1, 1, 1], hirder kowal = 3
 Hirder ger kowal = 5
 
-BAN
+A-ban
 
 
 An ger yw: yw
@@ -70768,24 +70192,15 @@ Hirder ger kowal = 7
 PELLder
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-dro
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: dro
-Niver a syllabennow yw: 1
-
-Hag yns i: ['dro']
-S1: DRO, CV, hirder = [1, 3], hirder kowal = 4
+Hag yns i: ['a-', 'dro']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: dro, CV, hirder = [1, 1], hirder kowal = 2
 Hirder ger kowal = 4
 
-DRO
+A-dro
 
 
 An ger yw: y'n
@@ -72241,25 +71656,16 @@ Hirder ger kowal = 5
 STER
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-wartha
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'war', 'tha']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S3: tha, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 7
 
-A-
-
-
-An ger yw: wartha
-Niver a syllabennow yw: 2
-
-Hag yns i: ['war', 'tha']
-S1: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
-S2: tha, CV, hirder = [1, 1], hirder kowal = 2
-Hirder ger kowal = 6
-
-WARtha
+a-WARtha
 
 
 An ger yw: ev
@@ -72551,24 +71957,15 @@ Hirder ger kowal = 4
 Yth
 
 
-An ger yw: os-
-Niver a syllabennow yw: 1
+An ger yw: os-ta
+Niver a syllabennow yw: 2
 
-Hag yns i: ['os-']
-S1: OS-, VC, hirder = [3, 1], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['os-', 'ta']
+S1: OS-, VC, hirder = [2, 1], hirder kowal = 3
+S2: ta, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 5
 
-OS-
-
-
-An ger yw: ta
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ta']
-S1: TA, CV, hirder = [1, 3], hirder kowal = 4
-Hirder ger kowal = 4
-
-TA
+OS-ta
 
 
 An ger yw: Arloedh
@@ -72704,24 +72101,15 @@ Hirder ger kowal = 4
 ny
 
 
-An ger yw: dhrog-
-Niver a syllabennow yw: 1
+An ger yw: dhrog-far
+Niver a syllabennow yw: 2
 
-Hag yns i: ['dhrog-']
-S1: DHROG-, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
+Hag yns i: ['dhrog-', 'far']
+S1: DHROG-, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S2: far, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 7
 
-DHROG-
-
-
-An ger yw: far
-Niver a syllabennow yw: 1
-
-Hag yns i: ['far']
-S1: FAR, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
-
-FAR
+DHROG-far
 
 
 An ger yw: Yn
@@ -72930,25 +72318,16 @@ Hirder ger kowal = 4
 A'TH
 
 
-An ger yw: lel-
-Niver a syllabennow yw: 1
+An ger yw: lel-wonis
+Niver a syllabennow yw: 3
 
-Hag yns i: ['lel-']
-S1: LEL-, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
+Hag yns i: ['lel-', 'wo', 'nis']
+S1: lel-, CVC, hirder = [1, 1, 1], hirder kowal = 3
+S2: WO, CV, hirder = [1, 2], hirder kowal = 3
+S3: nis, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 9
 
-LEL-
-
-
-An ger yw: wonis
-Niver a syllabennow yw: 2
-
-Hag yns i: ['wo', 'nis']
-S1: WO, CV, hirder = [1, 2], hirder kowal = 3
-S2: nis, CVC, hirder = [1, 1, 1], hirder kowal = 3
-Hirder ger kowal = 6
-
-WOnis
+lel-WOnis
 
 
 An ger yw: dell
@@ -73252,25 +72631,16 @@ Hirder ger kowal = 5
 Eledh
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-wartha
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'war', 'tha']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S3: tha, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 7
 
-A-
-
-
-An ger yw: wartha
-Niver a syllabennow yw: 2
-
-Hag yns i: ['war', 'tha']
-S1: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
-S2: tha, CV, hirder = [1, 1], hirder kowal = 2
-Hirder ger kowal = 6
-
-WARtha
+a-WARtha
 
 
 An ger yw: ughel
@@ -73326,25 +72696,16 @@ Hirder ger kowal = 8
 GoSLOwewgh
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-derdro
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'der', 'dro']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: DER, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S3: dro, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 7
 
-A-
-
-
-An ger yw: derdro
-Niver a syllabennow yw: 2
-
-Hag yns i: ['der', 'dro']
-S1: DER, CVC, hirder = [1, 2, 1], hirder kowal = 4
-S2: dro, CV, hirder = [1, 1], hirder kowal = 2
-Hirder ger kowal = 6
-
-DERdro
+a-DERdro
 
 
 An ger yw: orthiv
@@ -77443,24 +76804,15 @@ Hirder ger kowal = 4
 GANS
 
 
-An ger yw: mab-
-Niver a syllabennow yw: 1
+An ger yw: mab-den
+Niver a syllabennow yw: 2
 
-Hag yns i: ['mab-']
-S1: MAB-, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
+Hag yns i: ['mab-', 'den']
+S1: MAB-, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S2: den, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 7
 
-MAB-
-
-
-An ger yw: den
-Niver a syllabennow yw: 1
-
-Hag yns i: ['den']
-S1: DEN, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
-
-DEN
+MAB-den
 
 
 An ger yw: y'n
@@ -79427,24 +78779,15 @@ Hirder ger kowal = 5
 VRAS
 
 
-An ger yw: yn-
-Niver a syllabennow yw: 1
+An ger yw: yn-hons
+Niver a syllabennow yw: 2
 
-Hag yns i: ['yn-']
-S1: YN-, VC, hirder = [3, 1], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['yn-', 'hons']
+S1: YN-, VC, hirder = [2, 1], hirder kowal = 3
+S2: hons, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 6
 
-YN-
-
-
-An ger yw: hons
-Niver a syllabennow yw: 1
-
-Hag yns i: ['hons']
-S1: HONS, CVC, hirder = [1, 1, 2], hirder kowal = 4
-Hirder ger kowal = 4
-
-HONS
+YN-hons
 
 
 An ger yw: yn
@@ -79633,24 +78976,15 @@ Hirder ger kowal = 4
 PY
 
 
-An ger yw: 'ma-
-Niver a syllabennow yw: 1
+An ger yw: 'ma-va.
+Niver a syllabennow yw: 2
 
-Hag yns i: ["'ma-"]
-S1: 'MA-, CV, hirder = [1, 3], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ["'ma-", 'va.']
+S1: 'MA-, CV, hirder = [1, 2], hirder kowal = 3
+S2: va., CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 5
 
-'MA-
-
-
-An ger yw: va.
-Niver a syllabennow yw: 1
-
-Hag yns i: ['va.']
-S1: VA., CV, hirder = [1, 3], hirder kowal = 4
-Hirder ger kowal = 4
-
-VA.
+'MA-va.
 
 
 An ger yw: Bydh
@@ -80178,24 +79512,15 @@ Hirder ger kowal = 4
 HI
 
 
-An ger yw: yn-
-Niver a syllabennow yw: 1
+An ger yw: yn-bann
+Niver a syllabennow yw: 2
 
-Hag yns i: ['yn-']
-S1: YN-, VC, hirder = [3, 1], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['yn-', 'bann']
+S1: yn-, VC, hirder = [1, 1], hirder kowal = 2
+S2: BANN, CVC, hirder = [1, 1, 2], hirder kowal = 4
+Hirder ger kowal = 6
 
-YN-
-
-
-An ger yw: bann
-Niver a syllabennow yw: 1
-
-Hag yns i: ['bann']
-S1: BANN, CVC, hirder = [1, 1, 2], hirder kowal = 4
-Hirder ger kowal = 4
-
-BANN
+yn-BANN
 
 
 An ger yw: bys
@@ -85864,24 +85189,15 @@ Hirder ger kowal = 6
 GWEles
 
 
-An ger yw: mab-
-Niver a syllabennow yw: 1
+An ger yw: mab-den
+Niver a syllabennow yw: 2
 
-Hag yns i: ['mab-']
-S1: MAB-, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
+Hag yns i: ['mab-', 'den']
+S1: MAB-, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S2: den, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 7
 
-MAB-
-
-
-An ger yw: den
-Niver a syllabennow yw: 1
-
-Hag yns i: ['den']
-S1: DEN, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
-
-DEN
+MAB-den
 
 
 An ger yw: gans
@@ -86290,25 +85606,16 @@ Hirder ger kowal = 3
 O
 
 
-An ger yw: gwann-
-Niver a syllabennow yw: 1
+An ger yw: gwann-ober
+Niver a syllabennow yw: 3
 
-Hag yns i: ['gwann-']
-S1: GWANN-, CVC, hirder = [1, 1, 2], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['gwann-', 'o', 'ber']
+S1: gwann-, CVC, hirder = [1, 1, 1], hirder kowal = 3
+S2: O, V, hirder = [2], hirder kowal = 2
+S3: ber, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 8
 
-GWANN-
-
-
-An ger yw: ober
-Niver a syllabennow yw: 2
-
-Hag yns i: ['o', 'ber']
-S1: O, V, hirder = [2], hirder kowal = 2
-S2: ber, CVC, hirder = [1, 1, 1], hirder kowal = 3
-Hirder ger kowal = 5
-
-Ober
+gwann-Ober
 
 
 An ger yw: gwrys
@@ -88504,45 +87811,27 @@ Hirder ger kowal = 4
 vy
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
-
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: barth
-Niver a syllabennow yw: 1
-
-Hag yns i: ['barth']
-S1: BARTH, CVC, hirder = [1, 1, 2], hirder kowal = 4
-Hirder ger kowal = 4
-
-BARTH
-
-
-An ger yw: a-
-Niver a syllabennow yw: 1
-
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: woeles
+An ger yw: a-barth
 Niver a syllabennow yw: 2
 
-Hag yns i: ['woe', 'les']
-S1: WOE, CV, hirder = [1, 2], hirder kowal = 3
-S2: les, CVC, hirder = [1, 1, 1], hirder kowal = 3
-Hirder ger kowal = 6
+Hag yns i: ['a-', 'barth']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: barth, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 5
 
-WOEles
+A-barth
+
+
+An ger yw: a-woeles
+Niver a syllabennow yw: 3
+
+Hag yns i: ['a-', 'woe', 'les']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: WOE, CV, hirder = [1, 2], hirder kowal = 3
+S3: les, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 7
+
+a-WOEles
 
 
 An ger yw: hag
@@ -89475,24 +88764,15 @@ Hirder ger kowal = 4
 yth
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-ma
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: ma
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ma']
-S1: ma, CV, hirder = [1, 3], hirder kowal = 4
+Hag yns i: ['a-', 'ma']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: ma, CV, hirder = [1, 1], hirder kowal = 2
 Hirder ger kowal = 4
 
-ma
+A-ma
 
 
 An ger yw: syrr
@@ -90444,25 +89724,16 @@ Hirder ger kowal = 4
 Y'N
 
 
-An ger yw: by-
-Niver a syllabennow yw: 1
+An ger yw: by-and-by
+Niver a syllabennow yw: 3
 
-Hag yns i: ['by-']
-S1: BY-, CV, hirder = [1, 3], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['by-', 'and-', 'by']
+S1: by-, CV, hirder = [1, 1], hirder kowal = 2
+S2: AND-, VC, hirder = [1, 2], hirder kowal = 3
+S3: by, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 7
 
-BY-
-
-
-An ger yw: and-by
-Niver a syllabennow yw: 2
-
-Hag yns i: ['and-', 'by']
-S1: AND-, VC, hirder = [1, 2], hirder kowal = 3
-S2: by, CV, hirder = [1, 1], hirder kowal = 2
-Hirder ger kowal = 5
-
-AND-by
+by-AND-by
 
 
 An ger yw: hag
@@ -90609,25 +89880,16 @@ Hirder ger kowal = 5
 TAS
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-wartha
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'war', 'tha']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S3: tha, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 7
 
-A-
-
-
-An ger yw: wartha
-Niver a syllabennow yw: 2
-
-Hag yns i: ['war', 'tha']
-S1: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
-S2: tha, CV, hirder = [1, 1], hirder kowal = 2
-Hirder ger kowal = 6
-
-WARtha
+a-WARtha
 
 
 An ger yw: My
@@ -91187,24 +90449,15 @@ Hirder ger kowal = 4
 TRU
 
 
-An ger yw: go-
-Niver a syllabennow yw: 1
+An ger yw: go-vy
+Niver a syllabennow yw: 2
 
-Hag yns i: ['go-']
-S1: GO-, CV, hirder = [1, 3], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['go-', 'vy']
+S1: GO-, CV, hirder = [1, 2], hirder kowal = 3
+S2: vy, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 5
 
-GO-
-
-
-An ger yw: vy
-Niver a syllabennow yw: 1
-
-Hag yns i: ['vy']
-S1: vy, CV, hirder = [1, 3], hirder kowal = 4
-Hirder ger kowal = 4
-
-vy
+GO-vy
 
 
 An ger yw: My
@@ -91526,25 +90779,16 @@ Hirder ger kowal = 5
 NEV
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-wartha
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'war', 'tha']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S3: tha, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 7
 
-A-
-
-
-An ger yw: wartha
-Niver a syllabennow yw: 2
-
-Hag yns i: ['war', 'tha']
-S1: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
-S2: tha, CV, hirder = [1, 1], hirder kowal = 2
-Hirder ger kowal = 6
-
-WARtha
+a-WARtha
 
 
 An ger yw: dhis
@@ -92449,24 +91693,15 @@ Hirder ger kowal = 4
 KRIa
 
 
-An ger yw: war-
-Niver a syllabennow yw: 1
+An ger yw: war-lergh
+Niver a syllabennow yw: 2
 
-Hag yns i: ['war-']
-S1: WAR-, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
+Hag yns i: ['war-', 'lergh']
+S1: WAR-, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S2: lergh, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 7
 
-WAR-
-
-
-An ger yw: lergh
-Niver a syllabennow yw: 1
-
-Hag yns i: ['lergh']
-S1: LERGH, CVC, hirder = [1, 1, 2], hirder kowal = 4
-Hirder ger kowal = 4
-
-LERGH
+WAR-lergh
 
 
 An ger yw: an
@@ -92768,44 +92003,26 @@ Hirder ger kowal = 7
 JARdin
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-barth
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'barth']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: barth, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 5
 
-A-
+A-barth
 
 
-An ger yw: barth
-Niver a syllabennow yw: 1
+An ger yw: a-ji
+Niver a syllabennow yw: 2
 
-Hag yns i: ['barth']
-S1: BARTH, CVC, hirder = [1, 1, 2], hirder kowal = 4
+Hag yns i: ['a-', 'ji']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: JI, CV, hirder = [1, 2], hirder kowal = 3
 Hirder ger kowal = 4
 
-BARTH
-
-
-An ger yw: a-
-Niver a syllabennow yw: 1
-
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: ji
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ji']
-S1: JI, CV, hirder = [1, 3], hirder kowal = 4
-Hirder ger kowal = 4
-
-JI
+a-JI
 
 
 An ger yw: Agas
@@ -92998,25 +92215,16 @@ Hirder ger kowal = 6
 DHYMmo
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-bervedh
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'ber', 'vedh']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: BER, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S3: vedh, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 8
 
-A-
-
-
-An ger yw: bervedh
-Niver a syllabennow yw: 2
-
-Hag yns i: ['ber', 'vedh']
-S1: BER, CVC, hirder = [1, 2, 1], hirder kowal = 4
-S2: vedh, CVC, hirder = [1, 1, 1], hirder kowal = 3
-Hirder ger kowal = 7
-
-BERvedh
+a-BERvedh
 
 
 An ger yw: pandra
@@ -93185,24 +92393,15 @@ Hirder ger kowal = 5
 YNni
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-vann
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'vann']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: vann, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 5
 
-A-
-
-
-An ger yw: vann
-Niver a syllabennow yw: 1
-
-Hag yns i: ['vann']
-S1: VANN, CVC, hirder = [1, 1, 2], hirder kowal = 4
-Hirder ger kowal = 4
-
-VANN
+A-vann
 
 
 An ger yw: Marow
@@ -94068,24 +93267,15 @@ Hirder ger kowal = 5
 Ughel
 
 
-An ger yw: yn-
-Niver a syllabennow yw: 1
+An ger yw: yn-bann
+Niver a syllabennow yw: 2
 
-Hag yns i: ['yn-']
-S1: YN-, VC, hirder = [3, 1], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['yn-', 'bann']
+S1: yn-, VC, hirder = [1, 1], hirder kowal = 2
+S2: BANN, CVC, hirder = [1, 1, 2], hirder kowal = 4
+Hirder ger kowal = 6
 
-YN-
-
-
-An ger yw: bann
-Niver a syllabennow yw: 1
-
-Hag yns i: ['bann']
-S1: BANN, CVC, hirder = [1, 1, 2], hirder kowal = 4
-Hirder ger kowal = 4
-
-BANN
+yn-BANN
 
 
 An ger yw: Bys
@@ -95220,24 +94410,15 @@ Hirder ger kowal = 4
 GORR
 
 
-An ger yw: yn-
-Niver a syllabennow yw: 1
+An ger yw: yn-bann
+Niver a syllabennow yw: 2
 
-Hag yns i: ['yn-']
-S1: YN-, VC, hirder = [3, 1], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['yn-', 'bann']
+S1: yn-, VC, hirder = [1, 1], hirder kowal = 2
+S2: BANN, CVC, hirder = [1, 1, 2], hirder kowal = 4
+Hirder ger kowal = 6
 
-YN-
-
-
-An ger yw: bann
-Niver a syllabennow yw: 1
-
-Hag yns i: ['bann']
-S1: BANN, CVC, hirder = [1, 1, 2], hirder kowal = 4
-Hirder ger kowal = 4
-
-BANN
+yn-BANN
 
 
 An ger yw: yn
@@ -95838,25 +95019,16 @@ Hirder ger kowal = 4
 HI
 
 
-An ger yw: kowl-
-Niver a syllabennow yw: 1
+An ger yw: kowl-devys
+Niver a syllabennow yw: 3
 
-Hag yns i: ['kowl-']
-S1: KOWL-, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
+Hag yns i: ['kowl-', 'de', 'vys']
+S1: kowl-, CVC, hirder = [1, 1, 1], hirder kowal = 3
+S2: DE, CV, hirder = [1, 2], hirder kowal = 3
+S3: vys, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 9
 
-KOWL-
-
-
-An ger yw: devys
-Niver a syllabennow yw: 2
-
-Hag yns i: ['de', 'vys']
-S1: DE, CV, hirder = [1, 2], hirder kowal = 3
-S2: vys, CVC, hirder = [1, 1, 1], hirder kowal = 3
-Hirder ger kowal = 6
-
-DEvys
+kowl-DEvys
 
 
 An ger yw: hi
@@ -96146,24 +95318,15 @@ Hirder ger kowal = 6
 diHWANS
 
 
-An ger yw: war-
-Niver a syllabennow yw: 1
+An ger yw: war-lergh
+Niver a syllabennow yw: 2
 
-Hag yns i: ['war-']
-S1: WAR-, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
+Hag yns i: ['war-', 'lergh']
+S1: WAR-, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S2: lergh, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 7
 
-WAR-
-
-
-An ger yw: lergh
-Niver a syllabennow yw: 1
-
-Hag yns i: ['lergh']
-S1: LERGH, CVC, hirder = [1, 1, 2], hirder kowal = 4
-Hirder ger kowal = 4
-
-LERGH
+WAR-lergh
 
 
 An ger yw: Oyl
@@ -96187,24 +95350,15 @@ Hirder ger kowal = 6
 MERsi
 
 
-An ger yw: pup-
-Niver a syllabennow yw: 1
+An ger yw: pup-prys
+Niver a syllabennow yw: 2
 
-Hag yns i: ['pup-']
-S1: PUP-, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
+Hag yns i: ['pup-', 'prys']
+S1: PUP-, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S2: prys, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 7
 
-PUP-
-
-
-An ger yw: prys
-Niver a syllabennow yw: 1
-
-Hag yns i: ['prys']
-S1: PRYS, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
-
-PRYS
+PUP-prys
 
 
 An ger yw: ha
@@ -96884,25 +96038,16 @@ Hirder ger kowal = 4
 DYW
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-wartha
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'war', 'tha']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S3: tha, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 7
 
-A-
-
-
-An ger yw: wartha
-Niver a syllabennow yw: 2
-
-Hag yns i: ['war', 'tha']
-S1: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
-S2: tha, CV, hirder = [1, 1], hirder kowal = 2
-Hirder ger kowal = 6
-
-WARtha
+a-WARtha
 
 
 An ger yw: dhe
@@ -98000,24 +97145,15 @@ Hirder ger kowal = 6
 HEdhes
 
 
-An ger yw: yn-
-Niver a syllabennow yw: 1
+An ger yw: yn-bann
+Niver a syllabennow yw: 2
 
-Hag yns i: ['yn-']
-S1: YN-, VC, hirder = [3, 1], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['yn-', 'bann']
+S1: yn-, VC, hirder = [1, 1], hirder kowal = 2
+S2: BANN, CVC, hirder = [1, 1, 2], hirder kowal = 4
+Hirder ger kowal = 6
 
-YN-
-
-
-An ger yw: bann
-Niver a syllabennow yw: 1
-
-Hag yns i: ['bann']
-S1: BANN, CVC, hirder = [1, 1, 2], hirder kowal = 4
-Hirder ger kowal = 4
-
-BANN
+yn-BANN
 
 
 An ger yw: pur
@@ -98947,24 +98083,15 @@ Hirder ger kowal = 7
 SERpont
 
 
-An ger yw: yn-
-Niver a syllabennow yw: 1
+An ger yw: yn-bann
+Niver a syllabennow yw: 2
 
-Hag yns i: ['yn-']
-S1: YN-, VC, hirder = [3, 1], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['yn-', 'bann']
+S1: yn-, VC, hirder = [1, 1], hirder kowal = 2
+S2: BANN, CVC, hirder = [1, 1, 2], hirder kowal = 4
+Hirder ger kowal = 6
 
-YN-
-
-
-An ger yw: bann
-Niver a syllabennow yw: 1
-
-Hag yns i: ['bann']
-S1: BANN, CVC, hirder = [1, 1, 2], hirder kowal = 4
-Hirder ger kowal = 4
-
-BANN
+yn-BANN
 
 
 An ger yw: ynni
@@ -100385,24 +99512,15 @@ Hirder ger kowal = 4
 WRA
 
 
-An ger yw: yn-
-Niver a syllabennow yw: 1
+An ger yw: yn-dann
+Niver a syllabennow yw: 2
 
-Hag yns i: ['yn-']
-S1: YN-, VC, hirder = [3, 1], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['yn-', 'dann']
+S1: yn-, VC, hirder = [1, 1], hirder kowal = 2
+S2: DANN, CVC, hirder = [1, 1, 2], hirder kowal = 4
+Hirder ger kowal = 6
 
-YN-
-
-
-An ger yw: dann
-Niver a syllabennow yw: 1
-
-Hag yns i: ['dann']
-S1: DANN, CVC, hirder = [1, 1, 2], hirder kowal = 4
-Hirder ger kowal = 4
-
-DANN
+yn-DANN
 
 
 An ger yw: ow
@@ -100600,24 +99718,15 @@ Hirder ger kowal = 3
 y
 
 
-An ger yw: fes-
-Niver a syllabennow yw: 1
+An ger yw: fes-ta
+Niver a syllabennow yw: 2
 
-Hag yns i: ['fes-']
-S1: FES-, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
+Hag yns i: ['fes-', 'ta']
+S1: FES-, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S2: ta, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 6
 
-FES-
-
-
-An ger yw: ta
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ta']
-S1: TA, CV, hirder = [1, 3], hirder kowal = 4
-Hirder ger kowal = 4
-
-TA
+FES-ta
 
 
 An ger yw: Ev
@@ -101360,25 +100469,16 @@ Hirder ger kowal = 4
 EUS
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-wartha
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'war', 'tha']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S3: tha, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 7
 
-A-
-
-
-An ger yw: wartha
-Niver a syllabennow yw: 2
-
-Hag yns i: ['war', 'tha']
-S1: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
-S2: tha, CV, hirder = [1, 1], hirder kowal = 2
-Hirder ger kowal = 6
-
-WARtha
+a-WARtha
 
 
 An ger yw: ha
@@ -101890,24 +100990,15 @@ Hirder ger kowal = 6
 SKAPya
 
 
-An ger yw: dhe-
-Niver a syllabennow yw: 1
+An ger yw: dhe-vy
+Niver a syllabennow yw: 2
 
-Hag yns i: ['dhe-']
-S1: DHE-, CV, hirder = [1, 3], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['dhe-', 'vy']
+S1: DHE-, CV, hirder = [1, 2], hirder kowal = 3
+S2: vy, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 5
 
-DHE-
-
-
-An ger yw: vy
-Niver a syllabennow yw: 1
-
-Hag yns i: ['vy']
-S1: vy, CV, hirder = [1, 3], hirder kowal = 4
-Hirder ger kowal = 4
-
-vy
+DHE-vy
 
 
 An ger yw: A'n
@@ -102022,24 +101113,15 @@ Hirder ger kowal = 5
 BYS
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-ban
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: ban
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ban']
-S1: BAN, CVC, hirder = [1, 3, 1], hirder kowal = 5
+Hag yns i: ['a-', 'ban']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: ban, CVC, hirder = [1, 1, 1], hirder kowal = 3
 Hirder ger kowal = 5
 
-BAN
+A-ban
 
 
 An ger yw: veuma
@@ -103982,25 +103064,16 @@ Hirder ger kowal = 4
 BARTH
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-woeles
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'woe', 'les']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: WOE, CV, hirder = [1, 2], hirder kowal = 3
+S3: les, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 7
 
-A-
-
-
-An ger yw: woeles
-Niver a syllabennow yw: 2
-
-Hag yns i: ['woe', 'les']
-S1: WOE, CV, hirder = [1, 2], hirder kowal = 3
-S2: les, CVC, hirder = [1, 1, 1], hirder kowal = 3
-Hirder ger kowal = 6
-
-WOEles
+a-WOEles
 
 
 An ger yw: Na
@@ -104129,25 +103202,16 @@ Hirder ger kowal = 4
 BARTH
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-wartha
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'war', 'tha']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S3: tha, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 7
 
-A-
-
-
-An ger yw: wartha
-Niver a syllabennow yw: 2
-
-Hag yns i: ['war', 'tha']
-S1: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
-S2: tha, CV, hirder = [1, 1], hirder kowal = 2
-Hirder ger kowal = 6
-
-WARtha
+a-WARtha
 
 
 An ger yw: ena
@@ -104595,45 +103659,27 @@ Hirder ger kowal = 5
 VYDH
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
-
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: barth
-Niver a syllabennow yw: 1
-
-Hag yns i: ['barth']
-S1: BARTH, CVC, hirder = [1, 1, 2], hirder kowal = 4
-Hirder ger kowal = 4
-
-BARTH
-
-
-An ger yw: a-
-Niver a syllabennow yw: 1
-
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: wartha
+An ger yw: a-barth
 Niver a syllabennow yw: 2
 
-Hag yns i: ['war', 'tha']
-S1: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
-S2: tha, CV, hirder = [1, 1], hirder kowal = 2
-Hirder ger kowal = 6
+Hag yns i: ['a-', 'barth']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: barth, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 5
 
-WARtha
+A-barth
+
+
+An ger yw: a-wartha
+Niver a syllabennow yw: 3
+
+Hag yns i: ['a-', 'war', 'tha']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S3: tha, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 7
+
+a-WARtha
 
 
 An ger yw: yn
@@ -105041,25 +104087,16 @@ Hirder ger kowal = 4
 BARTH
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-woeles
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'woe', 'les']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: WOE, CV, hirder = [1, 2], hirder kowal = 3
+S3: les, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 7
 
-A-
-
-
-An ger yw: woeles
-Niver a syllabennow yw: 2
-
-Hag yns i: ['woe', 'les']
-S1: WOE, CV, hirder = [1, 2], hirder kowal = 3
-S2: les, CVC, hirder = [1, 1, 1], hirder kowal = 3
-Hirder ger kowal = 6
-
-WOEles
+a-WOEles
 
 
 An ger yw: yn
@@ -106366,25 +105403,16 @@ Hirder ger kowal = 4
 BARTH
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-woeles
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'woe', 'les']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: WOE, CV, hirder = [1, 2], hirder kowal = 3
+S3: les, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 7
 
-A-
-
-
-An ger yw: woeles
-Niver a syllabennow yw: 2
-
-Hag yns i: ['woe', 'les']
-S1: WOE, CV, hirder = [1, 2], hirder kowal = 3
-S2: les, CVC, hirder = [1, 1, 1], hirder kowal = 3
-Hirder ger kowal = 6
-
-WOEles
+a-WOEles
 
 
 An ger yw: Hag
@@ -107268,25 +106296,16 @@ Hirder ger kowal = 5
 Ughel
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-ughon
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'u', 'ghon']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: U, V, hirder = [2], hirder kowal = 2
+S3: ghon, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 6
 
-A-
-
-
-An ger yw: ughon
-Niver a syllabennow yw: 2
-
-Hag yns i: ['u', 'ghon']
-S1: U, V, hirder = [2], hirder kowal = 2
-S2: ghon, CVC, hirder = [1, 1, 1], hirder kowal = 3
-Hirder ger kowal = 5
-
-Ughon
+a-Ughon
 
 
 An ger yw: Ow
@@ -111047,24 +110066,15 @@ Hirder ger kowal = 5
 GUL
 
 
-An ger yw: mab-
-Niver a syllabennow yw: 1
+An ger yw: mab-den
+Niver a syllabennow yw: 2
 
-Hag yns i: ['mab-']
-S1: MAB-, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
+Hag yns i: ['mab-', 'den']
+S1: MAB-, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S2: den, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 7
 
-MAB-
-
-
-An ger yw: den
-Niver a syllabennow yw: 1
-
-Hag yns i: ['den']
-S1: DEN, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
-
-DEN
+MAB-den
 
 
 An ger yw: omma
@@ -111371,25 +110381,16 @@ Hirder ger kowal = 4
 EUS
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-ughon
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'u', 'ghon']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: U, V, hirder = [2], hirder kowal = 2
+S3: ghon, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 6
 
-A-
-
-
-An ger yw: ughon
-Niver a syllabennow yw: 2
-
-Hag yns i: ['u', 'ghon']
-S1: U, V, hirder = [2], hirder kowal = 2
-S2: ghon, CVC, hirder = [1, 1, 1], hirder kowal = 3
-Hirder ger kowal = 5
-
-Ughon
+a-Ughon
 
 
 An ger yw: An
@@ -111424,25 +110425,16 @@ Hirder ger kowal = 4
 EUS
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-wartha
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'war', 'tha']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S3: tha, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 7
 
-A-
-
-
-An ger yw: wartha
-Niver a syllabennow yw: 2
-
-Hag yns i: ['war', 'tha']
-S1: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
-S2: tha, CV, hirder = [1, 1], hirder kowal = 2
-Hirder ger kowal = 6
-
-WARtha
+a-WARtha
 
 
 An ger yw: ha'n
@@ -113814,24 +112806,15 @@ Hirder ger kowal = 4
 GORR
 
 
-An ger yw: yn-
-Niver a syllabennow yw: 1
+An ger yw: yn-bann
+Niver a syllabennow yw: 2
 
-Hag yns i: ['yn-']
-S1: YN-, VC, hirder = [3, 1], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['yn-', 'bann']
+S1: yn-, VC, hirder = [1, 1], hirder kowal = 2
+S2: BANN, CVC, hirder = [1, 1, 2], hirder kowal = 4
+Hirder ger kowal = 6
 
-YN-
-
-
-An ger yw: bann
-Niver a syllabennow yw: 1
-
-Hag yns i: ['bann']
-S1: BANN, CVC, hirder = [1, 1, 2], hirder kowal = 4
-Hirder ger kowal = 4
-
-BANN
+yn-BANN
 
 
 An ger yw: hag
@@ -114696,24 +113679,15 @@ Hirder ger kowal = 4
 KORF
 
 
-An ger yw: mab-
-Niver a syllabennow yw: 1
+An ger yw: mab-den
+Niver a syllabennow yw: 2
 
-Hag yns i: ['mab-']
-S1: MAB-, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
+Hag yns i: ['mab-', 'den']
+S1: MAB-, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S2: den, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 7
 
-MAB-
-
-
-An ger yw: den
-Niver a syllabennow yw: 1
-
-Hag yns i: ['den']
-S1: DEN, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
-
-DEN
+MAB-den
 
 
 An ger yw: vydh
@@ -115767,25 +114741,16 @@ Hirder ger kowal = 4
 EUS
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-wartha
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'war', 'tha']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S3: tha, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 7
 
-A-
-
-
-An ger yw: wartha
-Niver a syllabennow yw: 2
-
-Hag yns i: ['war', 'tha']
-S1: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
-S2: tha, CV, hirder = [1, 1], hirder kowal = 2
-Hirder ger kowal = 6
-
-WARtha
+a-WARtha
 
 
 An ger yw: Noy
@@ -116688,24 +115653,15 @@ Hirder ger kowal = 7
 HENwys
 
 
-An ger yw: A-
-Niver a syllabennow yw: 1
+An ger yw: A-ves
+Niver a syllabennow yw: 2
 
-Hag yns i: ['A-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: ves
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ves']
-S1: VES, CVC, hirder = [1, 3, 1], hirder kowal = 5
+Hag yns i: ['A-', 'ves']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: ves, CVC, hirder = [1, 1, 1], hirder kowal = 3
 Hirder ger kowal = 5
 
-VES
+A-ves
 
 
 An ger yw: hag
@@ -116718,24 +115674,15 @@ Hirder ger kowal = 5
 hag
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-ji
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: ji
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ji']
-S1: JI, CV, hirder = [1, 3], hirder kowal = 4
+Hag yns i: ['a-', 'ji']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: JI, CV, hirder = [1, 2], hirder kowal = 3
 Hirder ger kowal = 4
 
-JI
+a-JI
 
 
 An ger yw: yn
@@ -117131,45 +116078,27 @@ Hirder ger kowal = 5
 GWRYS
 
 
-An ger yw: War-
-Niver a syllabennow yw: 1
-
-Hag yns i: ['War-']
-S1: WAR-, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
-
-WAR-
-
-
-An ger yw: tu
-Niver a syllabennow yw: 1
-
-Hag yns i: ['tu']
-S1: TU, CV, hirder = [1, 3], hirder kowal = 4
-Hirder ger kowal = 4
-
-TU
-
-
-An ger yw: a-
-Niver a syllabennow yw: 1
-
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: dhelergh
+An ger yw: War-tu
 Niver a syllabennow yw: 2
 
-Hag yns i: ['dhe', 'lergh']
-S1: DHE, CV, hirder = [1, 2], hirder kowal = 3
-S2: lergh, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hag yns i: ['War-', 'tu']
+S1: WAR-, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S2: tu, CV, hirder = [1, 1], hirder kowal = 2
 Hirder ger kowal = 6
 
-DHElergh
+WAR-tu
+
+
+An ger yw: a-dhelergh
+Niver a syllabennow yw: 3
+
+Hag yns i: ['a-', 'dhe', 'lergh']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: DHE, CV, hirder = [1, 2], hirder kowal = 3
+S3: lergh, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 7
+
+a-DHElergh
 
 
 An ger yw: daras
@@ -117316,24 +116245,15 @@ Hirder ger kowal = 5
 BLAS
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-les
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: les
-Niver a syllabennow yw: 1
-
-Hag yns i: ['les']
-S1: LES, CVC, hirder = [1, 3, 1], hirder kowal = 5
+Hag yns i: ['a-', 'les']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: les, CVC, hirder = [1, 1, 1], hirder kowal = 3
 Hirder ger kowal = 5
 
-LES
+A-les
 
 
 An ger yw: rag
@@ -117555,25 +116475,16 @@ Hirder ger kowal = 6
 LEster
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-bervedh
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'ber', 'vedh']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: BER, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S3: vedh, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 8
 
-A-
-
-
-An ger yw: bervedh
-Niver a syllabennow yw: 2
-
-Hag yns i: ['ber', 'vedh']
-S1: BER, CVC, hirder = [1, 2, 1], hirder kowal = 4
-S2: vedh, CVC, hirder = [1, 1, 1], hirder kowal = 3
-Hirder ger kowal = 7
-
-BERvedh
+a-BERvedh
 
 
 An ger yw: Pub
@@ -118378,24 +117289,15 @@ Hirder ger kowal = 5
 Kyn
 
 
-An ger yw: fo-
-Niver a syllabennow yw: 1
+An ger yw: fo-va
+Niver a syllabennow yw: 2
 
-Hag yns i: ['fo-']
-S1: FO-, CV, hirder = [1, 3], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['fo-', 'va']
+S1: FO-, CV, hirder = [1, 2], hirder kowal = 3
+S2: va, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 5
 
-FO-
-
-
-An ger yw: va
-Niver a syllabennow yw: 1
-
-Hag yns i: ['va']
-S1: VA, CV, hirder = [1, 3], hirder kowal = 4
-Hirder ger kowal = 4
-
-VA
+FO-va
 
 
 An ger yw: gwriys
@@ -118735,24 +117637,15 @@ Hirder ger kowal = 3
 y
 
 
-An ger yw: vos-
-Niver a syllabennow yw: 1
+An ger yw: vos-ta
+Niver a syllabennow yw: 2
 
-Hag yns i: ['vos-']
-S1: VOS-, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
+Hag yns i: ['vos-', 'ta']
+S1: VOS-, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S2: ta, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 6
 
-VOS-
-
-
-An ger yw: ta
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ta']
-S1: TA, CV, hirder = [1, 3], hirder kowal = 4
-Hirder ger kowal = 4
-
-TA
+VOS-ta
 
 
 An ger yw: mar
@@ -119752,24 +118645,15 @@ Hirder ger kowal = 5
 WEL
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-ji
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: ji
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ji']
-S1: JI, CV, hirder = [1, 3], hirder kowal = 4
+Hag yns i: ['a-', 'ji']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: JI, CV, hirder = [1, 2], hirder kowal = 3
 Hirder ger kowal = 4
 
-JI
+a-JI
 
 
 An ger yw: dhe
@@ -119946,24 +118830,15 @@ Hirder ger kowal = 3
 a
 
 
-An ger yw: ves-
-Niver a syllabennow yw: 1
+An ger yw: ves-ta
+Niver a syllabennow yw: 2
 
-Hag yns i: ['ves-']
-S1: VES-, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
+Hag yns i: ['ves-', 'ta']
+S1: VES-, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S2: ta, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 6
 
-VES-
-
-
-An ger yw: ta
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ta']
-S1: TA, CV, hirder = [1, 3], hirder kowal = 4
-Hirder ger kowal = 4
-
-TA
+VES-ta
 
 
 An ger yw: kregys
@@ -120078,25 +118953,16 @@ Hirder ger kowal = 4
 TY
 
 
-An ger yw: benn-
-Niver a syllabennow yw: 1
+An ger yw: benn-pilys
+Niver a syllabennow yw: 3
 
-Hag yns i: ['benn-']
-S1: BENN-, CVC, hirder = [1, 1, 2], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['benn-', 'pi', 'lys']
+S1: benn-, CVC, hirder = [1, 1, 1], hirder kowal = 3
+S2: PI, CV, hirder = [1, 2], hirder kowal = 3
+S3: lys, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 9
 
-BENN-
-
-
-An ger yw: pilys
-Niver a syllabennow yw: 2
-
-Hag yns i: ['pi', 'lys']
-S1: PI, CV, hirder = [1, 2], hirder kowal = 3
-S2: lys, CVC, hirder = [1, 1, 1], hirder kowal = 3
-Hirder ger kowal = 6
-
-PIlys
+benn-PIlys
 
 
 An ger yw: fatla
@@ -120503,25 +119369,16 @@ Hirder ger kowal = 4
 dha
 
 
-An ger yw: benn-
-Niver a syllabennow yw: 1
+An ger yw: benn-kreghi
+Niver a syllabennow yw: 3
 
-Hag yns i: ['benn-']
-S1: BENN-, CVC, hirder = [1, 1, 2], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['benn-', 'kre', 'ghi']
+S1: benn-, CVC, hirder = [1, 1, 1], hirder kowal = 3
+S2: KRE, CV, hirder = [1, 2], hirder kowal = 3
+S3: ghi, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 8
 
-BENN-
-
-
-An ger yw: kreghi
-Niver a syllabennow yw: 2
-
-Hag yns i: ['kre', 'ghi']
-S1: KRE, CV, hirder = [1, 2], hirder kowal = 3
-S2: ghi, CV, hirder = [1, 1], hirder kowal = 2
-Hirder ger kowal = 5
-
-KREghi
+benn-KREghi
 
 
 An ger yw: Nyns
@@ -121208,24 +120065,15 @@ Hirder ger kowal = 7
 BYTHkweth
 
 
-An ger yw: mab-
-Niver a syllabennow yw: 1
+An ger yw: mab-den
+Niver a syllabennow yw: 2
 
-Hag yns i: ['mab-']
-S1: MAB-, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
+Hag yns i: ['mab-', 'den']
+S1: MAB-, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S2: den, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 7
 
-MAB-
-
-
-An ger yw: den
-Niver a syllabennow yw: 1
-
-Hag yns i: ['den']
-S1: DEN, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
-
-DEN
+MAB-den
 
 
 An ger yw: dhe
@@ -121679,24 +120527,15 @@ Hirder ger kowal = 6
 KEWsel
 
 
-An ger yw: dhe-
-Niver a syllabennow yw: 1
+An ger yw: dhe-jy
+Niver a syllabennow yw: 2
 
-Hag yns i: ['dhe-']
-S1: DHE-, CV, hirder = [1, 3], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['dhe-', 'jy']
+S1: DHE-, CV, hirder = [1, 2], hirder kowal = 3
+S2: jy, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 5
 
-DHE-
-
-
-An ger yw: jy
-Niver a syllabennow yw: 1
-
-Hag yns i: ['jy']
-S1: jy, CV, hirder = [1, 3], hirder kowal = 4
-Hirder ger kowal = 4
-
-jy
+DHE-jy
 
 
 An ger yw: only
@@ -122768,24 +121607,15 @@ Hirder ger kowal = 4
 KYNS
 
 
-An ger yw: nep-
-Niver a syllabennow yw: 1
+An ger yw: nep-pell
+Niver a syllabennow yw: 2
 
-Hag yns i: ['nep-']
-S1: NEP-, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
+Hag yns i: ['nep-', 'pell']
+S1: NEP-, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S2: pell, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 7
 
-NEP-
-
-
-An ger yw: pell
-Niver a syllabennow yw: 1
-
-Hag yns i: ['pell']
-S1: PELL, CVC, hirder = [1, 1, 2], hirder kowal = 4
-Hirder ger kowal = 4
-
-PELL
+NEP-pell
 
 
 An ger yw: rag
@@ -123776,24 +122606,15 @@ Hirder ger kowal = 5
 BYS
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-ji
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: ji
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ji']
-S1: JI, CV, hirder = [1, 3], hirder kowal = 4
+Hag yns i: ['a-', 'ji']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: JI, CV, hirder = [1, 2], hirder kowal = 3
 Hirder ger kowal = 4
 
-JI
+a-JI
 
 
 An ger yw: dhe
@@ -126203,25 +125024,16 @@ Hirder ger kowal = 5
 KEWGH
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-bervedh
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'ber', 'vedh']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: BER, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S3: vedh, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 8
 
-A-
-
-
-An ger yw: bervedh
-Niver a syllabennow yw: 2
-
-Hag yns i: ['ber', 'vedh']
-S1: BER, CVC, hirder = [1, 2, 1], hirder kowal = 4
-S2: vedh, CVC, hirder = [1, 1, 1], hirder kowal = 3
-Hirder ger kowal = 7
-
-BERvedh
+a-BERvedh
 
 
 An ger yw: ow
@@ -126380,25 +125192,16 @@ Hirder ger kowal = 4
 EUS
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-wartha
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'war', 'tha']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S3: tha, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 7
 
-A-
-
-
-An ger yw: wartha
-Niver a syllabennow yw: 2
-
-Hag yns i: ['war', 'tha']
-S1: WAR, CVC, hirder = [1, 2, 1], hirder kowal = 4
-S2: tha, CV, hirder = [1, 1], hirder kowal = 2
-Hirder ger kowal = 6
-
-WARtha
+a-WARtha
 
 
 An ger yw: Ty
@@ -126422,25 +125225,16 @@ Hirder ger kowal = 6
 BEnyn
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-bervedh
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'ber', 'vedh']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: BER, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S3: vedh, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 8
 
-A-
-
-
-An ger yw: bervedh
-Niver a syllabennow yw: 2
-
-Hag yns i: ['ber', 'vedh']
-S1: BER, CVC, hirder = [1, 2, 1], hirder kowal = 4
-S2: vedh, CVC, hirder = [1, 1, 1], hirder kowal = 3
-Hirder ger kowal = 7
-
-BERvedh
+a-BERvedh
 
 
 An ger yw: deus
@@ -126923,24 +125717,15 @@ Hirder ger kowal = 5
 WIR
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-ban
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: ban
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ban']
-S1: BAN, CVC, hirder = [1, 3, 1], hirder kowal = 5
+Hag yns i: ['a-', 'ban']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: ban, CVC, hirder = [1, 1, 1], hirder kowal = 3
 Hirder ger kowal = 5
 
-BAN
+A-ban
 
 
 An ger yw: kellsyn
@@ -127868,24 +126653,15 @@ Hirder ger kowal = 6
 BLYdhen
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-ban
+Niver a syllabennow yw: 2
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
-
-A-
-
-
-An ger yw: ban
-Niver a syllabennow yw: 1
-
-Hag yns i: ['ban']
-S1: BAN, CVC, hirder = [1, 3, 1], hirder kowal = 5
+Hag yns i: ['a-', 'ban']
+S1: A-, V, hirder = [2], hirder kowal = 2
+S2: ban, CVC, hirder = [1, 1, 1], hirder kowal = 3
 Hirder ger kowal = 5
 
-BAN
+A-ban
 
 
 An ger yw: dhallathas
@@ -128321,24 +127097,15 @@ Hirder ger kowal = 4
 KE
 
 
-An ger yw: yn-
-Niver a syllabennow yw: 1
+An ger yw: yn-mes
+Niver a syllabennow yw: 2
 
-Hag yns i: ['yn-']
-S1: YN-, VC, hirder = [3, 1], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['yn-', 'mes']
+S1: YN-, VC, hirder = [2, 1], hirder kowal = 3
+S2: mes, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 6
 
-YN-
-
-
-An ger yw: mes
-Niver a syllabennow yw: 1
-
-Hag yns i: ['mes']
-S1: mes, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
-
-mes
+YN-mes
 
 
 An ger yw: a'n
@@ -128660,24 +127427,15 @@ Hirder ger kowal = 5
 DEUN
 
 
-An ger yw: yn-
-Niver a syllabennow yw: 1
+An ger yw: yn-mes
+Niver a syllabennow yw: 2
 
-Hag yns i: ['yn-']
-S1: YN-, VC, hirder = [3, 1], hirder kowal = 4
-Hirder ger kowal = 4
+Hag yns i: ['yn-', 'mes']
+S1: YN-, VC, hirder = [2, 1], hirder kowal = 3
+S2: mes, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 6
 
-YN-
-
-
-An ger yw: mes
-Niver a syllabennow yw: 1
-
-Hag yns i: ['mes']
-S1: mes, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
-
-mes
+YN-mes
 
 
 An ger yw: byghan
@@ -130451,24 +129209,15 @@ Hirder ger kowal = 6
 LEdhys
 
 
-An ger yw: mab-
-Niver a syllabennow yw: 1
+An ger yw: mab-den
+Niver a syllabennow yw: 2
 
-Hag yns i: ['mab-']
-S1: MAB-, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
+Hag yns i: ['mab-', 'den']
+S1: MAB-, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S2: den, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 7
 
-MAB-
-
-
-An ger yw: den
-Niver a syllabennow yw: 1
-
-Hag yns i: ['den']
-S1: DEN, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
-
-DEN
+MAB-den
 
 
 An ger yw: genowgh
@@ -131573,24 +130322,15 @@ Hirder ger kowal = 3
 UNN
 
 
-An ger yw: mab-
-Niver a syllabennow yw: 1
+An ger yw: mab-den
+Niver a syllabennow yw: 2
 
-Hag yns i: ['mab-']
-S1: MAB-, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
+Hag yns i: ['mab-', 'den']
+S1: MAB-, CVC, hirder = [1, 2, 1], hirder kowal = 4
+S2: den, CVC, hirder = [1, 1, 1], hirder kowal = 3
+Hirder ger kowal = 7
 
-MAB-
-
-
-An ger yw: den
-Niver a syllabennow yw: 1
-
-Hag yns i: ['den']
-S1: DEN, CVC, hirder = [1, 3, 1], hirder kowal = 5
-Hirder ger kowal = 5
-
-DEN
+MAB-den
 
 
 An ger yw: sperys
@@ -131676,25 +130416,16 @@ Hirder ger kowal = 5
 DEWGH
 
 
-An ger yw: a-
-Niver a syllabennow yw: 1
+An ger yw: a-vorow
+Niver a syllabennow yw: 3
 
-Hag yns i: ['a-']
-S1: A-, V, hirder = [3], hirder kowal = 3
-Hirder ger kowal = 3
+Hag yns i: ['a-', 'vo', 'row']
+S1: a-, V, hirder = [1], hirder kowal = 1
+S2: VO, CV, hirder = [1, 2], hirder kowal = 3
+S3: row, CV, hirder = [1, 1], hirder kowal = 2
+Hirder ger kowal = 6
 
-A-
-
-
-An ger yw: vorow
-Niver a syllabennow yw: 2
-
-Hag yns i: ['vo', 'row']
-S1: VO, CV, hirder = [1, 2], hirder kowal = 3
-S2: row, CV, hirder = [1, 1], hirder kowal = 2
-Hirder ger kowal = 5
-
-VOrow
+a-VOrow
 
 
 An ger yw: a

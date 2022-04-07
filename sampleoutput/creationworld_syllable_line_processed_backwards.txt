@@ -10,9 +10,9 @@ pur:1  wir:1  my:1  yw:1  ,:0
 Niver a sylabennow y'n linenn = 4
 PUR WIR MY YW
 
-omma:2  a-:1  ji:1  dhe'n:1  kloudys:2  ,:0
+omma:2  a-ji:2  dhe'n:1  kloudys:2  ,:0
 Niver a sylabennow y'n linenn = 7
-OMma A- JI DHE'N   KLOUdys
+OMma a-JI DHE'N   KLOUdys
 
 war:1  fas:1  an:1  dowr:1  yn:1  sertan:2  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -66,17 +66,17 @@ nev:1  ,:0  plas:1  rial:2  dhe'm:1  trigva:2  ,:0
 Niver a sylabennow y'n linenn = 7
 NEV  PLAS RIal DHE'M  TRIGva
 
-ha'w:1  thron-:1  sedha:2  ow:1  bodh:1  yw:1
+ha'w:1  thron-sedha:3  ow:1  bodh:1  yw:1
 Niver a sylabennow y'n linenn = 7
-HA'W   THRON- SEdha ow BODH YW
+HA'W   thron-SEdha ow BODH YW
 
 may:1  fo:1  henna:2  .:0
 Niver a sylabennow y'n linenn = 4
 may FO HENna
 
-Ha'n:1  nor:1  ynwedh:2  a-:1  woeles:2
+Ha'n:1  nor:1  ynwedh:2  a-woeles:3
 Niver a sylabennow y'n linenn = 7
-HA'N   NOR ynWEDH A- WOEles
+HA'N   NOR ynWEDH a-WOEles
 
 skon:1  orth:1  kompas:2  a:1  vydh:1  gwrys:1  .:0
 Niver a sylabennow y'n linenn = 7
@@ -86,9 +86,9 @@ Honna:2  a:1  vydh:1  ow:1  skavell:2  droes:1
 Niver a sylabennow y'n linenn = 8
 HONna a VYDH ow SKAvell DROES
 
-rag:1  ow:1  plesour:2  pup-:1  prys:1  ,:0
+rag:1  ow:1  plesour:2  pup-prys:2  ,:0
 Niver a sylabennow y'n linenn = 6
-rag ow PLEsour PUP- PRYS
+rag ow PLEsour PUP-prys
 
 ha:1  dhe'm:1  enor:2  maga:2  ta:1  .:0
 Niver a sylabennow y'n linenn = 7
@@ -170,9 +170,9 @@ Cherubyn:3  ,:0  an:1  ughella:3
 Niver a sylabennow y'n linenn = 7
 cheRUbyn  an uGHElla
 
-ty:1  a:1  vydh:1  .:0  Deus:1  a-:1  rag:1  uskis:2  ;:0
+ty:1  a:1  vydh:1  .:0  Deus:1  a-rag:2  uskis:2  ;:0
 Niver a sylabennow y'n linenn = 8
-TY a VYDH  DEUS A- rag Uskis
+TY a VYDH  DEUS a-RAG Uskis
 
 Serafyn:3  ,:0  ynwedh:2  Tronys:2  .:0
 Niver a sylabennow y'n linenn = 7
@@ -230,9 +230,9 @@ tri:1  Ordyr:2  moy:1  ,:0  yn:1  sertan:2  .:0
 Niver a sylabennow y'n linenn = 7
 TRI ORdyr MOY  YN SERtan
 
-Deus:1  a-:1  rag:1  dhymm:1  ,:0  Prynsipatys:4  .:0
+Deus:1  a-rag:2  dhymm:1  ,:0  Prynsipatys:4  .:0
 Niver a sylabennow y'n linenn = 8
-DEUS A- rag DHYMM  prynsiPAtys
+DEUS a-RAG DHYMM  prynsiPAtys
 
 Ty:1  a:1  'sedh:1  omma:2  poran:2  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -254,9 +254,9 @@ dhe'm:1  hanow:2  nevra:2  heb:1  gil:1  .:0
 Niver a sylabennow y'n linenn = 7
 DHE'M  HAnow NEvra HEB GIL
 
-A'n:1  tressa:2  degre:2  a-:1  woeles:2
+A'n:1  tressa:2  degre:2  a-woeles:3
 Niver a sylabennow y'n linenn = 8
-A'N   TRESsa DEgre A- WOEles
+A'N   TRESsa DEgre a-WOEles
 
 my:1  a:1  wra:1  tri:1  Ordyr:2  moy:1  .:0
 Niver a sylabennow y'n linenn = 7
@@ -266,9 +266,9 @@ Argheledh:3  ,:0  Ordyr:2  pur:1  vras:1  ,:0
 Niver a sylabennow y'n linenn = 7
 arGHEledh  ORdyr PUR VRAS
 
-dewgh:1  a-:1  rag:1  omma:2  dhe:1  vy:1  ,:0
+dewgh:1  a-rag:2  omma:2  dhe:1  vy:1  ,:0
 Niver a sylabennow y'n linenn = 7
-DEWGH A- rag OMma dhe vy
+DEWGH a-RAG OMma dhe vy
 
 ha:1  Vertutys:3  kekeffrys:3  .:0
 Niver a sylabennow y'n linenn = 7
@@ -330,9 +330,9 @@ hag:1  a:1  vynn:1  diyskynna:4
 Niver a sylabennow y'n linenn = 7
 hag a VYNN diySKYNna
 
-dhe'n:1  nor:1  yn-:1  dann:1  an:1  kloudys:2  ,:0
+dhe'n:1  nor:1  yn-dann:2  an:1  kloudys:2  ,:0
 Niver a sylabennow y'n linenn = 7
-DHE'N   NOR YN- DANN an KLOUdys
+DHE'N   NOR yn-DANN an KLOUdys
 
 hag:1  ow:1  bodh:1  guthyl:2  ena:2
 Niver a sylabennow y'n linenn = 7
@@ -350,13 +350,13 @@ Lemmyn:2  y'n:1  sekond:2  jorna:2
 Niver a sylabennow y'n linenn = 7
 LEMmyn Y'N   SEkond JORna
 
-gwrav:1  Braster:2  a-:1  dhesempis:3  .:0
+gwrav:1  Braster:2  a-dhesempis:4  .:0
 Niver a sylabennow y'n linenn = 7
-GWRAV BRAster A- dheSEMpis
+GWRAV BRAster a-dheSEMpis
 
-Y'n:1  ebrenn:2  eus:1  a-:1  wartha:2
+Y'n:1  ebrenn:2  eus:1  a-wartha:3
 Niver a sylabennow y'n linenn = 7
-Y'N   Ebrenn EUS A- WARtha
+Y'N   Ebrenn EUS a-WARtha
 
 my:1  a:1  vynn:1  bos:1  golow:2  gwrys:1
 Niver a sylabennow y'n linenn = 7
@@ -382,9 +382,9 @@ An:1  mor:1  bras:1  yn:1  kott:1  termyn:2
 Niver a sylabennow y'n linenn = 7
 an MOR BRAS YN KOTT TERmyn
 
-a-:1  dro:1  dhe'm:1  tir:1  a:1  vydh:1  dres:1  ,:0
+a-dro:2  dhe'm:1  tir:1  a:1  vydh:1  dres:1  ,:0
 Niver a sylabennow y'n linenn = 7
-A- DRO DHE'M  TIR a VYDH DRES
+A-dro DHE'M  TIR a VYDH DRES
 
 rag:1  y:1  witha:2  pur:1  ylyn:2
 Niver a sylabennow y'n linenn = 7
@@ -406,9 +406,9 @@ An:1  tressa:2  dydh:1  my:1  a:1  wra:1
 Niver a sylabennow y'n linenn = 7
 an TRESsa DYDH MY a WRA
 
-dhe'n:1  gwydh:1  sevel:2  yn-:1  ban:1  ,:0
+dhe'n:1  gwydh:1  sevel:2  yn-ban:2  ,:0
 Niver a sylabennow y'n linenn = 6
-DHE'N   GWYDH SEvel YN- BAN
+DHE'N   GWYDH SEvel YN-ban
 
 ha:1  doen:1  delyow:2  teg:1  ha:1  da:1
 Niver a sylabennow y'n linenn = 7
@@ -882,17 +882,17 @@ POran RYB ow theNEwenn
 
 
 
-I:1  was:1  mad-:1  e:1  of:1  a:1  thought:1  .:0
+I:1  was:1  mad-e:2  of:1  a:1  thought:1  .:0
 Niver a sylabennow y'n linenn = 7
-I WAS MAD- E OF a THOUGHT
+I WAS MAD-e OF a THOUGHT
 
 You:1  may:1  be:1  glad:1  of:1  such:1  wight:1  ,:0
 Niver a sylabennow y'n linenn = 7
 YOU may BE GLAD OF SUCH WIGHT
 
-and:1  in:1  heav'n:0  so:1  gay:1  y-:1  wrought:1  .:0
+and:1  in:1  heav'n:0  so:1  gay:1  y-wrought:2  .:0
 Niver a sylabennow y'n linenn = 6
-AND IN    SO GAY Y- WROUGHT
+AND IN    SO GAY Y-wrought
 
 Seemly:3  am:1  in:1  every:3  sight:1  .:0
 Niver a sylabennow y'n linenn = 9
@@ -1171,9 +1171,9 @@ HWI a VYDH  MY a LEver
 
 
 
-Ay:1  !:0  A:1  vynn'ta:2  jy:1  orth:1  mab-:1  den:1
+Ay:1  !:0  A:1  vynn'ta:2  jy:1  orth:1  mab-den:2
 Niver a sylabennow y'n linenn = 8
-AY  a VYNN'ta jy ORTH MAB- DEN
+AY  a VYNN'ta jy ORTH MAB-den
 
 pan:1  vo:1  gwrys:1  a:1  slim:1  hager:2
 Niver a sylabennow y'n linenn = 7
@@ -1387,13 +1387,13 @@ Deun:1  warbarth:2  ,:0  an:1  naw:1  ordyr:2  !:0
 Niver a sylabennow y'n linenn = 7
 DEUN warBARTH  an NAW ORdyr
 
-Helghyn:2  yn-:1  mes:1  Lusifer:3
+Helghyn:2  yn-mes:2  Lusifer:3
 Niver a sylabennow y'n linenn = 7
-HELghyn YN- mes luSIfer
+HELghyn YN-mes luSIfer
 
-a-:1  dhesempis:3  mes:1  a'n:1  nev:1  .:0
+a-dhesempis:4  mes:1  a'n:1  nev:1  .:0
 Niver a sylabennow y'n linenn = 7
-A- dheSEMpis mes A'N   NEV
+a-dheSEMpis mes A'N   NEV
 
 
 
@@ -1559,13 +1559,13 @@ Yn:1  pytt:1  down:1  yth:1  ov:1  tewlys:2  ,:0
 Niver a sylabennow y'n linenn = 7
 YN PYTT DOWN yth OV TEwlys
 
-a-:1  berth:1  yn:1  ifarn:2  kelmys:2
+a-berth:2  yn:1  ifarn:2  kelmys:2
 Niver a sylabennow y'n linenn = 7
-A- BERTH YN Ifarn KELmys
+A-berth YN Ifarn KELmys
 
-gans:1  chayn:1  ,:0  tan:1  a-:1  dro:1  dhymmo:2  .:0
+gans:1  chayn:1  ,:0  tan:1  a-dro:2  dhymmo:2  .:0
 Niver a sylabennow y'n linenn = 7
-GANS CHAYN  TAN A- DRO DHYMmo
+GANS CHAYN  TAN A-dro DHYMmo
 
 Kyn:1  na'm:1  boma:2  lowena:3  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -1671,9 +1671,9 @@ dhe'n:1  dor:1  ty:1  a:1  dreyl:1  arta:2  .:0
 Niver a sylabennow y'n linenn = 7
 DHE'N   DOR TY a DREYL ARta
 
-Adam:2  ,:0  sav:1  yn-:1  bann:1  yn:1  klor:1  ,:0
+Adam:2  ,:0  sav:1  yn-bann:2  yn:1  klor:1  ,:0
 Niver a sylabennow y'n linenn = 7
-Adam  SAV YN- BANN YN KLOR
+Adam  SAV yn-BANN YN KLOR
 
 ha:1  treyl:1  dhe:1  gig:1  ha:1  dhe:1  woes:1  .:0
 Niver a sylabennow y'n linenn = 7
@@ -1779,9 +1779,9 @@ gwayt:1  na:1  vo:1  gensi:2  mellys:2  ;:0
 Niver a sylabennow y'n linenn = 7
 GWAYT na VO GENsi MEllys
 
-my:1  a'th:1  charj:1  a-:1  ugh:1  pub:1  tra:1  .:0
+my:1  a'th:1  charj:1  a-ugh:2  pub:1  tra:1  .:0
 Niver a sylabennow y'n linenn = 7
-MY A'TH CHARJ A- UGH PUB TRA
+MY A'TH CHARJ A-ugh PUB TRA
 
 An:1  wydhenn:2  ma:1  yw:1  henwys:2
 Niver a sylabennow y'n linenn = 7
@@ -2191,9 +2191,9 @@ Gwrys:1  a'y:1  asenn:2  y:1  feu:1  hi:1  ,:0
 Niver a sylabennow y'n linenn = 7
 GWRYS A'Y   Asenn y FEU HI
 
-marthys:2  teg:1  a-:1  ugh:1  pub:1  tra:1  ,:0
+marthys:2  teg:1  a-ugh:2  pub:1  tra:1  ,:0
 Niver a sylabennow y'n linenn = 7
-MARthys TEG A- UGH PUB TRA
+MARthys TEG A-ugh PUB TRA
 
 saw:1  hy:1  skians:2  yw:1  brottel:2  .:0
 Niver a sylabennow y'n linenn = 7
@@ -2223,9 +2223,9 @@ ha:1  my:1  sevelyek:3  omma:2
 Niver a sylabennow y'n linenn = 7
 ha MY seVELyek OMma
 
-yn:1  ifarn:2  yn:1  tan:1  ,:0  pup-:1  prys:1
+yn:1  ifarn:2  yn:1  tan:1  ,:0  pup-prys:2
 Niver a sylabennow y'n linenn = 7
-YN Ifarn YN TAN  PUP- PRYS
+YN Ifarn YN TAN  PUP-prys
 
 yn:1  poethvann:2  bras:1  ow:1  leski:2  .:0
 Niver a sylabennow y'n linenn = 7
@@ -2427,9 +2427,9 @@ Sotel:2  yth:1  yw:1  gans:1  henna:2  ,:0
 Niver a sylabennow y'n linenn = 7
 SOtel yth YW GANS HENna
 
-a-:1  ugh:1  best:1  na:1  pryv:1  y'n:1  bys:1  .:0
+a-ugh:2  best:1  na:1  pryv:1  y'n:1  bys:1  .:0
 Niver a sylabennow y'n linenn = 7
-A- UGH BEST na PRYV Y'N   BYS
+A-ugh BEST na PRYV Y'N   BYS
 
 Yn:1  henna:2  mynnav:2  entra:2  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -2531,17 +2531,17 @@ DHE'N   SERpont  YN SPIT DH'Y   FAS
 
 
 
-Ay:1  !:0  Re:1  debel-:2  diwetthi:3  !:0
+Ay:1  !:0  Re:1  debel-diwetthi:5  !:0
 Niver a sylabennow y'n linenn = 7
-AY  re DEbel- diWEtthi
+AY  re debel-diWEtthi
 
 Gorta:2  ha:1  bydh:1  dhymm:1  rewlys:2  !:0
 Niver a sylabennow y'n linenn = 7
 GORta ha BYDH DHYMM REwlys
 
-Gas:1  vy:1  dhe:1  entra:2  a-:1  ji:1  ,:0
+Gas:1  vy:1  dhe:1  entra:2  a-ji:2  ,:0
 Niver a sylabennow y'n linenn = 7
-GAS vy dhe ENtra A- JI
+GAS vy dhe ENtra a-JI
 
 rag:1  ty:1  ny:1  vydhydh:2  doutys:2
 Niver a sylabennow y'n linenn = 7
@@ -2571,13 +2571,13 @@ Dha:1  fisment:2  dhedhi:2  a:1  bleg:1  .:0
 Niver a sylabennow y'n linenn = 7
 dha FIsment DHEdhi a BLEG
 
-A-:1  ban:1  oma:2  klos:1  entrys:2
+A-ban:2  oma:2  klos:1  entrys:2
 Niver a sylabennow y'n linenn = 7
-A- BAN Oma KLOS ENtrys
+A-ban Oma KLOS ENtrys
 
-ynnos:2  jy:1  a-:1  barth:1  a-:1  ji:1  ,:0
+ynnos:2  jy:1  a-barth:2  a-ji:2  ,:0
 Niver a sylabennow y'n linenn = 7
-YNnos jy A- BARTH A- JI
+YNnos jy A-barth a-JI
 
 ow:1  voys:1  oll:1  otta:2  chanjyes:2  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -2707,9 +2707,9 @@ Piw:1  osta:2  jy:1  eus:1  y'n:1  wydhenn:2
 Niver a sylabennow y'n linenn = 8
 PIW Osta jy EUS Y'N   WYdhenn
 
-a-:1  wartha:2  gans:1  tros:1  ha:1  kan:1  ?:0
+a-wartha:3  gans:1  tros:1  ha:1  kan:1  ?:0
 Niver a sylabennow y'n linenn = 7
-A- WARtha GANS TROS ha KAN
+a-WARtha GANS TROS ha KAN
 
 Marth:1  yw:1  genev:2  dhe'th:1  klywes:2  .:0
 Niver a sylabennow y'n linenn = 7
@@ -2735,9 +2735,9 @@ Na:1  gemmer:2  marth:1  vydh:1  ,:0  benyn:2  'vas:1  .:0
 Niver a sylabennow y'n linenn = 8
 na GEMmer MARTH VYDH  BEnyn 'VAS
 
-My:1  a:1  dheuth:1  a-:1  dhiwedhes:3
+My:1  a:1  dheuth:1  a-dhiwedhes:4
 Niver a sylabennow y'n linenn = 7
-MY a DHEUTH A- dhiWEdhes
+MY a DHEUTH a-dhiWEdhes
 
 mes:1  a'n:1  nev:1  gans:1  hast:1  pur:1  vras:1  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -2783,9 +2783,9 @@ rag:1  der:1  dha:1  er:1  yth:1  'valsa:2
 Niver a sylabennow y'n linenn = 7
 rag DER dha ER yth 'VALsa
 
-ty:1  dhe:1  dhos:1  a'n:1  nev:1  toeth-:1  ta:1  ,:0
+ty:1  dhe:1  dhos:1  a'n:1  nev:1  toeth-ta:2  ,:0
 Niver a sylabennow y'n linenn = 7
-TY dhe DHOS A'N   NEV TOETH- TA
+TY dhe DHOS A'N   NEV TOETH-ta
 
 ha:1  mara:2  teudh:1  alena:3
 Niver a sylabennow y'n linenn = 7
@@ -2951,9 +2951,9 @@ Maga:2  fur:1  ty:1  a:1  via:2  ,:0
 Niver a sylabennow y'n linenn = 7
 MAga FUR TY a VIa
 
-avel:2  Dyw:1  eus:1  a-:1  wartha:2  ,:0
+avel:2  Dyw:1  eus:1  a-wartha:3  ,:0
 Niver a sylabennow y'n linenn = 7
-aVEL DYW EUS A- WARtha
+aVEL DYW EUS a-WARtha
 
 hag:1  a:1  wodhvia:3  pub:1  tra:1  .:0
 Niver a sylabennow y'n linenn = 7
@@ -2979,9 +2979,9 @@ Henna:2  'via:2  rial:2  dra:1  ,:0
 Niver a sylabennow y'n linenn = 7
 HENna 'VIa RIal DRA
 
-bos:1  koth:1  dhe:1  Dhyw:1  a-:1  wartha:2
+bos:1  koth:1  dhe:1  Dhyw:1  a-wartha:3
 Niver a sylabennow y'n linenn = 7
-BOS KOTH dhe DHYW A- WARtha
+BOS KOTH dhe DHYW a-WARtha
 
 hag:1  yn:1  pub:1  poynt:1  ekwal:2  ganso:2  ,:0
 Niver a sylabennow y'n linenn = 8
@@ -3035,9 +3035,9 @@ Skians:2  benyn:2  yw:1  brottal:2  ,:0
 Niver a sylabennow y'n linenn = 7
 SKIans BEnyn YW BROTtal
 
-ha:1  my:1  nyns:1  ov:1  over-:2  sotel:2  .:0
+ha:1  my:1  nyns:1  ov:1  over-sotel:4  .:0
 Niver a sylabennow y'n linenn = 8
-ha MY nyns OV Over- SOtel
+ha MY nyns OV over-SOtel
 
 Lavar:2  dhymm:1  kyns:1  es:1  hedhi:2  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -3067,13 +3067,13 @@ maga:2  fur:1  ty:1  a:1  via:2
 Niver a sylabennow y'n linenn = 7
 MAga FUR TY a VIa
 
-avel:2  Dyw:1  eus:1  a-:1  wartha:2
+avel:2  Dyw:1  eus:1  a-wartha:3
 Niver a sylabennow y'n linenn = 7
-aVEL DYW EUS A- WARtha
+aVEL DYW EUS a-WARtha
 
-yn:1  nev:1  ughel:2  a-:1  ughon:2  .:0
+yn:1  nev:1  ughel:2  a-ughon:3  .:0
 Niver a sylabennow y'n linenn = 7
-YN NEV Ughel A- Ughon
+YN NEV Ughel a-Ughon
 
 Gow:1  vydh:1  ny:1  lavarav:3  .:0
 Niver a sylabennow y'n linenn = 6
@@ -3432,9 +3432,9 @@ My:1  a:1  wra:1  yn:1  pur:1  sertan:2  .:0
 Niver a sylabennow y'n linenn = 7
 MY a WRA YN PUR SERtan
 
-Ny:1  allav:2  nep-:1  pell:1  perthi:2  ,:0
+Ny:1  allav:2  nep-pell:2  perthi:2  ,:0
 Niver a sylabennow y'n linenn = 7
-ny Allav NEP- PELL PERthi
+ny Allav NEP-pell PERthi
 
 pan:1  vo:1  res:1  tastya:2  anedhi:3  .:0
 Niver a sylabennow y'n linenn = 8
@@ -3452,9 +3452,9 @@ ty:1  a:1  yll:1  bos:1  pur:1  veri:2  .:0
 Niver a sylabennow y'n linenn = 7
 TY a YLL BOS PUR VEri
 
-Gans:1  dha:1  lagasow:3  a-:1  les:1
+Gans:1  dha:1  lagasow:3  a-les:2
 Niver a sylabennow y'n linenn = 7
-GANS dha laGAsow A- LES
+GANS dha laGAsow A-les
 
 ty:1  a:1  wel:1  pub:1  tra:1  omma:2  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -3480,9 +3480,9 @@ ny:1  vynnsen:2  awos:2  neb:1  tra:1
 Niver a sylabennow y'n linenn = 7
 ny VYNNsen Awos NEB TRA
 
-yn-:1  bann:1  dha:1  vos:1  eksaltys:3  .:0
+yn-bann:2  dha:1  vos:1  eksaltys:3  .:0
 Niver a sylabennow y'n linenn = 7
-YN- BANN dha VOS ekSALtys
+yn-BANN dha VOS ekSALtys
 
 
 
@@ -3520,9 +3520,9 @@ ha:1  ,:0  re:1  Dhyw:1  an:1  Drynses:2  Tas:1  ,:0
 Niver a sylabennow y'n linenn = 7
 ha  re DHYW an DRYNses TAS
 
-ev:1  a'm:1  sett:1  yn-:1  bann:1  ughel:2  ,:0
+ev:1  a'm:1  sett:1  yn-bann:2  ughel:2  ,:0
 Niver a sylabennow y'n linenn = 7
-EV A'M  SETT YN- BANN Ughel
+EV A'M  SETT yn-BANN Ughel
 
 hag:1  a'm:1  gormel:2  meur:1  ,:0  heb:1  dout:1  .:0
 Niver a sylabennow y'n linenn = 7
@@ -3800,9 +3800,9 @@ Syrra:2  ,:0  ha:1  my:1  ow:1  kwandra:2  ,:0
 Niver a sylabennow y'n linenn = 7
 SYRra  ha MY ow KWANdra
 
-my:1  a:1  glywas:2  a-:1  wartha:2
+my:1  a:1  glywas:2  a-wartha:3
 Niver a sylabennow y'n linenn = 7
-MY a GLYwas A- WARtha
+MY a GLYwas a-WARtha
 
 war:1  an:1  wydhenn:2  unn:1  el:1  hweg:1
 Niver a sylabennow y'n linenn = 7
@@ -3820,9 +3820,9 @@ orth:1  y:1  weles:2  y'n:1  wydhenn:2  .:0
 Niver a sylabennow y'n linenn = 7
 ORTH y WEles Y'N   WYdhenn
 
-Ha:1  dhe-:1  vy:1  yn:1  kortesi:3
+Ha:1  dhe-vy:2  yn:1  kortesi:3
 Niver a sylabennow y'n linenn = 7
-ha DHE- vy YN korTEsi
+ha DHE-vy YN korTEsi
 
 y:1  profyas:2  ,:0  avel:2  kothman:2  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -4211,9 +4211,9 @@ Henna:2  yth:1  yw:1  truedh:2  dra:1  ,:0
 Niver a sylabennow y'n linenn = 7
 HENna yth YW TRUedh DRA
 
-a-:1  ban:1  res:1  dhymmo:2  koela:2
+a-ban:2  res:1  dhymmo:2  koela:2
 Niver a sylabennow y'n linenn = 7
-A- BAN RES DHYMmo KOEla
+A-ban RES DHYMmo KOEla
 
 
 
@@ -4223,9 +4223,9 @@ po:1  kelli:2  an:1  gerensa:3
 Niver a sylabennow y'n linenn = 7
 po KElli an geRENsa
 
-eus:1  ord'nys:2  ynter-:2  ranna:2  .:0
+eus:1  ord'nys:2  ynter-ranna:4  .:0
 Niver a sylabennow y'n linenn = 7
-EUS ORD'nys YNter- RANna
+EUS ORD'nys ynter-RANna
 
 
 
@@ -4243,9 +4243,9 @@ My:1  a:1  wra:1  oll:1  dell:1  vynni:2  .:0
 Niver a sylabennow y'n linenn = 7
 MY a WRA OLL dell VYNni
 
-Dro-:1  va:1  dhymmo:2  desempis:3  ,:0
+Dro-va:2  dhymmo:2  desempis:3  ,:0
 Niver a sylabennow y'n linenn = 7
-DRO- VA DHYMmo deSEMpis
+DRO-va DHYMmo deSEMpis
 
 ha:1  my:1  a:1  wra:1  y:1  dhybri:2  .:0
 Niver a sylabennow y'n linenn = 7
@@ -4461,9 +4461,9 @@ hag A'N   DROS DHYMM dhe DASTya
 
 
 
-A-:1  ban:1  goels'ta:2  orti:2  hi:1  ,:0
+A-ban:2  goels'ta:2  orti:2  hi:1  ,:0
 Niver a sylabennow y'n linenn = 7
-A- BAN GOELS'ta ORti HI
+A-ban GOELS'ta ORti HI
 
 ha:1  guthyl:2  dres:1  ow:1  difenn:2  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -4629,9 +4629,9 @@ Ha:1  ty:1  ,:0  pryv:1  ,:0  a:1  wra:1  kreupya:2  ,:0
 Niver a sylabennow y'n linenn = 7
 ha TY  PRYV  a WRA KREUPya
 
-ha:1  slynkya:2  war:1  dor:1  a-:1  hys:1  .:0
+ha:1  slynkya:2  war:1  dor:1  a-hys:2  .:0
 Niver a sylabennow y'n linenn = 7
-ha SLYNKya WAR DOR A- HYS
+ha SLYNKya WAR DOR A-hys
 
 Ynter:2  hy:1  has:1  hi:1  ha:1  ty:1
 Niver a sylabennow y'n linenn = 7
@@ -4685,9 +4685,9 @@ My:1  a:1  vynn:1  dalleth:2  kreupya:2  ,:0
 Niver a sylabennow y'n linenn = 7
 MY a VYNN DAlleth KREUPya
 
-ha:1  slynkya:2  war:1  dor:1  a-:1  hys:1  .:0
+ha:1  slynkya:2  war:1  dor:1  a-hys:2  .:0
 Niver a sylabennow y'n linenn = 7
-ha SLYNKya WAR DOR A- HYS
+ha SLYNKya WAR DOR A-hys
 
 Dhe'm:1  shap:1  ow:1  honan:2  ottomma:3
 Niver a sylabennow y'n linenn = 8
@@ -4701,9 +4701,9 @@ drog:1  polat:2  ha:1  bras:1  .:0
 Niver a sylabennow y'n linenn = 5
 DROG POlat ha BRAS
 
-Kyn:1  na'm:1  bo-:1  ma:1  lowena:3  ,:0
+Kyn:1  na'm:1  bo-ma:2  lowena:3  ,:0
 Niver a sylabennow y'n linenn = 7
-kyn NA'M  BO- ma loWEna
+kyn NA'M  BO-ma loWEna
 
 an:1  chorl:1  Adam:2  ,:0  hag:1  Eva:2  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -4757,9 +4757,9 @@ A:1  Das:1  ,:0  Dyw:1  y'th:1  wolowys:3  ,:0
 Niver a sylabennow y'n linenn = 7
 a DAS  DYW Y'TH woLOwys
 
-a-:1  ban:1  ov:1  dhe:1  dhrog:1  tewlys:2  ,:0
+a-ban:2  ov:1  dhe:1  dhrog:1  tewlys:2  ,:0
 Niver a sylabennow y'n linenn = 7
-A- BAN OV dhe DHROG TEwlys
+A-ban OV dhe DHROG TEwlys
 
 gront:1  dhe'th:1  kreatur:3  ,:0  my:1  a'th:1  pys:1  ,:0
 Niver a sylabennow y'n linenn = 8
@@ -4941,9 +4941,9 @@ dhe VOS DHEdha aLEMma
 
 
 
-Adam:2  ,:0  ke:1  yn-:1  mes:1  a'n:1  wlas:1  ,:0
+Adam:2  ,:0  ke:1  yn-mes:2  a'n:1  wlas:1  ,:0
 Niver a sylabennow y'n linenn = 7
-Adam  KE YN- mes A'N   WLAS
+Adam  KE YN-mes A'N   WLAS
 
 dhe:1  gres:1  an:1  bys:1  dhe:1  vywa:2  ;:0
 Niver a sylabennow y'n linenn = 7
@@ -5209,9 +5209,9 @@ Rag:1  yth:1  o:1  ev:1  re:1  wili:2
 Niver a sylabennow y'n linenn = 7
 rag yth O EV re WIli
 
-pan:1  edh:1  y'n:1  serpont:2  a-:1  ji:1
+pan:1  edh:1  y'n:1  serpont:2  a-ji:2
 Niver a sylabennow y'n linenn = 7
-pan EDH Y'N   SERpont A- JI
+pan EDH Y'N   SERpont a-JI
 
 rag:1  dha:1  doella:2  .:0
 Niver a sylabennow y'n linenn = 4
@@ -5225,9 +5225,9 @@ rag dha DOElla
 
 
 
-A-:1  ban:1  oma:2  kowl:1  diglos:2
+A-ban:2  oma:2  kowl:1  diglos:2
 Niver a sylabennow y'n linenn = 7
-A- BAN Oma KOWL diGLOS
+A-ban Oma KOWL diGLOS
 
 hag:1  a:1  baradhis:3  helghys:2  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -5557,9 +5557,9 @@ an:1  ys:1  na'n:1  frutys:2  devri:2  .:0
 Niver a sylabennow y'n linenn = 7
 an YS NA'N   FRUtys deVRI
 
-Taw:1  ,:0  Abel:2  ,:0  dhymmo:2  ,:0  penn-:1  koeg:1  !:0
+Taw:1  ,:0  Abel:2  ,:0  dhymmo:2  ,:0  penn-koeg:2  !:0
 Niver a sylabennow y'n linenn = 7
-TAW  Abel  DHYMmo  PENN- KOEG
+TAW  Abel  DHYMmo  PENN-koeg
 
 My:1  a:1  guntell:2  dreyn:1  ha:1  spern:1
 Niver a sylabennow y'n linenn = 7
@@ -5797,9 +5797,9 @@ my:1  a:1  woer:1  gwir:1  .:0
 Niver a sylabennow y'n linenn = 4
 MY a WOER GWIR
 
-Ow:1  thas:1  ,:0  kyn:1  fo-:1  va:1  serrys:2
+Ow:1  thas:1  ,:0  kyn:1  fo-va:2  serrys:2
 Niver a sylabennow y'n linenn = 7
-ow THAS  kyn FO- VA SERrys
+ow THAS  kyn FO-va SERrys
 
 pan:1  glywo:2  an:1  nowedhys:3
 Niver a sylabennow y'n linenn = 7
@@ -6229,9 +6229,9 @@ mos:1  alemma:3
 Niver a sylabennow y'n linenn = 4
 MOS aLEMma
 
-ha:1  gwandra:2  a-:1  dro:1  y'n:1  pow:1  .:0
+ha:1  gwandra:2  a-dro:2  y'n:1  pow:1  .:0
 Niver a sylabennow y'n linenn = 7
-ha GWANdra A- DRO Y'N   POW
+ha GWANdra A-dro Y'N   POW
 
 Kemmys:2  yw:1  an:1  mollothow:3
 Niver a sylabennow y'n linenn = 7
@@ -6494,9 +6494,9 @@ ow:1  molleth:2  dhiso:2  pub:1  prys:1  !:0
 Niver a sylabennow y'n linenn = 7
 ow MOlleth DHIso PUB PRYS
 
-Henna:2  o:1  gwann-:1  ober:2  gwrys:1  ,:0
+Henna:2  o:1  gwann-ober:3  gwrys:1  ,:0
 Niver a sylabennow y'n linenn = 7
-HENna O GWANN- Ober GWRYS
+HENna O gwann-Ober GWRYS
 
 may:1  ma:1  Dyw:1  ha'n:1  nor:1  keffrys:2
 Niver a sylabennow y'n linenn = 7
@@ -6522,9 +6522,9 @@ heb:1  joy:1  vydh:1  na:1  lowena:3
 Niver a sylabennow y'n linenn = 7
 HEB JOY VYDH na loWEna
 
-der:1  dha:1  wann-:1  ober:2  omma:2  .:0
+der:1  dha:1  wann-ober:3  omma:2  .:0
 Niver a sylabennow y'n linenn = 7
-DER dha WANN- Ober OMma
+DER dha wann-Ober OMma
 
 Rakhenna:3  voyd:1  alemma:3  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -6834,17 +6834,17 @@ par:1  dell:1  osta:2  ow:1  fries:2
 Niver a sylabennow y'n linenn = 7
 PAR dell Osta ow FRIes
 
-ha'w:1  hwoer:1  a-:1  barth:1  mamm:1  ha:1  tas:1  .:0
+ha'w:1  hwoer:1  a-barth:2  mamm:1  ha:1  tas:1  .:0
 Niver a sylabennow y'n linenn = 7
-HA'W   HWOER A- BARTH MAMM ha TAS
+HA'W   HWOER A-barth MAMM ha TAS
 
 Gallas:2  genev:2  sorr:1  an:1  Tas:1
 Niver a sylabennow y'n linenn = 7
 GAllas GEnev SORR an TAS
 
-rag:1  ladha:2  Abel:2  penn-:1  bras:1  ,:0
+rag:1  ladha:2  Abel:2  penn-bras:2  ,:0
 Niver a sylabennow y'n linenn = 7
-rag LAdha Abel PENN- BRAS
+rag LAdha Abel PENN-bras
 
 ynwedh:2  molleth:2  mamm:1  ha:1  tas:1
 Niver a sylabennow y'n linenn = 7
@@ -6926,9 +6926,9 @@ na:1  anedha:3  i:1  bydh:1  moy:1  ,:0
 Niver a sylabennow y'n linenn = 7
 na aNEdha I BYDH MOY
 
-my:1  ny:1  settyav:2  gwel-:1  gala:2  .:0
+my:1  ny:1  settyav:2  gwel-gala:3  .:0
 Niver a sylabennow y'n linenn = 7
-MY ny SETTyav GWEL- GAla
+MY ny SETTyav gwel-GAla
 
 Genev:2  lowr:1  i:1  a:1  sorras:2
 Niver a sylabennow y'n linenn = 7
@@ -7058,17 +7058,17 @@ dout:1  bos:1  toellys:2  .:0
 Niver a sylabennow y'n linenn = 4
 DOUT BOS TOEllys
 
-A-:1  ban:1  yw:1  pub:1  tra:1  parys:2  ,:0
+A-ban:2  yw:1  pub:1  tra:1  parys:2  ,:0
 Niver a sylabennow y'n linenn = 7
-A- BAN YW PUB TRA PArys
+A-ban YW PUB TRA PArys
 
 deun:1  ni:1  yn:1  kerdh:1  kekeffrys:3  ,:0
 Niver a sylabennow y'n linenn = 7
 DEUN NI YN KERDH keKEFfrys
 
-pellder:2  a-:1  dro:1  y'n:1  bys:1  .:0
+pellder:2  a-dro:2  y'n:1  bys:1  .:0
 Niver a sylabennow y'n linenn = 6
-PELLder A- DRO Y'N   BYS
+PELLder A-dro Y'N   BYS
 
 Ha'gan:2  fleghes:2  kekeffrys:3  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -7207,9 +7207,9 @@ dre'n:1  an:1  planetys:3  ,:0  mes:1  ha:1  chi:1  .:0
 Niver a sylabennow y'n linenn = 8
 DRE'N   an plaNEtys  mes ha CHI
 
-Der:1  howl:1  ha:1  ster:1  a-:1  wartha:2
+Der:1  howl:1  ha:1  ster:1  a-wartha:3
 Niver a sylabennow y'n linenn = 7
-DER HOWL ha STER A- WARtha
+DER HOWL ha STER a-WARtha
 
 ev:1  a:1  wra:1  oll:1  dissernya:3
 Niver a sylabennow y'n linenn = 7
@@ -7243,17 +7243,17 @@ ha:1  gwrier:2  a:1  oll:1  an:1  bys:1  .:0
 Niver a sylabennow y'n linenn = 7
 ha GWRIer a OLL an BYS
 
-Yth:1  os-:1  ta:1  Arloedh:2  heb:1  par:1  .:0
+Yth:1  os-ta:2  Arloedh:2  heb:1  par:1  .:0
 Niver a sylabennow y'n linenn = 7
-yth OS- TA ARloedh HEB PAR
+yth OS-ta ARloedh HEB PAR
 
 Yn:1  pub:1  plas:1  re:1  bo:1  gordhys:2  .:0
 Niver a sylabennow y'n linenn = 7
 YN PUB PLAS re bo GORdhys
 
-Neb:1  a'th:1  enor:2  ny:1  dhrog-:1  far:1  .:0
+Neb:1  a'th:1  enor:2  ny:1  dhrog-far:2  .:0
 Niver a sylabennow y'n linenn = 7
-NEB A'TH Enor ny DHROG- FAR
+NEB A'TH Enor ny DHROG-far
 
 Yn:1  Seth:1  re:1  bo:1  kollenwys:3
 Niver a sylabennow y'n linenn = 7
@@ -7275,9 +7275,9 @@ Ha:1  my:1  ynwedh:2  ,:0  Arloedh:2  nev:1  ,:0
 Niver a sylabennow y'n linenn = 7
 ha MY ynWEDH  ARloedh NEV
 
-a'th:1  lel-:1  wonis:2  dell:1  vo:1  res:1  ,:0
+a'th:1  lel-wonis:3  dell:1  vo:1  res:1  ,:0
 Niver a sylabennow y'n linenn = 7
-A'TH LEL- WOnis dell VO RES
+A'TH lel-WOnis dell VO RES
 
 par:1  dell:1  osta:2  Arloedh:2  krev:1  .:0
 Niver a sylabennow y'n linenn = 7
@@ -7307,9 +7307,9 @@ dhe'th:1  weles:2  yn:1  lowender:3  ,:0
 Niver a sylabennow y'n linenn = 7
 DHE'TH WEles YN loWENder
 
-gans:1  dha:1  eledh:2  a-:1  wartha:2  ,:0
+gans:1  dha:1  eledh:2  a-wartha:3  ,:0
 Niver a sylabennow y'n linenn = 7
-GANS dha Eledh A- WARtha
+GANS dha Eledh a-WARtha
 
 ughel:2  yn:1  nev:1  .:0
 Niver a sylabennow y'n linenn = 4
@@ -7339,9 +7339,9 @@ Ughel YN NEV
 
 
 
-Pes:1  !:0  Goslowewgh:3  ,:0  a-:1  derdro:2  ,:0
+Pes:1  !:0  Goslowewgh:3  ,:0  a-derdro:3  ,:0
 Niver a sylabennow y'n linenn = 7
-PES  goSLOwewgh  A- DERdro
+PES  goSLOwewgh  a-DERdro
 
 orthiv:2  vy:1  myns:1  eus:1  omma:2  .:0
 Niver a sylabennow y'n linenn = 7
@@ -7707,9 +7707,9 @@ Ny:1  besyav:2  bones:2  gwelys:2
 Niver a sylabennow y'n linenn = 7
 ny BESyav BOnes GWElys
 
-gans:1  mab-:1  den:1  y'n:1  bys:1  ma:1  byw:1  ,:0
+gans:1  mab-den:2  y'n:1  bys:1  ma:1  byw:1  ,:0
 Niver a sylabennow y'n linenn = 7
-GANS MAB- DEN Y'N   BYS ma BYW
+GANS MAB-den Y'N   BYS ma BYW
 
 drefenn:2  ow:1  bos:1  emskemunys:4  .:0
 Niver a sylabennow y'n linenn = 8
@@ -7892,9 +7892,9 @@ my:1  a:1  wel:1  unn:1  lo'n:1  pur:1  vras:1
 Niver a sylabennow y'n linenn = 7
 MY a WEL UNN LO'N   PUR VRAS
 
-yn-:1  hons:1  yn:1  bush:1  ow:1  plattya:2  .:0
+yn-hons:2  yn:1  bush:1  ow:1  plattya:2  .:0
 Niver a sylabennow y'n linenn = 7
-YN- HONS YN BUSH ow PLATTya
+YN-hons YN BUSH ow PLATTya
 
 Syrra:2  ,:0  yn:1  mysk:1  an:1  bestes:2
 Niver a sylabennow y'n linenn = 7
@@ -7904,9 +7904,9 @@ stranj:1  yth:1  yw:1  ev:1  dhe:1  weles:2  .:0
 Niver a sylabennow y'n linenn = 7
 STRANJ yth YW EV dhe WEles
 
-Mirewgh:2  ,:0  mester:2  ,:0  py:1  'ma-:1  va:1  .:0
+Mirewgh:2  ,:0  mester:2  ,:0  py:1  'ma-va:2  .:0
 Niver a sylabennow y'n linenn = 7
-MIrewgh  MEster  PY 'MA- VA
+MIrewgh  MEster  PY 'MA-va
 
 
 
@@ -7960,9 +7960,9 @@ Now:1  ,:0  otta:2  an:1  seth:1  kompes:2  .:0
 Niver a sylabennow y'n linenn = 7
 NOW  OTta an SETH KOMpes
 
-Tenn:1  hi:1  yn-:1  bann:1  bys:1  y'n:1  pil:1  ,:0
+Tenn:1  hi:1  yn-bann:2  bys:1  y'n:1  pil:1  ,:0
 Niver a sylabennow y'n linenn = 7
-TENN HI YN- BANN BYS Y'N   PIL
+TENN HI yn-BANN BYS Y'N   PIL
 
 par:1  dell:1  os:1  archer:2  prevys:2
 Niver a sylabennow y'n linenn = 7
@@ -8527,9 +8527,9 @@ sur:1  nos:1  ha:1  dydh:1  .:0
 Niver a sylabennow y'n linenn = 4
 SUR NOS ha DYDH
 
-Ny:1  besyav:2  gweles:2  mab-:1  den:1
+Ny:1  besyav:2  gweles:2  mab-den:2
 Niver a sylabennow y'n linenn = 7
-ny BESyav GWEles MAB- DEN
+ny BESyav GWEles MAB-den
 
 gans:1  ow:1  bodh:1  yn:1  neb:1  termyn:2  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -8567,9 +8567,9 @@ hag:1  ev:1  dha:1  vroder:2  nessa:2  ?:0
 Niver a sylabennow y'n linenn = 7
 hag EV dha VROder NESsa
 
-Henna:2  o:1  gwann-:1  ober:2  gwrys:1  .:0
+Henna:2  o:1  gwann-ober:3  gwrys:1  .:0
 Niver a sylabennow y'n linenn = 7
-HENna O GWANN- Ober GWRYS
+HENna O gwann-Ober GWRYS
 
 
 
@@ -8815,9 +8815,9 @@ Y'n:1  pytt:1  ma:1  y:1  hwredh:1  triga:2
 Niver a sylabennow y'n linenn = 7
 Y'N   PYTT ma y HWREDH TRIga
 
-genev:2  vy:1  ,:0  a-:1  barth:1  a-:1  woeles:2  ,:0
+genev:2  vy:1  ,:0  a-barth:2  a-woeles:3  ,:0
 Niver a sylabennow y'n linenn = 8
-GEnev vy  A- BARTH A- WOEles
+GEnev vy  A-barth a-WOEles
 
 hag:1  a:1  lesk:1  yn:1  toemmder:2  tan:1  .:0
 Niver a sylabennow y'n linenn = 7
@@ -8911,9 +8911,9 @@ My:1  ny:1  allav:2  prederi:3
 Niver a sylabennow y'n linenn = 7
 MY ny Allav preDEri
 
-pana:2  gwartron:2  yth:1  a-:1  ma:1  ,:0
+pana:2  gwartron:2  yth:1  a-ma:2  ,:0
 Niver a sylabennow y'n linenn = 7
-PAna GWARtron yth A- ma
+PAna GWARtron yth A-ma
 
 syrr:1  ,:0  dhe:1  hwilas:2  paradhis:3  .:0
 Niver a sylabennow y'n linenn = 7
@@ -9007,9 +9007,9 @@ Ow:1  thas:1  ker:1  ,:0  mos:1  alemma:3
 Niver a sylabennow y'n linenn = 7
 ow THAS KER  MOS aLEMma
 
-my:1  a:1  vynn:1  ,:0  y'n:1  by-:1  and-by:2  ,:0
+my:1  a:1  vynn:1  ,:0  y'n:1  by-and-by:3  ,:0
 Niver a sylabennow y'n linenn = 7
-MY a VYNN  Y'N   BY- AND-by
+MY a VYNN  Y'N   by-AND-by
 
 hag:1  y:1  tov:1  dhy'hwi:2  arta:2
 Niver a sylabennow y'n linenn = 7
@@ -9019,9 +9019,9 @@ gans:1  gorthyp:2  ,:0  kyns:1  es:1  hedhi:2  ,:0
 Niver a sylabennow y'n linenn = 7
 GANS GORthyp  KYNS ES HEdhi
 
-der:1  bodh:1  an:1  Tas:1  a-:1  wartha:2  .:0
+der:1  bodh:1  an:1  Tas:1  a-wartha:3  .:0
 Niver a sylabennow y'n linenn = 7
-DER BODH an TAS A- WARtha
+DER BODH an TAS a-WARtha
 
 
 
@@ -9071,9 +9071,9 @@ yth:1  en:1  der:1  ordyr:2  an:1  Tas:1  .:0
 Niver a sylabennow y'n linenn = 7
 yth EN DER ORdyr an TAS
 
-Tru:1  ,:0  go-:1  vy:1  .:0
+Tru:1  ,:0  go-vy:2  .:0
 Niver a sylabennow y'n linenn = 3
-TRU  GO- vy
+TRU  GO-vy
 
 
 
@@ -9115,9 +9115,9 @@ EWN DHOdho  DH'Y   saLUsi
 
 
 
-El:1  Dyw:1  an:1  nev:1  a-:1  wartha:2  ,:0
+El:1  Dyw:1  an:1  nev:1  a-wartha:3  ,:0
 Niver a sylabennow y'n linenn = 7
-EL DYW an NEV A- WARtha
+EL DYW an NEV a-WARtha
 
 dhis:1  lowena:3  ha:1  meur:1  joy:1  !:0
 Niver a sylabennow y'n linenn = 7
@@ -9195,9 +9195,9 @@ mes:1  pub:1  eur:1  ma:1  ow:1  kria:2
 Niver a sylabennow y'n linenn = 7
 mes PUB EUR ma ow KRIa
 
-war-:1  lergh:1  an:1  Oyl:1  a:1  Versi:2  .:0
+war-lergh:2  an:1  Oyl:1  a:1  Versi:2  .:0
 Niver a sylabennow y'n linenn = 7
-WAR- LERGH an OYL a VERsi
+WAR-lergh an OYL a VERsi
 
 
 
@@ -9220,9 +9220,9 @@ pandr:1  ':0  a:1  welydh:2  a:1  strangeness:3
 Niver a sylabennow y'n linenn = 8
 PANDR  a WElydh a stranGEness
 
-y'n:1  jardin:2  a-:1  barth:1  a-:1  ji:1  .:0
+y'n:1  jardin:2  a-barth:2  a-ji:2  .:0
 Niver a sylabennow y'n linenn = 7
-Y'N   JARdin A- BARTH A- JI
+Y'N   JARdin A-barth a-JI
 
 
 
@@ -9260,9 +9260,9 @@ Lemmyn:2  ,:0  Seth:1  ,:0  lavar:2  dhymmo:2
 Niver a sylabennow y'n linenn = 7
 LEMmyn  SETH  LAvar DHYMmo
 
-a-:1  bervedh:2  pandra:2  wel'ta:2  .:0
+a-bervedh:3  pandra:2  wel'ta:2  .:0
 Niver a sylabennow y'n linenn = 7
-A- BERvedh PANdra WEL'ta
+a-BERvedh PANdra WEL'ta
 
 Na:1  wra:1  keles:2  unn:1  dra:1  .:0
 Niver a sylabennow y'n linenn = 6
@@ -9276,9 +9276,9 @@ My:1  a:1  wel:1  sur:1  unn:1  wydhenn:2  ,:0
 Niver a sylabennow y'n linenn = 7
 MY a WEL SUR UNN WYdhenn
 
-ha:1  serpont:2  ynni:2  a-:1  vann:1  .:0
+ha:1  serpont:2  ynni:2  a-vann:2  .:0
 Niver a sylabennow y'n linenn = 7
-ha SERpont YNni A- VANN
+ha SERpont YNni A-vann
 
 Marow:2  sygh:1  hi:1  a:1  'valsa:2  .:0
 Niver a sylabennow y'n linenn = 7
@@ -9352,9 +9352,9 @@ My:1  a:1  wel:1  goodly:3  wydhenn:2
 Niver a sylabennow y'n linenn = 8
 MY a WEL goOdly WYdhenn
 
-ha'y:1  thopp:1  pur:1  ughel:2  yn-:1  bann:1  .:0
+ha'y:1  thopp:1  pur:1  ughel:2  yn-bann:2  .:0
 Niver a sylabennow y'n linenn = 7
-HA'Y   THOPP PUR Ughel YN- BANN
+HA'Y   THOPP PUR Ughel yn-BANN
 
 Bys:1  yn:1  nev:1  'ma:1  ow:1  tevi:2  .:0
 Niver a sylabennow y'n linenn = 7
@@ -9464,9 +9464,9 @@ a:1  dheuth:1  mes:1  a'n:1  aval:2  ma:1  .:0
 Niver a sylabennow y'n linenn = 7
 a DHEUTH mes A'N   Aval ma
 
-Kemmer:2  i:1  ha:1  gorr:1  yn-:1  bann:1
+Kemmer:2  i:1  ha:1  gorr:1  yn-bann:2
 Niver a sylabennow y'n linenn = 7
-KEMmer I ha GORR YN- BANN
+KEMmer I ha GORR yn-BANN
 
 yn:1  neb:1  tyller:2  dhe:1  govva:2  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -9508,9 +9508,9 @@ na:1  berth:1  dout:1  ,:0  a:1  vydh:1  pur:1  deg:1  .:0
 Niver a sylabennow y'n linenn = 7
 na BERTH DOUT  a VYDH PUR DEG
 
-Ha:1  pan:1  vo:1  hi:1  kowl-:1  devys:2  ,:0
+Ha:1  pan:1  vo:1  hi:1  kowl-devys:3  ,:0
 Niver a sylabennow y'n linenn = 7
-ha pan VO HI KOWL- DEvys
+ha pan VO HI kowl-DEvys
 
 hi:1  a:1  vydh:1  pub:1  eur:1  parys:2
 Niver a sylabennow y'n linenn = 7
@@ -9532,9 +9532,9 @@ y'n:1  eur:1  na:1  gwaytyes:2  dihwans:2
 Niver a sylabennow y'n linenn = 7
 Y'N   EUR na GWAYTyes diHWANS
 
-war-:1  lergh:1  Oyl:1  Mersi:2  pup-:1  prys:1  ,:0
+war-lergh:2  Oyl:1  Mersi:2  pup-prys:2  ,:0
 Niver a sylabennow y'n linenn = 7
-WAR- LERGH OYL MERsi PUP- PRYS
+WAR-lergh OYL MERsi PUP-prys
 
 ha:1  Salvador:3  yn:1  tevri:2
 Niver a sylabennow y'n linenn = 7
@@ -9592,9 +9592,9 @@ My:1  a:1  vynn:1  mos:1  alemma:3
 Niver a sylabennow y'n linenn = 7
 MY a VYNN MOS aLEMma
 
-yn:1  hanow:2  Dyw:1  a-:1  wartha:2  ,:0
+yn:1  hanow:2  Dyw:1  a-wartha:3  ,:0
 Niver a sylabennow y'n linenn = 7
-YN HAnow DYW A- WARtha
+YN HAnow DYW a-WARtha
 
 dhe:1  dre:1  dhe:1  Adam:2  ow:1  thas:1  .:0
 Niver a sylabennow y'n linenn = 7
@@ -9709,9 +9709,9 @@ speshyal:2  unn:1  wydhenn:2  loryus:2
 Niver a sylabennow y'n linenn = 7
 SPESHyal UNN WYdhenn LORyus
 
-ow:1  hedhes:2  yn-:1  bann:1  pur:1  stout:1
+ow:1  hedhes:2  yn-bann:2  pur:1  stout:1
 Niver a sylabennow y'n linenn = 7
-ow HEdhes YN- BANN PUR STOUT
+ow HEdhes yn-BANN PUR STOUT
 
 bys:1  yn:1  nev:1  ,:0  sur:1  my:1  a:1  grys:1  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -9785,9 +9785,9 @@ My:1  a:1  welas:2  gwydhenn:2  moy:1
 Niver a sylabennow y'n linenn = 7
 MY a WElas GWYdhenn MOY
 
-ha:1  serpont:2  yn-:1  bann:1  ynni:2  .:0
+ha:1  serpont:2  yn-bann:2  ynni:2  .:0
 Niver a sylabennow y'n linenn = 7
-ha SERpont YN- BANN YNni
+ha SERpont yn-BANN YNni
 
 Marow:2  sygh:1  hi:1  a:1  'valsa:2  .:0
 Niver a sylabennow y'n linenn = 7
@@ -9929,9 +9929,9 @@ ha:1  dha:1  jarjya:2  my:1  a:1  wra:1
 Niver a sylabennow y'n linenn = 7
 ha dha JARJya MY a WRA
 
-yn-:1  dann:1  ow:1  bennath:2  ,:0  pur:1  lel:1  .:0
+yn-dann:2  ow:1  bennath:2  ,:0  pur:1  lel:1  .:0
 Niver a sylabennow y'n linenn = 7
-YN- DANN ow BENnath  PUR LEL
+yn-DANN ow BENnath  PUR LEL
 
 Gwayt:1  an:1  Tas:1  a:1  Nev:1  gordhya:2  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -9941,9 +9941,9 @@ ha:1  pub:1  eur:1  orto:2  koela:2
 Niver a sylabennow y'n linenn = 7
 ha PUB EUR ORto KOEla
 
-yn:1  pub:1  edhomm:2  y:1  fes-:1  ta:1  .:0
+yn:1  pub:1  edhomm:2  y:1  fes-ta:2  .:0
 Niver a sylabennow y'n linenn = 7
-YN PUB Edhomm y FES- TA
+YN PUB Edhomm y FES-ta
 
 Ev:1  a:1  wra:1  sur:1  dha:1  sokra:2  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -10009,9 +10009,9 @@ ow:1  kesreynya:3  yn:1  joyys:2
 Niver a sylabennow y'n linenn = 7
 ow kesREYNya YN JOyys
 
-yn:1  Gwlas:1  Nev:1  eus:1  a-:1  wartha:2  .:0
+yn:1  Gwlas:1  Nev:1  eus:1  a-wartha:3  .:0
 Niver a sylabennow y'n linenn = 7
-YN GWLAS NEV EUS A- WARtha
+YN GWLAS NEV EUS a-WARtha
 
 ha:1  rakhenna:3  y:1  koedh:1  dhymmo:2
 Niver a sylabennow y'n linenn = 8
@@ -10061,9 +10061,9 @@ parys:2  dhe'm:1  gwana:2  pub:1  tu:1  .:0
 Niver a sylabennow y'n linenn = 7
 PArys DHE'M  GWAna PUB TU
 
-Nyns:1  eus:1  skapya:2  dhe-:1  vy:1  .:0
+Nyns:1  eus:1  skapya:2  dhe-vy:2  .:0
 Niver a sylabennow y'n linenn = 6
-nyns EUS SKAPya DHE- vy
+nyns EUS SKAPya DHE-vy
 
 A'n:1  prys:1  mall:1  yw:1  genev:2  .:0
 Niver a sylabennow y'n linenn = 6
@@ -10073,9 +10073,9 @@ My:1  a:1  servyas:2  pell:1  an:1  bys:1  ,:0
 Niver a sylabennow y'n linenn = 7
 MY a SERVyas PELL an BYS
 
-a-:1  ban:1  veuma:2  kyns:1  formys:2  .:0
+a-ban:2  veuma:2  kyns:1  formys:2  .:0
 Niver a sylabennow y'n linenn = 7
-A- BAN VEUma KYNS FORmys
+A-ban VEUma KYNS FORmys
 
 Naw:1  kans:1  bloedh:1  ov:1  ,:0  my:1  a:1  grys:1  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -10253,9 +10253,9 @@ deun:1  dh'y:1  hedhes:2  dhe'n:1  gegin:2  ,:0
 Niver a sylabennow y'n linenn = 7
 DEUN DH'Y   HEdhes DHE'N   GEgin
 
-dhe'n:1  pytt:1  down:1  barth:1  a-:1  woeles:2  .:0
+dhe'n:1  pytt:1  down:1  barth:1  a-woeles:3  .:0
 Niver a sylabennow y'n linenn = 7
-DHE'N   PYTT DOWN BARTH A- WOEles
+DHE'N   PYTT DOWN BARTH a-WOEles
 
 
 
@@ -10269,9 +10269,9 @@ Yma:2  ken:1  or'nys:2  ragdho:2  .:0
 Niver a sylabennow y'n linenn = 7
 yMA KEN OR'nys RAGdho
 
-Yn:1  lymbo:2  barth:1  a-:1  wartha:2
+Yn:1  lymbo:2  barth:1  a-wartha:3
 Niver a sylabennow y'n linenn = 7
-YN LYMbo BARTH A- WARtha
+YN LYMbo BARTH a-WARtha
 
 ena:2  ev:1  a:1  wra:1  triga:2  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -10313,9 +10313,9 @@ An:1  chorl:1  Adam:2  y:1  drigva:2
 Niver a sylabennow y'n linenn = 7
 an CHORL Adam y DRIGva
 
-a:1  vydh:1  a-:1  barth:1  a-:1  wartha:2  ,:0
+a:1  vydh:1  a-barth:2  a-wartha:3  ,:0
 Niver a sylabennow y'n linenn = 7
-a VYDH A- BARTH A- WARtha
+a VYDH A-barth a-WARtha
 
 yn:1  onan:2  a'n:1  kloysters:2  na:1
 Niver a sylabennow y'n linenn = 7
@@ -10345,9 +10345,9 @@ ev:1  a:1  drig:1  bys:1  vynytha:3  .:0
 Niver a sylabennow y'n linenn = 7
 EV a DRIG BYS vyNYtha
 
-Yma:2  ev:1  barth:1  a-:1  woeles:2
+Yma:2  ev:1  barth:1  a-woeles:3
 Niver a sylabennow y'n linenn = 7
-yMA EV BARTH A- WOEles
+yMA EV BARTH a-WOEles
 
 yn:1  pytt:1  down:1  ow:1  leskya:2  .:0
 Niver a sylabennow y'n linenn = 6
@@ -10465,9 +10465,9 @@ an:1  plas:1  yw:1  or'nys:2  ragdha:2  ,:0
 Niver a sylabennow y'n linenn = 7
 an PLAS YW OR'nys RAGdha
 
-yn:1  ifarn:2  barth:1  a-:1  woeles:2  .:0
+yn:1  ifarn:2  barth:1  a-woeles:3  .:0
 Niver a sylabennow y'n linenn = 7
-YN Ifarn BARTH A- WOEles
+YN Ifarn BARTH a-WOEles
 
 Hag:1  Adam:2  ,:0  venjans:2  dhodho:2  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -10565,9 +10565,9 @@ ty:1  a:1  vydh:1  kyrghys:2  dhe'n:1  joy:1
 Niver a sylabennow y'n linenn = 7
 TY a VYDH KYRghys DHE'N   JOY
 
-dhe'n:1  nev:1  ughel:2  a-:1  ughon:2  .:0
+dhe'n:1  nev:1  ughel:2  a-ughon:3  .:0
 Niver a sylabennow y'n linenn = 7
-DHE'N   NEV Ughel A- Ughon
+DHE'N   NEV Ughel a-Ughon
 
 
 
@@ -10942,9 +10942,9 @@ mayth:1  yw:1  Dyw:1  an:1  Tas:1  serrys:2
 Niver a sylabennow y'n linenn = 7
 mayth YW DYW an TAS SERrys
 
-bythkweth:2  gul:1  mab-:1  den:1  omma:2  .:0
+bythkweth:2  gul:1  mab-den:2  omma:2  .:0
 Niver a sylabennow y'n linenn = 7
-BYTHkweth GUL MAB- DEN OMma
+BYTHkweth GUL MAB-den OMma
 
 Dystruksyon:4  yma:2  or'nys:2
 Niver a sylabennow y'n linenn = 8
@@ -10966,13 +10966,13 @@ der:1  an:1  dyskans:2  eus:1  dhymmo:2  res:1
 Niver a sylabennow y'n linenn = 8
 DER an DYskans EUS DHYMmo RES
 
-gans:1  an:1  Tas:1  eus:1  a-:1  ughon:2  .:0
+gans:1  an:1  Tas:1  eus:1  a-ughon:3  .:0
 Niver a sylabennow y'n linenn = 7
-GANS an TAS EUS A- Ughon
+GANS an TAS EUS a-Ughon
 
-An:1  planetys:3  eus:1  a-:1  wartha:2  ,:0
+An:1  planetys:3  eus:1  a-wartha:3  ,:0
 Niver a sylabennow y'n linenn = 8
-an plaNEtys EUS A- WARtha
+an plaNEtys EUS a-WARtha
 
 ha'n:1  ster:1  ynwedh:2  maga:2  ta:1  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -11199,9 +11199,9 @@ yn:1  dyffrans:2  ha:1  kehaval:3  .:0
 Niver a sylabennow y'n linenn = 7
 YN DYFfrans ha keHAval
 
-Lemmyn:2  my:1  a's:1  gorr:1  yn-:1  bann:1  ,:0
+Lemmyn:2  my:1  a's:1  gorr:1  yn-bann:2  ,:0
 Niver a sylabennow y'n linenn = 7
-LEMmyn MY A'S  GORR YN- BANN
+LEMmyn MY A'S  GORR yn-BANN
 
 hag:1  y'n:1  eyl:1  sur:1  bys:1  vykken:2
 Niver a sylabennow y'n linenn = 7
@@ -11311,9 +11311,9 @@ An:1  spyrys:2  ny:1  dryg:1  nevra:2
 Niver a sylabennow y'n linenn = 7
 an SPYrys ny DRYG NEvra
 
-yn:1  korf:1  mab-:1  den:1  vydh:1  y'n:1  bys:1  ,:0
+yn:1  korf:1  mab-den:2  vydh:1  y'n:1  bys:1  ,:0
 Niver a sylabennow y'n linenn = 7
-YN KORF MAB- DEN VYDH Y'N   BYS
+YN KORF MAB-den VYDH Y'N   BYS
 
 ha:1  reson:2  yw:1  ha:1  praga:2  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -11391,9 +11391,9 @@ dhe:1  wordhya:2  ow:1  Arloedh:2  da:1  ,:0
 Niver a sylabennow y'n linenn = 7
 dhe WORDHya ow ARloedh DA
 
-an:1  Drynses:2  eus:1  a-:1  wartha:2  .:0
+an:1  Drynses:2  eus:1  a-wartha:3  .:0
 Niver a sylabennow y'n linenn = 7
-an DRYNses EUS A- WARtha
+an DRYNses EUS a-WARtha
 
 
 
@@ -11495,9 +11495,9 @@ Roumys:2  i:1  a:1  vydh:1  henwys:2  .:0
 Niver a sylabennow y'n linenn = 7
 ROUmys I a VYDH HENwys
 
-A-:1  ves:1  hag:1  a-:1  ji:1  yn:1  ta:1
+A-ves:2  hag:1  a-ji:2  yn:1  ta:1
 Niver a sylabennow y'n linenn = 7
-A- VES hag A- JI YN TA
+A-ves hag a-JI YN TA
 
 gans:1  pyg:1  bedhes:2  stancha:2  gwrys:1  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -11527,9 +11527,9 @@ deg:1  warn:1  ugens:2  may:1  fo:1  gwrys:1  .:0
 Niver a sylabennow y'n linenn = 7
 DEG WARN Ugens may FO GWRYS
 
-War-:1  tu:1  a-:1  dhelergh:2  daras:2
+War-tu:2  a-dhelergh:3  daras:2
 Niver a sylabennow y'n linenn = 7
-WAR- TU A- DHElergh DAras
+WAR-tu a-DHElergh DAras
 
 ty:1  a:1  wra:1  .:0  Port:1  ev:1  a:1  vydh:1  henwys:2
 .:0
@@ -11540,9 +11540,9 @@ Jistys:2  dredho:2  ty:1  a:1  blas:1  ,:0
 Niver a sylabennow y'n linenn = 7
 JIstys DREdho TY a BLAS
 
-a-:1  les:1  rag:1  na:1  vo:1  diges:2  .:0
+a-les:2  rag:1  na:1  vo:1  diges:2  .:0
 Niver a sylabennow y'n linenn = 7
-A- LES rag na VO diGES
+A-les rag na VO diGES
 
 A:1  bub:1  eghenn:2  a:1  ginda:2
 Niver a sylabennow y'n linenn = 7
@@ -11556,9 +11556,9 @@ aga:2  gorra:2  ty:1  a:1  wra:1
 Niver a sylabennow y'n linenn = 7
 Aga GORra TY a WRA
 
-yn:1  dha:1  lester:2  a-:1  bervedh:2  .:0
+yn:1  dha:1  lester:2  a-bervedh:3  .:0
 Niver a sylabennow y'n linenn = 7
-YN dha LEster A- BERvedh
+YN dha LEster a-BERvedh
 
 Pub:1  maner:2  boes:1  y'n:1  bys:1  ma:1
 Niver a sylabennow y'n linenn = 7
@@ -11644,9 +11644,9 @@ nag:1  ello:2  dowr:1  vydh:1  ynno:2  .:0
 Niver a sylabennow y'n linenn = 7
 nag Ello DOWR VYDH YNno
 
-Kyn:1  fo-:1  va:1  gwriys:2  a:1  o'erbyn:3
+Kyn:1  fo-va:2  gwriys:2  a:1  o'erbyn:3
 Niver a sylabennow y'n linenn = 9
-kyn FO- VA GWRIys a o'ERbyn
+kyn FO-va GWRIys a o'ERbyn
 
 y:1  fydh:1  stanch:1  ,:0  my:1  a:1  ragdho:2  .:0
 Niver a sylabennow y'n linenn = 7
@@ -11680,9 +11680,9 @@ Marth:1  yw:1  genev:2  a:1  unn:1  dra:1  ,:0
 Niver a sylabennow y'n linenn = 7
 MARTH YW GEnev a UNN DRA
 
-y:1  vos-:1  ta:1  mar:1  wokki:2  ,:0  Noy:1  .:0
+y:1  vos-ta:2  mar:1  wokki:2  ,:0  Noy:1  .:0
 Niver a sylabennow y'n linenn = 7
-y VOS- TA mar WOKki  NOY
+y VOS-ta mar WOKki  NOY
 
 Praga:2  yw:1  genes:2  jy:1  omma:2
 Niver a sylabennow y'n linenn = 8
@@ -11764,9 +11764,9 @@ dhiworth:2  an:1  keth:1  dial:2  na:1  .:0
 Niver a sylabennow y'n linenn = 7
 DHIworth an KETH dial na
 
-Hwi:1  a:1  wel:1  a-:1  ji:1  dhe:1  spas:1  .:0
+Hwi:1  a:1  wel:1  a-ji:2  dhe:1  spas:1  .:0
 Niver a sylabennow y'n linenn = 7
-HWI a WEL A- JI dhe SPAS
+HWI a WEL a-JI dhe SPAS
 
 Der:1  livyow:2  a:1  dhowr:1  an:1  brassa:2
 Niver a sylabennow y'n linenn = 8
@@ -11788,17 +11788,17 @@ OLL an BYS a VYDH BEUdhys
 
 
 
-Gwell:1  via:2  a:1  ves-:1  ta:1  kregys:2  ,:0
+Gwell:1  via:2  a:1  ves-ta:2  kregys:2  ,:0
 Niver a sylabennow y'n linenn = 8
-GWELL VIa a VES- TA KREgys
+GWELL VIa a VES-ta KREgys
 
 ty:1  hag:1  oll:1  a'n:1  kryjyans:2  na:1  !:0
 Niver a sylabennow y'n linenn = 7
 TY hag OLL A'N   KRYJyans na
 
-A:1  jorl:1  koth:1  ,:0  ty:1  benn-:1  pilys:2  ,:0
+A:1  jorl:1  koth:1  ,:0  ty:1  benn-pilys:3  ,:0
 Niver a sylabennow y'n linenn = 7
-a JORL KOTH  TY BENN- PIlys
+a JORL KOTH  TY benn-PIlys
 
 fatla:2  vynnta:2  jy:1  henna:2  ;:0
 Niver a sylabennow y'n linenn = 7
@@ -11828,9 +11828,9 @@ oll:1  an:1  bys:1  a:1  yll:1  godhvos:2  .:0
 Niver a sylabennow y'n linenn = 7
 OLL an BYS a YLL GODHvos
 
-Venjans:2  war:1  dha:1  benn-:1  kreghi:2  !:0
+Venjans:2  war:1  dha:1  benn-kreghi:3  !:0
 Niver a sylabennow y'n linenn = 7
-VENjans WAR dha BENN- KREghi
+VENjans WAR dha benn-KREghi
 
 Nyns:1  eus:1  omma:2  den:1  y'n:1  wlas:1
 Niver a sylabennow y'n linenn = 7
@@ -11896,9 +11896,9 @@ Hag:1  edrek:2  dhodh:1  ':0  ev:1  yma:2
 Niver a sylabennow y'n linenn = 7
 hag Edrek DHODH  EV yMA
 
-bythkweth:2  mab-:1  den:1  dhe:1  vos:1  gwrys:1  .:0
+bythkweth:2  mab-den:2  dhe:1  vos:1  gwrys:1  .:0
 Niver a sylabennow y'n linenn = 7
-BYTHkweth MAB- DEN dhe VOS GWRYS
+BYTHkweth MAB-den dhe VOS GWRYS
 
 Rakhenna:3  gwrewgh:1  amendya:3  ;:0
 Niver a sylabennow y'n linenn = 7
@@ -11936,9 +11936,9 @@ Y:1  praydha:2  dhymmo:2  lavar:2  ,:0
 Niver a sylabennow y'n linenn = 7
 y PRAYdha DHYMmo LAvar
 
-a:1  wrug:1  Dyw:1  kewsel:2  dhe-:1  jy:1
+a:1  wrug:1  Dyw:1  kewsel:2  dhe-jy:2
 Niver a sylabennow y'n linenn = 7
-a WRUG DYW KEWsel DHE- jy
+a WRUG DYW KEWsel DHE-jy
 
 only:2  ,:0  heb:1  den:1  arall:2  vydh:1  omma:2  ?:0
 Niver a sylabennow y'n linenn = 9
@@ -12028,9 +12028,9 @@ Mar:1  ny:1  wrewgh:1  ,:0  venjans:2  pur:1  vras:1
 Niver a sylabennow y'n linenn = 7
 mar ny WREWGH  VENjans PUR VRAS
 
-a:1  'skynn:1  warnowgh:2  kyns:1  nep-:1  pell:1  ,:0
+a:1  'skynn:1  warnowgh:2  kyns:1  nep-pell:2  ,:0
 Niver a sylabennow y'n linenn = 7
-a 'SKYNN WARnowgh KYNS NEP- PELL
+a 'SKYNN WARnowgh KYNS NEP-pell
 
 rag:1  Dyw:1  a:1  vynn:1  ,:0  agan:2  Tas:1  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -12124,9 +12124,9 @@ awos:2  distrui:3  an:1  bys:1
 Niver a sylabennow y'n linenn = 7
 Awos diSTRUi an BYS
 
-a-:1  ji:1  dhe:1  our:1  .:0
+a-ji:2  dhe:1  our:1  .:0
 Niver a sylabennow y'n linenn = 4
-A- JI dhe OUR
+a-JI dhe OUR
 
 Rag:1  der:1  er:1  oll:1  a:1  veu:1  gwrys:1  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -12384,9 +12384,9 @@ dell YW OR'nys DHYMmo vy
 
 
 
-Kewgh:1  a-:1  bervedh:2  ,:0  ow:1  fleghes:2  ,:0
+Kewgh:1  a-bervedh:3  ,:0  ow:1  fleghes:2  ,:0
 Niver a sylabennow y'n linenn = 7
-KEWGH A- BERvedh  ow FLEghes
+KEWGH a-BERvedh  ow FLEghes
 
 ha'gas:2  gwragedh:2  maga:2  ta:1  .:0
 Niver a sylabennow y'n linenn = 7
@@ -12396,13 +12396,13 @@ Ogas:2  an:1  nor:1  yw:1  kudhys:2
 Niver a sylabennow y'n linenn = 7
 Ogas an NOR YW KUdhys
 
-der:1  an:1  glaw:1  eus:1  a-:1  wartha:2  .:0
+der:1  an:1  glaw:1  eus:1  a-wartha:3  .:0
 Niver a sylabennow y'n linenn = 7
-DER an GLAW EUS A- WARtha
+DER an GLAW EUS a-WARtha
 
-Ty:1  ,:0  benyn:2  ,:0  a-:1  bervedh:2  deus:1  .:0
+Ty:1  ,:0  benyn:2  ,:0  a-bervedh:3  deus:1  .:0
 Niver a sylabennow y'n linenn = 7
-TY  BEnyn  A- BERvedh DEUS
+TY  BEnyn  a-BERvedh DEUS
 
 Ow:1  !:0  dar:1  !:0  beudhi:2  a:1  vynn'ta:2  ?:0
 Niver a sylabennow y'n linenn = 7
@@ -12449,9 +12449,9 @@ Nans:1  yw:1  meur:1  a:1  for:1  ':0  ,:0  pur:1  wir:1
 Niver a sylabennow y'n linenn = 7
 NANS YW MEUR a FOR   PUR WIR
 
-a-:1  ban:1  kellsyn:2  syght:1  a'n:1  tir:1  .:0
+a-ban:2  kellsyn:2  syght:1  a'n:1  tir:1  .:0
 Niver a sylabennow y'n linenn = 7
-A- BAN KELLsyn SYGHT A'N   TIR
+A-ban KELLsyn SYGHT A'N   TIR
 
 Rakhenna:3  dhymm:1  ,:0  ke:1  bran:1  vras:1  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -12545,9 +12545,9 @@ Nans:1  yw:1  ogas:2  ha:1  blydhen:2
 Niver a sylabennow y'n linenn = 7
 NANS YW Ogas ha BLYdhen
 
-a-:1  ban:1  dhallathas:3  an:1  liv:1  .:0
+a-ban:2  dhallathas:3  an:1  liv:1  .:0
 Niver a sylabennow y'n linenn = 7
-A- BAN dhaLLAthas an LIV
+A-ban dhaLLAthas an LIV
 
 Mars:1  yw:1  bodh:1  Dyw:1  y:1  honan:2  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -12589,9 +12589,9 @@ Noy:1  ,:0  my:1  a:1  worhemmynn:3  dhis:1  ,:0
 Niver a sylabennow y'n linenn = 7
 NOY  MY a worHEMmynn DHIS
 
-ke:1  yn-:1  mes:1  a'n:1  lester:2  skon:1  ,:0
+ke:1  yn-mes:2  a'n:1  lester:2  skon:1  ,:0
 Niver a sylabennow y'n linenn = 7
-KE YN- mes A'N   LEster SKON
+KE YN-mes A'N   LEster SKON
 
 dhe'th:1  wreg:1  ha'th:1  fleghes:2  keffrys:2  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -12625,9 +12625,9 @@ yn:1  edhomm:2  ,:0  sur:1  ,:0  pan:1  vo:1  res:1  .:0
 Niver a sylabennow y'n linenn = 7
 YN Edhomm  SUR  pan VO RES
 
-Deun:1  yn-:1  mes:1  ,:0  byghan:2  ha:1  bras:1  ,:0
+Deun:1  yn-mes:2  ,:0  byghan:2  ha:1  bras:1  ,:0
 Niver a sylabennow y'n linenn = 7
-DEUN YN- mes  BYghan ha BRAS
+DEUN YN-mes  BYghan ha BRAS
 
 chatel:2  ,:0  ydhyn:2  ha:1  bestes:2  ;:0
 Niver a sylabennow y'n linenn = 7
@@ -12801,9 +12801,9 @@ Bedhewgh:2  war:1  na:1  vo:1  ledhys:2
 Niver a sylabennow y'n linenn = 7
 BEdhewgh WAR na VO LEdhys
 
-mab-:1  den:1  genowgh:2  hwi:1  neb:1  prys:1  .:0
+mab-den:2  genowgh:2  hwi:1  neb:1  prys:1  .:0
 Niver a sylabennow y'n linenn = 7
-MAB- DEN GEnowgh HWI NEB PRYS
+MAB-den GEnowgh HWI NEB PRYS
 
 Ha:1  mar:1  pydha:2  yndella:3  ,:0
 Niver a sylabennow y'n linenn = 7
@@ -12913,18 +12913,18 @@ der:1  livyow:2  a:1  dhowr:1  pur:1  vras:1  .:0
 Niver a sylabennow y'n linenn = 7
 DER LIVyow a DHOWR PUR VRAS
 
-Ny:1  veu:1  unn:1  mab-:1  den:1  sperys:2  ,:0
+Ny:1  veu:1  unn:1  mab-den:2  sperys:2  ,:0
 Niver a sylabennow y'n linenn = 7
-ny VEU UNN MAB- DEN SPErys
+ny VEU UNN MAB-den SPErys
 
 marnas:2  Noy:1  ,:0  y:1  wreg:1  ,:0  ha'y:1  fleghes:2
 .:0
 Niver a sylabennow y'n linenn = 8
 MARnas NOY  y WREG  HA'Y   FLEghes
 
-Dewgh:1  a-:1  vorow:2  a:1  dermyn:2  .:0
+Dewgh:1  a-vorow:3  a:1  dermyn:2  .:0
 Niver a sylabennow y'n linenn = 7
-DEWGH A- VOrow a DERmyn
+DEWGH a-VOrow a DERmyn
 
 Hwi:1  a:1  wel:1  maters:2  pur:1  vras:1  ,:0
 Niver a sylabennow y'n linenn = 7

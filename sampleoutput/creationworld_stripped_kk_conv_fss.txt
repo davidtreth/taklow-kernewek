@@ -100,7 +100,7 @@ orth harlotri prest pub prys.
 
 
 An tressa dydh my a wra
-dhe'n gwydh sevel yn-ban,
+dhe'n gwydh sevel en-ban,
 ha doon delyow teg ha da
 ha flourys hweg, yn certan.
 Ow bolonjedh yw henna,
@@ -345,7 +345,7 @@ yn pur certan rag nevra.
 
 
 Deun warbarth, an naw ordyr!
-Helghyn yn-mes Lusifer
+Helghyn en-mes Lusifer
 a-dhesempis mes a'n nev.
 
 Ty jett, gwrav dha eksamnya.
@@ -694,7 +694,7 @@ Nyns eus own dhymm ahanas,
 drefen bos mar deg dha fas,
 na hwath dout vydholl y'n bys,
 rag der dha er yth 'valsa
-ty dhe dhos a'n nev tooth-ta,
+ty dhe dhos a'n nev toth-ta,
 ha mara teudh alena
 pur wolkom yth os genev,
 ha dhe well y'th fydh kresys.
@@ -1053,7 +1053,7 @@ Henna yth yw truedh dra,
 a-ban res dhemmo kola
 
 po kelli an gerensa
-eus ord'nys enter-ranna.
+eus ord'nys ynter-ranna.
 
 
 Eva jentyl, na vydh serrys.
@@ -1232,7 +1232,7 @@ Parys yw genev pub tra
 dhe vos dhedha alemma.
 
 
-Adam, ke yn-mes a'n wlas,
+Adam, ke en-mes a'n wlas,
 dhe gres an bys dhe vywa;
 ty dha honan dhe balas,
 dha wreg genes dhe nedha.
@@ -1386,7 +1386,7 @@ my a'n dyllo oll gans tan.
 
 Y leski ny vennav vy,
 an ys na'n frutys devri.
-Taw, Abel, dhemmo, penn-koog!
+Taw, Abel, dhemmo, penn-kog!
 My a guntell dreyn ha spern
 ha glos dhe leski heb bern,
 hag a wra bush bras a vog.
@@ -1620,14 +1620,14 @@ Soweth bythkweth bos formys!
 
 A, ty Kaym, emskemunys,
 ow molleth dhiso pub prys!
-Henna o gwann-ober gwrys,
+Henna o gwan-ober gwrys,
 may ma Duw ha'n nor keffrys
 warnas pub eur ow kria.
 Rakhenna, wosa hemma,
 nevra ny wren rejoysya,
 mes pub eur oll ow mornya
 heb joy vydh na lowena
-der dha wann-ober omma.
+der dha wan-ober omma.
 Rakhenna voyd alemma,
 na hwila agan 'nia,
 mab mollothow par dell os.
@@ -1969,7 +1969,7 @@ yn neb bush, kynth yw dhymm grev.
 
 Mester da, der dha gummyas,
 my a wel unn lo'n pur vras
-yn-hons yn bush ow plattya.
+en-hons yn bush ow plattya.
 Serra, yn mysk an bestes
 stranj yth yw ev dhe weles.
 Mirewgh, mester, py 'ma-va.
@@ -2137,7 +2137,7 @@ Hemma yw gwir, dhemmo trest.
 
 Prag y hwruss'ta y ladha,
 hag ev dha vroder nessa?
-Henna o gwann-ober gwrys.
+Henna o gwan-ober gwrys.
 
 
 
@@ -2314,7 +2314,7 @@ a-bervedh pandra wel'ta.
 Na wra keles unn dra.
 
 My a wel sur unn wydhen,
-ha serpont enni a-vann.
+ha serpont enni a-van.
 Marow sygh hi a 'valsa.
 
 Honna yw an keth wydhen
@@ -2943,7 +2943,7 @@ oll an bys a vydh beudhys.
 
 Gwell via a ves-ta kregys,
 ty hag oll a'n kryjyans na!
-A jorl koth, ty benn-pilys,
+A jorl koth, ty ben-pilys,
 fatla vynnta jy henna;
 y fydh an bys konsumys?
 Oll an dowrow y'n bys ma,
@@ -2951,7 +2951,7 @@ kyn fons warbarth kuntellys
 ny wra diwedh a'n par na!
 Saw yth o'ta jy gokki
 oll an bys a yll godhvos.
-Venjans war dha benn-kreghi!
+Venjans war dha ben-kreghi!
 Nyns eus omma den y'n wlas
 a grys dhis malbew vanna.
 
@@ -3141,7 +3141,7 @@ kekeffrys ha mab ha tas.
 
 
 Noy, my a worhemmyn dhis,
-ke yn-mes a'n lester skon,
+ke en-mes a'n lester skon,
 dhe'th wreg ha'th fleghes keffrys,
 ydhyn, bestes, ha pub lo'n.
 
@@ -3150,7 +3150,7 @@ ydhyn, bestes, ha pub lo'n.
 Meur wordhyans dhis, Arlodh Nev.
 Ty a weres gwann ha krev
 yn edhom, sur, pan vo res.
-Deun yn-mes, byghan ha bras,
+Deun en-mes, byghan ha bras,
 chatel, ydhyn ha bestes;
 myns a veu y'n lester dres.
 Yn dehwelans peghosow
