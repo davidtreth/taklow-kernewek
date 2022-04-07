@@ -20,7 +20,7 @@ def printtreus():
     print("Input: {i}".format(i=inputtext))
     output = ''
     msg3.text.config(fg = 'dark red', bg = 'light yellow',
-                     font=('Helvetica', 16+fontsizeadj, 'bold'), state=tk.NORMAL)
+                     font=('Open Sans', 16+fontsizeadj, 'bold'), state=tk.NORMAL)
     if inputtext:
         inputtext = preprocess2ASCII(inputtext)
         if options2.state() == 'Rannans war-rag':
@@ -30,10 +30,10 @@ def printtreus():
         if options.state() == 'Mode Hir':
             output = tr.text_KK2FSS(inputtext,fwd,longform=True)
             output = wraplines(output)
-            msg3.text.config(font=('Helvetica', 14+fontsizeadj, 'normal'),
+            msg3.text.config(font=('Open Sans', 14+fontsizeadj, 'normal'),
                              width=66, height=12+heightadjust)
         elif options.state() == 'Mode Linenn' or options.state() == 'Mode Berr':
-            msg3.text.config(font=('Helvetica', 16+fontsizeadj, 'bold'),
+            msg3.text.config(font=('Open Sans', 16+fontsizeadj, 'bold'),
                              width=60, height=11+heightadjust)
             lines = inputtext.split('\n')
             for l in lines:
@@ -50,7 +50,7 @@ def printtreus():
 def clearboxes():
     ent.clear()
     msg3.text.config(fg = 'dark red', bg='light yellow',
-                     font=('Helvetica', 16+fontsizeadj, 'bold'), state=tk.NORMAL)
+                     font=('Open Sans', 16+fontsizeadj, 'bold'), state=tk.NORMAL)
     msg3.clear()
     msg3.text.config(state=tk.DISABLED)
 
@@ -72,7 +72,7 @@ if __name__ == '__main__':
     root = tk.Tk()
     root.title('Treuslytherenna Kernewek Kemmyn --> Furv Skrifys Savonek')
     mhead = tk.Label(root, text = "Dewisyow")
-    mhead.config(font=('Helvetica', 16+fontsizeadj, 'bold'))
+    mhead.config(font=('Open Sans', 16+fontsizeadj, 'bold'))
     mhead.pack(side=tk.TOP, anchor=tk.NW)
 
     options = Radiobar(root, ['Mode Hir', 'Mode Berr', 'Mode Linenn'], side=tk.TOP, anchor=tk.NW,default='Mode Linenn')
@@ -87,7 +87,7 @@ if __name__ == '__main__':
         
         
     msg = tk.Label(root, text="Gorrewgh tekst Kernewek Kemmyn a-woeles mar pleg:")
-    msg.config(font=('Helvetica', 16, 'bold'))
+    msg.config(font=('Open Sans', 16, 'bold'))
     msg.pack()
     
     # text entry bar for input
@@ -98,16 +98,16 @@ if __name__ == '__main__':
     # output
     msg3 = ScrolledText(root)
     msg3.text.config(fg = 'dark red', bg='light yellow', width = 60, height = 11+heightadjust,
-                     font=('Helvetica', 16, 'bold'), state=tk.DISABLED)
+                     font=('Open Sans', 16, 'bold'), state=tk.DISABLED)
     msg3.pack()
         
     # buttons
     Kwitya(root).pack(side=tk.RIGHT)
-    treus = tk.Button(root, text = 'Treuslytherenna KK --> FSS', font=('Helvetica',14),
+    treus = tk.Button(root, text = 'Treuslytherenna KK --> FSS', font=('Open Sans',14),
            command = printtreus)
-    tk.Button(root, text = 'Klerhe', font=('Helvetica', 14),
+    tk.Button(root, text = 'Klerhe', font=('Open Sans', 14),
            command = clearboxes).pack(side=tk.LEFT)
-    tk.Button(root, text = 'Kopi dhe\'n Klyppbordh', font=('Helvetica', 14),
+    tk.Button(root, text = 'Kopi dhe\'n Klyppbordh', font=('Open Sans', 14),
               command = copyclipbd).pack(side=tk.LEFT)
     # check NLTK is available
     c = checkNLTK()

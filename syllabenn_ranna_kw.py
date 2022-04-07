@@ -802,7 +802,7 @@ class Ger:
         """ return long output for each word"""
         line1 = "An ger yw: {g}".format(g=self.graph)
         line2 = "Niver a syllabennow yw: {n}".format(n=self.n_sls)
-        line3 = "Hag yns i: {sls}".format(sls=[s for s in self.sls])
+        line3 = "\nHag yns i: {sls}".format(sls=[s for s in self.sls])
         #line3 = "Hag yns i: {sls}".format(sls=self.sls)
         if not(gwarnya) or self.graph == self.segmented_word:
             outlines = [line1,line2,line3]
@@ -813,6 +813,7 @@ class Ger:
         # structure (CVC/CV/VC/V)
         # list with length of syllable parts
         # total length syllable
+        wholeword = ""
         for i in range(self.n_sls):
             gr = self.slsObjs[i].grapheme
             struc = self.slsObjs[i].structure
@@ -821,8 +822,10 @@ class Ger:
             lenArray = self.slsObjs[i].lengtharray
             sylLength = self.slsObjs[i].syllableLength
             outlines.append("S{n}: {g}, {s}, hirder = {L}, hirder kowal = {t}".format(n=i+1,g=gr,s=struc, L = lenArray, t=sylLength))
+            wholeword = wholeword + gr
         # total length of syllables in word
         outlines.append("Hirder ger kowal = {H}".format(H=self.hirderGer))
+        outlines.append("\n{wword}\n".format(wword=wholeword))
         return outlines
     
     def gwarnyans(self, lang="kw"):
@@ -1366,6 +1369,7 @@ def countSylsLine(linetext,fwd=False,mode='text',regexps=kwKemmynRegExp,
     rannans = RannaSyllabenn(linetext)
     Nsls = 0
     outtext = ""
+    outtext2 = "" #the words with stress indicted by capitalisation
     outlist = []
     outnsyllist = []
     for i in rannans.geryow:
@@ -1373,10 +1377,26 @@ def countSylsLine(linetext,fwd=False,mode='text',regexps=kwKemmynRegExp,
         # for each word, display it with number of syllables
         if g.graph != '':
             outtext += g.shortoutput(gwarnya=gwarnya)
-            outlist.append((g.graph,g.n_sls))            
+            outlist.append((g.graph,g.n_sls))                        
             Nsls += g.n_sls
             outnsyllist.append((g.n_sls))
-    outtext += "\nNiver a sylabennow y'n linenn = {n}".format(n=Nsls)
+        for s in range(g.n_sls):
+            gr = g.slsObjs[s].grapheme            
+            if g.slsObjs[s].stressed:
+                gr = gr.upper()
+            else:
+                gr = gr.lower()
+            outtext2 += gr        
+        outtext2 += " " # add space at end of each word
+    
+    if Nsls > 0:
+        # write out number of syllables in line
+        outtext += "\nNiver a sylabennow y'n linenn = {n}\n".format(n=Nsls)
+        outtext += outtext2
+    else:
+        # except if its a completely empty line
+        outtext += "\n\n"
+    
     total = ("Sommenn",Nsls)
     if mode == 'list':
         return outlist, total
@@ -1385,7 +1405,6 @@ def countSylsLine(linetext,fwd=False,mode='text',regexps=kwKemmynRegExp,
     else:
         return outtext
     
-
 def detailSylsText(intext,fwd=False,short=False,regexps=kwKemmynRegExp,
                    FSSmode=False, CYmode=False, gwarnya=False):
     outtext = ""

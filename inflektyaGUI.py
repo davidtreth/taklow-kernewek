@@ -44,11 +44,11 @@ if __name__ == '__main__':
     root = tk.Tk()
     root.title('Inflektya Verbow Kernewek')
     mhead = tk.Label(root, text = "Dewisyow")
-    mhead.config(font=('Helvetica', 16, 'bold'))
+    mhead.config(font=('Open Sans', 16, 'bold'))
     mhead.pack(side=tk.TOP, anchor=tk.NW)
     
     rhead = tk.Label(root, text = "Amser")
-    rhead.config(font=('Helvetica', 12, 'bold'))
+    rhead.config(font=('Open Sans', 12, 'bold'))
     rhead.pack(side=tk.TOP, anchor=tk.NW)
     options = Radiobar(root, ['A-lemmyn', 'Tremenys', 'Anperfydh', 'Gorperfydh',
                               'Islavarek A-lemmyn', 'Islavarek Anperfydh',
@@ -56,35 +56,35 @@ if __name__ == '__main__':
                               'Anperfydh Usadow', 'A-lemmyn Hir Indef',
                               'Anperfydh Hir', 'A-lemmyn Hir Def',
                               'A-lemmyn Hir Aff', 'Perfydh'],
-                       font=('Helvetica', 13+fontsizeadj, 'normal'),
+                       font=('Open Sans', 13+fontsizeadj, 'normal'),
                        side=tk.TOP, anchor=tk.NW,default='A-lemmyn')
     options.pack(side=tk.LEFT, fill=tk.Y)
     options.config(relief=tk.RIDGE, bd=2)
 
     rhead2 = tk.Label(root, text = "Person")
-    rhead2.config(font=('Helvetica', 12, 'bold'))
+    rhead2.config(font=('Open Sans', 12, 'bold'))
     rhead2.pack(side=tk.TOP, anchor=tk.NW)
     options2 = Radiobar(root, ['My', 'Ty', 'Ev', 'Hi', 'Ni',
                                'Hwi', 'I', 'Anpersonek', 'Pub Person'],
-                        font=('Helvetica', 13+fontsizeadj, 'normal'),
+                        font=('Open Sans', 13+fontsizeadj, 'normal'),
                         side=tk.TOP, anchor=tk.NW, default='My')
     options2.pack(side=tk.LEFT, fill=tk.Y)
     options2.config(relief=tk.RIDGE, bd=2)
 
     rhead3 = tk.Label(root, text = "Raghenwyn a syw")
-    rhead3.config(font=('Helvetica', 12, 'bold'))
+    rhead3.config(font=('Open Sans', 12, 'bold'))
     rhead3.pack(side=tk.TOP, anchor=tk.NW)
     options3 = Radiobar(root, ['Heb raghenwyn a syw', 'Raghenwyn a syw',
                                'Raghenwyn a syw gans poeslev'], side=tk.TOP,
-                        font=('Helvetica', 13+fontsizeadj, 'normal'),
+                        font=('Open Sans', 13+fontsizeadj, 'normal'),
                         anchor=tk.NW, default = 'Heb raghenwyn a syw')
     
     options3.config(relief=tk.RIDGE, bd=2)
     rhead4 = tk.Label(options3, text = "Usya FSS?")
-    rhead4.config(font=('Helvetica', 12, 'bold'))
+    rhead4.config(font=('Open Sans', 12, 'bold'))
     rhead4.pack(side=tk.TOP, anchor=tk.NW, pady=5)
     options4 = CheckButtonBar(options3, ['Ynworrans + eskorrans FSS'],
-                              side=tk.BOTTOM,anchor=tk.NW, font=('Helvetica', 13+fontsizeadj))
+                              side=tk.BOTTOM,anchor=tk.NW, font=('Open Sans', 13+fontsizeadj))
     options3.pack(side=tk.LEFT, fill=tk.Y)
     options4.pack(side=tk.LEFT, fill=tk.BOTH, expand=tk.Y)
     #options4.config(relief = tk.RIDGE, bd = 2)
@@ -151,7 +151,7 @@ if __name__ == '__main__':
                                                  suffixDict[options3.state()])[0]
                 if output == 'NULL':
                     output = "Nyns yw amser '{t}', person '{p}' ewn rag verb '{v}'".format(t=options.state(), p=options2.state(), v=inputtext)
-                # msg3.text.config(font=('Helvetica', 14, 'normal'))
+                # msg3.text.config(font=('Open Sans', 14, 'normal'))
             if not(inputtext.isalpha()):
                 output = "Gwarnyans, nyns yw an ynworrans alpfabetek.\n\n"+output
             print(output)
@@ -171,7 +171,7 @@ if __name__ == '__main__':
         root.clipboard_append(msg3.gettext())
 
     msg = tk.Label(root, text="Gorrewgh verb kernewek a-woeles mar pleg:")
-    msg.config(font=('Helvetica', 16+fontsizeadj, 'bold'))
+    msg.config(font=('Open Sans', 16+fontsizeadj, 'bold'))
     msg.pack()
     
     # text entry bar for input
@@ -185,11 +185,11 @@ if __name__ == '__main__':
 
     # buttons
     Kwitya(root).pack(side=tk.RIGHT)
-    tk.Button(root, text = 'Inflektya Verb', font=('Helvetica',14+fontsizeadj),
+    tk.Button(root, text = 'Inflektya Verb', font=('Open Sans',14+fontsizeadj),
               command = printinflektya).pack(side=tk.RIGHT)
-    tk.Button(root, text = 'Klerhe', font=('Helvetica', 14+fontsizeadj),
+    tk.Button(root, text = 'Klerhe', font=('Open Sans', 14+fontsizeadj),
            command = clearboxes).pack(side=tk.LEFT)
-    tk.Button(root, text = 'Kopi dhe\'n Klyppbordh', font=('Helvetica', 14+fontsizeadj),
+    tk.Button(root, text = 'Kopi dhe\'n Klyppbordh', font=('Open Sans', 14+fontsizeadj),
               command = copyclipbd).pack(side=tk.LEFT)
     root.mainloop()
 

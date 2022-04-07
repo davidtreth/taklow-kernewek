@@ -30,7 +30,7 @@ class AppAwgrym(tk.Frame):
     def make_widgets(self):
         """ display the GUI widgets """
         self.mhead = tk.Label(self, text = "Dewisyow")
-        self.mhead.config(font=('Helvetica', 16, 'bold'), padx=5, pady=5)
+        self.mhead.config(font=('Open Sans', 16, 'bold'), padx=5, pady=5)
         self.mhead.pack(side=tk.TOP, anchor=tk.NW)
         # choose difficulty level        
         self.options2 = Radiobar(self, ['Es', 'Kres', 'Kales', 'Pur Gales'],
@@ -56,25 +56,25 @@ class AppAwgrym(tk.Frame):
                                     text="Gwask 'Dalleth'\nwosa chanjya\n"
                                     "an nivel kaletter\nrag dastalleth\n"
                                     "an apposyans.")
-        self.kalettermsg.config(font=('Helvetica', 11), padx=5, pady=5)
+        self.kalettermsg.config(font=('Open Sans', 11), padx=5, pady=5)
         self.kalettermsg.pack(side=tk.TOP, fill=tk.Y)
         
         
         self.msg = tk.Label(self, text="Govynn:")
-        self.msg.config(font=('Helvetica', 16, 'bold'), padx=10, pady=10)
+        self.msg.config(font=('Open Sans', 16, 'bold'), padx=10, pady=10)
         self.msg.pack(anchor=tk.W)
     
         # question
         self.govynn = tk.Label(self)
         self.govynn.pack(anchor=tk.W)
         self.govynn.config(fg = 'black', bg='light yellow',
-                           font=('Helvetica', 18, 'bold'), text='',
+                           font=('Open Sans', 18, 'bold'), text='',
                            padx=10, pady=10)
         self.govynn.pack(expand=tk.YES,fill=tk.BOTH, anchor=tk.CENTER)
     
         self.msg2 = tk.Label(self, text="Gorrewgh gorthyp yn bysies "
                              "a-woles mar pleg:")
-        self.msg2.config(font=('Helvetica', 16, 'bold'),
+        self.msg2.config(font=('Open Sans', 16, 'bold'),
                          padx=10, pady=10)
         self.msg2.pack(anchor=tk.W)
         # text entry bar for answer
@@ -89,15 +89,15 @@ class AppAwgrym(tk.Frame):
         # output
         self.msg3 = tk.Label(self)
         self.msg3.config(fg = 'dark red', bg='light yellow',
-                         font=('Helvetica', 18, 'bold'),
+                         font=('Open Sans', 18, 'bold'),
                          text='', padx=10, pady=10)
         self.msg3.pack(expand=tk.YES,fill=tk.BOTH, anchor=tk.CENTER)
 
         # buttons
         Kwitya(self).pack(side=tk.RIGHT)
-        tk.Button(self, text = 'Profya Gorthyp', font=('Helvetica',14),
+        tk.Button(self, text = 'Profya Gorthyp', font=('Open Sans',14),
                   command = self.rigorthyp).pack(side=tk.RIGHT)
-        tk.Button(self, text = 'Dalleth', font=('Helvetica', 14),
+        tk.Button(self, text = 'Dalleth', font=('Open Sans', 14),
                   command = self.dalleth).pack(side=tk.LEFT)
         
     def chooseMaxN(self):
@@ -121,7 +121,7 @@ class AppAwgrym(tk.Frame):
     def diskwedhgovynn(self, tekst):
         """ display the question """
         self.govynn.config(fg = 'black', bg = 'light yellow',
-                      font=('Helvetica', 18, 'bold'), text=tekst)
+                      font=('Open Sans', 18, 'bold'), text=tekst)
     
     def chekkGorthyp(self, g, kewar):
         """ check answer against the correct one,
@@ -220,7 +220,7 @@ class AppAwgrym(tk.Frame):
             " rag ensample '42'"
             print(output)
             self.msg3.config(fg = 'orange', bg='black',
-                             font=('Helvetica', 18, 'bold'), text=output)
+                             font=('Open Sans', 18, 'bold'), text=output)
             niver = -99
         self.gorthyp.clear()
         if niver or niver==0:
@@ -256,7 +256,7 @@ class AppAwgrym(tk.Frame):
                 # a non-numeric answer was given
                 print(tekst)
                 self.msg3.config(fg = fcolour, bg = 'light yellow',
-                                 font=('Helvetica', 18, 'bold'), text=tekst)
+                                 font=('Open Sans', 18, 'bold'), text=tekst)
                 if self.nivergwrys < self.Ngovynn:
                     # ask next question
                     self.gorthypkewar = self.govynn1()
@@ -286,13 +286,13 @@ class AppAwgrym(tk.Frame):
                                                 b = bonusmsg,
                                                 n = self.poyntys)
         self.msg3.config(fg = 'blue', bg = 'light yellow',
-                         font=('Helvetica', 18, 'bold'), text=endmsg)
+                         font=('Open Sans', 18, 'bold'), text=endmsg)
         
     def dalleth(self):
         """ clear answer box, and reset parameters """
         self.gorthyp.clear()
         self.msg3.config(fg = 'dark red', bg='light yellow',
-                         font=('Helvetica', 18, 'bold'), text='')
+                         font=('Open Sans', 18, 'bold'), text='')
         self.niverewn = 0
         self.nivergwrys = 0
         self.poyntys = 0

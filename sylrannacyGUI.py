@@ -24,7 +24,7 @@ def printsylranna():
     print("Input: {i}".format(i=inputtext))
     output = ''
     msg3.text.config(fg = 'dark red', bg = 'light yellow',
-                     font=('Helvetica', 16+fontsizeadj, 'bold'), state=tk.NORMAL)
+                     font=('Open Sans', 16+fontsizeadj, 'bold'), state=tk.NORMAL)
     if inputtext:
         # standardise quote characters etc.
         inputtext = syl.preprocess2ASCII(inputtext)
@@ -39,11 +39,11 @@ def printsylranna():
             # someone enters Llan50goch in full
             output=wraplines(output)
             
-            msg3.text.config(font=('Helvetica', 14+fontsizeadj, 'normal'),
+            msg3.text.config(font=('Open Sans', 14+fontsizeadj, 'normal'),
                              width=66, height=12+heightadjust)
             
         elif options.state() == 'Mode Llinell':
-            msg3.text.config(font=('Helvetica', 16+fontsizeadj, 'bold'),
+            msg3.text.config(font=('Open Sans', 16+fontsizeadj, 'bold'),
                              width=60, height=11+heightadjust)
             lines = inputtext.split('\n')                
             for l in lines:                    
@@ -52,7 +52,7 @@ def printsylranna():
             output = wraplines(output)
 
         else:
-            msg3.text.config(font=('Helvetica', 16+fontsizeadj, 'bold'),
+            msg3.text.config(font=('Open Sans', 16+fontsizeadj, 'bold'),
                              width=60, height=11+heightadjust)
             # use short mode by default if nothing is selected
             output = syl.detailSylsText(inputtext, fwd,
@@ -66,7 +66,7 @@ def printsylranna():
 def clearboxes():
     ent.clear()
     msg3.text.config(fg = 'dark red', bg='light yellow',
-                     font=('Helvetica', 16+fontsizeadj, 'bold'),state=tk.NORMAL)
+                     font=('Open Sans', 16+fontsizeadj, 'bold'),state=tk.NORMAL)
     msg3.clear()
     msg3.text.config(state=tk.DISABLED)
     
@@ -102,7 +102,7 @@ if __name__ == '__main__':
     root = tk.Tk()
     root.title('Syllabenn Rhannu Cymraeg')
     mhead = tk.Label(root, text = "Dewisiadau")
-    mhead.config(font=('Helvetica', 16+fontsizeadj, 'bold'))
+    mhead.config(font=('Open Sans', 16+fontsizeadj, 'bold'))
     mhead.pack(side=tk.TOP, anchor=tk.NW)
 
     options = Radiobar(root, ['Mode Hir', 'Mode Byr', 'Mode Llinell'],
@@ -120,7 +120,7 @@ if __name__ == '__main__':
     rhybudd.pack(side=tk.LEFT, fill=tk.Y)        
     
     msg = tk.Label(root, text="Rhowch testun Cymraeg ar lawr os gwelwch yn dda:")
-    msg.config(font=('Helvetica', 16+fontsizeadj, 'bold'))
+    msg.config(font=('Open Sans', 16+fontsizeadj, 'bold'))
     msg.pack()
     
     # text entry bar for input
@@ -131,15 +131,15 @@ if __name__ == '__main__':
     # output
     msg3 = ScrolledText(root)
     msg3.text.config(fg = 'dark red', bg='light yellow', width=60, height=11+heightadjust,
-                     font=('Helvetica', 16+fontsizeadj, 'bold'), state=tk.DISABLED)
+                     font=('Open Sans', 16+fontsizeadj, 'bold'), state=tk.DISABLED)
     msg3.pack()
     # buttons
     Gadael(root).pack(side=tk.RIGHT)
-    disk = tk.Button(root, text = 'Dangos Sillafau', font=('Helvetica',14+fontsizeadj),
+    disk = tk.Button(root, text = 'Dangos Sillafau', font=('Open Sans',14+fontsizeadj),
                      command = printsylranna)
-    tk.Button(root, text = 'Clirio', font=('Helvetica', 14+fontsizeadj),
+    tk.Button(root, text = 'Clirio', font=('Open Sans', 14+fontsizeadj),
            command = clearboxes).pack(side=tk.LEFT)
-    tk.Button(root, text = 'Copïo i\'r Clipbwrdd', font=('Helvetica', 14+fontsizeadj),
+    tk.Button(root, text = 'Copïo i\'r Clipbwrdd', font=('Open Sans', 14+fontsizeadj),
               command = copyclipbd).pack(side=tk.LEFT)
     # check NLTK is available
     c = checkNLTK()

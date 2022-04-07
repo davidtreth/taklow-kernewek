@@ -45,7 +45,7 @@ if __name__ == '__main__':
     root = tk.Tk()
     root.title('Treiglo')
     mhead = tk.Label(root, text = "Ystad Treiglo")
-    mhead.config(font=('Helvetica', 16, 'bold'))
+    mhead.config(font=('Open Sans', 16, 'bold'))
     mhead.pack(side=tk.TOP, anchor=tk.NW)
     # various mutation states
     mstate = Radiobar(root, ['Heb treiglo', 'Treiglad meddal', 'Treiglad llais', 'Treiglad trwynol', 'Cymysgu wedi "ni"', 'Gwrthdroi treiglad'],
@@ -54,7 +54,7 @@ if __name__ == '__main__':
     mstate.config(relief=tk.RIDGE, bd=2)
     
     msg = tk.Label(root, text="Rhowch gair Cymraeg islaw os gwelwch yn dda")
-    msg.config(font=('Helvetica', 16, 'bold'))
+    msg.config(font=('Open Sans', 16, 'bold'))
     msg.pack()
     
     # text entry bar
@@ -67,9 +67,9 @@ if __name__ == '__main__':
 
     # buttons
     Gadael(root).pack(side=tk.RIGHT)
-    tk.Button(root, text = 'Treiglo', font=('Helvetica',14),
+    tk.Button(root, text = 'Treiglo', font=('Open Sans',14),
            command = printmform).pack(side=tk.RIGHT)
-    tk.Button(root, text = 'Copïo i\'r Clipfwrdd', font=('Helvetica', 14),
+    tk.Button(root, text = 'Copïo i\'r Clipfwrdd', font=('Open Sans', 14),
               command = copyclipbd).pack(side=tk.LEFT)
     root.mainloop()
 

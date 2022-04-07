@@ -15,7 +15,7 @@ if __name__ == '__main__':
     root = tk.Tk()
     root.title('Termyn ha Dydhyas')
     mhead = tk.Label(root, text = "Dewisyow")
-    mhead.config(font=('Helvetica', 16, 'bold'))
+    mhead.config(font=('Open Sans', 16, 'bold'))
     mhead.pack(side=tk.TOP, anchor=tk.NW)
 
     options = CheckButtonBar(root, ['Dydhyas','Diskwedh Blydhen',
@@ -62,11 +62,11 @@ if __name__ == '__main__':
 
         wrapoutput = wraplines(output, 50)
         print(wrapoutput)
-        msg3.config(fg = 'dark red', bg = 'light yellow', font=('Helvetica', 18, 'bold'), text=wrapoutput)
+        msg3.config(fg = 'dark red', bg = 'light yellow', font=('Open Sans', 18, 'bold'), text=wrapoutput)
         #msg3.config(text = output)
 
     def clearboxes():
-         msg3.config(fg = 'dark red', bg='light yellow',font=('Helvetica', 18, 'bold'), text='')
+         msg3.config(fg = 'dark red', bg='light yellow',font=('Open Sans', 18, 'bold'), text='')
         
     def copyclipbd():
         root.clipboard_clear()
@@ -74,17 +74,17 @@ if __name__ == '__main__':
         
     # output
     msg3 = tk.Label(root)
-    msg3.config(fg = 'dark red', bg='light yellow',font=('Helvetica', 18, 'bold'), text='')
+    msg3.config(fg = 'dark red', bg='light yellow',font=('Open Sans', 18, 'bold'), text='')
     msg3.pack(expand=tk.YES,fill=tk.BOTH, anchor=tk.CENTER, padx=5, pady=5,
               ipadx=10, ipady=10)
 
     # buttons
     Kwitya(root).pack(side=tk.RIGHT)
-    tk.Button(root, text = 'Diskwedh', font=('Helvetica',14),
+    tk.Button(root, text = 'Diskwedh', font=('Open Sans',14),
               command = printtermyn).pack(side=tk.RIGHT)
-    tk.Button(root, text = 'Klerhe', font=('Helvetica', 14),
+    tk.Button(root, text = 'Klerhe', font=('Open Sans', 14),
            command = clearboxes).pack(side=tk.LEFT)
-    tk.Button(root, text = 'Kopi dhe\'n Klyppbordh', font=('Helvetica', 14),
+    tk.Button(root, text = 'Kopi dhe\'n Klyppbordh', font=('Open Sans', 14),
               command = copyclipbd).pack(side=tk.LEFT)
     root.mainloop()
 
