@@ -1505,7 +1505,7 @@ def totalcountsOutput(counts):
     # sort dictionaries
     counts.keyvaltups()
     
-    outtext += "\nTotal number of syllables = {t}\n".format(t = counts.NSylTotal)
+    outtext += "\n\nTotal number of syllables = {t}\n".format(t = counts.NSylTotal)
     outtext += "\nAll syllables = \n{A}\n".format(A = counts.AllSyllablesDSortText)
     outtext += "\nSyllables starting a word = \n{S}\n".format(S = counts.StartWordSyllablesDSortText)
     outtext += "\nSyllables ending a word = \n{E}\n".format(E = counts.EndWordSyllablesDSortText)
