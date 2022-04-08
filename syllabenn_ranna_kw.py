@@ -61,6 +61,7 @@
 # henna a wra gorrewlya --fssregexp 
 
 from __future__ import print_function
+from collections import defaultdict
 import sys
 import re
 import argparse
@@ -74,6 +75,64 @@ try:
     import nltk
 except ImportError:
     print("NLTK not available. Download from www.nltk.org if not on the system.")
+
+def keyvaltups_group5_text(kvtup):
+    lenKV = len(kvtup)
+    maxA = lenKV // 5
+    kvtext = ""
+    for i in range(maxA):
+        kv5 = str(kvtup[i*5:(i*5)+5])[1:-1]
+        kv5text = "{kvt}\n".format(kvt=kv5)
+        kvtext += kv5text
+    return kvtext
+            
+class CountAllSyls:
+    def __init__(self):
+        """ initialize CountAllSyls object
+        """
+        # keep track of total number of syllables
+        self.NSylTotal = 0
+        self.NWords = 0
+        # have dictionaries to count the syllables
+        self.AllSyllablesDict = defaultdict(int)
+        self.StartWordSyllablesDict = defaultdict(int)
+        self.EndWordSyllablesDict = defaultdict(int)
+        self.MonoSylsDict = defaultdict(int)
+        self.StressedNonFinalSylsDict = defaultdict(int)
+    
+    def keyvaltups(self):        
+        AllSyllablesDictkv = [(k,v) for (k,v) in self.AllSyllablesDict.items()]
+        # sort by decreasing frequency
+        self.AllSyllablesDSort = sorted(AllSyllablesDictkv,
+                                  key=lambda AllSyllablesDictkv: AllSyllablesDictkv[1],
+                                  reverse=True)
+        StartWordSyllablesDictkv = [(k,v) for (k,v) in self.StartWordSyllablesDict.items()]
+        # sort by decreasing frequency
+        self.StartWordSyllablesDSort = sorted(StartWordSyllablesDictkv,
+                                  key=lambda StartWordSyllablesDictkv: StartWordSyllablesDictkv[1],
+                                  reverse=True)
+        EndWordSyllablesDictkv = [(k,v) for (k,v) in self.EndWordSyllablesDict.items()]
+        # sort by decreasing frequency
+        self.EndWordSyllablesDSort = sorted(EndWordSyllablesDictkv,
+                                  key=lambda EndWordSyllablesDictkv: EndWordSyllablesDictkv[1],
+                                  reverse=True)
+        MonoSylsDictkv = [(k,v) for (k,v) in self.MonoSylsDict.items()]
+        # sort by decreasing frequency
+        self.MonoSylsDSort = sorted(MonoSylsDictkv,
+                                  key=lambda MonoSylsDictkv: MonoSylsDictkv[1],
+                                  reverse=True)
+        StressedNonFinalSylsDictkv = [(k,v) for (k,v) in self.StressedNonFinalSylsDict.items()]
+        # sort by decreasing frequency
+        self.StressedNonFinalSylsDSort = sorted(StressedNonFinalSylsDictkv,
+                                  key=lambda StressedNonFinalSylsDictkv: StressedNonFinalSylsDictkv[1],
+                                  reverse=True)
+        # create multiline strings with 5 on each line
+        self.AllSyllablesDSortText = keyvaltups_group5_text(self.AllSyllablesDSort)
+        self.StartWordSyllablesDSortText = keyvaltups_group5_text(self.StartWordSyllablesDSort)
+        self.EndWordSyllablesDSortText = keyvaltups_group5_text(self.EndWordSyllablesDSort)
+        self.MonoSylsDSortText = keyvaltups_group5_text(self.MonoSylsDSort)
+        self.StressedNonFinalSylsDSortText = keyvaltups_group5_text(self.StressedNonFinalSylsDSort)
+        
 
 def preprocess2ASCII(inputtext):
     """
@@ -700,7 +759,7 @@ class Ger:
     """
     class for a word of Cornish text
     """
-    def __init__(self,ger,rannans,fwds=False,regexps=kwKemmynRegExp, FSSmode=False,
+    def __init__(self,ger,rannans, counts, fwds=False,regexps=kwKemmynRegExp, FSSmode=False,
                  CYmode = False, gwarnya=False):
         """ initialize Ger object
         """
@@ -775,6 +834,8 @@ class Ger:
                 self.slsObjs[0].stressed = True
             # flag monosyllables
             self.slsObjs[0].monosyl = True
+            # add to grand total dict
+            counts.MonoSylsDict[self.graph.lower()] += 1
         elif len(self.slsObjs) > 1:
             # test for exceptions
             if self.graph[:2] == "di" and self.n_sls == 2:
@@ -794,14 +855,26 @@ class Ger:
                 self.slsObjs[-2].stressed = True
         
         # counter for total syllable length in word
+        # and grand total for numbers of words
         self.hirderGer = 0
+        counts.NWords += 1
         # update length arrays and total syllable length
         # after monosyl and stressed are set
         for syl in self.slsObjs:
             syl.lengtharray = syl.lengthSylParts()
             syl.syllableLength = sum(syl.lengtharray)
-            self.hirderGer += syl.syllableLength
-
+            self.hirderGer += syl.syllableLength            
+            # update grand total counters
+            counts.NSylTotal += 1
+            counts.AllSyllablesDict[syl.grapheme.lower()] += 1
+            if len(self.slsObjs) > 1:
+                # non-monosyllable
+                if syl.stressed and not(syl.final):
+                    counts.StressedNonFinalSylsDict[syl.grapheme.lower()] += 1
+        if len(self.slsObjs) >= 1:
+            counts.StartWordSyllablesDict[self.slsObjs[0].grapheme.lower()] += 1
+            counts.EndWordSyllablesDict[self.slsObjs[-1].grapheme.lower()] += 1
+        
     def longoutput(self, gwarnya=False):
         """ return long output for each word"""
         line1 = "An ger yw: {g}".format(g=self.graph)
@@ -1377,7 +1450,7 @@ def countSylsLine(linetext,fwd=False,mode='text',regexps=kwKemmynRegExp,
     outlist = []
     outnsyllist = []
     for i in rannans.geryow:
-        g = Ger(i,rannans,fwd,regexps=regexps, FSSmode=FSSmode, CYmode=CYmode)
+        g = Ger(i,rannans,counts, fwd,regexps=regexps, FSSmode=FSSmode, CYmode=CYmode)
         # for each word, display it with number of syllables
         if g.graph != '':
             outtext += g.shortoutput(gwarnya=gwarnya)
@@ -1415,7 +1488,7 @@ def detailSylsText(intext,fwd=False,short=False,regexps=kwKemmynRegExp,
     rannans = RannaSyllabenn(intext)
     punctchars = ".,;:!?()-"
     for i in rannans.geryow:
-        g = Ger(i,rannans,fwd,regexps=regexps, FSSmode=FSSmode, CYmode=CYmode)
+        g = Ger(i,rannans,fwd, counts, regexps=regexps, FSSmode=FSSmode, CYmode=CYmode)
         # avoid printing 'words' that consist only of a
         # punctuation character
         if g.graph != '' and g.graph not in punctchars:
@@ -1425,6 +1498,19 @@ def detailSylsText(intext,fwd=False,short=False,regexps=kwKemmynRegExp,
                 # print long form with syllable details
                 outtext += "\n".join(g.longoutput(gwarnya=gwarnya))
                 outtext += "\n\n"
+    return outtext
+
+def totalcountsOutput(counts):
+    outtext = ""
+    # sort dictionaries
+    counts.keyvaltups()
+    
+    outtext += "\nTotal number of syllables = {t}\n".format(t = counts.NSylTotal)
+    outtext += "\nAll syllables = \n{A}\n".format(A = counts.AllSyllablesDSortText)
+    outtext += "\nSyllables starting a word = \n{S}\n".format(S = counts.StartWordSyllablesDSortText)
+    outtext += "\nSyllables ending a word = \n{E}\n".format(E = counts.EndWordSyllablesDSortText)
+    outtext += "\nMonosyllables = \n{M}\n".format(M = counts.MonoSylsDSortText)
+    outtext += "\nStressed non-final syllables = \n{s}\n".format(s = counts.StressedNonFinalSylsDSortText)
     return outtext
     
     
@@ -1455,6 +1541,8 @@ if __name__ == '__main__':
                         help="Use Welsh regular expressions. Takes priority over other regexp options.")
     parser.add_argument("--warn", action="store_true",
                         help="Display warnings if words not fully consumed by regular expressions. Default is not to do so")
+    parser.add_argument("--totalcounts", action="store_true",
+                        help="Display the grand total numbers of syllables etc.")
     args = parser.parse_args()
     # Check that the input parameter has been specified.
     if args.inputfile == None:
@@ -1473,6 +1561,8 @@ if __name__ == '__main__':
         regexps = kwKemmynDevRegExp
     else:
         regexps = kwKemmynRegExp
+    # create object to count all syllables
+    counts = CountAllSyls()
     if args.line:
             inputtext = f.readlines()            
             for n,line in enumerate(inputtext):
@@ -1486,13 +1576,13 @@ if __name__ == '__main__':
                 # count the total syllables in each line
                 Nsls = 0
                 for i in rannans.geryow:
-                    g = Ger(i,rannans,args.fwd, regexps=regexps,
+                    g = Ger(i,rannans, counts, args.fwd, regexps=regexps,
                             FSSmode=args.fssregexp,
                             CYmode=args.cyregexp, gwarnya=args.warn)
                     # for each word, display it with number of syllables
                     if g.graph != '':
                         g.diskwedhshort(gwarnya=args.warn)
-                        Nsls += g.n_sls
+                        Nsls += g.n_sls                        
                 print("\nNiver a sylabennow y'n linenn = {n}\n".format(n=Nsls))
     else:
         inputtext = f.read()
@@ -1505,7 +1595,7 @@ if __name__ == '__main__':
 
         punctchars = ".,;:!?()-"
         for i in rannans.geryow:
-            g = Ger(i,rannans,args.fwd, regexps=regexps,
+            g = Ger(i,rannans, counts, args.fwd, regexps=regexps,
                     FSSmode=args.fssregexp,
                     CYmode=args.cyregexp, gwarnya=args.warn)
             # avoid printing 'words' that consist only of a
@@ -1518,3 +1608,6 @@ if __name__ == '__main__':
                     # print long form with syllable details
                     g.diskwedh(gwarnya=args.warn)
                     print('\n')
+    if args.totalcounts:
+        print(totalcountsOutput(counts))
+        
