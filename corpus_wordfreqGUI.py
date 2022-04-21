@@ -163,7 +163,7 @@ class CorpusStats(tk.Frame):
         """ display GUI widgets """
         self.mhead = tk.Label(self,
             text=CorpusStats.labelTexts['mhead'][self.mscript][self.ifacelang])
-        self.mhead.config(font=('Open Sans', 16+self.fontsizeadj, 'bold'))
+        self.mhead.config(font=('Noto Sans', 16+self.fontsizeadj, 'bold'))
         self.mhead.pack(side=tk.TOP, anchor=tk.NW)        
         c = self.checkNLTK()
         print("NLTK available = {c}".format(c=c))
@@ -189,34 +189,34 @@ class CorpusStats(tk.Frame):
             optionnums = list(range(len(textmenu)))
             
         self.textchoice = Radiobar(self, textmenu, vals=optionnums,
-                                   side = tk.TOP, anchor = tk.NW, default = 2, justify=tk.LEFT, font=('Open Sans',
+                                   side = tk.TOP, anchor = tk.NW, default = 2, justify=tk.LEFT, font=('Noto Sans',
                                                           13+self.fontsizeadj, 'normal'))
         self.textchoice.pack(side=tk.LEFT, fill=tk.Y)
         self.textchoice.config(relief=tk.RIDGE, bd=2)
         self.switchlang = tk.Button(self.textchoice,
             text=CorpusStats.labelTexts['switchlang'][self.ifacelang],
-            font=('Open Sans', 14+self.fontsizeadj),
+            font=('Noto Sans', 14+self.fontsizeadj),
             command=self.changeifacelang)
         self.switchlang.pack(anchor=tk.SW, side=tk.LEFT, padx=10, pady=10)
         self.switchms = tk.Button(self.textchoice,
           text=CorpusStats.labelTexts['switchms'][self.mscript][self.ifacelang],
-          font=('Open Sans', 14+self.fontsizeadj), command=self.switchms)
+          font=('Noto Sans', 14+self.fontsizeadj), command=self.switchms)
         self.switchms.pack(anchor=tk.SW, side=tk.LEFT, padx=10, pady=10)
         
         self.mhead2 = tk.Label(self,
             text=CorpusStats.labelTexts['mhead2'][self.ifacelang])
-        self.mhead2.config(font=('Open Sans', 16+self.fontsizeadj*2, 'bold'))
+        self.mhead2.config(font=('Noto Sans', 16+self.fontsizeadj*2, 'bold'))
         self.mhead2.pack(side=tk.TOP, anchor=tk.NW)
         mchoicetext = CorpusStats.labelTexts['modechoice'][self.ifacelang]
         mchoicevals = range(len(mchoicetext))
         self.modechoice = Radiobar(self, mchoicetext,
                                    vals = mchoicevals,
                                    side=tk.TOP, anchor=tk.NW, justify=tk.LEFT, default = 0,
-                                   font = ('Open Sans',13+self.fontsizeadj, 'normal'))
+                                   font = ('Noto Sans',13+self.fontsizeadj, 'normal'))
         self.msg1 = tk.Label(self.modechoice,
             text=CorpusStats.labelTexts['msg'][self.ifacelang],
             anchor=tk.W, justify=tk.LEFT, pady=10+self.padadj)
-        self.msg1.config(font=('Open Sans', 12+self.fontsizeadj))
+        self.msg1.config(font=('Noto Sans', 12+self.fontsizeadj))
         self.msg1.pack(anchor=tk.W)
         self.ent = Entrybar(self.modechoice,
                             anchor=tk.NW)
@@ -224,24 +224,24 @@ class CorpusStats(tk.Frame):
         self.msg2 = tk.Label(self.modechoice,
             text=CorpusStats.labelTexts['msg2'][self.ifacelang],
             anchor=tk.W, justify=tk.LEFT, pady=10+self.padadj)
-        self.msg2.config(font=('Open Sans', 12+self.fontsizeadj))
+        self.msg2.config(font=('Noto Sans', 12+self.fontsizeadj))
         self.msg2.pack(anchor=tk.W)
         self.ent2 = Entrybar(self.modechoice, anchor=tk.NW)
         self.ent2.pack(anchor=tk.W, padx=5)        
         self.msg3 = tk.Label(self.modechoice,
             text=CorpusStats.labelTexts['msg3'][self.ifacelang],
             anchor=tk.W, justify=tk.LEFT, pady=10+self.padadj)
-        self.msg3.config(font=('Open Sans', 12+self.fontsizeadj))
+        self.msg3.config(font=('Noto Sans', 12+self.fontsizeadj))
         self.msg3.pack(anchor=tk.W, padx=5)        
         self.ent3 = Entrybar(self.modechoice, anchor=tk.NW)
         self.ent3.pack(anchor=tk.W, padx=5)
         self.keworra = tk.Button(self.modechoice,
             text=CorpusStats.labelTexts['keworra'][self.ifacelang],
-            font=('Open Sans', 14+self.fontsizeadj),
+            font=('Noto Sans', 14+self.fontsizeadj),
             command = self.addtocomparelist)
         self.klerhe = tk.Button(self.modechoice,
             text=CorpusStats.labelTexts['klerhe'][self.ifacelang],
-            font=('Open Sans', 14+self.fontsizeadj),
+            font=('Noto Sans', 14+self.fontsizeadj),
             command = self.clearcomparelist)
         self.keworra.pack(anchor=tk.NW, side=tk.LEFT, pady=10)
         self.klerhe.pack(anchor=tk.NW, side=tk.LEFT, pady=10)
@@ -257,13 +257,13 @@ class CorpusStats(tk.Frame):
         self.Kwitya.pack(side=tk.RIGHT)
         self.dalleth = tk.Button(self,
             text = CorpusStats.labelTexts['dalleth'][self.ifacelang],
-            font=('Open Sans',14), command = self.printoutput)
+            font=('Noto Sans',14), command = self.printoutput)
         self.klerhefigs = tk.Button(self,
             text = CorpusStats.labelTexts['klerhefigs'][self.ifacelang],
-            font=('Open Sans',14+self.fontsizeadj), command = self.clearfigures)
+            font=('Noto Sans',14+self.fontsizeadj), command = self.clearfigures)
         self.klyppbordh = tk.Button(self,
             text = CorpusStats.labelTexts['klyppbordh'][self.ifacelang],
-            font=('Open Sans', 14+self.fontsizeadj), command = self.copyclipbd)
+            font=('Noto Sans', 14+self.fontsizeadj), command = self.copyclipbd)
     
         if c == 0:
             self.dalleth['state']=tk.DISABLED
