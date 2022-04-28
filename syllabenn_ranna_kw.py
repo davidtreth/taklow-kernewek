@@ -133,6 +133,18 @@ class CountAllSyls:
         self.MonoSylsDSortText = keyvaltups_group5_text(self.MonoSylsDSort)
         self.StressedNonFinalSylsDSortText = keyvaltups_group5_text(self.StressedNonFinalSylsDSort)
         
+    def remove_punctchars(self, sylsdict):
+        """
+        remove all punctation characters from syllable dictionaries
+        """
+        punctchars = "'.,;:!?()-\"" 
+        sylsdict_textonly = defaultdict(int)
+        for s in sylsdict:
+            s0 = s
+            for p in punctchars:
+                s = s.replace(p,"")
+            sylsdict_textonly[s] += sylsdict[s0]
+        return sylsdict_textonly
 
 def preprocess2ASCII(inputtext):
     """
