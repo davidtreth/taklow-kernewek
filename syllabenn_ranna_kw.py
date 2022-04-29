@@ -95,13 +95,16 @@ class CountAllSyls:
         self.NWords = 0
         # have dictionaries to count the syllables
         self.AllSyllablesDict = defaultdict(int)
+        self.AllSyllablesDict_nopunct = defaultdict(int)
         self.StartWordSyllablesDict = defaultdict(int)
         self.EndWordSyllablesDict = defaultdict(int)
         self.MonoSylsDict = defaultdict(int)
         self.StressedNonFinalSylsDict = defaultdict(int)
     
-    def keyvaltups(self):        
-        AllSyllablesDictkv = [(k,v) for (k,v) in self.AllSyllablesDict.items()]
+    def keyvaltups(self):
+        # remove punctuation characters
+        self.AllSyllablesDict_nopunct = self.remove_punctchars(self.AllSyllablesDict)
+        AllSyllablesDictkv = [(k,v) for (k,v) in self.AllSyllablesDict_nopunct.items()]
         # sort by decreasing frequency
         self.AllSyllablesDSort = sorted(AllSyllablesDictkv,
                                   key=lambda AllSyllablesDictkv: AllSyllablesDictkv[1],
