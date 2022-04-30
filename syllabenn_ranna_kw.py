@@ -100,6 +100,9 @@ class CountAllSyls:
         self.EndWordSyllablesDict = defaultdict(int)
         self.MonoSylsDict = defaultdict(int)
         self.StressedNonFinalSylsDict = defaultdict(int)
+        self.AllSyllablesStructDict = defaultdict(int)
+        # tuple (stressd, monosyl, structure, nSylsGer, final)
+        self.AllSyllablesTupleDict = defaultdict(int)
     
     def keyvaltups(self):
         # remove punctuation characters
@@ -882,6 +885,10 @@ class Ger:
             # update grand total counters
             counts.NSylTotal += 1
             counts.AllSyllablesDict[syl.grapheme.lower()] += 1
+            counts.AllSyllablesStructDict[syl.structure] += 1
+            totalsTuple = (syl.stressed, syl.monosyl, syl.structure,
+                           syl.nSylsGer, syl.final)
+            counts.AllSyllablesTupleDict[totalsTuple] += 1
             if len(self.slsObjs) > 1:
                 # non-monosyllable
                 if syl.stressed and not(syl.final):
