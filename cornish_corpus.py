@@ -271,8 +271,16 @@ def nLettersFDist(kk_texts_Texts,names, outlang='kw'):
     for d in range(len(dictlist)):
         keyslist = [0]+[i[0] for i in dictlist[d].items()]
         valueslist = [0]+[i[1] for i in dictlist[d].items()]
-        valueslist_cumulative = [sum(valueslist[0:i+1]) for i in keyslist]
+        # sort the output by increasing size of word
+        kvs = list(zip(keyslist, valueslist))
+        kvs = sorted(kvs, key=lambda kvs: kvs[0])
+        #print(kvs)
+        keyslist = [i[0] for i in kvs]
+        valueslist = [i[1] for i in kvs]
         #print(keyslist)
+        #print(valueslist)
+        valueslist_cumulative = [sum(valueslist[0:i+1]) for i in keyslist]
+        
         #pylab.plot(keyslist,valueslist,label = nameslist[d],linewidth=2)
         if d == 7:
             st = "--"
