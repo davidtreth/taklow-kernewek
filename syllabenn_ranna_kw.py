@@ -881,7 +881,8 @@ class Ger:
         for syl in self.slsObjs:
             syl.lengtharray = syl.lengthSylParts()
             syl.syllableLength = sum(syl.lengtharray)
-            self.hirderGer += syl.syllableLength            
+            self.hirderGer += syl.syllableLength
+            syl.makeTupleDesc()
             # update grand total counters
             counts.NSylTotal += 1
             counts.AllSyllablesDict[syl.grapheme.lower()] += 1
@@ -916,11 +917,12 @@ class Ger:
         for i in range(self.n_sls):
             gr = self.slsObjs[i].grapheme
             struc = self.slsObjs[i].structure
+            textdesc = self.slsObjs[i].textdesc
             if self.slsObjs[i].stressed:
                 gr = gr.upper()
             lenArray = self.slsObjs[i].lengtharray
             sylLength = self.slsObjs[i].syllableLength
-            outlines.append("S{n}: {g}, {s}, hirder = {L}, hirder kowal = {t}".format(n=i+1,g=gr,s=struc, L = lenArray, t=sylLength))
+            outlines.append("S{n}: {g}, {s}, hirder = {L}, hirder kowal = {t}. {d}".format(n=i+1,g=gr,s=struc, L = lenArray, t=sylLength, d=textdesc))
             wholeword = wholeword + gr
         # total length of syllables in word
         outlines.append("Hirder ger kowal = {H}".format(H=self.hirderGer))
@@ -970,6 +972,27 @@ class Syllabenn(object):
     """
     Class for syllable
     """
+    def outputLabelShort(t):
+        """ take tuple of the form
+        (Stressed, Monosyllable, Structure, nSylsGer, Final)
+        and make this into a short text string """
+        if t[0]:
+            stress = "S"
+        else:
+            stress = "s"
+        if t[1]:
+            mono = "M"
+        else:
+            mono = "m"
+        struct = t[2]
+        nsyls = str(t[3])
+        if t[4]:
+            final = "F"
+        else:
+            final = "f"
+        outlabel = stress + mono + struct + nsyls + final
+        return outlabel
+            
     def __init__(self,graph,rannans,regexps=kwKemmynRegExp):
         """
         Initialize Syllabenn object
@@ -1017,6 +1040,7 @@ class Syllabenn(object):
             self.sylparts = sylparts
             self.lengtharray = self.lengthSylParts()
             self.syllableLength = sum(self.lengtharray)
+
 
     def lengthSylParts(self,regexps=kwKemmynRegExp):
         """ find the lengths of each part of the syllable
@@ -1136,6 +1160,12 @@ class Syllabenn(object):
         # regular expressions pick up single/double consts properly
         # maybe some ambiguity in how words are segmented?
         return lengtharray
+        
+    def makeTupleDesc(self):
+        # tuple description
+        tuple_desc = (self.stressed, self.monosyl, self.structure, self.nSylsGer, self.final)
+        # convert to text
+        self.textdesc = Syllabenn.outputLabelShort(tuple_desc)
 
 
 class FSSSyllabenn(Syllabenn):     
@@ -1277,7 +1307,7 @@ class FSSSyllabenn(Syllabenn):
         # TO DO
         # probably needs a bit of debugging to make sure 
         # regular expressions pick up single/double consts properly
-        # maybe some ambiguity in how words are segmented?
+        # maybe some ambiguity in how words are segmented?        
         return lengtharray        
 
 
@@ -1585,6 +1615,10 @@ if __name__ == '__main__':
         regexps = kwKemmynRegExp
     # create object to count all syllables
     counts = CountAllSyls()
+    # create list of Ger objects
+    listGer = []
+    # list of lists of Ger objects
+    listGer_lines = []
     if args.line:
             inputtext = f.readlines()            
             for n,line in enumerate(inputtext):
@@ -1597,15 +1631,20 @@ if __name__ == '__main__':
                     rannans.profya()
                 # count the total syllables in each line
                 Nsls = 0
+                # list of Ger objets
+                listGer_line = []
                 for i in rannans.geryow:
                     g = Ger(i,rannans, counts, args.fwd, regexps=regexps,
                             FSSmode=args.fssregexp,
                             CYmode=args.cyregexp, gwarnya=args.warn)
+                    listGer_line.append(g)
+                    listGer.append(g)
                     # for each word, display it with number of syllables
                     if g.graph != '':
                         g.diskwedhshort(gwarnya=args.warn)
                         Nsls += g.n_sls                        
                 print("\nNiver a sylabennow y'n linenn = {n}\n".format(n=Nsls))
+                listGer_lines.append(listGer_line)
     else:
         inputtext = f.read()
         inputtext = preprocess2ASCII(inputtext)
@@ -1623,6 +1662,7 @@ if __name__ == '__main__':
             # avoid printing 'words' that consist only of a
             # punctuation character
             if g.graph != '' and g.graph not in punctchars:
+                listGer.append(g)
                 if args.short:
                     # print short form word:nsyls
                     g.diskwedhshort(gwarnya=args.warn)
